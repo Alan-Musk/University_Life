@@ -1,17 +1,20 @@
+// Calculates a remainder
+
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    int n=get_int("n:");
+    // Prompt user for integer
+    int n = get_int("n: ");
 
-    if(n%2 == 0)
+    // Check parity of integer
+    if (n % 2 == 0)
     {
-        printf("Even\n");
+        printf("even\n");
     }
     else
     {
-        printf("Odd\n");
+        printf("odd\n");
     }
-    return 0;
 }
