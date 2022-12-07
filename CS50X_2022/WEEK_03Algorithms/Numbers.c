@@ -1,13 +1,17 @@
-#include <stdio.h>
+// Implements linear search for numbers
+
 #include <cs50.h>
+#include <stdio.h>
 
 int main(void)
 {
-    int numbers[]={4,6,8,2,7,5,0};
+    // An array of numbers
+    int numbers[] = {4, 6, 8, 2, 7, 5, 0};
 
-    for(int i=0;i<7;i++)
+    // Search for 0
+    for (int i = 0; i < 7; i++)
     {
-        if(numbers[i]==0)
+        if (numbers[i] == 0)
         {
             printf("Found\n");
             return 0;

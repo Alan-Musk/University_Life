@@ -1,27 +1,32 @@
-#include <stdio.h>
-#include <string.h>
+// Draws a pyramid using recursion
+
 #include <cs50.h>
+#include <stdio.h>
 
 void draw(int n);
 
 int main(void)
 {
-    int height=get_int("Height:");
+    // Get height of pyramid
+    int height = get_int("Height: ");
 
+    // Draw pyramid
     draw(height);
-
-    return 0;
 }
 
 void draw(int n)
 {
-    if(n<=0)
+    // If nothing to draw
+    if (n <= 0)
     {
         return;
     }
-    draw(n-1);
 
-    for(int i=0;i<n;i++)
+    // Draw pyramid of height n - 1
+    draw(n - 1);
+
+    // Draw one more row of width n
+    for (int i = 0; i < n; i++)
     {
         printf("#");
     }

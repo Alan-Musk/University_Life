@@ -1,23 +1,25 @@
-#include <stdio.h>
-#include <string.h>
+// Draws a pyramid using iteration
+
 #include <cs50.h>
+#include <stdio.h>
 
 void draw(int n);
 
 int main(void)
 {
-    int height=get_int("Height:");
+    // Get height of pyramid
+    int height = get_int("Height: ");
 
+    // Draw pyramid
     draw(height);
-
-    return 0;
 }
 
 void draw(int n)
 {
-    for(int i=0;i<n;i++)
+    // Draw pyramid of height n
+    for (int i = 0; i < n; i++)
     {
-        for(int j=0;j<i+1;j++)
+        for (int j = 0; j < i + 1; j++)
         {
             printf("#");
         }
