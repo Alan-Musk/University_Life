@@ -23,7 +23,10 @@ int main(void)
     struct member members[3]={{302039823,{"Dribble","Melon","Flossie"}},{2333333,{"Alan","","Musk"}},{55555555,{"XIXI","He","Zhang1"}}};
     afunc(members);
     printf("b:\n");
-    bfunc(*members);
+    for(int i=0;i<3;i++)
+    {
+        bfunc(members[i]);
+    }
     return 0;
 }
 void afunc(struct member * members)
@@ -42,14 +45,11 @@ void afunc(struct member * members)
 }
 void bfunc(struct member members)
 {
-    for(int i=0;i<3;i++)
-    {
-        printf(" %s, %s ",members[i].person.fname,members[i].person.lname);
-        if((members[i].person.mname[0])!=' '&&(members[i].person.mname[0])!='\n'&&(members[i].person.mname[0])!='\0')
+        printf(" %s, %s ",members.person.fname,members.person.lname);
+        if((members.person.mname[0])!=' '&&(members.person.mname[0])!='\n'&&(members.person.mname[0])!='\0')
         {
 
-            printf("%c.",toupper(members[i].person.mname[0]));
+            printf("%c.",toupper(members.person.mname[0]));
         }
-        printf(" -- %ld\n",members[i].number);
-    }
+        printf(" -- %ld\n",members.number);
 }
