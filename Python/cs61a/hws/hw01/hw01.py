@@ -133,4 +133,5 @@ def hailstone(n):
             n=3*n+1
         step+=1
     print(1)
+    
     return step
