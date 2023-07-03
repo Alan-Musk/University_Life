@@ -48,11 +48,9 @@ def free_bacon(score):
     # Trim pi to only (score + 1) digit(s)
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
-    score = 100-score
-    while score > 0:
-        pi //= 10
-        score -= 1
-    return int(pi % 10)+3
+    pi=pi//pow(10,100-score)
+
+    return pi % 10+3
     # END PROBLEM 2
 
 
@@ -103,7 +101,7 @@ def swine_align(player_score, opponent_score):
     else:
         gcd = min(player_score, opponent_score)
         while gcd >= 10:
-            if (player_score % gcd == 0 and opponent_score % gcd == 0):
+            if player_score % gcd == 0 and opponent_score % gcd == 0:
                 return True
             gcd -= 1
     return False
@@ -129,11 +127,10 @@ def pig_pass(player_score, opponent_score):
     """
     # BEGIN PROBLEM 4b
     "*** YOUR CODE HERE ***"
-    difference = opponent_score-player_score
-    if difference > 0 and difference < 3:
+    
+    if player_score < opponent_score and opponent_score-player_score < 3:
         return True
-    else:
-        return False
+    return False
     # END PROBLEM 4b
 
 
@@ -175,22 +172,20 @@ def play(strategy0, strategy1, score0=0, score1=0, dice=six_sided,
     "*** YOUR CODE HERE ***"
     while score0 < goal and score1 < goal:
         if who == 0:
-            who = 1
+            who = other(who)
             score0 += take_turn(strategy0(score0, score1), score1, dice)
             say = say(score0, score1)
             if extra_turn(score0, score1):
                 who = 0
         elif who == 1:
-            who = 0
+            who = other(who)
             score1 += take_turn(strategy1(score1, score0), score0, dice)
             say = say(score0, score1)
             if extra_turn(score1, score0):
-                who = 1
-
+                who = other(who)
     # END PROBLEM 5
     # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
     # BEGIN PROBLEM 6
-    "*** YOUR CODE HERE ***"
     # END PROBLEM 6
     return score0, score1
 
@@ -274,6 +269,7 @@ def announce_highest(who, last_score=0, running_high=0):
     """
     assert who == 0 or who == 1, 'The who argument should indicate a player.'
     # BEGIN PROBLEM 7
+    # note: 通过return值来消除函数的side effect
     "*** YOUR CODE HERE ***"
     def say(score0, score1):
         if who == 0:
@@ -338,8 +334,7 @@ def make_averaged(original_function, trials_count=1000):
         while n<trials_count:
             total+=original_function(*args)
             n+=1
-        total/=trials_count
-        return total
+        return total/trials_count
     return output
     # END PROBLEM 8
 
