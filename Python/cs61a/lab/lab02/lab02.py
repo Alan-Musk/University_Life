@@ -124,18 +124,16 @@ def cycle(f1, f2, f3):
     """
     "*** YOUR CODE HERE ***"
     def circuit(n):
-        def computation(x,num=n):
+        def computation(x):
             order=0
-            while num>0:
-                if order==0:
+            while order<n:
+                if order%3==0:
                     x=f1(x)
-                elif order==1:
+                elif order%3==1:
                     x=f2(x)
-                elif order==2:
+                else:
                     x=f3(x)
-                    order-=3
                 order+=1
-                num-=1
             return x
         return computation
     return circuit
