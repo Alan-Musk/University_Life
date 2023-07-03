@@ -91,7 +91,9 @@ def composite_identity(f, g):
     False
     """
     "*** YOUR CODE HERE ***"
-
+    def computation(x):
+        return f(g(x))==g(f(x))
+    return computation
 
 
 def cycle(f1, f2, f3):
@@ -121,4 +123,19 @@ def cycle(f1, f2, f3):
     19
     """
     "*** YOUR CODE HERE ***"
-
+    def circuit(n):
+        def computation(x,num=n):
+            order=0
+            while num>0:
+                if order==0:
+                    x=f1(x)
+                elif order==1:
+                    x=f2(x)
+                elif order==2:
+                    x=f3(x)
+                    order-=3
+                order+=1
+                num-=1
+            return x
+        return computation
+    return circuit
