@@ -14,4 +14,9 @@ def can_win(number):
     if number<=0:
         return False
     action=1
-    
+    while action<=3:
+        new_state=number-action
+        if not can_win(new_state):
+            return True
+        action+=1
+    return False
