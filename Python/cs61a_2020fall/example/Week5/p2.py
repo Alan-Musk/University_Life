@@ -111,3 +111,99 @@ def right_binarize(tree):
     return [right_binarize(b) for b in tree]
 
 # 2.3.7
+empty='empty'
+def is_link(s):
+    '''s是一个链表,如果它是空的或一个(first,rest)对'''
+    return s==empty or (len(s))==2 and is_link(s[1])
+
+def link(first,rest):
+    """使用first元素和rest元素构建一个链表"""
+    assert is_link(rest),"rest必须是一个链表"
+    return [first,rest]
+
+def first(s):
+    """返回链表S的first元素"""
+    assert is_link(s),"first only applies to linked lists"
+    assert s is not empty,"empty linked list has no first element"
+    return s[0]
+
+def rest(s):
+    """返回链表s的rest元素"""
+    assert is_link(s),"rest only applies to linked lists."
+    assert s is not empty,"empty linked list has no rest."
+    return s[1]
+
+def len_link(s):
+    """返回链表s的长度"""
+    length=0
+    while s is not empty:
+        s,length=rest(s),length+1
+    return length
+
+def getitem_link(s,i):
+    """返回链表s中索引值为i的元素"""
+    while i>0:
+        s,i=rest(s),i-1
+    return first(s)
+
+def len_link_recursive(s):
+    """使用递归返回s的长度"""
+    if s==empty:
+        return 0
+    return 1+len_link_recursive(rest(s))
+
+def getitem_link_recursive(s,i):
+    """返回链表s中索引值为i的元素"""
+    if i==0:
+        return first(s)
+    return getitem_link_recursive(rest(s),i-1)
+
+def extend_link(s,t):
+    """将t插入到链表s的最后一个元素"""
+    assert is_link(s) and is_link(t)
+    if s==empty:
+        return t
+    else:
+        return link(first(s),extend_link(rest(s),t))
+    
+
+def apply_to_all_link(f,s):
+    """应用f到s的每个元素"""
+    assert is_link(s)
+    if s==empty:
+        return s
+    else:
+        return link(f(first(s)),apply_to_all_link(f,rest(s)))
+
+def keep_if_link(f,s):
+    """返回s中f(e)为True的元素"""
+    assert is_link(s)
+    if s==empty:
+        return s
+    else:
+        kept=keep_if_link(f,rest(s))
+        if f(first(s)):
+            return link(first(s),kept)
+        else:
+            return kept
+
+def join_link(s,separator):
+    """返回由分隔符分隔的s中所有元素组成的字符串"""
+    if s==empty:
+        return ""
+    elif rest(s)==empty:
+        return str(first(s))
+    else:
+        return str(first(s))+separator+join_link(rest(s),separator)
+
+def partitions(n,m):
+    """返回一个由n个分区组成的链表,每个分区的部分数最多为m,每个分区表示为一个链表"""
+    if n==0:
+        return link(empty,empty)
+    elif n<0 or m==0:
+        return empty
+    else:
+        using_m=partition_tree(n-m,m)
+        with_m=apply_to_all_link(lambda s:link(m,s),using_m)
+        without_m=partitions(n,m-1)
+        return extend_link(with_m,without_m)
