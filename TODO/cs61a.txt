@@ -1,3 +1,6 @@
 1. hog 中的optional Question
-2. Hog Strategy
-3. hw02: Q5 and Q5
+2. Hog Strategy/Contest
+3. hw02: Q4 and Q5
+4. lab04 Q5
+5. disc Q1.2 Q2.3
+ 
