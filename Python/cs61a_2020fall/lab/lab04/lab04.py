@@ -44,11 +44,10 @@ def summation(n, term):
     """
     assert n >= 1
     "*** YOUR CODE HERE ***"
-    def summation_helper(i=1):
-        if i==n:
-            return term(i)
-        return term(i)+summation_helper(i+1)
-    return summation_helper(1)
+    if n==1:
+        return term(n)
+    else:
+        return term(n)+summation(n-1,term)
 
 def paths(m, n):
     """Return the number of paths from one corner of an
@@ -65,19 +64,9 @@ def paths(m, n):
     """
     "*** YOUR CODE HERE ***"
     # row 行 column 列
-    def paths_helper(row,column):
-        # 抵达重点
-        if row==m-1 and column==n-1:
-            return 1
-        elif row!=m-1 and column==n-1: # 只能向右走
-            return paths_helper(row+1,column)
-        elif row==m-1 and column!=n-1:#只能向上走
-            return paths_helper(row,column+1)
-        else:
-            #正常情况,分叉
-            return paths_helper(row+1,column)+paths_helper(row,column+1)
-        
-    return paths_helper(0,0)
+    if m==1 or n==1:
+        return 1
+    return paths(m-1,n)+paths(m,n-1)
 
 
 def max_subseq(n, t):
