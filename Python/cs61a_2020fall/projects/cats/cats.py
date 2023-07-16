@@ -17,12 +17,10 @@ def choose(paragraphs, select, k):
     """
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
-    n=0
-    for i in paragraphs:
-        if select(i):
-            if n==k:
-                return i
-            n+=1
+    # filter(function,iterable) 用法:iterable 中函数 function 返回真的那些元素，构建一个新的迭代器
+    selectd = list(filter(select, paragraphs))
+    if k < len(selectd):
+        return selectd[k]
     return ''
     # END PROBLEM 1
 
@@ -41,11 +39,10 @@ def about(topic):
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
     def about_helper(s):
-        s=split(remove_punctuation(lower(s)))
+        s = split(remove_punctuation(lower(s)))  # 处理字符串
         for i in topic:
-            for k in s:
-                if k==i:
-                    return True
+            if i in s:
+                return True
         return False
     return about_helper
     # END PROBLEM 2
@@ -72,17 +69,16 @@ def accuracy(typed, reference):
     reference_words = split(reference)
     # BEGIN PROBLEM 3
     "*** YOUR CODE HERE ***"
-    typed,reference=split(typed),split(reference)
-    if len(typed)==0:
+    # base_case
+    if len(typed_words) == 0:
         return 0.0
-    correct=0
-    for i in range(min(len(reference),len(typed))):
-        if typed[i]==reference[i]:
-            correct+=1
-        
-    return correct/len(typed)*100
+    correct = 0
+    for i in range(min(len(reference_words), len(typed_words))):
+        if typed_words[i] == reference_words[i]:
+            correct += 1
+
+    return correct/len(typed_words)*100
     # END PROBLEM 3
-    
 
 
 def wpm(typed, elapsed):
@@ -90,7 +86,7 @@ def wpm(typed, elapsed):
     assert elapsed > 0, 'Elapsed time must be positive'
     # BEGIN PROBLEM 4
     "*** YOUR CODE HERE ***"
-    return len(typed)/(elapsed/60)/5
+    return len(typed) / (elapsed/60)/5
     # END PROBLEM 4
 
 
@@ -101,17 +97,23 @@ def autocorrect(user_word, valid_words, diff_function, limit):
     """
     # BEGIN PROBLEM 5
     "*** YOUR CODE HERE ***"
-    minimun=1000
-    minimun_print=""
+    diff_char = []  # 词容器
     for i in valid_words:
-        if user_word==i:
-            return user_word
-        if diff_function(user_word,i,limit) <minimun:
-            minimun=diff_function(user_word,i,limit)
-            minimun_print=i
-    if minimun>limit:
+        diff_num = diff_function(user_word, i, limit)  # 两个单词的差异值
+        if diff_num < limit:  # 若valid_words词组中比前一个单词 则缩小limit 并存入
+            limit = diff_num
+            diff_char = [i]
+        elif diff_num == limit:
+            diff_char += [i]
+    # Q:为什么要判断 user_word in diff_char
+    # A:参考
+    """
+    >>> autocorrect("inside", ["idea", "inside"], first_diff, 0.5)
+        'idea'
+    """
+    if len(diff_char) == 0 or user_word in diff_char:
         return user_word
-    return minimun_print
+    return diff_char[0]
     # END PROBLEM 5
 
 
@@ -122,48 +124,51 @@ def shifty_shifts(start, goal, limit):
     """
     # assert False , 'Remove this line'
     # BEGIN PROBLEM 6
-    if goal=="":
-        return len(start)
-    elif start=="":
-        return len(goal)
-    elif limit<0:
+    if limit < 0:
         return 0
-    if goal[0]!=start[0]:
-        return 1+shifty_shifts(start[1:],goal[1:],limit-1)
+    elif start == '' or goal == '':
+        return max(len(goal), len(start))
     else:
-        return shifty_shifts(start[1:],goal[1:],limit)
+        if goal[0] != start[0]:
+            return 1+shifty_shifts(start[1:], goal[1:], limit-1)
+        else:
+            return shifty_shifts(start[1:], goal[1:], limit)
+
+
     # END PROBLEM 6
-print(shifty_shifts("someaweqwertyuio", "awesomeasdfghjkl", 3))
 
 def pawssible_patches(start, goal, limit):
     """A diff function that computes the edit distance from START to GOAL."""
     # assert False, 'Remove this line'
-
-    if start=='' or goal =='': # Fill in the condition
+    # 有三个base case:
+    # 1. 一方为空,则只需要返回另一方的剩余字符数
+    # 2. 两方首字符相同,不修改,不增数递进
+    # 3. limit
+    if start == '' or goal == '':  # Fill in the condition
         # BEGIN
         "*** YOUR CODE HERE ***"
-        return max(len(start),len(goal))
+        return max(len(start), len(goal))
         # END
-
-    elif start[0]==goal[0]: # Feel free to remove or add additional cases
+    # 如果字符相等,不计数递进
+    elif start[0] == goal[0]:  # Feel free to remove or add additional cases
         # BEGIN
         "*** YOUR CODE HERE ***"
-        start=start[1:]
-        goal=goal[1:]
-        return pawssible_patches(start,goal,limit)
+        start = start[1:]
+        goal = goal[1:]
+        return pawssible_patches(start, goal, limit)
         # END
     elif limit < 0:
         return 0
     else:
-        add_diff = pawssible_patches(start,goal[1:],limit-1)
-        remove_diff = pawssible_patches(start[1:],goal,limit-1)
-        substitute_diff = pawssible_patches(start[1:],goal[1:],limit-1)
+        add_diff = pawssible_patches(start, goal[1:], limit-1)
+        remove_diff = pawssible_patches(start[1:], goal, limit-1)
+        substitute_diff = pawssible_patches(start[1:], goal[1:], limit-1)
         # BEGIN
         "*** YOUR CODE HERE ***"
-        
-        return 1+min(add_diff,remove_diff,substitute_diff)
-        # END
 
+        return 1+min(add_diff, remove_diff, substitute_diff)
+        # END
+print(pawssible_patches("wirdcxzcgsfvj", "wirydsfvdsggsfg", 1))
 
 def final_diff(start, goal, limit):
     """A diff function. If you implement this function, it will be used."""
@@ -179,13 +184,13 @@ def report_progress(typed, prompt, user_id, send):
     """Send a report of your id and progress so far to the multiplayer server."""
     # BEGIN PROBLEM 8
     "*** YOUR CODE HERE ***"
-    total=0
-    for i,j in zip(typed,prompt):
-        if i==j:
-            total+=1
+    total = 0
+    for i, j in zip(typed, prompt):
+        if i == j:
+            total += 1
         else:
             break
-    send({'id':user_id,'progress':total/len(prompt)})
+    send({'id': user_id, 'progress': total/len(prompt)})
     return total/len(prompt)
     # END PROBLEM 8
 
@@ -213,15 +218,14 @@ def time_per_word(times_per_player, words):
     """
     # BEGIN PROBLEM 9
     "*** YOUR CODE HERE ***"
-    time=[]
+    time = []
     for i in range(len(times_per_player)):
-        temp=[]
-        for j in range(len(words)): # 2
+        temp = []
+        for j in range(len(words)):  # 2
             temp.append(times_per_player[i][j+1]-times_per_player[i][j])
         time.append(temp)
-    return game(words,time)
+    return game(words, time)
     # END PROBLEM 9
-
 
 
 def fastest_words(game):
@@ -232,40 +236,44 @@ def fastest_words(game):
     Returns:
         a list of lists containing which words each player typed fastest
     """
-    player_indices = range(len(all_times(game)))  # contains an *index* for each player
-    word_indices = range(len(all_words(game)))    # contains an *index* for each word
+    player_indices = range(len(all_times(game))
+                           )  # contains an *index* for each player
+    # contains an *index* for each word
+    word_indices = range(len(all_words(game)))
     # BEGIN PROBLEM 10
     "*** YOUR CODE HERE ***"
 
-    lst=[[] for _ in player_indices]
+    lst = [[] for _ in player_indices]
     for word_index in word_indices:
-        word=word_at(game,word_index)
-        time_lst=[]
+        word = word_at(game, word_index)
+        time_lst = []
         for id in player_indices:
-            time_lst+=[time(game,id,word_index)]
-        id_index=time_lst.index(min(time_lst))
+            time_lst += [time(game, id, word_index)]
+        id_index = time_lst.index(min(time_lst))
         lst[id_index].append(word)
     return lst
     # END PROBLEM 10
 
 # print(fastest_words((['What', 'great', 'luck'], [p0, p1])))
+
+
 def word_at(game, word_index):
     """A selector function that gets the word with index word_index"""
     assert 0 <= word_index < len(game[0]), "word_index out of range of words"
     return game[0][word_index]
 
 
-
 def game(words, times):
     """A data abstraction containing all words typed and their times."""
-    assert all([type(w) == str for w in words]), 'words should be a list of strings'
-    assert all([type(t) == list for t in times]), 'times should be a list of lists'
-    assert all([isinstance(i, (int, float)) for t in times for i in t]), 'times lists should contain numbers'
-    assert all([len(t) == len(words) for t in times]), 'There should be one word per time.'
+    assert all([type(w) == str for w in words]
+               ), 'words should be a list of strings'
+    assert all([type(t) == list for t in times]
+               ), 'times should be a list of lists'
+    assert all([isinstance(i, (int, float))
+               for t in times for i in t]), 'times lists should contain numbers'
+    assert all([len(t) == len(words) for t in times]
+               ), 'There should be one word per time.'
     return [words, times]
-
-
-
 
 
 def all_words(game):
@@ -289,6 +297,7 @@ def game_string(game):
     """A helper function that takes in a game object and returns a string representation of it"""
     return "game(%s, %s)" % (game[0], game[1])
 
+
 enable_multiplayer = False  # Change to True when you're ready to race.
 
 ##########################
@@ -299,7 +308,7 @@ enable_multiplayer = False  # Change to True when you're ready to race.
 def run_typing_test(topics):
     """Measure typing speed and accuracy on the command line."""
     paragraphs = lines_from_file('data/sample_paragraphs.txt')
-    select = lambda p: True
+    def select(p): return True
     if topics:
         select = about(topics)
     i = 0
