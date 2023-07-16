@@ -168,7 +168,6 @@ def pawssible_patches(start, goal, limit):
 
         return 1+min(add_diff, remove_diff, substitute_diff)
         # END
-print(pawssible_patches("wirdcxzcgsfvj", "wirydsfvdsggsfg", 1))
 
 def final_diff(start, goal, limit):
     """A diff function. If you implement this function, it will be used."""
