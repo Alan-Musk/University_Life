@@ -1,0 +1,676 @@
+[Script Info]
+Title: Lecture 13. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=33&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.64,0:00:03.12,*Default,NTP,0000,0000,0000,,lecture 13 q a
+Dialogue: 0,0:00:03.12,0:00:04.88,*Default,NTP,0000,0000,0000,,yeah so the question here is what does
+Dialogue: 0,0:00:04.88,0:00:06.72,*Default,NTP,0000,0000,0000,,it mean when we say 64-bit
+Dialogue: 0,0:00:06.72,0:00:08.00,*Default,NTP,0000,0000,0000,,representation
+Dialogue: 0,0:00:08.00,0:00:11.28,*Default,NTP,0000,0000,0000,,32-bit representation 16-bit 8-bit etc
+Dialogue: 0,0:00:11.28,0:00:12.00,*Default,NTP,0000,0000,0000,,etc
+Dialogue: 0,0:00:12.00,0:00:14.16,*Default,NTP,0000,0000,0000,,so what it's referring to so typically
+Dialogue: 0,0:00:14.16,0:00:15.76,*Default,NTP,0000,0000,0000,,where you'll see this referred to is
+Dialogue: 0,0:00:15.76,0:00:16.24,*Default,NTP,0000,0000,0000,,when
+Dialogue: 0,0:00:16.24,0:00:18.32,*Default,NTP,0000,0000,0000,,they'll talk about things like the color
+Dialogue: 0,0:00:18.32,0:00:19.92,*Default,NTP,0000,0000,0000,,depth on your monitor
+Dialogue: 0,0:00:19.92,0:00:22.24,*Default,NTP,0000,0000,0000,,right this is a big graphics uh
+Dialogue: 0,0:00:22.24,0:00:24.00,*Default,NTP,0000,0000,0000,,terminology 64-bit
+Dialogue: 0,0:00:24.00,0:00:26.72,*Default,NTP,0000,0000,0000,,graphics yeah so what is that referring
+Dialogue: 0,0:00:26.72,0:00:27.68,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:00:27.68,0:00:31.12,*Default,NTP,0000,0000,0000,,it's only referring to the the number of
+Dialogue: 0,0:00:31.12,0:00:32.00,*Default,NTP,0000,0000,0000,,unique
+Dialogue: 0,0:00:32.00,0:00:34.48,*Default,NTP,0000,0000,0000,,integers you can represent with a single
+Dialogue: 0,0:00:34.48,0:00:36.48,*Default,NTP,0000,0000,0000,,number so for example if i have an 8-bit
+Dialogue: 0,0:00:36.48,0:00:37.52,*Default,NTP,0000,0000,0000,,number
+Dialogue: 0,0:00:37.52,0:00:40.88,*Default,NTP,0000,0000,0000,,i can represent 0-255 right 256 total
+Dialogue: 0,0:00:40.88,0:00:41.60,*Default,NTP,0000,0000,0000,,numbers
+Dialogue: 0,0:00:41.60,0:00:43.92,*Default,NTP,0000,0000,0000,,so when you have 8-bit graphics you only
+Dialogue: 0,0:00:43.92,0:00:45.28,*Default,NTP,0000,0000,0000,,had 256
+Dialogue: 0,0:00:45.28,0:00:48.16,*Default,NTP,0000,0000,0000,,distinct colors when i went to 16-bit i
+Dialogue: 0,0:00:48.16,0:00:49.52,*Default,NTP,0000,0000,0000,,now have 2 to the power
+Dialogue: 0,0:00:49.52,0:00:52.96,*Default,NTP,0000,0000,0000,,16 whatever that is 2 to the 32 2 to the
+Dialogue: 0,0:00:52.96,0:00:53.60,*Default,NTP,0000,0000,0000,,64
+Dialogue: 0,0:00:53.60,0:00:55.04,*Default,NTP,0000,0000,0000,,et cetera et cetera so when we say
+Dialogue: 0,0:00:55.04,0:00:57.20,*Default,NTP,0000,0000,0000,,64-bit representations it means how many
+Dialogue: 0,0:00:57.20,0:00:58.00,*Default,NTP,0000,0000,0000,,you you
+Dialogue: 0,0:00:58.00,0:01:00.48,*Default,NTP,0000,0000,0000,,distinct integer valued now
+Dialogue: 0,0:01:00.48,0:01:02.40,*Default,NTP,0000,0000,0000,,programmatically you can go beyond that
+Dialogue: 0,0:01:02.40,0:01:03.92,*Default,NTP,0000,0000,0000,,with these things called big numbers and
+Dialogue: 0,0:01:03.92,0:01:05.52,*Default,NTP,0000,0000,0000,,there's ways of numerically
+Dialogue: 0,0:01:05.52,0:01:08.24,*Default,NTP,0000,0000,0000,,representing big numbers the silliness
+Dialogue: 0,0:01:08.24,0:01:09.36,*Default,NTP,0000,0000,0000,,of a lot of this
+Dialogue: 0,0:01:09.36,0:01:11.44,*Default,NTP,0000,0000,0000,,is in the human visual system has
+Dialogue: 0,0:01:11.44,0:01:13.20,*Default,NTP,0000,0000,0000,,fundamental limitations on how many
+Dialogue: 0,0:01:13.20,0:01:15.60,*Default,NTP,0000,0000,0000,,distinct colors that it can represent by
+Dialogue: 0,0:01:15.60,0:01:16.72,*Default,NTP,0000,0000,0000,,the way
+Dialogue: 0,0:01:16.72,0:01:18.72,*Default,NTP,0000,0000,0000,,i have to make a disclosure my wife is a
+Dialogue: 0,0:01:18.72,0:01:20.96,*Default,NTP,0000,0000,0000,,neuroscientist and a vision scientist
+Dialogue: 0,0:01:20.96,0:01:22.72,*Default,NTP,0000,0000,0000,,and it always makes her crazy when i
+Dialogue: 0,0:01:22.72,0:01:24.32,*Default,NTP,0000,0000,0000,,talk about the human brain
+Dialogue: 0,0:01:24.32,0:01:25.92,*Default,NTP,0000,0000,0000,,and i think she's like lurking around
+Dialogue: 0,0:01:25.92,0:01:29.68,*Default,NTP,0000,0000,0000,,here somewhere coming to talk quietly
+Dialogue: 0,0:01:30.00,0:01:31.20,*Default,NTP,0000,0000,0000,,bring her around in you know her
+Dialogue: 0,0:01:31.20,0:01:35.36,*Default,NTP,0000,0000,0000,,otherwise ah crap she heard me
+Dialogue: 0,0:01:35.36,0:01:41.04,*Default,NTP,0000,0000,0000,,she's right there she looks pissed
+Dialogue: 0,0:01:41.04,0:01:42.88,*Default,NTP,0000,0000,0000,,so the brain you know can't i mean so at
+Dialogue: 0,0:01:42.88,0:01:44.48,*Default,NTP,0000,0000,0000,,some point the brain can't distinguish
+Dialogue: 0,0:01:44.48,0:01:46.08,*Default,NTP,0000,0000,0000,,all those distinct colors
+Dialogue: 0,0:01:46.08,0:01:48.56,*Default,NTP,0000,0000,0000,,and so that you know 64-bit hundreds it
+Dialogue: 0,0:01:48.56,0:01:50.08,*Default,NTP,0000,0000,0000,,doesn't matter at some point yeah
+Dialogue: 0,0:01:50.08,0:01:53.28,*Default,NTP,0000,0000,0000,,but to your question very specifically
+Dialogue: 0,0:01:53.28,0:01:56.00,*Default,NTP,0000,0000,0000,,um when we say 64-bit we're saying how
+Dialogue: 0,0:01:56.00,0:01:56.40,*Default,NTP,0000,0000,0000,,big
+Dialogue: 0,0:01:56.40,0:01:58.64,*Default,NTP,0000,0000,0000,,is a single integer and that tells me
+Dialogue: 0,0:01:58.64,0:02:00.88,*Default,NTP,0000,0000,0000,,how large of a number i can represent
+Dialogue: 0,0:02:00.88,0:02:02.48,*Default,NTP,0000,0000,0000,,and then what i can do with that number
+Dialogue: 0,0:02:02.48,0:02:04.32,*Default,NTP,0000,0000,0000,,like for example representing distinct
+Dialogue: 0,0:02:04.32,0:02:06.88,*Default,NTP,0000,0000,0000,,colors on the monitor
+Dialogue: 0,0:02:06.88,0:02:08.24,*Default,NTP,0000,0000,0000,,yeah and the other part of that question
+Dialogue: 0,0:02:08.24,0:02:10.24,*Default,NTP,0000,0000,0000,,was why are there billions of
+Dialogue: 0,0:02:10.24,0:02:11.36,*Default,NTP,0000,0000,0000,,transistors
+Dialogue: 0,0:02:11.36,0:02:13.36,*Default,NTP,0000,0000,0000,,could we only need 64 well you want to
+Dialogue: 0,0:02:13.36,0:02:15.76,*Default,NTP,0000,0000,0000,,represent lots of different numbers
+Dialogue: 0,0:02:15.76,0:02:17.76,*Default,NTP,0000,0000,0000,,and you also want to represent the
+Dialogue: 0,0:02:17.76,0:02:18.88,*Default,NTP,0000,0000,0000,,ability to
+Dialogue: 0,0:02:18.88,0:02:22.00,*Default,NTP,0000,0000,0000,,perform operations on many of those
+Dialogue: 0,0:02:22.00,0:02:24.72,*Default,NTP,0000,0000,0000,,numbers sometimes actually all at once
+Dialogue: 0,0:02:24.72,0:02:25.76,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:02:25.76,0:02:28.32,*Default,NTP,0000,0000,0000,,um the logic for performing some of the
+Dialogue: 0,0:02:28.32,0:02:29.68,*Default,NTP,0000,0000,0000,,stuff that we'll see on wednesday like
+Dialogue: 0,0:02:29.68,0:02:31.60,*Default,NTP,0000,0000,0000,,how you add two numbers together
+Dialogue: 0,0:02:31.60,0:02:33.60,*Default,NTP,0000,0000,0000,,is actually built into the chip it's not
+Dialogue: 0,0:02:33.60,0:02:35.12,*Default,NTP,0000,0000,0000,,like there's a program
+Dialogue: 0,0:02:35.12,0:02:37.28,*Default,NTP,0000,0000,0000,,running in software that adds two
+Dialogue: 0,0:02:37.28,0:02:39.12,*Default,NTP,0000,0000,0000,,numbers instead it's part of the
+Dialogue: 0,0:02:39.12,0:02:40.16,*Default,NTP,0000,0000,0000,,circuitry
+Dialogue: 0,0:02:40.16,0:02:41.84,*Default,NTP,0000,0000,0000,,of the hardware of your computer that's
+Dialogue: 0,0:02:41.84,0:02:43.60,*Default,NTP,0000,0000,0000,,adding those two numbers together
+Dialogue: 0,0:02:43.60,0:02:45.76,*Default,NTP,0000,0000,0000,,and whether that adder is built to
+Dialogue: 0,0:02:45.76,0:02:48.80,*Default,NTP,0000,0000,0000,,operate on 32-bit integers or 64-bit
+Dialogue: 0,0:02:48.80,0:02:50.08,*Default,NTP,0000,0000,0000,,integers is a decision
+Dialogue: 0,0:02:50.08,0:02:52.24,*Default,NTP,0000,0000,0000,,that the hardware designers have to make
+Dialogue: 0,0:02:52.24,0:02:54.24,*Default,NTP,0000,0000,0000,,and then the software has to all kind of
+Dialogue: 0,0:02:54.24,0:02:55.92,*Default,NTP,0000,0000,0000,,take advantage of that so modern
+Dialogue: 0,0:02:55.92,0:02:58.40,*Default,NTP,0000,0000,0000,,computers typically are built on 64-bit
+Dialogue: 0,0:02:58.40,0:03:00.24,*Default,NTP,0000,0000,0000,,integers as their kind of like basic
+Dialogue: 0,0:03:00.24,0:03:01.04,*Default,NTP,0000,0000,0000,,unit
+Dialogue: 0,0:03:01.04,0:03:04.32,*Default,NTP,0000,0000,0000,,and that's like a fact about
+Dialogue: 0,0:03:04.32,0:03:06.56,*Default,NTP,0000,0000,0000,,not how the memory is stored so much but
+Dialogue: 0,0:03:06.56,0:03:08.00,*Default,NTP,0000,0000,0000,,about how the
+Dialogue: 0,0:03:08.00,0:03:10.32,*Default,NTP,0000,0000,0000,,central processing unit manages all this
+Dialogue: 0,0:03:10.32,0:03:11.68,*Default,NTP,0000,0000,0000,,information so if you want to like store
+Dialogue: 0,0:03:11.68,0:03:12.72,*Default,NTP,0000,0000,0000,,a bunch of numbers
+Dialogue: 0,0:03:12.72,0:03:14.64,*Default,NTP,0000,0000,0000,,and operate on all a bunch of them at
+Dialogue: 0,0:03:14.64,0:03:16.16,*Default,NTP,0000,0000,0000,,the same time so that the computer could
+Dialogue: 0,0:03:16.16,0:03:17.04,*Default,NTP,0000,0000,0000,,for example
+Dialogue: 0,0:03:17.04,0:03:18.64,*Default,NTP,0000,0000,0000,,be adding these two numbers and these
+Dialogue: 0,0:03:18.64,0:03:19.92,*Default,NTP,0000,0000,0000,,two numbers because you know you need to
+Dialogue: 0,0:03:19.92,0:03:21.28,*Default,NTP,0000,0000,0000,,add them both so you might as well do
+Dialogue: 0,0:03:21.28,0:03:22.72,*Default,NTP,0000,0000,0000,,them at the same time
+Dialogue: 0,0:03:22.72,0:03:23.84,*Default,NTP,0000,0000,0000,,then all of a sudden you're getting a
+Dialogue: 0,0:03:23.84,0:03:26.08,*Default,NTP,0000,0000,0000,,lot of transistors yeah it's a really
+Dialogue: 0,0:03:26.08,0:03:27.60,*Default,NTP,0000,0000,0000,,good point and i i missed that part of
+Dialogue: 0,0:03:27.60,0:03:29.60,*Default,NTP,0000,0000,0000,,your question so i apologize but yeah so
+Dialogue: 0,0:03:29.60,0:03:30.56,*Default,NTP,0000,0000,0000,,what you're going to see is the
+Dialogue: 0,0:03:30.56,0:03:32.40,*Default,NTP,0000,0000,0000,,transistors represent can be used to
+Dialogue: 0,0:03:32.40,0:03:34.16,*Default,NTP,0000,0000,0000,,represent to store a number but
+Dialogue: 0,0:03:34.16,0:03:35.36,*Default,NTP,0000,0000,0000,,it's also going to be used to do
+Dialogue: 0,0:03:35.36,0:03:37.44,*Default,NTP,0000,0000,0000,,computation um
+Dialogue: 0,0:03:37.44,0:03:39.28,*Default,NTP,0000,0000,0000,,and they are the very building blocks of
+Dialogue: 0,0:03:39.28,0:03:40.64,*Default,NTP,0000,0000,0000,,both storing data
+Dialogue: 0,0:03:40.64,0:03:42.48,*Default,NTP,0000,0000,0000,,and computing on that data and you'll
+Dialogue: 0,0:03:42.48,0:03:45.28,*Default,NTP,0000,0000,0000,,see that i think in wednesday's lecture
+Dialogue: 0,0:03:45.28,0:03:47.44,*Default,NTP,0000,0000,0000,,the next question was how is the
+Dialogue: 0,0:03:47.44,0:03:50.08,*Default,NTP,0000,0000,0000,,arrangement of transistors determined
+Dialogue: 0,0:03:50.08,0:03:52.00,*Default,NTP,0000,0000,0000,,are half of them in series and have them
+Dialogue: 0,0:03:52.00,0:03:54.80,*Default,NTP,0000,0000,0000,,in parallel or something else
+Dialogue: 0,0:03:54.80,0:03:57.04,*Default,NTP,0000,0000,0000,,so these are as john was just saying
+Dialogue: 0,0:03:57.04,0:03:57.84,*Default,NTP,0000,0000,0000,,these are done
+Dialogue: 0,0:03:57.84,0:04:01.12,*Default,NTP,0000,0000,0000,,beforehand so what what happens is
+Dialogue: 0,0:04:01.12,0:04:03.36,*Default,NTP,0000,0000,0000,,i need to i need some special circuitry
+Dialogue: 0,0:04:03.36,0:04:05.36,*Default,NTP,0000,0000,0000,,to add two things together
+Dialogue: 0,0:04:05.36,0:04:06.88,*Default,NTP,0000,0000,0000,,and you don't know how to do that yet
+Dialogue: 0,0:04:06.88,0:04:08.64,*Default,NTP,0000,0000,0000,,but you will have to wednesday and so i
+Dialogue: 0,0:04:08.64,0:04:09.36,*Default,NTP,0000,0000,0000,,say okay
+Dialogue: 0,0:04:09.36,0:04:10.72,*Default,NTP,0000,0000,0000,,how many and gates do i need how many
+Dialogue: 0,0:04:10.72,0:04:13.60,*Default,NTP,0000,0000,0000,,objects do i need and i wire them in
+Dialogue: 0,0:04:13.60,0:04:15.76,*Default,NTP,0000,0000,0000,,and then that's it it's not like we're
+Dialogue: 0,0:04:15.76,0:04:16.64,*Default,NTP,0000,0000,0000,,on the fly
+Dialogue: 0,0:04:16.64,0:04:18.96,*Default,NTP,0000,0000,0000,,rewiring these transistors to do various
+Dialogue: 0,0:04:18.96,0:04:20.24,*Default,NTP,0000,0000,0000,,computations i think
+Dialogue: 0,0:04:20.24,0:04:21.44,*Default,NTP,0000,0000,0000,,there was a time when that was sort of
+Dialogue: 0,0:04:21.44,0:04:22.88,*Default,NTP,0000,0000,0000,,popular and i don't know if that still
+Dialogue: 0,0:04:22.88,0:04:24.56,*Default,NTP,0000,0000,0000,,is anymore there was this notion of sort
+Dialogue: 0,0:04:24.56,0:04:25.84,*Default,NTP,0000,0000,0000,,of dynamic
+Dialogue: 0,0:04:25.84,0:04:28.72,*Default,NTP,0000,0000,0000,,um reconfiguring but i don't know if we
+Dialogue: 0,0:04:28.72,0:04:30.80,*Default,NTP,0000,0000,0000,,but basically these things are hardwired
+Dialogue: 0,0:04:30.80,0:04:32.88,*Default,NTP,0000,0000,0000,,um you decide what you need what what
+Dialogue: 0,0:04:32.88,0:04:34.24,*Default,NTP,0000,0000,0000,,what computations do you want to be able
+Dialogue: 0,0:04:34.24,0:04:35.60,*Default,NTP,0000,0000,0000,,to perform on your computer
+Dialogue: 0,0:04:35.60,0:04:37.92,*Default,NTP,0000,0000,0000,,and you wire them in and then that's it
+Dialogue: 0,0:04:37.92,0:04:39.76,*Default,NTP,0000,0000,0000,,and then you get to use that circuitry
+Dialogue: 0,0:04:39.76,0:04:40.48,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:04:40.48,0:04:42.16,*Default,NTP,0000,0000,0000,,the you know the operating system and
+Dialogue: 0,0:04:42.16,0:04:43.60,*Default,NTP,0000,0000,0000,,the controller says okay send this
+Dialogue: 0,0:04:43.60,0:04:45.12,*Default,NTP,0000,0000,0000,,information over here there's a circuit
+Dialogue: 0,0:04:45.12,0:04:46.48,*Default,NTP,0000,0000,0000,,to do that send this information over
+Dialogue: 0,0:04:46.48,0:04:48.24,*Default,NTP,0000,0000,0000,,here there's a circuit to do that
+Dialogue: 0,0:04:48.24,0:04:50.40,*Default,NTP,0000,0000,0000,,so once you decide what you want the
+Dialogue: 0,0:04:50.40,0:04:52.80,*Default,NTP,0000,0000,0000,,nature of your computation is
+Dialogue: 0,0:04:52.80,0:04:54.88,*Default,NTP,0000,0000,0000,,you figure out and you'll see what the
+Dialogue: 0,0:04:54.88,0:04:56.00,*Default,NTP,0000,0000,0000,,pipeline is we will actually
+Dialogue: 0,0:04:56.00,0:04:57.84,*Default,NTP,0000,0000,0000,,design circuitry i'll show you how to do
+Dialogue: 0,0:04:57.84,0:04:59.92,*Default,NTP,0000,0000,0000,,addition and a few other things
+Dialogue: 0,0:04:59.92,0:05:01.52,*Default,NTP,0000,0000,0000,,you and there's just a pipeline for
+Dialogue: 0,0:05:01.52,0:05:02.64,*Default,NTP,0000,0000,0000,,doing it it's really quite
+Dialogue: 0,0:05:02.64,0:05:04.32,*Default,NTP,0000,0000,0000,,straightforward actually in the simplest
+Dialogue: 0,0:05:04.32,0:05:04.96,*Default,NTP,0000,0000,0000,,case
+Dialogue: 0,0:05:04.96,0:05:07.04,*Default,NTP,0000,0000,0000,,and then you're like okay build give me
+Dialogue: 0,0:05:07.04,0:05:08.64,*Default,NTP,0000,0000,0000,,an and gate give me an or gate give me a
+Dialogue: 0,0:05:08.64,0:05:10.96,*Default,NTP,0000,0000,0000,,not gate give me this wire them up input
+Dialogue: 0,0:05:10.96,0:05:12.32,*Default,NTP,0000,0000,0000,,here output here
+Dialogue: 0,0:05:12.32,0:05:13.92,*Default,NTP,0000,0000,0000,,that's done that's a chip on your
+Dialogue: 0,0:05:13.92,0:05:15.76,*Default,NTP,0000,0000,0000,,computer or on your phone or on whatever
+Dialogue: 0,0:05:15.76,0:05:18.16,*Default,NTP,0000,0000,0000,,device it is
+Dialogue: 0,0:05:18.16,0:05:20.80,*Default,NTP,0000,0000,0000,,yeah exactly and the those basic
+Dialogue: 0,0:05:20.80,0:05:22.56,*Default,NTP,0000,0000,0000,,operations are there on the chip and if
+Dialogue: 0,0:05:22.56,0:05:23.28,*Default,NTP,0000,0000,0000,,that's all
+Dialogue: 0,0:05:23.28,0:05:25.68,*Default,NTP,0000,0000,0000,,that you wanted then you could have kind
+Dialogue: 0,0:05:25.68,0:05:27.76,*Default,NTP,0000,0000,0000,,of a smaller chip than we have today but
+Dialogue: 0,0:05:27.76,0:05:29.52,*Default,NTP,0000,0000,0000,,basically what's happened is that
+Dialogue: 0,0:05:29.52,0:05:32.72,*Default,NTP,0000,0000,0000,,common combinations like addition
+Dialogue: 0,0:05:32.72,0:05:34.72,*Default,NTP,0000,0000,0000,,or you know taking a logarithm or
+Dialogue: 0,0:05:34.72,0:05:36.72,*Default,NTP,0000,0000,0000,,whatever happens so often
+Dialogue: 0,0:05:36.72,0:05:39.28,*Default,NTP,0000,0000,0000,,that it makes more sense to build a
+Dialogue: 0,0:05:39.28,0:05:40.32,*Default,NTP,0000,0000,0000,,circuit that's
+Dialogue: 0,0:05:40.32,0:05:42.48,*Default,NTP,0000,0000,0000,,kind of especially for that in addition
+Dialogue: 0,0:05:42.48,0:05:44.72,*Default,NTP,0000,0000,0000,,to the basic ones that just run
+Dialogue: 0,0:05:44.72,0:05:48.00,*Default,NTP,0000,0000,0000,,and or not and those more complicated
+Dialogue: 0,0:05:48.00,0:05:49.76,*Default,NTP,0000,0000,0000,,circuits aren't anything more than just
+Dialogue: 0,0:05:49.76,0:05:51.44,*Default,NTP,0000,0000,0000,,like a bunch of and or knots all chained
+Dialogue: 0,0:05:51.44,0:05:53.28,*Default,NTP,0000,0000,0000,,together in the right way
+Dialogue: 0,0:05:53.28,0:05:54.96,*Default,NTP,0000,0000,0000,,but if you're going to do something over
+Dialogue: 0,0:05:54.96,0:05:56.24,*Default,NTP,0000,0000,0000,,and over and over again and you kind of
+Dialogue: 0,0:05:56.24,0:05:57.92,*Default,NTP,0000,0000,0000,,anticipate that it's going to happen
+Dialogue: 0,0:05:57.92,0:05:59.68,*Default,NTP,0000,0000,0000,,then you can make it happen faster if
+Dialogue: 0,0:05:59.68,0:06:02.00,*Default,NTP,0000,0000,0000,,you just like optimize it in the
+Dialogue: 0,0:06:02.00,0:06:05.20,*Default,NTP,0000,0000,0000,,hardware in the circuitry in addition to
+Dialogue: 0,0:06:05.20,0:06:07.12,*Default,NTP,0000,0000,0000,,having the full flexibility of just like
+Dialogue: 0,0:06:07.12,0:06:09.04,*Default,NTP,0000,0000,0000,,combining any and ors of knots in any
+Dialogue: 0,0:06:09.04,0:06:10.00,*Default,NTP,0000,0000,0000,,way that you want
+Dialogue: 0,0:06:10.00,0:06:12.40,*Default,NTP,0000,0000,0000,,yeah yeah that's exactly right so you
+Dialogue: 0,0:06:12.40,0:06:13.60,*Default,NTP,0000,0000,0000,,know no doubt
+Dialogue: 0,0:06:13.60,0:06:15.68,*Default,NTP,0000,0000,0000,,the biggest impact on computing has been
+Dialogue: 0,0:06:15.68,0:06:17.68,*Default,NTP,0000,0000,0000,,the miniaturization of transistors i
+Dialogue: 0,0:06:17.68,0:06:19.28,*Default,NTP,0000,0000,0000,,mean that's been just a huge
+Dialogue: 0,0:06:19.28,0:06:22.48,*Default,NTP,0000,0000,0000,,huge win uh for speed
+Dialogue: 0,0:06:22.48,0:06:25.60,*Default,NTP,0000,0000,0000,,and power and compactness but also what
+Dialogue: 0,0:06:25.60,0:06:27.68,*Default,NTP,0000,0000,0000,,happens is as computers are running as
+Dialogue: 0,0:06:27.68,0:06:29.36,*Default,NTP,0000,0000,0000,,we figure out what are users spending
+Dialogue: 0,0:06:29.36,0:06:30.88,*Default,NTP,0000,0000,0000,,more time doing we may decide we may
+Dialogue: 0,0:06:30.88,0:06:32.00,*Default,NTP,0000,0000,0000,,realize oh
+Dialogue: 0,0:06:32.00,0:06:33.36,*Default,NTP,0000,0000,0000,,users are spending a lot of time doing
+Dialogue: 0,0:06:33.36,0:06:35.44,*Default,NTP,0000,0000,0000,,this one computation let's build a
+Dialogue: 0,0:06:35.44,0:06:36.80,*Default,NTP,0000,0000,0000,,special circuitry let's put it in the
+Dialogue: 0,0:06:36.80,0:06:37.60,*Default,NTP,0000,0000,0000,,right place
+Dialogue: 0,0:06:37.60,0:06:39.84,*Default,NTP,0000,0000,0000,,and we can make computers uh five
+Dialogue: 0,0:06:39.84,0:06:41.20,*Default,NTP,0000,0000,0000,,percent more faster
+Dialogue: 0,0:06:41.20,0:06:43.12,*Default,NTP,0000,0000,0000,,great right so there's also a lot of
+Dialogue: 0,0:06:43.12,0:06:45.52,*Default,NTP,0000,0000,0000,,algorithmic optimization that goes on
+Dialogue: 0,0:06:45.52,0:06:47.12,*Default,NTP,0000,0000,0000,,not just hardware or
+Dialogue: 0,0:06:47.12,0:06:50.72,*Default,NTP,0000,0000,0000,,optimization i just got the stink eye
+Dialogue: 0,0:06:50.72,0:06:52.32,*Default,NTP,0000,0000,0000,,from my wife again by the way she just
+Dialogue: 0,0:06:52.32,0:06:53.01,*Default,NTP,0000,0000,0000,,walked by
+Dialogue: 0,0:06:53.01,0:06:55.68,*Default,NTP,0000,0000,0000,,[Laughter]
+Dialogue: 0,0:06:55.68,0:06:57.52,*Default,NTP,0000,0000,0000,,the next question was have people build
+Dialogue: 0,0:06:57.52,0:06:59.68,*Default,NTP,0000,0000,0000,,computers using base 10 instead of base
+Dialogue: 0,0:06:59.68,0:07:00.24,*Default,NTP,0000,0000,0000,,2
+Dialogue: 0,0:07:00.24,0:07:02.72,*Default,NTP,0000,0000,0000,,and would that offer some advantages
+Dialogue: 0,0:07:02.72,0:07:03.92,*Default,NTP,0000,0000,0000,,yeah that's actually an interesting
+Dialogue: 0,0:07:03.92,0:07:04.48,*Default,NTP,0000,0000,0000,,question
+Dialogue: 0,0:07:04.48,0:07:06.40,*Default,NTP,0000,0000,0000,,is there would would there have been a
+Dialogue: 0,0:07:06.40,0:07:08.88,*Default,NTP,0000,0000,0000,,benefit to base 10 like let's say we
+Dialogue: 0,0:07:08.88,0:07:10.00,*Default,NTP,0000,0000,0000,,we didn't have to worry about the
+Dialogue: 0,0:07:10.00,0:07:12.48,*Default,NTP,0000,0000,0000,,stability of a bit representation
+Dialogue: 0,0:07:12.48,0:07:14.72,*Default,NTP,0000,0000,0000,,um well let's let's start by agreeing
+Dialogue: 0,0:07:14.72,0:07:16.32,*Default,NTP,0000,0000,0000,,that there's nothing you can't
+Dialogue: 0,0:07:16.32,0:07:18.72,*Default,NTP,0000,0000,0000,,do in base two the base that we work in
+Dialogue: 0,0:07:18.72,0:07:19.92,*Default,NTP,0000,0000,0000,,is arbitrary
+Dialogue: 0,0:07:19.92,0:07:21.28,*Default,NTP,0000,0000,0000,,yeah i mean there's there's no
+Dialogue: 0,0:07:21.28,0:07:23.28,*Default,NTP,0000,0000,0000,,mathematics i can't do in base two
+Dialogue: 0,0:07:23.28,0:07:24.80,*Default,NTP,0000,0000,0000,,or based on so that's an arbitrary
+Dialogue: 0,0:07:24.80,0:07:26.08,*Default,NTP,0000,0000,0000,,decision based 10 is of course an
+Dialogue: 0,0:07:26.08,0:07:28.08,*Default,NTP,0000,0000,0000,,arbitrary too
+Dialogue: 0,0:07:28.08,0:07:30.00,*Default,NTP,0000,0000,0000,,well look uh simple things like
+Dialogue: 0,0:07:30.00,0:07:31.52,*Default,NTP,0000,0000,0000,,multiplying and dividing by 10 are
+Dialogue: 0,0:07:31.52,0:07:33.04,*Default,NTP,0000,0000,0000,,really easy in base 10.
+Dialogue: 0,0:07:33.04,0:07:35.68,*Default,NTP,0000,0000,0000,,um so that would be a lot faster but you
+Dialogue: 0,0:07:35.68,0:07:36.96,*Default,NTP,0000,0000,0000,,know i could say the same thing about
+Dialogue: 0,0:07:36.96,0:07:37.68,*Default,NTP,0000,0000,0000,,base two
+Dialogue: 0,0:07:37.68,0:07:39.28,*Default,NTP,0000,0000,0000,,uh multiplying and dividing by two is
+Dialogue: 0,0:07:39.28,0:07:41.12,*Default,NTP,0000,0000,0000,,really fast in base two
+Dialogue: 0,0:07:41.12,0:07:43.92,*Default,NTP,0000,0000,0000,,so i i don't know i don't know if like
+Dialogue: 0,0:07:43.92,0:07:44.32,*Default,NTP,0000,0000,0000,,would
+Dialogue: 0,0:07:44.32,0:07:46.88,*Default,NTP,0000,0000,0000,,somehow if i had a base 10 computer
+Dialogue: 0,0:07:46.88,0:07:48.72,*Default,NTP,0000,0000,0000,,would it be faster at certain things
+Dialogue: 0,0:07:48.72,0:07:50.00,*Default,NTP,0000,0000,0000,,would there be a benefit to certain
+Dialogue: 0,0:07:50.00,0:07:50.80,*Default,NTP,0000,0000,0000,,things
+Dialogue: 0,0:07:50.80,0:07:52.32,*Default,NTP,0000,0000,0000,,off the top of my head i can't think of
+Dialogue: 0,0:07:52.32,0:07:54.40,*Default,NTP,0000,0000,0000,,any can you john
+Dialogue: 0,0:07:54.40,0:07:56.08,*Default,NTP,0000,0000,0000,,yeah no i don't think that there's any
+Dialogue: 0,0:07:56.08,0:07:59.60,*Default,NTP,0000,0000,0000,,obvious advantage except that
+Dialogue: 0,0:07:59.60,0:08:01.04,*Default,NTP,0000,0000,0000,,the computer does do a fair amount of
+Dialogue: 0,0:08:01.04,0:08:02.80,*Default,NTP,0000,0000,0000,,converting like it needs to display
+Dialogue: 0,0:08:02.80,0:08:03.92,*Default,NTP,0000,0000,0000,,numbers to the users
+Dialogue: 0,0:08:03.92,0:08:05.68,*Default,NTP,0000,0000,0000,,and so at that point it needs to convert
+Dialogue: 0,0:08:05.68,0:08:07.04,*Default,NTP,0000,0000,0000,,them to base 10
+Dialogue: 0,0:08:07.04,0:08:09.36,*Default,NTP,0000,0000,0000,,but that's just such a vanishingly small
+Dialogue: 0,0:08:09.36,0:08:11.28,*Default,NTP,0000,0000,0000,,amount of the total computation that a
+Dialogue: 0,0:08:11.28,0:08:13.52,*Default,NTP,0000,0000,0000,,normal program does that it's okay
+Dialogue: 0,0:08:13.52,0:08:15.52,*Default,NTP,0000,0000,0000,,to have to do this conversion every time
+Dialogue: 0,0:08:15.52,0:08:17.28,*Default,NTP,0000,0000,0000,,you want to print out a number
+Dialogue: 0,0:08:17.28,0:08:19.04,*Default,NTP,0000,0000,0000,,and every time you want to interpret a
+Dialogue: 0,0:08:19.04,0:08:20.56,*Default,NTP,0000,0000,0000,,number so if i type in a number i type
+Dialogue: 0,0:08:20.56,0:08:21.68,*Default,NTP,0000,0000,0000,,it in in base 10
+Dialogue: 0,0:08:21.68,0:08:23.84,*Default,NTP,0000,0000,0000,,that has to be kind of then represented
+Dialogue: 0,0:08:23.84,0:08:26.88,*Default,NTP,0000,0000,0000,,as base 2 and then all the math happens
+Dialogue: 0,0:08:26.88,0:08:29.12,*Default,NTP,0000,0000,0000,,um but usually that math is just so much
+Dialogue: 0,0:08:29.12,0:08:30.08,*Default,NTP,0000,0000,0000,,more
+Dialogue: 0,0:08:30.08,0:08:32.64,*Default,NTP,0000,0000,0000,,work than either interpreting or
+Dialogue: 0,0:08:32.64,0:08:34.08,*Default,NTP,0000,0000,0000,,displaying the number that it's okay to
+Dialogue: 0,0:08:34.08,0:08:35.68,*Default,NTP,0000,0000,0000,,be switching bases
+Dialogue: 0,0:08:35.68,0:08:39.04,*Default,NTP,0000,0000,0000,,um and yeah if if you wanna
+Dialogue: 0,0:08:39.04,0:08:41.28,*Default,NTP,0000,0000,0000,,build circuits for base 10 they're just
+Dialogue: 0,0:08:41.28,0:08:42.80,*Default,NTP,0000,0000,0000,,more stuff to build
+Dialogue: 0,0:08:42.80,0:08:45.28,*Default,NTP,0000,0000,0000,,than in base two like in base two you
+Dialogue: 0,0:08:45.28,0:08:47.44,*Default,NTP,0000,0000,0000,,kind of just have to memorize that
+Dialogue: 0,0:08:47.44,0:08:49.92,*Default,NTP,0000,0000,0000,,zero plus zero is zero and zero plus one
+Dialogue: 0,0:08:49.92,0:08:51.92,*Default,NTP,0000,0000,0000,,is one and one plus one well that's the
+Dialogue: 0,0:08:51.92,0:08:54.08,*Default,NTP,0000,0000,0000,,special case where you carry uh
+Dialogue: 0,0:08:54.08,0:08:55.52,*Default,NTP,0000,0000,0000,,but you'd have to do this for every
+Dialogue: 0,0:08:55.52,0:08:57.28,*Default,NTP,0000,0000,0000,,possible combination of digits in base
+Dialogue: 0,0:08:57.28,0:08:58.56,*Default,NTP,0000,0000,0000,,ten you'd have to remember that like
+Dialogue: 0,0:08:58.56,0:08:59.04,*Default,NTP,0000,0000,0000,,three
+Dialogue: 0,0:08:59.04,0:09:01.36,*Default,NTP,0000,0000,0000,,plus four is seven and kind of build
+Dialogue: 0,0:09:01.36,0:09:02.40,*Default,NTP,0000,0000,0000,,that as a separate
+Dialogue: 0,0:09:02.40,0:09:05.52,*Default,NTP,0000,0000,0000,,pathway so um one consequence of
+Dialogue: 0,0:09:05.52,0:09:07.12,*Default,NTP,0000,0000,0000,,building a base ten computer i think
+Dialogue: 0,0:09:07.12,0:09:08.08,*Default,NTP,0000,0000,0000,,would be that
+Dialogue: 0,0:09:08.08,0:09:09.60,*Default,NTP,0000,0000,0000,,there would just be kind of more
+Dialogue: 0,0:09:09.60,0:09:11.44,*Default,NTP,0000,0000,0000,,hardware to do the same thing
+Dialogue: 0,0:09:11.44,0:09:13.60,*Default,NTP,0000,0000,0000,,and and so instead you could have more
+Dialogue: 0,0:09:13.60,0:09:15.36,*Default,NTP,0000,0000,0000,,hardware to do kind of other stuff
+Dialogue: 0,0:09:15.36,0:09:17.52,*Default,NTP,0000,0000,0000,,and that's the compromise that led
+Dialogue: 0,0:09:17.52,0:09:19.60,*Default,NTP,0000,0000,0000,,everybody to using base 2.
+Dialogue: 0,0:09:19.60,0:09:21.68,*Default,NTP,0000,0000,0000,,yeah that's a good point the rules would
+Dialogue: 0,0:09:21.68,0:09:23.20,*Default,NTP,0000,0000,0000,,get a lot more complicated one of the
+Dialogue: 0,0:09:23.20,0:09:25.04,*Default,NTP,0000,0000,0000,,nice things about base 2 is the core
+Dialogue: 0,0:09:25.04,0:09:25.84,*Default,NTP,0000,0000,0000,,rules
+Dialogue: 0,0:09:25.84,0:09:29.68,*Default,NTP,0000,0000,0000,,for base 2 arithmetic are trivial
+Dialogue: 0,0:09:29.68,0:09:31.20,*Default,NTP,0000,0000,0000,,whereas in base 10 they are a little bit
+Dialogue: 0,0:09:31.20,0:09:33.12,*Default,NTP,0000,0000,0000,,more involved so maybe that would end up
+Dialogue: 0,0:09:33.12,0:09:34.40,*Default,NTP,0000,0000,0000,,making the circuitry a little bit more
+Dialogue: 0,0:09:34.40,0:09:36.32,*Default,NTP,0000,0000,0000,,complicated by the way i don't know if
+Dialogue: 0,0:09:36.32,0:09:38.16,*Default,NTP,0000,0000,0000,,somebody has built a not i mean i'm sure
+Dialogue: 0,0:09:38.16,0:09:39.76,*Default,NTP,0000,0000,0000,,somebody has built a non-base two
+Dialogue: 0,0:09:39.76,0:09:40.88,*Default,NTP,0000,0000,0000,,computer
+Dialogue: 0,0:09:40.88,0:09:42.80,*Default,NTP,0000,0000,0000,,um and there's all there was there was a
+Dialogue: 0,0:09:42.80,0:09:44.24,*Default,NTP,0000,0000,0000,,time in the
+Dialogue: 0,0:09:44.24,0:09:45.84,*Default,NTP,0000,0000,0000,,i think it was like in the 90s and the
+Dialogue: 0,0:09:45.84,0:09:47.76,*Default,NTP,0000,0000,0000,,early 2000s where biological
+Dialogue: 0,0:09:47.76,0:09:49.44,*Default,NTP,0000,0000,0000,,computing was very popular people were
+Dialogue: 0,0:09:49.44,0:09:51.84,*Default,NTP,0000,0000,0000,,trying to do computing with dna
+Dialogue: 0,0:09:51.84,0:09:54.24,*Default,NTP,0000,0000,0000,,and molecules and the idea was to use
+Dialogue: 0,0:09:54.24,0:09:56.32,*Default,NTP,0000,0000,0000,,the power and the speed
+Dialogue: 0,0:09:56.32,0:10:00.72,*Default,NTP,0000,0000,0000,,of uh nature to do computation it never
+Dialogue: 0,0:10:00.72,0:10:02.08,*Default,NTP,0000,0000,0000,,there were these really influential
+Dialogue: 0,0:10:02.08,0:10:04.72,*Default,NTP,0000,0000,0000,,papers for a few years big splashy signs
+Dialogue: 0,0:10:04.72,0:10:06.16,*Default,NTP,0000,0000,0000,,and nature papers but they never
+Dialogue: 0,0:10:06.16,0:10:09.12,*Default,NTP,0000,0000,0000,,quite got anywhere today of course
+Dialogue: 0,0:10:09.12,0:10:10.24,*Default,NTP,0000,0000,0000,,quantum computing
+Dialogue: 0,0:10:10.24,0:10:12.88,*Default,NTP,0000,0000,0000,,is has been a buzz now for well actually
+Dialogue: 0,0:10:12.88,0:10:14.08,*Default,NTP,0000,0000,0000,,for quite a while
+Dialogue: 0,0:10:14.08,0:10:15.60,*Default,NTP,0000,0000,0000,,um i think there's something personally
+Dialogue: 0,0:10:15.60,0:10:16.88,*Default,NTP,0000,0000,0000,,i think there's something more real with
+Dialogue: 0,0:10:16.88,0:10:18.16,*Default,NTP,0000,0000,0000,,quantum computing
+Dialogue: 0,0:10:18.16,0:10:19.60,*Default,NTP,0000,0000,0000,,and here you're getting into a
+Dialogue: 0,0:10:19.60,0:10:22.24,*Default,NTP,0000,0000,0000,,fundamentally new representation you are
+Dialogue: 0,0:10:22.24,0:10:23.60,*Default,NTP,0000,0000,0000,,not representing with
+Dialogue: 0,0:10:23.60,0:10:25.68,*Default,NTP,0000,0000,0000,,an actual zero one it's these it's the
+Dialogue: 0,0:10:25.68,0:10:28.00,*Default,NTP,0000,0000,0000,,quantum state of a qubit
+Dialogue: 0,0:10:28.00,0:10:30.48,*Default,NTP,0000,0000,0000,,and there is some indication that things
+Dialogue: 0,0:10:30.48,0:10:31.04,*Default,NTP,0000,0000,0000,,that are
+Dialogue: 0,0:10:31.04,0:10:34.24,*Default,NTP,0000,0000,0000,,slow on a traditional computer
+Dialogue: 0,0:10:34.24,0:10:36.88,*Default,NTP,0000,0000,0000,,um could be very very fast on a quantum
+Dialogue: 0,0:10:36.88,0:10:38.08,*Default,NTP,0000,0000,0000,,computer
+Dialogue: 0,0:10:38.08,0:10:40.96,*Default,NTP,0000,0000,0000,,most interestingly is factoring large
+Dialogue: 0,0:10:40.96,0:10:42.56,*Default,NTP,0000,0000,0000,,numbers which is interesting because
+Dialogue: 0,0:10:42.56,0:10:45.52,*Default,NTP,0000,0000,0000,,that's the core of encryption so
+Dialogue: 0,0:10:45.52,0:10:46.96,*Default,NTP,0000,0000,0000,,organizations like the nsa
+Dialogue: 0,0:10:46.96,0:10:48.48,*Default,NTP,0000,0000,0000,,are very interested in this because if
+Dialogue: 0,0:10:48.48,0:10:50.16,*Default,NTP,0000,0000,0000,,you can build at scale of quantum
+Dialogue: 0,0:10:50.16,0:10:51.12,*Default,NTP,0000,0000,0000,,computing
+Dialogue: 0,0:10:51.12,0:10:53.76,*Default,NTP,0000,0000,0000,,you can break passwords um and that you
+Dialogue: 0,0:10:53.76,0:10:55.60,*Default,NTP,0000,0000,0000,,cannot do in a traditional computer so
+Dialogue: 0,0:10:55.60,0:10:56.48,*Default,NTP,0000,0000,0000,,these new
+Dialogue: 0,0:10:56.48,0:10:58.56,*Default,NTP,0000,0000,0000,,computing paradigms where you represent
+Dialogue: 0,0:10:58.56,0:11:00.00,*Default,NTP,0000,0000,0000,,information differently i've been around
+Dialogue: 0,0:11:00.00,0:11:01.76,*Default,NTP,0000,0000,0000,,for quite a while there's a whole field
+Dialogue: 0,0:11:01.76,0:11:03.36,*Default,NTP,0000,0000,0000,,of optical computing
+Dialogue: 0,0:11:03.36,0:11:05.28,*Default,NTP,0000,0000,0000,,where you represent information with
+Dialogue: 0,0:11:05.28,0:11:06.72,*Default,NTP,0000,0000,0000,,light and that light moves through
+Dialogue: 0,0:11:06.72,0:11:08.16,*Default,NTP,0000,0000,0000,,optical trains
+Dialogue: 0,0:11:08.16,0:11:10.32,*Default,NTP,0000,0000,0000,,nothing really i mean they're all sort
+Dialogue: 0,0:11:10.32,0:11:12.08,*Default,NTP,0000,0000,0000,,of interesting
+Dialogue: 0,0:11:12.08,0:11:13.60,*Default,NTP,0000,0000,0000,,and insightful but in my opinion really
+Dialogue: 0,0:11:13.60,0:11:15.36,*Default,NTP,0000,0000,0000,,it's quantum computing is the one thing
+Dialogue: 0,0:11:15.36,0:11:16.08,*Default,NTP,0000,0000,0000,,that has
+Dialogue: 0,0:11:16.08,0:11:18.80,*Default,NTP,0000,0000,0000,,has been slowly but surely trickling up
+Dialogue: 0,0:11:18.80,0:11:20.32,*Default,NTP,0000,0000,0000,,john you may know more about this
+Dialogue: 0,0:11:20.32,0:11:21.92,*Default,NTP,0000,0000,0000,,there's this canadian companies that
+Dialogue: 0,0:11:21.92,0:11:22.56,*Default,NTP,0000,0000,0000,,claims to
+Dialogue: 0,0:11:22.56,0:11:24.24,*Default,NTP,0000,0000,0000,,build the quantum computing but i i
+Dialogue: 0,0:11:24.24,0:11:26.32,*Default,NTP,0000,0000,0000,,think it's controversial and i think
+Dialogue: 0,0:11:26.32,0:11:28.08,*Default,NTP,0000,0000,0000,,many people have doubted whether it's a
+Dialogue: 0,0:11:28.08,0:11:29.52,*Default,NTP,0000,0000,0000,,true quantum computing
+Dialogue: 0,0:11:29.52,0:11:31.44,*Default,NTP,0000,0000,0000,,computer and so there's there's still
+Dialogue: 0,0:11:31.44,0:11:33.52,*Default,NTP,0000,0000,0000,,some uncertainty about the real nature
+Dialogue: 0,0:11:33.52,0:11:35.44,*Default,NTP,0000,0000,0000,,of what is feasible today with a
+Dialogue: 0,0:11:35.44,0:11:37.68,*Default,NTP,0000,0000,0000,,different paradigm
+Dialogue: 0,0:11:37.68,0:11:40.24,*Default,NTP,0000,0000,0000,,my understanding is that it was just
+Dialogue: 0,0:11:40.24,0:11:41.84,*Default,NTP,0000,0000,0000,,last year that
+Dialogue: 0,0:11:41.84,0:11:44.00,*Default,NTP,0000,0000,0000,,that someone claimed somewhat credibly
+Dialogue: 0,0:11:44.00,0:11:45.12,*Default,NTP,0000,0000,0000,,for the first time
+Dialogue: 0,0:11:45.12,0:11:46.96,*Default,NTP,0000,0000,0000,,that they had performed a computation
+Dialogue: 0,0:11:46.96,0:11:49.04,*Default,NTP,0000,0000,0000,,that otherwise wouldn't have been easy
+Dialogue: 0,0:11:49.04,0:11:50.88,*Default,NTP,0000,0000,0000,,to perform
+Dialogue: 0,0:11:50.88,0:11:52.48,*Default,NTP,0000,0000,0000,,but they got to kind of choose the
+Dialogue: 0,0:11:52.48,0:11:54.64,*Default,NTP,0000,0000,0000,,competition so instead of having this be
+Dialogue: 0,0:11:54.64,0:11:56.32,*Default,NTP,0000,0000,0000,,like something that's generally useful
+Dialogue: 0,0:11:56.32,0:11:57.28,*Default,NTP,0000,0000,0000,,at this point
+Dialogue: 0,0:11:57.28,0:11:58.88,*Default,NTP,0000,0000,0000,,it's it's still kind of in proof of
+Dialogue: 0,0:11:58.88,0:12:00.96,*Default,NTP,0000,0000,0000,,concept yeah and i thought there was
+Dialogue: 0,0:12:00.96,0:12:02.88,*Default,NTP,0000,0000,0000,,still some controversy around that or at
+Dialogue: 0,0:12:02.88,0:12:04.56,*Default,NTP,0000,0000,0000,,least i saw some controversy i don't
+Dialogue: 0,0:12:04.56,0:12:06.40,*Default,NTP,0000,0000,0000,,know if it ever got resolved but
+Dialogue: 0,0:12:06.40,0:12:08.16,*Default,NTP,0000,0000,0000,,i think there's something there and i
+Dialogue: 0,0:12:08.16,0:12:10.24,*Default,NTP,0000,0000,0000,,think you know when that breaks through
+Dialogue: 0,0:12:10.24,0:12:11.76,*Default,NTP,0000,0000,0000,,it's going to be a fundamental shift
+Dialogue: 0,0:12:11.76,0:12:13.28,*Default,NTP,0000,0000,0000,,in the way we do confrontation is my
+Dialogue: 0,0:12:13.28,0:12:14.80,*Default,NTP,0000,0000,0000,,guess
+Dialogue: 0,0:12:14.80,0:12:17.84,*Default,NTP,0000,0000,0000,,yes and i believe that the kind of uh a
+Dialogue: 0,0:12:17.84,0:12:19.68,*Default,NTP,0000,0000,0000,,national center for studying quantum
+Dialogue: 0,0:12:19.68,0:12:21.76,*Default,NTP,0000,0000,0000,,computing was just designated here at
+Dialogue: 0,0:12:21.76,0:12:22.56,*Default,NTP,0000,0000,0000,,berkeley so
+Dialogue: 0,0:12:22.56,0:12:24.08,*Default,NTP,0000,0000,0000,,uh i think that's right one of the big
+Dialogue: 0,0:12:24.08,0:12:26.24,*Default,NTP,0000,0000,0000,,we'll be hiring some new folks and uh it
+Dialogue: 0,0:12:26.24,0:12:28.00,*Default,NTP,0000,0000,0000,,all might happen right here
+Dialogue: 0,0:12:28.00,0:12:30.24,*Default,NTP,0000,0000,0000,,yeah i either by the way what's really
+Dialogue: 0,0:12:30.24,0:12:31.60,*Default,NTP,0000,0000,0000,,beautiful about quantum computing is the
+Dialogue: 0,0:12:31.60,0:12:33.28,*Default,NTP,0000,0000,0000,,combination of physics
+Dialogue: 0,0:12:33.28,0:12:35.84,*Default,NTP,0000,0000,0000,,mathematics computer science electrical
+Dialogue: 0,0:12:35.84,0:12:37.20,*Default,NTP,0000,0000,0000,,engineering this is incredible in
+Dialogue: 0,0:12:37.20,0:12:38.08,*Default,NTP,0000,0000,0000,,chemistry
+Dialogue: 0,0:12:38.08,0:12:41.04,*Default,NTP,0000,0000,0000,,incredibly complex from the physical to
+Dialogue: 0,0:12:41.04,0:12:42.00,*Default,NTP,0000,0000,0000,,the theoretical
+Dialogue: 0,0:12:42.00,0:12:43.12,*Default,NTP,0000,0000,0000,,and i think there's something really
+Dialogue: 0,0:12:43.12,0:12:45.20,*Default,NTP,0000,0000,0000,,cool there but
+Dialogue: 0,0:12:45.20,0:12:47.04,*Default,NTP,0000,0000,0000,,you know honey raised a great point
+Dialogue: 0,0:12:47.04,0:12:48.64,*Default,NTP,0000,0000,0000,,about talking about kind of different
+Dialogue: 0,0:12:48.64,0:12:50.32,*Default,NTP,0000,0000,0000,,ways of building computers
+Dialogue: 0,0:12:50.32,0:12:53.12,*Default,NTP,0000,0000,0000,,and sort of what's the history and we're
+Dialogue: 0,0:12:53.12,0:12:54.24,*Default,NTP,0000,0000,0000,,at a moment in time
+Dialogue: 0,0:12:54.24,0:12:56.64,*Default,NTP,0000,0000,0000,,where the way we build things now may be
+Dialogue: 0,0:12:56.64,0:12:58.32,*Default,NTP,0000,0000,0000,,very different from how we build things
+Dialogue: 0,0:12:58.32,0:13:00.48,*Default,NTP,0000,0000,0000,,several years from now but the pattern
+Dialogue: 0,0:13:00.48,0:13:02.56,*Default,NTP,0000,0000,0000,,that has emerged
+Dialogue: 0,0:13:02.56,0:13:04.72,*Default,NTP,0000,0000,0000,,so far in computing with quantum
+Dialogue: 0,0:13:04.72,0:13:06.48,*Default,NTP,0000,0000,0000,,computing be kind of an interesting
+Dialogue: 0,0:13:06.48,0:13:09.04,*Default,NTP,0000,0000,0000,,counter example but the pattern that's
+Dialogue: 0,0:13:09.04,0:13:10.08,*Default,NTP,0000,0000,0000,,emerged so far
+Dialogue: 0,0:13:10.08,0:13:11.92,*Default,NTP,0000,0000,0000,,is that if we can just come up with one
+Dialogue: 0,0:13:11.92,0:13:13.84,*Default,NTP,0000,0000,0000,,way of
+Dialogue: 0,0:13:13.84,0:13:16.16,*Default,NTP,0000,0000,0000,,build of building computers that's
+Dialogue: 0,0:13:16.16,0:13:18.56,*Default,NTP,0000,0000,0000,,really fast and really flexible
+Dialogue: 0,0:13:18.56,0:13:20.80,*Default,NTP,0000,0000,0000,,then we can simulate anything else that
+Dialogue: 0,0:13:20.80,0:13:21.68,*Default,NTP,0000,0000,0000,,we would want
+Dialogue: 0,0:13:21.68,0:13:24.48,*Default,NTP,0000,0000,0000,,through software and through kind of the
+Dialogue: 0,0:13:24.48,0:13:26.16,*Default,NTP,0000,0000,0000,,abstraction that you're learning about
+Dialogue: 0,0:13:26.16,0:13:29.60,*Default,NTP,0000,0000,0000,,here so um it's very common that there
+Dialogue: 0,0:13:29.60,0:13:30.48,*Default,NTP,0000,0000,0000,,will be
+Dialogue: 0,0:13:30.48,0:13:32.88,*Default,NTP,0000,0000,0000,,kind of different ways of expressing
+Dialogue: 0,0:13:32.88,0:13:34.40,*Default,NTP,0000,0000,0000,,programs
+Dialogue: 0,0:13:34.40,0:13:37.60,*Default,NTP,0000,0000,0000,,than as a bunch of bit manipulations
+Dialogue: 0,0:13:37.60,0:13:39.20,*Default,NTP,0000,0000,0000,,and yet instead of building a new piece
+Dialogue: 0,0:13:39.20,0:13:41.04,*Default,NTP,0000,0000,0000,,of hardware to achieve that
+Dialogue: 0,0:13:41.04,0:13:42.80,*Default,NTP,0000,0000,0000,,for the last several decades the answer
+Dialogue: 0,0:13:42.80,0:13:44.08,*Default,NTP,0000,0000,0000,,has always been build a piece of
+Dialogue: 0,0:13:44.08,0:13:45.04,*Default,NTP,0000,0000,0000,,software
+Dialogue: 0,0:13:45.04,0:13:47.12,*Default,NTP,0000,0000,0000,,in order to simulate a machine that
+Dialogue: 0,0:13:47.12,0:13:49.28,*Default,NTP,0000,0000,0000,,would have done that using kind of a
+Dialogue: 0,0:13:49.28,0:13:51.76,*Default,NTP,0000,0000,0000,,regular computer and actually that's
+Dialogue: 0,0:13:51.76,0:13:52.32,*Default,NTP,0000,0000,0000,,like
+Dialogue: 0,0:13:52.32,0:13:54.40,*Default,NTP,0000,0000,0000,,very close to the nature of programming
+Dialogue: 0,0:13:54.40,0:13:55.84,*Default,NTP,0000,0000,0000,,languages it's like
+Dialogue: 0,0:13:55.84,0:13:57.68,*Default,NTP,0000,0000,0000,,programming language is really a way of
+Dialogue: 0,0:13:57.68,0:13:59.28,*Default,NTP,0000,0000,0000,,expressing computation
+Dialogue: 0,0:13:59.28,0:14:00.56,*Default,NTP,0000,0000,0000,,a lot of what you see in a modern
+Dialogue: 0,0:14:00.56,0:14:02.48,*Default,NTP,0000,0000,0000,,programming language doesn't look
+Dialogue: 0,0:14:02.48,0:14:05.76,*Default,NTP,0000,0000,0000,,like uh manipulating bits very much
+Dialogue: 0,0:14:05.76,0:14:07.92,*Default,NTP,0000,0000,0000,,it kind of looks like uh you know
+Dialogue: 0,0:14:07.92,0:14:09.84,*Default,NTP,0000,0000,0000,,creating functions and calling them
+Dialogue: 0,0:14:09.84,0:14:12.72,*Default,NTP,0000,0000,0000,,and recursion and all of that you could
+Dialogue: 0,0:14:12.72,0:14:14.00,*Default,NTP,0000,0000,0000,,try to build a machine
+Dialogue: 0,0:14:14.00,0:14:15.44,*Default,NTP,0000,0000,0000,,specifically to do those things but
+Dialogue: 0,0:14:15.44,0:14:17.44,*Default,NTP,0000,0000,0000,,instead we kind of simulate that using
+Dialogue: 0,0:14:17.44,0:14:17.84,*Default,NTP,0000,0000,0000,,the
+Dialogue: 0,0:14:17.84,0:14:19.44,*Default,NTP,0000,0000,0000,,hardware that we have that happens to
+Dialogue: 0,0:14:19.44,0:14:21.36,*Default,NTP,0000,0000,0000,,run really fast
+Dialogue: 0,0:14:21.36,0:14:22.80,*Default,NTP,0000,0000,0000,,yeah that's a really good point john
+Dialogue: 0,0:14:22.80,0:14:24.40,*Default,NTP,0000,0000,0000,,that's a great point that that has not
+Dialogue: 0,0:14:24.40,0:14:26.00,*Default,NTP,0000,0000,0000,,changed and i don't see that changing
+Dialogue: 0,0:14:26.00,0:14:27.36,*Default,NTP,0000,0000,0000,,either
+Dialogue: 0,0:14:27.36,0:14:30.24,*Default,NTP,0000,0000,0000,,sure so i think this was from friday's
+Dialogue: 0,0:14:30.24,0:14:31.52,*Default,NTP,0000,0000,0000,,lecture
+Dialogue: 0,0:14:31.52,0:14:33.60,*Default,NTP,0000,0000,0000,,what's going on with the min function
+Dialogue: 0,0:14:33.60,0:14:35.68,*Default,NTP,0000,0000,0000,,and its
+Dialogue: 0,0:14:35.68,0:14:39.60,*Default,NTP,0000,0000,0000,,optional argument called key
+Dialogue: 0,0:14:39.60,0:14:42.72,*Default,NTP,0000,0000,0000,,sometimes what you want is to find the
+Dialogue: 0,0:14:42.72,0:14:43.52,*Default,NTP,0000,0000,0000,,smallest
+Dialogue: 0,0:14:43.52,0:14:48.24,*Default,NTP,0000,0000,0000,,number among a list
+Dialogue: 0,0:14:49.84,0:14:52.80,*Default,NTP,0000,0000,0000,,and min will do that for you but
+Dialogue: 0,0:14:52.80,0:14:54.08,*Default,NTP,0000,0000,0000,,sometimes what you want
+Dialogue: 0,0:14:54.08,0:14:57.20,*Default,NTP,0000,0000,0000,,is to find a particular number that's
+Dialogue: 0,0:14:57.20,0:14:58.00,*Default,NTP,0000,0000,0000,,extreme
+Dialogue: 0,0:14:58.00,0:15:00.72,*Default,NTP,0000,0000,0000,,in another way like it's not the
+Dialogue: 0,0:15:00.72,0:15:01.68,*Default,NTP,0000,0000,0000,,smallest
+Dialogue: 0,0:15:01.68,0:15:05.12,*Default,NTP,0000,0000,0000,,it's not the largest but it's the
+Dialogue: 0,0:15:05.12,0:15:08.72,*Default,NTP,0000,0000,0000,,closest to five or it's the
+Dialogue: 0,0:15:08.72,0:15:10.88,*Default,NTP,0000,0000,0000,,it's the thing that when you square it
+Dialogue: 0,0:15:10.88,0:15:12.40,*Default,NTP,0000,0000,0000,,is closest to 24.
+Dialogue: 0,0:15:12.40,0:15:14.32,*Default,NTP,0000,0000,0000,,or you know you could imagine any kind
+Dialogue: 0,0:15:14.32,0:15:16.16,*Default,NTP,0000,0000,0000,,of description
+Dialogue: 0,0:15:16.16,0:15:19.28,*Default,NTP,0000,0000,0000,,where there's like a some value
+Dialogue: 0,0:15:19.28,0:15:22.40,*Default,NTP,0000,0000,0000,,that would do this the best and
+Dialogue: 0,0:15:22.40,0:15:26.24,*Default,NTP,0000,0000,0000,,min allows you to find that element
+Dialogue: 0,0:15:26.24,0:15:28.48,*Default,NTP,0000,0000,0000,,for any possible condition and that's
+Dialogue: 0,0:15:28.48,0:15:31.12,*Default,NTP,0000,0000,0000,,the point of that key function
+Dialogue: 0,0:15:31.12,0:15:35.28,*Default,NTP,0000,0000,0000,,so the way you do it is that you
+Dialogue: 0,0:15:35.28,0:15:37.84,*Default,NTP,0000,0000,0000,,start out with your same set of values
+Dialogue: 0,0:15:37.84,0:15:38.40,*Default,NTP,0000,0000,0000,,of which
+Dialogue: 0,0:15:38.40,0:15:41.44,*Default,NTP,0000,0000,0000,,one is the one that you're looking for
+Dialogue: 0,0:15:41.44,0:15:44.72,*Default,NTP,0000,0000,0000,,and then you provide a function and this
+Dialogue: 0,0:15:44.72,0:15:46.00,*Default,NTP,0000,0000,0000,,function
+Dialogue: 0,0:15:46.00,0:15:48.48,*Default,NTP,0000,0000,0000,,is going to be called on every single
+Dialogue: 0,0:15:48.48,0:15:51.04,*Default,NTP,0000,0000,0000,,one of these values
+Dialogue: 0,0:15:51.04,0:15:54.24,*Default,NTP,0000,0000,0000,,and yeah let's use that example
+Dialogue: 0,0:15:54.24,0:15:57.28,*Default,NTP,0000,0000,0000,,of uh the square
+Dialogue: 0,0:15:57.28,0:16:00.16,*Default,NTP,0000,0000,0000,,is as close as possible to 24. i don't
+Dialogue: 0,0:16:00.16,0:16:01.84,*Default,NTP,0000,0000,0000,,know why you would want this but
+Dialogue: 0,0:16:01.84,0:16:04.00,*Default,NTP,0000,0000,0000,,maybe you would for some reason so
+Dialogue: 0,0:16:04.00,0:16:05.36,*Default,NTP,0000,0000,0000,,what's going to happen here
+Dialogue: 0,0:16:05.36,0:16:07.12,*Default,NTP,0000,0000,0000,,is that it's going to square and then
+Dialogue: 0,0:16:07.12,0:16:09.60,*Default,NTP,0000,0000,0000,,subtract 24 from each of these and then
+Dialogue: 0,0:16:09.60,0:16:11.36,*Default,NTP,0000,0000,0000,,take the absolute value in order to get
+Dialogue: 0,0:16:11.36,0:16:12.32,*Default,NTP,0000,0000,0000,,some measurement
+Dialogue: 0,0:16:12.32,0:16:15.04,*Default,NTP,0000,0000,0000,,of how close is the square of this x to
+Dialogue: 0,0:16:15.04,0:16:16.40,*Default,NTP,0000,0000,0000,,24
+Dialogue: 0,0:16:16.40,0:16:20.32,*Default,NTP,0000,0000,0000,,and it tells us 5 is among these numbers
+Dialogue: 0,0:16:20.32,0:16:22.16,*Default,NTP,0000,0000,0000,,the one that when you square it gets you
+Dialogue: 0,0:16:22.16,0:16:23.60,*Default,NTP,0000,0000,0000,,pretty close to 24.
+Dialogue: 0,0:16:23.60,0:16:25.68,*Default,NTP,0000,0000,0000,,in fact there's like an important
+Dialogue: 0,0:16:25.68,0:16:27.84,*Default,NTP,0000,0000,0000,,property about this computation that's
+Dialogue: 0,0:16:27.84,0:16:29.76,*Default,NTP,0000,0000,0000,,not shown which is that
+Dialogue: 0,0:16:29.76,0:16:33.76,*Default,NTP,0000,0000,0000,,5 squared minus 24 is 1 and there's no 1
+Dialogue: 0,0:16:33.76,0:16:36.96,*Default,NTP,0000,0000,0000,,in this output that's all hidden what is
+Dialogue: 0,0:16:36.96,0:16:37.52,*Default,NTP,0000,0000,0000,,happening
+Dialogue: 0,0:16:37.52,0:16:40.00,*Default,NTP,0000,0000,0000,,is that that 1 is computed along with
+Dialogue: 0,0:16:40.00,0:16:41.04,*Default,NTP,0000,0000,0000,,the result of
+Dialogue: 0,0:16:41.04,0:16:43.44,*Default,NTP,0000,0000,0000,,squaring 3 and subtracting 24 and
+Dialogue: 0,0:16:43.44,0:16:45.52,*Default,NTP,0000,0000,0000,,squaring 6 and subtracting 24. so it's
+Dialogue: 0,0:16:45.52,0:16:47.68,*Default,NTP,0000,0000,0000,,done it for all of them and then it has
+Dialogue: 0,0:16:47.68,0:16:48.80,*Default,NTP,0000,0000,0000,,found the one
+Dialogue: 0,0:16:48.80,0:16:51.20,*Default,NTP,0000,0000,0000,,for which the result of calling this
+Dialogue: 0,0:16:51.20,0:16:53.04,*Default,NTP,0000,0000,0000,,function is the smallest
+Dialogue: 0,0:16:53.04,0:16:56.40,*Default,NTP,0000,0000,0000,,that's why the smallest because it's min
+Dialogue: 0,0:16:56.40,0:16:58.88,*Default,NTP,0000,0000,0000,,so in this way you can use min in order
+Dialogue: 0,0:16:58.88,0:17:00.88,*Default,NTP,0000,0000,0000,,to find the kind of extreme value for
+Dialogue: 0,0:17:00.88,0:17:02.80,*Default,NTP,0000,0000,0000,,any notion of extreme that you want
+Dialogue: 0,0:17:02.80,0:17:05.04,*Default,NTP,0000,0000,0000,,but you always get one of these values
+Dialogue: 0,0:17:05.04,0:17:06.24,*Default,NTP,0000,0000,0000,,and if there's a tie
+Dialogue: 0,0:17:06.24,0:17:07.84,*Default,NTP,0000,0000,0000,,then you'll get an arbitrary one i think
+Dialogue: 0,0:17:07.84,0:17:09.12,*Default,NTP,0000,0000,0000,,you get the first one but i'm not
+Dialogue: 0,0:17:09.12,0:17:10.24,*Default,NTP,0000,0000,0000,,actually sure
+Dialogue: 0,0:17:10.24,0:17:12.08,*Default,NTP,0000,0000,0000,,so another way to think about it is take
+Dialogue: 0,0:17:12.08,0:17:14.32,*Default,NTP,0000,0000,0000,,that list
+Dialogue: 0,0:17:14.32,0:17:16.48,*Default,NTP,0000,0000,0000,,apply the transformation that you see in
+Dialogue: 0,0:17:16.48,0:17:18.48,*Default,NTP,0000,0000,0000,,the lambda expression square every value
+Dialogue: 0,0:17:18.48,0:17:20.88,*Default,NTP,0000,0000,0000,,subtract 24 and then just call min
+Dialogue: 0,0:17:20.88,0:17:23.12,*Default,NTP,0000,0000,0000,,right you could it's just a shortcut for
+Dialogue: 0,0:17:23.12,0:17:24.80,*Default,NTP,0000,0000,0000,,doing something in a clumsy in a more
+Dialogue: 0,0:17:24.80,0:17:27.12,*Default,NTP,0000,0000,0000,,clumsy way yeah
+Dialogue: 0,0:17:27.12,0:17:30.16,*Default,NTP,0000,0000,0000,,and the reason it's so useful is that
+Dialogue: 0,0:17:30.16,0:17:33.84,*Default,NTP,0000,0000,0000,,let's say you did this uh went through
+Dialogue: 0,0:17:33.84,0:17:34.24,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:17:34.24,0:17:38.00,*Default,NTP,0000,0000,0000,,computed f of x for every x in
+Dialogue: 0,0:17:38.00,0:17:42.40,*Default,NTP,0000,0000,0000,,this list you get all these numbers
+Dialogue: 0,0:17:42.40,0:17:44.32,*Default,NTP,0000,0000,0000,,but what you really want is the thing
+Dialogue: 0,0:17:44.32,0:17:46.00,*Default,NTP,0000,0000,0000,,that corresponds to this
+Dialogue: 0,0:17:46.00,0:17:49.92,*Default,NTP,0000,0000,0000,,so you really want like to remember the
+Dialogue: 0,0:17:49.92,0:17:53.20,*Default,NTP,0000,0000,0000,,x that goes with it
+Dialogue: 0,0:17:53.20,0:17:55.44,*Default,NTP,0000,0000,0000,,oh there's the smallest one so then if i
+Dialogue: 0,0:17:55.44,0:17:56.32,*Default,NTP,0000,0000,0000,,took the min
+Dialogue: 0,0:17:56.32,0:17:59.92,*Default,NTP,0000,0000,0000,,of this i'd get the pair that i want and
+Dialogue: 0,0:17:59.92,0:18:00.64,*Default,NTP,0000,0000,0000,,then i could
+Dialogue: 0,0:18:00.64,0:18:03.12,*Default,NTP,0000,0000,0000,,pluck out the value that got me there
+Dialogue: 0,0:18:03.12,0:18:05.04,*Default,NTP,0000,0000,0000,,and this would like do the same thing
+Dialogue: 0,0:18:05.04,0:18:08.00,*Default,NTP,0000,0000,0000,,but wow that's a mess so instead of
+Dialogue: 0,0:18:08.00,0:18:09.28,*Default,NTP,0000,0000,0000,,writing it this way
+Dialogue: 0,0:18:09.28,0:18:12.56,*Default,NTP,0000,0000,0000,,uh it's more common to write it that way
+Dialogue: 0,0:18:12.56,0:18:14.64,*Default,NTP,0000,0000,0000,,and there's a couple of questions in the
+Dialogue: 0,0:18:14.64,0:18:16.32,*Default,NTP,0000,0000,0000,,chat so let me go through them one at a
+Dialogue: 0,0:18:16.32,0:18:18.08,*Default,NTP,0000,0000,0000,,time does the key function always have
+Dialogue: 0,0:18:18.08,0:18:19.68,*Default,NTP,0000,0000,0000,,to be a lambda function i believe it
+Dialogue: 0,0:18:19.68,0:18:20.64,*Default,NTP,0000,0000,0000,,does
+Dialogue: 0,0:18:20.64,0:18:22.80,*Default,NTP,0000,0000,0000,,uh no any function could could do so
+Dialogue: 0,0:18:22.80,0:18:24.16,*Default,NTP,0000,0000,0000,,sorry yes it could be any
+Dialogue: 0,0:18:24.16,0:18:26.00,*Default,NTP,0000,0000,0000,,but it has to be a function sorry yes it
+Dialogue: 0,0:18:26.00,0:18:27.20,*Default,NTP,0000,0000,0000,,doesn't have to be a lambda but you can
+Dialogue: 0,0:18:27.20,0:18:27.94,*Default,NTP,0000,0000,0000,,call um
+Dialogue: 0,0:18:27.94,0:18:29.68,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:18:29.68,0:18:32.40,*Default,NTP,0000,0000,0000,,um square root of x right guys well
+Dialogue: 0,0:18:32.40,0:18:33.84,*Default,NTP,0000,0000,0000,,let's see
+Dialogue: 0,0:18:33.84,0:18:37.68,*Default,NTP,0000,0000,0000,,yeah exactly so uh
+Dialogue: 0,0:18:37.68,0:18:40.72,*Default,NTP,0000,0000,0000,,right if we wanted like what's the min
+Dialogue: 0,0:18:40.72,0:18:44.16,*Default,NTP,0000,0000,0000,,from negative 5 and 4 and
+Dialogue: 0,0:18:44.16,0:18:47.84,*Default,NTP,0000,0000,0000,,negative 7 and 8. well the min
+Dialogue: 0,0:18:47.84,0:18:49.76,*Default,NTP,0000,0000,0000,,is negative 7 unless you say oh actually
+Dialogue: 0,0:18:49.76,0:18:51.20,*Default,NTP,0000,0000,0000,,i want to take the absolute value of all
+Dialogue: 0,0:18:51.20,0:18:52.64,*Default,NTP,0000,0000,0000,,of them first and then it would
+Dialogue: 0,0:18:52.64,0:18:56.08,*Default,NTP,0000,0000,0000,,find the 4. good and also what if you
+Dialogue: 0,0:18:56.08,0:18:57.84,*Default,NTP,0000,0000,0000,,wanted the key function to take
+Dialogue: 0,0:18:57.84,0:19:01.20,*Default,NTP,0000,0000,0000,,multiple parameters that i don't think
+Dialogue: 0,0:19:01.20,0:19:01.84,*Default,NTP,0000,0000,0000,,you can do
+Dialogue: 0,0:19:01.84,0:19:03.84,*Default,NTP,0000,0000,0000,,so i think it has to operate point wise
+Dialogue: 0,0:19:03.84,0:19:05.52,*Default,NTP,0000,0000,0000,,on the element on the elements of the
+Dialogue: 0,0:19:05.52,0:19:06.40,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:19:06.40,0:19:09.44,*Default,NTP,0000,0000,0000,,that's right so if if you
+Dialogue: 0,0:19:09.44,0:19:13.28,*Default,NTP,0000,0000,0000,,had some function of two arguments
+Dialogue: 0,0:19:13.28,0:19:15.68,*Default,NTP,0000,0000,0000,,that said return the absolute difference
+Dialogue: 0,0:19:15.68,0:19:17.52,*Default,NTP,0000,0000,0000,,between x squared
+Dialogue: 0,0:19:17.52,0:19:20.88,*Default,NTP,0000,0000,0000,,and y let's say
+Dialogue: 0,0:19:21.68,0:19:24.56,*Default,NTP,0000,0000,0000,,you wouldn't be able to use that as a
+Dialogue: 0,0:19:24.56,0:19:26.80,*Default,NTP,0000,0000,0000,,key
+Dialogue: 0,0:19:26.88,0:19:29.76,*Default,NTP,0000,0000,0000,,because it takes two arguments and the
+Dialogue: 0,0:19:29.76,0:19:31.52,*Default,NTP,0000,0000,0000,,whole idea is that we're going to call
+Dialogue: 0,0:19:31.52,0:19:32.40,*Default,NTP,0000,0000,0000,,this function on
+Dialogue: 0,0:19:32.40,0:19:34.80,*Default,NTP,0000,0000,0000,,each one of these individually now you
+Dialogue: 0,0:19:34.80,0:19:36.56,*Default,NTP,0000,0000,0000,,might do something like
+Dialogue: 0,0:19:36.56,0:19:39.60,*Default,NTP,0000,0000,0000,,create a one argument function that
+Dialogue: 0,0:19:39.60,0:19:40.24,*Default,NTP,0000,0000,0000,,calls
+Dialogue: 0,0:19:40.24,0:19:43.60,*Default,NTP,0000,0000,0000,,f on x and 24 and like fill in the y
+Dialogue: 0,0:19:43.60,0:19:46.40,*Default,NTP,0000,0000,0000,,that way and then that would work but uh
+Dialogue: 0,0:19:46.40,0:19:47.12,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:19:47.12,0:19:48.64,*Default,NTP,0000,0000,0000,,you have to have a function here that's
+Dialogue: 0,0:19:48.64,0:19:51.04,*Default,NTP,0000,0000,0000,,of one argument
+Dialogue: 0,0:19:51.04,0:19:53.12,*Default,NTP,0000,0000,0000,,okay uh uh there's a question here when
+Dialogue: 0,0:19:53.12,0:19:55.04,*Default,NTP,0000,0000,0000,,you took the min of a list of lists what
+Dialogue: 0,0:19:55.04,0:19:57.60,*Default,NTP,0000,0000,0000,,determined what the minimum was
+Dialogue: 0,0:19:57.60,0:20:00.80,*Default,NTP,0000,0000,0000,,um so i think we're referring to this
+Dialogue: 0,0:20:00.80,0:20:03.68,*Default,NTP,0000,0000,0000,,line yeah so we had this thing yes and
+Dialogue: 0,0:20:03.68,0:20:05.36,*Default,NTP,0000,0000,0000,,to find the minimum you'd have to like
+Dialogue: 0,0:20:05.36,0:20:06.72,*Default,NTP,0000,0000,0000,,compare
+Dialogue: 0,0:20:06.72,0:20:11.12,*Default,NTP,0000,0000,0000,,that to that
+Dialogue: 0,0:20:12.08,0:20:14.48,*Default,NTP,0000,0000,0000,,and it's weird because this is smaller
+Dialogue: 0,0:20:14.48,0:20:15.20,*Default,NTP,0000,0000,0000,,than that
+Dialogue: 0,0:20:15.20,0:20:17.28,*Default,NTP,0000,0000,0000,,but this is smaller than that so which
+Dialogue: 0,0:20:17.28,0:20:18.56,*Default,NTP,0000,0000,0000,,one is it well this is
+Dialogue: 0,0:20:18.56,0:20:19.60,*Default,NTP,0000,0000,0000,,something that just happens to be
+Dialogue: 0,0:20:19.60,0:20:21.52,*Default,NTP,0000,0000,0000,,defined in python is that when you're
+Dialogue: 0,0:20:21.52,0:20:23.28,*Default,NTP,0000,0000,0000,,comparing two lists
+Dialogue: 0,0:20:23.28,0:20:26.40,*Default,NTP,0000,0000,0000,,you compare their first elements
+Dialogue: 0,0:20:26.40,0:20:27.68,*Default,NTP,0000,0000,0000,,and if one of them's smaller then it
+Dialogue: 0,0:20:27.68,0:20:30.08,*Default,NTP,0000,0000,0000,,uses that one
+Dialogue: 0,0:20:30.08,0:20:32.08,*Default,NTP,0000,0000,0000,,by the way i think that's ridiculous i
+Dialogue: 0,0:20:32.08,0:20:34.16,*Default,NTP,0000,0000,0000,,mean that's
+Dialogue: 0,0:20:34.16,0:20:36.24,*Default,NTP,0000,0000,0000,,i just got there's a lot of things that
+Dialogue: 0,0:20:36.24,0:20:37.84,*Default,NTP,0000,0000,0000,,the boolean operators that i've always
+Dialogue: 0,0:20:37.84,0:20:39.52,*Default,NTP,0000,0000,0000,,found slightly annoying about python but
+Dialogue: 0,0:20:39.52,0:20:41.44,*Default,NTP,0000,0000,0000,,that one always bugs me
+Dialogue: 0,0:20:41.44,0:20:46.40,*Default,NTP,0000,0000,0000,,yeah okay um
+Dialogue: 0,0:20:46.40,0:20:48.40,*Default,NTP,0000,0000,0000,,okay did we get your um i think tan
+Dialogue: 0,0:20:48.40,0:20:50.40,*Default,NTP,0000,0000,0000,,seems to have loaded yeah you go tan
+Dialogue: 0,0:20:50.40,0:20:53.92,*Default,NTP,0000,0000,0000,,yeah thank you ah uh at the end of the
+Dialogue: 0,0:20:53.92,0:20:54.32,*Default,NTP,0000,0000,0000,,min
+Dialogue: 0,0:20:54.32,0:20:56.72,*Default,NTP,0000,0000,0000,,has a square uh has square bracket one
+Dialogue: 0,0:20:56.72,0:20:59.20,*Default,NTP,0000,0000,0000,,mean the first element yes well it's the
+Dialogue: 0,0:20:59.20,0:21:01.36,*Default,NTP,0000,0000,0000,,what's in the position one so it's the
+Dialogue: 0,0:21:01.36,0:21:02.96,*Default,NTP,0000,0000,0000,,second element
+Dialogue: 0,0:21:02.96,0:21:05.84,*Default,NTP,0000,0000,0000,,yeah so in this monstrosity wait what
+Dialogue: 0,0:21:05.84,0:21:08.08,*Default,NTP,0000,0000,0000,,have i done
+Dialogue: 0,0:21:08.08,0:21:12.00,*Default,NTP,0000,0000,0000,,oh i changed f ah right oh my goodness
+Dialogue: 0,0:21:12.00,0:21:16.16,*Default,NTP,0000,0000,0000,,all right there was an old f uh
+Dialogue: 0,0:21:16.16,0:21:19.84,*Default,NTP,0000,0000,0000,,so in this monstrosity we evaluated
+Dialogue: 0,0:21:19.84,0:21:23.44,*Default,NTP,0000,0000,0000,,this expression to get a pair and like
+Dialogue: 0,0:21:23.44,0:21:25.76,*Default,NTP,0000,0000,0000,,a sensible thing would be to give this a
+Dialogue: 0,0:21:25.76,0:21:26.80,*Default,NTP,0000,0000,0000,,name and then
+Dialogue: 0,0:21:26.80,0:21:30.32,*Default,NTP,0000,0000,0000,,p1 is the 5 and p0
+Dialogue: 0,0:21:30.32,0:21:33.44,*Default,NTP,0000,0000,0000,,is the 1 and there's no p2 because it's
