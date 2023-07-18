@@ -47,9 +47,12 @@ def closer_city(lat, lon, city_a, city_b):
     'Bucharest'
     """
     "*** YOUR CODE HERE ***"
-    position1=sqrt((get_lat(city_a)-lat)**2+(get_lon(city_a)-lon)**2)
-    position2=sqrt((get_lat(city_b)-lat)**2+(get_lon(city_b)-lon)**2)
-    return get_name(city_a) if position1<position2 else get_name(city_b)
+    # position1=sqrt((get_lat(city_a)-lat)**2+(get_lon(city_a)-lon)**2)
+    # position2=sqrt((get_lat(city_b)-lat)**2+(get_lon(city_b)-lon)**2)
+    # return get_name(city_a) if position1<position2 else get_name(city_b)
+    # 官方写法 说不上孰优孰劣,他杜撰一个名字,我用恒定公式
+    new_city=make_city('arb',lat,lon)
+    return get_name(city_a) if distance(city_a,new_city)<distance(city_b,new_city) else get_name(city_b)
 
 def check_city_abstraction():
     """
@@ -307,12 +310,25 @@ def add_trees(t1, t2):
     "*** YOUR CODE HERE ***"
     # John 的写法太妙了
     label_result=label(t1)+label(t2)
-    branches_result=[add_trees(b1,b2) for b1,b2 in zip(branches(t1),branches(t2))]
-    i=len(branches_result)
+    branches_result=[add_trees(b1,b2) for b1,b2 in zip(branches(t1),branches(t2))] # zip函数产生序列为一对,若t1,t2一长一短,取短
+    # 通过branch_result长度 来截取两树剩余一树
+    i=len(branches_result) 
     branches_result+=branches(t1)[i:]
     branches_result+=branches(t2)[i:]
     return tree(label_result,branches_result)
     #另一种solution
+    # def build_result_branches(bs1,bs2):
+    #     if not bs1:
+    #         return bs2
+    #     if not bs2:
+    #         return bs1
+    #     f=add_trees(bs1[0],bs2[0])
+    #     return [f]+build_result_branches(bs1[1:],bs2[1:])
+    
+    # result_label=label(t1)+label(t2)
+    # result_branches=build_result_branches(branches(t1),branches(t2))
+    # return tree(result_label,result_branches)
+
 
 
 def build_successors_table(tokens):
