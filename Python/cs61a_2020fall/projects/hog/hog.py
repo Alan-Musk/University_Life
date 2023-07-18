@@ -268,7 +268,7 @@ def announce_highest(who, last_score=0, running_high=0):
     30 point(s)! The most yet for Player 1
     """
     assert who == 0 or who == 1, 'The who argument should indicate a player.'
-    # BEGIN PROBLEM 7
+    # BEGIN PROBLEM 7w
     # note: 通过return值来消除函数的side effect
     "*** YOUR CODE HERE ***"
     def say(score0, score1):
@@ -289,7 +289,7 @@ def announce_highest(who, last_score=0, running_high=0):
             else:
                 return announce_highest(who, score1, running_high)
     return say
-    # END PROBLEM 7
+
 
 
 #######################

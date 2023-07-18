@@ -1,0 +1,903 @@
+[Script Info]
+Title: Lecture 14. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=35&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.64,0:00:04.40,*Default,NTP,0000,0000,0000,,lecture number 14 q a here we go
+Dialogue: 0,0:00:04.40,0:00:06.40,*Default,NTP,0000,0000,0000,,man that is a hard question how do you
+Dialogue: 0,0:00:06.40,0:00:08.00,*Default,NTP,0000,0000,0000,,think abstractly
+Dialogue: 0,0:00:08.00,0:00:09.92,*Default,NTP,0000,0000,0000,,well let me i i don't know the answer
+Dialogue: 0,0:00:09.92,0:00:11.36,*Default,NTP,0000,0000,0000,,that let me give you a couple of
+Dialogue: 0,0:00:11.36,0:00:12.48,*Default,NTP,0000,0000,0000,,thoughts and then we'll see what john
+Dialogue: 0,0:00:12.48,0:00:14.64,*Default,NTP,0000,0000,0000,,thinks so first of all
+Dialogue: 0,0:00:14.64,0:00:16.48,*Default,NTP,0000,0000,0000,,i think computer science is very
+Dialogue: 0,0:00:16.48,0:00:17.84,*Default,NTP,0000,0000,0000,,different than other fields
+Dialogue: 0,0:00:17.84,0:00:20.48,*Default,NTP,0000,0000,0000,,um there's not in a lot of fields you
+Dialogue: 0,0:00:20.48,0:00:22.40,*Default,NTP,0000,0000,0000,,know memorization and pattern matching
+Dialogue: 0,0:00:22.40,0:00:23.60,*Default,NTP,0000,0000,0000,,sort of work
+Dialogue: 0,0:00:23.60,0:00:25.84,*Default,NTP,0000,0000,0000,,right you you say things like you know a
+Dialogue: 0,0:00:25.84,0:00:27.36,*Default,NTP,0000,0000,0000,,biologist you just have to memorize a
+Dialogue: 0,0:00:27.36,0:00:28.72,*Default,NTP,0000,0000,0000,,whole bunch of stuff and just tell me
+Dialogue: 0,0:00:28.72,0:00:30.48,*Default,NTP,0000,0000,0000,,what i taught you and that's that's not
+Dialogue: 0,0:00:30.48,0:00:30.88,*Default,NTP,0000,0000,0000,,really
+Dialogue: 0,0:00:30.88,0:00:32.24,*Default,NTP,0000,0000,0000,,we're in the problem-solving business
+Dialogue: 0,0:00:32.24,0:00:34.08,*Default,NTP,0000,0000,0000,,and every problem is a little bit
+Dialogue: 0,0:00:34.08,0:00:34.56,*Default,NTP,0000,0000,0000,,different
+Dialogue: 0,0:00:34.56,0:00:37.60,*Default,NTP,0000,0000,0000,,yes you learn these basic skills that
+Dialogue: 0,0:00:37.60,0:00:38.72,*Default,NTP,0000,0000,0000,,come to bear so
+Dialogue: 0,0:00:38.72,0:00:41.76,*Default,NTP,0000,0000,0000,,break out of the habit of trying to
+Dialogue: 0,0:00:41.76,0:00:43.84,*Default,NTP,0000,0000,0000,,sort of remember a solution to your
+Dialogue: 0,0:00:43.84,0:00:45.84,*Default,NTP,0000,0000,0000,,problem right that that's not really
+Dialogue: 0,0:00:45.84,0:00:47.04,*Default,NTP,0000,0000,0000,,going to work
+Dialogue: 0,0:00:47.04,0:00:50.00,*Default,NTP,0000,0000,0000,,um it's really about taking the parts of
+Dialogue: 0,0:00:50.00,0:00:51.44,*Default,NTP,0000,0000,0000,,the solution
+Dialogue: 0,0:00:51.44,0:00:55.28,*Default,NTP,0000,0000,0000,,and putting them together in a distinct
+Dialogue: 0,0:00:55.28,0:00:58.08,*Default,NTP,0000,0000,0000,,and novel way so it's more of the if you
+Dialogue: 0,0:00:58.08,0:01:01.44,*Default,NTP,0000,0000,0000,,will the the the the raw material
+Dialogue: 0,0:01:01.44,0:01:02.64,*Default,NTP,0000,0000,0000,,and then you're gonna sort of mix it all
+Dialogue: 0,0:01:02.64,0:01:05.36,*Default,NTP,0000,0000,0000,,together in new ways so so so break free
+Dialogue: 0,0:01:05.36,0:01:06.32,*Default,NTP,0000,0000,0000,,of the you know oh
+Dialogue: 0,0:01:06.32,0:01:07.84,*Default,NTP,0000,0000,0000,,i've seen this before i've seen this
+Dialogue: 0,0:01:07.84,0:01:09.92,*Default,NTP,0000,0000,0000,,before that's number one
+Dialogue: 0,0:01:09.92,0:01:12.24,*Default,NTP,0000,0000,0000,,number two for me and everybody's a
+Dialogue: 0,0:01:12.24,0:01:13.68,*Default,NTP,0000,0000,0000,,little bit different on this i don't
+Dialogue: 0,0:01:13.68,0:01:15.36,*Default,NTP,0000,0000,0000,,like to think in front of the computer
+Dialogue: 0,0:01:15.36,0:01:16.64,*Default,NTP,0000,0000,0000,,like when i'm thinking about problem
+Dialogue: 0,0:01:16.64,0:01:18.16,*Default,NTP,0000,0000,0000,,solving i need a piece of paper and
+Dialogue: 0,0:01:18.16,0:01:20.32,*Default,NTP,0000,0000,0000,,pencil or i need to go for a walk
+Dialogue: 0,0:01:20.32,0:01:22.00,*Default,NTP,0000,0000,0000,,and just get away from the computer
+Dialogue: 0,0:01:22.00,0:01:24.16,*Default,NTP,0000,0000,0000,,because once you start coding you get
+Dialogue: 0,0:01:24.16,0:01:25.76,*Default,NTP,0000,0000,0000,,really bogged down in the
+Dialogue: 0,0:01:25.76,0:01:27.04,*Default,NTP,0000,0000,0000,,you know all the little nitty-gritty
+Dialogue: 0,0:01:27.04,0:01:28.80,*Default,NTP,0000,0000,0000,,things you got to make sure that
+Dialogue: 0,0:01:28.80,0:01:31.04,*Default,NTP,0000,0000,0000,,the solution to the problem is clear in
+Dialogue: 0,0:01:31.04,0:01:32.32,*Default,NTP,0000,0000,0000,,your head
+Dialogue: 0,0:01:32.32,0:01:34.64,*Default,NTP,0000,0000,0000,,and the implementation is separate in
+Dialogue: 0,0:01:34.64,0:01:36.32,*Default,NTP,0000,0000,0000,,some ways for me in fact it's very
+Dialogue: 0,0:01:36.32,0:01:37.44,*Default,NTP,0000,0000,0000,,different you know because i can think
+Dialogue: 0,0:01:37.44,0:01:38.88,*Default,NTP,0000,0000,0000,,of all kinds of solutions that would
+Dialogue: 0,0:01:38.88,0:01:39.44,*Default,NTP,0000,0000,0000,,take me
+Dialogue: 0,0:01:39.44,0:01:42.64,*Default,NTP,0000,0000,0000,,days months to implement so get clear in
+Dialogue: 0,0:01:42.64,0:01:43.44,*Default,NTP,0000,0000,0000,,your head
+Dialogue: 0,0:01:43.44,0:01:45.12,*Default,NTP,0000,0000,0000,,what the problem is and don't worry too
+Dialogue: 0,0:01:45.12,0:01:47.60,*Default,NTP,0000,0000,0000,,much about the underlying implementation
+Dialogue: 0,0:01:47.60,0:01:49.84,*Default,NTP,0000,0000,0000,,um and then the last thing i'll say is
+Dialogue: 0,0:01:49.84,0:01:51.60,*Default,NTP,0000,0000,0000,,it's just practice
+Dialogue: 0,0:01:51.60,0:01:53.04,*Default,NTP,0000,0000,0000,,it's just you just you know the more
+Dialogue: 0,0:01:53.04,0:01:54.48,*Default,NTP,0000,0000,0000,,problems you solve the better you get at
+Dialogue: 0,0:01:54.48,0:01:56.24,*Default,NTP,0000,0000,0000,,it so this is your first class
+Dialogue: 0,0:01:56.24,0:01:57.76,*Default,NTP,0000,0000,0000,,in fact it's only week five of your
+Dialogue: 0,0:01:57.76,0:01:59.92,*Default,NTP,0000,0000,0000,,first class in your first four years and
+Dialogue: 0,0:01:59.92,0:02:01.84,*Default,NTP,0000,0000,0000,,i mean nobody expects you to like out of
+Dialogue: 0,0:02:01.84,0:02:03.44,*Default,NTP,0000,0000,0000,,the gate you know be
+Dialogue: 0,0:02:03.44,0:02:05.60,*Default,NTP,0000,0000,0000,,um solving these problems off the top of
+Dialogue: 0,0:02:05.60,0:02:06.96,*Default,NTP,0000,0000,0000,,your head so it's just it's sort of a
+Dialogue: 0,0:02:06.96,0:02:09.12,*Default,NTP,0000,0000,0000,,slow process it'll take time
+Dialogue: 0,0:02:09.12,0:02:10.32,*Default,NTP,0000,0000,0000,,next year you'll be better at it the
+Dialogue: 0,0:02:10.32,0:02:11.76,*Default,NTP,0000,0000,0000,,year after that you'll be better at it
+Dialogue: 0,0:02:11.76,0:02:12.96,*Default,NTP,0000,0000,0000,,and you'll keep getting better at it
+Dialogue: 0,0:02:12.96,0:02:14.40,*Default,NTP,0000,0000,0000,,because you'll keep solving problems and
+Dialogue: 0,0:02:14.40,0:02:15.68,*Default,NTP,0000,0000,0000,,the problems will get bigger and bigger
+Dialogue: 0,0:02:15.68,0:02:18.08,*Default,NTP,0000,0000,0000,,so be patient
+Dialogue: 0,0:02:18.08,0:02:19.92,*Default,NTP,0000,0000,0000,,yeah i think that's great advice
+Dialogue: 0,0:02:19.92,0:02:22.08,*Default,NTP,0000,0000,0000,,actually what hani said
+Dialogue: 0,0:02:22.08,0:02:23.76,*Default,NTP,0000,0000,0000,,reminds me that there's something really
+Dialogue: 0,0:02:23.76,0:02:26.32,*Default,NTP,0000,0000,0000,,different about an online version of 61a
+Dialogue: 0,0:02:26.32,0:02:28.96,*Default,NTP,0000,0000,0000,,from the on-campus version which is
+Dialogue: 0,0:02:28.96,0:02:32.32,*Default,NTP,0000,0000,0000,,how people approach discussion
+Dialogue: 0,0:02:32.32,0:02:34.48,*Default,NTP,0000,0000,0000,,where we used to print out the
+Dialogue: 0,0:02:34.48,0:02:36.08,*Default,NTP,0000,0000,0000,,discussion worksheets and
+Dialogue: 0,0:02:36.08,0:02:37.84,*Default,NTP,0000,0000,0000,,everyone would put away their laptops
+Dialogue: 0,0:02:37.84,0:02:39.68,*Default,NTP,0000,0000,0000,,and pull out a pen
+Dialogue: 0,0:02:39.68,0:02:42.72,*Default,NTP,0000,0000,0000,,and kind of start writing down first
+Dialogue: 0,0:02:42.72,0:02:43.76,*Default,NTP,0000,0000,0000,,diagrams
+Dialogue: 0,0:02:43.76,0:02:45.20,*Default,NTP,0000,0000,0000,,and then a description of what they're
+Dialogue: 0,0:02:45.20,0:02:47.68,*Default,NTP,0000,0000,0000,,trying to achieve and eventually code
+Dialogue: 0,0:02:47.68,0:02:49.52,*Default,NTP,0000,0000,0000,,but code is just one language to
+Dialogue: 0,0:02:49.52,0:02:50.72,*Default,NTP,0000,0000,0000,,describe
+Dialogue: 0,0:02:50.72,0:02:53.44,*Default,NTP,0000,0000,0000,,the process that you're trying to to
+Dialogue: 0,0:02:53.44,0:02:54.08,*Default,NTP,0000,0000,0000,,capture
+Dialogue: 0,0:02:54.08,0:02:55.92,*Default,NTP,0000,0000,0000,,right in a recursion problem or anything
+Dialogue: 0,0:02:55.92,0:02:57.36,*Default,NTP,0000,0000,0000,,else
+Dialogue: 0,0:02:57.36,0:02:59.36,*Default,NTP,0000,0000,0000,,you could also describe it in english
+Dialogue: 0,0:02:59.36,0:03:01.12,*Default,NTP,0000,0000,0000,,you could try to describe it in figures
+Dialogue: 0,0:03:01.12,0:03:02.16,*Default,NTP,0000,0000,0000,,or diagrams
+Dialogue: 0,0:03:02.16,0:03:03.92,*Default,NTP,0000,0000,0000,,and all of these are helpful because
+Dialogue: 0,0:03:03.92,0:03:06.48,*Default,NTP,0000,0000,0000,,that's uh how people really think right
+Dialogue: 0,0:03:06.48,0:03:09.52,*Default,NTP,0000,0000,0000,,is that they um
+Dialogue: 0,0:03:09.52,0:03:12.08,*Default,NTP,0000,0000,0000,,you know nobody like thinks in code we
+Dialogue: 0,0:03:12.08,0:03:13.12,*Default,NTP,0000,0000,0000,,we think in
+Dialogue: 0,0:03:13.12,0:03:16.80,*Default,NTP,0000,0000,0000,,um you know physical metaphors and uh we
+Dialogue: 0,0:03:16.80,0:03:18.00,*Default,NTP,0000,0000,0000,,rely on language
+Dialogue: 0,0:03:18.00,0:03:19.36,*Default,NTP,0000,0000,0000,,that we've been learning since we were
+Dialogue: 0,0:03:19.36,0:03:21.76,*Default,NTP,0000,0000,0000,,babies and stuff like that so
+Dialogue: 0,0:03:21.76,0:03:24.08,*Default,NTP,0000,0000,0000,,um yeah so pulling out a piece of paper
+Dialogue: 0,0:03:24.08,0:03:25.36,*Default,NTP,0000,0000,0000,,isn't as common
+Dialogue: 0,0:03:25.36,0:03:27.84,*Default,NTP,0000,0000,0000,,i think now but it's still a good idea
+Dialogue: 0,0:03:27.84,0:03:29.92,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:03:29.92,0:03:31.52,*Default,NTP,0000,0000,0000,,going back to the original question of
+Dialogue: 0,0:03:31.52,0:03:34.56,*Default,NTP,0000,0000,0000,,like how do you think abstractly it's
+Dialogue: 0,0:03:34.56,0:03:38.08,*Default,NTP,0000,0000,0000,,um that's very broad but there is a
+Dialogue: 0,0:03:38.08,0:03:40.40,*Default,NTP,0000,0000,0000,,more specific skill relevant to this
+Dialogue: 0,0:03:40.40,0:03:41.84,*Default,NTP,0000,0000,0000,,class and all the computer science
+Dialogue: 0,0:03:41.84,0:03:44.00,*Default,NTP,0000,0000,0000,,classes you might take later
+Dialogue: 0,0:03:44.00,0:03:47.28,*Default,NTP,0000,0000,0000,,which is to accurately
+Dialogue: 0,0:03:47.28,0:03:49.60,*Default,NTP,0000,0000,0000,,describe the things you have to work
+Dialogue: 0,0:03:49.60,0:03:50.64,*Default,NTP,0000,0000,0000,,with
+Dialogue: 0,0:03:50.64,0:03:52.64,*Default,NTP,0000,0000,0000,,and then a lot of the problem solving
+Dialogue: 0,0:03:52.64,0:03:54.40,*Default,NTP,0000,0000,0000,,that happens in computer science is how
+Dialogue: 0,0:03:54.40,0:03:55.68,*Default,NTP,0000,0000,0000,,do i get some new things
+Dialogue: 0,0:03:55.68,0:03:58.56,*Default,NTP,0000,0000,0000,,done with some pieces that i already
+Dialogue: 0,0:03:58.56,0:04:00.00,*Default,NTP,0000,0000,0000,,have available
+Dialogue: 0,0:04:00.00,0:04:01.76,*Default,NTP,0000,0000,0000,,and the weird thing is that unlike
+Dialogue: 0,0:04:01.76,0:04:03.60,*Default,NTP,0000,0000,0000,,carpentry where like your set of tools
+Dialogue: 0,0:04:03.60,0:04:05.60,*Default,NTP,0000,0000,0000,,is basically always the same
+Dialogue: 0,0:04:05.60,0:04:08.40,*Default,NTP,0000,0000,0000,,in computer science your set of tools is
+Dialogue: 0,0:04:08.40,0:04:09.60,*Default,NTP,0000,0000,0000,,always different you have like a
+Dialogue: 0,0:04:09.60,0:04:11.28,*Default,NTP,0000,0000,0000,,different set of functions that you can
+Dialogue: 0,0:04:11.28,0:04:12.80,*Default,NTP,0000,0000,0000,,call
+Dialogue: 0,0:04:12.80,0:04:14.08,*Default,NTP,0000,0000,0000,,in recursion you're kind of like
+Dialogue: 0,0:04:14.08,0:04:16.24,*Default,NTP,0000,0000,0000,,building the tool as you're using it
+Dialogue: 0,0:04:16.24,0:04:19.60,*Default,NTP,0000,0000,0000,,which is a weird thing but knowing
+Dialogue: 0,0:04:19.60,0:04:23.28,*Default,NTP,0000,0000,0000,,those things that you can do is
+Dialogue: 0,0:04:23.28,0:04:24.96,*Default,NTP,0000,0000,0000,,really the first step to trying to do
+Dialogue: 0,0:04:24.96,0:04:26.48,*Default,NTP,0000,0000,0000,,anything new with them and so
+Dialogue: 0,0:04:26.48,0:04:28.32,*Default,NTP,0000,0000,0000,,every function really just has three
+Dialogue: 0,0:04:28.32,0:04:29.68,*Default,NTP,0000,0000,0000,,things that you need to know about it
+Dialogue: 0,0:04:29.68,0:04:31.76,*Default,NTP,0000,0000,0000,,it's domain so like what kinds of things
+Dialogue: 0,0:04:31.76,0:04:33.12,*Default,NTP,0000,0000,0000,,can you call it on
+Dialogue: 0,0:04:33.12,0:04:35.12,*Default,NTP,0000,0000,0000,,do you call it on trees do you call it
+Dialogue: 0,0:04:35.12,0:04:37.12,*Default,NTP,0000,0000,0000,,on numbers do you call it on positive
+Dialogue: 0,0:04:37.12,0:04:38.88,*Default,NTP,0000,0000,0000,,numbers do you call it on
+Dialogue: 0,0:04:38.88,0:04:42.08,*Default,NTP,0000,0000,0000,,lists of numbers whatever its range like
+Dialogue: 0,0:04:42.08,0:04:43.36,*Default,NTP,0000,0000,0000,,what kind of thing
+Dialogue: 0,0:04:43.36,0:04:45.92,*Default,NTP,0000,0000,0000,,will it return and then its behavior and
+Dialogue: 0,0:04:45.92,0:04:46.72,*Default,NTP,0000,0000,0000,,its behavior
+Dialogue: 0,0:04:46.72,0:04:48.88,*Default,NTP,0000,0000,0000,,is a concise description of what it does
+Dialogue: 0,0:04:48.88,0:04:50.24,*Default,NTP,0000,0000,0000,,what's the relationship between the
+Dialogue: 0,0:04:50.24,0:04:51.84,*Default,NTP,0000,0000,0000,,input and the output
+Dialogue: 0,0:04:51.84,0:04:54.32,*Default,NTP,0000,0000,0000,,and if you can think of a function in
+Dialogue: 0,0:04:54.32,0:04:56.32,*Default,NTP,0000,0000,0000,,terms of those three things then it's
+Dialogue: 0,0:04:56.32,0:04:58.24,*Default,NTP,0000,0000,0000,,much easier to use
+Dialogue: 0,0:04:58.24,0:05:00.72,*Default,NTP,0000,0000,0000,,because you can check and see like oh
+Dialogue: 0,0:05:00.72,0:05:02.24,*Default,NTP,0000,0000,0000,,can i call this function well
+Dialogue: 0,0:05:02.24,0:05:04.56,*Default,NTP,0000,0000,0000,,if it's a function that takes trees is
+Dialogue: 0,0:05:04.56,0:05:05.44,*Default,NTP,0000,0000,0000,,it arguments
+Dialogue: 0,0:05:05.44,0:05:07.12,*Default,NTP,0000,0000,0000,,and i don't have any trees then i can't
+Dialogue: 0,0:05:07.12,0:05:09.20,*Default,NTP,0000,0000,0000,,call it and when i do call it i better
+Dialogue: 0,0:05:09.20,0:05:10.00,*Default,NTP,0000,0000,0000,,call it on a tree
+Dialogue: 0,0:05:10.00,0:05:11.68,*Default,NTP,0000,0000,0000,,not the trees label or the trees
+Dialogue: 0,0:05:11.68,0:05:13.60,*Default,NTP,0000,0000,0000,,branches or something like that
+Dialogue: 0,0:05:13.60,0:05:15.84,*Default,NTP,0000,0000,0000,,and uh after i call it what do i have
+Dialogue: 0,0:05:15.84,0:05:17.36,*Default,NTP,0000,0000,0000,,left well that's the range
+Dialogue: 0,0:05:17.36,0:05:19.76,*Default,NTP,0000,0000,0000,,and um and exactly what is this new
+Dialogue: 0,0:05:19.76,0:05:21.84,*Default,NTP,0000,0000,0000,,thing oh it's a tree that's bigger or
+Dialogue: 0,0:05:21.84,0:05:22.32,*Default,NTP,0000,0000,0000,,whatever
+Dialogue: 0,0:05:22.32,0:05:25.52,*Default,NTP,0000,0000,0000,,the function does so um yeah thinking in
+Dialogue: 0,0:05:25.52,0:05:27.44,*Default,NTP,0000,0000,0000,,terms of those three elements can help
+Dialogue: 0,0:05:27.44,0:05:28.00,*Default,NTP,0000,0000,0000,,you
+Dialogue: 0,0:05:28.00,0:05:29.52,*Default,NTP,0000,0000,0000,,get to know the functions that you have
+Dialogue: 0,0:05:29.52,0:05:31.28,*Default,NTP,0000,0000,0000,,to work with and then you can
+Dialogue: 0,0:05:31.28,0:05:33.12,*Default,NTP,0000,0000,0000,,reason about like oh exactly how do i
+Dialogue: 0,0:05:33.12,0:05:35.28,*Default,NTP,0000,0000,0000,,want to put these pieces together
+Dialogue: 0,0:05:35.28,0:05:36.80,*Default,NTP,0000,0000,0000,,i'll add one more piece to that i like
+Dialogue: 0,0:05:36.80,0:05:39.52,*Default,NTP,0000,0000,0000,,that description a lot which is that
+Dialogue: 0,0:05:39.52,0:05:42.08,*Default,NTP,0000,0000,0000,,problem solving and coding is not linear
+Dialogue: 0,0:05:42.08,0:05:42.96,*Default,NTP,0000,0000,0000,,you don't just
+Dialogue: 0,0:05:42.96,0:05:45.76,*Default,NTP,0000,0000,0000,,you know start here and end up here and
+Dialogue: 0,0:05:45.76,0:05:47.28,*Default,NTP,0000,0000,0000,,you just take equal steps
+Dialogue: 0,0:05:47.28,0:05:49.44,*Default,NTP,0000,0000,0000,,it's a very meandering process you know
+Dialogue: 0,0:05:49.44,0:05:50.56,*Default,NTP,0000,0000,0000,,often what happens is
+Dialogue: 0,0:05:50.56,0:05:52.16,*Default,NTP,0000,0000,0000,,you go down the shore and you're like oh
+Dialogue: 0,0:05:52.16,0:05:53.68,*Default,NTP,0000,0000,0000,,scrap i screwed up this data structure's
+Dialogue: 0,0:05:53.68,0:05:55.44,*Default,NTP,0000,0000,0000,,not right the subtraction barrier is not
+Dialogue: 0,0:05:55.44,0:05:55.92,*Default,NTP,0000,0000,0000,,right
+Dialogue: 0,0:05:55.92,0:05:57.60,*Default,NTP,0000,0000,0000,,i need to pull back a little bit and try
+Dialogue: 0,0:05:57.60,0:05:59.44,*Default,NTP,0000,0000,0000,,so it's a very sort of
+Dialogue: 0,0:05:59.44,0:06:01.68,*Default,NTP,0000,0000,0000,,iterative process you know you sort of
+Dialogue: 0,0:06:01.68,0:06:03.12,*Default,NTP,0000,0000,0000,,build a little bit you realize
+Dialogue: 0,0:06:03.12,0:06:04.88,*Default,NTP,0000,0000,0000,,ah you know we didn't really think
+Dialogue: 0,0:06:04.88,0:06:06.48,*Default,NTP,0000,0000,0000,,through this issue over here
+Dialogue: 0,0:06:06.48,0:06:08.32,*Default,NTP,0000,0000,0000,,let's back up a little bit fix this
+Dialogue: 0,0:06:08.32,0:06:10.16,*Default,NTP,0000,0000,0000,,little thing go forward and let it build
+Dialogue: 0,0:06:10.16,0:06:10.64,*Default,NTP,0000,0000,0000,,so it's
+Dialogue: 0,0:06:10.64,0:06:12.16,*Default,NTP,0000,0000,0000,,nobody expect you to start here and end
+Dialogue: 0,0:06:12.16,0:06:13.76,*Default,NTP,0000,0000,0000,,up here or just take a straight straight
+Dialogue: 0,0:06:13.76,0:06:16.00,*Default,NTP,0000,0000,0000,,shot so don't worry if there is this
+Dialogue: 0,0:06:16.00,0:06:17.44,*Default,NTP,0000,0000,0000,,sort of back and forth deleting code
+Dialogue: 0,0:06:17.44,0:06:18.56,*Default,NTP,0000,0000,0000,,it's like writing i mean think about
+Dialogue: 0,0:06:18.56,0:06:20.56,*Default,NTP,0000,0000,0000,,writing a five-page essay
+Dialogue: 0,0:06:20.56,0:06:22.08,*Default,NTP,0000,0000,0000,,you don't just start at the beginning at
+Dialogue: 0,0:06:22.08,0:06:23.68,*Default,NTP,0000,0000,0000,,least i don't and in writing get to the
+Dialogue: 0,0:06:23.68,0:06:24.40,*Default,NTP,0000,0000,0000,,end and be like
+Dialogue: 0,0:06:24.40,0:06:27.20,*Default,NTP,0000,0000,0000,,done right i mean let's see what do the
+Dialogue: 0,0:06:27.20,0:06:28.80,*Default,NTP,0000,0000,0000,,editors say the best writers are the
+Dialogue: 0,0:06:28.80,0:06:30.40,*Default,NTP,0000,0000,0000,,ones who know how to delete
+Dialogue: 0,0:06:30.40,0:06:33.36,*Default,NTP,0000,0000,0000,,um right so i think it's a very sort of
+Dialogue: 0,0:06:33.36,0:06:33.96,*Default,NTP,0000,0000,0000,,iterative
+Dialogue: 0,0:06:33.96,0:06:35.12,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:06:35.12,0:06:36.56,*Default,NTP,0000,0000,0000,,fits and burst type of thing so don't
+Dialogue: 0,0:06:36.56,0:06:38.24,*Default,NTP,0000,0000,0000,,get discouraged if you find yourself
+Dialogue: 0,0:06:38.24,0:06:40.00,*Default,NTP,0000,0000,0000,,doing that
+Dialogue: 0,0:06:40.00,0:06:41.84,*Default,NTP,0000,0000,0000,,and actually this relates back to the
+Dialogue: 0,0:06:41.84,0:06:43.04,*Default,NTP,0000,0000,0000,,question in the chat
+Dialogue: 0,0:06:43.04,0:06:44.96,*Default,NTP,0000,0000,0000,,before we started recording which is
+Dialogue: 0,0:06:44.96,0:06:47.04,*Default,NTP,0000,0000,0000,,like how often do you correct
+Dialogue: 0,0:06:47.04,0:06:50.96,*Default,NTP,0000,0000,0000,,uh old code and i find one of the best
+Dialogue: 0,0:06:50.96,0:06:51.52,*Default,NTP,0000,0000,0000,,ways
+Dialogue: 0,0:06:51.52,0:06:53.76,*Default,NTP,0000,0000,0000,,to debug something is actually just to
+Dialogue: 0,0:06:53.76,0:06:56.00,*Default,NTP,0000,0000,0000,,rewrite it even if it's my own work
+Dialogue: 0,0:06:56.00,0:06:57.20,*Default,NTP,0000,0000,0000,,to think like oh is there a different
+Dialogue: 0,0:06:57.20,0:06:58.80,*Default,NTP,0000,0000,0000,,way i could have expressed this and if
+Dialogue: 0,0:06:58.80,0:06:59.20,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:06:59.20,0:07:01.28,*Default,NTP,0000,0000,0000,,what would it look like in that case and
+Dialogue: 0,0:07:01.28,0:07:03.12,*Default,NTP,0000,0000,0000,,sometimes it turns out that you find
+Dialogue: 0,0:07:03.12,0:07:03.68,*Default,NTP,0000,0000,0000,,like oh
+Dialogue: 0,0:07:03.68,0:07:05.12,*Default,NTP,0000,0000,0000,,this piece that i thought i needed i
+Dialogue: 0,0:07:05.12,0:07:06.72,*Default,NTP,0000,0000,0000,,don't need because i'm writing it a
+Dialogue: 0,0:07:06.72,0:07:07.60,*Default,NTP,0000,0000,0000,,different way
+Dialogue: 0,0:07:07.60,0:07:09.60,*Default,NTP,0000,0000,0000,,and that can clarify the implementation
+Dialogue: 0,0:07:09.60,0:07:11.04,*Default,NTP,0000,0000,0000,,a lot so um
+Dialogue: 0,0:07:11.04,0:07:13.36,*Default,NTP,0000,0000,0000,,so the strategy of like start with
+Dialogue: 0,0:07:13.36,0:07:15.28,*Default,NTP,0000,0000,0000,,something and then continue adding to it
+Dialogue: 0,0:07:15.28,0:07:16.64,*Default,NTP,0000,0000,0000,,until it works
+Dialogue: 0,0:07:16.64,0:07:19.04,*Default,NTP,0000,0000,0000,,might succeed for some simple problems
+Dialogue: 0,0:07:19.04,0:07:21.92,*Default,NTP,0000,0000,0000,,but basically doesn't succeed well for
+Dialogue: 0,0:07:21.92,0:07:23.60,*Default,NTP,0000,0000,0000,,more and more complex problems as you
+Dialogue: 0,0:07:23.60,0:07:25.12,*Default,NTP,0000,0000,0000,,proceed through the course
+Dialogue: 0,0:07:25.12,0:07:27.36,*Default,NTP,0000,0000,0000,,and instead like getting rid of
+Dialogue: 0,0:07:27.36,0:07:29.28,*Default,NTP,0000,0000,0000,,everything except for the essence
+Dialogue: 0,0:07:29.28,0:07:32.32,*Default,NTP,0000,0000,0000,,is usually the way to go
+Dialogue: 0,0:07:32.96,0:07:34.80,*Default,NTP,0000,0000,0000,,the next question was what is an
+Dialogue: 0,0:07:34.80,0:07:36.00,*Default,NTP,0000,0000,0000,,exclusive or
+Dialogue: 0,0:07:36.00,0:07:39.20,*Default,NTP,0000,0000,0000,,gate or an xor gate and can you build up
+Dialogue: 0,0:07:39.20,0:07:41.28,*Default,NTP,0000,0000,0000,,everything from that
+Dialogue: 0,0:07:41.28,0:07:43.84,*Default,NTP,0000,0000,0000,,so i showed you one construction of a
+Dialogue: 0,0:07:43.84,0:07:45.44,*Default,NTP,0000,0000,0000,,circuit
+Dialogue: 0,0:07:45.44,0:07:47.52,*Default,NTP,0000,0000,0000,,that starts with a two table and says
+Dialogue: 0,0:07:47.52,0:07:48.64,*Default,NTP,0000,0000,0000,,build
+Dialogue: 0,0:07:48.64,0:07:50.72,*Default,NTP,0000,0000,0000,,a boolean expression for each of the
+Dialogue: 0,0:07:50.72,0:07:51.76,*Default,NTP,0000,0000,0000,,outputs using
+Dialogue: 0,0:07:51.76,0:07:55.04,*Default,NTP,0000,0000,0000,,only and and not yeah
+Dialogue: 0,0:07:55.04,0:07:57.44,*Default,NTP,0000,0000,0000,,that is not the only way you can do it
+Dialogue: 0,0:07:57.44,0:07:59.44,*Default,NTP,0000,0000,0000,,there are other ways of doing that
+Dialogue: 0,0:07:59.44,0:08:01.52,*Default,NTP,0000,0000,0000,,what i like about that one is that it's
+Dialogue: 0,0:08:01.52,0:08:04.40,*Default,NTP,0000,0000,0000,,a very sort of methodical process right
+Dialogue: 0,0:08:04.40,0:08:06.48,*Default,NTP,0000,0000,0000,,uh express the problem build the truth
+Dialogue: 0,0:08:06.48,0:08:07.68,*Default,NTP,0000,0000,0000,,table and
+Dialogue: 0,0:08:07.68,0:08:09.60,*Default,NTP,0000,0000,0000,,or and not rather and then pour
+Dialogue: 0,0:08:09.60,0:08:11.44,*Default,NTP,0000,0000,0000,,everything together draw the circuit
+Dialogue: 0,0:08:11.44,0:08:13.44,*Default,NTP,0000,0000,0000,,it is by no means the only way to do it
+Dialogue: 0,0:08:13.44,0:08:15.44,*Default,NTP,0000,0000,0000,,um it is by no means the optimal way to
+Dialogue: 0,0:08:15.44,0:08:16.00,*Default,NTP,0000,0000,0000,,do it
+Dialogue: 0,0:08:16.00,0:08:18.08,*Default,NTP,0000,0000,0000,,right so an x or is let's see if i can
+Dialogue: 0,0:08:18.08,0:08:20.00,*Default,NTP,0000,0000,0000,,get this right it's um
+Dialogue: 0,0:08:20.00,0:08:23.12,*Default,NTP,0000,0000,0000,,true if one of the one or the other of
+Dialogue: 0,0:08:23.12,0:08:24.00,*Default,NTP,0000,0000,0000,,the
+Dialogue: 0,0:08:24.00,0:08:26.32,*Default,NTP,0000,0000,0000,,inputs are are true but not if both of
+Dialogue: 0,0:08:26.32,0:08:27.76,*Default,NTP,0000,0000,0000,,them are true
+Dialogue: 0,0:08:27.76,0:08:29.68,*Default,NTP,0000,0000,0000,,right so think of the truth table 0 0
+Dialogue: 0,0:08:29.68,0:08:31.04,*Default,NTP,0000,0000,0000,,would be false did i get that right john
+Dialogue: 0,0:08:31.04,0:08:32.00,*Default,NTP,0000,0000,0000,,xor yes
+Dialogue: 0,0:08:32.00,0:08:35.60,*Default,NTP,0000,0000,0000,,yeah 1 1 is false and then 1 0 is true 0
+Dialogue: 0,0:08:35.60,0:08:37.84,*Default,NTP,0000,0000,0000,,1 is true yeah so which is another
+Dialogue: 0,0:08:37.84,0:08:39.12,*Default,NTP,0000,0000,0000,,boolean out it's just another
+Dialogue: 0,0:08:39.12,0:08:40.72,*Default,NTP,0000,0000,0000,,boolean operator and you can build
+Dialogue: 0,0:08:40.72,0:08:42.40,*Default,NTP,0000,0000,0000,,expressions like that it's just that the
+Dialogue: 0,0:08:42.40,0:08:44.32,*Default,NTP,0000,0000,0000,,process that i described is a little bit
+Dialogue: 0,0:08:44.32,0:08:45.28,*Default,NTP,0000,0000,0000,,different
+Dialogue: 0,0:08:45.28,0:08:48.56,*Default,NTP,0000,0000,0000,,um i off the top of my head i
+Dialogue: 0,0:08:48.56,0:08:50.96,*Default,NTP,0000,0000,0000,,don't know how to build an xor out of
+Dialogue: 0,0:08:50.96,0:08:53.28,*Default,NTP,0000,0000,0000,,transistors but i'm sure you can
+Dialogue: 0,0:08:53.28,0:08:55.68,*Default,NTP,0000,0000,0000,,um i think it's probably two transistors
+Dialogue: 0,0:08:55.68,0:08:56.80,*Default,NTP,0000,0000,0000,,in a
+Dialogue: 0,0:08:56.80,0:08:59.28,*Default,NTP,0000,0000,0000,,resistor or something like that but i'd
+Dialogue: 0,0:08:59.28,0:09:00.80,*Default,NTP,0000,0000,0000,,have to sort of sketch it out to see it
+Dialogue: 0,0:09:00.80,0:09:02.08,*Default,NTP,0000,0000,0000,,but yes you can you can
+Dialogue: 0,0:09:02.08,0:09:04.72,*Default,NTP,0000,0000,0000,,you can physically implement an xor um
+Dialogue: 0,0:09:04.72,0:09:06.32,*Default,NTP,0000,0000,0000,,and there are other types of operators
+Dialogue: 0,0:09:06.32,0:09:08.40,*Default,NTP,0000,0000,0000,,too that are beyond and or not those are
+Dialogue: 0,0:09:08.40,0:09:09.60,*Default,NTP,0000,0000,0000,,sort of the building blocks and then
+Dialogue: 0,0:09:09.60,0:09:10.32,*Default,NTP,0000,0000,0000,,there are these
+Dialogue: 0,0:09:10.32,0:09:12.00,*Default,NTP,0000,0000,0000,,things that go off to the side but
+Dialogue: 0,0:09:12.00,0:09:13.76,*Default,NTP,0000,0000,0000,,perfectly fine by the way and i'm sure
+Dialogue: 0,0:09:13.76,0:09:16.24,*Default,NTP,0000,0000,0000,,and absolutely there are in this
+Dialogue: 0,0:09:16.24,0:09:18.24,*Default,NTP,0000,0000,0000,,computer right here there are xor gates
+Dialogue: 0,0:09:18.24,0:09:20.24,*Default,NTP,0000,0000,0000,,those are very useful um i just
+Dialogue: 0,0:09:20.24,0:09:22.08,*Default,NTP,0000,0000,0000,,described one particularly simple
+Dialogue: 0,0:09:22.08,0:09:24.72,*Default,NTP,0000,0000,0000,,way to design circuits because it led to
+Dialogue: 0,0:09:24.72,0:09:27.12,*Default,NTP,0000,0000,0000,,a very clean formulation without having
+Dialogue: 0,0:09:27.12,0:09:30.16,*Default,NTP,0000,0000,0000,,to do a lot of things you know
+Dialogue: 0,0:09:30.16,0:09:32.08,*Default,NTP,0000,0000,0000,,the next question was would courses
+Dialogue: 0,0:09:32.08,0:09:33.92,*Default,NTP,0000,0000,0000,,cover circuit design
+Dialogue: 0,0:09:33.92,0:09:37.68,*Default,NTP,0000,0000,0000,,is it 61c or 16a and b
+Dialogue: 0,0:09:37.68,0:09:40.56,*Default,NTP,0000,0000,0000,,um the circuit design is mostly in 16a
+Dialogue: 0,0:09:40.56,0:09:42.32,*Default,NTP,0000,0000,0000,,and 16b
+Dialogue: 0,0:09:42.32,0:09:45.76,*Default,NTP,0000,0000,0000,,um 61c
+Dialogue: 0,0:09:45.76,0:09:48.16,*Default,NTP,0000,0000,0000,,has an interesting level of abstraction
+Dialogue: 0,0:09:48.16,0:09:49.28,*Default,NTP,0000,0000,0000,,that's between
+Dialogue: 0,0:09:49.28,0:09:51.76,*Default,NTP,0000,0000,0000,,python and circuits which is called
+Dialogue: 0,0:09:51.76,0:09:53.68,*Default,NTP,0000,0000,0000,,assembly language
+Dialogue: 0,0:09:53.68,0:09:57.20,*Default,NTP,0000,0000,0000,,and um yeah the details there
+Dialogue: 0,0:09:57.20,0:09:59.52,*Default,NTP,0000,0000,0000,,are that you need to do more than just
+Dialogue: 0,0:09:59.52,0:10:00.40,*Default,NTP,0000,0000,0000,,describe
+Dialogue: 0,0:10:00.40,0:10:01.92,*Default,NTP,0000,0000,0000,,the relationship between inputs and
+Dialogue: 0,0:10:01.92,0:10:04.32,*Default,NTP,0000,0000,0000,,outputs you also need to describe
+Dialogue: 0,0:10:04.32,0:10:07.04,*Default,NTP,0000,0000,0000,,for example like what to do next and
+Dialogue: 0,0:10:07.04,0:10:08.72,*Default,NTP,0000,0000,0000,,whether to load something in
+Dialogue: 0,0:10:08.72,0:10:10.96,*Default,NTP,0000,0000,0000,,from memory that was stored before and
+Dialogue: 0,0:10:10.96,0:10:12.56,*Default,NTP,0000,0000,0000,,whether to store something and where to
+Dialogue: 0,0:10:12.56,0:10:13.44,*Default,NTP,0000,0000,0000,,store it
+Dialogue: 0,0:10:13.44,0:10:15.84,*Default,NTP,0000,0000,0000,,so these primitives actually also have
+Dialogue: 0,0:10:15.84,0:10:16.88,*Default,NTP,0000,0000,0000,,circuitry
+Dialogue: 0,0:10:16.88,0:10:19.44,*Default,NTP,0000,0000,0000,,associated with them so if you want to
+Dialogue: 0,0:10:19.44,0:10:20.88,*Default,NTP,0000,0000,0000,,do more than add but you also want to
+Dialogue: 0,0:10:20.88,0:10:22.48,*Default,NTP,0000,0000,0000,,like manipulate memory and have
+Dialogue: 0,0:10:22.48,0:10:23.60,*Default,NTP,0000,0000,0000,,sequences of
+Dialogue: 0,0:10:23.60,0:10:25.60,*Default,NTP,0000,0000,0000,,instructions and decide oh i'm done
+Dialogue: 0,0:10:25.60,0:10:26.96,*Default,NTP,0000,0000,0000,,doing this for a while i'm going to do
+Dialogue: 0,0:10:26.96,0:10:28.32,*Default,NTP,0000,0000,0000,,this other function and implement
+Dialogue: 0,0:10:28.32,0:10:30.96,*Default,NTP,0000,0000,0000,,function calls and stuff like that
+Dialogue: 0,0:10:30.96,0:10:33.04,*Default,NTP,0000,0000,0000,,well there's circus associated with all
+Dialogue: 0,0:10:33.04,0:10:34.56,*Default,NTP,0000,0000,0000,,that and hardware associated with all
+Dialogue: 0,0:10:34.56,0:10:34.96,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:10:34.96,0:10:37.68,*Default,NTP,0000,0000,0000,,but then you need a language to describe
+Dialogue: 0,0:10:37.68,0:10:39.12,*Default,NTP,0000,0000,0000,,exactly what to do and then you get a
+Dialogue: 0,0:10:39.12,0:10:40.48,*Default,NTP,0000,0000,0000,,programmable computer
+Dialogue: 0,0:10:40.48,0:10:42.56,*Default,NTP,0000,0000,0000,,and that language that is implemented
+Dialogue: 0,0:10:42.56,0:10:44.56,*Default,NTP,0000,0000,0000,,not in software but in circuitry
+Dialogue: 0,0:10:44.56,0:10:47.20,*Default,NTP,0000,0000,0000,,is called an assembly language which is
+Dialogue: 0,0:10:47.20,0:10:48.56,*Default,NTP,0000,0000,0000,,kind of the lowest level programming
+Dialogue: 0,0:10:48.56,0:10:49.12,*Default,NTP,0000,0000,0000,,language
+Dialogue: 0,0:10:49.12,0:10:51.20,*Default,NTP,0000,0000,0000,,so that's what you get in the 61c so if
+Dialogue: 0,0:10:51.20,0:10:52.88,*Default,NTP,0000,0000,0000,,you really want kind of the whole stack
+Dialogue: 0,0:10:52.88,0:10:55.76,*Default,NTP,0000,0000,0000,,61ab gives you the high level software
+Dialogue: 0,0:10:55.76,0:10:58.16,*Default,NTP,0000,0000,0000,,programming 61c gives you this
+Dialogue: 0,0:10:58.16,0:11:00.08,*Default,NTP,0000,0000,0000,,very low level but still software
+Dialogue: 0,0:11:00.08,0:11:02.08,*Default,NTP,0000,0000,0000,,representation of an assembly language
+Dialogue: 0,0:11:02.08,0:11:04.56,*Default,NTP,0000,0000,0000,,and then 16a 16b will tell you about the
+Dialogue: 0,0:11:04.56,0:11:05.60,*Default,NTP,0000,0000,0000,,circuits
+Dialogue: 0,0:11:05.60,0:11:07.28,*Default,NTP,0000,0000,0000,,and by the way back in the day this was
+Dialogue: 0,0:11:07.28,0:11:08.72,*Default,NTP,0000,0000,0000,,before my time
+Dialogue: 0,0:11:08.72,0:11:10.56,*Default,NTP,0000,0000,0000,,people programmed in assembly language
+Dialogue: 0,0:11:10.56,0:11:12.24,*Default,NTP,0000,0000,0000,,there were no high level languages there
+Dialogue: 0,0:11:12.24,0:11:13.68,*Default,NTP,0000,0000,0000,,was no python no c
+Dialogue: 0,0:11:13.68,0:11:16.24,*Default,NTP,0000,0000,0000,,no java none of this stuff and so people
+Dialogue: 0,0:11:16.24,0:11:18.32,*Default,NTP,0000,0000,0000,,programmed in that
+Dialogue: 0,0:11:18.32,0:11:20.40,*Default,NTP,0000,0000,0000,,what we would now consider a low level
+Dialogue: 0,0:11:20.40,0:11:22.24,*Default,NTP,0000,0000,0000,,um description and so you had to know
+Dialogue: 0,0:11:22.24,0:11:23.84,*Default,NTP,0000,0000,0000,,like where are the registers for
+Dialogue: 0,0:11:23.84,0:11:26.24,*Default,NTP,0000,0000,0000,,the store and what is the address and it
+Dialogue: 0,0:11:26.24,0:11:29.20,*Default,NTP,0000,0000,0000,,was incredibly difficult uh to do and so
+Dialogue: 0,0:11:29.20,0:11:31.28,*Default,NTP,0000,0000,0000,,we've been creating these abstraction
+Dialogue: 0,0:11:31.28,0:11:32.88,*Default,NTP,0000,0000,0000,,barriers right where now we have this
+Dialogue: 0,0:11:32.88,0:11:34.32,*Default,NTP,0000,0000,0000,,high level language where we just
+Dialogue: 0,0:11:34.32,0:11:36.72,*Default,NTP,0000,0000,0000,,put in some some code and then it gets
+Dialogue: 0,0:11:36.72,0:11:38.08,*Default,NTP,0000,0000,0000,,compiled down it gets converted to
+Dialogue: 0,0:11:38.08,0:11:39.52,*Default,NTP,0000,0000,0000,,assembly and then it interacts with the
+Dialogue: 0,0:11:39.52,0:11:41.28,*Default,NTP,0000,0000,0000,,hardware so there are several levels
+Dialogue: 0,0:11:41.28,0:11:42.08,*Default,NTP,0000,0000,0000,,still
+Dialogue: 0,0:11:42.08,0:11:43.60,*Default,NTP,0000,0000,0000,,between you and things actually
+Dialogue: 0,0:11:43.60,0:11:45.36,*Default,NTP,0000,0000,0000,,happening on the computer
+Dialogue: 0,0:11:45.36,0:11:47.44,*Default,NTP,0000,0000,0000,,um and you can i think that that
+Dialogue: 0,0:11:47.44,0:11:48.88,*Default,NTP,0000,0000,0000,,sequence is really interesting to sort
+Dialogue: 0,0:11:48.88,0:11:51.68,*Default,NTP,0000,0000,0000,,of see how it all unfolds
+Dialogue: 0,0:11:51.68,0:11:53.84,*Default,NTP,0000,0000,0000,,the next question was if you pass all
+Dialogue: 0,0:11:53.84,0:11:55.12,*Default,NTP,0000,0000,0000,,the tests
+Dialogue: 0,0:11:55.12,0:11:57.84,*Default,NTP,0000,0000,0000,,for the cats project but the gui still
+Dialogue: 0,0:11:57.84,0:11:58.72,*Default,NTP,0000,0000,0000,,doesn't work
+Dialogue: 0,0:11:58.72,0:12:00.32,*Default,NTP,0000,0000,0000,,should you submit or keep trying to
+Dialogue: 0,0:12:00.32,0:12:02.96,*Default,NTP,0000,0000,0000,,debug it
+Dialogue: 0,0:12:03.04,0:12:06.08,*Default,NTP,0000,0000,0000,,if you pass all the tests you might have
+Dialogue: 0,0:12:06.08,0:12:08.08,*Default,NTP,0000,0000,0000,,bugs in your code but we won't know
+Dialogue: 0,0:12:08.08,0:12:10.00,*Default,NTP,0000,0000,0000,,about them
+Dialogue: 0,0:12:10.00,0:12:13.36,*Default,NTP,0000,0000,0000,,so in that sense they won't affect your
+Dialogue: 0,0:12:13.36,0:12:15.28,*Default,NTP,0000,0000,0000,,ability to get credit
+Dialogue: 0,0:12:15.28,0:12:17.84,*Default,NTP,0000,0000,0000,,um it's less interesting to have a
+Dialogue: 0,0:12:17.84,0:12:19.92,*Default,NTP,0000,0000,0000,,program that doesn't seem to work
+Dialogue: 0,0:12:19.92,0:12:22.96,*Default,NTP,0000,0000,0000,,now it's hard to tell whether when the
+Dialogue: 0,0:12:22.96,0:12:24.56,*Default,NTP,0000,0000,0000,,gui doesn't work
+Dialogue: 0,0:12:24.56,0:12:26.64,*Default,NTP,0000,0000,0000,,that's because there's some issue with
+Dialogue: 0,0:12:26.64,0:12:27.76,*Default,NTP,0000,0000,0000,,your code
+Dialogue: 0,0:12:27.76,0:12:29.92,*Default,NTP,0000,0000,0000,,or whether there's some issue with our
+Dialogue: 0,0:12:29.92,0:12:31.76,*Default,NTP,0000,0000,0000,,code because we provided the gui
+Dialogue: 0,0:12:31.76,0:12:33.52,*Default,NTP,0000,0000,0000,,uh it seems to have worked pretty
+Dialogue: 0,0:12:33.52,0:12:36.88,*Default,NTP,0000,0000,0000,,robustly in the past but i'm not sure
+Dialogue: 0,0:12:36.88,0:12:39.84,*Default,NTP,0000,0000,0000,,um yeah i didn't teach this course over
+Dialogue: 0,0:12:39.84,0:12:41.76,*Default,NTP,0000,0000,0000,,the summer they always make changes
+Dialogue: 0,0:12:41.76,0:12:43.60,*Default,NTP,0000,0000,0000,,maybe they broke something and then it
+Dialogue: 0,0:12:43.60,0:12:46.16,*Default,NTP,0000,0000,0000,,might be that actually that there's a
+Dialogue: 0,0:12:46.16,0:12:48.32,*Default,NTP,0000,0000,0000,,configuration issue with your computer
+Dialogue: 0,0:12:48.32,0:12:50.24,*Default,NTP,0000,0000,0000,,that we didn't anticipate
+Dialogue: 0,0:12:50.24,0:12:53.52,*Default,NTP,0000,0000,0000,,um or yeah so like the way in which it
+Dialogue: 0,0:12:53.52,0:12:55.20,*Default,NTP,0000,0000,0000,,connects to the server or something like
+Dialogue: 0,0:12:55.20,0:12:55.60,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:12:55.60,0:12:59.68,*Default,NTP,0000,0000,0000,,is um is uh hard to get around yeah so
+Dialogue: 0,0:12:59.68,0:13:01.36,*Default,NTP,0000,0000,0000,,we have had students in the past that
+Dialogue: 0,0:13:01.36,0:13:04.08,*Default,NTP,0000,0000,0000,,have like particular antivirus software
+Dialogue: 0,0:13:04.08,0:13:06.00,*Default,NTP,0000,0000,0000,,that interrupts the
+Dialogue: 0,0:13:06.00,0:13:08.08,*Default,NTP,0000,0000,0000,,multiplayer server or something like
+Dialogue: 0,0:13:08.08,0:13:09.76,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:13:09.76,0:13:13.84,*Default,NTP,0000,0000,0000,,so yeah if i had to guess
+Dialogue: 0,0:13:13.84,0:13:15.60,*Default,NTP,0000,0000,0000,,probably if you're passing all the tests
+Dialogue: 0,0:13:15.60,0:13:18.64,*Default,NTP,0000,0000,0000,,then the problem is not with your code
+Dialogue: 0,0:13:18.64,0:13:20.08,*Default,NTP,0000,0000,0000,,but i can't guarantee you that's the
+Dialogue: 0,0:13:20.08,0:13:22.08,*Default,NTP,0000,0000,0000,,case but that's probably what's going on
+Dialogue: 0,0:13:22.08,0:13:25.20,*Default,NTP,0000,0000,0000,,and um will we debug it hopefully
+Dialogue: 0,0:13:25.20,0:13:26.72,*Default,NTP,0000,0000,0000,,yeah so there's definitely stuff that we
+Dialogue: 0,0:13:26.72,0:13:28.64,*Default,NTP,0000,0000,0000,,don't check for that
+Dialogue: 0,0:13:28.64,0:13:30.88,*Default,NTP,0000,0000,0000,,um is important and this is true of any
+Dialogue: 0,0:13:30.88,0:13:32.56,*Default,NTP,0000,0000,0000,,test suite is that it's basically
+Dialogue: 0,0:13:32.56,0:13:35.68,*Default,NTP,0000,0000,0000,,impossible to prove that a program
+Dialogue: 0,0:13:35.68,0:13:37.84,*Default,NTP,0000,0000,0000,,does what it's supposed to do if that
+Dialogue: 0,0:13:37.84,0:13:39.84,*Default,NTP,0000,0000,0000,,program is just written in python with
+Dialogue: 0,0:13:39.84,0:13:40.88,*Default,NTP,0000,0000,0000,,no constraints
+Dialogue: 0,0:13:40.88,0:13:42.16,*Default,NTP,0000,0000,0000,,there's an interesting branch of
+Dialogue: 0,0:13:42.16,0:13:44.24,*Default,NTP,0000,0000,0000,,computer science called verification
+Dialogue: 0,0:13:44.24,0:13:46.40,*Default,NTP,0000,0000,0000,,that is about making sure that you can
+Dialogue: 0,0:13:46.40,0:13:47.28,*Default,NTP,0000,0000,0000,,prove that your
+Dialogue: 0,0:13:47.28,0:13:48.72,*Default,NTP,0000,0000,0000,,program really does what it's supposed
+Dialogue: 0,0:13:48.72,0:13:51.20,*Default,NTP,0000,0000,0000,,to do but the trick there is that you
+Dialogue: 0,0:13:51.20,0:13:53.36,*Default,NTP,0000,0000,0000,,have to express what it's supposed to do
+Dialogue: 0,0:13:53.36,0:13:55.84,*Default,NTP,0000,0000,0000,,in language that the computer can
+Dialogue: 0,0:13:55.84,0:13:56.56,*Default,NTP,0000,0000,0000,,understand
+Dialogue: 0,0:13:56.56,0:13:57.92,*Default,NTP,0000,0000,0000,,and then you also tend to have some
+Dialogue: 0,0:13:57.92,0:13:59.76,*Default,NTP,0000,0000,0000,,restrictions on what
+Dialogue: 0,0:13:59.76,0:14:02.16,*Default,NTP,0000,0000,0000,,how you write your program to make it
+Dialogue: 0,0:14:02.16,0:14:03.52,*Default,NTP,0000,0000,0000,,easier to verify
+Dialogue: 0,0:14:03.52,0:14:05.76,*Default,NTP,0000,0000,0000,,so these techniques still aren't used
+Dialogue: 0,0:14:05.76,0:14:08.00,*Default,NTP,0000,0000,0000,,very often in practice except for
+Dialogue: 0,0:14:08.00,0:14:09.92,*Default,NTP,0000,0000,0000,,with very low level programming like
+Dialogue: 0,0:14:09.92,0:14:11.68,*Default,NTP,0000,0000,0000,,making sure that a circuit board does
+Dialogue: 0,0:14:11.68,0:14:13.36,*Default,NTP,0000,0000,0000,,what it's supposed to do
+Dialogue: 0,0:14:13.36,0:14:15.12,*Default,NTP,0000,0000,0000,,so anyway yeah it might be the case that
+Dialogue: 0,0:14:15.12,0:14:16.32,*Default,NTP,0000,0000,0000,,there are some issues that we didn't
+Dialogue: 0,0:14:16.32,0:14:17.52,*Default,NTP,0000,0000,0000,,detect but you could certainly just
+Dialogue: 0,0:14:17.52,0:14:18.48,*Default,NTP,0000,0000,0000,,submit your project
+Dialogue: 0,0:14:18.48,0:14:21.52,*Default,NTP,0000,0000,0000,,and not worry about that so yeah the
+Dialogue: 0,0:14:21.52,0:14:22.72,*Default,NTP,0000,0000,0000,,question is about like how do you
+Dialogue: 0,0:14:22.72,0:14:24.24,*Default,NTP,0000,0000,0000,,approach add trees
+Dialogue: 0,0:14:24.24,0:14:26.08,*Default,NTP,0000,0000,0000,,which takes in two trees and returns a
+Dialogue: 0,0:14:26.08,0:14:27.52,*Default,NTP,0000,0000,0000,,new tree where each corresponding node
+Dialogue: 0,0:14:27.52,0:14:28.80,*Default,NTP,0000,0000,0000,,from the first tree is added with the
+Dialogue: 0,0:14:28.80,0:14:31.52,*Default,NTP,0000,0000,0000,,node from the second tree
+Dialogue: 0,0:14:31.52,0:14:33.20,*Default,NTP,0000,0000,0000,,if a node at any particular position is
+Dialogue: 0,0:14:33.20,0:14:34.72,*Default,NTP,0000,0000,0000,,present in one tree but not the other it
+Dialogue: 0,0:14:34.72,0:14:36.32,*Default,NTP,0000,0000,0000,,should be present in the new tree as
+Dialogue: 0,0:14:36.32,0:14:37.04,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:14:37.04,0:14:40.08,*Default,NTP,0000,0000,0000,,so you could kind of pretend that a tree
+Dialogue: 0,0:14:40.08,0:14:42.16,*Default,NTP,0000,0000,0000,,that's missing some branches relative to
+Dialogue: 0,0:14:42.16,0:14:43.76,*Default,NTP,0000,0000,0000,,the other tree just has zeros everywhere
+Dialogue: 0,0:14:43.76,0:14:46.32,*Default,NTP,0000,0000,0000,,i think it's one way to think about it
+Dialogue: 0,0:14:46.32,0:14:49.19,*Default,NTP,0000,0000,0000,,um and
+Dialogue: 0,0:14:49.19,0:14:51.44,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:14:51.44,0:14:52.88,*Default,NTP,0000,0000,0000,,apparently this is a lot harder than
+Dialogue: 0,0:14:52.88,0:14:58.32,*Default,NTP,0000,0000,0000,,previous tree problems that's exciting
+Dialogue: 0,0:14:58.32,0:15:01.52,*Default,NTP,0000,0000,0000,,it's an ominous warning
+Dialogue: 0,0:15:01.52,0:15:03.76,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:15:04.56,0:15:08.00,*Default,NTP,0000,0000,0000,,let me just try to get set up here
+Dialogue: 0,0:15:08.00,0:15:10.80,*Default,NTP,0000,0000,0000,,address
+Dialogue: 0,0:15:11.44,0:15:14.40,*Default,NTP,0000,0000,0000,,i think since these are both trees they
+Dialogue: 0,0:15:14.40,0:15:15.84,*Default,NTP,0000,0000,0000,,both must have a label
+Dialogue: 0,0:15:15.84,0:15:17.12,*Default,NTP,0000,0000,0000,,they might have different lists of
+Dialogue: 0,0:15:17.12,0:15:19.44,*Default,NTP,0000,0000,0000,,branches but they both must have a label
+Dialogue: 0,0:15:19.44,0:15:23.20,*Default,NTP,0000,0000,0000,,so um we can guess at what's the label
+Dialogue: 0,0:15:23.20,0:15:26.00,*Default,NTP,0000,0000,0000,,of the final thing that we want to build
+Dialogue: 0,0:15:26.00,0:15:30.32,*Default,NTP,0000,0000,0000,,which is that the result label
+Dialogue: 0,0:15:30.32,0:15:32.88,*Default,NTP,0000,0000,0000,,is the result of adding together the
+Dialogue: 0,0:15:32.88,0:15:35.44,*Default,NTP,0000,0000,0000,,label of t1 and the label of t2
+Dialogue: 0,0:15:35.44,0:15:38.72,*Default,NTP,0000,0000,0000,,and i always like say in words what i'm
+Dialogue: 0,0:15:38.72,0:15:40.40,*Default,NTP,0000,0000,0000,,trying to do to a tree before i start
+Dialogue: 0,0:15:40.40,0:15:42.08,*Default,NTP,0000,0000,0000,,trying to program because that helps me
+Dialogue: 0,0:15:42.08,0:15:42.96,*Default,NTP,0000,0000,0000,,make sure
+Dialogue: 0,0:15:42.96,0:15:45.44,*Default,NTP,0000,0000,0000,,that i'm kind of combining the right
+Dialogue: 0,0:15:45.44,0:15:47.20,*Default,NTP,0000,0000,0000,,types of values so you can't add
+Dialogue: 0,0:15:47.20,0:15:49.12,*Default,NTP,0000,0000,0000,,two trees together if you do you won't
+Dialogue: 0,0:15:49.12,0:15:51.20,*Default,NTP,0000,0000,0000,,get an error but you will get the wrong
+Dialogue: 0,0:15:51.20,0:15:52.64,*Default,NTP,0000,0000,0000,,thing
+Dialogue: 0,0:15:52.64,0:15:54.16,*Default,NTP,0000,0000,0000,,so instead you want to get the labels
+Dialogue: 0,0:15:54.16,0:15:56.00,*Default,NTP,0000,0000,0000,,and add those together
+Dialogue: 0,0:15:56.00,0:15:59.12,*Default,NTP,0000,0000,0000,,now what about all the elements i'm not
+Dialogue: 0,0:15:59.12,0:16:00.80,*Default,NTP,0000,0000,0000,,going to use this built-in zip function
+Dialogue: 0,0:16:00.80,0:16:01.92,*Default,NTP,0000,0000,0000,,because that seems like it's more
+Dialogue: 0,0:16:01.92,0:16:03.44,*Default,NTP,0000,0000,0000,,complicated we could try that later if
+Dialogue: 0,0:16:03.44,0:16:04.08,*Default,NTP,0000,0000,0000,,you want
+Dialogue: 0,0:16:04.08,0:16:08.32,*Default,NTP,0000,0000,0000,,but i think we want to go through and um
+Dialogue: 0,0:16:08.32,0:16:12.56,*Default,NTP,0000,0000,0000,,for each corresponding pair of branches
+Dialogue: 0,0:16:12.56,0:16:15.28,*Default,NTP,0000,0000,0000,,we want to add those branches together
+Dialogue: 0,0:16:15.28,0:16:16.40,*Default,NTP,0000,0000,0000,,and then we'll get
+Dialogue: 0,0:16:16.40,0:16:20.08,*Default,NTP,0000,0000,0000,,uh new branches so
+Dialogue: 0,0:16:20.84,0:16:22.88,*Default,NTP,0000,0000,0000,,um yeah
+Dialogue: 0,0:16:22.88,0:16:26.72,*Default,NTP,0000,0000,0000,,so maybe we'll start with no
+Dialogue: 0,0:16:26.72,0:16:29.76,*Default,NTP,0000,0000,0000,,branches and
+Dialogue: 0,0:16:29.76,0:16:31.36,*Default,NTP,0000,0000,0000,,i think it would be helpful to have an
+Dialogue: 0,0:16:31.36,0:16:34.24,*Default,NTP,0000,0000,0000,,index of which branch i'm on
+Dialogue: 0,0:16:34.24,0:16:36.32,*Default,NTP,0000,0000,0000,,and then i want to go through all the
+Dialogue: 0,0:16:36.32,0:16:37.60,*Default,NTP,0000,0000,0000,,branches
+Dialogue: 0,0:16:37.60,0:16:41.04,*Default,NTP,0000,0000,0000,,that exist in both trees so
+Dialogue: 0,0:16:41.04,0:16:43.28,*Default,NTP,0000,0000,0000,,one way to do that is to say well i is
+Dialogue: 0,0:16:43.28,0:16:44.24,*Default,NTP,0000,0000,0000,,less than
+Dialogue: 0,0:16:44.24,0:16:48.64,*Default,NTP,0000,0000,0000,,the len of the branches of t1
+Dialogue: 0,0:16:48.64,0:16:50.40,*Default,NTP,0000,0000,0000,,and i is less than the length of the
+Dialogue: 0,0:16:50.40,0:16:52.80,*Default,NTP,0000,0000,0000,,branches of t2
+Dialogue: 0,0:16:52.80,0:16:54.40,*Default,NTP,0000,0000,0000,,and we might think of a more concise way
+Dialogue: 0,0:16:54.40,0:16:56.24,*Default,NTP,0000,0000,0000,,to say that later but this is a
+Dialogue: 0,0:16:56.24,0:16:58.72,*Default,NTP,0000,0000,0000,,a fine way to say i want to go through
+Dialogue: 0,0:16:58.72,0:16:59.68,*Default,NTP,0000,0000,0000,,all the i's
+Dialogue: 0,0:16:59.68,0:17:02.84,*Default,NTP,0000,0000,0000,,where they exist in d1 and they exist in
+Dialogue: 0,0:17:02.84,0:17:04.40,*Default,NTP,0000,0000,0000,,tt
+Dialogue: 0,0:17:04.40,0:17:06.16,*Default,NTP,0000,0000,0000,,and what would we get we'd get a new
+Dialogue: 0,0:17:06.16,0:17:08.32,*Default,NTP,0000,0000,0000,,branch
+Dialogue: 0,0:17:08.32,0:17:12.40,*Default,NTP,0000,0000,0000,,that is the result of adding together
+Dialogue: 0,0:17:12.40,0:17:16.84,*Default,NTP,0000,0000,0000,,uh branches t1
+Dialogue: 0,0:17:16.84,0:17:20.24,*Default,NTP,0000,0000,0000,,r with
+Dialogue: 0,0:17:20.80,0:17:25.20,*Default,NTP,0000,0000,0000,,branches t2 i
+Dialogue: 0,0:17:25.20,0:17:26.56,*Default,NTP,0000,0000,0000,,i'm doing this in kind of the most
+Dialogue: 0,0:17:26.56,0:17:28.16,*Default,NTP,0000,0000,0000,,explicit way possible now what does it
+Dialogue: 0,0:17:28.16,0:17:30.24,*Default,NTP,0000,0000,0000,,mean to add these two things together
+Dialogue: 0,0:17:30.24,0:17:32.64,*Default,NTP,0000,0000,0000,,well we actually need to like add their
+Dialogue: 0,0:17:32.64,0:17:33.60,*Default,NTP,0000,0000,0000,,labels and
+Dialogue: 0,0:17:33.60,0:17:36.00,*Default,NTP,0000,0000,0000,,add all of the elements in the rest of
+Dialogue: 0,0:17:36.00,0:17:37.92,*Default,NTP,0000,0000,0000,,them fortunately we have a function that
+Dialogue: 0,0:17:37.92,0:17:41.28,*Default,NTP,0000,0000,0000,,does that it's called add trees
+Dialogue: 0,0:17:41.44,0:17:45.44,*Default,NTP,0000,0000,0000,,um so to make this fit on the screen
+Dialogue: 0,0:17:45.44,0:17:50.80,*Default,NTP,0000,0000,0000,,i would call this b1 and b2 maybe
+Dialogue: 0,0:17:52.32,0:17:55.28,*Default,NTP,0000,0000,0000,,and then we'll just call add trees on b1
+Dialogue: 0,0:17:55.28,0:17:57.76,*Default,NTP,0000,0000,0000,,and b2
+Dialogue: 0,0:17:59.60,0:18:02.96,*Default,NTP,0000,0000,0000,,uh what do we do with the new branch um
+Dialogue: 0,0:18:02.96,0:18:05.20,*Default,NTP,0000,0000,0000,,we'll learn in friday's lecture that
+Dialogue: 0,0:18:05.20,0:18:07.68,*Default,NTP,0000,0000,0000,,there's other ways to do it but
+Dialogue: 0,0:18:07.68,0:18:09.52,*Default,NTP,0000,0000,0000,,one way is just to redefine result
+Dialogue: 0,0:18:09.52,0:18:10.96,*Default,NTP,0000,0000,0000,,branches to have all the
+Dialogue: 0,0:18:10.96,0:18:13.36,*Default,NTP,0000,0000,0000,,branches that were in there before plus
+Dialogue: 0,0:18:13.36,0:18:14.40,*Default,NTP,0000,0000,0000,,there's a
+Dialogue: 0,0:18:14.40,0:18:16.48,*Default,NTP,0000,0000,0000,,new branch so we'll build a list
+Dialogue: 0,0:18:16.48,0:18:18.48,*Default,NTP,0000,0000,0000,,containing just that branch
+Dialogue: 0,0:18:18.48,0:18:20.88,*Default,NTP,0000,0000,0000,,and um add that in so that will give me
+Dialogue: 0,0:18:20.88,0:18:22.08,*Default,NTP,0000,0000,0000,,a longer list that's got all the
+Dialogue: 0,0:18:22.08,0:18:23.76,*Default,NTP,0000,0000,0000,,elements of this plus one new element
+Dialogue: 0,0:18:23.76,0:18:25.12,*Default,NTP,0000,0000,0000,,which is this new branch now we have a
+Dialogue: 0,0:18:25.12,0:18:27.36,*Default,NTP,0000,0000,0000,,bunch of branches
+Dialogue: 0,0:18:27.36,0:18:29.68,*Default,NTP,0000,0000,0000,,and if we had some guarantee that t1 and
+Dialogue: 0,0:18:29.68,0:18:31.52,*Default,NTP,0000,0000,0000,,t2 had the same structure then we'd be
+Dialogue: 0,0:18:31.52,0:18:32.40,*Default,NTP,0000,0000,0000,,done i'd say
+Dialogue: 0,0:18:32.40,0:18:34.80,*Default,NTP,0000,0000,0000,,but being done means we need to return a
+Dialogue: 0,0:18:34.80,0:18:36.64,*Default,NTP,0000,0000,0000,,tree that's what add trees does
+Dialogue: 0,0:18:36.64,0:18:39.36,*Default,NTP,0000,0000,0000,,so we'd call this on result label and
+Dialogue: 0,0:18:39.36,0:18:43.60,*Default,NTP,0000,0000,0000,,result branches
+Dialogue: 0,0:18:43.60,0:18:45.68,*Default,NTP,0000,0000,0000,,the tricky part is that maybe it was the
+Dialogue: 0,0:18:45.68,0:18:46.72,*Default,NTP,0000,0000,0000,,case that
+Dialogue: 0,0:18:46.72,0:18:50.00,*Default,NTP,0000,0000,0000,,i was didn't didn't capture
+Dialogue: 0,0:18:50.00,0:18:51.92,*Default,NTP,0000,0000,0000,,all the branches in t1 because there
+Dialogue: 0,0:18:51.92,0:18:53.92,*Default,NTP,0000,0000,0000,,were fewer branches in t2 or something
+Dialogue: 0,0:18:53.92,0:18:55.36,*Default,NTP,0000,0000,0000,,like that
+Dialogue: 0,0:18:55.36,0:18:58.72,*Default,NTP,0000,0000,0000,,um so what do you do about that i think
+Dialogue: 0,0:18:58.72,0:19:02.08,*Default,NTP,0000,0000,0000,,that um any branch that's in one but not
+Dialogue: 0,0:19:02.08,0:19:02.96,*Default,NTP,0000,0000,0000,,the other
+Dialogue: 0,0:19:02.96,0:19:04.56,*Default,NTP,0000,0000,0000,,doesn't really need to be added to
+Dialogue: 0,0:19:04.56,0:19:06.80,*Default,NTP,0000,0000,0000,,anything it just needs to be included
+Dialogue: 0,0:19:06.80,0:19:10.64,*Default,NTP,0000,0000,0000,,in the result um so
+Dialogue: 0,0:19:10.64,0:19:13.52,*Default,NTP,0000,0000,0000,,which ones did we leave out we left out
+Dialogue: 0,0:19:13.52,0:19:15.36,*Default,NTP,0000,0000,0000,,i think
+Dialogue: 0,0:19:15.36,0:19:19.12,*Default,NTP,0000,0000,0000,,all the branches of t1
+Dialogue: 0,0:19:19.12,0:19:22.40,*Default,NTP,0000,0000,0000,,from i onwards
+Dialogue: 0,0:19:23.04,0:19:25.12,*Default,NTP,0000,0000,0000,,so let's just kind of check with an
+Dialogue: 0,0:19:25.12,0:19:27.76,*Default,NTP,0000,0000,0000,,example if this had four branches and
+Dialogue: 0,0:19:27.76,0:19:29.20,*Default,NTP,0000,0000,0000,,this had two branches
+Dialogue: 0,0:19:29.20,0:19:31.92,*Default,NTP,0000,0000,0000,,then after you do this iteration i will
+Dialogue: 0,0:19:31.92,0:19:33.92,*Default,NTP,0000,0000,0000,,be equal to two
+Dialogue: 0,0:19:33.92,0:19:36.96,*Default,NTP,0000,0000,0000,,and will reach here and if
+Dialogue: 0,0:19:36.96,0:19:39.04,*Default,NTP,0000,0000,0000,,t1 had four branches then we do want
+Dialogue: 0,0:19:39.04,0:19:41.36,*Default,NTP,0000,0000,0000,,branch two and branch three
+Dialogue: 0,0:19:41.36,0:19:42.88,*Default,NTP,0000,0000,0000,,which is exactly what would be captured
+Dialogue: 0,0:19:42.88,0:19:46.64,*Default,NTP,0000,0000,0000,,by this slicing expression
+Dialogue: 0,0:19:47.12,0:19:52.88,*Default,NTP,0000,0000,0000,,so we could write something like that
+Dialogue: 0,0:19:52.88,0:19:56.56,*Default,NTP,0000,0000,0000,,and what if it was the case that um
+Dialogue: 0,0:19:56.56,0:19:58.56,*Default,NTP,0000,0000,0000,,there were more branches in t2 than they
+Dialogue: 0,0:19:58.56,0:19:59.76,*Default,NTP,0000,0000,0000,,were in t1
+Dialogue: 0,0:19:59.76,0:20:02.64,*Default,NTP,0000,0000,0000,,well then we'd need to put those in the
+Dialogue: 0,0:20:02.64,0:20:04.24,*Default,NTP,0000,0000,0000,,result
+Dialogue: 0,0:20:04.24,0:20:07.84,*Default,NTP,0000,0000,0000,,something like that might work
+Dialogue: 0,0:20:08.64,0:20:10.32,*Default,NTP,0000,0000,0000,,the question to ask yourself is why are
+Dialogue: 0,0:20:10.32,0:20:11.68,*Default,NTP,0000,0000,0000,,both of them there
+Dialogue: 0,0:20:11.68,0:20:14.56,*Default,NTP,0000,0000,0000,,if only one of those can be true right
+Dialogue: 0,0:20:14.56,0:20:15.52,*Default,NTP,0000,0000,0000,,you can either have
+Dialogue: 0,0:20:15.52,0:20:18.72,*Default,NTP,0000,0000,0000,,extra in t1 or t2 so why are we allow
+Dialogue: 0,0:20:18.72,0:20:20.24,*Default,NTP,0000,0000,0000,,why are we allowing both of those in
+Dialogue: 0,0:20:20.24,0:20:22.08,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:20:22.08,0:20:24.00,*Default,NTP,0000,0000,0000,,yeah there's the implementation again if
+Dialogue: 0,0:20:24.00,0:20:26.48,*Default,NTP,0000,0000,0000,,you want to think about that
+Dialogue: 0,0:20:26.48,0:20:28.16,*Default,NTP,0000,0000,0000,,and i think i'll just quickly check and
+Dialogue: 0,0:20:28.16,0:20:29.76,*Default,NTP,0000,0000,0000,,see
+Dialogue: 0,0:20:29.76,0:20:31.68,*Default,NTP,0000,0000,0000,,if this works except i'm not sure that i
+Dialogue: 0,0:20:31.68,0:20:33.60,*Default,NTP,0000,0000,0000,,have print tree to find anywhere i might
+Dialogue: 0,0:20:33.60,0:20:36.32,*Default,NTP,0000,0000,0000,,have to grab that
+Dialogue: 0,0:20:39.44,0:20:41.76,*Default,NTP,0000,0000,0000,,yeah i gotta get print tree where's
+Dialogue: 0,0:20:41.76,0:20:44.40,*Default,NTP,0000,0000,0000,,print tree
+Dialogue: 0,0:20:46.64,0:20:49.84,*Default,NTP,0000,0000,0000,,oh it's in there somewhere
+Dialogue: 0,0:20:55.04,0:20:58.16,*Default,NTP,0000,0000,0000,,there you are print tree
+Dialogue: 0,0:20:59.92,0:21:02.40,*Default,NTP,0000,0000,0000,,i'll put that in my file of important
+Dialogue: 0,0:21:02.40,0:21:04.80,*Default,NTP,0000,0000,0000,,functions related to trees
+Dialogue: 0,0:21:04.80,0:21:08.00,*Default,NTP,0000,0000,0000,,gonna try this all again
+Dialogue: 0,0:21:08.40,0:21:10.48,*Default,NTP,0000,0000,0000,,what am i trying again i want to run
+Dialogue: 0,0:21:10.48,0:21:11.84,*Default,NTP,0000,0000,0000,,these
+Dialogue: 0,0:21:11.84,0:21:14.80,*Default,NTP,0000,0000,0000,,oh runs forever that's not good let's
+Dialogue: 0,0:21:14.80,0:21:17.84,*Default,NTP,0000,0000,0000,,see why that is
+Dialogue: 0,0:21:20.72,0:21:22.96,*Default,NTP,0000,0000,0000,,oh you're not incrementing i john in the
+Dialogue: 0,0:21:22.96,0:21:25.04,*Default,NTP,0000,0000,0000,,while loop
+Dialogue: 0,0:21:25.04,0:21:28.80,*Default,NTP,0000,0000,0000,,rookie mistake okay now it works
+Dialogue: 0,0:21:29.20,0:21:30.64,*Default,NTP,0000,0000,0000,,so i mean there's lots of ways to clean
+Dialogue: 0,0:21:30.64,0:21:32.40,*Default,NTP,0000,0000,0000,,this up uh
+Dialogue: 0,0:21:32.40,0:21:34.96,*Default,NTP,0000,0000,0000,,we could
+Dialogue: 0,0:21:35.84,0:21:38.96,*Default,NTP,0000,0000,0000,,um for example
+Dialogue: 0,0:21:38.96,0:21:42.16,*Default,NTP,0000,0000,0000,,have this like be a minimum
+Dialogue: 0,0:21:42.16,0:21:45.36,*Default,NTP,0000,0000,0000,,of these two values
+Dialogue: 0,0:21:45.36,0:21:48.72,*Default,NTP,0000,0000,0000,,we got it slightly better um we got the
+Dialogue: 0,0:21:48.72,0:21:51.12,*Default,NTP,0000,0000,0000,,coleman
+Dialogue: 0,0:21:53.60,0:21:58.56,*Default,NTP,0000,0000,0000,,we could have given names to branches
+Dialogue: 0,0:21:58.56,0:22:00.88,*Default,NTP,0000,0000,0000,,t1 and branches t2 because it seems like
+Dialogue: 0,0:22:00.88,0:22:03.04,*Default,NTP,0000,0000,0000,,we call that just a ton of times and it
+Dialogue: 0,0:22:03.04,0:22:04.88,*Default,NTP,0000,0000,0000,,might just simplify things if we'd given
+Dialogue: 0,0:22:04.88,0:22:06.48,*Default,NTP,0000,0000,0000,,them names
+Dialogue: 0,0:22:06.48,0:22:08.24,*Default,NTP,0000,0000,0000,,we could replace this while statement
+Dialogue: 0,0:22:08.24,0:22:10.32,*Default,NTP,0000,0000,0000,,with a for statement
+Dialogue: 0,0:22:10.32,0:22:13.52,*Default,NTP,0000,0000,0000,,the whole story about zip i think um
+Dialogue: 0,0:22:13.52,0:22:17.20,*Default,NTP,0000,0000,0000,,we could talk about really quick so
+Dialogue: 0,0:22:17.20,0:22:20.88,*Default,NTP,0000,0000,0000,,uh what zip does
+Dialogue: 0,0:22:20.88,0:22:26.16,*Default,NTP,0000,0000,0000,,if you give it to this
+Dialogue: 0,0:22:26.16,0:22:28.88,*Default,NTP,0000,0000,0000,,is give you a way of iterating over both
+Dialogue: 0,0:22:28.88,0:22:30.40,*Default,NTP,0000,0000,0000,,of those
+Dialogue: 0,0:22:30.40,0:22:33.52,*Default,NTP,0000,0000,0000,,lists um kind of uh
+Dialogue: 0,0:22:33.52,0:22:35.68,*Default,NTP,0000,0000,0000,,concurrently so the one and the seven go
+Dialogue: 0,0:22:35.68,0:22:36.96,*Default,NTP,0000,0000,0000,,together and the two and the eight go
+Dialogue: 0,0:22:36.96,0:22:38.24,*Default,NTP,0000,0000,0000,,together and the three and the nine go
+Dialogue: 0,0:22:38.24,0:22:39.52,*Default,NTP,0000,0000,0000,,together
+Dialogue: 0,0:22:39.52,0:22:42.08,*Default,NTP,0000,0000,0000,,the nice thing is that if you zip lists
+Dialogue: 0,0:22:42.08,0:22:43.44,*Default,NTP,0000,0000,0000,,of different links then it just kind of
+Dialogue: 0,0:22:43.44,0:22:45.20,*Default,NTP,0000,0000,0000,,works its way up until
+Dialogue: 0,0:22:45.20,0:22:48.64,*Default,NTP,0000,0000,0000,,you get to the to the part that you want
+Dialogue: 0,0:22:48.64,0:22:50.80,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:22:52.84,0:22:54.08,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:22:54.08,0:22:57.12,*Default,NTP,0000,0000,0000,,right so instead of all of this
+Dialogue: 0,0:22:57.12,0:23:00.88,*Default,NTP,0000,0000,0000,,we could have gone through uh b1 and b2
+Dialogue: 0,0:23:00.88,0:23:03.12,*Default,NTP,0000,0000,0000,,and the result of zipping together the
+Dialogue: 0,0:23:03.12,0:23:03.92,*Default,NTP,0000,0000,0000,,branches
+Dialogue: 0,0:23:03.92,0:23:09.84,*Default,NTP,0000,0000,0000,,of t1 and the branches of t2
+Dialogue: 0,0:23:10.72,0:23:13.52,*Default,NTP,0000,0000,0000,,and we'd end up
+Dialogue: 0,0:23:13.92,0:23:17.12,*Default,NTP,0000,0000,0000,,getting rid of that line
+Dialogue: 0,0:23:17.52,0:23:19.12,*Default,NTP,0000,0000,0000,,now we've kind of lost track of our
+Dialogue: 0,0:23:19.12,0:23:20.96,*Default,NTP,0000,0000,0000,,notion of i
+Dialogue: 0,0:23:20.96,0:23:22.80,*Default,NTP,0000,0000,0000,,and that can be worrisome but we could
+Dialogue: 0,0:23:22.80,0:23:24.00,*Default,NTP,0000,0000,0000,,reconstruct it actually
+Dialogue: 0,0:23:24.00,0:23:26.56,*Default,NTP,0000,0000,0000,,so i could be just the len of the result
+Dialogue: 0,0:23:26.56,0:23:28.16,*Default,NTP,0000,0000,0000,,branches and then this would probably
+Dialogue: 0,0:23:28.16,0:23:30.40,*Default,NTP,0000,0000,0000,,work
+Dialogue: 0,0:23:30.56,0:23:34.64,*Default,NTP,0000,0000,0000,,yeah it looks pretty good um
+Dialogue: 0,0:23:34.64,0:23:37.20,*Default,NTP,0000,0000,0000,,and yeah finally could you somehow like
+Dialogue: 0,0:23:37.20,0:23:37.76,*Default,NTP,0000,0000,0000,,get this
+Dialogue: 0,0:23:37.76,0:23:40.48,*Default,NTP,0000,0000,0000,,into one line and usually it's the case
+Dialogue: 0,0:23:40.48,0:23:42.48,*Default,NTP,0000,0000,0000,,that if you ever start with a list
+Dialogue: 0,0:23:42.48,0:23:44.72,*Default,NTP,0000,0000,0000,,and then you are adding just one element
+Dialogue: 0,0:23:44.72,0:23:46.48,*Default,NTP,0000,0000,0000,,at a time to that list
+Dialogue: 0,0:23:46.48,0:23:48.48,*Default,NTP,0000,0000,0000,,you could instead write it as a list
+Dialogue: 0,0:23:48.48,0:23:49.68,*Default,NTP,0000,0000,0000,,comprehension
+Dialogue: 0,0:23:49.68,0:23:53.52,*Default,NTP,0000,0000,0000,,so this could have been add trees
+Dialogue: 0,0:23:53.52,0:23:56.56,*Default,NTP,0000,0000,0000,,b1 b2
+Dialogue: 0,0:23:57.92,0:23:59.04,*Default,NTP,0000,0000,0000,,we're going to have to give it some
+Dialogue: 0,0:23:59.04,0:24:01.84,*Default,NTP,0000,0000,0000,,shorter name for
+Dialogue: 0,0:24:01.84,0:24:05.84,*Default,NTP,0000,0000,0000,,b1 b2 in
+Dialogue: 0,0:24:08.16,0:24:12.16,*Default,NTP,0000,0000,0000,,this zip still doesn't fit
+Dialogue: 0,0:24:12.16,0:24:17.28,*Default,NTP,0000,0000,0000,,how disappointing make it fit
+Dialogue: 0,0:24:17.28,0:24:21.20,*Default,NTP,0000,0000,0000,,okay so those are the result branches
+Dialogue: 0,0:24:26.48,0:24:27.92,*Default,NTP,0000,0000,0000,,now i'm just fiddling around but
+Dialogue: 0,0:24:27.92,0:24:30.00,*Default,NTP,0000,0000,0000,,whatever you probably get the idea
+Dialogue: 0,0:24:30.00,0:24:32.80,*Default,NTP,0000,0000,0000,,um and then you can delete all this
+Dialogue: 0,0:24:32.80,0:24:35.04,*Default,NTP,0000,0000,0000,,stuff
+Dialogue: 0,0:24:39.12,0:24:41.60,*Default,NTP,0000,0000,0000,,there's a great line by um i think it
+Dialogue: 0,0:24:41.60,0:24:42.64,*Default,NTP,0000,0000,0000,,was um
+Dialogue: 0,0:24:42.64,0:24:45.28,*Default,NTP,0000,0000,0000,,one of the guys who wrote c in unix and
+Dialogue: 0,0:24:45.28,0:24:47.36,*Default,NTP,0000,0000,0000,,he said
+Dialogue: 0,0:24:47.36,0:24:50.96,*Default,NTP,0000,0000,0000,,debugging is twice as hard as writing
+Dialogue: 0,0:24:50.96,0:24:51.84,*Default,NTP,0000,0000,0000,,code
+Dialogue: 0,0:24:51.84,0:24:53.76,*Default,NTP,0000,0000,0000,,so if you are as clever as you can be
+Dialogue: 0,0:24:53.76,0:24:55.28,*Default,NTP,0000,0000,0000,,when you write code
+Dialogue: 0,0:24:55.28,0:24:57.20,*Default,NTP,0000,0000,0000,,you will by definition not be able to
+Dialogue: 0,0:24:57.20,0:24:59.76,*Default,NTP,0000,0000,0000,,debug your code um
+Dialogue: 0,0:24:59.76,0:25:01.68,*Default,NTP,0000,0000,0000,,yeah so and i mentioned this because
+Dialogue: 0,0:25:01.68,0:25:03.60,*Default,NTP,0000,0000,0000,,john did something really nice here he
+Dialogue: 0,0:25:03.60,0:25:05.36,*Default,NTP,0000,0000,0000,,he wrote code that was not particularly
+Dialogue: 0,0:25:05.36,0:25:07.04,*Default,NTP,0000,0000,0000,,elegant sorry john
+Dialogue: 0,0:25:07.04,0:25:09.04,*Default,NTP,0000,0000,0000,,a little bit longer than you might want
+Dialogue: 0,0:25:09.04,0:25:11.12,*Default,NTP,0000,0000,0000,,but it was very logical you could see
+Dialogue: 0,0:25:11.12,0:25:13.04,*Default,NTP,0000,0000,0000,,what he was doing in every step
+Dialogue: 0,0:25:13.04,0:25:15.04,*Default,NTP,0000,0000,0000,,he got that to work we make sure and now
+Dialogue: 0,0:25:15.04,0:25:16.72,*Default,NTP,0000,0000,0000,,you can go back and start tightening it
+Dialogue: 0,0:25:16.72,0:25:18.16,*Default,NTP,0000,0000,0000,,up and cleaning it up and making it more
+Dialogue: 0,0:25:18.16,0:25:19.36,*Default,NTP,0000,0000,0000,,elegant
+Dialogue: 0,0:25:19.36,0:25:21.36,*Default,NTP,0000,0000,0000,,if you want to but sometimes that
+Dialogue: 0,0:25:21.36,0:25:23.68,*Default,NTP,0000,0000,0000,,slightly longer code
+Dialogue: 0,0:25:23.68,0:25:26.16,*Default,NTP,0000,0000,0000,,slightly more explicit is actually
+Dialogue: 0,0:25:26.16,0:25:27.52,*Default,NTP,0000,0000,0000,,preferred because it's a little bit
+Dialogue: 0,0:25:27.52,0:25:28.24,*Default,NTP,0000,0000,0000,,easier to
+Dialogue: 0,0:25:28.24,0:25:30.32,*Default,NTP,0000,0000,0000,,deal with i'm like if i looked at this
+Dialogue: 0,0:25:30.32,0:25:32.24,*Default,NTP,0000,0000,0000,,i'd have a hard time parsing this code
+Dialogue: 0,0:25:32.24,0:25:33.68,*Default,NTP,0000,0000,0000,,whereas the previous code was
+Dialogue: 0,0:25:33.68,0:25:34.96,*Default,NTP,0000,0000,0000,,you could see what was going on it was
+Dialogue: 0,0:25:34.96,0:25:37.52,*Default,NTP,0000,0000,0000,,good yeah i was just trying to show this
+Dialogue: 0,0:25:37.52,0:25:38.64,*Default,NTP,0000,0000,0000,,kind of different ways of solving the
+Dialogue: 0,0:25:38.64,0:25:40.56,*Default,NTP,0000,0000,0000,,problem and there was a tint about zip
+Dialogue: 0,0:25:40.56,0:25:42.72,*Default,NTP,0000,0000,0000,,so i forgot i'd tell you what it was
+Dialogue: 0,0:25:42.72,0:25:45.60,*Default,NTP,0000,0000,0000,,you know zip is an abstraction that most
+Dialogue: 0,0:25:45.60,0:25:47.60,*Default,NTP,0000,0000,0000,,python programmers really get used to
+Dialogue: 0,0:25:47.60,0:25:49.20,*Default,NTP,0000,0000,0000,,because it shows up a lot that you want
+Dialogue: 0,0:25:49.20,0:25:50.64,*Default,NTP,0000,0000,0000,,to like pair things together
+Dialogue: 0,0:25:50.64,0:25:52.56,*Default,NTP,0000,0000,0000,,in this way but if you're unfamiliar
+Dialogue: 0,0:25:52.56,0:25:54.32,*Default,NTP,0000,0000,0000,,with it then this looks completely
+Dialogue: 0,0:25:54.32,0:25:55.52,*Default,NTP,0000,0000,0000,,confusing
+Dialogue: 0,0:25:55.52,0:25:57.52,*Default,NTP,0000,0000,0000,,so it just like takes a while to get
+Dialogue: 0,0:25:57.52,0:25:59.68,*Default,NTP,0000,0000,0000,,used to or familiar with this notion
+Dialogue: 0,0:25:59.68,0:26:00.88,*Default,NTP,0000,0000,0000,,that you would take
+Dialogue: 0,0:26:00.88,0:26:02.56,*Default,NTP,0000,0000,0000,,you know the first two elements first
+Dialogue: 0,0:26:02.56,0:26:03.84,*Default,NTP,0000,0000,0000,,elements and pair them together in the
+Dialogue: 0,0:26:03.84,0:26:05.28,*Default,NTP,0000,0000,0000,,second elements put them together in the
+Dialogue: 0,0:26:05.28,0:26:06.72,*Default,NTP,0000,0000,0000,,third elements to get them together
+Dialogue: 0,0:26:06.72,0:26:08.48,*Default,NTP,0000,0000,0000,,once you're used to that notion because
+Dialogue: 0,0:26:08.48,0:26:10.48,*Default,NTP,0000,0000,0000,,you've seen it a dozen times
+Dialogue: 0,0:26:10.48,0:26:12.72,*Default,NTP,0000,0000,0000,,then this idea of like oh call ad trees
+Dialogue: 0,0:26:12.72,0:26:14.64,*Default,NTP,0000,0000,0000,,on all the corresponding pairs
+Dialogue: 0,0:26:14.64,0:26:17.36,*Default,NTP,0000,0000,0000,,is easy to read but at the beginning if
+Dialogue: 0,0:26:17.36,0:26:19.12,*Default,NTP,0000,0000,0000,,you've never seen the term zip before
+Dialogue: 0,0:26:19.12,0:26:21.28,*Default,NTP,0000,0000,0000,,then it's really hard to read so
+Dialogue: 0,0:26:21.28,0:26:23.68,*Default,NTP,0000,0000,0000,,kind of depending on your comfort level
+Dialogue: 0,0:26:23.68,0:26:25.20,*Default,NTP,0000,0000,0000,,and the comfort level of whoever might
+Dialogue: 0,0:26:25.20,0:26:26.64,*Default,NTP,0000,0000,0000,,read your code it can make a lot more
+Dialogue: 0,0:26:26.64,0:26:27.92,*Default,NTP,0000,0000,0000,,sense to kind of write things out
+Dialogue: 0,0:26:27.92,0:26:28.96,*Default,NTP,0000,0000,0000,,explicitly
+Dialogue: 0,0:26:28.96,0:26:30.64,*Default,NTP,0000,0000,0000,,um or you know if you've all been
+Dialogue: 0,0:26:30.64,0:26:32.80,*Default,NTP,0000,0000,0000,,programming together in python for years
+Dialogue: 0,0:26:32.80,0:26:34.88,*Default,NTP,0000,0000,0000,,in your community then you could write
+Dialogue: 0,0:26:34.88,0:26:36.40,*Default,NTP,0000,0000,0000,,it this way because zip is kind of a
+Dialogue: 0,0:26:36.40,0:26:37.68,*Default,NTP,0000,0000,0000,,common verb
+Dialogue: 0,0:26:37.68,0:26:40.00,*Default,NTP,0000,0000,0000,,in that community and it's not
+Dialogue: 0,0:26:40.00,0:26:41.60,*Default,NTP,0000,0000,0000,,necessarily confusing
+Dialogue: 0,0:26:41.60,0:26:43.04,*Default,NTP,0000,0000,0000,,and this works for assignments too i
+Dialogue: 0,0:26:43.04,0:26:44.64,*Default,NTP,0000,0000,0000,,mean we may tie your hands and say you
+Dialogue: 0,0:26:44.64,0:26:46.00,*Default,NTP,0000,0000,0000,,have to use zip
+Dialogue: 0,0:26:46.00,0:26:47.04,*Default,NTP,0000,0000,0000,,that doesn't mean your first
+Dialogue: 0,0:26:47.04,0:26:48.72,*Default,NTP,0000,0000,0000,,implementation has to do it just figure
+Dialogue: 0,0:26:48.72,0:26:49.92,*Default,NTP,0000,0000,0000,,out how it works
+Dialogue: 0,0:26:49.92,0:26:51.84,*Default,NTP,0000,0000,0000,,and then you can back your way into the
+Dialogue: 0,0:26:51.84,0:26:53.04,*Default,NTP,0000,0000,0000,,constraints
+Dialogue: 0,0:26:53.04,0:26:54.48,*Default,NTP,0000,0000,0000,,and that sort of helps you think about
+Dialogue: 0,0:26:54.48,0:26:55.84,*Default,NTP,0000,0000,0000,,you know how we're solving the problem
+Dialogue: 0,0:26:55.84,0:26:57.36,*Default,NTP,0000,0000,0000,,without one hand tied behind your back
+Dialogue: 0,0:26:57.36,0:26:58.72,*Default,NTP,0000,0000,0000,,if you're not comfortable
+Dialogue: 0,0:26:58.72,0:27:00.00,*Default,NTP,0000,0000,0000,,with a particular concept but at least
+Dialogue: 0,0:27:00.00,0:27:02.56,*Default,NTP,0000,0000,0000,,you have it working at that point
+Dialogue: 0,0:27:02.56,0:27:04.24,*Default,NTP,0000,0000,0000,,and it's worth noting that a lot of
+Dialogue: 0,0:27:04.24,0:27:05.84,*Default,NTP,0000,0000,0000,,expressions that existed in the
+Dialogue: 0,0:27:05.84,0:27:08.08,*Default,NTP,0000,0000,0000,,other implementation still exist here
+Dialogue: 0,0:27:08.08,0:27:09.52,*Default,NTP,0000,0000,0000,,like we didn't actually have to change
+Dialogue: 0,0:27:09.52,0:27:11.60,*Default,NTP,0000,0000,0000,,this code as long as we kind of captured
+Dialogue: 0,0:27:11.60,0:27:13.44,*Default,NTP,0000,0000,0000,,what was going on
+Dialogue: 0,0:27:13.44,0:27:16.32,*Default,NTP,0000,0000,0000,,so that's generally true there's lots of
+Dialogue: 0,0:27:16.32,0:27:17.28,*Default,NTP,0000,0000,0000,,different ways to
+Dialogue: 0,0:27:17.28,0:27:18.96,*Default,NTP,0000,0000,0000,,write the same thing but they often
+Dialogue: 0,0:27:18.96,0:27:22.00,*Default,NTP,0000,0000,0000,,share the same elements
+Dialogue: 0,0:27:22.40,0:27:24.08,*Default,NTP,0000,0000,0000,,a follow-up question was whether you
+Dialogue: 0,0:27:24.08,0:27:26.48,*Default,NTP,0000,0000,0000,,could write the same implementation just
+Dialogue: 0,0:27:26.48,0:27:28.56,*Default,NTP,0000,0000,0000,,using recursion
+Dialogue: 0,0:27:28.56,0:27:32.00,*Default,NTP,0000,0000,0000,,yeah great question so we are using
+Dialogue: 0,0:27:32.00,0:27:33.76,*Default,NTP,0000,0000,0000,,recursion already in the sense that
+Dialogue: 0,0:27:33.76,0:27:35.12,*Default,NTP,0000,0000,0000,,we're calling ad trees
+Dialogue: 0,0:27:35.12,0:27:38.00,*Default,NTP,0000,0000,0000,,within the body of fat trees there's one
+Dialogue: 0,0:27:38.00,0:27:39.84,*Default,NTP,0000,0000,0000,,part that we're not doing recursively
+Dialogue: 0,0:27:39.84,0:27:41.60,*Default,NTP,0000,0000,0000,,which is that we're
+Dialogue: 0,0:27:41.60,0:27:44.00,*Default,NTP,0000,0000,0000,,iterating over the branches so this is
+Dialogue: 0,0:27:44.00,0:27:45.12,*Default,NTP,0000,0000,0000,,kind of a mixture
+Dialogue: 0,0:27:45.12,0:27:48.40,*Default,NTP,0000,0000,0000,,of iteration and recursion could we make
+Dialogue: 0,0:27:48.40,0:27:51.28,*Default,NTP,0000,0000,0000,,that part recursive too the answer is
+Dialogue: 0,0:27:51.28,0:27:52.16,*Default,NTP,0000,0000,0000,,yes
+Dialogue: 0,0:27:52.16,0:27:54.32,*Default,NTP,0000,0000,0000,,but we'd basically just write a helper
+Dialogue: 0,0:27:54.32,0:27:55.28,*Default,NTP,0000,0000,0000,,function that
+Dialogue: 0,0:27:55.28,0:27:58.88,*Default,NTP,0000,0000,0000,,does this process of building up the
+Dialogue: 0,0:27:58.88,0:28:00.24,*Default,NTP,0000,0000,0000,,result branches
+Dialogue: 0,0:28:00.24,0:28:04.40,*Default,NTP,0000,0000,0000,,we just build it up recursively um
+Dialogue: 0,0:28:04.40,0:28:06.64,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:28:07.68,0:28:10.72,*Default,NTP,0000,0000,0000,,it's actually not so bad
+Dialogue: 0,0:28:13.76,0:28:17.60,*Default,NTP,0000,0000,0000,,what do we need we need the
+Dialogue: 0,0:28:17.60,0:28:20.08,*Default,NTP,0000,0000,0000,,branches of one and the branches of two
+Dialogue: 0,0:28:20.08,0:28:21.52,*Default,NTP,0000,0000,0000,,we pass those in
+Dialogue: 0,0:28:21.52,0:28:23.28,*Default,NTP,0000,0000,0000,,or actually let's just stay consistent
+Dialogue: 0,0:28:23.28,0:28:27.04,*Default,NTP,0000,0000,0000,,we'll pass in t1 and t2
+Dialogue: 0,0:28:28.84,0:28:31.84,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:28:32.32,0:28:36.00,*Default,NTP,0000,0000,0000,,and if it's the case that
+Dialogue: 0,0:28:36.00,0:28:45.84,*Default,NTP,0000,0000,0000,,the one of these is empty
+Dialogue: 0,0:28:52.32,0:28:56.08,*Default,NTP,0000,0000,0000,,then there are no branches in the result
+Dialogue: 0,0:28:56.08,0:28:59.04,*Default,NTP,0000,0000,0000,,otherwise we're going to have to
+Dialogue: 0,0:28:59.04,0:29:01.04,*Default,NTP,0000,0000,0000,,construct
+Dialogue: 0,0:29:01.04,0:29:04.32,*Default,NTP,0000,0000,0000,,uh the like
+Dialogue: 0,0:29:04.32,0:29:07.92,*Default,NTP,0000,0000,0000,,first add tree and then
+Dialogue: 0,0:29:07.92,0:29:13.84,*Default,NTP,0000,0000,0000,,add that on to the the rest so
+Dialogue: 0,0:29:13.84,0:29:15.76,*Default,NTP,0000,0000,0000,,the first thing i think would be the
+Dialogue: 0,0:29:15.76,0:29:17.92,*Default,NTP,0000,0000,0000,,result of calling ad trees
+Dialogue: 0,0:29:17.92,0:29:20.32,*Default,NTP,0000,0000,0000,,on
+Dialogue: 0,0:29:24.16,0:29:29.68,*Default,NTP,0000,0000,0000,,branches t1 0 almost got it right
+Dialogue: 0,0:29:30.80,0:29:34.16,*Default,NTP,0000,0000,0000,,and branches t1 2
+Dialogue: 0,0:29:34.16,0:29:36.48,*Default,NTP,0000,0000,0000,,0
+Dialogue: 0,0:29:38.84,0:29:40.88,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:29:40.88,0:29:43.36,*Default,NTP,0000,0000,0000,,then what do we do with that okay i'm
+Dialogue: 0,0:29:43.36,0:29:45.52,*Default,NTP,0000,0000,0000,,going to move this in just so it fits
+Dialogue: 0,0:29:45.52,0:29:50.32,*Default,NTP,0000,0000,0000,,um we want a list that that has that as
+Dialogue: 0,0:29:50.32,0:29:51.68,*Default,NTP,0000,0000,0000,,its first element
+Dialogue: 0,0:29:51.68,0:29:54.16,*Default,NTP,0000,0000,0000,,and then the result of build result
+Dialogue: 0,0:29:54.16,0:29:55.28,*Default,NTP,0000,0000,0000,,branches
+Dialogue: 0,0:29:55.28,0:29:58.40,*Default,NTP,0000,0000,0000,,on oh i guess we do need a list of
+Dialogue: 0,0:29:58.40,0:30:01.04,*Default,NTP,0000,0000,0000,,branches here
+Dialogue: 0,0:30:03.60,0:30:10.80,*Default,NTP,0000,0000,0000,,so here bs1 and bs2 are the branches
+Dialogue: 0,0:30:11.12,0:30:14.24,*Default,NTP,0000,0000,0000,,of two trees
+Dialogue: 0,0:30:15.28,0:30:18.32,*Default,NTP,0000,0000,0000,,are the remaining branches of
+Dialogue: 0,0:30:18.32,0:30:23.60,*Default,NTP,0000,0000,0000,,trees well i'll leave it like that uh
+Dialogue: 0,0:30:23.60,0:30:28.08,*Default,NTP,0000,0000,0000,,so we're getting close
+Dialogue: 0,0:30:28.08,0:30:29.76,*Default,NTP,0000,0000,0000,,you see there is like a fair amount of
+Dialogue: 0,0:30:29.76,0:30:33.44,*Default,NTP,0000,0000,0000,,iteration here to get it right
+Dialogue: 0,0:30:33.76,0:30:38.32,*Default,NTP,0000,0000,0000,,that's not right and that's not right
+Dialogue: 0,0:30:38.32,0:30:42.40,*Default,NTP,0000,0000,0000,,and that's right maybe
+Dialogue: 0,0:30:42.40,0:30:45.84,*Default,NTP,0000,0000,0000,,uh and then we just need to
+Dialogue: 0,0:30:45.84,0:30:47.76,*Default,NTP,0000,0000,0000,,kind of forget about the first element
+Dialogue: 0,0:30:47.76,0:30:51.84,*Default,NTP,0000,0000,0000,,of both of these
+Dialogue: 0,0:30:55.44,0:30:58.96,*Default,NTP,0000,0000,0000,,make it fit and then we get rid of this
+Dialogue: 0,0:30:58.96,0:30:59.76,*Default,NTP,0000,0000,0000,,expression
+Dialogue: 0,0:30:59.76,0:31:02.48,*Default,NTP,0000,0000,0000,,and replace it with a call to the helper
+Dialogue: 0,0:31:02.48,0:31:05.84,*Default,NTP,0000,0000,0000,,function that we built
+Dialogue: 0,0:31:14.96,0:31:17.20,*Default,NTP,0000,0000,0000,,and perhaps we've then built something
+Dialogue: 0,0:31:17.20,0:31:19.84,*Default,NTP,0000,0000,0000,,that works
+Dialogue: 0,0:31:23.60,0:31:27.36,*Default,NTP,0000,0000,0000,,we did not build something that works
+Dialogue: 0,0:31:27.36,0:31:28.80,*Default,NTP,0000,0000,0000,,john i don't want to put pressure on you
+Dialogue: 0,0:31:28.80,0:31:31.60,*Default,NTP,0000,0000,0000,,but you got three minutes
+Dialogue: 0,0:31:31.60,0:31:34.88,*Default,NTP,0000,0000,0000,,okay so now it works uh yeah
+Dialogue: 0,0:31:34.88,0:31:37.92,*Default,NTP,0000,0000,0000,,so if you really wanted like to take
+Dialogue: 0,0:31:37.92,0:31:38.32,*Default,NTP,0000,0000,0000,,some
+Dialogue: 0,0:31:38.32,0:31:40.56,*Default,NTP,0000,0000,0000,,iteration and turn into a recursion
+Dialogue: 0,0:31:40.56,0:31:41.68,*Default,NTP,0000,0000,0000,,there's always a way
+Dialogue: 0,0:31:41.68,0:31:45.20,*Default,NTP,0000,0000,0000,,here's one possible way um
+Dialogue: 0,0:31:45.20,0:31:47.12,*Default,NTP,0000,0000,0000,,this would be done rarely in practice i
+Dialogue: 0,0:31:47.12,0:31:48.56,*Default,NTP,0000,0000,0000,,think uh if you just
+Dialogue: 0,0:31:48.56,0:31:49.92,*Default,NTP,0000,0000,0000,,like are going through a sequence of
+Dialogue: 0,0:31:49.92,0:31:52.40,*Default,NTP,0000,0000,0000,,something then use a list comprehension
+Dialogue: 0,0:31:52.40,0:31:54.08,*Default,NTP,0000,0000,0000,,or for statement or a while statement or
+Dialogue: 0,0:31:54.08,0:31:55.60,*Default,NTP,0000,0000,0000,,something like that
+Dialogue: 0,0:31:55.60,0:31:58.48,*Default,NTP,0000,0000,0000,,recursion is really wonderful for
+Dialogue: 0,0:31:58.48,0:32:00.40,*Default,NTP,0000,0000,0000,,recursively processing trees
+Dialogue: 0,0:32:00.40,0:32:03.36,*Default,NTP,0000,0000,0000,,so uh the the add trees here is really
+Dialogue: 0,0:32:03.36,0:32:04.88,*Default,NTP,0000,0000,0000,,an important recursive call that's the
+Dialogue: 0,0:32:04.88,0:32:06.48,*Default,NTP,0000,0000,0000,,reason we learned recursion
+Dialogue: 0,0:32:06.48,0:32:08.48,*Default,NTP,0000,0000,0000,,and uh this is just kind of an exercise
+Dialogue: 0,0:32:08.48,0:32:10.96,*Default,NTP,0000,0000,0000,,in knowing that it's possible
+Dialogue: 0,0:32:10.96,0:32:13.36,*Default,NTP,0000,0000,0000,,a student then suggested that instead of
+Dialogue: 0,0:32:13.36,0:32:15.92,*Default,NTP,0000,0000,0000,,returning an empty list in the base case
+Dialogue: 0,0:32:15.92,0:32:19.60,*Default,NTP,0000,0000,0000,,you return the rest of the other tree
+Dialogue: 0,0:32:19.60,0:32:21.84,*Default,NTP,0000,0000,0000,,fine idea yeah although now you have to
+Dialogue: 0,0:32:21.84,0:32:22.72,*Default,NTP,0000,0000,0000,,know which one
+Dialogue: 0,0:32:22.72,0:32:25.92,*Default,NTP,0000,0000,0000,,is you can't just do the min though yeah
+Dialogue: 0,0:32:25.92,0:32:26.80,*Default,NTP,0000,0000,0000,,it might work
+Dialogue: 0,0:32:26.80,0:32:30.40,*Default,NTP,0000,0000,0000,,there you go good idea yeah
+Dialogue: 0,0:32:30.40,0:32:34.08,*Default,NTP,0000,0000,0000,,all right that saves some effort okay
+Dialogue: 0,0:32:34.08,0:32:37.76,*Default,NTP,0000,0000,0000,,we added a lot of trees thanks folks

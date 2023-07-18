@@ -253,7 +253,8 @@ def coords(fn, seq, lower, upper):
     [[-2, 4], [1, 1], [3, 9]]
     """
     "*** YOUR CODE HERE ***"
-    return ______
+
+    return [[x,fn(x)]  for x in seq if lower<=fn(x)<=upper]
 
 
 def riffle(deck):
@@ -266,8 +267,7 @@ def riffle(deck):
     [0, 10, 1, 11, 2, 12, 3, 13, 4, 14, 5, 15, 6, 16, 7, 17, 8, 18, 9, 19]
     """
     "*** YOUR CODE HERE ***"
-    return _______
-
+    return [deck(i) if i%2==0 else deck(i+len(deck)/2) for i in len(deck) ]
 
 def add_trees(t1, t2):
     """
@@ -305,7 +305,13 @@ def add_trees(t1, t2):
       5
     """
     "*** YOUR CODE HERE ***"
-
+    # bace_case:1. 一树空 return max(tree1,tree2) 2.else + 
+    # TODO:
+    if is_leaf(t1) or is_leaf(t2):
+        return tree(max(label(t1),label(t2)),[branches(t2) if is_leaf(t1) else branches(t1)])
+    # elif 
+    # else:
+    return tree(label(t1)+label(t2),[add_trees(new_t1,new_t2) for new_t1,new_t2 in zip(branches(t1),branches(t2))])
 
 def build_successors_table(tokens):
     """Return a dictionary: keys are words; values are lists of successors.
@@ -456,3 +462,6 @@ def copy_tree(t):
     """
     return tree(label(t), [copy_tree(b) for b in branches(t)])
 
+numbers = tree(1,[tree(2,[tree(3),tree(4)]),tree(5,[tree(6,[tree(7)]),tree(8)])])
+print_tree(add_trees(numbers, numbers))
+# add_trees(tree(2), tree(3, [tree(4), tree(5)]))
