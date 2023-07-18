@@ -305,13 +305,15 @@ def add_trees(t1, t2):
       5
     """
     "*** YOUR CODE HERE ***"
-    # bace_case:1. 一树空 return max(tree1,tree2) 2.else + 
-    # TODO:
-    if is_leaf(t1) or is_leaf(t2):
-        return tree(max(label(t1),label(t2)),[branches(t2) if is_leaf(t1) else branches(t1)])
-    # elif 
-    # else:
-    return tree(label(t1)+label(t2),[add_trees(new_t1,new_t2) for new_t1,new_t2 in zip(branches(t1),branches(t2))])
+    # John 的写法太妙了
+    label_result=label(t1)+label(t2)
+    branches_result=[add_trees(b1,b2) for b1,b2 in zip(branches(t1),branches(t2))]
+    i=len(branches_result)
+    branches_result+=branches(t1)[i:]
+    branches_result+=branches(t2)[i:]
+    return tree(label_result,branches_result)
+    #另一种solution
+
 
 def build_successors_table(tokens):
     """Return a dictionary: keys are words; values are lists of successors.
@@ -329,10 +331,10 @@ def build_successors_table(tokens):
     """
     table = {}
     prev = '.'
-    for word in tokens:
+    for word in tokens:   # to
         if prev not in table:
-            "*** YOUR CODE HERE ***"
-        "*** YOUR CODE HERE ***"
+            table[prev]=[]
+        table[prev]+=[word]
         prev = word
     return table
 
@@ -461,7 +463,3 @@ def copy_tree(t):
     5
     """
     return tree(label(t), [copy_tree(b) for b in branches(t)])
-
-numbers = tree(1,[tree(2,[tree(3),tree(4)]),tree(5,[tree(6,[tree(7)]),tree(8)])])
-print_tree(add_trees(numbers, numbers))
-# add_trees(tree(2), tree(3, [tree(4), tree(5)]))
