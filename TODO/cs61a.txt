@@ -3,4 +3,4 @@
 3. hw02: Q4 and Q5
 4. lab04 Q5
 5. disc4 Q1.2 Q2.3
- 
+6. disc5 Q1.4

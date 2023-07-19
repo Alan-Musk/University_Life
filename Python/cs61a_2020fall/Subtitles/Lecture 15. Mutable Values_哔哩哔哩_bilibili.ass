@@ -1,0 +1,952 @@
+[Script Info]
+Title: Lecture 15. Mutable Values_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=36&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.37,0:00:03.80,*Default,NTP,0000,0000,0000,,61 a lecture No.15
+Dialogue: 0,0:00:04.10,0:00:05.10,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:06.07,0:00:08.13,*Default,NTP,0000,0000,0000,,the cats project is due Friday
+Dialogue: 0,0:00:08.27,0:00:10.73,*Default,NTP,0000,0000,0000,,you get a bonus point for submitting the whole project
+Dialogue: 0,0:00:10.73,0:00:13.50,*Default,NTP,0000,0000,0000,,by Thursday that's today
+Dialogue: 0,0:00:13.67,0:00:15.87,*Default,NTP,0000,0000,0000,,homework three will be posted on Friday
+Dialogue: 0,0:00:15.87,0:00:17.40,*Default,NTP,0000,0000,0000,,is do next Thursday
+Dialogue: 0,0:00:17.93,0:00:19.73,*Default,NTP,0000,0000,0000,,we have some advising off
+Dialogue: 0,0:00:19.73,0:00:22.20,*Default,NTP,0000,0000,0000,,sour appointments Friday Saturday and Monday
+Dialogue: 0,0:00:22.37,0:00:24.17,*Default,NTP,0000,0000,0000,,those are just for advising
+Dialogue: 0,0:00:24.20,0:00:26.10,*Default,NTP,0000,0000,0000,,not for homework or project help
+Dialogue: 0,0:00:27.07,0:00:28.47,*Default,NTP,0000,0000,0000,,I know that there have been some
+Dialogue: 0,0:00:28.47,0:00:30.40,*Default,NTP,0000,0000,0000,,long weights on the office hour q
+Dialogue: 0,0:00:30.40,0:00:31.20,*Default,NTP,0000,0000,0000,,this week
+Dialogue: 0,0:00:31.73,0:00:35.13,*Default,NTP,0000,0000,0000,,we are definitely trying to improve that situation
+Dialogue: 0,0:00:35.40,0:00:37.90,*Default,NTP,0000,0000,0000,,and I'm sorry if you're having trouble getting your
+Dialogue: 0,0:00:37.90,0:00:39.10,*Default,NTP,0000,0000,0000,,questions answered
+Dialogue: 0,0:00:39.90,0:00:40.60,*Default,NTP,0000,0000,0000,,remember that
+Dialogue: 0,0:00:40.60,0:00:43.70,*Default,NTP,0000,0000,0000,,you're welcome to post private post sam piazza
+Dialogue: 0,0:00:44.13,0:00:45.97,*Default,NTP,0000,0000,0000,,which will not be answered immediately
+Dialogue: 0,0:00:45.97,0:00:48.13,*Default,NTP,0000,0000,0000,,but we'll be answered eventually
+Dialogue: 0,0:00:48.53,0:00:51.17,*Default,NTP,0000,0000,0000,,and you're also welcome to discuss these problems
+Dialogue: 0,0:00:51.27,0:00:54.00,*Default,NTP,0000,0000,0000,,with the other students that you know in the course
+Dialogue: 0,0:00:54.10,0:00:56.27,*Default,NTP,0000,0000,0000,,for example from your tutorial group
+Dialogue: 0,0:00:56.50,0:00:58.90,*Default,NTP,0000,0000,0000,,and if they've finished a question already
+Dialogue: 0,0:00:59.77,0:01:02.07,*Default,NTP,0000,0000,0000,,then it's okay for them to take a look at your code
+Dialogue: 0,0:01:02.07,0:01:03.67,*Default,NTP,0000,0000,0000,,and give you some advice
+Dialogue: 0,0:01:04.07,0:01:04.93,*Default,NTP,0000,0000,0000,,you can't share
+Dialogue: 0,0:01:04.93,0:01:07.53,*Default,NTP,0000,0000,0000,,your code with someone who hasn't finished a question
+Dialogue: 0,0:01:07.53,0:01:09.57,*Default,NTP,0000,0000,0000,,because otherwise they might just copy it
+Dialogue: 0,0:01:09.57,0:01:11.27,*Default,NTP,0000,0000,0000,,and you need to write code yourself
+Dialogue: 0,0:01:11.77,0:01:12.73,*Default,NTP,0000,0000,0000,,but if you want to work with
+Dialogue: 0,0:01:12.73,0:01:14.30,*Default,NTP,0000,0000,0000,,another student that's in the class
+Dialogue: 0,0:01:14.30,0:01:16.40,*Default,NTP,0000,0000,0000,,you're welcome to discuss any ideas
+Dialogue: 0,0:01:16.40,0:01:17.80,*Default,NTP,0000,0000,0000,,and you're welcome to help people
+Dialogue: 0,0:01:17.80,0:01:19.73,*Default,NTP,0000,0000,0000,,who aren't quite as far along as you are
+Dialogue: 0,0:01:19.77,0:01:21.70,*Default,NTP,0000,0000,0000,,by taking a look at what they've done so far
+Dialogue: 0,0:01:21.70,0:01:23.13,*Default,NTP,0000,0000,0000,,and giving them some advice
+Dialogue: 0,0:01:23.90,0:01:26.13,*Default,NTP,0000,0000,0000,,I know that your time is valuable
+Dialogue: 0,0:01:26.13,0:01:28.10,*Default,NTP,0000,0000,0000,,and I don't want you all waiting around
+Dialogue: 0,0:01:28.30,0:01:30.00,*Default,NTP,0000,0000,0000,,we are trying to deal with this
+Dialogue: 0,0:01:30.10,0:01:31.77,*Default,NTP,0000,0000,0000,,it is an unusual semester
+Dialogue: 0,0:01:31.87,0:01:35.27,*Default,NTP,0000,0000,0000,,where we've had much higher question volume on piazza
+Dialogue: 0,0:01:35.93,0:01:37.27,*Default,NTP,0000,0000,0000,,much more demand
+Dialogue: 0,0:01:37.37,0:01:39.73,*Default,NTP,0000,0000,0000,,for 1 on 1 office hours than we're used to
+Dialogue: 0,0:01:40.00,0:01:42.47,*Default,NTP,0000,0000,0000,,and we will try very hard to meet that demand
+Dialogue: 0,0:01:42.67,0:01:43.93,*Default,NTP,0000,0000,0000,,but please bear with us
+Dialogue: 0,0:01:44.80,0:01:46.77,*Default,NTP,0000,0000,0000,,okay back to the course content
+Dialogue: 0,0:01:46.77,0:01:48.70,*Default,NTP,0000,0000,0000,,today is a very important day
+Dialogue: 0,0:01:49.00,0:01:51.57,*Default,NTP,0000,0000,0000,,where you learn about mutation
+Dialogue: 0,0:01:51.87,0:01:54.47,*Default,NTP,0000,0000,0000,,which is when a value actually changes
+Dialogue: 0,0:01:54.67,0:01:55.73,*Default,NTP,0000,0000,0000,,and this is not something
+Dialogue: 0,0:01:55.73,0:01:57.53,*Default,NTP,0000,0000,0000,,that's happened in the course before
+Dialogue: 0,0:01:58.20,0:01:59.60,*Default,NTP,0000,0000,0000,,but it is very common
+Dialogue: 0,0:01:59.80,0:02:01.20,*Default,NTP,0000,0000,0000,,and it's a core
+Dialogue: 0,0:02:01.20,0:02:03.77,*Default,NTP,0000,0000,0000,,element of what we're going to be studying
+Dialogue: 0,0:02:03.77,0:02:05.47,*Default,NTP,0000,0000,0000,,very soon in this course
+Dialogue: 0,0:02:05.70,0:02:09.50,*Default,NTP,0000,0000,0000,,which is what's called object oriented programming
+Dialogue: 0,0:02:09.57,0:02:10.47,*Default,NTP,0000,0000,0000,,the current
+Dialogue: 0,0:02:10.53,0:02:13.80,*Default,NTP,0000,0000,0000,,dominant paradigm for designing large programs
+Dialogue: 0,0:02:14.13,0:02:16.90,*Default,NTP,0000,0000,0000,,and a wonderful bundle of ideas that includes
+Dialogue: 0,0:02:16.90,0:02:17.87,*Default,NTP,0000,0000,0000,,as one of them
+Dialogue: 0,0:02:17.97,0:02:19.90,*Default,NTP,0000,0000,0000,,this notion of mutation
+Dialogue: 0,0:02:20.80,0:02:21.87,*Default,NTP,0000,0000,0000,,okay here we go
+Dialogue: 0,0:02:23.90,0:02:26.73,*Default,NTP,0000,0000,0000,,objects are an important concept
+Dialogue: 0,0:02:26.97,0:02:28.70,*Default,NTP,0000,0000,0000,,in software engineering
+Dialogue: 0,0:02:29.27,0:02:33.33,*Default,NTP,0000,0000,0000,,an object is a value that behaves
+Dialogue: 0,0:02:33.60,0:02:36.13,*Default,NTP,0000,0000,0000,,like what it's supposed to represent
+Dialogue: 0,0:02:36.67,0:02:38.40,*Default,NTP,0000,0000,0000,,let me show you an example
+Dialogue: 0,0:02:40.67,0:02:43.10,*Default,NTP,0000,0000,0000,,there's a module called date time
+Dialogue: 0,0:02:43.97,0:02:46.87,*Default,NTP,0000,0000,0000,,which represents things like dates and times
+Dialogue: 0,0:02:47.47,0:02:50.30,*Default,NTP,0000,0000,0000,,and from that we can import date
+Dialogue: 0,0:02:51.60,0:02:54.13,*Default,NTP,0000,0000,0000,,now date is what's called a class
+Dialogue: 0,0:02:54.70,0:02:57.73,*Default,NTP,0000,0000,0000,,and when I create an instance of a date
+Dialogue: 0,0:02:58.10,0:03:01.07,*Default,NTP,0000,0000,0000,,I do that by calling the class
+Dialogue: 0,0:03:01.73,0:03:03.13,*Default,NTP,0000,0000,0000,,so if I created date
+Dialogue: 0,0:03:03.37,0:03:07.07,*Default,NTP,0000,0000,0000,,two thousand fifteen february twentieth
+Dialogue: 0,0:03:10.87,0:03:11.93,*Default,NTP,0000,0000,0000,,that's a date
+Dialogue: 0,0:03:13.47,0:03:16.20,*Default,NTP,0000,0000,0000,,another date is the date of your freedom
+Dialogue: 0,0:03:17.07,0:03:20.70,*Default,NTP,0000,0000,0000,,which in this course and this semester is on may the 12
+Dialogue: 0,0:03:20.97,0:03:22.90,*Default,NTP,0000,0000,0000,,when you take your final exam
+Dialogue: 0,0:03:24.90,0:03:27.27,*Default,NTP,0000,0000,0000,,now an object is supposed to behave
+Dialogue: 0,0:03:27.40,0:03:29.87,*Default,NTP,0000,0000,0000,,like the value that it represents
+Dialogue: 0,0:03:30.40,0:03:32.87,*Default,NTP,0000,0000,0000,,so it should be the case that if I combine
+Dialogue: 0,0:03:33.27,0:03:34.53,*Default,NTP,0000,0000,0000,,today and freedom
+Dialogue: 0,0:03:34.70,0:03:37.77,*Default,NTP,0000,0000,0000,,for instance by computing how long it is
+Dialogue: 0,0:03:38.07,0:03:40.27,*Default,NTP,0000,0000,0000,,between freedom and today
+Dialogue: 0,0:03:41.10,0:03:43.70,*Default,NTP,0000,0000,0000,,I should get a reasonable representation
+Dialogue: 0,0:03:43.80,0:03:44.60,*Default,NTP,0000,0000,0000,,something that
+Dialogue: 0,0:03:44.80,0:03:47.07,*Default,NTP,0000,0000,0000,,tells me these things are dates
+Dialogue: 0,0:03:47.07,0:03:49.07,*Default,NTP,0000,0000,0000,,that I'm subtracting from one or another
+Dialogue: 0,0:03:49.13,0:03:52.87,*Default,NTP,0000,0000,0000,,there are 81 days left until you're free of this course
+Dialogue: 0,0:03:55.27,0:03:59.67,*Default,NTP,0000,0000,0000,,the primary mechanism by which objects have behavior
+Dialogue: 0,0:03:59.93,0:04:01.70,*Default,NTP,0000,0000,0000,,is through their attributes
+Dialogue: 0,0:04:01.93,0:04:05.07,*Default,NTP,0000,0000,0000,,and you access the attribute of an object
+Dialogue: 0,0:04:05.07,0:04:06.73,*Default,NTP,0000,0000,0000,,through a dot expression
+Dialogue: 0,0:04:07.73,0:04:10.77,*Default,NTP,0000,0000,0000,,so you can get the year of today
+Dialogue: 0,0:04:11.17,0:04:13.17,*Default,NTP,0000,0000,0000,,or the month of today
+Dialogue: 0,0:04:15.17,0:04:17.53,*Default,NTP,0000,0000,0000,,by asking for its year
+Dialogue: 0,0:04:17.67,0:04:20.97,*Default,NTP,0000,0000,0000,,or its month attribute using a dot expression
+Dialogue: 0,0:04:21.27,0:04:22.40,*Default,NTP,0000,0000,0000,,we'll talk exactly
+Dialogue: 0,0:04:22.40,0:04:24.67,*Default,NTP,0000,0000,0000,,about how dot expressions get evaluated
+Dialogue: 0,0:04:24.73,0:04:25.57,*Default,NTP,0000,0000,0000,,when we do a
+Dialogue: 0,0:04:25.57,0:04:28.50,*Default,NTP,0000,0000,0000,,deeper introduction of the object system in python
+Dialogue: 0,0:04:29.07,0:04:30.80,*Default,NTP,0000,0000,0000,,but for now you should realize
+Dialogue: 0,0:04:30.90,0:04:32.87,*Default,NTP,0000,0000,0000,,what one of these expressions means
+Dialogue: 0,0:04:33.13,0:04:34.17,*Default,NTP,0000,0000,0000,,this is a name
+Dialogue: 0,0:04:35.07,0:04:37.93,*Default,NTP,0000,0000,0000,,it could be any expression that evaluates to an object
+Dialogue: 0,0:04:38.20,0:04:39.33,*Default,NTP,0000,0000,0000,,and then you have a dot
+Dialogue: 0,0:04:39.33,0:04:39.60,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:04:39.60,0:04:41.77,*Default,NTP,0000,0000,0000,,the name of the attribute that you want to look up
+Dialogue: 0,0:04:42.93,0:04:45.87,*Default,NTP,0000,0000,0000,,in addition to attributes that are bound to values
+Dialogue: 0,0:04:45.87,0:04:48.20,*Default,NTP,0000,0000,0000,,you can have attributes that are bound to functions
+Dialogue: 0,0:04:48.33,0:04:49.90,*Default,NTP,0000,0000,0000,,those are called methods
+Dialogue: 0,0:04:50.73,0:04:53.20,*Default,NTP,0000,0000,0000,,so a method is anything that you access
+Dialogue: 0,0:04:53.20,0:04:54.90,*Default,NTP,0000,0000,0000,,using adot expression
+Dialogue: 0,0:04:57.60,0:05:00.07,*Default,NTP,0000,0000,0000,,and then called like a function
+Dialogue: 0,0:05:01.07,0:05:03.73,*Default,NTP,0000,0000,0000,,the stirf time method of a date
+Dialogue: 0,0:05:04.27,0:05:07.40,*Default,NTP,0000,0000,0000,,is a way of formatting that date as a string
+Dialogue: 0,0:05:07.87,0:05:09.47,*Default,NTP,0000,0000,0000,,why is it called stirf time
+Dialogue: 0,0:05:09.67,0:05:11.40,*Default,NTP,0000,0000,0000,,well that's a historical accident
+Dialogue: 0,0:05:11.40,0:05:13.73,*Default,NTP,0000,0000,0000,,somebody named this stirf time long ago
+Dialogue: 0,0:05:14.07,0:05:16.00,*Default,NTP,0000,0000,0000,,and so we still use that name today
+Dialogue: 0,0:05:17.87,0:05:19.70,*Default,NTP,0000,0000,0000,,what surf time does
+Dialogue: 0,0:05:19.93,0:05:23.57,*Default,NTP,0000,0000,0000,,is it takes in a string that describes how
+Dialogue: 0,0:05:23.87,0:05:26.17,*Default,NTP,0000,0000,0000,,I want to display this date
+Dialogue: 0,0:05:28.17,0:05:30.70,*Default,NTP,0000,0000,0000,,today is what's being displayed
+Dialogue: 0,0:05:31.00,0:05:33.90,*Default,NTP,0000,0000,0000,,and so this method is invoked on today
+Dialogue: 0,0:05:33.97,0:05:36.40,*Default,NTP,0000,0000,0000,,in order to give me a string representation
+Dialogue: 0,0:05:36.60,0:05:38.50,*Default,NTP,0000,0000,0000,,that says Friday February 20
+Dialogue: 0,0:05:39.00,0:05:41.33,*Default,NTP,0000,0000,0000,,where the % a correspondent of Friday
+Dialogue: 0,0:05:41.33,0:05:44.20,*Default,NTP,0000,0000,0000,,% b correspondent of February percent d
+Dialogue: 0,0:05:44.53,0:05:45.97,*Default,NTP,0000,0000,0000,,corresponded to 20
+Dialogue: 0,0:05:47.17,0:05:48.77,*Default,NTP,0000,0000,0000,,now notice that up here
+Dialogue: 0,0:05:49.07,0:05:51.17,*Default,NTP,0000,0000,0000,,I never said that this was a Friday
+Dialogue: 0,0:05:52.13,0:05:55.87,*Default,NTP,0000,0000,0000,,I never even said that the way you say February is febr
+Dialogue: 0,0:05:55.87,0:05:57.20,*Default,NTP,0000,0000,0000,,uari
+Dialogue: 0,0:05:58.87,0:06:01.57,*Default,NTP,0000,0000,0000,,it's just part of what it means to be a date
+Dialogue: 0,0:06:01.67,0:06:03.07,*Default,NTP,0000,0000,0000,,to be able to generate things
+Dialogue: 0,0:06:03.07,0:06:04.40,*Default,NTP,0000,0000,0000,,like the name of the weekday
+Dialogue: 0,0:06:04.40,0:06:05.73,*Default,NTP,0000,0000,0000,,or the name of the month
+Dialogue: 0,0:06:06.10,0:06:08.00,*Default,NTP,0000,0000,0000,,and so that's what I mean when I talk about
+Dialogue: 0,0:06:08.27,0:06:11.33,*Default,NTP,0000,0000,0000,,objects behaving like the things they represent
+Dialogue: 0,0:06:12.17,0:06:14.37,*Default,NTP,0000,0000,0000,,so objects represent information
+Dialogue: 0,0:06:14.73,0:06:17.70,*Default,NTP,0000,0000,0000,,they consist of data and behavior bundled together
+Dialogue: 0,0:06:17.90,0:06:19.80,*Default,NTP,0000,0000,0000,,to create abstractions
+Dialogue: 0,0:06:20.90,0:06:22.67,*Default,NTP,0000,0000,0000,,objects can represent things
+Dialogue: 0,0:06:22.93,0:06:24.67,*Default,NTP,0000,0000,0000,,but also properties of things
+Dialogue: 0,0:06:24.67,0:06:26.77,*Default,NTP,0000,0000,0000,,or interactions or processes
+Dialogue: 0,0:06:26.77,0:06:29.40,*Default,NTP,0000,0000,0000,,they're an extremely general concept
+Dialogue: 0,0:06:29.67,0:06:31.60,*Default,NTP,0000,0000,0000,,anything that has attributes
+Dialogue: 0,0:06:31.73,0:06:33.87,*Default,NTP,0000,0000,0000,,can be represented as an object
+Dialogue: 0,0:06:35.07,0:06:38.00,*Default,NTP,0000,0000,0000,,a type of object is called a class
+Dialogue: 0,0:06:38.53,0:06:40.93,*Default,NTP,0000,0000,0000,,classes are first class values in python
+Dialogue: 0,0:06:41.00,0:06:44.13,*Default,NTP,0000,0000,0000,,they can be passed in as arguments to functions
+Dialogue: 0,0:06:46.53,0:06:49.60,*Default,NTP,0000,0000,0000,,and objects are the heart of object oriented
+Dialogue: 0,0:06:49.60,0:06:52.93,*Default,NTP,0000,0000,0000,,programming which is an approached programming
+Dialogue: 0,0:06:53.87,0:06:57.00,*Default,NTP,0000,0000,0000,,that allows us to organize large programs
+Dialogue: 0,0:06:57.00,0:06:58.73,*Default,NTP,0000,0000,0000,,using a central metaphor
+Dialogue: 0,0:06:59.10,0:07:01.53,*Default,NTP,0000,0000,0000,,that a large program is just one big thing
+Dialogue: 0,0:07:01.97,0:07:04.17,*Default,NTP,0000,0000,0000,,it's a bunch of individual objects
+Dialogue: 0,0:07:04.17,0:07:05.73,*Default,NTP,0000,0000,0000,,communicating with each other
+Dialogue: 0,0:07:05.87,0:07:07.93,*Default,NTP,0000,0000,0000,,by sending messages back and forth
+Dialogue: 0,0:07:10.67,0:07:13.27,*Default,NTP,0000,0000,0000,,now in order to convincingly use
+Dialogue: 0,0:07:13.27,0:07:15.50,*Default,NTP,0000,0000,0000,,this metaphor throughout the large program
+Dialogue: 0,0:07:15.57,0:07:17.27,*Default,NTP,0000,0000,0000,,we have a special syntax
+Dialogue: 0,0:07:17.53,0:07:20.57,*Default,NTP,0000,0000,0000,,and the dot expression is part of that special syntax
+Dialogue: 0,0:07:21.07,0:07:23.00,*Default,NTP,0000,0000,0000,,that helps us improve the readability
+Dialogue: 0,0:07:23.00,0:07:24.97,*Default,NTP,0000,0000,0000,,or composition of our programs
+Dialogue: 0,0:07:26.50,0:07:29.73,*Default,NTP,0000,0000,0000,,in python every value is an object
+Dialogue: 0,0:07:29.97,0:07:32.20,*Default,NTP,0000,0000,0000,,every value has attributes
+Dialogue: 0,0:07:32.53,0:07:34.97,*Default,NTP,0000,0000,0000,,including numbers and strings
+Dialogue: 0,0:07:37.13,0:07:39.67,*Default,NTP,0000,0000,0000,,a lot of data manipulation actually happens through
+Dialogue: 0,0:07:39.67,0:07:40.87,*Default,NTP,0000,0000,0000,,object methods
+Dialogue: 0,0:07:41.17,0:07:43.30,*Default,NTP,0000,0000,0000,,and we're going to look at several of those today
+Dialogue: 0,0:07:44.70,0:07:46.57,*Default,NTP,0000,0000,0000,,functions are meant to do one thing
+Dialogue: 0,0:07:47.17,0:07:50.33,*Default,NTP,0000,0000,0000,,so the well design function has a single purpose
+Dialogue: 0,0:07:50.33,0:07:53.57,*Default,NTP,0000,0000,0000,,you pass in some arguments you get some return value
+Dialogue: 0,0:07:54.30,0:07:55.47,*Default,NTP,0000,0000,0000,,objects are different
+Dialogue: 0,0:07:55.57,0:07:57.20,*Default,NTP,0000,0000,0000,,they represent something that may
+Dialogue: 0,0:07:57.20,0:07:58.53,*Default,NTP,0000,0000,0000,,have lots of different behavior
+Dialogue: 0,0:07:58.53,0:07:59.53,*Default,NTP,0000,0000,0000,,bundle together
+Dialogue: 0,0:07:59.90,0:08:01.37,*Default,NTP,0000,0000,0000,,dates don't just do one thing
+Dialogue: 0,0:08:01.37,0:08:03.27,*Default,NTP,0000,0000,0000,,they're used in many different ways
+Dialogue: 0,0:08:03.93,0:08:05.73,*Default,NTP,0000,0000,0000,,so objects do many related things
+Dialogue: 0,0:08:05.73,0:08:07.57,*Default,NTP,0000,0000,0000,,and they can have multiple methods
+Dialogue: 0,0:08:07.57,0:08:09.33,*Default,NTP,0000,0000,0000,,each one of which is like a function
+Dialogue: 0,0:08:11.17,0:08:13.07,*Default,NTP,0000,0000,0000,,strings are objects
+Dialogue: 0,0:08:14.87,0:08:17.00,*Default,NTP,0000,0000,0000,,and so strings have attributes
+Dialogue: 0,0:08:17.47,0:08:19.07,*Default,NTP,0000,0000,0000,,the string hello
+Dialogue: 0,0:08:21.90,0:08:24.10,*Default,NTP,0000,0000,0000,,has a method called upper
+Dialogue: 0,0:08:24.53,0:08:26.10,*Default,NTP,0000,0000,0000,,which makes it upper case
+Dialogue: 0,0:08:26.47,0:08:28.77,*Default,NTP,0000,0000,0000,,that's part of the behavior of being a string
+Dialogue: 0,0:08:29.73,0:08:31.13,*Default,NTP,0000,0000,0000,,you can lower case it
+Dialogue: 0,0:08:31.77,0:08:34.13,*Default,NTP,0000,0000,0000,,you can even swap case it
+Dialogue: 0,0:08:35.93,0:08:37.40,*Default,NTP,0000,0000,0000,,now none of these things have changed
+Dialogue: 0,0:08:37.40,0:08:39.33,*Default,NTP,0000,0000,0000,,s s is still hello
+Dialogue: 0,0:08:40.00,0:08:41.10,*Default,NTP,0000,0000,0000,,each of these method
+Dialogue: 0,0:08:41.10,0:08:43.33,*Default,NTP,0000,0000,0000,,invocations has returned a new string
+Dialogue: 0,0:08:43.50,0:08:44.77,*Default,NTP,0000,0000,0000,,based on the old string
+Dialogue: 0,0:08:45.17,0:08:47.47,*Default,NTP,0000,0000,0000,,but it does something very string like
+Dialogue: 0,0:08:47.47,0:08:49.20,*Default,NTP,0000,0000,0000,,so these aren't general functions
+Dialogue: 0,0:08:49.20,0:08:51.97,*Default,NTP,0000,0000,0000,,these are things that are just particular to strings
+Dialogue: 0,0:08:51.97,0:08:53.80,*Default,NTP,0000,0000,0000,,and that's why they're methods
+Dialogue: 0,0:08:53.80,0:08:55.13,*Default,NTP,0000,0000,0000,,as opposed to functions
+Dialogue: 0,0:08:55.13,0:08:56.60,*Default,NTP,0000,0000,0000,,that are built into the language
+Dialogue: 0,0:08:58.77,0:09:00.57,*Default,NTP,0000,0000,0000,,now strings are an abstraction
+Dialogue: 0,0:09:00.60,0:09:02.57,*Default,NTP,0000,0000,0000,,that allows us to represent text
+Dialogue: 0,0:09:02.93,0:09:07.77,*Default,NTP,0000,0000,0000,,but there is an encoding of those strings as numbers
+Dialogue: 0,0:09:07.93,0:09:11.00,*Default,NTP,0000,0000,0000,,and actually this encoding is not specific to python
+Dialogue: 0,0:09:11.10,0:09:13.77,*Default,NTP,0000,0000,0000,,it's shared among many programming languages
+Dialogue: 0,0:09:13.93,0:09:16.20,*Default,NTP,0000,0000,0000,,so I'll just tell you a little bit about it for fun
+Dialogue: 0,0:09:17.47,0:09:18.93,*Default,NTP,0000,0000,0000,,an original encoding
+Dialogue: 0,0:09:19.17,0:09:20.97,*Default,NTP,0000,0000,0000,,not the first one ever invented
+Dialogue: 0,0:09:20.97,0:09:21.90,*Default,NTP,0000,0000,0000,,but one of the first
+Dialogue: 0,0:09:21.90,0:09:23.90,*Default,NTP,0000,0000,0000,,standards to take hold and computing
+Dialogue: 0,0:09:24.00,0:09:25.13,*Default,NTP,0000,0000,0000,,was called asci
+Dialogue: 0,0:09:25.13,0:09:28.13,*Default,NTP,0000,0000,0000,,the american standard code for information interchange
+Dialogue: 0,0:09:30.30,0:09:32.30,*Default,NTP,0000,0000,0000,,this was a table that laid out
+Dialogue: 0,0:09:32.30,0:09:33.93,*Default,NTP,0000,0000,0000,,which numbers corresponded
+Dialogue: 0,0:09:33.93,0:09:36.00,*Default,NTP,0000,0000,0000,,to which letters and symbols
+Dialogue: 0,0:09:36.50,0:09:37.93,*Default,NTP,0000,0000,0000,,there are eight rows
+Dialogue: 0,0:09:38.00,0:09:39.37,*Default,NTP,0000,0000,0000,,and eight is important because
+Dialogue: 0,0:09:39.37,0:09:41.93,*Default,NTP,0000,0000,0000,,that's how many different rows you can represent using
+Dialogue: 0,0:09:41.93,0:09:44.37,*Default,NTP,0000,0000,0000,,three bits three ones and zeros
+Dialogue: 0,0:09:45.80,0:09:47.17,*Default,NTP,0000,0000,0000,,and there are 16 columns
+Dialogue: 0,0:09:47.17,0:09:49.47,*Default,NTP,0000,0000,0000,,which you can represent using four bits
+Dialogue: 0,0:09:51.40,0:09:53.57,*Default,NTP,0000,0000,0000,,the layout was chosen to support
+Dialogue: 0,0:09:53.57,0:09:55.67,*Default,NTP,0000,0000,0000,,sorting by character code
+Dialogue: 0,0:09:56.30,0:09:58.70,*Default,NTP,0000,0000,0000,,so if you've ever used a computer and found that its
+Dialogue: 0,0:09:58.70,0:10:00.73,*Default,NTP,0000,0000,0000,,sorts capital letters
+Dialogue: 0,0:10:00.77,0:10:02.97,*Default,NTP,0000,0000,0000,,before lowercase letters
+Dialogue: 0,0:10:03.20,0:10:05.97,*Default,NTP,0000,0000,0000,,and puts things with an exclamation mark at the top
+Dialogue: 0,0:10:06.17,0:10:08.30,*Default,NTP,0000,0000,0000,,and things with a tilda at the end
+Dialogue: 0,0:10:08.50,0:10:11.80,*Default,NTP,0000,0000,0000,,that's because of the order in the ascii co chart
+Dialogue: 0,0:10:13.80,0:10:16.90,*Default,NTP,0000,0000,0000,,it was also designed so that if you didn't have
+Dialogue: 0,0:10:17.87,0:10:20.90,*Default,NTP,0000,0000,0000,,enough bits to represent the entire table
+Dialogue: 0,0:10:21.20,0:10:22.77,*Default,NTP,0000,0000,0000,,there would be a useful
+Dialogue: 0,0:10:22.90,0:10:24.97,*Default,NTP,0000,0000,0000,,subset right there in the middle
+Dialogue: 0,0:10:25.30,0:10:27.13,*Default,NTP,0000,0000,0000,,it meant you had to type in all caps
+Dialogue: 0,0:10:27.13,0:10:28.50,*Default,NTP,0000,0000,0000,,but that's better than nothing
+Dialogue: 0,0:10:30.93,0:10:33.93,*Default,NTP,0000,0000,0000,,the control characters at the top here in red
+Dialogue: 0,0:10:34.17,0:10:34.53,*Default,NTP,0000,0000,0000,,were
+Dialogue: 0,0:10:34.53,0:10:37.53,*Default,NTP,0000,0000,0000,,designed for transmission or information interchange
+Dialogue: 0,0:10:37.90,0:10:39.53,*Default,NTP,0000,0000,0000,,but they have original meanings
+Dialogue: 0,0:10:39.53,0:10:41.13,*Default,NTP,0000,0000,0000,,most of which aren't used today
+Dialogue: 0,0:10:41.73,0:10:42.97,*Default,NTP,0000,0000,0000,,but some of them still are
+Dialogue: 0,0:10:43.30,0:10:45.93,*Default,NTP,0000,0000,0000,,so the line feed called lf
+Dialogue: 0,0:10:46.13,0:10:49.10,*Default,NTP,0000,0000,0000,,was supposed to tell the printer on the other end
+Dialogue: 0,0:10:49.37,0:10:50.93,*Default,NTP,0000,0000,0000,,to go to the next line
+Dialogue: 0,0:10:53.20,0:10:55.37,*Default,NTP,0000,0000,0000,,and if you wanted to get somebody's attention
+Dialogue: 0,0:10:55.40,0:10:57.20,*Default,NTP,0000,0000,0000,,after some information interchange
+Dialogue: 0,0:10:57.20,0:10:59.53,*Default,NTP,0000,0000,0000,,you might ring the bell on their printer
+Dialogue: 0,0:11:00.40,0:11:02.53,*Default,NTP,0000,0000,0000,,and these things still exist today
+Dialogue: 0,0:11:04.77,0:11:07.77,*Default,NTP,0000,0000,0000,,so if I say a is the capital letter a
+Dialogue: 0,0:11:08.53,0:11:09.50,*Default,NTP,0000,0000,0000,,I can
+Dialogue: 0,0:11:10.17,0:11:13.73,*Default,NTP,0000,0000,0000,,figure out what number corresponds to that a
+Dialogue: 0,0:11:13.77,0:11:19.97,*Default,NTP,0000,0000,0000,,it's No.65 which in hexadecimal format is 41
+Dialogue: 0,0:11:20.67,0:11:24.27,*Default,NTP,0000,0000,0000,,41 tells me the row and column of the capital letter a
+Dialogue: 0,0:11:24.27,0:11:25.57,*Default,NTP,0000,0000,0000,,and my ascii table
+Dialogue: 0,0:11:26.30,0:11:27.30,*Default,NTP,0000,0000,0000,,oh there it is
+Dialogue: 0,0:11:27.30,0:11:29.17,*Default,NTP,0000,0000,0000,,row four column one
+Dialogue: 0,0:11:34.60,0:11:38.27,*Default,NTP,0000,0000,0000,,if I print the line feed character many times
+Dialogue: 0,0:11:38.27,0:11:40.07,*Default,NTP,0000,0000,0000,,I'll get multiple lines
+Dialogue: 0,0:11:40.37,0:11:43.57,*Default,NTP,0000,0000,0000,,and if I print the bell character many times
+Dialogue: 0,0:11:43.73,0:11:46.50,*Default,NTP,0000,0000,0000,,I should get a sound coming out of my computer
+Dialogue: 0,0:11:49.73,0:11:52.77,*Default,NTP,0000,0000,0000,,now there are more characters than just these
+Dialogue: 0,0:11:54.00,0:11:57.20,*Default,NTP,0000,0000,0000,,the ascii standard was English pacific
+Dialogue: 0,0:11:57.47,0:11:59.10,*Default,NTP,0000,0000,0000,,but the unicode standard
+Dialogue: 0,0:11:59.10,0:12:01.77,*Default,NTP,0000,0000,0000,,was designed in order to have one character set
+Dialogue: 0,0:12:01.90,0:12:04.27,*Default,NTP,0000,0000,0000,,that would be used for all different languages
+Dialogue: 0,0:12:06.13,0:12:08.60,*Default,NTP,0000,0000,0000,,so it's the case that for every character
+Dialogue: 0,0:12:08.87,0:12:11.13,*Default,NTP,0000,0000,0000,,in every language and every script
+Dialogue: 0,0:12:11.20,0:12:13.67,*Default,NTP,0000,0000,0000,,that's being used anywhere in the world
+Dialogue: 0,0:12:13.77,0:12:16.80,*Default,NTP,0000,0000,0000,,there's meant to be a unicode code point for it
+Dialogue: 0,0:12:16.80,0:12:18.67,*Default,NTP,0000,0000,0000,,or a number ascribe to it
+Dialogue: 0,0:12:18.93,0:12:21.90,*Default,NTP,0000,0000,0000,,that lets us refer to that character as a number
+Dialogue: 0,0:12:22.00,0:12:25.20,*Default,NTP,0000,0000,0000,,and use that for any kind of information interchange
+Dialogue: 0,0:12:25.20,0:12:28.17,*Default,NTP,0000,0000,0000,,among computers among different programming languages
+Dialogue: 0,0:12:28.17,0:12:28.97,*Default,NTP,0000,0000,0000,,etc
+Dialogue: 0,0:12:29.77,0:12:32.27,*Default,NTP,0000,0000,0000,,there are currently 109,000 characters
+Dialogue: 0,0:12:32.27,0:12:33.70,*Default,NTP,0000,0000,0000,,at least last time I checked
+Dialogue: 0,0:12:34.27,0:12:36.30,*Default,NTP,0000,0000,0000,,in 93 different scripts
+Dialogue: 0,0:12:36.50,0:12:38.20,*Default,NTP,0000,0000,0000,,and they're organized by script
+Dialogue: 0,0:12:38.47,0:12:40.27,*Default,NTP,0000,0000,0000,,so it's more than just enumerating
+Dialogue: 0,0:12:40.27,0:12:41.80,*Default,NTP,0000,0000,0000,,all of the different symbols that people use
+Dialogue: 0,0:12:41.80,0:12:42.60,*Default,NTP,0000,0000,0000,,in language
+Dialogue: 0,0:12:42.90,0:12:46.00,*Default,NTP,0000,0000,0000,,they're also marked with what's capitalized
+Dialogue: 0,0:12:46.00,0:12:48.77,*Default,NTP,0000,0000,0000,,what's not capitalized what language they're used in
+Dialogue: 0,0:12:48.77,0:12:49.57,*Default,NTP,0000,0000,0000,,etc
+Dialogue: 0,0:12:51.13,0:12:54.00,*Default,NTP,0000,0000,0000,,and it even supports by directional display order
+Dialogue: 0,0:12:54.50,0:12:55.77,*Default,NTP,0000,0000,0000,,English is written left right
+Dialogue: 0,0:12:55.77,0:12:57.60,*Default,NTP,0000,0000,0000,,but arabic is written right to left
+Dialogue: 0,0:12:59.73,0:13:02.50,*Default,NTP,0000,0000,0000,,and every character has a name
+Dialogue: 0,0:13:04.40,0:13:07.30,*Default,NTP,0000,0000,0000,,the letter x is called latin capital letter x
+Dialogue: 0,0:13:08.77,0:13:10.40,*Default,NTP,0000,0000,0000,,now there are a lot of different characters
+Dialogue: 0,0:13:10.40,0:13:12.17,*Default,NTP,0000,0000,0000,,109,000 of them
+Dialogue: 0,0:13:12.77,0:13:16.53,*Default,NTP,0000,0000,0000,,including a smiling face and a frowning face
+Dialogue: 0,0:13:16.73,0:13:18.67,*Default,NTP,0000,0000,0000,,which are just letters in some alphabet
+Dialogue: 0,0:13:21.80,0:13:24.67,*Default,NTP,0000,0000,0000,,and most programming languages support unicode
+Dialogue: 0,0:13:24.67,0:13:27.10,*Default,NTP,0000,0000,0000,,and so you can access these characters directly
+Dialogue: 0,0:13:28.00,0:13:31.07,*Default,NTP,0000,0000,0000,,so I'll add type from unicode data
+Dialogue: 0,0:13:31.10,0:13:33.67,*Default,NTP,0000,0000,0000,,import name and look up
+Dialogue: 0,0:13:35.10,0:13:37.93,*Default,NTP,0000,0000,0000,,name gives the name of a unicode character
+Dialogue: 0,0:13:37.93,0:13:39.80,*Default,NTP,0000,0000,0000,,that's latin capital letter a
+Dialogue: 0,0:13:40.47,0:13:42.77,*Default,NTP,0000,0000,0000,,and that's a latin small letter a
+Dialogue: 0,0:13:44.10,0:13:45.53,*Default,NTP,0000,0000,0000,,look up does the opposite
+Dialogue: 0,0:13:46.00,0:13:49.13,*Default,NTP,0000,0000,0000,,I start with the name and it gives me the character
+Dialogue: 0,0:13:50.00,0:13:51.30,*Default,NTP,0000,0000,0000,,so if I look up
+Dialogue: 0,0:13:51.80,0:13:53.30,*Default,NTP,0000,0000,0000,,the smiling face
+Dialogue: 0,0:13:57.60,0:13:59.20,*Default,NTP,0000,0000,0000,,there's that smiling face
+Dialogue: 0,0:13:59.70,0:14:01.90,*Default,NTP,0000,0000,0000,,we can make it even bigger so you can see
+Dialogue: 0,0:14:01.90,0:14:03.40,*Default,NTP,0000,0000,0000,,just how smiling it is
+Dialogue: 0,0:14:04.93,0:14:07.10,*Default,NTP,0000,0000,0000,,and there are many more characters that
+Dialogue: 0,0:14:07.40,0:14:08.80,*Default,NTP,0000,0000,0000,,are a little bit quirky
+Dialogue: 0,0:14:09.07,0:14:10.60,*Default,NTP,0000,0000,0000,,there's a snowman
+Dialogue: 0,0:14:12.93,0:14:13.80,*Default,NTP,0000,0000,0000,,there's a
+Dialogue: 0,0:14:14.97,0:14:16.30,*Default,NTP,0000,0000,0000,,sucker ball
+Dialogue: 0,0:14:18.80,0:14:20.50,*Default,NTP,0000,0000,0000,,there's even a baby
+Dialogue: 0,0:14:21.50,0:14:22.60,*Default,NTP,0000,0000,0000,,hello baby
+Dialogue: 0,0:14:23.47,0:14:25.80,*Default,NTP,0000,0000,0000,,now depending on the font on your computer
+Dialogue: 0,0:14:25.80,0:14:27.67,*Default,NTP,0000,0000,0000,,these will be displayed in different ways
+Dialogue: 0,0:14:28.33,0:14:29.60,*Default,NTP,0000,0000,0000,,so I think only on the mac
+Dialogue: 0,0:14:29.60,0:14:31.57,*Default,NTP,0000,0000,0000,,do you see a baby that looks in this particular way
+Dialogue: 0,0:14:31.57,0:14:32.67,*Default,NTP,0000,0000,0000,,with this haircut
+Dialogue: 0,0:14:33.10,0:14:36.57,*Default,NTP,0000,0000,0000,,but it could exist on other operating systems as well
+Dialogue: 0,0:14:37.17,0:14:40.37,*Default,NTP,0000,0000,0000,,the point is there is a character representing baby
+Dialogue: 0,0:14:40.47,0:14:41.97,*Default,NTP,0000,0000,0000,,how exactly if displayed
+Dialogue: 0,0:14:41.97,0:14:43.90,*Default,NTP,0000,0000,0000,,might vary from machine to machine
+Dialogue: 0,0:14:44.33,0:14:47.00,*Default,NTP,0000,0000,0000,,but the idea that there is a baby out there
+Dialogue: 0,0:14:47.10,0:14:48.80,*Default,NTP,0000,0000,0000,,with a particular encoding
+Dialogue: 0,0:14:49.70,0:14:52.67,*Default,NTP,0000,0000,0000,,is universal to lots of different programming languages
+Dialogue: 0,0:14:53.10,0:14:55.13,*Default,NTP,0000,0000,0000,,and you can look at that encoding
+Dialogue: 0,0:14:55.70,0:14:57.70,*Default,NTP,0000,0000,0000,,by encoding it in bites
+Dialogue: 0,0:14:57.70,0:14:58.17,*Default,NTP,0000,0000,0000,,and you see
+Dialogue: 0,0:14:58.17,0:15:00.77,*Default,NTP,0000,0000,0000,,these are the four bites that it takes to represent
+Dialogue: 0,0:15:00.77,0:15:01.57,*Default,NTP,0000,0000,0000,,a baby
+Dialogue: 0,0:15:03.07,0:15:07.33,*Default,NTP,0000,0000,0000,,whereas the letter a is encoded just as the letter a
+Dialogue: 0,0:15:10.90,0:15:12.60,*Default,NTP,0000,0000,0000,,the big no idea for today
+Dialogue: 0,0:15:13.00,0:15:15.40,*Default,NTP,0000,0000,0000,,is that an object can actually
+Dialogue: 0,0:15:15.47,0:15:18.13,*Default,NTP,0000,0000,0000,,change its value over time
+Dialogue: 0,0:15:20.40,0:15:23.07,*Default,NTP,0000,0000,0000,,so in particular we'll look at lists
+Dialogue: 0,0:15:23.57,0:15:26.30,*Default,NTP,0000,0000,0000,,lists can change their contents
+Dialogue: 0,0:15:26.47,0:15:29.00,*Default,NTP,0000,0000,0000,,the same list can contain different things
+Dialogue: 0,0:15:29.00,0:15:30.37,*Default,NTP,0000,0000,0000,,as time goes on
+Dialogue: 0,0:15:31.73,0:15:34.47,*Default,NTP,0000,0000,0000,,so I'm going to demonstrate how that works
+Dialogue: 0,0:15:34.80,0:15:36.80,*Default,NTP,0000,0000,0000,,by telling you a story
+Dialogue: 0,0:15:37.10,0:15:41.73,*Default,NTP,0000,0000,0000,,a story of the history of suits in playing cards
+Dialogue: 0,0:15:42.93,0:15:47.07,*Default,NTP,0000,0000,0000,,so we think that playing cards were invented in asia
+Dialogue: 0,0:15:47.77,0:15:49.33,*Default,NTP,0000,0000,0000,,and they began with three
+Dialogue: 0,0:15:50.00,0:15:53.87,*Default,NTP,0000,0000,0000,,the coin the string and the myriad
+Dialogue: 0,0:15:55.00,0:15:56.13,*Default,NTP,0000,0000,0000,,and these were representing
+Dialogue: 0,0:15:56.13,0:15:58.07,*Default,NTP,0000,0000,0000,,different nominations of money
+Dialogue: 0,0:15:58.10,0:15:59.93,*Default,NTP,0000,0000,0000,,because what are cards good for
+Dialogue: 0,0:16:00.07,0:16:01.90,*Default,NTP,0000,0000,0000,,well of course gambling
+Dialogue: 0,0:16:02.90,0:16:04.77,*Default,NTP,0000,0000,0000,,okay so those are our suits
+Dialogue: 0,0:16:05.20,0:16:07.17,*Default,NTP,0000,0000,0000,,and we're gonna try to keep track of these
+Dialogue: 0,0:16:07.17,0:16:08.57,*Default,NTP,0000,0000,0000,,original suits
+Dialogue: 0,0:16:10.33,0:16:12.47,*Default,NTP,0000,0000,0000,,by using this assignment statement
+Dialogue: 0,0:16:12.87,0:16:14.33,*Default,NTP,0000,0000,0000,,and then we're going to tell a story
+Dialogue: 0,0:16:14.33,0:16:16.70,*Default,NTP,0000,0000,0000,,about how those suits changed over time
+Dialogue: 0,0:16:17.67,0:16:20.73,*Default,NTP,0000,0000,0000,,so playing cards migrated over to europe
+Dialogue: 0,0:16:20.90,0:16:22.60,*Default,NTP,0000,0000,0000,,through Egypt we think
+Dialogue: 0,0:16:23.10,0:16:26.73,*Default,NTP,0000,0000,0000,,and in the process this myriad suit was lost
+Dialogue: 0,0:16:28.57,0:16:32.10,*Default,NTP,0000,0000,0000,,and it was also the case that the string suit was lost
+Dialogue: 0,0:16:33.07,0:16:34.93,*Default,NTP,0000,0000,0000,,leaving only the coin
+Dialogue: 0,0:16:37.00,0:16:39.60,*Default,NTP,0000,0000,0000,,by the time playing cards reached Spain
+Dialogue: 0,0:16:40.50,0:16:42.93,*Default,NTP,0000,0000,0000,,there was a need for some new suits
+Dialogue: 0,0:16:43.17,0:16:43.97,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:16:44.73,0:16:47.27,*Default,NTP,0000,0000,0000,,in the Spanish deck you have the suit of cups
+Dialogue: 0,0:16:47.73,0:16:50.97,*Default,NTP,0000,0000,0000,,you also have the suits of
+Dialogue: 0,0:16:52.67,0:16:53.57,*Default,NTP,0000,0000,0000,,swords
+Dialogue: 0,0:16:54.33,0:16:55.20,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:16:55.93,0:16:56.77,*Default,NTP,0000,0000,0000,,clubs
+Dialogue: 0,0:16:58.60,0:17:00.40,*Default,NTP,0000,0000,0000,,so I coined the cup the sword
+Dialogue: 0,0:17:00.90,0:17:04.47,*Default,NTP,0000,0000,0000,,and the club I believe existing Spanish decks today
+Dialogue: 0,0:17:05.40,0:17:06.67,*Default,NTP,0000,0000,0000,,and we've seen so far
+Dialogue: 0,0:17:06.90,0:17:09.30,*Default,NTP,0000,0000,0000,,you can pop off one element
+Dialogue: 0,0:17:09.47,0:17:11.10,*Default,NTP,0000,0000,0000,,you can remove an element
+Dialogue: 0,0:17:11.40,0:17:13.40,*Default,NTP,0000,0000,0000,,that might be anywhere in the list
+Dialogue: 0,0:17:13.73,0:17:16.17,*Default,NTP,0000,0000,0000,,pop always removes and returns the last
+Dialogue: 0,0:17:16.17,0:17:17.30,*Default,NTP,0000,0000,0000,,element in the list
+Dialogue: 0,0:17:18.93,0:17:20.37,*Default,NTP,0000,0000,0000,,you can append a single element
+Dialogue: 0,0:17:20.37,0:17:21.87,*Default,NTP,0000,0000,0000,,or you can extend the list by
+Dialogue: 0,0:17:21.87,0:17:23.87,*Default,NTP,0000,0000,0000,,adding multiple elements in a sequence
+Dialogue: 0,0:17:26.67,0:17:29.30,*Default,NTP,0000,0000,0000,,the italians adapted playing cards of course
+Dialogue: 0,0:17:30.10,0:17:32.87,*Default,NTP,0000,0000,0000,,and in Italy the way you say sword
+Dialogue: 0,0:17:33.50,0:17:35.13,*Default,NTP,0000,0000,0000,,which is element No.2
+Dialogue: 0,0:17:35.40,0:17:37.17,*Default,NTP,0000,0000,0000,,as you say spada
+Dialogue: 0,0:17:37.93,0:17:39.27,*Default,NTP,0000,0000,0000,,so we have the spade
+Dialogue: 0,0:17:39.70,0:17:43.17,*Default,NTP,0000,0000,0000,,and then the fringe decided to change some of the suits
+Dialogue: 0,0:17:43.53,0:17:45.73,*Default,NTP,0000,0000,0000,,and so the coin and the cup went away
+Dialogue: 0,0:17:46.50,0:17:49.97,*Default,NTP,0000,0000,0000,,and they were replaced by the heart and the diamond
+Dialogue: 0,0:17:52.50,0:17:54.10,*Default,NTP,0000,0000,0000,,so here are the suits that appear
+Dialogue: 0,0:17:54.10,0:17:55.70,*Default,NTP,0000,0000,0000,,in a modern american deck
+Dialogue: 0,0:17:55.70,0:17:57.53,*Default,NTP,0000,0000,0000,,hard diamond spade and club
+Dialogue: 0,0:17:57.77,0:17:59.80,*Default,NTP,0000,0000,0000,,I believe they're also used in France
+Dialogue: 0,0:18:00.93,0:18:03.07,*Default,NTP,0000,0000,0000,,okay way up at the beginning
+Dialogue: 0,0:18:03.07,0:18:05.30,*Default,NTP,0000,0000,0000,,we bound original suits to suits
+Dialogue: 0,0:18:05.30,0:18:07.40,*Default,NTP,0000,0000,0000,,let's see what original suits is now
+Dialogue: 0,0:18:07.87,0:18:09.67,*Default,NTP,0000,0000,0000,,it's the same as suits
+Dialogue: 0,0:18:10.27,0:18:13.33,*Default,NTP,0000,0000,0000,,and that's interesting because we bounded way up here
+Dialogue: 0,0:18:13.33,0:18:15.60,*Default,NTP,0000,0000,0000,,and then we made a bunch of changes
+Dialogue: 0,0:18:15.70,0:18:18.13,*Default,NTP,0000,0000,0000,,but it turns out these were just two different names
+Dialogue: 0,0:18:18.13,0:18:19.50,*Default,NTP,0000,0000,0000,,for the same object
+Dialogue: 0,0:18:19.70,0:18:22.57,*Default,NTP,0000,0000,0000,,and so changes to one were reflected in the other
+Dialogue: 0,0:18:24.90,0:18:25.77,*Default,NTP,0000,0000,0000,,this is the first
+Dialogue: 0,0:18:25.77,0:18:28.70,*Default,NTP,0000,0000,0000,,example in this course of an object changing state
+Dialogue: 0,0:18:28.90,0:18:30.90,*Default,NTP,0000,0000,0000,,so something big just happened right now
+Dialogue: 0,0:18:31.77,0:18:33.77,*Default,NTP,0000,0000,0000,,the same object can change in value
+Dialogue: 0,0:18:33.77,0:18:35.70,*Default,NTP,0000,0000,0000,,throughout the course of computation
+Dialogue: 0,0:18:36.17,0:18:40.17,*Default,NTP,0000,0000,0000,,if I bind the name same person to some baby
+Dialogue: 0,0:18:40.47,0:18:43.67,*Default,NTP,0000,0000,0000,,by the way this is a unicode character called baby
+Dialogue: 0,0:18:44.77,0:18:47.87,*Default,NTP,0000,0000,0000,,then if that baby grows up
+Dialogue: 0,0:18:48.13,0:18:50.80,*Default,NTP,0000,0000,0000,,same person is still bound to the same person
+Dialogue: 0,0:18:51.10,0:18:51.90,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:18:52.87,0:18:55.07,*Default,NTP,0000,0000,0000,,changes appear in that object
+Dialogue: 0,0:18:56.07,0:18:58.70,*Default,NTP,0000,0000,0000,,if I bind two different names to the same object
+Dialogue: 0,0:18:58.70,0:19:00.33,*Default,NTP,0000,0000,0000,,and that object changes
+Dialogue: 0,0:19:00.57,0:19:02.33,*Default,NTP,0000,0000,0000,,while those changes will be reflected
+Dialogue: 0,0:19:02.33,0:19:04.73,*Default,NTP,0000,0000,0000,,regardless of which change I use
+Dialogue: 0,0:19:07.80,0:19:08.70,*Default,NTP,0000,0000,0000,,okay so
+Dialogue: 0,0:19:08.70,0:19:11.57,*Default,NTP,0000,0000,0000,,all names that refer to an object are affected by a
+Dialogue: 0,0:19:11.57,0:19:13.37,*Default,NTP,0000,0000,0000,,mutation now
+Dialogue: 0,0:19:13.37,0:19:14.57,*Default,NTP,0000,0000,0000,,becoming an older woman
+Dialogue: 0,0:19:14.57,0:19:17.13,*Default,NTP,0000,0000,0000,,isn't necessarily called a mutation
+Dialogue: 0,0:19:17.13,0:19:18.57,*Default,NTP,0000,0000,0000,,out there in the real world
+Dialogue: 0,0:19:18.87,0:19:20.33,*Default,NTP,0000,0000,0000,,but in computer science
+Dialogue: 0,0:19:20.37,0:19:22.40,*Default,NTP,0000,0000,0000,,mutation is a word that's used
+Dialogue: 0,0:19:22.57,0:19:25.57,*Default,NTP,0000,0000,0000,,whenever there's a change to an object
+Dialogue: 0,0:19:26.80,0:19:27.17,*Default,NTP,0000,0000,0000,,only
+Dialogue: 0,0:19:27.17,0:19:30.73,*Default,NTP,0000,0000,0000,,objects of mutable types can change in their values
+Dialogue: 0,0:19:30.93,0:19:31.73,*Default,NTP,0000,0000,0000,,and lists and
+Dialogue: 0,0:19:31.73,0:19:34.00,*Default,NTP,0000,0000,0000,,dictionaries are examples of that that we've seen
+Dialogue: 0,0:19:34.00,0:19:34.80,*Default,NTP,0000,0000,0000,,so far
+Dialogue: 0,0:19:35.50,0:19:36.93,*Default,NTP,0000,0000,0000,,so let's look at how to change
+Dialogue: 0,0:19:36.93,0:19:38.50,*Default,NTP,0000,0000,0000,,the contents of a dictionary
+Dialogue: 0,0:19:40.80,0:19:44.17,*Default,NTP,0000,0000,0000,,if I create a dictionary called the numerals
+Dialogue: 0,0:19:44.47,0:19:49.57,*Default,NTP,0000,0000,0000,,with I bound to one and b bound to five and x
+Dialogue: 0,0:19:50.40,0:19:51.50,*Default,NTP,0000,0000,0000,,bound to 10
+Dialogue: 0,0:19:53.10,0:19:55.77,*Default,NTP,0000,0000,0000,,I can look at the contents of the whole dictionary
+Dialogue: 0,0:19:55.87,0:19:59.70,*Default,NTP,0000,0000,0000,,or I can look at a value bound to a particular key
+Dialogue: 0,0:20:00.53,0:20:03.67,*Default,NTP,0000,0000,0000,,I can also change the value bound to a key
+Dialogue: 0,0:20:03.97,0:20:06.00,*Default,NTP,0000,0000,0000,,at which point if I look it up again
+Dialogue: 0,0:20:06.10,0:20:07.70,*Default,NTP,0000,0000,0000,,I'll get a different answer
+Dialogue: 0,0:20:07.93,0:20:10.33,*Default,NTP,0000,0000,0000,,and the numerals dictionary has changed
+Dialogue: 0,0:20:10.67,0:20:13.70,*Default,NTP,0000,0000,0000,,notice that the binding between x and 10 is just gone
+Dialogue: 0,0:20:13.70,0:20:17.77,*Default,NTP,0000,0000,0000,,completely and it's been replaced by x paired with 11
+Dialogue: 0,0:20:18.50,0:20:22.20,*Default,NTP,0000,0000,0000,,now I can also make new entries to a dictionary
+Dialogue: 0,0:20:22.50,0:20:25.60,*Default,NTP,0000,0000,0000,,just using this element assignment statement
+Dialogue: 0,0:20:26.17,0:20:28.87,*Default,NTP,0000,0000,0000,,so now numerals has more in it than it used to
+Dialogue: 0,0:20:29.27,0:20:31.57,*Default,NTP,0000,0000,0000,,and I can look up what l is bound to
+Dialogue: 0,0:20:33.27,0:20:38.37,*Default,NTP,0000,0000,0000,,I can also get rid of a binding by using the pop method
+Dialogue: 0,0:20:38.50,0:20:39.90,*Default,NTP,0000,0000,0000,,which takes a key
+Dialogue: 0,0:20:40.20,0:20:42.90,*Default,NTP,0000,0000,0000,,and removes the key value pair for that
+Dialogue: 0,0:20:43.20,0:20:45.87,*Default,NTP,0000,0000,0000,,so now if I try to get the
+Dialogue: 0,0:20:46.60,0:20:49.47,*Default,NTP,0000,0000,0000,,value for the key x there's nothing there
+Dialogue: 0,0:20:49.77,0:20:51.53,*Default,NTP,0000,0000,0000,,because numerals has changed
+Dialogue: 0,0:20:53.20,0:20:56.47,*Default,NTP,0000,0000,0000,,by the way mutation can happen within a function call
+Dialogue: 0,0:20:57.50,0:21:00.17,*Default,NTP,0000,0000,0000,,so a function can change the value of any object
+Dialogue: 0,0:21:00.20,0:21:01.40,*Default,NTP,0000,0000,0000,,that's in its scope
+Dialogue: 0,0:21:01.50,0:21:02.90,*Default,NTP,0000,0000,0000,,that's a mutable value
+Dialogue: 0,0:21:03.87,0:21:06.13,*Default,NTP,0000,0000,0000,,so if I say four is 1 2 3 4
+Dialogue: 0,0:21:06.53,0:21:08.30,*Default,NTP,0000,0000,0000,,and the length of four is four
+Dialogue: 0,0:21:08.87,0:21:11.57,*Default,NTP,0000,0000,0000,,some mystery function could be called on four
+Dialogue: 0,0:21:12.00,0:21:14.93,*Default,NTP,0000,0000,0000,,at which point the length of four would be only two
+Dialogue: 0,0:21:15.53,0:21:17.80,*Default,NTP,0000,0000,0000,,what sort of mystery function might do that
+Dialogue: 0,0:21:18.30,0:21:19.27,*Default,NTP,0000,0000,0000,,here's one
+Dialogue: 0,0:21:20.37,0:21:21.97,*Default,NTP,0000,0000,0000,,so this one takes in an argument
+Dialogue: 0,0:21:21.97,0:21:24.33,*Default,NTP,0000,0000,0000,,will call s and then pops it twice
+Dialogue: 0,0:21:25.37,0:21:28.97,*Default,NTP,0000,0000,0000,,so invoking the method pop removes the last element
+Dialogue: 0,0:21:29.47,0:21:30.73,*Default,NTP,0000,0000,0000,,so we define the function
+Dialogue: 0,0:21:30.73,0:21:32.87,*Default,NTP,0000,0000,0000,,we create the list we call mystery
+Dialogue: 0,0:21:33.17,0:21:35.67,*Default,NTP,0000,0000,0000,,mystery introduces a new frame in which
+Dialogue: 0,0:21:35.67,0:21:39.17,*Default,NTP,0000,0000,0000,,s is bound to the same object that four is bound to
+Dialogue: 0,0:21:39.80,0:21:41.97,*Default,NTP,0000,0000,0000,,so that when I pop that
+Dialogue: 0,0:21:42.50,0:21:44.93,*Default,NTP,0000,0000,0000,,I'm actually removing the last element
+Dialogue: 0,0:21:45.73,0:21:49.73,*Default,NTP,0000,0000,0000,,which forever changes the value to which four is bound
+Dialogue: 0,0:21:50.20,0:21:51.77,*Default,NTP,0000,0000,0000,,now four isn't bound to anything
+Dialogue: 0,0:21:51.77,0:21:53.13,*Default,NTP,0000,0000,0000,,different than it was before
+Dialogue: 0,0:21:53.27,0:21:55.47,*Default,NTP,0000,0000,0000,,it's just that this list is different
+Dialogue: 0,0:21:55.50,0:21:57.17,*Default,NTP,0000,0000,0000,,it has different contents
+Dialogue: 0,0:21:57.37,0:22:00.37,*Default,NTP,0000,0000,0000,,popping again means that it will be even shorter
+Dialogue: 0,0:22:04.30,0:22:05.37,*Default,NTP,0000,0000,0000,,here's a different function
+Dialogue: 0,0:22:05.37,0:22:06.77,*Default,NTP,0000,0000,0000,,that would do the same thing
+Dialogue: 0,0:22:06.93,0:22:11.40,*Default,NTP,0000,0000,0000,,remove every element after index two
+Dialogue: 0,0:22:12.20,0:22:15.17,*Default,NTP,0000,0000,0000,,and that would mean removing the three and the four
+Dialogue: 0,0:22:15.27,0:22:17.90,*Default,NTP,0000,0000,0000,,and replacing that slice of the list
+Dialogue: 0,0:22:17.90,0:22:19.80,*Default,NTP,0000,0000,0000,,with just no elements at all
+Dialogue: 0,0:22:22.27,0:22:26.07,*Default,NTP,0000,0000,0000,,now what happens when we create four
+Dialogue: 0,0:22:26.33,0:22:28.37,*Default,NTP,0000,0000,0000,,and then we call a mystery function
+Dialogue: 0,0:22:28.40,0:22:30.40,*Default,NTP,0000,0000,0000,,that doesn't take any arguments
+Dialogue: 0,0:22:30.87,0:22:32.97,*Default,NTP,0000,0000,0000,,does it still have access to four
+Dialogue: 0,0:22:33.27,0:22:35.47,*Default,NTP,0000,0000,0000,,can it change it sure
+Dialogue: 0,0:22:36.00,0:22:37.00,*Default,NTP,0000,0000,0000,,how does it do that
+Dialogue: 0,0:22:37.20,0:22:39.90,*Default,NTP,0000,0000,0000,,well it just refers to the four list
+Dialogue: 0,0:22:40.27,0:22:41.80,*Default,NTP,0000,0000,0000,,which is within its scope
+Dialogue: 0,0:22:42.00,0:22:43.33,*Default,NTP,0000,0000,0000,,it's in the global frame
+Dialogue: 0,0:22:43.33,0:22:45.73,*Default,NTP,0000,0000,0000,,anything can refer to something in the global frame
+Dialogue: 0,0:22:45.97,0:22:48.60,*Default,NTP,0000,0000,0000,,and so it just starts popping stuff off of four
+Dialogue: 0,0:22:52.33,0:22:55.30,*Default,NTP,0000,0000,0000,,tuples are sequences
+Dialogue: 0,0:22:55.73,0:22:58.87,*Default,NTP,0000,0000,0000,,but they are immutable sequences
+Dialogue: 0,0:22:59.37,0:23:01.37,*Default,NTP,0000,0000,0000,,meaning that they cannot be changed
+Dialogue: 0,0:23:02.20,0:23:03.47,*Default,NTP,0000,0000,0000,,now before I go on
+Dialogue: 0,0:23:03.47,0:23:06.07,*Default,NTP,0000,0000,0000,,I will mention that some people call these tuples
+Dialogue: 0,0:23:06.33,0:23:08.37,*Default,NTP,0000,0000,0000,,and some people call these tuples
+Dialogue: 0,0:23:09.90,0:23:11.27,*Default,NTP,0000,0000,0000,,and while there is no
+Dialogue: 0,0:23:11.30,0:23:12.67,*Default,NTP,0000,0000,0000,,established convention
+Dialogue: 0,0:23:12.67,0:23:14.73,*Default,NTP,0000,0000,0000,,for the pronunciation of this word
+Dialogue: 0,0:23:15.30,0:23:17.50,*Default,NTP,0000,0000,0000,,the two groups can at least agree
+Dialogue: 0,0:23:17.70,0:23:20.17,*Default,NTP,0000,0000,0000,,that the other group must be wrong
+Dialogue: 0,0:23:20.97,0:23:23.77,*Default,NTP,0000,0000,0000,,I'll let you decide how you want to pronounce this word
+Dialogue: 0,0:23:23.93,0:23:26.33,*Default,NTP,0000,0000,0000,,but I'll say tuple most of the time
+Dialogue: 0,0:23:26.70,0:23:29.57,*Default,NTP,0000,0000,0000,,though occasionally you'll probably catch me saying
+Dialogue: 0,0:23:29.87,0:23:30.67,*Default,NTP,0000,0000,0000,,tubal
+Dialogue: 0,0:23:32.07,0:23:34.40,*Default,NTP,0000,0000,0000,,so doubles or sequence values
+Dialogue: 0,0:23:34.80,0:23:37.87,*Default,NTP,0000,0000,0000,,3 4 5 6 is a double
+Dialogue: 0,0:23:38.70,0:23:41.07,*Default,NTP,0000,0000,0000,,see how we've not used square brackets
+Dialogue: 0,0:23:41.07,0:23:42.73,*Default,NTP,0000,0000,0000,,but instead parentheses
+Dialogue: 0,0:23:43.47,0:23:44.47,*Default,NTP,0000,0000,0000,,though in fact
+Dialogue: 0,0:23:44.57,0:23:46.60,*Default,NTP,0000,0000,0000,,you don't need those parentheses at all
+Dialogue: 0,0:23:46.73,0:23:48.40,*Default,NTP,0000,0000,0000,,in order to have a tup of literal
+Dialogue: 0,0:23:48.70,0:23:52.57,*Default,NTP,0000,0000,0000,,anything separated by thomas is evaluated as a tuple
+Dialogue: 0,0:23:53.10,0:23:55.53,*Default,NTP,0000,0000,0000,,a lot of people always put the parentheses around them
+Dialogue: 0,0:23:55.53,0:23:57.87,*Default,NTP,0000,0000,0000,,just to be clear about what's going on
+Dialogue: 0,0:23:59.30,0:24:00.90,*Default,NTP,0000,0000,0000,,you can make an empty temple
+Dialogue: 0,0:24:01.67,0:24:04.57,*Default,NTP,0000,0000,0000,,you can call temple on nothing to make an empty temple
+Dialogue: 0,0:24:05.00,0:24:07.60,*Default,NTP,0000,0000,0000,,or you could call temple on a list
+Dialogue: 0,0:24:09.30,0:24:11.13,*Default,NTP,0000,0000,0000,,or any sequence for that matter
+Dialogue: 0,0:24:11.77,0:24:13.57,*Default,NTP,0000,0000,0000,,and it will give you a temple back
+Dialogue: 0,0:24:13.80,0:24:15.87,*Default,NTP,0000,0000,0000,,with the same contents as that list
+Dialogue: 0,0:24:17.17,0:24:19.50,*Default,NTP,0000,0000,0000,,now what if you wanted to have a tupel with only
+Dialogue: 0,0:24:19.50,0:24:22.77,*Default,NTP,0000,0000,0000,,one element well it is possible to do that
+Dialogue: 0,0:24:22.93,0:24:25.13,*Default,NTP,0000,0000,0000,,and the syntax is just terrible
+Dialogue: 0,0:24:25.30,0:24:27.30,*Default,NTP,0000,0000,0000,,you have to put a comma at the end
+Dialogue: 0,0:24:27.93,0:24:30.97,*Default,NTP,0000,0000,0000,,and you can put that in parentheses as well if you want
+Dialogue: 0,0:24:31.30,0:24:32.93,*Default,NTP,0000,0000,0000,,so that's different from the No.2
+Dialogue: 0,0:24:32.93,0:24:35.00,*Default,NTP,0000,0000,0000,,and that this is a tubble containing two
+Dialogue: 0,0:24:35.13,0:24:36.67,*Default,NTP,0000,0000,0000,,and this is just the No.2
+Dialogue: 0,0:24:39.27,0:24:40.90,*Default,NTP,0000,0000,0000,,now you can add together
+Dialogue: 0,0:24:41.37,0:24:43.50,*Default,NTP,0000,0000,0000,,tuples in order to get bigger tuples
+Dialogue: 0,0:24:45.07,0:24:46.47,*Default,NTP,0000,0000,0000,,you can use the
+Dialogue: 0,0:24:46.67,0:24:49.53,*Default,NTP,0000,0000,0000,,membership operator to figure out whether
+Dialogue: 0,0:24:49.87,0:24:51.57,*Default,NTP,0000,0000,0000,,an element is in a tuple
+Dialogue: 0,0:24:52.93,0:24:55.33,*Default,NTP,0000,0000,0000,,and you can slice tuples as well
+Dialogue: 0,0:24:56.97,0:25:00.10,*Default,NTP,0000,0000,0000,,now tuples are immutable values
+Dialogue: 0,0:25:00.37,0:25:02.70,*Default,NTP,0000,0000,0000,,which means it is possible to use them
+Dialogue: 0,0:25:02.70,0:25:05.13,*Default,NTP,0000,0000,0000,,as the keys in a dictionary
+Dialogue: 0,0:25:06.17,0:25:09.93,*Default,NTP,0000,0000,0000,,remember that it was not allowed to use a list as a key
+Dialogue: 0,0:25:09.93,0:25:11.17,*Default,NTP,0000,0000,0000,,in a dictionary
+Dialogue: 0,0:25:11.77,0:25:15.37,*Default,NTP,0000,0000,0000,,because you get this error unhashable type list
+Dialogue: 0,0:25:16.20,0:25:18.77,*Default,NTP,0000,0000,0000,,now even though you can use a tuple
+Dialogue: 0,0:25:19.07,0:25:21.97,*Default,NTP,0000,0000,0000,,you can't have a tuple with a list in it somewhere
+Dialogue: 0,0:25:22.40,0:25:24.50,*Default,NTP,0000,0000,0000,,that will cause an error as well
+Dialogue: 0,0:25:26.30,0:25:28.60,*Default,NTP,0000,0000,0000,,so tuples are immutable sequences
+Dialogue: 0,0:25:28.67,0:25:31.53,*Default,NTP,0000,0000,0000,,and immutable values actually have some benefits
+Dialogue: 0,0:25:31.53,0:25:34.33,*Default,NTP,0000,0000,0000,,one is that they're protected in a way from mutation
+Dialogue: 0,0:25:35.10,0:25:38.53,*Default,NTP,0000,0000,0000,,if I have a turtle which is a sequence 1 2 3
+Dialogue: 0,0:25:38.93,0:25:41.60,*Default,NTP,0000,0000,0000,,and then I call some function called ooze
+Dialogue: 0,0:25:42.90,0:25:45.70,*Default,NTP,0000,0000,0000,,the turtle is going to still be 1 2 3
+Dialogue: 0,0:25:45.93,0:25:48.33,*Default,NTP,0000,0000,0000,,because this sequence cannot be changed
+Dialogue: 0,0:25:49.13,0:25:51.60,*Default,NTP,0000,0000,0000,,numbers are immutable values as well
+Dialogue: 0,0:25:51.73,0:25:52.93,*Default,NTP,0000,0000,0000,,so are strings
+Dialogue: 0,0:25:52.93,0:25:54.87,*Default,NTP,0000,0000,0000,,the only mutable values
+Dialogue: 0,0:25:54.97,0:25:57.67,*Default,NTP,0000,0000,0000,,the ones that can change are lists
+Dialogue: 0,0:25:57.87,0:26:01.60,*Default,NTP,0000,0000,0000,,so if I have this list turtle 1 2 3 and I call ooze
+Dialogue: 0,0:26:02.20,0:26:03.70,*Default,NTP,0000,0000,0000,,just like we saw before
+Dialogue: 0,0:26:03.77,0:26:06.27,*Default,NTP,0000,0000,0000,,we might have anything in turtle at this point
+Dialogue: 0,0:26:07.67,0:26:07.87,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:26:07.87,0:26:11.40,*Default,NTP,0000,0000,0000,,it's not strictly true that ooze cannot affect turtle
+Dialogue: 0,0:26:11.77,0:26:14.13,*Default,NTP,0000,0000,0000,,it can't change this value
+Dialogue: 0,0:26:14.37,0:26:15.10,*Default,NTP,0000,0000,0000,,but in lex
+Dialogue: 0,0:26:15.10,0:26:17.40,*Default,NTP,0000,0000,0000,,lecture we'll see that a function could change
+Dialogue: 0,0:26:17.73,0:26:20.13,*Default,NTP,0000,0000,0000,,what the name turtle is bound to
+Dialogue: 0,0:26:21.67,0:26:22.97,*Default,NTP,0000,0000,0000,,so you get some protection
+Dialogue: 0,0:26:22.97,0:26:25.10,*Default,NTP,0000,0000,0000,,but not full protection in the language
+Dialogue: 0,0:26:25.37,0:26:27.77,*Default,NTP,0000,0000,0000,,from having functions make changes
+Dialogue: 0,0:26:27.77,0:26:29.27,*Default,NTP,0000,0000,0000,,to your current environment
+Dialogue: 0,0:26:30.97,0:26:32.80,*Default,NTP,0000,0000,0000,,the value of an expression can change
+Dialogue: 0,0:26:32.80,0:26:34.60,*Default,NTP,0000,0000,0000,,because of changes the names
+Dialogue: 0,0:26:34.60,0:26:38.73,*Default,NTP,0000,0000,0000,,or objects so a name change we've seen for a long time
+Dialogue: 0,0:26:38.77,0:26:42.30,*Default,NTP,0000,0000,0000,,if I have the same expression twice x x and XXX
+Dialogue: 0,0:26:42.60,0:26:44.17,*Default,NTP,0000,0000,0000,,we might get different values
+Dialogue: 0,0:26:44.17,0:26:47.33,*Default,NTP,0000,0000,0000,,because the name x has been used for something else
+Dialogue: 0,0:26:47.93,0:26:50.20,*Default,NTP,0000,0000,0000,,so if I said x equals two then this would be four
+Dialogue: 0,0:26:50.20,0:26:51.13,*Default,NTP,0000,0000,0000,,but if I said
+Dialogue: 0,0:26:51.33,0:26:54.30,*Default,NTP,0000,0000,0000,,x equals three then x plus x would be six
+Dialogue: 0,0:26:55.70,0:26:56.77,*Default,NTP,0000,0000,0000,,so those are name changes
+Dialogue: 0,0:26:56.77,0:26:58.47,*Default,NTP,0000,0000,0000,,and we've seen them throughout the course
+Dialogue: 0,0:26:58.77,0:27:00.47,*Default,NTP,0000,0000,0000,,object mutation is different
+Dialogue: 0,0:27:01.00,0:27:03.87,*Default,NTP,0000,0000,0000,,but it can also have the same effect of
+Dialogue: 0,0:27:04.17,0:27:06.73,*Default,NTP,0000,0000,0000,,changing what an expression evaluates to
+Dialogue: 0,0:27:07.40,0:27:09.87,*Default,NTP,0000,0000,0000,,so if x used to be the list one two
+Dialogue: 0,0:27:10.20,0:27:12.53,*Default,NTP,0000,0000,0000,,then x would be 1 2 1 2
+Dialogue: 0,0:27:12.90,0:27:15.13,*Default,NTP,0000,0000,0000,,but if I append three to the end
+Dialogue: 0,0:27:15.37,0:27:19.27,*Default,NTP,0000,0000,0000,,then I'll get one to 3 1 2 3 for x x
+Dialogue: 0,0:27:21.07,0:27:22.77,*Default,NTP,0000,0000,0000,,so these are two different ways
+Dialogue: 0,0:27:22.93,0:27:23.90,*Default,NTP,0000,0000,0000,,in which the same
+Dialogue: 0,0:27:23.90,0:27:25.93,*Default,NTP,0000,0000,0000,,expression can have a different value
+Dialogue: 0,0:27:26.93,0:27:30.33,*Default,NTP,0000,0000,0000,,and with immutable objects this one doesn't apply
+Dialogue: 0,0:27:30.50,0:27:31.73,*Default,NTP,0000,0000,0000,,but this one always apply
+Dialogue: 0,0:27:31.73,0:27:33.53,*Default,NTP,0000,0000,0000,,so you can always change the names of things
+Dialogue: 0,0:27:35.17,0:27:38.13,*Default,NTP,0000,0000,0000,,an immutable sequence may still change
+Dialogue: 0,0:27:38.20,0:27:42.00,*Default,NTP,0000,0000,0000,,if it contains a mutable value as an element
+Dialogue: 0,0:27:42.93,0:27:46.13,*Default,NTP,0000,0000,0000,,so let's say I have a tuple that contains a list
+Dialogue: 0,0:27:46.97,0:27:49.00,*Default,NTP,0000,0000,0000,,then I can't change the tuple
+Dialogue: 0,0:27:49.53,0:27:51.53,*Default,NTP,0000,0000,0000,,that's what I mean by immutable
+Dialogue: 0,0:27:52.40,0:27:55.40,*Default,NTP,0000,0000,0000,,but I could change the list within the temple
+Dialogue: 0,0:27:55.77,0:27:58.17,*Default,NTP,0000,0000,0000,,so the temple still contains the same stuff
+Dialogue: 0,0:27:58.47,0:28:02.30,*Default,NTP,0000,0000,0000,,but the list within it is different than it was before
+Dialogue: 0,0:28:02.30,0:28:04.40,*Default,NTP,0000,0000,0000,,because this one was changed to a four
+Dialogue: 0,0:28:04.57,0:28:06.40,*Default,NTP,0000,0000,0000,,so as you can see that's not that
+Dialogue: 0,0:28:09.33,0:28:11.30,*Default,NTP,0000,0000,0000,,so mutation
+Dialogue: 0,0:28:12.47,0:28:13.60,*Default,NTP,0000,0000,0000,,let's talk about
+Dialogue: 0,0:28:13.67,0:28:16.30,*Default,NTP,0000,0000,0000,,what it means for something to be the same
+Dialogue: 0,0:28:16.67,0:28:18.97,*Default,NTP,0000,0000,0000,,and what it means for something to change
+Dialogue: 0,0:28:20.47,0:28:23.90,*Default,NTP,0000,0000,0000,,once upon a time we never modified objects
+Dialogue: 0,0:28:24.17,0:28:25.87,*Default,NTP,0000,0000,0000,,and at those times
+Dialogue: 0,0:28:25.93,0:28:29.77,*Default,NTP,0000,0000,0000,,a compound object was just the totality of its pieces
+Dialogue: 0,0:28:30.07,0:28:32.33,*Default,NTP,0000,0000,0000,,there was nothing more to being a rational number
+Dialogue: 0,0:28:32.33,0:28:34.27,*Default,NTP,0000,0000,0000,,than just what was your numerator
+Dialogue: 0,0:28:34.60,0:28:36.07,*Default,NTP,0000,0000,0000,,what's your denominator
+Dialogue: 0,0:28:37.10,0:28:38.10,*Default,NTP,0000,0000,0000,,but this view
+Dialogue: 0,0:28:38.57,0:28:41.97,*Default,NTP,0000,0000,0000,,that the hole is nothing but the some of its parts
+Dialogue: 0,0:28:41.97,0:28:45.00,*Default,NTP,0000,0000,0000,,is no longer valid in the presence of change
+Dialogue: 0,0:28:46.20,0:28:48.90,*Default,NTP,0000,0000,0000,,a compound data object such as a list
+Dialogue: 0,0:28:49.17,0:28:50.67,*Default,NTP,0000,0000,0000,,has an identity
+Dialogue: 0,0:28:50.77,0:28:51.67,*Default,NTP,0000,0000,0000,,in addition
+Dialogue: 0,0:28:51.67,0:28:55.07,*Default,NTP,0000,0000,0000,,to the pieces of which it is composed of its elements
+Dialogue: 0,0:28:56.33,0:28:57.20,*Default,NTP,0000,0000,0000,,so a list might
+Dialogue: 0,0:28:57.20,0:29:00.47,*Default,NTP,0000,0000,0000,,still be the same list even if we change its contents
+Dialogue: 0,0:29:02.27,0:29:04.73,*Default,NTP,0000,0000,0000,,so if I have a to bound to 10
+Dialogue: 0,0:29:05.50,0:29:08.20,*Default,NTP,0000,0000,0000,,and b then bound to that same list a
+Dialogue: 0,0:29:09.33,0:29:10.27,*Default,NTP,0000,0000,0000,,so what happens here
+Dialogue: 0,0:29:10.27,0:29:13.20,*Default,NTP,0000,0000,0000,,a gets evaluated to the list containing 10
+Dialogue: 0,0:29:13.20,0:29:15.20,*Default,NTP,0000,0000,0000,,and then b is bound to that list
+Dialogue: 0,0:29:16.07,0:29:17.93,*Default,NTP,0000,0000,0000,,a is equal to b
+Dialogue: 0,0:29:20.07,0:29:22.37,*Default,NTP,0000,0000,0000,,if I aid out of pen 20
+Dialogue: 0,0:29:22.90,0:29:24.60,*Default,NTP,0000,0000,0000,,a is still equal to b
+Dialogue: 0,0:29:24.60,0:29:28.00,*Default,NTP,0000,0000,0000,,because a is ten twenty and b is ten twenty
+Dialogue: 0,0:29:28.80,0:29:31.80,*Default,NTP,0000,0000,0000,,b and a were bound to the same list
+Dialogue: 0,0:29:32.30,0:29:34.57,*Default,NTP,0000,0000,0000,,even though we changed its contents
+Dialogue: 0,0:29:36.30,0:29:38.07,*Default,NTP,0000,0000,0000,,however we could have
+Dialogue: 0,0:29:38.07,0:29:41.20,*Default,NTP,0000,0000,0000,,two lists that happened to have the same contents
+Dialogue: 0,0:29:41.27,0:29:44.00,*Default,NTP,0000,0000,0000,,but are different in their identity
+Dialogue: 0,0:29:44.10,0:29:45.57,*Default,NTP,0000,0000,0000,,they are not the same
+Dialogue: 0,0:29:45.90,0:29:47.67,*Default,NTP,0000,0000,0000,,they just might be equal
+Dialogue: 0,0:29:48.33,0:29:52.27,*Default,NTP,0000,0000,0000,,so if I say a is the list 10 and b is another list 10
+Dialogue: 0,0:29:53.80,0:29:55.87,*Default,NTP,0000,0000,0000,,a equals b is true
+Dialogue: 0,0:29:56.53,0:29:58.97,*Default,NTP,0000,0000,0000,,so far not too different
+Dialogue: 0,0:29:59.70,0:30:01.93,*Default,NTP,0000,0000,0000,,but if I append 20 to b
+Dialogue: 0,0:30:02.30,0:30:05.77,*Default,NTP,0000,0000,0000,,a is now 10 b is 10 coma 20
+Dialogue: 0,0:30:05.90,0:30:08.47,*Default,NTP,0000,0000,0000,,and these two are no longer equal
+Dialogue: 0,0:30:09.27,0:30:10.60,*Default,NTP,0000,0000,0000,,they were equal before
+Dialogue: 0,0:30:10.90,0:30:13.70,*Default,NTP,0000,0000,0000,,we never reassigned a or b to anything
+Dialogue: 0,0:30:13.70,0:30:17.13,*Default,NTP,0000,0000,0000,,so there's no a equals this or b equals that statements
+Dialogue: 0,0:30:17.20,0:30:19.00,*Default,NTP,0000,0000,0000,,but it's just that these
+Dialogue: 0,0:30:19.00,0:30:20.77,*Default,NTP,0000,0000,0000,,happened to have the same contents before
+Dialogue: 0,0:30:20.77,0:30:21.77,*Default,NTP,0000,0000,0000,,so they were equal
+Dialogue: 0,0:30:21.90,0:30:23.33,*Default,NTP,0000,0000,0000,,but they were never the same
+Dialogue: 0,0:30:23.77,0:30:26.47,*Default,NTP,0000,0000,0000,,and so when one changed the other didn't
+Dialogue: 0,0:30:28.73,0:30:29.47,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:30:29.47,0:30:31.90,*Default,NTP,0000,0000,0000,,how do you figure out whether two things are the same
+Dialogue: 0,0:30:32.33,0:30:34.87,*Default,NTP,0000,0000,0000,,well there's something called an identity operator
+Dialogue: 0,0:30:34.87,0:30:36.47,*Default,NTP,0000,0000,0000,,which looks like the word is
+Dialogue: 0,0:30:36.97,0:30:41.07,*Default,NTP,0000,0000,0000,,and the opposite of is is called is not
+Dialogue: 0,0:30:41.93,0:30:45.00,*Default,NTP,0000,0000,0000,,so one expression is another expression if
+Dialogue: 0,0:30:45.60,0:30:49.70,*Default,NTP,0000,0000,0000,,both of those expressions evaluate the same object
+Dialogue: 0,0:30:50.87,0:30:52.10,*Default,NTP,0000,0000,0000,,equality
+Dialogue: 0,0:30:52.50,0:30:57.57,*Default,NTP,0000,0000,0000,,is true if both expressions evaluate to equal values
+Dialogue: 0,0:30:57.67,0:30:58.47,*Default,NTP,0000,0000,0000,,so any list
+Dialogue: 0,0:30:58.47,0:31:01.50,*Default,NTP,0000,0000,0000,,containing 10 is equal to any other list containing 10
+Dialogue: 0,0:31:01.60,0:31:04.13,*Default,NTP,0000,0000,0000,,but they may or may not be the same list
+Dialogue: 0,0:31:05.27,0:31:07.67,*Default,NTP,0000,0000,0000,,identical objects are always equal values
+Dialogue: 0,0:31:08.47,0:31:09.97,*Default,NTP,0000,0000,0000,,but not the other way around
+Dialogue: 0,0:31:13.13,0:31:16.20,*Default,NTP,0000,0000,0000,,so it will always be the 10 is 10
+Dialogue: 0,0:31:18.60,0:31:20.17,*Default,NTP,0000,0000,0000,,and if a is 10
+Dialogue: 0,0:31:20.70,0:31:23.73,*Default,NTP,0000,0000,0000,,and b is a list containing 10
+Dialogue: 0,0:31:24.50,0:31:27.07,*Default,NTP,0000,0000,0000,,then amb will be equal
+Dialogue: 0,0:31:27.37,0:31:29.80,*Default,NTP,0000,0000,0000,,but they won't be the same list
+Dialogue: 0,0:31:30.27,0:31:32.20,*Default,NTP,0000,0000,0000,,when two things aren't the same
+Dialogue: 0,0:31:32.40,0:31:33.80,*Default,NTP,0000,0000,0000,,changes to one
+Dialogue: 0,0:31:36.70,0:31:38.13,*Default,NTP,0000,0000,0000,,don't affect the other
+Dialogue: 0,0:31:40.67,0:31:44.80,*Default,NTP,0000,0000,0000,,but c being bound to b means that c really is b
+Dialogue: 0,0:31:45.10,0:31:47.47,*Default,NTP,0000,0000,0000,,they're just two different names for the same thing
+Dialogue: 0,0:31:48.77,0:31:51.10,*Default,NTP,0000,0000,0000,,so if I pop something off of c
+Dialogue: 0,0:31:52.30,0:31:54.40,*Default,NTP,0000,0000,0000,,I've also popped it off of b
+Dialogue: 0,0:31:54.73,0:31:56.67,*Default,NTP,0000,0000,0000,,but nothing has changed about a
+Dialogue: 0,0:32:01.10,0:32:04.33,*Default,NTP,0000,0000,0000,,now one less something to look out for
+Dialogue: 0,0:32:04.70,0:32:09.67,*Default,NTP,0000,0000,0000,,is that multiple default arguments are very dangerous
+Dialogue: 0,0:32:09.87,0:32:11.67,*Default,NTP,0000,0000,0000,,so as soon as you learn about mutation
+Dialogue: 0,0:32:11.67,0:32:13.77,*Default,NTP,0000,0000,0000,,you have to learn about its risks
+Dialogue: 0,0:32:14.67,0:32:17.50,*Default,NTP,0000,0000,0000,,a default argument value when you define a function
+Dialogue: 0,0:32:17.57,0:32:19.33,*Default,NTP,0000,0000,0000,,is part of that function value
+Dialogue: 0,0:32:19.73,0:32:22.97,*Default,NTP,0000,0000,0000,,not generated anew every time you call the function
+Dialogue: 0,0:32:24.07,0:32:26.40,*Default,NTP,0000,0000,0000,,so let's say I define a function f
+Dialogue: 0,0:32:26.60,0:32:28.47,*Default,NTP,0000,0000,0000,,which takes some sequence s
+Dialogue: 0,0:32:28.47,0:32:30.87,*Default,NTP,0000,0000,0000,,and by default it takes the empty sequence
+Dialogue: 0,0:32:31.33,0:32:33.47,*Default,NTP,0000,0000,0000,,and what it does is it appends five to that
+Dialogue: 0,0:32:33.47,0:32:34.93,*Default,NTP,0000,0000,0000,,and then returns the length
+Dialogue: 0,0:32:35.10,0:32:39.17,*Default,NTP,0000,0000,0000,,of the sequence s after that five has been appended
+Dialogue: 0,0:32:40.13,0:32:41.00,*Default,NTP,0000,0000,0000,,so you call f
+Dialogue: 0,0:32:41.70,0:32:43.57,*Default,NTP,0000,0000,0000,,it uses the default argument value
+Dialogue: 0,0:32:43.57,0:32:44.50,*Default,NTP,0000,0000,0000,,which is an empty list
+Dialogue: 0,0:32:44.50,0:32:45.87,*Default,NTP,0000,0000,0000,,depends five to it
+Dialogue: 0,0:32:45.97,0:32:47.67,*Default,NTP,0000,0000,0000,,and returns the length of that list
+Dialogue: 0,0:32:47.67,0:32:48.90,*Default,NTP,0000,0000,0000,,which contains five
+Dialogue: 0,0:32:49.10,0:32:50.30,*Default,NTP,0000,0000,0000,,and you get one
+Dialogue: 0,0:32:51.70,0:32:53.53,*Default,NTP,0000,0000,0000,,if you call it again you get two
+Dialogue: 0,0:32:54.50,0:32:56.40,*Default,NTP,0000,0000,0000,,if you call it again you get three
+Dialogue: 0,0:32:58.27,0:32:59.53,*Default,NTP,0000,0000,0000,,and that's because
+Dialogue: 0,0:33:00.27,0:33:01.50,*Default,NTP,0000,0000,0000,,every time you call it
+Dialogue: 0,0:33:01.50,0:33:03.70,*Default,NTP,0000,0000,0000,,s will be bound to the same value
+Dialogue: 0,0:33:04.17,0:33:06.00,*Default,NTP,0000,0000,0000,,that's how defeld arguments work
+Dialogue: 0,0:33:07.00,0:33:10.90,*Default,NTP,0000,0000,0000,,and if that default argument value is mutable
+Dialogue: 0,0:33:11.13,0:33:14.40,*Default,NTP,0000,0000,0000,,and you mutate it in the middle of your function
+Dialogue: 0,0:33:14.97,0:33:16.37,*Default,NTP,0000,0000,0000,,then that change
+Dialogue: 0,0:33:16.53,0:33:18.07,*Default,NTP,0000,0000,0000,,will still be around
+Dialogue: 0,0:33:18.07,0:33:19.67,*Default,NTP,0000,0000,0000,,the next time you call the function
+Dialogue: 0,0:33:19.67,0:33:22.00,*Default,NTP,0000,0000,0000,,and you get that same default argument value
+Dialogue: 0,0:33:22.93,0:33:25.33,*Default,NTP,0000,0000,0000,,so something that looks pretty simple
+Dialogue: 0,0:33:25.60,0:33:28.13,*Default,NTP,0000,0000,0000,,will actually have strange behavior
+Dialogue: 0,0:33:28.40,0:33:31.13,*Default,NTP,0000,0000,0000,,where it's different every time you call the function
+Dialogue: 0,0:33:31.90,0:33:34.30,*Default,NTP,0000,0000,0000,,and that's definitely something to look out for
+Dialogue: 0,0:33:37.33,0:33:40.80,*Default,NTP,0000,0000,0000,,in the first call s is bound to an empty list
+Dialogue: 0,0:33:41.93,0:33:45.60,*Default,NTP,0000,0000,0000,,and that list is then mutated to contain three
+Dialogue: 0,0:33:47.17,0:33:48.70,*Default,NTP,0000,0000,0000,,the next time I call f
+Dialogue: 0,0:33:49.40,0:33:51.47,*Default,NTP,0000,0000,0000,,s is bound to that same list
+Dialogue: 0,0:33:52.10,0:33:54.77,*Default,NTP,0000,0000,0000,,which is mutated again to add another three
+Dialogue: 0,0:33:56.10,0:33:58.77,*Default,NTP,0000,0000,0000,,and the third time you get the third three
+Dialogue: 0,0:33:59.37,0:34:00.27,*Default,NTP,0000,0000,0000,,there it is
+Dialogue: 0,0:34:00.47,0:34:02.93,*Default,NTP,0000,0000,0000,,and that's why we get different return values each time
+Dialogue: 0,0:34:02.93,0:34:04.20,*Default,NTP,0000,0000,0000,,one than two than three
+Dialogue: 0,0:34:07.27,0:34:12.10,*Default,NTP,0000,0000,0000,,let's review list mutation and environment diagrams
+Dialogue: 0,0:34:12.97,0:34:14.93,*Default,NTP,0000,0000,0000,,names can refer to lists
+Dialogue: 0,0:34:14.97,0:34:17.00,*Default,NTP,0000,0000,0000,,and assignments statements can change
+Dialogue: 0,0:34:17.00,0:34:19.37,*Default,NTP,0000,0000,0000,,which names refer to which lists
+Dialogue: 0,0:34:19.40,0:34:22.90,*Default,NTP,0000,0000,0000,,in addition the contents of a list can change
+Dialogue: 0,0:34:22.97,0:34:25.37,*Default,NTP,0000,0000,0000,,the length of a list can grow or shrink
+Dialogue: 0,0:34:25.73,0:34:26.47,*Default,NTP,0000,0000,0000,,even
+Dialogue: 0,0:34:26.47,0:34:29.80,*Default,NTP,0000,0000,0000,,if the names that refer to those lists don't change
+Dialogue: 0,0:34:30.30,0:34:33.50,*Default,NTP,0000,0000,0000,,an environment diagrams help keep track of all this
+Dialogue: 0,0:34:33.50,0:34:35.40,*Default,NTP,0000,0000,0000,,change as it's happening
+Dialogue: 0,0:34:35.40,0:34:38.17,*Default,NTP,0000,0000,0000,,throughout the course of execution of a program
+Dialogue: 0,0:34:38.80,0:34:40.87,*Default,NTP,0000,0000,0000,,so let's work with an example
+Dialogue: 0,0:34:40.87,0:34:43.27,*Default,NTP,0000,0000,0000,,where s is bound to the list two three
+Dialogue: 0,0:34:43.53,0:34:45.73,*Default,NTP,0000,0000,0000,,t is bound to the list five six
+Dialogue: 0,0:34:45.80,0:34:49.33,*Default,NTP,0000,0000,0000,,and we perform various mutation operations
+Dialogue: 0,0:34:49.40,0:34:52.70,*Default,NTP,0000,0000,0000,,have some example calls and show the result
+Dialogue: 0,0:34:52.87,0:34:55.10,*Default,NTP,0000,0000,0000,,and we'll start with the append operation
+Dialogue: 0,0:34:55.10,0:34:58.37,*Default,NTP,0000,0000,0000,,which adds one element to the end of a list
+Dialogue: 0,0:34:59.17,0:35:02.87,*Default,NTP,0000,0000,0000,,so if I append t to the list s
+Dialogue: 0,0:35:03.07,0:35:04.40,*Default,NTP,0000,0000,0000,,here's what happens
+Dialogue: 0,0:35:04.47,0:35:06.40,*Default,NTP,0000,0000,0000,,I start out with a global frame
+Dialogue: 0,0:35:06.40,0:35:08.47,*Default,NTP,0000,0000,0000,,with s bound to the list two three
+Dialogue: 0,0:35:08.60,0:35:10.73,*Default,NTP,0000,0000,0000,,and t bound to the list five six
+Dialogue: 0,0:35:11.20,0:35:12.07,*Default,NTP,0000,0000,0000,,s dot a pen
+Dialogue: 0,0:35:12.07,0:35:16.40,*Default,NTP,0000,0000,0000,,t adds one element to the end of s that refers
+Dialogue: 0,0:35:16.70,0:35:19.13,*Default,NTP,0000,0000,0000,,to this list containing five and six
+Dialogue: 0,0:35:19.87,0:35:22.17,*Default,NTP,0000,0000,0000,,it's important that this arrow doesn't point to
+Dialogue: 0,0:35:22.17,0:35:23.47,*Default,NTP,0000,0000,0000,,the name t
+Dialogue: 0,0:35:23.97,0:35:26.20,*Default,NTP,0000,0000,0000,,it has to contain a value
+Dialogue: 0,0:35:26.77,0:35:30.10,*Default,NTP,0000,0000,0000,,it's the value that you get when you evaluate the name
+Dialogue: 0,0:35:30.10,0:35:33.10,*Default,NTP,0000,0000,0000,,t which is the list containing five and six
+Dialogue: 0,0:35:33.93,0:35:36.50,*Default,NTP,0000,0000,0000,,now when I assign the name t to something else
+Dialogue: 0,0:35:36.50,0:35:39.87,*Default,NTP,0000,0000,0000,,like zero that means t is bound to zero
+Dialogue: 0,0:35:39.87,0:35:42.57,*Default,NTP,0000,0000,0000,,it's no longer bound to the list five six
+Dialogue: 0,0:35:42.73,0:35:44.67,*Default,NTP,0000,0000,0000,,but that does not affect s
+Dialogue: 0,0:35:44.97,0:35:48.33,*Default,NTP,0000,0000,0000,,s is now two three and a list five six
+Dialogue: 0,0:35:48.37,0:35:50.80,*Default,NTP,0000,0000,0000,,that's a three element list containing two
+Dialogue: 0,0:35:50.80,0:35:52.07,*Default,NTP,0000,0000,0000,,numbers in a list
+Dialogue: 0,0:35:52.27,0:35:53.93,*Default,NTP,0000,0000,0000,,and t is bound to zero
+Dialogue: 0,0:35:55.53,0:35:58.90,*Default,NTP,0000,0000,0000,,okay let's start over and take a look at extend
+Dialogue: 0,0:35:59.50,0:36:03.60,*Default,NTP,0000,0000,0000,,extend adds all elements in one list to another list
+Dialogue: 0,0:36:04.10,0:36:06.47,*Default,NTP,0000,0000,0000,,so s dot extend t
+Dialogue: 0,0:36:06.73,0:36:11.07,*Default,NTP,0000,0000,0000,,will add to the end of s the elements five and six
+Dialogue: 0,0:36:11.93,0:36:15.17,*Default,NTP,0000,0000,0000,,now if I assign t one equal to zero
+Dialogue: 0,0:36:15.37,0:36:18.67,*Default,NTP,0000,0000,0000,,I will change this element to zero
+Dialogue: 0,0:36:18.70,0:36:21.07,*Default,NTP,0000,0000,0000,,but that won't affect what's in s
+Dialogue: 0,0:36:21.07,0:36:23.90,*Default,NTP,0000,0000,0000,,because s just contains a bunch of numbers
+Dialogue: 0,0:36:24.70,0:36:26.20,*Default,NTP,0000,0000,0000,,let's start over once more
+Dialogue: 0,0:36:26.20,0:36:29.27,*Default,NTP,0000,0000,0000,,and take a look at addition and slicing
+Dialogue: 0,0:36:30.07,0:36:33.87,*Default,NTP,0000,0000,0000,,addition of two lists creates a new list
+Dialogue: 0,0:36:33.87,0:36:36.33,*Default,NTP,0000,0000,0000,,and slicing creates a new list
+Dialogue: 0,0:36:36.77,0:36:39.33,*Default,NTP,0000,0000,0000,,these lists contain the elements
+Dialogue: 0,0:36:39.33,0:36:42.67,*Default,NTP,0000,0000,0000,,of the lists that were added or sliced
+Dialogue: 0,0:36:43.33,0:36:45.47,*Default,NTP,0000,0000,0000,,and here we'll do a longer example
+Dialogue: 0,0:36:46.70,0:36:51.40,*Default,NTP,0000,0000,0000,,we're going to assign a to s plus a list containing t
+Dialogue: 0,0:36:51.57,0:36:54.70,*Default,NTP,0000,0000,0000,,we're going to assign b to a slice of a
+Dialogue: 0,0:36:54.80,0:36:57.47,*Default,NTP,0000,0000,0000,,and then we'll make some changes to a and b
+Dialogue: 0,0:36:57.57,0:36:59.73,*Default,NTP,0000,0000,0000,,and see what happens to s and t
+Dialogue: 0,0:37:01.17,0:37:02.47,*Default,NTP,0000,0000,0000,,starting at the top
+Dialogue: 0,0:37:02.70,0:37:07.40,*Default,NTP,0000,0000,0000,,if I added s and t together I'd get a list to 3 5 6
+Dialogue: 0,0:37:07.57,0:37:09.00,*Default,NTP,0000,0000,0000,,but this is different
+Dialogue: 0,0:37:09.30,0:37:13.53,*Default,NTP,0000,0000,0000,,this says build a one element list containing t
+Dialogue: 0,0:37:13.87,0:37:15.67,*Default,NTP,0000,0000,0000,,so let's go ahead and do that
+Dialogue: 0,0:37:15.80,0:37:17.93,*Default,NTP,0000,0000,0000,,even though we're not going to give it a name
+Dialogue: 0,0:37:18.13,0:37:22.33,*Default,NTP,0000,0000,0000,,instead we're going to add this list and this list
+Dialogue: 0,0:37:22.57,0:37:25.97,*Default,NTP,0000,0000,0000,,building a new list containing the elements two
+Dialogue: 0,0:37:26.33,0:37:30.00,*Default,NTP,0000,0000,0000,,three and the list five six
+Dialogue: 0,0:37:30.93,0:37:34.30,*Default,NTP,0000,0000,0000,,so the result of this expression s plus list t
+Dialogue: 0,0:37:34.60,0:37:39.30,*Default,NTP,0000,0000,0000,,builds a three element list with two three and a list
+Dialogue: 0,0:37:39.57,0:37:41.30,*Default,NTP,0000,0000,0000,,and we give this the name a
+Dialogue: 0,0:37:42.00,0:37:43.37,*Default,NTP,0000,0000,0000,,now before we move on
+Dialogue: 0,0:37:43.37,0:37:45.37,*Default,NTP,0000,0000,0000,,we should probably figure out what to do
+Dialogue: 0,0:37:45.37,0:37:46.70,*Default,NTP,0000,0000,0000,,with this floating
+Dialogue: 0,0:37:46.77,0:37:49.20,*Default,NTP,0000,0000,0000,,one element list that has no name
+Dialogue: 0,0:37:49.97,0:37:51.30,*Default,NTP,0000,0000,0000,,you could leave it there
+Dialogue: 0,0:37:51.40,0:37:55.73,*Default,NTP,0000,0000,0000,,you could also erase it because it can't be reached
+Dialogue: 0,0:37:55.77,0:38:00.53,*Default,NTP,0000,0000,0000,,it was created during evaluation but never given a name
+Dialogue: 0,0:38:01.37,0:38:03.27,*Default,NTP,0000,0000,0000,,okay under the second line
+Dialogue: 0,0:38:03.67,0:38:05.67,*Default,NTP,0000,0000,0000,,b is a slice of a
+Dialogue: 0,0:38:06.13,0:38:08.97,*Default,NTP,0000,0000,0000,,starting at element one and going to the end
+Dialogue: 0,0:38:09.10,0:38:12.17,*Default,NTP,0000,0000,0000,,that creates a new list containing three
+Dialogue: 0,0:38:12.17,0:38:13.97,*Default,NTP,0000,0000,0000,,and the list five six
+Dialogue: 0,0:38:15.17,0:38:16.87,*Default,NTP,0000,0000,0000,,now we can make some changes
+Dialogue: 0,0:38:16.97,0:38:19.10,*Default,NTP,0000,0000,0000,,a's element one is nine
+Dialogue: 0,0:38:19.27,0:38:21.40,*Default,NTP,0000,0000,0000,,here's a here's element one
+Dialogue: 0,0:38:21.47,0:38:22.87,*Default,NTP,0000,0000,0000,,that changes to nine
+Dialogue: 0,0:38:23.77,0:38:27.30,*Default,NTP,0000,0000,0000,,b's element one's element one is zero
+Dialogue: 0,0:38:27.53,0:38:31.33,*Default,NTP,0000,0000,0000,,here's b here's b's element one
+Dialogue: 0,0:38:31.53,0:38:34.37,*Default,NTP,0000,0000,0000,,here's b's element one's element one
+Dialogue: 0,0:38:34.37,0:38:36.13,*Default,NTP,0000,0000,0000,,and we change that to zero
+Dialogue: 0,0:38:36.20,0:38:37.77,*Default,NTP,0000,0000,0000,,that actually affects t
+Dialogue: 0,0:38:38.67,0:38:41.97,*Default,NTP,0000,0000,0000,,so the result now is that s is a list two three
+Dialogue: 0,0:38:42.13,0:38:44.07,*Default,NTP,0000,0000,0000,,t is a list 5 0
+Dialogue: 0,0:38:44.20,0:38:47.40,*Default,NTP,0000,0000,0000,,a is a list two nine containing 5 0
+Dialogue: 0,0:38:47.40,0:38:50.73,*Default,NTP,0000,0000,0000,,and b is a list three containing 5 0
+Dialogue: 0,0:38:51.80,0:38:55.87,*Default,NTP,0000,0000,0000,,the fact that this addition and this slice
+Dialogue: 0,0:38:56.00,0:38:57.90,*Default,NTP,0000,0000,0000,,all contained t
+Dialogue: 0,0:38:58.53,0:39:01.30,*Default,NTP,0000,0000,0000,,means that a change to t
+Dialogue: 0,0:39:01.50,0:39:03.47,*Default,NTP,0000,0000,0000,,affects all three of them
+Dialogue: 0,0:39:03.47,0:39:06.10,*Default,NTP,0000,0000,0000,,and therefore we see three different zeros
+Dialogue: 0,0:39:06.13,0:39:09.50,*Default,NTP,0000,0000,0000,,all referring to the same element of a list
+Dialogue: 0,0:39:10.33,0:39:11.73,*Default,NTP,0000,0000,0000,,okay let's start over
+Dialogue: 0,0:39:12.33,0:39:14.57,*Default,NTP,0000,0000,0000,,the list function creates a new list
+Dialogue: 0,0:39:14.57,0:39:16.57,*Default,NTP,0000,0000,0000,,containing existing elements
+Dialogue: 0,0:39:16.80,0:39:19.27,*Default,NTP,0000,0000,0000,,so if I say t equals list s
+Dialogue: 0,0:39:19.27,0:39:22.07,*Default,NTP,0000,0000,0000,,I get a new list containing two and three
+Dialogue: 0,0:39:22.77,0:39:25.60,*Default,NTP,0000,0000,0000,,that replaces what t used to refer to
+Dialogue: 0,0:39:26.10,0:39:29.20,*Default,NTP,0000,0000,0000,,if i set s element one equal to zero
+Dialogue: 0,0:39:29.37,0:39:32.20,*Default,NTP,0000,0000,0000,,then i'm changing s but i'm not changing t
+Dialogue: 0,0:39:32.40,0:39:34.07,*Default,NTP,0000,0000,0000,,because we copied it
+Dialogue: 0,0:39:34.50,0:39:36.93,*Default,NTP,0000,0000,0000,,so the result is that s is two in zero
+Dialogue: 0,0:39:36.97,0:39:38.57,*Default,NTP,0000,0000,0000,,and t is two in three
+Dialogue: 0,0:39:39.40,0:39:43.00,*Default,NTP,0000,0000,0000,,what about slice assignment here are as an example
+Dialogue: 0,0:39:43.40,0:39:46.30,*Default,NTP,0000,0000,0000,,if s is two and three t is five and six
+Dialogue: 0,0:39:46.57,0:39:51.67,*Default,NTP,0000,0000,0000,,and I assign to the list s from zero to zero equals t
+Dialogue: 0,0:39:52.27,0:39:54.20,*Default,NTP,0000,0000,0000,,I'm saying that right in here
+Dialogue: 0,0:39:54.20,0:39:56.13,*Default,NTP,0000,0000,0000,,I should have all the elements of t
+Dialogue: 0,0:39:56.67,0:39:58.87,*Default,NTP,0000,0000,0000,,since this slice had length zero
+Dialogue: 0,0:39:58.93,0:40:00.77,*Default,NTP,0000,0000,0000,,and this list had length two
+Dialogue: 0,0:40:00.80,0:40:03.33,*Default,NTP,0000,0000,0000,,I had to shift everything else over
+Dialogue: 0,0:40:04.10,0:40:07.07,*Default,NTP,0000,0000,0000,,slice assignment from three onwards
+Dialogue: 0,0:40:07.10,0:40:10.07,*Default,NTP,0000,0000,0000,,means that this value is going to change
+Dialogue: 0,0:40:10.20,0:40:13.27,*Default,NTP,0000,0000,0000,,but since I'm replacing a slice of length one with a
+Dialogue: 0,0:40:13.27,0:40:14.57,*Default,NTP,0000,0000,0000,,list of length two
+Dialogue: 0,0:40:14.67,0:40:17.97,*Default,NTP,0000,0000,0000,,I put the elements five and six in place
+Dialogue: 0,0:40:18.77,0:40:22.60,*Default,NTP,0000,0000,0000,,now t one equal zero changes this value
+Dialogue: 0,0:40:23.67,0:40:26.57,*Default,NTP,0000,0000,0000,,but it does not change this value because
+Dialogue: 0,0:40:26.60,0:40:29.37,*Default,NTP,0000,0000,0000,,the last element of s is just a number
+Dialogue: 0,0:40:30.50,0:40:36.00,*Default,NTP,0000,0000,0000,,so those are ways of extending or changing a list
+Dialogue: 0,0:40:36.40,0:40:39.10,*Default,NTP,0000,0000,0000,,it's also possible to shrink a list
+Dialogue: 0,0:40:39.47,0:40:41.97,*Default,NTP,0000,0000,0000,,I'm not going to draw environment diagrams for these
+Dialogue: 0,0:40:41.97,0:40:44.07,*Default,NTP,0000,0000,0000,,because I think they're pretty straightforward
+Dialogue: 0,0:40:44.20,0:40:46.77,*Default,NTP,0000,0000,0000,,but let's go through the operations
+Dialogue: 0,0:40:47.00,0:40:49.93,*Default,NTP,0000,0000,0000,,pop removes and returns the last element
+Dialogue: 0,0:40:50.70,0:40:54.07,*Default,NTP,0000,0000,0000,,so if I start with s is two three and t is five six
+Dialogue: 0,0:40:54.13,0:40:55.97,*Default,NTP,0000,0000,0000,,and then assign t to s
+Dialogue: 0,0:40:56.20,0:40:58.60,*Default,NTP,0000,0000,0000,,pop that removes the three
+Dialogue: 0,0:40:59.40,0:41:02.37,*Default,NTP,0000,0000,0000,,and changes t to refer to that three
+Dialogue: 0,0:41:02.90,0:41:06.10,*Default,NTP,0000,0000,0000,,so the result is that s is a list containing only two
+Dialogue: 0,0:41:06.10,0:41:07.80,*Default,NTP,0000,0000,0000,,because I've popped off the three
+Dialogue: 0,0:41:08.10,0:41:11.33,*Default,NTP,0000,0000,0000,,and the three is now the value of the name t
+Dialogue: 0,0:41:11.40,0:41:13.77,*Default,NTP,0000,0000,0000,,we've lost track of the list five six
+Dialogue: 0,0:41:15.10,0:41:18.90,*Default,NTP,0000,0000,0000,,starting over with ss two three and t is five six
+Dialogue: 0,0:41:19.00,0:41:21.80,*Default,NTP,0000,0000,0000,,what if I remove will remove
+Dialogue: 0,0:41:21.80,0:41:24.67,*Default,NTP,0000,0000,0000,,removes the first element equal to the argument
+Dialogue: 0,0:41:25.13,0:41:27.57,*Default,NTP,0000,0000,0000,,so if I write t dot extend t
+Dialogue: 0,0:41:27.73,0:41:30.73,*Default,NTP,0000,0000,0000,,that means t is now 5 6 5 6
+Dialogue: 0,0:41:30.87,0:41:35.40,*Default,NTP,0000,0000,0000,,and if I remove five then I'm left with just 6 5 6
+Dialogue: 0,0:41:35.90,0:41:37.53,*Default,NTP,0000,0000,0000,,s has not changed at all
+Dialogue: 0,0:41:38.30,0:41:39.13,*Default,NTP,0000,0000,0000,,and finally
+Dialogue: 0,0:41:39.13,0:41:42.00,*Default,NTP,0000,0000,0000,,let's do another example of slice assignment
+Dialogue: 0,0:41:42.87,0:41:44.10,*Default,NTP,0000,0000,0000,,that's the same as the thing
+Dialogue: 0,0:41:44.10,0:41:45.90,*Default,NTP,0000,0000,0000,,we looked at in the last slide
+Dialogue: 0,0:41:46.33,0:41:49.40,*Default,NTP,0000,0000,0000,,we can remove elements from a list by assigning
+Dialogue: 0,0:41:49.70,0:41:51.77,*Default,NTP,0000,0000,0000,,empty list to a slice
+Dialogue: 0,0:41:52.70,0:41:56.87,*Default,NTP,0000,0000,0000,,so the slice from zero to one is empty
+Dialogue: 0,0:41:57.00,0:42:00.60,*Default,NTP,0000,0000,0000,,means that all those elements in the slice zero to one
+Dialogue: 0,0:42:00.60,0:42:04.87,*Default,NTP,0000,0000,0000,,are removed leaving only three in s
+Dialogue: 0,0:42:05.53,0:42:08.47,*Default,NTP,0000,0000,0000,,and in fact if I remove all the elements from zero
+Dialogue: 0,0:42:08.57,0:42:12.13,*Default,NTP,0000,0000,0000,,to two of t then I'm left with no elements at all
+Dialogue: 0,0:42:14.00,0:42:15.40,*Default,NTP,0000,0000,0000,,so let's put them together
+Dialogue: 0,0:42:15.50,0:42:18.70,*Default,NTP,0000,0000,0000,,into a couple of more complicated examples
+Dialogue: 0,0:42:19.17,0:42:22.57,*Default,NTP,0000,0000,0000,,let's say I assign t to the list 1 2 3
+Dialogue: 0,0:42:23.13,0:42:25.40,*Default,NTP,0000,0000,0000,,and then I perform slice assignment
+Dialogue: 0,0:42:25.47,0:42:27.40,*Default,NTP,0000,0000,0000,,where the slice from one to three
+Dialogue: 0,0:42:27.73,0:42:30.00,*Default,NTP,0000,0000,0000,,that includes elements one and two
+Dialogue: 0,0:42:30.57,0:42:33.93,*Default,NTP,0000,0000,0000,,is assigned to a list containing t
+Dialogue: 0,0:42:34.77,0:42:37.37,*Default,NTP,0000,0000,0000,,so let's build that list containing t
+Dialogue: 0,0:42:38.50,0:42:41.80,*Default,NTP,0000,0000,0000,,and then we'll replace two and three with
+Dialogue: 0,0:42:42.10,0:42:44.30,*Default,NTP,0000,0000,0000,,the contents of this list
+Dialogue: 0,0:42:44.57,0:42:49.60,*Default,NTP,0000,0000,0000,,which is just a reference to the whole list 1 2 3
+Dialogue: 0,0:42:50.30,0:42:54.40,*Default,NTP,0000,0000,0000,,so we replace that with a reference to this list
+Dialogue: 0,0:42:55.80,0:42:58.53,*Default,NTP,0000,0000,0000,,now we have a list that contains itself
+Dialogue: 0,0:42:58.77,0:43:00.93,*Default,NTP,0000,0000,0000,,that doesn't make python explode
+Dialogue: 0,0:43:01.33,0:43:02.73,*Default,NTP,0000,0000,0000,,and so we can keep going
+Dialogue: 0,0:43:03.60,0:43:07.87,*Default,NTP,0000,0000,0000,,t dot extend t says put all the elements of t in t
+Dialogue: 0,0:43:08.17,0:43:11.37,*Default,NTP,0000,0000,0000,,and all the elements are one and then a reference to t
+Dialogue: 0,0:43:12.27,0:43:13.30,*Default,NTP,0000,0000,0000,,and if you print this out
+Dialogue: 0,0:43:13.30,0:43:15.30,*Default,NTP,0000,0000,0000,,you'd get something that looks like this
+Dialogue: 0,0:43:16.07,0:43:17.57,*Default,NTP,0000,0000,0000,,okay let's do one more
+Dialogue: 0,0:43:18.07,0:43:20.13,*Default,NTP,0000,0000,0000,,t is 1 2 3 4
+Dialogue: 0,0:43:20.30,0:43:23.13,*Default,NTP,0000,0000,0000,,a list with two elements which are both lists
+Dialogue: 0,0:43:24.13,0:43:27.27,*Default,NTP,0000,0000,0000,,if I look at t zero that's this list
+Dialogue: 0,0:43:27.33,0:43:31.07,*Default,NTP,0000,0000,0000,,and I append to it a slice of t
+Dialogue: 0,0:43:32.77,0:43:36.10,*Default,NTP,0000,0000,0000,,a slice of t from one to two
+Dialogue: 0,0:43:36.57,0:43:41.27,*Default,NTP,0000,0000,0000,,is a list containing just three four
+Dialogue: 0,0:43:41.57,0:43:43.20,*Default,NTP,0000,0000,0000,,and that's what I append
+Dialogue: 0,0:43:43.33,0:43:46.37,*Default,NTP,0000,0000,0000,,so I build that slice and I append it
+Dialogue: 0,0:43:46.40,0:43:48.67,*Default,NTP,0000,0000,0000,,and I've constructed the result
+Dialogue: 0,0:43:49.27,0:43:50.60,*Default,NTP,0000,0000,0000,,which looks like this
+Dialogue: 0,0:43:52.27,0:43:54.87,*Default,NTP,0000,0000,0000,,I think it's very challenging to move straight from
+Dialogue: 0,0:43:54.87,0:43:57.70,*Default,NTP,0000,0000,0000,,code to the eventual result
+Dialogue: 0,0:43:57.77,0:44:00.37,*Default,NTP,0000,0000,0000,,without drawing a box and pointer diagram
+Dialogue: 0,0:44:00.37,0:44:01.80,*Default,NTP,0000,0000,0000,,showing what's going on
+Dialogue: 0,0:44:02.10,0:44:03.53,*Default,NTP,0000,0000,0000,,and so I'd recommend
+Dialogue: 0,0:44:03.53,0:44:05.67,*Default,NTP,0000,0000,0000,,that you get comfortable with this notation
+Dialogue: 0,0:44:05.67,0:44:08.47,*Default,NTP,0000,0000,0000,,so that you can solve these kinds of problems
