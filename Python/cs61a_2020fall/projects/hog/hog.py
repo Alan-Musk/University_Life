@@ -289,9 +289,6 @@ def announce_highest(who, last_score=0, running_high=0):
             else:
                 return announce_highest(who, score1, running_high)
     return say
-
-
-
 #######################
 # Phase 3: Strategies #
 #######################

@@ -1,0 +1,735 @@
+[Script Info]
+Title: Lecture 16. Mutable Functions_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=39&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.47,0:00:03.80,*Default,NTP,0000,0000,0000,,61 election No.16 announcements
+Dialogue: 0,0:00:04.10,0:00:06.20,*Default,NTP,0000,0000,0000,,homework three is due on Thursday
+Dialogue: 0,0:00:06.53,0:00:07.20,*Default,NTP,0000,0000,0000,,you can also
+Dialogue: 0,0:00:07.20,0:00:10.10,*Default,NTP,0000,0000,0000,,earn back any lost composition points on your hog
+Dialogue: 0,0:00:10.10,0:00:13.90,*Default,NTP,0000,0000,0000,,project by revising your project this week
+Dialogue: 0,0:00:14.53,0:00:17.13,*Default,NTP,0000,0000,0000,,and turn in the revised version on Friday
+Dialogue: 0,0:00:17.30,0:00:20.33,*Default,NTP,0000,0000,0000,,you'll find instructions on exactly how to do that
+Dialogue: 0,0:00:20.33,0:00:21.37,*Default,NTP,0000,0000,0000,,on piazza
+Dialogue: 0,0:00:21.57,0:00:25.00,*Default,NTP,0000,0000,0000,,and the important point is that instead of writing ok
+Dialogue: 0,0:00:25.00,0:00:26.17,*Default,NTP,0000,0000,0000,,dash dash cement
+Dialogue: 0,0:00:26.17,0:00:28.50,*Default,NTP,0000,0000,0000,,you write ok dash dash revise
+Dialogue: 0,0:00:29.50,0:00:31.77,*Default,NTP,0000,0000,0000,,this is a lighter week in terms of assignments
+Dialogue: 0,0:00:31.77,0:00:34.17,*Default,NTP,0000,0000,0000,,but I really encourage you to
+Dialogue: 0,0:00:34.40,0:00:36.40,*Default,NTP,0000,0000,0000,,spend some time on lab
+Dialogue: 0,0:00:36.50,0:00:38.93,*Default,NTP,0000,0000,0000,,discussion and tutorials this week
+Dialogue: 0,0:00:39.13,0:00:40.40,*Default,NTP,0000,0000,0000,,in order to make sure
+Dialogue: 0,0:00:40.47,0:00:42.60,*Default,NTP,0000,0000,0000,,that you know what's going on in the course
+Dialogue: 0,0:00:43.17,0:00:45.20,*Default,NTP,0000,0000,0000,,maybe while you were working on the cats project
+Dialogue: 0,0:00:45.20,0:00:45.97,*Default,NTP,0000,0000,0000,,you fell behind
+Dialogue: 0,0:00:45.97,0:00:47.17,*Default,NTP,0000,0000,0000,,an lecture a little bit
+Dialogue: 0,0:00:47.47,0:00:49.87,*Default,NTP,0000,0000,0000,,now is a great time to catch up
+Dialogue: 0,0:00:50.67,0:00:52.40,*Default,NTP,0000,0000,0000,,here are all the important links
+Dialogue: 0,0:00:52.40,0:00:54.30,*Default,NTP,0000,0000,0000,,there are recordings of any
+Dialogue: 0,0:00:54.30,0:00:56.10,*Default,NTP,0000,0000,0000,,past events that you might have missed
+Dialogue: 0,0:00:56.10,0:00:58.57,*Default,NTP,0000,0000,0000,,like lab and discussion orientations and
+Dialogue: 0,0:00:58.57,0:01:00.27,*Default,NTP,0000,0000,0000,,exam prep sessions
+Dialogue: 0,0:01:00.27,0:01:01.90,*Default,NTP,0000,0000,0000,,from previous weeks
+Dialogue: 0,0:01:02.77,0:01:04.70,*Default,NTP,0000,0000,0000,,while this week is a little bit lighter
+Dialogue: 0,0:01:05.20,0:01:07.60,*Default,NTP,0000,0000,0000,,we are just a few weeks away from intern too
+Dialogue: 0,0:01:07.73,0:01:10.07,*Default,NTP,0000,0000,0000,,and there's another project coming out next week
+Dialogue: 0,0:01:10.53,0:01:12.10,*Default,NTP,0000,0000,0000,,so things will get busier
+Dialogue: 0,0:01:12.70,0:01:14.87,*Default,NTP,0000,0000,0000,,and you'll be in a great position to handle all that
+Dialogue: 0,0:01:14.87,0:01:17.17,*Default,NTP,0000,0000,0000,,as long as you're caught up by the end of this week
+Dialogue: 0,0:01:18.13,0:01:20.17,*Default,NTP,0000,0000,0000,,but if you're not cut up by the end of this week
+Dialogue: 0,0:01:20.47,0:01:23.13,*Default,NTP,0000,0000,0000,,it will be quite difficult to catch up later
+Dialogue: 0,0:01:23.73,0:01:24.93,*Default,NTP,0000,0000,0000,,so now is your chance
+Dialogue: 0,0:01:24.93,0:01:26.50,*Default,NTP,0000,0000,0000,,I hope you take advantage of it
+Dialogue: 0,0:01:28.93,0:01:30.47,*Default,NTP,0000,0000,0000,,mutable functions
+Dialogue: 0,0:01:30.50,0:01:33.47,*Default,NTP,0000,0000,0000,,are functions that have data associated with them
+Dialogue: 0,0:01:33.67,0:01:35.07,*Default,NTP,0000,0000,0000,,that changes
+Dialogue: 0,0:01:37.13,0:01:38.90,*Default,NTP,0000,0000,0000,,so here's a function with behavior
+Dialogue: 0,0:01:38.90,0:01:40.30,*Default,NTP,0000,0000,0000,,that varies over time
+Dialogue: 0,0:01:40.70,0:01:42.40,*Default,NTP,0000,0000,0000,,it's a model of a bank account
+Dialogue: 0,0:01:42.40,0:01:45.27,*Default,NTP,0000,0000,0000,,that starts out with a balance of $100 in it
+Dialogue: 0,0:01:45.60,0:01:48.13,*Default,NTP,0000,0000,0000,,and using a function called withdraw
+Dialogue: 0,0:01:48.27,0:01:50.93,*Default,NTP,0000,0000,0000,,or going to withdraw money from the bank account
+Dialogue: 0,0:01:51.70,0:01:53.27,*Default,NTP,0000,0000,0000,,so calling withdraw
+Dialogue: 0,0:01:53.80,0:01:55.57,*Default,NTP,0000,0000,0000,,of an amount 25
+Dialogue: 0,0:01:56.13,0:01:57.07,*Default,NTP,0000,0000,0000,,will return
+Dialogue: 0,0:01:57.07,0:01:59.67,*Default,NTP,0000,0000,0000,,the balance that remains in the bank account
+Dialogue: 0,0:02:00.20,0:02:03.40,*Default,NTP,0000,0000,0000,,we started with a hundred an hour down to 75
+Dialogue: 0,0:02:04.77,0:02:07.17,*Default,NTP,0000,0000,0000,,so the argument here is the amount to withdraw
+Dialogue: 0,0:02:07.53,0:02:09.90,*Default,NTP,0000,0000,0000,,the return value is the remaining balance
+Dialogue: 0,0:02:11.10,0:02:13.37,*Default,NTP,0000,0000,0000,,if I call withdraw again on 25
+Dialogue: 0,0:02:13.70,0:02:16.13,*Default,NTP,0000,0000,0000,,I'll have withdrawn from the remaining balance
+Dialogue: 0,0:02:16.13,0:02:17.57,*Default,NTP,0000,0000,0000,,and be left with 50
+Dialogue: 0,0:02:18.90,0:02:21.10,*Default,NTP,0000,0000,0000,,a second withdrawal of the same amount
+Dialogue: 0,0:02:21.17,0:02:23.10,*Default,NTP,0000,0000,0000,,leads to a different return value
+Dialogue: 0,0:02:23.27,0:02:25.80,*Default,NTP,0000,0000,0000,,and that's a function that changes over time
+Dialogue: 0,0:02:27.47,0:02:31.57,*Default,NTP,0000,0000,0000,,if I now try to withdraw 60 but only 50 remains
+Dialogue: 0,0:02:31.77,0:02:34.27,*Default,NTP,0000,0000,0000,,it will tell me that there are insufficient funds
+Dialogue: 0,0:02:35.40,0:02:38.10,*Default,NTP,0000,0000,0000,,so the question is where is this balance stored
+Dialogue: 0,0:02:38.17,0:02:40.07,*Default,NTP,0000,0000,0000,,and it's going to be within the function
+Dialogue: 0,0:02:40.57,0:02:43.53,*Default,NTP,0000,0000,0000,,so the way we do this is that we create a new function
+Dialogue: 0,0:02:43.80,0:02:46.97,*Default,NTP,0000,0000,0000,,using a higher order function called make withdraw
+Dialogue: 0,0:02:47.33,0:02:49.27,*Default,NTP,0000,0000,0000,,which takes the initial balance
+Dialogue: 0,0:02:49.77,0:02:51.00,*Default,NTP,0000,0000,0000,,and we would have to have done that
+Dialogue: 0,0:02:51.00,0:02:53.27,*Default,NTP,0000,0000,0000,,before we made all these calls to withdraw
+Dialogue: 0,0:02:54.40,0:02:56.07,*Default,NTP,0000,0000,0000,,now withdraw
+Dialogue: 0,0:02:56.50,0:02:59.93,*Default,NTP,0000,0000,0000,,is a function that has apparent frame
+Dialogue: 0,0:03:00.70,0:03:02.37,*Default,NTP,0000,0000,0000,,the make withdraw frame
+Dialogue: 0,0:03:02.77,0:03:05.77,*Default,NTP,0000,0000,0000,,and that is where the data will live
+Dialogue: 0,0:03:05.97,0:03:08.53,*Default,NTP,0000,0000,0000,,that records the balance of the bank account
+Dialogue: 0,0:03:08.53,0:03:11.50,*Default,NTP,0000,0000,0000,,that is modeled by the withdraw function
+Dialogue: 0,0:03:13.33,0:03:14.70,*Default,NTP,0000,0000,0000,,okay so I've
+Dialogue: 0,0:03:14.70,0:03:15.47,*Default,NTP,0000,0000,0000,,told you first
+Dialogue: 0,0:03:15.47,0:03:16.30,*Default,NTP,0000,0000,0000,,how to use this
+Dialogue: 0,0:03:16.30,0:03:17.77,*Default,NTP,0000,0000,0000,,without telling you how to implement it
+Dialogue: 0,0:03:17.77,0:03:20.10,*Default,NTP,0000,0000,0000,,and we're going to work up to the implementation
+Dialogue: 0,0:03:20.47,0:03:21.77,*Default,NTP,0000,0000,0000,,after we look at
+Dialogue: 0,0:03:21.97,0:03:24.77,*Default,NTP,0000,0000,0000,,the environment diagram that we want to create
+Dialogue: 0,0:03:25.67,0:03:27.30,*Default,NTP,0000,0000,0000,,so here's the goal
+Dialogue: 0,0:03:27.50,0:03:30.30,*Default,NTP,0000,0000,0000,,the goal is to have make withdraw
+Dialogue: 0,0:03:30.40,0:03:32.00,*Default,NTP,0000,0000,0000,,be something that creates
+Dialogue: 0,0:03:32.00,0:03:34.27,*Default,NTP,0000,0000,0000,,bank accounts that can be withdrawn from
+Dialogue: 0,0:03:34.47,0:03:36.53,*Default,NTP,0000,0000,0000,,which will be represented by functions
+Dialogue: 0,0:03:37.17,0:03:38.93,*Default,NTP,0000,0000,0000,,and by calling make withdraw
+Dialogue: 0,0:03:39.27,0:03:40.93,*Default,NTP,0000,0000,0000,,with some initial balance
+Dialogue: 0,0:03:40.97,0:03:43.20,*Default,NTP,0000,0000,0000,,I will have bound that balance in a frame
+Dialogue: 0,0:03:43.37,0:03:46.47,*Default,NTP,0000,0000,0000,,I'll create a withdraw function and I'll return it
+Dialogue: 0,0:03:47.00,0:03:49.07,*Default,NTP,0000,0000,0000,,and I'll bind that to the name withdraw
+Dialogue: 0,0:03:49.07,0:03:50.50,*Default,NTP,0000,0000,0000,,in the global frame
+Dialogue: 0,0:03:51.17,0:03:53.53,*Default,NTP,0000,0000,0000,,so now each time I call withdraw
+Dialogue: 0,0:03:53.77,0:03:57.30,*Default,NTP,0000,0000,0000,,I'm going to call it by introducing a new frame
+Dialogue: 0,0:03:57.53,0:03:59.40,*Default,NTP,0000,0000,0000,,where the parent frame is f one
+Dialogue: 0,0:03:59.60,0:04:01.57,*Default,NTP,0000,0000,0000,,because as the parent of the function
+Dialogue: 0,0:04:01.87,0:04:04.37,*Default,NTP,0000,0000,0000,,and therefore it will have access to the bounce
+Dialogue: 0,0:04:04.93,0:04:07.97,*Default,NTP,0000,0000,0000,,and it can do what withdrawing does which is
+Dialogue: 0,0:04:08.13,0:04:10.50,*Default,NTP,0000,0000,0000,,to reduce the balance by amount
+Dialogue: 0,0:04:10.53,0:04:12.47,*Default,NTP,0000,0000,0000,,and return the remaining balance
+Dialogue: 0,0:04:13.33,0:04:15.50,*Default,NTP,0000,0000,0000,,so the balance will be astold here
+Dialogue: 0,0:04:15.77,0:04:18.27,*Default,NTP,0000,0000,0000,,in the parent frame f one
+Dialogue: 0,0:04:18.60,0:04:20.20,*Default,NTP,0000,0000,0000,,of the withdraw function
+Dialogue: 0,0:04:20.53,0:04:22.70,*Default,NTP,0000,0000,0000,,and it's within this parent frame
+Dialogue: 0,0:04:23.07,0:04:24.77,*Default,NTP,0000,0000,0000,,that will contain the balance
+Dialogue: 0,0:04:24.77,0:04:27.37,*Default,NTP,0000,0000,0000,,are the local state of the withdraw function
+Dialogue: 0,0:04:27.77,0:04:29.13,*Default,NTP,0000,0000,0000,,and by local state
+Dialogue: 0,0:04:29.17,0:04:32.53,*Default,NTP,0000,0000,0000,,I mean the information associated with the function
+Dialogue: 0,0:04:33.07,0:04:35.27,*Default,NTP,0000,0000,0000,,that is particular to that function
+Dialogue: 0,0:04:35.40,0:04:37.10,*Default,NTP,0000,0000,0000,,but might change over time
+Dialogue: 0,0:04:39.33,0:04:42.33,*Default,NTP,0000,0000,0000,,every call to withdraw will introduce a new frame
+Dialogue: 0,0:04:42.47,0:04:44.50,*Default,NTP,0000,0000,0000,,but a new frame with the same parent
+Dialogue: 0,0:04:44.60,0:04:47.57,*Default,NTP,0000,0000,0000,,and it will discrease the balance by some amount
+Dialogue: 0,0:04:47.87,0:04:49.90,*Default,NTP,0000,0000,0000,,and the amount is the amount that's passed
+Dialogue: 0,0:04:49.90,0:04:51.40,*Default,NTP,0000,0000,0000,,into withdraw when it's called
+Dialogue: 0,0:04:52.97,0:04:55.70,*Default,NTP,0000,0000,0000,,and all the calls to the function have the same parent
+Dialogue: 0,0:04:55.70,0:04:57.30,*Default,NTP,0000,0000,0000,,so they share the same balance
+Dialogue: 0,0:04:57.60,0:04:59.67,*Default,NTP,0000,0000,0000,,and that's why the withdraw function
+Dialogue: 0,0:04:59.77,0:05:01.53,*Default,NTP,0000,0000,0000,,can represent a bank account
+Dialogue: 0,0:05:01.67,0:05:03.07,*Default,NTP,0000,0000,0000,,that changes over time
+Dialogue: 0,0:05:03.80,0:05:05.47,*Default,NTP,0000,0000,0000,,now how do we implement this
+Dialogue: 0,0:05:05.53,0:05:07.93,*Default,NTP,0000,0000,0000,,well we're going to need an assignment statement
+Dialogue: 0,0:05:08.27,0:05:09.87,*Default,NTP,0000,0000,0000,,in order to change the balance
+Dialogue: 0,0:05:10.17,0:05:11.77,*Default,NTP,0000,0000,0000,,but it will be a special kind
+Dialogue: 0,0:05:12.40,0:05:13.80,*Default,NTP,0000,0000,0000,,so first let's review
+Dialogue: 0,0:05:13.90,0:05:16.60,*Default,NTP,0000,0000,0000,,what happens when we use an assignment statement
+Dialogue: 0,0:05:16.73,0:05:18.30,*Default,NTP,0000,0000,0000,,inside of a function
+Dialogue: 0,0:05:18.97,0:05:22.27,*Default,NTP,0000,0000,0000,,what happens is that assignment binds names to values
+Dialogue: 0,0:05:22.27,0:05:24.77,*Default,NTP,0000,0000,0000,,in the first frame of the current environment
+Dialogue: 0,0:05:25.47,0:05:28.30,*Default,NTP,0000,0000,0000,,so normally when you have an assignment statement
+Dialogue: 0,0:05:28.30,0:05:30.07,*Default,NTP,0000,0000,0000,,inside of a deaf statement
+Dialogue: 0,0:05:30.30,0:05:32.50,*Default,NTP,0000,0000,0000,,that's going to bind the name difference
+Dialogue: 0,0:05:32.70,0:05:35.10,*Default,NTP,0000,0000,0000,,inside of a frame for % difference
+Dialogue: 0,0:05:35.53,0:05:36.70,*Default,NTP,0000,0000,0000,,so here we see that
+Dialogue: 0,0:05:36.77,0:05:38.93,*Default,NTP,0000,0000,0000,,% difference contains the name difference
+Dialogue: 0,0:05:38.93,0:05:41.80,*Default,NTP,0000,0000,0000,,which is computed as the absolute value of x minus y
+Dialogue: 0,0:05:41.80,0:05:44.17,*Default,NTP,0000,0000,0000,,in this case and then is bound
+Dialogue: 0,0:05:44.20,0:05:46.57,*Default,NTP,0000,0000,0000,,in the first frame of the current environment
+Dialogue: 0,0:05:47.07,0:05:49.20,*Default,NTP,0000,0000,0000,,because this is an assignment statement
+Dialogue: 0,0:05:49.47,0:05:52.93,*Default,NTP,0000,0000,0000,,and the execution rule for assignment statements is
+Dialogue: 0,0:05:53.07,0:05:55.57,*Default,NTP,0000,0000,0000,,to evaluate all the expressions on the right of equals
+Dialogue: 0,0:05:55.57,0:05:56.57,*Default,NTP,0000,0000,0000,,from left to right
+Dialogue: 0,0:05:56.73,0:06:00.07,*Default,NTP,0000,0000,0000,,then bind the names on the left to the resulting values
+Dialogue: 0,0:06:00.10,0:06:01.20,*Default,NTP,0000,0000,0000,,in the current frame
+Dialogue: 0,0:06:03.00,0:06:04.77,*Default,NTP,0000,0000,0000,,okay so
+Dialogue: 0,0:06:04.87,0:06:07.37,*Default,NTP,0000,0000,0000,,our assignment statement as it exists today
+Dialogue: 0,0:06:07.37,0:06:09.47,*Default,NTP,0000,0000,0000,,can only affect the current frame
+Dialogue: 0,0:06:09.67,0:06:12.17,*Default,NTP,0000,0000,0000,,it cannot affect the parent frame
+Dialogue: 0,0:06:12.80,0:06:15.73,*Default,NTP,0000,0000,0000,,we need a new kind of assignment statement to do that
+Dialogue: 0,0:06:17.40,0:06:19.67,*Default,NTP,0000,0000,0000,,it's called non local assignment
+Dialogue: 0,0:06:19.93,0:06:23.17,*Default,NTP,0000,0000,0000,,and it enables persistent local state
+Dialogue: 0,0:06:24.33,0:06:27.70,*Default,NTP,0000,0000,0000,,so here's the actual implementation of make withdraw
+Dialogue: 0,0:06:27.97,0:06:29.77,*Default,NTP,0000,0000,0000,,it takes an initial balance
+Dialogue: 0,0:06:30.40,0:06:32.27,*Default,NTP,0000,0000,0000,,it returns a withdraw function
+Dialogue: 0,0:06:32.47,0:06:34.10,*Default,NTP,0000,0000,0000,,that starts with this balance
+Dialogue: 0,0:06:35.73,0:06:38.13,*Default,NTP,0000,0000,0000,,and so in order to return that function
+Dialogue: 0,0:06:38.30,0:06:41.20,*Default,NTP,0000,0000,0000,,it defines withdraw which takes in some amount
+Dialogue: 0,0:06:41.20,0:06:42.10,*Default,NTP,0000,0000,0000,,to withdraw
+Dialogue: 0,0:06:43.10,0:06:45.70,*Default,NTP,0000,0000,0000,,it declares balance non local
+Dialogue: 0,0:06:46.20,0:06:47.40,*Default,NTP,0000,0000,0000,,now this statement
+Dialogue: 0,0:06:47.40,0:06:50.07,*Default,NTP,0000,0000,0000,,non local balance is a new kind of statement
+Dialogue: 0,0:06:50.60,0:06:52.13,*Default,NTP,0000,0000,0000,,what it says is that
+Dialogue: 0,0:06:52.97,0:06:54.87,*Default,NTP,0000,0000,0000,,changes to the name balance
+Dialogue: 0,0:06:55.33,0:06:58.27,*Default,NTP,0000,0000,0000,,will happen in the frame frame wake withdraw
+Dialogue: 0,0:06:58.50,0:07:00.53,*Default,NTP,0000,0000,0000,,instead of in the frame frame withdraw
+Dialogue: 0,0:07:01.70,0:07:03.80,*Default,NTP,0000,0000,0000,,now for the logic of withdraw
+Dialogue: 0,0:07:04.27,0:07:07.87,*Default,NTP,0000,0000,0000,,if amount is greater than balance then you're broke
+Dialogue: 0,0:07:08.17,0:07:10.53,*Default,NTP,0000,0000,0000,,return insufficient funds
+Dialogue: 0,0:07:11.93,0:07:12.73,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:07:13.80,0:07:16.40,*Default,NTP,0000,0000,0000,,balance is rebound to balance minus amount
+Dialogue: 0,0:07:17.33,0:07:18.87,*Default,NTP,0000,0000,0000,,and then we return the balance
+Dialogue: 0,0:07:18.87,0:07:20.00,*Default,NTP,0000,0000,0000,,because that's what withdraw does
+Dialogue: 0,0:07:20.00,0:07:21.73,*Default,NTP,0000,0000,0000,,it returns the remaining balance
+Dialogue: 0,0:07:21.87,0:07:24.00,*Default,NTP,0000,0000,0000,,after a mount is deducted
+Dialogue: 0,0:07:25.73,0:07:26.93,*Default,NTP,0000,0000,0000,,and then from make withdraw
+Dialogue: 0,0:07:26.93,0:07:28.87,*Default,NTP,0000,0000,0000,,we need to return the withdraw function
+Dialogue: 0,0:07:30.30,0:07:31.67,*Default,NTP,0000,0000,0000,,so there's one new line
+Dialogue: 0,0:07:31.67,0:07:33.07,*Default,NTP,0000,0000,0000,,here that's different from before
+Dialogue: 0,0:07:33.07,0:07:35.57,*Default,NTP,0000,0000,0000,,it declares the name balance non local
+Dialogue: 0,0:07:36.07,0:07:37.17,*Default,NTP,0000,0000,0000,,and we tend to put non
+Dialogue: 0,0:07:37.17,0:07:38.20,*Default,NTP,0000,0000,0000,,local statements at the
+Dialogue: 0,0:07:38.20,0:07:40.37,*Default,NTP,0000,0000,0000,,top of the functions in which they appear
+Dialogue: 0,0:07:40.60,0:07:42.53,*Default,NTP,0000,0000,0000,,although that's not strictly required
+Dialogue: 0,0:07:43.37,0:07:45.57,*Default,NTP,0000,0000,0000,,and what it does is it tells you
+Dialogue: 0,0:07:45.87,0:07:46.17,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:07:46.17,0:07:48.13,*Default,NTP,0000,0000,0000,,all of the assignment statements that will happen
+Dialogue: 0,0:07:48.13,0:07:51.50,*Default,NTP,0000,0000,0000,,to balance from here on out within this scope
+Dialogue: 0,0:07:52.10,0:07:54.90,*Default,NTP,0000,0000,0000,,that they will change bindings of balance
+Dialogue: 0,0:07:54.90,0:07:56.93,*Default,NTP,0000,0000,0000,,somewhere in a non local frame
+Dialogue: 0,0:07:59.53,0:08:01.70,*Default,NTP,0000,0000,0000,,so what happens when we actually get
+Dialogue: 0,0:08:01.77,0:08:03.13,*Default,NTP,0000,0000,0000,,to the assignment line
+Dialogue: 0,0:08:03.30,0:08:05.40,*Default,NTP,0000,0000,0000,,is that it rebinds balance in the first
+Dialogue: 0,0:08:05.40,0:08:06.33,*Default,NTP,0000,0000,0000,,non local frame
+Dialogue: 0,0:08:06.33,0:08:08.60,*Default,NTP,0000,0000,0000,,in which it was bound previously
+Dialogue: 0,0:08:09.40,0:08:12.07,*Default,NTP,0000,0000,0000,,so let's say you call make withdraw and then you call
+Dialogue: 0,0:08:12.07,0:08:13.93,*Default,NTP,0000,0000,0000,,the function that comes out withdraw
+Dialogue: 0,0:08:15.13,0:08:18.00,*Default,NTP,0000,0000,0000,,balance will be bound in a make withdraw frame
+Dialogue: 0,0:08:18.00,0:08:20.40,*Default,NTP,0000,0000,0000,,because balance is a formal parameter
+Dialogue: 0,0:08:20.67,0:08:22.50,*Default,NTP,0000,0000,0000,,of the make withdraw function
+Dialogue: 0,0:08:22.50,0:08:22.90,*Default,NTP,0000,0000,0000,,here
+Dialogue: 0,0:08:22.90,0:08:25.77,*Default,NTP,0000,0000,0000,,inside the parentheses in the deaf statement header
+Dialogue: 0,0:08:27.33,0:08:29.50,*Default,NTP,0000,0000,0000,,so that's where it was bound originally
+Dialogue: 0,0:08:30.37,0:08:32.73,*Default,NTP,0000,0000,0000,,and the rebinding that happens when you say
+Dialogue: 0,0:08:32.73,0:08:34.90,*Default,NTP,0000,0000,0000,,balance equals balance minus amount
+Dialogue: 0,0:08:35.60,0:08:37.73,*Default,NTP,0000,0000,0000,,will happen in the first non local frame
+Dialogue: 0,0:08:37.87,0:08:40.07,*Default,NTP,0000,0000,0000,,in which it was bound previously
+Dialogue: 0,0:08:41.57,0:08:45.10,*Default,NTP,0000,0000,0000,,so let's take a look first at the environment diagram
+Dialogue: 0,0:08:45.20,0:08:46.70,*Default,NTP,0000,0000,0000,,and then add some coat
+Dialogue: 0,0:08:47.77,0:08:49.67,*Default,NTP,0000,0000,0000,,so here's the same implementation
+Dialogue: 0,0:08:49.67,0:08:50.97,*Default,NTP,0000,0000,0000,,that I just showed you
+Dialogue: 0,0:08:52.30,0:08:53.50,*Default,NTP,0000,0000,0000,,creating with a withdraw
+Dialogue: 0,0:08:53.50,0:08:55.50,*Default,NTP,0000,0000,0000,,function means calling make withdraw
+Dialogue: 0,0:08:56.07,0:08:59.60,*Default,NTP,0000,0000,0000,,which introduces a new frame or balances bounce 100
+Dialogue: 0,0:08:59.93,0:09:01.70,*Default,NTP,0000,0000,0000,,the body of make withdraw
+Dialogue: 0,0:09:01.73,0:09:04.33,*Default,NTP,0000,0000,0000,,defines a new function and returns it
+Dialogue: 0,0:09:04.87,0:09:07.57,*Default,NTP,0000,0000,0000,,and that new function is bound to the name withdraw
+Dialogue: 0,0:09:07.57,0:09:08.77,*Default,NTP,0000,0000,0000,,in the global frame
+Dialogue: 0,0:09:10.17,0:09:11.80,*Default,NTP,0000,0000,0000,,now I'm going to call withdraw
+Dialogue: 0,0:09:12.67,0:09:14.57,*Default,NTP,0000,0000,0000,,which introduces a new frame
+Dialogue: 0,0:09:14.80,0:09:16.87,*Default,NTP,0000,0000,0000,,balance is currently 100
+Dialogue: 0,0:09:17.33,0:09:19.20,*Default,NTP,0000,0000,0000,,we declare it to be non local
+Dialogue: 0,0:09:19.67,0:09:22.30,*Default,NTP,0000,0000,0000,,we check if amount is greater than balance
+Dialogue: 0,0:09:22.30,0:09:26.50,*Default,NTP,0000,0000,0000,,it's not so we don't execute this return statement
+Dialogue: 0,0:09:26.60,0:09:29.97,*Default,NTP,0000,0000,0000,,instead we execute this assignment statement
+Dialogue: 0,0:09:30.50,0:09:34.37,*Default,NTP,0000,0000,0000,,which reduces balance from 100 to 75
+Dialogue: 0,0:09:35.30,0:09:36.80,*Default,NTP,0000,0000,0000,,now without non local
+Dialogue: 0,0:09:37.00,0:09:38.27,*Default,NTP,0000,0000,0000,,this would be a statement
+Dialogue: 0,0:09:38.27,0:09:40.13,*Default,NTP,0000,0000,0000,,about balance in the current frame
+Dialogue: 0,0:09:40.47,0:09:42.67,*Default,NTP,0000,0000,0000,,but since there's a non local statement
+Dialogue: 0,0:09:42.90,0:09:46.93,*Default,NTP,0000,0000,0000,,this balance rebinds the balance in a non local frame
+Dialogue: 0,0:09:47.37,0:09:49.50,*Default,NTP,0000,0000,0000,,the one that's apparent
+Dialogue: 0,0:09:49.93,0:09:52.40,*Default,NTP,0000,0000,0000,,of the current frame f two
+Dialogue: 0,0:09:53.57,0:09:55.70,*Default,NTP,0000,0000,0000,,so which frame you go to
+Dialogue: 0,0:09:55.77,0:09:57.73,*Default,NTP,0000,0000,0000,,when you go up the chain of parents
+Dialogue: 0,0:09:57.73,0:10:00.40,*Default,NTP,0000,0000,0000,,from this parent to this parent etc
+Dialogue: 0,0:10:00.80,0:10:03.47,*Default,NTP,0000,0000,0000,,until you find the first instance of that name
+Dialogue: 0,0:10:03.47,0:10:04.60,*Default,NTP,0000,0000,0000,,you're rebinding
+Dialogue: 0,0:10:05.93,0:10:08.17,*Default,NTP,0000,0000,0000,,so balance gets changed to 75
+Dialogue: 0,0:10:09.13,0:10:11.13,*Default,NTP,0000,0000,0000,,and then 75 gets returned
+Dialogue: 0,0:10:13.57,0:10:15.87,*Default,NTP,0000,0000,0000,,okay so we make another call to withdraw
+Dialogue: 0,0:10:15.87,0:10:17.97,*Default,NTP,0000,0000,0000,,and balance gets changed to 50
+Dialogue: 0,0:10:18.47,0:10:21.30,*Default,NTP,0000,0000,0000,,right there from 75 to 50
+Dialogue: 0,0:10:22.37,0:10:24.27,*Default,NTP,0000,0000,0000,,so what's really new about this example
+Dialogue: 0,0:10:24.67,0:10:27.80,*Default,NTP,0000,0000,0000,,you could always refer to the current value of balance
+Dialogue: 0,0:10:27.93,0:10:30.30,*Default,NTP,0000,0000,0000,,from within the body of withdraw
+Dialogue: 0,0:10:30.70,0:10:32.90,*Default,NTP,0000,0000,0000,,because you could always look up names
+Dialogue: 0,0:10:32.90,0:10:34.20,*Default,NTP,0000,0000,0000,,in apparent frame
+Dialogue: 0,0:10:34.47,0:10:37.67,*Default,NTP,0000,0000,0000,,what you couldn't do before is change them
+Dialogue: 0,0:10:38.20,0:10:42.13,*Default,NTP,0000,0000,0000,,now you can change the values bound to names
+Dialogue: 0,0:10:42.20,0:10:43.80,*Default,NTP,0000,0000,0000,,in parent frames
+Dialogue: 0,0:10:43.80,0:10:46.67,*Default,NTP,0000,0000,0000,,but to do that you need a non local statement
+Dialogue: 0,0:10:48.13,0:10:51.13,*Default,NTP,0000,0000,0000,,so here's that same implementation one more time
+Dialogue: 0,0:10:52.37,0:10:53.50,*Default,NTP,0000,0000,0000,,if I create a
+Dialogue: 0,0:10:54.40,0:10:56.13,*Default,NTP,0000,0000,0000,,function called w
+Dialogue: 0,0:10:57.07,0:10:59.70,*Default,NTP,0000,0000,0000,,by calling make withdraw on 100
+Dialogue: 0,0:11:00.27,0:11:01.60,*Default,NTP,0000,0000,0000,,w is a function
+Dialogue: 0,0:11:01.90,0:11:03.17,*Default,NTP,0000,0000,0000,,that when I call it
+Dialogue: 0,0:11:03.20,0:11:05.77,*Default,NTP,0000,0000,0000,,it deducts 10 from the current bout
+Dialogue: 0,0:11:06.40,0:11:08.57,*Default,NTP,0000,0000,0000,,assuming the argument I pass in is 10
+Dialogue: 0,0:11:08.57,0:11:10.90,*Default,NTP,0000,0000,0000,,but I can pass in a different argument if I want
+Dialogue: 0,0:11:11.00,0:11:12.93,*Default,NTP,0000,0000,0000,,and now we're all the way down to 50
+Dialogue: 0,0:11:14.40,0:11:16.27,*Default,NTP,0000,0000,0000,,now 50 isn't a whole lot
+Dialogue: 0,0:11:16.27,0:11:18.53,*Default,NTP,0000,0000,0000,,if I try to withdraw enough to buy a new
+Dialogue: 0,0:11:18.80,0:11:21.57,*Default,NTP,0000,0000,0000,,car I will have insufficient funds
+Dialogue: 0,0:11:21.97,0:11:25.57,*Default,NTP,0000,0000,0000,,but I can still withdraw another 10 and get down to 40
+Dialogue: 0,0:11:27.20,0:11:30.30,*Default,NTP,0000,0000,0000,,let's talk about the details of non local assignment
+Dialogue: 0,0:11:31.30,0:11:34.87,*Default,NTP,0000,0000,0000,,a non local statement has the following effect
+Dialogue: 0,0:11:35.47,0:11:37.40,*Default,NTP,0000,0000,0000,,future assignments to the name
+Dialogue: 0,0:11:38.07,0:11:40.10,*Default,NTP,0000,0000,0000,,change its pre existing binding
+Dialogue: 0,0:11:40.10,0:11:40.80,*Default,NTP,0000,0000,0000,,in the first
+Dialogue: 0,0:11:40.80,0:11:42.87,*Default,NTP,0000,0000,0000,,non local frame of the current environment
+Dialogue: 0,0:11:42.87,0:11:44.47,*Default,NTP,0000,0000,0000,,in which that name is bound
+Dialogue: 0,0:11:46.10,0:11:47.37,*Default,NTP,0000,0000,0000,,and the python docks
+Dialogue: 0,0:11:47.37,0:11:50.53,*Default,NTP,0000,0000,0000,,this first non local frame is called an enclosing scope
+Dialogue: 0,0:11:50.87,0:11:52.60,*Default,NTP,0000,0000,0000,,it is possible to have multiple
+Dialogue: 0,0:11:52.60,0:11:55.73,*Default,NTP,0000,0000,0000,,names separated by commas in a non local statement
+Dialogue: 0,0:11:56.90,0:11:58.13,*Default,NTP,0000,0000,0000,,and there are restrictions on
+Dialogue: 0,0:11:58.13,0:12:00.07,*Default,NTP,0000,0000,0000,,exactly what names you can put there
+Dialogue: 0,0:12:00.97,0:12:01.50,*Default,NTP,0000,0000,0000,,these are
+Dialogue: 0,0:12:01.50,0:12:03.77,*Default,NTP,0000,0000,0000,,directly from the python three language reference
+Dialogue: 0,0:12:04.20,0:12:07.40,*Default,NTP,0000,0000,0000,,names listed in a non local statement must refer
+Dialogue: 0,0:12:07.57,0:12:11.47,*Default,NTP,0000,0000,0000,,to pre existing bindings in an enclosing scope
+Dialogue: 0,0:12:11.87,0:12:15.00,*Default,NTP,0000,0000,0000,,so these names have to have already been used
+Dialogue: 0,0:12:16.40,0:12:20.33,*Default,NTP,0000,0000,0000,,and the names listed in a non local statement must not
+Dialogue: 0,0:12:20.40,0:12:23.27,*Default,NTP,0000,0000,0000,,collide mean be the same as
+Dialogue: 0,0:12:23.87,0:12:26.40,*Default,NTP,0000,0000,0000,,pre existing bindings in the local scope
+Dialogue: 0,0:12:26.47,0:12:29.37,*Default,NTP,0000,0000,0000,,or the current frame as we call it in this course
+Dialogue: 0,0:12:30.27,0:12:32.47,*Default,NTP,0000,0000,0000,,so you can't declare something non local
+Dialogue: 0,0:12:32.47,0:12:34.37,*Default,NTP,0000,0000,0000,,if it's in the current frame already
+Dialogue: 0,0:12:34.93,0:12:37.37,*Default,NTP,0000,0000,0000,,but it must be in apparent frame
+Dialogue: 0,0:12:37.40,0:12:39.07,*Default,NTP,0000,0000,0000,,or the parent of the parent
+Dialogue: 0,0:12:39.30,0:12:42.93,*Default,NTP,0000,0000,0000,,somewhere between the global and the local frame
+Dialogue: 0,0:12:43.07,0:12:45.33,*Default,NTP,0000,0000,0000,,in the chain of frames
+Dialogue: 0,0:12:45.33,0:12:47.93,*Default,NTP,0000,0000,0000,,that makes up the current environment
+Dialogue: 0,0:12:49.50,0:12:51.30,*Default,NTP,0000,0000,0000,,if you want to read more yourself
+Dialogue: 0,0:12:51.47,0:12:54.37,*Default,NTP,0000,0000,0000,,you can find all of the python docks online
+Dialogue: 0,0:12:57.33,0:13:01.07,*Default,NTP,0000,0000,0000,,so you see x equals to somewhere in a program
+Dialogue: 0,0:13:01.47,0:13:03.50,*Default,NTP,0000,0000,0000,,based on the context of that program
+Dialogue: 0,0:13:03.50,0:13:05.50,*Default,NTP,0000,0000,0000,,it actually might do different things
+Dialogue: 0,0:13:06.07,0:13:06.20,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:13:06.20,0:13:08.73,*Default,NTP,0000,0000,0000,,here are the many meanings of an assignment statement
+Dialogue: 0,0:13:09.67,0:13:11.57,*Default,NTP,0000,0000,0000,,if there's no non local statement
+Dialogue: 0,0:13:11.93,0:13:14.10,*Default,NTP,0000,0000,0000,,an x is not bound locally already
+Dialogue: 0,0:13:14.37,0:13:17.00,*Default,NTP,0000,0000,0000,,then this creates a new binding from x to
+Dialogue: 0,0:13:17.47,0:13:19.77,*Default,NTP,0000,0000,0000,,in the first frame of the current environment
+Dialogue: 0,0:13:19.77,0:13:20.73,*Default,NTP,0000,0000,0000,,the current frame
+Dialogue: 0,0:13:22.20,0:13:23.53,*Default,NTP,0000,0000,0000,,if there's no non local statement
+Dialogue: 0,0:13:23.53,0:13:25.10,*Default,NTP,0000,0000,0000,,and x is already bound
+Dialogue: 0,0:13:25.67,0:13:27.20,*Default,NTP,0000,0000,0000,,then it rebinds x
+Dialogue: 0,0:13:27.60,0:13:29.40,*Default,NTP,0000,0000,0000,,the previous binding is lost
+Dialogue: 0,0:13:29.70,0:13:30.67,*Default,NTP,0000,0000,0000,,this all happens
+Dialogue: 0,0:13:30.67,0:13:32.93,*Default,NTP,0000,0000,0000,,in the first frame of the current environment
+Dialogue: 0,0:13:33.60,0:13:35.37,*Default,NTP,0000,0000,0000,,and these two conditions are old
+Dialogue: 0,0:13:36.20,0:13:38.80,*Default,NTP,0000,0000,0000,,but what if there is a non local x statement
+Dialogue: 0,0:13:38.90,0:13:40.77,*Default,NTP,0000,0000,0000,,before x equals two
+Dialogue: 0,0:13:41.13,0:13:41.93,*Default,NTP,0000,0000,0000,,then
+Dialogue: 0,0:13:42.67,0:13:44.17,*Default,NTP,0000,0000,0000,,it also must be the case that
+Dialogue: 0,0:13:44.17,0:13:46.40,*Default,NTP,0000,0000,0000,,x is bound in a non local frame
+Dialogue: 0,0:13:47.00,0:13:49.30,*Default,NTP,0000,0000,0000,,the effect is to rebind x to two
+Dialogue: 0,0:13:49.30,0:13:50.80,*Default,NTP,0000,0000,0000,,in the first non local frame
+Dialogue: 0,0:13:50.80,0:13:53.07,*Default,NTP,0000,0000,0000,,of the current environment in which it is found
+Dialogue: 0,0:13:53.47,0:13:55.00,*Default,NTP,0000,0000,0000,,the old binding is lost
+Dialogue: 0,0:13:56.33,0:13:58.13,*Default,NTP,0000,0000,0000,,if non local x is declared
+Dialogue: 0,0:13:58.30,0:14:00.87,*Default,NTP,0000,0000,0000,,but x is not bound in a non local frame
+Dialogue: 0,0:14:01.20,0:14:03.13,*Default,NTP,0000,0000,0000,,then you get a syntax error
+Dialogue: 0,0:14:03.57,0:14:06.13,*Default,NTP,0000,0000,0000,,and the error message will say no binding for non local
+Dialogue: 0,0:14:06.13,0:14:07.07,*Default,NTP,0000,0000,0000,,x found
+Dialogue: 0,0:14:08.73,0:14:11.77,*Default,NTP,0000,0000,0000,,if non local x statement occurs
+Dialogue: 0,0:14:11.80,0:14:13.73,*Default,NTP,0000,0000,0000,,x is bound in a non local frame
+Dialogue: 0,0:14:13.73,0:14:15.73,*Default,NTP,0000,0000,0000,,but it's also bound locally
+Dialogue: 0,0:14:15.77,0:14:17.00,*Default,NTP,0000,0000,0000,,which is not allowed
+Dialogue: 0,0:14:17.40,0:14:19.27,*Default,NTP,0000,0000,0000,,then you get a different syntax hitter
+Dialogue: 0,0:14:19.33,0:14:22.87,*Default,NTP,0000,0000,0000,,that says the name x is a parameter and non local
+Dialogue: 0,0:14:23.97,0:14:26.13,*Default,NTP,0000,0000,0000,,the exact text of these errors will
+Dialogue: 0,0:14:26.13,0:14:28.73,*Default,NTP,0000,0000,0000,,change over time with different implementations of
+Dialogue: 0,0:14:28.73,0:14:30.70,*Default,NTP,0000,0000,0000,,python but
+Dialogue: 0,0:14:31.00,0:14:32.00,*Default,NTP,0000,0000,0000,,they correspond
+Dialogue: 0,0:14:32.00,0:14:34.73,*Default,NTP,0000,0000,0000,,the two conditions that we saw on the last slide
+Dialogue: 0,0:14:35.37,0:14:37.13,*Default,NTP,0000,0000,0000,,x must already be bound
+Dialogue: 0,0:14:37.17,0:14:40.00,*Default,NTP,0000,0000,0000,,but it cannot be bound in the current frame
+Dialogue: 0,0:14:43.33,0:14:47.13,*Default,NTP,0000,0000,0000,,now these are general rules for binding non locally
+Dialogue: 0,0:14:47.13,0:14:49.07,*Default,NTP,0000,0000,0000,,and they occur in many languages
+Dialogue: 0,0:14:49.33,0:14:52.20,*Default,NTP,0000,0000,0000,,there's one feature that arises
+Dialogue: 0,0:14:52.33,0:14:53.90,*Default,NTP,0000,0000,0000,,it's particular to python
+Dialogue: 0,0:14:53.90,0:14:55.57,*Default,NTP,0000,0000,0000,,that you just have to be aware of
+Dialogue: 0,0:14:56.73,0:14:59.10,*Default,NTP,0000,0000,0000,,python actually tries to pre compute
+Dialogue: 0,0:14:59.17,0:15:01.07,*Default,NTP,0000,0000,0000,,which frame contains each name
+Dialogue: 0,0:15:01.27,0:15:03.60,*Default,NTP,0000,0000,0000,,before executing the body of a function
+Dialogue: 0,0:15:04.60,0:15:06.20,*Default,NTP,0000,0000,0000,,within the body of a function
+Dialogue: 0,0:15:06.40,0:15:10.20,*Default,NTP,0000,0000,0000,,all instances of a name must refer to the same frame
+Dialogue: 0,0:15:10.60,0:15:13.53,*Default,NTP,0000,0000,0000,,which means you're not allowed to have the same name
+Dialogue: 0,0:15:13.73,0:15:15.93,*Default,NTP,0000,0000,0000,,in the same function body
+Dialogue: 0,0:15:16.07,0:15:18.37,*Default,NTP,0000,0000,0000,,actually refer to two different frames
+Dialogue: 0,0:15:18.37,0:15:19.67,*Default,NTP,0000,0000,0000,,that just doesn't work
+Dialogue: 0,0:15:21.40,0:15:24.50,*Default,NTP,0000,0000,0000,,so let's say I'd tried to write the following program
+Dialogue: 0,0:15:24.67,0:15:26.60,*Default,NTP,0000,0000,0000,,which is the same as we saw before
+Dialogue: 0,0:15:26.60,0:15:29.07,*Default,NTP,0000,0000,0000,,but deleting the non local statement
+Dialogue: 0,0:15:29.53,0:15:31.50,*Default,NTP,0000,0000,0000,,the error would arise here
+Dialogue: 0,0:15:32.00,0:15:34.33,*Default,NTP,0000,0000,0000,,if an amount is greater than balance
+Dialogue: 0,0:15:35.60,0:15:36.87,*Default,NTP,0000,0000,0000,,what would happen is
+Dialogue: 0,0:15:37.27,0:15:39.67,*Default,NTP,0000,0000,0000,,by inspecting the body of withdraw
+Dialogue: 0,0:15:39.97,0:15:41.33,*Default,NTP,0000,0000,0000,,python would have concluded that
+Dialogue: 0,0:15:41.33,0:15:42.80,*Default,NTP,0000,0000,0000,,balance is a local name
+Dialogue: 0,0:15:43.47,0:15:45.97,*Default,NTP,0000,0000,0000,,because it has local assignment statement right here
+Dialogue: 0,0:15:46.27,0:15:48.57,*Default,NTP,0000,0000,0000,,remember we deleted the non local statement
+Dialogue: 0,0:15:49.70,0:15:52.53,*Default,NTP,0000,0000,0000,,so believing that balance is a local name
+Dialogue: 0,0:15:52.57,0:15:53.77,*Default,NTP,0000,0000,0000,,it will only look
+Dialogue: 0,0:15:53.90,0:15:56.57,*Default,NTP,0000,0000,0000,,in the frame for withdraw for that name balance
+Dialogue: 0,0:15:56.77,0:15:59.37,*Default,NTP,0000,0000,0000,,it will never find the one in the enclosing scope
+Dialogue: 0,0:16:00.53,0:16:02.50,*Default,NTP,0000,0000,0000,,and so you'll get an unbound local error
+Dialogue: 0,0:16:02.50,0:16:06.20,*Default,NTP,0000,0000,0000,,local variable balance referenced before assignment
+Dialogue: 0,0:16:08.07,0:16:09.73,*Default,NTP,0000,0000,0000,,so everything worked before
+Dialogue: 0,0:16:09.73,0:16:12.67,*Default,NTP,0000,0000,0000,,but now we're going to remove the non local statement
+Dialogue: 0,0:16:13.17,0:16:15.53,*Default,NTP,0000,0000,0000,,I'll just comment it out so you know where it was
+Dialogue: 0,0:16:15.53,0:16:17.20,*Default,NTP,0000,0000,0000,,but it's not going to do anything anymore
+Dialogue: 0,0:16:17.20,0:16:18.97,*Default,NTP,0000,0000,0000,,because now it's just a comment
+Dialogue: 0,0:16:20.67,0:16:22.33,*Default,NTP,0000,0000,0000,,I can still call make withdraw
+Dialogue: 0,0:16:22.33,0:16:24.17,*Default,NTP,0000,0000,0000,,because that just creates the function
+Dialogue: 0,0:16:24.40,0:16:25.93,*Default,NTP,0000,0000,0000,,but as soon as I call the function
+Dialogue: 0,0:16:25.93,0:16:28.07,*Default,NTP,0000,0000,0000,,I get this unbound local error
+Dialogue: 0,0:16:28.30,0:16:31.13,*Default,NTP,0000,0000,0000,,and it says it's online four which is here
+Dialogue: 0,0:16:31.87,0:16:33.67,*Default,NTP,0000,0000,0000,,now this is just such a weird thing
+Dialogue: 0,0:16:33.67,0:16:36.50,*Default,NTP,0000,0000,0000,,because we've always been able to refer to balance
+Dialogue: 0,0:16:36.73,0:16:39.20,*Default,NTP,0000,0000,0000,,even if it's an enclosing scope before
+Dialogue: 0,0:16:40.33,0:16:42.20,*Default,NTP,0000,0000,0000,,and that ability hasn't changed
+Dialogue: 0,0:16:42.30,0:16:43.50,*Default,NTP,0000,0000,0000,,except for that
+Dialogue: 0,0:16:43.97,0:16:46.53,*Default,NTP,0000,0000,0000,,local assignment to balance
+Dialogue: 0,0:16:46.57,0:16:49.30,*Default,NTP,0000,0000,0000,,and non local lookup of balance
+Dialogue: 0,0:16:49.53,0:16:51.57,*Default,NTP,0000,0000,0000,,cannot appear in the same function
+Dialogue: 0,0:16:51.73,0:16:54.87,*Default,NTP,0000,0000,0000,,because balance has to refer to one particular frame
+Dialogue: 0,0:16:54.90,0:16:57.20,*Default,NTP,0000,0000,0000,,and in this case it's trying to refer to two
+Dialogue: 0,0:16:59.87,0:17:01.50,*Default,NTP,0000,0000,0000,,now if we got rid of this line
+Dialogue: 0,0:17:01.90,0:17:04.00,*Default,NTP,0000,0000,0000,,we'd be back in a situation where we could
+Dialogue: 0,0:17:04.00,0:17:04.97,*Default,NTP,0000,0000,0000,,call this function
+Dialogue: 0,0:17:06.30,0:17:08.60,*Default,NTP,0000,0000,0000,,it just wouldn't do anything anymore
+Dialogue: 0,0:17:09.27,0:17:11.77,*Default,NTP,0000,0000,0000,,but it wouldn't cause an unbound local error
+Dialogue: 0,0:17:12.50,0:17:14.93,*Default,NTP,0000,0000,0000,,so this is a quirk of the python language
+Dialogue: 0,0:17:15.17,0:17:17.37,*Default,NTP,0000,0000,0000,,that just is part of how it's implemented
+Dialogue: 0,0:17:17.57,0:17:19.57,*Default,NTP,0000,0000,0000,,and something you need to be aware of
+Dialogue: 0,0:17:19.57,0:17:21.87,*Default,NTP,0000,0000,0000,,as you start using non local statements
+Dialogue: 0,0:17:23.47,0:17:27.10,*Default,NTP,0000,0000,0000,,now using non local statements is not the only way
+Dialogue: 0,0:17:27.10,0:17:29.40,*Default,NTP,0000,0000,0000,,to create a mutable function
+Dialogue: 0,0:17:31.07,0:17:34.37,*Default,NTP,0000,0000,0000,,instead I could use an existing multiple value
+Dialogue: 0,0:17:34.73,0:17:37.60,*Default,NTP,0000,0000,0000,,so here's an alternate implementation of mank withdraw
+Dialogue: 0,0:17:37.93,0:17:39.40,*Default,NTP,0000,0000,0000,,it takes in a balance
+Dialogue: 0,0:17:39.53,0:17:42.33,*Default,NTP,0000,0000,0000,,puts balance in a list with only one element
+Dialogue: 0,0:17:43.13,0:17:45.40,*Default,NTP,0000,0000,0000,,remember that lists can be changed
+Dialogue: 0,0:17:45.97,0:17:49.37,*Default,NTP,0000,0000,0000,,and so what deaf withdraw amount can do
+Dialogue: 0,0:17:49.80,0:17:52.33,*Default,NTP,0000,0000,0000,,is check and see if the amount is greater
+Dialogue: 0,0:17:52.50,0:17:55.07,*Default,NTP,0000,0000,0000,,than the balance that's stored within the list b
+Dialogue: 0,0:17:56.30,0:17:59.73,*Default,NTP,0000,0000,0000,,if it is then we return in sufficient funds
+Dialogue: 0,0:18:00.20,0:18:05.17,*Default,NTP,0000,0000,0000,,otherwise we reassigned the element at index 0 2
+Dialogue: 0,0:18:05.17,0:18:06.37,*Default,NTP,0000,0000,0000,,whatever it was before
+Dialogue: 0,0:18:06.37,0:18:08.73,*Default,NTP,0000,0000,0000,,minus amount and return that value
+Dialogue: 0,0:18:09.47,0:18:12.50,*Default,NTP,0000,0000,0000,,here we see the name b is bound outside
+Dialogue: 0,0:18:12.70,0:18:15.07,*Default,NTP,0000,0000,0000,,of the definition of the withdraw function
+Dialogue: 0,0:18:16.33,0:18:17.13,*Default,NTP,0000,0000,0000,,which means
+Dialogue: 0,0:18:17.13,0:18:20.33,*Default,NTP,0000,0000,0000,,that all calls to withdraw can refer to that same b
+Dialogue: 0,0:18:21.17,0:18:25.33,*Default,NTP,0000,0000,0000,,and that b can change because it's a list
+Dialogue: 0,0:18:25.90,0:18:27.73,*Default,NTP,0000,0000,0000,,and we can change it using
+Dialogue: 0,0:18:27.90,0:18:30.40,*Default,NTP,0000,0000,0000,,element assignment which changes a list
+Dialogue: 0,0:18:32.47,0:18:34.80,*Default,NTP,0000,0000,0000,,so the environment diagram for this
+Dialogue: 0,0:18:35.00,0:18:36.87,*Default,NTP,0000,0000,0000,,version of make withdraw
+Dialogue: 0,0:18:37.13,0:18:38.80,*Default,NTP,0000,0000,0000,,looks a little bit different
+Dialogue: 0,0:18:39.17,0:18:40.70,*Default,NTP,0000,0000,0000,,let's take a close look
+Dialogue: 0,0:18:41.87,0:18:43.80,*Default,NTP,0000,0000,0000,,we create the make withdraw function
+Dialogue: 0,0:18:43.87,0:18:45.67,*Default,NTP,0000,0000,0000,,now call it the make withdraw list
+Dialogue: 0,0:18:46.70,0:18:51.07,*Default,NTP,0000,0000,0000,,we call it in this line with an initial balance of 100
+Dialogue: 0,0:18:51.73,0:18:54.13,*Default,NTP,0000,0000,0000,,but instead of referring to that balance
+Dialogue: 0,0:18:54.37,0:18:57.10,*Default,NTP,0000,0000,0000,,we're going to make reference instead to a list called
+Dialogue: 0,0:18:57.10,0:18:59.47,*Default,NTP,0000,0000,0000,,b which contains the balance
+Dialogue: 0,0:18:59.90,0:19:01.90,*Default,NTP,0000,0000,0000,,originally with 100 in it
+Dialogue: 0,0:19:03.20,0:19:05.07,*Default,NTP,0000,0000,0000,,each culta withdraw
+Dialogue: 0,0:19:05.37,0:19:08.90,*Default,NTP,0000,0000,0000,,in this case one with 25 as the amount
+Dialogue: 0,0:19:09.57,0:19:12.87,*Default,NTP,0000,0000,0000,,we'll update this mutable value of this list
+Dialogue: 0,0:19:12.97,0:19:14.17,*Default,NTP,0000,0000,0000,,to contain a new number
+Dialogue: 0,0:19:14.17,0:19:14.97,*Default,NTP,0000,0000,0000,,it
+Dialogue: 0,0:19:15.17,0:19:17.40,*Default,NTP,0000,0000,0000,,used to be 100 now at 75
+Dialogue: 0,0:19:19.07,0:19:21.50,*Default,NTP,0000,0000,0000,,now we don't have any non local statements
+Dialogue: 0,0:19:21.50,0:19:23.97,*Default,NTP,0000,0000,0000,,because we're never changing what b is bound to
+Dialogue: 0,0:19:24.13,0:19:25.80,*Default,NTP,0000,0000,0000,,or what balance is bound to
+Dialogue: 0,0:19:25.80,0:19:27.60,*Default,NTP,0000,0000,0000,,or what withdraw is bound to
+Dialogue: 0,0:19:27.70,0:19:29.50,*Default,NTP,0000,0000,0000,,from within the body of withdraw
+Dialogue: 0,0:19:29.70,0:19:32.27,*Default,NTP,0000,0000,0000,,so we don't need to make any non local assignment
+Dialogue: 0,0:19:32.37,0:19:32.80,*Default,NTP,0000,0000,0000,,instead
+Dialogue: 0,0:19:32.80,0:19:35.50,*Default,NTP,0000,0000,0000,,all we're doing is we're changing mutable values
+Dialogue: 0,0:19:36.80,0:19:38.73,*Default,NTP,0000,0000,0000,,so these are two different ways
+Dialogue: 0,0:19:38.73,0:19:40.80,*Default,NTP,0000,0000,0000,,of having persistent local state
+Dialogue: 0,0:19:40.97,0:19:43.07,*Default,NTP,0000,0000,0000,,inside of a mutable function
+Dialogue: 0,0:19:45.70,0:19:47.87,*Default,NTP,0000,0000,0000,,we really understand why
+Dialogue: 0,0:19:48.07,0:19:50.00,*Default,NTP,0000,0000,0000,,local state is called local state
+Dialogue: 0,0:19:50.37,0:19:52.87,*Default,NTP,0000,0000,0000,,when we look at what happens when there are multiple
+Dialogue: 0,0:19:52.87,0:19:56.27,*Default,NTP,0000,0000,0000,,mutable functions in the same program
+Dialogue: 0,0:19:58.40,0:20:00.93,*Default,NTP,0000,0000,0000,,so here's my implementation
+Dialogue: 0,0:20:04.93,0:20:07.47,*Default,NTP,0000,0000,0000,,let's first say that john has a bank account
+Dialogue: 0,0:20:08.60,0:20:10.80,*Default,NTP,0000,0000,0000,,represented by it with draw function
+Dialogue: 0,0:20:11.20,0:20:13.87,*Default,NTP,0000,0000,0000,,where john has $100
+Dialogue: 0,0:20:15.33,0:20:16.70,*Default,NTP,0000,0000,0000,,and it's friends steven
+Dialogue: 0,0:20:18.50,0:20:23.20,*Default,NTP,0000,0000,0000,,also has a bank account with $100,000
+Dialogue: 0,0:20:25.17,0:20:25.97,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:20:26.80,0:20:29.07,*Default,NTP,0000,0000,0000,,john can john is a function
+Dialogue: 0,0:20:29.17,0:20:31.00,*Default,NTP,0000,0000,0000,,steven is a different function
+Dialogue: 0,0:20:33.47,0:20:34.67,*Default,NTP,0000,0000,0000,,and they're not the same
+Dialogue: 0,0:20:36.50,0:20:38.17,*Default,NTP,0000,0000,0000,,and they're not equal
+Dialogue: 0,0:20:41.07,0:20:42.17,*Default,NTP,0000,0000,0000,,and why is that
+Dialogue: 0,0:20:42.33,0:20:43.47,*Default,NTP,0000,0000,0000,,while they're representing
+Dialogue: 0,0:20:43.47,0:20:45.70,*Default,NTP,0000,0000,0000,,different bang accounts with different amounts in them
+Dialogue: 0,0:20:46.77,0:20:50.57,*Default,NTP,0000,0000,0000,,so if john withdraws 10 and then draws another 10
+Dialogue: 0,0:20:51.57,0:20:52.50,*Default,NTP,0000,0000,0000,,stephen
+Dialogue: 0,0:20:53.10,0:20:56.53,*Default,NTP,0000,0000,0000,,has an entirely separate account with 100,000 in it
+Dialogue: 0,0:20:56.87,0:20:59.40,*Default,NTP,0000,0000,0000,,and he pulls out maybe 1000 at a time
+Dialogue: 0,0:21:00.00,0:21:01.13,*Default,NTP,0000,0000,0000,,but notice by doing that
+Dialogue: 0,0:21:01.13,0:21:02.90,*Default,NTP,0000,0000,0000,,he's not affecting john's total
+Dialogue: 0,0:21:03.17,0:21:05.47,*Default,NTP,0000,0000,0000,,so if john takes out another 10
+Dialogue: 0,0:21:05.73,0:21:09.27,*Default,NTP,0000,0000,0000,,it's just marching down the balance that john has
+Dialogue: 0,0:21:09.37,0:21:10.90,*Default,NTP,0000,0000,0000,,within its function
+Dialogue: 0,0:21:11.50,0:21:15.00,*Default,NTP,0000,0000,0000,,stephen has this separate balance with 1000 in it
+Dialogue: 0,0:21:15.50,0:21:16.40,*Default,NTP,0000,0000,0000,,and so it can take out
+Dialogue: 0,0:21:16.40,0:21:18.47,*Default,NTP,0000,0000,0000,,another thousand whenever he wants
+Dialogue: 0,0:21:19.07,0:21:21.10,*Default,NTP,0000,0000,0000,,but if john ever tries to take out 1000
+Dialogue: 0,0:21:21.10,0:21:22.50,*Default,NTP,0000,0000,0000,,well that's not gonna work out
+Dialogue: 0,0:21:22.67,0:21:24.50,*Default,NTP,0000,0000,0000,,because there's so little funds in there
+Dialogue: 0,0:21:24.53,0:21:26.30,*Default,NTP,0000,0000,0000,,that it's more reasonable to take out
+Dialogue: 0,0:21:26.30,0:21:27.50,*Default,NTP,0000,0000,0000,,just one at a time
+Dialogue: 0,0:21:29.47,0:21:31.97,*Default,NTP,0000,0000,0000,,or if a really important purchase comes up
+Dialogue: 0,0:21:32.17,0:21:35.07,*Default,NTP,0000,0000,0000,,then of course john could take out a whole 16
+Dialogue: 0,0:21:36.57,0:21:38.33,*Default,NTP,0000,0000,0000,,steven on the other hand
+Dialogue: 0,0:21:38.53,0:21:41.60,*Default,NTP,0000,0000,0000,,can be pulling out 10,000 at a time no problem
+Dialogue: 0,0:21:41.77,0:21:43.40,*Default,NTP,0000,0000,0000,,or another 80,000
+Dialogue: 0,0:21:44.07,0:21:47.90,*Default,NTP,0000,0000,0000,,or another 7950
+Dialogue: 0,0:21:49.17,0:21:50.47,*Default,NTP,0000,0000,0000,,now we've reached a point
+Dialogue: 0,0:21:50.47,0:21:52.93,*Default,NTP,0000,0000,0000,,where both stephen and john have the same balance
+Dialogue: 0,0:21:53.30,0:21:54.77,*Default,NTP,0000,0000,0000,,but they're still not equal
+Dialogue: 0,0:21:55.13,0:21:56.77,*Default,NTP,0000,0000,0000,,because they're different accounts
+Dialogue: 0,0:21:57.37,0:21:58.80,*Default,NTP,0000,0000,0000,,and they're still not the same
+Dialogue: 0,0:22:01.40,0:22:03.53,*Default,NTP,0000,0000,0000,,the only sense in which there is some equality
+Dialogue: 0,0:22:03.53,0:22:04.67,*Default,NTP,0000,0000,0000,,relationship there
+Dialogue: 0,0:22:04.97,0:22:06.73,*Default,NTP,0000,0000,0000,,is that if they both withdraw
+Dialogue: 0,0:22:06.90,0:22:08.50,*Default,NTP,0000,0000,0000,,the same amount at this point
+Dialogue: 0,0:22:09.93,0:22:11.97,*Default,NTP,0000,0000,0000,,then their balances will be equal
+Dialogue: 0,0:22:12.37,0:22:14.57,*Default,NTP,0000,0000,0000,,so just for this brief amount of time
+Dialogue: 0,0:22:14.77,0:22:16.73,*Default,NTP,0000,0000,0000,,john has a balance of 50
+Dialogue: 0,0:22:16.73,0:22:18.90,*Default,NTP,0000,0000,0000,,and stephen has a balance of 50
+Dialogue: 0,0:22:19.87,0:22:21.77,*Default,NTP,0000,0000,0000,,but john just withdrew a dollar
+Dialogue: 0,0:22:22.20,0:22:25.87,*Default,NTP,0000,0000,0000,,and so now they no longer have an equal balance
+Dialogue: 0,0:22:27.97,0:22:30.60,*Default,NTP,0000,0000,0000,,so we've reached a point in our
+Dialogue: 0,0:22:30.67,0:22:33.73,*Default,NTP,0000,0000,0000,,writing of programs where we've lost something
+Dialogue: 0,0:22:33.90,0:22:36.57,*Default,NTP,0000,0000,0000,,called referential transparency
+Dialogue: 0,0:22:37.47,0:22:40.33,*Default,NTP,0000,0000,0000,,perhaps this was something you didn't even know you had
+Dialogue: 0,0:22:40.97,0:22:42.60,*Default,NTP,0000,0000,0000,,let me tell you what it is
+Dialogue: 0,0:22:43.30,0:22:46.00,*Default,NTP,0000,0000,0000,,expressions are referentially transparent
+Dialogue: 0,0:22:46.47,0:22:49.30,*Default,NTP,0000,0000,0000,,if substituting an expression with its value
+Dialogue: 0,0:22:49.70,0:22:52.60,*Default,NTP,0000,0000,0000,,does not change the meaning of the program
+Dialogue: 0,0:22:54.10,0:22:56.57,*Default,NTP,0000,0000,0000,,so let's say I have just multiplication
+Dialogue: 0,0:22:56.57,0:22:58.53,*Default,NTP,0000,0000,0000,,in addition to call expressions
+Dialogue: 0,0:22:59.30,0:23:01.93,*Default,NTP,0000,0000,0000,,that are used in order to make some computation
+Dialogue: 0,0:23:02.47,0:23:04.50,*Default,NTP,0000,0000,0000,,this was from long ago in the course
+Dialogue: 0,0:23:06.77,0:23:09.53,*Default,NTP,0000,0000,0000,,in a referentially transparent program
+Dialogue: 0,0:23:09.93,0:23:15.47,*Default,NTP,0000,0000,0000,,if I replace mull four six by its value 24
+Dialogue: 0,0:23:16.57,0:23:19.17,*Default,NTP,0000,0000,0000,,I have a program with the same meaning
+Dialogue: 0,0:23:20.20,0:23:21.93,*Default,NTP,0000,0000,0000,,so it's an expression that still
+Dialogue: 0,0:23:21.93,0:23:23.87,*Default,NTP,0000,0000,0000,,evaluates to the same value
+Dialogue: 0,0:23:25.80,0:23:27.07,*Default,NTP,0000,0000,0000,,if I again
+Dialogue: 0,0:23:27.80,0:23:31.70,*Default,NTP,0000,0000,0000,,replace add to in 24 with its value 26
+Dialogue: 0,0:23:32.70,0:23:34.77,*Default,NTP,0000,0000,0000,,I still have the same program
+Dialogue: 0,0:23:36.20,0:23:37.77,*Default,NTP,0000,0000,0000,,it looks different of course
+Dialogue: 0,0:23:37.77,0:23:39.10,*Default,NTP,0000,0000,0000,,but it has the same meaning
+Dialogue: 0,0:23:39.10,0:23:41.57,*Default,NTP,0000,0000,0000,,everything evaluates to the same thing
+Dialogue: 0,0:23:42.57,0:23:44.67,*Default,NTP,0000,0000,0000,,now this is only true
+Dialogue: 0,0:23:44.70,0:23:46.93,*Default,NTP,0000,0000,0000,,when we have a referential transparency
+Dialogue: 0,0:23:47.73,0:23:51.07,*Default,NTP,0000,0000,0000,,mutation operations undermine that
+Dialogue: 0,0:23:51.47,0:23:55.13,*Default,NTP,0000,0000,0000,,because they do more than just return of value
+Dialogue: 0,0:23:55.80,0:23:57.70,*Default,NTP,0000,0000,0000,,they change the environment
+Dialogue: 0,0:23:59.17,0:24:00.50,*Default,NTP,0000,0000,0000,,so this expression
+Dialogue: 0,0:24:00.50,0:24:02.70,*Default,NTP,0000,0000,0000,,would be different from this expression
+Dialogue: 0,0:24:03.27,0:24:05.80,*Default,NTP,0000,0000,0000,,if adding somehow change the environment
+Dialogue: 0,0:24:05.80,0:24:08.53,*Default,NTP,0000,0000,0000,,in addition to adding together its arguments
+Dialogue: 0,0:24:09.00,0:24:10.37,*Default,NTP,0000,0000,0000,,now adding doesn't
+Dialogue: 0,0:24:10.70,0:24:13.57,*Default,NTP,0000,0000,0000,,these are referentially transparent expressions
+Dialogue: 0,0:24:14.17,0:24:16.00,*Default,NTP,0000,0000,0000,,but when we have mutation
+Dialogue: 0,0:24:16.37,0:24:19.53,*Default,NTP,0000,0000,0000,,which is the enemy of referential transparency
+Dialogue: 0,0:24:19.87,0:24:21.33,*Default,NTP,0000,0000,0000,,then you run into trouble
+Dialogue: 0,0:24:23.00,0:24:25.07,*Default,NTP,0000,0000,0000,,so let's take a look at an example
+Dialogue: 0,0:24:25.57,0:24:28.27,*Default,NTP,0000,0000,0000,,where referential transparency is lost
+Dialogue: 0,0:24:29.57,0:24:32.13,*Default,NTP,0000,0000,0000,,this example is also just a good practice for
+Dialogue: 0,0:24:32.27,0:24:33.07,*Default,NTP,0000,0000,0000,,understanding
+Dialogue: 0,0:24:33.17,0:24:34.67,*Default,NTP,0000,0000,0000,,non local assignment
+Dialogue: 0,0:24:35.00,0:24:36.50,*Default,NTP,0000,0000,0000,,so I would suggest you try to work
+Dialogue: 0,0:24:36.50,0:24:38.50,*Default,NTP,0000,0000,0000,,through it to yourself before you watch me
+Dialogue: 0,0:24:39.47,0:24:40.97,*Default,NTP,0000,0000,0000,,okay here's what's gonna happen
+Dialogue: 0,0:24:41.13,0:24:42.10,*Default,NTP,0000,0000,0000,,well define f
+Dialogue: 0,0:24:42.90,0:24:45.33,*Default,NTP,0000,0000,0000,,and then we'll call it on the argument one
+Dialogue: 0,0:24:46.00,0:24:48.70,*Default,NTP,0000,0000,0000,,so x is bound to one in a frame f one
+Dialogue: 0,0:24:51.33,0:24:53.67,*Default,NTP,0000,0000,0000,,immediately we rebind x to four
+Dialogue: 0,0:24:54.60,0:24:56.80,*Default,NTP,0000,0000,0000,,and then we define another function called g
+Dialogue: 0,0:24:56.97,0:24:58.27,*Default,NTP,0000,0000,0000,,which gets returned
+Dialogue: 0,0:25:00.17,0:25:03.30,*Default,NTP,0000,0000,0000,,that g function is returned and bound to a
+Dialogue: 0,0:25:03.57,0:25:05.17,*Default,NTP,0000,0000,0000,,in this assignment statement
+Dialogue: 0,0:25:05.57,0:25:07.90,*Default,NTP,0000,0000,0000,,and then we call a on two
+Dialogue: 0,0:25:08.80,0:25:11.20,*Default,NTP,0000,0000,0000,,so what's a well a is this function g
+Dialogue: 0,0:25:11.80,0:25:14.90,*Default,NTP,0000,0000,0000,,and g of y gets bound where y is equal to two
+Dialogue: 0,0:25:14.90,0:25:17.50,*Default,NTP,0000,0000,0000,,introducing a new frame the g frame
+Dialogue: 0,0:25:17.87,0:25:19.27,*Default,NTP,0000,0000,0000,,with y bound to two
+Dialogue: 0,0:25:20.20,0:25:23.57,*Default,NTP,0000,0000,0000,,which defines another function age and returns it
+Dialogue: 0,0:25:24.70,0:25:27.67,*Default,NTP,0000,0000,0000,,and that return function h will be bound to b
+Dialogue: 0,0:25:28.10,0:25:30.17,*Default,NTP,0000,0000,0000,,according to this assignment statement
+Dialogue: 0,0:25:31.17,0:25:32.77,*Default,NTP,0000,0000,0000,,so now we have amb
+Dialogue: 0,0:25:33.30,0:25:35.90,*Default,NTP,0000,0000,0000,,bound to gnh respectively
+Dialogue: 0,0:25:36.17,0:25:38.87,*Default,NTP,0000,0000,0000,,and what we're going to do is call b twice
+Dialogue: 0,0:25:40.07,0:25:41.37,*Default,NTP,0000,0000,0000,,in the first cult b
+Dialogue: 0,0:25:41.87,0:25:43.77,*Default,NTP,0000,0000,0000,,I'll pass in the argument three
+Dialogue: 0,0:25:43.87,0:25:45.33,*Default,NTP,0000,0000,0000,,for its formal parameter z
+Dialogue: 0,0:25:46.60,0:25:48.33,*Default,NTP,0000,0000,0000,,okay so we've made it call
+Dialogue: 0,0:25:49.17,0:25:50.70,*Default,NTP,0000,0000,0000,,where z is bound to three
+Dialogue: 0,0:25:51.60,0:25:53.57,*Default,NTP,0000,0000,0000,,an x is declared non local
+Dialogue: 0,0:25:54.10,0:25:54.67,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:25:54.67,0:25:57.80,*Default,NTP,0000,0000,0000,,x is rebound to whatever x is currently plus one
+Dialogue: 0,0:25:59.07,0:26:01.07,*Default,NTP,0000,0000,0000,,we have to look through the current environment
+Dialogue: 0,0:26:01.07,0:26:02.53,*Default,NTP,0000,0000,0000,,which starts with f three
+Dialogue: 0,0:26:02.67,0:26:04.10,*Default,NTP,0000,0000,0000,,and then goes to f two
+Dialogue: 0,0:26:04.10,0:26:05.87,*Default,NTP,0000,0000,0000,,and then its parent is f one
+Dialogue: 0,0:26:05.93,0:26:07.80,*Default,NTP,0000,0000,0000,,and its parent is the global frame
+Dialogue: 0,0:26:08.20,0:26:09.93,*Default,NTP,0000,0000,0000,,and find the first occurrence
+Dialogue: 0,0:26:10.60,0:26:13.20,*Default,NTP,0000,0000,0000,,in this chain where x is bound
+Dialogue: 0,0:26:13.37,0:26:14.40,*Default,NTP,0000,0000,0000,,which is here
+Dialogue: 0,0:26:14.73,0:26:16.07,*Default,NTP,0000,0000,0000,,in the f one frame
+Dialogue: 0,0:26:16.67,0:26:18.93,*Default,NTP,0000,0000,0000,,so any change to the value of x
+Dialogue: 0,0:26:18.97,0:26:21.33,*Default,NTP,0000,0000,0000,,will be a rebinding in this frame
+Dialogue: 0,0:26:21.73,0:26:23.97,*Default,NTP,0000,0000,0000,,in this case we change it from four to five
+Dialogue: 0,0:26:25.13,0:26:26.70,*Default,NTP,0000,0000,0000,,then we return x y and z
+Dialogue: 0,0:26:27.13,0:26:29.17,*Default,NTP,0000,0000,0000,,well there's z it's three there's y it's two
+Dialogue: 0,0:26:29.17,0:26:30.87,*Default,NTP,0000,0000,0000,,there's x it's five
+Dialogue: 0,0:26:31.10,0:26:32.77,*Default,NTP,0000,0000,0000,,and the total is 10
+Dialogue: 0,0:26:33.37,0:26:35.30,*Default,NTP,0000,0000,0000,,so let's remember this for a long time
+Dialogue: 0,0:26:35.30,0:26:37.20,*Default,NTP,0000,0000,0000,,this thing evaluated to 10
+Dialogue: 0,0:26:37.73,0:26:38.70,*Default,NTP,0000,0000,0000,,we have to remember it
+Dialogue: 0,0:26:38.70,0:26:40.57,*Default,NTP,0000,0000,0000,,because we still have to evaluate this thing
+Dialogue: 0,0:26:40.57,0:26:43.57,*Default,NTP,0000,0000,0000,,so the total will be ten plus something else
+Dialogue: 0,0:26:44.37,0:26:46.47,*Default,NTP,0000,0000,0000,,okay what's this something else
+Dialogue: 0,0:26:46.77,0:26:47.10,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:26:47.10,0:26:51.30,*Default,NTP,0000,0000,0000,,it's what you get when you call the h function on four
+Dialogue: 0,0:26:53.00,0:26:56.30,*Default,NTP,0000,0000,0000,,which rebinds x two x plus one
+Dialogue: 0,0:26:56.37,0:26:58.30,*Default,NTP,0000,0000,0000,,which x well let's look
+Dialogue: 0,0:26:58.53,0:27:00.60,*Default,NTP,0000,0000,0000,,we first look an f four there's no x
+Dialogue: 0,0:27:00.60,0:27:02.70,*Default,NTP,0000,0000,0000,,then we look an f two there's no x
+Dialogue: 0,0:27:02.70,0:27:04.70,*Default,NTP,0000,0000,0000,,then we look at its parent f one
+Dialogue: 0,0:27:04.73,0:27:05.73,*Default,NTP,0000,0000,0000,,there's the x
+Dialogue: 0,0:27:05.80,0:27:07.60,*Default,NTP,0000,0000,0000,,that's the one we're gonna rebind
+Dialogue: 0,0:27:07.70,0:27:10.33,*Default,NTP,0000,0000,0000,,now it's six instead of five
+Dialogue: 0,0:27:11.50,0:27:16.37,*Default,NTP,0000,0000,0000,,and we return four plus two plus six is twelve
+Dialogue: 0,0:27:16.50,0:27:19.93,*Default,NTP,0000,0000,0000,,ten and twelve together gives us a total of 22
+Dialogue: 0,0:27:21.93,0:27:22.13,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:27:22.13,0:27:24.77,*Default,NTP,0000,0000,0000,,there's an interesting example of how non local works
+Dialogue: 0,0:27:24.77,0:27:27.30,*Default,NTP,0000,0000,0000,,but what about referential transparency
+Dialogue: 0,0:27:27.90,0:27:29.67,*Default,NTP,0000,0000,0000,,well this used to equal 22
+Dialogue: 0,0:27:29.90,0:27:32.00,*Default,NTP,0000,0000,0000,,and b3 evaluated a 10
+Dialogue: 0,0:27:32.67,0:27:35.87,*Default,NTP,0000,0000,0000,,but what if instead I replaced this function call
+Dialogue: 0,0:27:35.90,0:27:37.10,*Default,NTP,0000,0000,0000,,by its value
+Dialogue: 0,0:27:38.37,0:27:40.53,*Default,NTP,0000,0000,0000,,and then I visualize the execution
+Dialogue: 0,0:27:41.50,0:27:44.57,*Default,NTP,0000,0000,0000,,the difference now is that the effect of calling p
+Dialogue: 0,0:27:44.77,0:27:46.10,*Default,NTP,0000,0000,0000,,would never have happened
+Dialogue: 0,0:27:46.10,0:27:48.20,*Default,NTP,0000,0000,0000,,because I used it value instead
+Dialogue: 0,0:27:48.37,0:27:50.17,*Default,NTP,0000,0000,0000,,and so the total is 21
+Dialogue: 0,0:27:51.90,0:27:55.00,*Default,NTP,0000,0000,0000,,there was never a second call to the h function
+Dialogue: 0,0:27:55.00,0:27:56.73,*Default,NTP,0000,0000,0000,,because I just used the value 10
+Dialogue: 0,0:27:56.77,0:27:58.60,*Default,NTP,0000,0000,0000,,instead of calling beyond three
+Dialogue: 0,0:27:59.07,0:27:59.90,*Default,NTP,0000,0000,0000,,and therefore
+Dialogue: 0,0:28:00.17,0:28:02.10,*Default,NTP,0000,0000,0000,,x only got incremented once
+Dialogue: 0,0:28:02.10,0:28:04.13,*Default,NTP,0000,0000,0000,,instead of being incremented twice
+Dialogue: 0,0:28:04.13,0:28:05.80,*Default,NTP,0000,0000,0000,,from four to five to six
+Dialogue: 0,0:28:06.90,0:28:11.00,*Default,NTP,0000,0000,0000,,so this program has a different meaning
+Dialogue: 0,0:28:11.10,0:28:13.67,*Default,NTP,0000,0000,0000,,from the one where I won't be three
+Dialogue: 0,0:28:13.93,0:28:15.60,*Default,NTP,0000,0000,0000,,and the reason they're different
+Dialogue: 0,0:28:15.60,0:28:17.40,*Default,NTP,0000,0000,0000,,is that now I have functions
+Dialogue: 0,0:28:17.40,0:28:19.27,*Default,NTP,0000,0000,0000,,that cause mutations
+Dialogue: 0,0:28:20.40,0:28:23.73,*Default,NTP,0000,0000,0000,,referential transparency is lost
+Dialogue: 0,0:28:26.47,0:28:28.17,*Default,NTP,0000,0000,0000,,that's all for today's lecture
+Dialogue: 0,0:28:28.57,0:28:30.57,*Default,NTP,0000,0000,0000,,but I'm going to go back and recommend an
+Dialogue: 0,0:28:30.57,0:28:32.17,*Default,NTP,0000,0000,0000,,old exam problem
+Dialogue: 0,0:28:32.30,0:28:34.17,*Default,NTP,0000,0000,0000,,from spring 2008
+Dialogue: 0,0:28:34.80,0:28:37.10,*Default,NTP,0000,0000,0000,,as a good example of a review problem
+Dialogue: 0,0:28:37.10,0:28:38.20,*Default,NTP,0000,0000,0000,,that you should look at
+Dialogue: 0,0:28:38.37,0:28:39.90,*Default,NTP,0000,0000,0000,,around this time in the course
+Dialogue: 0,0:28:40.60,0:28:42.77,*Default,NTP,0000,0000,0000,,I picked problem four b
+Dialogue: 0,0:28:43.17,0:28:44.47,*Default,NTP,0000,0000,0000,,from spring 2018
+Dialogue: 0,0:28:44.80,0:28:45.70,*Default,NTP,0000,0000,0000,,midterm 2
+Dialogue: 0,0:28:46.60,0:28:48.50,*Default,NTP,0000,0000,0000,,which is a six point problem
+Dialogue: 0,0:28:48.53,0:28:50.00,*Default,NTP,0000,0000,0000,,implement combo
+Dialogue: 0,0:28:50.17,0:28:53.13,*Default,NTP,0000,0000,0000,,which takes two non negative integers a and b
+Dialogue: 0,0:28:53.27,0:28:55.47,*Default,NTP,0000,0000,0000,,it returns the smallest integer
+Dialogue: 0,0:28:55.50,0:28:58.80,*Default,NTP,0000,0000,0000,,that contains all of the digits of a in order
+Dialogue: 0,0:28:59.10,0:29:02.20,*Default,NTP,0000,0000,0000,,as well as all of the digits of b in order
+Dialogue: 0,0:29:02.67,0:29:05.10,*Default,NTP,0000,0000,0000,,to enter zin one comes out
+Dialogue: 0,0:29:05.67,0:29:08.20,*Default,NTP,0000,0000,0000,,I'm not going to walk through how to solve this problem
+Dialogue: 0,0:29:08.60,0:29:09.93,*Default,NTP,0000,0000,0000,,I'm just going to
+Dialogue: 0,0:29:11.53,0:29:14.77,*Default,NTP,0000,0000,0000,,point out some things that are good to notice
+Dialogue: 0,0:29:14.90,0:29:17.40,*Default,NTP,0000,0000,0000,,before you start solving this problem
+Dialogue: 0,0:29:18.47,0:29:22.07,*Default,NTP,0000,0000,0000,,1st what kind of problem is this what kind of
+Dialogue: 0,0:29:22.27,0:29:24.17,*Default,NTP,0000,0000,0000,,solution technique might apply
+Dialogue: 0,0:29:24.87,0:29:26.87,*Default,NTP,0000,0000,0000,,well if you have two integers
+Dialogue: 0,0:29:27.07,0:29:27.90,*Default,NTP,0000,0000,0000,,and you think about
+Dialogue: 0,0:29:27.90,0:29:29.13,*Default,NTP,0000,0000,0000,,building an integer that has
+Dialogue: 0,0:29:29.13,0:29:30.80,*Default,NTP,0000,0000,0000,,all the digits of both of them
+Dialogue: 0,0:29:31.20,0:29:33.10,*Default,NTP,0000,0000,0000,,there are many ways to do that
+Dialogue: 0,0:29:33.37,0:29:36.30,*Default,NTP,0000,0000,0000,,for example with this five three one and four three two
+Dialogue: 0,0:29:36.33,0:29:38.77,*Default,NTP,0000,0000,0000,,I could start with a four or I could start with a five
+Dialogue: 0,0:29:38.77,0:29:39.93,*Default,NTP,0000,0000,0000,,both would be reasonable
+Dialogue: 0,0:29:39.93,0:29:49.13,*Default,NTP,0000,0000,0000,,so I could do 4 5 3 1 2 or 4 5 3 2 1 or 4 3 2 5 3 1
+Dialogue: 0,0:29:49.13,0:29:50.80,*Default,NTP,0000,0000,0000,,there's many different ways
+Dialogue: 0,0:29:51.47,0:29:54.33,*Default,NTP,0000,0000,0000,,when you're choosing among many different options
+Dialogue: 0,0:29:54.50,0:29:56.07,*Default,NTP,0000,0000,0000,,and you're trying to count them all
+Dialogue: 0,0:29:56.37,0:29:57.77,*Default,NTP,0000,0000,0000,,or find the best one
+Dialogue: 0,0:29:58.10,0:29:59.57,*Default,NTP,0000,0000,0000,,or print them all out
+Dialogue: 0,0:29:59.90,0:30:01.93,*Default,NTP,0000,0000,0000,,that's a tree recursion problem
+Dialogue: 0,0:30:02.87,0:30:04.90,*Default,NTP,0000,0000,0000,,here we have a series of choices
+Dialogue: 0,0:30:05.07,0:30:07.87,*Default,NTP,0000,0000,0000,,which digit to put next in the result
+Dialogue: 0,0:30:08.57,0:30:10.90,*Default,NTP,0000,0000,0000,,and there are many different ways to choose among those
+Dialogue: 0,0:30:11.77,0:30:14.77,*Default,NTP,0000,0000,0000,,so tree recursion means looking for base cases
+Dialogue: 0,0:30:14.90,0:30:16.87,*Default,NTP,0000,0000,0000,,looking for recursive cases
+Dialogue: 0,0:30:16.87,0:30:18.73,*Default,NTP,0000,0000,0000,,and figuring out how to combine
+Dialogue: 0,0:30:18.87,0:30:21.90,*Default,NTP,0000,0000,0000,,the results of multiple recursive calls
+Dialogue: 0,0:30:22.93,0:30:25.77,*Default,NTP,0000,0000,0000,,and there are other cues like here's a recursive call
+Dialogue: 0,0:30:26.53,0:30:27.77,*Default,NTP,0000,0000,0000,,okay okay but
+Dialogue: 0,0:30:28.20,0:30:30.70,*Default,NTP,0000,0000,0000,,without even glancing at the starter code
+Dialogue: 0,0:30:30.70,0:30:31.27,*Default,NTP,0000,0000,0000,,you should try
+Dialogue: 0,0:30:31.27,0:30:33.30,*Default,NTP,0000,0000,0000,,to figure out what kind of problem this is
+Dialogue: 0,0:30:34.33,0:30:37.70,*Default,NTP,0000,0000,0000,,and 2nd you can start looking for base cases
+Dialogue: 0,0:30:38.10,0:30:39.30,*Default,NTP,0000,0000,0000,,and in this problem
+Dialogue: 0,0:30:39.33,0:30:42.07,*Default,NTP,0000,0000,0000,,one of the base cases is provided to you
+Dialogue: 0,0:30:42.10,0:30:44.60,*Default,NTP,0000,0000,0000,,remember a base case is an
+Dialogue: 0,0:30:44.77,0:30:47.77,*Default,NTP,0000,0000,0000,,input where you can immediately return the answer
+Dialogue: 0,0:30:48.37,0:30:49.93,*Default,NTP,0000,0000,0000,,so if you're trying to build an integer with
+Dialogue: 0,0:30:49.93,0:30:51.37,*Default,NTP,0000,0000,0000,,all the digits of zero
+Dialogue: 0,0:30:51.37,0:30:53.20,*Default,NTP,0000,0000,0000,,and all the digits of three to one
+Dialogue: 0,0:30:53.33,0:30:55.13,*Default,NTP,0000,0000,0000,,apparently the answer is three to one
+Dialogue: 0,0:30:55.13,0:30:56.30,*Default,NTP,0000,0000,0000,,what happened to the zero
+Dialogue: 0,0:30:56.37,0:30:57.57,*Default,NTP,0000,0000,0000,,oh there's an explanation
+Dialogue: 0,0:30:57.57,0:31:01.33,*Default,NTP,0000,0000,0000,,the No.0 has no digits so zero is not in the result
+Dialogue: 0,0:31:01.53,0:31:02.67,*Default,NTP,0000,0000,0000,,so that's a useful
+Dialogue: 0,0:31:02.67,0:31:05.07,*Default,NTP,0000,0000,0000,,dock test because it tells you what to do with zero
+Dialogue: 0,0:31:05.57,0:31:07.27,*Default,NTP,0000,0000,0000,,and also a useful dock test
+Dialogue: 0,0:31:07.33,0:31:09.07,*Default,NTP,0000,0000,0000,,because it seems like I could compute
+Dialogue: 0,0:31:09.07,0:31:11.00,*Default,NTP,0000,0000,0000,,this result from these inputs
+Dialogue: 0,0:31:11.13,0:31:12.37,*Default,NTP,0000,0000,0000,,really easily
+Dialogue: 0,0:31:12.93,0:31:14.33,*Default,NTP,0000,0000,0000,,it's a base case
+Dialogue: 0,0:31:14.67,0:31:16.20,*Default,NTP,0000,0000,0000,,I'll let you take it from there
+Dialogue: 0,0:31:16.33,0:31:17.53,*Default,NTP,0000,0000,0000,,if you want to learn more
+Dialogue: 0,0:31:17.53,0:31:19.10,*Default,NTP,0000,0000,0000,,about how to solve this problem
+Dialogue: 0,0:31:19.27,0:31:21.07,*Default,NTP,0000,0000,0000,,you could go to the resources page
+Dialogue: 0,0:31:21.07,0:31:22.40,*Default,NTP,0000,0000,0000,,of the course website
+Dialogue: 0,0:31:22.53,0:31:24.80,*Default,NTP,0000,0000,0000,,and find the walkthrough video
+Dialogue: 0,0:31:25.00,0:31:27.93,*Default,NTP,0000,0000,0000,,that describes how to approach and solve the problem
+Dialogue: 0,0:31:28.30,0:31:29.10,*Default,NTP,0000,0000,0000,,good luck
