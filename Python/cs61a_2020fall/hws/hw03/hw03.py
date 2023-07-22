@@ -278,18 +278,18 @@ def mul_interval(x, y):
     p4 = upper_bound(x) * upper_bound(y)
     return interval(min(p1, p2, p3, p4), max(p1, p2, p3, p4))
 
-
 def sub_interval(x, y):
     """Return the interval that contains the difference between any value in x
     and any value in y."""
     "*** YOUR CODE HERE ***"
-
+    return interval(lower_bound(x)-upper_bound(y),upper_bound(x)-lower_bound(y))
 
 def div_interval(x, y):
     """Return the interval that contains the quotient of any value in x divided by
     any value in y. Division is implemented as the multiplication of x by the
     reciprocal of y."""
     "*** YOUR CODE HERE ***"
+    assert lower_bound(y)>0,AssertionError
     reciprocal_y = interval(1/upper_bound(y), 1/lower_bound(y))
     return mul_interval(x, reciprocal_y)
 
@@ -311,14 +311,16 @@ def check_par():
     >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
     True
     """
-    r1 = interval(1, 1) # Replace this line!
+    r1 = interval(1, 3) # Replace this line!
     r2 = interval(1, 1) # Replace this line!
     return r1, r2
 
-
 def multiple_references_explanation():
-    return """The multiple reference problem..."""
-
+    return """Yse, Eva Lu Ator is right about the multiple reference problem.
+            Because when the same variable with uncertainty is repeatly refered,
+            the exact value used to calculate the bounds may not be practical.
+            That is to say, a single variable is allowed to have multiple values
+            in one computation, which introduce unnecessary greater error. """
 
 def quadratic(x, a, b, c):
     """Return the interval that is the range of the quadratic defined by
@@ -329,7 +331,20 @@ def quadratic(x, a, b, c):
     >>> str_interval(quadratic(interval(1, 3), 2, -3, 1))
     '0 to 10'
     """
-    "*** YOUR CODE HERE ***"
+    def quadratic_func(t):
+        """Return the value of quadratic function at t"""
+        return a*t*t + b*t + c
+
+    values = []
+    values.append(quadratic_func(lower_bound(x)))
+    values.append(quadratic_func(upper_bound(x)))
+
+    sp = -b/(2*a) # stationary point
+    if sp >= lower_bound(x) and sp <= upper_bound(x):
+        values.append(quadratic_func(sp))
+
+    min_v, max_v = min(values), max(values)
+    return interval(min_v, max_v)
 
 
 
