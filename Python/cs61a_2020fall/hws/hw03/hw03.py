@@ -1,51 +1,40 @@
 HW_SOURCE_FILE=__file__
 
-# 返回:list
-# 限制:left right 必须是arm
+
 def mobile(left, right):
     """Construct a mobile from a left arm and a right arm."""
     assert is_arm(left), "left must be a arm"
     assert is_arm(right), "right must be a arm"
     return ['mobile', left, right]
 
-# 返回:True or False
-# 判断m是否为mobile
 def is_mobile(m):
     """Return whether m is a mobile."""
     return type(m) == list and len(m) == 3 and m[0] == 'mobile'
 
-# 返回:mobile 左臂
-# 限制:m为mobile
 def left(m):
     """Select the left arm of a mobile."""
     assert is_mobile(m), "must call left on a mobile"
     return m[1]
-# 返回:mobile 右臂
-# 限制:m为mobile
+
 def right(m):
     """Select the right arm of a mobile."""
     assert is_mobile(m), "must call right on a mobile"
     return m[2]
 
-# 作用:建立arm
-# 参数:长度,父
 def arm(length, mobile_or_planet):
     """Construct a arm: a length of rod with a mobile or planet at the end."""
     assert is_mobile(mobile_or_planet) or is_planet(mobile_or_planet)
     return ['arm', length, mobile_or_planet]
 
-# 作用:判断是否是arm
 def is_arm(s):
     """Return whether s is a arm."""
     return type(s) == list and len(s) == 3 and s[0] == 'arm'
 
-# 作用:返回arm的长度
-# s必须为arm
 def length(s):
     """Select the length of a arm."""
     assert is_arm(s), "must call length on a arm"
     return s[1]
-# 作用:返回其
+
 def end(s):
     """Select the mobile or planet hanging at the end of a arm."""
     assert is_arm(s), "must call end on a arm"
@@ -54,13 +43,11 @@ def end(s):
 def planet(size):
     """Construct a planet of some size."""
     assert size > 0
-    "*** YOUR CODE HERE ***"
-    return ['planet',size]
+    return ['planet', size]
 
 def size(w):
     """Select the size of a planet."""
     assert is_planet(w), 'must call size on a planet'
-    "*** YOUR CODE HERE ***"
     return w[1]
 
 def is_planet(w):
@@ -68,14 +55,11 @@ def is_planet(w):
     return type(w) == list and len(w) == 2 and w[0] == 'planet'
 
 def examples():
-    # 3
-    t = mobile(arm(1, planet(2)), 
+    t = mobile(arm(1, planet(2)),
                arm(2, planet(1)))
-    # 6
     u = mobile(arm(5, planet(1)),
                arm(1, mobile(arm(2, planet(3)),
                               arm(3, planet(2)))))
-    # 9
     v = mobile(arm(4, t), arm(2, u))
     return (t, u, v)
 
@@ -120,15 +104,13 @@ def balanced(m):
     >>> check(HW_SOURCE_FILE, 'balanced', ['Index'])
     True
     """
-    "*** YOUR CODE HERE ***"
     if is_planet(m):
         return True
     else:
-        left_end,right_end=end(left(m)),end(right(m))
-        torque_left=length(left(m))*total_weight(left_end)
-        torque_right=length(right(m))*total_weight(right_end)
-        return balanced(left_end) and balanced(right_end) and torque_left==torque_right
-    
+        left_end, right_end = end(left(m)), end(right(m))
+        torque_left = length(left(m)) * total_weight(left_end)
+        torque_right = length(right(m)) * total_weight(right_end)
+        return balanced(left_end) and balanced(right_end) and torque_left == torque_right
 
 def totals_tree(m):
     """Return a tree representing the mobile with its total weight at the root.
@@ -159,17 +141,12 @@ def totals_tree(m):
     >>> check(HW_SOURCE_FILE, 'totals_tree', ['Index'])
     True
     """
-    "*** YOUR CODE HERE ***"
     if is_planet(m):
-        return size(m)
-    elif is_mobile(m):
-        end_right=end(right(m))
-        end_left=end(left(m))
-        new_branches=[totals_tree(right_m) for right_m in right(m)]
-        new_branches+=[totals_tree(left_m) for left_m in left(m)]
+        return tree(size(m))
     else:
-        return None
-    return tree(total_weight(end_right)+total_weight(end_left),new_branches)
+        branches = [totals_tree(end(f(m))) for f in [left, right]]
+        return tree(sum([label(b) for b in branches]), branches)
+
 
 def replace_leaf(t, find_value, replace_value):
     """Returns a new tree where every leaf value equal to find_value has
@@ -200,7 +177,11 @@ def replace_leaf(t, find_value, replace_value):
     >>> laerad == yggdrasil # Make sure original tree is unmodified
     True
     """
-    "*** YOUR CODE HERE ***"
+    if is_leaf(t) and label(t) == find_value:
+        return tree(replace_value)
+    else:
+        bs = [replace_leaf(b, find_value, replace_value) for b in branches(t)]
+        return tree(label(t), bs)
 
 
 def preorder(t):
@@ -213,7 +194,18 @@ def preorder(t):
     >>> preorder(tree(2, [tree(4, [tree(6)])]))
     [2, 4, 6]
     """
-    "*** YOUR CODE HERE ***"
+    if branches(t) == []:
+        return [label(t)]
+    flattened_branches = []
+    for child in branches(t):
+        flattened_branches += preorder(child)
+    return [label(t)] + flattened_branches
+
+# Alternate solution
+from functools import reduce
+
+def preorder_alt(t):
+    return reduce(add, [preorder_alt(child) for child in branches(t)], [label(t)])
 
 
 def has_path(t, word):
@@ -245,20 +237,28 @@ def has_path(t, word):
     False
     """
     assert len(word) > 0, 'no path for empty word.'
-    "*** YOUR CODE HERE ***"
+    if label(t) != word[0]:
+        return False
+    elif len(word) == 1:
+        return True
+    for b in branches(t):
+        if has_path(b, word[1:]):
+            return True
+    return False
 
 
 def interval(a, b):
     """Construct an interval from a to b."""
+    assert a <= b, 'Lower bound cannot be greater than upper bound'
     return [a, b]
 
 def lower_bound(x):
     """Return the lower bound of interval x."""
-    "*** YOUR CODE HERE ***"
+    return x[0]
 
 def upper_bound(x):
     """Return the upper bound of interval x."""
-    "*** YOUR CODE HERE ***"
+    return x[1]
 def str_interval(x):
     """Return a string representation of interval x.
     """
@@ -283,16 +283,53 @@ def mul_interval(x, y):
 def sub_interval(x, y):
     """Return the interval that contains the difference between any value in x
     and any value in y."""
-    "*** YOUR CODE HERE ***"
+    negative_y = interval(-upper_bound(y), -lower_bound(y))
+    return add_interval(x, negative_y)
 
 
 def div_interval(x, y):
     """Return the interval that contains the quotient of any value in x divided by
     any value in y. Division is implemented as the multiplication of x by the
     reciprocal of y."""
-    "*** YOUR CODE HERE ***"
+    assert not (lower_bound(y) <= 0 <= upper_bound(y)), 'Divide by zero'
     reciprocal_y = interval(1/upper_bound(y), 1/lower_bound(y))
     return mul_interval(x, reciprocal_y)
+
+
+def multiple_references_explanation():
+    return """The multiple reference problem exists.  The true value
+    within a particular interval is fixed (though unknown).  Nested
+    combinations that refer to the same interval twice may assume two different
+    true values for the same interval, which is an error that results in
+    intervals that are larger than they should be.
+
+    Consider the case of i * i, where i is an interval from -1 to 1.  No value
+    within this interval, when squared, will give a negative result.  However,
+    our mul_interval function will allow us to choose 1 from the first
+    reference to i and -1 from the second, giving an erroneous lower bound of
+    -1.
+
+    Hence, a program like par2 is better than par1 because it never combines
+    the same interval more than once.
+    """
+
+
+def quadratic(x, a, b, c):
+    """Return the interval that is the range of the quadratic defined by
+    coefficients a, b, and c, for domain interval x.
+
+    >>> str_interval(quadratic(interval(0, 2), -2, 3, -1))
+    '-3 to 0.125'
+    >>> str_interval(quadratic(interval(1, 3), 2, -3, 1))
+    '0 to 10'
+    """
+    extremum = -b / (2*a)
+    f = lambda x: a * x * x + b * x + c
+    l, u, e = map(f, (lower_bound(x), upper_bound(x), extremum))
+    if extremum >= lower_bound(x) and extremum <= upper_bound(x):
+        return interval(min(l, u, e), max(l, u, e))
+    else:
+        return interval(min(l, u), max(l, u))
 
 
 def par1(r1, r2):
@@ -312,25 +349,9 @@ def check_par():
     >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
     True
     """
-    r1 = interval(1, 1) # Replace this line!
-    r2 = interval(1, 1) # Replace this line!
+    r1 = interval(1, 2)
+    r2 = interval(3, 4)
     return r1, r2
-
-
-def multiple_references_explanation():
-    return """The multiple reference problem..."""
-
-
-def quadratic(x, a, b, c):
-    """Return the interval that is the range of the quadratic defined by
-    coefficients a, b, and c, for domain interval x.
-
-    >>> str_interval(quadratic(interval(0, 2), -2, 3, -1))
-    '-3 to 0.125'
-    >>> str_interval(quadratic(interval(1, 3), 2, -3, 1))
-    '0 to 10'
-    """
-    "*** YOUR CODE HERE ***"
 
 
 
