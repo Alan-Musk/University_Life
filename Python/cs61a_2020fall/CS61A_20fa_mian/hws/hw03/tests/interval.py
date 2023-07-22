@@ -1,19 +1,17 @@
 test = {
-  'name': 'check_par',
+  'name': 'interval',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> r1, r2 = check_par()
-          >>> x = par1(r1, r2)
-          >>> y = par2(r1, r2)
-          >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
-          True
+          >>> str_interval(interval(-1, 2))
+          '-1 to 2'
+          >>> str_interval(add_interval(interval(-1, 2), interval(4, 8)))
+          '3 to 10'
           """,
-          'hidden': False,
-          'locked': False
+          'hidden': False
         }
       ],
       'scored': True,
@@ -30,11 +28,10 @@ test = {
           'code': r"""
           >>> # Testing for abstraction violations
           >>> # Your code should not check for which implementation is used
-          >>> r1, r2 = check_par()
-          >>> x = par1(r1, r2)
-          >>> y = par2(r1, r2)
-          >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
-          True
+          >>> str_interval(interval(-1, 2))
+          '-1 to 2'
+          >>> str_interval(add_interval(interval(-1, 2), interval(4, 8)))
+          '3 to 10'
           """,
           'hidden': False,
           'locked': False

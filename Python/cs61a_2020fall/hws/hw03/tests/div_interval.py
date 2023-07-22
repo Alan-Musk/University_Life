@@ -3,26 +3,46 @@ test = {
   'points': 1,
   'suites': [
     {
-      'type': 'doctest',
-      'setup': """
+      'cases': [
+        {
+          'code': r"""
+          >>> # Type AssertionError if you think an AssertionError is raised
+          >>> str_interval(div_interval(interval(-1, 2), interval(4, 8)))
+          2e8c7bda368a5e6ec955fc4291448f16
+          # locked
+          >>> str_interval(div_interval(interval(4, 8), interval(-1, 2)))
+          cdb0ebefc43667b8c383515c2f76eb4f
+          # locked
+          """,
+          'hidden': False,
+          'locked': True
+        }
+      ],
+      'scored': True,
+      'setup': r"""
       >>> import hw03
       >>> from hw03 import *
       """,
+      'teardown': '',
+      'type': 'doctest'
+    },
+    {
       'cases': [
         {
-          'code': """
-          >>> # Type AssertionError if you think an AssertionError is raised
+          'code': r"""
+          >>> # Testing for abstraction violations
+          >>> # Your code should not check for which implementation is used
           >>> str_interval(div_interval(interval(-1, 2), interval(4, 8)))
           '-0.25 to 0.5'
           >>> str_interval(div_interval(interval(4, 8), interval(-1, 2)))
           AssertionError
-          """
+          """,
+          'hidden': False,
+          'locked': False
         }
-      ]
-    },
-    {
-      'type': 'doctest',
-      'setup': """
+      ],
+      'scored': True,
+      'setup': r"""
       >>> import hw03
       >>> old_abstraction = hw03.interval, hw03.lower_bound, hw03.upper_bound
       >>> hw03.interval = lambda a, b: lambda x: a if x == 0 else b
@@ -30,22 +50,10 @@ test = {
       >>> hw03.upper_bound = lambda s: s(1)
       >>> from hw03 import *
       """,
-      'cases': [
-        {
-          'locked': False,
-          'code': """
-          >>> # Testing for abstraction violations
-          >>> # Your code should not check for which implementation is used
-          >>> str_interval(div_interval(interval(-1, 2), interval(4, 8)))
-          '-0.25 to 0.5'
-          >>> str_interval(div_interval(interval(4, 8), interval(-1, 2)))
-          AssertionError
-          """
-        },
-      ],
-      'teardown': """
+      'teardown': r"""
       >>> hw03.interval, hw03.lower_bound, hw03.upper_bound = old_abstraction
-      """
-    },
+      """,
+      'type': 'doctest'
+    }
   ]
 }

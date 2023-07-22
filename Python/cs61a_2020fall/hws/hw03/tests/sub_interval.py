@@ -3,23 +3,40 @@ test = {
   'points': 1,
   'suites': [
     {
-      'type': 'doctest',
-      'setup': """
+      'cases': [
+        {
+          'code': r"""
+          >>> str_interval(sub_interval(interval(-1, 2), interval(4, 8)))
+          4f23bb496f8a9132a3970ab764120343
+          # locked
+          """,
+          'hidden': False,
+          'locked': True
+        }
+      ],
+      'scored': True,
+      'setup': r"""
       >>> import hw03
       >>> from hw03 import *
       """,
-      'cases': [
-        {
-          'code': """
-          >>> str_interval(sub_interval(interval(-1, 2), interval(4, 8)))
-          '-9 to -2'
-          """
-        }
-      ]
+      'teardown': '',
+      'type': 'doctest'
     },
     {
-      'type': 'doctest',
-      'setup': """
+      'cases': [
+        {
+          'code': r"""
+          >>> # Testing for abstraction violations
+          >>> # Your code should not check for which implementation is used
+          >>> str_interval(sub_interval(interval(-1, 2), interval(4, 8)))
+          '-9 to -2'
+          """,
+          'hidden': False,
+          'locked': False
+        }
+      ],
+      'scored': True,
+      'setup': r"""
       >>> import hw03
       >>> old_abstraction = hw03.interval, hw03.lower_bound, hw03.upper_bound
       >>> hw03.interval = lambda a, b: lambda x: a if x == 0 else b
@@ -27,20 +44,10 @@ test = {
       >>> hw03.upper_bound = lambda s: s(1)
       >>> from hw03 import *
       """,
-      'cases': [
-        {
-          'locked': False,
-          'code': """
-          >>> # Testing for abstraction violations
-          >>> # Your code should not check for which implementation is used
-          >>> str_interval(sub_interval(interval(-1, 2), interval(4, 8)))
-          '-9 to -2'
-          """
-        },
-      ],
-      'teardown': """
+      'teardown': r"""
       >>> hw03.interval, hw03.lower_bound, hw03.upper_bound = old_abstraction
-      """
-    },
+      """,
+      'type': 'doctest'
+    }
   ]
 }

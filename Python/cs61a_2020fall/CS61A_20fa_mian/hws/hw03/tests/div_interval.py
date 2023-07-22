@@ -1,19 +1,18 @@
 test = {
-  'name': 'check_par',
+  'name': 'div_interval',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> r1, r2 = check_par()
-          >>> x = par1(r1, r2)
-          >>> y = par2(r1, r2)
-          >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
-          True
+          >>> # Type AssertionError if you think an AssertionError is raised
+          >>> str_interval(div_interval(interval(-1, 2), interval(4, 8)))
+          '-0.25 to 0.5'
+          >>> str_interval(div_interval(interval(4, 8), interval(-1, 2)))
+          AssertionError
           """,
-          'hidden': False,
-          'locked': False
+          'hidden': False
         }
       ],
       'scored': True,
@@ -30,11 +29,10 @@ test = {
           'code': r"""
           >>> # Testing for abstraction violations
           >>> # Your code should not check for which implementation is used
-          >>> r1, r2 = check_par()
-          >>> x = par1(r1, r2)
-          >>> y = par2(r1, r2)
-          >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
-          True
+          >>> str_interval(div_interval(interval(-1, 2), interval(4, 8)))
+          '-0.25 to 0.5'
+          >>> str_interval(div_interval(interval(4, 8), interval(-1, 2)))
+          AssertionError
           """,
           'hidden': False,
           'locked': False

@@ -43,12 +43,11 @@ def end(s):
 def planet(size):
     """Construct a planet of some size."""
     assert size > 0
-    "*** YOUR CODE HERE ***"
-    return ['planet',size]
+    return ['planet', size]
+
 def size(w):
     """Select the size of a planet."""
     assert is_planet(w), 'must call size on a planet'
-    "*** YOUR CODE HERE ***"
     return w[1]
 
 def is_planet(w):
@@ -105,13 +104,15 @@ def balanced(m):
     >>> check(HW_SOURCE_FILE, 'balanced', ['Index'])
     True
     """
-    "*** YOUR CODE HERE ***"
     if is_planet(m):
         return True
-    left_end,right_end=end(left(m)),end(right(m))
-    torque_left=length(left(m))*total_weight(left_end)
-    torque_right=length(right(m))*total_weight(right_end)
-    return balanced(left_end) and balanced(right_end) and torque_left==torque_right
+    else:
+        left_w, right_w = total_weight(end(left(m))), total_weight(end(right(m)))
+        left_l, right_l = length(left(m)), length(right(m))
+        left_t, right_t = left_l * left_w, right_l * right_w # torque
+        # short circuiting
+        return left_t==right_t and balanced(end(left(m))) and balanced(end(right(m)))
+
 
 def totals_tree(m):
     """Return a tree representing the mobile with its total weight at the root.
@@ -142,12 +143,13 @@ def totals_tree(m):
     >>> check(HW_SOURCE_FILE, 'totals_tree', ['Index'])
     True
     """
-    "*** YOUR CODE HERE ***"
     if is_planet(m):
-        return [size(m)]
-    left_end,right_end=end(left(m)),end(right(m))
-    label=total_weight(m)
-    return tree(label,[totals_tree(left_end),totals_tree(right_end)])
+        return tree(size(m))
+    else:
+        left_branch, right_branch = totals_tree(end(left(m))), totals_tree(end(right(m)))
+        branches = [left_branch, right_branch]
+        return tree(total_weight(m), branches)
+
 
 def replace_leaf(t, find_value, replace_value):
     """Returns a new tree where every leaf value equal to find_value has
@@ -178,14 +180,13 @@ def replace_leaf(t, find_value, replace_value):
     >>> laerad == yggdrasil # Make sure original tree is unmodified
     True
     """
-    "*** YOUR CODE HERE ***"
-    if is_leaf(t):
-        if label(t)==find_value:
-            return tree(replace_value)
-        return tree(label(t))
+    if is_leaf(t) and label(t)==find_value:
+        return tree(replace_value)
     else:
-        return tree(label(t),[replace_leaf(b, find_value, replace_value) for b in branches(t)])
-    
+        replaced_b = [replace_leaf(b,find_value,replace_value) for b in branches(t)]
+        return tree(label(t), replaced_b)
+
+
 def preorder(t):
     """Return a list of the entries in this tree in the order that they
     would be visited by a preorder traversal (see problem description).
@@ -196,14 +197,15 @@ def preorder(t):
     >>> preorder(tree(2, [tree(4, [tree(6)])]))
     [2, 4, 6]
     """
-    "*** YOUR CODE HERE ***"
-    if is_leaf(t):
-        return [label(t)]
-    bran=[]
-    for b in branches(t):
-        bran+=preorder(b)
-    return [label(t)]+bran
-    
+    result = []
+    def preorder_helper(tree):
+        result.append(label(tree))
+        for b in branches(tree):
+            preorder_helper(b)
+        return result
+    return preorder_helper(t)
+
+
 def has_path(t, word):
     """Return whether there is a path in a tree where the entries along the path
     spell out a particular word.
@@ -233,15 +235,15 @@ def has_path(t, word):
     False
     """
     assert len(word) > 0, 'no path for empty word.'
-    "*** YOUR CODE HERE ***"
-    if label(t)!=word[0]:
-        return False
-    elif len(word)==1:
-        return True
-    for b in branches(t):
-        if has_path(b,word[1:]):
+    if len(word) == 1:
+        if label(t) == word:
             return True
-    return False
+        return False
+    else:
+        results = [has_path(b,word[1:]) for b in branches(t) if label(t)==word[0]]
+        return True in results
+
+
 
 def interval(a, b):
     """Construct an interval from a to b."""
@@ -249,12 +251,10 @@ def interval(a, b):
 
 def lower_bound(x):
     """Return the lower bound of interval x."""
-    "*** YOUR CODE HERE ***"
     return x[0]
 
 def upper_bound(x):
     """Return the upper bound of interval x."""
-    "*** YOUR CODE HERE ***"
     return x[1]
 
 def str_interval(x):
@@ -282,14 +282,16 @@ def mul_interval(x, y):
 def sub_interval(x, y):
     """Return the interval that contains the difference between any value in x
     and any value in y."""
-    "*** YOUR CODE HERE ***"
+    low = lower_bound(x) - upper_bound(y)
+    up = upper_bound(x) - lower_bound(y)
+    return interval(low, up)
 
 
 def div_interval(x, y):
     """Return the interval that contains the quotient of any value in x divided by
     any value in y. Division is implemented as the multiplication of x by the
     reciprocal of y."""
-    "*** YOUR CODE HERE ***"
+    assert lower_bound(y) * upper_bound(y) > 0, 'Should not divide by an interval that spans zero.'
     reciprocal_y = interval(1/upper_bound(y), 1/lower_bound(y))
     return mul_interval(x, reciprocal_y)
 
@@ -302,6 +304,7 @@ def par2(r1, r2):
     rep_r1 = div_interval(one, r1)
     rep_r2 = div_interval(one, r2)
     return div_interval(one, add_interval(rep_r1, rep_r2))
+
 def check_par():
     """Return two intervals that give different results for parallel resistors.
 
@@ -311,13 +314,17 @@ def check_par():
     >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
     True
     """
-    r1 = interval(1, 1) # Replace this line!
+    r1 = interval(1, 2) # Replace this line!
     r2 = interval(1, 1) # Replace this line!
     return r1, r2
 
 
 def multiple_references_explanation():
-    return """The multiple reference problem..."""
+    return """Yse, Eva Lu Ator is right about the multiple reference problem.
+            Because when the same variable with uncertainty is repeatly refered,
+            the exact value used to calculate the bounds may not be practical.
+            That is to say, a single variable is allowed to have multiple values
+            in one computation, which introduce unnecessary greater error. """
 
 
 def quadratic(x, a, b, c):
@@ -329,8 +336,20 @@ def quadratic(x, a, b, c):
     >>> str_interval(quadratic(interval(1, 3), 2, -3, 1))
     '0 to 10'
     """
-    "*** YOUR CODE HERE ***"
+    def quadratic_func(t):
+        """Return the value of quadratic function at t"""
+        return a*t*t + b*t + c
 
+    values = []
+    values.append(quadratic_func(lower_bound(x)))
+    values.append(quadratic_func(upper_bound(x)))
+
+    sp = -b/(2*a) # stationary point
+    if sp >= lower_bound(x) and sp <= upper_bound(x):
+        values.append(quadratic_func(sp))
+
+    min_v, max_v = min(values), max(values)
+    return interval(min_v, max_v)
 
 
 # Tree ADT
