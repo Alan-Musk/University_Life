@@ -64,11 +64,11 @@ def make_account_class():
     return make_class(locals())
 
 Account=make_account_class()
-kirk_account=Account['new']('Kirk')
-kirk_account['get']('holder')
-kirk_account['get']('interest')
-kirk_account['get']('deposit')(20)
-kirk_account['get']('withdraw')(5)
+# kirk_account=Account['new']('Kirk')
+# kirk_account['get']('holder')
+# kirk_account['get']('interest')
+# kirk_account['get']('deposit')(20)
+# kirk_account['get']('withdraw')(5)
 
 def make_checking_account_class():
     '''Return the CheckingAccount class,which imposes a $1 withdrawal fee/'''
@@ -79,8 +79,8 @@ def make_checking_account_class():
         return Account['get']('withdraw')(self,amount+fee)
     return make_class(locals(),Account)
 
-CheckingAccount=make_checking_account_class()
-jack_acct=CheckingAccount['new']('Spock')
+# CheckingAccount=make_checking_account_class()
+# jack_acct=CheckingAccount['new']('Spock')
 
 
 
