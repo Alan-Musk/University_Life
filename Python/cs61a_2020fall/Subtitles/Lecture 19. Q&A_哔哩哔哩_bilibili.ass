@@ -1,0 +1,939 @@
+[Script Info]
+Title: Lecture 19. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM/?p=47&spm_id_from=pageDriver&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.64,0:00:03.60,*Default,NTP,0000,0000,0000,,61a lecture 19 q a
+Dialogue: 0,0:00:03.60,0:00:05.12,*Default,NTP,0000,0000,0000,,hey john let me ask a question while we
+Dialogue: 0,0:00:05.12,0:00:06.96,*Default,NTP,0000,0000,0000,,wait for somebody to chime in
+Dialogue: 0,0:00:06.96,0:00:09.36,*Default,NTP,0000,0000,0000,,when object oriented first started this
+Dialogue: 0,0:00:09.36,0:00:11.60,*Default,NTP,0000,0000,0000,,notion of inheriting classes was very
+Dialogue: 0,0:00:11.60,0:00:13.04,*Default,NTP,0000,0000,0000,,popular and
+Dialogue: 0,0:00:13.04,0:00:14.48,*Default,NTP,0000,0000,0000,,i think sort of was a big motivating
+Dialogue: 0,0:00:14.48,0:00:16.32,*Default,NTP,0000,0000,0000,,factor and you had this nice lecture at
+Dialogue: 0,0:00:16.32,0:00:16.88,*Default,NTP,0000,0000,0000,,the end
+Dialogue: 0,0:00:16.88,0:00:18.16,*Default,NTP,0000,0000,0000,,where you you talked about how
+Dialogue: 0,0:00:18.16,0:00:20.00,*Default,NTP,0000,0000,0000,,complicated it gets
+Dialogue: 0,0:00:20.00,0:00:21.68,*Default,NTP,0000,0000,0000,,like what's the what's the thinking
+Dialogue: 0,0:00:21.68,0:00:23.36,*Default,NTP,0000,0000,0000,,these days with object oriented
+Dialogue: 0,0:00:23.36,0:00:24.48,*Default,NTP,0000,0000,0000,,i've always found that once you get
+Dialogue: 0,0:00:24.48,0:00:26.64,*Default,NTP,0000,0000,0000,,beyond one or two classes of inheritance
+Dialogue: 0,0:00:26.64,0:00:28.32,*Default,NTP,0000,0000,0000,,it just becomes unruly
+Dialogue: 0,0:00:28.32,0:00:31.60,*Default,NTP,0000,0000,0000,,like where are things these days uh
+Dialogue: 0,0:00:31.60,0:00:35.12,*Default,NTP,0000,0000,0000,,good question i think that um there are
+Dialogue: 0,0:00:35.12,0:00:36.40,*Default,NTP,0000,0000,0000,,definitely people who think that
+Dialogue: 0,0:00:36.40,0:00:38.48,*Default,NTP,0000,0000,0000,,inheritance should be completely avoided
+Dialogue: 0,0:00:38.48,0:00:41.20,*Default,NTP,0000,0000,0000,,yeah um a more but that's sort of an
+Dialogue: 0,0:00:41.20,0:00:43.36,*Default,NTP,0000,0000,0000,,extremist view i would say
+Dialogue: 0,0:00:43.36,0:00:47.20,*Default,NTP,0000,0000,0000,,a more common belief is that
+Dialogue: 0,0:00:47.20,0:00:50.40,*Default,NTP,0000,0000,0000,,inheriting methods is fine it's
+Dialogue: 0,0:00:50.40,0:00:51.52,*Default,NTP,0000,0000,0000,,inheriting
+Dialogue: 0,0:00:51.52,0:00:54.96,*Default,NTP,0000,0000,0000,,attributes that's complicated because
+Dialogue: 0,0:00:54.96,0:00:57.12,*Default,NTP,0000,0000,0000,,um yeah if you don't know where the
+Dialogue: 0,0:00:57.12,0:00:59.12,*Default,NTP,0000,0000,0000,,attribute was originally declared then
+Dialogue: 0,0:00:59.12,0:01:00.40,*Default,NTP,0000,0000,0000,,it's hard to kind of keep track of
+Dialogue: 0,0:01:00.40,0:01:01.52,*Default,NTP,0000,0000,0000,,what's going on
+Dialogue: 0,0:01:01.52,0:01:04.96,*Default,NTP,0000,0000,0000,,so i i see programs where
+Dialogue: 0,0:01:04.96,0:01:06.88,*Default,NTP,0000,0000,0000,,yeah like functionality defined by a
+Dialogue: 0,0:01:06.88,0:01:08.32,*Default,NTP,0000,0000,0000,,bunch of methods
+Dialogue: 0,0:01:08.32,0:01:10.80,*Default,NTP,0000,0000,0000,,is inherited sometimes even multiple
+Dialogue: 0,0:01:10.80,0:01:12.40,*Default,NTP,0000,0000,0000,,inheritance inheritances allowed there
+Dialogue: 0,0:01:12.40,0:01:14.24,*Default,NTP,0000,0000,0000,,but you just want to be careful about
+Dialogue: 0,0:01:14.24,0:01:16.08,*Default,NTP,0000,0000,0000,,like having attributes defined in one
+Dialogue: 0,0:01:16.08,0:01:16.80,*Default,NTP,0000,0000,0000,,place
+Dialogue: 0,0:01:16.80,0:01:18.88,*Default,NTP,0000,0000,0000,,and then having a subclass that like
+Dialogue: 0,0:01:18.88,0:01:20.80,*Default,NTP,0000,0000,0000,,tries to ignore some of those attributes
+Dialogue: 0,0:01:20.80,0:01:22.08,*Default,NTP,0000,0000,0000,,because it's different enough that you
+Dialogue: 0,0:01:22.08,0:01:23.60,*Default,NTP,0000,0000,0000,,don't want them all
+Dialogue: 0,0:01:23.60,0:01:25.44,*Default,NTP,0000,0000,0000,,that gets messy pretty fast and it's
+Dialogue: 0,0:01:25.44,0:01:27.28,*Default,NTP,0000,0000,0000,,usually better to just use composition
+Dialogue: 0,0:01:27.28,0:01:27.84,*Default,NTP,0000,0000,0000,,instead
+Dialogue: 0,0:01:27.84,0:01:29.36,*Default,NTP,0000,0000,0000,,yeah that sounds about right i have to
+Dialogue: 0,0:01:29.36,0:01:31.52,*Default,NTP,0000,0000,0000,,say i think i'm much more likely to use
+Dialogue: 0,0:01:31.52,0:01:33.20,*Default,NTP,0000,0000,0000,,composition than inheritance that's
+Dialogue: 0,0:01:33.20,0:01:35.04,*Default,NTP,0000,0000,0000,,really common
+Dialogue: 0,0:01:35.04,0:01:38.00,*Default,NTP,0000,0000,0000,,sure so the question is about this
+Dialogue: 0,0:01:38.00,0:01:39.52,*Default,NTP,0000,0000,0000,,complicated example
+Dialogue: 0,0:01:39.52,0:01:43.60,*Default,NTP,0000,0000,0000,,and what's going on um and in particular
+Dialogue: 0,0:01:43.60,0:01:46.40,*Default,NTP,0000,0000,0000,,there was an example at the end about b
+Dialogue: 0,0:01:46.40,0:01:46.80,*Default,NTP,0000,0000,0000,,dot
+Dialogue: 0,0:01:46.80,0:01:50.24,*Default,NTP,0000,0000,0000,,z dot z dot z and why is that right but
+Dialogue: 0,0:01:50.24,0:01:52.80,*Default,NTP,0000,0000,0000,,four z's is wrong and two z's is wrong
+Dialogue: 0,0:01:52.80,0:01:55.84,*Default,NTP,0000,0000,0000,,and one 1z is wrong
+Dialogue: 0,0:01:56.32,0:01:58.88,*Default,NTP,0000,0000,0000,,once you have the right picture then
+Dialogue: 0,0:01:58.88,0:02:01.36,*Default,NTP,0000,0000,0000,,solving these problems is not so bad
+Dialogue: 0,0:02:01.36,0:02:03.84,*Default,NTP,0000,0000,0000,,so let's say that we had already gone
+Dialogue: 0,0:02:03.84,0:02:05.36,*Default,NTP,0000,0000,0000,,through the work to draw a picture like
+Dialogue: 0,0:02:05.36,0:02:07.36,*Default,NTP,0000,0000,0000,,this about what's going on
+Dialogue: 0,0:02:07.36,0:02:08.80,*Default,NTP,0000,0000,0000,,then let's talk about how dot
+Dialogue: 0,0:02:08.80,0:02:11.36,*Default,NTP,0000,0000,0000,,expressions are evaluated
+Dialogue: 0,0:02:11.36,0:02:14.56,*Default,NTP,0000,0000,0000,,this dot expression b.z.z.z
+Dialogue: 0,0:02:14.56,0:02:16.56,*Default,NTP,0000,0000,0000,,is taking the dot z of something but you
+Dialogue: 0,0:02:16.56,0:02:17.68,*Default,NTP,0000,0000,0000,,don't know what it is
+Dialogue: 0,0:02:17.68,0:02:20.72,*Default,NTP,0000,0000,0000,,until you compute it and to compute it
+Dialogue: 0,0:02:20.72,0:02:23.68,*Default,NTP,0000,0000,0000,,you have to evaluate b dot z dot z
+Dialogue: 0,0:02:23.68,0:02:24.96,*Default,NTP,0000,0000,0000,,but you can't do that until you know
+Dialogue: 0,0:02:24.96,0:02:26.48,*Default,NTP,0000,0000,0000,,what b dot z is you can't do that so you
+Dialogue: 0,0:02:26.48,0:02:27.04,*Default,NTP,0000,0000,0000,,know what b
+Dialogue: 0,0:02:27.04,0:02:29.36,*Default,NTP,0000,0000,0000,,is b is just a name so that's something
+Dialogue: 0,0:02:29.36,0:02:30.72,*Default,NTP,0000,0000,0000,,we've been able to handle since the
+Dialogue: 0,0:02:30.72,0:02:31.76,*Default,NTP,0000,0000,0000,,first week of class
+Dialogue: 0,0:02:31.76,0:02:33.68,*Default,NTP,0000,0000,0000,,we look in the global frame we see that
+Dialogue: 0,0:02:33.68,0:02:35.44,*Default,NTP,0000,0000,0000,,b is this thing
+Dialogue: 0,0:02:35.44,0:02:38.64,*Default,NTP,0000,0000,0000,,this object is a sketch of what it would
+Dialogue: 0,0:02:38.64,0:02:39.60,*Default,NTP,0000,0000,0000,,look like to have an
+Dialogue: 0,0:02:39.60,0:02:42.08,*Default,NTP,0000,0000,0000,,instance with a particular class so this
+Dialogue: 0,0:02:42.08,0:02:42.80,*Default,NTP,0000,0000,0000,,has the b
+Dialogue: 0,0:02:42.80,0:02:45.76,*Default,NTP,0000,0000,0000,,class and a bunch of instance attributes
+Dialogue: 0,0:02:45.76,0:02:47.12,*Default,NTP,0000,0000,0000,,in this case there's one called z
+Dialogue: 0,0:02:47.12,0:02:49.44,*Default,NTP,0000,0000,0000,,and one called n we're gonna access the
+Dialogue: 0,0:02:49.44,0:02:50.72,*Default,NTP,0000,0000,0000,,one called
+Dialogue: 0,0:02:50.72,0:02:54.56,*Default,NTP,0000,0000,0000,,z which brings us to
+Dialogue: 0,0:02:54.56,0:02:57.84,*Default,NTP,0000,0000,0000,,this object happens to be another
+Dialogue: 0,0:02:57.84,0:03:01.12,*Default,NTP,0000,0000,0000,,b instance so this thing one way to
+Dialogue: 0,0:03:01.12,0:03:02.24,*Default,NTP,0000,0000,0000,,refer to it is
+Dialogue: 0,0:03:02.24,0:03:06.08,*Default,NTP,0000,0000,0000,,b z how did i get there i went to b
+Dialogue: 0,0:03:06.08,0:03:08.40,*Default,NTP,0000,0000,0000,,and then i went to it's z and i got to
+Dialogue: 0,0:03:08.40,0:03:09.68,*Default,NTP,0000,0000,0000,,this object
+Dialogue: 0,0:03:09.68,0:03:12.16,*Default,NTP,0000,0000,0000,,now it also happens to have a z
+Dialogue: 0,0:03:12.16,0:03:12.96,*Default,NTP,0000,0000,0000,,attribute
+Dialogue: 0,0:03:12.96,0:03:14.56,*Default,NTP,0000,0000,0000,,it's not like this is related to this
+Dialogue: 0,0:03:14.56,0:03:16.00,*Default,NTP,0000,0000,0000,,one in any way they just happen to have
+Dialogue: 0,0:03:16.00,0:03:16.88,*Default,NTP,0000,0000,0000,,the same name
+Dialogue: 0,0:03:16.88,0:03:22.40,*Default,NTP,0000,0000,0000,,okay so when you look at what's bs.z.z
+Dialogue: 0,0:03:22.40,0:03:23.92,*Default,NTP,0000,0000,0000,,we have to follow this and figure out
+Dialogue: 0,0:03:23.92,0:03:26.48,*Default,NTP,0000,0000,0000,,what we get and then we get this object
+Dialogue: 0,0:03:26.48,0:03:29.52,*Default,NTP,0000,0000,0000,,so is the answer b.z.z
+Dialogue: 0,0:03:29.52,0:03:32.72,*Default,NTP,0000,0000,0000,,an integer no b z dot z
+Dialogue: 0,0:03:32.72,0:03:36.00,*Default,NTP,0000,0000,0000,,is an instance of the c class so it's
+Dialogue: 0,0:03:36.00,0:03:39.44,*Default,NTP,0000,0000,0000,,some object that's not an integer
+Dialogue: 0,0:03:39.44,0:03:41.60,*Default,NTP,0000,0000,0000,,but it happens to have an attribute
+Dialogue: 0,0:03:41.60,0:03:42.72,*Default,NTP,0000,0000,0000,,whose name is
+Dialogue: 0,0:03:42.72,0:03:45.92,*Default,NTP,0000,0000,0000,,z and its value is one so if you
+Dialogue: 0,0:03:45.92,0:03:46.88,*Default,NTP,0000,0000,0000,,evaluate
+Dialogue: 0,0:03:46.88,0:03:48.77,*Default,NTP,0000,0000,0000,,b's z
+Dialogue: 0,0:03:48.77,0:03:49.92,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:03:49.92,0:03:52.96,*Default,NTP,0000,0000,0000,,z z you get a number
+Dialogue: 0,0:03:52.96,0:03:55.44,*Default,NTP,0000,0000,0000,,a number one so that's why which of
+Dialogue: 0,0:03:55.44,0:03:57.20,*Default,NTP,0000,0000,0000,,these evaluates to an integer happens to
+Dialogue: 0,0:03:57.20,0:03:57.60,*Default,NTP,0000,0000,0000,,be b
+Dialogue: 0,0:03:57.60,0:03:59.44,*Default,NTP,0000,0000,0000,,z zero z as opposed to one of these
+Dialogue: 0,0:03:59.44,0:04:01.60,*Default,NTP,0000,0000,0000,,other ones if you were to take
+Dialogue: 0,0:04:01.60,0:04:04.48,*Default,NTP,0000,0000,0000,,that integer and look for its dot z you
+Dialogue: 0,0:04:04.48,0:04:05.36,*Default,NTP,0000,0000,0000,,would get an error
+Dialogue: 0,0:04:05.36,0:04:08.24,*Default,NTP,0000,0000,0000,,integers don't have z attributes and if
+Dialogue: 0,0:04:08.24,0:04:09.44,*Default,NTP,0000,0000,0000,,you were to do either of these other
+Dialogue: 0,0:04:09.44,0:04:11.12,*Default,NTP,0000,0000,0000,,ones what you'd get back is one of these
+Dialogue: 0,0:04:11.12,0:04:12.48,*Default,NTP,0000,0000,0000,,objects along the way so b
+Dialogue: 0,0:04:12.48,0:04:15.20,*Default,NTP,0000,0000,0000,,is an object b dot z is an object b dot
+Dialogue: 0,0:04:15.20,0:04:16.48,*Default,NTP,0000,0000,0000,,z z is an object
+Dialogue: 0,0:04:16.48,0:04:18.48,*Default,NTP,0000,0000,0000,,it's only b does easy z that gives you a
+Dialogue: 0,0:04:18.48,0:04:20.24,*Default,NTP,0000,0000,0000,,number okay so sometimes there are these
+Dialogue: 0,0:04:20.24,0:04:21.20,*Default,NTP,0000,0000,0000,,long chains
+Dialogue: 0,0:04:21.20,0:04:22.88,*Default,NTP,0000,0000,0000,,and uh we're just following them
+Dialogue: 0,0:04:22.88,0:04:24.40,*Default,NTP,0000,0000,0000,,basically looking at this from left to
+Dialogue: 0,0:04:24.40,0:04:25.04,*Default,NTP,0000,0000,0000,,right
+Dialogue: 0,0:04:25.04,0:04:26.56,*Default,NTP,0000,0000,0000,,what's really going on is that we're
+Dialogue: 0,0:04:26.56,0:04:28.48,*Default,NTP,0000,0000,0000,,figuring out what object to finally get
+Dialogue: 0,0:04:28.48,0:04:29.20,*Default,NTP,0000,0000,0000,,the dot z
+Dialogue: 0,0:04:29.20,0:04:31.20,*Default,NTP,0000,0000,0000,,of but to do that we have to figure out
+Dialogue: 0,0:04:31.20,0:04:33.28,*Default,NTP,0000,0000,0000,,what object would to get this dot z of
+Dialogue: 0,0:04:33.28,0:04:35.12,*Default,NTP,0000,0000,0000,,what object to get this dot z of and so
+Dialogue: 0,0:04:35.12,0:04:36.96,*Default,NTP,0000,0000,0000,,you end up working from left to right in
+Dialogue: 0,0:04:36.96,0:04:39.20,*Default,NTP,0000,0000,0000,,order to find the answer
+Dialogue: 0,0:04:39.20,0:04:40.96,*Default,NTP,0000,0000,0000,,by the way don't ever write code that
+Dialogue: 0,0:04:40.96,0:04:43.68,*Default,NTP,0000,0000,0000,,looks like this ever
+Dialogue: 0,0:04:43.68,0:04:45.68,*Default,NTP,0000,0000,0000,,this is a good pedagogical example but
+Dialogue: 0,0:04:45.68,0:04:47.28,*Default,NTP,0000,0000,0000,,this is not what your code should look
+Dialogue: 0,0:04:47.28,0:04:48.48,*Default,NTP,0000,0000,0000,,like
+Dialogue: 0,0:04:48.48,0:04:51.92,*Default,NTP,0000,0000,0000,,that is that is certainly true okay
+Dialogue: 0,0:04:51.92,0:04:54.32,*Default,NTP,0000,0000,0000,,so now let's back up a little bit and
+Dialogue: 0,0:04:54.32,0:04:56.00,*Default,NTP,0000,0000,0000,,figure out how we got here
+Dialogue: 0,0:04:56.00,0:04:57.44,*Default,NTP,0000,0000,0000,,in the first place we started with this
+Dialogue: 0,0:04:57.44,0:04:59.52,*Default,NTP,0000,0000,0000,,long example and maybe we'll work our
+Dialogue: 0,0:04:59.52,0:05:00.24,*Default,NTP,0000,0000,0000,,way up to a
+Dialogue: 0,0:05:00.24,0:05:02.80,*Default,NTP,0000,0000,0000,,z equals b dot z by saying there's a
+Dialogue: 0,0:05:02.80,0:05:03.60,*Default,NTP,0000,0000,0000,,class a
+Dialogue: 0,0:05:03.60,0:05:06.00,*Default,NTP,0000,0000,0000,,there's a class b there's a class c
+Dialogue: 0,0:05:06.00,0:05:07.20,*Default,NTP,0000,0000,0000,,there's an instance of
+Dialogue: 0,0:05:07.20,0:05:10.16,*Default,NTP,0000,0000,0000,,a there's an instance of b and then this
+Dialogue: 0,0:05:10.16,0:05:11.52,*Default,NTP,0000,0000,0000,,doesn't create a new instance at all
+Dialogue: 0,0:05:11.52,0:05:13.28,*Default,NTP,0000,0000,0000,,this just is an attribute assignment so
+Dialogue: 0,0:05:13.28,0:05:14.32,*Default,NTP,0000,0000,0000,,this is changing the b
+Dialogue: 0,0:05:14.32,0:05:16.64,*Default,NTP,0000,0000,0000,,object to have an attribute called n
+Dialogue: 0,0:05:16.64,0:05:19.04,*Default,NTP,0000,0000,0000,,which is value 5.
+Dialogue: 0,0:05:19.04,0:05:23.28,*Default,NTP,0000,0000,0000,,this expression does create a new object
+Dialogue: 0,0:05:23.28,0:05:24.88,*Default,NTP,0000,0000,0000,,but i'm not sure that's the interesting
+Dialogue: 0,0:05:24.88,0:05:26.32,*Default,NTP,0000,0000,0000,,one so
+Dialogue: 0,0:05:26.32,0:05:28.56,*Default,NTP,0000,0000,0000,,when you execute a class statement you
+Dialogue: 0,0:05:28.56,0:05:30.32,*Default,NTP,0000,0000,0000,,get a new class
+Dialogue: 0,0:05:30.32,0:05:31.84,*Default,NTP,0000,0000,0000,,when you execute this class statement
+Dialogue: 0,0:05:31.84,0:05:33.68,*Default,NTP,0000,0000,0000,,you get a new class
+Dialogue: 0,0:05:33.68,0:05:35.04,*Default,NTP,0000,0000,0000,,when you execute this class statement
+Dialogue: 0,0:05:35.04,0:05:36.88,*Default,NTP,0000,0000,0000,,you get a new class so this has all
+Dialogue: 0,0:05:36.88,0:05:38.00,*Default,NTP,0000,0000,0000,,happened before we actually
+Dialogue: 0,0:05:38.00,0:05:40.08,*Default,NTP,0000,0000,0000,,made an instance of anything when you
+Dialogue: 0,0:05:40.08,0:05:41.28,*Default,NTP,0000,0000,0000,,make an instance
+Dialogue: 0,0:05:41.28,0:05:43.44,*Default,NTP,0000,0000,0000,,that creates some object now we're
+Dialogue: 0,0:05:43.44,0:05:44.48,*Default,NTP,0000,0000,0000,,giving it a name
+Dialogue: 0,0:05:44.48,0:05:46.96,*Default,NTP,0000,0000,0000,,using uh an assignment statement so this
+Dialogue: 0,0:05:46.96,0:05:48.56,*Default,NTP,0000,0000,0000,,is called a
+Dialogue: 0,0:05:48.56,0:05:50.08,*Default,NTP,0000,0000,0000,,and remember that when you create this
+Dialogue: 0,0:05:50.08,0:05:52.40,*Default,NTP,0000,0000,0000,,thing you have to execute its
+Dialogue: 0,0:05:52.40,0:05:54.56,*Default,NTP,0000,0000,0000,,appropriate init method it happens to be
+Dialogue: 0,0:05:54.56,0:05:56.00,*Default,NTP,0000,0000,0000,,that the a class doesn't have an init
+Dialogue: 0,0:05:56.00,0:05:56.56,*Default,NTP,0000,0000,0000,,method
+Dialogue: 0,0:05:56.56,0:05:58.72,*Default,NTP,0000,0000,0000,,so there's kind of nothing nothing
+Dialogue: 0,0:05:58.72,0:05:59.84,*Default,NTP,0000,0000,0000,,special about this
+Dialogue: 0,0:05:59.84,0:06:02.24,*Default,NTP,0000,0000,0000,,object it has no attributes at the
+Dialogue: 0,0:06:02.24,0:06:04.08,*Default,NTP,0000,0000,0000,,moment
+Dialogue: 0,0:06:04.08,0:06:05.52,*Default,NTP,0000,0000,0000,,this one on the other hand when we
+Dialogue: 0,0:06:05.52,0:06:07.36,*Default,NTP,0000,0000,0000,,create b we're
+Dialogue: 0,0:06:07.36,0:06:11.60,*Default,NTP,0000,0000,0000,,um calling the b class
+Dialogue: 0,0:06:11.60,0:06:13.28,*Default,NTP,0000,0000,0000,,oh sorry somebody needs to mute i think
+Dialogue: 0,0:06:13.28,0:06:16.08,*Default,NTP,0000,0000,0000,,hold on i'm gonna start muting people
+Dialogue: 0,0:06:16.08,0:06:19.36,*Default,NTP,0000,0000,0000,,when we call b then um
+Dialogue: 0,0:06:19.36,0:06:21.52,*Default,NTP,0000,0000,0000,,we create an instance of the b class but
+Dialogue: 0,0:06:21.52,0:06:23.44,*Default,NTP,0000,0000,0000,,we do have to
+Dialogue: 0,0:06:23.44,0:06:26.16,*Default,NTP,0000,0000,0000,,um call its init method because it has
+Dialogue: 0,0:06:26.16,0:06:26.72,*Default,NTP,0000,0000,0000,,one
+Dialogue: 0,0:06:26.72,0:06:28.08,*Default,NTP,0000,0000,0000,,and this is what always happens when you
+Dialogue: 0,0:06:28.08,0:06:29.76,*Default,NTP,0000,0000,0000,,create a new object
+Dialogue: 0,0:06:29.76,0:06:32.64,*Default,NTP,0000,0000,0000,,you um start it out as a blank slate and
+Dialogue: 0,0:06:32.64,0:06:34.72,*Default,NTP,0000,0000,0000,,then you start
+Dialogue: 0,0:06:34.72,0:06:37.44,*Default,NTP,0000,0000,0000,,passing it in as well as any arguments
+Dialogue: 0,0:06:37.44,0:06:37.76,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:06:37.76,0:06:40.64,*Default,NTP,0000,0000,0000,,the original constructor so y would be
+Dialogue: 0,0:06:40.64,0:06:41.36,*Default,NTP,0000,0000,0000,,bound to one
+Dialogue: 0,0:06:41.36,0:06:43.44,*Default,NTP,0000,0000,0000,,self would be bound to this b instance
+Dialogue: 0,0:06:43.44,0:06:44.40,*Default,NTP,0000,0000,0000,,and then we check if
+Dialogue: 0,0:06:44.40,0:06:47.04,*Default,NTP,0000,0000,0000,,y is true which it is so we set self.z
+Dialogue: 0,0:06:47.04,0:06:48.80,*Default,NTP,0000,0000,0000,,to something and i put this dot at that
+Dialogue: 0,0:06:48.80,0:06:49.44,*Default,NTP,0000,0000,0000,,because
+Dialogue: 0,0:06:49.44,0:06:50.96,*Default,NTP,0000,0000,0000,,we actually don't really need to figure
+Dialogue: 0,0:06:50.96,0:06:52.64,*Default,NTP,0000,0000,0000,,out what this does um
+Dialogue: 0,0:06:52.64,0:06:54.40,*Default,NTP,0000,0000,0000,,in order to answer the question of
+Dialogue: 0,0:06:54.40,0:06:56.24,*Default,NTP,0000,0000,0000,,whether a dot z equals b
+Dialogue: 0,0:06:56.24,0:06:59.28,*Default,NTP,0000,0000,0000,,z okay so
+Dialogue: 0,0:06:59.28,0:07:01.84,*Default,NTP,0000,0000,0000,,let's see what we can learn about this
+Dialogue: 0,0:07:01.84,0:07:03.36,*Default,NTP,0000,0000,0000,,structure
+Dialogue: 0,0:07:03.36,0:07:06.48,*Default,NTP,0000,0000,0000,,if we look at a and try to find
+Dialogue: 0,0:07:06.48,0:07:09.76,*Default,NTP,0000,0000,0000,,its dot z we first look at its
+Dialogue: 0,0:07:09.76,0:07:13.44,*Default,NTP,0000,0000,0000,,instance attributes it has none
+Dialogue: 0,0:07:13.44,0:07:16.24,*Default,NTP,0000,0000,0000,,so if we're looking for its z we look
+Dialogue: 0,0:07:16.24,0:07:16.72,*Default,NTP,0000,0000,0000,,next
+Dialogue: 0,0:07:16.72,0:07:19.52,*Default,NTP,0000,0000,0000,,in its class it's an instance of the a
+Dialogue: 0,0:07:19.52,0:07:20.16,*Default,NTP,0000,0000,0000,,class
+Dialogue: 0,0:07:20.16,0:07:22.96,*Default,NTP,0000,0000,0000,,so we find that it does have a z the z
+Dialogue: 0,0:07:22.96,0:07:24.72,*Default,NTP,0000,0000,0000,,is the value negative one
+Dialogue: 0,0:07:24.72,0:07:30.32,*Default,NTP,0000,0000,0000,,so that's what a dot z would evaluate to
+Dialogue: 0,0:07:30.32,0:07:33.44,*Default,NTP,0000,0000,0000,,what about b z
+Dialogue: 0,0:07:33.44,0:07:37.28,*Default,NTP,0000,0000,0000,,sorry b is this thing when we look up
+Dialogue: 0,0:07:37.28,0:07:40.32,*Default,NTP,0000,0000,0000,,dot z for the b object we look first at
+Dialogue: 0,0:07:40.32,0:07:41.92,*Default,NTP,0000,0000,0000,,its instance attributes
+Dialogue: 0,0:07:41.92,0:07:44.88,*Default,NTP,0000,0000,0000,,and it has one i didn't bother to figure
+Dialogue: 0,0:07:44.88,0:07:46.48,*Default,NTP,0000,0000,0000,,out what it was yet
+Dialogue: 0,0:07:46.48,0:07:48.40,*Default,NTP,0000,0000,0000,,but i'm pretty sure it's not negative
+Dialogue: 0,0:07:48.40,0:07:49.92,*Default,NTP,0000,0000,0000,,one um
+Dialogue: 0,0:07:49.92,0:07:53.20,*Default,NTP,0000,0000,0000,,so b dot z will give you whatever this
+Dialogue: 0,0:07:53.20,0:07:55.84,*Default,NTP,0000,0000,0000,,object is if we finish the evaluation
+Dialogue: 0,0:07:55.84,0:07:57.28,*Default,NTP,0000,0000,0000,,um we would have to go through and
+Dialogue: 0,0:07:57.28,0:07:59.44,*Default,NTP,0000,0000,0000,,figure out what self.f returns
+Dialogue: 0,0:07:59.44,0:08:02.00,*Default,NTP,0000,0000,0000,,and uh we did that eventually in lecture
+Dialogue: 0,0:08:02.00,0:08:03.20,*Default,NTP,0000,0000,0000,,it returned
+Dialogue: 0,0:08:03.20,0:08:06.48,*Default,NTP,0000,0000,0000,,this other b instance so what this is
+Dialogue: 0,0:08:06.48,0:08:07.52,*Default,NTP,0000,0000,0000,,evaluating is
+Dialogue: 0,0:08:07.52,0:08:11.04,*Default,NTP,0000,0000,0000,,is a dot z which is negative 1 equal to
+Dialogue: 0,0:08:11.04,0:08:14.48,*Default,NTP,0000,0000,0000,,b z which is this b instance
+Dialogue: 0,0:08:14.48,0:08:16.56,*Default,NTP,0000,0000,0000,,and the answer is no like a number is
+Dialogue: 0,0:08:16.56,0:08:18.08,*Default,NTP,0000,0000,0000,,never going to be equal to
+Dialogue: 0,0:08:18.08,0:08:21.04,*Default,NTP,0000,0000,0000,,uh some object
+Dialogue: 0,0:08:21.84,0:08:23.36,*Default,NTP,0000,0000,0000,,yeah so let's sketch this out and then
+Dialogue: 0,0:08:23.36,0:08:24.72,*Default,NTP,0000,0000,0000,,we'll answer your question and the
+Dialogue: 0,0:08:24.72,0:08:26.24,*Default,NTP,0000,0000,0000,,question is about if you're using
+Dialogue: 0,0:08:26.24,0:08:27.84,*Default,NTP,0000,0000,0000,,composition instead of inheritance how
+Dialogue: 0,0:08:27.84,0:08:30.08,*Default,NTP,0000,0000,0000,,do you access the attributes of the
+Dialogue: 0,0:08:30.08,0:08:32.56,*Default,NTP,0000,0000,0000,,elements of something so if you have an
+Dialogue: 0,0:08:32.56,0:08:34.00,*Default,NTP,0000,0000,0000,,account
+Dialogue: 0,0:08:34.00,0:08:40.00,*Default,NTP,0000,0000,0000,,which has a balance
+Dialogue: 0,0:08:40.00,0:08:43.04,*Default,NTP,0000,0000,0000,,and we have a bank
+Dialogue: 0,0:08:43.20,0:08:46.00,*Default,NTP,0000,0000,0000,,which is not a subclass of account it's
+Dialogue: 0,0:08:46.00,0:08:48.80,*Default,NTP,0000,0000,0000,,just its own thing
+Dialogue: 0,0:08:48.80,0:08:51.76,*Default,NTP,0000,0000,0000,,and when we create a bank we'll just
+Dialogue: 0,0:08:51.76,0:08:52.32,*Default,NTP,0000,0000,0000,,have
+Dialogue: 0,0:08:52.32,0:08:55.60,*Default,NTP,0000,0000,0000,,a set of accounts which starts out as
+Dialogue: 0,0:08:55.60,0:08:57.92,*Default,NTP,0000,0000,0000,,empty
+Dialogue: 0,0:08:58.40,0:09:00.56,*Default,NTP,0000,0000,0000,,and then we have like open account this
+Dialogue: 0,0:09:00.56,0:09:01.76,*Default,NTP,0000,0000,0000,,is a little different than what was in
+Dialogue: 0,0:09:01.76,0:09:03.76,*Default,NTP,0000,0000,0000,,the lecture but it's pretty close
+Dialogue: 0,0:09:03.76,0:09:06.80,*Default,NTP,0000,0000,0000,,so um
+Dialogue: 0,0:09:07.68,0:09:09.76,*Default,NTP,0000,0000,0000,,what open account is going to do is it's
+Dialogue: 0,0:09:09.76,0:09:11.76,*Default,NTP,0000,0000,0000,,going to create a new account
+Dialogue: 0,0:09:11.76,0:09:13.76,*Default,NTP,0000,0000,0000,,with whatever name was passed into the
+Dialogue: 0,0:09:13.76,0:09:16.48,*Default,NTP,0000,0000,0000,,bank so the bank gets the name and uses
+Dialogue: 0,0:09:16.48,0:09:17.36,*Default,NTP,0000,0000,0000,,the name to
+Dialogue: 0,0:09:17.36,0:09:22.64,*Default,NTP,0000,0000,0000,,create an account and now uh
+Dialogue: 0,0:09:22.64,0:09:25.20,*Default,NTP,0000,0000,0000,,how do we figure out how much money is
+Dialogue: 0,0:09:25.20,0:09:27.68,*Default,NTP,0000,0000,0000,,in that account
+Dialogue: 0,0:09:27.68,0:09:30.56,*Default,NTP,0000,0000,0000,,this is sort of the minimal example if i
+Dialogue: 0,0:09:30.56,0:09:30.96,*Default,NTP,0000,0000,0000,,have
+Dialogue: 0,0:09:30.96,0:09:34.64,*Default,NTP,0000,0000,0000,,a bank and i
+Dialogue: 0,0:09:34.64,0:09:37.84,*Default,NTP,0000,0000,0000,,open an account for
+Dialogue: 0,0:09:37.84,0:09:41.20,*Default,NTP,0000,0000,0000,,myself i don't have a name for that
+Dialogue: 0,0:09:41.20,0:09:42.80,*Default,NTP,0000,0000,0000,,account
+Dialogue: 0,0:09:42.80,0:09:44.80,*Default,NTP,0000,0000,0000,,i can't access it directly because it's
+Dialogue: 0,0:09:44.80,0:09:46.32,*Default,NTP,0000,0000,0000,,not in the global frame
+Dialogue: 0,0:09:46.32,0:09:48.08,*Default,NTP,0000,0000,0000,,the only thing that's in the global
+Dialogue: 0,0:09:48.08,0:09:50.24,*Default,NTP,0000,0000,0000,,frame is the bank
+Dialogue: 0,0:09:50.24,0:09:54.08,*Default,NTP,0000,0000,0000,,but the bank has a list of accounts
+Dialogue: 0,0:09:54.08,0:09:58.00,*Default,NTP,0000,0000,0000,,and there's now something in that list
+Dialogue: 0,0:09:58.00,0:10:01.60,*Default,NTP,0000,0000,0000,,so if i go into that list of accounts
+Dialogue: 0,0:10:01.60,0:10:04.64,*Default,NTP,0000,0000,0000,,and get the element at index zero
+Dialogue: 0,0:10:04.64,0:10:07.12,*Default,NTP,0000,0000,0000,,whose account is that that's john's
+Dialogue: 0,0:10:07.12,0:10:08.32,*Default,NTP,0000,0000,0000,,account
+Dialogue: 0,0:10:08.32,0:10:11.20,*Default,NTP,0000,0000,0000,,and how much money is in it zero dollars
+Dialogue: 0,0:10:11.20,0:10:13.04,*Default,NTP,0000,0000,0000,,because we haven't deposited anything
+Dialogue: 0,0:10:13.04,0:10:14.48,*Default,NTP,0000,0000,0000,,into it
+Dialogue: 0,0:10:14.48,0:10:16.64,*Default,NTP,0000,0000,0000,,so the answer in general to your
+Dialogue: 0,0:10:16.64,0:10:18.00,*Default,NTP,0000,0000,0000,,question of like when you're using
+Dialogue: 0,0:10:18.00,0:10:19.76,*Default,NTP,0000,0000,0000,,composition how do you access
+Dialogue: 0,0:10:19.76,0:10:23.28,*Default,NTP,0000,0000,0000,,attributes of the parts is often using
+Dialogue: 0,0:10:23.28,0:10:26.80,*Default,NTP,0000,0000,0000,,some like chain of dot expressions
+Dialogue: 0,0:10:26.80,0:10:29.44,*Default,NTP,0000,0000,0000,,where instead of having a name for this
+Dialogue: 0,0:10:29.44,0:10:30.16,*Default,NTP,0000,0000,0000,,account
+Dialogue: 0,0:10:30.16,0:10:31.84,*Default,NTP,0000,0000,0000,,you have an expression that's like some
+Dialogue: 0,0:10:31.84,0:10:33.36,*Default,NTP,0000,0000,0000,,compound expression for this account
+Dialogue: 0,0:10:33.36,0:10:34.88,*Default,NTP,0000,0000,0000,,that goes in and gets part of the
+Dialogue: 0,0:10:34.88,0:10:35.84,*Default,NTP,0000,0000,0000,,goldman
+Dialogue: 0,0:10:35.84,0:10:38.40,*Default,NTP,0000,0000,0000,,the bank finds his list of accounts gets
+Dialogue: 0,0:10:38.40,0:10:39.28,*Default,NTP,0000,0000,0000,,its thing
+Dialogue: 0,0:10:39.28,0:10:41.60,*Default,NTP,0000,0000,0000,,and then gets its balance now we could
+Dialogue: 0,0:10:41.60,0:10:42.56,*Default,NTP,0000,0000,0000,,have had a
+Dialogue: 0,0:10:42.56,0:10:44.72,*Default,NTP,0000,0000,0000,,method that does this instead that would
+Dialogue: 0,0:10:44.72,0:10:46.08,*Default,NTP,0000,0000,0000,,have been fine
+Dialogue: 0,0:10:46.08,0:10:48.96,*Default,NTP,0000,0000,0000,,um but this is kind of the minimal
+Dialogue: 0,0:10:48.96,0:10:50.32,*Default,NTP,0000,0000,0000,,example of how you would
+Dialogue: 0,0:10:50.32,0:10:54.80,*Default,NTP,0000,0000,0000,,access some piece of the composed bank
+Dialogue: 0,0:10:54.80,0:10:56.40,*Default,NTP,0000,0000,0000,,you can think about the account as just
+Dialogue: 0,0:10:56.40,0:10:59.12,*Default,NTP,0000,0000,0000,,being as john just said one level
+Dialogue: 0,0:10:59.12,0:11:01.44,*Default,NTP,0000,0000,0000,,removed from you instead of having a
+Dialogue: 0,0:11:01.44,0:11:02.88,*Default,NTP,0000,0000,0000,,global variable
+Dialogue: 0,0:11:02.88,0:11:04.72,*Default,NTP,0000,0000,0000,,that where you created the account it's
+Dialogue: 0,0:11:04.72,0:11:06.56,*Default,NTP,0000,0000,0000,,now stored in a list
+Dialogue: 0,0:11:06.56,0:11:09.76,*Default,NTP,0000,0000,0000,,inside of another object
+Dialogue: 0,0:11:09.76,0:11:12.08,*Default,NTP,0000,0000,0000,,so now look at the command object
+Dialogue: 0,0:11:12.08,0:11:13.04,*Default,NTP,0000,0000,0000,,goldman
+Dialogue: 0,0:11:13.04,0:11:16.16,*Default,NTP,0000,0000,0000,,list accounts get the element sub zero
+Dialogue: 0,0:11:16.16,0:11:17.36,*Default,NTP,0000,0000,0000,,what is that
+Dialogue: 0,0:11:17.36,0:11:19.52,*Default,NTP,0000,0000,0000,,that's now an object of type account and
+Dialogue: 0,0:11:19.52,0:11:20.88,*Default,NTP,0000,0000,0000,,now you can do whatever you want with it
+Dialogue: 0,0:11:20.88,0:11:22.56,*Default,NTP,0000,0000,0000,,you can you can access the
+Dialogue: 0,0:11:22.56,0:11:24.56,*Default,NTP,0000,0000,0000,,member function you can access the data
+Dialogue: 0,0:11:24.56,0:11:26.64,*Default,NTP,0000,0000,0000,,it's as if you as if we had just written
+Dialogue: 0,0:11:26.64,0:11:29.36,*Default,NTP,0000,0000,0000,,uh john's account equals goldman dot
+Dialogue: 0,0:11:29.36,0:11:31.28,*Default,NTP,0000,0000,0000,,account sub zero
+Dialogue: 0,0:11:31.28,0:11:33.28,*Default,NTP,0000,0000,0000,,that's that object now now it's all the
+Dialogue: 0,0:11:33.28,0:11:34.56,*Default,NTP,0000,0000,0000,,same thing yeah so just levels of
+Dialogue: 0,0:11:34.56,0:11:37.76,*Default,NTP,0000,0000,0000,,interruption you have to follow
+Dialogue: 0,0:11:37.84,0:11:41.20,*Default,NTP,0000,0000,0000,,yeah good question so the question is
+Dialogue: 0,0:11:41.20,0:11:43.84,*Default,NTP,0000,0000,0000,,can you use a syntax to refer to a
+Dialogue: 0,0:11:43.84,0:11:44.40,*Default,NTP,0000,0000,0000,,method
+Dialogue: 0,0:11:44.40,0:11:46.72,*Default,NTP,0000,0000,0000,,that just states which class contains
+Dialogue: 0,0:11:46.72,0:11:47.76,*Default,NTP,0000,0000,0000,,that method
+Dialogue: 0,0:11:47.76,0:11:50.16,*Default,NTP,0000,0000,0000,,then the method name and then call it
+Dialogue: 0,0:11:50.16,0:11:52.48,*Default,NTP,0000,0000,0000,,where you explicitly pass in the object
+Dialogue: 0,0:11:52.48,0:11:54.24,*Default,NTP,0000,0000,0000,,that you want to call it on and the
+Dialogue: 0,0:11:54.24,0:11:56.56,*Default,NTP,0000,0000,0000,,answer is yes so um
+Dialogue: 0,0:11:56.56,0:12:00.16,*Default,NTP,0000,0000,0000,,if you have an account there's really
+Dialogue: 0,0:12:00.16,0:12:03.44,*Default,NTP,0000,0000,0000,,the normal way of depositing into it
+Dialogue: 0,0:12:03.44,0:12:05.36,*Default,NTP,0000,0000,0000,,which is that you would refer to the
+Dialogue: 0,0:12:05.36,0:12:06.48,*Default,NTP,0000,0000,0000,,method
+Dialogue: 0,0:12:06.48,0:12:08.56,*Default,NTP,0000,0000,0000,,by using a dot expression with the
+Dialogue: 0,0:12:08.56,0:12:11.44,*Default,NTP,0000,0000,0000,,object that you're interested in
+Dialogue: 0,0:12:11.44,0:12:13.52,*Default,NTP,0000,0000,0000,,and you could think of this as shorthand
+Dialogue: 0,0:12:13.52,0:12:15.12,*Default,NTP,0000,0000,0000,,for
+Dialogue: 0,0:12:15.12,0:12:18.72,*Default,NTP,0000,0000,0000,,find the class of a
+Dialogue: 0,0:12:18.72,0:12:21.76,*Default,NTP,0000,0000,0000,,and deposit into that using a
+Dialogue: 0,0:12:21.76,0:12:24.72,*Default,NTP,0000,0000,0000,,as the account itself and 12 dollars as
+Dialogue: 0,0:12:24.72,0:12:26.80,*Default,NTP,0000,0000,0000,,the amount
+Dialogue: 0,0:12:26.80,0:12:28.96,*Default,NTP,0000,0000,0000,,in fact uh you could write this out if
+Dialogue: 0,0:12:28.96,0:12:30.24,*Default,NTP,0000,0000,0000,,you really wanted to
+Dialogue: 0,0:12:30.24,0:12:33.36,*Default,NTP,0000,0000,0000,,get the type a is a an account and
+Dialogue: 0,0:12:33.36,0:12:35.52,*Default,NTP,0000,0000,0000,,deposit into that
+Dialogue: 0,0:12:35.52,0:12:39.60,*Default,NTP,0000,0000,0000,,12 now you wouldn't write this
+Dialogue: 0,0:12:39.60,0:12:40.88,*Default,NTP,0000,0000,0000,,because it's just like a more
+Dialogue: 0,0:12:40.88,0:12:42.64,*Default,NTP,0000,0000,0000,,complicated version of this
+Dialogue: 0,0:12:42.64,0:12:45.28,*Default,NTP,0000,0000,0000,,it's allowed because this happens to be
+Dialogue: 0,0:12:45.28,0:12:46.16,*Default,NTP,0000,0000,0000,,just a function
+Dialogue: 0,0:12:46.16,0:12:48.32,*Default,NTP,0000,0000,0000,,this function you've defined here and so
+Dialogue: 0,0:12:48.32,0:12:50.40,*Default,NTP,0000,0000,0000,,you can call it as a function
+Dialogue: 0,0:12:50.40,0:12:52.08,*Default,NTP,0000,0000,0000,,but there isn't really a good reason to
+Dialogue: 0,0:12:52.08,0:12:54.64,*Default,NTP,0000,0000,0000,,do it uh there happens to be when you're
+Dialogue: 0,0:12:54.64,0:12:56.16,*Default,NTP,0000,0000,0000,,using inheritance
+Dialogue: 0,0:12:56.16,0:12:58.40,*Default,NTP,0000,0000,0000,,occasionally a reason to reference
+Dialogue: 0,0:12:58.40,0:12:59.84,*Default,NTP,0000,0000,0000,,things that you've overridden
+Dialogue: 0,0:12:59.84,0:13:01.76,*Default,NTP,0000,0000,0000,,and this is one way to do it and so
+Dialogue: 0,0:13:01.76,0:13:03.28,*Default,NTP,0000,0000,0000,,there's like an occasion where you would
+Dialogue: 0,0:13:03.28,0:13:03.76,*Default,NTP,0000,0000,0000,,actually
+Dialogue: 0,0:13:03.76,0:13:05.52,*Default,NTP,0000,0000,0000,,do this kind of thing but it is allowed
+Dialogue: 0,0:13:05.52,0:13:07.36,*Default,NTP,0000,0000,0000,,otherwise it's just not something that i
+Dialogue: 0,0:13:07.36,0:13:08.00,*Default,NTP,0000,0000,0000,,think is
+Dialogue: 0,0:13:08.00,0:13:10.08,*Default,NTP,0000,0000,0000,,is normally done yeah i think it would
+Dialogue: 0,0:13:10.08,0:13:11.92,*Default,NTP,0000,0000,0000,,be considered poor form if you wrote
+Dialogue: 0,0:13:11.92,0:13:12.40,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:13:12.40,0:13:14.40,*Default,NTP,0000,0000,0000,,it's i think you should avoid that
+Dialogue: 0,0:13:14.40,0:13:15.76,*Default,NTP,0000,0000,0000,,because it's just it's not something
+Dialogue: 0,0:13:15.76,0:13:17.76,*Default,NTP,0000,0000,0000,,that most programmers would would
+Dialogue: 0,0:13:17.76,0:13:19.60,*Default,NTP,0000,0000,0000,,would sort of do and you know i mean
+Dialogue: 0,0:13:19.60,0:13:20.72,*Default,NTP,0000,0000,0000,,even though things are allowed doesn't
+Dialogue: 0,0:13:20.72,0:13:21.20,*Default,NTP,0000,0000,0000,,mean you
+Dialogue: 0,0:13:21.20,0:13:24.32,*Default,NTP,0000,0000,0000,,shouldn't necessarily do them but it
+Dialogue: 0,0:13:24.32,0:13:26.00,*Default,NTP,0000,0000,0000,,does illustrate you know what is this
+Dialogue: 0,0:13:26.00,0:13:26.96,*Default,NTP,0000,0000,0000,,doing
+Dialogue: 0,0:13:26.96,0:13:29.68,*Default,NTP,0000,0000,0000,,it's basically doing that it's getting
+Dialogue: 0,0:13:29.68,0:13:30.48,*Default,NTP,0000,0000,0000,,some function
+Dialogue: 0,0:13:30.48,0:13:34.32,*Default,NTP,0000,0000,0000,,and filling in a yeah
+Dialogue: 0,0:13:34.32,0:13:37.44,*Default,NTP,0000,0000,0000,,good question so what is super which is
+Dialogue: 0,0:13:37.44,0:13:39.20,*Default,NTP,0000,0000,0000,,some built-in function
+Dialogue: 0,0:13:39.20,0:13:41.20,*Default,NTP,0000,0000,0000,,that really is quite magical in my
+Dialogue: 0,0:13:41.20,0:13:42.72,*Default,NTP,0000,0000,0000,,opinion
+Dialogue: 0,0:13:42.72,0:13:45.36,*Default,NTP,0000,0000,0000,,um in terms of what it does so it's
+Dialogue: 0,0:13:45.36,0:13:47.12,*Default,NTP,0000,0000,0000,,better to describe what it does instead
+Dialogue: 0,0:13:47.12,0:13:48.56,*Default,NTP,0000,0000,0000,,of how it does it
+Dialogue: 0,0:13:48.56,0:13:51.28,*Default,NTP,0000,0000,0000,,but what it does is it says when you
+Dialogue: 0,0:13:51.28,0:13:54.24,*Default,NTP,0000,0000,0000,,look up this method
+Dialogue: 0,0:13:54.40,0:13:58.08,*Default,NTP,0000,0000,0000,,for uh
+Dialogue: 0,0:13:59.36,0:14:00.96,*Default,NTP,0000,0000,0000,,this is kind of related to self let's
+Dialogue: 0,0:14:00.96,0:14:02.88,*Default,NTP,0000,0000,0000,,say self is a checking account
+Dialogue: 0,0:14:02.88,0:14:05.12,*Default,NTP,0000,0000,0000,,when you look up its withdraw method
+Dialogue: 0,0:14:05.12,0:14:07.04,*Default,NTP,0000,0000,0000,,skip the one that's in the checking
+Dialogue: 0,0:14:07.04,0:14:08.32,*Default,NTP,0000,0000,0000,,account class
+Dialogue: 0,0:14:08.32,0:14:10.48,*Default,NTP,0000,0000,0000,,and go find the one in the account class
+Dialogue: 0,0:14:10.48,0:14:12.80,*Default,NTP,0000,0000,0000,,instead
+Dialogue: 0,0:14:12.80,0:14:14.56,*Default,NTP,0000,0000,0000,,we could have said this explicitly we
+Dialogue: 0,0:14:14.56,0:14:16.24,*Default,NTP,0000,0000,0000,,could have said go find the one in the
+Dialogue: 0,0:14:16.24,0:14:17.68,*Default,NTP,0000,0000,0000,,account class if we kind of knew where
+Dialogue: 0,0:14:17.68,0:14:18.64,*Default,NTP,0000,0000,0000,,to look
+Dialogue: 0,0:14:18.64,0:14:22.00,*Default,NTP,0000,0000,0000,,this is asking python to find it for you
+Dialogue: 0,0:14:22.00,0:14:24.40,*Default,NTP,0000,0000,0000,,saying you know python you know about
+Dialogue: 0,0:14:24.40,0:14:26.96,*Default,NTP,0000,0000,0000,,you know what the parent
+Dialogue: 0,0:14:26.96,0:14:29.36,*Default,NTP,0000,0000,0000,,the super class of or base class of
+Dialogue: 0,0:14:29.36,0:14:30.00,*Default,NTP,0000,0000,0000,,checking account
+Dialogue: 0,0:14:30.00,0:14:33.12,*Default,NTP,0000,0000,0000,,is so why don't you go find that version
+Dialogue: 0,0:14:33.12,0:14:34.88,*Default,NTP,0000,0000,0000,,of withdraw
+Dialogue: 0,0:14:34.88,0:14:37.68,*Default,NTP,0000,0000,0000,,that's what this says and um this
+Dialogue: 0,0:14:37.68,0:14:39.68,*Default,NTP,0000,0000,0000,,actually wasn't always the syntax in
+Dialogue: 0,0:14:39.68,0:14:41.12,*Default,NTP,0000,0000,0000,,python there was like a different
+Dialogue: 0,0:14:41.12,0:14:44.00,*Default,NTP,0000,0000,0000,,version of this in python 2 i think
+Dialogue: 0,0:14:44.00,0:14:47.20,*Default,NTP,0000,0000,0000,,it works fine people do use it and
+Dialogue: 0,0:14:47.20,0:14:49.28,*Default,NTP,0000,0000,0000,,it's a very subtle thing it's basically
+Dialogue: 0,0:14:49.28,0:14:50.48,*Default,NTP,0000,0000,0000,,saying
+Dialogue: 0,0:14:50.48,0:14:52.56,*Default,NTP,0000,0000,0000,,i want something that's just like self
+Dialogue: 0,0:14:52.56,0:14:54.40,*Default,NTP,0000,0000,0000,,except for it ignores the withdrawal
+Dialogue: 0,0:14:54.40,0:14:56.08,*Default,NTP,0000,0000,0000,,within the checking account and all goes
+Dialogue: 0,0:14:56.08,0:14:58.08,*Default,NTP,0000,0000,0000,,and finds the one that was there before
+Dialogue: 0,0:14:58.08,0:15:01.12,*Default,NTP,0000,0000,0000,,checking account was ever defined which
+Dialogue: 0,0:15:01.12,0:15:02.40,*Default,NTP,0000,0000,0000,,um you know you could say that
+Dialogue: 0,0:15:02.40,0:15:04.96,*Default,NTP,0000,0000,0000,,explicitly go find the accounts withdraw
+Dialogue: 0,0:15:04.96,0:15:06.72,*Default,NTP,0000,0000,0000,,or you could have python look it up for
+Dialogue: 0,0:15:06.72,0:15:09.04,*Default,NTP,0000,0000,0000,,you is it weird john that you don't have
+Dialogue: 0,0:15:09.04,0:15:10.84,*Default,NTP,0000,0000,0000,,to pass self when you use the
+Dialogue: 0,0:15:10.84,0:15:12.32,*Default,NTP,0000,0000,0000,,supernotation
+Dialogue: 0,0:15:12.32,0:15:14.00,*Default,NTP,0000,0000,0000,,yeah so that's an interesting thing is
+Dialogue: 0,0:15:14.00,0:15:15.36,*Default,NTP,0000,0000,0000,,that super isn't
+Dialogue: 0,0:15:15.36,0:15:19.04,*Default,NTP,0000,0000,0000,,referring to the account class it's like
+Dialogue: 0,0:15:19.04,0:15:21.76,*Default,NTP,0000,0000,0000,,referring to a version of self as if
+Dialogue: 0,0:15:21.76,0:15:23.04,*Default,NTP,0000,0000,0000,,account where it's
+Dialogue: 0,0:15:23.04,0:15:24.64,*Default,NTP,0000,0000,0000,,class instead of checking account where
+Dialogue: 0,0:15:24.64,0:15:26.24,*Default,NTP,0000,0000,0000,,it's class so it's doing two things at
+Dialogue: 0,0:15:26.24,0:15:27.92,*Default,NTP,0000,0000,0000,,once it's going and finding the account
+Dialogue: 0,0:15:27.92,0:15:28.64,*Default,NTP,0000,0000,0000,,class
+Dialogue: 0,0:15:28.64,0:15:31.44,*Default,NTP,0000,0000,0000,,and it's also filling in self for the
+Dialogue: 0,0:15:31.44,0:15:32.48,*Default,NTP,0000,0000,0000,,withdraw method
+Dialogue: 0,0:15:32.48,0:15:34.00,*Default,NTP,0000,0000,0000,,so that you don't have to pass it in
+Dialogue: 0,0:15:34.00,0:15:36.00,*Default,NTP,0000,0000,0000,,explicitly
+Dialogue: 0,0:15:36.00,0:15:39.28,*Default,NTP,0000,0000,0000,,it is a lot to just like have a
+Dialogue: 0,0:15:39.28,0:15:41.44,*Default,NTP,0000,0000,0000,,built-in function call with no arguments
+Dialogue: 0,0:15:41.44,0:15:44.48,*Default,NTP,0000,0000,0000,,and somehow it does all that magic
+Dialogue: 0,0:15:44.48,0:15:46.32,*Default,NTP,0000,0000,0000,,that is what it is so you know you don't
+Dialogue: 0,0:15:46.32,0:15:48.16,*Default,NTP,0000,0000,0000,,have to memorize this we don't
+Dialogue: 0,0:15:48.16,0:15:50.00,*Default,NTP,0000,0000,0000,,test you on it or anything like that
+Dialogue: 0,0:15:50.00,0:15:52.08,*Default,NTP,0000,0000,0000,,this one is a little bit more explicit
+Dialogue: 0,0:15:52.08,0:15:53.44,*Default,NTP,0000,0000,0000,,but it does mean that you have to be
+Dialogue: 0,0:15:53.44,0:15:55.36,*Default,NTP,0000,0000,0000,,redundant you have to say like oh
+Dialogue: 0,0:15:55.36,0:15:57.52,*Default,NTP,0000,0000,0000,,the account is this base class and
+Dialogue: 0,0:15:57.52,0:15:58.88,*Default,NTP,0000,0000,0000,,that's the thing that i want to get the
+Dialogue: 0,0:15:58.88,0:16:00.72,*Default,NTP,0000,0000,0000,,withdrawal function from
+Dialogue: 0,0:16:00.72,0:16:02.48,*Default,NTP,0000,0000,0000,,yeah great question and that's exactly
+Dialogue: 0,0:16:02.48,0:16:04.24,*Default,NTP,0000,0000,0000,,right so if there weren't
+Dialogue: 0,0:16:04.24,0:16:06.56,*Default,NTP,0000,0000,0000,,a duplication or an overriding of
+Dialogue: 0,0:16:06.56,0:16:07.28,*Default,NTP,0000,0000,0000,,withdrawal
+Dialogue: 0,0:16:07.28,0:16:08.80,*Default,NTP,0000,0000,0000,,where it existed in both checking
+Dialogue: 0,0:16:08.80,0:16:11.20,*Default,NTP,0000,0000,0000,,account and the base class account
+Dialogue: 0,0:16:11.20,0:16:12.72,*Default,NTP,0000,0000,0000,,then you wouldn't need super this is
+Dialogue: 0,0:16:12.72,0:16:14.56,*Default,NTP,0000,0000,0000,,strictly a thing for when you have
+Dialogue: 0,0:16:14.56,0:16:15.44,*Default,NTP,0000,0000,0000,,inheritance
+Dialogue: 0,0:16:15.44,0:16:18.00,*Default,NTP,0000,0000,0000,,and you're using the same method name in
+Dialogue: 0,0:16:18.00,0:16:20.48,*Default,NTP,0000,0000,0000,,both the subclass and the base class
+Dialogue: 0,0:16:20.48,0:16:21.76,*Default,NTP,0000,0000,0000,,although i would argue you probably
+Dialogue: 0,0:16:21.76,0:16:23.84,*Default,NTP,0000,0000,0000,,should still do it as sort of a built-in
+Dialogue: 0,0:16:23.84,0:16:25.28,*Default,NTP,0000,0000,0000,,documentation
+Dialogue: 0,0:16:25.28,0:16:27.12,*Default,NTP,0000,0000,0000,,so that the user doesn't have to like
+Dialogue: 0,0:16:27.12,0:16:28.40,*Default,NTP,0000,0000,0000,,you know scroll through your class to
+Dialogue: 0,0:16:28.40,0:16:30.32,*Default,NTP,0000,0000,0000,,figure out which one it's sort of nice
+Dialogue: 0,0:16:30.32,0:16:32.16,*Default,NTP,0000,0000,0000,,the thing i like about the making the
+Dialogue: 0,0:16:32.16,0:16:34.24,*Default,NTP,0000,0000,0000,,explicit is you're telling
+Dialogue: 0,0:16:34.24,0:16:35.92,*Default,NTP,0000,0000,0000,,somebody which one is it going to as
+Dialogue: 0,0:16:35.92,0:16:37.28,*Default,NTP,0000,0000,0000,,opposed to relying on
+Dialogue: 0,0:16:37.28,0:16:39.12,*Default,NTP,0000,0000,0000,,some default and then what if somebody
+Dialogue: 0,0:16:39.12,0:16:40.40,*Default,NTP,0000,0000,0000,,actually comes in and puts up a draw
+Dialogue: 0,0:16:40.40,0:16:42.08,*Default,NTP,0000,0000,0000,,function later on
+Dialogue: 0,0:16:42.08,0:16:44.56,*Default,NTP,0000,0000,0000,,i mean do you so sometimes it's good to
+Dialogue: 0,0:16:44.56,0:16:46.08,*Default,NTP,0000,0000,0000,,make things explicit even if there's a
+Dialogue: 0,0:16:46.08,0:16:47.04,*Default,NTP,0000,0000,0000,,default um
+Dialogue: 0,0:16:47.04,0:16:50.24,*Default,NTP,0000,0000,0000,,response you know yeah
+Dialogue: 0,0:16:50.24,0:16:51.84,*Default,NTP,0000,0000,0000,,but one thing i would say is like if you
+Dialogue: 0,0:16:51.84,0:16:53.68,*Default,NTP,0000,0000,0000,,have a deposit twice which is like
+Dialogue: 0,0:16:53.68,0:16:54.56,*Default,NTP,0000,0000,0000,,totally new
+Dialogue: 0,0:16:54.56,0:16:56.72,*Default,NTP,0000,0000,0000,,which is fine your your subclass can
+Dialogue: 0,0:16:56.72,0:16:59.76,*Default,NTP,0000,0000,0000,,have totally new stuff in it um
+Dialogue: 0,0:16:59.76,0:17:02.08,*Default,NTP,0000,0000,0000,,and what you want to do is deposit this
+Dialogue: 0,0:17:02.08,0:17:03.68,*Default,NTP,0000,0000,0000,,amount twice
+Dialogue: 0,0:17:03.68,0:17:06.72,*Default,NTP,0000,0000,0000,,you can just write self.deposit that
+Dialogue: 0,0:17:06.72,0:17:07.52,*Default,NTP,0000,0000,0000,,amount
+Dialogue: 0,0:17:07.52,0:17:09.76,*Default,NTP,0000,0000,0000,,and then do it again you don't really
+Dialogue: 0,0:17:09.76,0:17:11.84,*Default,NTP,0000,0000,0000,,need to use any supers here or anything
+Dialogue: 0,0:17:11.84,0:17:12.72,*Default,NTP,0000,0000,0000,,like that
+Dialogue: 0,0:17:12.72,0:17:14.24,*Default,NTP,0000,0000,0000,,and you can trust that python will look
+Dialogue: 0,0:17:14.24,0:17:16.24,*Default,NTP,0000,0000,0000,,it up for you correctly
+Dialogue: 0,0:17:16.24,0:17:18.56,*Default,NTP,0000,0000,0000,,yeah good question so the question was
+Dialogue: 0,0:17:18.56,0:17:19.68,*Default,NTP,0000,0000,0000,,in this example
+Dialogue: 0,0:17:19.68,0:17:22.88,*Default,NTP,0000,0000,0000,,if we made an a but we passed in some
+Dialogue: 0,0:17:22.88,0:17:25.44,*Default,NTP,0000,0000,0000,,argument when trying to construct an a
+Dialogue: 0,0:17:25.44,0:17:26.48,*Default,NTP,0000,0000,0000,,would you get an error
+Dialogue: 0,0:17:26.48,0:17:28.88,*Default,NTP,0000,0000,0000,,and the answer is yes since there's no
+Dialogue: 0,0:17:28.88,0:17:30.08,*Default,NTP,0000,0000,0000,,in it
+Dialogue: 0,0:17:30.08,0:17:33.76,*Default,NTP,0000,0000,0000,,um it's not expecting any arguments
+Dialogue: 0,0:17:33.76,0:17:36.64,*Default,NTP,0000,0000,0000,,so um by the way i've always thought
+Dialogue: 0,0:17:36.64,0:17:38.40,*Default,NTP,0000,0000,0000,,this was weird that python let you build
+Dialogue: 0,0:17:38.40,0:17:41.84,*Default,NTP,0000,0000,0000,,a class without a constructor
+Dialogue: 0,0:17:42.16,0:17:44.00,*Default,NTP,0000,0000,0000,,it is kind of a funny thing but if we
+Dialogue: 0,0:17:44.00,0:17:47.44,*Default,NTP,0000,0000,0000,,have no constructor if it's just like
+Dialogue: 0,0:17:47.44,0:17:50.56,*Default,NTP,0000,0000,0000,,no constructor here
+Dialogue: 0,0:17:50.56,0:17:53.76,*Default,NTP,0000,0000,0000,,yeah strangely enough if you had an
+Dialogue: 0,0:17:53.76,0:17:54.40,*Default,NTP,0000,0000,0000,,account
+Dialogue: 0,0:17:54.40,0:17:56.64,*Default,NTP,0000,0000,0000,,that you've managed to create correct
+Dialogue: 0,0:17:56.64,0:17:57.76,*Default,NTP,0000,0000,0000,,successfully
+Dialogue: 0,0:17:57.76,0:17:59.76,*Default,NTP,0000,0000,0000,,while it doesn't have a balance you
+Dialogue: 0,0:17:59.76,0:18:01.76,*Default,NTP,0000,0000,0000,,could give it one later
+Dialogue: 0,0:18:01.76,0:18:03.76,*Default,NTP,0000,0000,0000,,so while this is possible it's rarely
+Dialogue: 0,0:18:03.76,0:18:05.36,*Default,NTP,0000,0000,0000,,terribly useful
+Dialogue: 0,0:18:05.36,0:18:06.96,*Default,NTP,0000,0000,0000,,the next question was do you have to
+Dialogue: 0,0:18:06.96,0:18:09.76,*Default,NTP,0000,0000,0000,,call init init with the underscores or
+Dialogue: 0,0:18:09.76,0:18:11.68,*Default,NTP,0000,0000,0000,,could you call it something else
+Dialogue: 0,0:18:11.68,0:18:13.68,*Default,NTP,0000,0000,0000,,you have to use the inet it's not a
+Dialogue: 0,0:18:13.68,0:18:15.04,*Default,NTP,0000,0000,0000,,convention because
+Dialogue: 0,0:18:15.04,0:18:17.04,*Default,NTP,0000,0000,0000,,when you call the constructor it has to
+Dialogue: 0,0:18:17.04,0:18:19.04,*Default,NTP,0000,0000,0000,,know which function to call
+Dialogue: 0,0:18:19.04,0:18:21.04,*Default,NTP,0000,0000,0000,,and that's a special name and it always
+Dialogue: 0,0:18:21.04,0:18:22.72,*Default,NTP,0000,0000,0000,,has to be underscore underscore net
+Dialogue: 0,0:18:22.72,0:18:24.80,*Default,NTP,0000,0000,0000,,underscore underscore
+Dialogue: 0,0:18:24.80,0:18:26.72,*Default,NTP,0000,0000,0000,,the next question was whether you're
+Dialogue: 0,0:18:26.72,0:18:28.72,*Default,NTP,0000,0000,0000,,supposed to know all of the special
+Dialogue: 0,0:18:28.72,0:18:30.56,*Default,NTP,0000,0000,0000,,method names in python
+Dialogue: 0,0:18:30.56,0:18:32.64,*Default,NTP,0000,0000,0000,,like underscore underscore init
+Dialogue: 0,0:18:32.64,0:18:34.00,*Default,NTP,0000,0000,0000,,underscore underscore
+Dialogue: 0,0:18:34.00,0:18:35.36,*Default,NTP,0000,0000,0000,,and some other ones that we haven't
+Dialogue: 0,0:18:35.36,0:18:37.60,*Default,NTP,0000,0000,0000,,covered yet like underscore underscore
+Dialogue: 0,0:18:37.60,0:18:38.32,*Default,NTP,0000,0000,0000,,stir
+Dialogue: 0,0:18:38.32,0:18:40.64,*Default,NTP,0000,0000,0000,,underscore underscore and the general
+Dialogue: 0,0:18:40.64,0:18:42.08,*Default,NTP,0000,0000,0000,,answer is that we will cover this
+Dialogue: 0,0:18:42.08,0:18:43.52,*Default,NTP,0000,0000,0000,,on wednesday tell you what you need to
+Dialogue: 0,0:18:43.52,0:18:45.36,*Default,NTP,0000,0000,0000,,know and what you don't know but here's
+Dialogue: 0,0:18:45.36,0:18:46.64,*Default,NTP,0000,0000,0000,,our answer
+Dialogue: 0,0:18:46.64,0:18:48.72,*Default,NTP,0000,0000,0000,,well you have to know the constructors
+Dialogue: 0,0:18:48.72,0:18:50.16,*Default,NTP,0000,0000,0000,,because you can't really build a class
+Dialogue: 0,0:18:50.16,0:18:51.44,*Default,NTP,0000,0000,0000,,without you can't build an object
+Dialogue: 0,0:18:51.44,0:18:52.64,*Default,NTP,0000,0000,0000,,without them
+Dialogue: 0,0:18:52.64,0:18:54.80,*Default,NTP,0000,0000,0000,,and the str function is just what
+Dialogue: 0,0:18:54.80,0:18:56.16,*Default,NTP,0000,0000,0000,,happens when you call
+Dialogue: 0,0:18:56.16,0:18:58.00,*Default,NTP,0000,0000,0000,,print on an object that's not
+Dialogue: 0,0:18:58.00,0:18:59.76,*Default,NTP,0000,0000,0000,,fundamentally defined
+Dialogue: 0,0:18:59.76,0:19:01.12,*Default,NTP,0000,0000,0000,,and so you should know how those
+Dialogue: 0,0:19:01.12,0:19:03.36,*Default,NTP,0000,0000,0000,,functions work and and then but there's
+Dialogue: 0,0:19:03.36,0:19:03.76,*Default,NTP,0000,0000,0000,,no
+Dialogue: 0,0:19:03.76,0:19:05.36,*Default,NTP,0000,0000,0000,,so yes you absolutely should know how
+Dialogue: 0,0:19:05.36,0:19:07.20,*Default,NTP,0000,0000,0000,,the the constructor and the print
+Dialogue: 0,0:19:07.20,0:19:08.96,*Default,NTP,0000,0000,0000,,functions work or the str and the init
+Dialogue: 0,0:19:08.96,0:19:10.16,*Default,NTP,0000,0000,0000,,functions yeah
+Dialogue: 0,0:19:10.16,0:19:13.60,*Default,NTP,0000,0000,0000,,so we'll go over the stir and wrapper
+Dialogue: 0,0:19:13.60,0:19:16.16,*Default,NTP,0000,0000,0000,,functions in wednesday's lecture along
+Dialogue: 0,0:19:16.16,0:19:17.84,*Default,NTP,0000,0000,0000,,with a couple of others
+Dialogue: 0,0:19:17.84,0:19:19.44,*Default,NTP,0000,0000,0000,,you don't have to know all of the
+Dialogue: 0,0:19:19.44,0:19:21.60,*Default,NTP,0000,0000,0000,,special method names there's like a
+Dialogue: 0,0:19:21.60,0:19:23.60,*Default,NTP,0000,0000,0000,,long list of stuff that's built into
+Dialogue: 0,0:19:23.60,0:19:24.88,*Default,NTP,0000,0000,0000,,python
+Dialogue: 0,0:19:24.88,0:19:27.52,*Default,NTP,0000,0000,0000,,and uh we'll give you a kind of overview
+Dialogue: 0,0:19:27.52,0:19:29.12,*Default,NTP,0000,0000,0000,,of what they all are in wednesday's
+Dialogue: 0,0:19:29.12,0:19:30.00,*Default,NTP,0000,0000,0000,,lecture but
+Dialogue: 0,0:19:30.00,0:19:31.84,*Default,NTP,0000,0000,0000,,you're not expected to memorize them all
+Dialogue: 0,0:19:31.84,0:19:33.20,*Default,NTP,0000,0000,0000,,but the ones that create
+Dialogue: 0,0:19:33.20,0:19:34.80,*Default,NTP,0000,0000,0000,,string representations are particularly
+Dialogue: 0,0:19:34.80,0:19:37.12,*Default,NTP,0000,0000,0000,,important and as well as in it
+Dialogue: 0,0:19:37.12,0:19:40.16,*Default,NTP,0000,0000,0000,,okay so um the question was
+Dialogue: 0,0:19:40.16,0:19:44.16,*Default,NTP,0000,0000,0000,,why does this multiple inheritance
+Dialogue: 0,0:19:44.16,0:19:47.20,*Default,NTP,0000,0000,0000,,version of an account
+Dialogue: 0,0:19:47.20,0:19:50.56,*Default,NTP,0000,0000,0000,,give you only 19 when you deposit 20
+Dialogue: 0,0:19:50.56,0:19:53.84,*Default,NTP,0000,0000,0000,,well in fact you've paid a
+Dialogue: 0,0:19:53.84,0:19:58.08,*Default,NTP,0000,0000,0000,,two dollar fee somewhere
+Dialogue: 0,0:19:58.08,0:20:00.24,*Default,NTP,0000,0000,0000,,because there was one dollar in there
+Dialogue: 0,0:20:00.24,0:20:01.12,*Default,NTP,0000,0000,0000,,already
+Dialogue: 0,0:20:01.12,0:20:03.36,*Default,NTP,0000,0000,0000,,so depositing 20 should get you to 21.
+Dialogue: 0,0:20:03.36,0:20:06.64,*Default,NTP,0000,0000,0000,,but instead it got you to 19 somehow
+Dialogue: 0,0:20:06.64,0:20:08.88,*Default,NTP,0000,0000,0000,,why is that well let's look back at the
+Dialogue: 0,0:20:08.88,0:20:10.48,*Default,NTP,0000,0000,0000,,code
+Dialogue: 0,0:20:10.48,0:20:13.04,*Default,NTP,0000,0000,0000,,we came up with a savings account which
+Dialogue: 0,0:20:13.04,0:20:15.52,*Default,NTP,0000,0000,0000,,has a deposit fee of two dollars
+Dialogue: 0,0:20:15.52,0:20:17.68,*Default,NTP,0000,0000,0000,,and what happens when you deposit into
+Dialogue: 0,0:20:17.68,0:20:18.72,*Default,NTP,0000,0000,0000,,your savings account
+Dialogue: 0,0:20:18.72,0:20:21.04,*Default,NTP,0000,0000,0000,,is that you actually deposit the twenty
+Dialogue: 0,0:20:21.04,0:20:23.36,*Default,NTP,0000,0000,0000,,dollars minus two
+Dialogue: 0,0:20:23.36,0:20:25.28,*Default,NTP,0000,0000,0000,,so we deposited eighteen dollars we had
+Dialogue: 0,0:20:25.28,0:20:27.68,*Default,NTP,0000,0000,0000,,one that's how we got to nineteen
+Dialogue: 0,0:20:27.68,0:20:30.32,*Default,NTP,0000,0000,0000,,why is it that this deposit got called
+Dialogue: 0,0:20:30.32,0:20:32.72,*Default,NTP,0000,0000,0000,,instead of accounts deposit
+Dialogue: 0,0:20:32.72,0:20:35.76,*Default,NTP,0000,0000,0000,,well um when
+Dialogue: 0,0:20:35.76,0:20:38.80,*Default,NTP,0000,0000,0000,,you're finding which method to call you
+Dialogue: 0,0:20:38.80,0:20:39.28,*Default,NTP,0000,0000,0000,,look
+Dialogue: 0,0:20:39.28,0:20:42.08,*Default,NTP,0000,0000,0000,,in the class first of the thing that
+Dialogue: 0,0:20:42.08,0:20:42.48,*Default,NTP,0000,0000,0000,,you're
+Dialogue: 0,0:20:42.48,0:20:44.96,*Default,NTP,0000,0000,0000,,depositing into and if you don't find it
+Dialogue: 0,0:20:44.96,0:20:45.52,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:20:45.52,0:20:48.88,*Default,NTP,0000,0000,0000,,then you look into its base classes
+Dialogue: 0,0:20:48.88,0:20:51.76,*Default,NTP,0000,0000,0000,,and then only after you've looked into
+Dialogue: 0,0:20:51.76,0:20:53.36,*Default,NTP,0000,0000,0000,,its base classes do you look in the base
+Dialogue: 0,0:20:53.36,0:20:55.04,*Default,NTP,0000,0000,0000,,class of the base class which would find
+Dialogue: 0,0:20:55.04,0:20:56.88,*Default,NTP,0000,0000,0000,,you the accounts deposit method which
+Dialogue: 0,0:20:56.88,0:20:58.00,*Default,NTP,0000,0000,0000,,doesn't do this
+Dialogue: 0,0:20:58.00,0:21:01.20,*Default,NTP,0000,0000,0000,,nasty thing of taking out a deposit fee
+Dialogue: 0,0:21:01.20,0:21:04.72,*Default,NTP,0000,0000,0000,,so um yeah so basically you're finding
+Dialogue: 0,0:21:04.72,0:21:05.44,*Default,NTP,0000,0000,0000,,methods
+Dialogue: 0,0:21:05.44,0:21:07.52,*Default,NTP,0000,0000,0000,,here well there kind of aren't any
+Dialogue: 0,0:21:07.52,0:21:08.96,*Default,NTP,0000,0000,0000,,except for the init
+Dialogue: 0,0:21:08.96,0:21:11.20,*Default,NTP,0000,0000,0000,,then here then here and then the account
+Dialogue: 0,0:21:11.20,0:21:12.88,*Default,NTP,0000,0000,0000,,class and why the account class even
+Dialogue: 0,0:21:12.88,0:21:14.16,*Default,NTP,0000,0000,0000,,though it's not listed here
+Dialogue: 0,0:21:14.16,0:21:15.76,*Default,NTP,0000,0000,0000,,well that's because it's the base class
+Dialogue: 0,0:21:15.76,0:21:18.40,*Default,NTP,0000,0000,0000,,of these
+Dialogue: 0,0:21:18.64,0:21:21.28,*Default,NTP,0000,0000,0000,,that's right in general and multiple
+Dialogue: 0,0:21:21.28,0:21:22.40,*Default,NTP,0000,0000,0000,,inheritance
+Dialogue: 0,0:21:22.40,0:21:24.96,*Default,NTP,0000,0000,0000,,you'd look in both of these before you
+Dialogue: 0,0:21:24.96,0:21:25.92,*Default,NTP,0000,0000,0000,,ever looked in
+Dialogue: 0,0:21:25.92,0:21:29.12,*Default,NTP,0000,0000,0000,,the base class of one of these so think
+Dialogue: 0,0:21:29.12,0:21:30.48,*Default,NTP,0000,0000,0000,,of it like a tree
+Dialogue: 0,0:21:30.48,0:21:32.80,*Default,NTP,0000,0000,0000,,there's the account class at the root it
+Dialogue: 0,0:21:32.80,0:21:35.20,*Default,NTP,0000,0000,0000,,has two subclasses checking and savings
+Dialogue: 0,0:21:35.20,0:21:36.56,*Default,NTP,0000,0000,0000,,and then you have a subclass you're just
+Dialogue: 0,0:21:36.56,0:21:39.92,*Default,NTP,0000,0000,0000,,going to work your way back up the tree
+Dialogue: 0,0:21:39.92,0:21:41.20,*Default,NTP,0000,0000,0000,,and if you're wondering whether it ever
+Dialogue: 0,0:21:41.20,0:21:43.12,*Default,NTP,0000,0000,0000,,gets messy to figure out which thing
+Dialogue: 0,0:21:43.12,0:21:44.40,*Default,NTP,0000,0000,0000,,happens first
+Dialogue: 0,0:21:44.40,0:21:46.80,*Default,NTP,0000,0000,0000,,the answer is definitely yes in fact
+Dialogue: 0,0:21:46.80,0:21:48.08,*Default,NTP,0000,0000,0000,,like
+Dialogue: 0,0:21:48.08,0:21:50.00,*Default,NTP,0000,0000,0000,,python's now on its third version of how
+Dialogue: 0,0:21:50.00,0:21:51.76,*Default,NTP,0000,0000,0000,,to resolve this question and because
+Dialogue: 0,0:21:51.76,0:21:53.60,*Default,NTP,0000,0000,0000,,there were bugs in the first two so
+Dialogue: 0,0:21:53.60,0:21:55.44,*Default,NTP,0000,0000,0000,,uh don't worry about it this is beyond
+Dialogue: 0,0:21:55.44,0:21:56.64,*Default,NTP,0000,0000,0000,,the scope of the course but
+Dialogue: 0,0:21:56.64,0:22:00.16,*Default,NTP,0000,0000,0000,,multiple inheritance does leave lots of
+Dialogue: 0,0:22:00.16,0:22:02.08,*Default,NTP,0000,0000,0000,,uh computer scientists scratching their
+Dialogue: 0,0:22:02.08,0:22:03.36,*Default,NTP,0000,0000,0000,,heads about what's exactly going to
+Dialogue: 0,0:22:03.36,0:22:04.96,*Default,NTP,0000,0000,0000,,happen which is why in general you
+Dialogue: 0,0:22:04.96,0:22:06.40,*Default,NTP,0000,0000,0000,,should try to avoid it
+Dialogue: 0,0:22:06.40,0:22:08.24,*Default,NTP,0000,0000,0000,,yeah i agree i think one level of
+Dialogue: 0,0:22:08.24,0:22:10.64,*Default,NTP,0000,0000,0000,,inheritance is is more than i even care
+Dialogue: 0,0:22:10.64,0:22:11.68,*Default,NTP,0000,0000,0000,,for but i don't think
+Dialogue: 0,0:22:11.68,0:22:12.96,*Default,NTP,0000,0000,0000,,you should be very careful when you go
+Dialogue: 0,0:22:12.96,0:22:16.08,*Default,NTP,0000,0000,0000,,beyond that yeah so the question is
+Dialogue: 0,0:22:16.08,0:22:18.48,*Default,NTP,0000,0000,0000,,is this slide have anything to do with
+Dialogue: 0,0:22:18.48,0:22:20.56,*Default,NTP,0000,0000,0000,,midterms this did come from a past
+Dialogue: 0,0:22:20.56,0:22:24.32,*Default,NTP,0000,0000,0000,,midterm um so the
+Dialogue: 0,0:22:24.32,0:22:26.08,*Default,NTP,0000,0000,0000,,we won't ask this kind of question
+Dialogue: 0,0:22:26.08,0:22:28.08,*Default,NTP,0000,0000,0000,,because um
+Dialogue: 0,0:22:28.08,0:22:29.44,*Default,NTP,0000,0000,0000,,you know you could just run it and see
+Dialogue: 0,0:22:29.44,0:22:31.44,*Default,NTP,0000,0000,0000,,what happens um
+Dialogue: 0,0:22:31.44,0:22:32.88,*Default,NTP,0000,0000,0000,,i think this semester we're just going
+Dialogue: 0,0:22:32.88,0:22:35.36,*Default,NTP,0000,0000,0000,,to focus more on getting things done
+Dialogue: 0,0:22:35.36,0:22:37.12,*Default,NTP,0000,0000,0000,,rather than knowing exactly the
+Dialogue: 0,0:22:37.12,0:22:39.44,*Default,NTP,0000,0000,0000,,mechanics but exactly the mechanics of
+Dialogue: 0,0:22:39.44,0:22:40.96,*Default,NTP,0000,0000,0000,,how the object system works as we've
+Dialogue: 0,0:22:40.96,0:22:42.56,*Default,NTP,0000,0000,0000,,described it is part of the course
+Dialogue: 0,0:22:42.56,0:22:44.72,*Default,NTP,0000,0000,0000,,so you should know it um but i would
+Dialogue: 0,0:22:44.72,0:22:46.32,*Default,NTP,0000,0000,0000,,guess there's more of a focus this
+Dialogue: 0,0:22:46.32,0:22:47.60,*Default,NTP,0000,0000,0000,,semester on like
+Dialogue: 0,0:22:47.60,0:22:49.20,*Default,NTP,0000,0000,0000,,you know building things implementing
+Dialogue: 0,0:22:49.20,0:22:51.28,*Default,NTP,0000,0000,0000,,things rather than tracing through a
+Dialogue: 0,0:22:51.28,0:22:52.80,*Default,NTP,0000,0000,0000,,complicated example
+Dialogue: 0,0:22:52.80,0:22:55.52,*Default,NTP,0000,0000,0000,,because of the online format and and
+Dialogue: 0,0:22:55.52,0:22:56.56,*Default,NTP,0000,0000,0000,,that's fine for
+Dialogue: 0,0:22:56.56,0:22:58.08,*Default,NTP,0000,0000,0000,,life as well because you know getting
+Dialogue: 0,0:22:58.08,0:23:00.08,*Default,NTP,0000,0000,0000,,things done is is more important than
+Dialogue: 0,0:23:00.08,0:23:00.88,*Default,NTP,0000,0000,0000,,understanding
+Dialogue: 0,0:23:00.88,0:23:03.92,*Default,NTP,0000,0000,0000,,my very convoluted code uh but you know
+Dialogue: 0,0:23:03.92,0:23:05.44,*Default,NTP,0000,0000,0000,,there will be cases in which you find
+Dialogue: 0,0:23:05.44,0:23:06.88,*Default,NTP,0000,0000,0000,,some complicated things out there in the
+Dialogue: 0,0:23:06.88,0:23:08.40,*Default,NTP,0000,0000,0000,,world and you have to trace through them
+Dialogue: 0,0:23:08.40,0:23:11.28,*Default,NTP,0000,0000,0000,,so that is a useful skill to develop
+Dialogue: 0,0:23:11.28,0:23:13.12,*Default,NTP,0000,0000,0000,,yeah good question so how do you keep
+Dialogue: 0,0:23:13.12,0:23:15.04,*Default,NTP,0000,0000,0000,,track of what's an instance attribute
+Dialogue: 0,0:23:15.04,0:23:16.96,*Default,NTP,0000,0000,0000,,and what's a class attribute and which
+Dialogue: 0,0:23:16.96,0:23:18.24,*Default,NTP,0000,0000,0000,,one's which
+Dialogue: 0,0:23:18.24,0:23:20.00,*Default,NTP,0000,0000,0000,,i think instance attributes are just
+Dialogue: 0,0:23:20.00,0:23:21.52,*Default,NTP,0000,0000,0000,,generally more common
+Dialogue: 0,0:23:21.52,0:23:24.80,*Default,NTP,0000,0000,0000,,because usually when you're creating
+Dialogue: 0,0:23:24.80,0:23:28.24,*Default,NTP,0000,0000,0000,,objects you really want to focus on
+Dialogue: 0,0:23:28.24,0:23:30.32,*Default,NTP,0000,0000,0000,,what's true about this particular object
+Dialogue: 0,0:23:30.32,0:23:32.24,*Default,NTP,0000,0000,0000,,and you just store that state as
+Dialogue: 0,0:23:32.24,0:23:35.20,*Default,NTP,0000,0000,0000,,instance attributes but it's not like
+Dialogue: 0,0:23:35.20,0:23:36.00,*Default,NTP,0000,0000,0000,,class attributes
+Dialogue: 0,0:23:36.00,0:23:38.08,*Default,NTP,0000,0000,0000,,don't show up once in a while so you
+Dialogue: 0,0:23:38.08,0:23:39.92,*Default,NTP,0000,0000,0000,,certainly have to know about them
+Dialogue: 0,0:23:39.92,0:23:41.60,*Default,NTP,0000,0000,0000,,uh this particular case where an
+Dialogue: 0,0:23:41.60,0:23:43.52,*Default,NTP,0000,0000,0000,,instance attribute and a class attribute
+Dialogue: 0,0:23:43.52,0:23:44.72,*Default,NTP,0000,0000,0000,,share a name
+Dialogue: 0,0:23:44.72,0:23:46.40,*Default,NTP,0000,0000,0000,,does show up in practice usually when
+Dialogue: 0,0:23:46.40,0:23:48.24,*Default,NTP,0000,0000,0000,,you're trying to get something to do
+Dialogue: 0,0:23:48.24,0:23:51.04,*Default,NTP,0000,0000,0000,,a different behavior than was originally
+Dialogue: 0,0:23:51.04,0:23:52.24,*Default,NTP,0000,0000,0000,,intended so you want to
+Dialogue: 0,0:23:52.24,0:23:54.56,*Default,NTP,0000,0000,0000,,like change the way this particular
+Dialogue: 0,0:23:54.56,0:23:56.08,*Default,NTP,0000,0000,0000,,instance works so that it behaves
+Dialogue: 0,0:23:56.08,0:23:57.92,*Default,NTP,0000,0000,0000,,differently than
+Dialogue: 0,0:23:57.92,0:24:00.80,*Default,NTP,0000,0000,0000,,whoever wrote the class and that you
+Dialogue: 0,0:24:00.80,0:24:01.60,*Default,NTP,0000,0000,0000,,know
+Dialogue: 0,0:24:01.60,0:24:04.08,*Default,NTP,0000,0000,0000,,that is to be avoided when possible but
+Dialogue: 0,0:24:04.08,0:24:05.68,*Default,NTP,0000,0000,0000,,sometimes when you're building off of
+Dialogue: 0,0:24:05.68,0:24:06.96,*Default,NTP,0000,0000,0000,,other people's code and you can't get
+Dialogue: 0,0:24:06.96,0:24:08.16,*Default,NTP,0000,0000,0000,,them to change it then you have to
+Dialogue: 0,0:24:08.16,0:24:10.00,*Default,NTP,0000,0000,0000,,change it yourself by adding an instance
+Dialogue: 0,0:24:10.00,0:24:11.44,*Default,NTP,0000,0000,0000,,attribute that's got the same name as
+Dialogue: 0,0:24:11.44,0:24:12.80,*Default,NTP,0000,0000,0000,,their class attribute
+Dialogue: 0,0:24:12.80,0:24:14.80,*Default,NTP,0000,0000,0000,,so it's not like this never happens uh
+Dialogue: 0,0:24:14.80,0:24:16.24,*Default,NTP,0000,0000,0000,,in practice but
+Dialogue: 0,0:24:16.24,0:24:18.56,*Default,NTP,0000,0000,0000,,it's the rarest of the three cases so
+Dialogue: 0,0:24:18.56,0:24:20.24,*Default,NTP,0000,0000,0000,,most common everything's an instance
+Dialogue: 0,0:24:20.24,0:24:21.04,*Default,NTP,0000,0000,0000,,attribute
+Dialogue: 0,0:24:21.04,0:24:22.88,*Default,NTP,0000,0000,0000,,second most common yeah there's class
+Dialogue: 0,0:24:22.88,0:24:24.08,*Default,NTP,0000,0000,0000,,attributes out there but they have
+Dialogue: 0,0:24:24.08,0:24:25.36,*Default,NTP,0000,0000,0000,,different names than the instance
+Dialogue: 0,0:24:25.36,0:24:26.24,*Default,NTP,0000,0000,0000,,attributes
+Dialogue: 0,0:24:26.24,0:24:27.60,*Default,NTP,0000,0000,0000,,and then the third case is it is
+Dialogue: 0,0:24:27.60,0:24:29.20,*Default,NTP,0000,0000,0000,,possible that you have a name collision
+Dialogue: 0,0:24:29.20,0:24:31.20,*Default,NTP,0000,0000,0000,,and you should know what happens
+Dialogue: 0,0:24:31.20,0:24:32.72,*Default,NTP,0000,0000,0000,,yeah so the question is about this
+Dialogue: 0,0:24:32.72,0:24:34.88,*Default,NTP,0000,0000,0000,,maximum subsequence question
+Dialogue: 0,0:24:34.88,0:24:38.24,*Default,NTP,0000,0000,0000,,from lab four question five
+Dialogue: 0,0:24:38.24,0:24:41.12,*Default,NTP,0000,0000,0000,,uh if you try to trace it you get quite
+Dialogue: 0,0:24:41.12,0:24:42.72,*Default,NTP,0000,0000,0000,,confused because there's just like a lot
+Dialogue: 0,0:24:42.72,0:24:44.40,*Default,NTP,0000,0000,0000,,of calls going on and how does it all
+Dialogue: 0,0:24:44.40,0:24:46.00,*Default,NTP,0000,0000,0000,,fit together
+Dialogue: 0,0:24:46.00,0:24:48.16,*Default,NTP,0000,0000,0000,,so how else might you understand the
+Dialogue: 0,0:24:48.16,0:24:49.44,*Default,NTP,0000,0000,0000,,implementation
+Dialogue: 0,0:24:49.44,0:24:51.28,*Default,NTP,0000,0000,0000,,well i'd say at the outset that it's
+Dialogue: 0,0:24:51.28,0:24:53.84,*Default,NTP,0000,0000,0000,,often the case that tracing through
+Dialogue: 0,0:24:53.84,0:24:57.12,*Default,NTP,0000,0000,0000,,uh tree recursion is not something that
+Dialogue: 0,0:24:57.12,0:24:57.76,*Default,NTP,0000,0000,0000,,humans
+Dialogue: 0,0:24:57.76,0:25:01.12,*Default,NTP,0000,0000,0000,,can tolerate like it's it's just
+Dialogue: 0,0:25:01.12,0:25:04.64,*Default,NTP,0000,0000,0000,,really messy sometimes um so the right
+Dialogue: 0,0:25:04.64,0:25:06.08,*Default,NTP,0000,0000,0000,,answer is to shift the way in which you
+Dialogue: 0,0:25:06.08,0:25:07.28,*Default,NTP,0000,0000,0000,,approach understanding
+Dialogue: 0,0:25:07.28,0:25:09.28,*Default,NTP,0000,0000,0000,,uh implementation to get away from
+Dialogue: 0,0:25:09.28,0:25:11.68,*Default,NTP,0000,0000,0000,,tracing and instead just treat the
+Dialogue: 0,0:25:11.68,0:25:14.40,*Default,NTP,0000,0000,0000,,recursive calls as abstractions they do
+Dialogue: 0,0:25:14.40,0:25:16.00,*Default,NTP,0000,0000,0000,,the thing that they're supposed to do
+Dialogue: 0,0:25:16.00,0:25:18.00,*Default,NTP,0000,0000,0000,,but how they do them is not your problem
+Dialogue: 0,0:25:18.00,0:25:19.52,*Default,NTP,0000,0000,0000,,and then like you can put it together
+Dialogue: 0,0:25:19.52,0:25:20.64,*Default,NTP,0000,0000,0000,,but this is not
+Dialogue: 0,0:25:20.64,0:25:23.52,*Default,NTP,0000,0000,0000,,not like obvious or easy so um so maybe
+Dialogue: 0,0:25:23.52,0:25:25.12,*Default,NTP,0000,0000,0000,,we can talk about that with a particular
+Dialogue: 0,0:25:25.12,0:25:25.92,*Default,NTP,0000,0000,0000,,example so
+Dialogue: 0,0:25:25.92,0:25:28.32,*Default,NTP,0000,0000,0000,,maybe while i read this maybe hani can
+Dialogue: 0,0:25:28.32,0:25:30.56,*Default,NTP,0000,0000,0000,,uh say whether that makes sense to him
+Dialogue: 0,0:25:30.56,0:25:32.64,*Default,NTP,0000,0000,0000,,i i'll add one more thing to it so
+Dialogue: 0,0:25:32.64,0:25:34.72,*Default,NTP,0000,0000,0000,,john's absolutely right that
+Dialogue: 0,0:25:34.72,0:25:37.12,*Default,NTP,0000,0000,0000,,tracing tree recursion is very hard you
+Dialogue: 0,0:25:37.12,0:25:39.76,*Default,NTP,0000,0000,0000,,have to hold a lot in your memory
+Dialogue: 0,0:25:39.76,0:25:42.40,*Default,NTP,0000,0000,0000,,um so one one way to fix it is as he
+Dialogue: 0,0:25:42.40,0:25:43.04,*Default,NTP,0000,0000,0000,,just said
+Dialogue: 0,0:25:43.04,0:25:44.96,*Default,NTP,0000,0000,0000,,is to just think differently about it
+Dialogue: 0,0:25:44.96,0:25:46.80,*Default,NTP,0000,0000,0000,,it's not about tracing it's about
+Dialogue: 0,0:25:46.80,0:25:49.76,*Default,NTP,0000,0000,0000,,thinking about the fundamental nature of
+Dialogue: 0,0:25:49.76,0:25:51.04,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:25:51.04,0:25:53.52,*Default,NTP,0000,0000,0000,,the the functions and they just do what
+Dialogue: 0,0:25:53.52,0:25:55.12,*Default,NTP,0000,0000,0000,,you want them to do and the other is to
+Dialogue: 0,0:25:55.12,0:25:56.72,*Default,NTP,0000,0000,0000,,just use toy examples
+Dialogue: 0,0:25:56.72,0:25:58.64,*Default,NTP,0000,0000,0000,,so if you have really small inputs you
+Dialogue: 0,0:25:58.64,0:26:00.72,*Default,NTP,0000,0000,0000,,can sometimes hold on to the recursion a
+Dialogue: 0,0:26:00.72,0:26:02.24,*Default,NTP,0000,0000,0000,,little bit easier
+Dialogue: 0,0:26:02.24,0:26:03.76,*Default,NTP,0000,0000,0000,,as opposed to something like this that
+Dialogue: 0,0:26:03.76,0:26:05.76,*Default,NTP,0000,0000,0000,,has you know a ridiculous
+Dialogue: 0,0:26:05.76,0:26:09.20,*Default,NTP,0000,0000,0000,,number of steps so um i do think that it
+Dialogue: 0,0:26:09.20,0:26:11.04,*Default,NTP,0000,0000,0000,,does require a slightly different way of
+Dialogue: 0,0:26:11.04,0:26:12.48,*Default,NTP,0000,0000,0000,,thinking as opposed to just drawing the
+Dialogue: 0,0:26:12.48,0:26:14.08,*Default,NTP,0000,0000,0000,,environment map and mapping everything
+Dialogue: 0,0:26:14.08,0:26:14.64,*Default,NTP,0000,0000,0000,,out
+Dialogue: 0,0:26:14.64,0:26:18.00,*Default,NTP,0000,0000,0000,,line by line yeah
+Dialogue: 0,0:26:18.00,0:26:20.96,*Default,NTP,0000,0000,0000,,that is actually great advice is like
+Dialogue: 0,0:26:20.96,0:26:21.36,*Default,NTP,0000,0000,0000,,you know
+Dialogue: 0,0:26:21.36,0:26:23.28,*Default,NTP,0000,0000,0000,,think about maybe a two or three digit
+Dialogue: 0,0:26:23.28,0:26:25.36,*Default,NTP,0000,0000,0000,,example if you want to trace it
+Dialogue: 0,0:26:25.36,0:26:27.44,*Default,NTP,0000,0000,0000,,don't trace a five digit example for
+Dialogue: 0,0:26:27.44,0:26:28.64,*Default,NTP,0000,0000,0000,,something that's going to do something
+Dialogue: 0,0:26:28.64,0:26:29.84,*Default,NTP,0000,0000,0000,,with every digit it's just going to get
+Dialogue: 0,0:26:29.84,0:26:31.04,*Default,NTP,0000,0000,0000,,too messy
+Dialogue: 0,0:26:31.04,0:26:33.28,*Default,NTP,0000,0000,0000,,so how would this go return the maximum
+Dialogue: 0,0:26:33.28,0:26:35.20,*Default,NTP,0000,0000,0000,,sub queen sequence of a
+Dialogue: 0,0:26:35.20,0:26:37.84,*Default,NTP,0000,0000,0000,,length at most t that can be found in
+Dialogue: 0,0:26:37.84,0:26:38.72,*Default,NTP,0000,0000,0000,,the given number
+Dialogue: 0,0:26:38.72,0:26:40.27,*Default,NTP,0000,0000,0000,,n
+Dialogue: 0,0:26:40.27,0:26:41.76,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:26:41.76,0:26:45.44,*Default,NTP,0000,0000,0000,,well if t is zero then i think we only
+Dialogue: 0,0:26:45.44,0:26:46.96,*Default,NTP,0000,0000,0000,,have one choice
+Dialogue: 0,0:26:46.96,0:26:48.64,*Default,NTP,0000,0000,0000,,which is to not take any of the digits
+Dialogue: 0,0:26:48.64,0:26:50.56,*Default,NTP,0000,0000,0000,,of n at all
+Dialogue: 0,0:26:50.56,0:26:52.32,*Default,NTP,0000,0000,0000,,but then we have to decide like are we
+Dialogue: 0,0:26:52.32,0:26:54.08,*Default,NTP,0000,0000,0000,,keeping the first digit of n
+Dialogue: 0,0:26:54.08,0:26:55.60,*Default,NTP,0000,0000,0000,,or i guess the last edge of n is the
+Dialogue: 0,0:26:55.60,0:26:56.88,*Default,NTP,0000,0000,0000,,easiest thing to access because we can
+Dialogue: 0,0:26:56.88,0:26:58.24,*Default,NTP,0000,0000,0000,,access it like that are we keeping the
+Dialogue: 0,0:26:58.24,0:26:59.68,*Default,NTP,0000,0000,0000,,last digit of n
+Dialogue: 0,0:26:59.68,0:27:04.00,*Default,NTP,0000,0000,0000,,or not so um
+Dialogue: 0,0:27:04.00,0:27:06.64,*Default,NTP,0000,0000,0000,,i think it's helpful to pick a value for
+Dialogue: 0,0:27:06.64,0:27:07.28,*Default,NTP,0000,0000,0000,,n
+Dialogue: 0,0:27:07.28,0:27:10.72,*Default,NTP,0000,0000,0000,,so let's say n is one two three
+Dialogue: 0,0:27:10.72,0:27:14.96,*Default,NTP,0000,0000,0000,,and t is two something like that
+Dialogue: 0,0:27:14.96,0:27:18.24,*Default,NTP,0000,0000,0000,,what would n percent ten give you just
+Dialogue: 0,0:27:18.24,0:27:18.96,*Default,NTP,0000,0000,0000,,mark it up
+Dialogue: 0,0:27:18.96,0:27:20.88,*Default,NTP,0000,0000,0000,,like this will give you three that part
+Dialogue: 0,0:27:20.88,0:27:22.64,*Default,NTP,0000,0000,0000,,i think is worth tracing
+Dialogue: 0,0:27:22.64,0:27:25.36,*Default,NTP,0000,0000,0000,,and the rest if we divide by 10 gives
+Dialogue: 0,0:27:25.36,0:27:26.08,*Default,NTP,0000,0000,0000,,you
+Dialogue: 0,0:27:26.08,0:27:29.36,*Default,NTP,0000,0000,0000,,12. i think you know those pieces
+Dialogue: 0,0:27:29.36,0:27:32.08,*Default,NTP,0000,0000,0000,,you should trace explicitly now what do
+Dialogue: 0,0:27:32.08,0:27:32.96,*Default,NTP,0000,0000,0000,,you do
+Dialogue: 0,0:27:32.96,0:27:36.32,*Default,NTP,0000,0000,0000,,well you're either going to take two
+Dialogue: 0,0:27:36.32,0:27:37.84,*Default,NTP,0000,0000,0000,,digits from 12
+Dialogue: 0,0:27:37.84,0:27:39.36,*Default,NTP,0000,0000,0000,,or you're going to take one digit from
+Dialogue: 0,0:27:39.36,0:27:41.36,*Default,NTP,0000,0000,0000,,12 and the 3
+Dialogue: 0,0:27:41.36,0:27:43.92,*Default,NTP,0000,0000,0000,,at the end so that would be like keep
+Dialogue: 0,0:27:43.92,0:27:44.72,*Default,NTP,0000,0000,0000,,the 3
+Dialogue: 0,0:27:44.72,0:27:46.48,*Default,NTP,0000,0000,0000,,but then you'd have one less digit for
+Dialogue: 0,0:27:46.48,0:27:48.08,*Default,NTP,0000,0000,0000,,the rest of it or
+Dialogue: 0,0:27:48.08,0:27:50.88,*Default,NTP,0000,0000,0000,,you'd forget the three and you keep both
+Dialogue: 0,0:27:50.88,0:27:52.32,*Default,NTP,0000,0000,0000,,the last digits now
+Dialogue: 0,0:27:52.32,0:27:54.80,*Default,NTP,0000,0000,0000,,you know you can think ahead you can say
+Dialogue: 0,0:27:54.80,0:27:56.24,*Default,NTP,0000,0000,0000,,okay what i should do is
+Dialogue: 0,0:27:56.24,0:27:58.96,*Default,NTP,0000,0000,0000,,is keep the three because it's big but
+Dialogue: 0,0:27:58.96,0:28:00.88,*Default,NTP,0000,0000,0000,,python doesn't know that yet
+Dialogue: 0,0:28:00.88,0:28:03.68,*Default,NTP,0000,0000,0000,,so avoid the instinct of solving the
+Dialogue: 0,0:28:03.68,0:28:04.72,*Default,NTP,0000,0000,0000,,problem for
+Dialogue: 0,0:28:04.72,0:28:07.68,*Default,NTP,0000,0000,0000,,python and instead just like let the
+Dialogue: 0,0:28:07.68,0:28:08.32,*Default,NTP,0000,0000,0000,,computer
+Dialogue: 0,0:28:08.32,0:28:10.24,*Default,NTP,0000,0000,0000,,work through the details itself so you
+Dialogue: 0,0:28:10.24,0:28:11.84,*Default,NTP,0000,0000,0000,,have the components
+Dialogue: 0,0:28:11.84,0:28:14.16,*Default,NTP,0000,0000,0000,,now it's your job to say well i have two
+Dialogue: 0,0:28:14.16,0:28:15.36,*Default,NTP,0000,0000,0000,,options
+Dialogue: 0,0:28:15.36,0:28:18.48,*Default,NTP,0000,0000,0000,,option one let's say like
+Dialogue: 0,0:28:18.48,0:28:21.52,*Default,NTP,0000,0000,0000,,keep last digit is option one
+Dialogue: 0,0:28:21.52,0:28:23.84,*Default,NTP,0000,0000,0000,,which would mean that three is the last
+Dialogue: 0,0:28:23.84,0:28:25.12,*Default,NTP,0000,0000,0000,,digit
+Dialogue: 0,0:28:25.12,0:28:28.48,*Default,NTP,0000,0000,0000,,of this new number how do you get it in
+Dialogue: 0,0:28:28.48,0:28:28.88,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:28:28.88,0:28:32.48,*Default,NTP,0000,0000,0000,,you add it but then this expression here
+Dialogue: 0,0:28:32.48,0:28:36.00,*Default,NTP,0000,0000,0000,,needs to be all the other digits and so
+Dialogue: 0,0:28:36.00,0:28:39.12,*Default,NTP,0000,0000,0000,,it's got to have a 0 in its one's place
+Dialogue: 0,0:28:39.12,0:28:42.32,*Default,NTP,0000,0000,0000,,that's where that times 10 came from
+Dialogue: 0,0:28:42.32,0:28:44.16,*Default,NTP,0000,0000,0000,,and how do you get the rest of the
+Dialogue: 0,0:28:44.16,0:28:45.68,*Default,NTP,0000,0000,0000,,digits well that's where you make your
+Dialogue: 0,0:28:45.68,0:28:47.12,*Default,NTP,0000,0000,0000,,recursive call
+Dialogue: 0,0:28:47.12,0:28:50.16,*Default,NTP,0000,0000,0000,,get your maximum subsequence of the rest
+Dialogue: 0,0:28:50.16,0:28:52.88,*Default,NTP,0000,0000,0000,,using t minus one because you already
+Dialogue: 0,0:28:52.88,0:28:53.52,*Default,NTP,0000,0000,0000,,used up
+Dialogue: 0,0:28:53.52,0:28:56.48,*Default,NTP,0000,0000,0000,,a digit the last digit and you don't
+Dialogue: 0,0:28:56.48,0:28:58.08,*Default,NTP,0000,0000,0000,,need these parentheses i was just trying
+Dialogue: 0,0:28:58.08,0:29:01.44,*Default,NTP,0000,0000,0000,,to kind of guide things as we go
+Dialogue: 0,0:29:01.44,0:29:04.80,*Default,NTP,0000,0000,0000,,um this i think you could trace in the
+Dialogue: 0,0:29:04.80,0:29:06.08,*Default,NTP,0000,0000,0000,,following way
+Dialogue: 0,0:29:06.08,0:29:08.40,*Default,NTP,0000,0000,0000,,instead of looking at the body of max
+Dialogue: 0,0:29:08.40,0:29:09.44,*Default,NTP,0000,0000,0000,,subsequence
+Dialogue: 0,0:29:09.44,0:29:12.80,*Default,NTP,0000,0000,0000,,you should ask yourself if i pass in 12
+Dialogue: 0,0:29:12.80,0:29:16.32,*Default,NTP,0000,0000,0000,,and 1 into here what am i going to get
+Dialogue: 0,0:29:16.32,0:29:18.32,*Default,NTP,0000,0000,0000,,and you know the behavior of this thing
+Dialogue: 0,0:29:18.32,0:29:20.40,*Default,NTP,0000,0000,0000,,you know you're going to get 2
+Dialogue: 0,0:29:20.40,0:29:22.80,*Default,NTP,0000,0000,0000,,so 2 times 10 plus 3 is going to give
+Dialogue: 0,0:29:22.80,0:29:24.40,*Default,NTP,0000,0000,0000,,you 23.
+Dialogue: 0,0:29:24.40,0:29:25.68,*Default,NTP,0000,0000,0000,,that's the degree to which it makes
+Dialogue: 0,0:29:25.68,0:29:28.08,*Default,NTP,0000,0000,0000,,sense to trace is to pretend that this
+Dialogue: 0,0:29:28.08,0:29:29.84,*Default,NTP,0000,0000,0000,,is some black box that does its thing
+Dialogue: 0,0:29:29.84,0:29:31.44,*Default,NTP,0000,0000,0000,,but you don't know how it does it
+Dialogue: 0,0:29:31.44,0:29:33.44,*Default,NTP,0000,0000,0000,,but you do know what its result is which
+Dialogue: 0,0:29:33.44,0:29:35.84,*Default,NTP,0000,0000,0000,,is like what's the biggest digit in 12
+Dialogue: 0,0:29:35.84,0:29:38.96,*Default,NTP,0000,0000,0000,,well it's two and then the other option
+Dialogue: 0,0:29:38.96,0:29:43.12,*Default,NTP,0000,0000,0000,,is would be leave the
+Dialogue: 0,0:29:43.12,0:29:47.52,*Default,NTP,0000,0000,0000,,how about drop last digit which means
+Dialogue: 0,0:29:47.52,0:29:49.68,*Default,NTP,0000,0000,0000,,you're not going to use last you're just
+Dialogue: 0,0:29:49.68,0:29:50.96,*Default,NTP,0000,0000,0000,,going to use everything in rest but you
+Dialogue: 0,0:29:50.96,0:29:53.60,*Default,NTP,0000,0000,0000,,get to use t digits
+Dialogue: 0,0:29:53.60,0:29:55.04,*Default,NTP,0000,0000,0000,,and if you wanted to return the biggest
+Dialogue: 0,0:29:55.04,0:29:56.64,*Default,NTP,0000,0000,0000,,one then you just take the max of these
+Dialogue: 0,0:29:56.64,0:29:58.08,*Default,NTP,0000,0000,0000,,two
+Dialogue: 0,0:29:58.08,0:30:00.24,*Default,NTP,0000,0000,0000,,when you're tracing through this you
+Dialogue: 0,0:30:00.24,0:30:01.92,*Default,NTP,0000,0000,0000,,want to say like oh what's this going to
+Dialogue: 0,0:30:01.92,0:30:02.72,*Default,NTP,0000,0000,0000,,return
+Dialogue: 0,0:30:02.72,0:30:05.04,*Default,NTP,0000,0000,0000,,well this is 12 and this is 2 so this is
+Dialogue: 0,0:30:05.04,0:30:07.28,*Default,NTP,0000,0000,0000,,going to return 12.
+Dialogue: 0,0:30:07.28,0:30:09.52,*Default,NTP,0000,0000,0000,,and so uh what's this going to return
+Dialogue: 0,0:30:09.52,0:30:12.48,*Default,NTP,0000,0000,0000,,well the max of 12 and 23 is 23. so at
+Dialogue: 0,0:30:12.48,0:30:13.92,*Default,NTP,0000,0000,0000,,least in this example it seems like it's
+Dialogue: 0,0:30:13.92,0:30:15.36,*Default,NTP,0000,0000,0000,,going to do the right thing
+Dialogue: 0,0:30:15.36,0:30:16.64,*Default,NTP,0000,0000,0000,,that's the kind of tracing that i would
+Dialogue: 0,0:30:16.64,0:30:18.40,*Default,NTP,0000,0000,0000,,do in a tree recursive problem
+Dialogue: 0,0:30:18.40,0:30:20.24,*Default,NTP,0000,0000,0000,,and we realized that we never went back
+Dialogue: 0,0:30:20.24,0:30:21.76,*Default,NTP,0000,0000,0000,,through the body of max subsequence
+Dialogue: 0,0:30:21.76,0:30:22.40,*Default,NTP,0000,0000,0000,,again
+Dialogue: 0,0:30:22.40,0:30:24.16,*Default,NTP,0000,0000,0000,,instead we just asked ourselves what is
+Dialogue: 0,0:30:24.16,0:30:28.00,*Default,NTP,0000,0000,0000,,this going to return and stop there
+Dialogue: 0,0:30:28.08,0:30:30.40,*Default,NTP,0000,0000,0000,,so there's that big leap of faith right
+Dialogue: 0,0:30:30.40,0:30:31.36,*Default,NTP,0000,0000,0000,,where you have to just
+Dialogue: 0,0:30:31.36,0:30:33.68,*Default,NTP,0000,0000,0000,,trust that what you're doing is doing
+Dialogue: 0,0:30:33.68,0:30:34.88,*Default,NTP,0000,0000,0000,,the right thing and by the way if you're
+Dialogue: 0,0:30:34.88,0:30:36.56,*Default,NTP,0000,0000,0000,,wrong well then the code won't work
+Dialogue: 0,0:30:36.56,0:30:41.76,*Default,NTP,0000,0000,0000,,and so it like that uh hold on
+Dialogue: 0,0:30:42.00,0:30:45.36,*Default,NTP,0000,0000,0000,,oh i think there's another one yeah
+Dialogue: 0,0:30:45.36,0:30:48.48,*Default,NTP,0000,0000,0000,,oh how about that there we go
+Dialogue: 0,0:30:48.48,0:30:51.60,*Default,NTP,0000,0000,0000,,sorry a good chapter
+Dialogue: 0,0:30:51.84,0:30:54.56,*Default,NTP,0000,0000,0000,,yeah so anyway that's uh that's kind of
+Dialogue: 0,0:30:54.56,0:30:55.12,*Default,NTP,0000,0000,0000,,the story
+Dialogue: 0,0:30:55.12,0:30:56.80,*Default,NTP,0000,0000,0000,,is don't don't try to trace through the
+Dialogue: 0,0:30:56.80,0:30:58.64,*Default,NTP,0000,0000,0000,,next call because you're just going to
+Dialogue: 0,0:30:58.64,0:30:59.60,*Default,NTP,0000,0000,0000,,get confused
+Dialogue: 0,0:30:59.60,0:31:01.28,*Default,NTP,0000,0000,0000,,if you want to let python draw the
+Dialogue: 0,0:31:01.28,0:31:02.72,*Default,NTP,0000,0000,0000,,environment diagram for you so you can
+Dialogue: 0,0:31:02.72,0:31:04.40,*Default,NTP,0000,0000,0000,,watch it happen that would be fine
+Dialogue: 0,0:31:04.40,0:31:06.64,*Default,NTP,0000,0000,0000,,but doing it by hand is really really

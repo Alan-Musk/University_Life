@@ -1,0 +1,1089 @@
+[Script Info]
+Title: Lecture 19. Inheritance_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=46&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.67,0:00:03.37,*Default,NTP,0000,0000,0000,,61 a lecture No.19
+Dialogue: 0,0:00:03.70,0:00:04.70,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:05.57,0:00:07.50,*Default,NTP,0000,0000,0000,,lab seven do Tuesday
+Dialogue: 0,0:00:08.10,0:00:10.33,*Default,NTP,0000,0000,0000,,homework four to Thursday
+Dialogue: 0,0:00:11.30,0:00:13.50,*Default,NTP,0000,0000,0000,,and were releasing a new project
+Dialogue: 0,0:00:14.10,0:00:16.53,*Default,NTP,0000,0000,0000,,the ants project is do next Friday
+Dialogue: 0,0:00:16.70,0:00:19.13,*Default,NTP,0000,0000,0000,,but you need to get started by next Tuesday
+Dialogue: 0,0:00:19.13,0:00:20.50,*Default,NTP,0000,0000,0000,,to earn the checkpoint
+Dialogue: 0,0:00:20.57,0:00:22.07,*Default,NTP,0000,0000,0000,,and you can uninterlace submission
+Dialogue: 0,0:00:22.07,0:00:24.00,*Default,NTP,0000,0000,0000,,bonus point for submitting the whole thing
+Dialogue: 0,0:00:24.00,0:00:25.70,*Default,NTP,0000,0000,0000,,by next Thursday
+Dialogue: 0,0:00:26.27,0:00:29.77,*Default,NTP,0000,0000,0000,,there's also an extra credit problem on the project
+Dialogue: 0,0:00:29.93,0:00:32.57,*Default,NTP,0000,0000,0000,,so it's possible to earn even more extra credit there
+Dialogue: 0,0:00:33.13,0:00:36.37,*Default,NTP,0000,0000,0000,,this version of project iii is shorter than usual
+Dialogue: 0,0:00:36.67,0:00:39.33,*Default,NTP,0000,0000,0000,,this semester is more stressful than usual
+Dialogue: 0,0:00:39.57,0:00:40.87,*Default,NTP,0000,0000,0000,,it's harder to get help
+Dialogue: 0,0:00:40.97,0:00:42.87,*Default,NTP,0000,0000,0000,,there's a lot going on in the world
+Dialogue: 0,0:00:42.97,0:00:44.97,*Default,NTP,0000,0000,0000,,and it's harder to work with your peers
+Dialogue: 0,0:00:45.67,0:00:49.00,*Default,NTP,0000,0000,0000,,now this project started out at a reasonable size
+Dialogue: 0,0:00:49.07,0:00:50.17,*Default,NTP,0000,0000,0000,,and then every semester
+Dialogue: 0,0:00:50.17,0:00:51.93,*Default,NTP,0000,0000,0000,,it seems to have grown a little bit
+Dialogue: 0,0:00:51.93,0:00:54.37,*Default,NTP,0000,0000,0000,,as people think of more questions to ask
+Dialogue: 0,0:00:54.50,0:00:57.00,*Default,NTP,0000,0000,0000,,and what we've done is really just trim it back
+Dialogue: 0,0:00:57.33,0:00:59.30,*Default,NTP,0000,0000,0000,,closer to its original size
+Dialogue: 0,0:00:59.40,0:01:02.30,*Default,NTP,0000,0000,0000,,it's still quite a large program that you have to write
+Dialogue: 0,0:01:02.60,0:01:05.10,*Default,NTP,0000,0000,0000,,larger than any project you've done before
+Dialogue: 0,0:01:05.77,0:01:07.57,*Default,NTP,0000,0000,0000,,now it might be more manageable
+Dialogue: 0,0:01:07.57,0:01:09.40,*Default,NTP,0000,0000,0000,,because your experience has grown
+Dialogue: 0,0:01:09.40,0:01:10.53,*Default,NTP,0000,0000,0000,,throughout the semester
+Dialogue: 0,0:01:10.87,0:01:11.53,*Default,NTP,0000,0000,0000,,but still
+Dialogue: 0,0:01:11.53,0:01:14.30,*Default,NTP,0000,0000,0000,,I encourage you to leave plenty of time for this
+Dialogue: 0,0:01:14.30,0:01:15.67,*Default,NTP,0000,0000,0000,,large project
+Dialogue: 0,0:01:15.80,0:01:17.70,*Default,NTP,0000,0000,0000,,so that you can make sure you get it done
+Dialogue: 0,0:01:17.70,0:01:18.93,*Default,NTP,0000,0000,0000,,by next Friday
+Dialogue: 0,0:01:18.97,0:01:20.00,*Default,NTP,0000,0000,0000,,or better yet
+Dialogue: 0,0:01:20.13,0:01:23.37,*Default,NTP,0000,0000,0000,,by next Thursday and get that bonus point
+Dialogue: 0,0:01:24.17,0:01:26.97,*Default,NTP,0000,0000,0000,,and what's the project about well it's about ants
+Dialogue: 0,0:01:27.50,0:01:28.53,*Default,NTP,0000,0000,0000,,in particular
+Dialogue: 0,0:01:28.70,0:01:32.13,*Default,NTP,0000,0000,0000,,it's a re implementation of a game I like called
+Dialogue: 0,0:01:32.33,0:01:34.77,*Default,NTP,0000,0000,0000,,plants versus zombies
+Dialogue: 0,0:01:35.20,0:01:37.73,*Default,NTP,0000,0000,0000,,the version we build in 61 a is called
+Dialogue: 0,0:01:37.90,0:01:40.47,*Default,NTP,0000,0000,0000,,ants versus some bees
+Dialogue: 0,0:01:41.10,0:01:43.57,*Default,NTP,0000,0000,0000,,and your job is to build all the logic
+Dialogue: 0,0:01:43.73,0:01:44.00,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:01:44.00,0:01:46.80,*Default,NTP,0000,0000,0000,,how the different characters in the game interact
+Dialogue: 0,0:01:47.30,0:01:47.90,*Default,NTP,0000,0000,0000,,which is a
+Dialogue: 0,0:01:47.90,0:01:50.93,*Default,NTP,0000,0000,0000,,natural application of object oriented programming
+Dialogue: 0,0:01:51.07,0:01:52.37,*Default,NTP,0000,0000,0000,,and inheritance
+Dialogue: 0,0:01:52.77,0:01:54.93,*Default,NTP,0000,0000,0000,,I'll let you implement the game yourself
+Dialogue: 0,0:01:54.97,0:01:56.33,*Default,NTP,0000,0000,0000,,and then you can play it
+Dialogue: 0,0:01:57.37,0:02:00.33,*Default,NTP,0000,0000,0000,,this Thursday we're going to have an advising panel
+Dialogue: 0,0:02:00.67,0:02:03.97,*Default,NTP,0000,0000,0000,,we've been running some 1 on 1 advising office hours
+Dialogue: 0,0:02:03.97,0:02:05.90,*Default,NTP,0000,0000,0000,,but the same question sometimes come up
+Dialogue: 0,0:02:05.90,0:02:06.73,*Default,NTP,0000,0000,0000,,again and again
+Dialogue: 0,0:02:06.93,0:02:08.40,*Default,NTP,0000,0000,0000,,so we thought we'd have
+Dialogue: 0,0:02:08.70,0:02:11.90,*Default,NTP,0000,0000,0000,,a larger forum where many people could attend at once
+Dialogue: 0,0:02:12.27,0:02:14.53,*Default,NTP,0000,0000,0000,,you could ask questions about anything you want
+Dialogue: 0,0:02:14.70,0:02:17.90,*Default,NTP,0000,0000,0000,,industry clubs research with your masters program
+Dialogue: 0,0:02:17.90,0:02:19.30,*Default,NTP,0000,0000,0000,,classes whatever
+Dialogue: 0,0:02:19.47,0:02:21.70,*Default,NTP,0000,0000,0000,,and we'll have some members of the core staff
+Dialogue: 0,0:02:21.90,0:02:24.40,*Default,NTP,0000,0000,0000,,on hand to answer your questions
+Dialogue: 0,0:02:24.73,0:02:27.57,*Default,NTP,0000,0000,0000,,so this is just informal pure advising
+Dialogue: 0,0:02:27.60,0:02:29.40,*Default,NTP,0000,0000,0000,,but gives you a chance to understand
+Dialogue: 0,0:02:29.57,0:02:32.10,*Default,NTP,0000,0000,0000,,what's available at berkeley and how to get involved
+Dialogue: 0,0:02:32.77,0:02:35.33,*Default,NTP,0000,0000,0000,,we'll still hold 1 on 1 advising office hours
+Dialogue: 0,0:02:35.37,0:02:37.17,*Default,NTP,0000,0000,0000,,they're now going to be drop in
+Dialogue: 0,0:02:37.27,0:02:39.00,*Default,NTP,0000,0000,0000,,on fridays from one to do 30
+Dialogue: 0,0:02:39.30,0:02:40.10,*Default,NTP,0000,0000,0000,,on the office hours
+Dialogue: 0,0:02:40.10,0:02:40.90,*Default,NTP,0000,0000,0000,,q
+Dialogue: 0,0:02:41.47,0:02:43.70,*Default,NTP,0000,0000,0000,,we've just posted an anonymous serving
+Dialogue: 0,0:02:44.13,0:02:45.50,*Default,NTP,0000,0000,0000,,it's really short
+Dialogue: 0,0:02:45.80,0:02:47.17,*Default,NTP,0000,0000,0000,,it's not required
+Dialogue: 0,0:02:47.27,0:02:49.53,*Default,NTP,0000,0000,0000,,but it would be really nice if you filled it out
+Dialogue: 0,0:02:49.97,0:02:51.17,*Default,NTP,0000,0000,0000,,here's the whole thing
+Dialogue: 0,0:02:51.60,0:02:53.97,*Default,NTP,0000,0000,0000,,and all these questions that the bottom are optional
+Dialogue: 0,0:02:54.70,0:02:56.47,*Default,NTP,0000,0000,0000,,so if you want to give us an indication
+Dialogue: 0,0:02:56.47,0:02:58.27,*Default,NTP,0000,0000,0000,,about how you're feeling about the course
+Dialogue: 0,0:02:58.37,0:03:00.80,*Default,NTP,0000,0000,0000,,whether you're behind an lecture or caught up
+Dialogue: 0,0:03:00.90,0:03:02.77,*Default,NTP,0000,0000,0000,,how you're feeling about assignments
+Dialogue: 0,0:03:02.77,0:03:04.20,*Default,NTP,0000,0000,0000,,and the hint videos
+Dialogue: 0,0:03:04.20,0:03:06.47,*Default,NTP,0000,0000,0000,,as well as giving us some suggestions
+Dialogue: 0,0:03:06.47,0:03:07.93,*Default,NTP,0000,0000,0000,,about how to improve the course
+Dialogue: 0,0:03:08.17,0:03:09.57,*Default,NTP,0000,0000,0000,,I would appreciate it
+Dialogue: 0,0:03:09.60,0:03:10.57,*Default,NTP,0000,0000,0000,,we'll try to implement
+Dialogue: 0,0:03:10.57,0:03:12.90,*Default,NTP,0000,0000,0000,,these suggestions as soon as we can
+Dialogue: 0,0:03:13.97,0:03:16.47,*Default,NTP,0000,0000,0000,,so please complete that survey by Monday
+Dialogue: 0,0:03:16.87,0:03:19.33,*Default,NTP,0000,0000,0000,,and finally midterm two is coming up
+Dialogue: 0,0:03:20.87,0:03:22.47,*Default,NTP,0000,0000,0000,,it's two weeks from Wednesday
+Dialogue: 0,0:03:22.87,0:03:24.77,*Default,NTP,0000,0000,0000,,so next week you can focus on ants
+Dialogue: 0,0:03:24.77,0:03:27.00,*Default,NTP,0000,0000,0000,,the midterm will be the following week
+Dialogue: 0,0:03:27.37,0:03:30.30,*Default,NTP,0000,0000,0000,,it will have a similar format and style to midterm one
+Dialogue: 0,0:03:30.67,0:03:32.47,*Default,NTP,0000,0000,0000,,although if there were things that you didn't like
+Dialogue: 0,0:03:32.47,0:03:33.27,*Default,NTP,0000,0000,0000,,about midterm one
+Dialogue: 0,0:03:33.27,0:03:36.30,*Default,NTP,0000,0000,0000,,you can tell us about that on this synonymous survey
+Dialogue: 0,0:03:36.33,0:03:39.33,*Default,NTP,0000,0000,0000,,and we might be able to adjust them before midterm ii
+Dialogue: 0,0:03:39.33,0:03:40.20,*Default,NTP,0000,0000,0000,,is written
+Dialogue: 0,0:03:41.27,0:03:44.07,*Default,NTP,0000,0000,0000,,this exam will cover content through this week
+Dialogue: 0,0:03:44.37,0:03:46.90,*Default,NTP,0000,0000,0000,,but next week there will not be new content
+Dialogue: 0,0:03:47.17,0:03:48.13,*Default,NTP,0000,0000,0000,,and the week after
+Dialogue: 0,0:03:48.13,0:03:49.37,*Default,NTP,0000,0000,0000,,when you actually take the test
+Dialogue: 0,0:03:49.37,0:03:51.00,*Default,NTP,0000,0000,0000,,there won't be new content either
+Dialogue: 0,0:03:52.00,0:03:54.40,*Default,NTP,0000,0000,0000,,my sense is that some people are a little bit behind
+Dialogue: 0,0:03:54.40,0:03:56.20,*Default,NTP,0000,0000,0000,,in lecture and so
+Dialogue: 0,0:03:56.47,0:03:57.53,*Default,NTP,0000,0000,0000,,I want to give you a chance
+Dialogue: 0,0:03:57.53,0:03:59.47,*Default,NTP,0000,0000,0000,,not just to hear about these topics
+Dialogue: 0,0:03:59.50,0:04:01.77,*Default,NTP,0000,0000,0000,,but solve a homework problem on them
+Dialogue: 0,0:04:01.97,0:04:04.87,*Default,NTP,0000,0000,0000,,or hear about them in lab or discussion or tutorial
+Dialogue: 0,0:04:05.20,0:04:07.20,*Default,NTP,0000,0000,0000,,so that you can really be prepared to do well
+Dialogue: 0,0:04:07.20,0:04:08.27,*Default,NTP,0000,0000,0000,,on the exam
+Dialogue: 0,0:04:09.20,0:04:11.30,*Default,NTP,0000,0000,0000,,so if you look at the upcoming schedule
+Dialogue: 0,0:04:12.13,0:04:13.50,*Default,NTP,0000,0000,0000,,there's the midterm
+Dialogue: 0,0:04:13.67,0:04:15.07,*Default,NTP,0000,0000,0000,,here's where we are
+Dialogue: 0,0:04:15.57,0:04:18.00,*Default,NTP,0000,0000,0000,,these three topics will be on the midterm
+Dialogue: 0,0:04:18.60,0:04:19.97,*Default,NTP,0000,0000,0000,,this topic is going to be
+Dialogue: 0,0:04:19.97,0:04:21.77,*Default,NTP,0000,0000,0000,,completely optional this semester
+Dialogue: 0,0:04:22.37,0:04:23.77,*Default,NTP,0000,0000,0000,,it won't be included in any
+Dialogue: 0,0:04:23.77,0:04:26.97,*Default,NTP,0000,0000,0000,,homeworks or labs or discussions or exams
+Dialogue: 0,0:04:27.33,0:04:28.77,*Default,NTP,0000,0000,0000,,I think it's interesting
+Dialogue: 0,0:04:29.00,0:04:31.50,*Default,NTP,0000,0000,0000,,you'll hear a lot about it in 61 b
+Dialogue: 0,0:04:31.70,0:04:33.93,*Default,NTP,0000,0000,0000,,so we're just delaying it until then
+Dialogue: 0,0:04:35.80,0:04:37.27,*Default,NTP,0000,0000,0000,,these two lectures are really
+Dialogue: 0,0:04:37.27,0:04:39.27,*Default,NTP,0000,0000,0000,,about review of everything you've learned
+Dialogue: 0,0:04:39.27,0:04:41.17,*Default,NTP,0000,0000,0000,,about objects and values
+Dialogue: 0,0:04:41.80,0:04:43.90,*Default,NTP,0000,0000,0000,,so I do recommend that you watch those
+Dialogue: 0,0:04:43.90,0:04:44.90,*Default,NTP,0000,0000,0000,,when they come out
+Dialogue: 0,0:04:45.07,0:04:47.20,*Default,NTP,0000,0000,0000,,because they'll help prepare you for the exam
+Dialogue: 0,0:04:47.77,0:04:48.93,*Default,NTP,0000,0000,0000,,and this lecture
+Dialogue: 0,0:04:49.70,0:04:52.40,*Default,NTP,0000,0000,0000,,is optional it's always been optional
+Dialogue: 0,0:04:52.77,0:04:55.37,*Default,NTP,0000,0000,0000,,but it's often students favorite part of the course
+Dialogue: 0,0:04:55.37,0:04:58.47,*Default,NTP,0000,0000,0000,,so I would definitely recommend watching that lecture
+Dialogue: 0,0:04:58.50,0:05:00.47,*Default,NTP,0000,0000,0000,,but you don't need to learn anything from it
+Dialogue: 0,0:05:00.50,0:05:03.27,*Default,NTP,0000,0000,0000,,that will be applied to the midterm on Wednesday
+Dialogue: 0,0:05:04.40,0:05:05.77,*Default,NTP,0000,0000,0000,,so that's what's coming up
+Dialogue: 0,0:05:06.13,0:05:08.40,*Default,NTP,0000,0000,0000,,today's lecture about inheritance
+Dialogue: 0,0:05:08.60,0:05:11.67,*Default,NTP,0000,0000,0000,,is about a topic that could be overused
+Dialogue: 0,0:05:12.10,0:05:13.90,*Default,NTP,0000,0000,0000,,so you do need to know about it
+Dialogue: 0,0:05:14.07,0:05:15.27,*Default,NTP,0000,0000,0000,,but I wouldn't recommend
+Dialogue: 0,0:05:15.27,0:05:17.60,*Default,NTP,0000,0000,0000,,using it everywhere that you possibly could
+Dialogue: 0,0:05:18.07,0:05:20.40,*Default,NTP,0000,0000,0000,,but it can be an awfully useful technique
+Dialogue: 0,0:05:20.50,0:05:24.33,*Default,NTP,0000,0000,0000,,when it is applied appropriately here we go
+Dialogue: 0,0:05:26.97,0:05:29.20,*Default,NTP,0000,0000,0000,,let's recall attributes
+Dialogue: 0,0:05:29.77,0:05:32.20,*Default,NTP,0000,0000,0000,,so attributes are part of objects
+Dialogue: 0,0:05:32.50,0:05:34.17,*Default,NTP,0000,0000,0000,,and there's all this new terminology
+Dialogue: 0,0:05:34.17,0:05:36.20,*Default,NTP,0000,0000,0000,,about functions and methods and attributes
+Dialogue: 0,0:05:36.20,0:05:37.80,*Default,NTP,0000,0000,0000,,I'd like to just review it
+Dialogue: 0,0:05:38.47,0:05:40.37,*Default,NTP,0000,0000,0000,,so all objects have attributes
+Dialogue: 0,0:05:40.37,0:05:42.60,*Default,NTP,0000,0000,0000,,which are name value pairs
+Dialogue: 0,0:05:43.67,0:05:45.33,*Default,NTP,0000,0000,0000,,classes are objects too
+Dialogue: 0,0:05:45.80,0:05:47.67,*Default,NTP,0000,0000,0000,,so classes have attributes
+Dialogue: 0,0:05:48.93,0:05:49.77,*Default,NTP,0000,0000,0000,,an instance
+Dialogue: 0,0:05:49.77,0:05:53.13,*Default,NTP,0000,0000,0000,,attribute is the attribute of an instance of a class
+Dialogue: 0,0:05:53.77,0:05:56.67,*Default,NTP,0000,0000,0000,,and a class attribute is the attribute of the class
+Dialogue: 0,0:05:56.67,0:05:57.67,*Default,NTP,0000,0000,0000,,of an instance
+Dialogue: 0,0:05:58.73,0:05:59.73,*Default,NTP,0000,0000,0000,,so there are two different
+Dialogue: 0,0:05:59.73,0:06:01.50,*Default,NTP,0000,0000,0000,,places you could find in attribute
+Dialogue: 0,0:06:01.87,0:06:04.00,*Default,NTP,0000,0000,0000,,in its instance or in its class
+Dialogue: 0,0:06:05.07,0:06:06.90,*Default,NTP,0000,0000,0000,,now here's for the tricky part
+Dialogue: 0,0:06:07.50,0:06:09.73,*Default,NTP,0000,0000,0000,,we have the set of all class attributes
+Dialogue: 0,0:06:09.77,0:06:12.13,*Default,NTP,0000,0000,0000,,and the set of all things that are functions
+Dialogue: 0,0:06:12.47,0:06:13.13,*Default,NTP,0000,0000,0000,,functions aren't
+Dialogue: 0,0:06:13.13,0:06:15.40,*Default,NTP,0000,0000,0000,,particular to object oriented programming
+Dialogue: 0,0:06:15.67,0:06:17.60,*Default,NTP,0000,0000,0000,,but methods are
+Dialogue: 0,0:06:17.87,0:06:21.37,*Default,NTP,0000,0000,0000,,so a method is a function that's also a class attribute
+Dialogue: 0,0:06:22.90,0:06:24.67,*Default,NTP,0000,0000,0000,,in the python object system
+Dialogue: 0,0:06:24.97,0:06:26.50,*Default,NTP,0000,0000,0000,,functions are objects
+Dialogue: 0,0:06:27.07,0:06:29.00,*Default,NTP,0000,0000,0000,,bound methods are also objects
+Dialogue: 0,0:06:29.10,0:06:31.07,*Default,NTP,0000,0000,0000,,slightly different kinds of objects
+Dialogue: 0,0:06:31.17,0:06:34.77,*Default,NTP,0000,0000,0000,,that has a function with its first parameter self
+Dialogue: 0,0:06:35.00,0:06:36.10,*Default,NTP,0000,0000,0000,,already filled in
+Dialogue: 0,0:06:36.47,0:06:38.13,*Default,NTP,0000,0000,0000,,already bound to an instance
+Dialogue: 0,0:06:39.37,0:06:41.90,*Default,NTP,0000,0000,0000,,dot expressions evaluate to bound methods
+Dialogue: 0,0:06:41.97,0:06:44.47,*Default,NTP,0000,0000,0000,,when you have a class astribute that's a function
+Dialogue: 0,0:06:45.93,0:06:48.10,*Default,NTP,0000,0000,0000,,and this is a very common pattern
+Dialogue: 0,0:06:48.27,0:06:50.80,*Default,NTP,0000,0000,0000,,where you have some instance here before the dot
+Dialogue: 0,0:06:50.87,0:06:52.80,*Default,NTP,0000,0000,0000,,and after the dot you have a method name
+Dialogue: 0,0:06:53.13,0:06:54.33,*Default,NTP,0000,0000,0000,,then that method
+Dialogue: 0,0:06:54.70,0:06:56.47,*Default,NTP,0000,0000,0000,,is the function named
+Dialogue: 0,0:06:56.53,0:06:59.47,*Default,NTP,0000,0000,0000,,with the instance filled in as the self parameter
+Dialogue: 0,0:07:01.67,0:07:02.50,*Default,NTP,0000,0000,0000,,let's just quickly
+Dialogue: 0,0:07:02.50,0:07:04.60,*Default,NTP,0000,0000,0000,,review what happens when you evaluate
+Dialogue: 0,0:07:04.60,0:07:05.77,*Default,NTP,0000,0000,0000,,a dot expression
+Dialogue: 0,0:07:06.40,0:07:07.47,*Default,NTP,0000,0000,0000,,you evaluate this
+Dialogue: 0,0:07:07.47,0:07:10.00,*Default,NTP,0000,0000,0000,,by evaluating the expression on the left of the dot
+Dialogue: 0,0:07:10.10,0:07:11.67,*Default,NTP,0000,0000,0000,,which yields an object
+Dialogue: 0,0:07:12.73,0:07:15.30,*Default,NTP,0000,0000,0000,,name is matched against the instance attributes
+Dialogue: 0,0:07:15.60,0:07:18.27,*Default,NTP,0000,0000,0000,,if an instance attribute exists with that name
+Dialogue: 0,0:07:18.30,0:07:19.13,*Default,NTP,0000,0000,0000,,its value
+Dialogue: 0,0:07:19.13,0:07:22.07,*Default,NTP,0000,0000,0000,,is returned as the value of the whole dot expression
+Dialogue: 0,0:07:23.13,0:07:26.30,*Default,NTP,0000,0000,0000,,if not then name is looked up in the class
+Dialogue: 0,0:07:26.30,0:07:28.50,*Default,NTP,0000,0000,0000,,which yields a class attribute value
+Dialogue: 0,0:07:29.97,0:07:31.40,*Default,NTP,0000,0000,0000,,and that value is returned
+Dialogue: 0,0:07:31.40,0:07:32.87,*Default,NTP,0000,0000,0000,,unless it's a function
+Dialogue: 0,0:07:32.87,0:07:34.77,*Default,NTP,0000,0000,0000,,in which case you get a slightly different
+Dialogue: 0,0:07:34.77,0:07:35.93,*Default,NTP,0000,0000,0000,,version of the function
+Dialogue: 0,0:07:35.93,0:07:37.70,*Default,NTP,0000,0000,0000,,you get a bound method
+Dialogue: 0,0:07:38.00,0:07:41.40,*Default,NTP,0000,0000,0000,,or you get the function with its first parameter
+Dialogue: 0,0:07:41.53,0:07:42.57,*Default,NTP,0000,0000,0000,,bound already
+Dialogue: 0,0:07:42.77,0:07:44.80,*Default,NTP,0000,0000,0000,,to the object of the dot expression
+Dialogue: 0,0:07:47.77,0:07:49.87,*Default,NTP,0000,0000,0000,,attribute assignment statements
+Dialogue: 0,0:07:49.87,0:07:51.77,*Default,NTP,0000,0000,0000,,change the values that are bound
+Dialogue: 0,0:07:51.80,0:07:55.37,*Default,NTP,0000,0000,0000,,to attribute names within an object or a class
+Dialogue: 0,0:07:56.33,0:07:58.77,*Default,NTP,0000,0000,0000,,so you can assign to attributes
+Dialogue: 0,0:07:59.50,0:08:00.47,*Default,NTP,0000,0000,0000,,assignment statements
+Dialogue: 0,0:08:00.47,0:08:02.87,*Default,NTP,0000,0000,0000,,for the dot expression on their left hand side
+Dialogue: 0,0:08:03.10,0:08:05.17,*Default,NTP,0000,0000,0000,,are attribute assignment statements
+Dialogue: 0,0:08:05.30,0:08:08.20,*Default,NTP,0000,0000,0000,,so they affect the attributes of the object of that dot
+Dialogue: 0,0:08:08.20,0:08:09.07,*Default,NTP,0000,0000,0000,,expression
+Dialogue: 0,0:08:10.40,0:08:12.40,*Default,NTP,0000,0000,0000,,if that object is an instance
+Dialogue: 0,0:08:12.73,0:08:15.20,*Default,NTP,0000,0000,0000,,then assignment sets an instance attribute
+Dialogue: 0,0:08:15.77,0:08:17.50,*Default,NTP,0000,0000,0000,,if the object is a class
+Dialogue: 0,0:08:17.50,0:08:19.80,*Default,NTP,0000,0000,0000,,assignment sets a class attribute
+Dialogue: 0,0:08:21.97,0:08:24.47,*Default,NTP,0000,0000,0000,,so let's say I have the account class
+Dialogue: 0,0:08:24.73,0:08:26.47,*Default,NTP,0000,0000,0000,,here I've just shown you part of it
+Dialogue: 0,0:08:27.13,0:08:30.27,*Default,NTP,0000,0000,0000,,interest in this definition is already
+Dialogue: 0,0:08:30.40,0:08:32.93,*Default,NTP,0000,0000,0000,,a class attribute because it's defined
+Dialogue: 0,0:08:32.93,0:08:34.37,*Default,NTP,0000,0000,0000,,directly within the class
+Dialogue: 0,0:08:35.00,0:08:36.87,*Default,NTP,0000,0000,0000,,or as holder and balance
+Dialogue: 0,0:08:37.00,0:08:38.87,*Default,NTP,0000,0000,0000,,are instance attributes
+Dialogue: 0,0:08:38.87,0:08:42.13,*Default,NTP,0000,0000,0000,,because they're set on the new instance that's created
+Dialogue: 0,0:08:42.47,0:08:44.17,*Default,NTP,0000,0000,0000,,and passed to in it
+Dialogue: 0,0:08:46.10,0:08:47.70,*Default,NTP,0000,0000,0000,,so account is a class
+Dialogue: 0,0:08:47.70,0:08:50.30,*Default,NTP,0000,0000,0000,,and tom account is an instance of the class
+Dialogue: 0,0:08:51.97,0:08:56.10,*Default,NTP,0000,0000,0000,,if I say tomacount interest equals 0.08
+Dialogue: 0,0:08:56.80,0:08:59.20,*Default,NTP,0000,0000,0000,,that's setting an instance attribute
+Dialogue: 0,0:08:59.27,0:08:59.87,*Default,NTP,0000,0000,0000,,because the
+Dialogue: 0,0:08:59.87,0:09:02.60,*Default,NTP,0000,0000,0000,,object of the dot expression is an instance
+Dialogue: 0,0:09:03.90,0:09:06.13,*Default,NTP,0000,0000,0000,,so this expression evaluates to an object
+Dialogue: 0,0:09:06.40,0:09:07.53,*Default,NTP,0000,0000,0000,,this whole thing
+Dialogue: 0,0:09:08.07,0:09:09.57,*Default,NTP,0000,0000,0000,,doesn't look up interest
+Dialogue: 0,0:09:09.57,0:09:12.37,*Default,NTP,0000,0000,0000,,on that object and go find it in the class
+Dialogue: 0,0:09:12.77,0:09:13.97,*Default,NTP,0000,0000,0000,,instead we just
+Dialogue: 0,0:09:14.00,0:09:14.77,*Default,NTP,0000,0000,0000,,directly assign
+Dialogue: 0,0:09:14.77,0:09:17.20,*Default,NTP,0000,0000,0000,,to the attribute of the object that's here
+Dialogue: 0,0:09:18.37,0:09:20.27,*Default,NTP,0000,0000,0000,,so this is attribute assignment
+Dialogue: 0,0:09:20.47,0:09:23.90,*Default,NTP,0000,0000,0000,,that adds or modifies the attribute named interest
+Dialogue: 0,0:09:24.10,0:09:25.70,*Default,NTP,0000,0000,0000,,to the tom account
+Dialogue: 0,0:09:26.13,0:09:27.20,*Default,NTP,0000,0000,0000,,in this case
+Dialogue: 0,0:09:27.37,0:09:31.67,*Default,NTP,0000,0000,0000,,the instance didn't have an interest attribute before
+Dialogue: 0,0:09:31.97,0:09:34.70,*Default,NTP,0000,0000,0000,,and so the assignment statement will add one
+Dialogue: 0,0:09:36.17,0:09:38.87,*Default,NTP,0000,0000,0000,,that's an example of instance attribute assignment
+Dialogue: 0,0:09:39.97,0:09:41.57,*Default,NTP,0000,0000,0000,,class attribute assignment
+Dialogue: 0,0:09:42.27,0:09:45.87,*Default,NTP,0000,0000,0000,,arises when you have an attribute assignment statement
+Dialogue: 0,0:09:45.87,0:09:48.47,*Default,NTP,0000,0000,0000,,meaning there's some expression with a dot on the left
+Dialogue: 0,0:09:49.37,0:09:52.97,*Default,NTP,0000,0000,0000,,and the object of that dot expression is a class
+Dialogue: 0,0:09:53.33,0:09:55.20,*Default,NTP,0000,0000,0000,,so this will go and change
+Dialogue: 0,0:09:55.60,0:09:59.13,*Default,NTP,0000,0000,0000,,the interest attribute of the account class
+Dialogue: 0,0:09:59.13,0:10:01.20,*Default,NTP,0000,0000,0000,,which in this case already existed
+Dialogue: 0,0:10:01.33,0:10:02.73,*Default,NTP,0000,0000,0000,,and so we go change it
+Dialogue: 0,0:10:05.33,0:10:07.40,*Default,NTP,0000,0000,0000,,okay so here's an extended example
+Dialogue: 0,0:10:07.40,0:10:10.30,*Default,NTP,0000,0000,0000,,of how attribute assignment statements affect classes
+Dialogue: 0,0:10:10.30,0:10:11.40,*Default,NTP,0000,0000,0000,,and objects
+Dialogue: 0,0:10:13.00,0:10:16.77,*Default,NTP,0000,0000,0000,,let's say I say jim account is an account with jim
+Dialogue: 0,0:10:17.60,0:10:19.60,*Default,NTP,0000,0000,0000,,now I'm going to introduce this new object
+Dialogue: 0,0:10:19.67,0:10:21.67,*Default,NTP,0000,0000,0000,,which has a balance and a holder
+Dialogue: 0,0:10:21.93,0:10:23.10,*Default,NTP,0000,0000,0000,,and this instance
+Dialogue: 0,0:10:23.50,0:10:25.47,*Default,NTP,0000,0000,0000,,is an instance of this class
+Dialogue: 0,0:10:26.00,0:10:28.30,*Default,NTP,0000,0000,0000,,now the account class has interest
+Dialogue: 0,0:10:28.80,0:10:31.07,*Default,NTP,0000,0000,0000,,and that's accessible from all the instances
+Dialogue: 0,0:10:31.07,0:10:33.07,*Default,NTP,0000,0000,0000,,but it's part of the class
+Dialogue: 0,0:10:33.70,0:10:36.47,*Default,NTP,0000,0000,0000,,it also has withdraw and deposit methods
+Dialogue: 0,0:10:36.67,0:10:37.73,*Default,NTP,0000,0000,0000,,and an initment
+Dialogue: 0,0:10:40.00,0:10:40.70,*Default,NTP,0000,0000,0000,,so here we see
+Dialogue: 0,0:10:40.70,0:10:41.97,*Default,NTP,0000,0000,0000,,the instance attributes of a
+Dialogue: 0,0:10:41.97,0:10:44.27,*Default,NTP,0000,0000,0000,,gym account are just the balance and the holder
+Dialogue: 0,0:10:44.97,0:10:46.70,*Default,NTP,0000,0000,0000,,and if I create tom account
+Dialogue: 0,0:10:46.93,0:10:47.10,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:10:47.10,0:10:49.57,*Default,NTP,0000,0000,0000,,then it will have its own balance and its own holder
+Dialogue: 0,0:10:50.20,0:10:52.00,*Default,NTP,0000,0000,0000,,the balances happen to be the same
+Dialogue: 0,0:10:52.00,0:10:53.60,*Default,NTP,0000,0000,0000,,but they could change later on
+Dialogue: 0,0:10:55.13,0:10:57.60,*Default,NTP,0000,0000,0000,,here we've looked up interest on tom account
+Dialogue: 0,0:10:57.90,0:10:59.07,*Default,NTP,0000,0000,0000,,which means looking in tom
+Dialogue: 0,0:10:59.07,0:11:01.20,*Default,NTP,0000,0000,0000,,account to see if there's an interest attribute
+Dialogue: 0,0:11:01.30,0:11:04.10,*Default,NTP,0000,0000,0000,,there's not so then you look in the class
+Dialogue: 0,0:11:04.30,0:11:06.30,*Default,NTP,0000,0000,0000,,there it's found 0.02
+Dialogue: 0,0:11:06.50,0:11:08.13,*Default,NTP,0000,0000,0000,,and so that's the value we see
+Dialogue: 0,0:11:09.57,0:11:12.67,*Default,NTP,0000,0000,0000,,jim account has an interest of 0.02 as well
+Dialogue: 0,0:11:13.77,0:11:17.87,*Default,NTP,0000,0000,0000,,next I can set a count dot interest as 0.04
+Dialogue: 0,0:11:18.80,0:11:23.20,*Default,NTP,0000,0000,0000,,that changes a class attribute for the account class
+Dialogue: 0,0:11:23.87,0:11:26.00,*Default,NTP,0000,0000,0000,,so we can see that change reflected up here
+Dialogue: 0,0:11:26.20,0:11:29.00,*Default,NTP,0000,0000,0000,,the interest is not bound to 0.02 anymore
+Dialogue: 0,0:11:29.13,0:11:31.57,*Default,NTP,0000,0000,0000,,but the attribute value is now point o four
+Dialogue: 0,0:11:33.37,0:11:35.30,*Default,NTP,0000,0000,0000,,if I look up the interest on tom's account
+Dialogue: 0,0:11:35.30,0:11:36.73,*Default,NTP,0000,0000,0000,,I'll find that point of four
+Dialogue: 0,0:11:36.77,0:11:38.73,*Default,NTP,0000,0000,0000,,and on jim's account I'll find the same
+Dialogue: 0,0:11:39.13,0:11:42.30,*Default,NTP,0000,0000,0000,,even though these were created back when
+Dialogue: 0,0:11:43.13,0:11:45.40,*Default,NTP,0000,0000,0000,,the account class had a different interest rate
+Dialogue: 0,0:11:46.80,0:11:48.17,*Default,NTP,0000,0000,0000,,so it's not the case
+Dialogue: 0,0:11:48.20,0:11:51.30,*Default,NTP,0000,0000,0000,,that an instance has its class attributes locked in
+Dialogue: 0,0:11:51.60,0:11:52.80,*Default,NTP,0000,0000,0000,,when it's created
+Dialogue: 0,0:11:52.97,0:11:55.13,*Default,NTP,0000,0000,0000,,instead they can change over time
+Dialogue: 0,0:11:55.70,0:11:58.17,*Default,NTP,0000,0000,0000,,and the instances will reflect those changes
+Dialogue: 0,0:12:01.47,0:12:05.70,*Default,NTP,0000,0000,0000,,next we see jimacount interest set to 0.08
+Dialogue: 0,0:12:06.37,0:12:09.40,*Default,NTP,0000,0000,0000,,this is an instance attribute assignment
+Dialogue: 0,0:12:09.67,0:12:13.70,*Default,NTP,0000,0000,0000,,that adds an interest attribute to the jima count
+Dialogue: 0,0:12:15.50,0:12:18.60,*Default,NTP,0000,0000,0000,,okay so now I see interest reflected in two places
+Dialogue: 0,0:12:18.67,0:12:21.20,*Default,NTP,0000,0000,0000,,both in an instance and in the class
+Dialogue: 0,0:12:22.77,0:12:24.60,*Default,NTP,0000,0000,0000,,if we look up jim accounts interest
+Dialogue: 0,0:12:24.60,0:12:27.30,*Default,NTP,0000,0000,0000,,we'll see 0.08 which is what we just set
+Dialogue: 0,0:12:27.80,0:12:29.80,*Default,NTP,0000,0000,0000,,if we look up tom accounts interest
+Dialogue: 0,0:12:30.10,0:12:32.70,*Default,NTP,0000,0000,0000,,we first look in tom account it has no interest
+Dialogue: 0,0:12:32.73,0:12:34.30,*Default,NTP,0000,0000,0000,,and so we look at its class
+Dialogue: 0,0:12:34.30,0:12:36.67,*Default,NTP,0000,0000,0000,,and it's currently set to 0.04
+Dialogue: 0,0:12:37.87,0:12:38.93,*Default,NTP,0000,0000,0000,,so now we see
+Dialogue: 0,0:12:39.10,0:12:42.37,*Default,NTP,0000,0000,0000,,that we're able to specialize a particular instance
+Dialogue: 0,0:12:43.90,0:12:45.53,*Default,NTP,0000,0000,0000,,of the account class
+Dialogue: 0,0:12:45.60,0:12:47.57,*Default,NTP,0000,0000,0000,,giving it its own special interest rate
+Dialogue: 0,0:12:47.60,0:12:49.27,*Default,NTP,0000,0000,0000,,which you know might happen in a back
+Dialogue: 0,0:12:49.27,0:12:51.73,*Default,NTP,0000,0000,0000,,somebody gets a higher interest rate than somebody else
+Dialogue: 0,0:12:53.37,0:12:57.13,*Default,NTP,0000,0000,0000,,let's say now we change a count dot interest to 0.05
+Dialogue: 0,0:12:57.87,0:12:58.70,*Default,NTP,0000,0000,0000,,well that's an
+Dialogue: 0,0:12:58.87,0:13:00.57,*Default,NTP,0000,0000,0000,,class attribute assignment statement
+Dialogue: 0,0:13:00.57,0:13:02.93,*Default,NTP,0000,0000,0000,,that will change this to 0.05
+Dialogue: 0,0:13:03.37,0:13:05.77,*Default,NTP,0000,0000,0000,,finally we can check the interest rate for each
+Dialogue: 0,0:13:05.93,0:13:10.07,*Default,NTP,0000,0000,0000,,instance tom's account has an interest rate of 0.0 5
+Dialogue: 0,0:13:10.50,0:13:11.73,*Default,NTP,0000,0000,0000,,which just changed
+Dialogue: 0,0:13:11.80,0:13:14.93,*Default,NTP,0000,0000,0000,,because of this class attribute assignment statement
+Dialogue: 0,0:13:15.77,0:13:16.57,*Default,NTP,0000,0000,0000,,jim
+Dialogue: 0,0:13:16.60,0:13:20.47,*Default,NTP,0000,0000,0000,,still has an interest rate that's a special case 0.0 8
+Dialogue: 0,0:13:21.07,0:13:22.87,*Default,NTP,0000,0000,0000,,so by assigning to the class
+Dialogue: 0,0:13:22.87,0:13:25.30,*Default,NTP,0000,0000,0000,,you don't arraise all the special cases
+Dialogue: 0,0:13:25.30,0:13:26.27,*Default,NTP,0000,0000,0000,,they're still there
+Dialogue: 0,0:13:31.00,0:13:33.60,*Default,NTP,0000,0000,0000,,onto a new topic inheritance
+Dialogue: 0,0:13:34.33,0:13:37.07,*Default,NTP,0000,0000,0000,,this is a new feature of the python object system
+Dialogue: 0,0:13:37.60,0:13:39.93,*Default,NTP,0000,0000,0000,,and it's a feature that exists in almost every
+Dialogue: 0,0:13:40.07,0:13:42.30,*Default,NTP,0000,0000,0000,,object system in every programming language
+Dialogue: 0,0:13:43.37,0:13:44.53,*Default,NTP,0000,0000,0000,,so inheritance
+Dialogue: 0,0:13:44.97,0:13:48.47,*Default,NTP,0000,0000,0000,,is a method for relating multiple classes together
+Dialogue: 0,0:13:49.27,0:13:51.93,*Default,NTP,0000,0000,0000,,because not every class exists in isolation
+Dialogue: 0,0:13:51.93,0:13:53.40,*Default,NTP,0000,0000,0000,,sometimes one is just
+Dialogue: 0,0:13:53.60,0:13:54.90,*Default,NTP,0000,0000,0000,,similar to another one
+Dialogue: 0,0:13:54.90,0:13:56.87,*Default,NTP,0000,0000,0000,,and we want to express that relationship
+Dialogue: 0,0:13:57.73,0:13:59.93,*Default,NTP,0000,0000,0000,,so the most common use case you should think
+Dialogue: 0,0:13:59.93,0:14:01.60,*Default,NTP,0000,0000,0000,,about when using inheritance
+Dialogue: 0,0:14:01.97,0:14:04.53,*Default,NTP,0000,0000,0000,,is when you have two similar classes
+Dialogue: 0,0:14:04.60,0:14:07.90,*Default,NTP,0000,0000,0000,,that differ in their degree of specialization
+Dialogue: 0,0:14:10.00,0:14:11.00,*Default,NTP,0000,0000,0000,,so the specialized
+Dialogue: 0,0:14:11.00,0:14:12.97,*Default,NTP,0000,0000,0000,,class might have all the same attributes as
+Dialogue: 0,0:14:12.97,0:14:14.20,*Default,NTP,0000,0000,0000,,the general class
+Dialogue: 0,0:14:14.67,0:14:17.30,*Default,NTP,0000,0000,0000,,along with some special case behavior
+Dialogue: 0,0:14:19.50,0:14:23.80,*Default,NTP,0000,0000,0000,,the way you express this syntactically in python
+Dialogue: 0,0:14:24.37,0:14:25.37,*Default,NTP,0000,0000,0000,,is that in addition
+Dialogue: 0,0:14:25.37,0:14:27.70,*Default,NTP,0000,0000,0000,,having a class statement with a name and a suite
+Dialogue: 0,0:14:28.10,0:14:31.47,*Default,NTP,0000,0000,0000,,you can also put in parentheses a bass class
+Dialogue: 0,0:14:31.80,0:14:35.53,*Default,NTP,0000,0000,0000,,and the bass class is what this class inherits from
+Dialogue: 0,0:14:38.37,0:14:41.67,*Default,NTP,0000,0000,0000,,so conceptually what happens is that the sub class
+Dialogue: 0,0:14:41.67,0:14:43.97,*Default,NTP,0000,0000,0000,,the one that we create with this class statement
+Dialogue: 0,0:14:44.37,0:14:48.50,*Default,NTP,0000,0000,0000,,shares all the attributes with its base class up here
+Dialogue: 0,0:14:49.93,0:14:52.07,*Default,NTP,0000,0000,0000,,the subclass might override
+Dialogue: 0,0:14:52.07,0:14:53.90,*Default,NTP,0000,0000,0000,,certain inherited attributes in order
+Dialogue: 0,0:14:53.90,0:14:55.80,*Default,NTP,0000,0000,0000,,to change its behavior slightly
+Dialogue: 0,0:14:56.20,0:14:59.27,*Default,NTP,0000,0000,0000,,but anything that's not changed stays the same
+Dialogue: 0,0:15:00.00,0:15:01.37,*Default,NTP,0000,0000,0000,,so using inheritance
+Dialogue: 0,0:15:01.37,0:15:04.37,*Default,NTP,0000,0000,0000,,when we write down a subclass of an existing class
+Dialogue: 0,0:15:04.67,0:15:06.90,*Default,NTP,0000,0000,0000,,all we do is we specify what's different
+Dialogue: 0,0:15:06.90,0:15:08.17,*Default,NTP,0000,0000,0000,,about this subclass
+Dialogue: 0,0:15:08.33,0:15:09.70,*Default,NTP,0000,0000,0000,,from the base class
+Dialogue: 0,0:15:09.80,0:15:11.20,*Default,NTP,0000,0000,0000,,everything else stays the same
+Dialogue: 0,0:15:13.80,0:15:14.97,*Default,NTP,0000,0000,0000,,let's do an example
+Dialogue: 0,0:15:15.13,0:15:15.93,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:15:16.73,0:15:18.30,*Default,NTP,0000,0000,0000,,let's say we have a checking account
+Dialogue: 0,0:15:18.30,0:15:19.57,*Default,NTP,0000,0000,0000,,it's like an account
+Dialogue: 0,0:15:20.53,0:15:22.50,*Default,NTP,0000,0000,0000,,but special in the following way
+Dialogue: 0,0:15:23.27,0:15:24.90,*Default,NTP,0000,0000,0000,,when you create a checking account
+Dialogue: 0,0:15:24.90,0:15:26.53,*Default,NTP,0000,0000,0000,,you still give it a holder
+Dialogue: 0,0:15:27.40,0:15:29.17,*Default,NTP,0000,0000,0000,,but its interest rate is lower
+Dialogue: 0,0:15:29.17,0:15:30.90,*Default,NTP,0000,0000,0000,,than the interest rate that you would get
+Dialogue: 0,0:15:30.90,0:15:32.13,*Default,NTP,0000,0000,0000,,on a normal account
+Dialogue: 0,0:15:32.67,0:15:34.90,*Default,NTP,0000,0000,0000,,so you get less money every month
+Dialogue: 0,0:15:36.33,0:15:39.17,*Default,NTP,0000,0000,0000,,when you deposit is the same thing as before
+Dialogue: 0,0:15:39.17,0:15:41.07,*Default,NTP,0000,0000,0000,,you add money to your checking account
+Dialogue: 0,0:15:41.67,0:15:44.10,*Default,NTP,0000,0000,0000,,when you withdraw money from your checking account
+Dialogue: 0,0:15:44.37,0:15:46.30,*Default,NTP,0000,0000,0000,,you incur a withdrawal feet
+Dialogue: 0,0:15:46.30,0:15:48.70,*Default,NTP,0000,0000,0000,,I mean the bank has to make some money somehow right
+Dialogue: 0,0:15:49.13,0:15:51.97,*Default,NTP,0000,0000,0000,,so when you withdraw a $5 from your bank account
+Dialogue: 0,0:15:51.97,0:15:53.13,*Default,NTP,0000,0000,0000,,and there's 20 in there
+Dialogue: 0,0:15:53.27,0:15:56.60,*Default,NTP,0000,0000,0000,,what's really left over is a balance of 14
+Dialogue: 0,0:15:59.47,0:16:00.93,*Default,NTP,0000,0000,0000,,okay so most of this is
+Dialogue: 0,0:16:00.93,0:16:04.20,*Default,NTP,0000,0000,0000,,the behavior is shared with the bass class account
+Dialogue: 0,0:16:04.80,0:16:07.33,*Default,NTP,0000,0000,0000,,so all this different
+Dialogue: 0,0:16:07.33,0:16:09.00,*Default,NTP,0000,0000,0000,,is that we have a lower interest rate
+Dialogue: 0,0:16:09.97,0:16:11.73,*Default,NTP,0000,0000,0000,,and when we withdraw money
+Dialogue: 0,0:16:11.73,0:16:13.17,*Default,NTP,0000,0000,0000,,we have to pay an extra dollar
+Dialogue: 0,0:16:14.33,0:16:15.13,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:16:15.27,0:16:17.80,*Default,NTP,0000,0000,0000,,here's how we write the code for this checking account
+Dialogue: 0,0:16:18.27,0:16:20.50,*Default,NTP,0000,0000,0000,,we say there's a class called checking account
+Dialogue: 0,0:16:20.50,0:16:22.73,*Default,NTP,0000,0000,0000,,its base class is account
+Dialogue: 0,0:16:23.27,0:16:24.90,*Default,NTP,0000,0000,0000,,another way of saying the same thing
+Dialogue: 0,0:16:25.37,0:16:27.37,*Default,NTP,0000,0000,0000,,we'll create a class called checking account
+Dialogue: 0,0:16:27.37,0:16:29.67,*Default,NTP,0000,0000,0000,,that inherits from account
+Dialogue: 0,0:16:31.50,0:16:34.17,*Default,NTP,0000,0000,0000,,so this is a bank account that charges for withdrawals
+Dialogue: 0,0:16:34.30,0:16:36.80,*Default,NTP,0000,0000,0000,,we set that withdraw fee to be a dollar
+Dialogue: 0,0:16:37.20,0:16:39.93,*Default,NTP,0000,0000,0000,,we set the interest rate to be point o one
+Dialogue: 0,0:16:39.93,0:16:41.77,*Default,NTP,0000,0000,0000,,instead of the usual point o two
+Dialogue: 0,0:16:42.33,0:16:44.97,*Default,NTP,0000,0000,0000,,and then we also have to change the withdraw method
+Dialogue: 0,0:16:45.07,0:16:47.17,*Default,NTP,0000,0000,0000,,because writing down withdraw fee
+Dialogue: 0,0:16:47.17,0:16:47.47,*Default,NTP,0000,0000,0000,,might
+Dialogue: 0,0:16:47.47,0:16:49.53,*Default,NTP,0000,0000,0000,,seem like it's helping us get in the right direction
+Dialogue: 0,0:16:49.53,0:16:50.37,*Default,NTP,0000,0000,0000,,and it is
+Dialogue: 0,0:16:50.77,0:16:53.77,*Default,NTP,0000,0000,0000,,but we haven't ever said how to use the withdraw fee
+Dialogue: 0,0:16:53.80,0:16:56.00,*Default,NTP,0000,0000,0000,,so we have to write down a method that does that
+Dialogue: 0,0:16:56.27,0:16:58.17,*Default,NTP,0000,0000,0000,,and we'll write down the withdraw method
+Dialogue: 0,0:16:59.27,0:17:01.33,*Default,NTP,0000,0000,0000,,so the withdraw method takes some amount
+Dialogue: 0,0:17:01.97,0:17:04.93,*Default,NTP,0000,0000,0000,,and what it does is it withdraws
+Dialogue: 0,0:17:06.13,0:17:07.80,*Default,NTP,0000,0000,0000,,from the current account
+Dialogue: 0,0:17:08.40,0:17:10.37,*Default,NTP,0000,0000,0000,,the amount that was specified
+Dialogue: 0,0:17:10.87,0:17:14.00,*Default,NTP,0000,0000,0000,,plus whatever the withdraw fee is
+Dialogue: 0,0:17:14.53,0:17:16.00,*Default,NTP,0000,0000,0000,,for this current account
+Dialogue: 0,0:17:16.87,0:17:19.10,*Default,NTP,0000,0000,0000,,now why do I keep saying current account
+Dialogue: 0,0:17:19.70,0:17:21.50,*Default,NTP,0000,0000,0000,,when it says self right there
+Dialogue: 0,0:17:21.67,0:17:23.13,*Default,NTP,0000,0000,0000,,or remember that self
+Dialogue: 0,0:17:23.27,0:17:26.10,*Default,NTP,0000,0000,0000,,is the name we use to refer to the object
+Dialogue: 0,0:17:26.60,0:17:29.27,*Default,NTP,0000,0000,0000,,on which this method gets invoked
+Dialogue: 0,0:17:30.77,0:17:33.77,*Default,NTP,0000,0000,0000,,so when we actually call withdraw right here
+Dialogue: 0,0:17:34.57,0:17:36.77,*Default,NTP,0000,0000,0000,,self will be bound to this checking account
+Dialogue: 0,0:17:36.77,0:17:38.67,*Default,NTP,0000,0000,0000,,which is currently called ch
+Dialogue: 0,0:17:38.90,0:17:40.47,*Default,NTP,0000,0000,0000,,and was originally created
+Dialogue: 0,0:17:40.67,0:17:42.50,*Default,NTP,0000,0000,0000,,with this call to checking account
+Dialogue: 0,0:17:43.17,0:17:45.10,*Default,NTP,0000,0000,0000,,okay so we'll withdraw $5
+Dialogue: 0,0:17:45.30,0:17:46.77,*Default,NTP,0000,0000,0000,,amount will be five
+Dialogue: 0,0:17:46.90,0:17:49.73,*Default,NTP,0000,0000,0000,,we'll add in the withdraw fee of one
+Dialogue: 0,0:17:49.73,0:17:51.80,*Default,NTP,0000,0000,0000,,which is shared among all checking accounts
+Dialogue: 0,0:17:51.80,0:17:53.67,*Default,NTP,0000,0000,0000,,because this is a class attribute
+Dialogue: 0,0:17:54.50,0:17:56.67,*Default,NTP,0000,0000,0000,,and then how do we actually do the withdrawing
+Dialogue: 0,0:17:56.67,0:17:57.97,*Default,NTP,0000,0000,0000,,well that's the interesting part
+Dialogue: 0,0:17:58.37,0:17:59.67,*Default,NTP,0000,0000,0000,,we refer to the
+Dialogue: 0,0:17:59.87,0:18:03.40,*Default,NTP,0000,0000,0000,,method on the bass class called account withdraw
+Dialogue: 0,0:18:03.97,0:18:06.00,*Default,NTP,0000,0000,0000,,now since we're looking this up on a class
+Dialogue: 0,0:18:06.00,0:18:07.67,*Default,NTP,0000,0000,0000,,as opposed to on an instance
+Dialogue: 0,0:18:07.97,0:18:09.90,*Default,NTP,0000,0000,0000,,we're not going to get a bound method back
+Dialogue: 0,0:18:10.13,0:18:12.80,*Default,NTP,0000,0000,0000,,we have to supply this self ourselves
+Dialogue: 0,0:18:15.50,0:18:16.30,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:18:16.93,0:18:19.70,*Default,NTP,0000,0000,0000,,since we put account here as the base class
+Dialogue: 0,0:18:19.70,0:18:21.80,*Default,NTP,0000,0000,0000,,we don't need to say anything about depositing
+Dialogue: 0,0:18:21.80,0:18:23.77,*Default,NTP,0000,0000,0000,,that just stays the same as it was before
+Dialogue: 0,0:18:23.93,0:18:25.73,*Default,NTP,0000,0000,0000,,we don't need to say anything about in it
+Dialogue: 0,0:18:25.73,0:18:27.53,*Default,NTP,0000,0000,0000,,that just stays the same as it was before
+Dialogue: 0,0:18:27.53,0:18:30.30,*Default,NTP,0000,0000,0000,,so checking accounts start out with $0
+Dialogue: 0,0:18:32.60,0:18:35.47,*Default,NTP,0000,0000,0000,,okay so let's talk about looking up attribute names on
+Dialogue: 0,0:18:35.47,0:18:38.57,*Default,NTP,0000,0000,0000,,classes the bass class attributes aren't copied
+Dialogue: 0,0:18:38.57,0:18:39.53,*Default,NTP,0000,0000,0000,,into the subclass
+Dialogue: 0,0:18:39.53,0:18:41.40,*Default,NTP,0000,0000,0000,,instead is part of the process
+Dialogue: 0,0:18:41.40,0:18:43.53,*Default,NTP,0000,0000,0000,,of looking up an attribute by name
+Dialogue: 0,0:18:44.10,0:18:46.90,*Default,NTP,0000,0000,0000,,that gives you the behavior that an attribute
+Dialogue: 0,0:18:47.10,0:18:49.57,*Default,NTP,0000,0000,0000,,of a subclass that isn't changed
+Dialogue: 0,0:18:50.00,0:18:52.70,*Default,NTP,0000,0000,0000,,is just the same as whatever the bass class was
+Dialogue: 0,0:18:54.07,0:18:56.60,*Default,NTP,0000,0000,0000,,so to look up a name in a class here's what you do
+Dialogue: 0,0:18:56.87,0:18:59.60,*Default,NTP,0000,0000,0000,,if it names an attribute is in that class
+Dialogue: 0,0:18:59.70,0:19:01.67,*Default,NTP,0000,0000,0000,,then return the attribute value
+Dialogue: 0,0:19:02.37,0:19:04.60,*Default,NTP,0000,0000,0000,,remembered attributes or name value pairs
+Dialogue: 0,0:19:05.67,0:19:06.53,*Default,NTP,0000,0000,0000,,if not
+Dialogue: 0,0:19:06.90,0:19:09.77,*Default,NTP,0000,0000,0000,,look up that name in the base class if there is one
+Dialogue: 0,0:19:11.30,0:19:13.70,*Default,NTP,0000,0000,0000,,now the bass class is just a class
+Dialogue: 0,0:19:13.80,0:19:16.50,*Default,NTP,0000,0000,0000,,so we recursively are doing the same thing
+Dialogue: 0,0:19:16.80,0:19:17.80,*Default,NTP,0000,0000,0000,,we'll look there
+Dialogue: 0,0:19:17.97,0:19:19.50,*Default,NTP,0000,0000,0000,,see if that attributes in the class
+Dialogue: 0,0:19:19.50,0:19:21.57,*Default,NTP,0000,0000,0000,,if so overturn its attribute value
+Dialogue: 0,0:19:21.77,0:19:22.57,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:19:22.80,0:19:26.07,*Default,NTP,0000,0000,0000,,we'll look up in the bass class of the bass class
+Dialogue: 0,0:19:26.33,0:19:29.60,*Default,NTP,0000,0000,0000,,okay so let's talk about exactly what's happening
+Dialogue: 0,0:19:30.37,0:19:32.20,*Default,NTP,0000,0000,0000,,when I create a checking account
+Dialogue: 0,0:19:33.13,0:19:35.30,*Default,NTP,0000,0000,0000,,I pass in tom as the holder
+Dialogue: 0,0:19:36.00,0:19:38.77,*Default,NTP,0000,0000,0000,,since the checking account class we just defined
+Dialogue: 0,0:19:38.97,0:19:41.37,*Default,NTP,0000,0000,0000,,doesn't have an in it method of its own
+Dialogue: 0,0:19:42.60,0:19:44.17,*Default,NTP,0000,0000,0000,,we look up the name in it
+Dialogue: 0,0:19:44.40,0:19:46.33,*Default,NTP,0000,0000,0000,,we don't find it in checking account
+Dialogue: 0,0:19:46.37,0:19:48.57,*Default,NTP,0000,0000,0000,,but we do find it in account
+Dialogue: 0,0:19:49.10,0:19:50.97,*Default,NTP,0000,0000,0000,,and so that's the one that gets called
+Dialogue: 0,0:19:51.40,0:19:55.17,*Default,NTP,0000,0000,0000,,and that says the balance to zero and the holder to top
+Dialogue: 0,0:19:56.73,0:19:58.00,*Default,NTP,0000,0000,0000,,when we look up the interest rate
+Dialogue: 0,0:19:58.00,0:19:59.50,*Default,NTP,0000,0000,0000,,while there is a special interest rate
+Dialogue: 0,0:19:59.50,0:20:00.50,*Default,NTP,0000,0000,0000,,for the checking account
+Dialogue: 0,0:20:00.50,0:20:01.60,*Default,NTP,0000,0000,0000,,so that's where we find it
+Dialogue: 0,0:20:01.60,0:20:02.57,*Default,NTP,0000,0000,0000,,and is 201
+Dialogue: 0,0:20:03.67,0:20:04.93,*Default,NTP,0000,0000,0000,,when we deposit
+Dialogue: 0,0:20:05.30,0:20:09.30,*Default,NTP,0000,0000,0000,,all that depositing happens from the accounts method
+Dialogue: 0,0:20:09.47,0:20:10.73,*Default,NTP,0000,0000,0000,,so here's what we do
+Dialogue: 0,0:20:10.73,0:20:13.10,*Default,NTP,0000,0000,0000,,we try to evaluate this operator expression
+Dialogue: 0,0:20:13.10,0:20:14.60,*Default,NTP,0000,0000,0000,,which is a dot expression
+Dialogue: 0,0:20:14.60,0:20:16.27,*Default,NTP,0000,0000,0000,,which means we look up deposit
+Dialogue: 0,0:20:16.27,0:20:17.67,*Default,NTP,0000,0000,0000,,on this checking account
+Dialogue: 0,0:20:17.67,0:20:19.00,*Default,NTP,0000,0000,0000,,which check in the instance
+Dialogue: 0,0:20:19.10,0:20:21.17,*Default,NTP,0000,0000,0000,,no deposit attribute there
+Dialogue: 0,0:20:21.47,0:20:23.50,*Default,NTP,0000,0000,0000,,we check in the checking account class
+Dialogue: 0,0:20:24.07,0:20:25.77,*Default,NTP,0000,0000,0000,,no attribute deposit there
+Dialogue: 0,0:20:26.10,0:20:27.93,*Default,NTP,0000,0000,0000,,so then we check in the account class
+Dialogue: 0,0:20:27.93,0:20:29.77,*Default,NTP,0000,0000,0000,,and it has a method called deposit
+Dialogue: 0,0:20:29.93,0:20:33.10,*Default,NTP,0000,0000,0000,,so we get back a bound method here and we call it on 20
+Dialogue: 0,0:20:33.33,0:20:35.37,*Default,NTP,0000,0000,0000,,depositing $20 in the account
+Dialogue: 0,0:20:36.40,0:20:38.17,*Default,NTP,0000,0000,0000,,and finally when we withdraw
+Dialogue: 0,0:20:38.33,0:20:40.10,*Default,NTP,0000,0000,0000,,while we find that in the checking account
+Dialogue: 0,0:20:40.10,0:20:41.57,*Default,NTP,0000,0000,0000,,and that gives us 14
+Dialogue: 0,0:20:42.70,0:20:44.77,*Default,NTP,0000,0000,0000,,okay let's just write the whole thing down
+Dialogue: 0,0:20:44.77,0:20:46.33,*Default,NTP,0000,0000,0000,,so that we understand what's going on
+Dialogue: 0,0:20:47.87,0:20:49.30,*Default,NTP,0000,0000,0000,,so on the right you see
+Dialogue: 0,0:20:49.30,0:20:51.37,*Default,NTP,0000,0000,0000,,the account class from last time
+Dialogue: 0,0:20:52.77,0:20:54.77,*Default,NTP,0000,0000,0000,,so in addition to the class that we have
+Dialogue: 0,0:20:54.77,0:20:56.90,*Default,NTP,0000,0000,0000,,we're going to create a class checking account
+Dialogue: 0,0:20:59.33,0:21:01.07,*Default,NTP,0000,0000,0000,,which inherits from account
+Dialogue: 0,0:21:03.80,0:21:05.57,*Default,NTP,0000,0000,0000,,it has a different interest rate
+Dialogue: 0,0:21:08.37,0:21:12.47,*Default,NTP,0000,0000,0000,,and as a fee associated with all withdrawals of $1
+Dialogue: 0,0:21:13.27,0:21:15.17,*Default,NTP,0000,0000,0000,,and the way that fee gets used
+Dialogue: 0,0:21:15.80,0:21:18.40,*Default,NTP,0000,0000,0000,,is that we write a withdrawal method
+Dialogue: 0,0:21:23.90,0:21:27.10,*Default,NTP,0000,0000,0000,,that withdraws not just the amount but a dollar extra
+Dialogue: 0,0:21:28.93,0:21:29.97,*Default,NTP,0000,0000,0000,,okay now
+Dialogue: 0,0:21:30.10,0:21:32.93,*Default,NTP,0000,0000,0000,,it's reasonable that we could just copy this over right
+Dialogue: 0,0:21:32.93,0:21:34.47,*Default,NTP,0000,0000,0000,,then say
+Dialogue: 0,0:21:34.60,0:21:37.77,*Default,NTP,0000,0000,0000,,okay the first thing we're gonna do is we'll add one
+Dialogue: 0,0:21:38.90,0:21:41.93,*Default,NTP,0000,0000,0000,,to amount and then we'll go through
+Dialogue: 0,0:21:42.17,0:21:44.60,*Default,NTP,0000,0000,0000,,and we'll check and see if the amount is too big
+Dialogue: 0,0:21:44.60,0:21:47.37,*Default,NTP,0000,0000,0000,,if it is and we'll say insufficient funds
+Dialogue: 0,0:21:47.57,0:21:49.90,*Default,NTP,0000,0000,0000,,if we're okay then we'll change the balance
+Dialogue: 0,0:21:50.00,0:21:51.27,*Default,NTP,0000,0000,0000,,and we'll return that balance
+Dialogue: 0,0:21:51.90,0:21:54.13,*Default,NTP,0000,0000,0000,,this would be correct for a while
+Dialogue: 0,0:21:54.27,0:21:55.30,*Default,NTP,0000,0000,0000,,but the problem is
+Dialogue: 0,0:21:55.30,0:21:56.70,*Default,NTP,0000,0000,0000,,if we made changes up here
+Dialogue: 0,0:21:56.70,0:21:58.37,*Default,NTP,0000,0000,0000,,they wouldn't be reflected down here
+Dialogue: 0,0:21:59.53,0:22:02.37,*Default,NTP,0000,0000,0000,,so that's why instead in the example that I showed you
+Dialogue: 0,0:22:02.87,0:22:05.07,*Default,NTP,0000,0000,0000,,I said let's actually
+Dialogue: 0,0:22:05.10,0:22:07.97,*Default,NTP,0000,0000,0000,,just use the implementation we have already
+Dialogue: 0,0:22:08.13,0:22:09.80,*Default,NTP,0000,0000,0000,,a count up withdraw
+Dialogue: 0,0:22:10.10,0:22:11.97,*Default,NTP,0000,0000,0000,,that's this function right here
+Dialogue: 0,0:22:12.87,0:22:14.80,*Default,NTP,0000,0000,0000,,and what does count out withdraw take
+Dialogue: 0,0:22:15.13,0:22:15.30,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:22:15.30,0:22:18.93,*Default,NTP,0000,0000,0000,,it takes self an account object as a first parameter
+Dialogue: 0,0:22:19.10,0:22:20.07,*Default,NTP,0000,0000,0000,,and the syric 2nd
+Dialogue: 0,0:22:20.07,0:22:22.17,*Default,NTP,0000,0000,0000,,parameter is the amount that we want to withdraw
+Dialogue: 0,0:22:22.40,0:22:25.00,*Default,NTP,0000,0000,0000,,which is whatever amount was passed in here
+Dialogue: 0,0:22:25.30,0:22:27.07,*Default,NTP,0000,0000,0000,,plus the withdraw feet
+Dialogue: 0,0:22:30.97,0:22:33.73,*Default,NTP,0000,0000,0000,,let's quickly verify that this works
+Dialogue: 0,0:22:35.73,0:22:37.53,*Default,NTP,0000,0000,0000,,so if I have one account
+Dialogue: 0,0:22:38.30,0:22:41.07,*Default,NTP,0000,0000,0000,,that's an old kind of account for john
+Dialogue: 0,0:22:41.80,0:22:44.70,*Default,NTP,0000,0000,0000,,and then another account which is a chicken account
+Dialogue: 0,0:22:45.50,0:22:47.20,*Default,NTP,0000,0000,0000,,for my good friend jack
+Dialogue: 0,0:22:48.47,0:22:51.10,*Default,NTP,0000,0000,0000,,so a is an account b is a checking account
+Dialogue: 0,0:22:51.87,0:22:54.80,*Default,NTP,0000,0000,0000,,they both have a balance of zero
+Dialogue: 0,0:22:56.40,0:22:59.93,*Default,NTP,0000,0000,0000,,let's add a balance to each by depositing
+Dialogue: 0,0:23:00.57,0:23:04.27,*Default,NTP,0000,0000,0000,,into 100 a and depositing
+Dialogue: 0,0:23:05.60,0:23:07.17,*Default,NTP,0000,0000,0000,,100 and b
+Dialogue: 0,0:23:08.30,0:23:10.20,*Default,NTP,0000,0000,0000,,now both those did the same thing
+Dialogue: 0,0:23:10.57,0:23:11.67,*Default,NTP,0000,0000,0000,,because they're both using
+Dialogue: 0,0:23:11.67,0:23:13.60,*Default,NTP,0000,0000,0000,,the same deposit function over here
+Dialogue: 0,0:23:14.57,0:23:18.17,*Default,NTP,0000,0000,0000,,but if I withdraw $10 from a I have 90 left
+Dialogue: 0,0:23:18.30,0:23:22.93,*Default,NTP,0000,0000,0000,,or if I withdraw 10 from b then I have only 89 left
+Dialogue: 0,0:23:23.07,0:23:25.13,*Default,NTP,0000,0000,0000,,because I use this withdraw feet
+Dialogue: 0,0:23:28.80,0:23:30.93,*Default,NTP,0000,0000,0000,,next we'll talk about designing
+Dialogue: 0,0:23:31.30,0:23:33.00,*Default,NTP,0000,0000,0000,,object oriented programs
+Dialogue: 0,0:23:33.00,0:23:34.90,*Default,NTP,0000,0000,0000,,some of the choices you'll encounter
+Dialogue: 0,0:23:35.17,0:23:38.00,*Default,NTP,0000,0000,0000,,and some guidance for how to come to a useful solution
+Dialogue: 0,0:23:39.90,0:23:40.27,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:23:40.27,0:23:43.17,*Default,NTP,0000,0000,0000,,here's the checking account class that we just defined
+Dialogue: 0,0:23:43.87,0:23:44.80,*Default,NTP,0000,0000,0000,,and let me just
+Dialogue: 0,0:23:44.87,0:23:47.53,*Default,NTP,0000,0000,0000,,reiterate why we did certain things that we did
+Dialogue: 0,0:23:48.60,0:23:49.57,*Default,NTP,0000,0000,0000,,so first of all
+Dialogue: 0,0:23:49.87,0:23:52.77,*Default,NTP,0000,0000,0000,,it's important to continue following the guidelines
+Dialogue: 0,0:23:52.77,0:23:54.37,*Default,NTP,0000,0000,0000,,that you saw earlier in the course
+Dialogue: 0,0:23:54.67,0:23:55.97,*Default,NTP,0000,0000,0000,,don't repeat yourself
+Dialogue: 0,0:23:56.10,0:23:59.07,*Default,NTP,0000,0000,0000,,use existing implementations whenever you can
+Dialogue: 0,0:23:59.30,0:24:02.27,*Default,NTP,0000,0000,0000,,and try to avoid copying and pasting coat
+Dialogue: 0,0:24:03.87,0:24:04.67,*Default,NTP,0000,0000,0000,,2nd
+Dialogue: 0,0:24:05.17,0:24:07.20,*Default,NTP,0000,0000,0000,,attributes that have been overridden
+Dialogue: 0,0:24:07.60,0:24:10.80,*Default,NTP,0000,0000,0000,,should still be accessible via class objects
+Dialogue: 0,0:24:11.30,0:24:12.57,*Default,NTP,0000,0000,0000,,what am I talking about
+Dialogue: 0,0:24:12.87,0:24:13.60,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:24:13.60,0:24:17.53,*Default,NTP,0000,0000,0000,,to override an attribute means that in the subclass
+Dialogue: 0,0:24:17.80,0:24:20.27,*Default,NTP,0000,0000,0000,,you're giving an attribute the same name
+Dialogue: 0,0:24:20.67,0:24:23.07,*Default,NTP,0000,0000,0000,,as exists in the bass class
+Dialogue: 0,0:24:23.73,0:24:26.40,*Default,NTP,0000,0000,0000,,so here we see the checking account class has withdraw
+Dialogue: 0,0:24:26.60,0:24:28.90,*Default,NTP,0000,0000,0000,,which also exists in the count class
+Dialogue: 0,0:24:29.33,0:24:32.67,*Default,NTP,0000,0000,0000,,but even though we've overridden that name
+Dialogue: 0,0:24:33.30,0:24:35.67,*Default,NTP,0000,0000,0000,,meaning the checking accounts will call this withdraw
+Dialogue: 0,0:24:35.67,0:24:37.37,*Default,NTP,0000,0000,0000,,instead of the original withdraw
+Dialogue: 0,0:24:37.73,0:24:39.93,*Default,NTP,0000,0000,0000,,we can still access them and use them
+Dialogue: 0,0:24:40.07,0:24:41.53,*Default,NTP,0000,0000,0000,,using the class object
+Dialogue: 0,0:24:42.13,0:24:43.70,*Default,NTP,0000,0000,0000,,so here's the account class
+Dialogue: 0,0:24:43.80,0:24:47.17,*Default,NTP,0000,0000,0000,,an account dot withdraw will give us the original
+Dialogue: 0,0:24:47.27,0:24:48.60,*Default,NTP,0000,0000,0000,,withdraw method
+Dialogue: 0,0:24:48.77,0:24:51.27,*Default,NTP,0000,0000,0000,,as opposed to this new one for checking accounts
+Dialogue: 0,0:24:51.73,0:24:54.00,*Default,NTP,0000,0000,0000,,so we can still defer to the old logic
+Dialogue: 0,0:24:54.27,0:24:56.50,*Default,NTP,0000,0000,0000,,and we just make this small change of using
+Dialogue: 0,0:24:56.57,0:24:57.73,*Default,NTP,0000,0000,0000,,a withdraw fee
+Dialogue: 0,0:24:59.77,0:25:02.47,*Default,NTP,0000,0000,0000,,you can also look up attributes on instances
+Dialogue: 0,0:25:02.47,0:25:03.47,*Default,NTP,0000,0000,0000,,whenever possible
+Dialogue: 0,0:25:03.47,0:25:04.93,*Default,NTP,0000,0000,0000,,and this is a good idea
+Dialogue: 0,0:25:05.90,0:25:07.50,*Default,NTP,0000,0000,0000,,so what am I talking about there
+Dialogue: 0,0:25:08.00,0:25:10.00,*Default,NTP,0000,0000,0000,,well when we compute
+Dialogue: 0,0:25:11.20,0:25:13.60,*Default,NTP,0000,0000,0000,,the total amount that we're going to withdraw
+Dialogue: 0,0:25:13.60,0:25:15.57,*Default,NTP,0000,0000,0000,,amount plus self withdraw fee
+Dialogue: 0,0:25:15.80,0:25:17.27,*Default,NTP,0000,0000,0000,,we had several options here
+Dialogue: 0,0:25:17.27,0:25:19.07,*Default,NTP,0000,0000,0000,,we could just write amount plus one
+Dialogue: 0,0:25:19.33,0:25:21.10,*Default,NTP,0000,0000,0000,,hard coding with the withdraw fee
+Dialogue: 0,0:25:21.10,0:25:22.57,*Default,NTP,0000,0000,0000,,but then we could never change it
+Dialogue: 0,0:25:23.13,0:25:25.20,*Default,NTP,0000,0000,0000,,we could also write amount plus
+Dialogue: 0,0:25:25.33,0:25:27.57,*Default,NTP,0000,0000,0000,,checking account that withdraw fee
+Dialogue: 0,0:25:28.67,0:25:29.97,*Default,NTP,0000,0000,0000,,which would get this one
+Dialogue: 0,0:25:30.20,0:25:31.50,*Default,NTP,0000,0000,0000,,this attribute here
+Dialogue: 0,0:25:32.00,0:25:33.77,*Default,NTP,0000,0000,0000,,but it wouldn't allow for the fact
+Dialogue: 0,0:25:33.77,0:25:35.93,*Default,NTP,0000,0000,0000,,that some chicken accounts might have a special
+Dialogue: 0,0:25:35.93,0:25:36.97,*Default,NTP,0000,0000,0000,,withdrophy
+Dialogue: 0,0:25:37.77,0:25:41.93,*Default,NTP,0000,0000,0000,,so the best way to do this is to look up withdraw fee
+Dialogue: 0,0:25:42.17,0:25:43.77,*Default,NTP,0000,0000,0000,,on the instance itself
+Dialogue: 0,0:25:44.27,0:25:45.57,*Default,NTP,0000,0000,0000,,which means that if
+Dialogue: 0,0:25:45.70,0:25:47.80,*Default,NTP,0000,0000,0000,,that instance has a particular withdraw fee
+Dialogue: 0,0:25:47.80,0:25:51.90,*Default,NTP,0000,0000,0000,,will use it if not we'll use the one from the account
+Dialogue: 0,0:25:55.13,0:25:55.50,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:25:55.50,0:25:58.00,*Default,NTP,0000,0000,0000,,so here we have attribute a look up on a bass class
+Dialogue: 0,0:25:58.07,0:26:00.27,*Default,NTP,0000,0000,0000,,and here we have
+Dialogue: 0,0:26:00.60,0:26:02.40,*Default,NTP,0000,0000,0000,,looking at an instance attribute
+Dialogue: 0,0:26:03.00,0:26:04.97,*Default,NTP,0000,0000,0000,,and that's preferred to looking up checking account out
+Dialogue: 0,0:26:04.97,0:26:09.00,*Default,NTP,0000,0000,0000,,withdraw fee because it allows for specialized accounts
+Dialogue: 0,0:26:09.20,0:26:11.13,*Default,NTP,0000,0000,0000,,either through further subclasses
+Dialogue: 0,0:26:11.30,0:26:15.00,*Default,NTP,0000,0000,0000,,or by giving instance attributes to particular accounts
+Dialogue: 0,0:26:17.80,0:26:19.60,*Default,NTP,0000,0000,0000,,the other thing you need to think about when
+Dialogue: 0,0:26:19.60,0:26:21.67,*Default,NTP,0000,0000,0000,,designing an object oriented programming
+Dialogue: 0,0:26:21.93,0:26:23.67,*Default,NTP,0000,0000,0000,,is when to use inheritance
+Dialogue: 0,0:26:24.00,0:26:25.87,*Default,NTP,0000,0000,0000,,versus when to use composition
+Dialogue: 0,0:26:26.87,0:26:28.10,*Default,NTP,0000,0000,0000,,what's composition
+Dialogue: 0,0:26:28.57,0:26:30.33,*Default,NTP,0000,0000,0000,,well that's when one object
+Dialogue: 0,0:26:30.50,0:26:32.67,*Default,NTP,0000,0000,0000,,has another object as an attribute
+Dialogue: 0,0:26:32.87,0:26:34.87,*Default,NTP,0000,0000,0000,,and that's a very common pattern as well
+Dialogue: 0,0:26:35.77,0:26:37.17,*Default,NTP,0000,0000,0000,,so obdicurated programming
+Dialogue: 0,0:26:37.17,0:26:39.13,*Default,NTP,0000,0000,0000,,shines when we follow the metaphor
+Dialogue: 0,0:26:39.40,0:26:42.53,*Default,NTP,0000,0000,0000,,that is we treat objects like real things in the world
+Dialogue: 0,0:26:42.70,0:26:44.73,*Default,NTP,0000,0000,0000,,this helps us think about them clearly
+Dialogue: 0,0:26:45.30,0:26:48.07,*Default,NTP,0000,0000,0000,,so inheritance is best to represent
+Dialogue: 0,0:26:48.50,0:26:50.37,*Default,NTP,0000,0000,0000,,is a relationships
+Dialogue: 0,0:26:50.53,0:26:54.67,*Default,NTP,0000,0000,0000,,meaning a checking account is a type of account
+Dialogue: 0,0:26:56.13,0:26:58.40,*Default,NTP,0000,0000,0000,,so checking out is a specific type of account
+Dialogue: 0,0:26:58.40,0:27:01.53,*Default,NTP,0000,0000,0000,,so checking account naturally inherits from account
+Dialogue: 0,0:27:01.60,0:27:04.80,*Default,NTP,0000,0000,0000,,and thereby has all of the attributes of that account
+Dialogue: 0,0:27:05.93,0:27:06.97,*Default,NTP,0000,0000,0000,,composition
+Dialogue: 0,0:27:07.13,0:27:09.90,*Default,NTP,0000,0000,0000,,when one object has another one as an attribute
+Dialogue: 0,0:27:10.47,0:27:13.70,*Default,NTP,0000,0000,0000,,is best for representing has a relationships
+Dialogue: 0,0:27:13.97,0:27:14.90,*Default,NTP,0000,0000,0000,,so for example
+Dialogue: 0,0:27:14.90,0:27:17.47,*Default,NTP,0000,0000,0000,,a bank has a collection of bank accounts
+Dialogue: 0,0:27:17.47,0:27:18.70,*Default,NTP,0000,0000,0000,,that it manages
+Dialogue: 0,0:27:19.33,0:27:20.07,*Default,NTP,0000,0000,0000,,so in that case
+Dialogue: 0,0:27:20.07,0:27:22.47,*Default,NTP,0000,0000,0000,,a bank has a list of accounts as an attribute
+Dialogue: 0,0:27:22.73,0:27:25.67,*Default,NTP,0000,0000,0000,,but a bank won't inherit from account
+Dialogue: 0,0:27:25.73,0:27:28.13,*Default,NTP,0000,0000,0000,,and an account won't inherit from a bank
+Dialogue: 0,0:27:28.60,0:27:29.30,*Default,NTP,0000,0000,0000,,they're related
+Dialogue: 0,0:27:29.30,0:27:31.67,*Default,NTP,0000,0000,0000,,and that one has the other is an attribute
+Dialogue: 0,0:27:31.70,0:27:34.27,*Default,NTP,0000,0000,0000,,but they're not related according to inheritance
+Dialogue: 0,0:27:35.87,0:27:38.60,*Default,NTP,0000,0000,0000,,so let's design it in a bank real quick
+Dialogue: 0,0:27:42.00,0:27:43.20,*Default,NTP,0000,0000,0000,,a bank
+Dialogue: 0,0:27:45.90,0:27:48.13,*Default,NTP,0000,0000,0000,,won't inherit from account
+Dialogue: 0,0:27:49.17,0:27:51.17,*Default,NTP,0000,0000,0000,,because a bank has
+Dialogue: 0,0:27:52.53,0:27:53.53,*Default,NTP,0000,0000,0000,,accounts
+Dialogue: 0,0:27:55.77,0:27:57.57,*Default,NTP,0000,0000,0000,,and what will it look like to use a bank
+Dialogue: 0,0:27:57.70,0:27:58.97,*Default,NTP,0000,0000,0000,,I'll create a bank
+Dialogue: 0,0:27:59.70,0:28:01.00,*Default,NTP,0000,0000,0000,,so now we have a new bank
+Dialogue: 0,0:28:01.50,0:28:04.37,*Default,NTP,0000,0000,0000,,and bank is gonna do things like create accounts for us
+Dialogue: 0,0:28:05.80,0:28:08.53,*Default,NTP,0000,0000,0000,,so if I go to the bank then I might open account
+Dialogue: 0,0:28:08.87,0:28:11.53,*Default,NTP,0000,0000,0000,,give them my personal identifying information
+Dialogue: 0,0:28:11.53,0:28:15.40,*Default,NTP,0000,0000,0000,,hi I'm john here's $10 please open an account for me
+Dialogue: 0,0:28:15.73,0:28:18.07,*Default,NTP,0000,0000,0000,,and the bank will remember that it's open that account
+Dialogue: 0,0:28:18.07,0:28:19.20,*Default,NTP,0000,0000,0000,,and it will return it
+Dialogue: 0,0:28:20.30,0:28:21.57,*Default,NTP,0000,0000,0000,,and my good friend jack
+Dialogue: 0,0:28:21.77,0:28:24.70,*Default,NTP,0000,0000,0000,,might go to the bank and open an account as well
+Dialogue: 0,0:28:27.60,0:28:29.77,*Default,NTP,0000,0000,0000,,and jack only has $5 with him
+Dialogue: 0,0:28:29.97,0:28:32.27,*Default,NTP,0000,0000,0000,,and the bank manager says oh that's fine
+Dialogue: 0,0:28:32.30,0:28:34.70,*Default,NTP,0000,0000,0000,,but you're gonna have to open a checking account
+Dialogue: 0,0:28:38.33,0:28:41.33,*Default,NTP,0000,0000,0000,,so john has just a normal account which means
+Dialogue: 0,0:28:41.73,0:28:44.93,*Default,NTP,0000,0000,0000,,john's interest rate this should be 0.02
+Dialogue: 0,0:28:45.50,0:28:47.70,*Default,NTP,0000,0000,0000,,or as jack's interest rate
+Dialogue: 0,0:28:48.30,0:28:51.13,*Default,NTP,0000,0000,0000,,with his checking account will be 0.0 what
+Dialogue: 0,0:28:52.80,0:28:55.00,*Default,NTP,0000,0000,0000,,okay so what are banks to or banks
+Dialogue: 0,0:28:55.73,0:28:56.73,*Default,NTP,0000,0000,0000,,hey interest
+Dialogue: 0,0:28:57.40,0:28:59.17,*Default,NTP,0000,0000,0000,,on the money that you keep with them
+Dialogue: 0,0:28:59.97,0:29:01.87,*Default,NTP,0000,0000,0000,,so let's say we just paid that interest
+Dialogue: 0,0:29:02.33,0:29:05.17,*Default,NTP,0000,0000,0000,,and now we can check and see what john's balance is
+Dialogue: 0,0:29:05.40,0:29:08.40,*Default,NTP,0000,0000,0000,,and balance has the $10 that he had before
+Dialogue: 0,0:29:08.57,0:29:11.33,*Default,NTP,0000,0000,0000,,and an extra $0.2 because
+Dialogue: 0,0:29:11.80,0:29:14.93,*Default,NTP,0000,0000,0000,,he had 2% interest on his $10
+Dialogue: 0,0:29:16.87,0:29:19.30,*Default,NTP,0000,0000,0000,,okay so now we have an interesting problem on our hands
+Dialogue: 0,0:29:19.37,0:29:20.90,*Default,NTP,0000,0000,0000,,how do we implement the bank
+Dialogue: 0,0:29:22.20,0:29:24.30,*Default,NTP,0000,0000,0000,,well let's look for some clues
+Dialogue: 0,0:29:24.30,0:29:25.77,*Default,NTP,0000,0000,0000,,about how to implement the bank
+Dialogue: 0,0:29:26.17,0:29:28.53,*Default,NTP,0000,0000,0000,,by this example that we've drawn so far
+Dialogue: 0,0:29:28.70,0:29:30.30,*Default,NTP,0000,0000,0000,,and we'll write the implementation
+Dialogue: 0,0:29:31.00,0:29:34.13,*Default,NTP,0000,0000,0000,,so bank is constructed with no arguments
+Dialogue: 0,0:29:38.20,0:29:39.97,*Default,NTP,0000,0000,0000,,what's gonna happen when we open a bank
+Dialogue: 0,0:29:40.73,0:29:42.87,*Default,NTP,0000,0000,0000,,we're gonna have to remember what accounts
+Dialogue: 0,0:29:42.87,0:29:44.47,*Default,NTP,0000,0000,0000,,are held by that bank
+Dialogue: 0,0:29:47.13,0:29:47.93,*Default,NTP,0000,0000,0000,,when
+Dialogue: 0,0:29:48.77,0:29:50.93,*Default,NTP,0000,0000,0000,,I go to a bank and I open an account
+Dialogue: 0,0:29:51.33,0:29:52.50,*Default,NTP,0000,0000,0000,,that's a method
+Dialogue: 0,0:29:53.40,0:29:55.17,*Default,NTP,0000,0000,0000,,where itself is bound to the bank
+Dialogue: 0,0:29:55.80,0:29:57.97,*Default,NTP,0000,0000,0000,,and then we also see that we have a holder
+Dialogue: 0,0:29:58.20,0:30:00.90,*Default,NTP,0000,0000,0000,,an amount and some kind
+Dialogue: 0,0:30:01.33,0:30:03.33,*Default,NTP,0000,0000,0000,,of account that we open
+Dialogue: 0,0:30:03.50,0:30:04.50,*Default,NTP,0000,0000,0000,,which is optional
+Dialogue: 0,0:30:06.00,0:30:08.57,*Default,NTP,0000,0000,0000,,so let's say by default we open a regular account
+Dialogue: 0,0:30:10.07,0:30:11.87,*Default,NTP,0000,0000,0000,,what happens when we open an account
+Dialogue: 0,0:30:11.97,0:30:13.53,*Default,NTP,0000,0000,0000,,well we have to create that account
+Dialogue: 0,0:30:13.90,0:30:14.93,*Default,NTP,0000,0000,0000,,how do we do that
+Dialogue: 0,0:30:14.93,0:30:15.93,*Default,NTP,0000,0000,0000,,what we'll call kind
+Dialogue: 0,0:30:15.93,0:30:18.13,*Default,NTP,0000,0000,0000,,which is a leather account or checking account
+Dialogue: 0,0:30:18.40,0:30:19.57,*Default,NTP,0000,0000,0000,,pass in the holder
+Dialogue: 0,0:30:19.57,0:30:21.53,*Default,NTP,0000,0000,0000,,because that's how bank accounts work
+Dialogue: 0,0:30:24.80,0:30:28.07,*Default,NTP,0000,0000,0000,,we'll deposit into that new account the amount
+Dialogue: 0,0:30:28.30,0:30:29.60,*Default,NTP,0000,0000,0000,,that was given to us
+Dialogue: 0,0:30:30.33,0:30:31.13,*Default,NTP,0000,0000,0000,,next
+Dialogue: 0,0:30:31.20,0:30:33.77,*Default,NTP,0000,0000,0000,,we have to remember that this is one of our accounts
+Dialogue: 0,0:30:34.80,0:30:36.97,*Default,NTP,0000,0000,0000,,as opposed to an account in another bank
+Dialogue: 0,0:30:37.67,0:30:39.27,*Default,NTP,0000,0000,0000,,so we're gonna add this as count
+Dialogue: 0,0:30:39.30,0:30:40.73,*Default,NTP,0000,0000,0000,,to our list of accounts
+Dialogue: 0,0:30:41.27,0:30:42.50,*Default,NTP,0000,0000,0000,,and then we can return
+Dialogue: 0,0:30:45.90,0:30:48.30,*Default,NTP,0000,0000,0000,,okay what's the last piece of the implementation
+Dialogue: 0,0:30:48.37,0:30:50.00,*Default,NTP,0000,0000,0000,,we have to be able to pay interest
+Dialogue: 0,0:30:50.70,0:30:51.40,*Default,NTP,0000,0000,0000,,paying interest
+Dialogue: 0,0:30:51.40,0:30:54.00,*Default,NTP,0000,0000,0000,,takes no arguments beyond the bank itself
+Dialogue: 0,0:30:55.37,0:30:56.53,*Default,NTP,0000,0000,0000,,so how do we pay interest
+Dialogue: 0,0:30:56.53,0:30:58.80,*Default,NTP,0000,0000,0000,,well we have to go through every account that we have
+Dialogue: 0,0:30:59.20,0:31:00.27,*Default,NTP,0000,0000,0000,,so we'll call it a
+Dialogue: 0,0:31:02.40,0:31:04.97,*Default,NTP,0000,0000,0000,,and how do I get all of the accounts that I have
+Dialogue: 0,0:31:04.97,0:31:06.93,*Default,NTP,0000,0000,0000,,well that's called self accounts
+Dialogue: 0,0:31:08.50,0:31:09.77,*Default,NTP,0000,0000,0000,,and for each one
+Dialogue: 0,0:31:10.57,0:31:12.40,*Default,NTP,0000,0000,0000,,all deposits some extra money in it
+Dialogue: 0,0:31:12.50,0:31:14.60,*Default,NTP,0000,0000,0000,,which depends on its current balance
+Dialogue: 0,0:31:14.97,0:31:17.50,*Default,NTP,0000,0000,0000,,and the interest rate for that account
+Dialogue: 0,0:31:19.27,0:31:21.00,*Default,NTP,0000,0000,0000,,let's see if all of our tests pass
+Dialogue: 0,0:31:21.10,0:31:23.70,*Default,NTP,0000,0000,0000,,and they do so we've implemented the bank
+Dialogue: 0,0:31:24.33,0:31:25.80,*Default,NTP,0000,0000,0000,,not using inheritance
+Dialogue: 0,0:31:28.17,0:31:30.33,*Default,NTP,0000,0000,0000,,so every finished will not quite yet
+Dialogue: 0,0:31:30.90,0:31:33.93,*Default,NTP,0000,0000,0000,,we need to provide some protection for our bank
+Dialogue: 0,0:31:34.70,0:31:36.90,*Default,NTP,0000,0000,0000,,because we don't want our bank to get into trouble
+Dialogue: 0,0:31:37.27,0:31:39.30,*Default,NTP,0000,0000,0000,,if it ends up paying out too much interest
+Dialogue: 0,0:31:40.07,0:31:42.67,*Default,NTP,0000,0000,0000,,so we should probably write a function
+Dialogue: 0,0:31:43.10,0:31:44.57,*Default,NTP,0000,0000,0000,,about whether it's too big
+Dialogue: 0,0:31:44.97,0:31:45.90,*Default,NTP,0000,0000,0000,,to fail
+Dialogue: 0,0:31:46.67,0:31:48.13,*Default,NTP,0000,0000,0000,,and when would that be true
+Dialogue: 0,0:31:48.57,0:31:51.73,*Default,NTP,0000,0000,0000,,well probably whenever we have at least
+Dialogue: 0,0:31:52.40,0:31:54.00,*Default,NTP,0000,0000,0000,,two accounts
+Dialogue: 0,0:31:55.47,0:31:57.67,*Default,NTP,0000,0000,0000,,so is this bank too big to fail
+Dialogue: 0,0:32:01.50,0:32:05.90,*Default,NTP,0000,0000,0000,,certainly is I mean it holds both john and jacks money
+Dialogue: 0,0:32:08.50,0:32:09.67,*Default,NTP,0000,0000,0000,,test pass
+Dialogue: 0,0:32:12.20,0:32:14.00,*Default,NTP,0000,0000,0000,,let's stress test our
+Dialogue: 0,0:32:14.27,0:32:17.20,*Default,NTP,0000,0000,0000,,understanding of attribute look up and inheritance
+Dialogue: 0,0:32:17.47,0:32:20.50,*Default,NTP,0000,0000,0000,,by working through a slightly more complex example
+Dialogue: 0,0:32:22.20,0:32:25.90,*Default,NTP,0000,0000,0000,,here it is I suggest that you pause the video
+Dialogue: 0,0:32:26.13,0:32:28.10,*Default,NTP,0000,0000,0000,,and try to figure out what happens
+Dialogue: 0,0:32:28.27,0:32:31.33,*Default,NTP,0000,0000,0000,,after you run all of this code on the left
+Dialogue: 0,0:32:31.70,0:32:35.00,*Default,NTP,0000,0000,0000,,and then evaluate these three expressions on the right
+Dialogue: 0,0:32:35.17,0:32:36.60,*Default,NTP,0000,0000,0000,,what are their values
+Dialogue: 0,0:32:36.97,0:32:38.00,*Default,NTP,0000,0000,0000,,if you finish that
+Dialogue: 0,0:32:38.00,0:32:39.57,*Default,NTP,0000,0000,0000,,try to answer the question of which
+Dialogue: 0,0:32:39.57,0:32:41.07,*Default,NTP,0000,0000,0000,,evaluates to an integer
+Dialogue: 0,0:32:41.27,0:32:44.37,*Default,NTP,0000,0000,0000,,bidazi bidazizi bida zi da zi
+Dialogue: 0,0:32:45.93,0:32:47.20,*Default,NTP,0000,0000,0000,,or none of those
+Dialogue: 0,0:32:47.60,0:32:50.77,*Default,NTP,0000,0000,0000,,so like I said please pause and work on it on your own
+Dialogue: 0,0:32:51.00,0:32:54.47,*Default,NTP,0000,0000,0000,,we're gonna go through the solution in 321
+Dialogue: 0,0:32:55.47,0:32:57.77,*Default,NTP,0000,0000,0000,,in order to solve a problem like this
+Dialogue: 0,0:32:57.87,0:32:59.90,*Default,NTP,0000,0000,0000,,you need to figure out what
+Dialogue: 0,0:32:59.90,0:33:02.93,*Default,NTP,0000,0000,0000,,happens when you execute these three class statements
+Dialogue: 0,0:33:02.93,0:33:05.20,*Default,NTP,0000,0000,0000,,and then these three assignments statements
+Dialogue: 0,0:33:05.50,0:33:06.67,*Default,NTP,0000,0000,0000,,let's take a look
+Dialogue: 0,0:33:07.30,0:33:11.13,*Default,NTP,0000,0000,0000,,when you execute class a you create a new class
+Dialogue: 0,0:33:11.37,0:33:13.33,*Default,NTP,0000,0000,0000,,a class is like any other value
+Dialogue: 0,0:33:13.33,0:33:15.50,*Default,NTP,0000,0000,0000,,in the sense that it can be assigned a name
+Dialogue: 0,0:33:15.90,0:33:18.90,*Default,NTP,0000,0000,0000,,and the name that it gets assigned in the global frame
+Dialogue: 0,0:33:18.90,0:33:22.07,*Default,NTP,0000,0000,0000,,is capital a because that's the name that we gave it
+Dialogue: 0,0:33:22.77,0:33:25.73,*Default,NTP,0000,0000,0000,,now the class itself has two class attributes
+Dialogue: 0,0:33:25.87,0:33:28.80,*Default,NTP,0000,0000,0000,,z is -1 due to this assignment statement
+Dialogue: 0,0:33:28.80,0:33:32.60,*Default,NTP,0000,0000,0000,,and f is the function that returns b of x minus one
+Dialogue: 0,0:33:32.87,0:33:34.97,*Default,NTP,0000,0000,0000,,this function like any other function
+Dialogue: 0,0:33:35.20,0:33:36.97,*Default,NTP,0000,0000,0000,,does have a parent frame
+Dialogue: 0,0:33:37.70,0:33:39.80,*Default,NTP,0000,0000,0000,,all of the functions in this example
+Dialogue: 0,0:33:40.13,0:33:41.77,*Default,NTP,0000,0000,0000,,have parent frame global
+Dialogue: 0,0:33:41.77,0:33:43.33,*Default,NTP,0000,0000,0000,,so I'm not going to write them in
+Dialogue: 0,0:33:44.07,0:33:46.10,*Default,NTP,0000,0000,0000,,so this structure was created
+Dialogue: 0,0:33:46.10,0:33:48.53,*Default,NTP,0000,0000,0000,,by executing the first class statement
+Dialogue: 0,0:33:48.73,0:33:50.77,*Default,NTP,0000,0000,0000,,the second class statement
+Dialogue: 0,0:33:50.90,0:33:53.90,*Default,NTP,0000,0000,0000,,creates a class b that inherits from a
+Dialogue: 0,0:33:54.40,0:33:56.73,*Default,NTP,0000,0000,0000,,and forever this class will know
+Dialogue: 0,0:33:56.80,0:34:00.33,*Default,NTP,0000,0000,0000,,that it inherited from a or that a is the base class
+Dialogue: 0,0:34:01.00,0:34:01.93,*Default,NTP,0000,0000,0000,,it also
+Dialogue: 0,0:34:02.10,0:34:06.40,*Default,NTP,0000,0000,0000,,has some attributes due to the body of this class
+Dialogue: 0,0:34:06.40,0:34:09.20,*Default,NTP,0000,0000,0000,,statement so n is bound to four
+Dialogue: 0,0:34:09.37,0:34:14.07,*Default,NTP,0000,0000,0000,,and in it is bound to a function that initializes self
+Dialogue: 0,0:34:14.80,0:34:16.17,*Default,NTP,0000,0000,0000,,in the global frame
+Dialogue: 0,0:34:16.17,0:34:18.70,*Default,NTP,0000,0000,0000,,this class is given the name capital b
+Dialogue: 0,0:34:19.67,0:34:23.33,*Default,NTP,0000,0000,0000,,finally the third class statement creates a class c
+Dialogue: 0,0:34:23.33,0:34:24.67,*Default,NTP,0000,0000,0000,,which inherits from b
+Dialogue: 0,0:34:24.67,0:34:26.50,*Default,NTP,0000,0000,0000,,since b inherits from a
+Dialogue: 0,0:34:26.77,0:34:30.70,*Default,NTP,0000,0000,0000,,any instance of c will have access to the contents of a
+Dialogue: 0,0:34:31.33,0:34:33.27,*Default,NTP,0000,0000,0000,,except for when it's the case
+Dialogue: 0,0:34:33.50,0:34:35.33,*Default,NTP,0000,0000,0000,,that some name is repeated
+Dialogue: 0,0:34:36.37,0:34:37.77,*Default,NTP,0000,0000,0000,,so ah the class c
+Dialogue: 0,0:34:37.77,0:34:40.33,*Default,NTP,0000,0000,0000,,or an instance of the class c will have an f
+Dialogue: 0,0:34:40.33,0:34:42.30,*Default,NTP,0000,0000,0000,,that's different than a's
+Dialogue: 0,0:34:42.37,0:34:45.20,*Default,NTP,0000,0000,0000,,because f is overrated
+Dialogue: 0,0:34:45.20,0:34:47.07,*Default,NTP,0000,0000,0000,,there's another definition of f
+Dialogue: 0,0:34:47.37,0:34:50.40,*Default,NTP,0000,0000,0000,,which in this case is the function that just returns x
+Dialogue: 0,0:34:51.37,0:34:53.87,*Default,NTP,0000,0000,0000,,this whole class has given the name c
+Dialogue: 0,0:34:54.13,0:34:56.87,*Default,NTP,0000,0000,0000,,capitalized in the global frame
+Dialogue: 0,0:34:57.30,0:35:00.70,*Default,NTP,0000,0000,0000,,and then we execute these three assignment statements
+Dialogue: 0,0:35:01.30,0:35:04.40,*Default,NTP,0000,0000,0000,,calling a introduces a new instance of a
+Dialogue: 0,0:35:04.93,0:35:06.13,*Default,NTP,0000,0000,0000,,and we'll call it a
+Dialogue: 0,0:35:06.80,0:35:08.60,*Default,NTP,0000,0000,0000,,since there's no in it
+Dialogue: 0,0:35:08.90,0:35:12.10,*Default,NTP,0000,0000,0000,,method within the class definition a
+Dialogue: 0,0:35:12.90,0:35:15.93,*Default,NTP,0000,0000,0000,,there are no instance attributes that are set
+Dialogue: 0,0:35:16.80,0:35:19.60,*Default,NTP,0000,0000,0000,,this a instance is just a blank slate
+Dialogue: 0,0:35:21.07,0:35:23.30,*Default,NTP,0000,0000,0000,,now we create b of one
+Dialogue: 0,0:35:24.53,0:35:27.70,*Default,NTP,0000,0000,0000,,calling b introduces a new b instance
+Dialogue: 0,0:35:27.97,0:35:32.77,*Default,NTP,0000,0000,0000,,and the in it method for b is called automatically
+Dialogue: 0,0:35:32.87,0:35:36.40,*Default,NTP,0000,0000,0000,,with self bound of the instance and y bound to one
+Dialogue: 0,0:35:37.27,0:35:40.57,*Default,NTP,0000,0000,0000,,and then we have some expression about self z
+Dialogue: 0,0:35:40.77,0:35:42.17,*Default,NTP,0000,0000,0000,,which depends on y
+Dialogue: 0,0:35:42.17,0:35:44.20,*Default,NTP,0000,0000,0000,,so since y is a true value
+Dialogue: 0,0:35:44.20,0:35:46.77,*Default,NTP,0000,0000,0000,,we're going to call self. f on y
+Dialogue: 0,0:35:47.13,0:35:48.67,*Default,NTP,0000,0000,0000,,which f does it call
+Dialogue: 0,0:35:48.77,0:35:50.47,*Default,NTP,0000,0000,0000,,well b doesn't have any f
+Dialogue: 0,0:35:50.47,0:35:53.20,*Default,NTP,0000,0000,0000,,so then it looks in the bass class and calls this f
+Dialogue: 0,0:35:53.20,0:35:54.80,*Default,NTP,0000,0000,0000,,which creates another b
+Dialogue: 0,0:35:55.30,0:35:57.27,*Default,NTP,0000,0000,0000,,oh my goodness that's complicated
+Dialogue: 0,0:35:57.33,0:35:59.77,*Default,NTP,0000,0000,0000,,let's not worry about it just for the moment
+Dialogue: 0,0:35:59.87,0:36:04.97,*Default,NTP,0000,0000,0000,,and instead focus on the fact that z is sent self z
+Dialogue: 0,0:36:05.07,0:36:06.50,*Default,NTP,0000,0000,0000,,equal to something
+Dialogue: 0,0:36:06.93,0:36:10.33,*Default,NTP,0000,0000,0000,,and it's whatever is the return value of this call to f
+Dialogue: 0,0:36:11.90,0:36:12.40,*Default,NTP,0000,0000,0000,,whatever
+Dialogue: 0,0:36:12.40,0:36:15.53,*Default,NTP,0000,0000,0000,,the attribute contents of this b instance may be
+Dialogue: 0,0:36:15.73,0:36:18.30,*Default,NTP,0000,0000,0000,,that instance itself is assigned to the name
+Dialogue: 0,0:36:18.30,0:36:19.80,*Default,NTP,0000,0000,0000,,b in the global frame
+Dialogue: 0,0:36:20.80,0:36:23.27,*Default,NTP,0000,0000,0000,,and now we have attribute assignment
+Dialogue: 0,0:36:23.33,0:36:25.57,*Default,NTP,0000,0000,0000,,to an attribute of lowercase b
+Dialogue: 0,0:36:25.57,0:36:27.57,*Default,NTP,0000,0000,0000,,so I look up b in the current environment
+Dialogue: 0,0:36:27.57,0:36:28.90,*Default,NTP,0000,0000,0000,,it's this instance
+Dialogue: 0,0:36:29.10,0:36:30.87,*Default,NTP,0000,0000,0000,,setting n equal to five
+Dialogue: 0,0:36:30.90,0:36:33.13,*Default,NTP,0000,0000,0000,,means that I add an attribute here
+Dialogue: 0,0:36:33.67,0:36:37.57,*Default,NTP,0000,0000,0000,,this has no effect on bees class or its space class
+Dialogue: 0,0:36:37.57,0:36:41.33,*Default,NTP,0000,0000,0000,,instead it's just a change to this particular instance
+Dialogue: 0,0:36:42.37,0:36:44.53,*Default,NTP,0000,0000,0000,,now I think we're in a good position to review
+Dialogue: 0,0:36:44.53,0:36:45.33,*Default,NTP,0000,0000,0000,,some of these
+Dialogue: 0,0:36:45.47,0:36:48.40,*Default,NTP,0000,0000,0000,,eventually we're going to have to fill in what z was
+Dialogue: 0,0:36:48.47,0:36:51.77,*Default,NTP,0000,0000,0000,,but let's solve the first two here before we do that
+Dialogue: 0,0:36:52.70,0:36:56.47,*Default,NTP,0000,0000,0000,,so c of 2.n here's an expression that has to
+Dialogue: 0,0:36:56.47,0:36:58.20,*Default,NTP,0000,0000,0000,,evaluate to some object
+Dialogue: 0,0:36:58.40,0:37:02.77,*Default,NTP,0000,0000,0000,,in this case it evaluates to an instance of the c class
+Dialogue: 0,0:37:03.97,0:37:07.40,*Default,NTP,0000,0000,0000,,here's the c class so we build a new instance
+Dialogue: 0,0:37:08.47,0:37:10.93,*Default,NTP,0000,0000,0000,,and what happens when you build an instance of the
+Dialogue: 0,0:37:10.93,0:37:14.13,*Default,NTP,0000,0000,0000,,c class is that you automatically call the in it method
+Dialogue: 0,0:37:14.13,0:37:15.57,*Default,NTP,0000,0000,0000,,for the c class
+Dialogue: 0,0:37:16.27,0:37:19.87,*Default,NTP,0000,0000,0000,,since c has no in it we look in its base class
+Dialogue: 0,0:37:19.97,0:37:23.17,*Default,NTP,0000,0000,0000,,here's the in it which is this function here
+Dialogue: 0,0:37:24.13,0:37:27.30,*Default,NTP,0000,0000,0000,,so we're calling this with y bound to
+Dialogue: 0,0:37:28.00,0:37:29.90,*Default,NTP,0000,0000,0000,,2 if y which is 2
+Dialogue: 0,0:37:30.33,0:37:31.97,*Default,NTP,0000,0000,0000,,is a true value
+Dialogue: 0,0:37:32.13,0:37:36.10,*Default,NTP,0000,0000,0000,,then we'll sell self z to be self f of y
+Dialogue: 0,0:37:36.57,0:37:38.57,*Default,NTP,0000,0000,0000,,now what is self in this case
+Dialogue: 0,0:37:38.90,0:37:41.80,*Default,NTP,0000,0000,0000,,self is the c instance that we just created
+Dialogue: 0,0:37:42.13,0:37:44.57,*Default,NTP,0000,0000,0000,,so we're going to add a z attribute
+Dialogue: 0,0:37:44.77,0:37:47.80,*Default,NTP,0000,0000,0000,,you can see here in my slide that it's going to be two
+Dialogue: 0,0:37:48.07,0:37:49.30,*Default,NTP,0000,0000,0000,,why is it two
+Dialogue: 0,0:37:49.50,0:37:52.73,*Default,NTP,0000,0000,0000,,well we look up self.f
+Dialogue: 0,0:37:52.77,0:37:55.47,*Default,NTP,0000,0000,0000,,what's the f function for this c instance
+Dialogue: 0,0:37:55.60,0:37:57.37,*Default,NTP,0000,0000,0000,,there's no f attribute here
+Dialogue: 0,0:37:57.37,0:37:59.13,*Default,NTP,0000,0000,0000,,so we look in the class
+Dialogue: 0,0:37:59.13,0:38:02.20,*Default,NTP,0000,0000,0000,,there's the f attribute is the identity function
+Dialogue: 0,0:38:02.33,0:38:05.10,*Default,NTP,0000,0000,0000,,so we call the identity function on 2
+Dialogue: 0,0:38:05.20,0:38:08.47,*Default,NTP,0000,0000,0000,,we get back 2 and that gets bound to self c
+Dialogue: 0,0:38:08.67,0:38:10.17,*Default,NTP,0000,0000,0000,,so z is 2 here
+Dialogue: 0,0:38:10.93,0:38:13.53,*Default,NTP,0000,0000,0000,,but the interesting thing is that c ii
+Dialogue: 0,0:38:13.60,0:38:14.90,*Default,NTP,0000,0000,0000,,having been created
+Dialogue: 0,0:38:15.10,0:38:18.47,*Default,NTP,0000,0000,0000,,is only used to look up the attribute in
+Dialogue: 0,0:38:19.30,0:38:22.20,*Default,NTP,0000,0000,0000,,so when we look up the attribute n on this c instance
+Dialogue: 0,0:38:22.20,0:38:24.17,*Default,NTP,0000,0000,0000,,since n is not an attribute
+Dialogue: 0,0:38:24.20,0:38:26.53,*Default,NTP,0000,0000,0000,,we look in the class
+Dialogue: 0,0:38:26.67,0:38:30.30,*Default,NTP,0000,0000,0000,,n is not an attribute here so we look at its base class
+Dialogue: 0,0:38:30.67,0:38:34.47,*Default,NTP,0000,0000,0000,,n is here so the value of c to n is four
+Dialogue: 0,0:38:35.13,0:38:38.07,*Default,NTP,0000,0000,0000,,if we had instead asked what c 2 dot z
+Dialogue: 0,0:38:38.10,0:38:39.67,*Default,NTP,0000,0000,0000,,we would have gotten two
+Dialogue: 0,0:38:41.20,0:38:45.10,*Default,NTP,0000,0000,0000,,alright is it the case that a dot z is equal to c
+Dialogue: 0,0:38:46.30,0:38:48.70,*Default,NTP,0000,0000,0000,,let's figure out what a dot z is
+Dialogue: 0,0:38:49.47,0:38:51.33,*Default,NTP,0000,0000,0000,,a is this instance
+Dialogue: 0,0:38:51.73,0:38:53.67,*Default,NTP,0000,0000,0000,,it does not have a z attribute
+Dialogue: 0,0:38:53.67,0:38:55.30,*Default,NTP,0000,0000,0000,,so we look in the class
+Dialogue: 0,0:38:55.37,0:38:57.20,*Default,NTP,0000,0000,0000,,there's a z attribute as -1
+Dialogue: 0,0:38:57.47,0:39:00.67,*Default,NTP,0000,0000,0000,,so the left hand side of this equality is -1
+Dialogue: 0,0:39:01.47,0:39:04.30,*Default,NTP,0000,0000,0000,,c refers to the c class
+Dialogue: 0,0:39:04.53,0:39:07.53,*Default,NTP,0000,0000,0000,,c is an attribute which does not appear here
+Dialogue: 0,0:39:07.53,0:39:09.53,*Default,NTP,0000,0000,0000,,so we look in the bass class no z here
+Dialogue: 0,0:39:09.53,0:39:12.87,*Default,NTP,0000,0000,0000,,so we look in the bass class and we see a z is -1
+Dialogue: 0,0:39:13.17,0:39:15.33,*Default,NTP,0000,0000,0000,,so these are equal because in fact
+Dialogue: 0,0:39:15.37,0:39:17.50,*Default,NTP,0000,0000,0000,,we're referring to the same attribute
+Dialogue: 0,0:39:17.50,0:39:19.50,*Default,NTP,0000,0000,0000,,in two very different ways
+Dialogue: 0,0:39:20.67,0:39:23.57,*Default,NTP,0000,0000,0000,,okay a.c we already figured out his -1
+Dialogue: 0,0:39:23.57,0:39:26.70,*Default,NTP,0000,0000,0000,,and what's b.c well b is this b instance
+Dialogue: 0,0:39:26.77,0:39:30.30,*Default,NTP,0000,0000,0000,,and it has an instance attribute called z
+Dialogue: 0,0:39:31.10,0:39:33.40,*Default,NTP,0000,0000,0000,,we never really wrote down what it is
+Dialogue: 0,0:39:33.73,0:39:36.93,*Default,NTP,0000,0000,0000,,but I'm pretty sure it's not gonna come out -1
+Dialogue: 0,0:39:37.27,0:39:40.47,*Default,NTP,0000,0000,0000,,I think it's time that we figure out what it does equal
+Dialogue: 0,0:39:41.90,0:39:46.40,*Default,NTP,0000,0000,0000,,so when this instance was created we passed in one
+Dialogue: 0,0:39:46.47,0:39:47.93,*Default,NTP,0000,0000,0000,,as the value for y
+Dialogue: 0,0:39:48.27,0:39:50.97,*Default,NTP,0000,0000,0000,,self is bound to the instance itself
+Dialogue: 0,0:39:51.27,0:39:55.53,*Default,NTP,0000,0000,0000,,we checked that y was true and so we called self.f on y
+Dialogue: 0,0:39:56.87,0:40:00.53,*Default,NTP,0000,0000,0000,,since b is an instance of the b class
+Dialogue: 0,0:40:00.77,0:40:04.50,*Default,NTP,0000,0000,0000,,f refers to this because we look here there's no f
+Dialogue: 0,0:40:04.50,0:40:06.57,*Default,NTP,0000,0000,0000,,so we look in its class there's no f
+Dialogue: 0,0:40:06.57,0:40:08.70,*Default,NTP,0000,0000,0000,,and so we look in the base class and there's f
+Dialogue: 0,0:40:08.70,0:40:12.07,*Default,NTP,0000,0000,0000,,which is the function that returns b of x minus one
+Dialogue: 0,0:40:13.13,0:40:16.33,*Default,NTP,0000,0000,0000,,b of x minus one creates a new instance
+Dialogue: 0,0:40:16.77,0:40:18.73,*Default,NTP,0000,0000,0000,,of the b class
+Dialogue: 0,0:40:18.97,0:40:21.53,*Default,NTP,0000,0000,0000,,but this time we call the constructor
+Dialogue: 0,0:40:22.17,0:40:26.00,*Default,NTP,0000,0000,0000,,on whatever x was that's 1-1 is zero
+Dialogue: 0,0:40:26.20,0:40:28.70,*Default,NTP,0000,0000,0000,,so now we're calling this on zero
+Dialogue: 0,0:40:28.93,0:40:31.17,*Default,NTP,0000,0000,0000,,for the second instance of b
+Dialogue: 0,0:40:32.27,0:40:35.17,*Default,NTP,0000,0000,0000,,since zero is not a true value we set self
+Dialogue: 0,0:40:35.30,0:40:37.70,*Default,NTP,0000,0000,0000,,z equal to a c instance
+Dialogue: 0,0:40:37.93,0:40:43.27,*Default,NTP,0000,0000,0000,,where we pass in 0+1 is one as the argument
+Dialogue: 0,0:40:44.20,0:40:46.00,*Default,NTP,0000,0000,0000,,so we're about to construct a c
+Dialogue: 0,0:40:46.00,0:40:47.77,*Default,NTP,0000,0000,0000,,instance where we've passed in
+Dialogue: 0,0:40:47.77,0:40:50.27,*Default,NTP,0000,0000,0000,,one as the argument of the constructor
+Dialogue: 0,0:40:50.57,0:40:52.07,*Default,NTP,0000,0000,0000,,c has no constructor
+Dialogue: 0,0:40:52.07,0:40:54.37,*Default,NTP,0000,0000,0000,,so we look in the base class and we find
+Dialogue: 0,0:40:54.37,0:40:55.60,*Default,NTP,0000,0000,0000,,this constructor
+Dialogue: 0,0:40:56.57,0:40:59.47,*Default,NTP,0000,0000,0000,,why is bound to one and one is a true value
+Dialogue: 0,0:40:59.47,0:41:04.90,*Default,NTP,0000,0000,0000,,so we set self z for this c instance to be self.f
+Dialogue: 0,0:41:05.13,0:41:08.60,*Default,NTP,0000,0000,0000,,now since self is bound to the c instance
+Dialogue: 0,0:41:08.73,0:41:12.20,*Default,NTP,0000,0000,0000,,self dot f is looked up here
+Dialogue: 0,0:41:12.40,0:41:15.33,*Default,NTP,0000,0000,0000,,and then in the class for c
+Dialogue: 0,0:41:15.93,0:41:17.10,*Default,NTP,0000,0000,0000,,and there is an f
+Dialogue: 0,0:41:17.13,0:41:20.07,*Default,NTP,0000,0000,0000,,there that just returns whatever was passed in
+Dialogue: 0,0:41:20.13,0:41:23.20,*Default,NTP,0000,0000,0000,,which in this case is why equals one
+Dialogue: 0,0:41:23.70,0:41:24.50,*Default,NTP,0000,0000,0000,,ta da
+Dialogue: 0,0:41:25.40,0:41:28.30,*Default,NTP,0000,0000,0000,,okay so it's quite clear that this is -1
+Dialogue: 0,0:41:28.30,0:41:30.20,*Default,NTP,0000,0000,0000,,and this is some b instance
+Dialogue: 0,0:41:30.27,0:41:32.00,*Default,NTP,0000,0000,0000,,and those can't be equal
+Dialogue: 0,0:41:32.80,0:41:34.67,*Default,NTP,0000,0000,0000,,and now we can move on to which of these
+Dialogue: 0,0:41:34.67,0:41:37.00,*Default,NTP,0000,0000,0000,,expressions evaluates to an integer
+Dialogue: 0,0:41:37.53,0:41:39.87,*Default,NTP,0000,0000,0000,,b.c is a b instance
+Dialogue: 0,0:41:40.30,0:41:41.10,*Default,NTP,0000,0000,0000,,b that
+Dialogue: 0,0:41:41.47,0:41:43.90,*Default,NTP,0000,0000,0000,,z is a c instance
+Dialogue: 0,0:41:44.40,0:41:46.70,*Default,NTP,0000,0000,0000,,b dot z dot z dot z
+Dialogue: 0,0:41:47.33,0:41:48.40,*Default,NTP,0000,0000,0000,,is one
+Dialogue: 0,0:41:48.87,0:41:52.00,*Default,NTP,0000,0000,0000,,and one dot z is nothing at all that would be an error
+Dialogue: 0,0:41:52.27,0:41:55.57,*Default,NTP,0000,0000,0000,,so only this expression evaluates to an integer
+Dialogue: 0,0:41:55.67,0:41:57.73,*Default,NTP,0000,0000,0000,,and that integer is one
+Dialogue: 0,0:42:01.27,0:42:03.37,*Default,NTP,0000,0000,0000,,multiple inheritance is when
+Dialogue: 0,0:42:03.40,0:42:06.30,*Default,NTP,0000,0000,0000,,a subclass has multiple bass classes
+Dialogue: 0,0:42:08.33,0:42:09.33,*Default,NTP,0000,0000,0000,,okay here we go
+Dialogue: 0,0:42:09.80,0:42:12.37,*Default,NTP,0000,0000,0000,,let's decide another kind of bank account
+Dialogue: 0,0:42:12.53,0:42:14.47,*Default,NTP,0000,0000,0000,,this is called the savings account
+Dialogue: 0,0:42:14.87,0:42:16.80,*Default,NTP,0000,0000,0000,,it's similar to an account
+Dialogue: 0,0:42:17.10,0:42:19.87,*Default,NTP,0000,0000,0000,,the only difference is that there is a deposit fee
+Dialogue: 0,0:42:20.20,0:42:21.50,*Default,NTP,0000,0000,0000,,how does that get used
+Dialogue: 0,0:42:21.50,0:42:23.07,*Default,NTP,0000,0000,0000,,well every time you deposit
+Dialogue: 0,0:42:23.47,0:42:25.73,*Default,NTP,0000,0000,0000,,then we'll return account that deposit
+Dialogue: 0,0:42:26.37,0:42:29.33,*Default,NTP,0000,0000,0000,,of the amount minus the deposit feet
+Dialogue: 0,0:42:29.67,0:42:31.30,*Default,NTP,0000,0000,0000,,so you deposit $10
+Dialogue: 0,0:42:31.30,0:42:32.50,*Default,NTP,0000,0000,0000,,you really only get eight
+Dialogue: 0,0:42:32.50,0:42:34.00,*Default,NTP,0000,0000,0000,,more dollars in your bank account
+Dialogue: 0,0:42:35.57,0:42:38.57,*Default,NTP,0000,0000,0000,,a class may actually inherit from multiple bass classes
+Dialogue: 0,0:42:38.57,0:42:39.50,*Default,NTP,0000,0000,0000,,in python
+Dialogue: 0,0:42:40.77,0:42:44.57,*Default,NTP,0000,0000,0000,,so let's say we have a really smart bank executive
+Dialogue: 0,0:42:44.73,0:42:48.37,*Default,NTP,0000,0000,0000,,who thinks I've got the perfect idea for an account
+Dialogue: 0,0:42:49.13,0:42:52.10,*Default,NTP,0000,0000,0000,,we'll have a nice low interest rate of 1%
+Dialogue: 0,0:42:52.13,0:42:55.20,*Default,NTP,0000,0000,0000,,so we don't have to pay our customers to much money
+Dialogue: 0,0:42:55.73,0:42:57.97,*Default,NTP,0000,0000,0000,,we'll have a dollar fee for withdrawals
+Dialogue: 0,0:42:58.10,0:43:00.80,*Default,NTP,0000,0000,0000,,and a $2 fee for deposits
+Dialogue: 0,0:43:01.47,0:43:04.00,*Default,NTP,0000,0000,0000,,but people will come flocking to us
+Dialogue: 0,0:43:04.07,0:43:06.00,*Default,NTP,0000,0000,0000,,because we'll give them a free dollar
+Dialogue: 0,0:43:06.17,0:43:07.90,*Default,NTP,0000,0000,0000,,when they open an account
+Dialogue: 0,0:43:09.70,0:43:11.10,*Default,NTP,0000,0000,0000,,this is a really good account
+Dialogue: 0,0:43:11.10,0:43:14.10,*Default,NTP,0000,0000,0000,,they call it the as scene on tv account
+Dialogue: 0,0:43:14.37,0:43:16.10,*Default,NTP,0000,0000,0000,,and the way we define this count
+Dialogue: 0,0:43:16.20,0:43:17.60,*Default,NTP,0000,0000,0000,,is actually quite simple
+Dialogue: 0,0:43:17.60,0:43:20.30,*Default,NTP,0000,0000,0000,,because we already have checking in savings accounts
+Dialogue: 0,0:43:20.47,0:43:22.47,*Default,NTP,0000,0000,0000,,so the as scene on tv account
+Dialogue: 0,0:43:22.57,0:43:25.00,*Default,NTP,0000,0000,0000,,inherits from both the checking account
+Dialogue: 0,0:43:25.00,0:43:26.47,*Default,NTP,0000,0000,0000,,and the savings account
+Dialogue: 0,0:43:28.37,0:43:29.57,*Default,NTP,0000,0000,0000,,when it's created
+Dialogue: 0,0:43:29.93,0:43:31.87,*Default,NTP,0000,0000,0000,,it takes in an account holder
+Dialogue: 0,0:43:32.57,0:43:34.07,*Default,NTP,0000,0000,0000,,remembers that account holder
+Dialogue: 0,0:43:34.30,0:43:36.30,*Default,NTP,0000,0000,0000,,but instead of setting the bounce to zero
+Dialogue: 0,0:43:36.37,0:43:38.53,*Default,NTP,0000,0000,0000,,you get a free dollar
+Dialogue: 0,0:43:39.50,0:43:41.53,*Default,NTP,0000,0000,0000,,and that's actually the whole implementation
+Dialogue: 0,0:43:42.80,0:43:45.90,*Default,NTP,0000,0000,0000,,okay so a class can inherit for multiple bass classes
+Dialogue: 0,0:43:45.97,0:43:47.80,*Default,NTP,0000,0000,0000,,what happens when I create
+Dialogue: 0,0:43:47.80,0:43:49.60,*Default,NTP,0000,0000,0000,,an eye has seen on tv account
+Dialogue: 0,0:43:50.07,0:43:52.20,*Default,NTP,0000,0000,0000,,well I start out with a balance of one
+Dialogue: 0,0:43:52.97,0:43:54.53,*Default,NTP,0000,0000,0000,,that's an instance attribute
+Dialogue: 0,0:43:55.20,0:43:56.30,*Default,NTP,0000,0000,0000,,when I look up
+Dialogue: 0,0:43:57.00,0:43:58.70,*Default,NTP,0000,0000,0000,,how to deposit money
+Dialogue: 0,0:43:58.97,0:44:01.33,*Default,NTP,0000,0000,0000,,I'm going to find the deposit method
+Dialogue: 0,0:44:01.33,0:44:03.00,*Default,NTP,0000,0000,0000,,that's in the savings account
+Dialogue: 0,0:44:03.50,0:44:05.20,*Default,NTP,0000,0000,0000,,so that's the savings account method
+Dialogue: 0,0:44:05.50,0:44:07.47,*Default,NTP,0000,0000,0000,,that when I deposit $20
+Dialogue: 0,0:44:07.47,0:44:09.10,*Default,NTP,0000,0000,0000,,I actually only put in 18
+Dialogue: 0,0:44:09.10,0:44:10.73,*Default,NTP,0000,0000,0000,,because of the dugality deposit fee
+Dialogue: 0,0:44:10.73,0:44:13.40,*Default,NTP,0000,0000,0000,,I had one before so now I have 19 bucks
+Dialogue: 0,0:44:13.53,0:44:15.07,*Default,NTP,0000,0000,0000,,and when I was draw five
+Dialogue: 0,0:44:15.13,0:44:16.10,*Default,NTP,0000,0000,0000,,well I pay
+Dialogue: 0,0:44:16.33,0:44:19.53,*Default,NTP,0000,0000,0000,,a checking accounts withdrawal fee of a dollar
+Dialogue: 0,0:44:20.60,0:44:22.50,*Default,NTP,0000,0000,0000,,such a deal and deep
+Dialogue: 0,0:44:24.93,0:44:25.77,*Default,NTP,0000,0000,0000,,okay so
+Dialogue: 0,0:44:25.77,0:44:27.57,*Default,NTP,0000,0000,0000,,it turns out that there are multiple different
+Dialogue: 0,0:44:27.57,0:44:29.47,*Default,NTP,0000,0000,0000,,withdraws and deposits
+Dialogue: 0,0:44:30.33,0:44:31.17,*Default,NTP,0000,0000,0000,,but in this case
+Dialogue: 0,0:44:31.17,0:44:33.73,*Default,NTP,0000,0000,0000,,it's easy to figure out which one gets looked at first
+Dialogue: 0,0:44:34.13,0:44:36.93,*Default,NTP,0000,0000,0000,,so as seen on tv account we'll get
+Dialogue: 0,0:44:38.67,0:44:41.53,*Default,NTP,0000,0000,0000,,withdraw from here and deposit from here
+Dialogue: 0,0:44:42.00,0:44:42.50,*Default,NTP,0000,0000,0000,,and really
+Dialogue: 0,0:44:42.50,0:44:44.57,*Default,NTP,0000,0000,0000,,the only thing that it's inheriting from account
+Dialogue: 0,0:44:44.57,0:44:45.70,*Default,NTP,0000,0000,0000,,is the interest rate
+Dialogue: 0,0:44:47.00,0:44:49.70,*Default,NTP,0000,0000,0000,,so because this inherits from this inherits from this
+Dialogue: 0,0:44:49.70,0:44:52.30,*Default,NTP,0000,0000,0000,,we find the withdrawal method here first
+Dialogue: 0,0:44:53.20,0:44:54.60,*Default,NTP,0000,0000,0000,,there is a particular order
+Dialogue: 0,0:44:54.60,0:44:56.40,*Default,NTP,0000,0000,0000,,in which we look at all of these
+Dialogue: 0,0:44:56.97,0:44:58.17,*Default,NTP,0000,0000,0000,,and all you need to know
+Dialogue: 0,0:44:58.17,0:44:59.90,*Default,NTP,0000,0000,0000,,is that you look at the subclass
+Dialogue: 0,0:44:59.90,0:45:01.70,*Default,NTP,0000,0000,0000,,before you look at the bass class
+Dialogue: 0,0:45:03.93,0:45:07.27,*Default,NTP,0000,0000,0000,,the last topic of today is just a word of warning
+Dialogue: 0,0:45:07.60,0:45:09.53,*Default,NTP,0000,0000,0000,,that multiple inheritance
+Dialogue: 0,0:45:09.87,0:45:12.70,*Default,NTP,0000,0000,0000,,tends to make programs complicated
+Dialogue: 0,0:45:13.10,0:45:16.70,*Default,NTP,0000,0000,0000,,so it should be used very rarely indeed
+Dialogue: 0,0:45:16.93,0:45:19.07,*Default,NTP,0000,0000,0000,,if you want to design clear programs
+Dialogue: 0,0:45:19.87,0:45:22.40,*Default,NTP,0000,0000,0000,,now it's hard for me to show you why this is the case
+Dialogue: 0,0:45:22.53,0:45:24.80,*Default,NTP,0000,0000,0000,,so instead I'll just show you an analogy
+Dialogue: 0,0:45:25.30,0:45:27.10,*Default,NTP,0000,0000,0000,,about human inheritance
+Dialogue: 0,0:45:28.67,0:45:31.27,*Default,NTP,0000,0000,0000,,so let's say you have a grandma grandpa
+Dialogue: 0,0:45:31.27,0:45:33.17,*Default,NTP,0000,0000,0000,,granddaddy and grandmammy
+Dialogue: 0,0:45:33.37,0:45:37.20,*Default,NTP,0000,0000,0000,,and they give you your mom and dad and then there's you
+Dialogue: 0,0:45:37.70,0:45:41.10,*Default,NTP,0000,0000,0000,,this is how we naturally think about family treats
+Dialogue: 0,0:45:42.57,0:45:47.60,*Default,NTP,0000,0000,0000,,okay so an ant is a sister of your mom so someone else
+Dialogue: 0,0:45:48.27,0:45:51.97,*Default,NTP,0000,0000,0000,,who was a child of grandma and grandpa
+Dialogue: 0,0:45:52.60,0:45:53.97,*Default,NTP,0000,0000,0000,,so that's what an ant is
+Dialogue: 0,0:45:53.97,0:45:56.07,*Default,NTP,0000,0000,0000,,there's also something called a half ant
+Dialogue: 0,0:45:56.30,0:45:57.50,*Default,NTP,0000,0000,0000,,what's a half ant
+Dialogue: 0,0:45:57.77,0:46:01.00,*Default,NTP,0000,0000,0000,,well a half ant is someone who shares your grandma
+Dialogue: 0,0:46:01.47,0:46:03.10,*Default,NTP,0000,0000,0000,,but doesn't share your grandpa
+Dialogue: 0,0:46:04.73,0:46:07.10,*Default,NTP,0000,0000,0000,,so seems pretty simple so far
+Dialogue: 0,0:46:07.50,0:46:10.33,*Default,NTP,0000,0000,0000,,if your half ant has a kid with some other guy
+Dialogue: 0,0:46:10.47,0:46:12.00,*Default,NTP,0000,0000,0000,,then you have a half cousin
+Dialogue: 0,0:46:13.40,0:46:15.30,*Default,NTP,0000,0000,0000,,but the thing to realize is that
+Dialogue: 0,0:46:15.37,0:46:19.70,*Default,NTP,0000,0000,0000,,this tree is just growing exponentially at each layer
+Dialogue: 0,0:46:20.33,0:46:21.77,*Default,NTP,0000,0000,0000,,which implies that there are many
+Dialogue: 0,0:46:21.77,0:46:24.87,*Default,NTP,0000,0000,0000,,many more people in previous generations
+Dialogue: 0,0:46:25.00,0:46:26.10,*Default,NTP,0000,0000,0000,,than there are now
+Dialogue: 0,0:46:26.20,0:46:27.77,*Default,NTP,0000,0000,0000,,but that's actually not true
+Dialogue: 0,0:46:28.17,0:46:29.10,*Default,NTP,0000,0000,0000,,100 years ago
+Dialogue: 0,0:46:29.10,0:46:30.20,*Default,NTP,0000,0000,0000,,there were many fewer people
+Dialogue: 0,0:46:30.20,0:46:31.67,*Default,NTP,0000,0000,0000,,on earth than there are now
+Dialogue: 0,0:46:31.93,0:46:34.70,*Default,NTP,0000,0000,0000,,so it can't be the case that these trees just grow
+Dialogue: 0,0:46:35.53,0:46:38.13,*Default,NTP,0000,0000,0000,,wider and wider with different sets of people
+Dialogue: 0,0:46:38.60,0:46:41.13,*Default,NTP,0000,0000,0000,,there must be some overlapping in the treat
+Dialogue: 0,0:46:41.80,0:46:43.87,*Default,NTP,0000,0000,0000,,so there's actually terminology for that
+Dialogue: 0,0:46:43.87,0:46:44.87,*Default,NTP,0000,0000,0000,,sort of overlapping
+Dialogue: 0,0:46:44.87,0:46:45.97,*Default,NTP,0000,0000,0000,,let's see what it is
+Dialogue: 0,0:46:47.30,0:46:49.10,*Default,NTP,0000,0000,0000,,so if your half ant
+Dialogue: 0,0:46:49.93,0:46:52.80,*Default,NTP,0000,0000,0000,,was the child of your grandma and not just some guy
+Dialogue: 0,0:46:52.80,0:46:56.47,*Default,NTP,0000,0000,0000,,but instead your granddaddy on your other side
+Dialogue: 0,0:46:56.93,0:46:59.50,*Default,NTP,0000,0000,0000,,well that has a name that's called your double half ant
+Dialogue: 0,0:46:59.57,0:47:01.40,*Default,NTP,0000,0000,0000,,and if your double half ant has a kid
+Dialogue: 0,0:47:01.40,0:47:02.90,*Default,NTP,0000,0000,0000,,that's your double half cousin
+Dialogue: 0,0:47:03.17,0:47:07.37,*Default,NTP,0000,0000,0000,,getting complicated already due to multiple inheritance
+Dialogue: 0,0:47:07.87,0:47:08.87,*Default,NTP,0000,0000,0000,,ah but I can get worse
+Dialogue: 0,0:47:08.87,0:47:10.37,*Default,NTP,0000,0000,0000,,if you have a double half ant
+Dialogue: 0,0:47:10.40,0:47:12.40,*Default,NTP,0000,0000,0000,,of course you could have a double half uncle
+Dialogue: 0,0:47:12.57,0:47:13.80,*Default,NTP,0000,0000,0000,,on the other side
+Dialogue: 0,0:47:14.13,0:47:17.67,*Default,NTP,0000,0000,0000,,if grandpa and grandmammy decided to have a kit
+Dialogue: 0,0:47:18.27,0:47:20.27,*Default,NTP,0000,0000,0000,,and what happens if that other guy
+Dialogue: 0,0:47:20.30,0:47:22.60,*Default,NTP,0000,0000,0000,,that your double half ant was hanging out with
+Dialogue: 0,0:47:22.70,0:47:25.53,*Default,NTP,0000,0000,0000,,is in fact you are double half uncle
+Dialogue: 0,0:47:26.20,0:47:28.60,*Default,NTP,0000,0000,0000,,then that's not just your double half cousin
+Dialogue: 0,0:47:28.80,0:47:30.60,*Default,NTP,0000,0000,0000,,that's your quadruple half cousin
+Dialogue: 0,0:47:30.80,0:47:33.50,*Default,NTP,0000,0000,0000,,who shares all four of your grandparents
+Dialogue: 0,0:47:34.60,0:47:36.00,*Default,NTP,0000,0000,0000,,moral of the story

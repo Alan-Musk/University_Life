@@ -61,10 +61,11 @@ def make_account_class():
             return "Insufficient funds"
         self['set']('balance',balance-amount)
         return self['get']('balance')
+    print(locals())
     return make_class(locals())
 
 Account=make_account_class()
-# kirk_account=Account['new']('Kirk')
+kirk_account=Account['new']('Kirk')
 # kirk_account['get']('holder')
 # kirk_account['get']('interest')
 # kirk_account['get']('deposit')(20)
