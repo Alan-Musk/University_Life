@@ -3,8 +3,8 @@
 
 已收录:  
 2020fall 官方solution 感谢大佬分享:[half-dreamer](https://github.com/half-dreamer/CS61A-20fa)  
-&emsp;&emsp;遗失:lab_07  
-笔者自己的解决方案  
+&emsp;&emsp;遗失:lab_07Solution    
+笔者自己的[解决方案](https://github.com/Alan-Musk/University_Life/tree/main/Python/cs61a_2020fall)  
 课程的中文和英文[字幕](https://github.com/Alan-Musk/University_Life/tree/main/Python/cs61a_2020fall/Subtitles)  
 &emsp;&emsp;基于DeepL翻译  
 
