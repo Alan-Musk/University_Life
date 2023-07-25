@@ -1,5 +1,10 @@
 from math import atan2,sin,cos,pi
-from fractions import gcd
+
+def gcd(n,d):
+    while n!=d:
+        n,d=min(n,d),abs(n-d)
+    return n
+
 # Step 1
 class Number:
     def __add__(self,other):
@@ -48,7 +53,6 @@ class ComplexMA(Complex):
 # Done
 
 # 实现Rational表示分数
-from fractions import gcd
 class Rational(Number):
     def __init__(self,numer,denom):
         g=gcd(numer,denom)
