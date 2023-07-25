@@ -1,0 +1,884 @@
+[Script Info]
+Title: Lecture 20. Representation_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=49&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.57,0:00:03.70,*Default,NTP,0000,0000,0000,,61 a lecture No.20 announcements
+Dialogue: 0,0:00:04.10,0:00:06.57,*Default,NTP,0000,0000,0000,,the announcements are the same as they were on Monday
+Dialogue: 0,0:00:06.97,0:00:08.53,*Default,NTP,0000,0000,0000,,you've got lab due today
+Dialogue: 0,0:00:08.70,0:00:10.17,*Default,NTP,0000,0000,0000,,homework due Thursday
+Dialogue: 0,0:00:10.37,0:00:11.97,*Default,NTP,0000,0000,0000,,the ants project is out
+Dialogue: 0,0:00:12.07,0:00:13.97,*Default,NTP,0000,0000,0000,,it's due next Friday
+Dialogue: 0,0:00:13.97,0:00:16.00,*Default,NTP,0000,0000,0000,,but there's a checkpoint next Tuesday
+Dialogue: 0,0:00:16.00,0:00:17.00,*Default,NTP,0000,0000,0000,,and an early submission
+Dialogue: 0,0:00:17.00,0:00:19.50,*Default,NTP,0000,0000,0000,,bonus point for submitting by Thursday
+Dialogue: 0,0:00:20.17,0:00:23.37,*Default,NTP,0000,0000,0000,,there's also an extra credit problem on the project
+Dialogue: 0,0:00:23.60,0:00:25.93,*Default,NTP,0000,0000,0000,,if you want the extra credit from that problem
+Dialogue: 0,0:00:25.93,0:00:28.53,*Default,NTP,0000,0000,0000,,and you want the extra credit from submitting early
+Dialogue: 0,0:00:28.53,0:00:30.77,*Default,NTP,0000,0000,0000,,then you do have to finish the extra credit problem
+Dialogue: 0,0:00:30.77,0:00:31.97,*Default,NTP,0000,0000,0000,,by next Thursday
+Dialogue: 0,0:00:32.73,0:00:34.50,*Default,NTP,0000,0000,0000,,this is a bit shorter than usual
+Dialogue: 0,0:00:34.50,0:00:35.97,*Default,NTP,0000,0000,0000,,but it's still quite long
+Dialogue: 0,0:00:36.07,0:00:37.80,*Default,NTP,0000,0000,0000,,so leave yourself plenty of time
+Dialogue: 0,0:00:37.80,0:00:40.80,*Default,NTP,0000,0000,0000,,get started early and make progress every day
+Dialogue: 0,0:00:41.73,0:00:43.33,*Default,NTP,0000,0000,0000,,we'll have an advising panel
+Dialogue: 0,0:00:43.33,0:00:45.60,*Default,NTP,0000,0000,0000,,with members of the staff from 11 to 12
+Dialogue: 0,0:00:45.70,0:00:47.97,*Default,NTP,0000,0000,0000,,on Thursday where you can ask the core
+Dialogue: 0,0:00:47.97,0:00:50.10,*Default,NTP,0000,0000,0000,,staff questions about anything you want
+Dialogue: 0,0:00:50.30,0:00:51.50,*Default,NTP,0000,0000,0000,,and listen to other students
+Dialogue: 0,0:00:51.50,0:00:53.70,*Default,NTP,0000,0000,0000,,questions and the staff's responses
+Dialogue: 0,0:00:54.70,0:00:56.00,*Default,NTP,0000,0000,0000,,this won't be the whole staff
+Dialogue: 0,0:00:56.17,0:00:57.67,*Default,NTP,0000,0000,0000,,just a selection of folks
+Dialogue: 0,0:00:57.67,0:01:00.07,*Default,NTP,0000,0000,0000,,that are interested in helping guide you
+Dialogue: 0,0:01:00.07,0:01:01.53,*Default,NTP,0000,0000,0000,,and your berkeley experience
+Dialogue: 0,0:01:02.57,0:01:04.60,*Default,NTP,0000,0000,0000,,advising office hours are on fridays
+Dialogue: 0,0:01:04.60,0:01:07.13,*Default,NTP,0000,0000,0000,,if you want one out one help about any of these
+Dialogue: 0,0:01:07.37,0:01:09.53,*Default,NTP,0000,0000,0000,,topics that aren't related to the course
+Dialogue: 0,0:01:10.53,0:01:13.20,*Default,NTP,0000,0000,0000,,there's an anonymous survey that we'd love you to take
+Dialogue: 0,0:01:13.40,0:01:15.37,*Default,NTP,0000,0000,0000,,about how the course is going so far
+Dialogue: 0,0:01:15.40,0:01:16.67,*Default,NTP,0000,0000,0000,,it's very short
+Dialogue: 0,0:01:16.67,0:01:17.93,*Default,NTP,0000,0000,0000,,it's not required
+Dialogue: 0,0:01:17.93,0:01:20.60,*Default,NTP,0000,0000,0000,,but I'd like you to be completed by next Monday
+Dialogue: 0,0:01:20.60,0:01:22.87,*Default,NTP,0000,0000,0000,,just so we can have a sense of how things are going
+Dialogue: 0,0:01:23.57,0:01:24.67,*Default,NTP,0000,0000,0000,,and as a reminder
+Dialogue: 0,0:01:24.67,0:01:28.33,*Default,NTP,0000,0000,0000,,midterm two is on Wednesday the 28th at 7:00pm
+Dialogue: 0,0:01:28.57,0:01:31.33,*Default,NTP,0000,0000,0000,,it has a similar format and style to midterm one
+Dialogue: 0,0:01:31.40,0:01:34.50,*Default,NTP,0000,0000,0000,,and will cover content up to an including fridays
+Dialogue: 0,0:01:34.50,0:01:35.30,*Default,NTP,0000,0000,0000,,lecture
+Dialogue: 0,0:01:35.40,0:01:38.50,*Default,NTP,0000,0000,0000,,so this lecture is going to be covered on the midterm
+Dialogue: 0,0:01:38.60,0:01:39.80,*Default,NTP,0000,0000,0000,,in particular
+Dialogue: 0,0:01:39.97,0:01:42.30,*Default,NTP,0000,0000,0000,,there's a video right at the beginning
+Dialogue: 0,0:01:42.30,0:01:44.40,*Default,NTP,0000,0000,0000,,about string representations
+Dialogue: 0,0:01:44.40,0:01:46.93,*Default,NTP,0000,0000,0000,,and that's the most important part of this lecture
+Dialogue: 0,0:01:47.00,0:01:48.57,*Default,NTP,0000,0000,0000,,in terms of understanding
+Dialogue: 0,0:01:48.57,0:01:50.80,*Default,NTP,0000,0000,0000,,the mechanics of python and how they work
+Dialogue: 0,0:01:51.07,0:01:54.10,*Default,NTP,0000,0000,0000,,and this also shows up in various ways on exams
+Dialogue: 0,0:01:54.13,0:01:55.93,*Default,NTP,0000,0000,0000,,because if you can't print something out
+Dialogue: 0,0:01:55.97,0:01:57.67,*Default,NTP,0000,0000,0000,,then it's hard to know what's going on
+Dialogue: 0,0:02:00.17,0:02:01.90,*Default,NTP,0000,0000,0000,,string representations
+Dialogue: 0,0:02:04.20,0:02:07.10,*Default,NTP,0000,0000,0000,,and the object oriented programming metaphor
+Dialogue: 0,0:02:07.80,0:02:08.97,*Default,NTP,0000,0000,0000,,we say that an object
+Dialogue: 0,0:02:08.97,0:02:10.70,*Default,NTP,0000,0000,0000,,should behave like the kind of data
+Dialogue: 0,0:02:10.70,0:02:12.07,*Default,NTP,0000,0000,0000,,it is meant to represent
+Dialogue: 0,0:02:13.47,0:02:14.93,*Default,NTP,0000,0000,0000,,and one aspect of that
+Dialogue: 0,0:02:15.20,0:02:16.93,*Default,NTP,0000,0000,0000,,is that an object should know how to
+Dialogue: 0,0:02:17.00,0:02:18.77,*Default,NTP,0000,0000,0000,,present itself to the world
+Dialogue: 0,0:02:18.90,0:02:19.90,*Default,NTP,0000,0000,0000,,as a string
+Dialogue: 0,0:02:20.13,0:02:22.93,*Default,NTP,0000,0000,0000,,or to produce a string representation of itself
+Dialogue: 0,0:02:24.37,0:02:25.77,*Default,NTP,0000,0000,0000,,and strings are important
+Dialogue: 0,0:02:26.47,0:02:27.47,*Default,NTP,0000,0000,0000,,their descriptions
+Dialogue: 0,0:02:27.47,0:02:29.20,*Default,NTP,0000,0000,0000,,not only in natural languages
+Dialogue: 0,0:02:29.20,0:02:31.37,*Default,NTP,0000,0000,0000,,that the humans used to communicate with each other
+Dialogue: 0,0:02:31.87,0:02:33.93,*Default,NTP,0000,0000,0000,,but also in programming languages
+Dialogue: 0,0:02:35.20,0:02:37.60,*Default,NTP,0000,0000,0000,,you can put an expression in a string
+Dialogue: 0,0:02:39.13,0:02:40.33,*Default,NTP,0000,0000,0000,,so in python
+Dialogue: 0,0:02:40.33,0:02:42.93,*Default,NTP,0000,0000,0000,,this distinction is built right into the language
+Dialogue: 0,0:02:43.33,0:02:46.87,*Default,NTP,0000,0000,0000,,all objects produce two string representations
+Dialogue: 0,0:02:47.50,0:02:49.40,*Default,NTP,0000,0000,0000,,one is called the stir string
+Dialogue: 0,0:02:49.60,0:02:52.13,*Default,NTP,0000,0000,0000,,and it's designed to be legible to humans
+Dialogue: 0,0:02:53.10,0:02:55.60,*Default,NTP,0000,0000,0000,,the repper string by contrast
+Dialogue: 0,0:02:55.70,0:02:58.40,*Default,NTP,0000,0000,0000,,is designed to be legible to the python interpreter
+Dialogue: 0,0:02:59.20,0:03:01.40,*Default,NTP,0000,0000,0000,,that is it's supposed to be an expression
+Dialogue: 0,0:03:01.90,0:03:03.77,*Default,NTP,0000,0000,0000,,an expression in the python language
+Dialogue: 0,0:03:05.30,0:03:05.53,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:03:05.53,0:03:08.50,*Default,NTP,0000,0000,0000,,a lot of times the stir and repper string are the same
+Dialogue: 0,0:03:09.40,0:03:10.50,*Default,NTP,0000,0000,0000,,because python was
+Dialogue: 0,0:03:10.50,0:03:12.57,*Default,NTP,0000,0000,0000,,designed to be a language that people could read
+Dialogue: 0,0:03:14.13,0:03:14.93,*Default,NTP,0000,0000,0000,,and so
+Dialogue: 0,0:03:15.00,0:03:17.80,*Default,NTP,0000,0000,0000,,a lot of the expressions have exactly the same form
+Dialogue: 0,0:03:18.00,0:03:19.67,*Default,NTP,0000,0000,0000,,as a person my right down
+Dialogue: 0,0:03:19.80,0:03:21.93,*Default,NTP,0000,0000,0000,,when they try to communicate the same idea
+Dialogue: 0,0:03:22.53,0:03:25.17,*Default,NTP,0000,0000,0000,,you read the No.1 in either case
+Dialogue: 0,0:03:25.87,0:03:27.40,*Default,NTP,0000,0000,0000,,but sometimes these different
+Dialogue: 0,0:03:27.50,0:03:28.90,*Default,NTP,0000,0000,0000,,let's look at an example
+Dialogue: 0,0:03:30.33,0:03:33.00,*Default,NTP,0000,0000,0000,,1st will consider the repper string for an object
+Dialogue: 0,0:03:33.90,0:03:35.97,*Default,NTP,0000,0000,0000,,there's a built in function called repper
+Dialogue: 0,0:03:36.60,0:03:39.93,*Default,NTP,0000,0000,0000,,it returns a python expression as a string
+Dialogue: 0,0:03:40.53,0:03:42.90,*Default,NTP,0000,0000,0000,,that evaluates to an equal object
+Dialogue: 0,0:03:43.80,0:03:45.50,*Default,NTP,0000,0000,0000,,if I call help on repper
+Dialogue: 0,0:03:45.90,0:03:48.30,*Default,NTP,0000,0000,0000,,this is what I see built into the language
+Dialogue: 0,0:03:48.57,0:03:51.77,*Default,NTP,0000,0000,0000,,repper can be called on any object it produces a string
+Dialogue: 0,0:03:52.13,0:03:53.13,*Default,NTP,0000,0000,0000,,and it's supposed to return
+Dialogue: 0,0:03:53.13,0:03:56.50,*Default,NTP,0000,0000,0000,,the canonical string representation of the object
+Dialogue: 0,0:03:57.70,0:04:00.97,*Default,NTP,0000,0000,0000,,for most object types the documents tation says
+Dialogue: 0,0:04:01.53,0:04:04.10,*Default,NTP,0000,0000,0000,,calling eval on the repper of the object
+Dialogue: 0,0:04:04.13,0:04:04.93,*Default,NTP,0000,0000,0000,,gives you
+Dialogue: 0,0:04:04.97,0:04:07.30,*Default,NTP,0000,0000,0000,,some object that's equivalent to the original
+Dialogue: 0,0:04:10.77,0:04:13.17,*Default,NTP,0000,0000,0000,,the result of calling repper on a value
+Dialogue: 0,0:04:13.30,0:04:16.57,*Default,NTP,0000,0000,0000,,is exactly what you see in an interactive session
+Dialogue: 0,0:04:16.80,0:04:18.27,*Default,NTP,0000,0000,0000,,it's what python prince out
+Dialogue: 0,0:04:18.27,0:04:20.53,*Default,NTP,0000,0000,0000,,right below the expression you evaluated
+Dialogue: 0,0:04:21.87,0:04:23.93,*Default,NTP,0000,0000,0000,,so if I evaluate this expression
+Dialogue: 0,0:04:24.50,0:04:28.00,*Default,NTP,0000,0000,0000,,which represents 12 times tend to the 12th power
+Dialogue: 0,0:04:29.40,0:04:32.90,*Default,NTP,0000,0000,0000,,the canonical string representation is one and then two
+Dialogue: 0,0:04:32.90,0:04:35.27,*Default,NTP,0000,0000,0000,,and then twelve zeros and then a decimal point
+Dialogue: 0,0:04:35.27,0:04:36.20,*Default,NTP,0000,0000,0000,,and then a zero
+Dialogue: 0,0:04:36.67,0:04:38.27,*Default,NTP,0000,0000,0000,,and that's what gets displayed
+Dialogue: 0,0:04:39.10,0:04:42.37,*Default,NTP,0000,0000,0000,,exactly the same thing gets displayed if you call print
+Dialogue: 0,0:04:42.50,0:04:44.77,*Default,NTP,0000,0000,0000,,on the result of calling repper
+Dialogue: 0,0:04:44.93,0:04:47.27,*Default,NTP,0000,0000,0000,,on 12 times 10 to the 12th
+Dialogue: 0,0:04:51.17,0:04:53.30,*Default,NTP,0000,0000,0000,,now some objects do not have a simple
+Dialogue: 0,0:04:53.30,0:04:54.80,*Default,NTP,0000,0000,0000,,python readable string
+Dialogue: 0,0:04:55.17,0:04:57.30,*Default,NTP,0000,0000,0000,,there's no way to write down an expression
+Dialogue: 0,0:04:58.00,0:05:00.57,*Default,NTP,0000,0000,0000,,that very easily captures everything
+Dialogue: 0,0:05:00.70,0:05:02.30,*Default,NTP,0000,0000,0000,,that some object is
+Dialogue: 0,0:05:02.80,0:05:03.40,*Default,NTP,0000,0000,0000,,or
+Dialogue: 0,0:05:03.40,0:05:06.07,*Default,NTP,0000,0000,0000,,an expression for how to create something that's equal
+Dialogue: 0,0:05:06.07,0:05:07.47,*Default,NTP,0000,0000,0000,,to the original object
+Dialogue: 0,0:05:08.30,0:05:10.60,*Default,NTP,0000,0000,0000,,and this is typically true of compound things
+Dialogue: 0,0:05:10.60,0:05:12.67,*Default,NTP,0000,0000,0000,,such as functions or classes
+Dialogue: 0,0:05:13.33,0:05:15.17,*Default,NTP,0000,0000,0000,,the min function that's built in
+Dialogue: 0,0:05:15.60,0:05:17.90,*Default,NTP,0000,0000,0000,,just can't be written a single expression
+Dialogue: 0,0:05:18.30,0:05:21.17,*Default,NTP,0000,0000,0000,,so instead what you see when you call repper on min
+Dialogue: 0,0:05:21.47,0:05:23.27,*Default,NTP,0000,0000,0000,,is this proxy
+Dialogue: 0,0:05:23.87,0:05:26.70,*Default,NTP,0000,0000,0000,,which uses angled brackets to indicate
+Dialogue: 0,0:05:26.77,0:05:28.47,*Default,NTP,0000,0000,0000,,that this is not in fact
+Dialogue: 0,0:05:28.53,0:05:30.13,*Default,NTP,0000,0000,0000,,a python expression at all
+Dialogue: 0,0:05:30.47,0:05:31.80,*Default,NTP,0000,0000,0000,,it's just some standard
+Dialogue: 0,0:05:32.40,0:05:34.30,*Default,NTP,0000,0000,0000,,a human readable description
+Dialogue: 0,0:05:34.40,0:05:36.70,*Default,NTP,0000,0000,0000,,because generating a python expression
+Dialogue: 0,0:05:36.77,0:05:37.93,*Default,NTP,0000,0000,0000,,just didn't work out
+Dialogue: 0,0:05:42.27,0:05:44.60,*Default,NTP,0000,0000,0000,,the stir string of an object can be different
+Dialogue: 0,0:05:45.50,0:05:47.87,*Default,NTP,0000,0000,0000,,human interpretal strings are useful as well
+Dialogue: 0,0:05:47.87,0:05:48.87,*Default,NTP,0000,0000,0000,,and so we'd like to have
+Dialogue: 0,0:05:48.87,0:05:50.73,*Default,NTP,0000,0000,0000,,our programs be able to generate them
+Dialogue: 0,0:05:51.07,0:05:51.57,*Default,NTP,0000,0000,0000,,because
+Dialogue: 0,0:05:51.57,0:05:53.90,*Default,NTP,0000,0000,0000,,often times a program wants to communicate something
+Dialogue: 0,0:05:53.90,0:05:54.73,*Default,NTP,0000,0000,0000,,with a user
+Dialogue: 0,0:05:56.00,0:05:57.27,*Default,NTP,0000,0000,0000,,so here's an example
+Dialogue: 0,0:05:58.00,0:06:00.10,*Default,NTP,0000,0000,0000,,there's a fractions module
+Dialogue: 0,0:06:00.53,0:06:02.27,*Default,NTP,0000,0000,0000,,part of the standard library
+Dialogue: 0,0:06:03.00,0:06:05.13,*Default,NTP,0000,0000,0000,,and it has a fraction class
+Dialogue: 0,0:06:06.57,0:06:09.93,*Default,NTP,0000,0000,0000,,a fraction is built from a numerator and a denominator
+Dialogue: 0,0:06:11.50,0:06:13.33,*Default,NTP,0000,0000,0000,,the ripper of a fraction
+Dialogue: 0,0:06:13.87,0:06:16.00,*Default,NTP,0000,0000,0000,,is just a call to the
+Dialogue: 0,0:06:16.33,0:06:18.93,*Default,NTP,0000,0000,0000,,class itself exactly how you'd construct
+Dialogue: 0,0:06:19.40,0:06:21.07,*Default,NTP,0000,0000,0000,,the fraction in the first place
+Dialogue: 0,0:06:21.97,0:06:24.17,*Default,NTP,0000,0000,0000,,that's not how human's right fractions
+Dialogue: 0,0:06:24.37,0:06:26.13,*Default,NTP,0000,0000,0000,,human's right fractions like that
+Dialogue: 0,0:06:27.53,0:06:30.87,*Default,NTP,0000,0000,0000,,so stir is a built in function that takes any object
+Dialogue: 0,0:06:30.93,0:06:32.37,*Default,NTP,0000,0000,0000,,gives you back a string
+Dialogue: 0,0:06:32.90,0:06:35.50,*Default,NTP,0000,0000,0000,,or this string is some human interpretable
+Dialogue: 0,0:06:35.80,0:06:38.30,*Default,NTP,0000,0000,0000,,representation of the original object
+Dialogue: 0,0:06:40.00,0:06:41.60,*Default,NTP,0000,0000,0000,,the result of calling stir
+Dialogue: 0,0:06:41.90,0:06:43.77,*Default,NTP,0000,0000,0000,,on the value of an expression
+Dialogue: 0,0:06:45.17,0:06:47.70,*Default,NTP,0000,0000,0000,,is what python prints out
+Dialogue: 0,0:06:48.00,0:06:50.40,*Default,NTP,0000,0000,0000,,when you actually call the print function
+Dialogue: 0,0:06:52.07,0:06:55.33,*Default,NTP,0000,0000,0000,,so if I print half I'll see one divided by two
+Dialogue: 0,0:06:56.07,0:06:58.87,*Default,NTP,0000,0000,0000,,now notice this has quotes around it because this is a
+Dialogue: 0,0:06:59.00,0:06:59.80,*Default,NTP,0000,0000,0000,,string
+Dialogue: 0,0:07:00.57,0:07:00.93,*Default,NTP,0000,0000,0000,,or as
+Dialogue: 0,0:07:00.93,0:07:03.13,*Default,NTP,0000,0000,0000,,this is just what happens when you print the string
+Dialogue: 0,0:07:03.17,0:07:04.67,*Default,NTP,0000,0000,0000,,the contents of the string
+Dialogue: 0,0:07:07.77,0:07:09.00,*Default,NTP,0000,0000,0000,,all right let's try it up
+Dialogue: 0,0:07:11.93,0:07:13.00,*Default,NTP,0000,0000,0000,,from fractions
+Dialogue: 0,0:07:13.00,0:07:16.50,*Default,NTP,0000,0000,0000,,import fraction gives me access to this class
+Dialogue: 0,0:07:16.60,0:07:18.10,*Default,NTP,0000,0000,0000,,which I combined
+Dialogue: 0,0:07:18.73,0:07:21.07,*Default,NTP,0000,0000,0000,,an instance of to the name half
+Dialogue: 0,0:07:22.60,0:07:24.30,*Default,NTP,0000,0000,0000,,now half is a fraction
+Dialogue: 0,0:07:25.67,0:07:28.40,*Default,NTP,0000,0000,0000,,the repper string of half is just that
+Dialogue: 0,0:07:29.57,0:07:30.80,*Default,NTP,0000,0000,0000,,if I print half
+Dialogue: 0,0:07:31.07,0:07:32.77,*Default,NTP,0000,0000,0000,,I see one divided by two
+Dialogue: 0,0:07:33.40,0:07:36.97,*Default,NTP,0000,0000,0000,,the stir string of half is one divided by two
+Dialogue: 0,0:07:38.87,0:07:42.87,*Default,NTP,0000,0000,0000,,now if I evaluate the repper string of half
+Dialogue: 0,0:07:43.53,0:07:45.30,*Default,NTP,0000,0000,0000,,I get the fraction
+Dialogue: 0,0:07:46.30,0:07:49.10,*Default,NTP,0000,0000,0000,,it's a different object but it's this quibbling right
+Dialogue: 0,0:07:50.27,0:07:54.47,*Default,NTP,0000,0000,0000,,if I evaluate the stir string of half in this case
+Dialogue: 0,0:07:54.60,0:07:57.37,*Default,NTP,0000,0000,0000,,it turns out that is a valid python expression
+Dialogue: 0,0:07:57.37,0:07:59.07,*Default,NTP,0000,0000,0000,,but that's just kind of coincidence
+Dialogue: 0,0:07:59.17,0:08:01.00,*Default,NTP,0000,0000,0000,,what you get back is not a fraction
+Dialogue: 0,0:08:01.10,0:08:02.07,*Default,NTP,0000,0000,0000,,it's a flop
+Dialogue: 0,0:08:02.87,0:08:04.73,*Default,NTP,0000,0000,0000,,one divided by two is really just there
+Dialogue: 0,0:08:04.73,0:08:06.53,*Default,NTP,0000,0000,0000,,to be interpretable by humans
+Dialogue: 0,0:08:09.13,0:08:11.07,*Default,NTP,0000,0000,0000,,we can learn a little bit more about
+Dialogue: 0,0:08:11.07,0:08:13.60,*Default,NTP,0000,0000,0000,,the repper and stir functions
+Dialogue: 0,0:08:13.60,0:08:16.40,*Default,NTP,0000,0000,0000,,just by trying them out on strings
+Dialogue: 0,0:08:17.07,0:08:18.30,*Default,NTP,0000,0000,0000,,so here's a string
+Dialogue: 0,0:08:19.13,0:08:20.53,*Default,NTP,0000,0000,0000,,hello world
+Dialogue: 0,0:08:23.80,0:08:25.97,*Default,NTP,0000,0000,0000,,what happens when I evaluate s
+Dialogue: 0,0:08:26.10,0:08:27.37,*Default,NTP,0000,0000,0000,,I see that string
+Dialogue: 0,0:08:29.33,0:08:33.50,*Default,NTP,0000,0000,0000,,that's what happens when I print out the repper of s
+Dialogue: 0,0:08:33.77,0:08:34.67,*Default,NTP,0000,0000,0000,,same thing
+Dialogue: 0,0:08:36.90,0:08:39.07,*Default,NTP,0000,0000,0000,,now what happens if I print out s
+Dialogue: 0,0:08:39.07,0:08:40.37,*Default,NTP,0000,0000,0000,,the quotes go away
+Dialogue: 0,0:08:41.87,0:08:44.90,*Default,NTP,0000,0000,0000,,which is exactly what I see when I get the stir of s
+Dialogue: 0,0:08:44.90,0:08:47.37,*Default,NTP,0000,0000,0000,,because the stir of s is just s
+Dialogue: 0,0:08:50.00,0:08:53.17,*Default,NTP,0000,0000,0000,,now what happens if I just call repper of s
+Dialogue: 0,0:08:53.70,0:08:55.57,*Default,NTP,0000,0000,0000,,I see quotes within quotes
+Dialogue: 0,0:08:55.73,0:08:57.00,*Default,NTP,0000,0000,0000,,what's going on there
+Dialogue: 0,0:08:57.73,0:09:01.13,*Default,NTP,0000,0000,0000,,well what repper is giving me is a string
+Dialogue: 0,0:09:01.20,0:09:04.73,*Default,NTP,0000,0000,0000,,or if I evaluated it I'd cut back the original string
+Dialogue: 0,0:09:08.60,0:09:10.20,*Default,NTP,0000,0000,0000,,and what if I call the repper
+Dialogue: 0,0:09:10.27,0:09:13.33,*Default,NTP,0000,0000,0000,,of the repper of the repper of s
+Dialogue: 0,0:09:15.50,0:09:16.73,*Default,NTP,0000,0000,0000,,I'd get a mess
+Dialogue: 0,0:09:17.40,0:09:18.77,*Default,NTP,0000,0000,0000,,what's going on there
+Dialogue: 0,0:09:19.40,0:09:21.93,*Default,NTP,0000,0000,0000,,well this is not just quotes within quotes
+Dialogue: 0,0:09:21.97,0:09:24.80,*Default,NTP,0000,0000,0000,,but quotes within quotes within quotes within quotes
+Dialogue: 0,0:09:25.33,0:09:28.57,*Default,NTP,0000,0000,0000,,and python has to use backslashes in order to indicate
+Dialogue: 0,0:09:29.00,0:09:31.50,*Default,NTP,0000,0000,0000,,what quotes really industrying and what don't
+Dialogue: 0,0:09:32.57,0:09:34.53,*Default,NTP,0000,0000,0000,,the details of that are not important
+Dialogue: 0,0:09:35.07,0:09:36.10,*Default,NTP,0000,0000,0000,,what is important
+Dialogue: 0,0:09:36.10,0:09:37.40,*Default,NTP,0000,0000,0000,,is that if I evaluate
+Dialogue: 0,0:09:37.40,0:09:40.50,*Default,NTP,0000,0000,0000,,the result of evaluating the result of evaluating
+Dialogue: 0,0:09:40.57,0:09:42.93,*Default,NTP,0000,0000,0000,,the repper of the repper of the repper of s
+Dialogue: 0,0:09:43.07,0:09:44.40,*Default,NTP,0000,0000,0000,,I get back s
+Dialogue: 0,0:09:46.07,0:09:48.90,*Default,NTP,0000,0000,0000,,now what if I just evaluated s in the first place
+Dialogue: 0,0:09:49.33,0:09:50.53,*Default,NTP,0000,0000,0000,,I'd get an error
+Dialogue: 0,0:09:51.50,0:09:56.10,*Default,NTP,0000,0000,0000,,hello comma world is not a valid python expression
+Dialogue: 0,0:09:57.77,0:09:59.80,*Default,NTP,0000,0000,0000,,when I have quotes around it it is
+Dialogue: 0,0:10:00.10,0:10:03.17,*Default,NTP,0000,0000,0000,,so if I evaluate the repper of s everything's fine
+Dialogue: 0,0:10:03.60,0:10:07.00,*Default,NTP,0000,0000,0000,,but I can't evaluate s or the stir of s
+Dialogue: 0,0:10:07.13,0:10:10.60,*Default,NTP,0000,0000,0000,,because what I have here is not valid python
+Dialogue: 0,0:10:13.37,0:10:15.17,*Default,NTP,0000,0000,0000,,polymorphic functions
+Dialogue: 0,0:10:16.40,0:10:18.93,*Default,NTP,0000,0000,0000,,a polymorphic function is a function that applies
+Dialogue: 0,0:10:18.93,0:10:20.00,*Default,NTP,0000,0000,0000,,to many different
+Dialogue: 0,0:10:20.53,0:10:21.73,*Default,NTP,0000,0000,0000,,types of data
+Dialogue: 0,0:10:23.20,0:10:25.73,*Default,NTP,0000,0000,0000,,and stir and repper are great examples
+Dialogue: 0,0:10:25.90,0:10:26.77,*Default,NTP,0000,0000,0000,,because you can really
+Dialogue: 0,0:10:26.77,0:10:28.53,*Default,NTP,0000,0000,0000,,pass any kind of object you want
+Dialogue: 0,0:10:28.53,0:10:31.47,*Default,NTP,0000,0000,0000,,tis this built in stir and repper functions
+Dialogue: 0,0:10:31.77,0:10:33.70,*Default,NTP,0000,0000,0000,,and they're always supposed to do the right thing
+Dialogue: 0,0:10:34.33,0:10:35.53,*Default,NTP,0000,0000,0000,,how's that possible
+Dialogue: 0,0:10:36.93,0:10:38.33,*Default,NTP,0000,0000,0000,,well the fundamental idea
+Dialogue: 0,0:10:38.93,0:10:43.20,*Default,NTP,0000,0000,0000,,is that repper just asks its argument to display itself
+Dialogue: 0,0:10:44.20,0:10:45.57,*Default,NTP,0000,0000,0000,,and in python
+Dialogue: 0,0:10:46.13,0:10:48.87,*Default,NTP,0000,0000,0000,,this is done using a special method name
+Dialogue: 0,0:10:49.87,0:10:51.10,*Default,NTP,0000,0000,0000,,now it's a special name
+Dialogue: 0,0:10:51.10,0:10:53.77,*Default,NTP,0000,0000,0000,,because it corresponds to a built in function
+Dialogue: 0,0:10:54.60,0:10:56.20,*Default,NTP,0000,0000,0000,,but this general idea
+Dialogue: 0,0:10:56.80,0:10:58.87,*Default,NTP,0000,0000,0000,,that you can have a function that just
+Dialogue: 0,0:10:59.07,0:11:02.17,*Default,NTP,0000,0000,0000,,asks the argument what to do
+Dialogue: 0,0:11:02.80,0:11:05.13,*Default,NTP,0000,0000,0000,,certainly applies beyond the python language
+Dialogue: 0,0:11:06.40,0:11:09.10,*Default,NTP,0000,0000,0000,,okay so repper in particular
+Dialogue: 0,0:11:09.50,0:11:11.90,*Default,NTP,0000,0000,0000,,just invokes a zero argument method
+Dialogue: 0,0:11:12.13,0:11:13.77,*Default,NTP,0000,0000,0000,,called underscore underscore
+Dialogue: 0,0:11:13.77,0:11:15.67,*Default,NTP,0000,0000,0000,,repper underscore underscore
+Dialogue: 0,0:11:15.97,0:11:17.17,*Default,NTP,0000,0000,0000,,on its argument
+Dialogue: 0,0:11:17.20,0:11:19.90,*Default,NTP,0000,0000,0000,,in order to get the repper string that it returns
+Dialogue: 0,0:11:22.10,0:11:24.50,*Default,NTP,0000,0000,0000,,so I can call repper on half
+Dialogue: 0,0:11:24.53,0:11:26.27,*Default,NTP,0000,0000,0000,,which was the fraction one two
+Dialogue: 0,0:11:26.77,0:11:28.73,*Default,NTP,0000,0000,0000,,or I could invoke its method
+Dialogue: 0,0:11:29.47,0:11:30.73,*Default,NTP,0000,0000,0000,,invoking the method
+Dialogue: 0,0:11:31.87,0:11:33.53,*Default,NTP,0000,0000,0000,,gets looked up in the class
+Dialogue: 0,0:11:34.30,0:11:35.87,*Default,NTP,0000,0000,0000,,so it's really the fraction class
+Dialogue: 0,0:11:35.87,0:11:37.53,*Default,NTP,0000,0000,0000,,that knows how to generate the repper string
+Dialogue: 0,0:11:37.53,0:11:38.50,*Default,NTP,0000,0000,0000,,for a fraction
+Dialogue: 0,0:11:38.97,0:11:40.50,*Default,NTP,0000,0000,0000,,it's not the repper function
+Dialogue: 0,0:11:42.00,0:11:45.53,*Default,NTP,0000,0000,0000,,and likewise stir invokes a zero argument method
+Dialogue: 0,0:11:45.93,0:11:49.37,*Default,NTP,0000,0000,0000,,that is correspondingly called underscore underscore
+Dialogue: 0,0:11:49.37,0:11:50.90,*Default,NTP,0000,0000,0000,,stir underscore underscore
+Dialogue: 0,0:11:51.10,0:11:52.57,*Default,NTP,0000,0000,0000,,another special method name
+Dialogue: 0,0:11:54.47,0:11:57.53,*Default,NTP,0000,0000,0000,,and so I could invoke this method directly if I wanted
+Dialogue: 0,0:11:58.00,0:12:01.50,*Default,NTP,0000,0000,0000,,and that would generate a stir string for a fraction
+Dialogue: 0,0:12:02.70,0:12:04.90,*Default,NTP,0000,0000,0000,,so there's a really important idea here
+Dialogue: 0,0:12:05.40,0:12:06.87,*Default,NTP,0000,0000,0000,,you could write a function
+Dialogue: 0,0:12:07.47,0:12:09.00,*Default,NTP,0000,0000,0000,,like stir a ripper
+Dialogue: 0,0:12:09.77,0:12:12.07,*Default,NTP,0000,0000,0000,,that actually doesn't have much logic at all
+Dialogue: 0,0:12:12.70,0:12:14.20,*Default,NTP,0000,0000,0000,,it just defers to the
+Dialogue: 0,0:12:14.30,0:12:17.60,*Default,NTP,0000,0000,0000,,argument that comes in to decide what to do
+Dialogue: 0,0:12:17.97,0:12:21.17,*Default,NTP,0000,0000,0000,,by invoking a method on it with the particular name
+Dialogue: 0,0:12:23.80,0:12:25.27,*Default,NTP,0000,0000,0000,,so let's talk about how
+Dialogue: 0,0:12:25.27,0:12:27.67,*Default,NTP,0000,0000,0000,,repper inster are actually implemented
+Dialogue: 0,0:12:28.30,0:12:29.80,*Default,NTP,0000,0000,0000,,it turns out that it's slightly more
+Dialogue: 0,0:12:29.80,0:12:31.70,*Default,NTP,0000,0000,0000,,complicated than what I described
+Dialogue: 0,0:12:32.97,0:12:35.33,*Default,NTP,0000,0000,0000,,instead of just invoking the repper method
+Dialogue: 0,0:12:35.33,0:12:36.57,*Default,NTP,0000,0000,0000,,on its argument
+Dialogue: 0,0:12:38.70,0:12:42.17,*Default,NTP,0000,0000,0000,,an instance attribute called repper is ignored
+Dialogue: 0,0:12:43.00,0:12:45.50,*Default,NTP,0000,0000,0000,,only a class attribute called repper
+Dialogue: 0,0:12:45.77,0:12:50.30,*Default,NTP,0000,0000,0000,,is invoked by the repper function that's built in
+Dialogue: 0,0:12:51.80,0:12:53.20,*Default,NTP,0000,0000,0000,,how would I implement that
+Dialogue: 0,0:12:53.77,0:12:56.50,*Default,NTP,0000,0000,0000,,so which of the following function definitions
+Dialogue: 0,0:12:56.57,0:12:59.27,*Default,NTP,0000,0000,0000,,corresponds to a function repper
+Dialogue: 0,0:12:59.53,0:13:01.20,*Default,NTP,0000,0000,0000,,that takes in some argument
+Dialogue: 0,0:13:01.57,0:13:03.47,*Default,NTP,0000,0000,0000,,looks up the class attribute
+Dialogue: 0,0:13:03.67,0:13:05.60,*Default,NTP,0000,0000,0000,,called underscore underscore repper
+Dialogue: 0,0:13:06.27,0:13:07.40,*Default,NTP,0000,0000,0000,,and invokes it
+Dialogue: 0,0:13:08.50,0:13:09.90,*Default,NTP,0000,0000,0000,,here are five options
+Dialogue: 0,0:13:10.13,0:13:12.80,*Default,NTP,0000,0000,0000,,only one does what I described
+Dialogue: 0,0:13:13.27,0:13:14.37,*Default,NTP,0000,0000,0000,,think about it for a minute
+Dialogue: 0,0:13:14.37,0:13:17.20,*Default,NTP,0000,0000,0000,,I'll tell you the answer in 321
+Dialogue: 0,0:13:18.33,0:13:19.20,*Default,NTP,0000,0000,0000,,this one
+Dialogue: 0,0:13:20.50,0:13:24.47,*Default,NTP,0000,0000,0000,,manages to skip instance attributes or ignore them
+Dialogue: 0,0:13:24.90,0:13:27.30,*Default,NTP,0000,0000,0000,,by looking up the type of the argument
+Dialogue: 0,0:13:27.53,0:13:29.20,*Default,NTP,0000,0000,0000,,that gets you the class
+Dialogue: 0,0:13:29.60,0:13:30.73,*Default,NTP,0000,0000,0000,,and therefore
+Dialogue: 0,0:13:30.90,0:13:34.70,*Default,NTP,0000,0000,0000,,asking for the repper attribute of the class
+Dialogue: 0,0:13:34.70,0:13:37.27,*Default,NTP,0000,0000,0000,,is guaranteed to give you a class attribute
+Dialogue: 0,0:13:38.47,0:13:40.87,*Default,NTP,0000,0000,0000,,now it's a class attribute that's a function
+Dialogue: 0,0:13:41.33,0:13:43.67,*Default,NTP,0000,0000,0000,,and that function is not a bound method
+Dialogue: 0,0:13:43.67,0:13:46.30,*Default,NTP,0000,0000,0000,,because it's looked up on the class
+Dialogue: 0,0:13:46.50,0:13:49.87,*Default,NTP,0000,0000,0000,,so you have to explicitly pass in x
+Dialogue: 0,0:13:50.20,0:13:54.77,*Default,NTP,0000,0000,0000,,in order to have this class attribute invoked
+Dialogue: 0,0:13:54.80,0:13:57.73,*Default,NTP,0000,0000,0000,,on the particular argument x that were interested in
+Dialogue: 0,0:13:58.60,0:14:00.73,*Default,NTP,0000,0000,0000,,we'll look at an example in a moment
+Dialogue: 0,0:14:02.87,0:14:04.80,*Default,NTP,0000,0000,0000,,stir is also complicated
+Dialogue: 0,0:14:04.80,0:14:06.73,*Default,NTP,0000,0000,0000,,even more complicated than repper
+Dialogue: 0,0:14:07.27,0:14:09.87,*Default,NTP,0000,0000,0000,,an instance attribute called stir is ignored
+Dialogue: 0,0:14:10.60,0:14:13.37,*Default,NTP,0000,0000,0000,,if there's no stir attribute at all on the class
+Dialogue: 0,0:14:13.67,0:14:17.60,*Default,NTP,0000,0000,0000,,then calling stir just returns whatever repper returns
+Dialogue: 0,0:14:17.87,0:14:19.47,*Default,NTP,0000,0000,0000,,so by default they're the same
+Dialogue: 0,0:14:19.53,0:14:21.77,*Default,NTP,0000,0000,0000,,it's only if you explicitly make them different
+Dialogue: 0,0:14:21.77,0:14:22.73,*Default,NTP,0000,0000,0000,,that they differ
+Dialogue: 0,0:14:23.53,0:14:24.90,*Default,NTP,0000,0000,0000,,how would we implement that
+Dialogue: 0,0:14:24.97,0:14:25.90,*Default,NTP,0000,0000,0000,,well let's try
+Dialogue: 0,0:14:27.60,0:14:30.57,*Default,NTP,0000,0000,0000,,by the way stir is a class not a function
+Dialogue: 0,0:14:31.37,0:14:32.93,*Default,NTP,0000,0000,0000,,so when you're calling stir
+Dialogue: 0,0:14:33.17,0:14:34.97,*Default,NTP,0000,0000,0000,,you're really calling a constructor
+Dialogue: 0,0:14:34.97,0:14:37.40,*Default,NTP,0000,0000,0000,,for the built in string type called stir
+Dialogue: 0,0:14:39.37,0:14:41.47,*Default,NTP,0000,0000,0000,,so to explore all these different
+Dialogue: 0,0:14:41.67,0:14:44.20,*Default,NTP,0000,0000,0000,,nuances of string generation
+Dialogue: 0,0:14:44.30,0:14:46.70,*Default,NTP,0000,0000,0000,,let's create a class called bear
+Dialogue: 0,0:14:47.00,0:14:48.20,*Default,NTP,0000,0000,0000,,this is a bear
+Dialogue: 0,0:14:52.90,0:14:55.90,*Default,NTP,0000,0000,0000,,and it's going to have a repper method
+Dialogue: 0,0:14:56.80,0:14:59.80,*Default,NTP,0000,0000,0000,,which just returns the string bear
+Dialogue: 0,0:15:02.40,0:15:03.57,*Default,NTP,0000,0000,0000,,now I'm going to try
+Dialogue: 0,0:15:03.57,0:15:06.27,*Default,NTP,0000,0000,0000,,to invoke this in various different ways
+Dialogue: 0,0:15:07.07,0:15:09.70,*Default,NTP,0000,0000,0000,,I'm going to create a bear called oski
+Dialogue: 0,0:15:11.00,0:15:12.70,*Default,NTP,0000,0000,0000,,I'm gonna print oski
+Dialogue: 0,0:15:13.10,0:15:16.10,*Default,NTP,0000,0000,0000,,I'm gonna print the stir string for oski
+Dialogue: 0,0:15:16.50,0:15:19.37,*Default,NTP,0000,0000,0000,,I'm gonna print the repper string for oski
+Dialogue: 0,0:15:19.87,0:15:23.70,*Default,NTP,0000,0000,0000,,I'm gonna print what I get when I invoke on oski
+Dialogue: 0,0:15:23.93,0:15:25.70,*Default,NTP,0000,0000,0000,,the stir method
+Dialogue: 0,0:15:25.90,0:15:30.80,*Default,NTP,0000,0000,0000,,and I'm gonna print invoking the repper method on oski
+Dialogue: 0,0:15:37.70,0:15:40.00,*Default,NTP,0000,0000,0000,,so at the moment all of them
+Dialogue: 0,0:15:40.40,0:15:41.90,*Default,NTP,0000,0000,0000,,print out bear
+Dialogue: 0,0:15:42.33,0:15:44.27,*Default,NTP,0000,0000,0000,,there are five different print statements here
+Dialogue: 0,0:15:44.37,0:15:45.50,*Default,NTP,0000,0000,0000,,they're all the same
+Dialogue: 0,0:15:46.60,0:15:50.53,*Default,NTP,0000,0000,0000,,what happens if I define a stir method as well
+Dialogue: 0,0:15:51.40,0:15:53.00,*Default,NTP,0000,0000,0000,,well since there is a stir now
+Dialogue: 0,0:15:53.00,0:15:55.73,*Default,NTP,0000,0000,0000,,it will be called whenever we use the stir string
+Dialogue: 0,0:15:56.60,0:15:59.57,*Default,NTP,0000,0000,0000,,which is here here and here
+Dialogue: 0,0:16:00.33,0:16:03.57,*Default,NTP,0000,0000,0000,,so in this case we're going to return a bear
+Dialogue: 0,0:16:05.33,0:16:07.37,*Default,NTP,0000,0000,0000,,and we can observe the different behavior
+Dialogue: 0,0:16:07.37,0:16:08.67,*Default,NTP,0000,0000,0000,,than what we had before
+Dialogue: 0,0:16:09.70,0:16:12.13,*Default,NTP,0000,0000,0000,,printing oski gives me the stir string
+Dialogue: 0,0:16:12.40,0:16:14.80,*Default,NTP,0000,0000,0000,,as well as explicitly asking for stir
+Dialogue: 0,0:16:14.80,0:16:16.93,*Default,NTP,0000,0000,0000,,using the stir built in function
+Dialogue: 0,0:16:17.30,0:16:21.00,*Default,NTP,0000,0000,0000,,or looking up stir the special method name
+Dialogue: 0,0:16:23.20,0:16:25.80,*Default,NTP,0000,0000,0000,,now in order to get even more variety
+Dialogue: 0,0:16:25.87,0:16:28.00,*Default,NTP,0000,0000,0000,,we need to introduce and in it
+Dialogue: 0,0:16:30.17,0:16:32.77,*Default,NTP,0000,0000,0000,,which will set instance attributes
+Dialogue: 0,0:16:33.37,0:16:36.40,*Default,NTP,0000,0000,0000,,let's have an interest instance attribute called repper
+Dialogue: 0,0:16:36.90,0:16:38.20,*Default,NTP,0000,0000,0000,,which is a function
+Dialogue: 0,0:16:38.57,0:16:40.33,*Default,NTP,0000,0000,0000,,that takes no arguments
+Dialogue: 0,0:16:40.33,0:16:42.93,*Default,NTP,0000,0000,0000,,because here we see we call it with no arguments
+Dialogue: 0,0:16:43.37,0:16:45.10,*Default,NTP,0000,0000,0000,,and it's going to return oski
+Dialogue: 0,0:16:46.30,0:16:47.87,*Default,NTP,0000,0000,0000,,and self dot stir
+Dialogue: 0,0:16:49.00,0:16:50.10,*Default,NTP,0000,0000,0000,,will return
+Dialogue: 0,0:16:50.90,0:16:52.07,*Default,NTP,0000,0000,0000,,this bear
+Dialogue: 0,0:16:54.77,0:16:56.57,*Default,NTP,0000,0000,0000,,executing my five print statements
+Dialogue: 0,0:16:56.57,0:16:57.20,*Default,NTP,0000,0000,0000,,we see that
+Dialogue: 0,0:16:57.20,0:16:59.90,*Default,NTP,0000,0000,0000,,printing oski and printing the stir string for oski
+Dialogue: 0,0:16:59.90,0:17:01.13,*Default,NTP,0000,0000,0000,,are always the same
+Dialogue: 0,0:17:01.37,0:17:03.17,*Default,NTP,0000,0000,0000,,there's no real way to make them different
+Dialogue: 0,0:17:04.30,0:17:08.10,*Default,NTP,0000,0000,0000,,the repper string ignores this instance attribute
+Dialogue: 0,0:17:08.10,0:17:09.57,*Default,NTP,0000,0000,0000,,just uses the method
+Dialogue: 0,0:17:09.67,0:17:12.37,*Default,NTP,0000,0000,0000,,which is a class attribute that's also a function
+Dialogue: 0,0:17:12.67,0:17:15.40,*Default,NTP,0000,0000,0000,,and so we see bear is returned
+Dialogue: 0,0:17:16.17,0:17:17.80,*Default,NTP,0000,0000,0000,,likewise the stir string
+Dialogue: 0,0:17:17.93,0:17:18.90,*Default,NTP,0000,0000,0000,,skips the instance
+Dialogue: 0,0:17:18.90,0:17:21.30,*Default,NTP,0000,0000,0000,,attribute and goes straight to the class
+Dialogue: 0,0:17:21.87,0:17:24.87,*Default,NTP,0000,0000,0000,,however attribute look up in the conventional way
+Dialogue: 0,0:17:25.13,0:17:27.60,*Default,NTP,0000,0000,0000,,gives us these functions which when we call them
+Dialogue: 0,0:17:27.80,0:17:29.93,*Default,NTP,0000,0000,0000,,return oski and this bear
+Dialogue: 0,0:17:30.87,0:17:31.33,*Default,NTP,0000,0000,0000,,so we see
+Dialogue: 0,0:17:31.33,0:17:33.53,*Default,NTP,0000,0000,0000,,there are four different things that we can get
+Dialogue: 0,0:17:33.77,0:17:35.50,*Default,NTP,0000,0000,0000,,based on how we print
+Dialogue: 0,0:17:36.57,0:17:39.10,*Default,NTP,0000,0000,0000,,as a final step to prove our understanding
+Dialogue: 0,0:17:39.10,0:17:41.77,*Default,NTP,0000,0000,0000,,let's see if we can write a repro function ourself
+Dialogue: 0,0:17:42.13,0:17:45.07,*Default,NTP,0000,0000,0000,,so this is going to replace the built in repro function
+Dialogue: 0,0:17:46.40,0:17:50.17,*Default,NTP,0000,0000,0000,,and what we'll do here is just return the type of x
+Dialogue: 0,0:17:50.40,0:17:52.73,*Default,NTP,0000,0000,0000,,invoke the rubber method on that
+Dialogue: 0,0:17:52.73,0:17:55.20,*Default,NTP,0000,0000,0000,,and pass in x like I said before
+Dialogue: 0,0:17:56.20,0:17:58.10,*Default,NTP,0000,0000,0000,,and what about stir x
+Dialogue: 0,0:17:58.97,0:18:01.10,*Default,NTP,0000,0000,0000,,now we certainly need to get the type of x
+Dialogue: 0,0:18:01.13,0:18:03.70,*Default,NTP,0000,0000,0000,,because we're going to ignore instance attributes
+Dialogue: 0,0:18:05.33,0:18:06.60,*Default,NTP,0000,0000,0000,,if it's the case
+Dialogue: 0,0:18:07.33,0:18:11.50,*Default,NTP,0000,0000,0000,,that this type has an attribute called stir
+Dialogue: 0,0:18:11.57,0:18:13.57,*Default,NTP,0000,0000,0000,,with underscores around it
+Dialogue: 0,0:18:13.93,0:18:17.37,*Default,NTP,0000,0000,0000,,then we will use that t dot stir
+Dialogue: 0,0:18:17.67,0:18:21.67,*Default,NTP,0000,0000,0000,,and pass in the original instance as its argument
+Dialogue: 0,0:18:22.60,0:18:23.30,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:18:23.30,0:18:26.80,*Default,NTP,0000,0000,0000,,we can just return the result of calling repper on x
+Dialogue: 0,0:18:27.73,0:18:29.50,*Default,NTP,0000,0000,0000,,here we'll run the same program
+Dialogue: 0,0:18:29.57,0:18:31.20,*Default,NTP,0000,0000,0000,,and it should behave the same way
+Dialogue: 0,0:18:31.20,0:18:34.07,*Default,NTP,0000,0000,0000,,if we've successfully implemented repper and stir
+Dialogue: 0,0:18:34.20,0:18:38.13,*Default,NTP,0000,0000,0000,,just as they behave in the built in methods
+Dialogue: 0,0:18:38.40,0:18:40.93,*Default,NTP,0000,0000,0000,,and here we see exactly the same output
+Dialogue: 0,0:18:41.20,0:18:43.40,*Default,NTP,0000,0000,0000,,because we've implemented the same logic
+Dialogue: 0,0:18:43.47,0:18:45.00,*Default,NTP,0000,0000,0000,,that reprinster apply
+Dialogue: 0,0:18:45.70,0:18:46.93,*Default,NTP,0000,0000,0000,,so now you know what they do
+Dialogue: 0,0:18:48.40,0:18:50.37,*Default,NTP,0000,0000,0000,,we're using an important idea here
+Dialogue: 0,0:18:50.37,0:18:51.97,*Default,NTP,0000,0000,0000,,it's called an interface
+Dialogue: 0,0:18:52.97,0:18:55.17,*Default,NTP,0000,0000,0000,,so when I talked about object oriented
+Dialogue: 0,0:18:55.17,0:18:56.67,*Default,NTP,0000,0000,0000,,programming in the first place
+Dialogue: 0,0:18:56.97,0:18:59.70,*Default,NTP,0000,0000,0000,,I said that the central to this metaphor
+Dialogue: 0,0:18:59.70,0:19:02.40,*Default,NTP,0000,0000,0000,,was that objects would pass messages to each other
+Dialogue: 0,0:19:02.53,0:19:04.13,*Default,NTP,0000,0000,0000,,and that's how they would interact
+Dialogue: 0,0:19:04.70,0:19:06.80,*Default,NTP,0000,0000,0000,,now the mechanics in the language is that they just
+Dialogue: 0,0:19:06.80,0:19:08.67,*Default,NTP,0000,0000,0000,,look up attributes or methods
+Dialogue: 0,0:19:08.77,0:19:10.30,*Default,NTP,0000,0000,0000,,and that's how they communicate
+Dialogue: 0,0:19:10.60,0:19:13.27,*Default,NTP,0000,0000,0000,,so that's the idea of passing messages
+Dialogue: 0,0:19:13.50,0:19:15.47,*Default,NTP,0000,0000,0000,,passing messages is the metaphor
+Dialogue: 0,0:19:15.53,0:19:17.90,*Default,NTP,0000,0000,0000,,looking up attributes is what we actually do
+Dialogue: 0,0:19:18.17,0:19:20.57,*Default,NTP,0000,0000,0000,,in order to pass messages around
+Dialogue: 0,0:19:21.57,0:19:23.37,*Default,NTP,0000,0000,0000,,now the attribute lookup rules are
+Dialogue: 0,0:19:23.37,0:19:24.77,*Default,NTP,0000,0000,0000,,designed in a special way
+Dialogue: 0,0:19:25.20,0:19:25.87,*Default,NTP,0000,0000,0000,,they allow
+Dialogue: 0,0:19:25.87,0:19:28.50,*Default,NTP,0000,0000,0000,,different data types to respond to the same message
+Dialogue: 0,0:19:28.57,0:19:30.67,*Default,NTP,0000,0000,0000,,just by having the same attribute name
+Dialogue: 0,0:19:31.77,0:19:33.00,*Default,NTP,0000,0000,0000,,and a shared message
+Dialogue: 0,0:19:33.00,0:19:36.17,*Default,NTP,0000,0000,0000,,an attribute name that exists on many different classes
+Dialogue: 0,0:19:36.57,0:19:38.87,*Default,NTP,0000,0000,0000,,and elicits the same behavior
+Dialogue: 0,0:19:38.93,0:19:40.77,*Default,NTP,0000,0000,0000,,from those different classes
+Dialogue: 0,0:19:40.77,0:19:43.17,*Default,NTP,0000,0000,0000,,is a powerful method of abstraction
+Dialogue: 0,0:19:44.00,0:19:46.07,*Default,NTP,0000,0000,0000,,that's what we'll call an interface
+Dialogue: 0,0:19:46.53,0:19:49.10,*Default,NTP,0000,0000,0000,,an interface is a set of shared messages
+Dialogue: 0,0:19:49.27,0:19:51.13,*Default,NTP,0000,0000,0000,,and some specification that tells you
+Dialogue: 0,0:19:51.13,0:19:52.27,*Default,NTP,0000,0000,0000,,what they're supposed to do
+Dialogue: 0,0:19:52.27,0:19:53.17,*Default,NTP,0000,0000,0000,,what they meet
+Dialogue: 0,0:19:54.00,0:19:55.20,*Default,NTP,0000,0000,0000,,so as an example
+Dialogue: 0,0:19:55.67,0:19:58.80,*Default,NTP,0000,0000,0000,,classes that implement repper and stir methods
+Dialogue: 0,0:19:59.13,0:20:02.50,*Default,NTP,0000,0000,0000,,and have those methods return python interpretable
+Dialogue: 0,0:20:02.60,0:20:04.97,*Default,NTP,0000,0000,0000,,and human readable strings respectively
+Dialogue: 0,0:20:06.10,0:20:08.57,*Default,NTP,0000,0000,0000,,interfaces don't have to be built into the language
+Dialogue: 0,0:20:08.57,0:20:09.90,*Default,NTP,0000,0000,0000,,although this one is
+Dialogue: 0,0:20:10.70,0:20:12.30,*Default,NTP,0000,0000,0000,,if you ever just define
+Dialogue: 0,0:20:12.47,0:20:12.80,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:20:12.80,0:20:14.87,*Default,NTP,0000,0000,0000,,there are a bunch of classes that all have the same
+Dialogue: 0,0:20:14.87,0:20:18.47,*Default,NTP,0000,0000,0000,,method and all those methods do similar things
+Dialogue: 0,0:20:18.50,0:20:20.33,*Default,NTP,0000,0000,0000,,then you've created an interface
+Dialogue: 0,0:20:21.53,0:20:24.13,*Default,NTP,0000,0000,0000,,so let's see if we can build a class
+Dialogue: 0,0:20:24.30,0:20:26.53,*Default,NTP,0000,0000,0000,,that exhibits this interface
+Dialogue: 0,0:20:28.33,0:20:31.37,*Default,NTP,0000,0000,0000,,we already saw that there was a built in fraction class
+Dialogue: 0,0:20:31.60,0:20:33.17,*Default,NTP,0000,0000,0000,,let's build something similar
+Dialogue: 0,0:20:33.30,0:20:35.93,*Default,NTP,0000,0000,0000,,I'll call it a ratio so we can tell them a park
+Dialogue: 0,0:20:36.93,0:20:38.53,*Default,NTP,0000,0000,0000,,the way you create a ratio
+Dialogue: 0,0:20:38.60,0:20:41.70,*Default,NTP,0000,0000,0000,,is just to pass in a numerator and a denominator
+Dialogue: 0,0:20:49.50,0:20:52.47,*Default,NTP,0000,0000,0000,,if we want instances of the ratio class
+Dialogue: 0,0:20:52.47,0:20:54.53,*Default,NTP,0000,0000,0000,,to be able to display themselves
+Dialogue: 0,0:20:54.67,0:20:57.17,*Default,NTP,0000,0000,0000,,we need to define our repper method
+Dialogue: 0,0:20:59.17,0:21:00.73,*Default,NTP,0000,0000,0000,,it will return a string
+Dialogue: 0,0:21:01.10,0:21:02.50,*Default,NTP,0000,0000,0000,,the string ratio
+Dialogue: 0,0:21:04.87,0:21:06.67,*Default,NTP,0000,0000,0000,,followed by parentheses
+Dialogue: 0,0:21:07.90,0:21:11.53,*Default,NTP,0000,0000,0000,,here we have two different gaps within our string
+Dialogue: 0,0:21:11.60,0:21:12.70,*Default,NTP,0000,0000,0000,,that we fill in
+Dialogue: 0,0:21:12.90,0:21:15.33,*Default,NTP,0000,0000,0000,,using the format method on strings
+Dialogue: 0,0:21:15.53,0:21:18.10,*Default,NTP,0000,0000,0000,,self numer fills into the first
+Dialogue: 0,0:21:18.10,0:21:21.93,*Default,NTP,0000,0000,0000,,or a zero index gap and self need on the 2nd
+Dialogue: 0,0:21:25.93,0:21:28.53,*Default,NTP,0000,0000,0000,,now if we want a human readable string as well
+Dialogue: 0,0:21:28.67,0:21:31.00,*Default,NTP,0000,0000,0000,,following the example of fraction
+Dialogue: 0,0:21:32.00,0:21:34.57,*Default,NTP,0000,0000,0000,,we just write zero divided by one
+Dialogue: 0,0:21:34.67,0:21:35.70,*Default,NTP,0000,0000,0000,,or again
+Dialogue: 0,0:21:36.70,0:21:38.33,*Default,NTP,0000,0000,0000,,zero is the numerator
+Dialogue: 0,0:21:38.73,0:21:41.37,*Default,NTP,0000,0000,0000,,and one is the denominator
+Dialogue: 0,0:21:45.87,0:21:48.30,*Default,NTP,0000,0000,0000,,now we can create a ratio half
+Dialogue: 0,0:21:50.30,0:21:53.10,*Default,NTP,0000,0000,0000,,print out half and we'll get the human readable version
+Dialogue: 0,0:21:53.60,0:21:55.97,*Default,NTP,0000,0000,0000,,just display half directly and we'll get
+Dialogue: 0,0:21:55.97,0:21:57.30,*Default,NTP,0000,0000,0000,,the python expression
+Dialogue: 0,0:22:00.73,0:22:03.37,*Default,NTP,0000,0000,0000,,special method names are a topic
+Dialogue: 0,0:22:03.53,0:22:05.57,*Default,NTP,0000,0000,0000,,particular to the python language
+Dialogue: 0,0:22:07.80,0:22:09.77,*Default,NTP,0000,0000,0000,,certain names in python are special
+Dialogue: 0,0:22:10.10,0:22:12.97,*Default,NTP,0000,0000,0000,,because they have built in behavior of some sort
+Dialogue: 0,0:22:13.80,0:22:15.33,*Default,NTP,0000,0000,0000,,and they always look the same
+Dialogue: 0,0:22:15.40,0:22:18.13,*Default,NTP,0000,0000,0000,,they always start an end with two underscores
+Dialogue: 0,0:22:18.90,0:22:21.40,*Default,NTP,0000,0000,0000,,so when you see a name with two underscores around it
+Dialogue: 0,0:22:21.77,0:22:23.33,*Default,NTP,0000,0000,0000,,that's just an indication
+Dialogue: 0,0:22:23.50,0:22:25.57,*Default,NTP,0000,0000,0000,,that it has some particular behavior
+Dialogue: 0,0:22:25.80,0:22:27.47,*Default,NTP,0000,0000,0000,,it interacts with the built in
+Dialogue: 0,0:22:27.67,0:22:29.17,*Default,NTP,0000,0000,0000,,object system in some way
+Dialogue: 0,0:22:30.53,0:22:33.13,*Default,NTP,0000,0000,0000,,for instance the first one we saw was in it
+Dialogue: 0,0:22:34.17,0:22:34.50,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:22:34.50,0:22:37.10,*Default,NTP,0000,0000,0000,,method is special because it's invoked automatically
+Dialogue: 0,0:22:37.30,0:22:39.33,*Default,NTP,0000,0000,0000,,whenever an object is constructed
+Dialogue: 0,0:22:39.90,0:22:42.20,*Default,NTP,0000,0000,0000,,other than that it's just a regular method
+Dialogue: 0,0:22:44.07,0:22:47.00,*Default,NTP,0000,0000,0000,,repper was discussed in the previous videos
+Dialogue: 0,0:22:47.57,0:22:50.80,*Default,NTP,0000,0000,0000,,it's the method that gets invoked in order to produce
+Dialogue: 0,0:22:50.97,0:22:54.00,*Default,NTP,0000,0000,0000,,a string that represents an object
+Dialogue: 0,0:22:54.30,0:22:56.73,*Default,NTP,0000,0000,0000,,and it's the one that's used in an interactive
+Dialogue: 0,0:22:56.73,0:22:57.77,*Default,NTP,0000,0000,0000,,python session
+Dialogue: 0,0:22:57.97,0:22:59.70,*Default,NTP,0000,0000,0000,,to display the value
+Dialogue: 0,0:23:01.93,0:23:03.13,*Default,NTP,0000,0000,0000,,what about add
+Dialogue: 0,0:23:03.47,0:23:04.50,*Default,NTP,0000,0000,0000,,well that's a new one
+Dialogue: 0,0:23:05.07,0:23:06.80,*Default,NTP,0000,0000,0000,,this is a two argument method
+Dialogue: 0,0:23:06.80,0:23:09.27,*Default,NTP,0000,0000,0000,,that's invoked to add one object to another
+Dialogue: 0,0:23:10.90,0:23:13.10,*Default,NTP,0000,0000,0000,,there's a one argument method called bull
+Dialogue: 0,0:23:13.80,0:23:15.47,*Default,NTP,0000,0000,0000,,and another called float
+Dialogue: 0,0:23:16.17,0:23:16.97,*Default,NTP,0000,0000,0000,,this one
+Dialogue: 0,0:23:17.07,0:23:20.07,*Default,NTP,0000,0000,0000,,is invoked to convert an object to true or false
+Dialogue: 0,0:23:20.30,0:23:22.13,*Default,NTP,0000,0000,0000,,telling you it's boolean value
+Dialogue: 0,0:23:23.10,0:23:26.50,*Default,NTP,0000,0000,0000,,and float tries to convert an object to a real number
+Dialogue: 0,0:23:28.10,0:23:29.40,*Default,NTP,0000,0000,0000,,so for example
+Dialogue: 0,0:23:29.50,0:23:32.07,*Default,NTP,0000,0000,0000,,if I set zero one and two to zero one and two
+Dialogue: 0,0:23:32.07,0:23:33.27,*Default,NTP,0000,0000,0000,,and then I add one and two
+Dialogue: 0,0:23:33.27,0:23:34.13,*Default,NTP,0000,0000,0000,,I'll get three
+Dialogue: 0,0:23:34.37,0:23:37.27,*Default,NTP,0000,0000,0000,,if I'll call bull which is a built in function
+Dialogue: 0,0:23:37.27,0:23:40.30,*Default,NTP,0000,0000,0000,,on zero I'll get false and on one I'll get true
+Dialogue: 0,0:23:41.00,0:23:42.33,*Default,NTP,0000,0000,0000,,and this bull function
+Dialogue: 0,0:23:42.90,0:23:45.00,*Default,NTP,0000,0000,0000,,gives you exactly the behavior that you'll get
+Dialogue: 0,0:23:45.07,0:23:48.13,*Default,NTP,0000,0000,0000,,if you place these objects in a boolean context
+Dialogue: 0,0:23:48.13,0:23:49.73,*Default,NTP,0000,0000,0000,,such as a conditional statement
+Dialogue: 0,0:23:50.80,0:23:52.73,*Default,NTP,0000,0000,0000,,now it's possible to rewrite
+Dialogue: 0,0:23:52.90,0:23:56.27,*Default,NTP,0000,0000,0000,,this entire sequence of statements
+Dialogue: 0,0:23:57.17,0:23:59.60,*Default,NTP,0000,0000,0000,,I could say zero one and two or zero one and two
+Dialogue: 0,0:23:59.77,0:24:01.60,*Default,NTP,0000,0000,0000,,and then add one and two together
+Dialogue: 0,0:24:01.60,0:24:03.30,*Default,NTP,0000,0000,0000,,using the special method name
+Dialogue: 0,0:24:03.80,0:24:06.53,*Default,NTP,0000,0000,0000,,or convert zero and one to boolean values
+Dialogue: 0,0:24:06.53,0:24:08.27,*Default,NTP,0000,0000,0000,,using that special method name
+Dialogue: 0,0:24:08.97,0:24:10.50,*Default,NTP,0000,0000,0000,,so there's a correspondence
+Dialogue: 0,0:24:10.77,0:24:13.47,*Default,NTP,0000,0000,0000,,between built in pieces of syntax
+Dialogue: 0,0:24:13.57,0:24:15.20,*Default,NTP,0000,0000,0000,,and built in functions
+Dialogue: 0,0:24:15.27,0:24:17.00,*Default,NTP,0000,0000,0000,,and these special method names
+Dialogue: 0,0:24:17.00,0:24:18.37,*Default,NTP,0000,0000,0000,,that actually do the work
+Dialogue: 0,0:24:18.77,0:24:20.30,*Default,NTP,0000,0000,0000,,it's another example
+Dialogue: 0,0:24:21.13,0:24:23.97,*Default,NTP,0000,0000,0000,,of using an interface in order to allow
+Dialogue: 0,0:24:24.20,0:24:26.73,*Default,NTP,0000,0000,0000,,user defined objects
+Dialogue: 0,0:24:26.93,0:24:30.50,*Default,NTP,0000,0000,0000,,to interact with the built in systems within python
+Dialogue: 0,0:24:30.60,0:24:32.47,*Default,NTP,0000,0000,0000,,so python is very extensible
+Dialogue: 0,0:24:32.50,0:24:35.50,*Default,NTP,0000,0000,0000,,you can create a new class and be able to add
+Dialogue: 0,0:24:36.17,0:24:38.90,*Default,NTP,0000,0000,0000,,instances of that class together using the plus sign
+Dialogue: 0,0:24:39.07,0:24:43.20,*Default,NTP,0000,0000,0000,,just by overriding the special method name add
+Dialogue: 0,0:24:44.67,0:24:45.07,*Default,NTP,0000,0000,0000,,so what
+Dialogue: 0,0:24:45.07,0:24:47.90,*Default,NTP,0000,0000,0000,,happens when you have two instances of user defined
+Dialogue: 0,0:24:47.90,0:24:49.80,*Default,NTP,0000,0000,0000,,classes added together
+Dialogue: 0,0:24:50.70,0:24:52.87,*Default,NTP,0000,0000,0000,,well what happens
+Dialogue: 0,0:24:53.13,0:24:55.37,*Default,NTP,0000,0000,0000,,is that you invoke either ad
+Dialogue: 0,0:24:55.40,0:24:57.60,*Default,NTP,0000,0000,0000,,or there's another method called r ad
+Dialogue: 0,0:24:57.60,0:24:59.47,*Default,NTP,0000,0000,0000,,I'll tell you about that in a moment
+Dialogue: 0,0:25:00.33,0:25:02.37,*Default,NTP,0000,0000,0000,,and that actually performs the addition
+Dialogue: 0,0:25:03.17,0:25:05.27,*Default,NTP,0000,0000,0000,,again we're just asking the objects
+Dialogue: 0,0:25:05.27,0:25:06.80,*Default,NTP,0000,0000,0000,,how do you add yourselves together
+Dialogue: 0,0:25:08.20,0:25:11.00,*Default,NTP,0000,0000,0000,,so if we want to extend our ratio class
+Dialogue: 0,0:25:11.20,0:25:13.27,*Default,NTP,0000,0000,0000,,so that we can add ratios
+Dialogue: 0,0:25:13.53,0:25:15.20,*Default,NTP,0000,0000,0000,,this is certainly possible
+Dialogue: 0,0:25:16.10,0:25:18.40,*Default,NTP,0000,0000,0000,,I could add a third and a six to get a half
+Dialogue: 0,0:25:19.37,0:25:20.97,*Default,NTP,0000,0000,0000,,either using the plus site
+Dialogue: 0,0:25:21.13,0:25:22.53,*Default,NTP,0000,0000,0000,,or by using
+Dialogue: 0,0:25:22.70,0:25:25.17,*Default,NTP,0000,0000,0000,,the method that actually performs the addition
+Dialogue: 0,0:25:26.10,0:25:28.93,*Default,NTP,0000,0000,0000,,both of these expressions are equivalent in python
+Dialogue: 0,0:25:29.70,0:25:31.27,*Default,NTP,0000,0000,0000,,now people almost always use this one
+Dialogue: 0,0:25:31.27,0:25:32.90,*Default,NTP,0000,0000,0000,,because it's much easier to read
+Dialogue: 0,0:25:33.13,0:25:36.13,*Default,NTP,0000,0000,0000,,the purpose of this is just to allow ourselves
+Dialogue: 0,0:25:36.17,0:25:39.57,*Default,NTP,0000,0000,0000,,to use the method definition syntax
+Dialogue: 0,0:25:39.73,0:25:42.13,*Default,NTP,0000,0000,0000,,in order to override what happens
+Dialogue: 0,0:25:42.13,0:25:43.87,*Default,NTP,0000,0000,0000,,when you use a plus sign
+Dialogue: 0,0:25:44.17,0:25:45.57,*Default,NTP,0000,0000,0000,,between two objects
+Dialogue: 0,0:25:46.00,0:25:47.57,*Default,NTP,0000,0000,0000,,you can also use r ad
+Dialogue: 0,0:25:47.87,0:25:50.57,*Default,NTP,0000,0000,0000,,the difference between r ad and ad
+Dialogue: 0,0:25:50.93,0:25:52.33,*Default,NTP,0000,0000,0000,,is that this here
+Dialogue: 0,0:25:52.33,0:25:55.13,*Default,NTP,0000,0000,0000,,is the argument on the right side of the plus sign
+Dialogue: 0,0:25:55.40,0:25:57.40,*Default,NTP,0000,0000,0000,,and this is the argument on the left
+Dialogue: 0,0:25:58.10,0:26:00.30,*Default,NTP,0000,0000,0000,,now for numbers addition is commutative
+Dialogue: 0,0:26:00.53,0:26:03.17,*Default,NTP,0000,0000,0000,,so it's irrelevant what order they come in
+Dialogue: 0,0:26:03.27,0:26:05.27,*Default,NTP,0000,0000,0000,,these two functions are equivalent
+Dialogue: 0,0:26:06.10,0:26:08.20,*Default,NTP,0000,0000,0000,,but you could imagine some cases
+Dialogue: 0,0:26:08.20,0:26:10.40,*Default,NTP,0000,0000,0000,,in which you'd like to invent addition
+Dialogue: 0,0:26:10.40,0:26:11.67,*Default,NTP,0000,0000,0000,,that's not commuted
+Dialogue: 0,0:26:11.87,0:26:14.50,*Default,NTP,0000,0000,0000,,and so it is possible using rf
+Dialogue: 0,0:26:16.00,0:26:18.90,*Default,NTP,0000,0000,0000,,I'm not going to go through every special name and
+Dialogue: 0,0:26:19.20,0:26:22.37,*Default,NTP,0000,0000,0000,,how it corresponds to some built in feature of python
+Dialogue: 0,0:26:22.37,0:26:24.10,*Default,NTP,0000,0000,0000,,but that has been done before you
+Dialogue: 0,0:26:24.27,0:26:26.80,*Default,NTP,0000,0000,0000,,both in the python docks and in this
+Dialogue: 0,0:26:26.97,0:26:30.30,*Default,NTP,0000,0000,0000,,online textbook call dive into python three
+Dialogue: 0,0:26:31.40,0:26:34.57,*Default,NTP,0000,0000,0000,,but let's see if we can add addition to our ratio class
+Dialogue: 0,0:26:37.20,0:26:39.10,*Default,NTP,0000,0000,0000,,we define an ad method
+Dialogue: 0,0:26:40.37,0:26:42.40,*Default,NTP,0000,0000,0000,,that takes self another
+Dialogue: 0,0:26:43.93,0:26:45.00,*Default,NTP,0000,0000,0000,,and what it does
+Dialogue: 0,0:26:45.20,0:26:46.30,*Default,NTP,0000,0000,0000,,is just computes
+Dialogue: 0,0:26:46.30,0:26:49.33,*Default,NTP,0000,0000,0000,,the numerator and denominator of the result
+Dialogue: 0,0:26:50.30,0:26:52.80,*Default,NTP,0000,0000,0000,,so the numerator of two added ratios
+Dialogue: 0,0:26:54.30,0:26:55.90,*Default,NTP,0000,0000,0000,,is the numerator of the first
+Dialogue: 0,0:26:56.27,0:26:58.77,*Default,NTP,0000,0000,0000,,times the denominator of the second
+Dialogue: 0,0:26:59.80,0:27:02.77,*Default,NTP,0000,0000,0000,,plus the denominator of the first
+Dialogue: 0,0:27:03.00,0:27:05.13,*Default,NTP,0000,0000,0000,,times the numerator of the second
+Dialogue: 0,0:27:06.73,0:27:09.53,*Default,NTP,0000,0000,0000,,the denominator is the product of the denominators
+Dialogue: 0,0:27:11.30,0:27:12.50,*Default,NTP,0000,0000,0000,,if we want to reduce
+Dialogue: 0,0:27:12.53,0:27:15.77,*Default,NTP,0000,0000,0000,,this ratio to two relatively prime integers
+Dialogue: 0,0:27:16.07,0:27:19.37,*Default,NTP,0000,0000,0000,,then we have to compute the greatest common devisor of
+Dialogue: 0,0:27:19.37,0:27:20.20,*Default,NTP,0000,0000,0000,,n and d
+Dialogue: 0,0:27:22.10,0:27:23.80,*Default,NTP,0000,0000,0000,,then we can return the ratio
+Dialogue: 0,0:27:25.10,0:27:28.33,*Default,NTP,0000,0000,0000,,of n divided by g and d divided by g
+Dialogue: 0,0:27:31.17,0:27:33.17,*Default,NTP,0000,0000,0000,,and what's the greatest common devisor
+Dialogue: 0,0:27:33.33,0:27:35.77,*Default,NTP,0000,0000,0000,,we did talk about this earlier in the course
+Dialogue: 0,0:27:36.57,0:27:39.00,*Default,NTP,0000,0000,0000,,one way to compute it is to say
+Dialogue: 0,0:27:39.60,0:27:41.30,*Default,NTP,0000,0000,0000,,well and does not equal d
+Dialogue: 0,0:27:42.70,0:27:44.07,*Default,NTP,0000,0000,0000,,rebind n and d
+Dialogue: 0,0:27:44.60,0:27:47.13,*Default,NTP,0000,0000,0000,,to be in no particular order
+Dialogue: 0,0:27:47.37,0:27:48.97,*Default,NTP,0000,0000,0000,,the min of n and d
+Dialogue: 0,0:27:49.37,0:27:52.17,*Default,NTP,0000,0000,0000,,and the absolute value of n minus d
+Dialogue: 0,0:27:56.20,0:27:59.67,*Default,NTP,0000,0000,0000,,so now we can take the gcd of 12 and eight and get four
+Dialogue: 0,0:28:00.33,0:28:04.30,*Default,NTP,0000,0000,0000,,we can also add together the ratios one third and one
+Dialogue: 0,0:28:04.30,0:28:05.10,*Default,NTP,0000,0000,0000,,six
+Dialogue: 0,0:28:08.90,0:28:10.30,*Default,NTP,0000,0000,0000,,now maybe we're not done
+Dialogue: 0,0:28:10.47,0:28:13.17,*Default,NTP,0000,0000,0000,,what happens if I add together the ratio one third and
+Dialogue: 0,0:28:13.17,0:28:15.47,*Default,NTP,0000,0000,0000,,one I should get four thirds
+Dialogue: 0,0:28:15.47,0:28:18.50,*Default,NTP,0000,0000,0000,,but I'm assuming that the thing that I'm adding this to
+Dialogue: 0,0:28:18.67,0:28:22.53,*Default,NTP,0000,0000,0000,,is in fact another ratio is opposed to an integer
+Dialogue: 0,0:28:23.90,0:28:25.00,*Default,NTP,0000,0000,0000,,one thing I could do
+Dialogue: 0,0:28:25.07,0:28:28.40,*Default,NTP,0000,0000,0000,,is inspect the type of other in order to figure out
+Dialogue: 0,0:28:28.47,0:28:30.33,*Default,NTP,0000,0000,0000,,what action to take
+Dialogue: 0,0:28:30.93,0:28:32.97,*Default,NTP,0000,0000,0000,,so I could say if it's the case
+Dialogue: 0,0:28:34.57,0:28:38.67,*Default,NTP,0000,0000,0000,,that other is an instance of the inch class
+Dialogue: 0,0:28:39.57,0:28:41.97,*Default,NTP,0000,0000,0000,,then instead I have a numerator
+Dialogue: 0,0:28:42.13,0:28:44.20,*Default,NTP,0000,0000,0000,,that's the self dot numerator
+Dialogue: 0,0:28:45.90,0:28:48.60,*Default,NTP,0000,0000,0000,,times while the other denominators just one
+Dialogue: 0,0:28:48.80,0:28:51.57,*Default,NTP,0000,0000,0000,,and then I add in self dots d nom
+Dialogue: 0,0:28:51.77,0:28:54.90,*Default,NTP,0000,0000,0000,,times the other which is the numerator
+Dialogue: 0,0:28:55.77,0:28:56.60,*Default,NTP,0000,0000,0000,,of the other
+Dialogue: 0,0:28:57.93,0:29:00.87,*Default,NTP,0000,0000,0000,,here I'm just treating other as a numerator of other
+Dialogue: 0,0:29:01.17,0:29:02.90,*Default,NTP,0000,0000,0000,,and the denominator of one
+Dialogue: 0,0:29:05.53,0:29:08.30,*Default,NTP,0000,0000,0000,,d is the denominator of self
+Dialogue: 0,0:29:09.27,0:29:12.60,*Default,NTP,0000,0000,0000,,otherwise if it's the case that other
+Dialogue: 0,0:29:12.93,0:29:16.10,*Default,NTP,0000,0000,0000,,is an instance of the ratio class
+Dialogue: 0,0:29:16.20,0:29:18.90,*Default,NTP,0000,0000,0000,,then I use the formula that I had before
+Dialogue: 0,0:29:21.90,0:29:23.50,*Default,NTP,0000,0000,0000,,I can still take the gcd
+Dialogue: 0,0:29:24.27,0:29:25.97,*Default,NTP,0000,0000,0000,,and I think I'm back in business
+Dialogue: 0,0:29:26.20,0:29:27.77,*Default,NTP,0000,0000,0000,,I can add the ratios together
+Dialogue: 0,0:29:27.77,0:29:29.60,*Default,NTP,0000,0000,0000,,or I can add one to the ratio
+Dialogue: 0,0:29:30.17,0:29:31.80,*Default,NTP,0000,0000,0000,,now can I add a ratio
+Dialogue: 0,0:29:32.93,0:29:34.90,*Default,NTP,0000,0000,0000,,3rd to one in this order
+Dialogue: 0,0:29:35.30,0:29:39.10,*Default,NTP,0000,0000,0000,,not yet because I don't have right side edition to find
+Dialogue: 0,0:29:39.57,0:29:41.07,*Default,NTP,0000,0000,0000,,but I can just say
+Dialogue: 0,0:29:41.07,0:29:44.80,*Default,NTP,0000,0000,0000,,that right side edition is the same as edition
+Dialogue: 0,0:29:45.57,0:29:46.73,*Default,NTP,0000,0000,0000,,for this class
+Dialogue: 0,0:29:47.70,0:29:50.20,*Default,NTP,0000,0000,0000,,at which point I can add ratios
+Dialogue: 0,0:29:50.20,0:29:53.33,*Default,NTP,0000,0000,0000,,I can add integers to ratios in either direction
+Dialogue: 0,0:29:53.50,0:29:55.37,*Default,NTP,0000,0000,0000,,and I've fulfilled
+Dialogue: 0,0:29:56.07,0:29:57.07,*Default,NTP,0000,0000,0000,,the interface
+Dialogue: 0,0:29:57.13,0:29:59.67,*Default,NTP,0000,0000,0000,,for adding addition to a user defined class
+Dialogue: 0,0:29:59.67,0:30:00.90,*Default,NTP,0000,0000,0000,,in the python language
+Dialogue: 0,0:30:02.00,0:30:05.13,*Default,NTP,0000,0000,0000,,now what happens if we add a floating point value
+Dialogue: 0,0:30:05.90,0:30:07.60,*Default,NTP,0000,0000,0000,,0.345
+Dialogue: 0,0:30:08.67,0:30:11.90,*Default,NTP,0000,0000,0000,,well then this result will not be an integer
+Dialogue: 0,0:30:12.40,0:30:13.50,*Default,NTP,0000,0000,0000,,so it doesn't seem likely
+Dialogue: 0,0:30:13.50,0:30:14.97,*Default,NTP,0000,0000,0000,,should be building a ratio at all
+Dialogue: 0,0:30:14.97,0:30:15.97,*Default,NTP,0000,0000,0000,,at that point
+Dialogue: 0,0:30:17.40,0:30:18.60,*Default,NTP,0000,0000,0000,,there's another option
+Dialogue: 0,0:30:19.53,0:30:21.67,*Default,NTP,0000,0000,0000,,instead we could convert
+Dialogue: 0,0:30:21.67,0:30:25.33,*Default,NTP,0000,0000,0000,,our existing ratio into a floating point value as well
+Dialogue: 0,0:30:26.07,0:30:28.17,*Default,NTP,0000,0000,0000,,by that I mean I just attack
+Dialogue: 0,0:30:28.33,0:30:30.37,*Default,NTP,0000,0000,0000,,if other is an instance of float
+Dialogue: 0,0:30:31.33,0:30:34.93,*Default,NTP,0000,0000,0000,,and if so I return not to ratio at all
+Dialogue: 0,0:30:35.17,0:30:36.27,*Default,NTP,0000,0000,0000,,but instead
+Dialogue: 0,0:30:37.17,0:30:38.80,*Default,NTP,0000,0000,0000,,what I get when I convert
+Dialogue: 0,0:30:38.87,0:30:41.27,*Default,NTP,0000,0000,0000,,self into a float and add it to other
+Dialogue: 0,0:30:43.13,0:30:45.93,*Default,NTP,0000,0000,0000,,now what does it mean to convert self into a flute
+Dialogue: 0,0:30:46.53,0:30:48.10,*Default,NTP,0000,0000,0000,,well I'll have to define that
+Dialogue: 0,0:30:48.77,0:30:51.13,*Default,NTP,0000,0000,0000,,I define that using this special method name
+Dialogue: 0,0:30:51.87,0:30:54.57,*Default,NTP,0000,0000,0000,,or in this case I'll just return what you get
+Dialogue: 0,0:30:54.73,0:30:57.53,*Default,NTP,0000,0000,0000,,when you divide the numerator by the denominator
+Dialogue: 0,0:31:02.13,0:31:04.37,*Default,NTP,0000,0000,0000,,so I've extended by system yet further
+Dialogue: 0,0:31:04.50,0:31:06.97,*Default,NTP,0000,0000,0000,,where now I can add 0.2
+Dialogue: 0,0:31:08.27,0:31:10.47,*Default,NTP,0000,0000,0000,,to the ratio one third
+Dialogue: 0,0:31:10.77,0:31:12.93,*Default,NTP,0000,0000,0000,,and I'll get some reasonable result
+Dialogue: 0,0:31:14.60,0:31:16.70,*Default,NTP,0000,0000,0000,,I've actually used two important ideas here
+Dialogue: 0,0:31:16.70,0:31:17.73,*Default,NTP,0000,0000,0000,,in one example
+Dialogue: 0,0:31:18.67,0:31:20.77,*Default,NTP,0000,0000,0000,,this is called type dispatching
+Dialogue: 0,0:31:20.90,0:31:23.10,*Default,NTP,0000,0000,0000,,where you inspect the type of an argument
+Dialogue: 0,0:31:23.10,0:31:24.37,*Default,NTP,0000,0000,0000,,to decide what to do
+Dialogue: 0,0:31:25.37,0:31:28.00,*Default,NTP,0000,0000,0000,,and here this is called type coercion
+Dialogue: 0,0:31:28.67,0:31:30.90,*Default,NTP,0000,0000,0000,,which is when you take an object of one type
+Dialogue: 0,0:31:30.93,0:31:32.77,*Default,NTP,0000,0000,0000,,convert it into another type
+Dialogue: 0,0:31:32.87,0:31:34.60,*Default,NTP,0000,0000,0000,,in order to be able to combine it
+Dialogue: 0,0:31:34.73,0:31:36.13,*Default,NTP,0000,0000,0000,,with some other value
+Dialogue: 0,0:31:37.40,0:31:39.60,*Default,NTP,0000,0000,0000,,these are two strategies that people use
+Dialogue: 0,0:31:39.60,0:31:42.20,*Default,NTP,0000,0000,0000,,in order to have different classes interact
+Dialogue: 0,0:31:42.53,0:31:44.53,*Default,NTP,0000,0000,0000,,you know add is a two argument method
+Dialogue: 0,0:31:44.67,0:31:46.40,*Default,NTP,0000,0000,0000,,and now we have a version of add
+Dialogue: 0,0:31:46.40,0:31:49.60,*Default,NTP,0000,0000,0000,,that operates on two values of different types
+Dialogue: 0,0:31:50.90,0:31:52.40,*Default,NTP,0000,0000,0000,,so let's do the last drill
+Dialogue: 0,0:31:53.00,0:31:56.07,*Default,NTP,0000,0000,0000,,I would like you to create a class called kangaroo
+Dialogue: 0,0:31:56.70,0:31:59.37,*Default,NTP,0000,0000,0000,,and it has of course it has a constructor
+Dialogue: 0,0:31:59.53,0:32:03.37,*Default,NTP,0000,0000,0000,,and the constructor initializes an instance variable
+Dialogue: 0,0:32:03.40,0:32:05.40,*Default,NTP,0000,0000,0000,,called a pouch contents
+Dialogue: 0,0:32:05.97,0:32:08.00,*Default,NTP,0000,0000,0000,,to be an empty list
+Dialogue: 0,0:32:08.30,0:32:10.27,*Default,NTP,0000,0000,0000,,so now the data associated with the
+Dialogue: 0,0:32:10.27,0:32:11.87,*Default,NTP,0000,0000,0000,,kangaroo is going to be a list
+Dialogue: 0,0:32:11.97,0:32:14.70,*Default,NTP,0000,0000,0000,,and initially adjust an empty list
+Dialogue: 0,0:32:14.80,0:32:17.40,*Default,NTP,0000,0000,0000,,that's it now you're going to create a function
+Dialogue: 0,0:32:17.57,0:32:19.10,*Default,NTP,0000,0000,0000,,called put in pouch
+Dialogue: 0,0:32:19.17,0:32:21.53,*Default,NTP,0000,0000,0000,,and then you're going to create a print function
+Dialogue: 0,0:32:21.67,0:32:24.67,*Default,NTP,0000,0000,0000,,so put in pouch takes a string as input
+Dialogue: 0,0:32:24.73,0:32:26.93,*Default,NTP,0000,0000,0000,,and adds it to the kangaroos pouch
+Dialogue: 0,0:32:27.17,0:32:28.73,*Default,NTP,0000,0000,0000,,which of course is the list
+Dialogue: 0,0:32:28.73,0:32:29.53,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:32:29.53,0:32:31.97,*Default,NTP,0000,0000,0000,,if the object if that string is not already in there
+Dialogue: 0,0:32:31.97,0:32:33.73,*Default,NTP,0000,0000,0000,,so if the string is already in there
+Dialogue: 0,0:32:34.73,0:32:36.33,*Default,NTP,0000,0000,0000,,then print object already in
+Dialogue: 0,0:32:36.57,0:32:38.00,*Default,NTP,0000,0000,0000,,pouch and don't do anything
+Dialogue: 0,0:32:38.37,0:32:40.33,*Default,NTP,0000,0000,0000,,so if I add something into the pouch
+Dialogue: 0,0:32:40.33,0:32:41.27,*Default,NTP,0000,0000,0000,,like a bowling ball
+Dialogue: 0,0:32:41.27,0:32:43.00,*Default,NTP,0000,0000,0000,,and then I try to add a bowling ball again
+Dialogue: 0,0:32:43.00,0:32:44.50,*Default,NTP,0000,0000,0000,,you shouldn't put two bowling balls in
+Dialogue: 0,0:32:44.50,0:32:45.60,*Default,NTP,0000,0000,0000,,only one at a time
+Dialogue: 0,0:32:46.57,0:32:48.97,*Default,NTP,0000,0000,0000,,but if it's not then you should add it to the pouch
+Dialogue: 0,0:32:48.97,0:32:50.90,*Default,NTP,0000,0000,0000,,and it doesn't matter where in the list it is
+Dialogue: 0,0:32:51.40,0:32:52.50,*Default,NTP,0000,0000,0000,,the print function
+Dialogue: 0,0:32:52.60,0:32:55.53,*Default,NTP,0000,0000,0000,,should print the kangaroos pouch contains
+Dialogue: 0,0:32:55.53,0:32:57.13,*Default,NTP,0000,0000,0000,,and then print out
+Dialogue: 0,0:32:57.67,0:33:00.67,*Default,NTP,0000,0000,0000,,everything that is in the list
+Dialogue: 0,0:33:02.20,0:33:05.20,*Default,NTP,0000,0000,0000,,good again as always write a little driver
+Dialogue: 0,0:33:05.20,0:33:06.50,*Default,NTP,0000,0000,0000,,so create a pouch
+Dialogue: 0,0:33:06.67,0:33:09.67,*Default,NTP,0000,0000,0000,,print its contents add something print its contents
+Dialogue: 0,0:33:09.67,0:33:10.47,*Default,NTP,0000,0000,0000,,add something in
+Dialogue: 0,0:33:10.50,0:33:11.57,*Default,NTP,0000,0000,0000,,make sure it got added
+Dialogue: 0,0:33:11.80,0:33:13.87,*Default,NTP,0000,0000,0000,,print its contents try to add something twice
+Dialogue: 0,0:33:13.90,0:33:15.67,*Default,NTP,0000,0000,0000,,make sure you get the message saying
+Dialogue: 0,0:33:16.53,0:33:17.90,*Default,NTP,0000,0000,0000,,this is already in here
+Dialogue: 0,0:33:18.13,0:33:20.57,*Default,NTP,0000,0000,0000,,alright take some time again full blown class
+Dialogue: 0,0:33:21.00,0:33:23.60,*Default,NTP,0000,0000,0000,,constructor put in pouch and a print function
+Dialogue: 0,0:33:23.70,0:33:25.90,*Default,NTP,0000,0000,0000,,and the data associated with this particular object
+Dialogue: 0,0:33:25.90,0:33:26.90,*Default,NTP,0000,0000,0000,,is going to be a list
+Dialogue: 0,0:33:26.90,0:33:29.00,*Default,NTP,0000,0000,0000,,that we will be adding to using the
+Dialogue: 0,0:33:29.10,0:33:29.60,*Default,NTP,0000,0000,0000,,put in pouch
+Dialogue: 0,0:33:29.60,0:33:31.10,*Default,NTP,0000,0000,0000,,and when you come back I'm going to show you
+Dialogue: 0,0:33:31.13,0:33:32.13,*Default,NTP,0000,0000,0000,,my solution
+Dialogue: 0,0:33:35.17,0:33:36.53,*Default,NTP,0000,0000,0000,,okay here's my solution again
+Dialogue: 0,0:33:36.53,0:33:38.53,*Default,NTP,0000,0000,0000,,I'm going to separate out the class from the driver
+Dialogue: 0,0:33:38.53,0:33:40.13,*Default,NTP,0000,0000,0000,,so let's do the class first
+Dialogue: 0,0:33:40.73,0:33:42.13,*Default,NTP,0000,0000,0000,,I have class kangaroo
+Dialogue: 0,0:33:42.13,0:33:43.53,*Default,NTP,0000,0000,0000,,I have my constructor
+Dialogue: 0,0:33:43.53,0:33:46.30,*Default,NTP,0000,0000,0000,,my putin pouch and my print function
+Dialogue: 0,0:33:46.53,0:33:48.50,*Default,NTP,0000,0000,0000,,so the constructor is trivial
+Dialogue: 0,0:33:48.50,0:33:51.13,*Default,NTP,0000,0000,0000,,in fact it doesn't take any input it's just south
+Dialogue: 0,0:33:51.47,0:33:54.87,*Default,NTP,0000,0000,0000,,why well I said the initialization is an empty string
+Dialogue: 0,0:33:54.87,0:33:56.10,*Default,NTP,0000,0000,0000,,so south
+Dialogue: 0,0:33:56.10,0:33:59.80,*Default,NTP,0000,0000,0000,,pouch contents equals open brackets quos bracket done
+Dialogue: 0,0:33:59.87,0:34:00.77,*Default,NTP,0000,0000,0000,,nothing to do
+Dialogue: 0,0:34:00.77,0:34:02.27,*Default,NTP,0000,0000,0000,,constructor takes no input
+Dialogue: 0,0:34:02.27,0:34:03.77,*Default,NTP,0000,0000,0000,,fine perfectly fine
+Dialogue: 0,0:34:04.33,0:34:07.30,*Default,NTP,0000,0000,0000,,put in pouch it takes a single parameter's input x
+Dialogue: 0,0:34:07.70,0:34:10.53,*Default,NTP,0000,0000,0000,,and what you have to do now is add it to the pouch
+Dialogue: 0,0:34:11.73,0:34:13.00,*Default,NTP,0000,0000,0000,,if it's not already in the pouch
+Dialogue: 0,0:34:13.00,0:34:14.37,*Default,NTP,0000,0000,0000,,now you got to do a little bit of work
+Dialogue: 0,0:34:14.87,0:34:16.87,*Default,NTP,0000,0000,0000,,so I've got to go through
+Dialogue: 0,0:34:17.37,0:34:21.57,*Default,NTP,0000,0000,0000,,the pouch and check to see if that element is in there
+Dialogue: 0,0:34:21.77,0:34:23.07,*Default,NTP,0000,0000,0000,,all right let's go ahead and do that
+Dialogue: 0,0:34:23.27,0:34:26.90,*Default,NTP,0000,0000,0000,,for I in range the length of south
+Dialogue: 0,0:34:27.33,0:34:28.87,*Default,NTP,0000,0000,0000,,underscore contents
+Dialogue: 0,0:34:28.87,0:34:30.10,*Default,NTP,0000,0000,0000,,so south is the object
+Dialogue: 0,0:34:30.10,0:34:31.93,*Default,NTP,0000,0000,0000,,and I'm going to grab the pouch contents
+Dialogue: 0,0:34:31.93,0:34:32.93,*Default,NTP,0000,0000,0000,,which is the list
+Dialogue: 0,0:34:33.40,0:34:35.90,*Default,NTP,0000,0000,0000,,and I will take on every
+Dialogue: 0,0:34:35.97,0:34:39.77,*Default,NTP,0000,0000,0000,,index from zero to the length of the list minus one
+Dialogue: 0,0:34:40.00,0:34:43.20,*Default,NTP,0000,0000,0000,,and I'm simply going to ask that if south
+Dialogue: 0,0:34:43.73,0:34:47.53,*Default,NTP,0000,0000,0000,,pouch contents sub I is equal to x
+Dialogue: 0,0:34:47.60,0:34:49.80,*Default,NTP,0000,0000,0000,,that's what I'm trying to insert into the list
+Dialogue: 0,0:34:49.97,0:34:53.33,*Default,NTP,0000,0000,0000,,then print already in pouch and what do I do now
+Dialogue: 0,0:34:53.47,0:34:55.07,*Default,NTP,0000,0000,0000,,I'm done go home
+Dialogue: 0,0:34:55.17,0:34:55.97,*Default,NTP,0000,0000,0000,,return
+Dialogue: 0,0:34:56.37,0:34:59.20,*Default,NTP,0000,0000,0000,,return out of the function there is nothing to do here
+Dialogue: 0,0:34:59.20,0:35:00.97,*Default,NTP,0000,0000,0000,,right there's nothing to add to the list
+Dialogue: 0,0:35:01.00,0:35:02.53,*Default,NTP,0000,0000,0000,,you don't have to check any more elements
+Dialogue: 0,0:35:02.53,0:35:04.00,*Default,NTP,0000,0000,0000,,you found it and you're done
+Dialogue: 0,0:35:04.50,0:35:06.17,*Default,NTP,0000,0000,0000,,so for every element the list
+Dialogue: 0,0:35:06.20,0:35:07.93,*Default,NTP,0000,0000,0000,,check to see if the object exists
+Dialogue: 0,0:35:07.93,0:35:11.50,*Default,NTP,0000,0000,0000,,if it exists print a message and boot out
+Dialogue: 0,0:35:11.67,0:35:13.87,*Default,NTP,0000,0000,0000,,and if I get to this point in the code
+Dialogue: 0,0:35:13.87,0:35:15.90,*Default,NTP,0000,0000,0000,,after the whole for loop is executed
+Dialogue: 0,0:35:15.90,0:35:16.80,*Default,NTP,0000,0000,0000,,what do I know
+Dialogue: 0,0:35:17.53,0:35:18.70,*Default,NTP,0000,0000,0000,,object's not in the list
+Dialogue: 0,0:35:18.80,0:35:19.77,*Default,NTP,0000,0000,0000,,right obviously not
+Dialogue: 0,0:35:19.77,0:35:21.60,*Default,NTP,0000,0000,0000,,otherwise I would have hit this statement
+Dialogue: 0,0:35:21.60,0:35:23.50,*Default,NTP,0000,0000,0000,,I would have printed this and I would have returned
+Dialogue: 0,0:35:23.50,0:35:24.80,*Default,NTP,0000,0000,0000,,so at this point
+Dialogue: 0,0:35:24.87,0:35:28.10,*Default,NTP,0000,0000,0000,,I can simply append the object to the list
+Dialogue: 0,0:35:28.13,0:35:29.73,*Default,NTP,0000,0000,0000,,so let's follow the south
+Dialogue: 0,0:35:29.73,0:35:30.67,*Default,NTP,0000,0000,0000,,what is that
+Dialogue: 0,0:35:30.87,0:35:34.50,*Default,NTP,0000,0000,0000,,address of the object pouch contents what is that
+Dialogue: 0,0:35:34.50,0:35:37.00,*Default,NTP,0000,0000,0000,,the list associated with this object
+Dialogue: 0,0:35:37.10,0:35:38.50,*Default,NTP,0000,0000,0000,,and that is a list
+Dialogue: 0,0:35:38.53,0:35:40.70,*Default,NTP,0000,0000,0000,,so I can call the append function
+Dialogue: 0,0:35:40.87,0:35:42.20,*Default,NTP,0000,0000,0000,,with the element that I want
+Dialogue: 0,0:35:42.20,0:35:45.30,*Default,NTP,0000,0000,0000,,so look at the three levels of in direction object
+Dialogue: 0,0:35:46.33,0:35:48.07,*Default,NTP,0000,0000,0000,,data associate with the object
+Dialogue: 0,0:35:48.50,0:35:51.07,*Default,NTP,0000,0000,0000,,member function of that list
+Dialogue: 0,0:35:51.53,0:35:53.00,*Default,NTP,0000,0000,0000,,right there good
+Dialogue: 0,0:35:53.87,0:35:54.70,*Default,NTP,0000,0000,0000,,let's look at the print statement
+Dialogue: 0,0:35:54.70,0:35:55.73,*Default,NTP,0000,0000,0000,,this is pretty easy
+Dialogue: 0,0:35:56.73,0:35:59.07,*Default,NTP,0000,0000,0000,,if the length of self
+Dialogue: 0,0:35:59.17,0:36:01.47,*Default,NTP,0000,0000,0000,,pouch contents that is the list of zero
+Dialogue: 0,0:36:01.47,0:36:03.73,*Default,NTP,0000,0000,0000,,then just say the kangaroos pouch is empty
+Dialogue: 0,0:36:03.73,0:36:05.97,*Default,NTP,0000,0000,0000,,there's nothing in there otherwise
+Dialogue: 0,0:36:06.20,0:36:08.80,*Default,NTP,0000,0000,0000,,say that the kangaroos pouch contains
+Dialogue: 0,0:36:08.80,0:36:10.10,*Default,NTP,0000,0000,0000,,and then I'm going to tape the list
+Dialogue: 0,0:36:10.10,0:36:11.87,*Default,NTP,0000,0000,0000,,and just convert it into a string
+Dialogue: 0,0:36:11.87,0:36:12.90,*Default,NTP,0000,0000,0000,,which you can do of course
+Dialogue: 0,0:36:12.90,0:36:14.30,*Default,NTP,0000,0000,0000,,or you could have put that into a for loop
+Dialogue: 0,0:36:14.30,0:36:15.33,*Default,NTP,0000,0000,0000,,in printed them out
+Dialogue: 0,0:36:15.40,0:36:18.53,*Default,NTP,0000,0000,0000,,and then that will print the contents of the
+Dialogue: 0,0:36:19.53,0:36:22.13,*Default,NTP,0000,0000,0000,,list of the pouch which of course is just a list here
+Dialogue: 0,0:36:22.30,0:36:24.10,*Default,NTP,0000,0000,0000,,all right let's go ahead and look at the driver now
+Dialogue: 0,0:36:24.40,0:36:25.93,*Default,NTP,0000,0000,0000,,so I'm going to create a kangaroo object
+Dialogue: 0,0:36:25.93,0:36:27.33,*Default,NTP,0000,0000,0000,,call that capital k
+Dialogue: 0,0:36:27.50,0:36:28.87,*Default,NTP,0000,0000,0000,,and I'm going to go ahead and print it
+Dialogue: 0,0:36:28.87,0:36:30.73,*Default,NTP,0000,0000,0000,,let's just make sure that the first thing works
+Dialogue: 0,0:36:30.73,0:36:32.70,*Default,NTP,0000,0000,0000,,and it'll say the kangaroo's pouch is empty
+Dialogue: 0,0:36:32.87,0:36:34.87,*Default,NTP,0000,0000,0000,,good that tells me that the
+Dialogue: 0,0:36:35.33,0:36:37.33,*Default,NTP,0000,0000,0000,,constructor work and I have an empty list
+Dialogue: 0,0:36:37.57,0:36:40.13,*Default,NTP,0000,0000,0000,,let's add something to the pouch
+Dialogue: 0,0:36:40.30,0:36:43.27,*Default,NTP,0000,0000,0000,,k dot put in pouch a ball there's a string
+Dialogue: 0,0:36:43.30,0:36:44.40,*Default,NTP,0000,0000,0000,,and then print k
+Dialogue: 0,0:36:44.60,0:36:46.87,*Default,NTP,0000,0000,0000,,the kangaroos pouch contains
+Dialogue: 0,0:36:46.87,0:36:49.27,*Default,NTP,0000,0000,0000,,and then it shows me a single object
+Dialogue: 0,0:36:49.30,0:36:50.67,*Default,NTP,0000,0000,0000,,let's put something else in there
+Dialogue: 0,0:36:50.67,0:36:52.70,*Default,NTP,0000,0000,0000,,make sure I can get multiple things in there
+Dialogue: 0,0:36:52.90,0:36:54.77,*Default,NTP,0000,0000,0000,,good so that now it has
+Dialogue: 0,0:36:54.77,0:36:56.60,*Default,NTP,0000,0000,0000,,tells me that when I put the hammer in
+Dialogue: 0,0:36:56.60,0:36:58.93,*Default,NTP,0000,0000,0000,,I print k I get a ball in the hammer
+Dialogue: 0,0:36:58.97,0:37:01.70,*Default,NTP,0000,0000,0000,,and one more test let's make sure that it can deal with
+Dialogue: 0,0:37:02.33,0:37:04.30,*Default,NTP,0000,0000,0000,,multiple objects trying to be put in
+Dialogue: 0,0:37:04.30,0:37:05.90,*Default,NTP,0000,0000,0000,,so if I try to put a ball in
+Dialogue: 0,0:37:06.13,0:37:08.47,*Default,NTP,0000,0000,0000,,it will say already in pouch
+Dialogue: 0,0:37:08.47,0:37:09.40,*Default,NTP,0000,0000,0000,,and I'm going to just print that
+Dialogue: 0,0:37:09.40,0:37:10.07,*Default,NTP,0000,0000,0000,,and make sure I didn't
+Dialogue: 0,0:37:10.07,0:37:11.00,*Default,NTP,0000,0000,0000,,screw anything up
+Dialogue: 0,0:37:11.00,0:37:12.47,*Default,NTP,0000,0000,0000,,so you have to be careful here
+Dialogue: 0,0:37:12.47,0:37:14.87,*Default,NTP,0000,0000,0000,,maybe I got the message right but I still added it
+Dialogue: 0,0:37:14.87,0:37:17.57,*Default,NTP,0000,0000,0000,,so when I printed it should only say ball hammer
+Dialogue: 0,0:37:17.60,0:37:19.33,*Default,NTP,0000,0000,0000,,and really probably what I should do here
+Dialogue: 0,0:37:19.33,0:37:20.50,*Default,NTP,0000,0000,0000,,because this is testing
+Dialogue: 0,0:37:20.73,0:37:23.73,*Default,NTP,0000,0000,0000,,the first object in the pouch is an object
+Dialogue: 0,0:37:23.73,0:37:26.00,*Default,NTP,0000,0000,0000,,I probably should have also tested hammer to make sure
+Dialogue: 0,0:37:26.00,0:37:28.53,*Default,NTP,0000,0000,0000,,somehow make sure I'm iterating through that whole list
+Dialogue: 0,0:37:28.53,0:37:29.33,*Default,NTP,0000,0000,0000,,so you probably want to
+Dialogue: 0,0:37:29.33,0:37:31.30,*Default,NTP,0000,0000,0000,,drive this a little bit more with a few more
+Dialogue: 0,0:37:31.30,0:37:33.67,*Default,NTP,0000,0000,0000,,test cases to make sure you can find an object
+Dialogue: 0,0:37:33.67,0:37:35.53,*Default,NTP,0000,0000,0000,,regardless of where it is in the list
+Dialogue: 0,0:37:36.60,0:37:39.97,*Default,NTP,0000,0000,0000,,and but again just you know basic functionality testing
+Dialogue: 0,0:37:39.97,0:37:42.87,*Default,NTP,0000,0000,0000,,make sure your functions do what you think they do
+Dialogue: 0,0:37:42.87,0:37:44.53,*Default,NTP,0000,0000,0000,,because one of the hard things with
+Dialogue: 0,0:37:44.60,0:37:45.60,*Default,NTP,0000,0000,0000,,well ever really any code
+Dialogue: 0,0:37:45.60,0:37:47.30,*Default,NTP,0000,0000,0000,,but particularly these member functions is
+Dialogue: 0,0:37:47.40,0:37:49.40,*Default,NTP,0000,0000,0000,,you got to drive them you got to run them
+Dialogue: 0,0:37:49.40,0:37:51.20,*Default,NTP,0000,0000,0000,,and you got to test all of them
+Dialogue: 0,0:37:51.37,0:37:53.40,*Default,NTP,0000,0000,0000,,even if you don't know that you know when
+Dialogue: 0,0:37:53.40,0:37:55.17,*Default,NTP,0000,0000,0000,,or how they're going to be used
+Dialogue: 0,0:37:55.33,0:37:58.13,*Default,NTP,0000,0000,0000,,so that testing code will do we'll see more and more of
+Dialogue: 0,0:37:58.27,0:37:59.17,*Default,NTP,0000,0000,0000,,in the coming weeks
+Dialogue: 0,0:37:59.17,0:38:01.10,*Default,NTP,0000,0000,0000,,to make sure we know how to verify
+Dialogue: 0,0:38:01.10,0:38:02.60,*Default,NTP,0000,0000,0000,,that our code is doing what we think
+Dialogue: 0,0:38:03.13,0:38:04.13,*Default,NTP,0000,0000,0000,,all right that's it for now
+Dialogue: 0,0:38:04.13,0:38:05.47,*Default,NTP,0000,0000,0000,,and when we come back we're going to have
+Dialogue: 0,0:38:05.47,0:38:05.73,*Default,NTP,0000,0000,0000,,you know
+Dialogue: 0,0:38:05.73,0:38:08.17,*Default,NTP,0000,0000,0000,,a little bit more talk about objects and classes
+Dialogue: 0,0:38:08.17,0:38:09.77,*Default,NTP,0000,0000,0000,,and start refining some of our thinking
+Dialogue: 0,0:38:09.77,0:38:10.30,*Default,NTP,0000,0000,0000,,about these things
+Dialogue: 0,0:38:10.30,0:38:11.30,*Default,NTP,0000,0000,0000,,so we'll see you in a little bit
