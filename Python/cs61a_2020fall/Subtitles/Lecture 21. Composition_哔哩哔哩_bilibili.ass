@@ -1,0 +1,812 @@
+[Script Info]
+Title: Lecture 21. Composition_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=51&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.70,0:00:03.30,*Default,NTP,0000,0000,0000,,61 a lecture No.21
+Dialogue: 0,0:00:03.53,0:00:04.50,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:05.00,0:00:06.77,*Default,NTP,0000,0000,0000,,homework four is due today
+Dialogue: 0,0:00:07.20,0:00:08.93,*Default,NTP,0000,0000,0000,,ances do next Friday
+Dialogue: 0,0:00:09.00,0:00:10.33,*Default,NTP,0000,0000,0000,,but you have to do part of it
+Dialogue: 0,0:00:10.33,0:00:12.47,*Default,NTP,0000,0000,0000,,by next Tuesday to get the checkpoint
+Dialogue: 0,0:00:12.53,0:00:14.73,*Default,NTP,0000,0000,0000,,and you can get an early submission bonus point
+Dialogue: 0,0:00:14.73,0:00:16.07,*Default,NTP,0000,0000,0000,,for submitting the whole thing
+Dialogue: 0,0:00:16.07,0:00:17.80,*Default,NTP,0000,0000,0000,,by next Thursday
+Dialogue: 0,0:00:18.00,0:00:19.47,*Default,NTP,0000,0000,0000,,that's what I'd recommend
+Dialogue: 0,0:00:20.60,0:00:23.80,*Default,NTP,0000,0000,0000,,we will double the number of people working on
+Dialogue: 0,0:00:23.87,0:00:25.47,*Default,NTP,0000,0000,0000,,office hours next week
+Dialogue: 0,0:00:25.47,0:00:27.20,*Default,NTP,0000,0000,0000,,so there should be more appointments
+Dialogue: 0,0:00:27.27,0:00:30.10,*Default,NTP,0000,0000,0000,,and fester responses on the office hour q
+Dialogue: 0,0:00:30.70,0:00:33.40,*Default,NTP,0000,0000,0000,,we also have more people working on piazza
+Dialogue: 0,0:00:33.77,0:00:34.87,*Default,NTP,0000,0000,0000,,so hopefully we can
+Dialogue: 0,0:00:34.87,0:00:37.00,*Default,NTP,0000,0000,0000,,answer your questions in a timely manner
+Dialogue: 0,0:00:37.20,0:00:39.73,*Default,NTP,0000,0000,0000,,I know it's hard to get help in a remote course
+Dialogue: 0,0:00:39.80,0:00:41.30,*Default,NTP,0000,0000,0000,,but we will do our best
+Dialogue: 0,0:00:41.50,0:00:44.33,*Default,NTP,0000,0000,0000,,to be more responsive than we were in the last project
+Dialogue: 0,0:00:45.67,0:00:48.27,*Default,NTP,0000,0000,0000,,homework 5 will be posted to morrow
+Dialogue: 0,0:00:48.30,0:00:49.33,*Default,NTP,0000,0000,0000,,and it's due
+Dialogue: 0,0:00:49.40,0:00:52.70,*Default,NTP,0000,0000,0000,,not next week but the following Monday the 26th
+Dialogue: 0,0:00:52.90,0:00:54.60,*Default,NTP,0000,0000,0000,,we'll try to keep it short because
+Dialogue: 0,0:00:54.60,0:00:56.70,*Default,NTP,0000,0000,0000,,this Monday is right before the midterm
+Dialogue: 0,0:00:57.53,0:00:59.20,*Default,NTP,0000,0000,0000,,and completing homework
+Dialogue: 0,0:00:59.20,0:01:01.57,*Default,NTP,0000,0000,0000,,five is a great way to prepare for the midterm
+Dialogue: 0,0:01:01.57,0:01:04.60,*Default,NTP,0000,0000,0000,,so that's why we're having a do right before
+Dialogue: 0,0:01:04.73,0:01:06.90,*Default,NTP,0000,0000,0000,,to make sure that you get a little bit of practice
+Dialogue: 0,0:01:07.33,0:01:09.07,*Default,NTP,0000,0000,0000,,there is also a lab that week
+Dialogue: 0,0:01:09.07,0:01:11.53,*Default,NTP,0000,0000,0000,,but the only required part of lab nine
+Dialogue: 0,0:01:11.53,0:01:13.00,*Default,NTP,0000,0000,0000,,which is on ten twenty six
+Dialogue: 0,0:01:13.00,0:01:14.77,*Default,NTP,0000,0000,0000,,the due date for homework five
+Dialogue: 0,0:01:14.90,0:01:16.60,*Default,NTP,0000,0000,0000,,will be to finish homework five
+Dialogue: 0,0:01:17.30,0:01:19.40,*Default,NTP,0000,0000,0000,,there will be several optional problems
+Dialogue: 0,0:01:19.40,0:01:22.27,*Default,NTP,0000,0000,0000,,that I highly recommend that you do on the lab
+Dialogue: 0,0:01:22.40,0:01:24.67,*Default,NTP,0000,0000,0000,,as preparation for the midterm
+Dialogue: 0,0:01:24.73,0:01:26.20,*Default,NTP,0000,0000,0000,,but nothing will be required
+Dialogue: 0,0:01:26.20,0:01:27.87,*Default,NTP,0000,0000,0000,,so you'll just have one thing to do
+Dialogue: 0,0:01:28.07,0:01:30.60,*Default,NTP,0000,0000,0000,,early that week which is to complete homework five
+Dialogue: 0,0:01:30.70,0:01:33.50,*Default,NTP,0000,0000,0000,,and then take the midterm on Wednesday
+Dialogue: 0,0:01:34.57,0:01:37.70,*Default,NTP,0000,0000,0000,,the midterm is two weeks from yesterday
+Dialogue: 0,0:01:39.27,0:01:39.93,*Default,NTP,0000,0000,0000,,advising
+Dialogue: 0,0:01:39.93,0:01:42.93,*Default,NTP,0000,0000,0000,,office hours will be held on fridays from one to 230
+Dialogue: 0,0:01:42.93,0:01:44.30,*Default,NTP,0000,0000,0000,,on the office hours q
+Dialogue: 0,0:01:45.13,0:01:46.77,*Default,NTP,0000,0000,0000,,and right now
+Dialogue: 0,0:01:46.77,0:01:48.40,*Default,NTP,0000,0000,0000,,we have an anonymous survey
+Dialogue: 0,0:01:48.40,0:01:50.40,*Default,NTP,0000,0000,0000,,about how things are going in the course
+Dialogue: 0,0:01:50.40,0:01:52.77,*Default,NTP,0000,0000,0000,,that I encourage you to respond to
+Dialogue: 0,0:01:52.90,0:01:55.13,*Default,NTP,0000,0000,0000,,I see that several hundred people have responded
+Dialogue: 0,0:01:55.13,0:01:56.70,*Default,NTP,0000,0000,0000,,already so thanks for that
+Dialogue: 0,0:01:57.40,0:01:58.70,*Default,NTP,0000,0000,0000,,I didn't see any
+Dialogue: 0,0:01:59.00,0:02:01.30,*Default,NTP,0000,0000,0000,,consistent suggestions about how to change
+Dialogue: 0,0:02:01.30,0:02:03.10,*Default,NTP,0000,0000,0000,,the format of the midterm
+Dialogue: 0,0:02:03.10,0:02:06.33,*Default,NTP,0000,0000,0000,,so it will be fairly similar to how we ran midterm one
+Dialogue: 0,0:02:06.87,0:02:08.57,*Default,NTP,0000,0000,0000,,it will cover content up to an
+Dialogue: 0,0:02:08.57,0:02:10.40,*Default,NTP,0000,0000,0000,,including today's lecture
+Dialogue: 0,0:02:11.47,0:02:15.07,*Default,NTP,0000,0000,0000,,lectures next week are just optional or review
+Dialogue: 0,0:02:15.70,0:02:17.47,*Default,NTP,0000,0000,0000,,and one thing that was very clear
+Dialogue: 0,0:02:17.47,0:02:20.00,*Default,NTP,0000,0000,0000,,from the responses to the anonymous survey
+Dialogue: 0,0:02:20.10,0:02:21.87,*Default,NTP,0000,0000,0000,,is that you want more practice
+Dialogue: 0,0:02:21.87,0:02:24.30,*Default,NTP,0000,0000,0000,,working on tree processing problems
+Dialogue: 0,0:02:24.50,0:02:27.60,*Default,NTP,0000,0000,0000,,well today in lecture we'll talk about trees again
+Dialogue: 0,0:02:27.60,0:02:30.13,*Default,NTP,0000,0000,0000,,looking at them from an object oriented point of view
+Dialogue: 0,0:02:32.47,0:02:35.00,*Default,NTP,0000,0000,0000,,linked lists are a fundamental
+Dialogue: 0,0:02:35.00,0:02:37.47,*Default,NTP,0000,0000,0000,,data structure and computer science
+Dialogue: 0,0:02:37.60,0:02:39.50,*Default,NTP,0000,0000,0000,,they appear everywhere
+Dialogue: 0,0:02:40.40,0:02:42.57,*Default,NTP,0000,0000,0000,,and now we'll learn how to implement them
+Dialogue: 0,0:02:42.80,0:02:45.13,*Default,NTP,0000,0000,0000,,using python's object system
+Dialogue: 0,0:02:46.77,0:02:48.87,*Default,NTP,0000,0000,0000,,so a linked list is either
+Dialogue: 0,0:02:48.87,0:02:51.13,*Default,NTP,0000,0000,0000,,empty because it contains nothing
+Dialogue: 0,0:02:51.70,0:02:55.33,*Default,NTP,0000,0000,0000,,or it has the first value in some sequence
+Dialogue: 0,0:02:55.53,0:02:59.17,*Default,NTP,0000,0000,0000,,and then the rest of the values in the linked list
+Dialogue: 0,0:03:00.50,0:03:02.70,*Default,NTP,0000,0000,0000,,so here's how we're going to represent the sequence
+Dialogue: 0,0:03:02.70,0:03:04.40,*Default,NTP,0000,0000,0000,,3 4 5
+Dialogue: 0,0:03:05.93,0:03:09.40,*Default,NTP,0000,0000,0000,,we'll use an instance of a class called the link
+Dialogue: 0,0:03:09.67,0:03:12.17,*Default,NTP,0000,0000,0000,,I haven't defined that yet but I will soon
+Dialogue: 0,0:03:12.97,0:03:14.90,*Default,NTP,0000,0000,0000,,and that has two attributes
+Dialogue: 0,0:03:15.13,0:03:16.90,*Default,NTP,0000,0000,0000,,first which is three
+Dialogue: 0,0:03:17.13,0:03:20.90,*Default,NTP,0000,0000,0000,,and rest which is some object
+Dialogue: 0,0:03:21.10,0:03:25.17,*Default,NTP,0000,0000,0000,,now that object is holding the rest of the values
+Dialogue: 0,0:03:25.27,0:03:29.80,*Default,NTP,0000,0000,0000,,and it itself is also a linked list or a link instance
+Dialogue: 0,0:03:30.73,0:03:32.10,*Default,NTP,0000,0000,0000,,so every link list
+Dialogue: 0,0:03:32.33,0:03:35.93,*Default,NTP,0000,0000,0000,,has a smaller link list as the rest of the list
+Dialogue: 0,0:03:37.67,0:03:41.53,*Default,NTP,0000,0000,0000,,so this link instance has its first value as four
+Dialogue: 0,0:03:41.73,0:03:43.90,*Default,NTP,0000,0000,0000,,and the rest of its list is a link
+Dialogue: 0,0:03:43.90,0:03:46.30,*Default,NTP,0000,0000,0000,,instance whose first value is five
+Dialogue: 0,0:03:46.53,0:03:46.77,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:03:46.77,0:03:50.10,*Default,NTP,0000,0000,0000,,we've exhausted everything we're trying to represent
+Dialogue: 0,0:03:51.00,0:03:53.87,*Default,NTP,0000,0000,0000,,but we still need some rest attribute
+Dialogue: 0,0:03:54.00,0:03:58.80,*Default,NTP,0000,0000,0000,,in that case we use a special value called link empty
+Dialogue: 0,0:03:59.53,0:04:02.17,*Default,NTP,0000,0000,0000,,link empty is the exception to the rule
+Dialogue: 0,0:04:02.17,0:04:04.37,*Default,NTP,0000,0000,0000,,I just said that every linked list
+Dialogue: 0,0:04:04.67,0:04:07.40,*Default,NTP,0000,0000,0000,,has a rest of the list link
+Dialogue: 0,0:04:07.40,0:04:09.50,*Default,NTP,0000,0000,0000,,that empty doesn't have any first value
+Dialogue: 0,0:04:09.50,0:04:11.10,*Default,NTP,0000,0000,0000,,or any rest of the list
+Dialogue: 0,0:04:11.30,0:04:14.57,*Default,NTP,0000,0000,0000,,it just represents the fact that there's nothing left
+Dialogue: 0,0:04:16.97,0:04:17.17,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:04:17.17,0:04:19.80,*Default,NTP,0000,0000,0000,,the right way to think about a linked list is not this
+Dialogue: 0,0:04:19.80,0:04:23.57,*Default,NTP,0000,0000,0000,,particular class with these particular attribute names
+Dialogue: 0,0:04:23.60,0:04:25.50,*Default,NTP,0000,0000,0000,,but as a pair of values
+Dialogue: 0,0:04:25.93,0:04:28.60,*Default,NTP,0000,0000,0000,,it's a first element of some sequence
+Dialogue: 0,0:04:28.67,0:04:30.67,*Default,NTP,0000,0000,0000,,and then the rest of that sequence
+Dialogue: 0,0:04:32.33,0:04:34.80,*Default,NTP,0000,0000,0000,,in this case we're storing the first
+Dialogue: 0,0:04:35.00,0:04:39.13,*Default,NTP,0000,0000,0000,,actually the zero f element as an attribute value
+Dialogue: 0,0:04:39.87,0:04:41.00,*Default,NTP,0000,0000,0000,,I call it the zero
+Dialogue: 0,0:04:41.00,0:04:43.87,*Default,NTP,0000,0000,0000,,element because it will correspond to index zero
+Dialogue: 0,0:04:44.10,0:04:47.50,*Default,NTP,0000,0000,0000,,once we come up with a way of indexing into this list
+Dialogue: 0,0:04:51.33,0:04:55.10,*Default,NTP,0000,0000,0000,,the rest of the list is itself a linked list or link
+Dialogue: 0,0:04:55.33,0:04:58.93,*Default,NTP,0000,0000,0000,,empty and that's stored as another attribute
+Dialogue: 0,0:04:59.47,0:05:03.50,*Default,NTP,0000,0000,0000,,so you can have objects that are values of attributes
+Dialogue: 0,0:05:03.67,0:05:07.00,*Default,NTP,0000,0000,0000,,and here we're using the idea of composition
+Dialogue: 0,0:05:07.13,0:05:10.17,*Default,NTP,0000,0000,0000,,in order to construct an interesting structure
+Dialogue: 0,0:05:11.93,0:05:17.37,*Default,NTP,0000,0000,0000,,so a link list has a link list as its attribute value
+Dialogue: 0,0:05:19.00,0:05:21.40,*Default,NTP,0000,0000,0000,,finally there's some class attribute
+Dialogue: 0,0:05:21.77,0:05:24.33,*Default,NTP,0000,0000,0000,,that we use for any link list that's empty
+Dialogue: 0,0:05:24.33,0:05:26.20,*Default,NTP,0000,0000,0000,,and we call it link empty
+Dialogue: 0,0:05:28.27,0:05:30.70,*Default,NTP,0000,0000,0000,,now the way we construct this is not by writing three
+Dialogue: 0,0:05:30.70,0:05:32.07,*Default,NTP,0000,0000,0000,,come a four come a five
+Dialogue: 0,0:05:32.27,0:05:33.53,*Default,NTP,0000,0000,0000,,that would make a tuple
+Dialogue: 0,0:05:33.97,0:05:36.90,*Default,NTP,0000,0000,0000,,instead we have to write out the constructor
+Dialogue: 0,0:05:37.30,0:05:38.77,*Default,NTP,0000,0000,0000,,a link with three
+Dialogue: 0,0:05:39.10,0:05:41.53,*Default,NTP,0000,0000,0000,,and the rest of the list is a link with four
+Dialogue: 0,0:05:41.53,0:05:44.47,*Default,NTP,0000,0000,0000,,and the rest of that list is a link starting with five
+Dialogue: 0,0:05:44.80,0:05:47.20,*Default,NTP,0000,0000,0000,,and the rest of that list is link that empty
+Dialogue: 0,0:05:49.47,0:05:51.60,*Default,NTP,0000,0000,0000,,so each one of these calls to link
+Dialogue: 0,0:05:51.60,0:05:53.37,*Default,NTP,0000,0000,0000,,creates a new link instance
+Dialogue: 0,0:05:54.40,0:05:56.57,*Default,NTP,0000,0000,0000,,this call creates that instance
+Dialogue: 0,0:05:57.17,0:06:00.17,*Default,NTP,0000,0000,0000,,which must exist in order to make this call
+Dialogue: 0,0:06:01.00,0:06:03.93,*Default,NTP,0000,0000,0000,,which creates the lengthless starting with four
+Dialogue: 0,0:06:03.93,0:06:05.27,*Default,NTP,0000,0000,0000,,followed by five
+Dialogue: 0,0:06:06.10,0:06:08.07,*Default,NTP,0000,0000,0000,,now here the order in which
+Dialogue: 0,0:06:08.07,0:06:10.80,*Default,NTP,0000,0000,0000,,functions are evaluated in python is important
+Dialogue: 0,0:06:11.60,0:06:13.10,*Default,NTP,0000,0000,0000,,in order to evaluate link
+Dialogue: 0,0:06:13.10,0:06:16.10,*Default,NTP,0000,0000,0000,,for comma link five comma link mt
+Dialogue: 0,0:06:16.30,0:06:17.60,*Default,NTP,0000,0000,0000,,we have the first
+Dialogue: 0,0:06:18.60,0:06:20.70,*Default,NTP,0000,0000,0000,,evaluate this
+Dialogue: 0,0:06:20.90,0:06:22.53,*Default,NTP,0000,0000,0000,,operand sub expression
+Dialogue: 0,0:06:22.53,0:06:24.60,*Default,NTP,0000,0000,0000,,in order to create the link instance
+Dialogue: 0,0:06:24.60,0:06:27.93,*Default,NTP,0000,0000,0000,,that represents the sequence of starting a five
+Dialogue: 0,0:06:27.97,0:06:29.30,*Default,NTP,0000,0000,0000,,followed by nothing else
+Dialogue: 0,0:06:29.60,0:06:32.70,*Default,NTP,0000,0000,0000,,once that's created we can pass it in as an argument
+Dialogue: 0,0:06:32.77,0:06:35.33,*Default,NTP,0000,0000,0000,,to this link which starts with four
+Dialogue: 0,0:06:35.40,0:06:37.30,*Default,NTP,0000,0000,0000,,and is followed by all this other stuff
+Dialogue: 0,0:06:37.90,0:06:40.50,*Default,NTP,0000,0000,0000,,and then finally we can evaluate the whole expression
+Dialogue: 0,0:06:40.73,0:06:42.80,*Default,NTP,0000,0000,0000,,and build the whole linked list
+Dialogue: 0,0:06:45.93,0:06:48.50,*Default,NTP,0000,0000,0000,,now these structures are so common in computer science
+Dialogue: 0,0:06:48.50,0:06:50.53,*Default,NTP,0000,0000,0000,,that there are some conventions
+Dialogue: 0,0:06:50.80,0:06:52.67,*Default,NTP,0000,0000,0000,,about how they get drawn
+Dialogue: 0,0:06:53.47,0:06:53.93,*Default,NTP,0000,0000,0000,,typically
+Dialogue: 0,0:06:53.93,0:06:56.87,*Default,NTP,0000,0000,0000,,you do draw them as a sequence of pairs with arrows
+Dialogue: 0,0:06:56.87,0:06:57.73,*Default,NTP,0000,0000,0000,,like this
+Dialogue: 0,0:06:57.97,0:07:00.87,*Default,NTP,0000,0000,0000,,but instead of drawing an arrow to link that empty
+Dialogue: 0,0:07:00.90,0:07:03.67,*Default,NTP,0000,0000,0000,,it's very common to just put a slash there
+Dialogue: 0,0:07:03.90,0:07:06.30,*Default,NTP,0000,0000,0000,,this is not any sort of official notation
+Dialogue: 0,0:07:06.30,0:07:08.47,*Default,NTP,0000,0000,0000,,but you will see people do this out there in the world
+Dialogue: 0,0:07:08.47,0:07:09.90,*Default,NTP,0000,0000,0000,,so I thought I'd show you now
+Dialogue: 0,0:07:11.37,0:07:13.20,*Default,NTP,0000,0000,0000,,in our implementation
+Dialogue: 0,0:07:13.27,0:07:15.93,*Default,NTP,0000,0000,0000,,we're going to mirror this structure
+Dialogue: 0,0:07:16.13,0:07:17.33,*Default,NTP,0000,0000,0000,,by making link
+Dialogue: 0,0:07:17.53,0:07:21.70,*Default,NTP,0000,0000,0000,,empty the default value for the rest attribute
+Dialogue: 0,0:07:21.90,0:07:23.73,*Default,NTP,0000,0000,0000,,and that means you can leave it out
+Dialogue: 0,0:07:23.73,0:07:25.73,*Default,NTP,0000,0000,0000,,when you want to construct a link list
+Dialogue: 0,0:07:28.33,0:07:30.80,*Default,NTP,0000,0000,0000,,so we want this expression to actually
+Dialogue: 0,0:07:30.80,0:07:32.50,*Default,NTP,0000,0000,0000,,evaluate to a link instance
+Dialogue: 0,0:07:32.50,0:07:35.73,*Default,NTP,0000,0000,0000,,representing the sequence 3 4 5
+Dialogue: 0,0:07:35.97,0:07:38.10,*Default,NTP,0000,0000,0000,,and for that we need a class statement
+Dialogue: 0,0:07:38.73,0:07:42.30,*Default,NTP,0000,0000,0000,,in the link list class we just have an in it
+Dialogue: 0,0:07:42.70,0:07:45.73,*Default,NTP,0000,0000,0000,,method which takes in the first and the rest
+Dialogue: 0,0:07:45.90,0:07:48.73,*Default,NTP,0000,0000,0000,,so here's the class here's the in it method
+Dialogue: 0,0:07:48.87,0:07:50.30,*Default,NTP,0000,0000,0000,,as I mentioned before
+Dialogue: 0,0:07:50.30,0:07:52.87,*Default,NTP,0000,0000,0000,,we're going to have a default value for the rest
+Dialogue: 0,0:07:52.93,0:07:54.50,*Default,NTP,0000,0000,0000,,which is link empty
+Dialogue: 0,0:07:54.57,0:07:56.17,*Default,NTP,0000,0000,0000,,which I haven't yet to find
+Dialogue: 0,0:07:57.70,0:08:00.13,*Default,NTP,0000,0000,0000,,the first thing will do is make sure
+Dialogue: 0,0:08:00.13,0:08:03.60,*Default,NTP,0000,0000,0000,,that the linked list were constructing is well formed
+Dialogue: 0,0:08:03.80,0:08:05.67,*Default,NTP,0000,0000,0000,,it follows the property that I said
+Dialogue: 0,0:08:05.67,0:08:07.27,*Default,NTP,0000,0000,0000,,that the rest of the list either
+Dialogue: 0,0:08:07.27,0:08:08.77,*Default,NTP,0000,0000,0000,,has to be the empty list
+Dialogue: 0,0:08:08.77,0:08:09.90,*Default,NTP,0000,0000,0000,,link that empty
+Dialogue: 0,0:08:10.33,0:08:13.97,*Default,NTP,0000,0000,0000,,or it's an instance of the link class
+Dialogue: 0,0:08:14.13,0:08:16.27,*Default,NTP,0000,0000,0000,,meaning it's itself a linked list
+Dialogue: 0,0:08:16.50,0:08:16.90,*Default,NTP,0000,0000,0000,,so those
+Dialogue: 0,0:08:16.90,0:08:18.93,*Default,NTP,0000,0000,0000,,when the only two things were allowed to pass in
+Dialogue: 0,0:08:18.93,0:08:20.60,*Default,NTP,0000,0000,0000,,as the rest of the list
+Dialogue: 0,0:08:22.50,0:08:23.77,*Default,NTP,0000,0000,0000,,and then we store the first
+Dialogue: 0,0:08:23.77,0:08:25.80,*Default,NTP,0000,0000,0000,,element and the rest of the list as
+Dialogue: 0,0:08:26.20,0:08:28.30,*Default,NTP,0000,0000,0000,,attributes of the instant self
+Dialogue: 0,0:08:29.40,0:08:32.87,*Default,NTP,0000,0000,0000,,is instance is a built in function in python
+Dialogue: 0,0:08:32.97,0:08:35.90,*Default,NTP,0000,0000,0000,,that returns whether rest is a link
+Dialogue: 0,0:08:36.07,0:08:38.13,*Default,NTP,0000,0000,0000,,when past these two arguments
+Dialogue: 0,0:08:39.10,0:08:42.37,*Default,NTP,0000,0000,0000,,if you ask for the help from python on his instance
+Dialogue: 0,0:08:42.37,0:08:43.17,*Default,NTP,0000,0000,0000,,it will tell you that
+Dialogue: 0,0:08:43.17,0:08:46.70,*Default,NTP,0000,0000,0000,,it returns whether an object is an instance of a class
+Dialogue: 0,0:08:47.37,0:08:49.77,*Default,NTP,0000,0000,0000,,or of a subclass thereof
+Dialogue: 0,0:08:51.40,0:08:52.57,*Default,NTP,0000,0000,0000,,so it's a little bit different
+Dialogue: 0,0:08:52.57,0:08:53.33,*Default,NTP,0000,0000,0000,,than just getting the
+Dialogue: 0,0:08:53.33,0:08:55.40,*Default,NTP,0000,0000,0000,,type of rest and seeing if it's exactly
+Dialogue: 0,0:08:55.40,0:08:56.47,*Default,NTP,0000,0000,0000,,equal to link
+Dialogue: 0,0:08:57.17,0:09:00.37,*Default,NTP,0000,0000,0000,,this will also be true if rest
+Dialogue: 0,0:09:00.93,0:09:06.37,*Default,NTP,0000,0000,0000,,is an instance of a class that inherits from link
+Dialogue: 0,0:09:07.77,0:09:09.37,*Default,NTP,0000,0000,0000,,and this is a good idea
+Dialogue: 0,0:09:10.00,0:09:12.20,*Default,NTP,0000,0000,0000,,because now our system is extensible
+Dialogue: 0,0:09:12.20,0:09:15.13,*Default,NTP,0000,0000,0000,,if we want to build a special kind of link list
+Dialogue: 0,0:09:15.13,0:09:16.87,*Default,NTP,0000,0000,0000,,by inheriting from link
+Dialogue: 0,0:09:17.13,0:09:19.33,*Default,NTP,0000,0000,0000,,we can still use this same constructor
+Dialogue: 0,0:09:19.67,0:09:22.90,*Default,NTP,0000,0000,0000,,and this verification will still work out as we expect
+Dialogue: 0,0:09:24.90,0:09:27.00,*Default,NTP,0000,0000,0000,,so what is link that empty anyway
+Dialogue: 0,0:09:27.27,0:09:29.90,*Default,NTP,0000,0000,0000,,well here we have a choice in our implementation
+Dialogue: 0,0:09:30.20,0:09:33.30,*Default,NTP,0000,0000,0000,,I've chosen to represent it as the empty tuple
+Dialogue: 0,0:09:33.73,0:09:35.93,*Default,NTP,0000,0000,0000,,although I could have invented a special class
+Dialogue: 0,0:09:35.93,0:09:37.73,*Default,NTP,0000,0000,0000,,just for the empty linked list
+Dialogue: 0,0:09:38.17,0:09:41.50,*Default,NTP,0000,0000,0000,,instead I just picked some zero length sequence
+Dialogue: 0,0:09:41.73,0:09:44.53,*Default,NTP,0000,0000,0000,,because that's what it is it's a zero length sequence
+Dialogue: 0,0:09:46.73,0:09:48.60,*Default,NTP,0000,0000,0000,,okay let's see how it works
+Dialogue: 0,0:09:50.73,0:09:52.67,*Default,NTP,0000,0000,0000,,I can create a linked list
+Dialogue: 0,0:09:53.07,0:09:57.97,*Default,NTP,0000,0000,0000,,with three followed by four followed by five
+Dialogue: 0,0:10:01.57,0:10:06.30,*Default,NTP,0000,0000,0000,,if I call this s I can start inspecting its attributes
+Dialogue: 0,0:10:06.53,0:10:08.10,*Default,NTP,0000,0000,0000,,s dot first is three
+Dialogue: 0,0:10:08.13,0:10:10.57,*Default,NTP,0000,0000,0000,,s dot rest is four five
+Dialogue: 0,0:10:10.77,0:10:14.57,*Default,NTP,0000,0000,0000,,which means if I want to get the element four
+Dialogue: 0,0:10:14.70,0:10:18.50,*Default,NTP,0000,0000,0000,,what I need to write is s dot rest first
+Dialogue: 0,0:10:18.53,0:10:21.13,*Default,NTP,0000,0000,0000,,the first element of the rest of the list
+Dialogue: 0,0:10:21.67,0:10:23.67,*Default,NTP,0000,0000,0000,,I can access five by saying
+Dialogue: 0,0:10:23.67,0:10:26.57,*Default,NTP,0000,0000,0000,,the rest of the lists rests of the list's
+Dialogue: 0,0:10:26.57,0:10:29.07,*Default,NTP,0000,0000,0000,,first element that's five
+Dialogue: 0,0:10:32.37,0:10:34.97,*Default,NTP,0000,0000,0000,,and finally I can ask whether the rest
+Dialogue: 0,0:10:34.97,0:10:37.53,*Default,NTP,0000,0000,0000,,of the rest of the rest of the list
+Dialogue: 0,0:10:37.67,0:10:38.87,*Default,NTP,0000,0000,0000,,is link
+Dialogue: 0,0:10:39.50,0:10:42.70,*Default,NTP,0000,0000,0000,,empty and it should be because there's nothing there
+Dialogue: 0,0:10:43.93,0:10:44.87,*Default,NTP,0000,0000,0000,,so these are the ways
+Dialogue: 0,0:10:44.87,0:10:47.00,*Default,NTP,0000,0000,0000,,in which I'll manipulate a linked list
+Dialogue: 0,0:10:48.67,0:10:49.80,*Default,NTP,0000,0000,0000,,it is of course
+Dialogue: 0,0:10:49.80,0:10:52.73,*Default,NTP,0000,0000,0000,,possible to change the values within the list
+Dialogue: 0,0:10:52.87,0:10:56.70,*Default,NTP,0000,0000,0000,,I could set s rest 1st seven
+Dialogue: 0,0:10:58.70,0:11:01.60,*Default,NTP,0000,0000,0000,,then if I look at what s is
+Dialogue: 0,0:11:01.80,0:11:03.40,*Default,NTP,0000,0000,0000,,I find that it's three
+Dialogue: 0,0:11:03.40,0:11:06.30,*Default,NTP,0000,0000,0000,,he followed by seven followed by five
+Dialogue: 0,0:11:06.93,0:11:07.87,*Default,NTP,0000,0000,0000,,however
+Dialogue: 0,0:11:09.10,0:11:09.90,*Default,NTP,0000,0000,0000,,oftentimes
+Dialogue: 0,0:11:09.90,0:11:12.17,*Default,NTP,0000,0000,0000,,linkless are used in situations where you're not
+Dialogue: 0,0:11:12.17,0:11:13.60,*Default,NTP,0000,0000,0000,,mutating the values
+Dialogue: 0,0:11:13.60,0:11:15.53,*Default,NTP,0000,0000,0000,,that's where they're specially designed for
+Dialogue: 0,0:11:15.87,0:11:18.40,*Default,NTP,0000,0000,0000,,so you can create a list that's similar to another list
+Dialogue: 0,0:11:18.53,0:11:20.10,*Default,NTP,0000,0000,0000,,just by adding
+Dialogue: 0,0:11:20.53,0:11:22.30,*Default,NTP,0000,0000,0000,,a different value onto the front
+Dialogue: 0,0:11:22.47,0:11:25.37,*Default,NTP,0000,0000,0000,,so if I want to create a linked list that starts with
+Dialogue: 0,0:11:25.80,0:11:28.67,*Default,NTP,0000,0000,0000,,eight and then is followed by seven and five
+Dialogue: 0,0:11:28.67,0:11:30.20,*Default,NTP,0000,0000,0000,,I would do that just by writing
+Dialogue: 0,0:11:30.77,0:11:33.47,*Default,NTP,0000,0000,0000,,link eight followed by the rest of the list
+Dialogue: 0,0:11:33.80,0:11:35.57,*Default,NTP,0000,0000,0000,,writing this creates a new list
+Dialogue: 0,0:11:35.57,0:11:37.20,*Default,NTP,0000,0000,0000,,but it doesn't change the old one
+Dialogue: 0,0:11:39.40,0:11:43.17,*Default,NTP,0000,0000,0000,,recursion is very common in linked list processing
+Dialogue: 0,0:11:43.20,0:11:45.17,*Default,NTP,0000,0000,0000,,when constructing a new linked list
+Dialogue: 0,0:11:45.17,0:11:47.20,*Default,NTP,0000,0000,0000,,or taking an existing linked list
+Dialogue: 0,0:11:47.20,0:11:48.80,*Default,NTP,0000,0000,0000,,and doing something with it
+Dialogue: 0,0:11:49.10,0:11:50.67,*Default,NTP,0000,0000,0000,,let's look at some examples
+Dialogue: 0,0:11:51.70,0:11:53.10,*Default,NTP,0000,0000,0000,,ranges are built in
+Dialogue: 0,0:11:53.27,0:11:54.77,*Default,NTP,0000,0000,0000,,the map functions built in
+Dialogue: 0,0:11:54.77,0:11:57.20,*Default,NTP,0000,0000,0000,,and the filter functions built into python
+Dialogue: 0,0:11:57.47,0:11:59.07,*Default,NTP,0000,0000,0000,,but they don't operate on linked
+Dialogue: 0,0:11:59.07,0:12:01.17,*Default,NTP,0000,0000,0000,,lists because those are user defined
+Dialogue: 0,0:12:02.00,0:12:04.17,*Default,NTP,0000,0000,0000,,so if we want the same functionality
+Dialogue: 0,0:12:04.20,0:12:07.00,*Default,NTP,0000,0000,0000,,we'll have to implement our own notion of range
+Dialogue: 0,0:12:07.00,0:12:08.73,*Default,NTP,0000,0000,0000,,and map and filter
+Dialogue: 0,0:12:09.67,0:12:11.50,*Default,NTP,0000,0000,0000,,let's remember what these things do
+Dialogue: 0,0:12:11.97,0:12:14.97,*Default,NTP,0000,0000,0000,,if I have two functions like square
+Dialogue: 0,0:12:15.00,0:12:16.97,*Default,NTP,0000,0000,0000,,which takes an x and squares it
+Dialogue: 0,0:12:17.13,0:12:18.97,*Default,NTP,0000,0000,0000,,an odd which takes an x
+Dialogue: 0,0:12:18.97,0:12:21.10,*Default,NTP,0000,0000,0000,,and returns whether it's an odd number
+Dialogue: 0,0:12:21.93,0:12:23.53,*Default,NTP,0000,0000,0000,,then I could for example
+Dialogue: 0,0:12:23.87,0:12:26.10,*Default,NTP,0000,0000,0000,,write the following expression
+Dialogue: 0,0:12:26.30,0:12:28.93,*Default,NTP,0000,0000,0000,,using the built in map and filter in range
+Dialogue: 0,0:12:29.70,0:12:32.17,*Default,NTP,0000,0000,0000,,get the numbers one two three four and five
+Dialogue: 0,0:12:32.40,0:12:34.27,*Default,NTP,0000,0000,0000,,filter for only the odd ones
+Dialogue: 0,0:12:34.27,0:12:36.17,*Default,NTP,0000,0000,0000,,so now I have one three and five
+Dialogue: 0,0:12:36.37,0:12:39.70,*Default,NTP,0000,0000,0000,,and then map the square function over those
+Dialogue: 0,0:12:39.87,0:12:41.47,*Default,NTP,0000,0000,0000,,so one squared is one
+Dialogue: 0,0:12:41.47,0:12:44.80,*Default,NTP,0000,0000,0000,,three squared is nine and five squared is 25
+Dialogue: 0,0:12:45.53,0:12:48.13,*Default,NTP,0000,0000,0000,,those results will place in a list
+Dialogue: 0,0:12:49.13,0:12:52.27,*Default,NTP,0000,0000,0000,,the same kind of thing could be done with linked lists
+Dialogue: 0,0:12:52.27,0:12:54.67,*Default,NTP,0000,0000,0000,,using the class that we just defined
+Dialogue: 0,0:12:55.17,0:12:57.27,*Default,NTP,0000,0000,0000,,but the syntax will be slightly different
+Dialogue: 0,0:12:57.73,0:13:00.90,*Default,NTP,0000,0000,0000,,we'll have to come up with our map link function
+Dialogue: 0,0:13:00.90,0:13:02.60,*Default,NTP,0000,0000,0000,,which will implement momentarily
+Dialogue: 0,0:13:03.27,0:13:04.60,*Default,NTP,0000,0000,0000,,which takes the square
+Dialogue: 0,0:13:04.60,0:13:06.37,*Default,NTP,0000,0000,0000,,and square as all the elements of
+Dialogue: 0,0:13:06.37,0:13:08.90,*Default,NTP,0000,0000,0000,,the result of filtering a linked list
+Dialogue: 0,0:13:09.07,0:13:10.67,*Default,NTP,0000,0000,0000,,using the odd function
+Dialogue: 0,0:13:10.70,0:13:12.17,*Default,NTP,0000,0000,0000,,where we start with a
+Dialogue: 0,0:13:12.20,0:13:15.90,*Default,NTP,0000,0000,0000,,linked list representing the range 1 2 3 4 5
+Dialogue: 0,0:13:16.53,0:13:18.77,*Default,NTP,0000,0000,0000,,filter out the two and the four to just have one
+Dialogue: 0,0:13:18.77,0:13:19.50,*Default,NTP,0000,0000,0000,,three and five
+Dialogue: 0,0:13:19.50,0:13:20.53,*Default,NTP,0000,0000,0000,,the odd ones
+Dialogue: 0,0:13:20.57,0:13:23.97,*Default,NTP,0000,0000,0000,,square all of those and you get a linked list of one
+Dialogue: 0,0:13:23.97,0:13:25.50,*Default,NTP,0000,0000,0000,,nine and twenty five
+Dialogue: 0,0:13:26.40,0:13:28.93,*Default,NTP,0000,0000,0000,,so let's go through an implement range link
+Dialogue: 0,0:13:28.97,0:13:32.13,*Default,NTP,0000,0000,0000,,which has a starting integer and an ending integer
+Dialogue: 0,0:13:32.13,0:13:34.67,*Default,NTP,0000,0000,0000,,and returns a link containing consecutive integers
+Dialogue: 0,0:13:34.67,0:13:35.50,*Default,NTP,0000,0000,0000,,from start
+Dialogue: 0,0:13:35.57,0:13:37.67,*Default,NTP,0000,0000,0000,,including the start to end
+Dialogue: 0,0:13:37.77,0:13:39.17,*Default,NTP,0000,0000,0000,,not including the end
+Dialogue: 0,0:13:39.27,0:13:41.93,*Default,NTP,0000,0000,0000,,so the range link from three to six would be three
+Dialogue: 0,0:13:41.93,0:13:43.13,*Default,NTP,0000,0000,0000,,four and five
+Dialogue: 0,0:13:44.13,0:13:46.10,*Default,NTP,0000,0000,0000,,and will also write map link
+Dialogue: 0,0:13:46.20,0:13:48.27,*Default,NTP,0000,0000,0000,,which returns a new linked list
+Dialogue: 0,0:13:48.30,0:13:50.47,*Default,NTP,0000,0000,0000,,that contains ffx for every
+Dialogue: 0,0:13:50.47,0:13:53.13,*Default,NTP,0000,0000,0000,,x in the original linked list s
+Dialogue: 0,0:13:53.50,0:13:57.00,*Default,NTP,0000,0000,0000,,so if we square everything in the range three to six
+Dialogue: 0,0:13:57.17,0:13:58.17,*Default,NTP,0000,0000,0000,,then we get three squared
+Dialogue: 0,0:13:58.17,0:13:59.77,*Default,NTP,0000,0000,0000,,four squared and five squared
+Dialogue: 0,0:14:00.17,0:14:01.90,*Default,NTP,0000,0000,0000,,and will also write filter link
+Dialogue: 0,0:14:02.17,0:14:04.20,*Default,NTP,0000,0000,0000,,which returns a linked list that contains
+Dialogue: 0,0:14:04.20,0:14:05.53,*Default,NTP,0000,0000,0000,,only the elements
+Dialogue: 0,0:14:05.53,0:14:08.10,*Default,NTP,0000,0000,0000,,of link s for which
+Dialogue: 0,0:14:08.20,0:14:11.40,*Default,NTP,0000,0000,0000,,f called on that element returns a true value
+Dialogue: 0,0:14:12.30,0:14:15.17,*Default,NTP,0000,0000,0000,,so if we filter for only the odd elements of this range
+Dialogue: 0,0:14:15.17,0:14:16.50,*Default,NTP,0000,0000,0000,,that we get three and five
+Dialogue: 0,0:14:16.50,0:14:17.73,*Default,NTP,0000,0000,0000,,leaving out the four
+Dialogue: 0,0:14:18.57,0:14:19.10,*Default,NTP,0000,0000,0000,,actually
+Dialogue: 0,0:14:19.10,0:14:21.50,*Default,NTP,0000,0000,0000,,all of these are going to be recursive functions
+Dialogue: 0,0:14:22.10,0:14:23.73,*Default,NTP,0000,0000,0000,,so here's our link class
+Dialogue: 0,0:14:23.90,0:14:25.37,*Default,NTP,0000,0000,0000,,here's square and odd
+Dialogue: 0,0:14:25.80,0:14:27.53,*Default,NTP,0000,0000,0000,,and how do we build a range
+Dialogue: 0,0:14:28.57,0:14:30.27,*Default,NTP,0000,0000,0000,,well if it's the case
+Dialogue: 0,0:14:30.27,0:14:33.00,*Default,NTP,0000,0000,0000,,that starts as greater than you're equal to end
+Dialogue: 0,0:14:33.10,0:14:35.60,*Default,NTP,0000,0000,0000,,then there's nothing in the range
+Dialogue: 0,0:14:35.93,0:14:37.53,*Default,NTP,0000,0000,0000,,we return link
+Dialogue: 0,0:14:37.90,0:14:41.00,*Default,NTP,0000,0000,0000,,empty to represent an empty link list
+Dialogue: 0,0:14:41.37,0:14:44.57,*Default,NTP,0000,0000,0000,,otherwise there's at least one element in the range
+Dialogue: 0,0:14:44.60,0:14:46.80,*Default,NTP,0000,0000,0000,,and that is the start element
+Dialogue: 0,0:14:46.93,0:14:48.53,*Default,NTP,0000,0000,0000,,followed by some other stuff
+Dialogue: 0,0:14:48.93,0:14:53.10,*Default,NTP,0000,0000,0000,,return a link with start as the first element
+Dialogue: 0,0:14:53.27,0:14:55.60,*Default,NTP,0000,0000,0000,,and what's the rest of the range
+Dialogue: 0,0:14:55.73,0:14:59.87,*Default,NTP,0000,0000,0000,,while that is the range that starts at start plus one
+Dialogue: 0,0:14:59.90,0:15:01.33,*Default,NTP,0000,0000,0000,,and goes to the end
+Dialogue: 0,0:15:02.47,0:15:04.97,*Default,NTP,0000,0000,0000,,how do we take a function and map it over
+Dialogue: 0,0:15:04.97,0:15:06.67,*Default,NTP,0000,0000,0000,,all the elements in s
+Dialogue: 0,0:15:06.90,0:15:09.00,*Default,NTP,0000,0000,0000,,calling f on every single element
+Dialogue: 0,0:15:09.07,0:15:11.37,*Default,NTP,0000,0000,0000,,and building a linked list of the result
+Dialogue: 0,0:15:12.07,0:15:15.10,*Default,NTP,0000,0000,0000,,if it's the case that s is linked out empty
+Dialogue: 0,0:15:15.13,0:15:16.73,*Default,NTP,0000,0000,0000,,there's really no work to do
+Dialogue: 0,0:15:16.77,0:15:19.47,*Default,NTP,0000,0000,0000,,we could return s or return linked out empty
+Dialogue: 0,0:15:19.53,0:15:20.57,*Default,NTP,0000,0000,0000,,since those are just two
+Dialogue: 0,0:15:20.57,0:15:21.93,*Default,NTP,0000,0000,0000,,expressions for the same thing
+Dialogue: 0,0:15:21.93,0:15:23.70,*Default,NTP,0000,0000,0000,,it doesn't matter which one you write
+Dialogue: 0,0:15:24.53,0:15:26.90,*Default,NTP,0000,0000,0000,,otherwise you know there's at least one element
+Dialogue: 0,0:15:26.90,0:15:28.47,*Default,NTP,0000,0000,0000,,so let's call f on it
+Dialogue: 0,0:15:28.67,0:15:30.77,*Default,NTP,0000,0000,0000,,and we'll return a new linked list
+Dialogue: 0,0:15:30.87,0:15:33.87,*Default,NTP,0000,0000,0000,,with its first element being the result of calling f
+Dialogue: 0,0:15:33.97,0:15:35.73,*Default,NTP,0000,0000,0000,,on the first element of s
+Dialogue: 0,0:15:35.90,0:15:39.07,*Default,NTP,0000,0000,0000,,and then we need to call f on the rest of the elements
+Dialogue: 0,0:15:39.30,0:15:42.00,*Default,NTP,0000,0000,0000,,we do that with a recursive call to map link
+Dialogue: 0,0:15:42.13,0:15:44.07,*Default,NTP,0000,0000,0000,,where we're calling the same function f
+Dialogue: 0,0:15:44.27,0:15:46.33,*Default,NTP,0000,0000,0000,,on everything in s rest
+Dialogue: 0,0:15:47.13,0:15:48.93,*Default,NTP,0000,0000,0000,,and what about filtering
+Dialogue: 0,0:15:49.20,0:15:52.77,*Default,NTP,0000,0000,0000,,well if s is linked empty again
+Dialogue: 0,0:15:53.37,0:15:56.93,*Default,NTP,0000,0000,0000,,there's no elements to filter so will return s
+Dialogue: 0,0:15:57.17,0:16:00.70,*Default,NTP,0000,0000,0000,,otherwise I do think that we need to filter everything
+Dialogue: 0,0:16:00.70,0:16:02.10,*Default,NTP,0000,0000,0000,,in the rest of s
+Dialogue: 0,0:16:02.20,0:16:04.07,*Default,NTP,0000,0000,0000,,so let's get the filtered rest
+Dialogue: 0,0:16:04.53,0:16:07.13,*Default,NTP,0000,0000,0000,,which is the result of calling filter link
+Dialogue: 0,0:16:07.57,0:16:10.67,*Default,NTP,0000,0000,0000,,using that same f on the rest of s
+Dialogue: 0,0:16:11.40,0:16:13.20,*Default,NTP,0000,0000,0000,,but now we have to make a decision
+Dialogue: 0,0:16:13.60,0:16:18.40,*Default,NTP,0000,0000,0000,,is it the case that s dot first is in the result or not
+Dialogue: 0,0:16:18.60,0:16:20.53,*Default,NTP,0000,0000,0000,,well that depends on what you get
+Dialogue: 0,0:16:20.67,0:16:23.47,*Default,NTP,0000,0000,0000,,when you call f on s dot first
+Dialogue: 0,0:16:24.13,0:16:25.80,*Default,NTP,0000,0000,0000,,if that's a true value
+Dialogue: 0,0:16:25.80,0:16:28.87,*Default,NTP,0000,0000,0000,,then we need s dot first to be in the result
+Dialogue: 0,0:16:29.20,0:16:30.70,*Default,NTP,0000,0000,0000,,and what's everything else
+Dialogue: 0,0:16:30.80,0:16:31.10,*Default,NTP,0000,0000,0000,,while
+Dialogue: 0,0:16:31.10,0:16:34.00,*Default,NTP,0000,0000,0000,,that's the result of filtering the rest of the list
+Dialogue: 0,0:16:35.17,0:16:38.13,*Default,NTP,0000,0000,0000,,otherwise if this is a false value
+Dialogue: 0,0:16:38.20,0:16:41.73,*Default,NTP,0000,0000,0000,,then s dot first is not supposed to be in the result
+Dialogue: 0,0:16:41.73,0:16:44.53,*Default,NTP,0000,0000,0000,,so we can just return the filtered rest
+Dialogue: 0,0:16:45.40,0:16:48.30,*Default,NTP,0000,0000,0000,,let's check to see if our doctest saw work
+Dialogue: 0,0:16:48.60,0:16:51.30,*Default,NTP,0000,0000,0000,,oh they do so it should be the case
+Dialogue: 0,0:16:51.60,0:16:54.57,*Default,NTP,0000,0000,0000,,that if I start with a range
+Dialogue: 0,0:16:54.77,0:16:58.80,*Default,NTP,0000,0000,0000,,from one to six so that's one two three four and five
+Dialogue: 0,0:16:59.13,0:17:01.90,*Default,NTP,0000,0000,0000,,I filter it using odd
+Dialogue: 0,0:17:02.57,0:17:06.07,*Default,NTP,0000,0000,0000,,I map the square function over the result
+Dialogue: 0,0:17:06.17,0:17:09.73,*Default,NTP,0000,0000,0000,,then what I get is 1 9 16
+Dialogue: 0,0:17:09.93,0:17:10.90,*Default,NTP,0000,0000,0000,,and there it is
+Dialogue: 0,0:17:12.40,0:17:14.90,*Default,NTP,0000,0000,0000,,so since linked list several recursive structure
+Dialogue: 0,0:17:15.00,0:17:18.13,*Default,NTP,0000,0000,0000,,a natural way to process them is with recursion
+Dialogue: 0,0:17:18.13,0:17:20.50,*Default,NTP,0000,0000,0000,,like we've seen here in these examples
+Dialogue: 0,0:17:22.40,0:17:24.90,*Default,NTP,0000,0000,0000,,a linked list instance is an object
+Dialogue: 0,0:17:25.47,0:17:28.73,*Default,NTP,0000,0000,0000,,and all instances of a user defined class can be
+Dialogue: 0,0:17:28.77,0:17:30.57,*Default,NTP,0000,0000,0000,,changed or mutated
+Dialogue: 0,0:17:31.00,0:17:32.53,*Default,NTP,0000,0000,0000,,let's take a look at what happens
+Dialogue: 0,0:17:32.53,0:17:34.80,*Default,NTP,0000,0000,0000,,when you start changing the attributes
+Dialogue: 0,0:17:34.80,0:17:36.20,*Default,NTP,0000,0000,0000,,of a link instance
+Dialogue: 0,0:17:37.77,0:17:39.27,*Default,NTP,0000,0000,0000,,linkless can change
+Dialogue: 0,0:17:39.90,0:17:41.90,*Default,NTP,0000,0000,0000,,using attribute assignment statements
+Dialogue: 0,0:17:41.90,0:17:42.57,*Default,NTP,0000,0000,0000,,you can change
+Dialogue: 0,0:17:42.57,0:17:45.10,*Default,NTP,0000,0000,0000,,the first and rest attributes of a link instance
+Dialogue: 0,0:17:46.17,0:17:48.87,*Default,NTP,0000,0000,0000,,in fact an interesting consequence of this
+Dialogue: 0,0:17:48.93,0:17:51.50,*Default,NTP,0000,0000,0000,,is that the rest of a link list can contain the link
+Dialogue: 0,0:17:51.50,0:17:53.17,*Default,NTP,0000,0000,0000,,list as a sub list
+Dialogue: 0,0:17:54.07,0:17:55.77,*Default,NTP,0000,0000,0000,,so let's say I start with a link list
+Dialogue: 0,0:17:55.77,0:17:56.70,*Default,NTP,0000,0000,0000,,with three elements
+Dialogue: 0,0:17:56.70,0:17:57.87,*Default,NTP,0000,0000,0000,,one two and three
+Dialogue: 0,0:17:58.90,0:18:01.67,*Default,NTP,0000,0000,0000,,here's a sketch of what this might look like
+Dialogue: 0,0:18:02.37,0:18:05.00,*Default,NTP,0000,0000,0000,,the actual environment diagram is more complicated
+Dialogue: 0,0:18:05.27,0:18:07.97,*Default,NTP,0000,0000,0000,,but here's the essence of a link list
+Dialogue: 0,0:18:08.37,0:18:12.00,*Default,NTP,0000,0000,0000,,is that it's just two attributes the first and the rest
+Dialogue: 0,0:18:12.30,0:18:14.67,*Default,NTP,0000,0000,0000,,where the first is in this case in number
+Dialogue: 0,0:18:14.90,0:18:17.93,*Default,NTP,0000,0000,0000,,and the rest is another link instance
+Dialogue: 0,0:18:17.93,0:18:19.27,*Default,NTP,0000,0000,0000,,so here's the second one
+Dialogue: 0,0:18:20.77,0:18:23.20,*Default,NTP,0000,0000,0000,,if I assign estad first equals five
+Dialogue: 0,0:18:23.37,0:18:27.10,*Default,NTP,0000,0000,0000,,what I'm left with is 5 2 3
+Dialogue: 0,0:18:28.17,0:18:29.70,*Default,NTP,0000,0000,0000,,but it gets really interesting
+Dialogue: 0,0:18:29.70,0:18:31.73,*Default,NTP,0000,0000,0000,,when you come up with another name
+Dialogue: 0,0:18:31.87,0:18:33.17,*Default,NTP,0000,0000,0000,,for s tad rest
+Dialogue: 0,0:18:33.17,0:18:35.90,*Default,NTP,0000,0000,0000,,like t so that's the link list
+Dialogue: 0,0:18:36.07,0:18:41.47,*Default,NTP,0000,0000,0000,,two three and then we reassign the rest attribute
+Dialogue: 0,0:18:41.53,0:18:43.73,*Default,NTP,0000,0000,0000,,of a link instance
+Dialogue: 0,0:18:44.80,0:18:47.00,*Default,NTP,0000,0000,0000,,in this case we're assigning it to s
+Dialogue: 0,0:18:47.40,0:18:50.00,*Default,NTP,0000,0000,0000,,then s first first is five
+Dialogue: 0,0:18:50.30,0:18:54.17,*Default,NTP,0000,0000,0000,,and what's s rest rest rest rest rest first
+Dialogue: 0,0:18:54.50,0:18:55.20,*Default,NTP,0000,0000,0000,,we'll think about it
+Dialogue: 0,0:18:55.20,0:18:57.27,*Default,NTP,0000,0000,0000,,for a minute and see if you can figure it out
+Dialogue: 0,0:18:59.60,0:19:01.30,*Default,NTP,0000,0000,0000,,this is going to be the number two
+Dialogue: 0,0:19:01.77,0:19:03.57,*Default,NTP,0000,0000,0000,,one reasonable reaction is
+Dialogue: 0,0:19:03.70,0:19:05.93,*Default,NTP,0000,0000,0000,,how did we have so many dot rests
+Dialogue: 0,0:19:05.93,0:19:07.73,*Default,NTP,0000,0000,0000,,when we had a linked list that was only
+Dialogue: 0,0:19:07.73,0:19:09.07,*Default,NTP,0000,0000,0000,,three elements long
+Dialogue: 0,0:19:09.97,0:19:13.33,*Default,NTP,0000,0000,0000,,well back when we created it it had only three elements
+Dialogue: 0,0:19:13.47,0:19:15.37,*Default,NTP,0000,0000,0000,,but now it has a different structure
+Dialogue: 0,0:19:15.53,0:19:17.77,*Default,NTP,0000,0000,0000,,because we changed t dot rest
+Dialogue: 0,0:19:17.93,0:19:19.97,*Default,NTP,0000,0000,0000,,and t was part of s
+Dialogue: 0,0:19:20.40,0:19:22.77,*Default,NTP,0000,0000,0000,,what we've created is the following structure
+Dialogue: 0,0:19:23.50,0:19:25.47,*Default,NTP,0000,0000,0000,,we changed s dot first to five
+Dialogue: 0,0:19:25.67,0:19:27.80,*Default,NTP,0000,0000,0000,,we never changed s dot rest
+Dialogue: 0,0:19:28.20,0:19:30.30,*Default,NTP,0000,0000,0000,,we did give a name to it t
+Dialogue: 0,0:19:31.10,0:19:33.90,*Default,NTP,0000,0000,0000,,and we changed t dot rest
+Dialogue: 0,0:19:34.33,0:19:36.33,*Default,NTP,0000,0000,0000,,to refer to s
+Dialogue: 0,0:19:37.27,0:19:38.67,*Default,NTP,0000,0000,0000,,so when you evaluate
+Dialogue: 0,0:19:39.00,0:19:44.70,*Default,NTP,0000,0000,0000,,s dot rest dot rest dot rest dot rest dot rest first
+Dialogue: 0,0:19:44.90,0:19:46.17,*Default,NTP,0000,0000,0000,,you get the No.2
+Dialogue: 0,0:19:48.93,0:19:51.73,*Default,NTP,0000,0000,0000,,here's an example of linked list mutation
+Dialogue: 0,0:19:52.40,0:19:54.97,*Default,NTP,0000,0000,0000,,let's say we have an ordered list
+Dialogue: 0,0:19:55.20,0:19:57.53,*Default,NTP,0000,0000,0000,,with no repeated elements
+Dialogue: 0,0:19:57.90,0:19:59.57,*Default,NTP,0000,0000,0000,,and we want to maintain the fact
+Dialogue: 0,0:19:59.57,0:20:03.33,*Default,NTP,0000,0000,0000,,that s is an ordered list with no repeated elements
+Dialogue: 0,0:20:03.53,0:20:05.97,*Default,NTP,0000,0000,0000,,but write a function add
+Dialogue: 0,0:20:06.33,0:20:09.47,*Default,NTP,0000,0000,0000,,that places elements into the list
+Dialogue: 0,0:20:09.57,0:20:11.27,*Default,NTP,0000,0000,0000,,in the appropriate position
+Dialogue: 0,0:20:11.27,0:20:12.57,*Default,NTP,0000,0000,0000,,so that everything stays
+Dialogue: 0,0:20:12.57,0:20:14.53,*Default,NTP,0000,0000,0000,,ordered from least to greatest
+Dialogue: 0,0:20:15.00,0:20:16.30,*Default,NTP,0000,0000,0000,,so here's the function
+Dialogue: 0,0:20:16.97,0:20:20.13,*Default,NTP,0000,0000,0000,,add to a list s a value v
+Dialogue: 0,0:20:20.33,0:20:23.97,*Default,NTP,0000,0000,0000,,which modifies s to make sure that it contains v
+Dialogue: 0,0:20:24.17,0:20:27.20,*Default,NTP,0000,0000,0000,,and then returns that modified s
+Dialogue: 0,0:20:27.70,0:20:30.77,*Default,NTP,0000,0000,0000,,however if v is already in s
+Dialogue: 0,0:20:30.77,0:20:32.50,*Default,NTP,0000,0000,0000,,then we don't modify s
+Dialogue: 0,0:20:32.50,0:20:35.10,*Default,NTP,0000,0000,0000,,so that we don't have repeats in the list
+Dialogue: 0,0:20:35.70,0:20:38.77,*Default,NTP,0000,0000,0000,,but we still want to return s from the add function
+Dialogue: 0,0:20:39.20,0:20:41.10,*Default,NTP,0000,0000,0000,,now is a good time to pause the video
+Dialogue: 0,0:20:41.17,0:20:42.67,*Default,NTP,0000,0000,0000,,and try to write this function
+Dialogue: 0,0:20:42.87,0:20:47.10,*Default,NTP,0000,0000,0000,,I'm going to describe how it works in 321
+Dialogue: 0,0:20:47.20,0:20:49.50,*Default,NTP,0000,0000,0000,,when you add zero to s
+Dialogue: 0,0:20:49.77,0:20:51.27,*Default,NTP,0000,0000,0000,,we'll make sure that zero
+Dialogue: 0,0:20:51.27,0:20:53.37,*Default,NTP,0000,0000,0000,,is the element at the beginning
+Dialogue: 0,0:20:53.53,0:20:55.57,*Default,NTP,0000,0000,0000,,and that one comes after that
+Dialogue: 0,0:20:56.73,0:21:00.20,*Default,NTP,0000,0000,0000,,instead of rewriting all of the values in the list
+Dialogue: 0,0:21:00.40,0:21:01.70,*Default,NTP,0000,0000,0000,,we can do this
+Dialogue: 0,0:21:01.80,0:21:04.57,*Default,NTP,0000,0000,0000,,just by creating a new link instance
+Dialogue: 0,0:21:04.57,0:21:06.53,*Default,NTP,0000,0000,0000,,whose first element is one
+Dialogue: 0,0:21:06.97,0:21:11.20,*Default,NTP,0000,0000,0000,,changing s so that its first element is zero
+Dialogue: 0,0:21:11.47,0:21:13.00,*Default,NTP,0000,0000,0000,,and re routing
+Dialogue: 0,0:21:13.13,0:21:14.00,*Default,NTP,0000,0000,0000,,so that the
+Dialogue: 0,0:21:14.00,0:21:18.73,*Default,NTP,0000,0000,0000,,rest of s is the link instance whose rest is three
+Dialogue: 0,0:21:18.73,0:21:22.80,*Default,NTP,0000,0000,0000,,then five now we have a linked list
+Dialogue: 0,0:21:22.80,0:21:25.53,*Default,NTP,0000,0000,0000,,representing the sequence 0 1 3 5
+Dialogue: 0,0:21:25.53,0:21:27.53,*Default,NTP,0000,0000,0000,,instead of just 1 3 5
+Dialogue: 0,0:21:27.93,0:21:29.47,*Default,NTP,0000,0000,0000,,if we add three
+Dialogue: 0,0:21:29.90,0:21:30.67,*Default,NTP,0000,0000,0000,,we should
+Dialogue: 0,0:21:30.67,0:21:34.60,*Default,NTP,0000,0000,0000,,look through s until we find the place that three goes
+Dialogue: 0,0:21:34.60,0:21:37.50,*Default,NTP,0000,0000,0000,,and since we discover that three is already there
+Dialogue: 0,0:21:37.57,0:21:39.73,*Default,NTP,0000,0000,0000,,we're not going to modify s at all
+Dialogue: 0,0:21:40.00,0:21:41.27,*Default,NTP,0000,0000,0000,,we'll just return it
+Dialogue: 0,0:21:41.80,0:21:43.87,*Default,NTP,0000,0000,0000,,and what if we add four
+Dialogue: 0,0:21:44.50,0:21:46.57,*Default,NTP,0000,0000,0000,,well we look along here
+Dialogue: 0,0:21:46.70,0:21:49.10,*Default,NTP,0000,0000,0000,,until we figure out where four would go
+Dialogue: 0,0:21:49.10,0:21:50.60,*Default,NTP,0000,0000,0000,,between three and five
+Dialogue: 0,0:21:50.90,0:21:54.73,*Default,NTP,0000,0000,0000,,so that means we can change the five to a four
+Dialogue: 0,0:21:55.30,0:21:57.60,*Default,NTP,0000,0000,0000,,add a new link instance for the five
+Dialogue: 0,0:21:57.77,0:22:00.27,*Default,NTP,0000,0000,0000,,and now we have 0 1 3 4 5
+Dialogue: 0,0:22:00.53,0:22:02.07,*Default,NTP,0000,0000,0000,,and what if we add six
+Dialogue: 0,0:22:02.57,0:22:04.13,*Default,NTP,0000,0000,0000,,well that's actually a little bit different
+Dialogue: 0,0:22:04.13,0:22:05.17,*Default,NTP,0000,0000,0000,,we keep looking
+Dialogue: 0,0:22:05.33,0:22:07.33,*Default,NTP,0000,0000,0000,,until we find that we've reached the end
+Dialogue: 0,0:22:07.53,0:22:11.27,*Default,NTP,0000,0000,0000,,so instead of rest being linked empty
+Dialogue: 0,0:22:11.33,0:22:13.37,*Default,NTP,0000,0000,0000,,rest needs to be a new link instance
+Dialogue: 0,0:22:13.37,0:22:14.57,*Default,NTP,0000,0000,0000,,containing the six
+Dialogue: 0,0:22:15.20,0:22:17.60,*Default,NTP,0000,0000,0000,,that's how we add v into s
+Dialogue: 0,0:22:18.57,0:22:19.77,*Default,NTP,0000,0000,0000,,try to implement it
+Dialogue: 0,0:22:20.00,0:22:23.57,*Default,NTP,0000,0000,0000,,add v into s returning modified s
+Dialogue: 0,0:22:24.00,0:22:26.80,*Default,NTP,0000,0000,0000,,don't change s if v is already there
+Dialogue: 0,0:22:27.00,0:22:30.77,*Default,NTP,0000,0000,0000,,and make sure that s remains ordered
+Dialogue: 0,0:22:30.77,0:22:33.57,*Default,NTP,0000,0000,0000,,we assume that s is ordered at the beginning
+Dialogue: 0,0:22:33.70,0:22:35.27,*Default,NTP,0000,0000,0000,,and we have to place v
+Dialogue: 0,0:22:35.33,0:22:35.80,*Default,NTP,0000,0000,0000,,into s
+Dialogue: 0,0:22:35.80,0:22:38.57,*Default,NTP,0000,0000,0000,,so that the order remains from least to greatest
+Dialogue: 0,0:22:38.70,0:22:40.27,*Default,NTP,0000,0000,0000,,here are some examples
+Dialogue: 0,0:22:40.37,0:22:44.97,*Default,NTP,0000,0000,0000,,if s is 1 3 5 and we add zero then at 0 1 3 5
+Dialogue: 0,0:22:45.10,0:22:46.90,*Default,NTP,0000,0000,0000,,we add three and it doesn't change
+Dialogue: 0,0:22:46.90,0:22:47.67,*Default,NTP,0000,0000,0000,,we add four
+Dialogue: 0,0:22:47.67,0:22:49.73,*Default,NTP,0000,0000,0000,,and the four which shows up in the right place
+Dialogue: 0,0:22:49.73,0:22:52.17,*Default,NTP,0000,0000,0000,,and we add six it ends up at the end
+Dialogue: 0,0:22:52.53,0:22:55.50,*Default,NTP,0000,0000,0000,,and let's assume that s is not empty to begin with
+Dialogue: 0,0:22:55.60,0:22:56.53,*Default,NTP,0000,0000,0000,,how can we do it
+Dialogue: 0,0:22:56.60,0:22:58.77,*Default,NTP,0000,0000,0000,,well will assert s is not empty
+Dialogue: 0,0:22:59.37,0:23:02.20,*Default,NTP,0000,0000,0000,,and then if s dot versus is greater than v
+Dialogue: 0,0:23:02.47,0:23:07.47,*Default,NTP,0000,0000,0000,,we mutate s to by changing s dot first in s dot rest
+Dialogue: 0,0:23:08.10,0:23:12.50,*Default,NTP,0000,0000,0000,,if s dot versus less than v and s dot rest is empty
+Dialogue: 0,0:23:12.77,0:23:15.30,*Default,NTP,0000,0000,0000,,then we have to place a value at the end
+Dialogue: 0,0:23:15.73,0:23:18.40,*Default,NTP,0000,0000,0000,,if s dot rest is less than v we got to do something
+Dialogue: 0,0:23:18.53,0:23:20.40,*Default,NTP,0000,0000,0000,,and in the end we return s
+Dialogue: 0,0:23:20.87,0:23:23.00,*Default,NTP,0000,0000,0000,,why don't you pause and try to fill in the blanks
+Dialogue: 0,0:23:23.00,0:23:25.87,*Default,NTP,0000,0000,0000,,and we'll talk about it in 321
+Dialogue: 0,0:23:26.20,0:23:28.60,*Default,NTP,0000,0000,0000,,if s dot first is greater than v
+Dialogue: 0,0:23:28.90,0:23:32.20,*Default,NTP,0000,0000,0000,,then we place v as s dot first
+Dialogue: 0,0:23:32.33,0:23:37.87,*Default,NTP,0000,0000,0000,,and change s dot rest to contain the old s dot first
+Dialogue: 0,0:23:37.90,0:23:40.13,*Default,NTP,0000,0000,0000,,and the old s dot rest
+Dialogue: 0,0:23:40.27,0:23:42.27,*Default,NTP,0000,0000,0000,,that's building this link instance
+Dialogue: 0,0:23:42.40,0:23:44.93,*Default,NTP,0000,0000,0000,,or building this link instance
+Dialogue: 0,0:23:45.30,0:23:48.93,*Default,NTP,0000,0000,0000,,if esta first is less than v and the rest is empty
+Dialogue: 0,0:23:49.17,0:23:52.73,*Default,NTP,0000,0000,0000,,then we need to build this link instance by setting s
+Dialogue: 0,0:23:53.10,0:23:54.97,*Default,NTP,0000,0000,0000,,rest to a link
+Dialogue: 0,0:23:55.10,0:23:58.57,*Default,NTP,0000,0000,0000,,where v is the first element and the rest is empty
+Dialogue: 0,0:23:58.67,0:24:01.33,*Default,NTP,0000,0000,0000,,which is the default 2nd argument for link
+Dialogue: 0,0:24:01.87,0:24:02.67,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:24:02.87,0:24:05.37,*Default,NTP,0000,0000,0000,,we keep looking for the place where we're going to put
+Dialogue: 0,0:24:05.37,0:24:08.60,*Default,NTP,0000,0000,0000,,v which is just a recursive call to add
+Dialogue: 0,0:24:08.93,0:24:10.70,*Default,NTP,0000,0000,0000,,we don't need to return
+Dialogue: 0,0:24:11.00,0:24:13.30,*Default,NTP,0000,0000,0000,,because we're going to return down here
+Dialogue: 0,0:24:13.30,0:24:15.30,*Default,NTP,0000,0000,0000,,we're always going to return s
+Dialogue: 0,0:24:15.40,0:24:16.60,*Default,NTP,0000,0000,0000,,the point of this call
+Dialogue: 0,0:24:16.60,0:24:18.87,*Default,NTP,0000,0000,0000,,is not to compute a value to return
+Dialogue: 0,0:24:18.93,0:24:23.30,*Default,NTP,0000,0000,0000,,but instead to perform the addition on the rest of s
+Dialogue: 0,0:24:25.27,0:24:28.77,*Default,NTP,0000,0000,0000,,another recursive computational data structure
+Dialogue: 0,0:24:29.07,0:24:30.33,*Default,NTP,0000,0000,0000,,is the tree
+Dialogue: 0,0:24:30.77,0:24:34.40,*Default,NTP,0000,0000,0000,,and we've already talked about trees in this class
+Dialogue: 0,0:24:34.60,0:24:35.47,*Default,NTP,0000,0000,0000,,but they're so
+Dialogue: 0,0:24:35.53,0:24:38.20,*Default,NTP,0000,0000,0000,,important that we should talk about them again
+Dialogue: 0,0:24:38.70,0:24:41.77,*Default,NTP,0000,0000,0000,,a tree is a lot like a linked list
+Dialogue: 0,0:24:42.20,0:24:44.57,*Default,NTP,0000,0000,0000,,a tree has a root label
+Dialogue: 0,0:24:44.57,0:24:47.50,*Default,NTP,0000,0000,0000,,and a list of branches that are trees
+Dialogue: 0,0:24:47.73,0:24:50.67,*Default,NTP,0000,0000,0000,,a linked list is a first element
+Dialogue: 0,0:24:50.67,0:24:52.60,*Default,NTP,0000,0000,0000,,and the rest of the list
+Dialogue: 0,0:24:53.10,0:24:54.47,*Default,NTP,0000,0000,0000,,so the main difference
+Dialogue: 0,0:24:54.57,0:24:58.13,*Default,NTP,0000,0000,0000,,is that a tree has multiple trees as branches
+Dialogue: 0,0:24:58.20,0:25:01.53,*Default,NTP,0000,0000,0000,,whereas a linked list has only one linked list
+Dialogue: 0,0:25:01.53,0:25:03.70,*Default,NTP,0000,0000,0000,,as the rest of the list
+Dialogue: 0,0:25:04.30,0:25:07.07,*Default,NTP,0000,0000,0000,,here's vocabulary that we've talked about before
+Dialogue: 0,0:25:07.30,0:25:08.57,*Default,NTP,0000,0000,0000,,but we'll do it again
+Dialogue: 0,0:25:09.33,0:25:12.30,*Default,NTP,0000,0000,0000,,there are two ways of describing trees
+Dialogue: 0,0:25:12.37,0:25:14.13,*Default,NTP,0000,0000,0000,,their recursive description
+Dialogue: 0,0:25:14.47,0:25:16.53,*Default,NTP,0000,0000,0000,,uses an analogy to wooden
+Dialogue: 0,0:25:16.53,0:25:18.37,*Default,NTP,0000,0000,0000,,trees growing out of the ground
+Dialogue: 0,0:25:18.77,0:25:21.27,*Default,NTP,0000,0000,0000,,except for that they grow down instead of up
+Dialogue: 0,0:25:21.60,0:25:24.80,*Default,NTP,0000,0000,0000,,a tree has a root label and a list of branches
+Dialogue: 0,0:25:24.80,0:25:26.47,*Default,NTP,0000,0000,0000,,here the root label is three
+Dialogue: 0,0:25:26.47,0:25:28.97,*Default,NTP,0000,0000,0000,,there's a branch and there's one other branch
+Dialogue: 0,0:25:29.27,0:25:31.17,*Default,NTP,0000,0000,0000,,each branch is a tree
+Dialogue: 0,0:25:31.80,0:25:34.77,*Default,NTP,0000,0000,0000,,a tree with zero branches is called a leaf
+Dialogue: 0,0:25:35.07,0:25:38.00,*Default,NTP,0000,0000,0000,,in this diagram there are five leaves
+Dialogue: 0,0:25:38.13,0:25:40.17,*Default,NTP,0000,0000,0000,,the leaves have labels as well
+Dialogue: 0,0:25:40.33,0:25:42.10,*Default,NTP,0000,0000,0000,,they just have no branches
+Dialogue: 0,0:25:42.73,0:25:44.67,*Default,NTP,0000,0000,0000,,a tree starts at the root
+Dialogue: 0,0:25:44.80,0:25:46.93,*Default,NTP,0000,0000,0000,,there's the root of the whole tree
+Dialogue: 0,0:25:47.33,0:25:49.70,*Default,NTP,0000,0000,0000,,there's the root of the left branch
+Dialogue: 0,0:25:50.10,0:25:53.50,*Default,NTP,0000,0000,0000,,there can be multiple branches or one or zero
+Dialogue: 0,0:25:53.77,0:25:56.40,*Default,NTP,0000,0000,0000,,and every single branch is another tree
+Dialogue: 0,0:25:56.53,0:25:59.70,*Default,NTP,0000,0000,0000,,meaning every single branch has another route
+Dialogue: 0,0:26:00.10,0:26:03.47,*Default,NTP,0000,0000,0000,,describing all of the different trees within a tree
+Dialogue: 0,0:26:03.47,0:26:06.90,*Default,NTP,0000,0000,0000,,often involves the term node
+Dialogue: 0,0:26:07.07,0:26:11.77,*Default,NTP,0000,0000,0000,,a node is a position or location within a tree
+Dialogue: 0,0:26:12.33,0:26:14.70,*Default,NTP,0000,0000,0000,,it's always another tree itself
+Dialogue: 0,0:26:14.73,0:26:16.77,*Default,NTP,0000,0000,0000,,but when using the term node
+Dialogue: 0,0:26:16.87,0:26:20.10,*Default,NTP,0000,0000,0000,,it's not so interesting to think about the sub trees
+Dialogue: 0,0:26:20.10,0:26:21.50,*Default,NTP,0000,0000,0000,,but instead just
+Dialogue: 0,0:26:21.57,0:26:25.00,*Default,NTP,0000,0000,0000,,their relative locations to other nodes
+Dialogue: 0,0:26:25.73,0:26:27.50,*Default,NTP,0000,0000,0000,,each node has a label
+Dialogue: 0,0:26:27.90,0:26:28.70,*Default,NTP,0000,0000,0000,,and each
+Dialogue: 0,0:26:28.70,0:26:33.47,*Default,NTP,0000,0000,0000,,node also has a configuration relative to other nodes
+Dialogue: 0,0:26:33.80,0:26:35.80,*Default,NTP,0000,0000,0000,,three is the parent of two
+Dialogue: 0,0:26:36.00,0:26:38.07,*Default,NTP,0000,0000,0000,,two is the child of three
+Dialogue: 0,0:26:38.93,0:26:40.93,*Default,NTP,0000,0000,0000,,the top node is the root node
+Dialogue: 0,0:26:41.30,0:26:43.33,*Default,NTP,0000,0000,0000,,and like I did just there
+Dialogue: 0,0:26:43.33,0:26:46.90,*Default,NTP,0000,0000,0000,,people often use labels to refer to locations
+Dialogue: 0,0:26:47.33,0:26:48.57,*Default,NTP,0000,0000,0000,,instead of saying
+Dialogue: 0,0:26:48.93,0:26:50.67,*Default,NTP,0000,0000,0000,,the node with label
+Dialogue: 0,0:26:50.67,0:26:54.37,*Default,NTP,0000,0000,0000,,two is the child of node with label three
+Dialogue: 0,0:26:54.53,0:26:57.97,*Default,NTP,0000,0000,0000,,it's often the case that people will just casually say
+Dialogue: 0,0:26:58.30,0:27:00.10,*Default,NTP,0000,0000,0000,,two is the child of three
+Dialogue: 0,0:27:00.50,0:27:02.47,*Default,NTP,0000,0000,0000,,but in fact it's the nodes that have
+Dialogue: 0,0:27:02.47,0:27:04.10,*Default,NTP,0000,0000,0000,,this family relationship
+Dialogue: 0,0:27:04.30,0:27:06.57,*Default,NTP,0000,0000,0000,,and their labels are just numbers
+Dialogue: 0,0:27:07.13,0:27:10.50,*Default,NTP,0000,0000,0000,,a path is a sequence of nodes
+Dialogue: 0,0:27:10.50,0:27:12.53,*Default,NTP,0000,0000,0000,,where each element is either the parent
+Dialogue: 0,0:27:12.53,0:27:14.73,*Default,NTP,0000,0000,0000,,or the child of the previous note
+Dialogue: 0,0:27:14.80,0:27:17.40,*Default,NTP,0000,0000,0000,,so they are connected in the tree diagram
+Dialogue: 0,0:27:17.97,0:27:19.80,*Default,NTP,0000,0000,0000,,and the most common paths are
+Dialogue: 0,0:27:19.80,0:27:21.87,*Default,NTP,0000,0000,0000,,paths from the route to a leaf
+Dialogue: 0,0:27:22.30,0:27:25.27,*Default,NTP,0000,0000,0000,,but you could have other kinds of paths as well
+Dialogue: 0,0:27:25.90,0:27:28.93,*Default,NTP,0000,0000,0000,,we were able to work with trees using data abstraction
+Dialogue: 0,0:27:29.17,0:27:32.33,*Default,NTP,0000,0000,0000,,but we can also use pythons object system
+Dialogue: 0,0:27:33.37,0:27:36.27,*Default,NTP,0000,0000,0000,,a tree has a label and a list of branches
+Dialogue: 0,0:27:36.30,0:27:38.70,*Default,NTP,0000,0000,0000,,each branch is also a tree
+Dialogue: 0,0:27:39.50,0:27:43.50,*Default,NTP,0000,0000,0000,,we can state this by defining a tree class
+Dialogue: 0,0:27:43.53,0:27:46.13,*Default,NTP,0000,0000,0000,,with a constructor that takes a label
+Dialogue: 0,0:27:46.37,0:27:50.60,*Default,NTP,0000,0000,0000,,and a list of branches which by default is empty
+Dialogue: 0,0:27:51.37,0:27:52.57,*Default,NTP,0000,0000,0000,,we set the label
+Dialogue: 0,0:27:53.07,0:27:56.80,*Default,NTP,0000,0000,0000,,we check that for every branch the branches a tree
+Dialogue: 0,0:27:56.90,0:27:59.50,*Default,NTP,0000,0000,0000,,and then we assign selftop branches
+Dialogue: 0,0:27:59.90,0:28:02.67,*Default,NTP,0000,0000,0000,,here we make a list of the branches
+Dialogue: 0,0:28:02.73,0:28:04.87,*Default,NTP,0000,0000,0000,,in order to retain a copy
+Dialogue: 0,0:28:05.07,0:28:07.80,*Default,NTP,0000,0000,0000,,and also to convert branches to a list
+Dialogue: 0,0:28:07.80,0:28:09.60,*Default,NTP,0000,0000,0000,,if it was something else
+Dialogue: 0,0:28:09.67,0:28:13.47,*Default,NTP,0000,0000,0000,,here was the definition using data abstraction
+Dialogue: 0,0:28:14.47,0:28:18.40,*Default,NTP,0000,0000,0000,,very similar but there are some important differences
+Dialogue: 0,0:28:18.80,0:28:21.20,*Default,NTP,0000,0000,0000,,now that we're using the object system
+Dialogue: 0,0:28:21.50,0:28:24.17,*Default,NTP,0000,0000,0000,,we define how to build a tree
+Dialogue: 0,0:28:24.57,0:28:27.47,*Default,NTP,0000,0000,0000,,but we don't have to explicitly define
+Dialogue: 0,0:28:27.60,0:28:30.30,*Default,NTP,0000,0000,0000,,how to get the different attributes out
+Dialogue: 0,0:28:30.47,0:28:32.20,*Default,NTP,0000,0000,0000,,of a constructed tree
+Dialogue: 0,0:28:32.87,0:28:34.27,*Default,NTP,0000,0000,0000,,in data abstraction
+Dialogue: 0,0:28:34.27,0:28:37.67,*Default,NTP,0000,0000,0000,,we wrote down the constructor and the selectors
+Dialogue: 0,0:28:37.87,0:28:39.73,*Default,NTP,0000,0000,0000,,here we write down the constructor
+Dialogue: 0,0:28:39.73,0:28:42.17,*Default,NTP,0000,0000,0000,,and the selectors are implicit
+Dialogue: 0,0:28:42.20,0:28:44.27,*Default,NTP,0000,0000,0000,,self dot label will give the label
+Dialogue: 0,0:28:44.27,0:28:46.53,*Default,NTP,0000,0000,0000,,and dot branches will give the branches
+Dialogue: 0,0:28:46.70,0:28:48.13,*Default,NTP,0000,0000,0000,,more importantly
+Dialogue: 0,0:28:48.50,0:28:50.17,*Default,NTP,0000,0000,0000,,when using data abstraction
+Dialogue: 0,0:28:50.17,0:28:52.13,*Default,NTP,0000,0000,0000,,we had to invent a way
+Dialogue: 0,0:28:52.13,0:28:54.77,*Default,NTP,0000,0000,0000,,of combining together the pieces
+Dialogue: 0,0:28:54.77,0:28:56.53,*Default,NTP,0000,0000,0000,,the label and the branches
+Dialogue: 0,0:28:56.77,0:28:57.60,*Default,NTP,0000,0000,0000,,in this case
+Dialogue: 0,0:28:57.60,0:29:00.47,*Default,NTP,0000,0000,0000,,we decided to put them all in one long list
+Dialogue: 0,0:29:00.57,0:29:02.50,*Default,NTP,0000,0000,0000,,but we could have done something else
+Dialogue: 0,0:29:02.67,0:29:05.60,*Default,NTP,0000,0000,0000,,put them in a pair put them in a dictionary
+Dialogue: 0,0:29:05.93,0:29:07.17,*Default,NTP,0000,0000,0000,,whatever we did
+Dialogue: 0,0:29:07.27,0:29:09.30,*Default,NTP,0000,0000,0000,,we had to come up with a method
+Dialogue: 0,0:29:09.40,0:29:11.80,*Default,NTP,0000,0000,0000,,for extracting those pieces back out
+Dialogue: 0,0:29:12.07,0:29:14.13,*Default,NTP,0000,0000,0000,,using the selector functions
+Dialogue: 0,0:29:14.13,0:29:16.27,*Default,NTP,0000,0000,0000,,when we use python's object system
+Dialogue: 0,0:29:16.33,0:29:18.70,*Default,NTP,0000,0000,0000,,we don't have to make any decisions
+Dialogue: 0,0:29:18.70,0:29:20.80,*Default,NTP,0000,0000,0000,,about how the pieces are combined
+Dialogue: 0,0:29:20.87,0:29:23.97,*Default,NTP,0000,0000,0000,,into a hole we always choose the same way
+Dialogue: 0,0:29:24.20,0:29:26.47,*Default,NTP,0000,0000,0000,,each part is an attribute
+Dialogue: 0,0:29:26.47,0:29:30.00,*Default,NTP,0000,0000,0000,,and an object has all of its attributes accessed
+Dialogue: 0,0:29:30.13,0:29:31.00,*Default,NTP,0000,0000,0000,,by their name
+Dialogue: 0,0:29:31.67,0:29:33.87,*Default,NTP,0000,0000,0000,,so the definition is a little bit simpler
+Dialogue: 0,0:29:33.87,0:29:35.37,*Default,NTP,0000,0000,0000,,using the object system
+Dialogue: 0,0:29:35.47,0:29:37.77,*Default,NTP,0000,0000,0000,,but using tree instances
+Dialogue: 0,0:29:37.77,0:29:41.07,*Default,NTP,0000,0000,0000,,is just like using the tree data abstraction
+Dialogue: 0,0:29:41.40,0:29:42.60,*Default,NTP,0000,0000,0000,,here's a definition
+Dialogue: 0,0:29:42.60,0:29:45.40,*Default,NTP,0000,0000,0000,,of a function that creates a fibonacci tree
+Dialogue: 0,0:29:45.73,0:29:48.73,*Default,NTP,0000,0000,0000,,and it's the same with flight differences
+Dialogue: 0,0:29:49.13,0:29:50.50,*Default,NTP,0000,0000,0000,,when I used the object system
+Dialogue: 0,0:29:50.50,0:29:52.47,*Default,NTP,0000,0000,0000,,I capitalized the word tree
+Dialogue: 0,0:29:52.60,0:29:55.97,*Default,NTP,0000,0000,0000,,and I access the label using dot notation
+Dialogue: 0,0:29:56.17,0:29:57.70,*Default,NTP,0000,0000,0000,,under data abstraction
+Dialogue: 0,0:29:57.73,0:29:59.50,*Default,NTP,0000,0000,0000,,I had a function called tree
+Dialogue: 0,0:29:59.53,0:30:03.00,*Default,NTP,0000,0000,0000,,and I accessed the label using a selector function
+Dialogue: 0,0:30:03.10,0:30:05.17,*Default,NTP,0000,0000,0000,,but our code doesn't change at all
+Dialogue: 0,0:30:05.33,0:30:09.47,*Default,NTP,0000,0000,0000,,so the coding style used an object oriented programming
+Dialogue: 0,0:30:09.73,0:30:10.37,*Default,NTP,0000,0000,0000,,is not
+Dialogue: 0,0:30:10.37,0:30:13.37,*Default,NTP,0000,0000,0000,,terribly different from the coding style used with
+Dialogue: 0,0:30:13.37,0:30:14.60,*Default,NTP,0000,0000,0000,,data abstraction
+Dialogue: 0,0:30:15.77,0:30:17.40,*Default,NTP,0000,0000,0000,,once I've defined the tree class
+Dialogue: 0,0:30:17.40,0:30:19.33,*Default,NTP,0000,0000,0000,,I can go ahead and use it
+Dialogue: 0,0:30:19.90,0:30:23.73,*Default,NTP,0000,0000,0000,,so a leaf I can create just by calling tree
+Dialogue: 0,0:30:24.00,0:30:26.73,*Default,NTP,0000,0000,0000,,if I want to add branches to that tree
+Dialogue: 0,0:30:26.73,0:30:30.93,*Default,NTP,0000,0000,0000,,I cannot do it just by passing in label values
+Dialogue: 0,0:30:30.97,0:30:34.33,*Default,NTP,0000,0000,0000,,I have to pass in a list of trees
+Dialogue: 0,0:30:36.10,0:30:38.57,*Default,NTP,0000,0000,0000,,this creates a tree which I'll call t
+Dialogue: 0,0:30:39.30,0:30:41.57,*Default,NTP,0000,0000,0000,,its repper string is an expression
+Dialogue: 0,0:30:41.57,0:30:43.50,*Default,NTP,0000,0000,0000,,that builds an equivalent tree
+Dialogue: 0,0:30:44.07,0:30:45.37,*Default,NTP,0000,0000,0000,,printing it out
+Dialogue: 0,0:30:45.70,0:30:47.80,*Default,NTP,0000,0000,0000,,gives a multi line output
+Dialogue: 0,0:30:47.93,0:30:49.90,*Default,NTP,0000,0000,0000,,where the route label comes first
+Dialogue: 0,0:30:50.10,0:30:52.47,*Default,NTP,0000,0000,0000,,and all of the other labels are indented
+Dialogue: 0,0:30:52.70,0:30:54.10,*Default,NTP,0000,0000,0000,,it's not a bad idea
+Dialogue: 0,0:30:54.17,0:30:55.77,*Default,NTP,0000,0000,0000,,to take a look at the code that
+Dialogue: 0,0:30:55.77,0:30:57.40,*Default,NTP,0000,0000,0000,,generates the repper string
+Dialogue: 0,0:30:57.40,0:30:58.80,*Default,NTP,0000,0000,0000,,and the stir string
+Dialogue: 0,0:30:58.90,0:31:00.67,*Default,NTP,0000,0000,0000,,to understand how it works
+Dialogue: 0,0:31:01.00,0:31:04.13,*Default,NTP,0000,0000,0000,,and we've added one more method is leaf
+Dialogue: 0,0:31:04.27,0:31:07.37,*Default,NTP,0000,0000,0000,,which returns whether there are no branches
+Dialogue: 0,0:31:07.67,0:31:10.27,*Default,NTP,0000,0000,0000,,and we've also defined the fib tree function
+Dialogue: 0,0:31:10.67,0:31:12.80,*Default,NTP,0000,0000,0000,,just like it was on the slides
+Dialogue: 0,0:31:13.20,0:31:16.17,*Default,NTP,0000,0000,0000,,fibtree four is a fairly large tree
+Dialogue: 0,0:31:16.27,0:31:20.17,*Default,NTP,0000,0000,0000,,fibtree five has fibonacci No.5 at the route
+Dialogue: 0,0:31:20.17,0:31:23.77,*Default,NTP,0000,0000,0000,,and fibtree six is looking quite large indeed
+Dialogue: 0,0:31:24.27,0:31:27.87,*Default,NTP,0000,0000,0000,,look at all those parentheseas and square brackets
+Dialogue: 0,0:31:28.00,0:31:29.50,*Default,NTP,0000,0000,0000,,but if I print this out
+Dialogue: 0,0:31:29.50,0:31:31.50,*Default,NTP,0000,0000,0000,,then it's easier to see the structure
+Dialogue: 0,0:31:31.93,0:31:33.00,*Default,NTP,0000,0000,0000,,eight at the route
+Dialogue: 0,0:31:33.33,0:31:35.07,*Default,NTP,0000,0000,0000,,two different branches
+Dialogue: 0,0:31:35.10,0:31:37.07,*Default,NTP,0000,0000,0000,,one has the route label three
+Dialogue: 0,0:31:37.07,0:31:38.97,*Default,NTP,0000,0000,0000,,the other has the route label five
+Dialogue: 0,0:31:39.07,0:31:40.90,*Default,NTP,0000,0000,0000,,and three plus five is eight
+Dialogue: 0,0:31:41.13,0:31:42.97,*Default,NTP,0000,0000,0000,,so what are the leaves of this tree
+Dialogue: 0,0:31:42.97,0:31:48.57,*Default,NTP,0000,0000,0000,,we have 0 1 1 0 1 1 0 1 etc
+Dialogue: 0,0:31:48.80,0:31:50.20,*Default,NTP,0000,0000,0000,,let's write down a function
+Dialogue: 0,0:31:50.20,0:31:53.17,*Default,NTP,0000,0000,0000,,that computes the leaves of a tree as a list
+Dialogue: 0,0:31:53.30,0:31:58.30,*Default,NTP,0000,0000,0000,,if t is a leaf then will return a list with one element
+Dialogue: 0,0:31:58.73,0:32:00.50,*Default,NTP,0000,0000,0000,,the label of the tree
+Dialogue: 0,0:32:01.07,0:32:05.07,*Default,NTP,0000,0000,0000,,otherwise we need to build up a list of all the leaves
+Dialogue: 0,0:32:05.20,0:32:07.07,*Default,NTP,0000,0000,0000,,let's start with an empty list
+Dialogue: 0,0:32:07.13,0:32:09.40,*Default,NTP,0000,0000,0000,,and for every bnt
+Dialogue: 0,0:32:09.80,0:32:13.60,*Default,NTP,0000,0000,0000,,branches we'll make a recursive call to leaves on b
+Dialogue: 0,0:32:13.87,0:32:15.27,*Default,NTP,0000,0000,0000,,and what do we do with that
+Dialogue: 0,0:32:15.27,0:32:19.60,*Default,NTP,0000,0000,0000,,well we're gonna add all of its elements to all leaves
+Dialogue: 0,0:32:19.77,0:32:23.10,*Default,NTP,0000,0000,0000,,which is one of the built in methods on a list
+Dialogue: 0,0:32:23.53,0:32:24.47,*Default,NTP,0000,0000,0000,,which one
+Dialogue: 0,0:32:24.97,0:32:28.73,*Default,NTP,0000,0000,0000,,while we want to extend the list of all leaves
+Dialogue: 0,0:32:28.73,0:32:31.07,*Default,NTP,0000,0000,0000,,with the new list of leaves that we get
+Dialogue: 0,0:32:31.07,0:32:33.33,*Default,NTP,0000,0000,0000,,by recursively calling leaves
+Dialogue: 0,0:32:33.33,0:32:34.90,*Default,NTP,0000,0000,0000,,on the branch v
+Dialogue: 0,0:32:35.17,0:32:37.67,*Default,NTP,0000,0000,0000,,then we can return all of these leaves
+Dialogue: 0,0:32:38.80,0:32:42.30,*Default,NTP,0000,0000,0000,,and if we call leaves on fib tree six
+Dialogue: 0,0:32:42.57,0:32:47.30,*Default,NTP,0000,0000,0000,,we get a list of leaves that's some to eight
+Dialogue: 0,0:32:47.70,0:32:49.93,*Default,NTP,0000,0000,0000,,which is fibonacci No.6
+Dialogue: 0,0:32:50.00,0:32:51.93,*Default,NTP,0000,0000,0000,,and what's the height of this tree
+Dialogue: 0,0:32:52.30,0:32:54.80,*Default,NTP,0000,0000,0000,,well the height of a leaf is zero
+Dialogue: 0,0:32:54.80,0:32:57.30,*Default,NTP,0000,0000,0000,,and the height of a tree in general
+Dialogue: 0,0:32:57.87,0:33:01.10,*Default,NTP,0000,0000,0000,,is the number of transitions in its longest path
+Dialogue: 0,0:33:01.47,0:33:02.80,*Default,NTP,0000,0000,0000,,we go from here
+Dialogue: 0,0:33:02.97,0:33:04.50,*Default,NTP,0000,0000,0000,,to one transition
+Dialogue: 0,0:33:04.50,0:33:06.87,*Default,NTP,0000,0000,0000,,two transitions three transitions
+Dialogue: 0,0:33:06.87,0:33:08.77,*Default,NTP,0000,0000,0000,,four transitions five
+Dialogue: 0,0:33:09.27,0:33:12.33,*Default,NTP,0000,0000,0000,,I think the height of fibtree six is five
+Dialogue: 0,0:33:12.80,0:33:14.47,*Default,NTP,0000,0000,0000,,how could we compute that
+Dialogue: 0,0:33:15.00,0:33:17.37,*Default,NTP,0000,0000,0000,,if t is a leaf
+Dialogue: 0,0:33:17.70,0:33:19.20,*Default,NTP,0000,0000,0000,,then the height is zero
+Dialogue: 0,0:33:19.60,0:33:22.80,*Default,NTP,0000,0000,0000,,otherwise the height is one more
+Dialogue: 0,0:33:23.00,0:33:26.27,*Default,NTP,0000,0000,0000,,than the maximum height of any branch
+Dialogue: 0,0:33:26.27,0:33:28.17,*Default,NTP,0000,0000,0000,,so let's compute height b
+Dialogue: 0,0:33:28.40,0:33:33.00,*Default,NTP,0000,0000,0000,,for b in tw branches and take the maximum value
+Dialogue: 0,0:33:33.47,0:33:35.07,*Default,NTP,0000,0000,0000,,there's fib tree six
+Dialogue: 0,0:33:35.20,0:33:37.33,*Default,NTP,0000,0000,0000,,and what's its height five
+Dialogue: 0,0:33:37.33,0:33:40.17,*Default,NTP,0000,0000,0000,,so everything we've learned about processing trees
+Dialogue: 0,0:33:40.17,0:33:41.17,*Default,NTP,0000,0000,0000,,is the same
+Dialogue: 0,0:33:41.20,0:33:45.50,*Default,NTP,0000,0000,0000,,whether I use data abstraction or I use the tree class
+Dialogue: 0,0:33:45.50,0:33:48.57,*Default,NTP,0000,0000,0000,,but we get some nice advantages using the tree class
+Dialogue: 0,0:33:48.80,0:33:51.40,*Default,NTP,0000,0000,0000,,like a nice way of displaying trees
+Dialogue: 0,0:33:51.47,0:33:53.70,*Default,NTP,0000,0000,0000,,using this simple recursive
+Dialogue: 0,0:33:53.90,0:33:55.47,*Default,NTP,0000,0000,0000,,stir function
+Dialogue: 0,0:33:57.37,0:33:59.67,*Default,NTP,0000,0000,0000,,here's a tree processing example
+Dialogue: 0,0:33:59.93,0:34:02.90,*Default,NTP,0000,0000,0000,,where we actually change the tree instance
+Dialogue: 0,0:34:04.80,0:34:07.93,*Default,NTP,0000,0000,0000,,removing some of the subtrees of a tree is called
+Dialogue: 0,0:34:07.93,0:34:08.77,*Default,NTP,0000,0000,0000,,pruning
+Dialogue: 0,0:34:09.70,0:34:11.97,*Default,NTP,0000,0000,0000,,either you remove some of the branches
+Dialogue: 0,0:34:11.97,0:34:15.47,*Default,NTP,0000,0000,0000,,or remove some branches of the branches etc
+Dialogue: 0,0:34:15.77,0:34:18.20,*Default,NTP,0000,0000,0000,,when possible it makes sense to
+Dialogue: 0,0:34:18.37,0:34:20.87,*Default,NTP,0000,0000,0000,,first prune the branches of the current tree
+Dialogue: 0,0:34:21.53,0:34:25.50,*Default,NTP,0000,0000,0000,,then recursively prune whichever branches are left over
+Dialogue: 0,0:34:25.93,0:34:29.00,*Default,NTP,0000,0000,0000,,you can prune a branch before you remove that branch
+Dialogue: 0,0:34:29.27,0:34:31.30,*Default,NTP,0000,0000,0000,,but since you're removing the whole branch
+Dialogue: 0,0:34:31.50,0:34:34.60,*Default,NTP,0000,0000,0000,,why not remove it first and only prune what's left
+Dialogue: 0,0:34:35.30,0:34:36.80,*Default,NTP,0000,0000,0000,,so here's an example tree
+Dialogue: 0,0:34:37.07,0:34:38.80,*Default,NTP,0000,0000,0000,,and let's say we want to prune
+Dialogue: 0,0:34:38.80,0:34:42.73,*Default,NTP,0000,0000,0000,,all of the sub trees whose root label is one
+Dialogue: 0,0:34:42.97,0:34:46.13,*Default,NTP,0000,0000,0000,,this zero goes because it's part of this subtree
+Dialogue: 0,0:34:46.97,0:34:48.00,*Default,NTP,0000,0000,0000,,here's a template
+Dialogue: 0,0:34:48.60,0:34:51.00,*Default,NTP,0000,0000,0000,,pause for a moment and try to fill it in
+Dialogue: 0,0:34:51.13,0:34:54.97,*Default,NTP,0000,0000,0000,,and I'll go over the solution in 321
+Dialogue: 0,0:34:55.50,0:34:59.37,*Default,NTP,0000,0000,0000,,the key here is to modify tw branches
+Dialogue: 0,0:34:59.40,0:35:01.87,*Default,NTP,0000,0000,0000,,by setting it equal to a new list
+Dialogue: 0,0:35:01.90,0:35:04.97,*Default,NTP,0000,0000,0000,,we could also change the old tw branches list
+Dialogue: 0,0:35:05.17,0:35:07.13,*Default,NTP,0000,0000,0000,,but we achieved the same effect
+Dialogue: 0,0:35:07.27,0:35:10.33,*Default,NTP,0000,0000,0000,,by building a new list with a list comprehension
+Dialogue: 0,0:35:10.53,0:35:13.10,*Default,NTP,0000,0000,0000,,for every branch in the tree
+Dialogue: 0,0:35:13.67,0:35:17.33,*Default,NTP,0000,0000,0000,,I'm going to keep it in t dot branches
+Dialogue: 0,0:35:17.37,0:35:20.87,*Default,NTP,0000,0000,0000,,if its label is something other than in
+Dialogue: 0,0:35:21.90,0:35:23.67,*Default,NTP,0000,0000,0000,,now t dop branches
+Dialogue: 0,0:35:23.70,0:35:26.30,*Default,NTP,0000,0000,0000,,might not have all the old branches in it
+Dialogue: 0,0:35:26.37,0:35:29.53,*Default,NTP,0000,0000,0000,,so this says iterate through the branches that remain
+Dialogue: 0,0:35:29.53,0:35:30.97,*Default,NTP,0000,0000,0000,,calling each one b
+Dialogue: 0,0:35:31.27,0:35:34.87,*Default,NTP,0000,0000,0000,,and prune that branch using n as the label
+Dialogue: 0,0:35:34.87,0:35:37.20,*Default,NTP,0000,0000,0000,,were looking to prune and that's it
+Dialogue: 0,0:35:37.80,0:35:39.10,*Default,NTP,0000,0000,0000,,we don't need to return
+Dialogue: 0,0:35:39.30,0:35:41.33,*Default,NTP,0000,0000,0000,,because the purpose of the prune function
+Dialogue: 0,0:35:41.53,0:35:43.50,*Default,NTP,0000,0000,0000,,is to remove subtrees
+Dialogue: 0,0:35:43.53,0:35:45.20,*Default,NTP,0000,0000,0000,,not to compute a new value
