@@ -4,6 +4,111 @@ import random
 from ucb import main, interact, trace
 from collections import OrderedDict
 
+class GameState:
+    """An ant collective that manages global game state and simulates time.
+
+    Attributes:
+    time -- elapsed time
+    food -- the colony's available food total
+    places -- A list of all places in the colony (including a Hive)
+    bee_entrances -- A list of places that bees can enter
+    """
+
+    def __init__(self, strategy, beehive, ant_types, create_places, dimensions, food=2):
+        """Create an GameState for simulating a game.
+
+        Arguments:
+        strategy -- a function to deploy ants to places
+        beehive -- a Hive full of bees
+        ant_types -- a list of ant constructors
+        create_places -- a function that creates the set of places
+        dimensions -- a pair containing the dimensions of the game layout
+        """
+        self.time = 0
+        self.food = food
+        self.strategy = strategy
+        self.beehive = beehive
+        self.ant_types = OrderedDict((a.name, a) for a in ant_types)
+        self.dimensions = dimensions
+        self.active_bees = []
+        self.configure(beehive, create_places)
+
+    def configure(self, beehive, create_places):
+        """Configure the places in the colony."""
+        self.base = AntHomeBase('Ant Home Base')
+        self.places = OrderedDict()
+        self.bee_entrances = []
+        def register_place(place, is_bee_entrance):
+            self.places[place.name] = place
+            if is_bee_entrance:
+                place.entrance = beehive
+                self.bee_entrances.append(place)
+        register_place(self.beehive, False)
+        create_places(self.base, register_place, self.dimensions[0], self.dimensions[1])
+
+    def simulate(self):
+        """Simulate an attack on the ant colony (i.e., play the game)."""
+        num_bees = len(self.bees)
+        try:
+            while True:
+                self.strategy(self)                 # Ants deploy
+                self.beehive.strategy(self)         # Bees invade
+                for ant in self.ants:               # Ants take actions
+                    if ant.armor > 0:
+                        ant.action(self)
+                for bee in self.active_bees[:]:     # Bees take actions
+                    if bee.armor > 0:
+                        bee.action(self)
+                    if bee.armor <= 0:
+                        num_bees -= 1
+                        self.active_bees.remove(bee)
+                if num_bees == 0:
+                    raise AntsWinException()
+                self.time += 1
+        except AntsWinException:
+            print('All bees are vanquished. You win!')
+            return True
+        except BeesWinException:
+            print('The ant queen has perished. Please try again.')
+            return False
+
+    def deploy_ant(self, place_name, ant_type_name):
+        """Place an ant if enough food is available.
+
+        This method is called by the current strategy to deploy ants.
+        """
+        constructor = self.ant_types[ant_type_name]
+        if self.food < constructor.food_cost:
+            print('Not enough food remains to place ' + ant_type_name)
+        else:
+            ant = constructor()
+            self.places[place_name].add_insect(ant)
+            self.food -= constructor.food_cost
+            return ant
+
+    def remove_ant(self, place_name):
+        """Remove an Ant from the game."""
+        place = self.places[place_name]
+        if place.ant is not None:
+            place.remove_insect(place.ant)
+
+    @property
+    def ants(self):
+        return [p.ant for p in self.places.values() if p.ant is not None]
+
+    @property
+    def bees(self):
+        return [b for p in self.places.values() for b in p.bees]
+
+    @property
+    def insects(self):
+        return self.ants + self.bees
+
+    def __str__(self):
+        status = ' (Food: {0}, Time: {1})'.format(self.food, self.time)
+        return str([str(i) for i in self.ants + self.bees]) + status
+
+
 ################
 # Core Classes #
 ################
@@ -25,7 +130,8 @@ class Place:
         # Phase 1: Add an entrance to the exit
         # BEGIN Problem 2
         "*** YOUR CODE HERE ***"
-        
+        if exit is not None:
+            exit.entrance=self
         # END Problem 2
 
     def add_insect(self, insect):
@@ -51,6 +157,7 @@ class Insect:
 
     damage = 0
     # ADD CLASS ATTRIBUTES HERE
+    is_watersafe=False
 
     def __init__(self, armor, place=None):
         """Create an Insect with an ARMOR amount and a starting PLACE."""
@@ -164,7 +271,10 @@ class ThrowerAnt(Ant):
     damage = 1
     # ADD/OVERRIDE CLASS ATTRIBUTES HERE
     food_cost = 3
-
+    distance=0
+    min_range=0
+    max_range=float('inf')
+    
     def nearest_bee(self, beehive):
         """Return the nearest Bee in a Place that is not the HIVE (beehive), connected to
         the ThrowerAnt's Place by following entrances.
@@ -172,7 +282,15 @@ class ThrowerAnt(Ant):
         This method returns None if there is no such Bee (or none in range).
         """
         # BEGIN Problem 3 and 4
-        return rANTdom_else_none(self.place.bees) # REPLACE THIS LINE
+        # summary:递归再传递的时候一般修改了自身,而这里不许修改,所以就用循环
+        current_place=self.place
+        while current_place is not beehive:
+            if self.min_range<=self.distance<=self.max_range:
+                if current_place.bees:
+                    return rANTdom_else_none(current_place.bees)
+            current_place=current_place.entrance
+            self.distance+=1
+        return None
         # END Problem 3 and 4
 
     def throw_at(self, target):
@@ -183,6 +301,7 @@ class ThrowerAnt(Ant):
     def action(self, gamestate):
         """Throw a leaf at the nearest Bee in range."""
         self.throw_at(self.nearest_bee(gamestate.beehive))
+
 
 def rANTdom_else_none(s):
     """Return a random element of sequence S, or return None if S is empty."""
@@ -201,7 +320,9 @@ class ShortThrower(ThrowerAnt):
     food_cost = 2
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem 4
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
+    min_range=0
+    max_range=3
     # END Problem 4
 
 class LongThrower(ThrowerAnt):
@@ -211,7 +332,9 @@ class LongThrower(ThrowerAnt):
     food_cost = 2
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem 4
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
+    min_range=5
+    max_range=float('inf')
     # END Problem 4
 
 class FireAnt(Ant):
@@ -222,7 +345,7 @@ class FireAnt(Ant):
     food_cost = 5
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem 5
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
     # END Problem 5
 
     def __init__(self, armor=3):
@@ -238,6 +361,15 @@ class FireAnt(Ant):
         """
         # BEGIN Problem 5
         "*** YOUR CODE HERE ***"
+        ant_place=self.place
+        place_bees=self.place.bees[:]
+        Ant.reduce_armor(self,amount)
+        if not ant_place.ant:
+            for bees in place_bees:
+                Insect.reduce_armor(bees,amount+self.damage)
+        else:
+            for bees in place_bees:
+                Insect.reduce_armor(bees,amount)
         # END Problem 5
 
 class HungryAnt(Ant):
@@ -246,30 +378,48 @@ class HungryAnt(Ant):
     """
     name = 'Hungry'
     food_cost = 4
+    time_to_digest=3
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem 6
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
     # END Problem 6
 
     def __init__(self, armor=1):
         # BEGIN Problem 6
         "*** YOUR CODE HERE ***"
+        Ant.__init__(self,armor)
+        self.digesting=0
         # END Problem 6
 
     def eat_bee(self, bee):
         # BEGIN Problem 6
         "*** YOUR CODE HERE ***"
+        if self.place.bees:
+            Ant.reduce_armor(bee,bee.armor)
+            self.digesting=HungryAnt.time_to_digest
         # END Problem 6
 
     def action(self, gamestate):
         # BEGIN Problem 6
         "*** YOUR CODE HERE ***"
+        if  self.digesting:
+            self.digesting-=1
+        else:
+            current_place=self.place
+            # print(rANTdom_else_none(current_place.bees))
+            HungryAnt.eat_bee(self,rANTdom_else_none(current_place.bees))
         # END Problem 6
 
 
 
 # BEGIN Problem 7
 # The WallAnt class
+class WallAnt(Ant):
+    name='Wall'
+    implemented=True
+    food_cost=4
+    def __init__(self,armor=4):
+        Ant.__init__(self,armor)
 # END Problem 7
 
 
@@ -280,6 +430,9 @@ class Water(Place):
         """Add an Insect to this place. If the insect is not watersafe, reduce
         its armor to 0."""
         # BEGIN Problem 8
+        Place.add_insect(self,insect)
+        if insect.is_watersafe==False:
+            insect.reduce_armor(insect.armor)
         "*** YOUR CODE HERE ***"
         # END Problem 8
 
@@ -339,7 +492,7 @@ class Bee(Insect):
     name = 'Bee'
     damage = 1
     # OVERRIDE CLASS ATTRIBUTES HERE
-
+    is_watersafe=True
 
     def sting(self, ant):
         """Attack an ANT, reducing its armor by 1."""
@@ -632,109 +785,6 @@ class Hive(Place):
             gamestate.active_bees.append(bee)
 
 
-class GameState:
-    """An ant collective that manages global game state and simulates time.
-
-    Attributes:
-    time -- elapsed time
-    food -- the colony's available food total
-    places -- A list of all places in the colony (including a Hive)
-    bee_entrances -- A list of places that bees can enter
-    """
-
-    def __init__(self, strategy, beehive, ant_types, create_places, dimensions, food=2):
-        """Create an GameState for simulating a game.
-
-        Arguments:
-        strategy -- a function to deploy ants to places
-        beehive -- a Hive full of bees
-        ant_types -- a list of ant constructors
-        create_places -- a function that creates the set of places
-        dimensions -- a pair containing the dimensions of the game layout
-        """
-        self.time = 0
-        self.food = food
-        self.strategy = strategy
-        self.beehive = beehive
-        self.ant_types = OrderedDict((a.name, a) for a in ant_types)
-        self.dimensions = dimensions
-        self.active_bees = []
-        self.configure(beehive, create_places)
-
-    def configure(self, beehive, create_places):
-        """Configure the places in the colony."""
-        self.base = AntHomeBase('Ant Home Base')
-        self.places = OrderedDict()
-        self.bee_entrances = []
-        def register_place(place, is_bee_entrance):
-            self.places[place.name] = place
-            if is_bee_entrance:
-                place.entrance = beehive
-                self.bee_entrances.append(place)
-        register_place(self.beehive, False)
-        create_places(self.base, register_place, self.dimensions[0], self.dimensions[1])
-
-    def simulate(self):
-        """Simulate an attack on the ant colony (i.e., play the game)."""
-        num_bees = len(self.bees)
-        try:
-            while True:
-                self.strategy(self)                 # Ants deploy
-                self.beehive.strategy(self)         # Bees invade
-                for ant in self.ants:               # Ants take actions
-                    if ant.armor > 0:
-                        ant.action(self)
-                for bee in self.active_bees[:]:     # Bees take actions
-                    if bee.armor > 0:
-                        bee.action(self)
-                    if bee.armor <= 0:
-                        num_bees -= 1
-                        self.active_bees.remove(bee)
-                if num_bees == 0:
-                    raise AntsWinException()
-                self.time += 1
-        except AntsWinException:
-            print('All bees are vanquished. You win!')
-            return True
-        except BeesWinException:
-            print('The ant queen has perished. Please try again.')
-            return False
-
-    def deploy_ant(self, place_name, ant_type_name):
-        """Place an ant if enough food is available.
-
-        This method is called by the current strategy to deploy ants.
-        """
-        constructor = self.ant_types[ant_type_name]
-        if self.food < constructor.food_cost:
-            print('Not enough food remains to place ' + ant_type_name)
-        else:
-            ant = constructor()
-            self.places[place_name].add_insect(ant)
-            self.food -= constructor.food_cost
-            return ant
-
-    def remove_ant(self, place_name):
-        """Remove an Ant from the game."""
-        place = self.places[place_name]
-        if place.ant is not None:
-            place.remove_insect(place.ant)
-
-    @property
-    def ants(self):
-        return [p.ant for p in self.places.values() if p.ant is not None]
-
-    @property
-    def bees(self):
-        return [b for p in self.places.values() for b in p.bees]
-
-    @property
-    def insects(self):
-        return self.ants + self.bees
-
-    def __str__(self):
-        status = ' (Food: {0}, Time: {1})'.format(self.food, self.time)
-        return str([str(i) for i in self.ants + self.bees]) + status
 
 class AntHomeBase(Place):
     """AntHomeBase at the end of the tunnel, where the queen resides."""
