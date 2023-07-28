@@ -1,0 +1,614 @@
+[Script Info]
+Title: Lecture 22. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=55&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.16,0:00:03.84,*Default,NTP,0000,0000,0000,,61a lecture number 22 q a
+Dialogue: 0,0:00:03.84,0:00:05.68,*Default,NTP,0000,0000,0000,,the question is about creating
+Dialogue: 0,0:00:05.68,0:00:08.00,*Default,NTP,0000,0000,0000,,attributes inside of a function
+Dialogue: 0,0:00:08.00,0:00:11.44,*Default,NTP,0000,0000,0000,,which uh i did in an example
+Dialogue: 0,0:00:11.44,0:00:15.04,*Default,NTP,0000,0000,0000,,from this lecture it turns out
+Dialogue: 0,0:00:15.04,0:00:18.40,*Default,NTP,0000,0000,0000,,that if you have a function
+Dialogue: 0,0:00:18.40,0:00:22.64,*Default,NTP,0000,0000,0000,,that function itself can have attributes
+Dialogue: 0,0:00:22.64,0:00:24.08,*Default,NTP,0000,0000,0000,,now right now it doesn't have an
+Dialogue: 0,0:00:24.08,0:00:26.64,*Default,NTP,0000,0000,0000,,attribute if i call f on 10
+Dialogue: 0,0:00:26.64,0:00:28.72,*Default,NTP,0000,0000,0000,,i get nothing because it has no
+Dialogue: 0,0:00:28.72,0:00:30.40,*Default,NTP,0000,0000,0000,,attribute y
+Dialogue: 0,0:00:30.40,0:00:33.44,*Default,NTP,0000,0000,0000,,but i could give it one
+Dialogue: 0,0:00:34.00,0:00:38.32,*Default,NTP,0000,0000,0000,,and now when i call f on 10 i get 15.
+Dialogue: 0,0:00:38.32,0:00:41.84,*Default,NTP,0000,0000,0000,,you know functions can have data
+Dialogue: 0,0:00:41.84,0:00:43.52,*Default,NTP,0000,0000,0000,,associated with them that's been true
+Dialogue: 0,0:00:43.52,0:00:44.64,*Default,NTP,0000,0000,0000,,for
+Dialogue: 0,0:00:44.64,0:00:46.64,*Default,NTP,0000,0000,0000,,a long time since we talked about higher
+Dialogue: 0,0:00:46.64,0:00:48.40,*Default,NTP,0000,0000,0000,,order functions in
+Dialogue: 0,0:00:48.40,0:00:53.68,*Default,NTP,0000,0000,0000,,in in lecture four i think
+Dialogue: 0,0:00:53.68,0:00:57.36,*Default,NTP,0000,0000,0000,,and here we have another example of a
+Dialogue: 0,0:00:57.36,0:01:00.48,*Default,NTP,0000,0000,0000,,function with data associated with it
+Dialogue: 0,0:01:00.48,0:01:05.12,*Default,NTP,0000,0000,0000,,i um basically what's going on here is
+Dialogue: 0,0:01:05.12,0:01:06.24,*Default,NTP,0000,0000,0000,,that functions
+Dialogue: 0,0:01:06.24,0:01:08.72,*Default,NTP,0000,0000,0000,,are values they're objects objects can
+Dialogue: 0,0:01:08.72,0:01:09.60,*Default,NTP,0000,0000,0000,,have attributes
+Dialogue: 0,0:01:09.60,0:01:11.28,*Default,NTP,0000,0000,0000,,it turns out in python that any user
+Dialogue: 0,0:01:11.28,0:01:13.68,*Default,NTP,0000,0000,0000,,defined function can have arbitrary
+Dialogue: 0,0:01:13.68,0:01:14.80,*Default,NTP,0000,0000,0000,,attributes
+Dialogue: 0,0:01:14.80,0:01:16.24,*Default,NTP,0000,0000,0000,,and so this is one way of just
+Dialogue: 0,0:01:16.24,0:01:18.80,*Default,NTP,0000,0000,0000,,associating data with the function
+Dialogue: 0,0:01:18.80,0:01:20.40,*Default,NTP,0000,0000,0000,,by storing it as an attribute in the
+Dialogue: 0,0:01:20.40,0:01:22.72,*Default,NTP,0000,0000,0000,,function and the nice thing here is that
+Dialogue: 0,0:01:22.72,0:01:24.56,*Default,NTP,0000,0000,0000,,it is mutable
+Dialogue: 0,0:01:24.56,0:01:28.32,*Default,NTP,0000,0000,0000,,so you can kind of change it later um
+Dialogue: 0,0:01:28.32,0:01:30.32,*Default,NTP,0000,0000,0000,,there's no control over who can change
+Dialogue: 0,0:01:30.32,0:01:32.64,*Default,NTP,0000,0000,0000,,it so that it makes it a little bit
+Dialogue: 0,0:01:32.64,0:01:35.28,*Default,NTP,0000,0000,0000,,too flexible in some cases but this is
+Dialogue: 0,0:01:35.28,0:01:37.60,*Default,NTP,0000,0000,0000,,an alternative to for example using
+Dialogue: 0,0:01:37.60,0:01:39.52,*Default,NTP,0000,0000,0000,,non-local assignment or a higher order
+Dialogue: 0,0:01:39.52,0:01:41.52,*Default,NTP,0000,0000,0000,,function is that you could just store
+Dialogue: 0,0:01:41.52,0:01:42.40,*Default,NTP,0000,0000,0000,,the data
+Dialogue: 0,0:01:42.40,0:01:44.16,*Default,NTP,0000,0000,0000,,right there as an attribute in the
+Dialogue: 0,0:01:44.16,0:01:46.00,*Default,NTP,0000,0000,0000,,function
+Dialogue: 0,0:01:46.00,0:01:48.88,*Default,NTP,0000,0000,0000,,yeah great question the question is
+Dialogue: 0,0:01:48.88,0:01:49.36,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:01:49.36,0:01:52.64,*Default,NTP,0000,0000,0000,,space complexity and whether
+Dialogue: 0,0:01:52.64,0:01:55.68,*Default,NTP,0000,0000,0000,,recursion uses up a lot of space
+Dialogue: 0,0:01:55.68,0:01:57.52,*Default,NTP,0000,0000,0000,,because every time you make a recursive
+Dialogue: 0,0:01:57.52,0:01:59.60,*Default,NTP,0000,0000,0000,,call you're allocating
+Dialogue: 0,0:01:59.60,0:02:02.56,*Default,NTP,0000,0000,0000,,more space to hold the frame that
+Dialogue: 0,0:02:02.56,0:02:04.24,*Default,NTP,0000,0000,0000,,represents the kind of first frame in
+Dialogue: 0,0:02:04.24,0:02:06.80,*Default,NTP,0000,0000,0000,,the environment for that recursive call
+Dialogue: 0,0:02:06.80,0:02:09.04,*Default,NTP,0000,0000,0000,,and so if you make 50 recursive calls
+Dialogue: 0,0:02:09.04,0:02:11.36,*Default,NTP,0000,0000,0000,,then you're creating 50 frames
+Dialogue: 0,0:02:11.36,0:02:15.20,*Default,NTP,0000,0000,0000,,um yeah that's exactly right
+Dialogue: 0,0:02:15.20,0:02:18.48,*Default,NTP,0000,0000,0000,,there is one answer to this that exists
+Dialogue: 0,0:02:18.48,0:02:20.16,*Default,NTP,0000,0000,0000,,in other programming languages but not
+Dialogue: 0,0:02:20.16,0:02:21.44,*Default,NTP,0000,0000,0000,,in python
+Dialogue: 0,0:02:21.44,0:02:23.52,*Default,NTP,0000,0000,0000,,um which is that there there's like a
+Dialogue: 0,0:02:23.52,0:02:24.88,*Default,NTP,0000,0000,0000,,special case where it turns out you
+Dialogue: 0,0:02:24.88,0:02:26.72,*Default,NTP,0000,0000,0000,,don't need to create a new frame you
+Dialogue: 0,0:02:26.72,0:02:28.88,*Default,NTP,0000,0000,0000,,could just kind of reuse the old one
+Dialogue: 0,0:02:28.88,0:02:30.72,*Default,NTP,0000,0000,0000,,uh called tail recursion we'll talk
+Dialogue: 0,0:02:30.72,0:02:32.72,*Default,NTP,0000,0000,0000,,about that it's an optional topic in a
+Dialogue: 0,0:02:32.72,0:02:33.44,*Default,NTP,0000,0000,0000,,few weeks
+Dialogue: 0,0:02:33.44,0:02:35.68,*Default,NTP,0000,0000,0000,,but this is just like one particular
+Dialogue: 0,0:02:35.68,0:02:36.80,*Default,NTP,0000,0000,0000,,esoteric point
+Dialogue: 0,0:02:36.80,0:02:39.92,*Default,NTP,0000,0000,0000,,i guess the main point is that yes
+Dialogue: 0,0:02:39.92,0:02:41.44,*Default,NTP,0000,0000,0000,,when you make a bunch of function calls
+Dialogue: 0,0:02:41.44,0:02:43.60,*Default,NTP,0000,0000,0000,,then you introduce a bunch of frames
+Dialogue: 0,0:02:43.60,0:02:46.32,*Default,NTP,0000,0000,0000,,and this incurs some space overhead so
+Dialogue: 0,0:02:46.32,0:02:48.00,*Default,NTP,0000,0000,0000,,if you could avoid it that's not a bad
+Dialogue: 0,0:02:48.00,0:02:48.96,*Default,NTP,0000,0000,0000,,idea at all
+Dialogue: 0,0:02:48.96,0:02:53.52,*Default,NTP,0000,0000,0000,,so typically when you'd write a um
+Dialogue: 0,0:02:53.52,0:02:54.80,*Default,NTP,0000,0000,0000,,when you have just some iterative
+Dialogue: 0,0:02:54.80,0:02:56.24,*Default,NTP,0000,0000,0000,,process you want to like go through all
+Dialogue: 0,0:02:56.24,0:02:57.84,*Default,NTP,0000,0000,0000,,the elements in something
+Dialogue: 0,0:02:57.84,0:02:59.44,*Default,NTP,0000,0000,0000,,then in python and most other
+Dialogue: 0,0:02:59.44,0:03:01.60,*Default,NTP,0000,0000,0000,,programming languages the best way to do
+Dialogue: 0,0:03:01.60,0:03:03.44,*Default,NTP,0000,0000,0000,,it is just with a while or for loop
+Dialogue: 0,0:03:03.44,0:03:05.60,*Default,NTP,0000,0000,0000,,and not to write it recursively
+Dialogue: 0,0:03:05.60,0:03:07.52,*Default,NTP,0000,0000,0000,,recursion isn't really for that it can
+Dialogue: 0,0:03:07.52,0:03:09.04,*Default,NTP,0000,0000,0000,,be used for that but what it's really
+Dialogue: 0,0:03:09.04,0:03:09.84,*Default,NTP,0000,0000,0000,,for
+Dialogue: 0,0:03:09.84,0:03:13.20,*Default,NTP,0000,0000,0000,,is for tree recursion and processing
+Dialogue: 0,0:03:13.20,0:03:15.36,*Default,NTP,0000,0000,0000,,trees or other hierarchical data
+Dialogue: 0,0:03:15.36,0:03:16.40,*Default,NTP,0000,0000,0000,,structures
+Dialogue: 0,0:03:16.40,0:03:18.96,*Default,NTP,0000,0000,0000,,that's where it's quite helpful and if
+Dialogue: 0,0:03:18.96,0:03:20.88,*Default,NTP,0000,0000,0000,,you think about those cases
+Dialogue: 0,0:03:20.88,0:03:24.08,*Default,NTP,0000,0000,0000,,actually the space use tends not to be
+Dialogue: 0,0:03:24.08,0:03:24.48,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:03:24.48,0:03:29.36,*Default,NTP,0000,0000,0000,,large so in a typical tree recursion
+Dialogue: 0,0:03:29.36,0:03:31.04,*Default,NTP,0000,0000,0000,,you're going to have a massive amount of
+Dialogue: 0,0:03:31.04,0:03:34.08,*Default,NTP,0000,0000,0000,,computation if you don't memorize
+Dialogue: 0,0:03:34.08,0:03:35.52,*Default,NTP,0000,0000,0000,,because you're like building out this
+Dialogue: 0,0:03:35.52,0:03:37.68,*Default,NTP,0000,0000,0000,,whole tree of many many different
+Dialogue: 0,0:03:37.68,0:03:39.12,*Default,NTP,0000,0000,0000,,recursive calls
+Dialogue: 0,0:03:39.12,0:03:42.32,*Default,NTP,0000,0000,0000,,but the space that you need is only the
+Dialogue: 0,0:03:42.32,0:03:44.16,*Default,NTP,0000,0000,0000,,length of the longest path through that
+Dialogue: 0,0:03:44.16,0:03:45.76,*Default,NTP,0000,0000,0000,,tree and you could have many more nodes
+Dialogue: 0,0:03:45.76,0:03:46.64,*Default,NTP,0000,0000,0000,,in the tree
+Dialogue: 0,0:03:46.64,0:03:48.56,*Default,NTP,0000,0000,0000,,than you could have the height of the
+Dialogue: 0,0:03:48.56,0:03:50.16,*Default,NTP,0000,0000,0000,,tree and so
+Dialogue: 0,0:03:50.16,0:03:52.64,*Default,NTP,0000,0000,0000,,for that reason the space usually isn't
+Dialogue: 0,0:03:52.64,0:03:53.28,*Default,NTP,0000,0000,0000,,the kind of
+Dialogue: 0,0:03:53.28,0:03:55.68,*Default,NTP,0000,0000,0000,,important limiting factor for a tree
+Dialogue: 0,0:03:55.68,0:03:57.28,*Default,NTP,0000,0000,0000,,recursion problem
+Dialogue: 0,0:03:57.28,0:04:00.32,*Default,NTP,0000,0000,0000,,it's usually time making all those calls
+Dialogue: 0,0:04:00.32,0:04:02.40,*Default,NTP,0000,0000,0000,,um rather than the amount of space it
+Dialogue: 0,0:04:02.40,0:04:04.56,*Default,NTP,0000,0000,0000,,takes to capture all the active ones at
+Dialogue: 0,0:04:04.56,0:04:05.60,*Default,NTP,0000,0000,0000,,any particular moment
+Dialogue: 0,0:04:05.60,0:04:08.64,*Default,NTP,0000,0000,0000,,usually you know depends on the problem
+Dialogue: 0,0:04:08.64,0:04:12.48,*Default,NTP,0000,0000,0000,,yeah and 20 years ago space was a real
+Dialogue: 0,0:04:12.48,0:04:13.84,*Default,NTP,0000,0000,0000,,concern
+Dialogue: 0,0:04:13.84,0:04:15.28,*Default,NTP,0000,0000,0000,,these days it's a little bit less of a
+Dialogue: 0,0:04:15.28,0:04:17.36,*Default,NTP,0000,0000,0000,,concern memory is cheap
+Dialogue: 0,0:04:17.36,0:04:19.12,*Default,NTP,0000,0000,0000,,everybody's got a terabyte of memory so
+Dialogue: 0,0:04:19.12,0:04:21.20,*Default,NTP,0000,0000,0000,,we worry a little bit less about memory
+Dialogue: 0,0:04:21.20,0:04:22.56,*Default,NTP,0000,0000,0000,,but you're absolutely right michonne is
+Dialogue: 0,0:04:22.56,0:04:23.20,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:04:23.20,0:04:25.12,*Default,NTP,0000,0000,0000,,are certain recursive functions we have
+Dialogue: 0,0:04:25.12,0:04:27.04,*Default,NTP,0000,0000,0000,,all written that you would never really
+Dialogue: 0,0:04:27.04,0:04:28.16,*Default,NTP,0000,0000,0000,,do recursively
+Dialogue: 0,0:04:28.16,0:04:29.68,*Default,NTP,0000,0000,0000,,there's no reason not to do them
+Dialogue: 0,0:04:29.68,0:04:31.28,*Default,NTP,0000,0000,0000,,iteratively it's just more of the
+Dialogue: 0,0:04:31.28,0:04:32.32,*Default,NTP,0000,0000,0000,,exercise
+Dialogue: 0,0:04:32.32,0:04:35.68,*Default,NTP,0000,0000,0000,,of learning recursion and if you think
+Dialogue: 0,0:04:35.68,0:04:37.20,*Default,NTP,0000,0000,0000,,about a tree recursion problem like
+Dialogue: 0,0:04:37.20,0:04:38.24,*Default,NTP,0000,0000,0000,,count partitions
+Dialogue: 0,0:04:38.24,0:04:41.60,*Default,NTP,0000,0000,0000,,where you're kind of uh making branching
+Dialogue: 0,0:04:41.60,0:04:42.16,*Default,NTP,0000,0000,0000,,calls
+Dialogue: 0,0:04:42.16,0:04:44.16,*Default,NTP,0000,0000,0000,,there's a way to do this without
+Dialogue: 0,0:04:44.16,0:04:46.24,*Default,NTP,0000,0000,0000,,recursion but it does use the same
+Dialogue: 0,0:04:46.24,0:04:47.68,*Default,NTP,0000,0000,0000,,amount of space if you do it without
+Dialogue: 0,0:04:47.68,0:04:49.20,*Default,NTP,0000,0000,0000,,recursion you basically just have to
+Dialogue: 0,0:04:49.20,0:04:51.20,*Default,NTP,0000,0000,0000,,track all the frames explicitly in a
+Dialogue: 0,0:04:51.20,0:04:53.04,*Default,NTP,0000,0000,0000,,list instead of having the interpreter
+Dialogue: 0,0:04:53.04,0:04:55.04,*Default,NTP,0000,0000,0000,,do it for you so it's not like avoiding
+Dialogue: 0,0:04:55.04,0:04:56.56,*Default,NTP,0000,0000,0000,,recursion tends to help you much
+Dialogue: 0,0:04:56.56,0:04:59.84,*Default,NTP,0000,0000,0000,,there and then some problems
+Dialogue: 0,0:04:59.84,0:05:01.84,*Default,NTP,0000,0000,0000,,um so if you watch the the lecture on
+Dialogue: 0,0:05:01.84,0:05:03.28,*Default,NTP,0000,0000,0000,,the towers of hanoi
+Dialogue: 0,0:05:03.28,0:05:05.92,*Default,NTP,0000,0000,0000,,they just the solutions are just so much
+Dialogue: 0,0:05:05.92,0:05:07.52,*Default,NTP,0000,0000,0000,,easier recursively like they have to
+Dialogue: 0,0:05:07.52,0:05:09.04,*Default,NTP,0000,0000,0000,,think through the iterative solution can
+Dialogue: 0,0:05:09.04,0:05:10.08,*Default,NTP,0000,0000,0000,,be really gnarly
+Dialogue: 0,0:05:10.08,0:05:12.16,*Default,NTP,0000,0000,0000,,so every once in a while you know
+Dialogue: 0,0:05:12.16,0:05:14.08,*Default,NTP,0000,0000,0000,,there's a very clean and elegant
+Dialogue: 0,0:05:14.08,0:05:15.60,*Default,NTP,0000,0000,0000,,recursive solution
+Dialogue: 0,0:05:15.60,0:05:19.20,*Default,NTP,0000,0000,0000,,those are the ones i particularly like
+Dialogue: 0,0:05:19.76,0:05:21.52,*Default,NTP,0000,0000,0000,,and i guess the final case to talk about
+Dialogue: 0,0:05:21.52,0:05:23.28,*Default,NTP,0000,0000,0000,,is when you're doing something with a
+Dialogue: 0,0:05:23.28,0:05:25.44,*Default,NTP,0000,0000,0000,,tree that's a common case for
+Dialogue: 0,0:05:25.44,0:05:28.80,*Default,NTP,0000,0000,0000,,uh recursion and in that case like the
+Dialogue: 0,0:05:28.80,0:05:29.84,*Default,NTP,0000,0000,0000,,tree is already there
+Dialogue: 0,0:05:29.84,0:05:31.52,*Default,NTP,0000,0000,0000,,you've already like used that much
+Dialogue: 0,0:05:31.52,0:05:34.40,*Default,NTP,0000,0000,0000,,memory so having an extra frame for each
+Dialogue: 0,0:05:34.40,0:05:35.36,*Default,NTP,0000,0000,0000,,node in the tree
+Dialogue: 0,0:05:35.36,0:05:37.12,*Default,NTP,0000,0000,0000,,you know it's more but it's not like a
+Dialogue: 0,0:05:37.12,0:05:39.36,*Default,NTP,0000,0000,0000,,lot more um so it tends not to be
+Dialogue: 0,0:05:39.36,0:05:43.20,*Default,NTP,0000,0000,0000,,a big issue that was a long answer to a
+Dialogue: 0,0:05:43.20,0:05:44.80,*Default,NTP,0000,0000,0000,,simple question but uh
+Dialogue: 0,0:05:44.80,0:05:46.17,*Default,NTP,0000,0000,0000,,but i guess it wasn't that simple
+Dialogue: 0,0:05:46.17,0:05:49.36,*Default,NTP,0000,0000,0000,,[Laughter]
+Dialogue: 0,0:05:49.36,0:05:51.20,*Default,NTP,0000,0000,0000,,no it's a great question michonne it's
+Dialogue: 0,0:05:51.20,0:05:52.96,*Default,NTP,0000,0000,0000,,absolutely the right question
+Dialogue: 0,0:05:52.96,0:05:55.76,*Default,NTP,0000,0000,0000,,and so if if the kind of essence of the
+Dialogue: 0,0:05:55.76,0:05:56.56,*Default,NTP,0000,0000,0000,,question is
+Dialogue: 0,0:05:56.56,0:05:58.40,*Default,NTP,0000,0000,0000,,should we not use recursion for stuff
+Dialogue: 0,0:05:58.40,0:06:00.16,*Default,NTP,0000,0000,0000,,where we could just use a while loop
+Dialogue: 0,0:06:00.16,0:06:03.04,*Default,NTP,0000,0000,0000,,basically that's a good piece of advice
+Dialogue: 0,0:06:03.04,0:06:05.20,*Default,NTP,0000,0000,0000,,yeah
+Dialogue: 0,0:06:05.36,0:06:08.08,*Default,NTP,0000,0000,0000,,okay so the question was about the exam
+Dialogue: 0,0:06:08.08,0:06:08.64,*Default,NTP,0000,0000,0000,,prep
+Dialogue: 0,0:06:08.64,0:06:13.60,*Default,NTP,0000,0000,0000,,sections uh worksheet number six
+Dialogue: 0,0:06:13.60,0:06:15.52,*Default,NTP,0000,0000,0000,,which covered object drawing and
+Dialogue: 0,0:06:15.52,0:06:16.80,*Default,NTP,0000,0000,0000,,programming
+Dialogue: 0,0:06:16.80,0:06:20.64,*Default,NTP,0000,0000,0000,,and had the following question on it
+Dialogue: 0,0:06:20.64,0:06:22.96,*Default,NTP,0000,0000,0000,,fill in each of the blanks and the code
+Dialogue: 0,0:06:22.96,0:06:25.04,*Default,NTP,0000,0000,0000,,such that the expressions and outputs in
+Dialogue: 0,0:06:25.04,0:06:27.04,*Default,NTP,0000,0000,0000,,the table below are consistent
+Dialogue: 0,0:06:27.04,0:06:30.56,*Default,NTP,0000,0000,0000,,okay so it gives you a bunch of examples
+Dialogue: 0,0:06:30.56,0:06:35.84,*Default,NTP,0000,0000,0000,,and uh
+Dialogue: 0,0:06:36.72,0:06:38.32,*Default,NTP,0000,0000,0000,,i assume that effects from previous
+Dialogue: 0,0:06:38.32,0:06:40.32,*Default,NTP,0000,0000,0000,,subpart persist to future subparts i
+Dialogue: 0,0:06:40.32,0:06:41.68,*Default,NTP,0000,0000,0000,,think that's like as we go
+Dialogue: 0,0:06:41.68,0:06:43.68,*Default,NTP,0000,0000,0000,,down here changes are going to
+Dialogue: 0,0:06:43.68,0:06:45.84,*Default,NTP,0000,0000,0000,,accumulate
+Dialogue: 0,0:06:45.84,0:06:48.96,*Default,NTP,0000,0000,0000,,so we have a party class which has a
+Dialogue: 0,0:06:48.96,0:06:52.88,*Default,NTP,0000,0000,0000,,guest's linked list
+Dialogue: 0,0:06:52.88,0:06:56.80,*Default,NTP,0000,0000,0000,,as its class attribute
+Dialogue: 0,0:06:56.80,0:06:58.56,*Default,NTP,0000,0000,0000,,some minute that will have to work out
+Dialogue: 0,0:06:58.56,0:07:01.20,*Default,NTP,0000,0000,0000,,some notion of attending
+Dialogue: 0,0:07:01.20,0:07:04.32,*Default,NTP,0000,0000,0000,,and then we have a costume party
+Dialogue: 0,0:07:04.32,0:07:07.12,*Default,NTP,0000,0000,0000,,which is a subclass of party that's got
+Dialogue: 0,0:07:07.12,0:07:08.80,*Default,NTP,0000,0000,0000,,its own in it
+Dialogue: 0,0:07:08.80,0:07:12.56,*Default,NTP,0000,0000,0000,,it's going to do something to party's
+Dialogue: 0,0:07:12.56,0:07:15.28,*Default,NTP,0000,0000,0000,,class attribute called guests and it's
+Dialogue: 0,0:07:15.28,0:07:16.64,*Default,NTP,0000,0000,0000,,going to do something to its own
+Dialogue: 0,0:07:16.64,0:07:18.72,*Default,NTP,0000,0000,0000,,instance attribute
+Dialogue: 0,0:07:18.72,0:07:22.80,*Default,NTP,0000,0000,0000,,um and it's got its own notion of attend
+Dialogue: 0,0:07:22.80,0:07:24.88,*Default,NTP,0000,0000,0000,,and it's got its own rapper method which
+Dialogue: 0,0:07:24.88,0:07:26.32,*Default,NTP,0000,0000,0000,,i guess is going to be pretty
+Dialogue: 0,0:07:26.32,0:07:27.44,*Default,NTP,0000,0000,0000,,interesting here
+Dialogue: 0,0:07:27.44,0:07:31.84,*Default,NTP,0000,0000,0000,,so um
+Dialogue: 0,0:07:34.00,0:07:36.32,*Default,NTP,0000,0000,0000,,let's take a look at what's going on um
+Dialogue: 0,0:07:36.32,0:07:38.08,*Default,NTP,0000,0000,0000,,when you create a linked list
+Dialogue: 0,0:07:38.08,0:07:40.16,*Default,NTP,0000,0000,0000,,you create it with two arguments the
+Dialogue: 0,0:07:40.16,0:07:42.96,*Default,NTP,0000,0000,0000,,first element and the rest of the list
+Dialogue: 0,0:07:42.96,0:07:45.28,*Default,NTP,0000,0000,0000,,if you left this link that empty out and
+Dialogue: 0,0:07:45.28,0:07:46.88,*Default,NTP,0000,0000,0000,,just passed in one argument you get the
+Dialogue: 0,0:07:46.88,0:07:47.44,*Default,NTP,0000,0000,0000,,same thing
+Dialogue: 0,0:07:47.44,0:07:49.76,*Default,NTP,0000,0000,0000,,because link that empty is the default
+Dialogue: 0,0:07:49.76,0:07:52.08,*Default,NTP,0000,0000,0000,,value for the rest of the list
+Dialogue: 0,0:07:52.08,0:07:55.12,*Default,NTP,0000,0000,0000,,and link has a wrapper method which
+Dialogue: 0,0:07:55.12,0:07:58.72,*Default,NTP,0000,0000,0000,,generates uh an expression that would
+Dialogue: 0,0:07:58.72,0:08:00.72,*Default,NTP,0000,0000,0000,,create an equivalent linked list
+Dialogue: 0,0:08:00.72,0:08:03.44,*Default,NTP,0000,0000,0000,,okay um so that's what we see here and
+Dialogue: 0,0:08:03.44,0:08:05.36,*Default,NTP,0000,0000,0000,,here
+Dialogue: 0,0:08:05.36,0:08:07.60,*Default,NTP,0000,0000,0000,,what we see here is that when you create
+Dialogue: 0,0:08:07.60,0:08:09.20,*Default,NTP,0000,0000,0000,,a party
+Dialogue: 0,0:08:09.20,0:08:12.72,*Default,NTP,0000,0000,0000,,with one as its
+Dialogue: 0,0:08:12.72,0:08:15.12,*Default,NTP,0000,0000,0000,,time
+Dialogue: 0,0:08:16.96,0:08:20.48,*Default,NTP,0000,0000,0000,,and you look up the guests you end up
+Dialogue: 0,0:08:20.48,0:08:24.08,*Default,NTP,0000,0000,0000,,with a linked list that's got
+Dialogue: 0,0:08:24.08,0:08:27.44,*Default,NTP,0000,0000,0000,,2 in it we don't really have a story for
+Dialogue: 0,0:08:27.44,0:08:31.76,*Default,NTP,0000,0000,0000,,why that would be except that here
+Dialogue: 0,0:08:31.76,0:08:34.88,*Default,NTP,0000,0000,0000,,we have an assignment line that we could
+Dialogue: 0,0:08:34.88,0:08:36.08,*Default,NTP,0000,0000,0000,,use to change
+Dialogue: 0,0:08:36.08,0:08:41.20,*Default,NTP,0000,0000,0000,,partygut yes to be something else
+Dialogue: 0,0:08:41.20,0:08:43.44,*Default,NTP,0000,0000,0000,,um or we could change the instance
+Dialogue: 0,0:08:43.44,0:08:45.44,*Default,NTP,0000,0000,0000,,attribute for guess to be something else
+Dialogue: 0,0:08:45.44,0:08:47.36,*Default,NTP,0000,0000,0000,,and the tricky thing about this problem
+Dialogue: 0,0:08:47.36,0:08:49.04,*Default,NTP,0000,0000,0000,,is that we don't actually know which one
+Dialogue: 0,0:08:49.04,0:08:50.96,*Default,NTP,0000,0000,0000,,it is yet like you can't tell from this
+Dialogue: 0,0:08:50.96,0:08:51.76,*Default,NTP,0000,0000,0000,,expression
+Dialogue: 0,0:08:51.76,0:08:53.68,*Default,NTP,0000,0000,0000,,whether guess is an instance attribute
+Dialogue: 0,0:08:53.68,0:08:54.96,*Default,NTP,0000,0000,0000,,or a class attribute
+Dialogue: 0,0:08:54.96,0:08:56.64,*Default,NTP,0000,0000,0000,,but since the class attribute is there
+Dialogue: 0,0:08:56.64,0:08:59.84,*Default,NTP,0000,0000,0000,,already hopefully it's that
+Dialogue: 0,0:08:59.84,0:09:03.60,*Default,NTP,0000,0000,0000,,okay when we
+Dialogue: 0,0:09:03.60,0:09:06.96,*Default,NTP,0000,0000,0000,,call party3 and then dot attend
+Dialogue: 0,0:09:06.96,0:09:10.16,*Default,NTP,0000,0000,0000,,now we have well an interesting pattern
+Dialogue: 0,0:09:10.16,0:09:11.28,*Default,NTP,0000,0000,0000,,is emerging
+Dialogue: 0,0:09:11.28,0:09:14.24,*Default,NTP,0000,0000,0000,,which is that uh this is one more than
+Dialogue: 0,0:09:14.24,0:09:15.04,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:09:15.04,0:09:18.32,*Default,NTP,0000,0000,0000,,and this is one more than that and
+Dialogue: 0,0:09:18.32,0:09:20.40,*Default,NTP,0000,0000,0000,,um then something a little bit crazy
+Dialogue: 0,0:09:20.40,0:09:24.16,*Default,NTP,0000,0000,0000,,happened here this is not a linked
+Dialogue: 0,0:09:24.16,0:09:26.56,*Default,NTP,0000,0000,0000,,list but instead well it is a linked
+Dialogue: 0,0:09:26.56,0:09:29.36,*Default,NTP,0000,0000,0000,,list but it doesn't have three elements
+Dialogue: 0,0:09:29.36,0:09:31.44,*Default,NTP,0000,0000,0000,,instead it's got two elements where the
+Dialogue: 0,0:09:31.44,0:09:33.36,*Default,NTP,0000,0000,0000,,first one is four
+Dialogue: 0,0:09:33.36,0:09:35.52,*Default,NTP,0000,0000,0000,,and the other one is its own list so if
+Dialogue: 0,0:09:35.52,0:09:37.20,*Default,NTP,0000,0000,0000,,we were writing this
+Dialogue: 0,0:09:37.20,0:09:40.32,*Default,NTP,0000,0000,0000,,in a python list this would look like
+Dialogue: 0,0:09:40.32,0:09:43.20,*Default,NTP,0000,0000,0000,,four with two as the second element
+Dialogue: 0,0:09:43.20,0:09:44.24,*Default,NTP,0000,0000,0000,,that's what this link
+Dialogue: 0,0:09:44.24,0:09:46.40,*Default,NTP,0000,0000,0000,,four link link two structure is
+Dialogue: 0,0:09:46.40,0:09:48.96,*Default,NTP,0000,0000,0000,,equivalent to
+Dialogue: 0,0:09:48.96,0:09:51.12,*Default,NTP,0000,0000,0000,,um and how we got here i guess we don't
+Dialogue: 0,0:09:51.12,0:09:52.72,*Default,NTP,0000,0000,0000,,know yet but we can take a look at what
+Dialogue: 0,0:09:52.72,0:09:54.24,*Default,NTP,0000,0000,0000,,attend does
+Dialogue: 0,0:09:54.24,0:09:59.20,*Default,NTP,0000,0000,0000,,so attend uh
+Dialogue: 0,0:10:01.04,0:10:04.48,*Default,NTP,0000,0000,0000,,does something and then
+Dialogue: 0,0:10:04.48,0:10:07.52,*Default,NTP,0000,0000,0000,,it returns
+Dialogue: 0,0:10:08.04,0:10:12.08,*Default,NTP,0000,0000,0000,,self.guest is party.guest okay
+Dialogue: 0,0:10:12.08,0:10:15.28,*Default,NTP,0000,0000,0000,,so that must be true
+Dialogue: 0,0:10:15.28,0:10:17.68,*Default,NTP,0000,0000,0000,,because otherwise we wouldn't we'd just
+Dialogue: 0,0:10:17.68,0:10:19.12,*Default,NTP,0000,0000,0000,,be getting false and that's not what
+Dialogue: 0,0:10:19.12,0:10:20.24,*Default,NTP,0000,0000,0000,,we're getting we're getting a linked
+Dialogue: 0,0:10:20.24,0:10:21.04,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:10:21.04,0:10:23.92,*Default,NTP,0000,0000,0000,,and so it's returning party.guest so
+Dialogue: 0,0:10:23.92,0:10:24.40,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:10:24.40,0:10:26.32,*Default,NTP,0000,0000,0000,,is an interesting hint self.guest is
+Dialogue: 0,0:10:26.32,0:10:28.16,*Default,NTP,0000,0000,0000,,party.guest means that there really is
+Dialogue: 0,0:10:28.16,0:10:28.64,*Default,NTP,0000,0000,0000,,no
+Dialogue: 0,0:10:28.64,0:10:32.16,*Default,NTP,0000,0000,0000,,instance attribute on a party instance
+Dialogue: 0,0:10:32.16,0:10:34.64,*Default,NTP,0000,0000,0000,,instead it must be a class attribute for
+Dialogue: 0,0:10:34.64,0:10:36.48,*Default,NTP,0000,0000,0000,,these two things to be the same thing
+Dialogue: 0,0:10:36.48,0:10:38.16,*Default,NTP,0000,0000,0000,,so it must be that we're manipulating
+Dialogue: 0,0:10:38.16,0:10:39.68,*Default,NTP,0000,0000,0000,,class attributes here
+Dialogue: 0,0:10:39.68,0:10:43.56,*Default,NTP,0000,0000,0000,,and uh we can look at how that happened
+Dialogue: 0,0:10:43.56,0:10:47.52,*Default,NTP,0000,0000,0000,,we um
+Dialogue: 0,0:10:47.52,0:10:49.52,*Default,NTP,0000,0000,0000,,added something to the linked list and
+Dialogue: 0,0:10:49.52,0:10:51.68,*Default,NTP,0000,0000,0000,,then somehow we like got this nested
+Dialogue: 0,0:10:51.68,0:10:53.04,*Default,NTP,0000,0000,0000,,structure which i guess we're going to
+Dialogue: 0,0:10:53.04,0:10:55.12,*Default,NTP,0000,0000,0000,,have to understand
+Dialogue: 0,0:10:55.12,0:10:57.28,*Default,NTP,0000,0000,0000,,it's plausible that the elements were
+Dialogue: 0,0:10:57.28,0:10:58.16,*Default,NTP,0000,0000,0000,,added here
+Dialogue: 0,0:10:58.16,0:10:59.76,*Default,NTP,0000,0000,0000,,and that the nested structure was
+Dialogue: 0,0:10:59.76,0:11:02.40,*Default,NTP,0000,0000,0000,,created here
+Dialogue: 0,0:11:02.40,0:11:05.68,*Default,NTP,0000,0000,0000,,maybe this is more of a puzzle than i
+Dialogue: 0,0:11:05.68,0:11:06.72,*Default,NTP,0000,0000,0000,,would expect
+Dialogue: 0,0:11:06.72,0:11:08.80,*Default,NTP,0000,0000,0000,,um but uh i think we're making some
+Dialogue: 0,0:11:08.80,0:11:11.20,*Default,NTP,0000,0000,0000,,progress so
+Dialogue: 0,0:11:11.20,0:11:15.84,*Default,NTP,0000,0000,0000,,uh let's see if we can
+Dialogue: 0,0:11:16.88,0:11:19.52,*Default,NTP,0000,0000,0000,,fill some of this in and then i'll stop
+Dialogue: 0,0:11:19.52,0:11:20.24,*Default,NTP,0000,0000,0000,,and ask
+Dialogue: 0,0:11:20.24,0:11:23.28,*Default,NTP,0000,0000,0000,,take questions so it seems like this has
+Dialogue: 0,0:11:23.28,0:11:24.08,*Default,NTP,0000,0000,0000,,to be
+Dialogue: 0,0:11:24.08,0:11:28.00,*Default,NTP,0000,0000,0000,,that party dot
+Dialogue: 0,0:11:28.00,0:11:30.32,*Default,NTP,0000,0000,0000,,guests is being changed and how's it
+Dialogue: 0,0:11:30.32,0:11:31.28,*Default,NTP,0000,0000,0000,,being changed
+Dialogue: 0,0:11:31.28,0:11:34.72,*Default,NTP,0000,0000,0000,,well as far as i can tell we're taking
+Dialogue: 0,0:11:34.72,0:11:37.12,*Default,NTP,0000,0000,0000,,time
+Dialogue: 0,0:11:39.28,0:11:43.04,*Default,NTP,0000,0000,0000,,adding one to and putting that in
+Dialogue: 0,0:11:43.04,0:11:46.16,*Default,NTP,0000,0000,0000,,as a new element in this linked list how
+Dialogue: 0,0:11:46.16,0:11:46.72,*Default,NTP,0000,0000,0000,,do you take
+Dialogue: 0,0:11:46.72,0:11:48.72,*Default,NTP,0000,0000,0000,,a existing linked list and put something
+Dialogue: 0,0:11:48.72,0:11:49.84,*Default,NTP,0000,0000,0000,,new on the front
+Dialogue: 0,0:11:49.84,0:11:52.08,*Default,NTP,0000,0000,0000,,well you call link with the new element
+Dialogue: 0,0:11:52.08,0:11:52.88,*Default,NTP,0000,0000,0000,,on the front
+Dialogue: 0,0:11:52.88,0:11:55.44,*Default,NTP,0000,0000,0000,,and then keep the rest of the list in
+Dialogue: 0,0:11:55.44,0:11:56.48,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:11:56.48,0:11:58.40,*Default,NTP,0000,0000,0000,,so the original list becomes the rest of
+Dialogue: 0,0:11:58.40,0:12:00.60,*Default,NTP,0000,0000,0000,,the list you would write that as
+Dialogue: 0,0:12:00.60,0:12:03.60,*Default,NTP,0000,0000,0000,,party.guests
+Dialogue: 0,0:12:07.36,0:12:10.16,*Default,NTP,0000,0000,0000,,so this just makes like a linked list of
+Dialogue: 0,0:12:10.16,0:12:11.28,*Default,NTP,0000,0000,0000,,numbers
+Dialogue: 0,0:12:11.28,0:12:14.16,*Default,NTP,0000,0000,0000,,every time you call party then you get
+Dialogue: 0,0:12:14.16,0:12:14.80,*Default,NTP,0000,0000,0000,,like a
+Dialogue: 0,0:12:14.80,0:12:17.12,*Default,NTP,0000,0000,0000,,another element now why is it that
+Dialogue: 0,0:12:17.12,0:12:19.12,*Default,NTP,0000,0000,0000,,guests and time are somehow related i
+Dialogue: 0,0:12:19.12,0:12:19.84,*Default,NTP,0000,0000,0000,,have no idea
+Dialogue: 0,0:12:19.84,0:12:22.80,*Default,NTP,0000,0000,0000,,but i didn't write this problem so um
+Dialogue: 0,0:12:22.80,0:12:24.96,*Default,NTP,0000,0000,0000,,here we are
+Dialogue: 0,0:12:24.96,0:12:26.80,*Default,NTP,0000,0000,0000,,now we have to think about this nested
+Dialogue: 0,0:12:26.80,0:12:28.72,*Default,NTP,0000,0000,0000,,structure how could it be
+Dialogue: 0,0:12:28.72,0:12:32.48,*Default,NTP,0000,0000,0000,,that um
+Dialogue: 0,0:12:34.24,0:12:37.04,*Default,NTP,0000,0000,0000,,after calling party one and party three
+Dialogue: 0,0:12:37.04,0:12:38.48,*Default,NTP,0000,0000,0000,,we had
+Dialogue: 0,0:12:38.48,0:12:42.48,*Default,NTP,0000,0000,0000,,uh guess as like a nice linked list that
+Dialogue: 0,0:12:42.48,0:12:47.28,*Default,NTP,0000,0000,0000,,looked like link four link two
+Dialogue: 0,0:12:48.00,0:12:50.72,*Default,NTP,0000,0000,0000,,and somehow we got an extra link in here
+Dialogue: 0,0:12:50.72,0:12:52.00,*Default,NTP,0000,0000,0000,,we're to need an assignment
+Dialogue: 0,0:12:52.00,0:12:54.32,*Default,NTP,0000,0000,0000,,statement in order to do that i think in
+Dialogue: 0,0:12:54.32,0:12:55.84,*Default,NTP,0000,0000,0000,,order to get from here
+Dialogue: 0,0:12:55.84,0:12:57.84,*Default,NTP,0000,0000,0000,,to here let's see if i can line these up
+Dialogue: 0,0:12:57.84,0:13:00.16,*Default,NTP,0000,0000,0000,,a little bit better
+Dialogue: 0,0:13:00.16,0:13:02.96,*Default,NTP,0000,0000,0000,,we have to change the rest of this
+Dialogue: 0,0:13:02.96,0:13:04.40,*Default,NTP,0000,0000,0000,,linked list
+Dialogue: 0,0:13:04.40,0:13:06.24,*Default,NTP,0000,0000,0000,,in order to be a linked list that
+Dialogue: 0,0:13:06.24,0:13:09.04,*Default,NTP,0000,0000,0000,,contains whatever was there before
+Dialogue: 0,0:13:09.04,0:13:11.84,*Default,NTP,0000,0000,0000,,this is a valid thing to do um maybe
+Dialogue: 0,0:13:11.84,0:13:14.00,*Default,NTP,0000,0000,0000,,we'll do a python list version of it
+Dialogue: 0,0:13:14.00,0:13:16.16,*Default,NTP,0000,0000,0000,,in a minute but let's talk about what it
+Dialogue: 0,0:13:16.16,0:13:18.84,*Default,NTP,0000,0000,0000,,would look like so this would be like
+Dialogue: 0,0:13:18.84,0:13:21.60,*Default,NTP,0000,0000,0000,,party.guest.rest equals
+Dialogue: 0,0:13:21.60,0:13:24.80,*Default,NTP,0000,0000,0000,,link of
+Dialogue: 0,0:13:26.64,0:13:31.20,*Default,NTP,0000,0000,0000,,oh i typed it wrong party dot
+Dialogue: 0,0:13:32.84,0:13:35.84,*Default,NTP,0000,0000,0000,,guests
+Dialogue: 0,0:13:36.64,0:13:38.40,*Default,NTP,0000,0000,0000,,this particular assignment statement
+Dialogue: 0,0:13:38.40,0:13:40.40,*Default,NTP,0000,0000,0000,,would get us from here
+Dialogue: 0,0:13:40.40,0:13:44.08,*Default,NTP,0000,0000,0000,,to here because all we did was
+Dialogue: 0,0:13:44.08,0:13:47.36,*Default,NTP,0000,0000,0000,,replace what was in this position with a
+Dialogue: 0,0:13:47.36,0:13:49.52,*Default,NTP,0000,0000,0000,,linked list containing what was in that
+Dialogue: 0,0:13:49.52,0:13:52.00,*Default,NTP,0000,0000,0000,,position
+Dialogue: 0,0:13:53.68,0:13:57.20,*Default,NTP,0000,0000,0000,,then if you evaluate this you'll find
+Dialogue: 0,0:13:57.20,0:13:58.88,*Default,NTP,0000,0000,0000,,that self.guess is parted i guess so
+Dialogue: 0,0:13:58.88,0:14:00.16,*Default,NTP,0000,0000,0000,,that's true
+Dialogue: 0,0:14:00.16,0:14:03.28,*Default,NTP,0000,0000,0000,,and and uh expression will always return
+Dialogue: 0,0:14:03.28,0:14:05.36,*Default,NTP,0000,0000,0000,,the second thing if the first one is
+Dialogue: 0,0:14:05.36,0:14:07.40,*Default,NTP,0000,0000,0000,,true and so the second thing is
+Dialogue: 0,0:14:07.40,0:14:10.24,*Default,NTP,0000,0000,0000,,party.guests which means we're returning
+Dialogue: 0,0:14:10.24,0:14:10.96,*Default,NTP,0000,0000,0000,,this whole
+Dialogue: 0,0:14:10.96,0:14:12.88,*Default,NTP,0000,0000,0000,,linked list and that's what we see so
+Dialogue: 0,0:14:12.88,0:14:17.84,*Default,NTP,0000,0000,0000,,this is now the value of party.guests
+Dialogue: 0,0:14:20.56,0:14:23.52,*Default,NTP,0000,0000,0000,,nothing in the chat yet people want to
+Dialogue: 0,0:14:23.52,0:14:25.20,*Default,NTP,0000,0000,0000,,ask questions you could just chime in
+Dialogue: 0,0:14:25.20,0:14:26.32,*Default,NTP,0000,0000,0000,,otherwise i'll keep going
+Dialogue: 0,0:14:26.32,0:14:28.84,*Default,NTP,0000,0000,0000,,here's a question john why is it not
+Dialogue: 0,0:14:28.84,0:14:30.08,*Default,NTP,0000,0000,0000,,party.gus.red
+Dialogue: 0,0:14:30.08,0:14:32.64,*Default,NTP,0000,0000,0000,,for what's in the link parentheses oh
+Dialogue: 0,0:14:32.64,0:14:33.52,*Default,NTP,0000,0000,0000,,yeah i probably shouldn't
+Dialogue: 0,0:14:33.52,0:14:35.84,*Default,NTP,0000,0000,0000,,i think that's right if you go down to
+Dialogue: 0,0:14:35.84,0:14:37.68,*Default,NTP,0000,0000,0000,,the yeah
+Dialogue: 0,0:14:37.68,0:14:40.08,*Default,NTP,0000,0000,0000,,i think that's right otherwise the the
+Dialogue: 0,0:14:40.08,0:14:42.72,*Default,NTP,0000,0000,0000,,party 7 wouldn't have worked i think
+Dialogue: 0,0:14:42.72,0:14:44.48,*Default,NTP,0000,0000,0000,,yeah otherwise we would have had a four
+Dialogue: 0,0:14:44.48,0:14:46.40,*Default,NTP,0000,0000,0000,,in here and we don't want a four
+Dialogue: 0,0:14:46.40,0:14:48.00,*Default,NTP,0000,0000,0000,,in here we just want the rest of that
+Dialogue: 0,0:14:48.00,0:14:51.04,*Default,NTP,0000,0000,0000,,all right thanks that's right
+Dialogue: 0,0:14:52.08,0:14:54.88,*Default,NTP,0000,0000,0000,,thank you raymond
+Dialogue: 0,0:14:56.84,0:15:00.40,*Default,NTP,0000,0000,0000,,okay um
+Dialogue: 0,0:15:01.28,0:15:03.04,*Default,NTP,0000,0000,0000,,what's going on with this costume party
+Dialogue: 0,0:15:03.04,0:15:04.48,*Default,NTP,0000,0000,0000,,well let's take a look
+Dialogue: 0,0:15:04.48,0:15:07.12,*Default,NTP,0000,0000,0000,,so when you call a costume you're
+Dialogue: 0,0:15:07.12,0:15:09.04,*Default,NTP,0000,0000,0000,,passing a bow and a tie
+Dialogue: 0,0:15:09.04,0:15:11.12,*Default,NTP,0000,0000,0000,,which is gonna update party i guess that
+Dialogue: 0,0:15:11.12,0:15:12.48,*Default,NTP,0000,0000,0000,,rests somehow
+Dialogue: 0,0:15:12.48,0:15:14.56,*Default,NTP,0000,0000,0000,,and it's going to update this instance
+Dialogue: 0,0:15:14.56,0:15:17.04,*Default,NTP,0000,0000,0000,,attribute
+Dialogue: 0,0:15:17.76,0:15:19.92,*Default,NTP,0000,0000,0000,,and then we're going to attend which
+Dialogue: 0,0:15:19.92,0:15:22.96,*Default,NTP,0000,0000,0000,,calls this
+Dialogue: 0,0:15:23.12,0:15:26.64,*Default,NTP,0000,0000,0000,,it doesn't necessarily call the party
+Dialogue: 0,0:15:26.64,0:15:30.00,*Default,NTP,0000,0000,0000,,function at all what it does
+Dialogue: 0,0:15:30.00,0:15:33.28,*Default,NTP,0000,0000,0000,,is it prints a wrapper string for
+Dialogue: 0,0:15:33.28,0:15:36.64,*Default,NTP,0000,0000,0000,,self dot ie
+Dialogue: 0,0:15:37.67,0:15:38.84,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:15:38.84,0:15:41.84,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:15:44.32,0:15:48.72,*Default,NTP,0000,0000,0000,,what came out was
+Dialogue: 0,0:15:48.99,0:15:52.05,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:15:52.84,0:15:55.84,*Default,NTP,0000,0000,0000,,nice
+Dialogue: 0,0:16:00.48,0:16:04.00,*Default,NTP,0000,0000,0000,,link costume these both have to have
+Dialogue: 0,0:16:04.00,0:16:04.88,*Default,NTP,0000,0000,0000,,appeared
+Dialogue: 0,0:16:04.88,0:16:08.32,*Default,NTP,0000,0000,0000,,as a result of this print call because a
+Dialogue: 0,0:16:08.32,0:16:10.16,*Default,NTP,0000,0000,0000,,10 doesn't return anything
+Dialogue: 0,0:16:10.16,0:16:12.88,*Default,NTP,0000,0000,0000,,so none of this is due to a 10's return
+Dialogue: 0,0:16:12.88,0:16:13.60,*Default,NTP,0000,0000,0000,,value
+Dialogue: 0,0:16:13.60,0:16:16.80,*Default,NTP,0000,0000,0000,,this all has to be from the print
+Dialogue: 0,0:16:16.80,0:16:19.92,*Default,NTP,0000,0000,0000,,so when you call repper
+Dialogue: 0,0:16:19.92,0:16:23.04,*Default,NTP,0000,0000,0000,,on selfie
+Dialogue: 0,0:16:23.04,0:16:25.84,*Default,NTP,0000,0000,0000,,you are invoking the rapper method for
+Dialogue: 0,0:16:25.84,0:16:26.72,*Default,NTP,0000,0000,0000,,the class
+Dialogue: 0,0:16:26.72,0:16:29.68,*Default,NTP,0000,0000,0000,,of uh
+Dialogue: 0,0:16:31.52,0:16:36.32,*Default,NTP,0000,0000,0000,,of selfie so um
+Dialogue: 0,0:16:36.32,0:16:38.56,*Default,NTP,0000,0000,0000,,this is not immediately going to invoke
+Dialogue: 0,0:16:38.56,0:16:39.60,*Default,NTP,0000,0000,0000,,the repper method
+Dialogue: 0,0:16:39.60,0:16:43.36,*Default,NTP,0000,0000,0000,,for this value itself
+Dialogue: 0,0:16:43.36,0:16:45.84,*Default,NTP,0000,0000,0000,,because instead it's just going to
+Dialogue: 0,0:16:45.84,0:16:46.40,*Default,NTP,0000,0000,0000,,invoke
+Dialogue: 0,0:16:46.40,0:16:49.76,*Default,NTP,0000,0000,0000,,oh come on invoke the
+Dialogue: 0,0:16:49.76,0:16:52.24,*Default,NTP,0000,0000,0000,,wrapper method for whatever this link is
+Dialogue: 0,0:16:52.24,0:16:53.44,*Default,NTP,0000,0000,0000,,that we've created
+Dialogue: 0,0:16:53.44,0:16:56.64,*Default,NTP,0000,0000,0000,,now if this link happens to contain
+Dialogue: 0,0:16:56.64,0:16:59.76,*Default,NTP,0000,0000,0000,,uh the costume party instance
+Dialogue: 0,0:16:59.76,0:17:01.92,*Default,NTP,0000,0000,0000,,then we'll get a call to this repper man
+Dialogue: 0,0:17:01.92,0:17:03.36,*Default,NTP,0000,0000,0000,,this is a convoluted one
+Dialogue: 0,0:17:03.36,0:17:06.56,*Default,NTP,0000,0000,0000,,so um
+Dialogue: 0,0:17:06.56,0:17:09.92,*Default,NTP,0000,0000,0000,,we need to construct this value such
+Dialogue: 0,0:17:09.92,0:17:10.64,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:17:10.64,0:17:13.84,*Default,NTP,0000,0000,0000,,we get print nice
+Dialogue: 0,0:17:13.84,0:17:19.36,*Default,NTP,0000,0000,0000,,right here
+Dialogue: 0,0:17:19.36,0:17:21.20,*Default,NTP,0000,0000,0000,,i'm gonna make a hypothesis then we'll
+Dialogue: 0,0:17:21.20,0:17:23.04,*Default,NTP,0000,0000,0000,,trace it through and see if we got it
+Dialogue: 0,0:17:23.04,0:17:24.88,*Default,NTP,0000,0000,0000,,right or not
+Dialogue: 0,0:17:24.88,0:17:29.84,*Default,NTP,0000,0000,0000,,i think the trick is to print nice here
+Dialogue: 0,0:17:29.84,0:17:34.56,*Default,NTP,0000,0000,0000,,to return
+Dialogue: 0,0:17:38.48,0:17:42.00,*Default,NTP,0000,0000,0000,,costume here
+Dialogue: 0,0:17:42.32,0:17:46.32,*Default,NTP,0000,0000,0000,,and to oh
+Dialogue: 0,0:17:46.32,0:17:50.56,*Default,NTP,0000,0000,0000,,create here a linked list with only one
+Dialogue: 0,0:17:50.56,0:17:53.68,*Default,NTP,0000,0000,0000,,element and that element is
+Dialogue: 0,0:17:53.68,0:17:56.16,*Default,NTP,0000,0000,0000,,self
+Dialogue: 0,0:17:56.96,0:18:00.24,*Default,NTP,0000,0000,0000,,let's see what we've done
+Dialogue: 0,0:18:00.24,0:18:02.08,*Default,NTP,0000,0000,0000,,i'm gonna ignore this line for a while
+Dialogue: 0,0:18:02.08,0:18:04.72,*Default,NTP,0000,0000,0000,,just work with what we have
+Dialogue: 0,0:18:04.72,0:18:08.00,*Default,NTP,0000,0000,0000,,if it's the case that we create a
+Dialogue: 0,0:18:08.00,0:18:09.68,*Default,NTP,0000,0000,0000,,costume
+Dialogue: 0,0:18:09.68,0:18:12.80,*Default,NTP,0000,0000,0000,,with five and six so far we're ignoring
+Dialogue: 0,0:18:12.80,0:18:14.32,*Default,NTP,0000,0000,0000,,the five and the six
+Dialogue: 0,0:18:14.32,0:18:16.16,*Default,NTP,0000,0000,0000,,and we're creating an instance attribute
+Dialogue: 0,0:18:16.16,0:18:17.52,*Default,NTP,0000,0000,0000,,which is a linked list
+Dialogue: 0,0:18:17.52,0:18:20.72,*Default,NTP,0000,0000,0000,,containing just this costume instance
+Dialogue: 0,0:18:20.72,0:18:24.32,*Default,NTP,0000,0000,0000,,now when we call when we invoke a tend
+Dialogue: 0,0:18:24.32,0:18:26.80,*Default,NTP,0000,0000,0000,,we're calling this method which prints
+Dialogue: 0,0:18:26.80,0:18:28.00,*Default,NTP,0000,0000,0000,,the result of calling
+Dialogue: 0,0:18:28.00,0:18:31.36,*Default,NTP,0000,0000,0000,,wrapper on selfie which is a linked list
+Dialogue: 0,0:18:31.36,0:18:33.52,*Default,NTP,0000,0000,0000,,containing the costume
+Dialogue: 0,0:18:33.52,0:18:36.56,*Default,NTP,0000,0000,0000,,when you create a linked list
+Dialogue: 0,0:18:36.56,0:18:38.48,*Default,NTP,0000,0000,0000,,uh when you create the wrapper string
+Dialogue: 0,0:18:38.48,0:18:39.92,*Default,NTP,0000,0000,0000,,for a linked list
+Dialogue: 0,0:18:39.92,0:18:44.24,*Default,NTP,0000,0000,0000,,what it does is it gets the
+Dialogue: 0,0:18:44.24,0:18:47.20,*Default,NTP,0000,0000,0000,,um the string that represents each
+Dialogue: 0,0:18:47.20,0:18:48.08,*Default,NTP,0000,0000,0000,,element
+Dialogue: 0,0:18:48.08,0:18:52.40,*Default,NTP,0000,0000,0000,,and puts those into a larger expression
+Dialogue: 0,0:18:52.80,0:18:57.84,*Default,NTP,0000,0000,0000,,so let's take a look at it
+Dialogue: 0,0:18:59.68,0:19:02.56,*Default,NTP,0000,0000,0000,,this is true of all kinds of lists we
+Dialogue: 0,0:19:02.56,0:19:04.56,*Default,NTP,0000,0000,0000,,happen to write it explicitly
+Dialogue: 0,0:19:04.56,0:19:06.56,*Default,NTP,0000,0000,0000,,when you want a wrapper string here's an
+Dialogue: 0,0:19:06.56,0:19:08.48,*Default,NTP,0000,0000,0000,,example
+Dialogue: 0,0:19:08.48,0:19:10.56,*Default,NTP,0000,0000,0000,,the way you do it is that you
+Dialogue: 0,0:19:10.56,0:19:12.08,*Default,NTP,0000,0000,0000,,recursively get the repper string for
+Dialogue: 0,0:19:12.08,0:19:13.28,*Default,NTP,0000,0000,0000,,the rest
+Dialogue: 0,0:19:13.28,0:19:14.96,*Default,NTP,0000,0000,0000,,but you also get the wrapper string for
+Dialogue: 0,0:19:14.96,0:19:16.80,*Default,NTP,0000,0000,0000,,the first and then you put those
+Dialogue: 0,0:19:16.80,0:19:18.32,*Default,NTP,0000,0000,0000,,together into an expression
+Dialogue: 0,0:19:18.32,0:19:20.72,*Default,NTP,0000,0000,0000,,it's like link of whatever the first
+Dialogue: 0,0:19:20.72,0:19:21.60,*Default,NTP,0000,0000,0000,,looks like
+Dialogue: 0,0:19:21.60,0:19:25.12,*Default,NTP,0000,0000,0000,,and whatever the rest looks like so
+Dialogue: 0,0:19:25.12,0:19:26.88,*Default,NTP,0000,0000,0000,,to get a wrapper string for this linked
+Dialogue: 0,0:19:26.88,0:19:28.96,*Default,NTP,0000,0000,0000,,list you need to figure out how to write
+Dialogue: 0,0:19:28.96,0:19:30.00,*Default,NTP,0000,0000,0000,,down the number one
+Dialogue: 0,0:19:30.00,0:19:31.12,*Default,NTP,0000,0000,0000,,and you need to figure out how to write
+Dialogue: 0,0:19:31.12,0:19:32.64,*Default,NTP,0000,0000,0000,,down the rest of the list and then you
+Dialogue: 0,0:19:32.64,0:19:36.48,*Default,NTP,0000,0000,0000,,put them together into one expression
+Dialogue: 0,0:19:37.52,0:19:40.56,*Default,NTP,0000,0000,0000,,that's what's happening here
+Dialogue: 0,0:19:40.56,0:19:43.52,*Default,NTP,0000,0000,0000,,here we are trying to draw this as a
+Dialogue: 0,0:19:43.52,0:19:44.48,*Default,NTP,0000,0000,0000,,string
+Dialogue: 0,0:19:44.48,0:19:46.72,*Default,NTP,0000,0000,0000,,which means we have to call repper on
+Dialogue: 0,0:19:46.72,0:19:47.68,*Default,NTP,0000,0000,0000,,self
+Dialogue: 0,0:19:47.68,0:19:49.28,*Default,NTP,0000,0000,0000,,when we call wrapper on self that
+Dialogue: 0,0:19:49.28,0:19:51.04,*Default,NTP,0000,0000,0000,,invokes this wrapper method which prints
+Dialogue: 0,0:19:51.04,0:19:52.24,*Default,NTP,0000,0000,0000,,out nice
+Dialogue: 0,0:19:52.24,0:19:55.36,*Default,NTP,0000,0000,0000,,returns the string costume that's the
+Dialogue: 0,0:19:55.36,0:19:55.84,*Default,NTP,0000,0000,0000,,string
+Dialogue: 0,0:19:55.84,0:19:58.08,*Default,NTP,0000,0000,0000,,that's representing this costume
+Dialogue: 0,0:19:58.08,0:19:59.12,*Default,NTP,0000,0000,0000,,instance
+Dialogue: 0,0:19:59.12,0:20:02.16,*Default,NTP,0000,0000,0000,,and then it is the wrapper method of the
+Dialogue: 0,0:20:02.16,0:20:02.64,*Default,NTP,0000,0000,0000,,link
+Dialogue: 0,0:20:02.64,0:20:06.00,*Default,NTP,0000,0000,0000,,class that puts the word link
+Dialogue: 0,0:20:06.00,0:20:08.64,*Default,NTP,0000,0000,0000,,and the parentheses around whatever i
+Dialogue: 0,0:20:08.64,0:20:09.28,*Default,NTP,0000,0000,0000,,returned
+Dialogue: 0,0:20:09.28,0:20:12.32,*Default,NTP,0000,0000,0000,,right here and that's not even the end
+Dialogue: 0,0:20:12.32,0:20:13.76,*Default,NTP,0000,0000,0000,,of the question
+Dialogue: 0,0:20:13.76,0:20:16.08,*Default,NTP,0000,0000,0000,,apparently there's a there's a part
+Dialogue: 0,0:20:16.08,0:20:18.24,*Default,NTP,0000,0000,0000,,there's a whole other part to it
+Dialogue: 0,0:20:18.24,0:20:20.16,*Default,NTP,0000,0000,0000,,this is a good i have to say this is a
+Dialogue: 0,0:20:20.16,0:20:21.52,*Default,NTP,0000,0000,0000,,killer question
+Dialogue: 0,0:20:21.52,0:20:25.60,*Default,NTP,0000,0000,0000,,yeah if the exam prep is difficult then
+Dialogue: 0,0:20:25.60,0:20:27.44,*Default,NTP,0000,0000,0000,,maybe the exam will seem more reasonable
+Dialogue: 0,0:20:27.44,0:20:30.64,*Default,NTP,0000,0000,0000,,or maybe not we'll see so um this is
+Dialogue: 0,0:20:30.64,0:20:32.84,*Default,NTP,0000,0000,0000,,changing what party.10
+Dialogue: 0,0:20:32.84,0:20:35.84,*Default,NTP,0000,0000,0000,,does
+Dialogue: 0,0:20:36.08,0:20:40.72,*Default,NTP,0000,0000,0000,,in some arbitrary way i think
+Dialogue: 0,0:20:40.72,0:20:44.00,*Default,NTP,0000,0000,0000,,the easiest way to get this behavior
+Dialogue: 0,0:20:44.00,0:20:46.88,*Default,NTP,0000,0000,0000,,would be to just kind of ignore
+Dialogue: 0,0:20:46.88,0:20:47.44,*Default,NTP,0000,0000,0000,,everything
+Dialogue: 0,0:20:47.44,0:20:50.64,*Default,NTP,0000,0000,0000,,and say oh from now on party.attend
+Dialogue: 0,0:20:50.64,0:20:55.12,*Default,NTP,0000,0000,0000,,just returns uh
+Dialogue: 0,0:20:55.12,0:20:56.33,*Default,NTP,0000,0000,0000,,this text
+Dialogue: 0,0:20:56.33,0:20:59.36,*Default,NTP,0000,0000,0000,,[Laughter]
+Dialogue: 0,0:20:59.36,0:21:02.40,*Default,NTP,0000,0000,0000,,that's really bizarre that's one way to
+Dialogue: 0,0:21:02.40,0:21:04.88,*Default,NTP,0000,0000,0000,,hack it to do what we want
+Dialogue: 0,0:21:04.88,0:21:07.76,*Default,NTP,0000,0000,0000,,that you would be right there totally
+Dialogue: 0,0:21:07.76,0:21:09.12,*Default,NTP,0000,0000,0000,,could be another way
+Dialogue: 0,0:21:09.12,0:21:13.12,*Default,NTP,0000,0000,0000,,that involves getting party.guest.rest
+Dialogue: 0,0:21:13.12,0:21:16.08,*Default,NTP,0000,0000,0000,,to be oh there's no way there's no way
+Dialogue: 0,0:21:16.08,0:21:17.84,*Default,NTP,0000,0000,0000,,you're converting the
+Dialogue: 0,0:21:17.84,0:21:21.28,*Default,NTP,0000,0000,0000,,what's the current party for yeah no
+Dialogue: 0,0:21:21.28,0:21:22.88,*Default,NTP,0000,0000,0000,,that's got to be the way to do it right
+Dialogue: 0,0:21:22.88,0:21:24.00,*Default,NTP,0000,0000,0000,,john
+Dialogue: 0,0:21:24.00,0:21:27.60,*Default,NTP,0000,0000,0000,,well no there's this opportunity to like
+Dialogue: 0,0:21:27.60,0:21:30.16,*Default,NTP,0000,0000,0000,,reset party.guest.rest to whatever we
+Dialogue: 0,0:21:30.16,0:21:31.20,*Default,NTP,0000,0000,0000,,want so
+Dialogue: 0,0:21:31.20,0:21:35.68,*Default,NTP,0000,0000,0000,,ah it was this but we could rewrite it
+Dialogue: 0,0:21:35.68,0:21:39.12,*Default,NTP,0000,0000,0000,,to have uh an eight and a four and a
+Dialogue: 0,0:21:39.12,0:21:40.88,*Default,NTP,0000,0000,0000,,five in it there
+Dialogue: 0,0:21:40.88,0:21:44.00,*Default,NTP,0000,0000,0000,,yeah okay and then we could like
+Dialogue: 0,0:21:44.00,0:21:47.12,*Default,NTP,0000,0000,0000,,print that out but in any case i think
+Dialogue: 0,0:21:47.12,0:21:48.40,*Default,NTP,0000,0000,0000,,this solves the question
+Dialogue: 0,0:21:48.40,0:21:50.96,*Default,NTP,0000,0000,0000,,party seven just does whatever it does
+Dialogue: 0,0:21:50.96,0:21:52.08,*Default,NTP,0000,0000,0000,,who cares
+Dialogue: 0,0:21:52.08,0:21:54.40,*Default,NTP,0000,0000,0000,,uh because now whenever you invoke a
+Dialogue: 0,0:21:54.40,0:21:58.24,*Default,NTP,0000,0000,0000,,tend you just get this
+Dialogue: 0,0:21:58.24,0:22:00.08,*Default,NTP,0000,0000,0000,,probably not the answer that was
+Dialogue: 0,0:22:00.08,0:22:02.56,*Default,NTP,0000,0000,0000,,intended but
+Dialogue: 0,0:22:02.56,0:22:06.80,*Default,NTP,0000,0000,0000,,okay a really great exercise
+Dialogue: 0,0:22:06.80,0:22:11.20,*Default,NTP,0000,0000,0000,,i would say is uh
+Dialogue: 0,0:22:11.20,0:22:13.52,*Default,NTP,0000,0000,0000,,trying to figure out how some nested
+Dialogue: 0,0:22:13.52,0:22:15.76,*Default,NTP,0000,0000,0000,,structure
+Dialogue: 0,0:22:15.76,0:22:20.16,*Default,NTP,0000,0000,0000,,would be represented as a linked list
+Dialogue: 0,0:22:20.16,0:22:22.72,*Default,NTP,0000,0000,0000,,if you have this thing what's the linked
+Dialogue: 0,0:22:22.72,0:22:24.00,*Default,NTP,0000,0000,0000,,list equivalent so
+Dialogue: 0,0:22:24.00,0:22:26.96,*Default,NTP,0000,0000,0000,,you know let's call this s what's the t
+Dialogue: 0,0:22:26.96,0:22:28.88,*Default,NTP,0000,0000,0000,,well it's a linked list that starts with
+Dialogue: 0,0:22:28.88,0:22:30.24,*Default,NTP,0000,0000,0000,,one
+Dialogue: 0,0:22:30.24,0:22:35.04,*Default,NTP,0000,0000,0000,,the next element is actually another
+Dialogue: 0,0:22:38.84,0:22:41.84,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:22:44.08,0:22:47.52,*Default,NTP,0000,0000,0000,,and what's the last element
+Dialogue: 0,0:22:47.52,0:22:50.24,*Default,NTP,0000,0000,0000,,just a number
+Dialogue: 0,0:22:51.04,0:22:54.56,*Default,NTP,0000,0000,0000,,oh it's never a good sign
+Dialogue: 0,0:22:54.56,0:22:56.72,*Default,NTP,0000,0000,0000,,so s looks like that t looks like some
+Dialogue: 0,0:22:56.72,0:22:57.76,*Default,NTP,0000,0000,0000,,monstrosity
+Dialogue: 0,0:22:57.76,0:23:00.80,*Default,NTP,0000,0000,0000,,but there is a stir method on
+Dialogue: 0,0:23:00.80,0:23:02.72,*Default,NTP,0000,0000,0000,,linked list that does something kind of
+Dialogue: 0,0:23:02.72,0:23:04.00,*Default,NTP,0000,0000,0000,,reasonable
+Dialogue: 0,0:23:04.00,0:23:06.96,*Default,NTP,0000,0000,0000,,basically this was designed let's look
+Dialogue: 0,0:23:06.96,0:23:08.00,*Default,NTP,0000,0000,0000,,at that
+Dialogue: 0,0:23:08.00,0:23:10.40,*Default,NTP,0000,0000,0000,,this stair method which you get when you
+Dialogue: 0,0:23:10.40,0:23:11.92,*Default,NTP,0000,0000,0000,,print something out oh look
+Dialogue: 0,0:23:11.92,0:23:15.12,*Default,NTP,0000,0000,0000,,this example looks very familiar um
+Dialogue: 0,0:23:15.12,0:23:17.60,*Default,NTP,0000,0000,0000,,this method was designed so that it
+Dialogue: 0,0:23:17.60,0:23:19.36,*Default,NTP,0000,0000,0000,,behaves in basically the same way
+Dialogue: 0,0:23:19.36,0:23:22.40,*Default,NTP,0000,0000,0000,,as the built-in lists wrapper
+Dialogue: 0,0:23:22.40,0:23:23.84,*Default,NTP,0000,0000,0000,,so that you can kind of look at the
+Dialogue: 0,0:23:23.84,0:23:25.44,*Default,NTP,0000,0000,0000,,correspondence between the two
+Dialogue: 0,0:23:25.44,0:23:27.04,*Default,NTP,0000,0000,0000,,now it's still the case that in order to
+Dialogue: 0,0:23:27.04,0:23:28.80,*Default,NTP,0000,0000,0000,,access stuff in here
+Dialogue: 0,0:23:28.80,0:23:30.64,*Default,NTP,0000,0000,0000,,you know accessing something in here
+Dialogue: 0,0:23:30.64,0:23:33.04,*Default,NTP,0000,0000,0000,,like getting the 2 would look like that
+Dialogue: 0,0:23:33.04,0:23:34.72,*Default,NTP,0000,0000,0000,,but getting the 2 in here means you have
+Dialogue: 0,0:23:34.72,0:23:36.08,*Default,NTP,0000,0000,0000,,to treat it like a linked list
+Dialogue: 0,0:23:36.08,0:23:37.44,*Default,NTP,0000,0000,0000,,you have to get the rest and then you
+Dialogue: 0,0:23:37.44,0:23:38.72,*Default,NTP,0000,0000,0000,,have to get the first and then that
+Dialogue: 0,0:23:38.72,0:23:40.32,*Default,NTP,0000,0000,0000,,turns out to be a linked list and so you
+Dialogue: 0,0:23:40.32,0:23:42.32,*Default,NTP,0000,0000,0000,,have to get a number out of that
+Dialogue: 0,0:23:42.32,0:23:44.00,*Default,NTP,0000,0000,0000,,so still the operations are different
+Dialogue: 0,0:23:44.00,0:23:45.44,*Default,NTP,0000,0000,0000,,because it's a different kind of data
+Dialogue: 0,0:23:45.44,0:23:46.72,*Default,NTP,0000,0000,0000,,structure
+Dialogue: 0,0:23:46.72,0:23:48.64,*Default,NTP,0000,0000,0000,,but it can represent the same sort of
+Dialogue: 0,0:23:48.64,0:23:50.40,*Default,NTP,0000,0000,0000,,nested stuff that you could

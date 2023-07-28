@@ -1,0 +1,820 @@
+[Script Info]
+Title: Lecture 22. Efficiency_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=54&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:02.67,*Default,NTP,0000,0000,0000,,61 election No.22
+Dialogue: 0,0:00:02.97,0:00:04.07,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:05.50,0:00:07.67,*Default,NTP,0000,0000,0000,,there's a lab this week do Tuesday
+Dialogue: 0,0:00:08.13,0:00:10.50,*Default,NTP,0000,0000,0000,,the ants project is due on Friday
+Dialogue: 0,0:00:10.57,0:00:14.37,*Default,NTP,0000,0000,0000,,but you need to finish phases one and two by Tuesday
+Dialogue: 0,0:00:15.13,0:00:16.93,*Default,NTP,0000,0000,0000,,you can earn an early submission bonus point
+Dialogue: 0,0:00:16.93,0:00:18.57,*Default,NTP,0000,0000,0000,,by submitting the whole project
+Dialogue: 0,0:00:18.87,0:00:21.70,*Default,NTP,0000,0000,0000,,by Thursday which is what I recommend trying to do
+Dialogue: 0,0:00:22.47,0:00:27.10,*Default,NTP,0000,0000,0000,,homework five is posted its du on Monday of next week
+Dialogue: 0,0:00:27.47,0:00:30.60,*Default,NTP,0000,0000,0000,,and should be a good review for the upcoming midterm
+Dialogue: 0,0:00:31.47,0:00:34.33,*Default,NTP,0000,0000,0000,,lab next week will only have one required part
+Dialogue: 0,0:00:34.33,0:00:36.33,*Default,NTP,0000,0000,0000,,which is to finish homework five
+Dialogue: 0,0:00:36.57,0:00:37.17,*Default,NTP,0000,0000,0000,,there will be some
+Dialogue: 0,0:00:37.17,0:00:39.33,*Default,NTP,0000,0000,0000,,optional problems that give you some more practice
+Dialogue: 0,0:00:39.33,0:00:41.07,*Default,NTP,0000,0000,0000,,if that's what you'd like for the midterm
+Dialogue: 0,0:00:41.40,0:00:43.87,*Default,NTP,0000,0000,0000,,but there won't be any required lab problems
+Dialogue: 0,0:00:43.87,0:00:46.27,*Default,NTP,0000,0000,0000,,in addition to the required homework problems
+Dialogue: 0,0:00:46.33,0:00:48.37,*Default,NTP,0000,0000,0000,,that are due next Monday
+Dialogue: 0,0:00:49.40,0:00:51.77,*Default,NTP,0000,0000,0000,,it's your last chance to fill out the weak eight
+Dialogue: 0,0:00:51.77,0:00:53.17,*Default,NTP,0000,0000,0000,,anonymous survey
+Dialogue: 0,0:00:53.17,0:00:55.40,*Default,NTP,0000,0000,0000,,we'd really appreciate your input
+Dialogue: 0,0:00:56.00,0:00:58.20,*Default,NTP,0000,0000,0000,,and midterm two is coming up
+Dialogue: 0,0:00:58.50,0:01:02.67,*Default,NTP,0000,0000,0000,,a week from Wednesday at 7pm pacific time
+Dialogue: 0,0:01:02.93,0:01:05.60,*Default,NTP,0000,0000,0000,,it will have a similar format and style to midterm one
+Dialogue: 0,0:01:05.73,0:01:09.10,*Default,NTP,0000,0000,0000,,cover content up to an including last fridays lecture
+Dialogue: 0,0:01:09.57,0:01:11.70,*Default,NTP,0000,0000,0000,,and today's lecture about efficiency
+Dialogue: 0,0:01:11.73,0:01:14.30,*Default,NTP,0000,0000,0000,,will not be covered on the exam
+Dialogue: 0,0:01:14.37,0:01:18.30,*Default,NTP,0000,0000,0000,,or on any assignments or labs or discussions
+Dialogue: 0,0:01:18.57,0:01:21.20,*Default,NTP,0000,0000,0000,,it's just an optional topic this semester
+Dialogue: 0,0:01:21.57,0:01:23.67,*Default,NTP,0000,0000,0000,,in the past it's been required
+Dialogue: 0,0:01:23.73,0:01:27.40,*Default,NTP,0000,0000,0000,,but we just cover this topic for one lecture in 61 a
+Dialogue: 0,0:01:27.60,0:01:30.67,*Default,NTP,0000,0000,0000,,whereas you'll hear a lot about it in 61 b
+Dialogue: 0,0:01:31.33,0:01:34.00,*Default,NTP,0000,0000,0000,,so it's a good idea to watch this lecture
+Dialogue: 0,0:01:34.00,0:01:35.93,*Default,NTP,0000,0000,0000,,get a flavor for what efficiency is
+Dialogue: 0,0:01:35.93,0:01:38.57,*Default,NTP,0000,0000,0000,,all about but if you take 61 b
+Dialogue: 0,0:01:38.60,0:01:40.10,*Default,NTP,0000,0000,0000,,then you'll learn all about it there
+Dialogue: 0,0:01:40.10,0:01:41.53,*Default,NTP,0000,0000,0000,,and you won't have missed anything
+Dialogue: 0,0:01:44.73,0:01:46.30,*Default,NTP,0000,0000,0000,,measuring efficiency
+Dialogue: 0,0:01:46.90,0:01:49.37,*Default,NTP,0000,0000,0000,,this is not about objects in particular
+Dialogue: 0,0:01:49.70,0:01:50.97,*Default,NTP,0000,0000,0000,,but about how to
+Dialogue: 0,0:01:50.97,0:01:53.53,*Default,NTP,0000,0000,0000,,understand how long your program is going to take
+Dialogue: 0,0:01:53.53,0:01:54.33,*Default,NTP,0000,0000,0000,,to run
+Dialogue: 0,0:01:55.77,0:01:59.50,*Default,NTP,0000,0000,0000,,so let's go back to our first example of tree recursion
+Dialogue: 0,0:01:59.90,0:02:01.67,*Default,NTP,0000,0000,0000,,which was a way to compute
+Dialogue: 0,0:02:01.67,0:02:03.87,*Default,NTP,0000,0000,0000,,elements of the fibonacci sequence
+Dialogue: 0,0:02:04.17,0:02:07.53,*Default,NTP,0000,0000,0000,,using tree recursion with the following implementation
+Dialogue: 0,0:02:08.27,0:02:10.40,*Default,NTP,0000,0000,0000,,element zero is zero element one is one
+Dialogue: 0,0:02:10.40,0:02:12.80,*Default,NTP,0000,0000,0000,,everything else is the sum of the previous two
+Dialogue: 0,0:02:13.70,0:02:17.27,*Default,NTP,0000,0000,0000,,thanks fibonacci for making this sequence so popular
+Dialogue: 0,0:02:18.13,0:02:20.27,*Default,NTP,0000,0000,0000,,if I want to compute fib five
+Dialogue: 0,0:02:20.33,0:02:23.27,*Default,NTP,0000,0000,0000,,that involves summing up the results of fib three
+Dialogue: 0,0:02:23.33,0:02:28.13,*Default,NTP,0000,0000,0000,,and fib four and fib three means summing up one and two
+Dialogue: 0,0:02:28.57,0:02:30.60,*Default,NTP,0000,0000,0000,,here I've marked the base cases
+Dialogue: 0,0:02:30.70,0:02:32.87,*Default,NTP,0000,0000,0000,,with their returned values
+Dialogue: 0,0:02:33.70,0:02:35.87,*Default,NTP,0000,0000,0000,,so to compute fib three I have to do all that work
+Dialogue: 0,0:02:35.87,0:02:38.80,*Default,NTP,0000,0000,0000,,to compute fib four I have to do all of that work
+Dialogue: 0,0:02:39.17,0:02:41.20,*Default,NTP,0000,0000,0000,,and the actual computation
+Dialogue: 0,0:02:41.90,0:02:45.00,*Default,NTP,0000,0000,0000,,proceeds in a pattern that looks like this
+Dialogue: 0,0:02:45.40,0:02:47.67,*Default,NTP,0000,0000,0000,,so this tree shaped computation
+Dialogue: 0,0:02:47.90,0:02:50.00,*Default,NTP,0000,0000,0000,,actually begins by calling fip five
+Dialogue: 0,0:02:50.00,0:02:51.00,*Default,NTP,0000,0000,0000,,which calls fip three
+Dialogue: 0,0:02:51.00,0:02:52.30,*Default,NTP,0000,0000,0000,,which calls fip one
+Dialogue: 0,0:02:52.50,0:02:54.60,*Default,NTP,0000,0000,0000,,which actually returns the No.1
+Dialogue: 0,0:02:55.47,0:02:58.13,*Default,NTP,0000,0000,0000,,the next thing to return is this called a fib zero
+Dialogue: 0,0:02:58.33,0:03:01.20,*Default,NTP,0000,0000,0000,,fib zero and fib one are some to give you fib two
+Dialogue: 0,0:03:01.93,0:03:02.90,*Default,NTP,0000,0000,0000,,and then we can
+Dialogue: 0,0:03:02.93,0:03:05.77,*Default,NTP,0000,0000,0000,,finally return from the call to fib three
+Dialogue: 0,0:03:06.57,0:03:07.70,*Default,NTP,0000,0000,0000,,and we proceed
+Dialogue: 0,0:03:07.77,0:03:11.10,*Default,NTP,0000,0000,0000,,by computing the rest of the values that we need
+Dialogue: 0,0:03:11.37,0:03:14.30,*Default,NTP,0000,0000,0000,,in order to finally return from fibb five
+Dialogue: 0,0:03:15.40,0:03:17.00,*Default,NTP,0000,0000,0000,,so we want to understand
+Dialogue: 0,0:03:17.40,0:03:19.93,*Default,NTP,0000,0000,0000,,how long it takes to run this computation
+Dialogue: 0,0:03:20.40,0:03:22.30,*Default,NTP,0000,0000,0000,,and the first thing we'll do is just count
+Dialogue: 0,0:03:22.30,0:03:23.77,*Default,NTP,0000,0000,0000,,the number of calls
+Dialogue: 0,0:03:23.90,0:03:27.17,*Default,NTP,0000,0000,0000,,to fip and see how that grows
+Dialogue: 0,0:03:29.47,0:03:35.70,*Default,NTP,0000,0000,0000,,fib in if an equal zero or an equals one return in
+Dialogue: 0,0:03:36.57,0:03:37.37,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:03:37.47,0:03:42.73,*Default,NTP,0000,0000,0000,,return fib and minus two plus fib and minus one
+Dialogue: 0,0:03:43.50,0:03:44.90,*Default,NTP,0000,0000,0000,,I know this is slightly different
+Dialogue: 0,0:03:44.90,0:03:46.17,*Default,NTP,0000,0000,0000,,from what was on the slide
+Dialogue: 0,0:03:46.27,0:03:48.00,*Default,NTP,0000,0000,0000,,but it will do the same thing
+Dialogue: 0,0:03:48.13,0:03:49.87,*Default,NTP,0000,0000,0000,,if I run this code
+Dialogue: 0,0:03:50.00,0:03:51.80,*Default,NTP,0000,0000,0000,,and ask where what fib five is
+Dialogue: 0,0:03:51.80,0:03:53.27,*Default,NTP,0000,0000,0000,,it will tell me it's five
+Dialogue: 0,0:03:53.47,0:03:54.70,*Default,NTP,0000,0000,0000,,fib six is eight
+Dialogue: 0,0:03:54.93,0:03:57.37,*Default,NTP,0000,0000,0000,,fib seven is 13 etc
+Dialogue: 0,0:03:58.57,0:04:02.40,*Default,NTP,0000,0000,0000,,now what I'm going to do is define a decorator
+Dialogue: 0,0:04:02.73,0:04:06.17,*Default,NTP,0000,0000,0000,,called count which takes in a function f
+Dialogue: 0,0:04:07.27,0:04:09.80,*Default,NTP,0000,0000,0000,,returns a new counted version of f
+Dialogue: 0,0:04:10.93,0:04:12.93,*Default,NTP,0000,0000,0000,,which when called on in
+Dialogue: 0,0:04:13.57,0:04:17.27,*Default,NTP,0000,0000,0000,,not only returns the result but also
+Dialogue: 0,0:04:18.93,0:04:21.97,*Default,NTP,0000,0000,0000,,increments the call count attribute
+Dialogue: 0,0:04:22.73,0:04:23.93,*Default,NTP,0000,0000,0000,,which is an attribute
+Dialogue: 0,0:04:23.93,0:04:24.53,*Default,NTP,0000,0000,0000,,that will use
+Dialogue: 0,0:04:24.53,0:04:26.77,*Default,NTP,0000,0000,0000,,to keep track of how many times this function
+Dialogue: 0,0:04:26.77,0:04:27.57,*Default,NTP,0000,0000,0000,,was called
+Dialogue: 0,0:04:30.40,0:04:32.17,*Default,NTP,0000,0000,0000,,now for counted
+Dialogue: 0,0:04:32.27,0:04:34.97,*Default,NTP,0000,0000,0000,,we have to start out with a call count of zero
+Dialogue: 0,0:04:34.97,0:04:36.70,*Default,NTP,0000,0000,0000,,so that we can increment it later
+Dialogue: 0,0:04:36.90,0:04:39.30,*Default,NTP,0000,0000,0000,,and then we can return that counted function
+Dialogue: 0,0:04:41.33,0:04:44.70,*Default,NTP,0000,0000,0000,,so we could decorate fib you know at count
+Dialogue: 0,0:04:45.40,0:04:48.10,*Default,NTP,0000,0000,0000,,but instead we'll just do it here in
+Dialogue: 0,0:04:48.20,0:04:49.57,*Default,NTP,0000,0000,0000,,the interactive session
+Dialogue: 0,0:04:49.57,0:04:53.80,*Default,NTP,0000,0000,0000,,so fib is a counted version of fib
+Dialogue: 0,0:04:54.70,0:04:57.17,*Default,NTP,0000,0000,0000,,if I call fib on five
+Dialogue: 0,0:04:57.27,0:05:00.47,*Default,NTP,0000,0000,0000,,I can then ask how many times was this called
+Dialogue: 0,0:05:00.57,0:05:02.60,*Default,NTP,0000,0000,0000,,and it was called 15 times
+Dialogue: 0,0:05:03.90,0:05:06.90,*Default,NTP,0000,0000,0000,,now this is cumulative so if I call fib five again
+Dialogue: 0,0:05:07.00,0:05:09.20,*Default,NTP,0000,0000,0000,,the call count has gone up to 30
+Dialogue: 0,0:05:10.57,0:05:12.47,*Default,NTP,0000,0000,0000,,now if I call fib on some
+Dialogue: 0,0:05:12.87,0:05:15.13,*Default,NTP,0000,0000,0000,,large end such as 30
+Dialogue: 0,0:05:15.30,0:05:17.47,*Default,NTP,0000,0000,0000,,it will do quite a bit of computation
+Dialogue: 0,0:05:17.67,0:05:20.57,*Default,NTP,0000,0000,0000,,and come up with 832,000
+Dialogue: 0,0:05:20.80,0:05:24.40,*Default,NTP,0000,0000,0000,,but the actual number of times I called this function
+Dialogue: 0,0:05:25.20,0:05:28.20,*Default,NTP,0000,0000,0000,,was 2 million times
+Dialogue: 0,0:05:28.70,0:05:33.97,*Default,NTP,0000,0000,0000,,2.69 million calls to fip just to compute this result
+Dialogue: 0,0:05:34.80,0:05:37.13,*Default,NTP,0000,0000,0000,,and many of those calls were returning zero
+Dialogue: 0,0:05:37.87,0:05:39.07,*Default,NTP,0000,0000,0000,,some were returning one
+Dialogue: 0,0:05:39.13,0:05:40.73,*Default,NTP,0000,0000,0000,,some were returning large numbers
+Dialogue: 0,0:05:40.73,0:05:42.87,*Default,NTP,0000,0000,0000,,until we finally got to the result that we wanted
+Dialogue: 0,0:05:43.53,0:05:45.90,*Default,NTP,0000,0000,0000,,so we can see why this took a while to call
+Dialogue: 0,0:05:46.37,0:05:49.97,*Default,NTP,0000,0000,0000,,so the point of this example is to start to understand
+Dialogue: 0,0:05:50.50,0:05:53.20,*Default,NTP,0000,0000,0000,,exactly what happens when you call a function
+Dialogue: 0,0:05:54.10,0:05:56.47,*Default,NTP,0000,0000,0000,,and how that relates to the time that it takes
+Dialogue: 0,0:05:56.47,0:05:57.97,*Default,NTP,0000,0000,0000,,for the function to return
+Dialogue: 0,0:05:58.60,0:06:00.37,*Default,NTP,0000,0000,0000,,and we've started out by just
+Dialogue: 0,0:06:00.50,0:06:02.80,*Default,NTP,0000,0000,0000,,counting the number of times that we call something
+Dialogue: 0,0:06:03.13,0:06:05.17,*Default,NTP,0000,0000,0000,,but over the next two lectures will develop
+Dialogue: 0,0:06:05.17,0:06:06.80,*Default,NTP,0000,0000,0000,,more sophisticated ways
+Dialogue: 0,0:06:06.87,0:06:10.60,*Default,NTP,0000,0000,0000,,of talking about the running time of a program
+Dialogue: 0,0:06:12.33,0:06:15.97,*Default,NTP,0000,0000,0000,,memorization is an extremely useful technique
+Dialogue: 0,0:06:16.13,0:06:20.13,*Default,NTP,0000,0000,0000,,for speeding up the running time of a program
+Dialogue: 0,0:06:21.37,0:06:23.00,*Default,NTP,0000,0000,0000,,here is the simple idea
+Dialogue: 0,0:06:23.50,0:06:24.00,*Default,NTP,0000,0000,0000,,just
+Dialogue: 0,0:06:24.00,0:06:26.87,*Default,NTP,0000,0000,0000,,remember the results that have been computed before
+Dialogue: 0,0:06:27.47,0:06:29.40,*Default,NTP,0000,0000,0000,,so instead of recomputing things
+Dialogue: 0,0:06:29.40,0:06:31.30,*Default,NTP,0000,0000,0000,,when you need their values again
+Dialogue: 0,0:06:31.50,0:06:33.13,*Default,NTP,0000,0000,0000,,you just keep them around
+Dialogue: 0,0:06:34.30,0:06:35.87,*Default,NTP,0000,0000,0000,,here's another decorator
+Dialogue: 0,0:06:36.57,0:06:37.70,*Default,NTP,0000,0000,0000,,it's called memo
+Dialogue: 0,0:06:37.70,0:06:39.17,*Default,NTP,0000,0000,0000,,it takes in a function
+Dialogue: 0,0:06:39.33,0:06:41.40,*Default,NTP,0000,0000,0000,,which may take a while to compute
+Dialogue: 0,0:06:42.13,0:06:44.17,*Default,NTP,0000,0000,0000,,but we also keep a cash
+Dialogue: 0,0:06:44.17,0:06:46.93,*Default,NTP,0000,0000,0000,,of the values that were returned by that function
+Dialogue: 0,0:06:46.93,0:06:47.73,*Default,NTP,0000,0000,0000,,before
+Dialogue: 0,0:06:48.53,0:06:50.50,*Default,NTP,0000,0000,0000,,in the memoized version of f
+Dialogue: 0,0:06:51.27,0:06:52.57,*Default,NTP,0000,0000,0000,,we check conceive first
+Dialogue: 0,0:06:52.57,0:06:55.37,*Default,NTP,0000,0000,0000,,if the argument that was passed in is in the cash
+Dialogue: 0,0:06:55.80,0:06:59.17,*Default,NTP,0000,0000,0000,,if it's not in the cash then we add it to the cash
+Dialogue: 0,0:06:59.57,0:07:03.70,*Default,NTP,0000,0000,0000,,meaning we make a mapping between the key n
+Dialogue: 0,0:07:04.27,0:07:06.13,*Default,NTP,0000,0000,0000,,and the return value f
+Dialogue: 0,0:07:06.13,0:07:06.93,*Default,NTP,0000,0000,0000,,even
+Dialogue: 0,0:07:07.40,0:07:09.13,*Default,NTP,0000,0000,0000,,now we actually have to call f
+Dialogue: 0,0:07:09.33,0:07:11.13,*Default,NTP,0000,0000,0000,,which was originally passed in
+Dialogue: 0,0:07:11.33,0:07:13.70,*Default,NTP,0000,0000,0000,,in order to compute this return value
+Dialogue: 0,0:07:14.37,0:07:16.07,*Default,NTP,0000,0000,0000,,but once it's in the cash
+Dialogue: 0,0:07:16.20,0:07:18.20,*Default,NTP,0000,0000,0000,,we're never going to compute it again
+Dialogue: 0,0:07:18.40,0:07:21.27,*Default,NTP,0000,0000,0000,,instead we'll just return the return value
+Dialogue: 0,0:07:21.33,0:07:22.87,*Default,NTP,0000,0000,0000,,that's already in the cash
+Dialogue: 0,0:07:24.13,0:07:25.87,*Default,NTP,0000,0000,0000,,once I have returned to the memoized
+Dialogue: 0,0:07:25.87,0:07:27.20,*Default,NTP,0000,0000,0000,,version of this function
+Dialogue: 0,0:07:27.67,0:07:31.00,*Default,NTP,0000,0000,0000,,I will have automatic cashing build in
+Dialogue: 0,0:07:32.53,0:07:33.73,*Default,NTP,0000,0000,0000,,so we keep
+Dialogue: 0,0:07:34.57,0:07:35.80,*Default,NTP,0000,0000,0000,,dictionary between
+Dialogue: 0,0:07:35.93,0:07:38.33,*Default,NTP,0000,0000,0000,,keys and values where the keys are arguments
+Dialogue: 0,0:07:38.37,0:07:41.17,*Default,NTP,0000,0000,0000,,and the values are return values of f
+Dialogue: 0,0:07:42.40,0:07:45.73,*Default,NTP,0000,0000,0000,,and this memoized function has the same behavior as f
+Dialogue: 0,0:07:46.07,0:07:48.07,*Default,NTP,0000,0000,0000,,if f is a pure function
+Dialogue: 0,0:07:48.67,0:07:50.47,*Default,NTP,0000,0000,0000,,if it's a non pure function
+Dialogue: 0,0:07:50.60,0:07:51.10,*Default,NTP,0000,0000,0000,,then
+Dialogue: 0,0:07:51.10,0:07:54.27,*Default,NTP,0000,0000,0000,,we don't actually call f every time we call memoized
+Dialogue: 0,0:07:54.30,0:07:55.97,*Default,NTP,0000,0000,0000,,so it might have different behavior
+Dialogue: 0,0:07:56.30,0:07:58.50,*Default,NTP,0000,0000,0000,,so that's something to keep a lookout for
+Dialogue: 0,0:07:58.60,0:08:00.27,*Default,NTP,0000,0000,0000,,you can only really memoize
+Dialogue: 0,0:08:00.27,0:08:02.30,*Default,NTP,0000,0000,0000,,pure functions and expect their behavior
+Dialogue: 0,0:08:02.30,0:08:03.27,*Default,NTP,0000,0000,0000,,to stay the same
+Dialogue: 0,0:08:04.37,0:08:09.30,*Default,NTP,0000,0000,0000,,let's see what happens when we use memo to speed up fib
+Dialogue: 0,0:08:10.97,0:08:12.93,*Default,NTP,0000,0000,0000,,so a memoized version of f
+Dialogue: 0,0:08:14.13,0:08:15.70,*Default,NTP,0000,0000,0000,,keeps track of a cash
+Dialogue: 0,0:08:19.67,0:08:21.37,*Default,NTP,0000,0000,0000,,takes in an argument in
+Dialogue: 0,0:08:21.90,0:08:24.97,*Default,NTP,0000,0000,0000,,if in not in the cash
+Dialogue: 0,0:08:25.27,0:08:27.10,*Default,NTP,0000,0000,0000,,then we put it in the cash
+Dialogue: 0,0:08:28.50,0:08:31.00,*Default,NTP,0000,0000,0000,,with the return value of f event
+Dialogue: 0,0:08:31.93,0:08:35.60,*Default,NTP,0000,0000,0000,,we return what's in the cash every time and we return
+Dialogue: 0,0:08:36.13,0:08:37.17,*Default,NTP,0000,0000,0000,,memoized
+Dialogue: 0,0:08:38.93,0:08:42.40,*Default,NTP,0000,0000,0000,,fib 30 used to take a while to compute
+Dialogue: 0,0:08:42.80,0:08:44.33,*Default,NTP,0000,0000,0000,,but what if we change fib
+Dialogue: 0,0:08:44.33,0:08:46.20,*Default,NTP,0000,0000,0000,,to be a memoized version of fib
+Dialogue: 0,0:08:47.00,0:08:50.07,*Default,NTP,0000,0000,0000,,then we can compute fib 30 rather quickly
+Dialogue: 0,0:08:50.27,0:08:55.33,*Default,NTP,0000,0000,0000,,in fact we can compute fib 50 rather quickly or fib 300
+Dialogue: 0,0:08:55.73,0:08:57.60,*Default,NTP,0000,0000,0000,,which is a very large number
+Dialogue: 0,0:08:58.30,0:08:59.87,*Default,NTP,0000,0000,0000,,but it's not that hard to compute
+Dialogue: 0,0:08:59.87,0:09:01.20,*Default,NTP,0000,0000,0000,,all we have to do is compute
+Dialogue: 0,0:09:01.33,0:09:04.20,*Default,NTP,0000,0000,0000,,fib two ninety eight and fib two ninety nine
+Dialogue: 0,0:09:05.10,0:09:06.97,*Default,NTP,0000,0000,0000,,which we do almost instantly
+Dialogue: 0,0:09:07.17,0:09:09.47,*Default,NTP,0000,0000,0000,,with this memoized version of fib
+Dialogue: 0,0:09:09.93,0:09:12.70,*Default,NTP,0000,0000,0000,,so let's see if we can understand what's going on
+Dialogue: 0,0:09:13.07,0:09:17.20,*Default,NTP,0000,0000,0000,,I've restarted python so fib is slow again
+Dialogue: 0,0:09:18.27,0:09:19.70,*Default,NTP,0000,0000,0000,,what we're going to do is replace
+Dialogue: 0,0:09:19.70,0:09:21.67,*Default,NTP,0000,0000,0000,,fib with the counted version of fib
+Dialogue: 0,0:09:21.87,0:09:25.20,*Default,NTP,0000,0000,0000,,so we can see how many times it actually gets called
+Dialogue: 0,0:09:26.47,0:09:29.40,*Default,NTP,0000,0000,0000,,we'll give another name to that counted version of fib
+Dialogue: 0,0:09:29.67,0:09:31.90,*Default,NTP,0000,0000,0000,,so we can access its attributes
+Dialogue: 0,0:09:32.93,0:09:35.90,*Default,NTP,0000,0000,0000,,now I'm going to change fib to a memoized
+Dialogue: 0,0:09:35.90,0:09:37.37,*Default,NTP,0000,0000,0000,,counted version of fib
+Dialogue: 0,0:09:39.17,0:09:40.00,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:09:41.47,0:09:43.40,*Default,NTP,0000,0000,0000,,we can even count that
+Dialogue: 0,0:09:44.90,0:09:47.07,*Default,NTP,0000,0000,0000,,and we'll call fib on 30
+Dialogue: 0,0:09:47.67,0:09:49.57,*Default,NTP,0000,0000,0000,,which completes instantly
+Dialogue: 0,0:09:52.13,0:09:57.80,*Default,NTP,0000,0000,0000,,there were 59 calls to the mammalized version of fib
+Dialogue: 0,0:09:58.33,0:10:00.10,*Default,NTP,0000,0000,0000,,some of which reached the cash
+Dialogue: 0,0:10:00.20,0:10:01.07,*Default,NTP,0000,0000,0000,,and some of which
+Dialogue: 0,0:10:01.07,0:10:04.50,*Default,NTP,0000,0000,0000,,actually called the underlying original fib function
+Dialogue: 0,0:10:04.80,0:10:07.77,*Default,NTP,0000,0000,0000,,which we called counted fib in this example
+Dialogue: 0,0:10:08.13,0:10:10.30,*Default,NTP,0000,0000,0000,,and its call count was 31
+Dialogue: 0,0:10:11.20,0:10:12.60,*Default,NTP,0000,0000,0000,,now why 31
+Dialogue: 0,0:10:13.17,0:10:17.30,*Default,NTP,0000,0000,0000,,well there are 31 different arguments that we pass in
+Dialogue: 0,0:10:18.07,0:10:19.50,*Default,NTP,0000,0000,0000,,thirty twenty nine
+Dialogue: 0,0:10:19.50,0:10:22.40,*Default,NTP,0000,0000,0000,,twenty eight all the way down to zero
+Dialogue: 0,0:10:23.20,0:10:24.27,*Default,NTP,0000,0000,0000,,and so that's
+Dialogue: 0,0:10:24.27,0:10:27.30,*Default,NTP,0000,0000,0000,,exactly how many times we call the original function
+Dialogue: 0,0:10:28.00,0:10:29.67,*Default,NTP,0000,0000,0000,,now what about 59
+Dialogue: 0,0:10:29.97,0:10:32.47,*Default,NTP,0000,0000,0000,,well let's take a look at what's going on
+Dialogue: 0,0:10:34.17,0:10:37.17,*Default,NTP,0000,0000,0000,,here's our tree structured recursive process
+Dialogue: 0,0:10:37.87,0:10:40.97,*Default,NTP,0000,0000,0000,,and we're going to keep track of actual calls to fib
+Dialogue: 0,0:10:41.47,0:10:44.40,*Default,NTP,0000,0000,0000,,times when we called the memoized version of fib
+Dialogue: 0,0:10:44.40,0:10:46.73,*Default,NTP,0000,0000,0000,,and found the result in the cash
+Dialogue: 0,0:10:47.20,0:10:50.07,*Default,NTP,0000,0000,0000,,and times that we had just skipped entirely
+Dialogue: 0,0:10:50.33,0:10:52.87,*Default,NTP,0000,0000,0000,,there must be lots of times that we skipped it entirely
+Dialogue: 0,0:10:52.87,0:10:55.93,*Default,NTP,0000,0000,0000,,because we made so many fewer calls than we did before
+Dialogue: 0,0:10:59.33,0:11:01.70,*Default,NTP,0000,0000,0000,,so we call fib five which calls fib three
+Dialogue: 0,0:11:01.70,0:11:02.97,*Default,NTP,0000,0000,0000,,which calls fib one
+Dialogue: 0,0:11:03.30,0:11:04.80,*Default,NTP,0000,0000,0000,,which returns one
+Dialogue: 0,0:11:05.00,0:11:07.47,*Default,NTP,0000,0000,0000,,that's an actual call to the fib function
+Dialogue: 0,0:11:07.90,0:11:09.77,*Default,NTP,0000,0000,0000,,so is this called a fib zero
+Dialogue: 0,0:11:10.60,0:11:12.70,*Default,NTP,0000,0000,0000,,but the next time fib one is called
+Dialogue: 0,0:11:12.90,0:11:14.00,*Default,NTP,0000,0000,0000,,we just get
+Dialogue: 0,0:11:14.10,0:11:17.33,*Default,NTP,0000,0000,0000,,the value that we've already computed from the cash
+Dialogue: 0,0:11:17.77,0:11:18.53,*Default,NTP,0000,0000,0000,,so this doesn't
+Dialogue: 0,0:11:18.53,0:11:21.10,*Default,NTP,0000,0000,0000,,count as a call to the underlying fib function
+Dialogue: 0,0:11:21.20,0:11:23.93,*Default,NTP,0000,0000,0000,,but does count as a call to the memoized version
+Dialogue: 0,0:11:25.57,0:11:28.67,*Default,NTP,0000,0000,0000,,fib two returns and then fib three returns
+Dialogue: 0,0:11:28.93,0:11:31.70,*Default,NTP,0000,0000,0000,,the next thing that happens is that we call
+Dialogue: 0,0:11:32.70,0:11:35.87,*Default,NTP,0000,0000,0000,,fib four which calls fib two
+Dialogue: 0,0:11:36.27,0:11:38.33,*Default,NTP,0000,0000,0000,,which is already in the cash
+Dialogue: 0,0:11:38.53,0:11:40.07,*Default,NTP,0000,0000,0000,,which means we can skip over
+Dialogue: 0,0:11:40.07,0:11:42.80,*Default,NTP,0000,0000,0000,,these calls to fib zero and fib one entirely
+Dialogue: 0,0:11:42.90,0:11:44.77,*Default,NTP,0000,0000,0000,,they never even happen
+Dialogue: 0,0:11:45.50,0:11:47.97,*Default,NTP,0000,0000,0000,,and that's because this structure is something that's
+Dialogue: 0,0:11:47.97,0:11:50.50,*Default,NTP,0000,0000,0000,,repeated from what we've already done before
+Dialogue: 0,0:11:50.93,0:11:52.93,*Default,NTP,0000,0000,0000,,so we find fib two immediately
+Dialogue: 0,0:11:53.10,0:11:53.97,*Default,NTP,0000,0000,0000,,and when we
+Dialogue: 0,0:11:54.17,0:11:57.80,*Default,NTP,0000,0000,0000,,call fib three we find that result immediately as well
+Dialogue: 0,0:11:58.20,0:12:00.27,*Default,NTP,0000,0000,0000,,skipping these recursive calls
+Dialogue: 0,0:12:01.37,0:12:03.10,*Default,NTP,0000,0000,0000,,so with fib two in fib three
+Dialogue: 0,0:12:03.10,0:12:05.70,*Default,NTP,0000,0000,0000,,we finally can return from fib four
+Dialogue: 0,0:12:06.33,0:12:08.77,*Default,NTP,0000,0000,0000,,and then return from fib five
+Dialogue: 0,0:12:09.80,0:12:12.40,*Default,NTP,0000,0000,0000,,so as you can see for each value of n
+Dialogue: 0,0:12:12.47,0:12:14.93,*Default,NTP,0000,0000,0000,,fib is called exactly once
+Dialogue: 0,0:12:15.20,0:12:17.80,*Default,NTP,0000,0000,0000,,and for many values of n
+Dialogue: 0,0:12:18.50,0:12:21.90,*Default,NTP,0000,0000,0000,,fib the memoized version of fib is called a second time
+Dialogue: 0,0:12:22.37,0:12:24.37,*Default,NTP,0000,0000,0000,,in order to finish the computation
+Dialogue: 0,0:12:25.30,0:12:27.27,*Default,NTP,0000,0000,0000,,but fib four is never called a second time
+Dialogue: 0,0:12:27.27,0:12:28.67,*Default,NTP,0000,0000,0000,,and neither is fib five
+Dialogue: 0,0:12:30.53,0:12:32.30,*Default,NTP,0000,0000,0000,,let's look in an example
+Dialogue: 0,0:12:32.60,0:12:36.77,*Default,NTP,0000,0000,0000,,of a function we can define in two different ways
+Dialogue: 0,0:12:36.90,0:12:40.10,*Default,NTP,0000,0000,0000,,one of which is much more efficient than the other
+Dialogue: 0,0:12:41.17,0:12:44.17,*Default,NTP,0000,0000,0000,,exponentiation is built into python
+Dialogue: 0,0:12:44.17,0:12:47.13,*Default,NTP,0000,0000,0000,,I can raise one number to the power of another
+Dialogue: 0,0:12:48.07,0:12:51.53,*Default,NTP,0000,0000,0000,,but let's write an exponentiation function recursively
+Dialogue: 0,0:12:52.27,0:12:54.90,*Default,NTP,0000,0000,0000,,our goal will be to have it so that
+Dialogue: 0,0:12:55.17,0:12:59.80,*Default,NTP,0000,0000,0000,,one more multiplication lets us double the exponent
+Dialogue: 0,0:12:59.80,0:13:02.20,*Default,NTP,0000,0000,0000,,that we're using an exponentiation
+Dialogue: 0,0:13:03.67,0:13:06.90,*Default,NTP,0000,0000,0000,,here's an implementation that does not meet this goal
+Dialogue: 0,0:13:07.33,0:13:09.80,*Default,NTP,0000,0000,0000,,this says to raise b to the power n
+Dialogue: 0,0:13:09.80,0:13:11.70,*Default,NTP,0000,0000,0000,,if n is zero return one
+Dialogue: 0,0:13:11.73,0:13:14.10,*Default,NTP,0000,0000,0000,,otherwise multiply
+Dialogue: 0,0:13:14.70,0:13:17.13,*Default,NTP,0000,0000,0000,,b to the n minus one by b
+Dialogue: 0,0:13:18.10,0:13:20.33,*Default,NTP,0000,0000,0000,,this is a correct definition
+Dialogue: 0,0:13:20.73,0:13:22.40,*Default,NTP,0000,0000,0000,,but if I double in
+Dialogue: 0,0:13:22.77,0:13:26.17,*Default,NTP,0000,0000,0000,,I have to do twice as many multiplies
+Dialogue: 0,0:13:26.57,0:13:29.50,*Default,NTP,0000,0000,0000,,because each time I make a recursive call
+Dialogue: 0,0:13:29.67,0:13:32.07,*Default,NTP,0000,0000,0000,,I'm only reducing n by one
+Dialogue: 0,0:13:33.50,0:13:37.07,*Default,NTP,0000,0000,0000,,and this functions implementation corresponds
+Dialogue: 0,0:13:37.13,0:13:39.57,*Default,NTP,0000,0000,0000,,to the following mathematical definition
+Dialogue: 0,0:13:39.57,0:13:40.93,*Default,NTP,0000,0000,0000,,for b to the end
+Dialogue: 0,0:13:41.60,0:13:42.73,*Default,NTP,0000,0000,0000,,but this is not the only
+Dialogue: 0,0:13:42.73,0:13:45.10,*Default,NTP,0000,0000,0000,,mathematical definition of b to the in
+Dialogue: 0,0:13:45.80,0:13:46.97,*Default,NTP,0000,0000,0000,,here's another one
+Dialogue: 0,0:13:47.50,0:13:48.90,*Default,NTP,0000,0000,0000,,more complicated
+Dialogue: 0,0:13:48.93,0:13:51.07,*Default,NTP,0000,0000,0000,,but the additional complexity
+Dialogue: 0,0:13:51.10,0:13:54.07,*Default,NTP,0000,0000,0000,,will also give us additional efficiency
+Dialogue: 0,0:13:55.10,0:13:57.87,*Default,NTP,0000,0000,0000,,this says that b to the n is one if n is zero
+Dialogue: 0,0:13:57.93,0:13:59.77,*Default,NTP,0000,0000,0000,,and then has two different cases
+Dialogue: 0,0:13:59.77,0:14:01.77,*Default,NTP,0000,0000,0000,,for whether n is even a rod
+Dialogue: 0,0:14:02.57,0:14:03.80,*Default,NTP,0000,0000,0000,,if n is even
+Dialogue: 0,0:14:04.50,0:14:08.70,*Default,NTP,0000,0000,0000,,then I can erase b to the one half n power
+Dialogue: 0,0:14:09.17,0:14:11.10,*Default,NTP,0000,0000,0000,,and square that result
+Dialogue: 0,0:14:12.33,0:14:15.33,*Default,NTP,0000,0000,0000,,so if n is 16 I raise b to the eight
+Dialogue: 0,0:14:15.70,0:14:19.50,*Default,NTP,0000,0000,0000,,and then I square b to the eight to get b to the 16
+Dialogue: 0,0:14:20.67,0:14:23.97,*Default,NTP,0000,0000,0000,,if n is odd then I use the definition I had before
+Dialogue: 0,0:14:24.30,0:14:25.80,*Default,NTP,0000,0000,0000,,here's an implementation
+Dialogue: 0,0:14:26.73,0:14:29.90,*Default,NTP,0000,0000,0000,,this is a more efficient version of exponentiation
+Dialogue: 0,0:14:29.90,0:14:32.50,*Default,NTP,0000,0000,0000,,that has two different recursive cases
+Dialogue: 0,0:14:32.57,0:14:34.40,*Default,NTP,0000,0000,0000,,depending on whether n is even
+Dialogue: 0,0:14:34.80,0:14:36.97,*Default,NTP,0000,0000,0000,,in which case you square the result
+Dialogue: 0,0:14:37.47,0:14:41.00,*Default,NTP,0000,0000,0000,,of exponentiating b and n divided by 2
+Dialogue: 0,0:14:41.93,0:14:43.80,*Default,NTP,0000,0000,0000,,where I know that n is evens
+Dialogue: 0,0:14:43.80,0:14:47.27,*Default,NTP,0000,0000,0000,,so floor division will give me the exact result
+Dialogue: 0,0:14:47.50,0:14:48.80,*Default,NTP,0000,0000,0000,,and if n is odd
+Dialogue: 0,0:14:49.00,0:14:51.27,*Default,NTP,0000,0000,0000,,then I use my old definition
+Dialogue: 0,0:14:51.87,0:14:54.20,*Default,NTP,0000,0000,0000,,this is not a tree recursive function
+Dialogue: 0,0:14:54.77,0:14:57.47,*Default,NTP,0000,0000,0000,,even though I see two different
+Dialogue: 0,0:14:57.50,0:15:00.17,*Default,NTP,0000,0000,0000,,calls to exp fast in the body
+Dialogue: 0,0:15:00.47,0:15:02.57,*Default,NTP,0000,0000,0000,,only one of them is ever called
+Dialogue: 0,0:15:02.90,0:15:05.73,*Default,NTP,0000,0000,0000,,so this is an instance of linear recursion
+Dialogue: 0,0:15:06.27,0:15:11.20,*Default,NTP,0000,0000,0000,,and sometimes the problem size is reduced by half
+Dialogue: 0,0:15:11.80,0:15:14.30,*Default,NTP,0000,0000,0000,,meaning one more multiplication
+Dialogue: 0,0:15:14.60,0:15:16.77,*Default,NTP,0000,0000,0000,,in this case by calling square
+Dialogue: 0,0:15:17.07,0:15:19.80,*Default,NTP,0000,0000,0000,,lets us double the size of the problem
+Dialogue: 0,0:15:19.80,0:15:21.30,*Default,NTP,0000,0000,0000,,that we're handling
+Dialogue: 0,0:15:21.67,0:15:23.73,*Default,NTP,0000,0000,0000,,an x fast runs faster
+Dialogue: 0,0:15:23.80,0:15:25.00,*Default,NTP,0000,0000,0000,,let's take a look
+Dialogue: 0,0:15:25.77,0:15:28.50,*Default,NTP,0000,0000,0000,,this environment is called a jupiter notebook
+Dialogue: 0,0:15:28.87,0:15:30.60,*Default,NTP,0000,0000,0000,,you can read about them online
+Dialogue: 0,0:15:30.73,0:15:34.93,*Default,NTP,0000,0000,0000,,it's a common way that people use in order to execute
+Dialogue: 0,0:15:35.10,0:15:39.93,*Default,NTP,0000,0000,0000,,python code when the output is a graph or a chart
+Dialogue: 0,0:15:41.27,0:15:44.07,*Default,NTP,0000,0000,0000,,so here's our definition of exp the slow way
+Dialogue: 0,0:15:44.70,0:15:45.87,*Default,NTP,0000,0000,0000,,and something that's built
+Dialogue: 0,0:15:45.87,0:15:47.37,*Default,NTP,0000,0000,0000,,into this notebook environment
+Dialogue: 0,0:15:47.40,0:15:50.13,*Default,NTP,0000,0000,0000,,is that we can time how long it takes to run something
+Dialogue: 0,0:15:50.57,0:15:53.20,*Default,NTP,0000,0000,0000,,so if I raise two to the 104th power
+Dialogue: 0,0:15:54.10,0:15:57.17,*Default,NTP,0000,0000,0000,,the time it took was ['two']millisecond
+Dialogue: 0,0:15:57.60,0:15:59.67,*Default,NTP,0000,0000,0000,,if I raised two to the 100th power
+Dialogue: 0,0:16:00.27,0:16:03.70,*Default,NTP,0000,0000,0000,,it only took me 100 microseconds
+Dialogue: 0,0:16:03.87,0:16:04.97,*Default,NTP,0000,0000,0000,,but if I run it again
+Dialogue: 0,0:16:04.97,0:16:07.00,*Default,NTP,0000,0000,0000,,I'll get a different number each time
+Dialogue: 0,0:16:07.50,0:16:08.90,*Default,NTP,0000,0000,0000,,so if I run it a bunch of times
+Dialogue: 0,0:16:08.90,0:16:11.90,*Default,NTP,0000,0000,0000,,I see it hovers around 100 microseconds
+Dialogue: 0,0:16:12.37,0:16:15.80,*Default,NTP,0000,0000,0000,,two to the 104th power tends to hover around
+Dialogue: 0,0:16:16.17,0:16:17.87,*Default,NTP,0000,0000,0000,,200 microseconds
+Dialogue: 0,0:16:18.50,0:16:21.10,*Default,NTP,0000,0000,0000,,running it a bunch of times this way is inefficient
+Dialogue: 0,0:16:21.10,0:16:24.10,*Default,NTP,0000,0000,0000,,so I've written some code to run it a bunch of times
+Dialogue: 0,0:16:24.47,0:16:27.00,*Default,NTP,0000,0000,0000,,using the built in timet module
+Dialogue: 0,0:16:27.20,0:16:29.13,*Default,NTP,0000,0000,0000,,which can repeatedly call something
+Dialogue: 0,0:16:29.37,0:16:30.27,*Default,NTP,0000,0000,0000,,and in this case
+Dialogue: 0,0:16:30.27,0:16:33.30,*Default,NTP,0000,0000,0000,,we're going to compute the median time that it takes
+Dialogue: 0,0:16:33.40,0:16:36.97,*Default,NTP,0000,0000,0000,,to execute some line of code
+Dialogue: 0,0:16:37.50,0:16:38.90,*Default,NTP,0000,0000,0000,,and here's the result
+Dialogue: 0,0:16:39.07,0:16:40.80,*Default,NTP,0000,0000,0000,,two to the 102th power
+Dialogue: 0,0:16:41.10,0:16:43.60,*Default,NTP,0000,0000,0000,,takes a little less than half a mill a second
+Dialogue: 0,0:16:43.60,0:16:45.33,*Default,NTP,0000,0000,0000,,two to the 104th power
+Dialogue: 0,0:16:45.40,0:16:47.80,*Default,NTP,0000,0000,0000,,takes a little less than one mill a second
+Dialogue: 0,0:16:47.97,0:16:49.73,*Default,NTP,0000,0000,0000,,this looks like a straight line
+Dialogue: 0,0:16:50.30,0:16:53.70,*Default,NTP,0000,0000,0000,,the term we used to describe this is linear
+Dialogue: 0,0:16:54.20,0:16:57.47,*Default,NTP,0000,0000,0000,,the time that it takes to compute two to the n
+Dialogue: 0,0:16:57.67,0:17:01.77,*Default,NTP,0000,0000,0000,,under this implementation is linear in n
+Dialogue: 0,0:17:02.53,0:17:04.30,*Default,NTP,0000,0000,0000,,now it's a little bit bumpy
+Dialogue: 0,0:17:04.47,0:17:06.50,*Default,NTP,0000,0000,0000,,because all kinds of interesting things are
+Dialogue: 0,0:17:06.50,0:17:08.37,*Default,NTP,0000,0000,0000,,happening inside of a computer
+Dialogue: 0,0:17:08.67,0:17:10.97,*Default,NTP,0000,0000,0000,,but the word linear is used
+Dialogue: 0,0:17:11.00,0:17:14.07,*Default,NTP,0000,0000,0000,,even if there are slight deviations from the line
+Dialogue: 0,0:17:14.37,0:17:17.37,*Default,NTP,0000,0000,0000,,to describe the general trend that appears
+Dialogue: 0,0:17:17.50,0:17:20.53,*Default,NTP,0000,0000,0000,,when you plot the time it takes to compute something
+Dialogue: 0,0:17:20.60,0:17:23.20,*Default,NTP,0000,0000,0000,,as a function of the input size
+Dialogue: 0,0:17:23.30,0:17:25.17,*Default,NTP,0000,0000,0000,,and here's the fast definition
+Dialogue: 0,0:17:25.47,0:17:27.33,*Default,NTP,0000,0000,0000,,we can draw the same plot
+Dialogue: 0,0:17:27.53,0:17:28.47,*Default,NTP,0000,0000,0000,,and we'll see
+Dialogue: 0,0:17:28.47,0:17:31.27,*Default,NTP,0000,0000,0000,,that the overall numbers are quite a bit smaller
+Dialogue: 0,0:17:32.20,0:17:35.57,*Default,NTP,0000,0000,0000,,for 1600 instead of taking
+Dialogue: 0,0:17:35.77,0:17:37.30,*Default,NTP,0000,0000,0000,,['four']millisecond
+Dialogue: 0,0:17:37.30,0:17:40.60,*Default,NTP,0000,0000,0000,,it takes only ['point', 'zero', 'four']millisecond
+Dialogue: 0,0:17:40.97,0:17:43.93,*Default,NTP,0000,0000,0000,,also this shape of the curve is different
+Dialogue: 0,0:17:44.60,0:17:47.30,*Default,NTP,0000,0000,0000,,this shape is called logarithmic
+Dialogue: 0,0:17:48.00,0:17:51.73,*Default,NTP,0000,0000,0000,,the difference between going from 200 to 400
+Dialogue: 0,0:17:51.90,0:17:57.00,*Default,NTP,0000,0000,0000,,in this case is just about point 002
+Dialogue: 0,0:17:58.20,0:17:59.70,*Default,NTP,0000,0000,0000,,and what about the difference
+Dialogue: 0,0:17:59.80,0:18:02.50,*Default,NTP,0000,0000,0000,,between going from 400 to 800
+Dialogue: 0,0:18:02.57,0:18:04.17,*Default,NTP,0000,0000,0000,,well that's another point
+Dialogue: 0,0:18:04.17,0:18:05.87,*Default,NTP,0000,0000,0000,,oh oh two
+Dialogue: 0,0:18:06.50,0:18:10.93,*Default,NTP,0000,0000,0000,,going from 800 to 1600 is another point o o two
+Dialogue: 0,0:18:11.40,0:18:13.53,*Default,NTP,0000,0000,0000,,every time we double the input
+Dialogue: 0,0:18:13.67,0:18:17.20,*Default,NTP,0000,0000,0000,,it just takes a constant amount of extra work
+Dialogue: 0,0:18:17.53,0:18:21.80,*Default,NTP,0000,0000,0000,,and that's because we're making recursive calls on n
+Dialogue: 0,0:18:21.80,0:18:23.90,*Default,NTP,0000,0000,0000,,that's only half the size
+Dialogue: 0,0:18:24.53,0:18:27.20,*Default,NTP,0000,0000,0000,,that's called logarithmic time
+Dialogue: 0,0:18:27.93,0:18:29.27,*Default,NTP,0000,0000,0000,,so to summarize
+Dialogue: 0,0:18:29.30,0:18:31.27,*Default,NTP,0000,0000,0000,,a lineared time function
+Dialogue: 0,0:18:31.30,0:18:33.77,*Default,NTP,0000,0000,0000,,requires one more unit of work
+Dialogue: 0,0:18:34.00,0:18:36.73,*Default,NTP,0000,0000,0000,,for every one bigger end
+Dialogue: 0,0:18:37.13,0:18:39.97,*Default,NTP,0000,0000,0000,,that means doubling the input doubles the time
+Dialogue: 0,0:18:40.30,0:18:44.20,*Default,NTP,0000,0000,0000,,and 1000 times the input takes 1000 times as much time
+Dialogue: 0,0:18:44.97,0:18:48.90,*Default,NTP,0000,0000,0000,,1024 is two to the 10th power
+Dialogue: 0,0:18:50.27,0:18:52.10,*Default,NTP,0000,0000,0000,,logarithmic time is much better
+Dialogue: 0,0:18:52.93,0:18:54.27,*Default,NTP,0000,0000,0000,,doubling the input
+Dialogue: 0,0:18:54.30,0:18:57.30,*Default,NTP,0000,0000,0000,,just increases the time by some constant
+Dialogue: 0,0:18:57.47,0:18:59.37,*Default,NTP,0000,0000,0000,,and 1000 times the input
+Dialogue: 0,0:18:59.50,0:19:02.87,*Default,NTP,0000,0000,0000,,just increases the time by 10 times that constant
+Dialogue: 0,0:19:03.13,0:19:05.07,*Default,NTP,0000,0000,0000,,so it takes 10 times as long
+Dialogue: 0,0:19:05.10,0:19:07.40,*Default,NTP,0000,0000,0000,,to do 1000 times as much work
+Dialogue: 0,0:19:08.07,0:19:10.50,*Default,NTP,0000,0000,0000,,and these terms linear and logarithmic
+Dialogue: 0,0:19:10.70,0:19:13.53,*Default,NTP,0000,0000,0000,,are used to describe the general shape
+Dialogue: 0,0:19:13.57,0:19:16.47,*Default,NTP,0000,0000,0000,,of time as a function of input size
+Dialogue: 0,0:19:16.80,0:19:19.60,*Default,NTP,0000,0000,0000,,even if there are wiggles and bumps along the way
+Dialogue: 0,0:19:22.77,0:19:24.57,*Default,NTP,0000,0000,0000,,the order of growth
+Dialogue: 0,0:19:24.57,0:19:26.37,*Default,NTP,0000,0000,0000,,of a functions time
+Dialogue: 0,0:19:26.37,0:19:29.00,*Default,NTP,0000,0000,0000,,that it takes to compute its result
+Dialogue: 0,0:19:29.10,0:19:32.70,*Default,NTP,0000,0000,0000,,is a general category that the function falls in
+Dialogue: 0,0:19:33.10,0:19:35.87,*Default,NTP,0000,0000,0000,,such as linear or logarithmic
+Dialogue: 0,0:19:36.77,0:19:40.27,*Default,NTP,0000,0000,0000,,two functions that use linear time
+Dialogue: 0,0:19:40.50,0:19:43.30,*Default,NTP,0000,0000,0000,,might not take exactly the same amount of time
+Dialogue: 0,0:19:43.30,0:19:45.97,*Default,NTP,0000,0000,0000,,to compute their result for the same input
+Dialogue: 0,0:19:46.27,0:19:48.90,*Default,NTP,0000,0000,0000,,but they both scale in the same way
+Dialogue: 0,0:19:49.17,0:19:52.30,*Default,NTP,0000,0000,0000,,the general shape of their scaling curve
+Dialogue: 0,0:19:52.47,0:19:54.00,*Default,NTP,0000,0000,0000,,are as both a line
+Dialogue: 0,0:19:54.67,0:19:56.57,*Default,NTP,0000,0000,0000,,and logarithmic functions
+Dialogue: 0,0:19:56.57,0:20:00.37,*Default,NTP,0000,0000,0000,,all have that same characteristic logarithmic shape
+Dialogue: 0,0:20:01.17,0:20:03.33,*Default,NTP,0000,0000,0000,,and there are other shapes as well
+Dialogue: 0,0:20:04.60,0:20:05.93,*Default,NTP,0000,0000,0000,,quadratic time
+Dialogue: 0,0:20:06.07,0:20:07.60,*Default,NTP,0000,0000,0000,,describes a function
+Dialogue: 0,0:20:07.73,0:20:13.67,*Default,NTP,0000,0000,0000,,that processes all pairs of elements in a linear input
+Dialogue: 0,0:20:14.13,0:20:18.07,*Default,NTP,0000,0000,0000,,or all pairs of values in a sequence of length n
+Dialogue: 0,0:20:18.60,0:20:19.97,*Default,NTP,0000,0000,0000,,so for example
+Dialogue: 0,0:20:20.10,0:20:22.70,*Default,NTP,0000,0000,0000,,here's a function that computes the overlap
+Dialogue: 0,0:20:22.97,0:20:26.10,*Default,NTP,0000,0000,0000,,between the elements in a and the elements in b
+Dialogue: 0,0:20:26.47,0:20:28.37,*Default,NTP,0000,0000,0000,,by going through every element in a
+Dialogue: 0,0:20:28.77,0:20:30.47,*Default,NTP,0000,0000,0000,,and every element in b
+Dialogue: 0,0:20:30.87,0:20:33.00,*Default,NTP,0000,0000,0000,,and checking to see if they're the same
+Dialogue: 0,0:20:33.67,0:20:35.47,*Default,NTP,0000,0000,0000,,it adds a count when they are
+Dialogue: 0,0:20:35.67,0:20:37.77,*Default,NTP,0000,0000,0000,,and returns the count to the end
+Dialogue: 0,0:20:38.07,0:20:39.00,*Default,NTP,0000,0000,0000,,so the overlap
+Dialogue: 0,0:20:39.00,0:20:42.73,*Default,NTP,0000,0000,0000,,between three five seven six and four five six five
+Dialogue: 0,0:20:42.90,0:20:45.40,*Default,NTP,0000,0000,0000,,is three because five five are the same
+Dialogue: 0,0:20:45.57,0:20:48.67,*Default,NTP,0000,0000,0000,,five five are the same and six six are the same
+Dialogue: 0,0:20:49.57,0:20:51.17,*Default,NTP,0000,0000,0000,,to compute this result
+Dialogue: 0,0:20:51.50,0:20:55.10,*Default,NTP,0000,0000,0000,,overlap compares all pairs of an element in a
+Dialogue: 0,0:20:55.17,0:20:56.67,*Default,NTP,0000,0000,0000,,and an element in b
+Dialogue: 0,0:20:57.00,0:20:59.80,*Default,NTP,0000,0000,0000,,and that's a quadradic amount of work
+Dialogue: 0,0:21:00.33,0:21:02.27,*Default,NTP,0000,0000,0000,,based on the input length
+Dialogue: 0,0:21:02.60,0:21:04.50,*Default,NTP,0000,0000,0000,,here the input length is four
+Dialogue: 0,0:21:04.67,0:21:08.90,*Default,NTP,0000,0000,0000,,in the amount of comparisons is four times four or 16
+Dialogue: 0,0:21:09.57,0:21:11.73,*Default,NTP,0000,0000,0000,,the amount of extra work required
+Dialogue: 0,0:21:12.07,0:21:15.77,*Default,NTP,0000,0000,0000,,to process a length of four versus a length of three
+Dialogue: 0,0:21:16.07,0:21:17.67,*Default,NTP,0000,0000,0000,,is this whole row
+Dialogue: 0,0:21:17.73,0:21:18.93,*Default,NTP,0000,0000,0000,,and therefore
+Dialogue: 0,0:21:18.93,0:21:20.90,*Default,NTP,0000,0000,0000,,if you compare the input size
+Dialogue: 0,0:21:20.90,0:21:23.50,*Default,NTP,0000,0000,0000,,to the time it takes to compute the result
+Dialogue: 0,0:21:23.67,0:21:25.90,*Default,NTP,0000,0000,0000,,you get a quadratic shape
+Dialogue: 0,0:21:26.60,0:21:28.50,*Default,NTP,0000,0000,0000,,so here's what happens when we pass
+Dialogue: 0,0:21:28.50,0:21:31.97,*Default,NTP,0000,0000,0000,,in ends from the range 20 to 200
+Dialogue: 0,0:21:32.47,0:21:34.30,*Default,NTP,0000,0000,0000,,and compute the median time
+Dialogue: 0,0:21:34.30,0:21:36.93,*Default,NTP,0000,0000,0000,,required in order to return the result
+Dialogue: 0,0:21:37.27,0:21:40.10,*Default,NTP,0000,0000,0000,,75 takes ['two']millisecond
+Dialogue: 0,0:21:40.30,0:21:44.87,*Default,NTP,0000,0000,0000,,whereas 150 takes nearly ['eight']millisecond
+Dialogue: 0,0:21:45.40,0:21:47.33,*Default,NTP,0000,0000,0000,,and the curve slopes upward
+Dialogue: 0,0:21:47.47,0:21:49.90,*Default,NTP,0000,0000,0000,,in a familiar looking parabola
+Dialogue: 0,0:21:50.50,0:21:52.50,*Default,NTP,0000,0000,0000,,another upward sloping
+Dialogue: 0,0:21:52.50,0:21:55.40,*Default,NTP,0000,0000,0000,,order of growth is exponential time
+Dialogue: 0,0:21:55.67,0:21:57.47,*Default,NTP,0000,0000,0000,,here things are even worse
+Dialogue: 0,0:21:58.20,0:22:01.17,*Default,NTP,0000,0000,0000,,a tree recursive function can take exponential time
+Dialogue: 0,0:22:01.37,0:22:04.10,*Default,NTP,0000,0000,0000,,because the unmemorized fib function
+Dialogue: 0,0:22:04.33,0:22:06.90,*Default,NTP,0000,0000,0000,,has to do 60% more work
+Dialogue: 0,0:22:07.00,0:22:08.40,*Default,NTP,0000,0000,0000,,just to compute n
+Dialogue: 0,0:22:08.40,0:22:10.93,*Default,NTP,0000,0000,0000,,that's one larger than the previous n
+Dialogue: 0,0:22:11.37,0:22:14.73,*Default,NTP,0000,0000,0000,,so computing fib two just requires this much work
+Dialogue: 0,0:22:14.80,0:22:17.93,*Default,NTP,0000,0000,0000,,fib three requires all this additional work
+Dialogue: 0,0:22:18.00,0:22:18.77,*Default,NTP,0000,0000,0000,,fib four
+Dialogue: 0,0:22:18.77,0:22:22.07,*Default,NTP,0000,0000,0000,,requires all this additional work on top of fib three
+Dialogue: 0,0:22:22.37,0:22:25.77,*Default,NTP,0000,0000,0000,,and fib five has to compute not only fib four
+Dialogue: 0,0:22:25.80,0:22:28.47,*Default,NTP,0000,0000,0000,,but all of this additional work as well
+Dialogue: 0,0:22:28.77,0:22:30.77,*Default,NTP,0000,0000,0000,,assuming we don't memoize
+Dialogue: 0,0:22:31.33,0:22:33.33,*Default,NTP,0000,0000,0000,,so a tree recursive function like this
+Dialogue: 0,0:22:33.33,0:22:34.73,*Default,NTP,0000,0000,0000,,without memorization
+Dialogue: 0,0:22:34.87,0:22:37.57,*Default,NTP,0000,0000,0000,,will take what's called exponential time
+Dialogue: 0,0:22:38.87,0:22:42.10,*Default,NTP,0000,0000,0000,,here are the common orders of growth that arise
+Dialogue: 0,0:22:42.30,0:22:44.67,*Default,NTP,0000,0000,0000,,when analyzing functions
+Dialogue: 0,0:22:45.20,0:22:46.53,*Default,NTP,0000,0000,0000,,there are others
+Dialogue: 0,0:22:46.70,0:22:48.60,*Default,NTP,0000,0000,0000,,and there's also a formal system
+Dialogue: 0,0:22:48.60,0:22:51.33,*Default,NTP,0000,0000,0000,,for analyzing functions and proving
+Dialogue: 0,0:22:51.50,0:22:54.60,*Default,NTP,0000,0000,0000,,what orders of growth they belong to
+Dialogue: 0,0:22:54.77,0:22:57.60,*Default,NTP,0000,0000,0000,,but we'll defer all of that for a later course
+Dialogue: 0,0:22:58.00,0:22:59.47,*Default,NTP,0000,0000,0000,,and instead focus on
+Dialogue: 0,0:22:59.60,0:23:01.80,*Default,NTP,0000,0000,0000,,understanding what these categories are
+Dialogue: 0,0:23:02.00,0:23:03.97,*Default,NTP,0000,0000,0000,,and what their implications are
+Dialogue: 0,0:23:04.00,0:23:06.27,*Default,NTP,0000,0000,0000,,on the run time of a program
+Dialogue: 0,0:23:07.33,0:23:12.37,*Default,NTP,0000,0000,0000,,all of them describe how time scales with input size
+Dialogue: 0,0:23:12.77,0:23:15.47,*Default,NTP,0000,0000,0000,,and all of them describe general trends
+Dialogue: 0,0:23:15.47,0:23:17.30,*Default,NTP,0000,0000,0000,,as opposed to the details
+Dialogue: 0,0:23:17.30,0:23:18.27,*Default,NTP,0000,0000,0000,,of exactly
+Dialogue: 0,0:23:18.27,0:23:21.13,*Default,NTP,0000,0000,0000,,how many microseconds it takes for a function
+Dialogue: 0,0:23:21.13,0:23:22.33,*Default,NTP,0000,0000,0000,,call to return
+Dialogue: 0,0:23:23.13,0:23:25.40,*Default,NTP,0000,0000,0000,,so exponential growth is really slow
+Dialogue: 0,0:23:25.47,0:23:28.00,*Default,NTP,0000,0000,0000,,quadradic growth is slow but common
+Dialogue: 0,0:23:28.13,0:23:30.30,*Default,NTP,0000,0000,0000,,linear growth is very common
+Dialogue: 0,0:23:30.37,0:23:32.10,*Default,NTP,0000,0000,0000,,logarithmic growth is great
+Dialogue: 0,0:23:32.10,0:23:34.53,*Default,NTP,0000,0000,0000,,and scales to really large inputs
+Dialogue: 0,0:23:34.57,0:23:37.47,*Default,NTP,0000,0000,0000,,and constant growth is the best of all
+Dialogue: 0,0:23:37.93,0:23:40.93,*Default,NTP,0000,0000,0000,,that happens when the input size
+Dialogue: 0,0:23:40.97,0:23:43.07,*Default,NTP,0000,0000,0000,,doesn't affect the time
+Dialogue: 0,0:23:43.33,0:23:45.70,*Default,NTP,0000,0000,0000,,for example and python
+Dialogue: 0,0:23:45.93,0:23:49.10,*Default,NTP,0000,0000,0000,,the number of elements in a dictionary
+Dialogue: 0,0:23:49.27,0:23:52.77,*Default,NTP,0000,0000,0000,,does not affect how long it takes to look up a value
+Dialogue: 0,0:23:52.80,0:23:57.10,*Default,NTP,0000,0000,0000,,by its key how that works is a topic for a later course
+Dialogue: 0,0:23:57.50,0:23:58.97,*Default,NTP,0000,0000,0000,,but the fact
+Dialogue: 0,0:23:58.97,0:24:02.73,*Default,NTP,0000,0000,0000,,that it is a constant time operation to find a value
+Dialogue: 0,0:24:02.73,0:24:03.73,*Default,NTP,0000,0000,0000,,by its key
+Dialogue: 0,0:24:03.90,0:24:07.53,*Default,NTP,0000,0000,0000,,is an important property of python dictionaries
+Dialogue: 0,0:24:08.20,0:24:09.80,*Default,NTP,0000,0000,0000,,each of these categories
+Dialogue: 0,0:24:09.87,0:24:12.60,*Default,NTP,0000,0000,0000,,can be described by a simple equation
+Dialogue: 0,0:24:12.93,0:24:15.30,*Default,NTP,0000,0000,0000,,where we have written down the
+Dialogue: 0,0:24:15.50,0:24:18.57,*Default,NTP,0000,0000,0000,,general time that it takes to process
+Dialogue: 0,0:24:18.60,0:24:21.77,*Default,NTP,0000,0000,0000,,an input of size n plus one
+Dialogue: 0,0:24:22.13,0:24:25.50,*Default,NTP,0000,0000,0000,,in terms of the time that it takes to process an
+Dialogue: 0,0:24:25.50,0:24:27.17,*Default,NTP,0000,0000,0000,,input of size n
+Dialogue: 0,0:24:27.53,0:24:30.27,*Default,NTP,0000,0000,0000,,using some constance a and b
+Dialogue: 0,0:24:30.50,0:24:32.17,*Default,NTP,0000,0000,0000,,to account for the fact
+Dialogue: 0,0:24:32.33,0:24:35.80,*Default,NTP,0000,0000,0000,,that there are many details about how long it takes
+Dialogue: 0,0:24:35.80,0:24:37.07,*Default,NTP,0000,0000,0000,,for something to run
+Dialogue: 0,0:24:37.27,0:24:38.73,*Default,NTP,0000,0000,0000,,that we're glossing over
+Dialogue: 0,0:24:38.73,0:24:41.87,*Default,NTP,0000,0000,0000,,as we talk about the general shape of time
+Dialogue: 0,0:24:41.87,0:24:44.13,*Default,NTP,0000,0000,0000,,as a function of the input size
+Dialogue: 0,0:24:45.27,0:24:46.93,*Default,NTP,0000,0000,0000,,so for exponential growth
+Dialogue: 0,0:24:47.20,0:24:49.40,*Default,NTP,0000,0000,0000,,the amount of time it takes to compute
+Dialogue: 0,0:24:49.40,0:24:52.20,*Default,NTP,0000,0000,0000,,the result for an input of size n plus one
+Dialogue: 0,0:24:52.33,0:24:55.40,*Default,NTP,0000,0000,0000,,is something like a times b to the n plus one
+Dialogue: 0,0:24:56.50,0:24:57.30,*Default,NTP,0000,0000,0000,,which
+Dialogue: 0,0:24:57.33,0:25:00.70,*Default,NTP,0000,0000,0000,,compared to the time it takes for an input of size n
+Dialogue: 0,0:25:00.80,0:25:04.97,*Default,NTP,0000,0000,0000,,requires an additional multiplicative factor of b
+Dialogue: 0,0:25:05.87,0:25:09.27,*Default,NTP,0000,0000,0000,,so that's the key characteristic of exponential growth
+Dialogue: 0,0:25:09.70,0:25:12.10,*Default,NTP,0000,0000,0000,,incrementing the input size in
+Dialogue: 0,0:25:12.30,0:25:15.80,*Default,NTP,0000,0000,0000,,multiplies the time by some constant
+Dialogue: 0,0:25:15.97,0:25:18.73,*Default,NTP,0000,0000,0000,,the bigger the constant the worst this is
+Dialogue: 0,0:25:18.97,0:25:22.13,*Default,NTP,0000,0000,0000,,but basically for any constant it's pretty bad
+Dialogue: 0,0:25:22.67,0:25:25.13,*Default,NTP,0000,0000,0000,,quadratic growth is not quite so slow
+Dialogue: 0,0:25:25.93,0:25:28.53,*Default,NTP,0000,0000,0000,,quadratic growth says that for an input
+Dialogue: 0,0:25:28.60,0:25:30.27,*Default,NTP,0000,0000,0000,,of size n plus one
+Dialogue: 0,0:25:30.53,0:25:34.47,*Default,NTP,0000,0000,0000,,it takes something like a times n plus one squared
+Dialogue: 0,0:25:34.70,0:25:36.70,*Default,NTP,0000,0000,0000,,in order to compute the result
+Dialogue: 0,0:25:37.33,0:25:40.67,*Default,NTP,0000,0000,0000,,which in addition to the time it takes to compute
+Dialogue: 0,0:25:40.70,0:25:42.47,*Default,NTP,0000,0000,0000,,the result for size in
+Dialogue: 0,0:25:42.90,0:25:46.33,*Default,NTP,0000,0000,0000,,also requires an additional additive term
+Dialogue: 0,0:25:47.10,0:25:47.30,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:25:47.30,0:25:50.50,*Default,NTP,0000,0000,0000,,adding to the time is better than multiplying the time
+Dialogue: 0,0:25:51.10,0:25:53.17,*Default,NTP,0000,0000,0000,,but still the problem
+Dialogue: 0,0:25:53.17,0:25:56.33,*Default,NTP,0000,0000,0000,,with quadratic growth is that the amount you add
+Dialogue: 0,0:25:56.47,0:25:59.00,*Default,NTP,0000,0000,0000,,for just going from end to end plus one
+Dialogue: 0,0:25:59.10,0:26:01.40,*Default,NTP,0000,0000,0000,,is a term that depends on in
+Dialogue: 0,0:26:01.53,0:26:03.97,*Default,NTP,0000,0000,0000,,so incrementing an increases time
+Dialogue: 0,0:26:04.10,0:26:06.20,*Default,NTP,0000,0000,0000,,by end times a constant
+Dialogue: 0,0:26:06.93,0:26:09.93,*Default,NTP,0000,0000,0000,,linear growth for a problem of size n plus one
+Dialogue: 0,0:26:09.97,0:26:13.87,*Default,NTP,0000,0000,0000,,requires n plus one times some a steps
+Dialogue: 0,0:26:14.33,0:26:18.50,*Default,NTP,0000,0000,0000,,which compared to solving the same problem for size n
+Dialogue: 0,0:26:18.70,0:26:21.93,*Default,NTP,0000,0000,0000,,is just an additive factor that doesn't depend on it
+Dialogue: 0,0:26:22.40,0:26:25.60,*Default,NTP,0000,0000,0000,,incrementing n increases time by a constant
+Dialogue: 0,0:26:26.60,0:26:29.50,*Default,NTP,0000,0000,0000,,logarithmic growth is the one that scales
+Dialogue: 0,0:26:29.50,0:26:30.57,*Default,NTP,0000,0000,0000,,to really begin
+Dialogue: 0,0:26:31.70,0:26:33.87,*Default,NTP,0000,0000,0000,,here we write down an expression
+Dialogue: 0,0:26:33.93,0:26:37.60,*Default,NTP,0000,0000,0000,,for the time it takes to compute the result for
+Dialogue: 0,0:26:37.67,0:26:39.80,*Default,NTP,0000,0000,0000,,n plus n or two times n
+Dialogue: 0,0:26:40.47,0:26:43.67,*Default,NTP,0000,0000,0000,,is some constant times the log of two in
+Dialogue: 0,0:26:44.07,0:26:45.80,*Default,NTP,0000,0000,0000,,which compared to the amount of time
+Dialogue: 0,0:26:45.80,0:26:47.50,*Default,NTP,0000,0000,0000,,it takes to compute the result
+Dialogue: 0,0:26:47.50,0:26:50.80,*Default,NTP,0000,0000,0000,,for just in add some constant
+Dialogue: 0,0:26:51.70,0:26:55.27,*Default,NTP,0000,0000,0000,,so doubling in only increments time by a constant
+Dialogue: 0,0:26:55.90,0:26:59.07,*Default,NTP,0000,0000,0000,,if it's possible to reimplement some function
+Dialogue: 0,0:26:59.30,0:27:01.87,*Default,NTP,0000,0000,0000,,in order to change its order of growth
+Dialogue: 0,0:27:02.07,0:27:05.17,*Default,NTP,0000,0000,0000,,from exponential to linear by memoization
+Dialogue: 0,0:27:05.40,0:27:07.40,*Default,NTP,0000,0000,0000,,or from linear delagorithmic
+Dialogue: 0,0:27:07.40,0:27:09.50,*Default,NTP,0000,0000,0000,,as we did for exponentiation
+Dialogue: 0,0:27:10.37,0:27:12.53,*Default,NTP,0000,0000,0000,,that can substantially change
+Dialogue: 0,0:27:12.60,0:27:14.70,*Default,NTP,0000,0000,0000,,not only the speed of your program
+Dialogue: 0,0:27:14.80,0:27:18.17,*Default,NTP,0000,0000,0000,,but the size of problem that your program can handle
+Dialogue: 0,0:27:18.17,0:27:20.80,*Default,NTP,0000,0000,0000,,without seeming like it's taking forever
+Dialogue: 0,0:27:23.77,0:27:27.33,*Default,NTP,0000,0000,0000,,there are precise mathematical definitions
+Dialogue: 0,0:27:27.50,0:27:30.30,*Default,NTP,0000,0000,0000,,for the terms linear constant
+Dialogue: 0,0:27:30.30,0:27:32.33,*Default,NTP,0000,0000,0000,,quadratic and so on
+Dialogue: 0,0:27:32.93,0:27:35.40,*Default,NTP,0000,0000,0000,,and these definitions are useful because
+Dialogue: 0,0:27:35.40,0:27:38.13,*Default,NTP,0000,0000,0000,,they allow you to prove properties
+Dialogue: 0,0:27:38.27,0:27:39.73,*Default,NTP,0000,0000,0000,,of functions
+Dialogue: 0,0:27:40.57,0:27:42.93,*Default,NTP,0000,0000,0000,,without ever running those functions
+Dialogue: 0,0:27:42.97,0:27:45.00,*Default,NTP,0000,0000,0000,,on particular examples
+Dialogue: 0,0:27:45.77,0:27:49.93,*Default,NTP,0000,0000,0000,,and one important component of the theory of computing
+Dialogue: 0,0:27:50.50,0:27:51.77,*Default,NTP,0000,0000,0000,,is this practice
+Dialogue: 0,0:27:51.93,0:27:55.87,*Default,NTP,0000,0000,0000,,of proving characteristics about functions
+Dialogue: 0,0:27:56.17,0:27:59.13,*Default,NTP,0000,0000,0000,,by reasoning from mathematical definitions
+Dialogue: 0,0:28:00.17,0:28:02.50,*Default,NTP,0000,0000,0000,,now that's not a topic in this course
+Dialogue: 0,0:28:02.90,0:28:05.67,*Default,NTP,0000,0000,0000,,but it is covered extensively in future courses at
+Dialogue: 0,0:28:05.67,0:28:06.47,*Default,NTP,0000,0000,0000,,berkeley
+Dialogue: 0,0:28:07.13,0:28:07.77,*Default,NTP,0000,0000,0000,,and it's a
+Dialogue: 0,0:28:07.77,0:28:10.60,*Default,NTP,0000,0000,0000,,standard part of the computer science curriculum
+Dialogue: 0,0:28:11.70,0:28:13.97,*Default,NTP,0000,0000,0000,,rather than telling you all the definitions
+Dialogue: 0,0:28:13.97,0:28:15.93,*Default,NTP,0000,0000,0000,,which are welcome to look up on your own
+Dialogue: 0,0:28:16.33,0:28:18.73,*Default,NTP,0000,0000,0000,,I will show you this standard notation
+Dialogue: 0,0:28:18.73,0:28:21.17,*Default,NTP,0000,0000,0000,,that's associated with those definitions
+Dialogue: 0,0:28:21.33,0:28:23.60,*Default,NTP,0000,0000,0000,,because it's used so commonly
+Dialogue: 0,0:28:23.67,0:28:25.27,*Default,NTP,0000,0000,0000,,that it might surprise you
+Dialogue: 0,0:28:25.27,0:28:27.10,*Default,NTP,0000,0000,0000,,if you've never seen it before
+Dialogue: 0,0:28:28.27,0:28:30.17,*Default,NTP,0000,0000,0000,,so for these common orders of growth
+Dialogue: 0,0:28:30.17,0:28:32.20,*Default,NTP,0000,0000,0000,,exponential quadradic linear
+Dialogue: 0,0:28:32.20,0:28:34.27,*Default,NTP,0000,0000,0000,,logarithmic and constant
+Dialogue: 0,0:28:34.77,0:28:39.10,*Default,NTP,0000,0000,0000,,the most typical way to describe each order of growth
+Dialogue: 0,0:28:39.33,0:28:44.00,*Default,NTP,0000,0000,0000,,is with either big theta or big o notation
+Dialogue: 0,0:28:45.17,0:28:48.13,*Default,NTP,0000,0000,0000,,big theta notation looks like this
+Dialogue: 0,0:28:48.33,0:28:50.40,*Default,NTP,0000,0000,0000,,and there's a different expression
+Dialogue: 0,0:28:50.53,0:28:52.47,*Default,NTP,0000,0000,0000,,for each order of growth
+Dialogue: 0,0:28:52.80,0:28:58.20,*Default,NTP,0000,0000,0000,,so quadratic growth is big theta of anne squared
+Dialogue: 0,0:28:58.40,0:29:02.07,*Default,NTP,0000,0000,0000,,whereas linear growth is big theta of ant
+Dialogue: 0,0:29:02.90,0:29:03.60,*Default,NTP,0000,0000,0000,,and yes
+Dialogue: 0,0:29:03.60,0:29:07.20,*Default,NTP,0000,0000,0000,,computer scientists really do wander around saying
+Dialogue: 0,0:29:07.33,0:29:08.37,*Default,NTP,0000,0000,0000,,big theta
+Dialogue: 0,0:29:09.77,0:29:13.40,*Default,NTP,0000,0000,0000,,log rhythmic is log n and constant is the tricky one
+Dialogue: 0,0:29:13.53,0:29:16.77,*Default,NTP,0000,0000,0000,,you write big theta of one most commonly
+Dialogue: 0,0:29:17.07,0:29:18.60,*Default,NTP,0000,0000,0000,,and what happened to the n
+Dialogue: 0,0:29:18.87,0:29:20.10,*Default,NTP,0000,0000,0000,,well increasing n
+Dialogue: 0,0:29:20.10,0:29:23.67,*Default,NTP,0000,0000,0000,,doesn't effect time in a constant growth function
+Dialogue: 0,0:29:23.90,0:29:26.17,*Default,NTP,0000,0000,0000,,and so you don't put n there at all
+Dialogue: 0,0:29:27.07,0:29:31.27,*Default,NTP,0000,0000,0000,,another common set of notation is big o notation
+Dialogue: 0,0:29:31.33,0:29:34.00,*Default,NTP,0000,0000,0000,,which is even more fun to say than big theta
+Dialogue: 0,0:29:34.50,0:29:36.40,*Default,NTP,0000,0000,0000,,and the expressions look the same
+Dialogue: 0,0:29:36.53,0:29:41.33,*Default,NTP,0000,0000,0000,,so big theta of b to the n or big o of b to the n
+Dialogue: 0,0:29:42.30,0:29:46.10,*Default,NTP,0000,0000,0000,,now these actually mean something slightly different
+Dialogue: 0,0:29:46.60,0:29:50.97,*Default,NTP,0000,0000,0000,,big o describes the upper bound for the time it takes
+Dialogue: 0,0:29:50.97,0:29:52.40,*Default,NTP,0000,0000,0000,,for a function to run
+Dialogue: 0,0:29:53.07,0:29:56.57,*Default,NTP,0000,0000,0000,,so this is like saying at most quadratic
+Dialogue: 0,0:29:57.20,0:29:58.37,*Default,NTP,0000,0000,0000,,whereas this says
+Dialogue: 0,0:29:58.37,0:30:00.80,*Default,NTP,0000,0000,0000,,something about a lower and upper bound
+Dialogue: 0,0:30:01.33,0:30:02.67,*Default,NTP,0000,0000,0000,,both at most
+Dialogue: 0,0:30:02.77,0:30:06.97,*Default,NTP,0000,0000,0000,,quadratic and at least quadratic time is required
+Dialogue: 0,0:30:07.73,0:30:10.87,*Default,NTP,0000,0000,0000,,now to use this mathematical notation effectively
+Dialogue: 0,0:30:10.87,0:30:12.67,*Default,NTP,0000,0000,0000,,you have to be quite precise
+Dialogue: 0,0:30:12.77,0:30:14.40,*Default,NTP,0000,0000,0000,,about what you're describing
+Dialogue: 0,0:30:14.67,0:30:17.37,*Default,NTP,0000,0000,0000,,what is n in relation to the problem
+Dialogue: 0,0:30:18.57,0:30:20.87,*Default,NTP,0000,0000,0000,,if n is just the input number
+Dialogue: 0,0:30:21.07,0:30:22.37,*Default,NTP,0000,0000,0000,,then things are simple
+Dialogue: 0,0:30:22.60,0:30:26.17,*Default,NTP,0000,0000,0000,,but n might be the length of the input sequence
+Dialogue: 0,0:30:26.80,0:30:29.27,*Default,NTP,0000,0000,0000,,and that means there are lots of sequences all
+Dialogue: 0,0:30:29.27,0:30:30.70,*Default,NTP,0000,0000,0000,,with the same length
+Dialogue: 0,0:30:30.93,0:30:33.40,*Default,NTP,0000,0000,0000,,so are you describing how long it takes
+Dialogue: 0,0:30:33.67,0:30:37.20,*Default,NTP,0000,0000,0000,,for a length end sequence in the worst case
+Dialogue: 0,0:30:37.27,0:30:40.07,*Default,NTP,0000,0000,0000,,or best case in average case
+Dialogue: 0,0:30:40.13,0:30:42.90,*Default,NTP,0000,0000,0000,,across all different sequences of length end
+Dialogue: 0,0:30:43.33,0:30:45.37,*Default,NTP,0000,0000,0000,,that's something you'd want to specify
+Dialogue: 0,0:30:45.37,0:30:47.80,*Default,NTP,0000,0000,0000,,if you are going to go prove properties
+Dialogue: 0,0:30:48.00,0:30:49.37,*Default,NTP,0000,0000,0000,,about functions
+Dialogue: 0,0:30:49.93,0:30:52.87,*Default,NTP,0000,0000,0000,,and all that will become important in later courses
+Dialogue: 0,0:30:52.97,0:30:54.50,*Default,NTP,0000,0000,0000,,but I think in this course
+Dialogue: 0,0:30:54.60,0:30:56.77,*Default,NTP,0000,0000,0000,,the important thing is to recognize
+Dialogue: 0,0:30:56.80,0:31:00.00,*Default,NTP,0000,0000,0000,,that there are different general patterns of growth
+Dialogue: 0,0:31:00.13,0:31:02.87,*Default,NTP,0000,0000,0000,,in the time it taped cs for a function to complete
+Dialogue: 0,0:31:03.20,0:31:07.47,*Default,NTP,0000,0000,0000,,the most common are the five that I've shown you here
+Dialogue: 0,0:31:08.10,0:31:10.57,*Default,NTP,0000,0000,0000,,and when people discuss logarithmic growth
+Dialogue: 0,0:31:10.67,0:31:13.07,*Default,NTP,0000,0000,0000,,sometimes they don't say logarithmic growth
+Dialogue: 0,0:31:13.10,0:31:17.30,*Default,NTP,0000,0000,0000,,instead they say big theta log in or biggo log in
+Dialogue: 0,0:31:20.07,0:31:24.13,*Default,NTP,0000,0000,0000,,space or memory is another resource
+Dialogue: 0,0:31:24.13,0:31:27.27,*Default,NTP,0000,0000,0000,,that gets consumed by programs as they execute
+Dialogue: 0,0:31:27.80,0:31:30.33,*Default,NTP,0000,0000,0000,,and so it's something that you need to worry about
+Dialogue: 0,0:31:31.37,0:31:36.93,*Default,NTP,0000,0000,0000,,now the consumption of space is taken up by values
+Dialogue: 0,0:31:37.27,0:31:40.10,*Default,NTP,0000,0000,0000,,so a long list takes up more space than a short list
+Dialogue: 0,0:31:40.33,0:31:43.10,*Default,NTP,0000,0000,0000,,but it also gets taken up by frames
+Dialogue: 0,0:31:43.20,0:31:45.70,*Default,NTP,0000,0000,0000,,so you need to know how many frames exist
+Dialogue: 0,0:31:45.87,0:31:47.17,*Default,NTP,0000,0000,0000,,because of different function
+Dialogue: 0,0:31:47.17,0:31:49.53,*Default,NTP,0000,0000,0000,,calls in your program at the same time
+Dialogue: 0,0:31:50.10,0:31:52.50,*Default,NTP,0000,0000,0000,,and this will involve some new concepts
+Dialogue: 0,0:31:53.67,0:31:56.37,*Default,NTP,0000,0000,0000,,so the new concepts we need to keep track of are
+Dialogue: 0,0:31:56.37,0:31:59.27,*Default,NTP,0000,0000,0000,,which environment frames do we need to keep around
+Dialogue: 0,0:31:59.37,0:32:00.80,*Default,NTP,0000,0000,0000,,during evaluation
+Dialogue: 0,0:32:00.93,0:32:03.30,*Default,NTP,0000,0000,0000,,and which ones can we just let go
+Dialogue: 0,0:32:03.87,0:32:05.27,*Default,NTP,0000,0000,0000,,so here's the story
+Dialogue: 0,0:32:05.53,0:32:06.50,*Default,NTP,0000,0000,0000,,at any moment
+Dialogue: 0,0:32:06.50,0:32:09.70,*Default,NTP,0000,0000,0000,,there's a set of what are called active environments
+Dialogue: 0,0:32:10.20,0:32:13.33,*Default,NTP,0000,0000,0000,,and values and frames in those active environments
+Dialogue: 0,0:32:13.37,0:32:15.90,*Default,NTP,0000,0000,0000,,consume memory or space
+Dialogue: 0,0:32:17.10,0:32:18.97,*Default,NTP,0000,0000,0000,,any memory that is used for other
+Dialogue: 0,0:32:18.97,0:32:21.93,*Default,NTP,0000,0000,0000,,values and frames not in an active environment
+Dialogue: 0,0:32:22.13,0:32:23.53,*Default,NTP,0000,0000,0000,,can be recycled
+Dialogue: 0,0:32:23.73,0:32:26.57,*Default,NTP,0000,0000,0000,,and the python interpreter does this automatically
+Dialogue: 0,0:32:26.60,0:32:29.40,*Default,NTP,0000,0000,0000,,by reclaiming this base that it used before
+Dialogue: 0,0:32:29.73,0:32:34.13,*Default,NTP,0000,0000,0000,,when it knows that that information is no longer needed
+Dialogue: 0,0:32:35.07,0:32:37.73,*Default,NTP,0000,0000,0000,,so which are these active environments
+Dialogue: 0,0:32:38.00,0:32:40.27,*Default,NTP,0000,0000,0000,,well an active environment is for any
+Dialogue: 0,0:32:40.27,0:32:42.90,*Default,NTP,0000,0000,0000,,function call currently being evaluated
+Dialogue: 0,0:32:43.30,0:32:46.20,*Default,NTP,0000,0000,0000,,meaning we called it but it hasn't returned yet
+Dialogue: 0,0:32:47.53,0:32:50.50,*Default,NTP,0000,0000,0000,,there's another case much less comment
+Dialogue: 0,0:32:50.67,0:32:53.33,*Default,NTP,0000,0000,0000,,which is a parent environment of a function
+Dialogue: 0,0:32:53.67,0:32:55.93,*Default,NTP,0000,0000,0000,,that exists in an active environment
+Dialogue: 0,0:32:56.47,0:32:58.67,*Default,NTP,0000,0000,0000,,so this situation occurs
+Dialogue: 0,0:32:58.77,0:33:02.00,*Default,NTP,0000,0000,0000,,when you've defined a function within another function
+Dialogue: 0,0:33:02.53,0:33:04.27,*Default,NTP,0000,0000,0000,,and so it's parent frame
+Dialogue: 0,0:33:04.87,0:33:07.20,*Default,NTP,0000,0000,0000,,is not the global frame but some other frame
+Dialogue: 0,0:33:07.67,0:33:09.37,*Default,NTP,0000,0000,0000,,as long as you need that function
+Dialogue: 0,0:33:09.40,0:33:11.90,*Default,NTP,0000,0000,0000,,you also need its parent frame
+Dialogue: 0,0:33:11.93,0:33:15.33,*Default,NTP,0000,0000,0000,,and all of the other frames in its parent environment
+Dialogue: 0,0:33:17.60,0:33:19.53,*Default,NTP,0000,0000,0000,,so fortunately
+Dialogue: 0,0:33:19.53,0:33:21.27,*Default,NTP,0000,0000,0000,,python tutor can visualize
+Dialogue: 0,0:33:21.27,0:33:23.00,*Default,NTP,0000,0000,0000,,which frames are active for us
+Dialogue: 0,0:33:24.07,0:33:25.93,*Default,NTP,0000,0000,0000,,here's our definition of fib
+Dialogue: 0,0:33:27.17,0:33:30.20,*Default,NTP,0000,0000,0000,,which computes fibonacci number number six
+Dialogue: 0,0:33:31.07,0:33:33.77,*Default,NTP,0000,0000,0000,,and there's a setting
+Dialogue: 0,0:33:34.60,0:33:36.07,*Default,NTP,0000,0000,0000,,which I'll show you
+Dialogue: 0,0:33:36.80,0:33:39.57,*Default,NTP,0000,0000,0000,,that says don't display exited functions
+Dialogue: 0,0:33:40.30,0:33:41.40,*Default,NTP,0000,0000,0000,,so in this way
+Dialogue: 0,0:33:41.50,0:33:43.93,*Default,NTP,0000,0000,0000,,it will actually delete the frames of anything
+Dialogue: 0,0:33:43.93,0:33:45.50,*Default,NTP,0000,0000,0000,,that has already returned
+Dialogue: 0,0:33:46.17,0:33:47.67,*Default,NTP,0000,0000,0000,,so when we call fib six
+Dialogue: 0,0:33:47.67,0:33:49.10,*Default,NTP,0000,0000,0000,,obviously it hasn't returned yet
+Dialogue: 0,0:33:49.10,0:33:50.47,*Default,NTP,0000,0000,0000,,because we have some work to do
+Dialogue: 0,0:33:50.73,0:33:53.07,*Default,NTP,0000,0000,0000,,and that's going to involve calling fib four
+Dialogue: 0,0:33:53.60,0:33:54.47,*Default,NTP,0000,0000,0000,,which has to
+Dialogue: 0,0:33:54.47,0:33:56.93,*Default,NTP,0000,0000,0000,,complete before we ever try to finish fib six
+Dialogue: 0,0:33:57.57,0:34:00.00,*Default,NTP,0000,0000,0000,,and fib four involves calling fib two
+Dialogue: 0,0:34:00.73,0:34:04.50,*Default,NTP,0000,0000,0000,,and so all of these are active frames at the same time
+Dialogue: 0,0:34:05.27,0:34:06.97,*Default,NTP,0000,0000,0000,,fib two calls fib zero
+Dialogue: 0,0:34:07.10,0:34:09.33,*Default,NTP,0000,0000,0000,,fib zero actually returns
+Dialogue: 0,0:34:09.37,0:34:11.27,*Default,NTP,0000,0000,0000,,and once it returns
+Dialogue: 0,0:34:11.27,0:34:14.80,*Default,NTP,0000,0000,0000,,it's no longer active and so it's just gonna disappear
+Dialogue: 0,0:34:15.50,0:34:16.67,*Default,NTP,0000,0000,0000,,and in its stead
+Dialogue: 0,0:34:16.70,0:34:21.13,*Default,NTP,0000,0000,0000,,we have replaced it with a frame for fib one
+Dialogue: 0,0:34:21.40,0:34:24.07,*Default,NTP,0000,0000,0000,,so notice we had f one and f two and f three
+Dialogue: 0,0:34:24.13,0:34:25.47,*Default,NTP,0000,0000,0000,,we created f four
+Dialogue: 0,0:34:25.47,0:34:26.77,*Default,NTP,0000,0000,0000,,but then got rid of it
+Dialogue: 0,0:34:26.77,0:34:28.27,*Default,NTP,0000,0000,0000,,because we didn't need it anymore
+Dialogue: 0,0:34:28.27,0:34:29.77,*Default,NTP,0000,0000,0000,,and now we're up to f five
+Dialogue: 0,0:34:31.00,0:34:34.60,*Default,NTP,0000,0000,0000,,so if we continue this process we'll see that once
+Dialogue: 0,0:34:34.87,0:34:37.40,*Default,NTP,0000,0000,0000,,fib four was done computing fib two
+Dialogue: 0,0:34:37.40,0:34:40.53,*Default,NTP,0000,0000,0000,,the fib two frame was removed
+Dialogue: 0,0:34:40.73,0:34:42.80,*Default,NTP,0000,0000,0000,,and now we have the fib three frame
+Dialogue: 0,0:34:42.80,0:34:45.40,*Default,NTP,0000,0000,0000,,which is the other part of computing fib four
+Dialogue: 0,0:34:46.13,0:34:47.53,*Default,NTP,0000,0000,0000,,so that goes on for a while
+Dialogue: 0,0:34:47.90,0:34:50.30,*Default,NTP,0000,0000,0000,,and eventually the fib four frame has gone entirely
+Dialogue: 0,0:34:50.30,0:34:52.50,*Default,NTP,0000,0000,0000,,and we only have the original f one frame
+Dialogue: 0,0:34:52.50,0:34:55.07,*Default,NTP,0000,0000,0000,,because we're not finished computing fib six
+Dialogue: 0,0:34:55.17,0:34:56.97,*Default,NTP,0000,0000,0000,,and we have the f
+Dialogue: 0,0:34:57.07,0:34:59.70,*Default,NTP,0000,0000,0000,,11 frame that was created for computing fib five
+Dialogue: 0,0:35:00.30,0:35:01.47,*Default,NTP,0000,0000,0000,,that does some work
+Dialogue: 0,0:35:01.57,0:35:03.40,*Default,NTP,0000,0000,0000,,eventually that gets deleted
+Dialogue: 0,0:35:03.67,0:35:07.80,*Default,NTP,0000,0000,0000,,and fib six can finally return the value of eight
+Dialogue: 0,0:35:08.07,0:35:09.67,*Default,NTP,0000,0000,0000,,and then there's no more work to do
+Dialogue: 0,0:35:11.37,0:35:12.37,*Default,NTP,0000,0000,0000,,in our code
+Dialogue: 0,0:35:12.37,0:35:15.20,*Default,NTP,0000,0000,0000,,we can also see how many frames are being used
+Dialogue: 0,0:35:15.73,0:35:18.30,*Default,NTP,0000,0000,0000,,so let's define a higher order function called
+Dialogue: 0,0:35:18.30,0:35:20.73,*Default,NTP,0000,0000,0000,,count frames which takes in some f
+Dialogue: 0,0:35:21.10,0:35:24.40,*Default,NTP,0000,0000,0000,,and defines a counted version
+Dialogue: 0,0:35:25.37,0:35:27.60,*Default,NTP,0000,0000,0000,,which takes some argument in
+Dialogue: 0,0:35:29.33,0:35:34.27,*Default,NTP,0000,0000,0000,,what it's going to do is increment the open frame count
+Dialogue: 0,0:35:35.40,0:35:37.33,*Default,NTP,0000,0000,0000,,it's also going to keep track of
+Dialogue: 0,0:35:37.40,0:35:40.97,*Default,NTP,0000,0000,0000,,the maximum number of open frames at any time
+Dialogue: 0,0:35:41.87,0:35:45.40,*Default,NTP,0000,0000,0000,,so if the open count is actually larger
+Dialogue: 0,0:35:47.53,0:35:48.90,*Default,NTP,0000,0000,0000,,then the max count
+Dialogue: 0,0:35:50.10,0:35:51.37,*Default,NTP,0000,0000,0000,,we can change
+Dialogue: 0,0:35:52.00,0:35:54.73,*Default,NTP,0000,0000,0000,,the max count to be the open count
+Dialogue: 0,0:35:55.60,0:35:58.07,*Default,NTP,0000,0000,0000,,now we'll get the return value
+Dialogue: 0,0:35:58.57,0:36:00.87,*Default,NTP,0000,0000,0000,,by calling f on n
+Dialogue: 0,0:36:01.97,0:36:04.73,*Default,NTP,0000,0000,0000,,now it's time to close this frame
+Dialogue: 0,0:36:07.17,0:36:10.20,*Default,NTP,0000,0000,0000,,which just means subtracting one from the open count
+Dialogue: 0,0:36:10.90,0:36:12.73,*Default,NTP,0000,0000,0000,,and then we can return the result
+Dialogue: 0,0:36:13.97,0:36:16.30,*Default,NTP,0000,0000,0000,,the open count starts out at zero
+Dialogue: 0,0:36:16.40,0:36:18.77,*Default,NTP,0000,0000,0000,,the max count starts out at zero
+Dialogue: 0,0:36:21.17,0:36:23.67,*Default,NTP,0000,0000,0000,,and we can return the counted function
+Dialogue: 0,0:36:25.10,0:36:27.70,*Default,NTP,0000,0000,0000,,so if we define fib really quick
+Dialogue: 0,0:36:29.37,0:36:32.57,*Default,NTP,0000,0000,0000,,we already know that it makes many many recursive calls
+Dialogue: 0,0:36:32.97,0:36:34.33,*Default,NTP,0000,0000,0000,,but what we don't know
+Dialogue: 0,0:36:34.60,0:36:37.33,*Default,NTP,0000,0000,0000,,is how many frames are open at any given time
+Dialogue: 0,0:36:39.27,0:36:41.97,*Default,NTP,0000,0000,0000,,or what the maximum number of open frames is
+Dialogue: 0,0:36:42.17,0:36:45.17,*Default,NTP,0000,0000,0000,,so we can figure that out by calling count frames
+Dialogue: 0,0:36:45.17,0:36:46.07,*Default,NTP,0000,0000,0000,,on fib
+Dialogue: 0,0:36:46.90,0:36:50.30,*Default,NTP,0000,0000,0000,,then calling fib on some numbers such as 20
+Dialogue: 0,0:36:50.53,0:36:53.87,*Default,NTP,0000,0000,0000,,so it's computed the 20th fibonacci number
+Dialogue: 0,0:36:54.37,0:36:58.50,*Default,NTP,0000,0000,0000,,and fib dot open count should be zero
+Dialogue: 0,0:36:58.60,0:36:59.67,*Default,NTP,0000,0000,0000,,because we've
+Dialogue: 0,0:36:59.77,0:37:02.33,*Default,NTP,0000,0000,0000,,returned from every call to fib that we've made
+Dialogue: 0,0:37:02.70,0:37:04.67,*Default,NTP,0000,0000,0000,,but the max count will tell us
+Dialogue: 0,0:37:07.13,0:37:10.93,*Default,NTP,0000,0000,0000,,a maximum number of frames that were open at one time
+Dialogue: 0,0:37:11.07,0:37:12.97,*Default,NTP,0000,0000,0000,,and the answer is 20
+Dialogue: 0,0:37:13.77,0:37:15.77,*Default,NTP,0000,0000,0000,,so that's an indication of how much
+Dialogue: 0,0:37:15.77,0:37:17.93,*Default,NTP,0000,0000,0000,,space is used by this function
+Dialogue: 0,0:37:18.33,0:37:21.40,*Default,NTP,0000,0000,0000,,it doesn't need to open 6000 frames at a time
+Dialogue: 0,0:37:21.53,0:37:22.53,*Default,NTP,0000,0000,0000,,only a few
+Dialogue: 0,0:37:23.40,0:37:26.50,*Default,NTP,0000,0000,0000,,now how can we understand why the number came out 20
+Dialogue: 0,0:37:27.53,0:37:28.33,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:37:28.77,0:37:30.00,*Default,NTP,0000,0000,0000,,here's the tree
+Dialogue: 0,0:37:30.00,0:37:33.27,*Default,NTP,0000,0000,0000,,shaped process that we use to compute fib 5
+Dialogue: 0,0:37:34.57,0:37:37.27,*Default,NTP,0000,0000,0000,,and let's say we've done all this work already
+Dialogue: 0,0:37:37.33,0:37:39.07,*Default,NTP,0000,0000,0000,,we still have to do all this work
+Dialogue: 0,0:37:39.13,0:37:42.17,*Default,NTP,0000,0000,0000,,and we're about to return from this call to fib one
+Dialogue: 0,0:37:43.57,0:37:44.70,*Default,NTP,0000,0000,0000,,well we can
+Dialogue: 0,0:37:44.87,0:37:47.67,*Default,NTP,0000,0000,0000,,figure out which calls have an active environment
+Dialogue: 0,0:37:47.67,0:37:49.80,*Default,NTP,0000,0000,0000,,it's this one this one this one and this one
+Dialogue: 0,0:37:49.80,0:37:51.37,*Default,NTP,0000,0000,0000,,which haven't returned yet
+Dialogue: 0,0:37:52.30,0:37:53.87,*Default,NTP,0000,0000,0000,,the ones over on the left
+Dialogue: 0,0:37:53.87,0:37:56.27,*Default,NTP,0000,0000,0000,,have already been called and returned
+Dialogue: 0,0:37:56.30,0:38:00.07,*Default,NTP,0000,0000,0000,,so any memory used by these frames can be reclaimed
+Dialogue: 0,0:38:00.70,0:38:03.20,*Default,NTP,0000,0000,0000,,and then over here these haven't been called yet
+Dialogue: 0,0:38:03.37,0:38:05.77,*Default,NTP,0000,0000,0000,,and so we don't need to worry about that
+Dialogue: 0,0:38:06.20,0:38:08.60,*Default,NTP,0000,0000,0000,,so the maximum count of frames open
+Dialogue: 0,0:38:08.73,0:38:11.53,*Default,NTP,0000,0000,0000,,is the longest chain you can find in this tree
+Dialogue: 0,0:38:11.70,0:38:12.87,*Default,NTP,0000,0000,0000,,which in this case
+Dialogue: 0,0:38:12.87,0:38:15.60,*Default,NTP,0000,0000,0000,,goes from fib five to four to three to two to one
+Dialogue: 0,0:38:15.77,0:38:17.00,*Default,NTP,0000,0000,0000,,is length five
