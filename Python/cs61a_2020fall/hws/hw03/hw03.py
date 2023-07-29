@@ -311,7 +311,7 @@ def check_par():
     >>> lower_bound(x) != lower_bound(y) or upper_bound(x) != upper_bound(y)
     True
     """
-    r1 = interval(1, 3) # Replace this line!
+    r1 = interval(1, 2) # Replace this line!
     r2 = interval(1, 1) # Replace this line!
     return r1, r2
 
@@ -412,3 +412,20 @@ def copy_tree(t):
     5
     """
     return tree(label(t), [copy_tree(b) for b in branches(t)])
+
+
+r1=interval(1,2)
+r2 = interval(1, 1)
+m1=mul_interval(r1,r2)
+print(m1)
+a1=add_interval(r1,r2)
+print(a1)
+print(div_interval(m1,a1))
+
+r1=div_interval(interval(1,1),r1)
+print(r1)
+r2=div_interval(interval(1,1),r2)
+print(r2)
+print(div_interval(interval(1,1),add_interval(r1,r2)))
+
+
