@@ -1,0 +1,816 @@
+[Script Info]
+Title: Lecture 23. Decomposition_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=56&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:02.53,*Default,NTP,0000,0000,0000,,sixty one eight lecture No.23
+Dialogue: 0,0:00:03.00,0:00:03.97,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:05.07,0:00:06.53,*Default,NTP,0000,0000,0000,,lab ate is due today
+Dialogue: 0,0:00:06.80,0:00:08.33,*Default,NTP,0000,0000,0000,,ante's due Friday
+Dialogue: 0,0:00:08.70,0:00:09.80,*Default,NTP,0000,0000,0000,,the checkpoint
+Dialogue: 0,0:00:10.33,0:00:13.13,*Default,NTP,0000,0000,0000,,containing phases one and two is due today
+Dialogue: 0,0:00:14.07,0:00:15.90,*Default,NTP,0000,0000,0000,,you can earn an early submission bonus point
+Dialogue: 0,0:00:15.90,0:00:16.97,*Default,NTP,0000,0000,0000,,for submitting the whole thing
+Dialogue: 0,0:00:16.97,0:00:21.57,*Default,NTP,0000,0000,0000,,by Thursday homework 5 is released its due next Monday
+Dialogue: 0,0:00:21.90,0:00:23.33,*Default,NTP,0000,0000,0000,,the only required part of lab
+Dialogue: 0,0:00:23.33,0:00:25.00,*Default,NTP,0000,0000,0000,,nine will be to finish homework 5
+Dialogue: 0,0:00:25.50,0:00:27.47,*Default,NTP,0000,0000,0000,,which should give you some good practice
+Dialogue: 0,0:00:27.50,0:00:29.00,*Default,NTP,0000,0000,0000,,for the upcoming midterm
+Dialogue: 0,0:00:29.77,0:00:31.47,*Default,NTP,0000,0000,0000,,the midterm is next Wednesday
+Dialogue: 0,0:00:31.60,0:00:33.90,*Default,NTP,0000,0000,0000,,it will have a similar format to midterm one
+Dialogue: 0,0:00:34.00,0:00:36.30,*Default,NTP,0000,0000,0000,,but there will be no questions of the form
+Dialogue: 0,0:00:36.33,0:00:38.97,*Default,NTP,0000,0000,0000,,what would this mysterious function do
+Dialogue: 0,0:00:39.40,0:00:40.87,*Default,NTP,0000,0000,0000,,instead we'll focus on
+Dialogue: 0,0:00:40.87,0:00:43.73,*Default,NTP,0000,0000,0000,,just implementing functions that are described for you
+Dialogue: 0,0:00:44.53,0:00:46.87,*Default,NTP,0000,0000,0000,,as well as some possible questions on
+Dialogue: 0,0:00:46.87,0:00:48.67,*Default,NTP,0000,0000,0000,,environment diagrams
+Dialogue: 0,0:00:49.50,0:00:53.60,*Default,NTP,0000,0000,0000,,the textbook content is sections through 2.9
+Dialogue: 0,0:00:53.97,0:00:57.33,*Default,NTP,0000,0000,0000,,excluding several that we haven't covered this semester
+Dialogue: 0,0:00:57.47,0:01:00.53,*Default,NTP,0000,0000,0000,,or were explicitly declared as optional
+Dialogue: 0,0:01:01.20,0:01:02.80,*Default,NTP,0000,0000,0000,,I like these sections
+Dialogue: 0,0:01:02.87,0:01:04.10,*Default,NTP,0000,0000,0000,,feel free to read them
+Dialogue: 0,0:01:04.17,0:01:06.40,*Default,NTP,0000,0000,0000,,but they're not going to be covered on the exam
+Dialogue: 0,0:01:07.73,0:01:09.33,*Default,NTP,0000,0000,0000,,and in terms of lecture content
+Dialogue: 0,0:01:09.33,0:01:10.07,*Default,NTP,0000,0000,0000,,this is everything
+Dialogue: 0,0:01:10.07,0:01:12.67,*Default,NTP,0000,0000,0000,,through last friday's lecture on composition
+Dialogue: 0,0:01:12.93,0:01:16.00,*Default,NTP,0000,0000,0000,,excluding the binary numbers and circus lectures
+Dialogue: 0,0:01:16.00,0:01:18.00,*Default,NTP,0000,0000,0000,,that happened at the end of September
+Dialogue: 0,0:01:19.57,0:01:22.47,*Default,NTP,0000,0000,0000,,proctoring will be the same as it was from it term one
+Dialogue: 0,0:01:22.50,0:01:24.67,*Default,NTP,0000,0000,0000,,you'll record your screen and your head
+Dialogue: 0,0:01:24.70,0:01:26.10,*Default,NTP,0000,0000,0000,,using zoom or loom
+Dialogue: 0,0:01:26.10,0:01:28.80,*Default,NTP,0000,0000,0000,,or another recording technology of your choosing
+Dialogue: 0,0:01:29.80,0:01:32.53,*Default,NTP,0000,0000,0000,,this time around you might consider using zoom
+Dialogue: 0,0:01:32.57,0:01:33.73,*Default,NTP,0000,0000,0000,,web recording
+Dialogue: 0,0:01:33.93,0:01:35.87,*Default,NTP,0000,0000,0000,,if you prefer that to loom
+Dialogue: 0,0:01:36.00,0:01:39.40,*Default,NTP,0000,0000,0000,,we found in the exit survey for midterm one
+Dialogue: 0,0:01:39.53,0:01:41.13,*Default,NTP,0000,0000,0000,,that some people had loom
+Dialogue: 0,0:01:41.20,0:01:42.07,*Default,NTP,0000,0000,0000,,crash on them
+Dialogue: 0,0:01:42.07,0:01:43.20,*Default,NTP,0000,0000,0000,,or cut out early in
+Dialogue: 0,0:01:43.20,0:01:45.77,*Default,NTP,0000,0000,0000,,various ways that caused extra stress
+Dialogue: 0,0:01:46.70,0:01:47.57,*Default,NTP,0000,0000,0000,,you might find
+Dialogue: 0,0:01:47.57,0:01:50.17,*Default,NTP,0000,0000,0000,,that the zoom web recording is more reliable
+Dialogue: 0,0:01:50.37,0:01:53.27,*Default,NTP,0000,0000,0000,,and of course zoom is also the recommended choice
+Dialogue: 0,0:01:53.40,0:01:55.87,*Default,NTP,0000,0000,0000,,for local recording if you don't have a stable
+Dialogue: 0,0:01:55.87,0:01:56.90,*Default,NTP,0000,0000,0000,,internet connection
+Dialogue: 0,0:01:58.07,0:02:01.33,*Default,NTP,0000,0000,0000,,if you want an alternate time or you have a conflict
+Dialogue: 0,0:02:01.40,0:02:02.27,*Default,NTP,0000,0000,0000,,please fill out
+Dialogue: 0,0:02:02.27,0:02:05.47,*Default,NTP,0000,0000,0000,,the alternate time request form by Sunday
+Dialogue: 0,0:02:06.10,0:02:07.47,*Default,NTP,0000,0000,0000,,we're starting from scratch
+Dialogue: 0,0:02:07.47,0:02:09.60,*Default,NTP,0000,0000,0000,,in assigning alternate times
+Dialogue: 0,0:02:09.70,0:02:11.50,*Default,NTP,0000,0000,0000,,so if you fill this out from interim one
+Dialogue: 0,0:02:11.50,0:02:14.10,*Default,NTP,0000,0000,0000,,you do need to fill it out again from interim two
+Dialogue: 0,0:02:14.30,0:02:16.50,*Default,NTP,0000,0000,0000,,because people have been moving around in course
+Dialogue: 0,0:02:16.50,0:02:17.70,*Default,NTP,0000,0000,0000,,conflicts vary
+Dialogue: 0,0:02:17.80,0:02:19.87,*Default,NTP,0000,0000,0000,,so let's just do it all from scratch
+Dialogue: 0,0:02:20.53,0:02:23.27,*Default,NTP,0000,0000,0000,,you can use the midterm one study guide and the midterm
+Dialogue: 0,0:02:23.27,0:02:24.27,*Default,NTP,0000,0000,0000,,two study guide
+Dialogue: 0,0:02:24.90,0:02:28.60,*Default,NTP,0000,0000,0000,,which again is one page front and back
+Dialogue: 0,0:02:29.50,0:02:33.00,*Default,NTP,0000,0000,0000,,of all the important slides from the course
+Dialogue: 0,0:02:33.13,0:02:36.47,*Default,NTP,0000,0000,0000,,I just finished updating it with some new examples
+Dialogue: 0,0:02:37.47,0:02:39.13,*Default,NTP,0000,0000,0000,,that hopefully will be hopeful
+Dialogue: 0,0:02:39.93,0:02:42.13,*Default,NTP,0000,0000,0000,,and here are some pictures of trees
+Dialogue: 0,0:02:42.27,0:02:44.97,*Default,NTP,0000,0000,0000,,and some examples of attribute assignment
+Dialogue: 0,0:02:46.10,0:02:46.80,*Default,NTP,0000,0000,0000,,so this
+Dialogue: 0,0:02:46.80,0:02:48.90,*Default,NTP,0000,0000,0000,,study guide is only going to be useful if you actually
+Dialogue: 0,0:02:48.90,0:02:49.87,*Default,NTP,0000,0000,0000,,read it in advance
+Dialogue: 0,0:02:49.87,0:02:51.37,*Default,NTP,0000,0000,0000,,I would suggest that you do that
+Dialogue: 0,0:02:52.60,0:02:53.37,*Default,NTP,0000,0000,0000,,from intern one
+Dialogue: 0,0:02:53.37,0:02:55.77,*Default,NTP,0000,0000,0000,,we put a limit on the number of pages of
+Dialogue: 0,0:02:55.77,0:02:57.10,*Default,NTP,0000,0000,0000,,notes that you could create
+Dialogue: 0,0:02:57.10,0:03:00.27,*Default,NTP,0000,0000,0000,,for yourself but we are now removing that limit
+Dialogue: 0,0:03:00.50,0:03:03.70,*Default,NTP,0000,0000,0000,,you can use as many of your own notes as you want
+Dialogue: 0,0:03:03.90,0:03:07.27,*Default,NTP,0000,0000,0000,,I would not recommend generating a lot of notes
+Dialogue: 0,0:03:07.30,0:03:08.13,*Default,NTP,0000,0000,0000,,I think
+Dialogue: 0,0:03:08.20,0:03:11.33,*Default,NTP,0000,0000,0000,,maybe two pages of notes is about the right amount
+Dialogue: 0,0:03:12.90,0:03:15.00,*Default,NTP,0000,0000,0000,,but if you want to take more notes
+Dialogue: 0,0:03:15.07,0:03:15.87,*Default,NTP,0000,0000,0000,,or if you have
+Dialogue: 0,0:03:15.97,0:03:18.50,*Default,NTP,0000,0000,0000,,already taken more notes and you want to use them
+Dialogue: 0,0:03:18.60,0:03:19.60,*Default,NTP,0000,0000,0000,,that's fine
+Dialogue: 0,0:03:19.70,0:03:22.17,*Default,NTP,0000,0000,0000,,but these do need to be notes that you create yourself
+Dialogue: 0,0:03:22.33,0:03:22.90,*Default,NTP,0000,0000,0000,,please don't
+Dialogue: 0,0:03:22.90,0:03:25.20,*Default,NTP,0000,0000,0000,,share your notes with everybody else in the course
+Dialogue: 0,0:03:26.40,0:03:27.90,*Default,NTP,0000,0000,0000,,other than your own notes
+Dialogue: 0,0:03:27.90,0:03:29.07,*Default,NTP,0000,0000,0000,,you can only use
+Dialogue: 0,0:03:29.10,0:03:31.57,*Default,NTP,0000,0000,0000,,course material that's been posted publicly
+Dialogue: 0,0:03:32.33,0:03:34.53,*Default,NTP,0000,0000,0000,,if you would like to store your notes electronically
+Dialogue: 0,0:03:34.53,0:03:36.30,*Default,NTP,0000,0000,0000,,you must use a google doc
+Dialogue: 0,0:03:37.57,0:03:40.37,*Default,NTP,0000,0000,0000,,you must also give edit access to this google doc
+Dialogue: 0,0:03:40.53,0:03:41.87,*Default,NTP,0000,0000,0000,,to see a 61 a ed
+Dialogue: 0,0:03:41.87,0:03:43.10,*Default,NTP,0000,0000,0000,,berkeley rd to you
+Dialogue: 0,0:03:43.40,0:03:45.33,*Default,NTP,0000,0000,0000,,so we can check out what's going on there
+Dialogue: 0,0:03:46.87,0:03:49.20,*Default,NTP,0000,0000,0000,,if you use paper which I recommend
+Dialogue: 0,0:03:49.37,0:03:51.40,*Default,NTP,0000,0000,0000,,then you do not need to share your notes for this
+Dialogue: 0,0:03:51.40,0:03:53.07,*Default,NTP,0000,0000,0000,,you can just keep them for yourself
+Dialogue: 0,0:03:54.27,0:03:56.73,*Default,NTP,0000,0000,0000,,again you can use anything on csixtuna
+Dialogue: 0,0:03:56.73,0:03:58.80,*Default,NTP,0000,0000,0000,,org or the sixth una piazza
+Dialogue: 0,0:03:59.57,0:04:02.93,*Default,NTP,0000,0000,0000,,and you can execute code using code csixtuna
+Dialogue: 0,0:04:02.93,0:04:04.50,*Default,NTP,0000,0000,0000,,org or python tutor
+Dialogue: 0,0:04:05.30,0:04:07.53,*Default,NTP,0000,0000,0000,,however you cannot use the rest of the internet
+Dialogue: 0,0:04:07.60,0:04:10.60,*Default,NTP,0000,0000,0000,,you cannot use search engines or qa sites or RedDit
+Dialogue: 0,0:04:10.67,0:04:13.33,*Default,NTP,0000,0000,0000,,and you cannot communicate or collaborate with
+Dialogue: 0,0:04:13.33,0:04:17.27,*Default,NTP,0000,0000,0000,,anybody else do not text your friends during the exam
+Dialogue: 0,0:04:18.10,0:04:20.67,*Default,NTP,0000,0000,0000,,you might think there's no way we could catch you
+Dialogue: 0,0:04:20.67,0:04:22.10,*Default,NTP,0000,0000,0000,,and yet we do
+Dialogue: 0,0:04:22.33,0:04:26.10,*Default,NTP,0000,0000,0000,,and when we catch people communicating during the exam
+Dialogue: 0,0:04:26.20,0:04:28.30,*Default,NTP,0000,0000,0000,,they get enough in the whole course
+Dialogue: 0,0:04:29.93,0:04:31.37,*Default,NTP,0000,0000,0000,,don't let that happen to you
+Dialogue: 0,0:04:31.47,0:04:33.37,*Default,NTP,0000,0000,0000,,just take the exam by yourself
+Dialogue: 0,0:04:34.33,0:04:37.57,*Default,NTP,0000,0000,0000,,you can request an exemption from the proctoring policy
+Dialogue: 0,0:04:38.10,0:04:40.47,*Default,NTP,0000,0000,0000,,some people did this already for midterm one
+Dialogue: 0,0:04:40.80,0:04:42.00,*Default,NTP,0000,0000,0000,,if you'd like to
+Dialogue: 0,0:04:42.17,0:04:45.13,*Default,NTP,0000,0000,0000,,request this going forward from interim 2 in the final
+Dialogue: 0,0:04:45.50,0:04:47.37,*Default,NTP,0000,0000,0000,,because you found out that proctoring is
+Dialogue: 0,0:04:47.37,0:04:48.77,*Default,NTP,0000,0000,0000,,problematic in some way
+Dialogue: 0,0:04:48.97,0:04:51.53,*Default,NTP,0000,0000,0000,,you can do this by Sunday
+Dialogue: 0,0:04:52.20,0:04:54.47,*Default,NTP,0000,0000,0000,,if you already filled out this form from intern one
+Dialogue: 0,0:04:54.47,0:04:56.33,*Default,NTP,0000,0000,0000,,you do not need to fill it out again
+Dialogue: 0,0:04:56.53,0:04:58.87,*Default,NTP,0000,0000,0000,,anyone who's been exempted from proctoring
+Dialogue: 0,0:04:58.90,0:05:01.47,*Default,NTP,0000,0000,0000,,will remain exempted for the rest of the semester
+Dialogue: 0,0:05:02.47,0:05:04.47,*Default,NTP,0000,0000,0000,,so I hope that's some helpful information
+Dialogue: 0,0:05:04.47,0:05:05.50,*Default,NTP,0000,0000,0000,,about the exam
+Dialogue: 0,0:05:05.77,0:05:07.97,*Default,NTP,0000,0000,0000,,I'll share some more info about
+Dialogue: 0,0:05:08.10,0:05:10.40,*Default,NTP,0000,0000,0000,,any student led review sessions
+Dialogue: 0,0:05:10.40,0:05:12.10,*Default,NTP,0000,0000,0000,,as soon as I know about them
+Dialogue: 0,0:05:13.27,0:05:14.73,*Default,NTP,0000,0000,0000,,and one final announcement
+Dialogue: 0,0:05:14.73,0:05:16.37,*Default,NTP,0000,0000,0000,,is that the staff will be holding
+Dialogue: 0,0:05:16.37,0:05:18.50,*Default,NTP,0000,0000,0000,,conceptual help off sours
+Dialogue: 0,0:05:18.93,0:05:20.77,*Default,NTP,0000,0000,0000,,Wednesday and Thursday of this week
+Dialogue: 0,0:05:20.80,0:05:22.13,*Default,NTP,0000,0000,0000,,here's the zoom link
+Dialogue: 0,0:05:23.47,0:05:24.60,*Default,NTP,0000,0000,0000,,where if you want to ask
+Dialogue: 0,0:05:24.60,0:05:26.07,*Default,NTP,0000,0000,0000,,about concepts in general
+Dialogue: 0,0:05:26.07,0:05:28.17,*Default,NTP,0000,0000,0000,,as opposed to specific problems
+Dialogue: 0,0:05:28.30,0:05:29.30,*Default,NTP,0000,0000,0000,,you can ask there
+Dialogue: 0,0:05:29.37,0:05:30.53,*Default,NTP,0000,0000,0000,,or listen to other students
+Dialogue: 0,0:05:30.53,0:05:32.90,*Default,NTP,0000,0000,0000,,ask those questions and hear the answers
+Dialogue: 0,0:05:33.50,0:05:34.70,*Default,NTP,0000,0000,0000,,from a couple of tas
+Dialogue: 0,0:05:34.70,0:05:36.73,*Default,NTP,0000,0000,0000,,that have taught this course for a long time
+Dialogue: 0,0:05:38.33,0:05:41.33,*Default,NTP,0000,0000,0000,,okay today's lecture on decomposition
+Dialogue: 0,0:05:41.67,0:05:44.53,*Default,NTP,0000,0000,0000,,is really just an illustration of how to put together
+Dialogue: 0,0:05:44.57,0:05:47.80,*Default,NTP,0000,0000,0000,,ideas that we've learned about already in this course
+Dialogue: 0,0:05:48.17,0:05:49.37,*Default,NTP,0000,0000,0000,,to do something new
+Dialogue: 0,0:05:49.87,0:05:51.93,*Default,NTP,0000,0000,0000,,searching for the right place to eat
+Dialogue: 0,0:05:53.70,0:05:57.17,*Default,NTP,0000,0000,0000,,large programs are complex programs
+Dialogue: 0,0:05:57.37,0:06:00.80,*Default,NTP,0000,0000,0000,,it's hard to think about all of their parts at once
+Dialogue: 0,0:06:01.07,0:06:04.73,*Default,NTP,0000,0000,0000,,and so they can benefit from a modular design
+Dialogue: 0,0:06:04.97,0:06:08.07,*Default,NTP,0000,0000,0000,,which means that the whole program is broken up
+Dialogue: 0,0:06:08.13,0:06:11.47,*Default,NTP,0000,0000,0000,,into small fairly independent parts
+Dialogue: 0,0:06:11.97,0:06:14.47,*Default,NTP,0000,0000,0000,,now they might not be completely independent
+Dialogue: 0,0:06:14.47,0:06:16.17,*Default,NTP,0000,0000,0000,,because different parts of the program
+Dialogue: 0,0:06:16.17,0:06:17.37,*Default,NTP,0000,0000,0000,,have to work together
+Dialogue: 0,0:06:17.70,0:06:20.37,*Default,NTP,0000,0000,0000,,to achieve the behavior of the whole thing
+Dialogue: 0,0:06:20.90,0:06:23.77,*Default,NTP,0000,0000,0000,,but modular means that there are components
+Dialogue: 0,0:06:23.77,0:06:25.73,*Default,NTP,0000,0000,0000,,that could be switched in and out
+Dialogue: 0,0:06:25.80,0:06:29.07,*Default,NTP,0000,0000,0000,,and are separated by various kinds of abstraction
+Dialogue: 0,0:06:29.07,0:06:29.87,*Default,NTP,0000,0000,0000,,barriers
+Dialogue: 0,0:06:30.77,0:06:32.77,*Default,NTP,0000,0000,0000,,the goal of a modular design
+Dialogue: 0,0:06:32.77,0:06:35.97,*Default,NTP,0000,0000,0000,,is to achieve separation of concerns
+Dialogue: 0,0:06:36.47,0:06:38.00,*Default,NTP,0000,0000,0000,,different parts of the program
+Dialogue: 0,0:06:38.10,0:06:39.37,*Default,NTP,0000,0000,0000,,are concerned with different
+Dialogue: 0,0:06:39.37,0:06:41.70,*Default,NTP,0000,0000,0000,,parts of the behavior of that program
+Dialogue: 0,0:06:42.67,0:06:45.10,*Default,NTP,0000,0000,0000,,so this is a general design principle
+Dialogue: 0,0:06:45.10,0:06:47.17,*Default,NTP,0000,0000,0000,,which encourages programmers
+Dialogue: 0,0:06:47.17,0:06:49.57,*Default,NTP,0000,0000,0000,,to isolate different parts of the program
+Dialogue: 0,0:06:49.57,0:06:51.60,*Default,NTP,0000,0000,0000,,that address different concerns
+Dialogue: 0,0:06:51.73,0:06:52.93,*Default,NTP,0000,0000,0000,,so that you don't have to think
+Dialogue: 0,0:06:52.93,0:06:55.70,*Default,NTP,0000,0000,0000,,about all the requirements of the program at once
+Dialogue: 0,0:06:56.17,0:06:57.80,*Default,NTP,0000,0000,0000,,a modular component
+Dialogue: 0,0:06:58.07,0:07:01.07,*Default,NTP,0000,0000,0000,,can therefore be developed and tested independently
+Dialogue: 0,0:07:01.27,0:07:04.17,*Default,NTP,0000,0000,0000,,to make sure that it accounts for whatever concern
+Dialogue: 0,0:07:04.17,0:07:05.87,*Default,NTP,0000,0000,0000,,it's meant to address
+Dialogue: 0,0:07:05.87,0:07:07.60,*Default,NTP,0000,0000,0000,,without worrying about the behavior
+Dialogue: 0,0:07:07.60,0:07:09.27,*Default,NTP,0000,0000,0000,,of the rest of the program
+Dialogue: 0,0:07:10.17,0:07:12.60,*Default,NTP,0000,0000,0000,,and we've tried to illustrate this principle
+Dialogue: 0,0:07:12.77,0:07:14.53,*Default,NTP,0000,0000,0000,,with the course projects
+Dialogue: 0,0:07:15.13,0:07:16.73,*Default,NTP,0000,0000,0000,,so in the game of hog
+Dialogue: 0,0:07:16.93,0:07:20.20,*Default,NTP,0000,0000,0000,,there are three different modular components
+Dialogue: 0,0:07:20.67,0:07:24.40,*Default,NTP,0000,0000,0000,,a hog game simulator is concerned with the game rules
+Dialogue: 0,0:07:24.40,0:07:26.73,*Default,NTP,0000,0000,0000,,the ordering of events within the game
+Dialogue: 0,0:07:26.90,0:07:29.40,*Default,NTP,0000,0000,0000,,and whatever state tracking is required
+Dialogue: 0,0:07:29.40,0:07:31.10,*Default,NTP,0000,0000,0000,,to determine who won
+Dialogue: 0,0:07:31.27,0:07:33.70,*Default,NTP,0000,0000,0000,,but it knows nothing about commentary
+Dialogue: 0,0:07:34.60,0:07:37.50,*Default,NTP,0000,0000,0000,,the game commentary functions are concerned with
+Dialogue: 0,0:07:37.50,0:07:39.73,*Default,NTP,0000,0000,0000,,describing different events that happen
+Dialogue: 0,0:07:39.73,0:07:40.73,*Default,NTP,0000,0000,0000,,during the game
+Dialogue: 0,0:07:41.20,0:07:42.30,*Default,NTP,0000,0000,0000,,and whatever state
+Dialogue: 0,0:07:42.30,0:07:45.57,*Default,NTP,0000,0000,0000,,tracking is necessary to generate that commentary
+Dialogue: 0,0:07:46.20,0:07:49.47,*Default,NTP,0000,0000,0000,,and neither of these components are concerned with
+Dialogue: 0,0:07:49.47,0:07:51.40,*Default,NTP,0000,0000,0000,,what the players actually do
+Dialogue: 0,0:07:52.20,0:07:56.40,*Default,NTP,0000,0000,0000,,those are the concern of the player strategy functions
+Dialogue: 0,0:07:56.40,0:07:58.47,*Default,NTP,0000,0000,0000,,which have various decision rules
+Dialogue: 0,0:07:58.47,0:08:00.17,*Default,NTP,0000,0000,0000,,and capture information
+Dialogue: 0,0:08:00.27,0:08:01.57,*Default,NTP,0000,0000,0000,,about strategies
+Dialogue: 0,0:08:01.67,0:08:03.57,*Default,NTP,0000,0000,0000,,like the margin of
+Dialogue: 0,0:08:03.57,0:08:05.07,*Default,NTP,0000,0000,0000,,points that she'll use
+Dialogue: 0,0:08:05.07,0:08:07.57,*Default,NTP,0000,0000,0000,,to decide whether to take advantage
+Dialogue: 0,0:08:07.57,0:08:08.97,*Default,NTP,0000,0000,0000,,of free bacon
+Dialogue: 0,0:08:09.57,0:08:11.93,*Default,NTP,0000,0000,0000,,so different aspects of the game state
+Dialogue: 0,0:08:11.93,0:08:14.90,*Default,NTP,0000,0000,0000,,and different pieces of the program's logic
+Dialogue: 0,0:08:14.90,0:08:18.37,*Default,NTP,0000,0000,0000,,are all handled by different parts of the program
+Dialogue: 0,0:08:19.20,0:08:21.00,*Default,NTP,0000,0000,0000,,now they interact because
+Dialogue: 0,0:08:21.00,0:08:23.90,*Default,NTP,0000,0000,0000,,commentary functions are pass to the play function
+Dialogue: 0,0:08:24.07,0:08:26.97,*Default,NTP,0000,0000,0000,,and strategy functions are pass to the play function
+Dialogue: 0,0:08:27.33,0:08:29.53,*Default,NTP,0000,0000,0000,,but the play function doesn't need to know much
+Dialogue: 0,0:08:29.53,0:08:30.53,*Default,NTP,0000,0000,0000,,about how they work
+Dialogue: 0,0:08:30.70,0:08:32.50,*Default,NTP,0000,0000,0000,,it just needs to call them
+Dialogue: 0,0:08:33.73,0:08:36.90,*Default,NTP,0000,0000,0000,,the ants project has a similar modular design
+Dialogue: 0,0:08:37.40,0:08:39.20,*Default,NTP,0000,0000,0000,,there's an ants game simulator
+Dialogue: 0,0:08:39.20,0:08:40.70,*Default,NTP,0000,0000,0000,,that you didn't have to write
+Dialogue: 0,0:08:40.70,0:08:43.67,*Default,NTP,0000,0000,0000,,but it handles the order of actions and
+Dialogue: 0,0:08:43.67,0:08:46.57,*Default,NTP,0000,0000,0000,,tracking of the overall food of the colony
+Dialogue: 0,0:08:46.57,0:08:49.00,*Default,NTP,0000,0000,0000,,and figuring out whether the game is over
+Dialogue: 0,0:08:49.47,0:08:52.13,*Default,NTP,0000,0000,0000,,but this part of the program really has no idea
+Dialogue: 0,0:08:52.13,0:08:55.57,*Default,NTP,0000,0000,0000,,what the ant and b actions actually do
+Dialogue: 0,0:08:56.37,0:08:59.37,*Default,NTP,0000,0000,0000,,those are handled in all of the action functions
+Dialogue: 0,0:08:59.37,0:09:01.80,*Default,NTP,0000,0000,0000,,each of which is defined independently
+Dialogue: 0,0:09:01.80,0:09:03.47,*Default,NTP,0000,0000,0000,,to describe what special
+Dialogue: 0,0:09:03.47,0:09:04.87,*Default,NTP,0000,0000,0000,,about an ant or a b
+Dialogue: 0,0:09:04.87,0:09:07.97,*Default,NTP,0000,0000,0000,,and these characteristics make the game interesting
+Dialogue: 0,0:09:08.00,0:09:09.80,*Default,NTP,0000,0000,0000,,but writing an action function
+Dialogue: 0,0:09:10.00,0:09:11.53,*Default,NTP,0000,0000,0000,,can be done without worrying
+Dialogue: 0,0:09:11.53,0:09:14.00,*Default,NTP,0000,0000,0000,,about the order that actions will occur in
+Dialogue: 0,0:09:14.30,0:09:16.20,*Default,NTP,0000,0000,0000,,or how much food the colony has
+Dialogue: 0,0:09:16.30,0:09:17.87,*Default,NTP,0000,0000,0000,,or whether the game is over
+Dialogue: 0,0:09:18.17,0:09:21.93,*Default,NTP,0000,0000,0000,,and writing an action also doesn't need to know much
+Dialogue: 0,0:09:22.07,0:09:23.93,*Default,NTP,0000,0000,0000,,about how the game is laid out
+Dialogue: 0,0:09:24.47,0:09:26.60,*Default,NTP,0000,0000,0000,,there's a separate part of the program
+Dialogue: 0,0:09:26.67,0:09:28.97,*Default,NTP,0000,0000,0000,,that worries about tunnel structures
+Dialogue: 0,0:09:28.97,0:09:30.37,*Default,NTP,0000,0000,0000,,how many there are
+Dialogue: 0,0:09:30.47,0:09:31.70,*Default,NTP,0000,0000,0000,,how long they are
+Dialogue: 0,0:09:31.80,0:09:34.60,*Default,NTP,0000,0000,0000,,and sets up all the entrances and exits
+Dialogue: 0,0:09:35.13,0:09:37.00,*Default,NTP,0000,0000,0000,,this part also keeps track
+Dialogue: 0,0:09:37.10,0:09:40.50,*Default,NTP,0000,0000,0000,,of the locations of all the ants and bees
+Dialogue: 0,0:09:41.10,0:09:43.10,*Default,NTP,0000,0000,0000,,and most interesting programs have
+Dialogue: 0,0:09:43.10,0:09:46.10,*Default,NTP,0000,0000,0000,,some kind of structural decomposition
+Dialogue: 0,0:09:46.20,0:09:48.90,*Default,NTP,0000,0000,0000,,and by decomposition I don't just mean
+Dialogue: 0,0:09:49.00,0:09:51.17,*Default,NTP,0000,0000,0000,,that long functions are broken up
+Dialogue: 0,0:09:51.27,0:09:52.80,*Default,NTP,0000,0000,0000,,into smaller functions
+Dialogue: 0,0:09:53.17,0:09:56.97,*Default,NTP,0000,0000,0000,,I also mean that different aspects of the program
+Dialogue: 0,0:09:57.10,0:09:58.80,*Default,NTP,0000,0000,0000,,different concerns
+Dialogue: 0,0:09:58.80,0:10:02.20,*Default,NTP,0000,0000,0000,,are isolated to different parts of the coat
+Dialogue: 0,0:10:02.40,0:10:04.73,*Default,NTP,0000,0000,0000,,and when you build one part of the program
+Dialogue: 0,0:10:05.07,0:10:08.53,*Default,NTP,0000,0000,0000,,that part should have to know as little as possible
+Dialogue: 0,0:10:08.80,0:10:12.50,*Default,NTP,0000,0000,0000,,about other concerns that aren't its concern
+Dialogue: 0,0:10:12.90,0:10:15.20,*Default,NTP,0000,0000,0000,,so the game commentary functions
+Dialogue: 0,0:10:15.27,0:10:18.70,*Default,NTP,0000,0000,0000,,shouldn't be dependent on the rules of the game
+Dialogue: 0,0:10:18.90,0:10:21.20,*Default,NTP,0000,0000,0000,,in fact your design is more modular
+Dialogue: 0,0:10:21.30,0:10:23.67,*Default,NTP,0000,0000,0000,,if changing the rules of the game
+Dialogue: 0,0:10:23.93,0:10:26.93,*Default,NTP,0000,0000,0000,,only changes the hog simulator code
+Dialogue: 0,0:10:27.07,0:10:30.33,*Default,NTP,0000,0000,0000,,it doesn't change the commentary code at all
+Dialogue: 0,0:10:32.37,0:10:36.73,*Default,NTP,0000,0000,0000,,let's apply this idea of modular design to an example
+Dialogue: 0,0:10:37.07,0:10:38.47,*Default,NTP,0000,0000,0000,,restaurant search
+Dialogue: 0,0:10:39.47,0:10:40.47,*Default,NTP,0000,0000,0000,,here are the data
+Dialogue: 0,0:10:40.57,0:10:41.47,*Default,NTP,0000,0000,0000,,and we'll try to
+Dialogue: 0,0:10:41.53,0:10:43.07,*Default,NTP,0000,0000,0000,,build a program that lets us
+Dialogue: 0,0:10:43.07,0:10:45.80,*Default,NTP,0000,0000,0000,,look up a restaurant by words in its name
+Dialogue: 0,0:10:46.10,0:10:48.60,*Default,NTP,0000,0000,0000,,and also show related restaurants
+Dialogue: 0,0:10:49.13,0:10:51.53,*Default,NTP,0000,0000,0000,,for each restaurant we know its name
+Dialogue: 0,0:10:51.87,0:10:54.40,*Default,NTP,0000,0000,0000,,the number of stars that got on yelp
+Dialogue: 0,0:10:54.60,0:10:57.73,*Default,NTP,0000,0000,0000,,and the price category that yelp gives it
+Dialogue: 0,0:10:58.20,0:11:01.73,*Default,NTP,0000,0000,0000,,and these are actual examples from the yelp database
+Dialogue: 0,0:11:01.80,0:11:05.20,*Default,NTP,0000,0000,0000,,that were released a few years ago for academic use
+Dialogue: 0,0:11:05.70,0:11:09.13,*Default,NTP,0000,0000,0000,,here's another entry about la cascada takaria
+Dialogue: 0,0:11:09.30,0:11:11.30,*Default,NTP,0000,0000,0000,,which has three stars on average
+Dialogue: 0,0:11:11.33,0:11:13.53,*Default,NTP,0000,0000,0000,,and a price category of two
+Dialogue: 0,0:11:14.10,0:11:16.90,*Default,NTP,0000,0000,0000,,I think in yelp stars go from one to five
+Dialogue: 0,0:11:17.00,0:11:19.50,*Default,NTP,0000,0000,0000,,and prices go from one to three
+Dialogue: 0,0:11:20.07,0:11:22.53,*Default,NTP,0000,0000,0000,,each business not only has a name
+Dialogue: 0,0:11:22.93,0:11:26.13,*Default,NTP,0000,0000,0000,,but also some complicated unique string
+Dialogue: 0,0:11:26.27,0:11:27.80,*Default,NTP,0000,0000,0000,,called the business id
+Dialogue: 0,0:11:28.60,0:11:31.40,*Default,NTP,0000,0000,0000,,and we'll have a different one of these dictionaries
+Dialogue: 0,0:11:31.57,0:11:33.17,*Default,NTP,0000,0000,0000,,for every restaurant near
+Dialogue: 0,0:11:33.20,0:11:35.37,*Default,NTP,0000,0000,0000,,the border of berkeley campus
+Dialogue: 0,0:11:36.17,0:11:39.87,*Default,NTP,0000,0000,0000,,and we also have reviews which give a business id
+Dialogue: 0,0:11:40.37,0:11:43.87,*Default,NTP,0000,0000,0000,,telling us which restaurant the review is about
+Dialogue: 0,0:11:44.20,0:11:48.50,*Default,NTP,0000,0000,0000,,a user id which is a unique indicator of who wrote it
+Dialogue: 0,0:11:49.10,0:11:51.60,*Default,NTP,0000,0000,0000,,this doesn't have an email address or anything
+Dialogue: 0,0:11:52.17,0:11:53.57,*Default,NTP,0000,0000,0000,,but it does tell us
+Dialogue: 0,0:11:53.70,0:11:57.17,*Default,NTP,0000,0000,0000,,whether the same user wrote two different reviews
+Dialogue: 0,0:11:57.93,0:12:01.37,*Default,NTP,0000,0000,0000,,how many stars they gave the restaurant and some text
+Dialogue: 0,0:12:01.77,0:12:04.80,*Default,NTP,0000,0000,0000,,cafe three or cafe tray as I like to say
+Dialogue: 0,0:12:04.97,0:12:07.33,*Default,NTP,0000,0000,0000,,used to be the bomb diggity
+Dialogue: 0,0:12:07.33,0:12:09.60,*Default,NTP,0000,0000,0000,,when I first lived in the dorms
+Dialogue: 0,0:12:09.80,0:12:10.87,*Default,NTP,0000,0000,0000,,but sadly
+Dialogue: 0,0:12:10.93,0:12:14.53,*Default,NTP,0000,0000,0000,,quality has dramatically decreased over the years
+Dialogue: 0,0:12:14.70,0:12:19.17,*Default,NTP,0000,0000,0000,,says user xvocu as z etc
+Dialogue: 0,0:12:19.70,0:12:21.70,*Default,NTP,0000,0000,0000,,this reviews from 2012
+Dialogue: 0,0:12:22.13,0:12:24.80,*Default,NTP,0000,0000,0000,,the data I have is a little bit old
+Dialogue: 0,0:12:24.87,0:12:28.87,*Default,NTP,0000,0000,0000,,because yelp stopped publishing an academic dataset
+Dialogue: 0,0:12:28.87,0:12:31.33,*Default,NTP,0000,0000,0000,,that includes berkeley restaurants
+Dialogue: 0,0:12:31.53,0:12:33.33,*Default,NTP,0000,0000,0000,,their new academic dataset
+Dialogue: 0,0:12:33.33,0:12:35.30,*Default,NTP,0000,0000,0000,,doesn't have anything from berkeley
+Dialogue: 0,0:12:35.57,0:12:37.73,*Default,NTP,0000,0000,0000,,so we're gonna use some older data
+Dialogue: 0,0:12:37.97,0:12:39.97,*Default,NTP,0000,0000,0000,,because it's more interesting to see
+Dialogue: 0,0:12:40.07,0:12:41.70,*Default,NTP,0000,0000,0000,,cafes and restaurants
+Dialogue: 0,0:12:41.77,0:12:44.30,*Default,NTP,0000,0000,0000,,that actually exist around campus
+Dialogue: 0,0:12:44.87,0:12:47.97,*Default,NTP,0000,0000,0000,,here's a review for a different business
+Dialogue: 0,0:12:47.97,0:12:52.50,*Default,NTP,0000,0000,0000,,this business id matches the one for la cascada tacaria
+Dialogue: 0,0:12:53.00,0:12:55.20,*Default,NTP,0000,0000,0000,,an user 80 fourd etc
+Dialogue: 0,0:12:55.30,0:12:58.53,*Default,NTP,0000,0000,0000,,gave two stars to la cascada tuckeria
+Dialogue: 0,0:12:58.70,0:13:01.33,*Default,NTP,0000,0000,0000,,saying excuse me for being a snob
+Dialogue: 0,0:13:01.40,0:13:04.07,*Default,NTP,0000,0000,0000,,but if I wanted a room temperature burrito
+Dialogue: 0,0:13:04.07,0:13:05.17,*Default,NTP,0000,0000,0000,,I would take one home
+Dialogue: 0,0:13:05.17,0:13:06.93,*Default,NTP,0000,0000,0000,,stick it in the fridge for a day
+Dialogue: 0,0:13:06.93,0:13:10.70,*Default,NTP,0000,0000,0000,,throw it in the microwave for 45 seconds then eat it
+Dialogue: 0,0:13:11.17,0:13:16.70,*Default,NTP,0000,0000,0000,,not go to a restaurant and pay like $7 for one
+Dialogue: 0,0:13:17.60,0:13:19.90,*Default,NTP,0000,0000,0000,,said this user in 2009
+Dialogue: 0,0:13:21.13,0:13:23.93,*Default,NTP,0000,0000,0000,,so given that I have a file full of these
+Dialogue: 0,0:13:24.07,0:13:27.90,*Default,NTP,0000,0000,0000,,business names and a file full of these reviews
+Dialogue: 0,0:13:28.00,0:13:31.07,*Default,NTP,0000,0000,0000,,how can I build a restaurant search application
+Dialogue: 0,0:13:31.13,0:13:33.40,*Default,NTP,0000,0000,0000,,that lets me look up a restaurant by name
+Dialogue: 0,0:13:33.47,0:13:35.87,*Default,NTP,0000,0000,0000,,and show related restaurants
+Dialogue: 0,0:13:36.40,0:13:37.00,*Default,NTP,0000,0000,0000,,well there are
+Dialogue: 0,0:13:37.00,0:13:38.80,*Default,NTP,0000,0000,0000,,many questions to be answered
+Dialogue: 0,0:13:38.80,0:13:41.10,*Default,NTP,0000,0000,0000,,in order to finish this application
+Dialogue: 0,0:13:41.20,0:13:43.47,*Default,NTP,0000,0000,0000,,what does it mean to look something up by name
+Dialogue: 0,0:13:43.77,0:13:46.47,*Default,NTP,0000,0000,0000,,what does it mean for restaurants to be related
+Dialogue: 0,0:13:46.73,0:13:49.50,*Default,NTP,0000,0000,0000,,what should we do with the price and the stars and the
+Dialogue: 0,0:13:49.50,0:13:50.33,*Default,NTP,0000,0000,0000,,business id
+Dialogue: 0,0:13:50.87,0:13:53.87,*Default,NTP,0000,0000,0000,,how should we represent businesses and reviews
+Dialogue: 0,0:13:54.00,0:13:57.77,*Default,NTP,0000,0000,0000,,well let's dive in and try to focus on modular design
+Dialogue: 0,0:14:00.70,0:14:03.07,*Default,NTP,0000,0000,0000,,so here's my file of restaurants
+Dialogue: 0,0:14:03.07,0:14:03.70,*Default,NTP,0000,0000,0000,,and in fact
+Dialogue: 0,0:14:03.70,0:14:06.13,*Default,NTP,0000,0000,0000,,there's more information than even what I sit
+Dialogue: 0,0:14:06.30,0:14:10.60,*Default,NTP,0000,0000,0000,,a longitude latitude categories addresses
+Dialogue: 0,0:14:10.70,0:14:14.27,*Default,NTP,0000,0000,0000,,not just for cafe iii but also jasmine tai
+Dialogue: 0,0:14:14.50,0:14:17.40,*Default,NTP,0000,0000,0000,,fondufred and a long list of other ones
+Dialogue: 0,0:14:18.10,0:14:21.80,*Default,NTP,0000,0000,0000,,there are 133 restaurants in this data set
+Dialogue: 0,0:14:22.00,0:14:23.73,*Default,NTP,0000,0000,0000,,and what about the reviews
+Dialogue: 0,0:14:23.93,0:14:27.53,*Default,NTP,0000,0000,0000,,we have 17,000 reviews
+Dialogue: 0,0:14:28.27,0:14:29.90,*Default,NTP,0000,0000,0000,,let's say things like
+Dialogue: 0,0:14:30.00,0:14:31.87,*Default,NTP,0000,0000,0000,,the pizza is terrible
+Dialogue: 0,0:14:31.87,0:14:34.37,*Default,NTP,0000,0000,0000,,but if you need a place to watch a game or just
+Dialogue: 0,0:14:34.37,0:14:35.57,*Default,NTP,0000,0000,0000,,down some pitchers
+Dialogue: 0,0:14:35.73,0:14:37.27,*Default,NTP,0000,0000,0000,,this place works
+Dialogue: 0,0:14:37.73,0:14:40.77,*Default,NTP,0000,0000,0000,,and we have the business idea they're talking about
+Dialogue: 0,0:14:40.97,0:14:43.57,*Default,NTP,0000,0000,0000,,but we don't know the name of that unless we match it
+Dialogue: 0,0:14:43.57,0:14:47.70,*Default,NTP,0000,0000,0000,,up with one of the businesses in the other file
+Dialogue: 0,0:14:48.57,0:14:50.53,*Default,NTP,0000,0000,0000,,having taken a peak at the data
+Dialogue: 0,0:14:50.53,0:14:53.10,*Default,NTP,0000,0000,0000,,I think we can dive in and write some code
+Dialogue: 0,0:14:53.73,0:14:55.57,*Default,NTP,0000,0000,0000,,we need a function that searches
+Dialogue: 0,0:14:55.57,0:14:57.27,*Default,NTP,0000,0000,0000,,so that we can call search
+Dialogue: 0,0:14:57.27,0:15:01.90,*Default,NTP,0000,0000,0000,,on tie and get back a list of all the tie restaurants
+Dialogue: 0,0:15:02.50,0:15:05.73,*Default,NTP,0000,0000,0000,,and then for each restaurant in this results
+Dialogue: 0,0:15:05.73,0:15:08.50,*Default,NTP,0000,0000,0000,,we should be able to look at the restaurant itself
+Dialogue: 0,0:15:08.50,0:15:09.77,*Default,NTP,0000,0000,0000,,and also
+Dialogue: 0,0:15:11.07,0:15:12.50,*Default,NTP,0000,0000,0000,,what it's similar to
+Dialogue: 0,0:15:12.87,0:15:15.33,*Default,NTP,0000,0000,0000,,I think a good way to represent whether something
+Dialogue: 0,0:15:15.33,0:15:17.70,*Default,NTP,0000,0000,0000,,similar is using a method
+Dialogue: 0,0:15:18.33,0:15:19.20,*Default,NTP,0000,0000,0000,,let's get
+Dialogue: 0,0:15:19.53,0:15:23.20,*Default,NTP,0000,0000,0000,,three different similar restaurants for every r
+Dialogue: 0,0:15:23.87,0:15:27.20,*Default,NTP,0000,0000,0000,,now for this to work we need to have a search function
+Dialogue: 0,0:15:28.77,0:15:30.60,*Default,NTP,0000,0000,0000,,we pass in a query
+Dialogue: 0,0:15:31.77,0:15:35.13,*Default,NTP,0000,0000,0000,,and we need to decide what it means to match a query
+Dialogue: 0,0:15:35.40,0:15:37.60,*Default,NTP,0000,0000,0000,,well I think of the queries in the name
+Dialogue: 0,0:15:38.00,0:15:40.40,*Default,NTP,0000,0000,0000,,then we should return that restaurant
+Dialogue: 0,0:15:41.37,0:15:45.07,*Default,NTP,0000,0000,0000,,r for r in all restaurants
+Dialogue: 0,0:15:45.20,0:15:48.13,*Default,NTP,0000,0000,0000,,if query in our dot name
+Dialogue: 0,0:15:48.37,0:15:51.20,*Default,NTP,0000,0000,0000,,now we haven't defined yet what a restaurant is
+Dialogue: 0,0:15:51.30,0:15:53.67,*Default,NTP,0000,0000,0000,,or how to get all the restaurants
+Dialogue: 0,0:15:53.80,0:15:56.93,*Default,NTP,0000,0000,0000,,so this code might not work but it has the right idea
+Dialogue: 0,0:15:57.87,0:16:00.93,*Default,NTP,0000,0000,0000,,one of the most important concerns of assert engine
+Dialogue: 0,0:16:01.17,0:16:04.87,*Default,NTP,0000,0000,0000,,is always the ranking that it gives to the results
+Dialogue: 0,0:16:05.17,0:16:07.87,*Default,NTP,0000,0000,0000,,so what orders we return the restaurants in
+Dialogue: 0,0:16:08.20,0:16:10.47,*Default,NTP,0000,0000,0000,,alphabetical by location
+Dialogue: 0,0:16:10.90,0:16:12.97,*Default,NTP,0000,0000,0000,,maybe the most popular one first
+Dialogue: 0,0:16:13.27,0:16:15.37,*Default,NTP,0000,0000,0000,,may be the one with the highest star rating
+Dialogue: 0,0:16:15.93,0:16:19.10,*Default,NTP,0000,0000,0000,,this decision gives us an opportunity for modular
+Dialogue: 0,0:16:19.13,0:16:19.93,*Default,NTP,0000,0000,0000,,design
+Dialogue: 0,0:16:20.33,0:16:23.27,*Default,NTP,0000,0000,0000,,we can just pass in a ranking function
+Dialogue: 0,0:16:23.97,0:16:27.47,*Default,NTP,0000,0000,0000,,and return a sordid version of the results
+Dialogue: 0,0:16:27.47,0:16:29.60,*Default,NTP,0000,0000,0000,,that uses the ranking function
+Dialogue: 0,0:16:29.70,0:16:32.33,*Default,NTP,0000,0000,0000,,in order to pick which ones come first
+Dialogue: 0,0:16:32.60,0:16:35.27,*Default,NTP,0000,0000,0000,,so that nice piece of modular design
+Dialogue: 0,0:16:35.40,0:16:36.90,*Default,NTP,0000,0000,0000,,comes with a consequence
+Dialogue: 0,0:16:36.97,0:16:38.47,*Default,NTP,0000,0000,0000,,every time I call search
+Dialogue: 0,0:16:38.47,0:16:40.60,*Default,NTP,0000,0000,0000,,I need to come up with a ranking function
+Dialogue: 0,0:16:41.00,0:16:43.50,*Default,NTP,0000,0000,0000,,so it would be helpful to have some default
+Dialogue: 0,0:16:44.37,0:16:46.40,*Default,NTP,0000,0000,0000,,how about by default
+Dialogue: 0,0:16:46.60,0:16:49.50,*Default,NTP,0000,0000,0000,,we order them by their number of stars
+Dialogue: 0,0:16:49.53,0:16:52.90,*Default,NTP,0000,0000,0000,,now sorted gives you back the list of results
+Dialogue: 0,0:16:52.90,0:16:56.27,*Default,NTP,0000,0000,0000,,from least to greatest according to the key function
+Dialogue: 0,0:16:56.40,0:16:57.60,*Default,NTP,0000,0000,0000,,so this would give us
+Dialogue: 0,0:16:57.60,0:16:59.77,*Default,NTP,0000,0000,0000,,the one with the lowest stars first
+Dialogue: 0,0:17:00.67,0:17:03.00,*Default,NTP,0000,0000,0000,,unless we put in a negation sign here
+Dialogue: 0,0:17:03.07,0:17:05.67,*Default,NTP,0000,0000,0000,,in which case the lowest by
+Dialogue: 0,0:17:05.77,0:17:09.80,*Default,NTP,0000,0000,0000,,negative stars is actually the one with the most stars
+Dialogue: 0,0:17:10.20,0:17:11.77,*Default,NTP,0000,0000,0000,,okay we're making progress
+Dialogue: 0,0:17:11.77,0:17:13.87,*Default,NTP,0000,0000,0000,,but we need to know what all the restaurants are
+Dialogue: 0,0:17:13.93,0:17:15.80,*Default,NTP,0000,0000,0000,,and how a restaurant works
+Dialogue: 0,0:17:16.00,0:17:17.60,*Default,NTP,0000,0000,0000,,let's start with the latter
+Dialogue: 0,0:17:18.40,0:17:20.27,*Default,NTP,0000,0000,0000,,representing a restaurant
+Dialogue: 0,0:17:20.27,0:17:22.37,*Default,NTP,0000,0000,0000,,is naturally done with the class
+Dialogue: 0,0:17:22.73,0:17:24.00,*Default,NTP,0000,0000,0000,,and we already see
+Dialogue: 0,0:17:24.13,0:17:25.17,*Default,NTP,0000,0000,0000,,some of the attributes
+Dialogue: 0,0:17:25.17,0:17:27.67,*Default,NTP,0000,0000,0000,,we need to track the name in the stars
+Dialogue: 0,0:17:31.47,0:17:33.97,*Default,NTP,0000,0000,0000,,which we'll assume we get from the file somehow
+Dialogue: 0,0:17:34.13,0:17:35.53,*Default,NTP,0000,0000,0000,,and are passed in here
+Dialogue: 0,0:17:35.93,0:17:37.07,*Default,NTP,0000,0000,0000,,I think this is a good
+Dialogue: 0,0:17:37.07,0:17:39.37,*Default,NTP,0000,0000,0000,,opportunity to think about how we're going to keep
+Dialogue: 0,0:17:39.37,0:17:41.13,*Default,NTP,0000,0000,0000,,track of all the restaurants
+Dialogue: 0,0:17:41.90,0:17:44.00,*Default,NTP,0000,0000,0000,,instead of having some global name
+Dialogue: 0,0:17:44.20,0:17:47.30,*Default,NTP,0000,0000,0000,,we could use a class attribute
+Dialogue: 0,0:17:47.57,0:17:49.47,*Default,NTP,0000,0000,0000,,which we initialize here
+Dialogue: 0,0:17:50.10,0:17:51.87,*Default,NTP,0000,0000,0000,,and populate here
+Dialogue: 0,0:17:52.37,0:17:54.70,*Default,NTP,0000,0000,0000,,all that append self
+Dialogue: 0,0:17:54.90,0:17:57.07,*Default,NTP,0000,0000,0000,,puts whatever restaurant I create
+Dialogue: 0,0:17:57.27,0:17:59.07,*Default,NTP,0000,0000,0000,,into the list of all restaurants
+Dialogue: 0,0:17:59.40,0:18:01.77,*Default,NTP,0000,0000,0000,,so now I think my search function will work
+Dialogue: 0,0:18:02.30,0:18:05.10,*Default,NTP,0000,0000,0000,,but what about r dot similar
+Dialogue: 0,0:18:05.10,0:18:07.33,*Default,NTP,0000,0000,0000,,that's something we need to define as well
+Dialogue: 0,0:18:07.73,0:18:09.00,*Default,NTP,0000,0000,0000,,how do I find the k
+Dialogue: 0,0:18:09.00,0:18:11.87,*Default,NTP,0000,0000,0000,,most similar restaurants to some restaurant
+Dialogue: 0,0:18:12.10,0:18:13.73,*Default,NTP,0000,0000,0000,,well that sounds complicated
+Dialogue: 0,0:18:14.07,0:18:16.57,*Default,NTP,0000,0000,0000,,I think a good step in the right direction
+Dialogue: 0,0:18:16.60,0:18:17.77,*Default,NTP,0000,0000,0000,,is to write down
+Dialogue: 0,0:18:17.93,0:18:19.07,*Default,NTP,0000,0000,0000,,a dock string
+Dialogue: 0,0:18:19.10,0:18:23.80,*Default,NTP,0000,0000,0000,,return the k most similar restaurants to self
+Dialogue: 0,0:18:24.37,0:18:26.47,*Default,NTP,0000,0000,0000,,and for now let's leave it blank
+Dialogue: 0,0:18:27.27,0:18:29.27,*Default,NTP,0000,0000,0000,,I think we've written enough code that we should
+Dialogue: 0,0:18:29.27,0:18:30.57,*Default,NTP,0000,0000,0000,,test our progress
+Dialogue: 0,0:18:30.73,0:18:33.17,*Default,NTP,0000,0000,0000,,so let's not worry about the file just yet
+Dialogue: 0,0:18:33.27,0:18:35.00,*Default,NTP,0000,0000,0000,,and create some restaurants
+Dialogue: 0,0:18:35.13,0:18:38.07,*Default,NTP,0000,0000,0000,,tie delight has two stars
+Dialogue: 0,0:18:38.53,0:18:42.93,*Default,NTP,0000,0000,0000,,tie basil has three stars and top dog
+Dialogue: 0,0:18:44.47,0:18:45.87,*Default,NTP,0000,0000,0000,,has five stars
+Dialogue: 0,0:18:45.87,0:18:47.53,*Default,NTP,0000,0000,0000,,man that place is delicious
+Dialogue: 0,0:18:49.53,0:18:51.07,*Default,NTP,0000,0000,0000,,and we run our program
+Dialogue: 0,0:18:51.37,0:18:52.60,*Default,NTP,0000,0000,0000,,we found a bug
+Dialogue: 0,0:18:53.00,0:18:55.93,*Default,NTP,0000,0000,0000,,instead of referring to all restaurants
+Dialogue: 0,0:18:56.07,0:18:59.30,*Default,NTP,0000,0000,0000,,I was referring to the built in all function
+Dialogue: 0,0:18:59.77,0:19:02.00,*Default,NTP,0000,0000,0000,,which does not have in a pen method
+Dialogue: 0,0:19:02.17,0:19:05.50,*Default,NTP,0000,0000,0000,,on other bug is that when I print out a restaurant
+Dialogue: 0,0:19:05.57,0:19:07.07,*Default,NTP,0000,0000,0000,,I see some nonsense
+Dialogue: 0,0:19:07.20,0:19:10.40,*Default,NTP,0000,0000,0000,,I can fix that by just adding a repper method
+Dialogue: 0,0:19:10.73,0:19:11.37,*Default,NTP,0000,0000,0000,,and how I don't
+Dialogue: 0,0:19:11.37,0:19:12.17,*Default,NTP,0000,0000,0000,,we return
+Dialogue: 0,0:19:12.33,0:19:15.80,*Default,NTP,0000,0000,0000,,angled brackets around the name of the restaurant
+Dialogue: 0,0:19:16.37,0:19:18.30,*Default,NTP,0000,0000,0000,,okay so when we search for Thai
+Dialogue: 0,0:19:18.30,0:19:21.60,*Default,NTP,0000,0000,0000,,we find Thai delight and Thai basil but not top dog
+Dialogue: 0,0:19:21.60,0:19:22.60,*Default,NTP,0000,0000,0000,,that looks good
+Dialogue: 0,0:19:22.93,0:19:26.13,*Default,NTP,0000,0000,0000,,and we just need to finish this notion of similarity
+Dialogue: 0,0:19:27.57,0:19:28.80,*Default,NTP,0000,0000,0000,,we need to implement
+Dialogue: 0,0:19:28.80,0:19:31.93,*Default,NTP,0000,0000,0000,,the similar method of the restaurant class
+Dialogue: 0,0:19:31.97,0:19:33.73,*Default,NTP,0000,0000,0000,,which takes in a restaurant
+Dialogue: 0,0:19:33.90,0:19:36.90,*Default,NTP,0000,0000,0000,,and a number of similar restaurants to return
+Dialogue: 0,0:19:37.77,0:19:39.90,*Default,NTP,0000,0000,0000,,and finds the most similar k
+Dialogue: 0,0:19:40.27,0:19:43.27,*Default,NTP,0000,0000,0000,,there are many notions of similarity
+Dialogue: 0,0:19:43.27,0:19:45.13,*Default,NTP,0000,0000,0000,,they're close in distance
+Dialogue: 0,0:19:45.47,0:19:48.47,*Default,NTP,0000,0000,0000,,they have a similar raiding a similar price
+Dialogue: 0,0:19:48.67,0:19:49.27,*Default,NTP,0000,0000,0000,,maybe
+Dialogue: 0,0:19:49.27,0:19:52.30,*Default,NTP,0000,0000,0000,,they're similar because the same people review them
+Dialogue: 0,0:19:52.30,0:19:54.37,*Default,NTP,0000,0000,0000,,meaning the same people go there
+Dialogue: 0,0:19:54.80,0:19:56.30,*Default,NTP,0000,0000,0000,,whatever the case is
+Dialogue: 0,0:19:56.40,0:19:57.77,*Default,NTP,0000,0000,0000,,I think we have another
+Dialogue: 0,0:19:57.90,0:20:00.60,*Default,NTP,0000,0000,0000,,opportunity to introduce modularity
+Dialogue: 0,0:20:00.73,0:20:03.47,*Default,NTP,0000,0000,0000,,by passing in a similarity function
+Dialogue: 0,0:20:03.90,0:20:05.70,*Default,NTP,0000,0000,0000,,that takes into restaurants
+Dialogue: 0,0:20:05.70,0:20:07.73,*Default,NTP,0000,0000,0000,,and tells us how similar they are
+Dialogue: 0,0:20:08.17,0:20:10.40,*Default,NTP,0000,0000,0000,,now the job of the similar function
+Dialogue: 0,0:20:10.53,0:20:14.80,*Default,NTP,0000,0000,0000,,its concern is not to determine the similarity
+Dialogue: 0,0:20:15.10,0:20:19.07,*Default,NTP,0000,0000,0000,,but determine the k most similar restaurants itself
+Dialogue: 0,0:20:19.53,0:20:20.97,*Default,NTP,0000,0000,0000,,why don't you try doing that
+Dialogue: 0,0:20:21.10,0:20:22.50,*Default,NTP,0000,0000,0000,,implements similar
+Dialogue: 0,0:20:22.67,0:20:25.57,*Default,NTP,0000,0000,0000,,a restaurant method that takes a positive integer k
+Dialogue: 0,0:20:25.57,0:20:27.27,*Default,NTP,0000,0000,0000,,and a function similarity
+Dialogue: 0,0:20:27.30,0:20:27.93,*Default,NTP,0000,0000,0000,,that takes two
+Dialogue: 0,0:20:27.93,0:20:30.33,*Default,NTP,0000,0000,0000,,restaurants as arguments and returns a number
+Dialogue: 0,0:20:30.53,0:20:32.90,*Default,NTP,0000,0000,0000,,higher similarity values indicate
+Dialogue: 0,0:20:32.90,0:20:34.67,*Default,NTP,0000,0000,0000,,more similar restaurants
+Dialogue: 0,0:20:34.80,0:20:37.50,*Default,NTP,0000,0000,0000,,and the similar method is supposed to return a list
+Dialogue: 0,0:20:37.50,0:20:38.30,*Default,NTP,0000,0000,0000,,containing that
+Dialogue: 0,0:20:38.30,0:20:38.53,*Default,NTP,0000,0000,0000,,came
+Dialogue: 0,0:20:38.53,0:20:41.47,*Default,NTP,0000,0000,0000,,most similar restaurants according to the similarity
+Dialogue: 0,0:20:41.47,0:20:42.27,*Default,NTP,0000,0000,0000,,function
+Dialogue: 0,0:20:42.50,0:20:46.73,*Default,NTP,0000,0000,0000,,but this list should not contain the restaurant itself
+Dialogue: 0,0:20:47.07,0:20:49.80,*Default,NTP,0000,0000,0000,,it would be silly to say the most similar restaurant to
+Dialogue: 0,0:20:49.80,0:20:51.00,*Default,NTP,0000,0000,0000,,tie delight is
+Dialogue: 0,0:20:51.07,0:20:51.93,*Default,NTP,0000,0000,0000,,tie delight
+Dialogue: 0,0:20:52.70,0:20:54.77,*Default,NTP,0000,0000,0000,,so we'll define the similar method
+Dialogue: 0,0:20:54.90,0:20:57.67,*Default,NTP,0000,0000,0000,,which returns the camo similar restaurants to self
+Dialogue: 0,0:20:57.67,0:21:00.10,*Default,NTP,0000,0000,0000,,using similarity for comparison
+Dialogue: 0,0:21:00.30,0:21:01.53,*Default,NTP,0000,0000,0000,,and what we'll do
+Dialogue: 0,0:21:01.57,0:21:05.33,*Default,NTP,0000,0000,0000,,is build a list of all the restaurants except for self
+Dialogue: 0,0:21:05.37,0:21:08.70,*Default,NTP,0000,0000,0000,,and then sort it according to some key function
+Dialogue: 0,0:21:09.30,0:21:10.77,*Default,NTP,0000,0000,0000,,and then there's an opportunity
+Dialogue: 0,0:21:10.77,0:21:12.93,*Default,NTP,0000,0000,0000,,to manipulate the sorted list
+Dialogue: 0,0:21:13.27,0:21:16.73,*Default,NTP,0000,0000,0000,,sorted is a built in function that takes some iterable
+Dialogue: 0,0:21:16.77,0:21:18.37,*Default,NTP,0000,0000,0000,,and some key function
+Dialogue: 0,0:21:18.37,0:21:20.00,*Default,NTP,0000,0000,0000,,and returns a new list containing
+Dialogue: 0,0:21:20.00,0:21:21.37,*Default,NTP,0000,0000,0000,,all items from the iterable
+Dialogue: 0,0:21:21.37,0:21:23.17,*Default,NTP,0000,0000,0000,,in ascending order
+Dialogue: 0,0:21:23.20,0:21:25.70,*Default,NTP,0000,0000,0000,,according to the custom key function
+Dialogue: 0,0:21:26.27,0:21:28.40,*Default,NTP,0000,0000,0000,,and you can use a reverse flag
+Dialogue: 0,0:21:28.47,0:21:30.77,*Default,NTP,0000,0000,0000,,but we didn't use that in our example
+Dialogue: 0,0:21:31.50,0:21:33.73,*Default,NTP,0000,0000,0000,,why don't you spend a minute and try to fill in
+Dialogue: 0,0:21:33.73,0:21:35.33,*Default,NTP,0000,0000,0000,,this implementation
+Dialogue: 0,0:21:35.53,0:21:40.30,*Default,NTP,0000,0000,0000,,pause the video and I'll go through the answer in 321
+Dialogue: 0,0:21:40.77,0:21:44.60,*Default,NTP,0000,0000,0000,,others is a copy of the list of all restaurants
+Dialogue: 0,0:21:44.60,0:21:46.07,*Default,NTP,0000,0000,0000,,and we need to remove
+Dialogue: 0,0:21:46.20,0:21:50.30,*Default,NTP,0000,0000,0000,,this restaurant which we do using the remove method
+Dialogue: 0,0:21:50.40,0:21:54.57,*Default,NTP,0000,0000,0000,,and what do we pass in to tell it what to remove self
+Dialogue: 0,0:21:54.80,0:21:57.73,*Default,NTP,0000,0000,0000,,that's the element of the list of all restaurants
+Dialogue: 0,0:21:57.73,0:21:59.73,*Default,NTP,0000,0000,0000,,that we do not want to include
+Dialogue: 0,0:21:59.73,0:22:01.97,*Default,NTP,0000,0000,0000,,in the list of similar restaurants
+Dialogue: 0,0:22:02.77,0:22:04.53,*Default,NTP,0000,0000,0000,,the key function for sorted
+Dialogue: 0,0:22:04.67,0:22:07.50,*Default,NTP,0000,0000,0000,,just like the key function for max and min
+Dialogue: 0,0:22:07.67,0:22:09.80,*Default,NTP,0000,0000,0000,,must be a one argument function
+Dialogue: 0,0:22:09.80,0:22:12.93,*Default,NTP,0000,0000,0000,,referring to an element of the others list
+Dialogue: 0,0:22:13.53,0:22:15.10,*Default,NTP,0000,0000,0000,,so how do we make sure
+Dialogue: 0,0:22:15.27,0:22:17.57,*Default,NTP,0000,0000,0000,,that others is ranked according to its
+Dialogue: 0,0:22:17.57,0:22:19.30,*Default,NTP,0000,0000,0000,,similarity to self
+Dialogue: 0,0:22:19.93,0:22:21.20,*Default,NTP,0000,0000,0000,,well we write down
+Dialogue: 0,0:22:21.37,0:22:23.27,*Default,NTP,0000,0000,0000,,a function of one argument
+Dialogue: 0,0:22:23.27,0:22:25.17,*Default,NTP,0000,0000,0000,,that computes the similarity
+Dialogue: 0,0:22:25.30,0:22:26.80,*Default,NTP,0000,0000,0000,,between self and r
+Dialogue: 0,0:22:27.10,0:22:28.27,*Default,NTP,0000,0000,0000,,I've negated it
+Dialogue: 0,0:22:28.30,0:22:31.30,*Default,NTP,0000,0000,0000,,so that most similar restaurants come first
+Dialogue: 0,0:22:31.30,0:22:34.10,*Default,NTP,0000,0000,0000,,and the least similar restaurants come at the end
+Dialogue: 0,0:22:34.60,0:22:36.40,*Default,NTP,0000,0000,0000,,now that we've sorted them all
+Dialogue: 0,0:22:36.57,0:22:38.00,*Default,NTP,0000,0000,0000,,we don't want to return
+Dialogue: 0,0:22:38.10,0:22:40.30,*Default,NTP,0000,0000,0000,,the list of all other restaurants
+Dialogue: 0,0:22:40.30,0:22:42.70,*Default,NTP,0000,0000,0000,,but instead just the top k
+Dialogue: 0,0:22:42.90,0:22:44.73,*Default,NTP,0000,0000,0000,,which we can do with the slice
+Dialogue: 0,0:22:46.13,0:22:48.87,*Default,NTP,0000,0000,0000,,let's finish our restaurant search program
+Dialogue: 0,0:22:49.00,0:22:50.80,*Default,NTP,0000,0000,0000,,by reading in some files
+Dialogue: 0,0:22:51.50,0:22:55.07,*Default,NTP,0000,0000,0000,,but first let's pick a default notion of similarity
+Dialogue: 0,0:22:56.17,0:23:00.60,*Default,NTP,0000,0000,0000,,let's say that the similarity between two restaurants
+Dialogue: 0,0:23:00.70,0:23:04.33,*Default,NTP,0000,0000,0000,,is the number of people that reviewed them both
+Dialogue: 0,0:23:06.47,0:23:09.70,*Default,NTP,0000,0000,0000,,so reviewed both takes a restaurant r
+Dialogue: 0,0:23:09.90,0:23:11.93,*Default,NTP,0000,0000,0000,,and another restaurant s
+Dialogue: 0,0:23:11.97,0:23:16.47,*Default,NTP,0000,0000,0000,,and returns the length of the list of ours reviewers
+Dialogue: 0,0:23:17.87,0:23:20.17,*Default,NTP,0000,0000,0000,,that are also ss reviewers
+Dialogue: 0,0:23:21.87,0:23:24.27,*Default,NTP,0000,0000,0000,,that's just one notion of similarity
+Dialogue: 0,0:23:24.40,0:23:26.07,*Default,NTP,0000,0000,0000,,two restaurants are similar
+Dialogue: 0,0:23:26.53,0:23:29.13,*Default,NTP,0000,0000,0000,,if the same group of people reviews them both
+Dialogue: 0,0:23:29.50,0:23:29.90,*Default,NTP,0000,0000,0000,,so now
+Dialogue: 0,0:23:29.90,0:23:32.90,*Default,NTP,0000,0000,0000,,we need to make sure that a restaurant has reviewers
+Dialogue: 0,0:23:33.10,0:23:35.00,*Default,NTP,0000,0000,0000,,and we'll read those from a file
+Dialogue: 0,0:23:35.57,0:23:38.53,*Default,NTP,0000,0000,0000,,instead of creating three restaurants by hand
+Dialogue: 0,0:23:39.10,0:23:41.13,*Default,NTP,0000,0000,0000,,we'll read all the restaurants
+Dialogue: 0,0:23:41.57,0:23:45.73,*Default,NTP,0000,0000,0000,,for a line in open restaurants
+Dialogue: 0,0:23:46.07,0:23:49.77,*Default,NTP,0000,0000,0000,,jason will iterate through all the lines in the file
+Dialogue: 0,0:23:49.97,0:23:51.17,*Default,NTP,0000,0000,0000,,here's the file
+Dialogue: 0,0:23:51.40,0:23:52.13,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:23:52.13,0:23:56.40,*Default,NTP,0000,0000,0000,,format is called json or javascript object notation
+Dialogue: 0,0:23:56.53,0:23:58.17,*Default,NTP,0000,0000,0000,,which can be read by python
+Dialogue: 0,0:23:58.40,0:24:01.77,*Default,NTP,0000,0000,0000,,just by importing the json module
+Dialogue: 0,0:24:02.30,0:24:03.67,*Default,NTP,0000,0000,0000,,and calling jason
+Dialogue: 0,0:24:04.00,0:24:06.53,*Default,NTP,0000,0000,0000,,load string on the line
+Dialogue: 0,0:24:06.90,0:24:09.73,*Default,NTP,0000,0000,0000,,that gives us a dictionary with key's open
+Dialogue: 0,0:24:09.80,0:24:12.13,*Default,NTP,0000,0000,0000,,url neighborhoods etc
+Dialogue: 0,0:24:12.90,0:24:15.13,*Default,NTP,0000,0000,0000,,in order to construct a restaurant
+Dialogue: 0,0:24:15.17,0:24:17.37,*Default,NTP,0000,0000,0000,,we need to pass in the name
+Dialogue: 0,0:24:18.07,0:24:21.67,*Default,NTP,0000,0000,0000,,the stars and we don't want the number of reviews
+Dialogue: 0,0:24:21.67,0:24:24.10,*Default,NTP,0000,0000,0000,,instead we want the list of reviewers
+Dialogue: 0,0:24:24.53,0:24:26.57,*Default,NTP,0000,0000,0000,,that's going to be complicated to compute
+Dialogue: 0,0:24:26.60,0:24:27.90,*Default,NTP,0000,0000,0000,,so let's give it a name
+Dialogue: 0,0:24:28.67,0:24:29.70,*Default,NTP,0000,0000,0000,,the reviewers
+Dialogue: 0,0:24:29.73,0:24:30.80,*Default,NTP,0000,0000,0000,,is what we get
+Dialogue: 0,0:24:30.90,0:24:33.00,*Default,NTP,0000,0000,0000,,when we look through all the reviews
+Dialogue: 0,0:24:33.00,0:24:34.97,*Default,NTP,0000,0000,0000,,and find the user ids
+Dialogue: 0,0:24:35.17,0:24:38.07,*Default,NTP,0000,0000,0000,,of the people that reviewed this restaurant
+Dialogue: 0,0:24:38.53,0:24:38.90,*Default,NTP,0000,0000,0000,,I think
+Dialogue: 0,0:24:38.90,0:24:40.53,*Default,NTP,0000,0000,0000,,we're going to have to read through all the reviews
+Dialogue: 0,0:24:40.53,0:24:43.93,*Default,NTP,0000,0000,0000,,first and then look up the reviews for the restaurant
+Dialogue: 0,0:24:46.70,0:24:48.37,*Default,NTP,0000,0000,0000,,and recall that the
+Dialogue: 0,0:24:48.53,0:24:52.17,*Default,NTP,0000,0000,0000,,reviews are each given a business id
+Dialogue: 0,0:24:52.20,0:24:55.73,*Default,NTP,0000,0000,0000,,which also appears in restaurants json
+Dialogue: 0,0:24:55.97,0:24:58.47,*Default,NTP,0000,0000,0000,,so we'll use that to look up the reviewers
+Dialogue: 0,0:25:01.87,0:25:05.40,*Default,NTP,0000,0000,0000,,so this dictionary reviewers for restaurant
+Dialogue: 0,0:25:05.80,0:25:08.33,*Default,NTP,0000,0000,0000,,has to be built by going through every line
+Dialogue: 0,0:25:08.47,0:25:11.50,*Default,NTP,0000,0000,0000,,in the reviews file
+Dialogue: 0,0:25:11.70,0:25:13.97,*Default,NTP,0000,0000,0000,,constructing a
+Dialogue: 0,0:25:14.57,0:25:17.57,*Default,NTP,0000,0000,0000,,python dictionary from the json line
+Dialogue: 0,0:25:19.13,0:25:20.70,*Default,NTP,0000,0000,0000,,which business is it
+Dialogue: 0,0:25:21.27,0:25:22.77,*Default,NTP,0000,0000,0000,,well we get the business id
+Dialogue: 0,0:25:23.57,0:25:26.00,*Default,NTP,0000,0000,0000,,and if we've never seen this business before
+Dialogue: 0,0:25:28.87,0:25:31.20,*Default,NTP,0000,0000,0000,,then I think we should put that business
+Dialogue: 0,0:25:31.27,0:25:32.57,*Default,NTP,0000,0000,0000,,into this dictionary
+Dialogue: 0,0:25:36.93,0:25:39.53,*Default,NTP,0000,0000,0000,,and the value associated with that business id
+Dialogue: 0,0:25:39.90,0:25:43.77,*Default,NTP,0000,0000,0000,,should be a list of all the users that reviewed
+Dialogue: 0,0:25:45.80,0:25:47.50,*Default,NTP,0000,0000,0000,,let's use their user ids
+Dialogue: 0,0:25:47.50,0:25:50.90,*Default,NTP,0000,0000,0000,,because that's all we know about the users otherwise
+Dialogue: 0,0:25:51.17,0:25:52.90,*Default,NTP,0000,0000,0000,,if we've seen this before
+Dialogue: 0,0:25:53.13,0:25:55.27,*Default,NTP,0000,0000,0000,,then looking up reviewers for restaurant biz
+Dialogue: 0,0:25:55.27,0:25:56.53,*Default,NTP,0000,0000,0000,,will give us a list
+Dialogue: 0,0:25:56.70,0:26:00.13,*Default,NTP,0000,0000,0000,,to which we can append that same value
+Dialogue: 0,0:26:01.27,0:26:02.80,*Default,NTP,0000,0000,0000,,every time we create a restaurant
+Dialogue: 0,0:26:02.80,0:26:05.53,*Default,NTP,0000,0000,0000,,it's added to the restaurant dot all list
+Dialogue: 0,0:26:05.87,0:26:08.10,*Default,NTP,0000,0000,0000,,and that means we should be able to search for Thai
+Dialogue: 0,0:26:08.10,0:26:10.53,*Default,NTP,0000,0000,0000,,food using real businesses
+Dialogue: 0,0:26:13.20,0:26:14.70,*Default,NTP,0000,0000,0000,,oh we had a bug here
+Dialogue: 0,0:26:14.77,0:26:16.30,*Default,NTP,0000,0000,0000,,where I was talking too much
+Dialogue: 0,0:26:16.33,0:26:18.27,*Default,NTP,0000,0000,0000,,and I forgot to assign reviewers
+Dialogue: 0,0:26:19.87,0:26:21.13,*Default,NTP,0000,0000,0000,,and now it works
+Dialogue: 0,0:26:21.40,0:26:25.30,*Default,NTP,0000,0000,0000,,this says Thai basil cuisine is similar to gypsies
+Dialogue: 0,0:26:25.50,0:26:28.67,*Default,NTP,0000,0000,0000,,tretaria italiano and top dog
+Dialogue: 0,0:26:29.00,0:26:31.10,*Default,NTP,0000,0000,0000,,are those restaurants really similar
+Dialogue: 0,0:26:31.33,0:26:31.97,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:26:31.97,0:26:34.60,*Default,NTP,0000,0000,0000,,they're similar in the sense that students go there
+Dialogue: 0,0:26:35.10,0:26:37.73,*Default,NTP,0000,0000,0000,,so I think we should change this to something like
+Dialogue: 0,0:26:38.50,0:26:41.33,*Default,NTP,0000,0000,0000,,shares reviewers with
+Dialogue: 0,0:26:41.87,0:26:43.47,*Default,NTP,0000,0000,0000,,folks who go to Thai noodle two
+Dialogue: 0,0:26:43.47,0:26:46.00,*Default,NTP,0000,0000,0000,,also go to la cascada takaria
+Dialogue: 0,0:26:46.33,0:26:47.97,*Default,NTP,0000,0000,0000,,folks who go to jasmine Thai
+Dialogue: 0,0:26:47.97,0:26:50.47,*Default,NTP,0000,0000,0000,,which used to be on the north side before it closed
+Dialogue: 0,0:26:50.87,0:26:54.90,*Default,NTP,0000,0000,0000,,also review other restaurants on the north side
+Dialogue: 0,0:26:54.97,0:26:55.87,*Default,NTP,0000,0000,0000,,interesting
+Dialogue: 0,0:26:56.53,0:26:57.77,*Default,NTP,0000,0000,0000,,so it looks like we're done
+Dialogue: 0,0:26:57.77,0:27:00.30,*Default,NTP,0000,0000,0000,,building our restaurant search engine
+Dialogue: 0,0:27:02.47,0:27:04.10,*Default,NTP,0000,0000,0000,,we finished our
+Dialogue: 0,0:27:04.33,0:27:08.13,*Default,NTP,0000,0000,0000,,restaurant search application but it's too slow
+Dialogue: 0,0:27:08.40,0:27:10.57,*Default,NTP,0000,0000,0000,,to find all the tire restaurants
+Dialogue: 0,0:27:10.57,0:27:14.20,*Default,NTP,0000,0000,0000,,and lists all of their similar restaurants
+Dialogue: 0,0:27:14.20,0:27:15.90,*Default,NTP,0000,0000,0000,,doesn't happen instantly
+Dialogue: 0,0:27:16.77,0:27:20.17,*Default,NTP,0000,0000,0000,,in fact it takes about 0.7 seconds
+Dialogue: 0,0:27:20.17,0:27:22.93,*Default,NTP,0000,0000,0000,,and things are even worse if we look at cafes
+Dialogue: 0,0:27:24.10,0:27:25.87,*Default,NTP,0000,0000,0000,,since there are more cafes
+Dialogue: 0,0:27:25.90,0:27:26.93,*Default,NTP,0000,0000,0000,,it now takes
+Dialogue: 0,0:27:27.00,0:27:31.30,*Default,NTP,0000,0000,0000,,1.7 seconds in order to list all of the results
+Dialogue: 0,0:27:31.70,0:27:33.10,*Default,NTP,0000,0000,0000,,why is it so slow
+Dialogue: 0,0:27:33.80,0:27:36.07,*Default,NTP,0000,0000,0000,,we could go through in time each part
+Dialogue: 0,0:27:36.50,0:27:38.77,*Default,NTP,0000,0000,0000,,or we could just think about what's happening
+Dialogue: 0,0:27:38.77,0:27:39.90,*Default,NTP,0000,0000,0000,,in our program
+Dialogue: 0,0:27:40.57,0:27:42.50,*Default,NTP,0000,0000,0000,,we go through each restaurant
+Dialogue: 0,0:27:42.60,0:27:44.67,*Default,NTP,0000,0000,0000,,to see if it matches the query
+Dialogue: 0,0:27:45.13,0:27:46.50,*Default,NTP,0000,0000,0000,,that's linear time
+Dialogue: 0,0:27:46.70,0:27:49.50,*Default,NTP,0000,0000,0000,,for each restaurant we call similar
+Dialogue: 0,0:27:49.50,0:27:51.67,*Default,NTP,0000,0000,0000,,on every other restaurant
+Dialogue: 0,0:27:52.37,0:27:54.10,*Default,NTP,0000,0000,0000,,that's also linear time
+Dialogue: 0,0:27:54.90,0:27:57.73,*Default,NTP,0000,0000,0000,,and what about computing the similarity itself
+Dialogue: 0,0:27:58.13,0:28:00.40,*Default,NTP,0000,0000,0000,,here we go through every reviewer
+Dialogue: 0,0:28:00.93,0:28:02.57,*Default,NTP,0000,0000,0000,,for restaurant r
+Dialogue: 0,0:28:03.50,0:28:06.97,*Default,NTP,0000,0000,0000,,and check if that's a reviewer for restaurant s
+Dialogue: 0,0:28:07.47,0:28:09.57,*Default,NTP,0000,0000,0000,,and how does it do that check will
+Dialogue: 0,0:28:09.57,0:28:13.20,*Default,NTP,0000,0000,0000,,it goes through every reviewer in restaurant s
+Dialogue: 0,0:28:13.30,0:28:15.50,*Default,NTP,0000,0000,0000,,to see if it's x
+Dialogue: 0,0:28:16.50,0:28:21.17,*Default,NTP,0000,0000,0000,,so this operation is actually quadratic time
+Dialogue: 0,0:28:21.50,0:28:22.90,*Default,NTP,0000,0000,0000,,it's comparing
+Dialogue: 0,0:28:22.93,0:28:26.87,*Default,NTP,0000,0000,0000,,all pairs of a reviewer an r and a reviewer an s
+Dialogue: 0,0:28:26.87,0:28:28.27,*Default,NTP,0000,0000,0000,,to see if they're the same
+Dialogue: 0,0:28:28.87,0:28:30.40,*Default,NTP,0000,0000,0000,,I think that's what's slow
+Dialogue: 0,0:28:31.10,0:28:33.10,*Default,NTP,0000,0000,0000,,which gives rise to the question
+Dialogue: 0,0:28:33.33,0:28:34.60,*Default,NTP,0000,0000,0000,,could we figure out
+Dialogue: 0,0:28:34.60,0:28:38.13,*Default,NTP,0000,0000,0000,,the number of users that reviewed both r and s
+Dialogue: 0,0:28:38.40,0:28:40.13,*Default,NTP,0000,0000,0000,,in just linear time
+Dialogue: 0,0:28:41.30,0:28:42.60,*Default,NTP,0000,0000,0000,,indeed we could
+Dialogue: 0,0:28:43.47,0:28:44.53,*Default,NTP,0000,0000,0000,,here's the trick
+Dialogue: 0,0:28:45.40,0:28:47.10,*Default,NTP,0000,0000,0000,,instead of just keeping a
+Dialogue: 0,0:28:47.10,0:28:49.57,*Default,NTP,0000,0000,0000,,list of reviewers for each restaurant
+Dialogue: 0,0:28:49.90,0:28:52.40,*Default,NTP,0000,0000,0000,,we'll keep a sordid list of reviewers
+Dialogue: 0,0:28:53.67,0:28:56.17,*Default,NTP,0000,0000,0000,,and then we'll write down a linear time procedure
+Dialogue: 0,0:28:56.17,0:28:58.30,*Default,NTP,0000,0000,0000,,that checks for the amount of overlap
+Dialogue: 0,0:28:58.33,0:29:01.50,*Default,NTP,0000,0000,0000,,between two sorted lists
+Dialogue: 0,0:29:02.97,0:29:06.20,*Default,NTP,0000,0000,0000,,given two sorted lists with no repeats
+Dialogue: 0,0:29:06.20,0:29:09.57,*Default,NTP,0000,0000,0000,,we want to return the number of elements that appear
+Dialogue: 0,0:29:09.57,0:29:11.53,*Default,NTP,0000,0000,0000,,in both lists
+Dialogue: 0,0:29:12.30,0:29:14.27,*Default,NTP,0000,0000,0000,,let's start with an example
+Dialogue: 0,0:29:14.80,0:29:18.97,*Default,NTP,0000,0000,0000,,if I have this sorted list and that sorted list
+Dialogue: 0,0:29:19.87,0:29:21.27,*Default,NTP,0000,0000,0000,,the way we'll find
+Dialogue: 0,0:29:21.27,0:29:23.80,*Default,NTP,0000,0000,0000,,all of the elements they have in common
+Dialogue: 0,0:29:24.17,0:29:26.67,*Default,NTP,0000,0000,0000,,is to pass through both of them together
+Dialogue: 0,0:29:27.20,0:29:29.17,*Default,NTP,0000,0000,0000,,starting at the beginning of each
+Dialogue: 0,0:29:30.07,0:29:32.60,*Default,NTP,0000,0000,0000,,if one of these elements is smaller than the other
+Dialogue: 0,0:29:32.77,0:29:35.53,*Default,NTP,0000,0000,0000,,we know it doesn't appear in the other one
+Dialogue: 0,0:29:35.70,0:29:37.57,*Default,NTP,0000,0000,0000,,because it's smaller than this
+Dialogue: 0,0:29:37.77,0:29:40.10,*Default,NTP,0000,0000,0000,,and this is smaller than everything here
+Dialogue: 0,0:29:40.30,0:29:43.87,*Default,NTP,0000,0000,0000,,so one must not appear anywhere in this list
+Dialogue: 0,0:29:44.47,0:29:46.37,*Default,NTP,0000,0000,0000,,therefore I can advance
+Dialogue: 0,0:29:46.57,0:29:50.17,*Default,NTP,0000,0000,0000,,in the second list because one is smaller than three
+Dialogue: 0,0:29:50.47,0:29:51.77,*Default,NTP,0000,0000,0000,,three and three are the same
+Dialogue: 0,0:29:51.77,0:29:54.30,*Default,NTP,0000,0000,0000,,so I found an element that appears in both
+Dialogue: 0,0:29:54.40,0:29:57.57,*Default,NTP,0000,0000,0000,,and I can advance both of these positions
+Dialogue: 0,0:29:58.07,0:29:59.80,*Default,NTP,0000,0000,0000,,four is smaller than five
+Dialogue: 0,0:29:59.80,0:30:02.10,*Default,NTP,0000,0000,0000,,so it's also smaller than seven and eight
+Dialogue: 0,0:30:02.20,0:30:05.50,*Default,NTP,0000,0000,0000,,meaning it doesn't appear anywhere in the other list
+Dialogue: 0,0:30:05.57,0:30:07.50,*Default,NTP,0000,0000,0000,,so we can discard it and move on
+Dialogue: 0,0:30:07.77,0:30:11.37,*Default,NTP,0000,0000,0000,,likewise five doesn't appear in 67910
+Dialogue: 0,0:30:11.37,0:30:15.07,*Default,NTP,0000,0000,0000,,because it's smaller than six and everything after six
+Dialogue: 0,0:30:15.40,0:30:16.60,*Default,NTP,0000,0000,0000,,so we can move on
+Dialogue: 0,0:30:17.57,0:30:19.20,*Default,NTP,0000,0000,0000,,six is smaller than seven
+Dialogue: 0,0:30:19.47,0:30:21.50,*Default,NTP,0000,0000,0000,,and now we found another pair
+Dialogue: 0,0:30:21.70,0:30:23.77,*Default,NTP,0000,0000,0000,,so we remember that we found a second
+Dialogue: 0,0:30:23.77,0:30:25.50,*Default,NTP,0000,0000,0000,,element that appears in both
+Dialogue: 0,0:30:25.53,0:30:26.97,*Default,NTP,0000,0000,0000,,and we advance both
+Dialogue: 0,0:30:28.13,0:30:29.67,*Default,NTP,0000,0000,0000,,eight is smaller than nine
+Dialogue: 0,0:30:29.77,0:30:30.47,*Default,NTP,0000,0000,0000,,which means
+Dialogue: 0,0:30:30.47,0:30:33.10,*Default,NTP,0000,0000,0000,,eight doesn't appear anywhere in the first list
+Dialogue: 0,0:30:33.47,0:30:36.33,*Default,NTP,0000,0000,0000,,and now I've reached the end of the second list
+Dialogue: 0,0:30:36.60,0:30:38.20,*Default,NTP,0000,0000,0000,,which means I'm not gonna find
+Dialogue: 0,0:30:38.20,0:30:40.73,*Default,NTP,0000,0000,0000,,any more elements that appear in both
+Dialogue: 0,0:30:41.93,0:30:43.33,*Default,NTP,0000,0000,0000,,now that you have a picture
+Dialogue: 0,0:30:43.50,0:30:45.97,*Default,NTP,0000,0000,0000,,try to implement that procedure
+Dialogue: 0,0:30:46.60,0:30:49.70,*Default,NTP,0000,0000,0000,,I recommend that you pause and I'll go over the answer
+Dialogue: 0,0:30:49.70,0:30:51.60,*Default,NTP,0000,0000,0000,,in 321
+Dialogue: 0,0:30:52.50,0:30:56.37,*Default,NTP,0000,0000,0000,,we'll use I to index into list s and j to index
+Dialogue: 0,0:30:56.40,0:30:57.30,*Default,NTP,0000,0000,0000,,into list t
+Dialogue: 0,0:30:57.97,0:30:59.20,*Default,NTP,0000,0000,0000,,and we'll keep going
+Dialogue: 0,0:30:59.37,0:31:02.40,*Default,NTP,0000,0000,0000,,as long as I is less than the length of s
+Dialogue: 0,0:31:02.40,0:31:04.80,*Default,NTP,0000,0000,0000,,and j is less than the length of t
+Dialogue: 0,0:31:05.47,0:31:08.47,*Default,NTP,0000,0000,0000,,if I've found an element that appears in both
+Dialogue: 0,0:31:08.57,0:31:10.07,*Default,NTP,0000,0000,0000,,then I increment the count
+Dialogue: 0,0:31:10.10,0:31:12.70,*Default,NTP,0000,0000,0000,,and move forward in both snt
+Dialogue: 0,0:31:13.47,0:31:15.53,*Default,NTP,0000,0000,0000,,if the element I'm considering in list
+Dialogue: 0,0:31:15.53,0:31:18.10,*Default,NTP,0000,0000,0000,,s is smaller than the element in list t
+Dialogue: 0,0:31:18.47,0:31:22.40,*Default,NTP,0000,0000,0000,,then I know it doesn't appear in list t anywhere
+Dialogue: 0,0:31:22.57,0:31:25.13,*Default,NTP,0000,0000,0000,,and so I can move forward in s
+Dialogue: 0,0:31:25.60,0:31:27.73,*Default,NTP,0000,0000,0000,,otherwise I move forward in t
+Dialogue: 0,0:31:29.90,0:31:31.80,*Default,NTP,0000,0000,0000,,let's see if it speeds things up
+Dialogue: 0,0:31:35.30,0:31:37.37,*Default,NTP,0000,0000,0000,,it takes one and a half seconds
+Dialogue: 0,0:31:37.37,0:31:39.67,*Default,NTP,0000,0000,0000,,to list out all the cafes
+Dialogue: 0,0:31:39.67,0:31:42.13,*Default,NTP,0000,0000,0000,,and their similar restaurants
+Dialogue: 0,0:31:42.20,0:31:45.13,*Default,NTP,0000,0000,0000,,but what if we were place reviewed both with a new
+Dialogue: 0,0:31:45.13,0:31:46.33,*Default,NTP,0000,0000,0000,,implementation
+Dialogue: 0,0:31:47.00,0:31:49.27,*Default,NTP,0000,0000,0000,,here's the modular way to do it
+Dialogue: 0,0:31:49.73,0:31:52.60,*Default,NTP,0000,0000,0000,,we should define the overlap
+Dialogue: 0,0:31:52.70,0:31:57.07,*Default,NTP,0000,0000,0000,,between two sorted lists generically for any two lists
+Dialogue: 0,0:31:57.13,0:31:58.00,*Default,NTP,0000,0000,0000,,whether they're
+Dialogue: 0,0:31:58.10,0:32:02.13,*Default,NTP,0000,0000,0000,,lists of reviewers or lists of something else
+Dialogue: 0,0:32:02.67,0:32:04.50,*Default,NTP,0000,0000,0000,,and here's the code from the slide
+Dialogue: 0,0:32:04.53,0:32:08.80,*Default,NTP,0000,0000,0000,,and then reviewed both should call fast overlap
+Dialogue: 0,0:32:08.93,0:32:11.50,*Default,NTP,0000,0000,0000,,on the particular lists
+Dialogue: 0,0:32:11.77,0:32:15.07,*Default,NTP,0000,0000,0000,,that are needed in order to compute reviewer overlap
+Dialogue: 0,0:32:15.70,0:32:17.70,*Default,NTP,0000,0000,0000,,instead of one and a half seconds
+Dialogue: 0,0:32:17.87,0:32:21.07,*Default,NTP,0000,0000,0000,,now it takes only 0.7 seconds
+Dialogue: 0,0:32:21.33,0:32:23.33,*Default,NTP,0000,0000,0000,,so we've made it twice as fast
+Dialogue: 0,0:32:23.33,0:32:25.10,*Default,NTP,0000,0000,0000,,at least for that one run
+Dialogue: 0,0:32:25.67,0:32:27.27,*Default,NTP,0000,0000,0000,,and what about Thai food
+Dialogue: 0,0:32:27.57,0:32:30.00,*Default,NTP,0000,0000,0000,,is that faster than 0.7 seconds
+Dialogue: 0,0:32:30.27,0:32:32.87,*Default,NTP,0000,0000,0000,,yes it is now it only takes half a second
+Dialogue: 0,0:32:33.27,0:32:36.37,*Default,NTP,0000,0000,0000,,and that means that our program is responsive
+Dialogue: 0,0:32:36.37,0:32:38.13,*Default,NTP,0000,0000,0000,,enough to make it interactive
+Dialogue: 0,0:32:38.90,0:32:42.00,*Default,NTP,0000,0000,0000,,we can do that by saying forever
+Dialogue: 0,0:32:42.33,0:32:45.37,*Default,NTP,0000,0000,0000,,search for whatever the user types in
+Dialogue: 0,0:32:46.80,0:32:48.60,*Default,NTP,0000,0000,0000,,and print out the results
+Dialogue: 0,0:32:49.07,0:32:52.10,*Default,NTP,0000,0000,0000,,in order to indicate that it's time to type something
+Dialogue: 0,0:32:52.50,0:32:54.53,*Default,NTP,0000,0000,0000,,let's put a little prompt there
+Dialogue: 0,0:32:54.97,0:32:57.77,*Default,NTP,0000,0000,0000,,so I've started my restaurant search engine
+Dialogue: 0,0:32:57.80,0:32:59.60,*Default,NTP,0000,0000,0000,,and I can look for Thai food
+Dialogue: 0,0:32:59.77,0:33:01.77,*Default,NTP,0000,0000,0000,,or I can look for a cafe
+Dialogue: 0,0:33:02.07,0:33:03.93,*Default,NTP,0000,0000,0000,,or I can look for coffee
+Dialogue: 0,0:33:04.57,0:33:07.47,*Default,NTP,0000,0000,0000,,and learn all about berkeley's restaurants that way
+Dialogue: 0,0:33:09.27,0:33:11.60,*Default,NTP,0000,0000,0000,,sets are built into python
+Dialogue: 0,0:33:12.27,0:33:15.30,*Default,NTP,0000,0000,0000,,most anything that sufficiently generic
+Dialogue: 0,0:33:15.50,0:33:18.57,*Default,NTP,0000,0000,0000,,and applicable to many different situations
+Dialogue: 0,0:33:18.57,0:33:20.50,*Default,NTP,0000,0000,0000,,is built into python
+Dialogue: 0,0:33:20.93,0:33:23.90,*Default,NTP,0000,0000,0000,,so if you find yourself implementing a function
+Dialogue: 0,0:33:24.00,0:33:26.80,*Default,NTP,0000,0000,0000,,that computes the size of the intersection
+Dialogue: 0,0:33:26.97,0:33:30.40,*Default,NTP,0000,0000,0000,,of two sets well probably that's built in
+Dialogue: 0,0:33:31.07,0:33:34.37,*Default,NTP,0000,0000,0000,,sets in python are just another container type
+Dialogue: 0,0:33:34.40,0:33:37.60,*Default,NTP,0000,0000,0000,,like a dictionary or a list or a tuple
+Dialogue: 0,0:33:38.13,0:33:40.93,*Default,NTP,0000,0000,0000,,set literals are enclosed in braces
+Dialogue: 0,0:33:41.53,0:33:45.80,*Default,NTP,0000,0000,0000,,but a set can't contain two of any element
+Dialogue: 0,0:33:45.90,0:33:48.73,*Default,NTP,0000,0000,0000,,no element of asset can be equal to
+Dialogue: 0,0:33:48.73,0:33:50.30,*Default,NTP,0000,0000,0000,,another element of asset
+Dialogue: 0,0:33:50.93,0:33:53.50,*Default,NTP,0000,0000,0000,,also sets are not ordered
+Dialogue: 0,0:33:53.60,0:33:56.70,*Default,NTP,0000,0000,0000,,python gives them some order when it displays them
+Dialogue: 0,0:33:56.70,0:33:58.97,*Default,NTP,0000,0000,0000,,or when you iterate through the elements
+Dialogue: 0,0:33:59.37,0:34:02.47,*Default,NTP,0000,0000,0000,,but you don't really have any control over that order
+Dialogue: 0,0:34:02.90,0:34:05.47,*Default,NTP,0000,0000,0000,,instead you put elements in a set
+Dialogue: 0,0:34:05.53,0:34:07.47,*Default,NTP,0000,0000,0000,,and then when you iterate through that set
+Dialogue: 0,0:34:07.47,0:34:10.30,*Default,NTP,0000,0000,0000,,you get any old order that python decides
+Dialogue: 0,0:34:10.33,0:34:13.77,*Default,NTP,0000,0000,0000,,so if I build a set one two three four and four
+Dialogue: 0,0:34:14.10,0:34:16.27,*Default,NTP,0000,0000,0000,,and I look at what's in that set
+Dialogue: 0,0:34:16.27,0:34:17.37,*Default,NTP,0000,0000,0000,,there will only be
+Dialogue: 0,0:34:17.47,0:34:18.93,*Default,NTP,0000,0000,0000,,four unique elements
+Dialogue: 0,0:34:18.93,0:34:21.87,*Default,NTP,0000,0000,0000,,rather than the five elements I tried to put in there
+Dialogue: 0,0:34:22.30,0:34:25.13,*Default,NTP,0000,0000,0000,,and they'll come in some arbitrary order
+Dialogue: 0,0:34:25.57,0:34:28.33,*Default,NTP,0000,0000,0000,,the main use of a set is to check whether some
+Dialogue: 0,0:34:28.33,0:34:29.87,*Default,NTP,0000,0000,0000,,element is in the set
+Dialogue: 0,0:34:30.30,0:34:33.80,*Default,NTP,0000,0000,0000,,and this is a constant time operation
+Dialogue: 0,0:34:34.33,0:34:37.20,*Default,NTP,0000,0000,0000,,checking whether some element is in a list is a
+Dialogue: 0,0:34:37.20,0:34:40.50,*Default,NTP,0000,0000,0000,,linear time operation in the length of the list
+Dialogue: 0,0:34:40.80,0:34:41.30,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:34:41.30,0:34:45.13,*Default,NTP,0000,0000,0000,,checking whether some things in a set is constant time
+Dialogue: 0,0:34:45.27,0:34:48.37,*Default,NTP,0000,0000,0000,,regardless of how many elements are in the set
+Dialogue: 0,0:34:48.73,0:34:51.17,*Default,NTP,0000,0000,0000,,you can figure out how many elements there are
+Dialogue: 0,0:34:51.37,0:34:55.27,*Default,NTP,0000,0000,0000,,using len and you can take the union of two sets
+Dialogue: 0,0:34:55.27,0:34:57.37,*Default,NTP,0000,0000,0000,,or the intersection of two sets
+Dialogue: 0,0:34:57.50,0:34:59.77,*Default,NTP,0000,0000,0000,,so to figure out how many elements
+Dialogue: 0,0:34:59.80,0:35:01.37,*Default,NTP,0000,0000,0000,,two sets have in common
+Dialogue: 0,0:35:01.47,0:35:04.10,*Default,NTP,0000,0000,0000,,you could take the len of the intersection
+Dialogue: 0,0:35:04.13,0:35:06.27,*Default,NTP,0000,0000,0000,,of one set and another set
+Dialogue: 0,0:35:06.57,0:35:09.80,*Default,NTP,0000,0000,0000,,union and intersection do not change the set
+Dialogue: 0,0:35:09.80,0:35:12.50,*Default,NTP,0000,0000,0000,,there are other methods for updating the set
+Dialogue: 0,0:35:12.50,0:35:15.40,*Default,NTP,0000,0000,0000,,but union in intersection create new sets
+Dialogue: 0,0:35:15.40,0:35:17.33,*Default,NTP,0000,0000,0000,,and leave the old sets alone
+Dialogue: 0,0:35:17.77,0:35:20.50,*Default,NTP,0000,0000,0000,,so s has not been mutated anywhere here
+Dialogue: 0,0:35:20.60,0:35:22.80,*Default,NTP,0000,0000,0000,,if you want to learn about set mutation
+Dialogue: 0,0:35:22.90,0:35:25.57,*Default,NTP,0000,0000,0000,,you can read about it in the python docks

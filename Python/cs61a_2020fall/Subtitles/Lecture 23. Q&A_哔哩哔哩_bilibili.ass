@@ -1,0 +1,892 @@
+[Script Info]
+Title: Lecture 23. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=57&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.32,0:00:03.12,*Default,NTP,0000,0000,0000,,61a lecture number 23 q
+Dialogue: 0,0:00:03.12,0:00:07.44,*Default,NTP,0000,0000,0000,,a so here we've got fall 2019 midterm
+Dialogue: 0,0:00:07.44,0:00:09.12,*Default,NTP,0000,0000,0000,,two question four
+Dialogue: 0,0:00:09.12,0:00:10.56,*Default,NTP,0000,0000,0000,,and i think we'll just go through it
+Dialogue: 0,0:00:10.56,0:00:12.56,*Default,NTP,0000,0000,0000,,implement stable
+Dialogue: 0,0:00:12.56,0:00:14.16,*Default,NTP,0000,0000,0000,,which takes a list of numbers as a
+Dialogue: 0,0:00:14.16,0:00:16.96,*Default,NTP,0000,0000,0000,,positive integer k and a non-negative
+Dialogue: 0,0:00:16.96,0:00:20.48,*Default,NTP,0000,0000,0000,,number and it returns whether all pairs
+Dialogue: 0,0:00:20.48,0:00:21.76,*Default,NTP,0000,0000,0000,,of values in
+Dialogue: 0,0:00:21.76,0:00:24.88,*Default,NTP,0000,0000,0000,,s with indices that differ by
+Dialogue: 0,0:00:24.88,0:00:28.16,*Default,NTP,0000,0000,0000,,at most k have an absolute difference in
+Dialogue: 0,0:00:28.16,0:00:28.96,*Default,NTP,0000,0000,0000,,value of
+Dialogue: 0,0:00:28.96,0:00:32.48,*Default,NTP,0000,0000,0000,,atmos and okay so
+Dialogue: 0,0:00:32.48,0:00:35.28,*Default,NTP,0000,0000,0000,,numbers near each other in the list need
+Dialogue: 0,0:00:35.28,0:00:38.40,*Default,NTP,0000,0000,0000,,to be near each other in quantity
+Dialogue: 0,0:00:38.40,0:00:40.72,*Default,NTP,0000,0000,0000,,the functions that aggregate iterable
+Dialogue: 0,0:00:40.72,0:00:43.28,*Default,NTP,0000,0000,0000,,arguments on the metric to study guide
+Dialogue: 0,0:00:43.28,0:00:44.88,*Default,NTP,0000,0000,0000,,have the following behavior when empty
+Dialogue: 0,0:00:44.88,0:00:46.56,*Default,NTP,0000,0000,0000,,list is zero
+Dialogue: 0,0:00:46.56,0:00:49.60,*Default,NTP,0000,0000,0000,,okay is this saying john like it's sort
+Dialogue: 0,0:00:49.60,0:00:50.16,*Default,NTP,0000,0000,0000,,of
+Dialogue: 0,0:00:50.16,0:00:53.52,*Default,NTP,0000,0000,0000,,sorted uh yeah kind of it's kind of
+Dialogue: 0,0:00:53.52,0:00:54.08,*Default,NTP,0000,0000,0000,,sorted
+Dialogue: 0,0:00:54.08,0:00:56.24,*Default,NTP,0000,0000,0000,,kinda sorted right you go up and down a
+Dialogue: 0,0:00:56.24,0:00:58.24,*Default,NTP,0000,0000,0000,,little bit but yeah you go yeah i have
+Dialogue: 0,0:00:58.24,0:00:59.92,*Default,NTP,0000,0000,0000,,two numbers that are very different next
+Dialogue: 0,0:00:59.92,0:01:00.80,*Default,NTP,0000,0000,0000,,to each other
+Dialogue: 0,0:01:00.80,0:01:04.16,*Default,NTP,0000,0000,0000,,right right cute
+Dialogue: 0,0:01:04.48,0:01:08.72,*Default,NTP,0000,0000,0000,,okay so let's see what we have
+Dialogue: 0,0:01:08.72,0:01:11.92,*Default,NTP,0000,0000,0000,,uh a bunch of numbers that are all near
+Dialogue: 0,0:01:11.92,0:01:13.44,*Default,NTP,0000,0000,0000,,each other
+Dialogue: 0,0:01:13.44,0:01:15.36,*Default,NTP,0000,0000,0000,,all the adjacent values differ by at
+Dialogue: 0,0:01:15.36,0:01:18.00,*Default,NTP,0000,0000,0000,,most two there's the two
+Dialogue: 0,0:01:18.00,0:01:22.08,*Default,NTP,0000,0000,0000,,there's the adjacent and so we get true
+Dialogue: 0,0:01:22.08,0:01:25.52,*Default,NTP,0000,0000,0000,,and then we have an example that says uh
+Dialogue: 0,0:01:25.52,0:01:28.80,*Default,NTP,0000,0000,0000,,same numbers but a different
+Dialogue: 0,0:01:28.80,0:01:32.16,*Default,NTP,0000,0000,0000,,k this says even numbers that are two
+Dialogue: 0,0:01:32.16,0:01:33.36,*Default,NTP,0000,0000,0000,,apart
+Dialogue: 0,0:01:33.36,0:01:36.80,*Default,NTP,0000,0000,0000,,like three and six or five and two
+Dialogue: 0,0:01:36.80,0:01:38.80,*Default,NTP,0000,0000,0000,,are supposed to be only two away from
+Dialogue: 0,0:01:38.80,0:01:40.24,*Default,NTP,0000,0000,0000,,each other in quantity
+Dialogue: 0,0:01:40.24,0:01:43.60,*Default,NTP,0000,0000,0000,,and that's not true so we get false
+Dialogue: 0,0:01:43.60,0:01:47.36,*Default,NTP,0000,0000,0000,,and this last example um
+Dialogue: 0,0:01:47.36,0:01:49.44,*Default,NTP,0000,0000,0000,,has ones and fives next to each other
+Dialogue: 0,0:01:49.44,0:01:51.44,*Default,NTP,0000,0000,0000,,and that's bad
+Dialogue: 0,0:01:51.44,0:01:52.80,*Default,NTP,0000,0000,0000,,all right so what are we going to do
+Dialogue: 0,0:01:52.80,0:01:54.48,*Default,NTP,0000,0000,0000,,well um
+Dialogue: 0,0:01:54.48,0:01:56.72,*Default,NTP,0000,0000,0000,,go through all the numbers this is what
+Dialogue: 0,0:01:56.72,0:01:58.24,*Default,NTP,0000,0000,0000,,this says
+Dialogue: 0,0:01:58.24,0:01:59.36,*Default,NTP,0000,0000,0000,,well actually this goes through all the
+Dialogue: 0,0:01:59.36,0:02:01.92,*Default,NTP,0000,0000,0000,,indices so we get all the positions
+Dialogue: 0,0:02:01.92,0:02:04.40,*Default,NTP,0000,0000,0000,,within s
+Dialogue: 0,0:02:04.40,0:02:06.40,*Default,NTP,0000,0000,0000,,we're going to get a range of other
+Dialogue: 0,0:02:06.40,0:02:08.16,*Default,NTP,0000,0000,0000,,positions and it's called near
+Dialogue: 0,0:02:08.16,0:02:09.84,*Default,NTP,0000,0000,0000,,which i think is an indication that
+Dialogue: 0,0:02:09.84,0:02:11.76,*Default,NTP,0000,0000,0000,,these are the numbers that are kind of
+Dialogue: 0,0:02:11.76,0:02:13.52,*Default,NTP,0000,0000,0000,,just before it
+Dialogue: 0,0:02:13.52,0:02:15.36,*Default,NTP,0000,0000,0000,,why just before it well it goes up to
+Dialogue: 0,0:02:15.36,0:02:17.52,*Default,NTP,0000,0000,0000,,but not including i
+Dialogue: 0,0:02:17.52,0:02:20.64,*Default,NTP,0000,0000,0000,,and then we have an if statement
+Dialogue: 0,0:02:20.64,0:02:22.96,*Default,NTP,0000,0000,0000,,and some big gnarly expression that we
+Dialogue: 0,0:02:22.96,0:02:24.48,*Default,NTP,0000,0000,0000,,need to fill in
+Dialogue: 0,0:02:24.48,0:02:27.04,*Default,NTP,0000,0000,0000,,and then we return false so this general
+Dialogue: 0,0:02:27.04,0:02:28.16,*Default,NTP,0000,0000,0000,,structure which says
+Dialogue: 0,0:02:28.16,0:02:31.52,*Default,NTP,0000,0000,0000,,for a bunch of examples if we find
+Dialogue: 0,0:02:31.52,0:02:32.88,*Default,NTP,0000,0000,0000,,something is true
+Dialogue: 0,0:02:32.88,0:02:36.00,*Default,NTP,0000,0000,0000,,then we return false otherwise after
+Dialogue: 0,0:02:36.00,0:02:37.92,*Default,NTP,0000,0000,0000,,we've gone through all the examples if
+Dialogue: 0,0:02:37.92,0:02:39.92,*Default,NTP,0000,0000,0000,,we never found something that proves it
+Dialogue: 0,0:02:39.92,0:02:40.64,*Default,NTP,0000,0000,0000,,false
+Dialogue: 0,0:02:40.64,0:02:43.92,*Default,NTP,0000,0000,0000,,then we return true is kind of a typical
+Dialogue: 0,0:02:43.92,0:02:46.24,*Default,NTP,0000,0000,0000,,structure for checking some condition
+Dialogue: 0,0:02:46.24,0:02:48.16,*Default,NTP,0000,0000,0000,,about every position in a list or
+Dialogue: 0,0:02:48.16,0:02:49.12,*Default,NTP,0000,0000,0000,,something like that
+Dialogue: 0,0:02:49.12,0:02:50.64,*Default,NTP,0000,0000,0000,,so you go through all the positions in
+Dialogue: 0,0:02:50.64,0:02:52.40,*Default,NTP,0000,0000,0000,,the list you look and see if the
+Dialogue: 0,0:02:52.40,0:02:55.28,*Default,NTP,0000,0000,0000,,condition is violated if so you're done
+Dialogue: 0,0:02:55.28,0:02:57.20,*Default,NTP,0000,0000,0000,,and if you never find such a problem
+Dialogue: 0,0:02:57.20,0:02:58.40,*Default,NTP,0000,0000,0000,,then you have
+Dialogue: 0,0:02:58.40,0:03:01.04,*Default,NTP,0000,0000,0000,,decided well it's stable so what is this
+Dialogue: 0,0:03:01.04,0:03:02.40,*Default,NTP,0000,0000,0000,,condition we're going to look for
+Dialogue: 0,0:03:02.40,0:03:04.32,*Default,NTP,0000,0000,0000,,we're going to look for two numbers and
+Dialogue: 0,0:03:04.32,0:03:06.72,*Default,NTP,0000,0000,0000,,where the difference is to be
+Dialogue: 0,0:03:06.72,0:03:10.32,*Default,NTP,0000,0000,0000,,so the way i would think about this is
+Dialogue: 0,0:03:10.32,0:03:10.96,*Default,NTP,0000,0000,0000,,to say
+Dialogue: 0,0:03:10.96,0:03:13.04,*Default,NTP,0000,0000,0000,,let's pick an i we're gonna go through
+Dialogue: 0,0:03:13.04,0:03:14.00,*Default,NTP,0000,0000,0000,,all the i's
+Dialogue: 0,0:03:14.00,0:03:18.00,*Default,NTP,0000,0000,0000,,so let's pick uh i equals
+Dialogue: 0,0:03:18.00,0:03:21.52,*Default,NTP,0000,0000,0000,,0 1 2 3. and this is an example so if i
+Dialogue: 0,0:03:21.52,0:03:24.24,*Default,NTP,0000,0000,0000,,is 3 then we need to be able to detect
+Dialogue: 0,0:03:24.24,0:03:25.52,*Default,NTP,0000,0000,0000,,that 5 and 2
+Dialogue: 0,0:03:25.52,0:03:28.40,*Default,NTP,0000,0000,0000,,are too different from each other so
+Dialogue: 0,0:03:28.40,0:03:29.60,*Default,NTP,0000,0000,0000,,what are we going to check
+Dialogue: 0,0:03:29.60,0:03:32.40,*Default,NTP,0000,0000,0000,,for all the other values j we're gonna
+Dialogue: 0,0:03:32.40,0:03:33.76,*Default,NTP,0000,0000,0000,,have to check
+Dialogue: 0,0:03:33.76,0:03:37.44,*Default,NTP,0000,0000,0000,,one and two check
+Dialogue: 0,0:03:37.44,0:03:41.28,*Default,NTP,0000,0000,0000,,compare s1 to s3 and compare s2 to s3
+Dialogue: 0,0:03:41.28,0:03:42.88,*Default,NTP,0000,0000,0000,,so that helps me figure out what my
+Dialogue: 0,0:03:42.88,0:03:44.88,*Default,NTP,0000,0000,0000,,range is if this is three
+Dialogue: 0,0:03:44.88,0:03:46.72,*Default,NTP,0000,0000,0000,,then i need to go from one to three
+Dialogue: 0,0:03:46.72,0:03:48.40,*Default,NTP,0000,0000,0000,,which i think is
+Dialogue: 0,0:03:48.40,0:03:52.08,*Default,NTP,0000,0000,0000,,i minus uh
+Dialogue: 0,0:03:52.08,0:03:55.60,*Default,NTP,0000,0000,0000,,what's that is it k or n n
+Dialogue: 0,0:03:55.60,0:04:00.32,*Default,NTP,0000,0000,0000,,magnitude and k is how far you go
+Dialogue: 0,0:04:00.32,0:04:02.80,*Default,NTP,0000,0000,0000,,now um we kind of don't want to go off
+Dialogue: 0,0:04:02.80,0:04:03.84,*Default,NTP,0000,0000,0000,,the beginning
+Dialogue: 0,0:04:03.84,0:04:05.92,*Default,NTP,0000,0000,0000,,so it might be worth saying i don't want
+Dialogue: 0,0:04:05.92,0:04:07.20,*Default,NTP,0000,0000,0000,,this to ever be
+Dialogue: 0,0:04:07.20,0:04:10.56,*Default,NTP,0000,0000,0000,,smaller than zero and john can you
+Dialogue: 0,0:04:10.56,0:04:11.60,*Default,NTP,0000,0000,0000,,explain why you're not
+Dialogue: 0,0:04:11.60,0:04:13.36,*Default,NTP,0000,0000,0000,,going in the other direction like why
+Dialogue: 0,0:04:13.36,0:04:14.88,*Default,NTP,0000,0000,0000,,are you only looking backwards not
+Dialogue: 0,0:04:14.88,0:04:16.08,*Default,NTP,0000,0000,0000,,forward
+Dialogue: 0,0:04:16.08,0:04:17.84,*Default,NTP,0000,0000,0000,,oh good question yeah so this would only
+Dialogue: 0,0:04:17.84,0:04:19.20,*Default,NTP,0000,0000,0000,,look backwards
+Dialogue: 0,0:04:19.20,0:04:22.64,*Default,NTP,0000,0000,0000,,um and if you check each number and
+Dialogue: 0,0:04:22.64,0:04:24.32,*Default,NTP,0000,0000,0000,,everything before it
+Dialogue: 0,0:04:24.32,0:04:26.00,*Default,NTP,0000,0000,0000,,since this is kind of a symmetrical
+Dialogue: 0,0:04:26.00,0:04:28.00,*Default,NTP,0000,0000,0000,,check that's the same as checking each
+Dialogue: 0,0:04:28.00,0:04:30.08,*Default,NTP,0000,0000,0000,,number and everything after it so you
+Dialogue: 0,0:04:30.08,0:04:32.08,*Default,NTP,0000,0000,0000,,kind of don't have to do both
+Dialogue: 0,0:04:32.08,0:04:34.08,*Default,NTP,0000,0000,0000,,even though the condition is described
+Dialogue: 0,0:04:34.08,0:04:36.40,*Default,NTP,0000,0000,0000,,as pairs of elements
+Dialogue: 0,0:04:36.40,0:04:38.08,*Default,NTP,0000,0000,0000,,it's it's fine to get all the pairs of
+Dialogue: 0,0:04:38.08,0:04:39.52,*Default,NTP,0000,0000,0000,,elements by taking each one
+Dialogue: 0,0:04:39.52,0:04:41.60,*Default,NTP,0000,0000,0000,,and then the ones before it we could
+Dialogue: 0,0:04:41.60,0:04:43.12,*Default,NTP,0000,0000,0000,,have also changed the range
+Dialogue: 0,0:04:43.12,0:04:45.68,*Default,NTP,0000,0000,0000,,not to start at zero we could have
+Dialogue: 0,0:04:45.68,0:04:47.20,*Default,NTP,0000,0000,0000,,started at a k
+Dialogue: 0,0:04:47.20,0:04:48.72,*Default,NTP,0000,0000,0000,,because there's no reason because the
+Dialogue: 0,0:04:48.72,0:04:49.92,*Default,NTP,0000,0000,0000,,first then we wouldn't have to worry
+Dialogue: 0,0:04:49.92,0:04:51.44,*Default,NTP,0000,0000,0000,,about that max but i think it's fine the
+Dialogue: 0,0:04:51.44,0:04:53.44,*Default,NTP,0000,0000,0000,,way it is too
+Dialogue: 0,0:04:53.44,0:04:55.76,*Default,NTP,0000,0000,0000,,uh yeah i'm sure there's other ways to
+Dialogue: 0,0:04:55.76,0:04:57.76,*Default,NTP,0000,0000,0000,,write that
+Dialogue: 0,0:04:57.76,0:04:59.84,*Default,NTP,0000,0000,0000,,okay so now we need to figure out how to
+Dialogue: 0,0:04:59.84,0:05:01.52,*Default,NTP,0000,0000,0000,,check for this condition well let's see
+Dialogue: 0,0:05:01.52,0:05:02.96,*Default,NTP,0000,0000,0000,,what we have we're building a list
+Dialogue: 0,0:05:02.96,0:05:04.16,*Default,NTP,0000,0000,0000,,comprehension
+Dialogue: 0,0:05:04.16,0:05:08.16,*Default,NTP,0000,0000,0000,,that says yes something greater than n
+Dialogue: 0,0:05:08.16,0:05:11.36,*Default,NTP,0000,0000,0000,,for j in near
+Dialogue: 0,0:05:11.36,0:05:14.64,*Default,NTP,0000,0000,0000,,so j and i are both gonna be bound
+Dialogue: 0,0:05:14.64,0:05:16.96,*Default,NTP,0000,0000,0000,,in this expression right here i was
+Dialogue: 0,0:05:16.96,0:05:17.92,*Default,NTP,0000,0000,0000,,bound up here
+Dialogue: 0,0:05:17.92,0:05:21.44,*Default,NTP,0000,0000,0000,,to three j is bound down here
+Dialogue: 0,0:05:21.44,0:05:24.16,*Default,NTP,0000,0000,0000,,to one and we're trying to figure out
+Dialogue: 0,0:05:24.16,0:05:25.12,*Default,NTP,0000,0000,0000,,whether
+Dialogue: 0,0:05:25.12,0:05:28.80,*Default,NTP,0000,0000,0000,,that pair of indices causes a problem
+Dialogue: 0,0:05:28.80,0:05:30.64,*Default,NTP,0000,0000,0000,,and that problem would be if the
+Dialogue: 0,0:05:30.64,0:05:32.48,*Default,NTP,0000,0000,0000,,absolute value
+Dialogue: 0,0:05:32.48,0:05:35.84,*Default,NTP,0000,0000,0000,,of the difference between s i
+Dialogue: 0,0:05:35.84,0:05:40.56,*Default,NTP,0000,0000,0000,,and s j is greater than it
+Dialogue: 0,0:05:41.76,0:05:45.52,*Default,NTP,0000,0000,0000,,so this expression is going to give you
+Dialogue: 0,0:05:45.52,0:05:49.28,*Default,NTP,0000,0000,0000,,true if there's a problem
+Dialogue: 0,0:05:49.28,0:05:52.56,*Default,NTP,0000,0000,0000,,and it's going to check each index in
+Dialogue: 0,0:05:52.56,0:05:53.20,*Default,NTP,0000,0000,0000,,turn for
+Dialogue: 0,0:05:53.20,0:05:55.44,*Default,NTP,0000,0000,0000,,all the different js one and two in this
+Dialogue: 0,0:05:55.44,0:05:56.96,*Default,NTP,0000,0000,0000,,case
+Dialogue: 0,0:05:56.96,0:05:59.76,*Default,NTP,0000,0000,0000,,if any of those is a problem then
+Dialogue: 0,0:05:59.76,0:06:01.36,*Default,NTP,0000,0000,0000,,there's a problem with the whole
+Dialogue: 0,0:06:01.36,0:06:04.08,*Default,NTP,0000,0000,0000,,sequence so that's why we will aggregate
+Dialogue: 0,0:06:04.08,0:06:04.84,*Default,NTP,0000,0000,0000,,with the
+Dialogue: 0,0:06:04.84,0:06:08.48,*Default,NTP,0000,0000,0000,,any function which takes in a list of
+Dialogue: 0,0:06:08.48,0:06:10.24,*Default,NTP,0000,0000,0000,,true false values and tells you whether
+Dialogue: 0,0:06:10.24,0:06:11.60,*Default,NTP,0000,0000,0000,,any of them is true
+Dialogue: 0,0:06:11.60,0:06:14.56,*Default,NTP,0000,0000,0000,,if any of these differences is bigger
+Dialogue: 0,0:06:14.56,0:06:15.52,*Default,NTP,0000,0000,0000,,than n
+Dialogue: 0,0:06:15.52,0:06:18.80,*Default,NTP,0000,0000,0000,,then the whole sequence
+Dialogue: 0,0:06:18.80,0:06:21.52,*Default,NTP,0000,0000,0000,,is not stable then someone asked if i
+Dialogue: 0,0:06:21.52,0:06:24.00,*Default,NTP,0000,0000,0000,,could explain the near part again
+Dialogue: 0,0:06:24.00,0:06:27.68,*Default,NTP,0000,0000,0000,,yeah so near is supposed to i is already
+Dialogue: 0,0:06:27.68,0:06:29.60,*Default,NTP,0000,0000,0000,,set for us
+Dialogue: 0,0:06:29.60,0:06:31.92,*Default,NTP,0000,0000,0000,,and so it's gonna go through from zero
+Dialogue: 0,0:06:31.92,0:06:33.92,*Default,NTP,0000,0000,0000,,to one to two to three to 4 for these
+Dialogue: 0,0:06:33.92,0:06:35.04,*Default,NTP,0000,0000,0000,,examples
+Dialogue: 0,0:06:35.04,0:06:38.40,*Default,NTP,0000,0000,0000,,and for each of those ending values
+Dialogue: 0,0:06:38.40,0:06:41.20,*Default,NTP,0000,0000,0000,,we're going to consider other numbers
+Dialogue: 0,0:06:41.20,0:06:42.96,*Default,NTP,0000,0000,0000,,that are nearby
+Dialogue: 0,0:06:42.96,0:06:45.28,*Default,NTP,0000,0000,0000,,and we need to come up with a range of
+Dialogue: 0,0:06:45.28,0:06:46.08,*Default,NTP,0000,0000,0000,,indices
+Dialogue: 0,0:06:46.08,0:06:49.60,*Default,NTP,0000,0000,0000,,for those other numbers and we do that
+Dialogue: 0,0:06:49.60,0:06:52.16,*Default,NTP,0000,0000,0000,,by computing how far back do we have to
+Dialogue: 0,0:06:52.16,0:06:53.68,*Default,NTP,0000,0000,0000,,go from i
+Dialogue: 0,0:06:53.68,0:06:56.72,*Default,NTP,0000,0000,0000,,if we went back to zero that would be
+Dialogue: 0,0:06:56.72,0:06:57.68,*Default,NTP,0000,0000,0000,,too far
+Dialogue: 0,0:06:57.68,0:06:59.44,*Default,NTP,0000,0000,0000,,the condition is only about stuff that's
+Dialogue: 0,0:06:59.44,0:07:01.84,*Default,NTP,0000,0000,0000,,nearby and then i think it's worth just
+Dialogue: 0,0:07:01.84,0:07:03.36,*Default,NTP,0000,0000,0000,,thinking about examples
+Dialogue: 0,0:07:03.36,0:07:06.64,*Default,NTP,0000,0000,0000,,so if i is three
+Dialogue: 0,0:07:06.96,0:07:09.52,*Default,NTP,0000,0000,0000,,when i is three then what we really want
+Dialogue: 0,0:07:09.52,0:07:11.12,*Default,NTP,0000,0000,0000,,is a range from one to three
+Dialogue: 0,0:07:11.12,0:07:13.12,*Default,NTP,0000,0000,0000,,so we can get i'm doing this example
+Dialogue: 0,0:07:13.12,0:07:15.36,*Default,NTP,0000,0000,0000,,this center one so that we can get
+Dialogue: 0,0:07:15.36,0:07:18.96,*Default,NTP,0000,0000,0000,,2 and the 3 and compare that to the 5.
+Dialogue: 0,0:07:18.96,0:07:23.68,*Default,NTP,0000,0000,0000,,if i is 1 then we really just care about
+Dialogue: 0,0:07:23.68,0:07:25.76,*Default,NTP,0000,0000,0000,,the 0th position so that would be a
+Dialogue: 0,0:07:25.76,0:07:27.68,*Default,NTP,0000,0000,0000,,range from 0 to 1.
+Dialogue: 0,0:07:27.68,0:07:31.20,*Default,NTP,0000,0000,0000,,if i is 4 then we care about a range
+Dialogue: 0,0:07:31.20,0:07:31.92,*Default,NTP,0000,0000,0000,,from
+Dialogue: 0,0:07:31.92,0:07:33.52,*Default,NTP,0000,0000,0000,,okay so i is four we care about
+Dialogue: 0,0:07:33.52,0:07:34.96,*Default,NTP,0000,0000,0000,,comparing that to the three and the five
+Dialogue: 0,0:07:34.96,0:07:37.12,*Default,NTP,0000,0000,0000,,that's index number two and number three
+Dialogue: 0,0:07:37.12,0:07:40.08,*Default,NTP,0000,0000,0000,,so we really wanna go to two and three
+Dialogue: 0,0:07:40.08,0:07:40.64,*Default,NTP,0000,0000,0000,,and so
+Dialogue: 0,0:07:40.64,0:07:42.08,*Default,NTP,0000,0000,0000,,like you can just think about each of
+Dialogue: 0,0:07:42.08,0:07:43.68,*Default,NTP,0000,0000,0000,,these examples and figure out what's a
+Dialogue: 0,0:07:43.68,0:07:45.92,*Default,NTP,0000,0000,0000,,general expression that describes
+Dialogue: 0,0:07:45.92,0:07:48.64,*Default,NTP,0000,0000,0000,,the first number in all of these and the
+Dialogue: 0,0:07:48.64,0:07:52.00,*Default,NTP,0000,0000,0000,,second number is always just i
+Dialogue: 0,0:07:52.88,0:07:54.40,*Default,NTP,0000,0000,0000,,the next question was whether there were
+Dialogue: 0,0:07:54.40,0:07:56.08,*Default,NTP,0000,0000,0000,,any good resources
+Dialogue: 0,0:07:56.08,0:07:58.24,*Default,NTP,0000,0000,0000,,for learning how to think logically
+Dialogue: 0,0:07:58.24,0:08:00.08,*Default,NTP,0000,0000,0000,,because solving these problems
+Dialogue: 0,0:08:00.08,0:08:01.84,*Default,NTP,0000,0000,0000,,isn't just about knowing the mechanics
+Dialogue: 0,0:08:01.84,0:08:03.20,*Default,NTP,0000,0000,0000,,of the programming language
+Dialogue: 0,0:08:03.20,0:08:05.20,*Default,NTP,0000,0000,0000,,you also have to think logically about
+Dialogue: 0,0:08:05.20,0:08:08.00,*Default,NTP,0000,0000,0000,,how to solve the particular problem
+Dialogue: 0,0:08:08.00,0:08:10.80,*Default,NTP,0000,0000,0000,,yeah let me before i i don't know about
+Dialogue: 0,0:08:10.80,0:08:12.40,*Default,NTP,0000,0000,0000,,a lot of resources but let me point out
+Dialogue: 0,0:08:12.40,0:08:14.08,*Default,NTP,0000,0000,0000,,a few things when you're solving these
+Dialogue: 0,0:08:14.08,0:08:15.60,*Default,NTP,0000,0000,0000,,problems
+Dialogue: 0,0:08:15.60,0:08:17.36,*Default,NTP,0000,0000,0000,,i think there's a tendency because of
+Dialogue: 0,0:08:17.36,0:08:19.12,*Default,NTP,0000,0000,0000,,the way the educational system tends to
+Dialogue: 0,0:08:19.12,0:08:20.00,*Default,NTP,0000,0000,0000,,work
+Dialogue: 0,0:08:20.00,0:08:23.44,*Default,NTP,0000,0000,0000,,is to favor and reward memorization
+Dialogue: 0,0:08:23.44,0:08:25.68,*Default,NTP,0000,0000,0000,,right like i've seen this problem i see
+Dialogue: 0,0:08:25.68,0:08:26.56,*Default,NTP,0000,0000,0000,,the problem again
+Dialogue: 0,0:08:26.56,0:08:28.32,*Default,NTP,0000,0000,0000,,i know the answer done and a lot of
+Dialogue: 0,0:08:28.32,0:08:29.92,*Default,NTP,0000,0000,0000,,mathematics frankly is taught that way
+Dialogue: 0,0:08:29.92,0:08:31.28,*Default,NTP,0000,0000,0000,,and it's pretty bad
+Dialogue: 0,0:08:31.28,0:08:33.20,*Default,NTP,0000,0000,0000,,and so the thing to take away from these
+Dialogue: 0,0:08:33.20,0:08:35.28,*Default,NTP,0000,0000,0000,,problems is not
+Dialogue: 0,0:08:35.28,0:08:36.96,*Default,NTP,0000,0000,0000,,you know this is how you solve this
+Dialogue: 0,0:08:36.96,0:08:39.12,*Default,NTP,0000,0000,0000,,problem but it's the logic for example
+Dialogue: 0,0:08:39.12,0:08:40.08,*Default,NTP,0000,0000,0000,,that john just gave
+Dialogue: 0,0:08:40.08,0:08:42.00,*Default,NTP,0000,0000,0000,,us that said there's a really nice
+Dialogue: 0,0:08:42.00,0:08:43.36,*Default,NTP,0000,0000,0000,,construct here
+Dialogue: 0,0:08:43.36,0:08:45.12,*Default,NTP,0000,0000,0000,,where you check something if anything
+Dialogue: 0,0:08:45.12,0:08:46.72,*Default,NTP,0000,0000,0000,,returns false
+Dialogue: 0,0:08:46.72,0:08:49.44,*Default,NTP,0000,0000,0000,,then you are done otherwise you return
+Dialogue: 0,0:08:49.44,0:08:51.04,*Default,NTP,0000,0000,0000,,true so what you're going to see in a
+Dialogue: 0,0:08:51.04,0:08:52.88,*Default,NTP,0000,0000,0000,,lot of these problems it's not about
+Dialogue: 0,0:08:52.88,0:08:54.24,*Default,NTP,0000,0000,0000,,solving stable
+Dialogue: 0,0:08:54.24,0:08:56.00,*Default,NTP,0000,0000,0000,,it's about the constructs that we use
+Dialogue: 0,0:08:56.00,0:08:57.76,*Default,NTP,0000,0000,0000,,it's how we put together
+Dialogue: 0,0:08:57.76,0:08:59.84,*Default,NTP,0000,0000,0000,,the constructs and the conditionals and
+Dialogue: 0,0:08:59.84,0:09:02.48,*Default,NTP,0000,0000,0000,,the variable assignments and all of that
+Dialogue: 0,0:09:02.48,0:09:05.12,*Default,NTP,0000,0000,0000,,so part of the part of the goal here is
+Dialogue: 0,0:09:05.12,0:09:08.80,*Default,NTP,0000,0000,0000,,to really um um
+Dialogue: 0,0:09:08.80,0:09:10.48,*Default,NTP,0000,0000,0000,,separate yourself a little bit from the
+Dialogue: 0,0:09:10.48,0:09:12.48,*Default,NTP,0000,0000,0000,,actual details of the problem
+Dialogue: 0,0:09:12.48,0:09:14.88,*Default,NTP,0000,0000,0000,,and think about the overall structure of
+Dialogue: 0,0:09:14.88,0:09:17.12,*Default,NTP,0000,0000,0000,,how we're putting these pieces together
+Dialogue: 0,0:09:17.12,0:09:18.88,*Default,NTP,0000,0000,0000,,and then what you'll see is that those
+Dialogue: 0,0:09:18.88,0:09:20.80,*Default,NTP,0000,0000,0000,,are what generalize across problems
+Dialogue: 0,0:09:20.80,0:09:21.28,*Default,NTP,0000,0000,0000,,you'll see
+Dialogue: 0,0:09:21.28,0:09:24.00,*Default,NTP,0000,0000,0000,,themes over and over again right so you
+Dialogue: 0,0:09:24.00,0:09:25.28,*Default,NTP,0000,0000,0000,,know there's a finite set of problems we
+Dialogue: 0,0:09:25.28,0:09:26.24,*Default,NTP,0000,0000,0000,,can we can
+Dialogue: 0,0:09:26.24,0:09:27.92,*Default,NTP,0000,0000,0000,,specify but what you'll see is that the
+Dialogue: 0,0:09:27.92,0:09:30.48,*Default,NTP,0000,0000,0000,,underlying structure is pretty similar
+Dialogue: 0,0:09:30.48,0:09:32.16,*Default,NTP,0000,0000,0000,,well you'll see patterns across that is
+Dialogue: 0,0:09:32.16,0:09:34.08,*Default,NTP,0000,0000,0000,,what i should say
+Dialogue: 0,0:09:34.08,0:09:36.00,*Default,NTP,0000,0000,0000,,maybe john has suggestions for other
+Dialogue: 0,0:09:36.00,0:09:37.28,*Default,NTP,0000,0000,0000,,resources
+Dialogue: 0,0:09:37.28,0:09:38.80,*Default,NTP,0000,0000,0000,,yeah i thought that was a good
+Dialogue: 0,0:09:38.80,0:09:40.96,*Default,NTP,0000,0000,0000,,explanation i don't uh
+Dialogue: 0,0:09:40.96,0:09:44.08,*Default,NTP,0000,0000,0000,,know of any resources about logical
+Dialogue: 0,0:09:44.08,0:09:46.40,*Default,NTP,0000,0000,0000,,thinking that are like really great
+Dialogue: 0,0:09:46.40,0:09:49.60,*Default,NTP,0000,0000,0000,,um most people learn it kind of by
+Dialogue: 0,0:09:49.60,0:09:51.20,*Default,NTP,0000,0000,0000,,working through a lot of problems in
+Dialogue: 0,0:09:51.20,0:09:53.84,*Default,NTP,0000,0000,0000,,this course and it's not uncommon at all
+Dialogue: 0,0:09:53.84,0:09:55.68,*Default,NTP,0000,0000,0000,,that it is
+Dialogue: 0,0:09:55.68,0:09:59.04,*Default,NTP,0000,0000,0000,,not something that just comes easily but
+Dialogue: 0,0:09:59.04,0:10:02.56,*Default,NTP,0000,0000,0000,,practice does seem to help a lot and
+Dialogue: 0,0:10:02.56,0:10:04.48,*Default,NTP,0000,0000,0000,,there are relationships between problems
+Dialogue: 0,0:10:04.48,0:10:05.84,*Default,NTP,0000,0000,0000,,just as honey said
+Dialogue: 0,0:10:05.84,0:10:09.04,*Default,NTP,0000,0000,0000,,i think that's uh that's
+Dialogue: 0,0:10:09.04,0:10:10.88,*Default,NTP,0000,0000,0000,,true that as you kind of work through
+Dialogue: 0,0:10:10.88,0:10:12.24,*Default,NTP,0000,0000,0000,,more of these problems
+Dialogue: 0,0:10:12.24,0:10:13.84,*Default,NTP,0000,0000,0000,,you just recognize like oh this is
+Dialogue: 0,0:10:13.84,0:10:15.20,*Default,NTP,0000,0000,0000,,pretty similar to something i've seen
+Dialogue: 0,0:10:15.20,0:10:16.16,*Default,NTP,0000,0000,0000,,before
+Dialogue: 0,0:10:16.16,0:10:17.92,*Default,NTP,0000,0000,0000,,and if it's something you haven't seen
+Dialogue: 0,0:10:17.92,0:10:19.44,*Default,NTP,0000,0000,0000,,before well sometimes you can just kind
+Dialogue: 0,0:10:19.44,0:10:20.96,*Default,NTP,0000,0000,0000,,of work it out on the fly
+Dialogue: 0,0:10:20.96,0:10:22.88,*Default,NTP,0000,0000,0000,,and sometimes you can't and so that's
+Dialogue: 0,0:10:22.88,0:10:24.32,*Default,NTP,0000,0000,0000,,why uh practicing a little bit
+Dialogue: 0,0:10:24.32,0:10:25.20,*Default,NTP,0000,0000,0000,,beforehand
+Dialogue: 0,0:10:25.20,0:10:28.00,*Default,NTP,0000,0000,0000,,just to have seen some similar problems
+Dialogue: 0,0:10:28.00,0:10:30.96,*Default,NTP,0000,0000,0000,,is a good way to prepare
+Dialogue: 0,0:10:30.96,0:10:33.64,*Default,NTP,0000,0000,0000,,okay so we're gonna look at uh spring
+Dialogue: 0,0:10:33.64,0:10:34.80,*Default,NTP,0000,0000,0000,,2020
+Dialogue: 0,0:10:34.80,0:10:37.92,*Default,NTP,0000,0000,0000,,midterm two question two part
+Dialogue: 0,0:10:37.92,0:10:41.28,*Default,NTP,0000,0000,0000,,b and try to focus on the question of
+Dialogue: 0,0:10:41.28,0:10:43.04,*Default,NTP,0000,0000,0000,,you know when you make a recursive leap
+Dialogue: 0,0:10:43.04,0:10:44.84,*Default,NTP,0000,0000,0000,,of faith
+Dialogue: 0,0:10:44.84,0:10:47.84,*Default,NTP,0000,0000,0000,,um does it work
+Dialogue: 0,0:10:47.84,0:10:50.88,*Default,NTP,0000,0000,0000,,i guess and what can go wrong so
+Dialogue: 0,0:10:50.88,0:10:53.04,*Default,NTP,0000,0000,0000,,uh we've already let's say solve this
+Dialogue: 0,0:10:53.04,0:10:55.36,*Default,NTP,0000,0000,0000,,power which takes positive integer
+Dialogue: 0,0:10:55.36,0:10:58.00,*Default,NTP,0000,0000,0000,,and returns whether s is a power of the
+Dialogue: 0,0:10:58.00,0:10:58.48,*Default,NTP,0000,0000,0000,,base
+Dialogue: 0,0:10:58.48,0:11:01.92,*Default,NTP,0000,0000,0000,,okay and now we're gonna do
+Dialogue: 0,0:11:01.92,0:11:04.24,*Default,NTP,0000,0000,0000,,implement powers a generator function
+Dialogue: 0,0:11:04.24,0:11:06.72,*Default,NTP,0000,0000,0000,,which takes positive integers n and k
+Dialogue: 0,0:11:06.72,0:11:10.24,*Default,NTP,0000,0000,0000,,it yields all integers m that are both
+Dialogue: 0,0:11:10.24,0:11:13.60,*Default,NTP,0000,0000,0000,,powers of k and whose digits appear
+Dialogue: 0,0:11:13.60,0:11:16.64,*Default,NTP,0000,0000,0000,,in order in n
+Dialogue: 0,0:11:16.64,0:11:19.76,*Default,NTP,0000,0000,0000,,oh fantastic
+Dialogue: 0,0:11:20.00,0:11:22.00,*Default,NTP,0000,0000,0000,,so what does this mean you look at the
+Dialogue: 0,0:11:22.00,0:11:23.52,*Default,NTP,0000,0000,0000,,digits that you're given one two three
+Dialogue: 0,0:11:23.52,0:11:24.64,*Default,NTP,0000,0000,0000,,four five
+Dialogue: 0,0:11:24.64,0:11:26.88,*Default,NTP,0000,0000,0000,,and you can take subsets of those digits
+Dialogue: 0,0:11:26.88,0:11:28.72,*Default,NTP,0000,0000,0000,,like just the two and the five
+Dialogue: 0,0:11:28.72,0:11:31.04,*Default,NTP,0000,0000,0000,,and if that's the power of five then
+Dialogue: 0,0:11:31.04,0:11:34.40,*Default,NTP,0000,0000,0000,,that should be part of the result
+Dialogue: 0,0:11:35.52,0:11:37.60,*Default,NTP,0000,0000,0000,,doesn't sound easy but we can take a
+Dialogue: 0,0:11:37.60,0:11:38.72,*Default,NTP,0000,0000,0000,,look
+Dialogue: 0,0:11:38.72,0:11:42.24,*Default,NTP,0000,0000,0000,,so we are filtering basically like when
+Dialogue: 0,0:11:42.24,0:11:43.68,*Default,NTP,0000,0000,0000,,i see filter
+Dialogue: 0,0:11:43.68,0:11:47.36,*Default,NTP,0000,0000,0000,,i assume this is about find all of the
+Dialogue: 0,0:11:47.36,0:11:47.92,*Default,NTP,0000,0000,0000,,ways
+Dialogue: 0,0:11:47.92,0:11:51.20,*Default,NTP,0000,0000,0000,,in which you can build up numbers
+Dialogue: 0,0:11:51.20,0:11:54.00,*Default,NTP,0000,0000,0000,,just by taking digits of n and then
+Dialogue: 0,0:11:54.00,0:11:55.76,*Default,NTP,0000,0000,0000,,we're gonna filter them to have only the
+Dialogue: 0,0:11:55.76,0:11:57.68,*Default,NTP,0000,0000,0000,,ones that are a power
+Dialogue: 0,0:11:57.68,0:12:00.80,*Default,NTP,0000,0000,0000,,of k so this will worry about the power
+Dialogue: 0,0:12:00.80,0:12:01.76,*Default,NTP,0000,0000,0000,,of k
+Dialogue: 0,0:12:01.76,0:12:04.48,*Default,NTP,0000,0000,0000,,and this will find all the numbers that
+Dialogue: 0,0:12:04.48,0:12:05.68,*Default,NTP,0000,0000,0000,,exist within it
+Dialogue: 0,0:12:05.68,0:12:08.56,*Default,NTP,0000,0000,0000,,so let's just worry about the numbers
+Dialogue: 0,0:12:08.56,0:12:11.60,*Default,NTP,0000,0000,0000,,that exist within n and talk about
+Dialogue: 0,0:12:11.60,0:12:15.36,*Default,NTP,0000,0000,0000,,kind of building that up recursively
+Dialogue: 0,0:12:15.36,0:12:18.56,*Default,NTP,0000,0000,0000,,so there's this notion of a seed and
+Dialogue: 0,0:12:18.56,0:12:19.52,*Default,NTP,0000,0000,0000,,this seed
+Dialogue: 0,0:12:19.52,0:12:22.24,*Default,NTP,0000,0000,0000,,is i think the digits that we still get
+Dialogue: 0,0:12:22.24,0:12:23.68,*Default,NTP,0000,0000,0000,,to work with
+Dialogue: 0,0:12:23.68,0:12:26.56,*Default,NTP,0000,0000,0000,,if there are no digits then there are no
+Dialogue: 0,0:12:26.56,0:12:28.48,*Default,NTP,0000,0000,0000,,then we can still build one number which
+Dialogue: 0,0:12:28.48,0:12:30.32,*Default,NTP,0000,0000,0000,,is just zero
+Dialogue: 0,0:12:30.32,0:12:33.52,*Default,NTP,0000,0000,0000,,otherwise we're going to go through
+Dialogue: 0,0:12:33.52,0:12:34.80,*Default,NTP,0000,0000,0000,,something
+Dialogue: 0,0:12:34.80,0:12:38.88,*Default,NTP,0000,0000,0000,,and uh do something with it
+Dialogue: 0,0:12:38.88,0:12:40.40,*Default,NTP,0000,0000,0000,,i guess now we have to find some
+Dialogue: 0,0:12:40.40,0:12:42.16,*Default,NTP,0000,0000,0000,,recursive structure
+Dialogue: 0,0:12:42.16,0:12:44.88,*Default,NTP,0000,0000,0000,,and i think the recursive structure is
+Dialogue: 0,0:12:44.88,0:12:45.84,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:12:45.84,0:12:48.88,*Default,NTP,0000,0000,0000,,if you take a number like this you could
+Dialogue: 0,0:12:48.88,0:12:49.28,*Default,NTP,0000,0000,0000,,find
+Dialogue: 0,0:12:49.28,0:12:51.52,*Default,NTP,0000,0000,0000,,all the numbers within it by finding all
+Dialogue: 0,0:12:51.52,0:12:52.96,*Default,NTP,0000,0000,0000,,the numbers in one two three
+Dialogue: 0,0:12:52.96,0:12:56.80,*Default,NTP,0000,0000,0000,,four and then for each one of those
+Dialogue: 0,0:12:56.80,0:13:00.56,*Default,NTP,0000,0000,0000,,either stick a five on the end or don't
+Dialogue: 0,0:13:00.64,0:13:02.00,*Default,NTP,0000,0000,0000,,so that will give you all the different
+Dialogue: 0,0:13:02.00,0:13:03.92,*Default,NTP,0000,0000,0000,,possibilities
+Dialogue: 0,0:13:03.92,0:13:05.36,*Default,NTP,0000,0000,0000,,is that if you find all the numbers
+Dialogue: 0,0:13:05.36,0:13:09.68,*Default,NTP,0000,0000,0000,,within n divided by 10
+Dialogue: 0,0:13:10.32,0:13:13.12,*Default,NTP,0000,0000,0000,,all of those are also oh sorry not n
+Dialogue: 0,0:13:13.12,0:13:13.60,*Default,NTP,0000,0000,0000,,build
+Dialogue: 0,0:13:13.60,0:13:16.88,*Default,NTP,0000,0000,0000,,or seed in c divided by 10 then all
+Dialogue: 0,0:13:16.88,0:13:17.84,*Default,NTP,0000,0000,0000,,those numbers are
+Dialogue: 0,0:13:17.84,0:13:21.52,*Default,NTP,0000,0000,0000,,also in seed
+Dialogue: 0,0:13:21.52,0:13:24.00,*Default,NTP,0000,0000,0000,,but there's another number within seed
+Dialogue: 0,0:13:24.00,0:13:25.52,*Default,NTP,0000,0000,0000,,which is what you get
+Dialogue: 0,0:13:25.52,0:13:30.32,*Default,NTP,0000,0000,0000,,when you put the last digit of seed
+Dialogue: 0,0:13:30.32,0:13:34.96,*Default,NTP,0000,0000,0000,,on the end of whatever x is
+Dialogue: 0,0:13:34.96,0:13:36.16,*Default,NTP,0000,0000,0000,,by the way this is i'm going to come
+Dialogue: 0,0:13:36.16,0:13:37.60,*Default,NTP,0000,0000,0000,,back to steve's question in a second
+Dialogue: 0,0:13:37.60,0:13:39.60,*Default,NTP,0000,0000,0000,,we've seen this many many times exactly
+Dialogue: 0,0:13:39.60,0:13:41.60,*Default,NTP,0000,0000,0000,,this construct where john is peeling off
+Dialogue: 0,0:13:41.60,0:13:43.92,*Default,NTP,0000,0000,0000,,a number with the integer division
+Dialogue: 0,0:13:43.92,0:13:45.68,*Default,NTP,0000,0000,0000,,and then creating the base so that
+Dialogue: 0,0:13:45.68,0:13:47.12,*Default,NTP,0000,0000,0000,,that's another pattern that we've seen
+Dialogue: 0,0:13:47.12,0:13:48.00,*Default,NTP,0000,0000,0000,,over and over again
+Dialogue: 0,0:13:48.00,0:13:51.28,*Default,NTP,0000,0000,0000,,for this type of manipulation
+Dialogue: 0,0:13:52.00,0:13:54.48,*Default,NTP,0000,0000,0000,,yeah exactly and the recursive leap of
+Dialogue: 0,0:13:54.48,0:13:55.44,*Default,NTP,0000,0000,0000,,faith happened
+Dialogue: 0,0:13:55.44,0:13:59.20,*Default,NTP,0000,0000,0000,,right here where
+Dialogue: 0,0:13:59.20,0:14:00.96,*Default,NTP,0000,0000,0000,,we're kind of trying to list out every
+Dialogue: 0,0:14:00.96,0:14:02.56,*Default,NTP,0000,0000,0000,,possibility
+Dialogue: 0,0:14:02.56,0:14:04.56,*Default,NTP,0000,0000,0000,,so we assumed we had a way for listing
+Dialogue: 0,0:14:04.56,0:14:06.32,*Default,NTP,0000,0000,0000,,out all the possibilities
+Dialogue: 0,0:14:06.32,0:14:08.56,*Default,NTP,0000,0000,0000,,if i just had a smaller number one two
+Dialogue: 0,0:14:08.56,0:14:10.48,*Default,NTP,0000,0000,0000,,three four
+Dialogue: 0,0:14:10.48,0:14:14.96,*Default,NTP,0000,0000,0000,,and assuming that works then i can
+Dialogue: 0,0:14:14.96,0:14:19.36,*Default,NTP,0000,0000,0000,,start putting uh
+Dialogue: 0,0:14:19.36,0:14:21.36,*Default,NTP,0000,0000,0000,,different variants of that so if i find
+Dialogue: 0,0:14:21.36,0:14:22.56,*Default,NTP,0000,0000,0000,,12 in there
+Dialogue: 0,0:14:22.56,0:14:27.68,*Default,NTP,0000,0000,0000,,then i want to yield both 12 and 125.
+Dialogue: 0,0:14:28.24,0:14:30.00,*Default,NTP,0000,0000,0000,,and notice here too that john did
+Dialogue: 0,0:14:30.00,0:14:31.60,*Default,NTP,0000,0000,0000,,something very clever at the beginning
+Dialogue: 0,0:14:31.60,0:14:32.88,*Default,NTP,0000,0000,0000,,where he went all the way to the bottom
+Dialogue: 0,0:14:32.88,0:14:34.80,*Default,NTP,0000,0000,0000,,said ah there's a filter
+Dialogue: 0,0:14:34.80,0:14:36.40,*Default,NTP,0000,0000,0000,,so what must be happening is i'm going
+Dialogue: 0,0:14:36.40,0:14:39.04,*Default,NTP,0000,0000,0000,,to generate all possible solutions
+Dialogue: 0,0:14:39.04,0:14:41.04,*Default,NTP,0000,0000,0000,,and then narrow them down into the ones
+Dialogue: 0,0:14:41.04,0:14:42.56,*Default,NTP,0000,0000,0000,,that satisfy the
+Dialogue: 0,0:14:42.56,0:14:44.80,*Default,NTP,0000,0000,0000,,constraint um so that that makes it a
+Dialogue: 0,0:14:44.80,0:14:46.56,*Default,NTP,0000,0000,0000,,little bit easier up top and now we now
+Dialogue: 0,0:14:46.56,0:14:48.96,*Default,NTP,0000,0000,0000,,he has to do some hard work
+Dialogue: 0,0:14:48.96,0:14:50.24,*Default,NTP,0000,0000,0000,,yeah okay so now let's look at the
+Dialogue: 0,0:14:50.24,0:14:52.24,*Default,NTP,0000,0000,0000,,filter now build has given me
+Dialogue: 0,0:14:52.24,0:14:55.72,*Default,NTP,0000,0000,0000,,everything 12 13 14
+Dialogue: 0,0:14:55.72,0:14:59.12,*Default,NTP,0000,0000,0000,,134 and in there somewhere is the 1 and
+Dialogue: 0,0:14:59.12,0:15:01.92,*Default,NTP,0000,0000,0000,,the 5 and the 25 and 125.
+Dialogue: 0,0:15:01.92,0:15:05.20,*Default,NTP,0000,0000,0000,,these are all powers of 5. so i need
+Dialogue: 0,0:15:05.20,0:15:08.56,*Default,NTP,0000,0000,0000,,something that's only true if uh
+Dialogue: 0,0:15:08.56,0:15:11.28,*Default,NTP,0000,0000,0000,,i call it on a power of 5. well that's
+Dialogue: 0,0:15:11.28,0:15:12.64,*Default,NTP,0000,0000,0000,,exactly what the
+Dialogue: 0,0:15:12.64,0:15:15.92,*Default,NTP,0000,0000,0000,,is power is that what it's called
+Dialogue: 0,0:15:15.92,0:15:17.92,*Default,NTP,0000,0000,0000,,is power function that i implemented in
+Dialogue: 0,0:15:17.92,0:15:19.44,*Default,NTP,0000,0000,0000,,part a does
+Dialogue: 0,0:15:19.44,0:15:22.64,*Default,NTP,0000,0000,0000,,but is power takes two arguments and by
+Dialogue: 0,0:15:22.64,0:15:24.32,*Default,NTP,0000,0000,0000,,currying it i get to fill in one
+Dialogue: 0,0:15:24.32,0:15:25.12,*Default,NTP,0000,0000,0000,,argument
+Dialogue: 0,0:15:25.12,0:15:27.36,*Default,NTP,0000,0000,0000,,and then wait until the other argument
+Dialogue: 0,0:15:27.36,0:15:29.28,*Default,NTP,0000,0000,0000,,is available so the first argument i'll
+Dialogue: 0,0:15:29.28,0:15:29.84,*Default,NTP,0000,0000,0000,,fill in
+Dialogue: 0,0:15:29.84,0:15:33.04,*Default,NTP,0000,0000,0000,,is k and then what filter is going to do
+Dialogue: 0,0:15:33.04,0:15:35.12,*Default,NTP,0000,0000,0000,,is it's going to call basically it's
+Dialogue: 0,0:15:35.12,0:15:36.48,*Default,NTP,0000,0000,0000,,going to call is power
+Dialogue: 0,0:15:36.48,0:15:40.24,*Default,NTP,0000,0000,0000,,k on every element
+Dialogue: 0,0:15:40.24,0:15:43.92,*Default,NTP,0000,0000,0000,,of build n leaving us only with the ones
+Dialogue: 0,0:15:43.92,0:15:44.56,*Default,NTP,0000,0000,0000,,that are
+Dialogue: 0,0:15:44.56,0:15:48.40,*Default,NTP,0000,0000,0000,,powers of k yeah life is so much better
+Dialogue: 0,0:15:48.40,0:15:48.88,*Default,NTP,0000,0000,0000,,if you
+Dialogue: 0,0:15:48.88,0:15:52.00,*Default,NTP,0000,0000,0000,,fix fixate on an example so if c
+Dialogue: 0,0:15:52.00,0:15:55.04,*Default,NTP,0000,0000,0000,,is this then c divided by 10 is that and
+Dialogue: 0,0:15:55.04,0:15:57.28,*Default,NTP,0000,0000,0000,,then the hard part which is
+Dialogue: 0,0:15:57.28,0:15:59.68,*Default,NTP,0000,0000,0000,,what happens when you build one two
+Dialogue: 0,0:15:59.68,0:16:00.64,*Default,NTP,0000,0000,0000,,three four
+Dialogue: 0,0:16:00.64,0:16:02.48,*Default,NTP,0000,0000,0000,,well you get one and two and three and
+Dialogue: 0,0:16:02.48,0:16:04.24,*Default,NTP,0000,0000,0000,,four but also twelve and thirteen and
+Dialogue: 0,0:16:04.24,0:16:07.20,*Default,NTP,0000,0000,0000,,fourteen and also 123 and 124 and also
+Dialogue: 0,0:16:07.20,0:16:08.08,*Default,NTP,0000,0000,0000,,one two three four
+Dialogue: 0,0:16:08.08,0:16:11.12,*Default,NTP,0000,0000,0000,,and also zero and also 23 i don't know
+Dialogue: 0,0:16:11.12,0:16:12.16,*Default,NTP,0000,0000,0000,,if i said that already
+Dialogue: 0,0:16:12.16,0:16:14.08,*Default,NTP,0000,0000,0000,,but that's the thing that's the leap of
+Dialogue: 0,0:16:14.08,0:16:15.84,*Default,NTP,0000,0000,0000,,faith is to say build is gonna give me
+Dialogue: 0,0:16:15.84,0:16:17.20,*Default,NTP,0000,0000,0000,,all those possibilities
+Dialogue: 0,0:16:17.20,0:16:18.80,*Default,NTP,0000,0000,0000,,and then all i have to do is like stick
+Dialogue: 0,0:16:18.80,0:16:21.12,*Default,NTP,0000,0000,0000,,a five on the end or not
+Dialogue: 0,0:16:21.12,0:16:23.60,*Default,NTP,0000,0000,0000,,yeah good question so it's about lecture
+Dialogue: 0,0:16:23.60,0:16:24.32,*Default,NTP,0000,0000,0000,,and about
+Dialogue: 0,0:16:24.32,0:16:27.44,*Default,NTP,0000,0000,0000,,um using
+Dialogue: 0,0:16:27.44,0:16:30.56,*Default,NTP,0000,0000,0000,,sets and why they're fast i guess
+Dialogue: 0,0:16:30.56,0:16:34.84,*Default,NTP,0000,0000,0000,,um the built-in
+Dialogue: 0,0:16:34.84,0:16:37.84,*Default,NTP,0000,0000,0000,,set
+Dialogue: 0,0:16:40.48,0:16:44.08,*Default,NTP,0000,0000,0000,,has like two useful properties one
+Dialogue: 0,0:16:44.08,0:16:47.44,*Default,NTP,0000,0000,0000,,it gets rid of repeats but the more
+Dialogue: 0,0:16:47.44,0:16:48.64,*Default,NTP,0000,0000,0000,,useful property
+Dialogue: 0,0:16:48.64,0:16:51.36,*Default,NTP,0000,0000,0000,,is about its efficiency which is that
+Dialogue: 0,0:16:51.36,0:16:52.80,*Default,NTP,0000,0000,0000,,figuring out whether something is an
+Dialogue: 0,0:16:52.80,0:16:54.24,*Default,NTP,0000,0000,0000,,element of a set
+Dialogue: 0,0:16:54.24,0:16:56.00,*Default,NTP,0000,0000,0000,,happens in what's called constant time
+Dialogue: 0,0:16:56.00,0:16:57.84,*Default,NTP,0000,0000,0000,,so if you watch the efficiency lecture
+Dialogue: 0,0:16:57.84,0:16:59.52,*Default,NTP,0000,0000,0000,,this means that it doesn't scale with
+Dialogue: 0,0:16:59.52,0:17:00.96,*Default,NTP,0000,0000,0000,,the number of elements that are in the
+Dialogue: 0,0:17:00.96,0:17:01.68,*Default,NTP,0000,0000,0000,,set
+Dialogue: 0,0:17:01.68,0:17:04.00,*Default,NTP,0000,0000,0000,,so if you have 50 elements in the set
+Dialogue: 0,0:17:04.00,0:17:05.44,*Default,NTP,0000,0000,0000,,and figuring out where something's in
+Dialogue: 0,0:17:05.44,0:17:05.84,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:17:05.84,0:17:07.84,*Default,NTP,0000,0000,0000,,takes about as long as if you have 5
+Dialogue: 0,0:17:07.84,0:17:09.76,*Default,NTP,0000,0000,0000,,million elements in the set
+Dialogue: 0,0:17:09.76,0:17:12.64,*Default,NTP,0000,0000,0000,,and this is achieved through a technique
+Dialogue: 0,0:17:12.64,0:17:13.68,*Default,NTP,0000,0000,0000,,called hashing
+Dialogue: 0,0:17:13.68,0:17:16.24,*Default,NTP,0000,0000,0000,,which you get to learn about in 61b got
+Dialogue: 0,0:17:16.24,0:17:18.16,*Default,NTP,0000,0000,0000,,to leave something for 61b so that's
+Dialogue: 0,0:17:18.16,0:17:19.60,*Default,NTP,0000,0000,0000,,like one of the topics that we don't
+Dialogue: 0,0:17:19.60,0:17:20.00,*Default,NTP,0000,0000,0000,,cover
+Dialogue: 0,0:17:20.00,0:17:21.28,*Default,NTP,0000,0000,0000,,in this course but you could read about
+Dialogue: 0,0:17:21.28,0:17:23.60,*Default,NTP,0000,0000,0000,,it if you want and
+Dialogue: 0,0:17:23.60,0:17:25.36,*Default,NTP,0000,0000,0000,,um it's a wonderful technique so
+Dialogue: 0,0:17:25.36,0:17:26.88,*Default,NTP,0000,0000,0000,,basically anytime you're trying to
+Dialogue: 0,0:17:26.88,0:17:28.40,*Default,NTP,0000,0000,0000,,figure out whether some
+Dialogue: 0,0:17:28.40,0:17:32.16,*Default,NTP,0000,0000,0000,,thing is in a group or in a set um you
+Dialogue: 0,0:17:32.16,0:17:34.24,*Default,NTP,0000,0000,0000,,want to use this particularly efficient
+Dialogue: 0,0:17:34.24,0:17:36.08,*Default,NTP,0000,0000,0000,,technique which is called hashing
+Dialogue: 0,0:17:36.08,0:17:39.68,*Default,NTP,0000,0000,0000,,and um and it's built in to the set
+Dialogue: 0,0:17:39.68,0:17:41.20,*Default,NTP,0000,0000,0000,,but we haven't really talked about how
+Dialogue: 0,0:17:41.20,0:17:44.48,*Default,NTP,0000,0000,0000,,to re-implement it you'll do that in 61b
+Dialogue: 0,0:17:44.48,0:17:47.92,*Default,NTP,0000,0000,0000,,um yeah so we have an implementation
+Dialogue: 0,0:17:47.92,0:17:51.04,*Default,NTP,0000,0000,0000,,in this project which comes up with
+Dialogue: 0,0:17:51.04,0:17:54.64,*Default,NTP,0000,0000,0000,,the um
+Dialogue: 0,0:17:54.64,0:17:57.76,*Default,NTP,0000,0000,0000,,number of elements between here
+Dialogue: 0,0:17:57.76,0:18:01.84,*Default,NTP,0000,0000,0000,,and here is that what this does
+Dialogue: 0,0:18:02.40,0:18:04.88,*Default,NTP,0000,0000,0000,,oh yeah there are five and six and seven
+Dialogue: 0,0:18:04.88,0:18:06.16,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:18:06.16,0:18:08.48,*Default,NTP,0000,0000,0000,,if instead of writing this code and
+Dialogue: 0,0:18:08.48,0:18:09.84,*Default,NTP,0000,0000,0000,,using sorted lists
+Dialogue: 0,0:18:09.84,0:18:15.28,*Default,NTP,0000,0000,0000,,we instead had two sets that one
+Dialogue: 0,0:18:15.28,0:18:18.00,*Default,NTP,0000,0000,0000,,and that one
+Dialogue: 0,0:18:19.36,0:18:21.76,*Default,NTP,0000,0000,0000,,then uh i could there's a built-in
+Dialogue: 0,0:18:21.76,0:18:22.96,*Default,NTP,0000,0000,0000,,functionality for taking the
+Dialogue: 0,0:18:22.96,0:18:24.64,*Default,NTP,0000,0000,0000,,intersection between two sets i can get
+Dialogue: 0,0:18:24.64,0:18:25.84,*Default,NTP,0000,0000,0000,,the length of that
+Dialogue: 0,0:18:25.84,0:18:29.28,*Default,NTP,0000,0000,0000,,and now i have a fast overlap
+Dialogue: 0,0:18:29.28,0:18:32.56,*Default,NTP,0000,0000,0000,,that didn't take a lot of code
+Dialogue: 0,0:18:32.56,0:18:35.04,*Default,NTP,0000,0000,0000,,okay so here's an optional question from
+Dialogue: 0,0:18:35.04,0:18:36.48,*Default,NTP,0000,0000,0000,,lab
+Dialogue: 0,0:18:36.48,0:18:38.24,*Default,NTP,0000,0000,0000,,write a function reverse other that
+Dialogue: 0,0:18:38.24,0:18:40.40,*Default,NTP,0000,0000,0000,,mutates a tree
+Dialogue: 0,0:18:40.40,0:18:42.16,*Default,NTP,0000,0000,0000,,said 3 is input and we're going to
+Dialogue: 0,0:18:42.16,0:18:43.52,*Default,NTP,0000,0000,0000,,change it
+Dialogue: 0,0:18:43.52,0:18:46.64,*Default,NTP,0000,0000,0000,,such that labels on every other odd
+Dialogue: 0,0:18:46.64,0:18:50.80,*Default,NTP,0000,0000,0000,,depth are reversed so if we start with 1
+Dialogue: 0,0:18:50.80,0:18:51.04,*Default,NTP,0000,0000,0000,,2
+Dialogue: 0,0:18:51.04,0:18:54.32,*Default,NTP,0000,0000,0000,,4 3 then we reverse the order
+Dialogue: 0,0:18:54.32,0:18:57.84,*Default,NTP,0000,0000,0000,,of the 2 4 branch and the 3 branch
+Dialogue: 0,0:18:57.84,0:19:01.44,*Default,NTP,0000,0000,0000,,and so uh oh actually we don't
+Dialogue: 0,0:19:01.44,0:19:03.12,*Default,NTP,0000,0000,0000,,reverse the order of the branches we
+Dialogue: 0,0:19:03.12,0:19:05.12,*Default,NTP,0000,0000,0000,,just reverse the order of the labels
+Dialogue: 0,0:19:05.12,0:19:06.08,*Default,NTP,0000,0000,0000,,themselves
+Dialogue: 0,0:19:06.08,0:19:07.68,*Default,NTP,0000,0000,0000,,so the branches are still the same
+Dialogue: 0,0:19:07.68,0:19:10.48,*Default,NTP,0000,0000,0000,,structure except for we've uh
+Dialogue: 0,0:19:10.48,0:19:12.16,*Default,NTP,0000,0000,0000,,changed the two and the three to be
+Dialogue: 0,0:19:12.16,0:19:14.24,*Default,NTP,0000,0000,0000,,three and two
+Dialogue: 0,0:19:14.24,0:19:15.76,*Default,NTP,0000,0000,0000,,oh it says notice that the nodes
+Dialogue: 0,0:19:15.76,0:19:17.20,*Default,NTP,0000,0000,0000,,themselves are not reversed only the
+Dialogue: 0,0:19:17.20,0:19:20.00,*Default,NTP,0000,0000,0000,,labels are okay
+Dialogue: 0,0:19:20.72,0:19:24.72,*Default,NTP,0000,0000,0000,,and here's an example okay
+Dialogue: 0,0:19:24.72,0:19:26.48,*Default,NTP,0000,0000,0000,,sorry i gotta get all these zoom things
+Dialogue: 0,0:19:26.48,0:19:28.32,*Default,NTP,0000,0000,0000,,out of the way
+Dialogue: 0,0:19:28.32,0:19:32.16,*Default,NTP,0000,0000,0000,,um so how might we do this well um
+Dialogue: 0,0:19:32.16,0:19:34.40,*Default,NTP,0000,0000,0000,,well okay so when you're doing something
+Dialogue: 0,0:19:34.40,0:19:36.16,*Default,NTP,0000,0000,0000,,that's like every other depth you really
+Dialogue: 0,0:19:36.16,0:19:37.52,*Default,NTP,0000,0000,0000,,have two choices
+Dialogue: 0,0:19:37.52,0:19:39.92,*Default,NTP,0000,0000,0000,,one is track what depth you're on this
+Dialogue: 0,0:19:39.92,0:19:42.00,*Default,NTP,0000,0000,0000,,is a good good way to go
+Dialogue: 0,0:19:42.00,0:19:46.00,*Default,NTP,0000,0000,0000,,and another is to only process
+Dialogue: 0,0:19:46.00,0:19:49.12,*Default,NTP,0000,0000,0000,,even depths and then you assume that the
+Dialogue: 0,0:19:49.12,0:19:51.60,*Default,NTP,0000,0000,0000,,level below is an odd depth so we could
+Dialogue: 0,0:19:51.60,0:19:54.08,*Default,NTP,0000,0000,0000,,do it both ways
+Dialogue: 0,0:19:54.08,0:19:55.44,*Default,NTP,0000,0000,0000,,i don't know if if you all have a
+Dialogue: 0,0:19:55.44,0:19:57.12,*Default,NTP,0000,0000,0000,,preference but let's
+Dialogue: 0,0:19:57.12,0:20:03.20,*Default,NTP,0000,0000,0000,,try this this notion of
+Dialogue: 0,0:20:03.20,0:20:05.36,*Default,NTP,0000,0000,0000,,process only the even depths so we
+Dialogue: 0,0:20:05.36,0:20:06.72,*Default,NTP,0000,0000,0000,,assume that t
+Dialogue: 0,0:20:06.72,0:20:09.44,*Default,NTP,0000,0000,0000,,is either the whole tree or it's a
+Dialogue: 0,0:20:09.44,0:20:10.48,*Default,NTP,0000,0000,0000,,branch of a branch
+Dialogue: 0,0:20:10.48,0:20:12.24,*Default,NTP,0000,0000,0000,,meaning another even depth that would be
+Dialogue: 0,0:20:12.24,0:20:14.32,*Default,NTP,0000,0000,0000,,depth two or it's a branch of a branch
+Dialogue: 0,0:20:14.32,0:20:15.84,*Default,NTP,0000,0000,0000,,of a branch of a branch that would be
+Dialogue: 0,0:20:15.84,0:20:17.52,*Default,NTP,0000,0000,0000,,like depth four that's one way to do
+Dialogue: 0,0:20:17.52,0:20:18.56,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:20:18.56,0:20:21.36,*Default,NTP,0000,0000,0000,,okay so um one way to solve this
+Dialogue: 0,0:20:21.36,0:20:23.20,*Default,NTP,0000,0000,0000,,recursively would be just to focus on
+Dialogue: 0,0:20:23.20,0:20:24.32,*Default,NTP,0000,0000,0000,,the first odd
+Dialogue: 0,0:20:24.32,0:20:27.52,*Default,NTP,0000,0000,0000,,layer that would be um the
+Dialogue: 0,0:20:27.52,0:20:29.76,*Default,NTP,0000,0000,0000,,labels of the branches and then make
+Dialogue: 0,0:20:29.76,0:20:31.12,*Default,NTP,0000,0000,0000,,recursive calls to handle
+Dialogue: 0,0:20:31.12,0:20:35.52,*Default,NTP,0000,0000,0000,,all the other odd layers
+Dialogue: 0,0:20:35.52,0:20:38.88,*Default,NTP,0000,0000,0000,,so the
+Dialogue: 0,0:20:38.88,0:20:41.92,*Default,NTP,0000,0000,0000,,labels of branches
+Dialogue: 0,0:20:42.00,0:20:44.40,*Default,NTP,0000,0000,0000,,would be
+Dialogue: 0,0:20:46.56,0:20:51.92,*Default,NTP,0000,0000,0000,,b dot label for b in t dot branches
+Dialogue: 0,0:20:53.04,0:20:57.20,*Default,NTP,0000,0000,0000,,if uh t is a leaf then there are no such
+Dialogue: 0,0:20:57.20,0:20:58.88,*Default,NTP,0000,0000,0000,,things so i guess we can just return at
+Dialogue: 0,0:20:58.88,0:21:02.72,*Default,NTP,0000,0000,0000,,that point
+Dialogue: 0,0:21:02.72,0:21:06.32,*Default,NTP,0000,0000,0000,,um otherwise we want to get the
+Dialogue: 0,0:21:06.32,0:21:10.00,*Default,NTP,0000,0000,0000,,reversed labels of branches
+Dialogue: 0,0:21:14.00,0:21:15.52,*Default,NTP,0000,0000,0000,,so there's various ways to do it there's
+Dialogue: 0,0:21:15.52,0:21:17.20,*Default,NTP,0000,0000,0000,,a built-in reversed function
+Dialogue: 0,0:21:17.20,0:21:21.60,*Default,NTP,0000,0000,0000,,i think maybe the uh
+Dialogue: 0,0:21:23.12,0:21:24.64,*Default,NTP,0000,0000,0000,,well this is a fine way to do it we can
+Dialogue: 0,0:21:24.64,0:21:25.84,*Default,NTP,0000,0000,0000,,practice some of the stuff that we've
+Dialogue: 0,0:21:25.84,0:21:27.60,*Default,NTP,0000,0000,0000,,learned in earlier lectures so
+Dialogue: 0,0:21:27.60,0:21:29.76,*Default,NTP,0000,0000,0000,,reversed is something i can call on
+Dialogue: 0,0:21:29.76,0:21:32.72,*Default,NTP,0000,0000,0000,,labels of branches
+Dialogue: 0,0:21:32.88,0:21:35.52,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:21:38.16,0:21:41.76,*Default,NTP,0000,0000,0000,,i kind of get them in the other order
+Dialogue: 0,0:21:41.76,0:21:43.92,*Default,NTP,0000,0000,0000,,now the tricky part is that i have to
+Dialogue: 0,0:21:43.92,0:21:45.68,*Default,NTP,0000,0000,0000,,take each branch
+Dialogue: 0,0:21:45.68,0:21:48.72,*Default,NTP,0000,0000,0000,,and i have to find the appropriate label
+Dialogue: 0,0:21:48.72,0:21:50.40,*Default,NTP,0000,0000,0000,,for it
+Dialogue: 0,0:21:50.40,0:21:55.44,*Default,NTP,0000,0000,0000,,so in this example now i have
+Dialogue: 0,0:21:56.56,0:21:59.12,*Default,NTP,0000,0000,0000,,which example should we do let's do this
+Dialogue: 0,0:21:59.12,0:22:01.76,*Default,NTP,0000,0000,0000,,example
+Dialogue: 0,0:22:02.56,0:22:06.32,*Default,NTP,0000,0000,0000,,we've got two and six and eight
+Dialogue: 0,0:22:07.20,0:22:10.48,*Default,NTP,0000,0000,0000,,now we have an iterator over eight and
+Dialogue: 0,0:22:10.48,0:22:13.52,*Default,NTP,0000,0000,0000,,six and 2 and that's what we're supposed
+Dialogue: 0,0:22:13.52,0:22:14.40,*Default,NTP,0000,0000,0000,,to slot in
+Dialogue: 0,0:22:14.40,0:22:16.80,*Default,NTP,0000,0000,0000,,as these labels so we have to go through
+Dialogue: 0,0:22:16.80,0:22:17.76,*Default,NTP,0000,0000,0000,,in parallel
+Dialogue: 0,0:22:17.76,0:22:19.44,*Default,NTP,0000,0000,0000,,the branches so we can update their
+Dialogue: 0,0:22:19.44,0:22:22.00,*Default,NTP,0000,0000,0000,,labels and the new label values
+Dialogue: 0,0:22:22.00,0:22:24.00,*Default,NTP,0000,0000,0000,,and we did in fact learn about a
+Dialogue: 0,0:22:24.00,0:22:26.16,*Default,NTP,0000,0000,0000,,built-in function that does this
+Dialogue: 0,0:22:26.16,0:22:29.84,*Default,NTP,0000,0000,0000,,called zip so this would go through
+Dialogue: 0,0:22:29.84,0:22:33.76,*Default,NTP,0000,0000,0000,,every branch and every new label
+Dialogue: 0,0:22:33.76,0:22:36.64,*Default,NTP,0000,0000,0000,,that we get by zipping together tdot
+Dialogue: 0,0:22:36.64,0:22:37.60,*Default,NTP,0000,0000,0000,,branches
+Dialogue: 0,0:22:37.60,0:22:41.04,*Default,NTP,0000,0000,0000,,and the reverse labels
+Dialogue: 0,0:22:41.04,0:22:44.32,*Default,NTP,0000,0000,0000,,and now we will set b
+Dialogue: 0,0:22:44.32,0:22:48.24,*Default,NTP,0000,0000,0000,,dot label to be its new label
+Dialogue: 0,0:22:50.56,0:22:53.60,*Default,NTP,0000,0000,0000,,what about the recursion well
+Dialogue: 0,0:22:53.60,0:22:55.20,*Default,NTP,0000,0000,0000,,we don't actually want to call reverse
+Dialogue: 0,0:22:55.20,0:22:57.20,*Default,NTP,0000,0000,0000,,other on the branch
+Dialogue: 0,0:22:57.20,0:23:00.40,*Default,NTP,0000,0000,0000,,because then we'd have an odd branch as
+Dialogue: 0,0:23:00.40,0:23:01.28,*Default,NTP,0000,0000,0000,,t
+Dialogue: 0,0:23:01.28,0:23:03.20,*Default,NTP,0000,0000,0000,,so instead what we want to do is go
+Dialogue: 0,0:23:03.20,0:23:05.20,*Default,NTP,0000,0000,0000,,through all the
+Dialogue: 0,0:23:05.20,0:23:08.56,*Default,NTP,0000,0000,0000,,uh grandchildren
+Dialogue: 0,0:23:08.56,0:23:11.68,*Default,NTP,0000,0000,0000,,and call reverse other on that
+Dialogue: 0,0:23:11.68,0:23:14.19,*Default,NTP,0000,0000,0000,,this would be grandchild sorry
+Dialogue: 0,0:23:14.19,0:23:17.20,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:23:17.20,0:23:23.36,*Default,NTP,0000,0000,0000,,i'll probably do the trick let's try it
+Dialogue: 0,0:23:23.36,0:23:28.56,*Default,NTP,0000,0000,0000,,oh it doesn't fit now it fits
+Dialogue: 0,0:23:31.20,0:23:33.52,*Default,NTP,0000,0000,0000,,nope
+Dialogue: 0,0:23:34.24,0:23:36.40,*Default,NTP,0000,0000,0000,,uh probably we need to know what a tree
+Dialogue: 0,0:23:36.40,0:23:37.44,*Default,NTP,0000,0000,0000,,is
+Dialogue: 0,0:23:37.44,0:23:40.16,*Default,NTP,0000,0000,0000,,yeah it works
+Dialogue: 0,0:23:42.40,0:23:44.80,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:23:45.60,0:23:47.60,*Default,NTP,0000,0000,0000,,you are supposed to know what zip is but
+Dialogue: 0,0:23:47.60,0:23:48.80,*Default,NTP,0000,0000,0000,,it's kind of an esoteric
+Dialogue: 0,0:23:48.80,0:23:50.48,*Default,NTP,0000,0000,0000,,topic and you should know what reversed
+Dialogue: 0,0:23:50.48,0:23:52.16,*Default,NTP,0000,0000,0000,,is but we could actually try to solve
+Dialogue: 0,0:23:52.16,0:23:54.16,*Default,NTP,0000,0000,0000,,this without reversed and without zip
+Dialogue: 0,0:23:54.16,0:23:56.16,*Default,NTP,0000,0000,0000,,just fine we could instead go over
+Dialogue: 0,0:23:56.16,0:23:57.68,*Default,NTP,0000,0000,0000,,indices and that would be a fine thing
+Dialogue: 0,0:23:57.68,0:23:58.40,*Default,NTP,0000,0000,0000,,to do
+Dialogue: 0,0:23:58.40,0:24:02.84,*Default,NTP,0000,0000,0000,,so if we did something like for i in
+Dialogue: 0,0:24:02.84,0:24:05.52,*Default,NTP,0000,0000,0000,,range of the len of
+Dialogue: 0,0:24:05.52,0:24:09.76,*Default,NTP,0000,0000,0000,,b dot t dot branches
+Dialogue: 0,0:24:11.92,0:24:16.08,*Default,NTP,0000,0000,0000,,we would then find the appropriate
+Dialogue: 0,0:24:16.84,0:24:19.84,*Default,NTP,0000,0000,0000,,branch
+Dialogue: 0,0:24:20.08,0:24:23.52,*Default,NTP,0000,0000,0000,,and change its label to be
+Dialogue: 0,0:24:23.52,0:24:27.60,*Default,NTP,0000,0000,0000,,the label
+Dialogue: 0,0:24:27.60,0:24:30.64,*Default,NTP,0000,0000,0000,,in the like reverse position
+Dialogue: 0,0:24:30.64,0:24:32.88,*Default,NTP,0000,0000,0000,,one way you could write this is negative
+Dialogue: 0,0:24:32.88,0:24:33.76,*Default,NTP,0000,0000,0000,,i
+Dialogue: 0,0:24:33.76,0:24:36.00,*Default,NTP,0000,0000,0000,,or if you wanted to be more explicit you
+Dialogue: 0,0:24:36.00,0:24:37.92,*Default,NTP,0000,0000,0000,,could write len of branches minus
+Dialogue: 0,0:24:37.92,0:24:41.44,*Default,NTP,0000,0000,0000,,i uh oh
+Dialogue: 0,0:24:41.44,0:24:44.96,*Default,NTP,0000,0000,0000,,but it doesn't work yeah so
+Dialogue: 0,0:24:45.60,0:24:49.52,*Default,NTP,0000,0000,0000,,oh is it yeah something seems wrong but
+Dialogue: 0,0:24:49.52,0:24:50.48,*Default,NTP,0000,0000,0000,,i don't know what it is
+Dialogue: 0,0:24:50.48,0:24:54.80,*Default,NTP,0000,0000,0000,,uh let's see if we can fix it real quick
+Dialogue: 0,0:24:54.80,0:24:57.92,*Default,NTP,0000,0000,0000,,oh name error b is not defined oh it's a
+Dialogue: 0,0:24:57.92,0:24:58.48,*Default,NTP,0000,0000,0000,,boring
+Dialogue: 0,0:24:58.48,0:25:00.16,*Default,NTP,0000,0000,0000,,problem so this needs to be t dot
+Dialogue: 0,0:25:00.16,0:25:03.36,*Default,NTP,0000,0000,0000,,branches oh
+Dialogue: 0,0:25:03.36,0:25:05.68,*Default,NTP,0000,0000,0000,,see we were in the wrong line of code
+Dialogue: 0,0:25:05.68,0:25:08.00,*Default,NTP,0000,0000,0000,,nope
+Dialogue: 0,0:25:10.00,0:25:15.04,*Default,NTP,0000,0000,0000,,no what's wrong uh
+Dialogue: 0,0:25:15.04,0:25:18.48,*Default,NTP,0000,0000,0000,,it didn't reverse oh
+Dialogue: 0,0:25:18.48,0:25:20.48,*Default,NTP,0000,0000,0000,,no you're going this is just the wrong
+Dialogue: 0,0:25:20.48,0:25:22.08,*Default,NTP,0000,0000,0000,,index yeah
+Dialogue: 0,0:25:22.08,0:25:25.28,*Default,NTP,0000,0000,0000,,we're going to fix it so this is
+Dialogue: 0,0:25:25.28,0:25:29.84,*Default,NTP,0000,0000,0000,,n minus i or while you don't have n
+Dialogue: 0,0:25:29.92,0:25:32.08,*Default,NTP,0000,0000,0000,,so if this is zero this needs to be
+Dialogue: 0,0:25:32.08,0:25:33.52,*Default,NTP,0000,0000,0000,,negative one
+Dialogue: 0,0:25:33.52,0:25:36.64,*Default,NTP,0000,0000,0000,,yeah it's uh oh i see yeah yeah and this
+Dialogue: 0,0:25:36.64,0:25:37.28,*Default,NTP,0000,0000,0000,,is one
+Dialogue: 0,0:25:37.28,0:25:40.16,*Default,NTP,0000,0000,0000,,this needs to be negative two yeah so
+Dialogue: 0,0:25:40.16,0:25:40.64,*Default,NTP,0000,0000,0000,,it's
+Dialogue: 0,0:25:40.64,0:25:45.20,*Default,NTP,0000,0000,0000,,oh it's really negative i minus one yeah
+Dialogue: 0,0:25:47.60,0:25:50.88,*Default,NTP,0000,0000,0000,,classic off by one error the next
+Dialogue: 0,0:25:50.88,0:25:52.24,*Default,NTP,0000,0000,0000,,question was what does
+Dialogue: 0,0:25:52.24,0:25:54.88,*Default,NTP,0000,0000,0000,,super do when you have a class that
+Dialogue: 0,0:25:54.88,0:25:57.84,*Default,NTP,0000,0000,0000,,inherits from two different classes
+Dialogue: 0,0:25:57.84,0:26:00.96,*Default,NTP,0000,0000,0000,,well good question so if you
+Dialogue: 0,0:26:00.96,0:26:04.88,*Default,NTP,0000,0000,0000,,use super on a class that inherits from
+Dialogue: 0,0:26:04.88,0:26:07.20,*Default,NTP,0000,0000,0000,,two different classes
+Dialogue: 0,0:26:07.20,0:26:09.04,*Default,NTP,0000,0000,0000,,what have you built you built something
+Dialogue: 0,0:26:09.04,0:26:10.72,*Default,NTP,0000,0000,0000,,very strange but basically what you've
+Dialogue: 0,0:26:10.72,0:26:13.04,*Default,NTP,0000,0000,0000,,built is it's the same object except for
+Dialogue: 0,0:26:13.04,0:26:15.04,*Default,NTP,0000,0000,0000,,it's going to not look up things in its
+Dialogue: 0,0:26:15.04,0:26:16.32,*Default,NTP,0000,0000,0000,,class it's going to look at
+Dialogue: 0,0:26:16.32,0:26:19.44,*Default,NTP,0000,0000,0000,,them up in one of the base classes
+Dialogue: 0,0:26:19.44,0:26:22.96,*Default,NTP,0000,0000,0000,,and which one well it looks at them in
+Dialogue: 0,0:26:22.96,0:26:24.56,*Default,NTP,0000,0000,0000,,the order that you inherit
+Dialogue: 0,0:26:24.56,0:26:26.88,*Default,NTP,0000,0000,0000,,so if you have a class that inherits
+Dialogue: 0,0:26:26.88,0:26:27.76,*Default,NTP,0000,0000,0000,,from both b
+Dialogue: 0,0:26:27.76,0:26:29.76,*Default,NTP,0000,0000,0000,,and c it's going to look in b first and
+Dialogue: 0,0:26:29.76,0:26:31.20,*Default,NTP,0000,0000,0000,,then it's going to look at c
+Dialogue: 0,0:26:31.20,0:26:33.52,*Default,NTP,0000,0000,0000,,to find the corresponding attribute that
+Dialogue: 0,0:26:33.52,0:26:36.08,*Default,NTP,0000,0000,0000,,you're looking at
+Dialogue: 0,0:26:36.32,0:26:41.20,*Default,NTP,0000,0000,0000,,all 18 midterm two
+Dialogue: 0,0:26:42.08,0:26:45.12,*Default,NTP,0000,0000,0000,,number six
+Dialogue: 0,0:26:47.84,0:26:49.44,*Default,NTP,0000,0000,0000,,implement replace which takes two
+Dialogue: 0,0:26:49.44,0:26:51.68,*Default,NTP,0000,0000,0000,,non-empty linked lists s and t
+Dialogue: 0,0:26:51.68,0:26:54.00,*Default,NTP,0000,0000,0000,,as well as positive integers i and j
+Dialogue: 0,0:26:54.00,0:26:55.20,*Default,NTP,0000,0000,0000,,with i less than j
+Dialogue: 0,0:26:55.20,0:26:57.52,*Default,NTP,0000,0000,0000,,it mutates s by removing elements with
+Dialogue: 0,0:26:57.52,0:26:58.72,*Default,NTP,0000,0000,0000,,indices from i
+Dialogue: 0,0:26:58.72,0:27:01.20,*Default,NTP,0000,0000,0000,,to j
+Dialogue: 0,0:27:03.28,0:27:05.28,*Default,NTP,0000,0000,0000,,and replacing them all with some other
+Dialogue: 0,0:27:05.28,0:27:07.36,*Default,NTP,0000,0000,0000,,list t
+Dialogue: 0,0:27:07.36,0:27:09.92,*Default,NTP,0000,0000,0000,,afterwards s contains all the objects in
+Dialogue: 0,0:27:09.92,0:27:10.80,*Default,NTP,0000,0000,0000,,t
+Dialogue: 0,0:27:10.80,0:27:14.08,*Default,NTP,0000,0000,0000,,so a change to t would reflect reflected
+Dialogue: 0,0:27:14.08,0:27:14.48,*Default,NTP,0000,0000,0000,,in s
+Dialogue: 0,0:27:14.48,0:27:17.60,*Default,NTP,0000,0000,0000,,as well t may change as a result of
+Dialogue: 0,0:27:17.60,0:27:18.84,*Default,NTP,0000,0000,0000,,calling
+Dialogue: 0,0:27:18.84,0:27:22.72,*Default,NTP,0000,0000,0000,,replace okay so it's okay to change
+Dialogue: 0,0:27:22.72,0:27:24.88,*Default,NTP,0000,0000,0000,,t
+Dialogue: 0,0:27:26.72,0:27:31.20,*Default,NTP,0000,0000,0000,,and we assume s has at least j elements
+Dialogue: 0,0:27:31.20,0:27:32.64,*Default,NTP,0000,0000,0000,,so what's going on here if we had
+Dialogue: 0,0:27:32.64,0:27:34.24,*Default,NTP,0000,0000,0000,,printed this out it would say three four
+Dialogue: 0,0:27:34.24,0:27:36.32,*Default,NTP,0000,0000,0000,,five six seven
+Dialogue: 0,0:27:36.32,0:27:38.80,*Default,NTP,0000,0000,0000,,and then we replace elements from two to
+Dialogue: 0,0:27:38.80,0:27:39.84,*Default,NTP,0000,0000,0000,,four
+Dialogue: 0,0:27:39.84,0:27:44.00,*Default,NTP,0000,0000,0000,,so that's the five six
+Dialogue: 0,0:27:44.00,0:27:46.40,*Default,NTP,0000,0000,0000,,elements that's element two and element
+Dialogue: 0,0:27:46.40,0:27:48.96,*Default,NTP,0000,0000,0000,,three but not including element four
+Dialogue: 0,0:27:48.96,0:27:51.28,*Default,NTP,0000,0000,0000,,so now we have three four something
+Dialogue: 0,0:27:51.28,0:27:52.88,*Default,NTP,0000,0000,0000,,something seven
+Dialogue: 0,0:27:52.88,0:27:55.28,*Default,NTP,0000,0000,0000,,and what's that something something well
+Dialogue: 0,0:27:55.28,0:27:56.56,*Default,NTP,0000,0000,0000,,it's the
+Dialogue: 0,0:27:56.56,0:28:01.20,*Default,NTP,0000,0000,0000,,elements in t the zero one two
+Dialogue: 0,0:28:01.20,0:28:02.96,*Default,NTP,0000,0000,0000,,so we're left with three four zero one
+Dialogue: 0,0:28:02.96,0:28:04.72,*Default,NTP,0000,0000,0000,,two seven instead of three four five six
+Dialogue: 0,0:28:04.72,0:28:06.48,*Default,NTP,0000,0000,0000,,seven
+Dialogue: 0,0:28:06.48,0:28:08.08,*Default,NTP,0000,0000,0000,,and this is supposed to demonstrate that
+Dialogue: 0,0:28:08.08,0:28:10.00,*Default,NTP,0000,0000,0000,,if you change t
+Dialogue: 0,0:28:10.00,0:28:14.00,*Default,NTP,0000,0000,0000,,t dot rest of first equals eight
+Dialogue: 0,0:28:14.16,0:28:16.00,*Default,NTP,0000,0000,0000,,that's changing the zero one two to a
+Dialogue: 0,0:28:16.00,0:28:17.28,*Default,NTP,0000,0000,0000,,zero eight two
+Dialogue: 0,0:28:17.28,0:28:19.44,*Default,NTP,0000,0000,0000,,this is also changing s so now we have
+Dialogue: 0,0:28:19.44,0:28:20.72,*Default,NTP,0000,0000,0000,,three four zero eight two
+Dialogue: 0,0:28:20.72,0:28:24.48,*Default,NTP,0000,0000,0000,,seven whew
+Dialogue: 0,0:28:24.72,0:28:26.88,*Default,NTP,0000,0000,0000,,uh well i think this is not gonna be
+Dialogue: 0,0:28:26.88,0:28:29.84,*Default,NTP,0000,0000,0000,,that quick but let's take a look
+Dialogue: 0,0:28:29.84,0:28:33.84,*Default,NTP,0000,0000,0000,,if i is greater than one
+Dialogue: 0,0:28:33.84,0:28:36.16,*Default,NTP,0000,0000,0000,,then we're kind of not where we need to
+Dialogue: 0,0:28:36.16,0:28:38.48,*Default,NTP,0000,0000,0000,,be to make the change
+Dialogue: 0,0:28:38.48,0:28:40.88,*Default,NTP,0000,0000,0000,,i think is the story there because with
+Dialogue: 0,0:28:40.88,0:28:41.76,*Default,NTP,0000,0000,0000,,the linked list
+Dialogue: 0,0:28:41.76,0:28:43.36,*Default,NTP,0000,0000,0000,,you can kind of only change the first
+Dialogue: 0,0:28:43.36,0:28:45.12,*Default,NTP,0000,0000,0000,,thing and the rest
+Dialogue: 0,0:28:45.12,0:28:48.24,*Default,NTP,0000,0000,0000,,but um things later on
+Dialogue: 0,0:28:48.24,0:28:52.32,*Default,NTP,0000,0000,0000,,you'd usually handle with recursion
+Dialogue: 0,0:28:52.48,0:28:56.32,*Default,NTP,0000,0000,0000,,so oh i can use pdf annotation that
+Dialogue: 0,0:28:56.32,0:28:59.84,*Default,NTP,0000,0000,0000,,would work much better
+Dialogue: 0,0:29:03.52,0:29:06.40,*Default,NTP,0000,0000,0000,,can you not see my screen anymore uh we
+Dialogue: 0,0:29:06.40,0:29:08.24,*Default,NTP,0000,0000,0000,,see your screen but no annotation yet
+Dialogue: 0,0:29:08.24,0:29:10.48,*Default,NTP,0000,0000,0000,,john
+Dialogue: 0,0:29:10.72,0:29:13.92,*Default,NTP,0000,0000,0000,,now we have it so if
+Dialogue: 0,0:29:13.92,0:29:16.64,*Default,NTP,0000,0000,0000,,i is greater than one then i think we
+Dialogue: 0,0:29:16.64,0:29:20.08,*Default,NTP,0000,0000,0000,,need to just kind of move on
+Dialogue: 0,0:29:21.20,0:29:23.84,*Default,NTP,0000,0000,0000,,it's the same thing as replacing the
+Dialogue: 0,0:29:23.84,0:29:24.48,*Default,NTP,0000,0000,0000,,rest of
+Dialogue: 0,0:29:24.48,0:29:28.72,*Default,NTP,0000,0000,0000,,s with t with a smaller i
+Dialogue: 0,0:29:28.72,0:29:31.60,*Default,NTP,0000,0000,0000,,and a smaller j
+Dialogue: 0,0:29:35.28,0:29:37.20,*Default,NTP,0000,0000,0000,,so how did i get that well basically
+Dialogue: 0,0:29:37.20,0:29:39.76,*Default,NTP,0000,0000,0000,,like replacing two to four with an s
+Dialogue: 0,0:29:39.76,0:29:41.36,*Default,NTP,0000,0000,0000,,is the same thing as replacing one to
+Dialogue: 0,0:29:41.36,0:29:43.52,*Default,NTP,0000,0000,0000,,three within s.rest
+Dialogue: 0,0:29:43.52,0:29:45.36,*Default,NTP,0000,0000,0000,,that was the idea there okay so we've
+Dialogue: 0,0:29:45.36,0:29:47.60,*Default,NTP,0000,0000,0000,,kind of moved forward into s until we
+Dialogue: 0,0:29:47.60,0:29:48.88,*Default,NTP,0000,0000,0000,,find the place where we're gonna
+Dialogue: 0,0:29:48.88,0:29:51.20,*Default,NTP,0000,0000,0000,,make this edit we've found this place
+Dialogue: 0,0:29:51.20,0:29:54.40,*Default,NTP,0000,0000,0000,,where uh i
+Dialogue: 0,0:29:54.40,0:29:57.76,*Default,NTP,0000,0000,0000,,equals one is i ever zero no positive
+Dialogue: 0,0:29:57.76,0:29:58.48,*Default,NTP,0000,0000,0000,,integers i
+Dialogue: 0,0:29:58.48,0:30:00.88,*Default,NTP,0000,0000,0000,,okay so now we basically know that i is
+Dialogue: 0,0:30:00.88,0:30:02.40,*Default,NTP,0000,0000,0000,,one
+Dialogue: 0,0:30:02.40,0:30:05.28,*Default,NTP,0000,0000,0000,,and that means we're going to make some
+Dialogue: 0,0:30:05.28,0:30:06.48,*Default,NTP,0000,0000,0000,,edits
+Dialogue: 0,0:30:06.48,0:30:09.84,*Default,NTP,0000,0000,0000,,this says k times
+Dialogue: 0,0:30:09.84,0:30:12.88,*Default,NTP,0000,0000,0000,,or sorry j minus i times so
+Dialogue: 0,0:30:12.88,0:30:14.64,*Default,NTP,0000,0000,0000,,uh kind of the length of the part that
+Dialogue: 0,0:30:14.64,0:30:16.48,*Default,NTP,0000,0000,0000,,we're removing which would be like four
+Dialogue: 0,0:30:16.48,0:30:18.32,*Default,NTP,0000,0000,0000,,minus two okay so we need to remove two
+Dialogue: 0,0:30:18.32,0:30:19.44,*Default,NTP,0000,0000,0000,,elements
+Dialogue: 0,0:30:19.44,0:30:22.64,*Default,NTP,0000,0000,0000,,we need to remove the next element
+Dialogue: 0,0:30:22.64,0:30:25.44,*Default,NTP,0000,0000,0000,,and we saw this in lab as well you can
+Dialogue: 0,0:30:25.44,0:30:28.08,*Default,NTP,0000,0000,0000,,remove the next element
+Dialogue: 0,0:30:28.08,0:30:30.40,*Default,NTP,0000,0000,0000,,by
+Dialogue: 0,0:30:31.20,0:30:35.04,*Default,NTP,0000,0000,0000,,changing s dot rest to be
+Dialogue: 0,0:30:35.04,0:30:38.32,*Default,NTP,0000,0000,0000,,start rest.rest
+Dialogue: 0,0:30:40.80,0:30:45.44,*Default,NTP,0000,0000,0000,,so what did this do this just
+Dialogue: 0,0:30:46.96,0:30:51.84,*Default,NTP,0000,0000,0000,,remove element at index one
+Dialogue: 0,0:30:57.36,0:31:00.40,*Default,NTP,0000,0000,0000,,uh okay so um just like in lab that's
+Dialogue: 0,0:31:00.40,0:31:02.08,*Default,NTP,0000,0000,0000,,how you get rid of the elemented index
+Dialogue: 0,0:31:02.08,0:31:02.56,*Default,NTP,0000,0000,0000,,one
+Dialogue: 0,0:31:02.56,0:31:04.88,*Default,NTP,0000,0000,0000,,we're doing it a bunch of times j minus
+Dialogue: 0,0:31:04.88,0:31:06.88,*Default,NTP,0000,0000,0000,,i times in order to kind of get rid of
+Dialogue: 0,0:31:06.88,0:31:08.16,*Default,NTP,0000,0000,0000,,all the elements that we want to get rid
+Dialogue: 0,0:31:08.16,0:31:09.92,*Default,NTP,0000,0000,0000,,of
+Dialogue: 0,0:31:09.92,0:31:11.36,*Default,NTP,0000,0000,0000,,okay now we have an interesting
+Dialogue: 0,0:31:11.36,0:31:14.88,*Default,NTP,0000,0000,0000,,expression n equals t
+Dialogue: 0,0:31:15.44,0:31:20.72,*Default,NTP,0000,0000,0000,,while something n equals and rest
+Dialogue: 0,0:31:21.28,0:31:22.32,*Default,NTP,0000,0000,0000,,i think what we're doing is we're
+Dialogue: 0,0:31:22.32,0:31:26.00,*Default,NTP,0000,0000,0000,,finding the last element in t
+Dialogue: 0,0:31:26.00,0:31:28.48,*Default,NTP,0000,0000,0000,,yeah how would we find the last element
+Dialogue: 0,0:31:28.48,0:31:29.36,*Default,NTP,0000,0000,0000,,in t
+Dialogue: 0,0:31:29.36,0:31:32.32,*Default,NTP,0000,0000,0000,,well we'd start at the beginning and
+Dialogue: 0,0:31:32.32,0:31:33.60,*Default,NTP,0000,0000,0000,,then
+Dialogue: 0,0:31:33.60,0:31:37.36,*Default,NTP,0000,0000,0000,,if we haven't reached the last element
+Dialogue: 0,0:31:37.36,0:31:41.20,*Default,NTP,0000,0000,0000,,then we move forward in t
+Dialogue: 0,0:31:41.20,0:31:43.76,*Default,NTP,0000,0000,0000,,by calling end equals n dot rest how do
+Dialogue: 0,0:31:43.76,0:31:45.44,*Default,NTP,0000,0000,0000,,we know that we've reached the last
+Dialogue: 0,0:31:45.44,0:31:46.40,*Default,NTP,0000,0000,0000,,element
+Dialogue: 0,0:31:46.40,0:31:50.00,*Default,NTP,0000,0000,0000,,if end dot rest
+Dialogue: 0,0:31:50.00,0:31:54.24,*Default,NTP,0000,0000,0000,,does not equal link dot empty
+Dialogue: 0,0:31:55.84,0:31:58.00,*Default,NTP,0000,0000,0000,,so it might be that t only has one
+Dialogue: 0,0:31:58.00,0:31:59.68,*Default,NTP,0000,0000,0000,,element and we've already reached the
+Dialogue: 0,0:31:59.68,0:32:00.00,*Default,NTP,0000,0000,0000,,end
+Dialogue: 0,0:32:00.00,0:32:02.24,*Default,NTP,0000,0000,0000,,in which case we need to make no updates
+Dialogue: 0,0:32:02.24,0:32:03.44,*Default,NTP,0000,0000,0000,,but if not
+Dialogue: 0,0:32:03.44,0:32:06.16,*Default,NTP,0000,0000,0000,,then we need to continually go through
+Dialogue: 0,0:32:06.16,0:32:06.64,*Default,NTP,0000,0000,0000,,end
+Dialogue: 0,0:32:06.64,0:32:09.60,*Default,NTP,0000,0000,0000,,until it really is the end until there's
+Dialogue: 0,0:32:09.60,0:32:10.96,*Default,NTP,0000,0000,0000,,nothing after it meaning
+Dialogue: 0,0:32:10.96,0:32:13.92,*Default,NTP,0000,0000,0000,,the rest of it is empty now we found the
+Dialogue: 0,0:32:13.92,0:32:14.40,*Default,NTP,0000,0000,0000,,last
+Dialogue: 0,0:32:14.40,0:32:17.60,*Default,NTP,0000,0000,0000,,thing in t by the way when you see that
+Dialogue: 0,0:32:17.60,0:32:20.40,*Default,NTP,0000,0000,0000,,end equals n dot rest that's basically i
+Dialogue: 0,0:32:20.40,0:32:22.40,*Default,NTP,0000,0000,0000,,equals i plus one you're incrementing
+Dialogue: 0,0:32:22.40,0:32:24.32,*Default,NTP,0000,0000,0000,,through a list that's a classic
+Dialogue: 0,0:32:24.32,0:32:28.08,*Default,NTP,0000,0000,0000,,how do you make your way through a list
+Dialogue: 0,0:32:28.08,0:32:30.40,*Default,NTP,0000,0000,0000,,yeah exactly great great point and and
+Dialogue: 0,0:32:30.40,0:32:31.52,*Default,NTP,0000,0000,0000,,so now i think
+Dialogue: 0,0:32:31.52,0:32:35.04,*Default,NTP,0000,0000,0000,,uh we found the end of t we know where
+Dialogue: 0,0:32:35.04,0:32:36.64,*Default,NTP,0000,0000,0000,,we
+Dialogue: 0,0:32:36.64,0:32:39.28,*Default,NTP,0000,0000,0000,,are supposed to be splicing in this t
+Dialogue: 0,0:32:39.28,0:32:40.88,*Default,NTP,0000,0000,0000,,which is right at
+Dialogue: 0,0:32:40.88,0:32:44.96,*Default,NTP,0000,0000,0000,,the position one within s
+Dialogue: 0,0:32:44.96,0:32:48.00,*Default,NTP,0000,0000,0000,,because i is one remember so we're going
+Dialogue: 0,0:32:48.00,0:32:48.80,*Default,NTP,0000,0000,0000,,to change
+Dialogue: 0,0:32:48.80,0:32:53.60,*Default,NTP,0000,0000,0000,,s dot rest to just be t
+Dialogue: 0,0:32:54.08,0:32:56.96,*Default,NTP,0000,0000,0000,,but what about everything after like
+Dialogue: 0,0:32:56.96,0:32:58.72,*Default,NTP,0000,0000,0000,,what about the old s dot rest
+Dialogue: 0,0:32:58.72,0:33:01.04,*Default,NTP,0000,0000,0000,,that's supposed to appear after t which
+Dialogue: 0,0:33:01.04,0:33:02.40,*Default,NTP,0000,0000,0000,,means we can change
+Dialogue: 0,0:33:02.40,0:33:05.52,*Default,NTP,0000,0000,0000,,the end of t to be
+Dialogue: 0,0:33:05.52,0:33:08.72,*Default,NTP,0000,0000,0000,,everything that used to be in
+Dialogue: 0,0:33:08.72,0:33:12.80,*Default,NTP,0000,0000,0000,,s dot rest i don't want to sign this one
+Dialogue: 0,0:33:14.72,0:33:16.40,*Default,NTP,0000,0000,0000,,i don't know it's it's you can consider
+Dialogue: 0,0:33:16.40,0:33:18.00,*Default,NTP,0000,0000,0000,,it artwork john i think you should sign
+Dialogue: 0,0:33:18.00,0:33:19.20,*Default,NTP,0000,0000,0000,,it when you're done
+Dialogue: 0,0:33:19.20,0:33:22.84,*Default,NTP,0000,0000,0000,,there we go so
+Dialogue: 0,0:33:22.84,0:33:27.28,*Default,NTP,0000,0000,0000,,um you know
+Dialogue: 0,0:33:27.28,0:33:29.92,*Default,NTP,0000,0000,0000,,let's think about this example what we
+Dialogue: 0,0:33:29.92,0:33:32.40,*Default,NTP,0000,0000,0000,,did is we had three four five six seven
+Dialogue: 0,0:33:32.40,0:33:35.36,*Default,NTP,0000,0000,0000,,we kind of worked our way past the three
+Dialogue: 0,0:33:35.36,0:33:37.84,*Default,NTP,0000,0000,0000,,until we just had four five six seven
+Dialogue: 0,0:33:37.84,0:33:38.80,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:33:38.80,0:33:42.72,*Default,NTP,0000,0000,0000,,i was one then we got rid of the five
+Dialogue: 0,0:33:42.72,0:33:44.64,*Default,NTP,0000,0000,0000,,so we had four six seven we got rid of
+Dialogue: 0,0:33:44.64,0:33:46.08,*Default,NTP,0000,0000,0000,,the six we had four
+Dialogue: 0,0:33:46.08,0:33:48.24,*Default,NTP,0000,0000,0000,,seven and that was called s in our
+Dialogue: 0,0:33:48.24,0:33:49.12,*Default,NTP,0000,0000,0000,,recursive call
+Dialogue: 0,0:33:49.12,0:33:52.56,*Default,NTP,0000,0000,0000,,s was the link for seven
+Dialogue: 0,0:33:52.56,0:33:56.08,*Default,NTP,0000,0000,0000,,now we found end n started out
+Dialogue: 0,0:33:56.08,0:33:58.48,*Default,NTP,0000,0000,0000,,being 0 1 2 then we went to the rest so
+Dialogue: 0,0:33:58.48,0:33:59.28,*Default,NTP,0000,0000,0000,,it was just 1
+Dialogue: 0,0:33:59.28,0:34:00.80,*Default,NTP,0000,0000,0000,,2 and then we went to the rest and we
+Dialogue: 0,0:34:00.80,0:34:02.64,*Default,NTP,0000,0000,0000,,found that the end was this
+Dialogue: 0,0:34:02.64,0:34:06.00,*Default,NTP,0000,0000,0000,,link 2. and then we made the following
+Dialogue: 0,0:34:06.00,0:34:09.12,*Default,NTP,0000,0000,0000,,updates after four
+Dialogue: 0,0:34:09.12,0:34:11.60,*Default,NTP,0000,0000,0000,,comes
+Dialogue: 0,0:34:12.24,0:34:16.24,*Default,NTP,0000,0000,0000,,t which was zero one two and after two
+Dialogue: 0,0:34:16.24,0:34:18.72,*Default,NTP,0000,0000,0000,,comes whatever used to be after four
+Dialogue: 0,0:34:18.72,0:34:20.00,*Default,NTP,0000,0000,0000,,which was seven
+Dialogue: 0,0:34:20.00,0:34:21.60,*Default,NTP,0000,0000,0000,,and then we ended up with three four
+Dialogue: 0,0:34:21.60,0:34:24.48,*Default,NTP,0000,0000,0000,,zero one two seven
+Dialogue: 0,0:34:24.48,0:34:26.48,*Default,NTP,0000,0000,0000,,think about it uh imagine you have a
+Dialogue: 0,0:34:26.48,0:34:28.08,*Default,NTP,0000,0000,0000,,train that's connected uh
+Dialogue: 0,0:34:28.08,0:34:30.72,*Default,NTP,0000,0000,0000,,you know all the cars we essentially
+Dialogue: 0,0:34:30.72,0:34:32.48,*Default,NTP,0000,0000,0000,,deleted a bunch of cars and now you have
+Dialogue: 0,0:34:32.48,0:34:33.84,*Default,NTP,0000,0000,0000,,two pieces and you have to splice
+Dialogue: 0,0:34:33.84,0:34:35.36,*Default,NTP,0000,0000,0000,,something in so that requires two
+Dialogue: 0,0:34:35.36,0:34:36.56,*Default,NTP,0000,0000,0000,,splices
+Dialogue: 0,0:34:36.56,0:34:39.20,*Default,NTP,0000,0000,0000,,at the front and at the end yeah so
+Dialogue: 0,0:34:39.20,0:34:40.64,*Default,NTP,0000,0000,0000,,that's basically what's happening here
+Dialogue: 0,0:34:40.64,0:34:41.84,*Default,NTP,0000,0000,0000,,that's why i have to keep track of
