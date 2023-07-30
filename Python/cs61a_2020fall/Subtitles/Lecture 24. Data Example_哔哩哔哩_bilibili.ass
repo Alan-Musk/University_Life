@@ -1,0 +1,811 @@
+[Script Info]
+Title: Lecture 24. Data Example_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=58&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.53,0:00:03.93,*Default,NTP,0000,0000,0000,,61 election No.24 announcements
+Dialogue: 0,0:00:04.53,0:00:05.80,*Default,NTP,0000,0000,0000,,answers du Friday
+Dialogue: 0,0:00:05.80,0:00:08.67,*Default,NTP,0000,0000,0000,,earn an early submission bonus point for submitting by
+Dialogue: 0,0:00:08.67,0:00:12.67,*Default,NTP,0000,0000,0000,,Thursday I'm happy to report that the office hours q
+Dialogue: 0,0:00:12.67,0:00:13.97,*Default,NTP,0000,0000,0000,,is pretty short
+Dialogue: 0,0:00:14.13,0:00:14.97,*Default,NTP,0000,0000,0000,,so if you need help
+Dialogue: 0,0:00:14.97,0:00:17.27,*Default,NTP,0000,0000,0000,,pop on there and we'll help you through it
+Dialogue: 0,0:00:17.90,0:00:19.73,*Default,NTP,0000,0000,0000,,homework five is due Monday
+Dialogue: 0,0:00:19.87,0:00:21.50,*Default,NTP,0000,0000,0000,,and you can finish it during the time
+Dialogue: 0,0:00:21.50,0:00:22.80,*Default,NTP,0000,0000,0000,,that you would normally spend
+Dialogue: 0,0:00:22.97,0:00:24.17,*Default,NTP,0000,0000,0000,,finishing the lab
+Dialogue: 0,0:00:24.33,0:00:26.33,*Default,NTP,0000,0000,0000,,because the only required part of lab
+Dialogue: 0,0:00:26.33,0:00:28.07,*Default,NTP,0000,0000,0000,,nine is to finish the homework
+Dialogue: 0,0:00:28.37,0:00:30.67,*Default,NTP,0000,0000,0000,,there are some optional questions on lab nine
+Dialogue: 0,0:00:30.70,0:00:33.10,*Default,NTP,0000,0000,0000,,and so there will still be a lab orientation
+Dialogue: 0,0:00:33.17,0:00:34.10,*Default,NTP,0000,0000,0000,,so that you can
+Dialogue: 0,0:00:34.17,0:00:35.73,*Default,NTP,0000,0000,0000,,learn how to solve those problems
+Dialogue: 0,0:00:35.73,0:00:38.50,*Default,NTP,0000,0000,0000,,and they will be helpful practice for them in term
+Dialogue: 0,0:00:38.67,0:00:41.13,*Default,NTP,0000,0000,0000,,but lab nine will be released with solutions
+Dialogue: 0,0:00:41.13,0:00:42.90,*Default,NTP,0000,0000,0000,,so it's just to kind of a study aid
+Dialogue: 0,0:00:42.90,0:00:44.77,*Default,NTP,0000,0000,0000,,as opposed to something you have to work on
+Dialogue: 0,0:00:45.57,0:00:46.97,*Default,NTP,0000,0000,0000,,midterm two is coming
+Dialogue: 0,0:00:47.27,0:00:49.50,*Default,NTP,0000,0000,0000,,there's some options for prep
+Dialogue: 0,0:00:49.50,0:00:52.17,*Default,NTP,0000,0000,0000,,you can of course just go back and watch lecture
+Dialogue: 0,0:00:52.37,0:00:53.40,*Default,NTP,0000,0000,0000,,one of the best things to do
+Dialogue: 0,0:00:53.40,0:00:54.30,*Default,NTP,0000,0000,0000,,is work through some of the
+Dialogue: 0,0:00:54.30,0:00:56.73,*Default,NTP,0000,0000,0000,,optional problems on past labs
+Dialogue: 0,0:00:56.97,0:00:58.40,*Default,NTP,0000,0000,0000,,but here are some events
+Dialogue: 0,0:00:58.57,0:01:01.67,*Default,NTP,0000,0000,0000,,we have our usual exam prep section on Friday
+Dialogue: 0,0:01:02.17,0:01:03.17,*Default,NTP,0000,0000,0000,,the student group
+Dialogue: 0,0:01:03.17,0:01:06.17,*Default,NTP,0000,0000,0000,,called cs mentors is running two review sessions on
+Dialogue: 0,0:01:06.17,0:01:09.07,*Default,NTP,0000,0000,0000,,Saturday one at noon one at six
+Dialogue: 0,0:01:09.97,0:01:10.87,*Default,NTP,0000,0000,0000,,another student group
+Dialogue: 0,0:01:10.87,0:01:13.73,*Default,NTP,0000,0000,0000,,hkn is running a review session on Sunday
+Dialogue: 0,0:01:13.87,0:01:17.17,*Default,NTP,0000,0000,0000,,at 4:00 both of these will be recorded
+Dialogue: 0,0:01:18.27,0:01:21.33,*Default,NTP,0000,0000,0000,,and the staff is organized a practice exam
+Dialogue: 0,0:01:21.67,0:01:23.47,*Default,NTP,0000,0000,0000,,starting at 11:00am Monday
+Dialogue: 0,0:01:23.50,0:01:26.40,*Default,NTP,0000,0000,0000,,but it will be available for you to take at any time
+Dialogue: 0,0:01:26.80,0:01:30.77,*Default,NTP,0000,0000,0000,,and what they've done is taken spring 20 20 midterm two
+Dialogue: 0,0:01:30.97,0:01:34.40,*Default,NTP,0000,0000,0000,,and just put it into the format of our exam
+Dialogue: 0,0:01:34.80,0:01:37.77,*Default,NTP,0000,0000,0000,,so if you've already read spring 20 20 midterm two
+Dialogue: 0,0:01:37.93,0:01:39.80,*Default,NTP,0000,0000,0000,,there won't be any new questions
+Dialogue: 0,0:01:40.07,0:01:42.33,*Default,NTP,0000,0000,0000,,and the practice exam will be pretty easy
+Dialogue: 0,0:01:42.67,0:01:44.30,*Default,NTP,0000,0000,0000,,but if you haven't looked at that yet
+Dialogue: 0,0:01:44.47,0:01:46.07,*Default,NTP,0000,0000,0000,,you might want to save it
+Dialogue: 0,0:01:46.20,0:01:48.67,*Default,NTP,0000,0000,0000,,and instead take the practice exam so that you can
+Dialogue: 0,0:01:48.67,0:01:50.87,*Default,NTP,0000,0000,0000,,feel what it's like to solve these problems
+Dialogue: 0,0:01:50.93,0:01:53.17,*Default,NTP,0000,0000,0000,,under exam like conditions
+Dialogue: 0,0:01:53.50,0:01:55.97,*Default,NTP,0000,0000,0000,,and I really recommend taking the practice exam
+Dialogue: 0,0:01:56.17,0:01:58.17,*Default,NTP,0000,0000,0000,,either at 11 or on your own time
+Dialogue: 0,0:01:58.40,0:02:00.40,*Default,NTP,0000,0000,0000,,just to make sure that you're familiar
+Dialogue: 0,0:02:00.47,0:02:02.33,*Default,NTP,0000,0000,0000,,with the exam software
+Dialogue: 0,0:02:02.40,0:02:04.07,*Default,NTP,0000,0000,0000,,it's the same as midterm one
+Dialogue: 0,0:02:04.07,0:02:06.07,*Default,NTP,0000,0000,0000,,but it's always good to refresh your memory
+Dialogue: 0,0:02:06.93,0:02:08.33,*Default,NTP,0000,0000,0000,,I made a piazza post
+Dialogue: 0,0:02:08.33,0:02:11.20,*Default,NTP,0000,0000,0000,,about some past exam problems that we've discussed in
+Dialogue: 0,0:02:11.20,0:02:12.20,*Default,NTP,0000,0000,0000,,lecture q amp a
+Dialogue: 0,0:02:12.47,0:02:14.13,*Default,NTP,0000,0000,0000,,over the last few weeks
+Dialogue: 0,0:02:14.30,0:02:16.93,*Default,NTP,0000,0000,0000,,so if you take a look at that you'll see links
+Dialogue: 0,0:02:16.93,0:02:19.33,*Default,NTP,0000,0000,0000,,two of those YouTube videos at the right time
+Dialogue: 0,0:02:19.47,0:02:21.20,*Default,NTP,0000,0000,0000,,to listen to how
+Dialogue: 0,0:02:21.73,0:02:23.30,*Default,NTP,0000,0000,0000,,professor fried and I would go
+Dialogue: 0,0:02:23.30,0:02:25.97,*Default,NTP,0000,0000,0000,,about solving some past exam problems
+Dialogue: 0,0:02:26.33,0:02:28.07,*Default,NTP,0000,0000,0000,,there's the midterm two study guide
+Dialogue: 0,0:02:28.40,0:02:29.90,*Default,NTP,0000,0000,0000,,which I recommend you read
+Dialogue: 0,0:02:30.37,0:02:32.17,*Default,NTP,0000,0000,0000,,and the staff have also put together
+Dialogue: 0,0:02:32.27,0:02:34.07,*Default,NTP,0000,0000,0000,,a document on how to prepare
+Dialogue: 0,0:02:34.60,0:02:37.00,*Default,NTP,0000,0000,0000,,I talked about this in some earlier
+Dialogue: 0,0:02:37.10,0:02:38.50,*Default,NTP,0000,0000,0000,,announcements videos
+Dialogue: 0,0:02:38.57,0:02:40.87,*Default,NTP,0000,0000,0000,,but just wanted to remind you that it's here
+Dialogue: 0,0:02:41.77,0:02:44.53,*Default,NTP,0000,0000,0000,,I don't have anything new to tell you about midterm two
+Dialogue: 0,0:02:44.80,0:02:45.30,*Default,NTP,0000,0000,0000,,this was
+Dialogue: 0,0:02:45.30,0:02:48.37,*Default,NTP,0000,0000,0000,,all the same announcements that I made last lecture
+Dialogue: 0,0:02:48.80,0:02:51.60,*Default,NTP,0000,0000,0000,,remember that we will be proctoring via video
+Dialogue: 0,0:02:51.70,0:02:53.90,*Default,NTP,0000,0000,0000,,where you need to include your head
+Dialogue: 0,0:02:53.97,0:02:56.10,*Default,NTP,0000,0000,0000,,and your screen in the video
+Dialogue: 0,0:02:56.53,0:02:59.10,*Default,NTP,0000,0000,0000,,if you want to request an exemption from this policy
+Dialogue: 0,0:02:59.17,0:03:01.40,*Default,NTP,0000,0000,0000,,then please fill out this form by Sunday
+Dialogue: 0,0:03:02.50,0:03:06.53,*Default,NTP,0000,0000,0000,,the exam starts at 7pm next Wednesday the 28th
+Dialogue: 0,0:03:07.07,0:03:09.37,*Default,NTP,0000,0000,0000,,if you would like to take it at an alternate time
+Dialogue: 0,0:03:09.47,0:03:11.97,*Default,NTP,0000,0000,0000,,please fill out the alternate time request form
+Dialogue: 0,0:03:13.07,0:03:15.90,*Default,NTP,0000,0000,0000,,and here are the various rules of the exam
+Dialogue: 0,0:03:16.37,0:03:19.30,*Default,NTP,0000,0000,0000,,okay today's lecture is not going to be terribly long
+Dialogue: 0,0:03:19.30,0:03:22.13,*Default,NTP,0000,0000,0000,,it's just got some example problems in it
+Dialogue: 0,0:03:22.57,0:03:25.10,*Default,NTP,0000,0000,0000,,that I think might help you refresh your memory
+Dialogue: 0,0:03:25.10,0:03:26.57,*Default,NTP,0000,0000,0000,,about some details
+Dialogue: 0,0:03:26.60,0:03:28.47,*Default,NTP,0000,0000,0000,,of the course material so far
+Dialogue: 0,0:03:28.90,0:03:32.20,*Default,NTP,0000,0000,0000,,and help get you ready to solve those midterm problems
+Dialogue: 0,0:03:33.07,0:03:33.53,*Default,NTP,0000,0000,0000,,finally
+Dialogue: 0,0:03:33.53,0:03:36.80,*Default,NTP,0000,0000,0000,,I wanted to alert you to some scheduling changes
+Dialogue: 0,0:03:36.80,0:03:37.80,*Default,NTP,0000,0000,0000,,for the course
+Dialogue: 0,0:03:38.33,0:03:41.33,*Default,NTP,0000,0000,0000,,I read your feedback about how the course is going
+Dialogue: 0,0:03:41.50,0:03:44.93,*Default,NTP,0000,0000,0000,,and it sounds like a non trivial number of students
+Dialogue: 0,0:03:45.17,0:03:47.67,*Default,NTP,0000,0000,0000,,are really quite overwhelmed with the
+Dialogue: 0,0:03:47.67,0:03:49.57,*Default,NTP,0000,0000,0000,,remote learning environment
+Dialogue: 0,0:03:49.57,0:03:51.13,*Default,NTP,0000,0000,0000,,and all that's going on in the world
+Dialogue: 0,0:03:51.33,0:03:52.77,*Default,NTP,0000,0000,0000,,I totally understand
+Dialogue: 0,0:03:53.37,0:03:55.20,*Default,NTP,0000,0000,0000,,we tried to anticipate this
+Dialogue: 0,0:03:55.33,0:03:57.73,*Default,NTP,0000,0000,0000,,by adding some optional content in
+Dialogue: 0,0:03:57.93,0:03:59.13,*Default,NTP,0000,0000,0000,,so we covered binary
+Dialogue: 0,0:03:59.13,0:04:01.57,*Default,NTP,0000,0000,0000,,numbers and circuits earlier in the semester
+Dialogue: 0,0:04:01.67,0:04:04.70,*Default,NTP,0000,0000,0000,,but decided not to require those for the exam
+Dialogue: 0,0:04:04.80,0:04:06.07,*Default,NTP,0000,0000,0000,,just so that we could
+Dialogue: 0,0:04:06.20,0:04:08.13,*Default,NTP,0000,0000,0000,,create some space in the schedule
+Dialogue: 0,0:04:08.27,0:04:10.27,*Default,NTP,0000,0000,0000,,give you something interesting to listen to
+Dialogue: 0,0:04:10.33,0:04:12.80,*Default,NTP,0000,0000,0000,,but not give you more stuff that you had to learn
+Dialogue: 0,0:04:13.13,0:04:14.80,*Default,NTP,0000,0000,0000,,and we're going to do some more of that
+Dialogue: 0,0:04:15.13,0:04:15.93,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:04:16.67,0:04:19.27,*Default,NTP,0000,0000,0000,,efficiency already happened that's optional
+Dialogue: 0,0:04:19.67,0:04:21.93,*Default,NTP,0000,0000,0000,,next week we're gonna have
+Dialogue: 0,0:04:21.93,0:04:24.87,*Default,NTP,0000,0000,0000,,two optional lectures on Monday and Friday
+Dialogue: 0,0:04:25.07,0:04:26.57,*Default,NTP,0000,0000,0000,,so really the only thing
+Dialogue: 0,0:04:26.60,0:04:28.10,*Default,NTP,0000,0000,0000,,that you have to worry about
+Dialogue: 0,0:04:28.10,0:04:31.27,*Default,NTP,0000,0000,0000,,is finishing homework five and taking the midterm
+Dialogue: 0,0:04:31.30,0:04:32.87,*Default,NTP,0000,0000,0000,,and once you're done with the midterm
+Dialogue: 0,0:04:32.87,0:04:34.77,*Default,NTP,0000,0000,0000,,we won't introduce new material
+Dialogue: 0,0:04:35.47,0:04:37.57,*Default,NTP,0000,0000,0000,,we'll make this homework really short
+Dialogue: 0,0:04:38.37,0:04:40.33,*Default,NTP,0000,0000,0000,,and I think we'll release it on Monday
+Dialogue: 0,0:04:41.53,0:04:43.90,*Default,NTP,0000,0000,0000,,okay there I moved it some of that Monday
+Dialogue: 0,0:04:45.50,0:04:46.60,*Default,NTP,0000,0000,0000,,and then let's see
+Dialogue: 0,0:04:46.60,0:04:47.67,*Default,NTP,0000,0000,0000,,so later in the course
+Dialogue: 0,0:04:47.67,0:04:50.10,*Default,NTP,0000,0000,0000,,we've picked some topics to make optional
+Dialogue: 0,0:04:50.60,0:04:52.30,*Default,NTP,0000,0000,0000,,we'll still have lectures about them
+Dialogue: 0,0:04:52.60,0:04:55.57,*Default,NTP,0000,0000,0000,,but we won't require them on exams
+Dialogue: 0,0:04:55.57,0:04:58.93,*Default,NTP,0000,0000,0000,,so that would be the macros and tail calls lecture
+Dialogue: 0,0:04:58.97,0:05:01.07,*Default,NTP,0000,0000,0000,,and also the databases lecture
+Dialogue: 0,0:05:01.20,0:05:03.20,*Default,NTP,0000,0000,0000,,you're certainly welcome to learn about this stuff
+Dialogue: 0,0:05:04.10,0:05:07.60,*Default,NTP,0000,0000,0000,,but it won't be on the final exam or on any assignments
+Dialogue: 0,0:05:08.33,0:05:10.00,*Default,NTP,0000,0000,0000,,so stick with it
+Dialogue: 0,0:05:10.07,0:05:11.30,*Default,NTP,0000,0000,0000,,make it through ants
+Dialogue: 0,0:05:11.37,0:05:12.53,*Default,NTP,0000,0000,0000,,make it through this week
+Dialogue: 0,0:05:13.07,0:05:14.30,*Default,NTP,0000,0000,0000,,make it through next week
+Dialogue: 0,0:05:14.30,0:05:15.47,*Default,NTP,0000,0000,0000,,take that midterm
+Dialogue: 0,0:05:15.93,0:05:17.47,*Default,NTP,0000,0000,0000,,there's still more stuff to come
+Dialogue: 0,0:05:17.60,0:05:18.93,*Default,NTP,0000,0000,0000,,but not quite as much
+Dialogue: 0,0:05:19.10,0:05:19.73,*Default,NTP,0000,0000,0000,,so hopefully
+Dialogue: 0,0:05:19.73,0:05:21.80,*Default,NTP,0000,0000,0000,,that will make this semester more manageable
+Dialogue: 0,0:05:24.07,0:05:27.13,*Default,NTP,0000,0000,0000,,let's look at an example of using the object system
+Dialogue: 0,0:05:29.47,0:05:30.97,*Default,NTP,0000,0000,0000,,here's something to remember
+Dialogue: 0,0:05:31.50,0:05:34.93,*Default,NTP,0000,0000,0000,,when you look up an attribute by name on an instance
+Dialogue: 0,0:05:35.90,0:05:38.07,*Default,NTP,0000,0000,0000,,you find instance attributes before you find
+Dialogue: 0,0:05:38.07,0:05:39.27,*Default,NTP,0000,0000,0000,,class attributes
+Dialogue: 0,0:05:40.07,0:05:42.60,*Default,NTP,0000,0000,0000,,and if you don't find the attribute on the instance
+Dialogue: 0,0:05:42.60,0:05:43.70,*Default,NTP,0000,0000,0000,,you look in the class
+Dialogue: 0,0:05:43.70,0:05:45.50,*Default,NTP,0000,0000,0000,,if you don't find it in the class
+Dialogue: 0,0:05:45.50,0:05:47.73,*Default,NTP,0000,0000,0000,,you look in the bass class
+Dialogue: 0,0:05:47.77,0:05:50.53,*Default,NTP,0000,0000,0000,,and in this way class attributes are inherited
+Dialogue: 0,0:05:52.20,0:05:53.17,*Default,NTP,0000,0000,0000,,here's an example
+Dialogue: 0,0:05:53.17,0:05:55.20,*Default,NTP,0000,0000,0000,,let's say we have a class of worker
+Dialogue: 0,0:05:55.60,0:05:57.80,*Default,NTP,0000,0000,0000,,the worker greets others as sir
+Dialogue: 0,0:05:58.47,0:05:59.80,*Default,NTP,0000,0000,0000,,has a constructor
+Dialogue: 0,0:06:00.07,0:06:02.77,*Default,NTP,0000,0000,0000,,that sets an attribute elf to the class
+Dialogue: 0,0:06:02.77,0:06:03.57,*Default,NTP,0000,0000,0000,,worker
+Dialogue: 0,0:06:04.40,0:06:05.73,*Default,NTP,0000,0000,0000,,has a method work
+Dialogue: 0,0:06:06.13,0:06:08.37,*Default,NTP,0000,0000,0000,,which returns the greeting
+Dialogue: 0,0:06:08.47,0:06:11.17,*Default,NTP,0000,0000,0000,,of the object passed in itself
+Dialogue: 0,0:06:11.80,0:06:14.93,*Default,NTP,0000,0000,0000,,plus I work and finally
+Dialogue: 0,0:06:15.73,0:06:18.10,*Default,NTP,0000,0000,0000,,has a special method repper
+Dialogue: 0,0:06:18.30,0:06:21.27,*Default,NTP,0000,0000,0000,,and this repper method is used to display
+Dialogue: 0,0:06:21.27,0:06:22.73,*Default,NTP,0000,0000,0000,,what a worker instance
+Dialogue: 0,0:06:23.10,0:06:26.87,*Default,NTP,0000,0000,0000,,looks like when you're running an interactive session
+Dialogue: 0,0:06:27.60,0:06:29.57,*Default,NTP,0000,0000,0000,,now this repper string is very weird
+Dialogue: 0,0:06:30.13,0:06:32.20,*Default,NTP,0000,0000,0000,,instead of doing anything with self at all
+Dialogue: 0,0:06:32.47,0:06:35.70,*Default,NTP,0000,0000,0000,,it takes bergeois v and returns its greeting
+Dialogue: 0,0:06:36.80,0:06:39.53,*Default,NTP,0000,0000,0000,,the bourgeoisie are the landowners
+Dialogue: 0,0:06:39.77,0:06:42.10,*Default,NTP,0000,0000,0000,,the ones who own the means of production
+Dialogue: 0,0:06:42.60,0:06:45.80,*Default,NTP,0000,0000,0000,,and so instead of working themselves
+Dialogue: 0,0:06:45.87,0:06:49.73,*Default,NTP,0000,0000,0000,,they gather wealth by employing their peons
+Dialogue: 0,0:06:51.07,0:06:52.77,*Default,NTP,0000,0000,0000,,to work they say
+Dialogue: 0,0:06:53.07,0:06:54.33,*Default,NTP,0000,0000,0000,,I gather wealth
+Dialogue: 0,0:06:56.60,0:06:57.97,*Default,NTP,0000,0000,0000,,jack is a worker
+Dialogue: 0,0:06:58.07,0:06:59.93,*Default,NTP,0000,0000,0000,,john is a bourgeoisie
+Dialogue: 0,0:07:00.50,0:07:05.00,*Default,NTP,0000,0000,0000,,and here we've assigned the greeting attribute of jack
+Dialogue: 0,0:07:05.07,0:07:06.10,*Default,NTP,0000,0000,0000,,to be ma'am
+Dialogue: 0,0:07:08.73,0:07:10.93,*Default,NTP,0000,0000,0000,,if you want to work through this problem yourself
+Dialogue: 0,0:07:11.33,0:07:14.37,*Default,NTP,0000,0000,0000,,from fall 2014 midterm two
+Dialogue: 0,0:07:14.77,0:07:16.47,*Default,NTP,0000,0000,0000,,here are some of the prompts
+Dialogue: 0,0:07:17.73,0:07:18.80,*Default,NTP,0000,0000,0000,,let's go through
+Dialogue: 0,0:07:18.87,0:07:22.37,*Default,NTP,0000,0000,0000,,exactly what happens when we execute all of this coat
+Dialogue: 0,0:07:22.97,0:07:24.70,*Default,NTP,0000,0000,0000,,so the first thing is that when we
+Dialogue: 0,0:07:25.07,0:07:26.20,*Default,NTP,0000,0000,0000,,have a class statement
+Dialogue: 0,0:07:26.20,0:07:28.57,*Default,NTP,0000,0000,0000,,its body gets executed immediately
+Dialogue: 0,0:07:28.57,0:07:31.00,*Default,NTP,0000,0000,0000,,and so it creates a new class called worker
+Dialogue: 0,0:07:31.90,0:07:34.37,*Default,NTP,0000,0000,0000,,where there's a class attribute greeting
+Dialogue: 0,0:07:34.47,0:07:36.47,*Default,NTP,0000,0000,0000,,which is valued at sir
+Dialogue: 0,0:07:36.93,0:07:38.73,*Default,NTP,0000,0000,0000,,this isn't an environment diagram
+Dialogue: 0,0:07:38.73,0:07:40.97,*Default,NTP,0000,0000,0000,,this is just a sketch of what's going on
+Dialogue: 0,0:07:42.30,0:07:44.17,*Default,NTP,0000,0000,0000,,the bourgeoisie class
+Dialogue: 0,0:07:44.20,0:07:47.90,*Default,NTP,0000,0000,0000,,inherits from worker and has its own greeting peon
+Dialogue: 0,0:07:48.80,0:07:49.53,*Default,NTP,0000,0000,0000,,in this case
+Dialogue: 0,0:07:49.53,0:07:51.60,*Default,NTP,0000,0000,0000,,you don't change the greeting of the worker
+Dialogue: 0,0:07:52.10,0:07:54.00,*Default,NTP,0000,0000,0000,,it's just that if we looked up the greeting
+Dialogue: 0,0:07:54.00,0:07:55.70,*Default,NTP,0000,0000,0000,,for a bourgeoisie instance
+Dialogue: 0,0:07:55.90,0:07:58.33,*Default,NTP,0000,0000,0000,,it would find this before it found that
+Dialogue: 0,0:07:59.73,0:08:00.97,*Default,NTP,0000,0000,0000,,then these two lines
+Dialogue: 0,0:08:00.97,0:08:04.53,*Default,NTP,0000,0000,0000,,create a worker instance and a bourgeoisie instance
+Dialogue: 0,0:08:05.47,0:08:07.37,*Default,NTP,0000,0000,0000,,the worker instance is created
+Dialogue: 0,0:08:07.37,0:08:10.20,*Default,NTP,0000,0000,0000,,and then passed immediately into the constructor
+Dialogue: 0,0:08:10.40,0:08:12.53,*Default,NTP,0000,0000,0000,,where it gains an attribute elf
+Dialogue: 0,0:08:12.77,0:08:15.90,*Default,NTP,0000,0000,0000,,which is bound to whatever the name worker is bound to
+Dialogue: 0,0:08:16.33,0:08:19.00,*Default,NTP,0000,0000,0000,,and worker is the name of the worker class
+Dialogue: 0,0:08:19.77,0:08:23.00,*Default,NTP,0000,0000,0000,,so elf value is this whole thing
+Dialogue: 0,0:08:23.00,0:08:24.27,*Default,NTP,0000,0000,0000,,the worker class
+Dialogue: 0,0:08:26.70,0:08:27.97,*Default,NTP,0000,0000,0000,,john gets created
+Dialogue: 0,0:08:27.97,0:08:31.33,*Default,NTP,0000,0000,0000,,because bourgeoisie does not have an in it method
+Dialogue: 0,0:08:31.47,0:08:34.10,*Default,NTP,0000,0000,0000,,it inherits the in it method from worker
+Dialogue: 0,0:08:34.67,0:08:37.57,*Default,NTP,0000,0000,0000,,so we look up is there an in it in bourgeoisie
+Dialogue: 0,0:08:37.57,0:08:38.33,*Default,NTP,0000,0000,0000,,no there's not
+Dialogue: 0,0:08:38.33,0:08:41.33,*Default,NTP,0000,0000,0000,,so we look at the base class and we apply this one
+Dialogue: 0,0:08:41.33,0:08:42.80,*Default,NTP,0000,0000,0000,,which has the same effect
+Dialogue: 0,0:08:44.30,0:08:46.77,*Default,NTP,0000,0000,0000,,so both jack and john have the same elf
+Dialogue: 0,0:08:47.50,0:08:50.93,*Default,NTP,0000,0000,0000,,finally we have the line jack greeting equals man
+Dialogue: 0,0:08:51.37,0:08:52.97,*Default,NTP,0000,0000,0000,,if we just looked up jack
+Dialogue: 0,0:08:53.07,0:08:55.53,*Default,NTP,0000,0000,0000,,greeting we'd look here and find there was no greeting
+Dialogue: 0,0:08:55.53,0:08:56.87,*Default,NTP,0000,0000,0000,,so we would look on the class
+Dialogue: 0,0:08:56.87,0:08:58.50,*Default,NTP,0000,0000,0000,,and the answer would be sir
+Dialogue: 0,0:08:59.40,0:09:01.53,*Default,NTP,0000,0000,0000,,however attribute assignment
+Dialogue: 0,0:09:01.73,0:09:02.87,*Default,NTP,0000,0000,0000,,has the rule that it
+Dialogue: 0,0:09:02.87,0:09:04.87,*Default,NTP,0000,0000,0000,,always assigns immediately to the
+Dialogue: 0,0:09:04.87,0:09:06.77,*Default,NTP,0000,0000,0000,,object to the left of the dot
+Dialogue: 0,0:09:07.20,0:09:09.33,*Default,NTP,0000,0000,0000,,so the effect of jack dot greeting
+Dialogue: 0,0:09:09.37,0:09:10.37,*Default,NTP,0000,0000,0000,,is that now
+Dialogue: 0,0:09:10.40,0:09:13.70,*Default,NTP,0000,0000,0000,,jack will have its own instance attribute greeting
+Dialogue: 0,0:09:13.90,0:09:15.17,*Default,NTP,0000,0000,0000,,bound to man
+Dialogue: 0,0:09:16.53,0:09:19.13,*Default,NTP,0000,0000,0000,,jack greets people as ma'am
+Dialogue: 0,0:09:19.20,0:09:22.27,*Default,NTP,0000,0000,0000,,any other worker greets people as sir
+Dialogue: 0,0:09:23.30,0:09:25.30,*Default,NTP,0000,0000,0000,,now let's go through these examples
+Dialogue: 0,0:09:26.70,0:09:27.50,*Default,NTP,0000,0000,0000,,worker
+Dialogue: 0,0:09:27.87,0:09:31.90,*Default,NTP,0000,0000,0000,,with parentheses after it creates a new worker instance
+Dialogue: 0,0:09:32.73,0:09:35.30,*Default,NTP,0000,0000,0000,,here we invoke its work method
+Dialogue: 0,0:09:36.20,0:09:37.93,*Default,NTP,0000,0000,0000,,which gets the
+Dialogue: 0,0:09:38.57,0:09:42.07,*Default,NTP,0000,0000,0000,,self greeting for the newly created worker
+Dialogue: 0,0:09:42.47,0:09:45.17,*Default,NTP,0000,0000,0000,,the worker doesn't have a greeting instance attribute
+Dialogue: 0,0:09:45.17,0:09:47.50,*Default,NTP,0000,0000,0000,,so we look at the class and we find sir
+Dialogue: 0,0:09:48.07,0:09:51.53,*Default,NTP,0000,0000,0000,,adding sir to I work return sir I work
+Dialogue: 0,0:09:54.30,0:09:56.27,*Default,NTP,0000,0000,0000,,okay jack
+Dialogue: 0,0:09:56.67,0:09:57.87,*Default,NTP,0000,0000,0000,,is a worker
+Dialogue: 0,0:09:58.90,0:10:00.00,*Default,NTP,0000,0000,0000,,when I just write
+Dialogue: 0,0:10:00.00,0:10:01.97,*Default,NTP,0000,0000,0000,,jack and then evaluate that expression
+Dialogue: 0,0:10:01.97,0:10:05.13,*Default,NTP,0000,0000,0000,,it evaluates to this worker instance
+Dialogue: 0,0:10:06.17,0:10:06.53,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:10:06.53,0:10:09.53,*Default,NTP,0000,0000,0000,,we want to be able to display that as a line of text
+Dialogue: 0,0:10:09.53,0:10:11.70,*Default,NTP,0000,0000,0000,,that's how interactive sessions work
+Dialogue: 0,0:10:12.37,0:10:16.17,*Default,NTP,0000,0000,0000,,and the way they work is by computing the repper string
+Dialogue: 0,0:10:16.37,0:10:17.50,*Default,NTP,0000,0000,0000,,for the object
+Dialogue: 0,0:10:17.50,0:10:19.40,*Default,NTP,0000,0000,0000,,that's the value of the expression
+Dialogue: 0,0:10:20.20,0:10:22.30,*Default,NTP,0000,0000,0000,,so what's the repper string of jack
+Dialogue: 0,0:10:22.60,0:10:23.40,*Default,NTP,0000,0000,0000,,well jack
+Dialogue: 0,0:10:24.20,0:10:25.67,*Default,NTP,0000,0000,0000,,is a class worker
+Dialogue: 0,0:10:25.87,0:10:28.17,*Default,NTP,0000,0000,0000,,worker has this special method name repper
+Dialogue: 0,0:10:28.17,0:10:30.30,*Default,NTP,0000,0000,0000,,which is exactly what gets invoked
+Dialogue: 0,0:10:30.47,0:10:32.33,*Default,NTP,0000,0000,0000,,every time you want to display
+Dialogue: 0,0:10:32.93,0:10:33.93,*Default,NTP,0000,0000,0000,,an object
+Dialogue: 0,0:10:35.00,0:10:36.27,*Default,NTP,0000,0000,0000,,so what does it return will
+Dialogue: 0,0:10:36.27,0:10:38.73,*Default,NTP,0000,0000,0000,,it returns bourgeoisie greeting
+Dialogue: 0,0:10:38.73,0:10:40.60,*Default,NTP,0000,0000,0000,,here's the bourgeoisie class
+Dialogue: 0,0:10:40.60,0:10:42.20,*Default,NTP,0000,0000,0000,,it's greeting as peon
+Dialogue: 0,0:10:42.30,0:10:45.40,*Default,NTP,0000,0000,0000,,and so what we'll see here for jack is peon
+Dialogue: 0,0:10:48.13,0:10:50.27,*Default,NTP,0000,0000,0000,,what about jack dot work
+Dialogue: 0,0:10:51.13,0:10:52.67,*Default,NTP,0000,0000,0000,,jack is a worker
+Dialogue: 0,0:10:52.80,0:10:57.77,*Default,NTP,0000,0000,0000,,the work method returns self dot greeting plus I work
+Dialogue: 0,0:10:57.97,0:10:59.93,*Default,NTP,0000,0000,0000,,or self is bound to jack
+Dialogue: 0,0:11:00.73,0:11:03.60,*Default,NTP,0000,0000,0000,,jack's self greeting is specialized
+Dialogue: 0,0:11:03.73,0:11:06.30,*Default,NTP,0000,0000,0000,,it's man so what we get here
+Dialogue: 0,0:11:06.30,0:11:08.53,*Default,NTP,0000,0000,0000,,is that self dot greeting evaluates to mam
+Dialogue: 0,0:11:08.53,0:11:11.67,*Default,NTP,0000,0000,0000,,add that to I work and you get mam I work
+Dialogue: 0,0:11:13.77,0:11:15.40,*Default,NTP,0000,0000,0000,,what about john network
+Dialogue: 0,0:11:16.20,0:11:20.47,*Default,NTP,0000,0000,0000,,well we look up the work method in john
+Dialogue: 0,0:11:20.73,0:11:22.30,*Default,NTP,0000,0000,0000,,the instance doesn't have one
+Dialogue: 0,0:11:22.30,0:11:25.13,*Default,NTP,0000,0000,0000,,but the bourgeoisie class does have a work method
+Dialogue: 0,0:11:25.93,0:11:28.17,*Default,NTP,0000,0000,0000,,and what it does is it prints the result of
+Dialogue: 0,0:11:28.17,0:11:31.67,*Default,NTP,0000,0000,0000,,calling the work method of worker
+Dialogue: 0,0:11:32.30,0:11:35.20,*Default,NTP,0000,0000,0000,,on self self is john
+Dialogue: 0,0:11:36.27,0:11:39.93,*Default,NTP,0000,0000,0000,,okay the work method on worker is this work
+Dialogue: 0,0:11:40.87,0:11:43.73,*Default,NTP,0000,0000,0000,,and so we're going to print out john's greeting
+Dialogue: 0,0:11:43.90,0:11:47.37,*Default,NTP,0000,0000,0000,,plus I work now what is john's greeting
+Dialogue: 0,0:11:48.00,0:11:51.13,*Default,NTP,0000,0000,0000,,well john doesn't have a greeting instance attribute
+Dialogue: 0,0:11:51.13,0:11:52.33,*Default,NTP,0000,0000,0000,,but its class does
+Dialogue: 0,0:11:52.33,0:11:53.70,*Default,NTP,0000,0000,0000,,and that class has the
+Dialogue: 0,0:11:53.93,0:11:55.53,*Default,NTP,0000,0000,0000,,greeting attribute pian
+Dialogue: 0,0:11:55.90,0:11:57.97,*Default,NTP,0000,0000,0000,,so we print out pian I work
+Dialogue: 0,0:11:59.53,0:12:01.60,*Default,NTP,0000,0000,0000,,after that's finished and printed out
+Dialogue: 0,0:12:01.60,0:12:03.90,*Default,NTP,0000,0000,0000,,this returns I gather wealth
+Dialogue: 0,0:12:04.73,0:12:08.13,*Default,NTP,0000,0000,0000,,so what we see is pni work I gather wealth
+Dialogue: 0,0:12:08.73,0:12:09.87,*Default,NTP,0000,0000,0000,,now this one
+Dialogue: 0,0:12:09.97,0:12:12.90,*Default,NTP,0000,0000,0000,,has quotes around it because it's a return value
+Dialogue: 0,0:12:13.00,0:12:15.60,*Default,NTP,0000,0000,0000,,and so we're trying to write down a repper expression
+Dialogue: 0,0:12:15.90,0:12:19.33,*Default,NTP,0000,0000,0000,,that evaluates to the same string that was returned
+Dialogue: 0,0:12:20.60,0:12:21.80,*Default,NTP,0000,0000,0000,,pian I work
+Dialogue: 0,0:12:21.80,0:12:24.57,*Default,NTP,0000,0000,0000,,does not have quotes around it because it was printed
+Dialogue: 0,0:12:25.07,0:12:26.77,*Default,NTP,0000,0000,0000,,printing a string does not print the
+Dialogue: 0,0:12:26.77,0:12:27.87,*Default,NTP,0000,0000,0000,,quotes around the string
+Dialogue: 0,0:12:27.87,0:12:30.17,*Default,NTP,0000,0000,0000,,it just prints the contents of the string
+Dialogue: 0,0:12:33.47,0:12:34.80,*Default,NTP,0000,0000,0000,,finally we have john
+Dialogue: 0,0:12:35.80,0:12:38.07,*Default,NTP,0000,0000,0000,,work john what's going on there
+Dialogue: 0,0:12:38.60,0:12:41.07,*Default,NTP,0000,0000,0000,,well we look at john's elf attribute
+Dialogue: 0,0:12:41.07,0:12:43.17,*Default,NTP,0000,0000,0000,,which is the worker class
+Dialogue: 0,0:12:43.20,0:12:45.87,*Default,NTP,0000,0000,0000,,the worker class has a function work
+Dialogue: 0,0:12:45.97,0:12:47.80,*Default,NTP,0000,0000,0000,,so this is the one we're calling
+Dialogue: 0,0:12:47.93,0:12:49.67,*Default,NTP,0000,0000,0000,,and we're calling it on john
+Dialogue: 0,0:12:50.07,0:12:52.57,*Default,NTP,0000,0000,0000,,so we have to look up john's greeting which is pian
+Dialogue: 0,0:12:52.57,0:12:53.80,*Default,NTP,0000,0000,0000,,we looked at that already
+Dialogue: 0,0:12:53.93,0:12:57.93,*Default,NTP,0000,0000,0000,,add that to I work and we get pian I work as a string
+Dialogue: 0,0:12:57.93,0:12:59.37,*Default,NTP,0000,0000,0000,,when you return a string
+Dialogue: 0,0:12:59.37,0:13:01.17,*Default,NTP,0000,0000,0000,,you see it with quotes around it
+Dialogue: 0,0:13:01.30,0:13:03.97,*Default,NTP,0000,0000,0000,,that's the representation of a string
+Dialogue: 0,0:13:03.97,0:13:05.93,*Default,NTP,0000,0000,0000,,that evaluates to that string
+Dialogue: 0,0:13:09.33,0:13:10.07,*Default,NTP,0000,0000,0000,,let's look at
+Dialogue: 0,0:13:10.07,0:13:14.27,*Default,NTP,0000,0000,0000,,some examples of manipulating iterables and iterators
+Dialogue: 0,0:13:14.97,0:13:16.60,*Default,NTP,0000,0000,0000,,and let's just focus on
+Dialogue: 0,0:13:16.60,0:13:18.33,*Default,NTP,0000,0000,0000,,using built in functions
+Dialogue: 0,0:13:18.33,0:13:21.70,*Default,NTP,0000,0000,0000,,and list comprehensions and dictionary comprehensions
+Dialogue: 0,0:13:21.93,0:13:23.67,*Default,NTP,0000,0000,0000,,in order to perform some like
+Dialogue: 0,0:13:23.67,0:13:26.80,*Default,NTP,0000,0000,0000,,moderately complicated data manipulations
+Dialogue: 0,0:13:27.40,0:13:29.53,*Default,NTP,0000,0000,0000,,these are things can be done in a line or two
+Dialogue: 0,0:13:29.67,0:13:31.53,*Default,NTP,0000,0000,0000,,if you use the tools correctly
+Dialogue: 0,0:13:32.10,0:13:33.57,*Default,NTP,0000,0000,0000,,and manipulations like these
+Dialogue: 0,0:13:33.57,0:13:35.77,*Default,NTP,0000,0000,0000,,often show up as the core part
+Dialogue: 0,0:13:35.97,0:13:37.90,*Default,NTP,0000,0000,0000,,of some larger problem
+Dialogue: 0,0:13:38.27,0:13:40.37,*Default,NTP,0000,0000,0000,,so I'm just going to lay a bunch out there
+Dialogue: 0,0:13:40.37,0:13:42.13,*Default,NTP,0000,0000,0000,,and then I would recommend that you pause
+Dialogue: 0,0:13:42.13,0:13:43.60,*Default,NTP,0000,0000,0000,,and just try them out on your own
+Dialogue: 0,0:13:43.67,0:13:45.73,*Default,NTP,0000,0000,0000,,and then we'll walk through them one by one together
+Dialogue: 0,0:13:46.80,0:13:48.07,*Default,NTP,0000,0000,0000,,so here's an example
+Dialogue: 0,0:13:48.20,0:13:51.90,*Default,NTP,0000,0000,0000,,what are the indices of all elements in a list s
+Dialogue: 0,0:13:52.13,0:13:54.33,*Default,NTP,0000,0000,0000,,that have the smallest absolute value
+Dialogue: 0,0:13:55.30,0:13:57.07,*Default,NTP,0000,0000,0000,,so if I have a list s
+Dialogue: 0,0:13:57.30,0:13:59.90,*Default,NTP,0000,0000,0000,,the elements with the smallest absolute value are
+Dialogue: 0,0:13:59.90,0:14:01.40,*Default,NTP,0000,0000,0000,,negative two and two
+Dialogue: 0,0:14:01.73,0:14:03.93,*Default,NTP,0000,0000,0000,,but we want their indices
+Dialogue: 0,0:14:04.10,0:14:08.60,*Default,NTP,0000,0000,0000,,indices in a list started 0 0 1 2 3 4 5
+Dialogue: 0,0:14:08.87,0:14:11.93,*Default,NTP,0000,0000,0000,,so here are the smallest elements in absolute value
+Dialogue: 0,0:14:11.93,0:14:14.20,*Default,NTP,0000,0000,0000,,and their indices are two and four
+Dialogue: 0,0:14:15.70,0:14:17.90,*Default,NTP,0000,0000,0000,,so how would we take this list as input
+Dialogue: 0,0:14:17.93,0:14:19.97,*Default,NTP,0000,0000,0000,,and have this list be the output
+Dialogue: 0,0:14:20.47,0:14:22.47,*Default,NTP,0000,0000,0000,,or if this list is the input
+Dialogue: 0,0:14:22.50,0:14:25.00,*Default,NTP,0000,0000,0000,,the smallest element by absolute value is the
+Dialogue: 0,0:14:25.00,0:14:26.57,*Default,NTP,0000,0000,0000,,element at index one
+Dialogue: 0,0:14:26.87,0:14:29.47,*Default,NTP,0000,0000,0000,,we're trying to list all of the indices
+Dialogue: 0,0:14:29.67,0:14:31.73,*Default,NTP,0000,0000,0000,,corresponding to the smallest elements
+Dialogue: 0,0:14:31.73,0:14:32.97,*Default,NTP,0000,0000,0000,,by absolute value
+Dialogue: 0,0:14:33.00,0:14:34.73,*Default,NTP,0000,0000,0000,,so we get a list containing zero
+Dialogue: 0,0:14:35.27,0:14:36.60,*Default,NTP,0000,0000,0000,,there's first exercise
+Dialogue: 0,0:14:36.80,0:14:38.07,*Default,NTP,0000,0000,0000,,I'm just going to go through them all
+Dialogue: 0,0:14:38.70,0:14:40.33,*Default,NTP,0000,0000,0000,,what's the largest sum of
+Dialogue: 0,0:14:40.33,0:14:42.47,*Default,NTP,0000,0000,0000,,two adjacent elements in a list
+Dialogue: 0,0:14:42.53,0:14:44.10,*Default,NTP,0000,0000,0000,,assuming that the length of the list
+Dialogue: 0,0:14:44.10,0:14:45.13,*Default,NTP,0000,0000,0000,,is greater than one
+Dialogue: 0,0:14:45.87,0:14:47.13,*Default,NTP,0000,0000,0000,,so here's a list
+Dialogue: 0,0:14:47.33,0:14:49.87,*Default,NTP,0000,0000,0000,,if I some these two elements I get -5
+Dialogue: 0,0:14:49.87,0:14:50.93,*Default,NTP,0000,0000,0000,,that's not very big
+Dialogue: 0,0:14:51.10,0:14:52.57,*Default,NTP,0000,0000,0000,,some these two I get one
+Dialogue: 0,0:14:52.57,0:14:54.40,*Default,NTP,0000,0000,0000,,well if I some these two I get six
+Dialogue: 0,0:14:54.40,0:14:55.57,*Default,NTP,0000,0000,0000,,so the answer here is
+Dialogue: 0,0:14:55.57,0:14:58.77,*Default,NTP,0000,0000,0000,,six is the largest sum of two adjacent elements
+Dialogue: 0,0:14:59.67,0:15:00.70,*Default,NTP,0000,0000,0000,,here's a similar list
+Dialogue: 0,0:15:00.70,0:15:02.73,*Default,NTP,0000,0000,0000,,but I've fittled with the negative signs
+Dialogue: 0,0:15:03.50,0:15:05.47,*Default,NTP,0000,0000,0000,,and in this case we don't get six
+Dialogue: 0,0:15:05.47,0:15:06.70,*Default,NTP,0000,0000,0000,,we get -2 with the end
+Dialogue: 0,0:15:06.70,0:15:07.87,*Default,NTP,0000,0000,0000,,that's not what we want
+Dialogue: 0,0:15:08.53,0:15:10.73,*Default,NTP,0000,0000,0000,,we can get a positive No.1
+Dialogue: 0,0:15:10.73,0:15:13.20,*Default,NTP,0000,0000,0000,,by summing together three and -2
+Dialogue: 0,0:15:13.30,0:15:15.20,*Default,NTP,0000,0000,0000,,so that's the biggest thing we can get
+Dialogue: 0,0:15:15.37,0:15:17.90,*Default,NTP,0000,0000,0000,,adding together two adjacent elements in that list
+Dialogue: 0,0:15:18.70,0:15:20.00,*Default,NTP,0000,0000,0000,,all right another one
+Dialogue: 0,0:15:20.37,0:15:23.20,*Default,NTP,0000,0000,0000,,create a dictionary mapping each digit d
+Dialogue: 0,0:15:23.70,0:15:26.87,*Default,NTP,0000,0000,0000,,to the list of elements in s that end with d
+Dialogue: 0,0:15:26.90,0:15:28.97,*Default,NTP,0000,0000,0000,,or d is an individual digit
+Dialogue: 0,0:15:29.67,0:15:32.57,*Default,NTP,0000,0000,0000,,so if I have this list of integers
+Dialogue: 0,0:15:32.80,0:15:35.00,*Default,NTP,0000,0000,0000,,I'm supposed to create a dictionary
+Dialogue: 0,0:15:35.20,0:15:38.47,*Default,NTP,0000,0000,0000,,that says here is all the elements ending in one
+Dialogue: 0,0:15:38.87,0:15:40.53,*Default,NTP,0000,0000,0000,,here's the elements ending in three
+Dialogue: 0,0:15:40.77,0:15:42.53,*Default,NTP,0000,0000,0000,,here's the elements ending in four
+Dialogue: 0,0:15:42.80,0:15:44.87,*Default,NTP,0000,0000,0000,,here's the elements ending in five
+Dialogue: 0,0:15:44.87,0:15:47.37,*Default,NTP,0000,0000,0000,,notice there are two of them five and fifty five
+Dialogue: 0,0:15:47.57,0:15:49.60,*Default,NTP,0000,0000,0000,,there's only one for eight and one for nine
+Dialogue: 0,0:15:50.97,0:15:51.67,*Default,NTP,0000,0000,0000,,and finally
+Dialogue: 0,0:15:51.67,0:15:55.00,*Default,NTP,0000,0000,0000,,does every element equal some other element in s
+Dialogue: 0,0:15:55.07,0:15:56.73,*Default,NTP,0000,0000,0000,,so given a list
+Dialogue: 0,0:15:56.87,0:15:58.77,*Default,NTP,0000,0000,0000,,is it the case that every element equals
+Dialogue: 0,0:15:58.77,0:15:59.30,*Default,NTP,0000,0000,0000,,something else
+Dialogue: 0,0:15:59.30,0:16:02.07,*Default,NTP,0000,0000,0000,,well -4 only shows up one so that's false
+Dialogue: 0,0:16:02.13,0:16:05.37,*Default,NTP,0000,0000,0000,,but here four is there twice and three is there twice
+Dialogue: 0,0:16:05.37,0:16:06.73,*Default,NTP,0000,0000,0000,,and two is there twice
+Dialogue: 0,0:16:06.73,0:16:10.17,*Default,NTP,0000,0000,0000,,so every element equals at least one other element
+Dialogue: 0,0:16:10.30,0:16:11.60,*Default,NTP,0000,0000,0000,,so this would give us true
+Dialogue: 0,0:16:12.17,0:16:13.70,*Default,NTP,0000,0000,0000,,so if you want to pause the video
+Dialogue: 0,0:16:13.70,0:16:14.67,*Default,NTP,0000,0000,0000,,and work through some of these
+Dialogue: 0,0:16:14.67,0:16:15.73,*Default,NTP,0000,0000,0000,,I recommend that
+Dialogue: 0,0:16:15.97,0:16:18.40,*Default,NTP,0000,0000,0000,,now we're going to go through and solve them
+Dialogue: 0,0:16:19.40,0:16:21.27,*Default,NTP,0000,0000,0000,,okay for the first one
+Dialogue: 0,0:16:21.33,0:16:22.93,*Default,NTP,0000,0000,0000,,what are the indices of the elements
+Dialogue: 0,0:16:22.93,0:16:25.70,*Default,NTP,0000,0000,0000,,in list s that have the smallest absolute value
+Dialogue: 0,0:16:26.80,0:16:28.47,*Default,NTP,0000,0000,0000,,we're going to start with this example
+Dialogue: 0,0:16:28.50,0:16:29.70,*Default,NTP,0000,0000,0000,,try to work it out
+Dialogue: 0,0:16:30.33,0:16:33.60,*Default,NTP,0000,0000,0000,,so here's smallest absolute value
+Dialogue: 0,0:16:34.40,0:16:36.00,*Default,NTP,0000,0000,0000,,is not the men of s
+Dialogue: 0,0:16:36.33,0:16:37.93,*Default,NTP,0000,0000,0000,,but it's actually not
+Dialogue: 0,0:16:38.20,0:16:41.87,*Default,NTP,0000,0000,0000,,the men of s using key equals abs either
+Dialogue: 0,0:16:41.90,0:16:42.80,*Default,NTP,0000,0000,0000,,that would give me
+Dialogue: 0,0:16:42.80,0:16:44.00,*Default,NTP,0000,0000,0000,,the element in
+Dialogue: 0,0:16:44.00,0:16:46.50,*Default,NTP,0000,0000,0000,,this that has the smallest absolute value
+Dialogue: 0,0:16:46.67,0:16:49.93,*Default,NTP,0000,0000,0000,,it wouldn't give me the smallest absolute value
+Dialogue: 0,0:16:50.37,0:16:51.67,*Default,NTP,0000,0000,0000,,so if my goal is to actually
+Dialogue: 0,0:16:51.67,0:16:53.50,*Default,NTP,0000,0000,0000,,get the smallest absolute value
+Dialogue: 0,0:16:53.50,0:16:56.40,*Default,NTP,0000,0000,0000,,I would need to first call abs on each element
+Dialogue: 0,0:16:56.40,0:16:57.80,*Default,NTP,0000,0000,0000,,and then take them in
+Dialogue: 0,0:16:57.90,0:17:00.80,*Default,NTP,0000,0000,0000,,which I can do by mapping abs over s
+Dialogue: 0,0:17:01.90,0:17:04.40,*Default,NTP,0000,0000,0000,,so now I have the min abslew value
+Dialogue: 0,0:17:05.30,0:17:06.53,*Default,NTP,0000,0000,0000,,what can I do with that
+Dialogue: 0,0:17:06.93,0:17:08.93,*Default,NTP,0000,0000,0000,,well I can find all the indices
+Dialogue: 0,0:17:09.27,0:17:12.07,*Default,NTP,0000,0000,0000,,where the absolute value of the elemented at index
+Dialogue: 0,0:17:12.37,0:17:16.10,*Default,NTP,0000,0000,0000,,is equal to this min abs value is equal to two
+Dialogue: 0,0:17:16.77,0:17:18.87,*Default,NTP,0000,0000,0000,,this is different than finding all the elements with
+Dialogue: 0,0:17:18.87,0:17:20.17,*Default,NTP,0000,0000,0000,,that absolute value
+Dialogue: 0,0:17:20.33,0:17:22.67,*Default,NTP,0000,0000,0000,,which I could do with a list comprehension
+Dialogue: 0,0:17:22.87,0:17:26.57,*Default,NTP,0000,0000,0000,,if I wanted to know all the elements x for x and s
+Dialogue: 0,0:17:26.57,0:17:29.77,*Default,NTP,0000,0000,0000,,if the absolute value of x is equal to main abs
+Dialogue: 0,0:17:29.77,0:17:32.73,*Default,NTP,0000,0000,0000,,that would give me both the two and the -2
+Dialogue: 0,0:17:33.30,0:17:34.60,*Default,NTP,0000,0000,0000,,but that's not my goal
+Dialogue: 0,0:17:34.67,0:17:36.70,*Default,NTP,0000,0000,0000,,my goal is to find the indices
+Dialogue: 0,0:17:36.87,0:17:38.97,*Default,NTP,0000,0000,0000,,and for that I need to go through
+Dialogue: 0,0:17:39.90,0:17:42.87,*Default,NTP,0000,0000,0000,,for I in not s
+Dialogue: 0,0:17:42.97,0:17:45.87,*Default,NTP,0000,0000,0000,,but a range of len s
+Dialogue: 0,0:17:45.87,0:17:48.90,*Default,NTP,0000,0000,0000,,which gives me all the index values for s
+Dialogue: 0,0:17:49.70,0:17:51.93,*Default,NTP,0000,0000,0000,,and we adjust this expression accordingly
+Dialogue: 0,0:17:51.93,0:17:54.33,*Default,NTP,0000,0000,0000,,we actually want just the index values
+Dialogue: 0,0:17:54.57,0:17:55.60,*Default,NTP,0000,0000,0000,,and we have to
+Dialogue: 0,0:17:55.67,0:17:58.33,*Default,NTP,0000,0000,0000,,adjust this expression accordingly as well
+Dialogue: 0,0:17:58.33,0:18:00.50,*Default,NTP,0000,0000,0000,,we want to know if the absolute value of
+Dialogue: 0,0:18:00.73,0:18:02.50,*Default,NTP,0000,0000,0000,,si is equal to min apps
+Dialogue: 0,0:18:03.27,0:18:05.37,*Default,NTP,0000,0000,0000,,that will give me the numbers two and four
+Dialogue: 0,0:18:06.17,0:18:08.47,*Default,NTP,0000,0000,0000,,so there's a two line solution to this problem
+Dialogue: 0,0:18:09.90,0:18:12.13,*Default,NTP,0000,0000,0000,,whenever I use a list comprehension
+Dialogue: 0,0:18:12.13,0:18:15.73,*Default,NTP,0000,0000,0000,,I could also use the map and filter built in functions
+Dialogue: 0,0:18:16.37,0:18:18.30,*Default,NTP,0000,0000,0000,,so I could have rewritten this
+Dialogue: 0,0:18:19.13,0:18:22.70,*Default,NTP,0000,0000,0000,,by first defining a filter function
+Dialogue: 0,0:18:23.07,0:18:24.70,*Default,NTP,0000,0000,0000,,that takes in some index
+Dialogue: 0,0:18:24.70,0:18:26.40,*Default,NTP,0000,0000,0000,,and tells me whether it's one of the indices
+Dialogue: 0,0:18:26.40,0:18:27.47,*Default,NTP,0000,0000,0000,,that I want to keep
+Dialogue: 0,0:18:28.20,0:18:32.50,*Default,NTP,0000,0000,0000,,then if I take this same range of in disease
+Dialogue: 0,0:18:32.67,0:18:34.67,*Default,NTP,0000,0000,0000,,and I filter it using f
+Dialogue: 0,0:18:35.33,0:18:38.60,*Default,NTP,0000,0000,0000,,I almost get what I want but this is a filter object
+Dialogue: 0,0:18:38.60,0:18:40.27,*Default,NTP,0000,0000,0000,,if what I really wanted was a list
+Dialogue: 0,0:18:40.27,0:18:41.67,*Default,NTP,0000,0000,0000,,then I would call a list on it
+Dialogue: 0,0:18:41.70,0:18:43.67,*Default,NTP,0000,0000,0000,,and I'd get this same correct result
+Dialogue: 0,0:18:44.60,0:18:46.77,*Default,NTP,0000,0000,0000,,so I could have replaced this expression
+Dialogue: 0,0:18:46.87,0:18:49.77,*Default,NTP,0000,0000,0000,,with this expression and gotten the same thing
+Dialogue: 0,0:18:50.40,0:18:52.40,*Default,NTP,0000,0000,0000,,okay let's go on to the next problem
+Dialogue: 0,0:18:52.40,0:18:53.80,*Default,NTP,0000,0000,0000,,what's the largest sum of two
+Dialogue: 0,0:18:53.80,0:18:55.93,*Default,NTP,0000,0000,0000,,adjacent elements in a list s
+Dialogue: 0,0:18:56.87,0:18:59.37,*Default,NTP,0000,0000,0000,,and here we're using the same s that we had before
+Dialogue: 0,0:18:59.57,0:19:00.97,*Default,NTP,0000,0000,0000,,were meant to get six
+Dialogue: 0,0:19:01.47,0:19:03.57,*Default,NTP,0000,0000,0000,,there are two reasonable ways to do it
+Dialogue: 0,0:19:04.00,0:19:06.17,*Default,NTP,0000,0000,0000,,one is to think about indices
+Dialogue: 0,0:19:06.90,0:19:09.73,*Default,NTP,0000,0000,0000,,range len s will give me all of the indices
+Dialogue: 0,0:19:09.93,0:19:12.67,*Default,NTP,0000,0000,0000,,but range len s minus one will give me
+Dialogue: 0,0:19:12.67,0:19:14.37,*Default,NTP,0000,0000,0000,,almost all the indices
+Dialogue: 0,0:19:14.57,0:19:16.30,*Default,NTP,0000,0000,0000,,here it is as a range
+Dialogue: 0,0:19:16.97,0:19:19.00,*Default,NTP,0000,0000,0000,,if I go through almost all the in disease
+Dialogue: 0,0:19:19.00,0:19:20.77,*Default,NTP,0000,0000,0000,,just leaving out the last one
+Dialogue: 0,0:19:21.27,0:19:25.07,*Default,NTP,0000,0000,0000,,and I compute s I plus s I plus one
+Dialogue: 0,0:19:25.60,0:19:28.30,*Default,NTP,0000,0000,0000,,then I'm summing together to adjacent elements
+Dialogue: 0,0:19:28.30,0:19:30.57,*Default,NTP,0000,0000,0000,,for every pair of adjacent elements
+Dialogue: 0,0:19:30.80,0:19:32.30,*Default,NTP,0000,0000,0000,,and I'm leaving out the last one
+Dialogue: 0,0:19:32.30,0:19:33.93,*Default,NTP,0000,0000,0000,,because there's no I plus one
+Dialogue: 0,0:19:34.10,0:19:35.47,*Default,NTP,0000,0000,0000,,for the last element
+Dialogue: 0,0:19:35.47,0:19:38.10,*Default,NTP,0000,0000,0000,,so that's why I use this shortened range
+Dialogue: 0,0:19:38.60,0:19:40.67,*Default,NTP,0000,0000,0000,,okay this just gives me what all the sum
+Dialogue: 0,0:19:40.67,0:19:42.27,*Default,NTP,0000,0000,0000,,of adjacent elements are
+Dialogue: 0,0:19:42.40,0:19:43.93,*Default,NTP,0000,0000,0000,,if I want to know the biggest one
+Dialogue: 0,0:19:43.93,0:19:45.80,*Default,NTP,0000,0000,0000,,then I should just call max on that
+Dialogue: 0,0:19:45.80,0:19:49.07,*Default,NTP,0000,0000,0000,,so there's another use of an aggregation function
+Dialogue: 0,0:19:49.17,0:19:50.37,*Default,NTP,0000,0000,0000,,in order to do the work
+Dialogue: 0,0:19:50.77,0:19:52.30,*Default,NTP,0000,0000,0000,,okay so we're done with this
+Dialogue: 0,0:19:52.47,0:19:54.57,*Default,NTP,0000,0000,0000,,you can copy it in there and call it a day
+Dialogue: 0,0:19:55.50,0:19:57.90,*Default,NTP,0000,0000,0000,,another way to solve the same problem though is with
+Dialogue: 0,0:19:57.93,0:20:02.40,*Default,NTP,0000,0000,0000,,zip so if I zip together s with s I get a zip object
+Dialogue: 0,0:20:02.40,0:20:05.13,*Default,NTP,0000,0000,0000,,and what are the elements of this zip iterator
+Dialogue: 0,0:20:05.13,0:20:06.53,*Default,NTP,0000,0000,0000,,well let's list them out
+Dialogue: 0,0:20:07.17,0:20:08.13,*Default,NTP,0000,0000,0000,,they're giving me
+Dialogue: 0,0:20:08.13,0:20:11.50,*Default,NTP,0000,0000,0000,,an element from s along with an element from s
+Dialogue: 0,0:20:12.27,0:20:13.67,*Default,NTP,0000,0000,0000,,these are not adjacent elements
+Dialogue: 0,0:20:13.67,0:20:15.33,*Default,NTP,0000,0000,0000,,they're just the same element
+Dialogue: 0,0:20:15.80,0:20:18.00,*Default,NTP,0000,0000,0000,,but if instead I had zipped
+Dialogue: 0,0:20:18.40,0:20:22.60,*Default,NTP,0000,0000,0000,,all but the last element of s
+Dialogue: 0,0:20:22.87,0:20:26.13,*Default,NTP,0000,0000,0000,,with all but the first element of s
+Dialogue: 0,0:20:26.60,0:20:30.80,*Default,NTP,0000,0000,0000,,now I have five elements here and five elements here
+Dialogue: 0,0:20:30.90,0:20:32.20,*Default,NTP,0000,0000,0000,,and when I zip them together
+Dialogue: 0,0:20:32.20,0:20:35.67,*Default,NTP,0000,0000,0000,,I see all the pairs of adjacent elements
+Dialogue: 0,0:20:37.13,0:20:38.67,*Default,NTP,0000,0000,0000,,so I had built two sequences
+Dialogue: 0,0:20:38.67,0:20:41.00,*Default,NTP,0000,0000,0000,,negative four negative three negative two three two
+Dialogue: 0,0:20:41.13,0:20:44.10,*Default,NTP,0000,0000,0000,,and negative three negative two three two four
+Dialogue: 0,0:20:44.37,0:20:47.97,*Default,NTP,0000,0000,0000,,zipping them together gives me a list of pairs
+Dialogue: 0,0:20:48.97,0:20:52.33,*Default,NTP,0000,0000,0000,,what happens if instead of listing out the contents
+Dialogue: 0,0:20:52.37,0:20:55.37,*Default,NTP,0000,0000,0000,,I add together the elements in each pair
+Dialogue: 0,0:20:55.67,0:20:59.27,*Default,NTP,0000,0000,0000,,a plus v for a kma b in zip
+Dialogue: 0,0:20:59.60,0:21:04.10,*Default,NTP,0000,0000,0000,,I get those same sums of which the max is six
+Dialogue: 0,0:21:06.77,0:21:08.97,*Default,NTP,0000,0000,0000,,so there's another way to solve the same problem
+Dialogue: 0,0:21:10.27,0:21:11.77,*Default,NTP,0000,0000,0000,,okay let's try another one
+Dialogue: 0,0:21:12.73,0:21:16.60,*Default,NTP,0000,0000,0000,,map each digit d to the lists of elements in s
+Dialogue: 0,0:21:16.60,0:21:17.93,*Default,NTP,0000,0000,0000,,that end with d
+Dialogue: 0,0:21:19.17,0:21:21.13,*Default,NTP,0000,0000,0000,,the result is a dictionary
+Dialogue: 0,0:21:21.33,0:21:24.53,*Default,NTP,0000,0000,0000,,so we're going to use a dictionary comprehension
+Dialogue: 0,0:21:24.77,0:21:26.47,*Default,NTP,0000,0000,0000,,this one's going to get a little bit long
+Dialogue: 0,0:21:26.47,0:21:27.87,*Default,NTP,0000,0000,0000,,so I made some space
+Dialogue: 0,0:21:28.60,0:21:29.77,*Default,NTP,0000,0000,0000,,it's a dictionary
+Dialogue: 0,0:21:29.77,0:21:33.37,*Default,NTP,0000,0000,0000,,where the key is a digit and the value is a list
+Dialogue: 0,0:21:33.37,0:21:37.17,*Default,NTP,0000,0000,0000,,the list contains all elements of s
+Dialogue: 0,0:21:37.70,0:21:39.50,*Default,NTP,0000,0000,0000,,that n in that digit
+Dialogue: 0,0:21:39.57,0:21:41.13,*Default,NTP,0000,0000,0000,,so we look at x
+Dialogue: 0,0:21:41.40,0:21:44.93,*Default,NTP,0000,0000,0000,,figure out its last digit and see if it's equal to d
+Dialogue: 0,0:21:46.30,0:21:49.13,*Default,NTP,0000,0000,0000,,that's a key value pair in the dictionary
+Dialogue: 0,0:21:49.17,0:21:51.70,*Default,NTP,0000,0000,0000,,we want one of these for every digit
+Dialogue: 0,0:21:52.20,0:21:55.67,*Default,NTP,0000,0000,0000,,for d in range 10 would give me all the digits
+Dialogue: 0,0:21:56.50,0:21:58.80,*Default,NTP,0000,0000,0000,,but notice in this result that there's no two
+Dialogue: 0,0:21:59.20,0:22:01.30,*Default,NTP,0000,0000,0000,,because there's no element in here
+Dialogue: 0,0:22:01.67,0:22:03.33,*Default,NTP,0000,0000,0000,,that ends in the digit two
+Dialogue: 0,0:22:04.37,0:22:07.30,*Default,NTP,0000,0000,0000,,so I need to filter out some of the ds
+Dialogue: 0,0:22:07.77,0:22:09.07,*Default,NTP,0000,0000,0000,,we want to keep a d
+Dialogue: 0,0:22:09.50,0:22:13.53,*Default,NTP,0000,0000,0000,,if any of the elements in s ends in d
+Dialogue: 0,0:22:14.60,0:22:17.10,*Default,NTP,0000,0000,0000,,we can use the built in any function
+Dialogue: 0,0:22:17.77,0:22:20.87,*Default,NTP,0000,0000,0000,,any of the elements in s ends in d
+Dialogue: 0,0:22:21.17,0:22:22.87,*Default,NTP,0000,0000,0000,,is expressed as
+Dialogue: 0,0:22:23.17,0:22:23.97,*Default,NTP,0000,0000,0000,,any
+Dialogue: 0,0:22:24.53,0:22:27.67,*Default,NTP,0000,0000,0000,,element ends in d
+Dialogue: 0,0:22:28.30,0:22:30.93,*Default,NTP,0000,0000,0000,,for all the elements in s
+Dialogue: 0,0:22:31.70,0:22:33.90,*Default,NTP,0000,0000,0000,,so this is the filter claws
+Dialogue: 0,0:22:33.90,0:22:35.47,*Default,NTP,0000,0000,0000,,here's what we're iterating over
+Dialogue: 0,0:22:35.47,0:22:38.53,*Default,NTP,0000,0000,0000,,the digit 0 1 2 3 4 5 6 7 8 9
+Dialogue: 0,0:22:38.73,0:22:41.53,*Default,NTP,0000,0000,0000,,and for each digit that has this property
+Dialogue: 0,0:22:41.53,0:22:43.00,*Default,NTP,0000,0000,0000,,here's what we're building
+Dialogue: 0,0:22:44.17,0:22:46.50,*Default,NTP,0000,0000,0000,,now to figure out whether this actually works
+Dialogue: 0,0:22:46.60,0:22:49.10,*Default,NTP,0000,0000,0000,,we need to set s to be this value
+Dialogue: 0,0:22:49.67,0:22:51.70,*Default,NTP,0000,0000,0000,,and then evaluate our big expression
+Dialogue: 0,0:22:52.20,0:22:53.70,*Default,NTP,0000,0000,0000,,and look that's what we get
+Dialogue: 0,0:22:54.30,0:22:58.20,*Default,NTP,0000,0000,0000,,so one implementation for this would be just to return
+Dialogue: 0,0:22:58.47,0:22:59.27,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:22:59.90,0:23:01.47,*Default,NTP,0000,0000,0000,,and while we've solved this problem
+Dialogue: 0,0:23:01.47,0:23:03.70,*Default,NTP,0000,0000,0000,,this looks like a pretty long expression
+Dialogue: 0,0:23:03.77,0:23:06.13,*Default,NTP,0000,0000,0000,,so maybe we should be breaking it up in some way
+Dialogue: 0,0:23:06.77,0:23:08.30,*Default,NTP,0000,0000,0000,,one way to kind of break up
+Dialogue: 0,0:23:08.30,0:23:10.37,*Default,NTP,0000,0000,0000,,this whole process into steps
+Dialogue: 0,0:23:10.50,0:23:13.67,*Default,NTP,0000,0000,0000,,is to get the list of last digits in advance
+Dialogue: 0,0:23:14.47,0:23:16.37,*Default,NTP,0000,0000,0000,,so what are the last digits
+Dialogue: 0,0:23:17.33,0:23:18.90,*Default,NTP,0000,0000,0000,,of all the numbers in s
+Dialogue: 0,0:23:19.13,0:23:23.20,*Default,NTP,0000,0000,0000,,well that would just be x percent ten for x in s
+Dialogue: 0,0:23:23.73,0:23:25.30,*Default,NTP,0000,0000,0000,,then we can rewrite this
+Dialogue: 0,0:23:26.00,0:23:30.40,*Default,NTP,0000,0000,0000,,as is this digit in last digits
+Dialogue: 0,0:23:31.57,0:23:32.90,*Default,NTP,0000,0000,0000,,and we get the same result
+Dialogue: 0,0:23:33.87,0:23:35.30,*Default,NTP,0000,0000,0000,,it's only a little bit shorter
+Dialogue: 0,0:23:35.87,0:23:37.47,*Default,NTP,0000,0000,0000,,but at least it only has one big
+Dialogue: 0,0:23:37.47,0:23:39.37,*Default,NTP,0000,0000,0000,,gnarly expression instead of two
+Dialogue: 0,0:23:41.33,0:23:42.77,*Default,NTP,0000,0000,0000,,okay next question
+Dialogue: 0,0:23:43.47,0:23:47.37,*Default,NTP,0000,0000,0000,,does every element equal some other element in s
+Dialogue: 0,0:23:48.70,0:23:50.33,*Default,NTP,0000,0000,0000,,and here's an example s
+Dialogue: 0,0:23:51.00,0:23:52.50,*Default,NTP,0000,0000,0000,,one way to solve this problem
+Dialogue: 0,0:23:52.50,0:23:55.47,*Default,NTP,0000,0000,0000,,is to focus on some particular index
+Dialogue: 0,0:23:56.00,0:23:58.53,*Default,NTP,0000,0000,0000,,so let's say the index one
+Dialogue: 0,0:23:59.20,0:24:01.97,*Default,NTP,0000,0000,0000,,s I is three there it is
+Dialogue: 0,0:24:02.87,0:24:05.73,*Default,NTP,0000,0000,0000,,we could figure out if three appears anywhere else
+Dialogue: 0,0:24:05.90,0:24:08.20,*Default,NTP,0000,0000,0000,,by building a list containing everything
+Dialogue: 0,0:24:08.20,0:24:09.53,*Default,NTP,0000,0000,0000,,except for this
+Dialogue: 0,0:24:10.17,0:24:14.30,*Default,NTP,0000,0000,0000,,s up to I gives me everything through four
+Dialogue: 0,0:24:14.33,0:24:16.33,*Default,NTP,0000,0000,0000,,but not including the three
+Dialogue: 0,0:24:17.30,0:24:19.07,*Default,NTP,0000,0000,0000,,s I plus one on
+Dialogue: 0,0:24:19.60,0:24:22.10,*Default,NTP,0000,0000,0000,,gives me everything after the three
+Dialogue: 0,0:24:22.87,0:24:25.07,*Default,NTP,0000,0000,0000,,so if I were to add those together
+Dialogue: 0,0:24:25.77,0:24:27.53,*Default,NTP,0000,0000,0000,,I'd end up with everything in the list
+Dialogue: 0,0:24:27.53,0:24:29.20,*Default,NTP,0000,0000,0000,,except for that three
+Dialogue: 0,0:24:29.27,0:24:30.87,*Default,NTP,0000,0000,0000,,we haven't gotten rid of all the threes
+Dialogue: 0,0:24:30.87,0:24:34.10,*Default,NTP,0000,0000,0000,,we've just gotten rid of the element at index I
+Dialogue: 0,0:24:35.33,0:24:38.13,*Default,NTP,0000,0000,0000,,and I could ask whether s I is in
+Dialogue: 0,0:24:38.80,0:24:42.17,*Default,NTP,0000,0000,0000,,this new list that doesn't have element I in it
+Dialogue: 0,0:24:42.27,0:24:46.60,*Default,NTP,0000,0000,0000,,and it is that means that three appears somewhere else
+Dialogue: 0,0:24:47.30,0:24:47.97,*Default,NTP,0000,0000,0000,,so now that we
+Dialogue: 0,0:24:47.97,0:24:49.70,*Default,NTP,0000,0000,0000,,have an expression to check whether
+Dialogue: 0,0:24:49.70,0:24:52.13,*Default,NTP,0000,0000,0000,,the elemented index eye appears
+Dialogue: 0,0:24:52.40,0:24:54.30,*Default,NTP,0000,0000,0000,,anywhere else within the list
+Dialogue: 0,0:24:54.60,0:24:57.53,*Default,NTP,0000,0000,0000,,we could just check that for all the eyes
+Dialogue: 0,0:24:57.80,0:25:01.40,*Default,NTP,0000,0000,0000,,is it the case that all of the following are true
+Dialogue: 0,0:25:02.13,0:25:06.87,*Default,NTP,0000,0000,0000,,this expression s I is in the rest of s not including I
+Dialogue: 0,0:25:07.10,0:25:08.47,*Default,NTP,0000,0000,0000,,for every eye
+Dialogue: 0,0:25:09.17,0:25:10.77,*Default,NTP,0000,0000,0000,,in range len s
+Dialogue: 0,0:25:12.10,0:25:14.67,*Default,NTP,0000,0000,0000,,let me just write that all on one line correctly
+Dialogue: 0,0:25:14.97,0:25:16.73,*Default,NTP,0000,0000,0000,,without forgetting the last parenthesis
+Dialogue: 0,0:25:16.73,0:25:18.07,*Default,NTP,0000,0000,0000,,so you can see what's going on
+Dialogue: 0,0:25:19.47,0:25:21.27,*Default,NTP,0000,0000,0000,,so that's one way to solve this problem
+Dialogue: 0,0:25:22.47,0:25:25.50,*Default,NTP,0000,0000,0000,,but there are other ways to reason about the same thing
+Dialogue: 0,0:25:26.17,0:25:28.40,*Default,NTP,0000,0000,0000,,like let's say we didn't want to do it about indices
+Dialogue: 0,0:25:28.40,0:25:31.00,*Default,NTP,0000,0000,0000,,we just wanted to look at the values themselves
+Dialogue: 0,0:25:31.57,0:25:33.70,*Default,NTP,0000,0000,0000,,well one useful expression would be
+Dialogue: 0,0:25:34.27,0:25:39.90,*Default,NTP,0000,0000,0000,,y for y in s if y equals three
+Dialogue: 0,0:25:40.77,0:25:42.70,*Default,NTP,0000,0000,0000,,tells me how many threes there are
+Dialogue: 0,0:25:43.33,0:25:44.87,*Default,NTP,0000,0000,0000,,I could get how many threes there I
+Dialogue: 0,0:25:44.87,0:25:46.47,*Default,NTP,0000,0000,0000,,by taking the length of this
+Dialogue: 0,0:25:46.87,0:25:48.30,*Default,NTP,0000,0000,0000,,or as an alternative
+Dialogue: 0,0:25:48.50,0:25:52.53,*Default,NTP,0000,0000,0000,,I could collect ones instead of threes and get the sum
+Dialogue: 0,0:25:52.70,0:25:53.93,*Default,NTP,0000,0000,0000,,in order to figure out how many
+Dialogue: 0,0:25:53.93,0:25:55.30,*Default,NTP,0000,0000,0000,,threes there are that way
+Dialogue: 0,0:25:56.33,0:25:58.40,*Default,NTP,0000,0000,0000,,but we don't care about how many threes there are
+Dialogue: 0,0:25:58.40,0:25:59.93,*Default,NTP,0000,0000,0000,,we care about how many there are
+Dialogue: 0,0:25:59.93,0:26:01.60,*Default,NTP,0000,0000,0000,,of any particular value
+Dialogue: 0,0:26:01.93,0:26:04.00,*Default,NTP,0000,0000,0000,,so we could write this same expression as
+Dialogue: 0,0:26:04.00,0:26:04.90,*Default,NTP,0000,0000,0000,,part of a list
+Dialogue: 0,0:26:04.90,0:26:05.80,*Default,NTP,0000,0000,0000,,comprehension
+Dialogue: 0,0:26:06.60,0:26:08.20,*Default,NTP,0000,0000,0000,,I think this one might get long
+Dialogue: 0,0:26:08.80,0:26:12.17,*Default,NTP,0000,0000,0000,,where instead of the three we want every x
+Dialogue: 0,0:26:12.60,0:26:16.57,*Default,NTP,0000,0000,0000,,for x in s one of these twos mean
+Dialogue: 0,0:26:17.00,0:26:18.07,*Default,NTP,0000,0000,0000,,this means
+Dialogue: 0,0:26:18.93,0:26:20.73,*Default,NTP,0000,0000,0000,,that there were two fours
+Dialogue: 0,0:26:20.90,0:26:24.17,*Default,NTP,0000,0000,0000,,that there were two threes that there were two twos
+Dialogue: 0,0:26:24.33,0:26:25.93,*Default,NTP,0000,0000,0000,,and then this is kind of redone
+Dialogue: 0,0:26:25.93,0:26:26.90,*Default,NTP,0000,0000,0000,,there are two threes
+Dialogue: 0,0:26:26.90,0:26:29.07,*Default,NTP,0000,0000,0000,,there are two twos there are two fours
+Dialogue: 0,0:26:29.33,0:26:32.97,*Default,NTP,0000,0000,0000,,if we want to make sure that each of these is above two
+Dialogue: 0,0:26:33.90,0:26:34.70,*Default,NTP,0000,0000,0000,,then one
+Dialogue: 0,0:26:34.70,0:26:37.57,*Default,NTP,0000,0000,0000,,way is to say that these are all greater than one
+Dialogue: 0,0:26:38.33,0:26:39.50,*Default,NTP,0000,0000,0000,,another way
+Dialogue: 0,0:26:40.37,0:26:42.10,*Default,NTP,0000,0000,0000,,would be to compute them all
+Dialogue: 0,0:26:42.93,0:26:45.30,*Default,NTP,0000,0000,0000,,find the minimum value in there
+Dialogue: 0,0:26:45.33,0:26:46.73,*Default,NTP,0000,0000,0000,,and make sure that that minimum
+Dialogue: 0,0:26:46.73,0:26:48.10,*Default,NTP,0000,0000,0000,,value is greater than one
+Dialogue: 0,0:26:48.13,0:26:49.87,*Default,NTP,0000,0000,0000,,now you know that they're all greater than one
+Dialogue: 0,0:26:50.27,0:26:54.07,*Default,NTP,0000,0000,0000,,so just two ways of writing the kind of equivalent idea
+Dialogue: 0,0:26:54.70,0:26:56.13,*Default,NTP,0000,0000,0000,,and all we're doing here is just
+Dialogue: 0,0:26:56.13,0:26:57.97,*Default,NTP,0000,0000,0000,,counting the number of times
+Dialogue: 0,0:26:58.00,0:27:01.37,*Default,NTP,0000,0000,0000,,that x appears in s
+Dialogue: 0,0:27:02.37,0:27:04.53,*Default,NTP,0000,0000,0000,,and in fact it turns out that that's built in
+Dialogue: 0,0:27:05.10,0:27:06.87,*Default,NTP,0000,0000,0000,,I could just say s dot count
+Dialogue: 0,0:27:06.87,0:27:09.07,*Default,NTP,0000,0000,0000,,how many threes there are and it will tell me
+Dialogue: 0,0:27:10.33,0:27:12.70,*Default,NTP,0000,0000,0000,,so I could simplify this a bit by saying
+Dialogue: 0,0:27:12.70,0:27:14.10,*Default,NTP,0000,0000,0000,,I want to know s dot
+Dialogue: 0,0:27:14.10,0:27:14.90,*Default,NTP,0000,0000,0000,,count
+Dialogue: 0,0:27:15.30,0:27:18.00,*Default,NTP,0000,0000,0000,,x for every x in s
+Dialogue: 0,0:27:18.33,0:27:20.67,*Default,NTP,0000,0000,0000,,and it will tell me that the smallest count there is
+Dialogue: 0,0:27:20.67,0:27:23.53,*Default,NTP,0000,0000,0000,,two and since those are all greater than one
+Dialogue: 0,0:27:23.73,0:27:24.50,*Default,NTP,0000,0000,0000,,we know
+Dialogue: 0,0:27:24.50,0:27:27.60,*Default,NTP,0000,0000,0000,,that every element equals some other element in s
+Dialogue: 0,0:27:28.47,0:27:30.90,*Default,NTP,0000,0000,0000,,so maybe that's the simplest way to solve this one
+Dialogue: 0,0:27:33.10,0:27:34.90,*Default,NTP,0000,0000,0000,,okay and if we did this right
+Dialogue: 0,0:27:35.00,0:27:37.70,*Default,NTP,0000,0000,0000,,then all of our dock pests should pass and they do
+Dialogue: 0,0:27:37.80,0:27:39.77,*Default,NTP,0000,0000,0000,,so it appears that we've solved all four
+Dialogue: 0,0:27:39.77,0:27:40.97,*Default,NTP,0000,0000,0000,,of these problems
+Dialogue: 0,0:27:42.27,0:27:44.53,*Default,NTP,0000,0000,0000,,let's do some linked list processing
+Dialogue: 0,0:27:45.33,0:27:47.07,*Default,NTP,0000,0000,0000,,I'll just show you a few exercises
+Dialogue: 0,0:27:47.07,0:27:48.53,*Default,NTP,0000,0000,0000,,you can try to solve them on your own
+Dialogue: 0,0:27:48.53,0:27:50.20,*Default,NTP,0000,0000,0000,,and then we'll work on them together
+Dialogue: 0,0:27:50.93,0:27:51.93,*Default,NTP,0000,0000,0000,,how do we write a function
+Dialogue: 0,0:27:51.93,0:27:53.57,*Default,NTP,0000,0000,0000,,that tells us whether a link list
+Dialogue: 0,0:27:53.57,0:27:55.67,*Default,NTP,0000,0000,0000,,s is ordered from least to greatest
+Dialogue: 0,0:27:55.80,0:27:57.30,*Default,NTP,0000,0000,0000,,the elements of this are
+Dialogue: 0,0:27:57.53,0:27:59.00,*Default,NTP,0000,0000,0000,,the elements of this aren't
+Dialogue: 0,0:28:00.53,0:28:02.37,*Default,NTP,0000,0000,0000,,how would you tell if a linked list is ordered
+Dialogue: 0,0:28:02.37,0:28:03.27,*Default,NTP,0000,0000,0000,,from least to greatest
+Dialogue: 0,0:28:03.27,0:28:05.00,*Default,NTP,0000,0000,0000,,by absolute value
+Dialogue: 0,0:28:05.90,0:28:10.40,*Default,NTP,0000,0000,0000,,so these are 1 3 4 are the absolute values
+Dialogue: 0,0:28:10.97,0:28:12.57,*Default,NTP,0000,0000,0000,,whereas these are not
+Dialogue: 0,0:28:13.53,0:28:14.97,*Default,NTP,0000,0000,0000,,and why just apps blue value
+Dialogue: 0,0:28:14.97,0:28:15.73,*Default,NTP,0000,0000,0000,,we could have any
+Dialogue: 0,0:28:15.73,0:28:18.07,*Default,NTP,0000,0000,0000,,key function that tells us whether they're ordered
+Dialogue: 0,0:28:18.13,0:28:20.67,*Default,NTP,0000,0000,0000,,after you call the key function on each element
+Dialogue: 0,0:28:21.90,0:28:23.50,*Default,NTP,0000,0000,0000,,here's a classic exercise
+Dialogue: 0,0:28:23.70,0:28:24.80,*Default,NTP,0000,0000,0000,,create a sorted
+Dialogue: 0,0:28:24.80,0:28:27.53,*Default,NTP,0000,0000,0000,,link containing all the elements of both sorted links
+Dialogue: 0,0:28:27.53,0:28:28.70,*Default,NTP,0000,0000,0000,,s and t
+Dialogue: 0,0:28:29.27,0:28:32.13,*Default,NTP,0000,0000,0000,,so if I have sorted s and sorted t
+Dialogue: 0,0:28:32.53,0:28:35.40,*Default,NTP,0000,0000,0000,,how do I create sorted s and t
+Dialogue: 0,0:28:36.27,0:28:38.77,*Default,NTP,0000,0000,0000,,and this builds a new link list out of these two
+Dialogue: 0,0:28:39.13,0:28:41.07,*Default,NTP,0000,0000,0000,,but what if we wanted to do the same thing
+Dialogue: 0,0:28:41.07,0:28:42.47,*Default,NTP,0000,0000,0000,,but never call link
+Dialogue: 0,0:28:42.73,0:28:45.93,*Default,NTP,0000,0000,0000,,instead we could take the original s and t
+Dialogue: 0,0:28:46.17,0:28:48.70,*Default,NTP,0000,0000,0000,,and mutate them in order to create
+Dialogue: 0,0:28:48.87,0:28:50.93,*Default,NTP,0000,0000,0000,,this link list structure
+Dialogue: 0,0:28:51.33,0:28:52.47,*Default,NTP,0000,0000,0000,,how would we do it
+Dialogue: 0,0:28:52.73,0:28:56.57,*Default,NTP,0000,0000,0000,,well instead of having the rest of s b five
+Dialogue: 0,0:28:56.73,0:29:02.00,*Default,NTP,0000,0000,0000,,the rest of s would be 1 4 5
+Dialogue: 0,0:29:02.97,0:29:03.80,*Default,NTP,0000,0000,0000,,you can pause here
+Dialogue: 0,0:29:03.80,0:29:05.40,*Default,NTP,0000,0000,0000,,and try to work these out on your own
+Dialogue: 0,0:29:06.27,0:29:08.17,*Default,NTP,0000,0000,0000,,now we're gonna go solve them together
+Dialogue: 0,0:29:09.00,0:29:11.93,*Default,NTP,0000,0000,0000,,so here's our link list class down here
+Dialogue: 0,0:29:12.13,0:29:13.57,*Default,NTP,0000,0000,0000,,takes a first and a rest
+Dialogue: 0,0:29:13.57,0:29:16.50,*Default,NTP,0000,0000,0000,,the rest is empty by default
+Dialogue: 0,0:29:16.77,0:29:18.53,*Default,NTP,0000,0000,0000,,and how do we check whether something's ordered
+Dialogue: 0,0:29:18.53,0:29:21.47,*Default,NTP,0000,0000,0000,,1 3 4 is ordered one and four three is not
+Dialogue: 0,0:29:22.37,0:29:24.10,*Default,NTP,0000,0000,0000,,well there we're going to use recrusion
+Dialogue: 0,0:29:24.60,0:29:26.50,*Default,NTP,0000,0000,0000,,check if the first two elements are ordered
+Dialogue: 0,0:29:26.50,0:29:28.47,*Default,NTP,0000,0000,0000,,and check to make sure that everything after that
+Dialogue: 0,0:29:28.47,0:29:29.70,*Default,NTP,0000,0000,0000,,is ordered as well
+Dialogue: 0,0:29:30.30,0:29:32.30,*Default,NTP,0000,0000,0000,,if it's the case that s is
+Dialogue: 0,0:29:32.67,0:29:36.30,*Default,NTP,0000,0000,0000,,linked up empty or s rest is linked up empty
+Dialogue: 0,0:29:36.97,0:29:38.93,*Default,NTP,0000,0000,0000,,then this thing is definitely ordered
+Dialogue: 0,0:29:39.27,0:29:41.57,*Default,NTP,0000,0000,0000,,because it's only got zero or one elements
+Dialogue: 0,0:29:41.57,0:29:43.77,*Default,NTP,0000,0000,0000,,there's not enough there to be out of order
+Dialogue: 0,0:29:44.57,0:29:47.87,*Default,NTP,0000,0000,0000,,if it's the case that s dot first
+Dialogue: 0,0:29:48.10,0:29:51.47,*Default,NTP,0000,0000,0000,,is greater than s dot rest
+Dialogue: 0,0:29:51.73,0:29:53.50,*Default,NTP,0000,0000,0000,,that's the elemented index
+Dialogue: 0,0:29:53.50,0:29:56.10,*Default,NTP,0000,0000,0000,,zero is greater than the elemented index one
+Dialogue: 0,0:29:56.13,0:29:57.53,*Default,NTP,0000,0000,0000,,then they're not ordered
+Dialogue: 0,0:29:58.33,0:29:59.87,*Default,NTP,0000,0000,0000,,if you don't know that it's ordered
+Dialogue: 0,0:29:59.87,0:30:01.77,*Default,NTP,0000,0000,0000,,and you don't know that it's not ordered
+Dialogue: 0,0:30:01.80,0:30:02.73,*Default,NTP,0000,0000,0000,,but you do know
+Dialogue: 0,0:30:02.73,0:30:04.40,*Default,NTP,0000,0000,0000,,that the first two elements are ordered
+Dialogue: 0,0:30:04.40,0:30:06.70,*Default,NTP,0000,0000,0000,,then you have to just check everything else
+Dialogue: 0,0:30:06.90,0:30:08.70,*Default,NTP,0000,0000,0000,,return ordered
+Dialogue: 0,0:30:09.37,0:30:10.53,*Default,NTP,0000,0000,0000,,s rest
+Dialogue: 0,0:30:11.73,0:30:14.00,*Default,NTP,0000,0000,0000,,now this gets a little bit more interesting if you
+Dialogue: 0,0:30:14.00,0:30:16.70,*Default,NTP,0000,0000,0000,,allow for a key function to tell you
+Dialogue: 0,0:30:16.97,0:30:19.90,*Default,NTP,0000,0000,0000,,what values you really want to think about ordering
+Dialogue: 0,0:30:20.87,0:30:23.07,*Default,NTP,0000,0000,0000,,so are we ordering the values that are there
+Dialogue: 0,0:30:23.40,0:30:26.33,*Default,NTP,0000,0000,0000,,or are we checking the order of the result of calling
+Dialogue: 0,0:30:26.33,0:30:27.97,*Default,NTP,0000,0000,0000,,abs on these
+Dialogue: 0,0:30:28.07,0:30:30.93,*Default,NTP,0000,0000,0000,,so abs one is one abs -3 is three
+Dialogue: 0,0:30:30.93,0:30:34.87,*Default,NTP,0000,0000,0000,,abs four abs 4 1 3 4 are ordered
+Dialogue: 0,0:30:35.07,0:30:38.57,*Default,NTP,0000,0000,0000,,so this would be true using a key function apps
+Dialogue: 0,0:30:38.80,0:30:41.90,*Default,NTP,0000,0000,0000,,we're using this in much the same way that key is used
+Dialogue: 0,0:30:42.00,0:30:44.27,*Default,NTP,0000,0000,0000,,for sorted or min or max
+Dialogue: 0,0:30:45.70,0:30:47.73,*Default,NTP,0000,0000,0000,,we'd have to add in a second argument
+Dialogue: 0,0:30:47.93,0:30:51.17,*Default,NTP,0000,0000,0000,,by default it just has the identity function
+Dialogue: 0,0:30:51.73,0:30:53.53,*Default,NTP,0000,0000,0000,,but if you pass in abs
+Dialogue: 0,0:30:53.53,0:30:55.77,*Default,NTP,0000,0000,0000,,then that's the condition we should check
+Dialogue: 0,0:30:55.90,0:31:00.47,*Default,NTP,0000,0000,0000,,is it the case that abs s dot first is greater than
+Dialogue: 0,0:31:00.57,0:31:02.73,*Default,NTP,0000,0000,0000,,abs s rest first
+Dialogue: 0,0:31:03.20,0:31:05.77,*Default,NTP,0000,0000,0000,,well that would handle the absolute value case
+Dialogue: 0,0:31:05.77,0:31:08.37,*Default,NTP,0000,0000,0000,,but we want this to be generic enough to handle
+Dialogue: 0,0:31:08.53,0:31:10.53,*Default,NTP,0000,0000,0000,,any possible key function
+Dialogue: 0,0:31:10.60,0:31:13.13,*Default,NTP,0000,0000,0000,,so we just replace abs with key
+Dialogue: 0,0:31:13.77,0:31:15.87,*Default,NTP,0000,0000,0000,,that means by default it will take
+Dialogue: 0,0:31:16.20,0:31:18.00,*Default,NTP,0000,0000,0000,,the identity function
+Dialogue: 0,0:31:18.30,0:31:19.47,*Default,NTP,0000,0000,0000,,but if you want
+Dialogue: 0,0:31:19.47,0:31:22.50,*Default,NTP,0000,0000,0000,,it could take the abs function instead and apply that
+Dialogue: 0,0:31:23.60,0:31:25.07,*Default,NTP,0000,0000,0000,,all right let's look at the next one
+Dialogue: 0,0:31:25.07,0:31:26.93,*Default,NTP,0000,0000,0000,,merge return a sordid list
+Dialogue: 0,0:31:26.93,0:31:29.97,*Default,NTP,0000,0000,0000,,with the elements of sordid s and t
+Dialogue: 0,0:31:30.93,0:31:34.30,*Default,NTP,0000,0000,0000,,so when I merge together a and b one five and one four
+Dialogue: 0,0:31:34.30,0:31:36.30,*Default,NTP,0000,0000,0000,,then I get 1 1 4 5
+Dialogue: 0,0:31:36.87,0:31:39.77,*Default,NTP,0000,0000,0000,,if s is link empty
+Dialogue: 0,0:31:40.10,0:31:43.00,*Default,NTP,0000,0000,0000,,then the merged result should just be everything
+Dialogue: 0,0:31:43.00,0:31:44.67,*Default,NTP,0000,0000,0000,,that's in t
+Dialogue: 0,0:31:45.40,0:31:46.17,*Default,NTP,0000,0000,0000,,if
+Dialogue: 0,0:31:46.17,0:31:50.80,*Default,NTP,0000,0000,0000,,t is Lincoln mt but s is not then I think the reserve
+Dialogue: 0,0:31:51.30,0:31:54.60,*Default,NTP,0000,0000,0000,,the merged result should be everything that's in s
+Dialogue: 0,0:31:55.07,0:31:58.17,*Default,NTP,0000,0000,0000,,now we know that there are elements in both s and t
+Dialogue: 0,0:31:58.17,0:31:59.30,*Default,NTP,0000,0000,0000,,so we can compare
+Dialogue: 0,0:31:59.60,0:32:02.13,*Default,NTP,0000,0000,0000,,s dot first and t dot first
+Dialogue: 0,0:32:02.93,0:32:03.57,*Default,NTP,0000,0000,0000,,if they're equal
+Dialogue: 0,0:32:03.57,0:32:05.70,*Default,NTP,0000,0000,0000,,it doesn't really matter what order you put them in
+Dialogue: 0,0:32:05.77,0:32:07.53,*Default,NTP,0000,0000,0000,,so we'll just put less than equal
+Dialogue: 0,0:32:07.53,0:32:10.00,*Default,NTP,0000,0000,0000,,but we'd be equally correct if we put less than
+Dialogue: 0,0:32:11.60,0:32:14.07,*Default,NTP,0000,0000,0000,,and here we're going to create a new linked list
+Dialogue: 0,0:32:14.10,0:32:17.33,*Default,NTP,0000,0000,0000,,that starts with the smallest element as start first
+Dialogue: 0,0:32:17.47,0:32:18.90,*Default,NTP,0000,0000,0000,,and is followed by
+Dialogue: 0,0:32:19.73,0:32:21.50,*Default,NTP,0000,0000,0000,,the merged version
+Dialogue: 0,0:32:21.73,0:32:25.13,*Default,NTP,0000,0000,0000,,of everything else in s and everything in t
+Dialogue: 0,0:32:25.67,0:32:27.93,*Default,NTP,0000,0000,0000,,this result has everything in s
+Dialogue: 0,0:32:28.07,0:32:29.77,*Default,NTP,0000,0000,0000,,there's the first and there's the rest
+Dialogue: 0,0:32:29.80,0:32:31.87,*Default,NTP,0000,0000,0000,,and it has everything in t
+Dialogue: 0,0:32:33.00,0:32:35.87,*Default,NTP,0000,0000,0000,,otherwise if t dot first is the smallest element
+Dialogue: 0,0:32:35.93,0:32:37.40,*Default,NTP,0000,0000,0000,,then that's what should be
+Dialogue: 0,0:32:37.40,0:32:39.73,*Default,NTP,0000,0000,0000,,the first element of the result
+Dialogue: 0,0:32:39.93,0:32:41.80,*Default,NTP,0000,0000,0000,,we still need all the elements in s
+Dialogue: 0,0:32:41.80,0:32:44.30,*Default,NTP,0000,0000,0000,,and we need the rest of t as well
+Dialogue: 0,0:32:45.90,0:32:47.70,*Default,NTP,0000,0000,0000,,and what about merge in place
+Dialogue: 0,0:32:48.17,0:32:50.93,*Default,NTP,0000,0000,0000,,the idea here was that we started with a and b
+Dialogue: 0,0:32:51.00,0:32:53.10,*Default,NTP,0000,0000,0000,,we called merge in place and we got
+Dialogue: 0,0:32:53.20,0:32:56.07,*Default,NTP,0000,0000,0000,,all of the elements in a and b in sorted order
+Dialogue: 0,0:32:56.53,0:32:59.00,*Default,NTP,0000,0000,0000,,but we never call link
+Dialogue: 0,0:32:59.73,0:33:00.53,*Default,NTP,0000,0000,0000,,well in fact
+Dialogue: 0,0:33:00.53,0:33:03.07,*Default,NTP,0000,0000,0000,,the implementation is almost the same as this
+Dialogue: 0,0:33:04.27,0:33:05.87,*Default,NTP,0000,0000,0000,,the base cases are the same
+Dialogue: 0,0:33:06.33,0:33:08.57,*Default,NTP,0000,0000,0000,,but instead of calling link
+Dialogue: 0,0:33:08.67,0:33:11.77,*Default,NTP,0000,0000,0000,,what we need to do is change s
+Dialogue: 0,0:33:12.13,0:33:14.33,*Default,NTP,0000,0000,0000,,so that s dot first is not the same
+Dialogue: 0,0:33:14.60,0:33:16.50,*Default,NTP,0000,0000,0000,,but s dot rest is
+Dialogue: 0,0:33:16.73,0:33:17.90,*Default,NTP,0000,0000,0000,,what would that look like
+Dialogue: 0,0:33:18.87,0:33:21.37,*Default,NTP,0000,0000,0000,,well instead of returning a new link
+Dialogue: 0,0:33:21.40,0:33:23.13,*Default,NTP,0000,0000,0000,,we're just going to return s
+Dialogue: 0,0:33:23.13,0:33:26.47,*Default,NTP,0000,0000,0000,,but we're going to change s rest to have
+Dialogue: 0,0:33:26.77,0:33:31.70,*Default,NTP,0000,0000,0000,,everything in s rest and everything in t as part of it
+Dialogue: 0,0:33:32.47,0:33:35.50,*Default,NTP,0000,0000,0000,,and likewise if t has the smallest element
+Dialogue: 0,0:33:35.53,0:33:37.87,*Default,NTP,0000,0000,0000,,then that's the one we're going to return
+Dialogue: 0,0:33:37.90,0:33:39.67,*Default,NTP,0000,0000,0000,,but we're going to change its
+Dialogue: 0,0:33:39.67,0:33:42.57,*Default,NTP,0000,0000,0000,,rest to make sure that it contains
+Dialogue: 0,0:33:42.70,0:33:43.80,*Default,NTP,0000,0000,0000,,everything in this
+Dialogue: 0,0:33:43.97,0:33:47.07,*Default,NTP,0000,0000,0000,,and everything in t's rest
+Dialogue: 0,0:33:48.07,0:33:49.33,*Default,NTP,0000,0000,0000,,let's see how we did
+Dialogue: 0,0:33:50.37,0:33:51.77,*Default,NTP,0000,0000,0000,,our doctor has passed
+Dialogue: 0,0:33:51.90,0:33:52.37,*Default,NTP,0000,0000,0000,,and so
+Dialogue: 0,0:33:52.37,0:33:54.97,*Default,NTP,0000,0000,0000,,we've played around a little bit with linked lists
