@@ -176,8 +176,18 @@ def is_bst(t):
     False
     """
     "*** YOUR CODE HERE ***"
-    if Tree.is_leaf(t):
-        return [True]
+    def helper(t,min=0,max=0):
+        if t.is_leaf():
+            return [True]
+        min=t.branches[0].label
+        max=t.branches[1].label
+        for b in t.branches:
+            if min<=t.label<=max:
+                return [True]+help(b)
+            else:
+                return [False]
+    return helper(t)
+
     
 
 def preorder(t):
@@ -229,11 +239,11 @@ def path_yielder(t, value):
     """
 
     "*** YOUR CODE HERE ***"
-
-    for _______________ in _________________:
-        for _______________ in _________________:
-
-            "*** YOUR CODE HERE ***"
+    if t.label==value:
+        yield [t.label]
+    for b in t.branches:
+        for past_value in path_yielder(b,value):
+            yield [t.label]+past_value
 
 
 class Link:

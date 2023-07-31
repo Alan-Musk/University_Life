@@ -210,6 +210,8 @@ class Ant(Insect):
 
     implemented = False  # Only implemented Ant classes should be instantiated
     food_cost = 0
+    damage_doubled=False
+    blocks_path=True
     # ADD CLASS ATTRIBUTES HERE
 
     def __init__(self, armor=1):
@@ -322,7 +324,7 @@ class ShortThrower(ThrowerAnt):
     # BEGIN Problem 4
     implemented = True   # Change to True to view in the GUI
     min_range=0
-    max_range=3
+    max_range=5
     # END Problem 4
 
 class LongThrower(ThrowerAnt):
@@ -438,10 +440,15 @@ class Water(Place):
 
 # BEGIN Problem 9
 # The ScubaThrower class
+class ScubaThrower(ThrowerAnt):
+    name='Scuba'
+    implemented=True
+    food_cost=6
+    is_watersafe=True
 # END Problem 9
 
 # BEGIN Problem EC
-class QueenAnt(Ant):  # You should change this line
+class QueenAnt(ScubaThrower):  # You should change this line
 # END Problem EC
     """The Queen of the colony. The game is over if a bee enters her place."""
 
@@ -449,12 +456,19 @@ class QueenAnt(Ant):  # You should change this line
     food_cost = 7
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem EC
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
+    ants=0
     # END Problem EC
 
     def __init__(self, armor=1):
         # BEGIN Problem EC
         "*** YOUR CODE HERE ***"
+        if QueenAnt.ants==0:
+            self.realQueen=True
+        else:
+            self.realQueen=False
+        QueenAnt.ants+=1
+        ScubaThrower.__init__(self,armor)
         # END Problem EC
 
     def action(self, gamestate):
@@ -465,6 +479,19 @@ class QueenAnt(Ant):  # You should change this line
         """
         # BEGIN Problem EC
         "*** YOUR CODE HERE ***"
+        if self.realQueen:
+            # Throwing a bee
+            ThrowerAnt.action(self,gamestate)
+            # Double the demage
+            current_place=self.place.exit
+            while current_place is not None:
+                # ants 
+                if current_place.ant is not None and not current_place.ant.damage_doubled:
+                    current_place.ant.damage_doubled=True
+                    current_place.ant.damage*=2
+                current_place=current_place.exit
+        else:
+            self.reduce_armor(self.armor)
         # END Problem EC
 
     def reduce_armor(self, amount):
@@ -473,8 +500,23 @@ class QueenAnt(Ant):  # You should change this line
         """
         # BEGIN Problem EC
         "*** YOUR CODE HERE ***"
+        Ant.reduce_armor(self,amount)
+        if self.realQueen and self.armor<=0:
+            return bees_win()
         # END Problem EC
-
+        
+    def remove_from(self, place):
+        if not self.realQueen:
+            if place.ant is self:
+                place.ant = None
+            elif place.ant is None:
+                assert False, '{0} is not in {1}'.format(self, place)
+            else:
+            # queen or container (optional) or other situation
+                place.ant.remove_ant(self)
+            Insect.remove_from(self, place)
+        else:
+            pass
 
 
 class AntRemover(Ant):
@@ -507,7 +549,7 @@ class Bee(Insect):
         """Return True if this Bee cannot advance to the next Place."""
         # Special handling for NinjaAnt
         # BEGIN Problem Optional
-        return self.place.ant is not None
+        return self.place.ant is not None and self.place.ant.blocks_path
         # END Problem Optional
 
     def action(self, gamestate):
@@ -548,12 +590,17 @@ class NinjaAnt(Ant):
     food_cost = 5
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem Optional 1
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
+    blocks_path=False
     # END Problem Optional 1
 
     def action(self, gamestate):
         # BEGIN Problem Optional 1
         "*** YOUR CODE HERE ***"
+        place_bees=self.place.bees[:]
+        if place_bees != []:
+            for bee in place_bees:
+                Insect.reduce_armor(bee,self.damage)
         # END Problem Optional 1
 
 class ContainerAnt(Ant):
