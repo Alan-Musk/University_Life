@@ -230,8 +230,13 @@ class Ant(Insect):
     def add_to(self, place):
         if place.ant is None:
             place.ant = self
-        else:
+        elif self.can_contain(place.ant):
+            self.contain_ant(place.ant)
+            place.ant = self
+        elif place.ant.can_contain(self):
+            place.ant.contain_ant(self)
             # BEGIN Problem Optional 2
+        else:
             assert place.ant is None, 'Two ants in {0}'.format(place)
             # END Problem Optional 2
         Insect.add_to(self, place)
@@ -611,10 +616,15 @@ class ContainerAnt(Ant):
     def can_contain(self, other):
         # BEGIN Problem Optional 2
         "*** YOUR CODE HERE ***"
+        if self.contained_ant is None and not isinstance(other,ContainerAnt):
+            return True
+        return False
         # END Problem Optional 2
 
     def contain_ant(self, ant):
         # BEGIN Problem Optional 2
+        if self.can_contain(ant):
+            self.contained_ant=ant
         "*** YOUR CODE HERE ***"
         # END Problem Optional 2
 
@@ -636,6 +646,9 @@ class ContainerAnt(Ant):
     def action(self, gamestate):
         # BEGIN Optional 2
         "*** YOUR CODE HERE ***"
+
+        if self.contained_ant is not None:
+            self.contained_ant.action(gamestate)
         # END Optional 2
 
 class BodyguardAnt(ContainerAnt):
@@ -645,7 +658,9 @@ class BodyguardAnt(ContainerAnt):
     food_cost = 4
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Optional 2
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
+    def __init__(self,armor=2):
+        ContainerAnt.__init__(self,armor)
     # END Optional 2
 
 class TankAnt(ContainerAnt):
@@ -656,7 +671,7 @@ class TankAnt(ContainerAnt):
     food_cost = 6
     # OVERRIDE CLASS ATTRIBUTES HERE
     # BEGIN Problem Optional 3
-    implemented = False   # Change to True to view in the GUI
+    implemented = True   # Change to True to view in the GUI
     # END Problem Optional 3
 
     def __init__(self, armor=2):
@@ -665,6 +680,11 @@ class TankAnt(ContainerAnt):
     def action(self, gamestate):
         # BEGIN Problem Optional 3
         "*** YOUR CODE HERE ***"
+        ContainerAnt.action(self,gamestate)
+        place_bees=self.place.bees[:]
+        if place_bees != []:
+            for bee in place_bees:
+                Insect.reduce_armor(bee,self.damage)
         # END Problem Optional 3
 ############
 # Statuses #
