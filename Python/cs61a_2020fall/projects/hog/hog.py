@@ -423,7 +423,6 @@ def extra_turn_strategy(score, opponent_score, cutoff=8, num_rolls=6):
     
     # END PROBLEM 11
 
-# 由于是可选的,就纯copy赶进度
 def final_strategy(score, opponent_score, cutoff=max_average["6:6"]):
     """Write a brief description of your final strategy.
     *** YOUR DESCRIPTION HERE ***
@@ -444,7 +443,6 @@ def final_strategy(score, opponent_score, cutoff=max_average["6:6"]):
         return roll_nums
     elif score < opponent_score and GOAL_SCORE - score < cutoff:
         return roll_nums
-    # Replace this statement
     # END PROBLEM 12
 
 ##########################
