@@ -1,0 +1,941 @@
+[Script Info]
+Title: Lecture 29. Calculater_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=68&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.47,0:00:03.07,*Default,NTP,0000,0000,0000,,61 a lecture No.29
+Dialogue: 0,0:00:03.37,0:00:04.47,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:05.67,0:00:07.53,*Default,NTP,0000,0000,0000,,homework six is due to day
+Dialogue: 0,0:00:07.67,0:00:09.97,*Default,NTP,0000,0000,0000,,homework seven will be posted to morrow
+Dialogue: 0,0:00:10.00,0:00:11.53,*Default,NTP,0000,0000,0000,,it's due next Thursday
+Dialogue: 0,0:00:11.67,0:00:13.50,*Default,NTP,0000,0000,0000,,there's just more scheme problems
+Dialogue: 0,0:00:14.00,0:00:16.73,*Default,NTP,0000,0000,0000,,midterb two regrade requests are due on Monday
+Dialogue: 0,0:00:17.27,0:00:19.37,*Default,NTP,0000,0000,0000,,and that's all that's going on right now
+Dialogue: 0,0:00:19.87,0:00:22.93,*Default,NTP,0000,0000,0000,,but next week we'll release project four for the course
+Dialogue: 0,0:00:23.57,0:00:25.87,*Default,NTP,0000,0000,0000,,so things are going to get a little bit busier
+Dialogue: 0,0:00:26.13,0:00:28.60,*Default,NTP,0000,0000,0000,,but the version of project for this semester
+Dialogue: 0,0:00:28.67,0:00:31.40,*Default,NTP,0000,0000,0000,,won't be quite as involved as it has been in the past
+Dialogue: 0,0:00:31.60,0:00:34.10,*Default,NTP,0000,0000,0000,,just to help make sure that you can manage your time
+Dialogue: 0,0:00:34.10,0:00:36.17,*Default,NTP,0000,0000,0000,,and focus on the stuff that's most important
+Dialogue: 0,0:00:37.70,0:00:40.37,*Default,NTP,0000,0000,0000,,today's lecture is directly related to project four
+Dialogue: 0,0:00:40.47,0:00:42.00,*Default,NTP,0000,0000,0000,,because in project four
+Dialogue: 0,0:00:42.57,0:00:45.70,*Default,NTP,0000,0000,0000,,you're going to build a scheme interpreter
+Dialogue: 0,0:00:46.27,0:00:48.37,*Default,NTP,0000,0000,0000,,and today will be the first of two lectures that
+Dialogue: 0,0:00:48.37,0:00:51.13,*Default,NTP,0000,0000,0000,,describe how you structure an interpreter
+Dialogue: 0,0:00:51.13,0:00:52.50,*Default,NTP,0000,0000,0000,,for a programming language
+Dialogue: 0,0:00:54.07,0:00:57.20,*Default,NTP,0000,0000,0000,,we're now going to shift our focus in this course
+Dialogue: 0,0:00:57.53,0:01:00.73,*Default,NTP,0000,0000,0000,,to talking about programming languages
+Dialogue: 0,0:01:00.93,0:01:02.90,*Default,NTP,0000,0000,0000,,and interpreters
+Dialogue: 0,0:01:03.37,0:01:08.30,*Default,NTP,0000,0000,0000,,where an interpreter is a program that takes as input
+Dialogue: 0,0:01:08.47,0:01:11.53,*Default,NTP,0000,0000,0000,,the code written in a programming language
+Dialogue: 0,0:01:11.90,0:01:14.27,*Default,NTP,0000,0000,0000,,and executes to that code
+Dialogue: 0,0:01:14.30,0:01:16.37,*Default,NTP,0000,0000,0000,,in order to create the behavior
+Dialogue: 0,0:01:16.53,0:01:18.37,*Default,NTP,0000,0000,0000,,described by the program
+Dialogue: 0,0:01:18.60,0:01:19.93,*Default,NTP,0000,0000,0000,,and there are many different
+Dialogue: 0,0:01:19.93,0:01:23.10,*Default,NTP,0000,0000,0000,,programming languages that have been invented over time
+Dialogue: 0,0:01:24.07,0:01:25.40,*Default,NTP,0000,0000,0000,,and so far in this course
+Dialogue: 0,0:01:25.40,0:01:27.67,*Default,NTP,0000,0000,0000,,we've talked about python a great deal
+Dialogue: 0,0:01:28.07,0:01:29.80,*Default,NTP,0000,0000,0000,,and scheme a little bit
+Dialogue: 0,0:01:30.13,0:01:32.93,*Default,NTP,0000,0000,0000,,I taught you about scheme for two reasons
+Dialogue: 0,0:01:33.27,0:01:36.07,*Default,NTP,0000,0000,0000,,one it's a delightfully useful
+Dialogue: 0,0:01:36.30,0:01:39.00,*Default,NTP,0000,0000,0000,,simple and effective programming language
+Dialogue: 0,0:01:39.13,0:01:42.37,*Default,NTP,0000,0000,0000,,that still gets used today even for new projects
+Dialogue: 0,0:01:42.67,0:01:44.57,*Default,NTP,0000,0000,0000,,and it's a dialect of lisp
+Dialogue: 0,0:01:44.77,0:01:46.73,*Default,NTP,0000,0000,0000,,which is used even more broadly
+Dialogue: 0,0:01:47.00,0:01:50.60,*Default,NTP,0000,0000,0000,,either as a standalone application development language
+Dialogue: 0,0:01:50.77,0:01:52.47,*Default,NTP,0000,0000,0000,,or as an embedded language
+Dialogue: 0,0:01:52.50,0:01:54.20,*Default,NTP,0000,0000,0000,,that implements part of a program
+Dialogue: 0,0:01:54.20,0:01:56.20,*Default,NTP,0000,0000,0000,,that also uses some other language
+Dialogue: 0,0:01:57.37,0:01:58.80,*Default,NTP,0000,0000,0000,,but the second reason
+Dialogue: 0,0:01:59.07,0:01:59.90,*Default,NTP,0000,0000,0000,,is that it
+Dialogue: 0,0:01:59.97,0:02:02.77,*Default,NTP,0000,0000,0000,,is a programming language that's very powerful
+Dialogue: 0,0:02:02.93,0:02:04.77,*Default,NTP,0000,0000,0000,,but has few rules
+Dialogue: 0,0:02:05.10,0:02:06.73,*Default,NTP,0000,0000,0000,,and so you will be able to
+Dialogue: 0,0:02:06.73,0:02:09.97,*Default,NTP,0000,0000,0000,,build an interpreter for the scheme language
+Dialogue: 0,0:02:10.10,0:02:12.40,*Default,NTP,0000,0000,0000,,by writing down a python program
+Dialogue: 0,0:02:12.57,0:02:13.87,*Default,NTP,0000,0000,0000,,that describes
+Dialogue: 0,0:02:13.87,0:02:17.40,*Default,NTP,0000,0000,0000,,all of the rules of interpretation for the language
+Dialogue: 0,0:02:18.10,0:02:19.73,*Default,NTP,0000,0000,0000,,and interpreters bring together
+Dialogue: 0,0:02:19.73,0:02:21.67,*Default,NTP,0000,0000,0000,,many ideas in this course
+Dialogue: 0,0:02:21.90,0:02:23.80,*Default,NTP,0000,0000,0000,,programs or trees
+Dialogue: 0,0:02:24.10,0:02:27.47,*Default,NTP,0000,0000,0000,,and the way interpreters work is through tree recursion
+Dialogue: 0,0:02:27.93,0:02:31.57,*Default,NTP,0000,0000,0000,,expressions often have lists of sub expressions
+Dialogue: 0,0:02:32.07,0:02:35.77,*Default,NTP,0000,0000,0000,,the input to a interpreter is another program
+Dialogue: 0,0:02:35.90,0:02:38.33,*Default,NTP,0000,0000,0000,,which is kind of like a higher order function
+Dialogue: 0,0:02:38.93,0:02:42.33,*Default,NTP,0000,0000,0000,,and interpreters can be modular and extensible
+Dialogue: 0,0:02:42.77,0:02:45.87,*Default,NTP,0000,0000,0000,,part of your interpreter program will describe
+Dialogue: 0,0:02:46.00,0:02:48.37,*Default,NTP,0000,0000,0000,,how interpretation works generally
+Dialogue: 0,0:02:48.50,0:02:49.60,*Default,NTP,0000,0000,0000,,and another part
+Dialogue: 0,0:02:49.60,0:02:51.90,*Default,NTP,0000,0000,0000,,will encapsulate all the details
+Dialogue: 0,0:02:51.90,0:02:54.27,*Default,NTP,0000,0000,0000,,of how the different parts of the language
+Dialogue: 0,0:02:54.37,0:02:56.10,*Default,NTP,0000,0000,0000,,actually execute
+Dialogue: 0,0:02:57.20,0:02:58.33,*Default,NTP,0000,0000,0000,,so with that introduction
+Dialogue: 0,0:02:58.33,0:03:01.07,*Default,NTP,0000,0000,0000,,let's talk a little bit about programming languages
+Dialogue: 0,0:03:01.30,0:03:02.53,*Default,NTP,0000,0000,0000,,a computer typically
+Dialogue: 0,0:03:02.53,0:03:04.77,*Default,NTP,0000,0000,0000,,executes programs written in many different
+Dialogue: 0,0:03:04.77,0:03:06.27,*Default,NTP,0000,0000,0000,,programming languages
+Dialogue: 0,0:03:06.50,0:03:09.90,*Default,NTP,0000,0000,0000,,there are what are called machine languages
+Dialogue: 0,0:03:10.30,0:03:11.97,*Default,NTP,0000,0000,0000,,in machine languages
+Dialogue: 0,0:03:11.97,0:03:16.07,*Default,NTP,0000,0000,0000,,the statements are interpreted by the hardware itself
+Dialogue: 0,0:03:16.87,0:03:19.53,*Default,NTP,0000,0000,0000,,computers have a central processing unit
+Dialogue: 0,0:03:19.80,0:03:23.00,*Default,NTP,0000,0000,0000,,which can execute a fixed set of instructions
+Dialogue: 0,0:03:23.13,0:03:26.33,*Default,NTP,0000,0000,0000,,and has a limited availability of its own memory
+Dialogue: 0,0:03:26.40,0:03:29.20,*Default,NTP,0000,0000,0000,,and then ways to access more memory
+Dialogue: 0,0:03:29.33,0:03:29.73,*Default,NTP,0000,0000,0000,,in the
+Dialogue: 0,0:03:29.73,0:03:32.97,*Default,NTP,0000,0000,0000,,caches and main memory and discs of the computer
+Dialogue: 0,0:03:33.67,0:03:35.60,*Default,NTP,0000,0000,0000,,but to extend a machine language
+Dialogue: 0,0:03:35.60,0:03:37.13,*Default,NTP,0000,0000,0000,,you actually have to change
+Dialogue: 0,0:03:37.13,0:03:38.93,*Default,NTP,0000,0000,0000,,the circuitry of the computer
+Dialogue: 0,0:03:39.13,0:03:41.33,*Default,NTP,0000,0000,0000,,which does not happen very often
+Dialogue: 0,0:03:42.40,0:03:44.67,*Default,NTP,0000,0000,0000,,these languages are hard to program in
+Dialogue: 0,0:03:45.13,0:03:49.67,*Default,NTP,0000,0000,0000,,operations refer to specific hardware memory addresses
+Dialogue: 0,0:03:49.73,0:03:52.60,*Default,NTP,0000,0000,0000,,and there's basically no abstraction mechanism
+Dialogue: 0,0:03:52.77,0:03:54.77,*Default,NTP,0000,0000,0000,,no way to give things names
+Dialogue: 0,0:03:54.80,0:03:58.40,*Default,NTP,0000,0000,0000,,and no way to implement procedures or functions
+Dialogue: 0,0:03:59.27,0:04:01.73,*Default,NTP,0000,0000,0000,,that's all left to high level languages
+Dialogue: 0,0:04:01.93,0:04:04.10,*Default,NTP,0000,0000,0000,,which have statements and expressions
+Dialogue: 0,0:04:04.10,0:04:06.97,*Default,NTP,0000,0000,0000,,that are interpreted by another program
+Dialogue: 0,0:04:07.17,0:04:10.73,*Default,NTP,0000,0000,0000,,or they are compiled into another language
+Dialogue: 0,0:04:11.80,0:04:15.07,*Default,NTP,0000,0000,0000,,interpreting involves reading the program
+Dialogue: 0,0:04:15.07,0:04:17.27,*Default,NTP,0000,0000,0000,,and executing its behavior
+Dialogue: 0,0:04:17.67,0:04:20.40,*Default,NTP,0000,0000,0000,,while compiling involves translating it
+Dialogue: 0,0:04:20.40,0:04:21.73,*Default,NTP,0000,0000,0000,,into another language
+Dialogue: 0,0:04:21.80,0:04:23.50,*Default,NTP,0000,0000,0000,,such as a machine language
+Dialogue: 0,0:04:23.73,0:04:25.60,*Default,NTP,0000,0000,0000,,so that it can be executed later
+Dialogue: 0,0:04:26.33,0:04:29.57,*Default,NTP,0000,0000,0000,,and many modern languages do a mixture of both of these
+Dialogue: 0,0:04:29.67,0:04:31.13,*Default,NTP,0000,0000,0000,,compiling parts
+Dialogue: 0,0:04:31.17,0:04:33.93,*Default,NTP,0000,0000,0000,,just in time in order to be executed
+Dialogue: 0,0:04:33.93,0:04:36.77,*Default,NTP,0000,0000,0000,,as if they were being interpreted interactively
+Dialogue: 0,0:04:37.87,0:04:40.80,*Default,NTP,0000,0000,0000,,but those details you can worry about in a later course
+Dialogue: 0,0:04:41.20,0:04:43.13,*Default,NTP,0000,0000,0000,,the important part is to know
+Dialogue: 0,0:04:43.17,0:04:46.70,*Default,NTP,0000,0000,0000,,that high level languages provide means of abstraction
+Dialogue: 0,0:04:46.70,0:04:49.33,*Default,NTP,0000,0000,0000,,such as giving names to values
+Dialogue: 0,0:04:49.33,0:04:52.77,*Default,NTP,0000,0000,0000,,and functions and objects and classes
+Dialogue: 0,0:04:53.07,0:04:55.53,*Default,NTP,0000,0000,0000,,that's all part of high level languages
+Dialogue: 0,0:04:56.60,0:04:59.33,*Default,NTP,0000,0000,0000,,now people describe different levels of height
+Dialogue: 0,0:04:59.67,0:05:02.47,*Default,NTP,0000,0000,0000,,some languages are higher level than others
+Dialogue: 0,0:05:02.47,0:05:04.73,*Default,NTP,0000,0000,0000,,but those details you could try to study
+Dialogue: 0,0:05:04.73,0:05:06.13,*Default,NTP,0000,0000,0000,,in later classes
+Dialogue: 0,0:05:06.30,0:05:08.00,*Default,NTP,0000,0000,0000,,the important thing to know
+Dialogue: 0,0:05:08.00,0:05:10.73,*Default,NTP,0000,0000,0000,,is that there isn't a piece of hardware
+Dialogue: 0,0:05:10.73,0:05:11.67,*Default,NTP,0000,0000,0000,,in your computer
+Dialogue: 0,0:05:11.67,0:05:14.47,*Default,NTP,0000,0000,0000,,that was designed for scheme or python
+Dialogue: 0,0:05:14.93,0:05:16.90,*Default,NTP,0000,0000,0000,,instead machine language
+Dialogue: 0,0:05:16.90,0:05:19.97,*Default,NTP,0000,0000,0000,,code needs to actually execute all of the behavior
+Dialogue: 0,0:05:19.97,0:05:23.17,*Default,NTP,0000,0000,0000,,and an interpreter or compiler in between
+Dialogue: 0,0:05:23.27,0:05:26.10,*Default,NTP,0000,0000,0000,,the high level language like pythonor scheme
+Dialogue: 0,0:05:26.20,0:05:28.40,*Default,NTP,0000,0000,0000,,and the low level machine language
+Dialogue: 0,0:05:28.53,0:05:31.70,*Default,NTP,0000,0000,0000,,needs to implement all of these means of abstraction
+Dialogue: 0,0:05:32.40,0:05:33.80,*Default,NTP,0000,0000,0000,,but it's very common that
+Dialogue: 0,0:05:33.80,0:05:36.60,*Default,NTP,0000,0000,0000,,high level languages will be built on top of other
+Dialogue: 0,0:05:36.60,0:05:38.17,*Default,NTP,0000,0000,0000,,high level languages
+Dialogue: 0,0:05:38.57,0:05:40.50,*Default,NTP,0000,0000,0000,,a machine language might be used
+Dialogue: 0,0:05:40.50,0:05:42.37,*Default,NTP,0000,0000,0000,,to implement a compiler
+Dialogue: 0,0:05:42.37,0:05:43.77,*Default,NTP,0000,0000,0000,,for the c language
+Dialogue: 0,0:05:43.87,0:05:45.67,*Default,NTP,0000,0000,0000,,which is a high level language
+Dialogue: 0,0:05:45.77,0:05:48.47,*Default,NTP,0000,0000,0000,,used to build the interpreter for python
+Dialogue: 0,0:05:48.57,0:05:49.57,*Default,NTP,0000,0000,0000,,for example
+Dialogue: 0,0:05:50.67,0:05:53.47,*Default,NTP,0000,0000,0000,,high level languages are easy to program it
+Dialogue: 0,0:05:53.47,0:05:55.97,*Default,NTP,0000,0000,0000,,because they provide means of abstraction
+Dialogue: 0,0:05:56.13,0:05:59.77,*Default,NTP,0000,0000,0000,,and they also abstract away certain system details
+Dialogue: 0,0:05:59.80,0:06:02.50,*Default,NTP,0000,0000,0000,,so that you can write the same program and have it run
+Dialogue: 0,0:06:02.50,0:06:04.13,*Default,NTP,0000,0000,0000,,on different machines
+Dialogue: 0,0:06:04.30,0:06:07.07,*Default,NTP,0000,0000,0000,,made by different hardware manufacturers
+Dialogue: 0,0:06:07.53,0:06:10.60,*Default,NTP,0000,0000,0000,,or run inside different operating systems
+Dialogue: 0,0:06:10.73,0:06:13.97,*Default,NTP,0000,0000,0000,,created by different companies or organizations
+Dialogue: 0,0:06:14.50,0:06:18.50,*Default,NTP,0000,0000,0000,,in python what happens is that it's actually
+Dialogue: 0,0:06:18.70,0:06:20.93,*Default,NTP,0000,0000,0000,,compiled just before its run
+Dialogue: 0,0:06:21.27,0:06:24.40,*Default,NTP,0000,0000,0000,,into something called python three bite code
+Dialogue: 0,0:06:24.70,0:06:26.73,*Default,NTP,0000,0000,0000,,you can see this bite code
+Dialogue: 0,0:06:26.93,0:06:30.60,*Default,NTP,0000,0000,0000,,using the dismodule that's built into python
+Dialogue: 0,0:06:31.17,0:06:32.73,*Default,NTP,0000,0000,0000,,and then there's an interpreter
+Dialogue: 0,0:06:32.90,0:06:35.47,*Default,NTP,0000,0000,0000,,that runs this lower level language
+Dialogue: 0,0:06:35.47,0:06:38.00,*Default,NTP,0000,0000,0000,,which is quite similar to a machine language
+Dialogue: 0,0:06:38.10,0:06:41.07,*Default,NTP,0000,0000,0000,,but also abstracts away some system details
+Dialogue: 0,0:06:41.47,0:06:45.10,*Default,NTP,0000,0000,0000,,so the story of how a program in a programming language
+Dialogue: 0,0:06:45.10,0:06:46.10,*Default,NTP,0000,0000,0000,,gets executed
+Dialogue: 0,0:06:46.27,0:06:47.77,*Default,NTP,0000,0000,0000,,can be kind of complicated
+Dialogue: 0,0:06:48.00,0:06:49.57,*Default,NTP,0000,0000,0000,,but the distinction between
+Dialogue: 0,0:06:49.67,0:06:51.60,*Default,NTP,0000,0000,0000,,what your machine can execute
+Dialogue: 0,0:06:51.60,0:06:54.13,*Default,NTP,0000,0000,0000,,and what you as a human tend to write
+Dialogue: 0,0:06:54.20,0:06:55.50,*Default,NTP,0000,0000,0000,,is an important one
+Dialogue: 0,0:06:55.93,0:06:57.77,*Default,NTP,0000,0000,0000,,everything we've learned in this course
+Dialogue: 0,0:06:57.80,0:06:59.73,*Default,NTP,0000,0000,0000,,is about high level languages
+Dialogue: 0,0:06:59.73,0:07:01.77,*Default,NTP,0000,0000,0000,,that are used to build software today
+Dialogue: 0,0:07:02.97,0:07:06.07,*Default,NTP,0000,0000,0000,,sometimes people invent new programming languages
+Dialogue: 0,0:07:06.07,0:07:08.13,*Default,NTP,0000,0000,0000,,a powerful form of abstraction
+Dialogue: 0,0:07:08.13,0:07:09.87,*Default,NTP,0000,0000,0000,,is to define a new language
+Dialogue: 0,0:07:09.93,0:07:13.13,*Default,NTP,0000,0000,0000,,that is tailored to a particular type of application
+Dialogue: 0,0:07:13.27,0:07:15.40,*Default,NTP,0000,0000,0000,,or a particular problem domain
+Dialogue: 0,0:07:16.50,0:07:17.50,*Default,NTP,0000,0000,0000,,for example
+Dialogue: 0,0:07:17.50,0:07:19.77,*Default,NTP,0000,0000,0000,,there is a programming language called airline
+Dialogue: 0,0:07:20.00,0:07:23.17,*Default,NTP,0000,0000,0000,,that was designed for concurrent programs
+Dialogue: 0,0:07:23.70,0:07:26.07,*Default,NTP,0000,0000,0000,,how is it the case that people can use
+Dialogue: 0,0:07:26.30,0:07:28.80,*Default,NTP,0000,0000,0000,,atms all around the world
+Dialogue: 0,0:07:28.90,0:07:31.00,*Default,NTP,0000,0000,0000,,and the balance of their bank account
+Dialogue: 0,0:07:31.00,0:07:33.33,*Default,NTP,0000,0000,0000,,is stored in some particular place
+Dialogue: 0,0:07:33.90,0:07:34.93,*Default,NTP,0000,0000,0000,,but if you try to
+Dialogue: 0,0:07:34.93,0:07:36.07,*Default,NTP,0000,0000,0000,,withdraw money from
+Dialogue: 0,0:07:36.07,0:07:38.30,*Default,NTP,0000,0000,0000,,two different atms in two different cities
+Dialogue: 0,0:07:38.30,0:07:40.77,*Default,NTP,0000,0000,0000,,for the same bank account at the same time
+Dialogue: 0,0:07:41.00,0:07:44.57,*Default,NTP,0000,0000,0000,,there's no way to trick it into paying you twice
+Dialogue: 0,0:07:45.10,0:07:48.37,*Default,NTP,0000,0000,0000,,that's a kind of concurrent communication problem
+Dialogue: 0,0:07:48.70,0:07:50.10,*Default,NTP,0000,0000,0000,,that would benefit
+Dialogue: 0,0:07:50.17,0:07:52.90,*Default,NTP,0000,0000,0000,,from having a specialized programming language
+Dialogue: 0,0:07:53.47,0:07:55.57,*Default,NTP,0000,0000,0000,,an airline is also used for example
+Dialogue: 0,0:07:55.57,0:07:56.33,*Default,NTP,0000,0000,0000,,to implement
+Dialogue: 0,0:07:56.33,0:07:59.87,*Default,NTP,0000,0000,0000,,chat servers with many simultaneous connections
+Dialogue: 0,0:07:59.93,0:08:00.80,*Default,NTP,0000,0000,0000,,where lots of people
+Dialogue: 0,0:08:00.80,0:08:02.67,*Default,NTP,0000,0000,0000,,are talking to lots of other people
+Dialogue: 0,0:08:02.73,0:08:04.93,*Default,NTP,0000,0000,0000,,and the program has to keep it all straight
+Dialogue: 0,0:08:06.07,0:08:06.87,*Default,NTP,0000,0000,0000,,another problem
+Dialogue: 0,0:08:06.87,0:08:10.47,*Default,NTP,0000,0000,0000,,specific language is the media wiki markup language
+Dialogue: 0,0:08:10.80,0:08:11.50,*Default,NTP,0000,0000,0000,,which was
+Dialogue: 0,0:08:11.50,0:08:14.80,*Default,NTP,0000,0000,0000,,designed for generating static web pages that you see
+Dialogue: 0,0:08:14.80,0:08:16.33,*Default,NTP,0000,0000,0000,,on Wikipedia
+Dialogue: 0,0:08:17.00,0:08:20.00,*Default,NTP,0000,0000,0000,,it has built in elements for formatting text
+Dialogue: 0,0:08:20.13,0:08:22.17,*Default,NTP,0000,0000,0000,,linking one page to another
+Dialogue: 0,0:08:22.73,0:08:25.80,*Default,NTP,0000,0000,0000,,and stitching together multiple pages into one
+Dialogue: 0,0:08:26.30,0:08:28.90,*Default,NTP,0000,0000,0000,,so that a large page can be broken out
+Dialogue: 0,0:08:28.90,0:08:30.87,*Default,NTP,0000,0000,0000,,into modular components
+Dialogue: 0,0:08:31.47,0:08:33.17,*Default,NTP,0000,0000,0000,,it's a programming language
+Dialogue: 0,0:08:33.37,0:08:36.60,*Default,NTP,0000,0000,0000,,perhaps not as full featured as python or scheme
+Dialogue: 0,0:08:36.77,0:08:40.27,*Default,NTP,0000,0000,0000,,but it still needs an interpreter or compiler
+Dialogue: 0,0:08:40.47,0:08:43.17,*Default,NTP,0000,0000,0000,,in order to be used to generate
+Dialogue: 0,0:08:43.33,0:08:45.67,*Default,NTP,0000,0000,0000,,the Wikipedia pages that people read
+Dialogue: 0,0:08:46.67,0:08:48.30,*Default,NTP,0000,0000,0000,,a programming language
+Dialogue: 0,0:08:48.37,0:08:49.67,*Default,NTP,0000,0000,0000,,has a syntax
+Dialogue: 0,0:08:49.67,0:08:53.17,*Default,NTP,0000,0000,0000,,which is the description of all legal statements
+Dialogue: 0,0:08:53.17,0:08:55.47,*Default,NTP,0000,0000,0000,,and expressions in the language
+Dialogue: 0,0:08:55.80,0:08:58.67,*Default,NTP,0000,0000,0000,,so that's the form of the language
+Dialogue: 0,0:08:59.40,0:09:01.13,*Default,NTP,0000,0000,0000,,and then also the semantics
+Dialogue: 0,0:09:01.13,0:09:03.90,*Default,NTP,0000,0000,0000,,which is the execution or evaluation rules
+Dialogue: 0,0:09:03.90,0:09:06.50,*Default,NTP,0000,0000,0000,,for all of those statements and expressions
+Dialogue: 0,0:09:06.70,0:09:08.53,*Default,NTP,0000,0000,0000,,the meaning of the language
+Dialogue: 0,0:09:08.93,0:09:12.13,*Default,NTP,0000,0000,0000,,and these two together give you a programming language
+Dialogue: 0,0:09:12.87,0:09:14.90,*Default,NTP,0000,0000,0000,,to create a new programming language
+Dialogue: 0,0:09:15.13,0:09:18.53,*Default,NTP,0000,0000,0000,,you either need to write down a formal specification
+Dialogue: 0,0:09:18.70,0:09:19.90,*Default,NTP,0000,0000,0000,,as a document
+Dialogue: 0,0:09:19.93,0:09:21.93,*Default,NTP,0000,0000,0000,,that describes the precise syntax
+Dialogue: 0,0:09:21.93,0:09:23.70,*Default,NTP,0000,0000,0000,,and semantics of the language
+Dialogue: 0,0:09:24.37,0:09:25.87,*Default,NTP,0000,0000,0000,,or you need to build an
+Dialogue: 0,0:09:25.87,0:09:28.90,*Default,NTP,0000,0000,0000,,implementation of an interpreter or compiler for
+Dialogue: 0,0:09:28.90,0:09:31.70,*Default,NTP,0000,0000,0000,,the language which serves as the reference
+Dialogue: 0,0:09:31.70,0:09:34.87,*Default,NTP,0000,0000,0000,,to describe the syntax and semantics
+Dialogue: 0,0:09:35.10,0:09:37.97,*Default,NTP,0000,0000,0000,,any input into the canonical implementation
+Dialogue: 0,0:09:37.97,0:09:39.30,*Default,NTP,0000,0000,0000,,that doesn't cause it to crash
+Dialogue: 0,0:09:39.30,0:09:40.70,*Default,NTP,0000,0000,0000,,would be legal syntax
+Dialogue: 0,0:09:40.90,0:09:44.10,*Default,NTP,0000,0000,0000,,and its behavior would define the semantics
+Dialogue: 0,0:09:44.33,0:09:47.73,*Default,NTP,0000,0000,0000,,scheme is a language that started with a specification
+Dialogue: 0,0:09:48.07,0:09:50.93,*Default,NTP,0000,0000,0000,,and an implementation of the interpreter came later
+Dialogue: 0,0:09:52.07,0:09:55.27,*Default,NTP,0000,0000,0000,,python began is a canonical implementation
+Dialogue: 0,0:09:55.27,0:09:57.87,*Default,NTP,0000,0000,0000,,and then a formal description of how it works
+Dialogue: 0,0:09:57.87,0:10:01.27,*Default,NTP,0000,0000,0000,,was developed over time based on that implementation
+Dialogue: 0,0:10:01.60,0:10:04.30,*Default,NTP,0000,0000,0000,,most programming languages that are used in practice
+Dialogue: 0,0:10:04.30,0:10:05.73,*Default,NTP,0000,0000,0000,,for large communities
+Dialogue: 0,0:10:05.77,0:10:08.97,*Default,NTP,0000,0000,0000,,have both a specification and an implementation
+Dialogue: 0,0:10:12.97,0:10:15.30,*Default,NTP,0000,0000,0000,,let's talk a little bit more about what
+Dialogue: 0,0:10:15.30,0:10:16.97,*Default,NTP,0000,0000,0000,,parsing and tails
+Dialogue: 0,0:10:17.80,0:10:20.57,*Default,NTP,0000,0000,0000,,so parsing is the process of taking text input
+Dialogue: 0,0:10:20.57,0:10:22.50,*Default,NTP,0000,0000,0000,,which represents a computer program
+Dialogue: 0,0:10:22.57,0:10:23.37,*Default,NTP,0000,0000,0000,,or some other
+Dialogue: 0,0:10:23.70,0:10:25.57,*Default,NTP,0000,0000,0000,,formal language expressions
+Dialogue: 0,0:10:25.97,0:10:26.90,*Default,NTP,0000,0000,0000,,and turns those
+Dialogue: 0,0:10:26.90,0:10:28.07,*Default,NTP,0000,0000,0000,,into some sort of object
+Dialogue: 0,0:10:28.07,0:10:29.70,*Default,NTP,0000,0000,0000,,that represents the expressions
+Dialogue: 0,0:10:29.70,0:10:30.90,*Default,NTP,0000,0000,0000,,while validating
+Dialogue: 0,0:10:30.93,0:10:31.93,*Default,NTP,0000,0000,0000,,their syntax
+Dialogue: 0,0:10:32.73,0:10:35.27,*Default,NTP,0000,0000,0000,,a parser takes text and returns expressions
+Dialogue: 0,0:10:35.40,0:10:36.50,*Default,NTP,0000,0000,0000,,and it does it
+Dialogue: 0,0:10:36.90,0:10:38.07,*Default,NTP,0000,0000,0000,,through an intermediate
+Dialogue: 0,0:10:38.97,0:10:41.33,*Default,NTP,0000,0000,0000,,called tokens
+Dialogue: 0,0:10:41.47,0:10:45.53,*Default,NTP,0000,0000,0000,,so lexical analysis is the process of breaking up text
+Dialogue: 0,0:10:45.97,0:10:49.90,*Default,NTP,0000,0000,0000,,into tokens which are words or individual symbols
+Dialogue: 0,0:10:50.53,0:10:52.77,*Default,NTP,0000,0000,0000,,and then we do a sycantactic analysis
+Dialogue: 0,0:10:52.80,0:10:55.53,*Default,NTP,0000,0000,0000,,to figure out how those symbols nest
+Dialogue: 0,0:10:55.93,0:10:57.93,*Default,NTP,0000,0000,0000,,into hierarchical expressions
+Dialogue: 0,0:10:58.33,0:11:00.00,*Default,NTP,0000,0000,0000,,so let's look at some examples here
+Dialogue: 0,0:11:00.80,0:11:03.27,*Default,NTP,0000,0000,0000,,let's say I typed in the following three lines
+Dialogue: 0,0:11:03.40,0:11:05.33,*Default,NTP,0000,0000,0000,,open per end plus one
+Dialogue: 0,0:11:05.77,0:11:07.40,*Default,NTP,0000,0000,0000,,and then on the next line
+Dialogue: 0,0:11:07.60,0:11:10.50,*Default,NTP,0000,0000,0000,,minus 23 and on the next line
+Dialogue: 0,0:11:10.60,0:11:14.13,*Default,NTP,0000,0000,0000,,we have another sub expression times four or 5.6
+Dialogue: 0,0:11:14.37,0:11:17.50,*Default,NTP,0000,0000,0000,,and then closing prentices there closes this one
+Dialogue: 0,0:11:17.73,0:11:20.20,*Default,NTP,0000,0000,0000,,then we finally have the closing prentices
+Dialogue: 0,0:11:20.20,0:11:20.90,*Default,NTP,0000,0000,0000,,for the original
+Dialogue: 0,0:11:20.90,0:11:23.10,*Default,NTP,0000,0000,0000,,opening prentices to lines before
+Dialogue: 0,0:11:24.50,0:11:27.50,*Default,NTP,0000,0000,0000,,the process of lexical analysis
+Dialogue: 0,0:11:28.07,0:11:29.53,*Default,NTP,0000,0000,0000,,breaks up each line
+Dialogue: 0,0:11:30.00,0:11:34.50,*Default,NTP,0000,0000,0000,,into the right pieces for input into syntactic analysis
+Dialogue: 0,0:11:34.87,0:11:37.70,*Default,NTP,0000,0000,0000,,these are the pieces that represent all numbers
+Dialogue: 0,0:11:37.93,0:11:40.57,*Default,NTP,0000,0000,0000,,or special symbols like prentices
+Dialogue: 0,0:11:40.90,0:11:44.07,*Default,NTP,0000,0000,0000,,or symbols in the language such as plus
+Dialogue: 0,0:11:45.77,0:11:48.13,*Default,NTP,0000,0000,0000,,so this line becomes these three tokens
+Dialogue: 0,0:11:48.67,0:11:50.33,*Default,NTP,0000,0000,0000,,white space is ignored
+Dialogue: 0,0:11:51.07,0:11:54.80,*Default,NTP,0000,0000,0000,,this line becomes 1 2 3 4 tokens
+Dialogue: 0,0:11:54.80,0:11:57.10,*Default,NTP,0000,0000,0000,,so notice that 23 is all one token
+Dialogue: 0,0:11:57.10,0:11:58.50,*Default,NTP,0000,0000,0000,,because it's all one number
+Dialogue: 0,0:11:58.77,0:12:01.07,*Default,NTP,0000,0000,0000,,so lexical analysis is doing some work
+Dialogue: 0,0:12:01.13,0:12:03.47,*Default,NTP,0000,0000,0000,,it's figuring out that two and three
+Dialogue: 0,0:12:03.50,0:12:06.07,*Default,NTP,0000,0000,0000,,next to each other really means the number 23
+Dialogue: 0,0:12:07.57,0:12:09.80,*Default,NTP,0000,0000,0000,,now notice that this has ignored the white
+Dialogue: 0,0:12:09.80,0:12:10.80,*Default,NTP,0000,0000,0000,,space in the front
+Dialogue: 0,0:12:11.20,0:12:11.73,*Default,NTP,0000,0000,0000,,so part of
+Dialogue: 0,0:12:11.73,0:12:14.57,*Default,NTP,0000,0000,0000,,lexical analysis is figuring out what to discard
+Dialogue: 0,0:12:14.93,0:12:16.37,*Default,NTP,0000,0000,0000,,and it's put together 23
+Dialogue: 0,0:12:17.27,0:12:19.00,*Default,NTP,0000,0000,0000,,okay let's look at that 3rd line
+Dialogue: 0,0:12:19.13,0:12:22.33,*Default,NTP,0000,0000,0000,,how many different tokens are there in this line
+Dialogue: 0,0:12:25.50,0:12:28.47,*Default,NTP,0000,0000,0000,,1 2 3 4 5 6
+Dialogue: 0,0:12:28.87,0:12:31.40,*Default,NTP,0000,0000,0000,,so each closed parenthesis is its separate token
+Dialogue: 0,0:12:31.40,0:12:33.00,*Default,NTP,0000,0000,0000,,because it's a special symbol
+Dialogue: 0,0:12:33.20,0:12:35.13,*Default,NTP,0000,0000,0000,,that has some meaning in the language
+Dialogue: 0,0:12:35.57,0:12:37.07,*Default,NTP,0000,0000,0000,,and these need to be balanced
+Dialogue: 0,0:12:37.07,0:12:39.37,*Default,NTP,0000,0000,0000,,that's going to be the job of this syntactic analyzer
+Dialogue: 0,0:12:39.37,0:12:40.33,*Default,NTP,0000,0000,0000,,to figure out
+Dialogue: 0,0:12:40.90,0:12:45.33,*Default,NTP,0000,0000,0000,,but the lexical analyzers figure out that 5.6
+Dialogue: 0,0:12:45.53,0:12:47.27,*Default,NTP,0000,0000,0000,,is really all one token
+Dialogue: 0,0:12:50.53,0:12:52.67,*Default,NTP,0000,0000,0000,,so this is an integrative process
+Dialogue: 0,0:12:52.70,0:12:56.00,*Default,NTP,0000,0000,0000,,it goes through each line and breaks it up into tokens
+Dialogue: 0,0:12:56.07,0:12:58.07,*Default,NTP,0000,0000,0000,,it checks for malform tokens
+Dialogue: 0,0:12:58.07,0:13:00.27,*Default,NTP,0000,0000,0000,,it determines the type of each token
+Dialogue: 0,0:13:00.40,0:13:03.13,*Default,NTP,0000,0000,0000,,so it's figured out that this is a symbol
+Dialogue: 0,0:13:03.20,0:13:05.00,*Default,NTP,0000,0000,0000,,whereas this is a number
+Dialogue: 0,0:13:05.97,0:13:08.33,*Default,NTP,0000,0000,0000,,and it processes one line at a time
+Dialogue: 0,0:13:09.07,0:13:10.77,*Default,NTP,0000,0000,0000,,that's lexical analysis
+Dialogue: 0,0:13:11.30,0:13:12.93,*Default,NTP,0000,0000,0000,,syntactic analysis
+Dialogue: 0,0:13:13.67,0:13:16.87,*Default,NTP,0000,0000,0000,,processes all of these lines together to give us
+Dialogue: 0,0:13:18.53,0:13:20.30,*Default,NTP,0000,0000,0000,,an expression in the language
+Dialogue: 0,0:13:20.30,0:13:21.77,*Default,NTP,0000,0000,0000,,that we're trying to parse
+Dialogue: 0,0:13:24.00,0:13:25.40,*Default,NTP,0000,0000,0000,,so the result will be
+Dialogue: 0,0:13:26.60,0:13:29.10,*Default,NTP,0000,0000,0000,,a pair where the first element is plus
+Dialogue: 0,0:13:29.10,0:13:31.13,*Default,NTP,0000,0000,0000,,and the rest of the pair
+Dialogue: 0,0:13:31.47,0:13:33.97,*Default,NTP,0000,0000,0000,,is everything else in these three lines
+Dialogue: 0,0:13:34.67,0:13:37.37,*Default,NTP,0000,0000,0000,,which can be printed as plus one minus two
+Dialogue: 0,0:13:37.37,0:13:38.60,*Default,NTP,0000,0000,0000,,three times four
+Dialogue: 0,0:13:38.60,0:13:39.67,*Default,NTP,0000,0000,0000,,five point six
+Dialogue: 0,0:13:40.07,0:13:42.53,*Default,NTP,0000,0000,0000,,now we've done more than just to lead all the wide
+Dialogue: 0,0:13:42.53,0:13:44.17,*Default,NTP,0000,0000,0000,,spaces and put it on one line
+Dialogue: 0,0:13:44.33,0:13:46.67,*Default,NTP,0000,0000,0000,,we've actually figured out the structure of this thing
+Dialogue: 0,0:13:46.87,0:13:48.73,*Default,NTP,0000,0000,0000,,balanced all the parentheses
+Dialogue: 0,0:13:48.73,0:13:49.70,*Default,NTP,0000,0000,0000,,meaning we verified
+Dialogue: 0,0:13:49.70,0:13:51.40,*Default,NTP,0000,0000,0000,,that they were balanced in the input
+Dialogue: 0,0:13:52.13,0:13:52.93,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:13:53.50,0:13:55.50,*Default,NTP,0000,0000,0000,,created this nested pair structure
+Dialogue: 0,0:13:55.50,0:13:58.57,*Default,NTP,0000,0000,0000,,which happens to be printed out in a nice clean way
+Dialogue: 0,0:13:58.60,0:14:00.20,*Default,NTP,0000,0000,0000,,and scheme expressions
+Dialogue: 0,0:14:00.93,0:14:03.20,*Default,NTP,0000,0000,0000,,so this is a tree recursive process
+Dialogue: 0,0:14:03.30,0:14:05.00,*Default,NTP,0000,0000,0000,,it balances parentheses
+Dialogue: 0,0:14:05.00,0:14:08.40,*Default,NTP,0000,0000,0000,,it returns a tree structure represented by pairs
+Dialogue: 0,0:14:08.97,0:14:11.33,*Default,NTP,0000,0000,0000,,and it processes multiple lines
+Dialogue: 0,0:14:14.80,0:14:17.87,*Default,NTP,0000,0000,0000,,so recursive syntactic analysis is
+Dialogue: 0,0:14:17.87,0:14:20.50,*Default,NTP,0000,0000,0000,,a standard problem in computer science
+Dialogue: 0,0:14:20.50,0:14:21.87,*Default,NTP,0000,0000,0000,,it shows up all the time
+Dialogue: 0,0:14:22.90,0:14:25.97,*Default,NTP,0000,0000,0000,,and we're gonna build a particular kind of parser
+Dialogue: 0,0:14:26.27,0:14:28.67,*Default,NTP,0000,0000,0000,,for the scheme expressions that we want to parse
+Dialogue: 0,0:14:28.87,0:14:32.10,*Default,NTP,0000,0000,0000,,it's called a predictive recursive descent parser
+Dialogue: 0,0:14:32.77,0:14:35.33,*Default,NTP,0000,0000,0000,,and that's special because it only needs to inspect
+Dialogue: 0,0:14:35.57,0:14:38.73,*Default,NTP,0000,0000,0000,,k tokens to decide how to proceed
+Dialogue: 0,0:14:38.87,0:14:41.30,*Default,NTP,0000,0000,0000,,meaning what sort of structure is going to build
+Dialogue: 0,0:14:41.70,0:14:44.10,*Default,NTP,0000,0000,0000,,and it does this for some fixed k
+Dialogue: 0,0:14:44.57,0:14:46.97,*Default,NTP,0000,0000,0000,,meaning it never needs to look vap far ahead
+Dialogue: 0,0:14:47.07,0:14:47.90,*Default,NTP,0000,0000,0000,,in order to
+Dialogue: 0,0:14:47.90,0:14:50.67,*Default,NTP,0000,0000,0000,,understand what's going on in the program right now
+Dialogue: 0,0:14:52.27,0:14:54.33,*Default,NTP,0000,0000,0000,,so let's try a recursive descent parser
+Dialogue: 0,0:14:54.33,0:14:55.90,*Default,NTP,0000,0000,0000,,on the English language
+Dialogue: 0,0:14:56.40,0:14:59.87,*Default,NTP,0000,0000,0000,,can English be parsed be a predictive recursive descent
+Dialogue: 0,0:15:00.73,0:15:02.30,*Default,NTP,0000,0000,0000,,well how about this sentence
+Dialogue: 0,0:15:02.50,0:15:05.33,*Default,NTP,0000,0000,0000,,the horse race past the barn fell
+Dialogue: 0,0:15:07.77,0:15:08.57,*Default,NTP,0000,0000,0000,,what
+Dialogue: 0,0:15:08.80,0:15:12.07,*Default,NTP,0000,0000,0000,,well actually this is a well formed sentence in English
+Dialogue: 0,0:15:12.47,0:15:14.47,*Default,NTP,0000,0000,0000,,it's just a little bit unusual
+Dialogue: 0,0:15:14.57,0:15:17.50,*Default,NTP,0000,0000,0000,,here let me tell you how to read this sentence
+Dialogue: 0,0:15:18.47,0:15:21.07,*Default,NTP,0000,0000,0000,,think about raised as a synonym for ridden
+Dialogue: 0,0:15:21.47,0:15:24.40,*Default,NTP,0000,0000,0000,,like I raised my horse means rode my horse
+Dialogue: 0,0:15:25.30,0:15:28.40,*Default,NTP,0000,0000,0000,,and that was has been omitted from this sentence
+Dialogue: 0,0:15:28.40,0:15:29.47,*Default,NTP,0000,0000,0000,,which you can do
+Dialogue: 0,0:15:30.67,0:15:31.47,*Default,NTP,0000,0000,0000,,the
+Dialogue: 0,0:15:32.30,0:15:34.40,*Default,NTP,0000,0000,0000,,boat that I was sailing
+Dialogue: 0,0:15:34.57,0:15:37.13,*Default,NTP,0000,0000,0000,,is the same as saying the boat I was sailing
+Dialogue: 0,0:15:37.13,0:15:38.67,*Default,NTP,0000,0000,0000,,so that can be dropped
+Dialogue: 0,0:15:39.57,0:15:41.47,*Default,NTP,0000,0000,0000,,and so now
+Dialogue: 0,0:15:41.50,0:15:42.17,*Default,NTP,0000,0000,0000,,think of this
+Dialogue: 0,0:15:42.17,0:15:45.37,*Default,NTP,0000,0000,0000,,sentence as the horse that was ridden past the barn
+Dialogue: 0,0:15:46.30,0:15:48.27,*Default,NTP,0000,0000,0000,,fep poor horse
+Dialogue: 0,0:15:48.47,0:15:50.57,*Default,NTP,0000,0000,0000,,so this whole thing is a sentence subject
+Dialogue: 0,0:15:50.73,0:15:52.87,*Default,NTP,0000,0000,0000,,it was in the original version of the sentence
+Dialogue: 0,0:15:52.87,0:15:54.73,*Default,NTP,0000,0000,0000,,is just a little bit easier to read
+Dialogue: 0,0:15:55.47,0:15:57.53,*Default,NTP,0000,0000,0000,,now that I've changed the sentence slightly
+Dialogue: 0,0:15:57.53,0:16:00.17,*Default,NTP,0000,0000,0000,,to have exactly the same meaning as it had before
+Dialogue: 0,0:16:00.90,0:16:03.60,*Default,NTP,0000,0000,0000,,now the reason this is a hard sentence to read
+Dialogue: 0,0:16:03.70,0:16:06.53,*Default,NTP,0000,0000,0000,,is that when you read the horse race past the barn
+Dialogue: 0,0:16:06.70,0:16:07.70,*Default,NTP,0000,0000,0000,,you've assumed
+Dialogue: 0,0:16:08.00,0:16:09.77,*Default,NTP,0000,0000,0000,,a structural analysis
+Dialogue: 0,0:16:09.77,0:16:12.30,*Default,NTP,0000,0000,0000,,that as this is the verb this is the subject
+Dialogue: 0,0:16:12.57,0:16:15.50,*Default,NTP,0000,0000,0000,,and this is a modifier of the verb
+Dialogue: 0,0:16:15.50,0:16:17.70,*Default,NTP,0000,0000,0000,,telling you where the horse raced
+Dialogue: 0,0:16:17.70,0:16:19.97,*Default,NTP,0000,0000,0000,,but it was not the horse that was racing at all
+Dialogue: 0,0:16:20.10,0:16:21.87,*Default,NTP,0000,0000,0000,,somebody was racing the horse
+Dialogue: 0,0:16:22.13,0:16:24.77,*Default,NTP,0000,0000,0000,,but we had to look all the way down here
+Dialogue: 0,0:16:24.77,0:16:26.90,*Default,NTP,0000,0000,0000,,to the word fell in order to resolve
+Dialogue: 0,0:16:26.93,0:16:28.70,*Default,NTP,0000,0000,0000,,that structural ambiguity
+Dialogue: 0,0:16:29.47,0:16:31.17,*Default,NTP,0000,0000,0000,,so English language
+Dialogue: 0,0:16:31.27,0:16:32.53,*Default,NTP,0000,0000,0000,,is not something that you can
+Dialogue: 0,0:16:32.53,0:16:34.53,*Default,NTP,0000,0000,0000,,parse for the recursive descent parser
+Dialogue: 0,0:16:34.90,0:16:36.17,*Default,NTP,0000,0000,0000,,but fortunately
+Dialogue: 0,0:16:36.40,0:16:38.27,*Default,NTP,0000,0000,0000,,scheme expressions are
+Dialogue: 0,0:16:40.00,0:16:42.47,*Default,NTP,0000,0000,0000,,so syntactic analysis in scheme expressions
+Dialogue: 0,0:16:42.47,0:16:44.50,*Default,NTP,0000,0000,0000,,and in programming languages in general
+Dialogue: 0,0:16:44.73,0:16:46.80,*Default,NTP,0000,0000,0000,,can use recursive descent parsers
+Dialogue: 0,0:16:47.27,0:16:49.00,*Default,NTP,0000,0000,0000,,and what it does is it identifies
+Dialogue: 0,0:16:49.00,0:16:51.10,*Default,NTP,0000,0000,0000,,the hierarchical structure of an expression
+Dialogue: 0,0:16:51.10,0:16:52.73,*Default,NTP,0000,0000,0000,,which may have some nestings
+Dialogue: 0,0:16:53.53,0:16:56.37,*Default,NTP,0000,0000,0000,,each call the scheme read which we saw briefly before
+Dialogue: 0,0:16:56.67,0:16:59.87,*Default,NTP,0000,0000,0000,,consumes the input tokens for exactly one expression
+Dialogue: 0,0:17:00.93,0:17:03.33,*Default,NTP,0000,0000,0000,,the base case is that you find just a simple
+Dialogue: 0,0:17:03.57,0:17:04.50,*Default,NTP,0000,0000,0000,,or a number
+Dialogue: 0,0:17:05.93,0:17:07.47,*Default,NTP,0000,0000,0000,,but there's a recursive call
+Dialogue: 0,0:17:07.60,0:17:08.80,*Default,NTP,0000,0000,0000,,whenever you see
+Dialogue: 0,0:17:09.17,0:17:10.57,*Default,NTP,0000,0000,0000,,an open parenthesis
+Dialogue: 0,0:17:10.57,0:17:12.47,*Default,NTP,0000,0000,0000,,then you know that's a combination with
+Dialogue: 0,0:17:12.47,0:17:13.67,*Default,NTP,0000,0000,0000,,expressions within it
+Dialogue: 0,0:17:13.87,0:17:16.97,*Default,NTP,0000,0000,0000,,and each one must be schemebread itself
+Dialogue: 0,0:17:18.47,0:17:21.37,*Default,NTP,0000,0000,0000,,so when I have an expression that's nested like this
+Dialogue: 0,0:17:21.73,0:17:23.87,*Default,NTP,0000,0000,0000,,my first call to scheme read
+Dialogue: 0,0:17:24.17,0:17:25.17,*Default,NTP,0000,0000,0000,,will notice that
+Dialogue: 0,0:17:25.20,0:17:26.70,*Default,NTP,0000,0000,0000,,I've started a combination
+Dialogue: 0,0:17:26.70,0:17:28.53,*Default,NTP,0000,0000,0000,,and therefore will have a sequence
+Dialogue: 0,0:17:28.57,0:17:29.80,*Default,NTP,0000,0000,0000,,of sub expressions
+Dialogue: 0,0:17:29.80,0:17:31.60,*Default,NTP,0000,0000,0000,,until I close that parenthesis
+Dialogue: 0,0:17:32.13,0:17:34.33,*Default,NTP,0000,0000,0000,,the first one is a base case just plus
+Dialogue: 0,0:17:34.33,0:17:36.37,*Default,NTP,0000,0000,0000,,the next one is a base case just one
+Dialogue: 0,0:17:36.70,0:17:38.17,*Default,NTP,0000,0000,0000,,but the next call to scheme read
+Dialogue: 0,0:17:38.17,0:17:39.67,*Default,NTP,0000,0000,0000,,is going to do a bunch of work
+Dialogue: 0,0:17:39.67,0:17:41.70,*Default,NTP,0000,0000,0000,,it's going to read the whole next expression
+Dialogue: 0,0:17:41.87,0:17:44.00,*Default,NTP,0000,0000,0000,,which is this thing in parentheses
+Dialogue: 0,0:17:44.47,0:17:47.07,*Default,NTP,0000,0000,0000,,the next call will read the next sub expression
+Dialogue: 0,0:17:47.30,0:17:50.53,*Default,NTP,0000,0000,0000,,and then finally it will have found the end
+Dialogue: 0,0:17:50.67,0:17:53.30,*Default,NTP,0000,0000,0000,,of the expression that it started in the beginning
+Dialogue: 0,0:17:53.70,0:17:55.33,*Default,NTP,0000,0000,0000,,that's how scheme read works
+Dialogue: 0,0:17:58.10,0:18:01.53,*Default,NTP,0000,0000,0000,,okay so let's read the code really quickly together
+Dialogue: 0,0:18:01.60,0:18:04.70,*Default,NTP,0000,0000,0000,,scheme read some source tokens
+Dialogue: 0,0:18:05.93,0:18:07.57,*Default,NTP,0000,0000,0000,,if we ran out of tokens
+Dialogue: 0,0:18:07.57,0:18:10.13,*Default,NTP,0000,0000,0000,,then that's called an end of file error
+Dialogue: 0,0:18:10.97,0:18:13.47,*Default,NTP,0000,0000,0000,,otherwise get the first token
+Dialogue: 0,0:18:13.67,0:18:14.87,*Default,NTP,0000,0000,0000,,source dot pop
+Dialogue: 0,0:18:15.20,0:18:17.77,*Default,NTP,0000,0000,0000,,if it's mill that's a base case
+Dialogue: 0,0:18:19.53,0:18:22.20,*Default,NTP,0000,0000,0000,,if val is not in dilimeters
+Dialogue: 0,0:18:22.20,0:18:25.77,*Default,NTP,0000,0000,0000,,meaning it's not one of an open parana clothes parana
+Dialogue: 0,0:18:25.77,0:18:27.17,*Default,NTP,0000,0000,0000,,quoth or a dot
+Dialogue: 0,0:18:27.33,0:18:29.13,*Default,NTP,0000,0000,0000,,then we would just return that value
+Dialogue: 0,0:18:29.13,0:18:30.33,*Default,NTP,0000,0000,0000,,so that's when we get
+Dialogue: 0,0:18:30.50,0:18:33.00,*Default,NTP,0000,0000,0000,,numbers and symbols as a base case
+Dialogue: 0,0:18:33.77,0:18:36.07,*Default,NTP,0000,0000,0000,,otherwise if we've just opened up
+Dialogue: 0,0:18:36.30,0:18:38.57,*Default,NTP,0000,0000,0000,,a combination with an open parenthesis
+Dialogue: 0,0:18:38.57,0:18:40.07,*Default,NTP,0000,0000,0000,,then we have more work to do
+Dialogue: 0,0:18:40.60,0:18:41.53,*Default,NTP,0000,0000,0000,,what do we do
+Dialogue: 0,0:18:42.30,0:18:45.40,*Default,NTP,0000,0000,0000,,or we return the remainder of the list in source
+Dialogue: 0,0:18:45.47,0:18:46.60,*Default,NTP,0000,0000,0000,,starting before
+Dialogue: 0,0:18:46.80,0:18:49.50,*Default,NTP,0000,0000,0000,,an element or close parenthesis
+Dialogue: 0,0:18:50.30,0:18:51.10,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:18:51.13,0:18:54.70,*Default,NTP,0000,0000,0000,,so if we run out of text here that's a syntax error
+Dialogue: 0,0:18:56.00,0:18:59.07,*Default,NTP,0000,0000,0000,,but if we find a close parenthesis to match the open
+Dialogue: 0,0:18:59.07,0:19:02.17,*Default,NTP,0000,0000,0000,,parentheses and that's a base case and we're done
+Dialogue: 0,0:19:03.87,0:19:07.10,*Default,NTP,0000,0000,0000,,otherwise we find the first element the rest
+Dialogue: 0,0:19:07.27,0:19:10.47,*Default,NTP,0000,0000,0000,,and return a pair containing the first and the rest
+Dialogue: 0,0:19:10.73,0:19:13.93,*Default,NTP,0000,0000,0000,,and first is a recursive call to scheme read
+Dialogue: 0,0:19:14.53,0:19:17.60,*Default,NTP,0000,0000,0000,,which means that if I read
+Dialogue: 0,0:19:19.67,0:19:21.87,*Default,NTP,0000,0000,0000,,nested expressions it looks like this
+Dialogue: 0,0:19:22.70,0:19:26.67,*Default,NTP,0000,0000,0000,,what happens is I find this
+Dialogue: 0,0:19:27.47,0:19:30.27,*Default,NTP,0000,0000,0000,,recursively call reed tail
+Dialogue: 0,0:19:30.73,0:19:32.97,*Default,NTP,0000,0000,0000,,which it calls scheme reed
+Dialogue: 0,0:19:33.37,0:19:35.37,*Default,NTP,0000,0000,0000,,to read this expression
+Dialogue: 0,0:19:35.70,0:19:39.07,*Default,NTP,0000,0000,0000,,which is used as the first element in this pair
+Dialogue: 0,0:19:39.57,0:19:43.00,*Default,NTP,0000,0000,0000,,then the second element is a pair of three mill
+Dialogue: 0,0:19:43.10,0:19:44.93,*Default,NTP,0000,0000,0000,,giving us the rest of the list
+Dialogue: 0,0:19:47.80,0:19:50.73,*Default,NTP,0000,0000,0000,,okay time to create a programming language
+Dialogue: 0,0:19:51.13,0:19:54.27,*Default,NTP,0000,0000,0000,,called the scheme syntex calculator
+Dialogue: 0,0:19:54.80,0:19:57.20,*Default,NTP,0000,0000,0000,,it's a simple one but that's where we start
+Dialogue: 0,0:19:57.73,0:19:59.07,*Default,NTP,0000,0000,0000,,when it's something that just
+Dialogue: 0,0:19:59.70,0:20:02.17,*Default,NTP,0000,0000,0000,,performs arithmetic just like a calculator would
+Dialogue: 0,0:20:05.10,0:20:07.27,*Default,NTP,0000,0000,0000,,okay so the source code is on the right
+Dialogue: 0,0:20:07.27,0:20:09.90,*Default,NTP,0000,0000,0000,,we're gonna go through almost all of it today
+Dialogue: 0,0:20:11.07,0:20:13.27,*Default,NTP,0000,0000,0000,,but let's see what this program does first
+Dialogue: 0,0:20:13.27,0:20:14.67,*Default,NTP,0000,0000,0000,,so I run python
+Dialogue: 0,0:20:15.57,0:20:17.77,*Default,NTP,0000,0000,0000,,in order to start up my interpreter
+Dialogue: 0,0:20:18.00,0:20:19.50,*Default,NTP,0000,0000,0000,,for the calculator language
+Dialogue: 0,0:20:19.77,0:20:21.87,*Default,NTP,0000,0000,0000,,now notice that we don't have the normal python
+Dialogue: 0,0:20:21.87,0:20:24.70,*Default,NTP,0000,0000,0000,,prompt here instead we have a calculator prompt
+Dialogue: 0,0:20:25.47,0:20:28.80,*Default,NTP,0000,0000,0000,,calculator allows me to type in scheme expressions
+Dialogue: 0,0:20:28.90,0:20:31.07,*Default,NTP,0000,0000,0000,,and as long as the operators are just plus
+Dialogue: 0,0:20:31.07,0:20:32.57,*Default,NTP,0000,0000,0000,,minus times and divide
+Dialogue: 0,0:20:32.73,0:20:34.20,*Default,NTP,0000,0000,0000,,it will evaluate those for me
+Dialogue: 0,0:20:34.20,0:20:35.33,*Default,NTP,0000,0000,0000,,so it just multiplied one
+Dialogue: 0,0:20:35.33,0:20:37.13,*Default,NTP,0000,0000,0000,,two and three together to get six
+Dialogue: 0,0:20:39.10,0:20:41.93,*Default,NTP,0000,0000,0000,,just adding gives a zero just like a skim
+Dialogue: 0,0:20:42.30,0:20:44.07,*Default,NTP,0000,0000,0000,,and we can have nested combinations
+Dialogue: 0,0:20:44.07,0:20:48.17,*Default,NTP,0000,0000,0000,,so there's one plus two and four divided by eight
+Dialogue: 0,0:20:48.87,0:20:51.27,*Default,NTP,0000,0000,0000,,hopefully add two and one half together
+Dialogue: 0,0:20:51.27,0:20:52.33,*Default,NTP,0000,0000,0000,,we get two and a half
+Dialogue: 0,0:20:52.90,0:20:55.20,*Default,NTP,0000,0000,0000,,and this can span multiple lines
+Dialogue: 0,0:20:55.20,0:20:57.37,*Default,NTP,0000,0000,0000,,and I can use whatever spacing I want
+Dialogue: 0,0:20:57.73,0:21:01.50,*Default,NTP,0000,0000,0000,,so if I add the result of one negative twenty three
+Dialogue: 0,0:21:01.77,0:21:02.57,*Default,NTP,0000,0000,0000,,four
+Dialogue: 0,0:21:03.27,0:21:05.70,*Default,NTP,0000,0000,0000,,and two point five
+Dialogue: 0,0:21:07.27,0:21:09.87,*Default,NTP,0000,0000,0000,,and that's it then I'll get -12
+Dialogue: 0,0:21:13.73,0:21:14.97,*Default,NTP,0000,0000,0000,,so here are some more examples
+Dialogue: 0,0:21:14.97,0:21:15.90,*Default,NTP,0000,0000,0000,,you can see that there are
+Dialogue: 0,0:21:15.90,0:21:17.47,*Default,NTP,0000,0000,0000,,some aero handling that happens as
+Dialogue: 0,0:21:17.47,0:21:18.53,*Default,NTP,0000,0000,0000,,part of the interpreter
+Dialogue: 0,0:21:18.67,0:21:20.37,*Default,NTP,0000,0000,0000,,we'll talk about this later on
+Dialogue: 0,0:21:21.20,0:21:22.40,*Default,NTP,0000,0000,0000,,let's talk about how to get
+Dialogue: 0,0:21:22.40,0:21:24.07,*Default,NTP,0000,0000,0000,,the core functionality working
+Dialogue: 0,0:21:26.93,0:21:30.50,*Default,NTP,0000,0000,0000,,so we rely heavily on the pair class
+Dialogue: 0,0:21:30.57,0:21:33.80,*Default,NTP,0000,0000,0000,,to represent expressions in this language
+Dialogue: 0,0:21:34.67,0:21:37.90,*Default,NTP,0000,0000,0000,,and the pair class represents scheme pairs and lists
+Dialogue: 0,0:21:37.97,0:21:39.33,*Default,NTP,0000,0000,0000,,a list is a pair
+Dialogue: 0,0:21:39.57,0:21:42.30,*Default,NTP,0000,0000,0000,,whose 2nd element is either a list or nil
+Dialogue: 0,0:21:42.87,0:21:44.47,*Default,NTP,0000,0000,0000,,so there's only one class
+Dialogue: 0,0:21:44.50,0:21:47.90,*Default,NTP,0000,0000,0000,,that represents both pairs and scheme lists
+Dialogue: 0,0:21:48.33,0:21:50.93,*Default,NTP,0000,0000,0000,,it's something that has two instance attributes
+Dialogue: 0,0:21:50.93,0:21:51.93,*Default,NTP,0000,0000,0000,,first and 2nd
+Dialogue: 0,0:21:52.73,0:21:54.50,*Default,NTP,0000,0000,0000,,first can store anything
+Dialogue: 0,0:21:54.77,0:21:57.27,*Default,NTP,0000,0000,0000,,it's the value in the first element of the pair
+Dialogue: 0,0:21:57.73,0:21:59.47,*Default,NTP,0000,0000,0000,,the 2nd can also store anything
+Dialogue: 0,0:21:59.47,0:22:03.00,*Default,NTP,0000,0000,0000,,but when it stores a well formed list
+Dialogue: 0,0:22:03.27,0:22:05.73,*Default,NTP,0000,0000,0000,,then the whole thing is a well formed list
+Dialogue: 0,0:22:05.73,0:22:07.50,*Default,NTP,0000,0000,0000,,so for a pair to be a well formed list
+Dialogue: 0,0:22:07.50,0:22:09.93,*Default,NTP,0000,0000,0000,,2nd is either a well formed list or nil
+Dialogue: 0,0:22:09.93,0:22:10.90,*Default,NTP,0000,0000,0000,,the empty list
+Dialogue: 0,0:22:11.57,0:22:14.73,*Default,NTP,0000,0000,0000,,and some of the message that exist on the pair class
+Dialogue: 0,0:22:14.80,0:22:17.30,*Default,NTP,0000,0000,0000,,only apply to well formed lists
+Dialogue: 0,0:22:17.97,0:22:19.10,*Default,NTP,0000,0000,0000,,so let's take a look
+Dialogue: 0,0:22:19.10,0:22:21.37,*Default,NTP,0000,0000,0000,,if I create a bunch of nested pairs
+Dialogue: 0,0:22:21.60,0:22:23.73,*Default,NTP,0000,0000,0000,,remember this is back into the python interpreter
+Dialogue: 0,0:22:23.73,0:22:25.30,*Default,NTP,0000,0000,0000,,with the triple carrot
+Dialogue: 0,0:22:26.70,0:22:29.00,*Default,NTP,0000,0000,0000,,I create this structure and I print it out
+Dialogue: 0,0:22:29.00,0:22:30.97,*Default,NTP,0000,0000,0000,,I get the scheme list representation
+Dialogue: 0,0:22:30.97,0:22:33.37,*Default,NTP,0000,0000,0000,,that's the string version of a pair
+Dialogue: 0,0:22:34.30,0:22:35.60,*Default,NTP,0000,0000,0000,,and the length of this
+Dialogue: 0,0:22:36.40,0:22:39.77,*Default,NTP,0000,0000,0000,,is a method as a special method on pair
+Dialogue: 0,0:22:40.00,0:22:41.13,*Default,NTP,0000,0000,0000,,that only applies
+Dialogue: 0,0:22:41.17,0:22:43.87,*Default,NTP,0000,0000,0000,,when pair represents a well formed list
+Dialogue: 0,0:22:44.07,0:22:46.37,*Default,NTP,0000,0000,0000,,this well formed list has three elements
+Dialogue: 0,0:22:48.10,0:22:49.67,*Default,NTP,0000,0000,0000,,Paris can also represent
+Dialogue: 0,0:22:49.73,0:22:52.40,*Default,NTP,0000,0000,0000,,non well formed lists or things with thoughts in them
+Dialogue: 0,0:22:52.50,0:22:54.77,*Default,NTP,0000,0000,0000,,here's an example is just the pair one two
+Dialogue: 0,0:22:54.97,0:22:57.67,*Default,NTP,0000,0000,0000,,it's not a well formed list because two is not a list
+Dialogue: 0,0:22:57.77,0:22:58.57,*Default,NTP,0000,0000,0000,,or nil
+Dialogue: 0,0:23:00.00,0:23:00.73,*Default,NTP,0000,0000,0000,,and likewise
+Dialogue: 0,0:23:00.73,0:23:03.07,*Default,NTP,0000,0000,0000,,if I nest this thing inside of something else
+Dialogue: 0,0:23:03.07,0:23:04.37,*Default,NTP,0000,0000,0000,,I still have a dotted
+Dialogue: 0,0:23:04.93,0:23:07.67,*Default,NTP,0000,0000,0000,,expression something that's not a well formed list
+Dialogue: 0,0:23:07.93,0:23:09.90,*Default,NTP,0000,0000,0000,,and that means I cannot take the length of it
+Dialogue: 0,0:23:11.40,0:23:14.57,*Default,NTP,0000,0000,0000,,okay so this is a pair class implemented in python
+Dialogue: 0,0:23:14.73,0:23:16.90,*Default,NTP,0000,0000,0000,,used to represent scheme pairs and lists
+Dialogue: 0,0:23:18.10,0:23:19.57,*Default,NTP,0000,0000,0000,,scheme expressions
+Dialogue: 0,0:23:19.80,0:23:22.20,*Default,NTP,0000,0000,0000,,such as plus one to the combination
+Dialogue: 0,0:23:22.33,0:23:24.40,*Default,NTP,0000,0000,0000,,are represented as scheme lists
+Dialogue: 0,0:23:24.67,0:23:25.87,*Default,NTP,0000,0000,0000,,meaning that the data
+Dialogue: 0,0:23:25.87,0:23:28.30,*Default,NTP,0000,0000,0000,,representation in the language is the same as the
+Dialogue: 0,0:23:28.30,0:23:29.87,*Default,NTP,0000,0000,0000,,source code representation
+Dialogue: 0,0:23:30.67,0:23:33.80,*Default,NTP,0000,0000,0000,,and that means that the language is called homo iconic
+Dialogue: 0,0:23:34.07,0:23:35.93,*Default,NTP,0000,0000,0000,,meaning this source code is just data
+Dialogue: 0,0:23:35.93,0:23:38.20,*Default,NTP,0000,0000,0000,,in the built in structure in the language
+Dialogue: 0,0:23:41.80,0:23:44.53,*Default,NTP,0000,0000,0000,,okay so now we know what we're going to use
+Dialogue: 0,0:23:44.53,0:23:46.17,*Default,NTP,0000,0000,0000,,in order to implement this stuff
+Dialogue: 0,0:23:46.60,0:23:48.90,*Default,NTP,0000,0000,0000,,let's talk about the two elements of the calculator
+Dialogue: 0,0:23:48.90,0:23:51.37,*Default,NTP,0000,0000,0000,,language its syntax and semantics
+Dialogue: 0,0:23:51.77,0:23:53.80,*Default,NTP,0000,0000,0000,,its syntax is that it has
+Dialogue: 0,0:23:53.80,0:23:56.20,*Default,NTP,0000,0000,0000,,primitive expressions and call expressions
+Dialogue: 0,0:23:56.20,0:23:57.00,*Default,NTP,0000,0000,0000,,that's all
+Dialogue: 0,0:23:57.70,0:23:59.73,*Default,NTP,0000,0000,0000,,a primitive expression is a number
+Dialogue: 0,0:24:00.80,0:24:02.97,*Default,NTP,0000,0000,0000,,and a call expression is a combination
+Dialogue: 0,0:24:03.07,0:24:03.73,*Default,NTP,0000,0000,0000,,that begins
+Dialogue: 0,0:24:03.73,0:24:05.87,*Default,NTP,0000,0000,0000,,with one of the four operators in the language
+Dialogue: 0,0:24:05.87,0:24:07.57,*Default,NTP,0000,0000,0000,,plus minus times and divide
+Dialogue: 0,0:24:07.93,0:24:10.30,*Default,NTP,0000,0000,0000,,followed by zero or more expressions
+Dialogue: 0,0:24:10.57,0:24:13.60,*Default,NTP,0000,0000,0000,,so we can add together three primitive expressions
+Dialogue: 0,0:24:13.67,0:24:16.30,*Default,NTP,0000,0000,0000,,or a primitive and a call expression
+Dialogue: 0,0:24:17.33,0:24:18.93,*Default,NTP,0000,0000,0000,,so that's the syntax of the language
+Dialogue: 0,0:24:18.93,0:24:20.77,*Default,NTP,0000,0000,0000,,those are the things we're allowed to write
+Dialogue: 0,0:24:22.27,0:24:24.30,*Default,NTP,0000,0000,0000,,so expressions are represented as scheme lists
+Dialogue: 0,0:24:24.30,0:24:26.00,*Default,NTP,0000,0000,0000,,which are just pair instances
+Dialogue: 0,0:24:26.00,0:24:27.20,*Default,NTP,0000,0000,0000,,just like we just saw
+Dialogue: 0,0:24:27.93,0:24:30.37,*Default,NTP,0000,0000,0000,,but they're encoding tree structures
+Dialogue: 0,0:24:31.13,0:24:32.73,*Default,NTP,0000,0000,0000,,so let's look at an example
+Dialogue: 0,0:24:32.90,0:24:34.67,*Default,NTP,0000,0000,0000,,and think about how it's encoded
+Dialogue: 0,0:24:34.67,0:24:36.10,*Default,NTP,0000,0000,0000,,and how we can think about it
+Dialogue: 0,0:24:37.00,0:24:38.47,*Default,NTP,0000,0000,0000,,so here's an expression
+Dialogue: 0,0:24:38.93,0:24:41.27,*Default,NTP,0000,0000,0000,,three times the sum of four and five
+Dialogue: 0,0:24:42.10,0:24:44.87,*Default,NTP,0000,0000,0000,,times the product of six seven and eight
+Dialogue: 0,0:24:47.00,0:24:49.53,*Default,NTP,0000,0000,0000,,think of this as in coding an expression treat
+Dialogue: 0,0:24:49.73,0:24:51.30,*Default,NTP,0000,0000,0000,,that's what it's going on
+Dialogue: 0,0:24:51.33,0:24:53.20,*Default,NTP,0000,0000,0000,,saying is we're going to multiply three things here
+Dialogue: 0,0:24:53.20,0:24:54.50,*Default,NTP,0000,0000,0000,,there are one two and three
+Dialogue: 0,0:24:55.00,0:24:56.77,*Default,NTP,0000,0000,0000,,and the first one is just the No.3
+Dialogue: 0,0:24:56.77,0:24:59.07,*Default,NTP,0000,0000,0000,,the second one is the samba four and five
+Dialogue: 0,0:24:59.27,0:25:02.17,*Default,NTP,0000,0000,0000,,and so this is a tree structure that's expressed
+Dialogue: 0,0:25:02.20,0:25:03.70,*Default,NTP,0000,0000,0000,,by this expression
+Dialogue: 0,0:25:04.97,0:25:08.47,*Default,NTP,0000,0000,0000,,but if we actually look into our interpreter and see
+Dialogue: 0,0:25:08.53,0:25:10.53,*Default,NTP,0000,0000,0000,,how this expression is represented
+Dialogue: 0,0:25:10.57,0:25:12.93,*Default,NTP,0000,0000,0000,,it's represented as pears
+Dialogue: 0,0:25:13.17,0:25:16.00,*Default,NTP,0000,0000,0000,,and pears have a first and 2nd attribute
+Dialogue: 0,0:25:16.30,0:25:18.20,*Default,NTP,0000,0000,0000,,and when they are linked together in this way
+Dialogue: 0,0:25:18.20,0:25:19.53,*Default,NTP,0000,0000,0000,,they form lists
+Dialogue: 0,0:25:20.27,0:25:21.67,*Default,NTP,0000,0000,0000,,so the whole expression
+Dialogue: 0,0:25:22.07,0:25:23.90,*Default,NTP,0000,0000,0000,,is three followed by
+Dialogue: 0,0:25:23.97,0:25:26.30,*Default,NTP,0000,0000,0000,,something followed by something else
+Dialogue: 0,0:25:26.53,0:25:27.97,*Default,NTP,0000,0000,0000,,and that's something in something else
+Dialogue: 0,0:25:27.97,0:25:31.53,*Default,NTP,0000,0000,0000,,are the two branches of this tree that follow three
+Dialogue: 0,0:25:32.30,0:25:35.00,*Default,NTP,0000,0000,0000,,so if we look at this branch
+Dialogue: 0,0:25:35.30,0:25:37.80,*Default,NTP,0000,0000,0000,,it's a plus and then four and five
+Dialogue: 0,0:25:37.90,0:25:39.47,*Default,NTP,0000,0000,0000,,that's this expression here
+Dialogue: 0,0:25:40.13,0:25:44.40,*Default,NTP,0000,0000,0000,,and time 6 7 8 appears here as another scheme list
+Dialogue: 0,0:25:44.70,0:25:46.07,*Default,NTP,0000,0000,0000,,so we have a scheme list
+Dialogue: 0,0:25:46.10,0:25:48.30,*Default,NTP,0000,0000,0000,,that has a number as its first element
+Dialogue: 0,0:25:48.30,0:25:49.93,*Default,NTP,0000,0000,0000,,a scheme list is its 2nd element
+Dialogue: 0,0:25:49.93,0:25:52.37,*Default,NTP,0000,0000,0000,,and another scheme list as its 3rd element
+Dialogue: 0,0:25:52.53,0:25:54.37,*Default,NTP,0000,0000,0000,,and by nesting things in this way
+Dialogue: 0,0:25:54.37,0:25:56.33,*Default,NTP,0000,0000,0000,,will form expression treats
+Dialogue: 0,0:26:00.50,0:26:01.97,*Default,NTP,0000,0000,0000,,okay that's the syntax
+Dialogue: 0,0:26:01.97,0:26:04.47,*Default,NTP,0000,0000,0000,,of the language and how we will represent it in
+Dialogue: 0,0:26:04.53,0:26:07.67,*Default,NTP,0000,0000,0000,,programs let's talk about what it means
+Dialogue: 0,0:26:07.80,0:26:10.60,*Default,NTP,0000,0000,0000,,the value of a calculator expression is defined
+Dialogue: 0,0:26:10.60,0:26:11.60,*Default,NTP,0000,0000,0000,,recursively
+Dialogue: 0,0:26:12.37,0:26:14.10,*Default,NTP,0000,0000,0000,,how primitive is a base case
+Dialogue: 0,0:26:14.10,0:26:16.07,*Default,NTP,0000,0000,0000,,a number evaluates to itself
+Dialogue: 0,0:26:17.27,0:26:18.57,*Default,NTP,0000,0000,0000,,a call expression
+Dialogue: 0,0:26:18.60,0:26:21.20,*Default,NTP,0000,0000,0000,,evaluates to its argument values
+Dialogue: 0,0:26:21.20,0:26:22.93,*Default,NTP,0000,0000,0000,,combined by an operator
+Dialogue: 0,0:26:24.57,0:26:26.97,*Default,NTP,0000,0000,0000,,now how do we get those argument values
+Dialogue: 0,0:26:26.97,0:26:31.17,*Default,NTP,0000,0000,0000,,while those are the values of the operand expressions
+Dialogue: 0,0:26:33.30,0:26:35.30,*Default,NTP,0000,0000,0000,,now how do we combine argument values
+Dialogue: 0,0:26:35.40,0:26:36.17,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:26:36.17,0:26:39.33,*Default,NTP,0000,0000,0000,,if the operator is plus then we just sum the arguments
+Dialogue: 0,0:26:39.40,0:26:42.33,*Default,NTP,0000,0000,0000,,if it's times then we take a product of the arguments
+Dialogue: 0,0:26:42.70,0:26:44.60,*Default,NTP,0000,0000,0000,,minus has some special cases
+Dialogue: 0,0:26:44.60,0:26:46.80,*Default,NTP,0000,0000,0000,,if there's only one argument we'd negate it
+Dialogue: 0,0:26:46.87,0:26:48.10,*Default,NTP,0000,0000,0000,,if there's more than one
+Dialogue: 0,0:26:48.17,0:26:49.97,*Default,NTP,0000,0000,0000,,then we subtract the rest from the first
+Dialogue: 0,0:26:51.00,0:26:53.07,*Default,NTP,0000,0000,0000,,and divide has a similar structure
+Dialogue: 0,0:26:53.20,0:26:55.13,*Default,NTP,0000,0000,0000,,if there's one argument we invert it
+Dialogue: 0,0:26:55.37,0:26:57.70,*Default,NTP,0000,0000,0000,,so divide two becomes just one half
+Dialogue: 0,0:26:58.13,0:26:59.07,*Default,NTP,0000,0000,0000,,if there's more than one
+Dialogue: 0,0:26:59.07,0:27:00.97,*Default,NTP,0000,0000,0000,,then we divide the rest from the first
+Dialogue: 0,0:27:03.17,0:27:03.50,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:27:03.50,0:27:06.17,*Default,NTP,0000,0000,0000,,so here's an expression and here's an expression tree
+Dialogue: 0,0:27:06.40,0:27:09.00,*Default,NTP,0000,0000,0000,,we've used only the two simple operators this time
+Dialogue: 0,0:27:10.27,0:27:12.20,*Default,NTP,0000,0000,0000,,the way in which this gets evaluated
+Dialogue: 0,0:27:12.33,0:27:13.80,*Default,NTP,0000,0000,0000,,is that first we have to find
+Dialogue: 0,0:27:13.80,0:27:16.73,*Default,NTP,0000,0000,0000,,the value of all the up brand sub expressions
+Dialogue: 0,0:27:16.73,0:27:17.60,*Default,NTP,0000,0000,0000,,here and here
+Dialogue: 0,0:27:18.10,0:27:21.00,*Default,NTP,0000,0000,0000,,which means recursive definition
+Dialogue: 0,0:27:21.20,0:27:23.17,*Default,NTP,0000,0000,0000,,those are call expressions themselves
+Dialogue: 0,0:27:23.30,0:27:25.60,*Default,NTP,0000,0000,0000,,and so plus four five
+Dialogue: 0,0:27:26.17,0:27:28.60,*Default,NTP,0000,0000,0000,,is the sum of four and five
+Dialogue: 0,0:27:29.27,0:27:30.40,*Default,NTP,0000,0000,0000,,which we'll give last nine
+Dialogue: 0,0:27:30.93,0:27:32.73,*Default,NTP,0000,0000,0000,,what's the product of six seven and eight
+Dialogue: 0,0:27:32.73,0:27:34.10,*Default,NTP,0000,0000,0000,,that's three thirty six
+Dialogue: 0,0:27:34.40,0:27:36.57,*Default,NTP,0000,0000,0000,,and what's the product of these three arguments
+Dialogue: 0,0:27:36.57,0:27:40.40,*Default,NTP,0000,0000,0000,,three nine and three thirty six that's 9072
+Dialogue: 0,0:27:44.27,0:27:45.07,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:27:45.57,0:27:49.17,*Default,NTP,0000,0000,0000,,enough talk let's actually implement this language
+Dialogue: 0,0:27:49.20,0:27:51.17,*Default,NTP,0000,0000,0000,,by creating interpreter for it
+Dialogue: 0,0:27:52.80,0:27:54.50,*Default,NTP,0000,0000,0000,,so the eval function
+Dialogue: 0,0:27:54.90,0:27:57.47,*Default,NTP,0000,0000,0000,,evaluates an expression in the language
+Dialogue: 0,0:27:57.80,0:27:59.97,*Default,NTP,0000,0000,0000,,represented as a scheme list
+Dialogue: 0,0:28:01.57,0:28:04.07,*Default,NTP,0000,0000,0000,,it computes the value of an expression
+Dialogue: 0,0:28:04.20,0:28:05.77,*Default,NTP,0000,0000,0000,,and the value of an expression
+Dialogue: 0,0:28:05.77,0:28:07.30,*Default,NTP,0000,0000,0000,,in the calculator language
+Dialogue: 0,0:28:07.37,0:28:08.70,*Default,NTP,0000,0000,0000,,is always a number
+Dialogue: 0,0:28:10.17,0:28:12.87,*Default,NTP,0000,0000,0000,,the eval function itself is a generic function
+Dialogue: 0,0:28:12.87,0:28:15.47,*Default,NTP,0000,0000,0000,,that dispatches on the type of the expression
+Dialogue: 0,0:28:15.80,0:28:18.30,*Default,NTP,0000,0000,0000,,whether it's a primitive expression or
+Dialogue: 0,0:28:18.30,0:28:19.47,*Default,NTP,0000,0000,0000,,a call expression
+Dialogue: 0,0:28:20.67,0:28:21.73,*Default,NTP,0000,0000,0000,,so the implementation
+Dialogue: 0,0:28:21.73,0:28:23.60,*Default,NTP,0000,0000,0000,,the code is actually going to be on the left
+Dialogue: 0,0:28:23.93,0:28:24.93,*Default,NTP,0000,0000,0000,,and then we'll
+Dialogue: 0,0:28:24.93,0:28:26.30,*Default,NTP,0000,0000,0000,,match that up to the language
+Dialogue: 0,0:28:26.30,0:28:28.37,*Default,NTP,0000,0000,0000,,semantics that we just introduced
+Dialogue: 0,0:28:29.17,0:28:30.47,*Default,NTP,0000,0000,0000,,so here's the program
+Dialogue: 0,0:28:30.90,0:28:32.93,*Default,NTP,0000,0000,0000,,it says cal gival
+Dialogue: 0,0:28:33.30,0:28:35.70,*Default,NTP,0000,0000,0000,,is the function that takes in an expression
+Dialogue: 0,0:28:36.00,0:28:38.57,*Default,NTP,0000,0000,0000,,that expression will either be primitive or call
+Dialogue: 0,0:28:38.57,0:28:39.37,*Default,NTP,0000,0000,0000,,expression
+Dialogue: 0,0:28:40.70,0:28:41.80,*Default,NTP,0000,0000,0000,,if it's primitive
+Dialogue: 0,0:28:41.93,0:28:44.90,*Default,NTP,0000,0000,0000,,meaning the type is either an end or a float
+Dialogue: 0,0:28:45.50,0:28:49.17,*Default,NTP,0000,0000,0000,,then we evaluate it by just returning that same number
+Dialogue: 0,0:28:50.20,0:28:52.37,*Default,NTP,0000,0000,0000,,so a number evaluates to itself
+Dialogue: 0,0:28:52.37,0:28:54.40,*Default,NTP,0000,0000,0000,,according to the language semantics
+Dialogue: 0,0:28:54.57,0:28:55.80,*Default,NTP,0000,0000,0000,,and here's the lines of
+Dialogue: 0,0:28:55.80,0:28:57.93,*Default,NTP,0000,0000,0000,,code that actually implement that fact
+Dialogue: 0,0:28:59.17,0:28:59.97,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:29:00.87,0:29:03.33,*Default,NTP,0000,0000,0000,,if it's the case that the expression is a pair
+Dialogue: 0,0:29:03.87,0:29:05.67,*Default,NTP,0000,0000,0000,,meaning it's a scheme list
+Dialogue: 0,0:29:06.73,0:29:10.10,*Default,NTP,0000,0000,0000,,then we get the arguments to the call expression
+Dialogue: 0,0:29:10.90,0:29:13.90,*Default,NTP,0000,0000,0000,,by mapping the calcute valve function
+Dialogue: 0,0:29:14.37,0:29:16.37,*Default,NTP,0000,0000,0000,,over the rest of the list
+Dialogue: 0,0:29:16.97,0:29:18.77,*Default,NTP,0000,0000,0000,,now what is this expert this point
+Dialogue: 0,0:29:18.77,0:29:21.77,*Default,NTP,0000,0000,0000,,well it should be a list that starts with an operator
+Dialogue: 0,0:29:21.77,0:29:24.73,*Default,NTP,0000,0000,0000,,such as plus and is followed by a bunch of
+Dialogue: 0,0:29:24.80,0:29:28.07,*Default,NTP,0000,0000,0000,,other expressions that are the operand sub expressions
+Dialogue: 0,0:29:28.70,0:29:30.37,*Default,NTP,0000,0000,0000,,so evaluating each of those
+Dialogue: 0,0:29:31.10,0:29:33.27,*Default,NTP,0000,0000,0000,,gives us all of the values
+Dialogue: 0,0:29:33.27,0:29:35.30,*Default,NTP,0000,0000,0000,,that are the arguments that will pass it
+Dialogue: 0,0:29:35.40,0:29:37.30,*Default,NTP,0000,0000,0000,,when we evaluate the operator
+Dialogue: 0,0:29:38.37,0:29:40.70,*Default,NTP,0000,0000,0000,,and then finally we're going to call another function
+Dialogue: 0,0:29:40.70,0:29:41.57,*Default,NTP,0000,0000,0000,,calc apply
+Dialogue: 0,0:29:41.97,0:29:44.90,*Default,NTP,0000,0000,0000,,that takes the plus and applies it to the arguments
+Dialogue: 0,0:29:45.73,0:29:48.97,*Default,NTP,0000,0000,0000,,so a call expression evaluates to its argument values
+Dialogue: 0,0:29:49.07,0:29:51.70,*Default,NTP,0000,0000,0000,,and we get those argument values by recursively calling
+Dialogue: 0,0:29:51.70,0:29:54.00,*Default,NTP,0000,0000,0000,,calci val on each sub expression
+Dialogue: 0,0:29:54.70,0:29:56.33,*Default,NTP,0000,0000,0000,,combined by an operator
+Dialogue: 0,0:29:57.00,0:29:59.40,*Default,NTP,0000,0000,0000,,and this is expert out first as the operator
+Dialogue: 0,0:29:59.70,0:30:02.00,*Default,NTP,0000,0000,0000,,that gets combined with its arguments using some other
+Dialogue: 0,0:30:02.00,0:30:03.20,*Default,NTP,0000,0000,0000,,function calc apply
+Dialogue: 0,0:30:03.20,0:30:04.77,*Default,NTP,0000,0000,0000,,which will look at on the next light
+Dialogue: 0,0:30:05.67,0:30:07.17,*Default,NTP,0000,0000,0000,,so what are the important parts here
+Dialogue: 0,0:30:07.47,0:30:08.80,*Default,NTP,0000,0000,0000,,wherever recursive call
+Dialogue: 0,0:30:09.33,0:30:11.30,*Default,NTP,0000,0000,0000,,returns a number for each operand
+Dialogue: 0,0:30:11.30,0:30:13.60,*Default,NTP,0000,0000,0000,,so an operandic sub expression could be some complex
+Dialogue: 0,0:30:13.60,0:30:15.33,*Default,NTP,0000,0000,0000,,expression a call expression
+Dialogue: 0,0:30:15.53,0:30:19.10,*Default,NTP,0000,0000,0000,,but we reduce it to a number by calling calcavel
+Dialogue: 0,0:30:20.27,0:30:21.90,*Default,NTP,0000,0000,0000,,calcupi does the work
+Dialogue: 0,0:30:22.13,0:30:24.70,*Default,NTP,0000,0000,0000,,of figuring out whether we should add or multiply
+Dialogue: 0,0:30:24.70,0:30:25.67,*Default,NTP,0000,0000,0000,,or subtract
+Dialogue: 0,0:30:26.67,0:30:27.87,*Default,NTP,0000,0000,0000,,expert out first
+Dialogue: 0,0:30:27.90,0:30:30.80,*Default,NTP,0000,0000,0000,,is a symbol representing what operation to take
+Dialogue: 0,0:30:30.97,0:30:34.27,*Default,NTP,0000,0000,0000,,and the arguments will be a scheme list of numbers
+Dialogue: 0,0:30:34.27,0:30:38.40,*Default,NTP,0000,0000,0000,,then we get by calling calcuval on each sub expression
+Dialogue: 0,0:30:40.47,0:30:41.27,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:30:41.93,0:30:44.50,*Default,NTP,0000,0000,0000,,the one part we've left out is calc apply
+Dialogue: 0,0:30:45.13,0:30:47.73,*Default,NTP,0000,0000,0000,,so the apply function apply some operation
+Dialogue: 0,0:30:47.73,0:30:50.07,*Default,NTP,0000,0000,0000,,to a scheme list of argument values
+Dialogue: 0,0:30:50.67,0:30:51.90,*Default,NTP,0000,0000,0000,,in calculator
+Dialogue: 0,0:30:52.13,0:30:54.20,*Default,NTP,0000,0000,0000,,all the operations are built in
+Dialogue: 0,0:30:54.97,0:30:58.33,*Default,NTP,0000,0000,0000,,and they correspond to these four built in operators
+Dialogue: 0,0:30:59.00,0:31:01.47,*Default,NTP,0000,0000,0000,,in other programming languages that allow
+Dialogue: 0,0:31:01.97,0:31:03.40,*Default,NTP,0000,0000,0000,,different kinds of abstraction
+Dialogue: 0,0:31:03.40,0:31:05.73,*Default,NTP,0000,0000,0000,,we might have to worry about user defined
+Dialogue: 0,0:31:05.90,0:31:08.33,*Default,NTP,0000,0000,0000,,operations and names for things
+Dialogue: 0,0:31:08.33,0:31:09.33,*Default,NTP,0000,0000,0000,,and we'll get there
+Dialogue: 0,0:31:09.57,0:31:12.33,*Default,NTP,0000,0000,0000,,but for now there's only these four things we can do
+Dialogue: 0,0:31:13.20,0:31:14.90,*Default,NTP,0000,0000,0000,,so here's the implementation
+Dialogue: 0,0:31:15.17,0:31:18.93,*Default,NTP,0000,0000,0000,,it just decides which operator were looking at
+Dialogue: 0,0:31:19.10,0:31:22.13,*Default,NTP,0000,0000,0000,,and then carries out the combination method
+Dialogue: 0,0:31:22.33,0:31:24.77,*Default,NTP,0000,0000,0000,,that combines the arguments in that way
+Dialogue: 0,0:31:25.73,0:31:28.33,*Default,NTP,0000,0000,0000,,so I've removed a bunch of the source code
+Dialogue: 0,0:31:28.33,0:31:29.93,*Default,NTP,0000,0000,0000,,we can look at the whole thing in a minute
+Dialogue: 0,0:31:30.47,0:31:32.47,*Default,NTP,0000,0000,0000,,but the basic structure is that
+Dialogue: 0,0:31:32.47,0:31:34.20,*Default,NTP,0000,0000,0000,,calcoply takes in some operator
+Dialogue: 0,0:31:34.20,0:31:36.13,*Default,NTP,0000,0000,0000,,such as plus minus times are divide
+Dialogue: 0,0:31:36.33,0:31:37.60,*Default,NTP,0000,0000,0000,,and some arguments
+Dialogue: 0,0:31:37.93,0:31:39.80,*Default,NTP,0000,0000,0000,,and then it does what it's supposed to do
+Dialogue: 0,0:31:39.93,0:31:41.27,*Default,NTP,0000,0000,0000,,so for plus
+Dialogue: 0,0:31:41.60,0:31:44.70,*Default,NTP,0000,0000,0000,,it adds together all those arguments starting with zero
+Dialogue: 0,0:31:45.80,0:31:48.40,*Default,NTP,0000,0000,0000,,for minus it's either going to subtract
+Dialogue: 0,0:31:48.40,0:31:49.80,*Default,NTP,0000,0000,0000,,all the rest from the first
+Dialogue: 0,0:31:49.93,0:31:52.30,*Default,NTP,0000,0000,0000,,or negate the first depending on how many
+Dialogue: 0,0:31:52.33,0:31:54.40,*Default,NTP,0000,0000,0000,,arguments there are etc
+Dialogue: 0,0:31:55.57,0:31:56.40,*Default,NTP,0000,0000,0000,,so part of the language
+Dialogue: 0,0:31:56.40,0:31:58.90,*Default,NTP,0000,0000,0000,,semantic says that plus sums the arguments
+Dialogue: 0,0:31:58.90,0:32:00.17,*Default,NTP,0000,0000,0000,,that minus does something else
+Dialogue: 0,0:32:00.17,0:32:01.30,*Default,NTP,0000,0000,0000,,and times and divide
+Dialogue: 0,0:32:01.37,0:32:02.33,*Default,NTP,0000,0000,0000,,and all of those
+Dialogue: 0,0:32:02.33,0:32:03.27,*Default,NTP,0000,0000,0000,,have corresponding
+Dialogue: 0,0:32:03.27,0:32:06.07,*Default,NTP,0000,0000,0000,,source code in the implementation of calc apply
+Dialogue: 0,0:32:07.97,0:32:08.77,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:32:10.53,0:32:11.57,*Default,NTP,0000,0000,0000,,so let's look at these
+Dialogue: 0,0:32:13.17,0:32:16.47,*Default,NTP,0000,0000,0000,,calcaval we saw almost all of the details up already
+Dialogue: 0,0:32:16.73,0:32:18.90,*Default,NTP,0000,0000,0000,,the only difference is that we call simplify
+Dialogue: 0,0:32:19.10,0:32:22.20,*Default,NTP,0000,0000,0000,,in order to turn eight point o into just eight
+Dialogue: 0,0:32:24.00,0:32:26.73,*Default,NTP,0000,0000,0000,,and we write out a string for the type error
+Dialogue: 0,0:32:27.77,0:32:29.60,*Default,NTP,0000,0000,0000,,like calcoply has more going on
+Dialogue: 0,0:32:29.70,0:32:31.10,*Default,NTP,0000,0000,0000,,so let's look at the whole thing
+Dialogue: 0,0:32:31.53,0:32:33.93,*Default,NTP,0000,0000,0000,,and at the same time we can
+Dialogue: 0,0:32:36.20,0:32:37.60,*Default,NTP,0000,0000,0000,,run some examples
+Dialogue: 0,0:32:38.60,0:32:39.40,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:32:41.27,0:32:43.30,*Default,NTP,0000,0000,0000,,if the operator is not a string
+Dialogue: 0,0:32:43.33,0:32:44.57,*Default,NTP,0000,0000,0000,,then we should complete
+Dialogue: 0,0:32:45.87,0:32:47.60,*Default,NTP,0000,0000,0000,,type air two is not a simple
+Dialogue: 0,0:32:48.47,0:32:50.07,*Default,NTP,0000,0000,0000,,if the operator is plus
+Dialogue: 0,0:32:50.50,0:32:52.33,*Default,NTP,0000,0000,0000,,then we reduce starting with zero
+Dialogue: 0,0:32:52.53,0:32:54.30,*Default,NTP,0000,0000,0000,,and adding in everything else
+Dialogue: 0,0:32:54.50,0:32:55.77,*Default,NTP,0000,0000,0000,,if it's minus
+Dialogue: 0,0:32:56.10,0:32:58.13,*Default,NTP,0000,0000,0000,,then if there are no arguments at all
+Dialogue: 0,0:32:58.13,0:32:59.67,*Default,NTP,0000,0000,0000,,we should raise a type bear
+Dialogue: 0,0:33:00.40,0:33:01.20,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:33:01.50,0:33:04.40,*Default,NTP,0000,0000,0000,,if there's only one argument we should negate it
+Dialogue: 0,0:33:05.07,0:33:06.07,*Default,NTP,0000,0000,0000,,-2
+Dialogue: 0,0:33:07.27,0:33:10.30,*Default,NTP,0000,0000,0000,,finally we reduce by subtracting
+Dialogue: 0,0:33:10.53,0:33:13.27,*Default,NTP,0000,0000,0000,,all of the rest of the arguments from the first one
+Dialogue: 0,0:33:14.80,0:33:15.87,*Default,NTP,0000,0000,0000,,if I start with 10
+Dialogue: 0,0:33:15.87,0:33:17.57,*Default,NTP,0000,0000,0000,,and then I subtract one two and three
+Dialogue: 0,0:33:17.57,0:33:18.73,*Default,NTP,0000,0000,0000,,I end up with four
+Dialogue: 0,0:33:20.30,0:33:24.30,*Default,NTP,0000,0000,0000,,multiplication just reduces the list of arguments
+Dialogue: 0,0:33:24.30,0:33:28.07,*Default,NTP,0000,0000,0000,,using multiplication as a means of combination
+Dialogue: 0,0:33:28.70,0:33:31.27,*Default,NTP,0000,0000,0000,,and division is very much like subtraction
+Dialogue: 0,0:33:32.30,0:33:33.70,*Default,NTP,0000,0000,0000,,we can't divide nothing
+Dialogue: 0,0:33:33.90,0:33:37.93,*Default,NTP,0000,0000,0000,,we can invert a single argument or we can divide
+Dialogue: 0,0:33:38.80,0:33:41.20,*Default,NTP,0000,0000,0000,,out of 1024
+Dialogue: 0,0:33:43.73,0:33:45.07,*Default,NTP,0000,0000,0000,,a bunch of numbers
+Dialogue: 0,0:33:45.07,0:33:46.57,*Default,NTP,0000,0000,0000,,and so dividing out to
+Dialogue: 0,0:33:46.57,0:33:48.60,*Default,NTP,0000,0000,0000,,five different times gives us only 32
+Dialogue: 0,0:33:48.60,0:33:49.40,*Default,NTP,0000,0000,0000,,for me
+Dialogue: 0,0:33:50.20,0:33:51.00,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:33:51.17,0:33:53.70,*Default,NTP,0000,0000,0000,,we should say that something is an unknown operator
+Dialogue: 0,0:33:56.90,0:33:58.73,*Default,NTP,0000,0000,0000,,christian mark is an unknown operator
+Dialogue: 0,0:33:59.20,0:34:02.53,*Default,NTP,0000,0000,0000,,so we've covered all the cases here using calk apply
+Dialogue: 0,0:34:02.77,0:34:04.20,*Default,NTP,0000,0000,0000,,in order to do all the work
+Dialogue: 0,0:34:04.27,0:34:06.50,*Default,NTP,0000,0000,0000,,of figuring out how to apply an operator
+Dialogue: 0,0:34:10.77,0:34:11.73,*Default,NTP,0000,0000,0000,,so there's just one
+Dialogue: 0,0:34:11.77,0:34:13.70,*Default,NTP,0000,0000,0000,,important piece we have yet to cover
+Dialogue: 0,0:34:13.97,0:34:17.30,*Default,NTP,0000,0000,0000,,and that's the user interface for the interpreter
+Dialogue: 0,0:34:17.47,0:34:18.73,*Default,NTP,0000,0000,0000,,how should it be hate
+Dialogue: 0,0:34:20.77,0:34:23.47,*Default,NTP,0000,0000,0000,,so interpreters typically have what's called a reed
+Dialogue: 0,0:34:23.47,0:34:24.97,*Default,NTP,0000,0000,0000,,eval print loop
+Dialogue: 0,0:34:25.33,0:34:27.77,*Default,NTP,0000,0000,0000,,so the user interface for a programming language
+Dialogue: 0,0:34:27.90,0:34:30.77,*Default,NTP,0000,0000,0000,,is this interactive loop where you enter an expression
+Dialogue: 0,0:34:30.97,0:34:32.67,*Default,NTP,0000,0000,0000,,and then it gets evaluate
+Dialogue: 0,0:34:33.73,0:34:36.93,*Default,NTP,0000,0000,0000,,so here's the process of a redeveled print loop
+Dialogue: 0,0:34:37.33,0:34:39.93,*Default,NTP,0000,0000,0000,,print a prompt telling the user that
+Dialogue: 0,0:34:40.10,0:34:42.07,*Default,NTP,0000,0000,0000,,the computer's ready for its input
+Dialogue: 0,0:34:42.53,0:34:44.50,*Default,NTP,0000,0000,0000,,read text input from the user
+Dialogue: 0,0:34:44.80,0:34:47.60,*Default,NTP,0000,0000,0000,,parse that text into an expression
+Dialogue: 0,0:34:47.97,0:34:49.10,*Default,NTP,0000,0000,0000,,or statement
+Dialogue: 0,0:34:49.93,0:34:51.70,*Default,NTP,0000,0000,0000,,evaluate that expression
+Dialogue: 0,0:34:52.77,0:34:55.50,*Default,NTP,0000,0000,0000,,if any errors occur report those errors
+Dialogue: 0,0:34:55.57,0:34:59.17,*Default,NTP,0000,0000,0000,,otherwise print the value of the expression and repeat
+Dialogue: 0,0:34:59.27,0:35:00.57,*Default,NTP,0000,0000,0000,,printing another prompt
+Dialogue: 0,0:35:01.80,0:35:03.67,*Default,NTP,0000,0000,0000,,so that redevelop print loop
+Dialogue: 0,0:35:03.73,0:35:06.53,*Default,NTP,0000,0000,0000,,is a way that a person can interact with the program
+Dialogue: 0,0:35:06.57,0:35:07.47,*Default,NTP,0000,0000,0000,,ming language
+Dialogue: 0,0:35:07.53,0:35:10.10,*Default,NTP,0000,0000,0000,,by typing expressions into its interpreter
+Dialogue: 0,0:35:10.13,0:35:11.67,*Default,NTP,0000,0000,0000,,and seeing the values
+Dialogue: 0,0:35:13.57,0:35:15.53,*Default,NTP,0000,0000,0000,,and that's exactly what we're doing here
+Dialogue: 0,0:35:16.27,0:35:19.00,*Default,NTP,0000,0000,0000,,so as you can see we type in an expression
+Dialogue: 0,0:35:19.27,0:35:20.50,*Default,NTP,0000,0000,0000,,it gets evaluated
+Dialogue: 0,0:35:20.97,0:35:22.73,*Default,NTP,0000,0000,0000,,what code is actually doing that
+Dialogue: 0,0:35:26.13,0:35:28.73,*Default,NTP,0000,0000,0000,,well we have a read about print loop
+Dialogue: 0,0:35:29.50,0:35:31.20,*Default,NTP,0000,0000,0000,,which forever
+Dialogue: 0,0:35:32.40,0:35:34.87,*Default,NTP,0000,0000,0000,,tries to read in some text from the user
+Dialogue: 0,0:35:35.80,0:35:37.67,*Default,NTP,0000,0000,0000,,and while there's more text remaining
+Dialogue: 0,0:35:38.37,0:35:42.07,*Default,NTP,0000,0000,0000,,it parses the expression using the scheme read function
+Dialogue: 0,0:35:42.77,0:35:44.20,*Default,NTP,0000,0000,0000,,which gives us back an expression
+Dialogue: 0,0:35:44.20,0:35:45.97,*Default,NTP,0000,0000,0000,,represented as a scheme list
+Dialogue: 0,0:35:46.30,0:35:49.13,*Default,NTP,0000,0000,0000,,and then call as caucaval on that expression
+Dialogue: 0,0:35:49.37,0:35:50.93,*Default,NTP,0000,0000,0000,,in order to evaluate it
+Dialogue: 0,0:35:50.97,0:35:52.33,*Default,NTP,0000,0000,0000,,and prints the result
+Dialogue: 0,0:35:52.90,0:35:54.77,*Default,NTP,0000,0000,0000,,now notice that print will only happen
+Dialogue: 0,0:35:54.90,0:35:57.10,*Default,NTP,0000,0000,0000,,if there aren't any exceptions raised during
+Dialogue: 0,0:35:57.10,0:36:00.07,*Default,NTP,0000,0000,0000,,calcive out because if there are exceptions
+Dialogue: 0,0:36:00.10,0:36:02.60,*Default,NTP,0000,0000,0000,,then this won't actually have a valley
+Dialogue: 0,0:36:07.13,0:36:09.93,*Default,NTP,0000,0000,0000,,now throughout the program we raise exceptions
+Dialogue: 0,0:36:09.93,0:36:11.33,*Default,NTP,0000,0000,0000,,exceptions are raised within
+Dialogue: 0,0:36:11.50,0:36:13.50,*Default,NTP,0000,0000,0000,,all aspects of an interpreter
+Dialogue: 0,0:36:13.60,0:36:17.20,*Default,NTP,0000,0000,0000,,lexical analysis syntactic analysis evow and apply
+Dialogue: 0,0:36:18.07,0:36:19.17,*Default,NTP,0000,0000,0000,,so for example
+Dialogue: 0,0:36:19.50,0:36:21.90,*Default,NTP,0000,0000,0000,,when we reach the token two point three point four
+Dialogue: 0,0:36:21.90,0:36:23.50,*Default,NTP,0000,0000,0000,,which is not a well form number
+Dialogue: 0,0:36:23.60,0:36:25.50,*Default,NTP,0000,0000,0000,,we might get a value error
+Dialogue: 0,0:36:26.33,0:36:29.40,*Default,NTP,0000,0000,0000,,syntax analysis is in charge of making sure
+Dialogue: 0,0:36:29.73,0:36:33.00,*Default,NTP,0000,0000,0000,,that structurally our expressions are correct
+Dialogue: 0,0:36:33.00,0:36:36.10,*Default,NTP,0000,0000,0000,,so having an extra close parenthesis over asan
+Dialogue: 0,0:36:36.27,0:36:38.50,*Default,NTP,0000,0000,0000,,syntax errors are an unexpected token
+Dialogue: 0,0:36:39.73,0:36:43.33,*Default,NTP,0000,0000,0000,,eval make sure that we're only dealing with
+Dialogue: 0,0:36:43.60,0:36:45.27,*Default,NTP,0000,0000,0000,,two types of expressions
+Dialogue: 0,0:36:45.33,0:36:47.20,*Default,NTP,0000,0000,0000,,primitive and call expressions
+Dialogue: 0,0:36:47.67,0:36:50.07,*Default,NTP,0000,0000,0000,,and so for instance it can detect things like
+Dialogue: 0,0:36:50.30,0:36:52.40,*Default,NTP,0000,0000,0000,,noticing that there's an empty combination
+Dialogue: 0,0:36:52.53,0:36:54.77,*Default,NTP,0000,0000,0000,,which is not a number or a call expression
+Dialogue: 0,0:36:56.17,0:36:57.00,*Default,NTP,0000,0000,0000,,and then apply
+Dialogue: 0,0:36:57.00,0:36:59.27,*Default,NTP,0000,0000,0000,,actually does quite a bit of error checking
+Dialogue: 0,0:36:59.33,0:37:00.77,*Default,NTP,0000,0000,0000,,because it actually knows
+Dialogue: 0,0:37:00.87,0:37:02.93,*Default,NTP,0000,0000,0000,,which operator is being applied
+Dialogue: 0,0:37:02.97,0:37:05.17,*Default,NTP,0000,0000,0000,,and what are the rules for those operators
+Dialogue: 0,0:37:05.37,0:37:07.57,*Default,NTP,0000,0000,0000,,so it can find that if there are no arguments to minus
+Dialogue: 0,0:37:07.57,0:37:08.90,*Default,NTP,0000,0000,0000,,we should raise a type error
+Dialogue: 0,0:37:09.10,0:37:11.57,*Default,NTP,0000,0000,0000,,that says minus requires at least one argument
+Dialogue: 0,0:37:13.70,0:37:15.00,*Default,NTP,0000,0000,0000,,so in the version of
+Dialogue: 0,0:37:15.27,0:37:18.37,*Default,NTP,0000,0000,0000,,calculator that we've built all of these things apply
+Dialogue: 0,0:37:19.27,0:37:20.67,*Default,NTP,0000,0000,0000,,we get a value error
+Dialogue: 0,0:37:20.90,0:37:22.53,*Default,NTP,0000,0000,0000,,we get a syntax error
+Dialogue: 0,0:37:22.77,0:37:24.27,*Default,NTP,0000,0000,0000,,we can get a type bear
+Dialogue: 0,0:37:24.70,0:37:26.50,*Default,NTP,0000,0000,0000,,and we can get a type bear
+Dialogue: 0,0:37:26.50,0:37:27.37,*Default,NTP,0000,0000,0000,,that tells me
+Dialogue: 0,0:37:27.37,0:37:30.17,*Default,NTP,0000,0000,0000,,specifically for this operator that I've chosen
+Dialogue: 0,0:37:30.27,0:37:32.10,*Default,NTP,0000,0000,0000,,I need at least one argument
+Dialogue: 0,0:37:33.73,0:37:35.07,*Default,NTP,0000,0000,0000,,and if you look at the source code
+Dialogue: 0,0:37:35.07,0:37:36.33,*Default,NTP,0000,0000,0000,,these are raised all over the place
+Dialogue: 0,0:37:36.33,0:37:38.30,*Default,NTP,0000,0000,0000,,oh here's a raising of the tight bear
+Dialogue: 0,0:37:39.27,0:37:40.53,*Default,NTP,0000,0000,0000,,here's another type bear
+Dialogue: 0,0:37:40.77,0:37:43.27,*Default,NTP,0000,0000,0000,,but some of these are even in different files
+Dialogue: 0,0:37:43.97,0:37:44.77,*Default,NTP,0000,0000,0000,,and some of them
+Dialogue: 0,0:37:44.77,0:37:47.30,*Default,NTP,0000,0000,0000,,will actually be raised by python itself
+Dialogue: 0,0:37:47.30,0:37:49.73,*Default,NTP,0000,0000,0000,,so what happens if I divide one by zero
+Dialogue: 0,0:37:49.87,0:37:51.67,*Default,NTP,0000,0000,0000,,then I'll get a zero division error
+Dialogue: 0,0:37:51.90,0:37:53.40,*Default,NTP,0000,0000,0000,,which is something that happens
+Dialogue: 0,0:37:53.50,0:37:56.50,*Default,NTP,0000,0000,0000,,when you use the built in division function
+Dialogue: 0,0:37:56.57,0:37:58.40,*Default,NTP,0000,0000,0000,,that we're using to implement divide
+Dialogue: 0,0:37:58.40,0:37:59.33,*Default,NTP,0000,0000,0000,,so divide
+Dialogue: 0,0:38:00.13,0:38:03.87,*Default,NTP,0000,0000,0000,,is carried out by the built in division
+Dialogue: 0,0:38:04.57,0:38:07.10,*Default,NTP,0000,0000,0000,,or the built intrudive operator
+Dialogue: 0,0:38:07.90,0:38:09.50,*Default,NTP,0000,0000,0000,,and both of those are able to raise
+Dialogue: 0,0:38:09.50,0:38:11.60,*Default,NTP,0000,0000,0000,,zero division errors when they run into trouble
+Dialogue: 0,0:38:15.90,0:38:19.07,*Default,NTP,0000,0000,0000,,now handling exceptions happens all in one place
+Dialogue: 0,0:38:19.07,0:38:20.67,*Default,NTP,0000,0000,0000,,in contrast to raising exceptions
+Dialogue: 0,0:38:20.67,0:38:22.10,*Default,NTP,0000,0000,0000,,which happens all over the place
+Dialogue: 0,0:38:22.97,0:38:24.40,*Default,NTP,0000,0000,0000,,so an interactive interpreter
+Dialogue: 0,0:38:24.70,0:38:26.93,*Default,NTP,0000,0000,0000,,should print information about each error
+Dialogue: 0,0:38:27.27,0:38:28.73,*Default,NTP,0000,0000,0000,,so that when those errors occur
+Dialogue: 0,0:38:29.13,0:38:31.37,*Default,NTP,0000,0000,0000,,the programmer whose generated them
+Dialogue: 0,0:38:31.47,0:38:32.90,*Default,NTP,0000,0000,0000,,can figure out what to change
+Dialogue: 0,0:38:32.90,0:38:34.40,*Default,NTP,0000,0000,0000,,in order to get rid of the error
+Dialogue: 0,0:38:35.20,0:38:37.53,*Default,NTP,0000,0000,0000,,and a well designed interactive interpreter
+Dialogue: 0,0:38:37.73,0:38:39.17,*Default,NTP,0000,0000,0000,,should never really halt
+Dialogue: 0,0:38:40.13,0:38:41.73,*Default,NTP,0000,0000,0000,,it should stop
+Dialogue: 0,0:38:42.40,0:38:44.40,*Default,NTP,0000,0000,0000,,evaluating the current expression
+Dialogue: 0,0:38:44.40,0:38:45.90,*Default,NTP,0000,0000,0000,,and print out the arrow
+Dialogue: 0,0:38:46.27,0:38:49.30,*Default,NTP,0000,0000,0000,,but then give the programmer a chance
+Dialogue: 0,0:38:49.57,0:38:51.50,*Default,NTP,0000,0000,0000,,to revise what they've done
+Dialogue: 0,0:38:51.93,0:38:54.20,*Default,NTP,0000,0000,0000,,so the user should have the opportunity to try
+Dialogue: 0,0:38:54.20,0:38:55.73,*Default,NTP,0000,0000,0000,,again in the current environment
+Dialogue: 0,0:38:55.90,0:38:57.97,*Default,NTP,0000,0000,0000,,instead of having the whole program crash
+Dialogue: 0,0:39:00.77,0:39:02.67,*Default,NTP,0000,0000,0000,,and that's exactly what happens here
+Dialogue: 0,0:39:03.00,0:39:04.37,*Default,NTP,0000,0000,0000,,so as you can see
+Dialogue: 0,0:39:04.37,0:39:07.37,*Default,NTP,0000,0000,0000,,I'm able to continue entering expressions
+Dialogue: 0,0:39:07.57,0:39:10.70,*Default,NTP,0000,0000,0000,,the only way I can quit out of this game calculator
+Dialogue: 0,0:39:10.90,0:39:13.60,*Default,NTP,0000,0000,0000,,is by pressing in my
+Dialogue: 0,0:39:14.00,0:39:17.40,*Default,NTP,0000,0000,0000,,system control d which says this is the end of the file
+Dialogue: 0,0:39:18.10,0:39:19.97,*Default,NTP,0000,0000,0000,,and then it will say calculation is complete
+Dialogue: 0,0:39:20.13,0:39:22.10,*Default,NTP,0000,0000,0000,,and finally the program will end
+Dialogue: 0,0:39:23.27,0:39:25.57,*Default,NTP,0000,0000,0000,,now how do we control for all this
+Dialogue: 0,0:39:25.57,0:39:31.13,*Default,NTP,0000,0000,0000,,well we put both the parsing and evaluation
+Dialogue: 0,0:39:31.67,0:39:33.73,*Default,NTP,0000,0000,0000,,within a tri statement
+Dialogue: 0,0:39:34.17,0:39:36.93,*Default,NTP,0000,0000,0000,,that knows to look for syntax
+Dialogue: 0,0:39:36.93,0:39:39.17,*Default,NTP,0000,0000,0000,,type value and zero division errors
+Dialogue: 0,0:39:39.17,0:39:40.57,*Default,NTP,0000,0000,0000,,all the things that can occur
+Dialogue: 0,0:39:40.93,0:39:42.60,*Default,NTP,0000,0000,0000,,and just prints those errors out
+Dialogue: 0,0:39:42.90,0:39:45.00,*Default,NTP,0000,0000,0000,,and then since this is all embedded within
+Dialogue: 0,0:39:45.10,0:39:46.90,*Default,NTP,0000,0000,0000,,the suite of a while statement
+Dialogue: 0,0:39:46.97,0:39:48.73,*Default,NTP,0000,0000,0000,,we'll go back and try again
+Dialogue: 0,0:39:49.57,0:39:52.27,*Default,NTP,0000,0000,0000,,so the only way to stop is to reach the end of a file
+Dialogue: 0,0:39:52.47,0:39:54.90,*Default,NTP,0000,0000,0000,,or a keyboard interrupt at which point it will print
+Dialogue: 0,0:39:54.90,0:39:56.30,*Default,NTP,0000,0000,0000,,calculation is complete

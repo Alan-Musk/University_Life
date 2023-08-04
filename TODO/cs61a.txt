@@ -1,14 +1,8 @@
-2. Hog Strategy/Contest
-3. hw02: Q4
-4. lab04 Q5
 5. disc4 Q1.2 Q2.3
-6. disc5 Q1.4
 7. Lecture 17 Q&A 后部分
 8. 2020 Summer Midterm 2
 9. Lecture 16 Q&A 后部分
 10. 4.2.9 4.2.10
 11. Lecture 18 QA 后部分
-12. HW 3 Q5, Q6
-13. WEEK 7 Resources Mutable Trees Question 10
 14. Lab08 Q4,Q5,Q6
 15. Project 3 Optional Question 4,5

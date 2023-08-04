@@ -1,0 +1,886 @@
+[Script Info]
+Title: Lecture 29. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=69&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.16,0:00:03.12,*Default,NTP,0000,0000,0000,,61a lecture 29 q a
+Dialogue: 0,0:00:03.12,0:00:05.12,*Default,NTP,0000,0000,0000,,hey john while we wait for somebody it's
+Dialogue: 0,0:00:05.12,0:00:06.48,*Default,NTP,0000,0000,0000,,been a while since i've written
+Dialogue: 0,0:00:06.48,0:00:08.32,*Default,NTP,0000,0000,0000,,uh a compiling interpreter but i
+Dialogue: 0,0:00:08.32,0:00:10.80,*Default,NTP,0000,0000,0000,,remember we used to use these um
+Dialogue: 0,0:00:10.80,0:00:13.44,*Default,NTP,0000,0000,0000,,it was lex and yak and flex and bison
+Dialogue: 0,0:00:13.44,0:00:14.32,*Default,NTP,0000,0000,0000,,the sort of you
+Dialogue: 0,0:00:14.32,0:00:17.04,*Default,NTP,0000,0000,0000,,where you can specify the grammar and
+Dialogue: 0,0:00:17.04,0:00:18.80,*Default,NTP,0000,0000,0000,,then it would build it for you is that
+Dialogue: 0,0:00:18.80,0:00:19.36,*Default,NTP,0000,0000,0000,,still
+Dialogue: 0,0:00:19.36,0:00:22.32,*Default,NTP,0000,0000,0000,,sort of popular in use yeah so we're
+Dialogue: 0,0:00:22.32,0:00:24.48,*Default,NTP,0000,0000,0000,,doing a very unusual thing in today's
+Dialogue: 0,0:00:24.48,0:00:25.92,*Default,NTP,0000,0000,0000,,lecture which is to describe
+Dialogue: 0,0:00:25.92,0:00:29.04,*Default,NTP,0000,0000,0000,,how you would write a parser
+Dialogue: 0,0:00:29.04,0:00:34.00,*Default,NTP,0000,0000,0000,,kind of from scratch yeah and um
+Dialogue: 0,0:00:34.00,0:00:37.04,*Default,NTP,0000,0000,0000,,right so so these other tools
+Dialogue: 0,0:00:37.04,0:00:39.68,*Default,NTP,0000,0000,0000,,aren't kind of procedural instead you
+Dialogue: 0,0:00:39.68,0:00:41.52,*Default,NTP,0000,0000,0000,,just describe the grammar
+Dialogue: 0,0:00:41.52,0:00:44.48,*Default,NTP,0000,0000,0000,,and then there's a generator that builds
+Dialogue: 0,0:00:44.48,0:00:45.52,*Default,NTP,0000,0000,0000,,the parser for you
+Dialogue: 0,0:00:45.52,0:00:46.80,*Default,NTP,0000,0000,0000,,now if you actually looked at that
+Dialogue: 0,0:00:46.80,0:00:48.80,*Default,NTP,0000,0000,0000,,parser it would look kind of like the
+Dialogue: 0,0:00:48.80,0:00:49.68,*Default,NTP,0000,0000,0000,,code that
+Dialogue: 0,0:00:49.68,0:00:52.48,*Default,NTP,0000,0000,0000,,that we looked at today so um so that's
+Dialogue: 0,0:00:52.48,0:00:54.24,*Default,NTP,0000,0000,0000,,kind of what how a parser works but
+Dialogue: 0,0:00:54.24,0:00:55.68,*Default,NTP,0000,0000,0000,,do people actually sit there and write
+Dialogue: 0,0:00:55.68,0:00:57.44,*Default,NTP,0000,0000,0000,,parsers no especially for something as
+Dialogue: 0,0:00:57.44,0:00:58.00,*Default,NTP,0000,0000,0000,,complicated
+Dialogue: 0,0:00:58.00,0:01:01.20,*Default,NTP,0000,0000,0000,,as python um you just wouldn't do it
+Dialogue: 0,0:01:01.20,0:01:01.68,*Default,NTP,0000,0000,0000,,because
+Dialogue: 0,0:01:01.68,0:01:04.48,*Default,NTP,0000,0000,0000,,there's too much like chance for error
+Dialogue: 0,0:01:04.48,0:01:05.60,*Default,NTP,0000,0000,0000,,right right so i think there's
+Dialogue: 0,0:01:05.60,0:01:06.80,*Default,NTP,0000,0000,0000,,there's like there's another level of
+Dialogue: 0,0:01:06.80,0:01:08.24,*Default,NTP,0000,0000,0000,,abstraction there's like you know it's
+Dialogue: 0,0:01:08.24,0:01:09.92,*Default,NTP,0000,0000,0000,,sort of cool like there's this
+Dialogue: 0,0:01:09.92,0:01:12.64,*Default,NTP,0000,0000,0000,,code that where you can have this higher
+Dialogue: 0,0:01:12.64,0:01:14.56,*Default,NTP,0000,0000,0000,,level description of your language that
+Dialogue: 0,0:01:14.56,0:01:16.08,*Default,NTP,0000,0000,0000,,then writes the parser that then
+Dialogue: 0,0:01:16.08,0:01:18.72,*Default,NTP,0000,0000,0000,,compiles or interprets the code
+Dialogue: 0,0:01:18.72,0:01:21.84,*Default,NTP,0000,0000,0000,,yeah i mean basically you know the field
+Dialogue: 0,0:01:21.84,0:01:23.84,*Default,NTP,0000,0000,0000,,of programming languages attract a lot
+Dialogue: 0,0:01:23.84,0:01:25.28,*Default,NTP,0000,0000,0000,,of really good programmers you can
+Dialogue: 0,0:01:25.28,0:01:26.48,*Default,NTP,0000,0000,0000,,imagine why so
+Dialogue: 0,0:01:26.48,0:01:28.88,*Default,NTP,0000,0000,0000,,there's really nice tools for that yeah
+Dialogue: 0,0:01:28.88,0:01:30.80,*Default,NTP,0000,0000,0000,,hey can you tell me what so the last
+Dialogue: 0,0:01:30.80,0:01:32.88,*Default,NTP,0000,0000,0000,,tools that i use were flex and bison has
+Dialogue: 0,0:01:32.88,0:01:33.28,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:01:33.28,0:01:34.80,*Default,NTP,0000,0000,0000,,is that still the popular ones are
+Dialogue: 0,0:01:34.80,0:01:36.72,*Default,NTP,0000,0000,0000,,things that moved on since then
+Dialogue: 0,0:01:36.72,0:01:38.72,*Default,NTP,0000,0000,0000,,i don't know it's a good question i
+Dialogue: 0,0:01:38.72,0:01:40.00,*Default,NTP,0000,0000,0000,,think they're still around
+Dialogue: 0,0:01:40.00,0:01:42.16,*Default,NTP,0000,0000,0000,,but um but there might be new ones i i
+Dialogue: 0,0:01:42.16,0:01:43.68,*Default,NTP,0000,0000,0000,,don't think that the
+Dialogue: 0,0:01:43.68,0:01:45.92,*Default,NTP,0000,0000,0000,,ideas have changed too much yeah i think
+Dialogue: 0,0:01:45.92,0:01:47.36,*Default,NTP,0000,0000,0000,,that's my understanding too but it's
+Dialogue: 0,0:01:47.36,0:01:48.64,*Default,NTP,0000,0000,0000,,been a little while
+Dialogue: 0,0:01:48.64,0:01:51.76,*Default,NTP,0000,0000,0000,,okay so the question was in scheme read
+Dialogue: 0,0:01:51.76,0:01:54.24,*Default,NTP,0000,0000,0000,,there's a pop and shouldn't that pop
+Dialogue: 0,0:01:54.24,0:01:55.92,*Default,NTP,0000,0000,0000,,remove something from the end rather
+Dialogue: 0,0:01:55.92,0:01:57.12,*Default,NTP,0000,0000,0000,,than the beginning
+Dialogue: 0,0:01:57.12,0:02:00.56,*Default,NTP,0000,0000,0000,,well maybe pop was a bad name for it
+Dialogue: 0,0:02:00.56,0:02:02.96,*Default,NTP,0000,0000,0000,,but what this source object is is not
+Dialogue: 0,0:02:02.96,0:02:04.80,*Default,NTP,0000,0000,0000,,actually a python list
+Dialogue: 0,0:02:04.80,0:02:09.84,*Default,NTP,0000,0000,0000,,but instead it's this um
+Dialogue: 0,0:02:10.00,0:02:11.84,*Default,NTP,0000,0000,0000,,where is it it's this thing called a
+Dialogue: 0,0:02:11.84,0:02:13.36,*Default,NTP,0000,0000,0000,,buffer oh i guess it's in a different
+Dialogue: 0,0:02:13.36,0:02:14.16,*Default,NTP,0000,0000,0000,,file
+Dialogue: 0,0:02:14.16,0:02:18.40,*Default,NTP,0000,0000,0000,,and this buffer has a notion of pop
+Dialogue: 0,0:02:18.40,0:02:20.48,*Default,NTP,0000,0000,0000,,that doesn't remove things from the end
+Dialogue: 0,0:02:20.48,0:02:22.16,*Default,NTP,0000,0000,0000,,it removes them from the beginning
+Dialogue: 0,0:02:22.16,0:02:24.88,*Default,NTP,0000,0000,0000,,so maybe we should have cop told called
+Dialogue: 0,0:02:24.88,0:02:26.24,*Default,NTP,0000,0000,0000,,it something else but that's the answer
+Dialogue: 0,0:02:26.24,0:02:27.20,*Default,NTP,0000,0000,0000,,to the question
+Dialogue: 0,0:02:27.20,0:02:29.68,*Default,NTP,0000,0000,0000,,why is it the case that popping is
+Dialogue: 0,0:02:29.68,0:02:31.20,*Default,NTP,0000,0000,0000,,removing stuff from the beginning of the
+Dialogue: 0,0:02:31.20,0:02:31.76,*Default,NTP,0000,0000,0000,,line
+Dialogue: 0,0:02:31.76,0:02:33.28,*Default,NTP,0000,0000,0000,,it's because what you're removing from
+Dialogue: 0,0:02:33.28,0:02:35.28,*Default,NTP,0000,0000,0000,,is not a list but a buffer which
+Dialogue: 0,0:02:35.28,0:02:37.28,*Default,NTP,0000,0000,0000,,basically tells you about the future
+Dialogue: 0,0:02:37.28,0:02:38.72,*Default,NTP,0000,0000,0000,,and when you pop something from it you
+Dialogue: 0,0:02:38.72,0:02:40.32,*Default,NTP,0000,0000,0000,,get the first thing
+Dialogue: 0,0:02:40.32,0:02:42.88,*Default,NTP,0000,0000,0000,,and sondra that the term pop and push is
+Dialogue: 0,0:02:42.88,0:02:43.84,*Default,NTP,0000,0000,0000,,generally referred to
+Dialogue: 0,0:02:43.84,0:02:46.24,*Default,NTP,0000,0000,0000,,stacks and cues and pop i always think
+Dialogue: 0,0:02:46.24,0:02:47.20,*Default,NTP,0000,0000,0000,,of pop is
+Dialogue: 0,0:02:47.20,0:02:49.12,*Default,NTP,0000,0000,0000,,what's at the very top of something but
+Dialogue: 0,0:02:49.12,0:02:51.36,*Default,NTP,0000,0000,0000,,it i think it is overloaded depending on
+Dialogue: 0,0:02:51.36,0:02:53.76,*Default,NTP,0000,0000,0000,,what the underlying data structure is
+Dialogue: 0,0:02:53.76,0:02:55.44,*Default,NTP,0000,0000,0000,,right we could definitely blame python
+Dialogue: 0,0:02:55.44,0:02:57.20,*Default,NTP,0000,0000,0000,,here which has a kind of unconventional
+Dialogue: 0,0:02:57.20,0:03:00.24,*Default,NTP,0000,0000,0000,,notion of popping being from the end but
+Dialogue: 0,0:03:00.24,0:03:02.48,*Default,NTP,0000,0000,0000,,that's okay it's a question of where you
+Dialogue: 0,0:03:02.48,0:03:03.28,*Default,NTP,0000,0000,0000,,define the fro
+Dialogue: 0,0:03:03.28,0:03:05.04,*Default,NTP,0000,0000,0000,,like you the end doesn't have to be that
+Dialogue: 0,0:03:05.04,0:03:06.72,*Default,NTP,0000,0000,0000,,and anyway it doesn't matter but yes
+Dialogue: 0,0:03:06.72,0:03:08.32,*Default,NTP,0000,0000,0000,,it's from the front in this particular
+Dialogue: 0,0:03:08.32,0:03:10.48,*Default,NTP,0000,0000,0000,,case so we didn't really go over this in
+Dialogue: 0,0:03:10.48,0:03:11.84,*Default,NTP,0000,0000,0000,,a lecture but it is definitely worth
+Dialogue: 0,0:03:11.84,0:03:13.52,*Default,NTP,0000,0000,0000,,looking at this class buffer the
+Dialogue: 0,0:03:13.52,0:03:15.12,*Default,NTP,0000,0000,0000,,implementation doesn't matter much but
+Dialogue: 0,0:03:15.12,0:03:16.48,*Default,NTP,0000,0000,0000,,its behavior does
+Dialogue: 0,0:03:16.48,0:03:19.44,*Default,NTP,0000,0000,0000,,basically you get this um iterator over
+Dialogue: 0,0:03:19.44,0:03:21.52,*Default,NTP,0000,0000,0000,,a bunch of symbols like open parentheses
+Dialogue: 0,0:03:21.52,0:03:22.40,*Default,NTP,0000,0000,0000,,and pluses
+Dialogue: 0,0:03:22.40,0:03:24.56,*Default,NTP,0000,0000,0000,,and numbers and close parentheses and
+Dialogue: 0,0:03:24.56,0:03:25.60,*Default,NTP,0000,0000,0000,,stuff like that
+Dialogue: 0,0:03:25.60,0:03:28.80,*Default,NTP,0000,0000,0000,,and then the goal here is to give you
+Dialogue: 0,0:03:28.80,0:03:29.76,*Default,NTP,0000,0000,0000,,the next thing
+Dialogue: 0,0:03:29.76,0:03:31.84,*Default,NTP,0000,0000,0000,,and remove it or just peek at the next
+Dialogue: 0,0:03:31.84,0:03:33.92,*Default,NTP,0000,0000,0000,,thing but not remove it yet
+Dialogue: 0,0:03:33.92,0:03:35.36,*Default,NTP,0000,0000,0000,,and there's a way to print it out which
+Dialogue: 0,0:03:35.36,0:03:38.80,*Default,NTP,0000,0000,0000,,is used in some error messages
+Dialogue: 0,0:03:38.96,0:03:42.08,*Default,NTP,0000,0000,0000,,yeah great question so the question is
+Dialogue: 0,0:03:42.08,0:03:45.60,*Default,NTP,0000,0000,0000,,in scheme read
+Dialogue: 0,0:03:45.60,0:03:49.20,*Default,NTP,0000,0000,0000,,you hit a or for parsing in general
+Dialogue: 0,0:03:49.20,0:03:51.36,*Default,NTP,0000,0000,0000,,you hit a base case when you've reached
+Dialogue: 0,0:03:51.36,0:03:52.80,*Default,NTP,0000,0000,0000,,a symbol or a number
+Dialogue: 0,0:03:52.80,0:03:54.64,*Default,NTP,0000,0000,0000,,something that's not a combination and
+Dialogue: 0,0:03:54.64,0:03:56.48,*Default,NTP,0000,0000,0000,,not a composition of stuff but just like
+Dialogue: 0,0:03:56.48,0:03:58.00,*Default,NTP,0000,0000,0000,,one thing
+Dialogue: 0,0:03:58.00,0:03:59.36,*Default,NTP,0000,0000,0000,,what happens when you reach that base
+Dialogue: 0,0:03:59.36,0:04:00.96,*Default,NTP,0000,0000,0000,,case how does it kind of work its way to
+Dialogue: 0,0:04:00.96,0:04:03.20,*Default,NTP,0000,0000,0000,,the next open parenthesis
+Dialogue: 0,0:04:03.20,0:04:04.72,*Default,NTP,0000,0000,0000,,so let's look at an example i'll try to
+Dialogue: 0,0:04:04.72,0:04:06.24,*Default,NTP,0000,0000,0000,,answer the question if you have
+Dialogue: 0,0:04:06.24,0:04:06.88,*Default,NTP,0000,0000,0000,,something like
+Dialogue: 0,0:04:06.88,0:04:09.20,*Default,NTP,0000,0000,0000,,plus
+Dialogue: 0,0:04:10.00,0:04:14.88,*Default,NTP,0000,0000,0000,,1 minus 2 3 whatever
+Dialogue: 0,0:04:14.88,0:04:16.16,*Default,NTP,0000,0000,0000,,you're trying to figure out what this
+Dialogue: 0,0:04:16.16,0:04:18.08,*Default,NTP,0000,0000,0000,,thing is right now it's just
+Dialogue: 0,0:04:18.08,0:04:20.08,*Default,NTP,0000,0000,0000,,a bunch of symbols i'm going to separate
+Dialogue: 0,0:04:20.08,0:04:22.24,*Default,NTP,0000,0000,0000,,them by spaces so that you can see them
+Dialogue: 0,0:04:22.24,0:04:23.12,*Default,NTP,0000,0000,0000,,all
+Dialogue: 0,0:04:23.12,0:04:25.84,*Default,NTP,0000,0000,0000,,so now we have one two three four five
+Dialogue: 0,0:04:25.84,0:04:26.80,*Default,NTP,0000,0000,0000,,six seven eight
+Dialogue: 0,0:04:26.80,0:04:29.52,*Default,NTP,0000,0000,0000,,nine things to worry about the original
+Dialogue: 0,0:04:29.52,0:04:30.32,*Default,NTP,0000,0000,0000,,call
+Dialogue: 0,0:04:30.32,0:04:33.04,*Default,NTP,0000,0000,0000,,will be to effectively the whole thing
+Dialogue: 0,0:04:33.04,0:04:33.36,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:04:33.36,0:04:36.48,*Default,NTP,0000,0000,0000,,it begins with an open parenthesis so we
+Dialogue: 0,0:04:36.48,0:04:38.64,*Default,NTP,0000,0000,0000,,make a recursive call
+Dialogue: 0,0:04:38.64,0:04:43.28,*Default,NTP,0000,0000,0000,,on uh the rest
+Dialogue: 0,0:04:43.28,0:04:46.32,*Default,NTP,0000,0000,0000,,so um
+Dialogue: 0,0:04:46.32,0:04:48.16,*Default,NTP,0000,0000,0000,,with an original call to scheme read
+Dialogue: 0,0:04:48.16,0:04:51.12,*Default,NTP,0000,0000,0000,,we've begun another call
+Dialogue: 0,0:04:51.12,0:04:54.84,*Default,NTP,0000,0000,0000,,which by the way
+Dialogue: 0,0:04:54.84,0:04:57.28,*Default,NTP,0000,0000,0000,,um if you look at the structure of this
+Dialogue: 0,0:04:57.28,0:04:58.88,*Default,NTP,0000,0000,0000,,thing it doesn't actually call scheme
+Dialogue: 0,0:04:58.88,0:05:00.08,*Default,NTP,0000,0000,0000,,read it calls
+Dialogue: 0,0:05:00.08,0:05:01.84,*Default,NTP,0000,0000,0000,,read tail which basically just calls
+Dialogue: 0,0:05:01.84,0:05:03.36,*Default,NTP,0000,0000,0000,,scheme read a bunch of times until it
+Dialogue: 0,0:05:03.36,0:05:05.84,*Default,NTP,0000,0000,0000,,finds the matching closing parenthesis
+Dialogue: 0,0:05:05.84,0:05:08.96,*Default,NTP,0000,0000,0000,,so that's going to be the story is that
+Dialogue: 0,0:05:08.96,0:05:10.96,*Default,NTP,0000,0000,0000,,once you see an open parenthesis you
+Dialogue: 0,0:05:10.96,0:05:13.52,*Default,NTP,0000,0000,0000,,keep reading the next thing
+Dialogue: 0,0:05:13.52,0:05:15.68,*Default,NTP,0000,0000,0000,,until you find a matching closing
+Dialogue: 0,0:05:15.68,0:05:16.96,*Default,NTP,0000,0000,0000,,parenthesis
+Dialogue: 0,0:05:16.96,0:05:18.80,*Default,NTP,0000,0000,0000,,if when you read the next thing it's a
+Dialogue: 0,0:05:18.80,0:05:21.04,*Default,NTP,0000,0000,0000,,base case well that was in another
+Dialogue: 0,0:05:21.04,0:05:22.16,*Default,NTP,0000,0000,0000,,recursive call
+Dialogue: 0,0:05:22.16,0:05:24.16,*Default,NTP,0000,0000,0000,,you made a bit you reached a base case
+Dialogue: 0,0:05:24.16,0:05:26.00,*Default,NTP,0000,0000,0000,,you return like oh this is just a plus
+Dialogue: 0,0:05:26.00,0:05:29.20,*Default,NTP,0000,0000,0000,,symbol but where do you return to
+Dialogue: 0,0:05:29.20,0:05:32.08,*Default,NTP,0000,0000,0000,,you return to the process where you were
+Dialogue: 0,0:05:32.08,0:05:33.12,*Default,NTP,0000,0000,0000,,going to
+Dialogue: 0,0:05:33.12,0:05:35.52,*Default,NTP,0000,0000,0000,,read all this stuff until you found the
+Dialogue: 0,0:05:35.52,0:05:37.28,*Default,NTP,0000,0000,0000,,next closing parenthesis
+Dialogue: 0,0:05:37.28,0:05:38.88,*Default,NTP,0000,0000,0000,,so that's kind of the story is like when
+Dialogue: 0,0:05:38.88,0:05:41.12,*Default,NTP,0000,0000,0000,,you hit the base case you return
+Dialogue: 0,0:05:41.12,0:05:43.28,*Default,NTP,0000,0000,0000,,but where you're returning to is an
+Dialogue: 0,0:05:43.28,0:05:44.64,*Default,NTP,0000,0000,0000,,ongoing reading
+Dialogue: 0,0:05:44.64,0:05:47.44,*Default,NTP,0000,0000,0000,,of some long expression that you know
+Dialogue: 0,0:05:47.44,0:05:49.12,*Default,NTP,0000,0000,0000,,started with an open parenthesis because
+Dialogue: 0,0:05:49.12,0:05:50.56,*Default,NTP,0000,0000,0000,,you read it at the beginning
+Dialogue: 0,0:05:50.56,0:05:52.16,*Default,NTP,0000,0000,0000,,and you're just kind of going to keep
+Dialogue: 0,0:05:52.16,0:05:54.16,*Default,NTP,0000,0000,0000,,reading stuff until you find a closing
+Dialogue: 0,0:05:54.16,0:05:56.08,*Default,NTP,0000,0000,0000,,parenthesis
+Dialogue: 0,0:05:56.08,0:05:58.08,*Default,NTP,0000,0000,0000,,uh how do we peek at the next item in an
+Dialogue: 0,0:05:58.08,0:06:01.12,*Default,NTP,0000,0000,0000,,iterator without removing it
+Dialogue: 0,0:06:01.12,0:06:03.36,*Default,NTP,0000,0000,0000,,oh great question the answer is you
+Dialogue: 0,0:06:03.36,0:06:06.32,*Default,NTP,0000,0000,0000,,can't which is why we have this buffer
+Dialogue: 0,0:06:06.32,0:06:08.80,*Default,NTP,0000,0000,0000,,class that we provided so we can just
+Dialogue: 0,0:06:08.80,0:06:11.28,*Default,NTP,0000,0000,0000,,take a look at it really quickly
+Dialogue: 0,0:06:11.28,0:06:13.28,*Default,NTP,0000,0000,0000,,it kind of turns stuff into lists as you
+Dialogue: 0,0:06:13.28,0:06:14.56,*Default,NTP,0000,0000,0000,,go
+Dialogue: 0,0:06:14.56,0:06:16.80,*Default,NTP,0000,0000,0000,,so you get a bunch of iterators coming
+Dialogue: 0,0:06:16.80,0:06:17.84,*Default,NTP,0000,0000,0000,,in
+Dialogue: 0,0:06:17.84,0:06:19.76,*Default,NTP,0000,0000,0000,,but what it does is it just stores
+Dialogue: 0,0:06:19.76,0:06:21.68,*Default,NTP,0000,0000,0000,,everything that it's seen
+Dialogue: 0,0:06:21.68,0:06:24.64,*Default,NTP,0000,0000,0000,,in this thing called lines and when it
+Dialogue: 0,0:06:24.64,0:06:27.36,*Default,NTP,0000,0000,0000,,needs to see something new
+Dialogue: 0,0:06:27.36,0:06:30.40,*Default,NTP,0000,0000,0000,,it will go ahead and get more stuff from
+Dialogue: 0,0:06:30.40,0:06:32.40,*Default,NTP,0000,0000,0000,,the source iterators
+Dialogue: 0,0:06:32.40,0:06:35.84,*Default,NTP,0000,0000,0000,,but um
+Dialogue: 0,0:06:36.64,0:06:38.56,*Default,NTP,0000,0000,0000,,but not necessarily advanced so you kind
+Dialogue: 0,0:06:38.56,0:06:40.40,*Default,NTP,0000,0000,0000,,of like keep track of the whole list of
+Dialogue: 0,0:06:40.40,0:06:41.44,*Default,NTP,0000,0000,0000,,things that you've seen
+Dialogue: 0,0:06:41.44,0:06:43.92,*Default,NTP,0000,0000,0000,,and where you are and that's the story
+Dialogue: 0,0:06:43.92,0:06:45.28,*Default,NTP,0000,0000,0000,,is like if
+Dialogue: 0,0:06:45.28,0:06:47.28,*Default,NTP,0000,0000,0000,,if you have a data structure that allows
+Dialogue: 0,0:06:47.28,0:06:49.52,*Default,NTP,0000,0000,0000,,you to peek at something without popping
+Dialogue: 0,0:06:49.52,0:06:51.68,*Default,NTP,0000,0000,0000,,it off then you can do it but a standard
+Dialogue: 0,0:06:51.68,0:06:52.88,*Default,NTP,0000,0000,0000,,iterator wouldn't be able to do it for
+Dialogue: 0,0:06:52.88,0:06:53.76,*Default,NTP,0000,0000,0000,,you
+Dialogue: 0,0:06:53.76,0:06:55.28,*Default,NTP,0000,0000,0000,,you could read this whole implementation
+Dialogue: 0,0:06:55.28,0:06:57.20,*Default,NTP,0000,0000,0000,,if you want it's like a little bit long
+Dialogue: 0,0:06:57.20,0:06:58.64,*Default,NTP,0000,0000,0000,,and the reason it's a little bit long is
+Dialogue: 0,0:06:58.64,0:07:00.40,*Default,NTP,0000,0000,0000,,so that it can print out
+Dialogue: 0,0:07:00.40,0:07:02.32,*Default,NTP,0000,0000,0000,,the whole code and where you were in the
+Dialogue: 0,0:07:02.32,0:07:06.08,*Default,NTP,0000,0000,0000,,code which is helpful for error messages
+Dialogue: 0,0:07:06.56,0:07:08.24,*Default,NTP,0000,0000,0000,,john how is this different than a stack
+Dialogue: 0,0:07:08.24,0:07:09.92,*Default,NTP,0000,0000,0000,,or a queue
+Dialogue: 0,0:07:09.92,0:07:13.20,*Default,NTP,0000,0000,0000,,um well in this case we're never
+Dialogue: 0,0:07:13.20,0:07:16.48,*Default,NTP,0000,0000,0000,,really adding stuff like we're removing
+Dialogue: 0,0:07:16.48,0:07:17.92,*Default,NTP,0000,0000,0000,,stuff from the beginning and we're
+Dialogue: 0,0:07:17.92,0:07:19.36,*Default,NTP,0000,0000,0000,,adding stuff to the end
+Dialogue: 0,0:07:19.36,0:07:23.84,*Default,NTP,0000,0000,0000,,so it's a lot like a cube yeah um
+Dialogue: 0,0:07:23.84,0:07:25.60,*Default,NTP,0000,0000,0000,,except for like it's a cue that
+Dialogue: 0,0:07:25.60,0:07:27.52,*Default,NTP,0000,0000,0000,,remembers what you've removed
+Dialogue: 0,0:07:27.52,0:07:29.68,*Default,NTP,0000,0000,0000,,just in case you need to print it out
+Dialogue: 0,0:07:29.68,0:07:31.44,*Default,NTP,0000,0000,0000,,okay so and i don't think that the
+Dialogue: 0,0:07:31.44,0:07:32.64,*Default,NTP,0000,0000,0000,,built-in python
+Dialogue: 0,0:07:32.64,0:07:35.04,*Default,NTP,0000,0000,0000,,queue i think it's the deck class allows
+Dialogue: 0,0:07:35.04,0:07:37.20,*Default,NTP,0000,0000,0000,,you to do that yeah there's no memory
+Dialogue: 0,0:07:37.20,0:07:39.20,*Default,NTP,0000,0000,0000,,that's right okay all right so it's that
+Dialogue: 0,0:07:39.20,0:07:40.96,*Default,NTP,0000,0000,0000,,little memory that it wants you to have
+Dialogue: 0,0:07:40.96,0:07:41.92,*Default,NTP,0000,0000,0000,,that's the
+Dialogue: 0,0:07:41.92,0:07:43.28,*Default,NTP,0000,0000,0000,,and the only reason you'd have that is
+Dialogue: 0,0:07:43.28,0:07:45.12,*Default,NTP,0000,0000,0000,,just so you can like print out
+Dialogue: 0,0:07:45.12,0:07:48.08,*Default,NTP,0000,0000,0000,,you know uh yeah we were here yeah
+Dialogue: 0,0:07:48.08,0:07:48.64,*Default,NTP,0000,0000,0000,,gotcha
+Dialogue: 0,0:07:48.64,0:07:52.16,*Default,NTP,0000,0000,0000,,okay yeah good question so here we are
+Dialogue: 0,0:07:52.16,0:07:53.84,*Default,NTP,0000,0000,0000,,we're in calcuval
+Dialogue: 0,0:07:53.84,0:07:56.96,*Default,NTP,0000,0000,0000,,um if it's a pair meaning
+Dialogue: 0,0:07:56.96,0:07:58.56,*Default,NTP,0000,0000,0000,,we're now evaluating something that
+Dialogue: 0,0:07:58.56,0:08:00.80,*Default,NTP,0000,0000,0000,,begins with an open parenthesis
+Dialogue: 0,0:08:00.80,0:08:03.84,*Default,NTP,0000,0000,0000,,then what does this line mean x second
+Dialogue: 0,0:08:03.84,0:08:06.24,*Default,NTP,0000,0000,0000,,map calcul well to figure that out we
+Dialogue: 0,0:08:06.24,0:08:07.12,*Default,NTP,0000,0000,0000,,got to know what an
+Dialogue: 0,0:08:07.12,0:08:10.08,*Default,NTP,0000,0000,0000,,x is it turns out it's a pair which we
+Dialogue: 0,0:08:10.08,0:08:11.12,*Default,NTP,0000,0000,0000,,figured out here
+Dialogue: 0,0:08:11.12,0:08:12.88,*Default,NTP,0000,0000,0000,,so let's go take a quick look at what a
+Dialogue: 0,0:08:12.88,0:08:14.32,*Default,NTP,0000,0000,0000,,pair is and
+Dialogue: 0,0:08:14.32,0:08:18.32,*Default,NTP,0000,0000,0000,,what its map method does
+Dialogue: 0,0:08:18.32,0:08:21.52,*Default,NTP,0000,0000,0000,,skiing reader
+Dialogue: 0,0:08:21.52,0:08:25.36,*Default,NTP,0000,0000,0000,,here's the pair it's got a first and a
+Dialogue: 0,0:08:25.36,0:08:26.80,*Default,NTP,0000,0000,0000,,second
+Dialogue: 0,0:08:26.80,0:08:30.24,*Default,NTP,0000,0000,0000,,it's a linked list or like a scheme
+Dialogue: 0,0:08:30.24,0:08:33.52,*Default,NTP,0000,0000,0000,,linked list um so the first can be
+Dialogue: 0,0:08:33.52,0:08:34.08,*Default,NTP,0000,0000,0000,,anything
+Dialogue: 0,0:08:34.08,0:08:35.92,*Default,NTP,0000,0000,0000,,but the second should be another
+Dialogue: 0,0:08:35.92,0:08:37.12,*Default,NTP,0000,0000,0000,,instance of pair
+Dialogue: 0,0:08:37.12,0:08:40.24,*Default,NTP,0000,0000,0000,,or the or nil
+Dialogue: 0,0:08:40.24,0:08:45.52,*Default,NTP,0000,0000,0000,,to represent the end um
+Dialogue: 0,0:08:45.76,0:08:48.56,*Default,NTP,0000,0000,0000,,uh i guess we didn't talk too much about
+Dialogue: 0,0:08:48.56,0:08:50.00,*Default,NTP,0000,0000,0000,,this kind of thing but this just lets
+Dialogue: 0,0:08:50.00,0:08:52.08,*Default,NTP,0000,0000,0000,,you get like the length of a list or
+Dialogue: 0,0:08:52.08,0:08:55.36,*Default,NTP,0000,0000,0000,,use square brackets um
+Dialogue: 0,0:08:55.36,0:08:57.36,*Default,NTP,0000,0000,0000,,did we talk about this at all i don't
+Dialogue: 0,0:08:57.36,0:08:59.92,*Default,NTP,0000,0000,0000,,think i i think maybe we left that out
+Dialogue: 0,0:08:59.92,0:09:01.28,*Default,NTP,0000,0000,0000,,this semester but it's not that
+Dialogue: 0,0:09:01.28,0:09:01.92,*Default,NTP,0000,0000,0000,,important
+Dialogue: 0,0:09:01.92,0:09:03.92,*Default,NTP,0000,0000,0000,,um but what is important is there's a
+Dialogue: 0,0:09:03.92,0:09:05.76,*Default,NTP,0000,0000,0000,,regular old method called map
+Dialogue: 0,0:09:05.76,0:09:07.44,*Default,NTP,0000,0000,0000,,and what it does is it takes in a
+Dialogue: 0,0:09:07.44,0:09:09.76,*Default,NTP,0000,0000,0000,,function it calls that function on every
+Dialogue: 0,0:09:09.76,0:09:11.84,*Default,NTP,0000,0000,0000,,element of the list that this pair
+Dialogue: 0,0:09:11.84,0:09:12.64,*Default,NTP,0000,0000,0000,,represents
+Dialogue: 0,0:09:12.64,0:09:15.44,*Default,NTP,0000,0000,0000,,and then returns a new list which is
+Dialogue: 0,0:09:15.44,0:09:16.24,*Default,NTP,0000,0000,0000,,really a pair
+Dialogue: 0,0:09:16.24,0:09:18.24,*Default,NTP,0000,0000,0000,,instance so it's a linked list kind of
+Dialogue: 0,0:09:18.24,0:09:20.64,*Default,NTP,0000,0000,0000,,structure with all the results of
+Dialogue: 0,0:09:20.64,0:09:21.68,*Default,NTP,0000,0000,0000,,calling this function
+Dialogue: 0,0:09:21.68,0:09:23.84,*Default,NTP,0000,0000,0000,,so and we can read this pretty
+Dialogue: 0,0:09:23.84,0:09:25.28,*Default,NTP,0000,0000,0000,,straightforward like you
+Dialogue: 0,0:09:25.28,0:09:27.52,*Default,NTP,0000,0000,0000,,call fun on the first element if there's
+Dialogue: 0,0:09:27.52,0:09:28.72,*Default,NTP,0000,0000,0000,,a second element
+Dialogue: 0,0:09:28.72,0:09:30.94,*Default,NTP,0000,0000,0000,,um then you
+Dialogue: 0,0:09:30.94,0:09:32.64,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:09:32.64,0:09:35.28,*Default,NTP,0000,0000,0000,,recursively call map on the second
+Dialogue: 0,0:09:35.28,0:09:37.84,*Default,NTP,0000,0000,0000,,element
+Dialogue: 0,0:09:37.84,0:09:40.40,*Default,NTP,0000,0000,0000,,and you build a new list that's got this
+Dialogue: 0,0:09:40.40,0:09:43.60,*Default,NTP,0000,0000,0000,,new first element in it
+Dialogue: 0,0:09:46.40,0:09:49.84,*Default,NTP,0000,0000,0000,,this doesn't say expo.map calcaval
+Dialogue: 0,0:09:49.84,0:09:51.96,*Default,NTP,0000,0000,0000,,instead it says
+Dialogue: 0,0:09:51.96,0:09:53.20,*Default,NTP,0000,0000,0000,,expert.second.map.calcoval
+Dialogue: 0,0:09:53.20,0:09:56.32,*Default,NTP,0000,0000,0000,,i think it's worth looking at an express
+Dialogue: 0,0:09:56.32,0:09:59.20,*Default,NTP,0000,0000,0000,,an example so this example here which
+Dialogue: 0,0:09:59.20,0:10:00.48,*Default,NTP,0000,0000,0000,,looks a little bit funny
+Dialogue: 0,0:10:00.48,0:10:03.68,*Default,NTP,0000,0000,0000,,is really add to to the result of
+Dialogue: 0,0:10:03.68,0:10:05.04,*Default,NTP,0000,0000,0000,,multiplying four
+Dialogue: 0,0:10:05.04,0:10:07.68,*Default,NTP,0000,0000,0000,,and six
+Dialogue: 0,0:10:08.24,0:10:13.36,*Default,NTP,0000,0000,0000,,this thing if we put it into
+Dialogue: 0,0:10:13.36,0:10:16.80,*Default,NTP,0000,0000,0000,,you drop the paren john reader
+Dialogue: 0,0:10:16.80,0:10:20.08,*Default,NTP,0000,0000,0000,,oh my goodness if we put this into the
+Dialogue: 0,0:10:20.08,0:10:22.32,*Default,NTP,0000,0000,0000,,reader we can see what it looks like
+Dialogue: 0,0:10:22.32,0:10:24.56,*Default,NTP,0000,0000,0000,,from python's point of view it's a pair
+Dialogue: 0,0:10:24.56,0:10:26.00,*Default,NTP,0000,0000,0000,,that starts with a plus
+Dialogue: 0,0:10:26.00,0:10:29.12,*Default,NTP,0000,0000,0000,,and then a 2 etc
+Dialogue: 0,0:10:29.12,0:10:32.32,*Default,NTP,0000,0000,0000,,if i get the dot second of this object
+Dialogue: 0,0:10:32.32,0:10:35.60,*Default,NTP,0000,0000,0000,,it's all this thing which really only
+Dialogue: 0,0:10:35.60,0:10:37.76,*Default,NTP,0000,0000,0000,,has two elements it's got the number two
+Dialogue: 0,0:10:37.76,0:10:39.92,*Default,NTP,0000,0000,0000,,and it's got this sub expression times
+Dialogue: 0,0:10:39.92,0:10:41.28,*Default,NTP,0000,0000,0000,,four six
+Dialogue: 0,0:10:41.28,0:10:43.28,*Default,NTP,0000,0000,0000,,so the point of mapping calcaval over
+Dialogue: 0,0:10:43.28,0:10:46.00,*Default,NTP,0000,0000,0000,,this is that we are converting the
+Dialogue: 0,0:10:46.00,0:10:48.72,*Default,NTP,0000,0000,0000,,2 to a 2 and we're converting the times
+Dialogue: 0,0:10:48.72,0:10:49.04,*Default,NTP,0000,0000,0000,,4
+Dialogue: 0,0:10:49.04,0:10:53.04,*Default,NTP,0000,0000,0000,,6 into its value
+Dialogue: 0,0:10:55.60,0:10:59.28,*Default,NTP,0000,0000,0000,,and then it's time to add
+Dialogue: 0,0:10:59.60,0:11:01.92,*Default,NTP,0000,0000,0000,,that's what calc applied this so the
+Dialogue: 0,0:11:01.92,0:11:03.92,*Default,NTP,0000,0000,0000,,point of this is it's the recursive call
+Dialogue: 0,0:11:03.92,0:11:05.60,*Default,NTP,0000,0000,0000,,that takes all the sub expressions and
+Dialogue: 0,0:11:05.60,0:11:08.32,*Default,NTP,0000,0000,0000,,finds their values
+Dialogue: 0,0:11:08.32,0:11:09.60,*Default,NTP,0000,0000,0000,,i probably could have just said that one
+Dialogue: 0,0:11:09.60,0:11:12.72,*Default,NTP,0000,0000,0000,,sentence and it would have been more
+Dialogue: 0,0:11:12.84,0:11:14.08,*Default,NTP,0000,0000,0000,,clear
+Dialogue: 0,0:11:14.08,0:11:15.68,*Default,NTP,0000,0000,0000,,always more clear it's always the last
+Dialogue: 0,0:11:15.68,0:11:16.96,*Default,NTP,0000,0000,0000,,sentence but you still have to get there
+Dialogue: 0,0:11:16.96,0:11:19.20,*Default,NTP,0000,0000,0000,,john
+Dialogue: 0,0:11:21.52,0:11:23.92,*Default,NTP,0000,0000,0000,,yeah good question so the question is
+Dialogue: 0,0:11:23.92,0:11:25.44,*Default,NTP,0000,0000,0000,,should you regularly use
+Dialogue: 0,0:11:25.44,0:11:30.08,*Default,NTP,0000,0000,0000,,map to process to make recursive calls
+Dialogue: 0,0:11:30.08,0:11:32.72,*Default,NTP,0000,0000,0000,,if your input is a list and i think
+Dialogue: 0,0:11:32.72,0:11:34.32,*Default,NTP,0000,0000,0000,,that's not always the case
+Dialogue: 0,0:11:34.32,0:11:36.16,*Default,NTP,0000,0000,0000,,it really depends on what you're trying
+Dialogue: 0,0:11:36.16,0:11:37.92,*Default,NTP,0000,0000,0000,,to achieve so you've written some
+Dialogue: 0,0:11:37.92,0:11:38.96,*Default,NTP,0000,0000,0000,,function
+Dialogue: 0,0:11:38.96,0:11:42.64,*Default,NTP,0000,0000,0000,,let's say s is an instance of
+Dialogue: 0,0:11:42.64,0:11:46.32,*Default,NTP,0000,0000,0000,,a pair like it's a scheme list
+Dialogue: 0,0:11:46.32,0:11:48.80,*Default,NTP,0000,0000,0000,,whether you use map or not really
+Dialogue: 0,0:11:48.80,0:11:50.00,*Default,NTP,0000,0000,0000,,depends on whether you're making
+Dialogue: 0,0:11:50.00,0:11:51.04,*Default,NTP,0000,0000,0000,,recursive calls
+Dialogue: 0,0:11:51.04,0:11:53.44,*Default,NTP,0000,0000,0000,,on the elements of s in which case map
+Dialogue: 0,0:11:53.44,0:11:54.64,*Default,NTP,0000,0000,0000,,is appropriate
+Dialogue: 0,0:11:54.64,0:11:56.48,*Default,NTP,0000,0000,0000,,or if you're making a recursive call on
+Dialogue: 0,0:11:56.48,0:11:58.72,*Default,NTP,0000,0000,0000,,the rest of s in which case map won't do
+Dialogue: 0,0:11:58.72,0:11:59.36,*Default,NTP,0000,0000,0000,,that for you
+Dialogue: 0,0:11:59.36,0:12:02.00,*Default,NTP,0000,0000,0000,,you just have to explicitly call f on
+Dialogue: 0,0:12:02.00,0:12:04.72,*Default,NTP,0000,0000,0000,,s.second
+Dialogue: 0,0:12:04.72,0:12:08.96,*Default,NTP,0000,0000,0000,,um so yeah i think that
+Dialogue: 0,0:12:08.96,0:12:12.08,*Default,NTP,0000,0000,0000,,eval is unusual and that it's not linked
+Dialogue: 0,0:12:12.08,0:12:13.12,*Default,NTP,0000,0000,0000,,list processing
+Dialogue: 0,0:12:13.12,0:12:14.48,*Default,NTP,0000,0000,0000,,where you're just like doing something
+Dialogue: 0,0:12:14.48,0:12:16.00,*Default,NTP,0000,0000,0000,,the first element and you're doing a
+Dialogue: 0,0:12:16.00,0:12:18.16,*Default,NTP,0000,0000,0000,,recursive call to the rest of the list
+Dialogue: 0,0:12:18.16,0:12:20.08,*Default,NTP,0000,0000,0000,,instead what it's doing is making its
+Dialogue: 0,0:12:20.08,0:12:22.00,*Default,NTP,0000,0000,0000,,recursive call on each element of the
+Dialogue: 0,0:12:22.00,0:12:22.48,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:12:22.48,0:12:24.96,*Default,NTP,0000,0000,0000,,and that's why we used matt the next
+Dialogue: 0,0:12:24.96,0:12:25.60,*Default,NTP,0000,0000,0000,,question was
+Dialogue: 0,0:12:25.60,0:12:28.96,*Default,NTP,0000,0000,0000,,what is the main decorator
+Dialogue: 0,0:12:28.96,0:12:32.40,*Default,NTP,0000,0000,0000,,yeah so this main decorator is
+Dialogue: 0,0:12:32.40,0:12:37.44,*Default,NTP,0000,0000,0000,,um something that's specific to 61a
+Dialogue: 0,0:12:37.60,0:12:40.88,*Default,NTP,0000,0000,0000,,and it just says if you run the file
+Dialogue: 0,0:12:40.88,0:12:42.32,*Default,NTP,0000,0000,0000,,this is the function that should be
+Dialogue: 0,0:12:42.32,0:12:44.64,*Default,NTP,0000,0000,0000,,called
+Dialogue: 0,0:12:45.36,0:12:48.88,*Default,NTP,0000,0000,0000,,so if i run the whole skel.pi
+Dialogue: 0,0:12:48.88,0:12:51.68,*Default,NTP,0000,0000,0000,,file it's not going to call as scheme
+Dialogue: 0,0:12:51.68,0:12:52.88,*Default,NTP,0000,0000,0000,,list instead it's going to call
+Dialogue: 0,0:12:52.88,0:12:54.40,*Default,NTP,0000,0000,0000,,redevelop print loop
+Dialogue: 0,0:12:54.40,0:12:57.60,*Default,NTP,0000,0000,0000,,and uh do whatever's here
+Dialogue: 0,0:12:57.60,0:12:59.84,*Default,NTP,0000,0000,0000,,um the other way that this would work is
+Dialogue: 0,0:12:59.84,0:13:02.40,*Default,NTP,0000,0000,0000,,just leave off the definition of read
+Dialogue: 0,0:13:02.40,0:13:04.48,*Default,NTP,0000,0000,0000,,about print and just while would be the
+Dialogue: 0,0:13:04.48,0:13:06.00,*Default,NTP,0000,0000,0000,,body of the code and then it would
+Dialogue: 0,0:13:06.00,0:13:07.68,*Default,NTP,0000,0000,0000,,run it this is a cleaner way to do it
+Dialogue: 0,0:13:07.68,0:13:09.44,*Default,NTP,0000,0000,0000,,having everything in a function
+Dialogue: 0,0:13:09.44,0:13:11.28,*Default,NTP,0000,0000,0000,,yeah exactly so we'd get the same result
+Dialogue: 0,0:13:11.28,0:13:12.56,*Default,NTP,0000,0000,0000,,if we just did
+Dialogue: 0,0:13:12.56,0:13:16.16,*Default,NTP,0000,0000,0000,,that um the only issue with this
+Dialogue: 0,0:13:16.16,0:13:17.92,*Default,NTP,0000,0000,0000,,is that if you import this file from
+Dialogue: 0,0:13:17.92,0:13:19.36,*Default,NTP,0000,0000,0000,,another file then this would run which
+Dialogue: 0,0:13:19.36,0:13:20.72,*Default,NTP,0000,0000,0000,,you don't always want
+Dialogue: 0,0:13:20.72,0:13:22.80,*Default,NTP,0000,0000,0000,,um there's a there's kind of an ugly
+Dialogue: 0,0:13:22.80,0:13:23.92,*Default,NTP,0000,0000,0000,,convention in
+Dialogue: 0,0:13:23.92,0:13:27.12,*Default,NTP,0000,0000,0000,,python which is that um most
+Dialogue: 0,0:13:27.12,0:13:28.72,*Default,NTP,0000,0000,0000,,times when you see like commercial
+Dialogue: 0,0:13:28.72,0:13:32.72,*Default,NTP,0000,0000,0000,,python code you'll see them right
+Dialogue: 0,0:13:34.00,0:13:36.40,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:13:39.12,0:13:40.96,*Default,NTP,0000,0000,0000,,which i felt like we'd spend so much
+Dialogue: 0,0:13:40.96,0:13:43.20,*Default,NTP,0000,0000,0000,,time trying to explain what this was
+Dialogue: 0,0:13:43.20,0:13:45.76,*Default,NTP,0000,0000,0000,,that uh it would ruin the course so
+Dialogue: 0,0:13:45.76,0:13:47.04,*Default,NTP,0000,0000,0000,,that's why we introduced the main
+Dialogue: 0,0:13:47.04,0:13:49.36,*Default,NTP,0000,0000,0000,,decorator i got a bit of an exaggeration
+Dialogue: 0,0:13:49.36,0:13:50.08,*Default,NTP,0000,0000,0000,,john
+Dialogue: 0,0:13:50.08,0:13:52.96,*Default,NTP,0000,0000,0000,,i also i find that syntax hideous so i'm
+Dialogue: 0,0:13:52.96,0:13:54.72,*Default,NTP,0000,0000,0000,,glad you you put in a nice uh
+Dialogue: 0,0:13:54.72,0:13:57.68,*Default,NTP,0000,0000,0000,,clean version of it
+Dialogue: 0,0:13:58.56,0:14:00.88,*Default,NTP,0000,0000,0000,,and by the way it's just defined in this
+Dialogue: 0,0:14:00.88,0:14:02.24,*Default,NTP,0000,0000,0000,,ucb
+Dialogue: 0,0:14:02.24,0:14:04.80,*Default,NTP,0000,0000,0000,,file which was written long ago when i
+Dialogue: 0,0:14:04.80,0:14:06.56,*Default,NTP,0000,0000,0000,,started teaching this course
+Dialogue: 0,0:14:06.56,0:14:10.08,*Default,NTP,0000,0000,0000,,and um it's got this kind of same
+Dialogue: 0,0:14:10.08,0:14:12.40,*Default,NTP,0000,0000,0000,,weird notion of name equals main kind of
+Dialogue: 0,0:14:12.40,0:14:15.92,*Default,NTP,0000,0000,0000,,buried in there so that's all it does
+Dialogue: 0,0:14:15.92,0:14:17.20,*Default,NTP,0000,0000,0000,,the next question was
+Dialogue: 0,0:14:17.20,0:14:19.92,*Default,NTP,0000,0000,0000,,wouldn't a parser for python need to
+Dialogue: 0,0:14:19.92,0:14:20.40,*Default,NTP,0000,0000,0000,,track
+Dialogue: 0,0:14:20.40,0:14:22.64,*Default,NTP,0000,0000,0000,,indentation instead of just ignoring
+Dialogue: 0,0:14:22.64,0:14:24.96,*Default,NTP,0000,0000,0000,,white space
+Dialogue: 0,0:14:24.96,0:14:27.28,*Default,NTP,0000,0000,0000,,yeah that's right an indentation is part
+Dialogue: 0,0:14:27.28,0:14:28.40,*Default,NTP,0000,0000,0000,,of the grammar
+Dialogue: 0,0:14:28.40,0:14:31.52,*Default,NTP,0000,0000,0000,,of python meaning that the parser needs
+Dialogue: 0,0:14:31.52,0:14:32.40,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:14:32.40,0:14:35.84,*Default,NTP,0000,0000,0000,,not just ignore all of the spacing and
+Dialogue: 0,0:14:35.84,0:14:38.08,*Default,NTP,0000,0000,0000,,indentation like we're doing for scheme
+Dialogue: 0,0:14:38.08,0:14:40.24,*Default,NTP,0000,0000,0000,,but it has to track it
+Dialogue: 0,0:14:40.24,0:14:42.16,*Default,NTP,0000,0000,0000,,i mean that's why most languages have a
+Dialogue: 0,0:14:42.16,0:14:43.52,*Default,NTP,0000,0000,0000,,notion of a begin and an
+Dialogue: 0,0:14:43.52,0:14:45.60,*Default,NTP,0000,0000,0000,,end right so i guess python has the
+Dialogue: 0,0:14:45.60,0:14:46.56,*Default,NTP,0000,0000,0000,,notion of a begin
+Dialogue: 0,0:14:46.56,0:14:50.00,*Default,NTP,0000,0000,0000,,that's the colon but the end is
+Dialogue: 0,0:14:50.00,0:14:53.28,*Default,NTP,0000,0000,0000,,implicit in the indentation um i've ever
+Dialogue: 0,0:14:53.28,0:14:55.68,*Default,NTP,0000,0000,0000,,never liked that i i prefer to have like
+Dialogue: 0,0:14:55.68,0:14:57.76,*Default,NTP,0000,0000,0000,,a an explicit open close
+Dialogue: 0,0:14:57.76,0:15:01.04,*Default,NTP,0000,0000,0000,,begin and curly bracket curly bracket um
+Dialogue: 0,0:15:01.04,0:15:02.40,*Default,NTP,0000,0000,0000,,i think it makes the code a little bit
+Dialogue: 0,0:15:02.40,0:15:04.00,*Default,NTP,0000,0000,0000,,easier to read but yes in this regard
+Dialogue: 0,0:15:04.00,0:15:05.44,*Default,NTP,0000,0000,0000,,you have to keep track of it
+Dialogue: 0,0:15:05.44,0:15:06.80,*Default,NTP,0000,0000,0000,,otherwise you don't know when the body
+Dialogue: 0,0:15:06.80,0:15:09.60,*Default,NTP,0000,0000,0000,,of anything ends
+Dialogue: 0,0:15:09.60,0:15:11.68,*Default,NTP,0000,0000,0000,,yeah i say thank you yeah same i think
+Dialogue: 0,0:15:11.68,0:15:12.96,*Default,NTP,0000,0000,0000,,like it's better to have something to
+Dialogue: 0,0:15:12.96,0:15:14.00,*Default,NTP,0000,0000,0000,,keep track of
+Dialogue: 0,0:15:14.00,0:15:16.88,*Default,NTP,0000,0000,0000,,beginning and just to make it clear john
+Dialogue: 0,0:15:16.88,0:15:18.24,*Default,NTP,0000,0000,0000,,do you know if there's a reason for that
+Dialogue: 0,0:15:18.24,0:15:19.76,*Default,NTP,0000,0000,0000,,i mean it's a little bit of an unusual
+Dialogue: 0,0:15:19.76,0:15:22.48,*Default,NTP,0000,0000,0000,,convention in python
+Dialogue: 0,0:15:22.48,0:15:26.16,*Default,NTP,0000,0000,0000,,uh i agree it's unusual uh i think there
+Dialogue: 0,0:15:26.16,0:15:28.40,*Default,NTP,0000,0000,0000,,was some story i read once about how
+Dialogue: 0,0:15:28.40,0:15:30.00,*Default,NTP,0000,0000,0000,,they decided this
+Dialogue: 0,0:15:30.00,0:15:32.88,*Default,NTP,0000,0000,0000,,and i believe it involved having
+Dialogue: 0,0:15:32.88,0:15:34.08,*Default,NTP,0000,0000,0000,,someone's
+Dialogue: 0,0:15:34.08,0:15:36.56,*Default,NTP,0000,0000,0000,,spouse read a piece of code when they
+Dialogue: 0,0:15:36.56,0:15:38.16,*Default,NTP,0000,0000,0000,,weren't programmers or something like
+Dialogue: 0,0:15:38.16,0:15:39.60,*Default,NTP,0000,0000,0000,,that they're like oh yeah this makes
+Dialogue: 0,0:15:39.60,0:15:41.68,*Default,NTP,0000,0000,0000,,sense to me or whatever but uh i
+Dialogue: 0,0:15:41.68,0:15:43.68,*Default,NTP,0000,0000,0000,,i don't know how true that really is but
+Dialogue: 0,0:15:43.68,0:15:45.68,*Default,NTP,0000,0000,0000,,yeah well let's let's let's make it true
+Dialogue: 0,0:15:45.68,0:15:48.64,*Default,NTP,0000,0000,0000,,i like stories like that
+Dialogue: 0,0:15:48.80,0:15:51.84,*Default,NTP,0000,0000,0000,,um well if you know if you like explicit
+Dialogue: 0,0:15:51.84,0:15:53.68,*Default,NTP,0000,0000,0000,,punctuation telling you where things end
+Dialogue: 0,0:15:53.68,0:15:55.12,*Default,NTP,0000,0000,0000,,and i'm sure you'll love scheme because
+Dialogue: 0,0:15:55.12,0:15:56.88,*Default,NTP,0000,0000,0000,,it's got lots of closing prints
+Dialogue: 0,0:15:56.88,0:15:58.64,*Default,NTP,0000,0000,0000,,oh man but that's a whole nother world
+Dialogue: 0,0:15:58.64,0:15:59.12,*Default,NTP,0000,0000,0000,,to hurt
+Dialogue: 0,0:15:59.12,0:16:03.35,*Default,NTP,0000,0000,0000,,[Laughter]
+Dialogue: 0,0:16:03.44,0:16:05.76,*Default,NTP,0000,0000,0000,,the next question was what programming
+Dialogue: 0,0:16:05.76,0:16:08.00,*Default,NTP,0000,0000,0000,,languages are typically used to write an
+Dialogue: 0,0:16:08.00,0:16:10.72,*Default,NTP,0000,0000,0000,,interpreter it is it's a great question
+Dialogue: 0,0:16:10.72,0:16:12.16,*Default,NTP,0000,0000,0000,,i think that
+Dialogue: 0,0:16:12.16,0:16:15.60,*Default,NTP,0000,0000,0000,,um for
+Dialogue: 0,0:16:15.60,0:16:17.60,*Default,NTP,0000,0000,0000,,depends on what your goal is if you're
+Dialogue: 0,0:16:17.60,0:16:19.12,*Default,NTP,0000,0000,0000,,building an interpreter that you know
+Dialogue: 0,0:16:19.12,0:16:20.72,*Default,NTP,0000,0000,0000,,thousands of people are going to use and
+Dialogue: 0,0:16:20.72,0:16:22.48,*Default,NTP,0000,0000,0000,,they're going to run big programs on it
+Dialogue: 0,0:16:22.48,0:16:25.20,*Default,NTP,0000,0000,0000,,and the primary concern is usually speed
+Dialogue: 0,0:16:25.20,0:16:27.44,*Default,NTP,0000,0000,0000,,and resource use
+Dialogue: 0,0:16:27.44,0:16:29.52,*Default,NTP,0000,0000,0000,,at the time that python's interpreter
+Dialogue: 0,0:16:29.52,0:16:30.80,*Default,NTP,0000,0000,0000,,was written
+Dialogue: 0,0:16:30.80,0:16:33.84,*Default,NTP,0000,0000,0000,,c was the obvious choice for writing a
+Dialogue: 0,0:16:33.84,0:16:36.72,*Default,NTP,0000,0000,0000,,program that would run fast what's kind
+Dialogue: 0,0:16:36.72,0:16:40.24,*Default,NTP,0000,0000,0000,,of fascinating is that now the fastest
+Dialogue: 0,0:16:40.24,0:16:43.28,*Default,NTP,0000,0000,0000,,implementation of python is not the one
+Dialogue: 0,0:16:43.28,0:16:45.20,*Default,NTP,0000,0000,0000,,that we all use but instead a separate
+Dialogue: 0,0:16:45.20,0:16:46.08,*Default,NTP,0000,0000,0000,,one called pi
+Dialogue: 0,0:16:46.08,0:16:48.40,*Default,NTP,0000,0000,0000,,pi which is a python interpreter written
+Dialogue: 0,0:16:48.40,0:16:50.72,*Default,NTP,0000,0000,0000,,in python and
+Dialogue: 0,0:16:50.72,0:16:52.72,*Default,NTP,0000,0000,0000,,it's quite a bit faster than the python
+Dialogue: 0,0:16:52.72,0:16:54.56,*Default,NTP,0000,0000,0000,,interpreter written in c
+Dialogue: 0,0:16:54.56,0:16:56.72,*Default,NTP,0000,0000,0000,,it has achieved this speed through some
+Dialogue: 0,0:16:56.72,0:16:58.80,*Default,NTP,0000,0000,0000,,very clever engineering where basically
+Dialogue: 0,0:16:58.80,0:16:59.44,*Default,NTP,0000,0000,0000,,like
+Dialogue: 0,0:16:59.44,0:17:02.24,*Default,NTP,0000,0000,0000,,the python code is not interpreted the
+Dialogue: 0,0:17:02.24,0:17:03.76,*Default,NTP,0000,0000,0000,,python code that runs the interpreter is
+Dialogue: 0,0:17:03.76,0:17:05.36,*Default,NTP,0000,0000,0000,,not interpreted but instead kind of
+Dialogue: 0,0:17:05.36,0:17:08.16,*Default,NTP,0000,0000,0000,,compiled and optimized in various ways
+Dialogue: 0,0:17:08.16,0:17:10.48,*Default,NTP,0000,0000,0000,,um you know like i said programming
+Dialogue: 0,0:17:10.48,0:17:12.00,*Default,NTP,0000,0000,0000,,language folks tend to be pretty clever
+Dialogue: 0,0:17:12.00,0:17:13.12,*Default,NTP,0000,0000,0000,,at programming
+Dialogue: 0,0:17:13.12,0:17:14.65,*Default,NTP,0000,0000,0000,,um so
+Dialogue: 0,0:17:14.65,0:17:16.84,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:17:16.84,0:17:19.36,*Default,NTP,0000,0000,0000,,there's yeah there's basically that
+Dialogue: 0,0:17:19.36,0:17:20.56,*Default,NTP,0000,0000,0000,,story of
+Dialogue: 0,0:17:20.56,0:17:22.72,*Default,NTP,0000,0000,0000,,you know what's the right programming
+Dialogue: 0,0:17:22.72,0:17:23.84,*Default,NTP,0000,0000,0000,,language in order to
+Dialogue: 0,0:17:23.84,0:17:26.96,*Default,NTP,0000,0000,0000,,make this interpreter fast um
+Dialogue: 0,0:17:26.96,0:17:29.44,*Default,NTP,0000,0000,0000,,an interesting trend in the programming
+Dialogue: 0,0:17:29.44,0:17:31.04,*Default,NTP,0000,0000,0000,,language community
+Dialogue: 0,0:17:31.04,0:17:33.92,*Default,NTP,0000,0000,0000,,is that for any general purpose
+Dialogue: 0,0:17:33.92,0:17:35.12,*Default,NTP,0000,0000,0000,,programming language
+Dialogue: 0,0:17:35.12,0:17:37.20,*Default,NTP,0000,0000,0000,,oftentimes people will try to write an
+Dialogue: 0,0:17:37.20,0:17:38.64,*Default,NTP,0000,0000,0000,,interpreter for that language
+Dialogue: 0,0:17:38.64,0:17:41.04,*Default,NTP,0000,0000,0000,,as one of the first large programs
+Dialogue: 0,0:17:41.04,0:17:42.88,*Default,NTP,0000,0000,0000,,written in that language
+Dialogue: 0,0:17:42.88,0:17:45.36,*Default,NTP,0000,0000,0000,,why well it's kind of like a natural
+Dialogue: 0,0:17:45.36,0:17:46.32,*Default,NTP,0000,0000,0000,,target
+Dialogue: 0,0:17:46.32,0:17:48.72,*Default,NTP,0000,0000,0000,,and uh people you know the people
+Dialogue: 0,0:17:48.72,0:17:51.12,*Default,NTP,0000,0000,0000,,writing the interpreter
+Dialogue: 0,0:17:51.12,0:17:52.72,*Default,NTP,0000,0000,0000,,that they don't know they don't write
+Dialogue: 0,0:17:52.72,0:17:53.84,*Default,NTP,0000,0000,0000,,many other things except for
+Dialogue: 0,0:17:53.84,0:17:55.52,*Default,NTP,0000,0000,0000,,interpreters so so that's how it goes
+Dialogue: 0,0:17:55.52,0:17:57.36,*Default,NTP,0000,0000,0000,,so that means that interpreters have
+Dialogue: 0,0:17:57.36,0:17:58.56,*Default,NTP,0000,0000,0000,,been written in many different
+Dialogue: 0,0:17:58.56,0:18:00.08,*Default,NTP,0000,0000,0000,,programming languages
+Dialogue: 0,0:18:00.08,0:18:03.28,*Default,NTP,0000,0000,0000,,and um and you know they
+Dialogue: 0,0:18:03.28,0:18:04.56,*Default,NTP,0000,0000,0000,,different programming languages can be
+Dialogue: 0,0:18:04.56,0:18:06.56,*Default,NTP,0000,0000,0000,,surprisingly well suited for this
+Dialogue: 0,0:18:06.56,0:18:08.72,*Default,NTP,0000,0000,0000,,um i'm not sure there's like an obvious
+Dialogue: 0,0:18:08.72,0:18:09.60,*Default,NTP,0000,0000,0000,,best one
+Dialogue: 0,0:18:09.60,0:18:12.24,*Default,NTP,0000,0000,0000,,except that if i were to commit to one
+Dialogue: 0,0:18:12.24,0:18:15.60,*Default,NTP,0000,0000,0000,,it would probably be
+Dialogue: 0,0:18:15.60,0:18:17.12,*Default,NTP,0000,0000,0000,,something that's kind of an evolved
+Dialogue: 0,0:18:17.12,0:18:20.16,*Default,NTP,0000,0000,0000,,version of scheme called a racket
+Dialogue: 0,0:18:20.16,0:18:22.88,*Default,NTP,0000,0000,0000,,and there's this wonderful community of
+Dialogue: 0,0:18:22.88,0:18:25.04,*Default,NTP,0000,0000,0000,,programmers and developers
+Dialogue: 0,0:18:25.04,0:18:27.52,*Default,NTP,0000,0000,0000,,that that still contribute to this
+Dialogue: 0,0:18:27.52,0:18:28.96,*Default,NTP,0000,0000,0000,,language called racket
+Dialogue: 0,0:18:28.96,0:18:30.96,*Default,NTP,0000,0000,0000,,and they've set it up so that people can
+Dialogue: 0,0:18:30.96,0:18:32.88,*Default,NTP,0000,0000,0000,,create variants of the language
+Dialogue: 0,0:18:32.88,0:18:35.20,*Default,NTP,0000,0000,0000,,like really easily and there's all kinds
+Dialogue: 0,0:18:35.20,0:18:36.96,*Default,NTP,0000,0000,0000,,of tools to make sure that like your new
+Dialogue: 0,0:18:36.96,0:18:38.72,*Default,NTP,0000,0000,0000,,variant actually works correctly and
+Dialogue: 0,0:18:38.72,0:18:39.76,*Default,NTP,0000,0000,0000,,stuff like that
+Dialogue: 0,0:18:39.76,0:18:41.84,*Default,NTP,0000,0000,0000,,um and i think that's led to a fair
+Dialogue: 0,0:18:41.84,0:18:42.96,*Default,NTP,0000,0000,0000,,amount of productivity
+Dialogue: 0,0:18:42.96,0:18:44.32,*Default,NTP,0000,0000,0000,,they've got versions of the language
+Dialogue: 0,0:18:44.32,0:18:45.84,*Default,NTP,0000,0000,0000,,that are good for teaching they've got
+Dialogue: 0,0:18:45.84,0:18:47.28,*Default,NTP,0000,0000,0000,,good version of language that are good
+Dialogue: 0,0:18:47.28,0:18:47.60,*Default,NTP,0000,0000,0000,,for
+Dialogue: 0,0:18:47.60,0:18:48.96,*Default,NTP,0000,0000,0000,,you know like building websites and
+Dialogue: 0,0:18:48.96,0:18:50.80,*Default,NTP,0000,0000,0000,,stuff like that um so
+Dialogue: 0,0:18:50.80,0:18:52.48,*Default,NTP,0000,0000,0000,,yeah so occasionally there have been
+Dialogue: 0,0:18:52.48,0:18:54.48,*Default,NTP,0000,0000,0000,,some like standouts and i think c
+Dialogue: 0,0:18:54.48,0:18:57.12,*Default,NTP,0000,0000,0000,,was one because it was just fast and i
+Dialogue: 0,0:18:57.12,0:18:57.60,*Default,NTP,0000,0000,0000,,think
+Dialogue: 0,0:18:57.60,0:18:59.76,*Default,NTP,0000,0000,0000,,racket is a modern one because it
+Dialogue: 0,0:18:59.76,0:19:01.76,*Default,NTP,0000,0000,0000,,happens to work well
+Dialogue: 0,0:19:01.76,0:19:04.40,*Default,NTP,0000,0000,0000,,yeah i'm i'm surprised to hear that the
+Dialogue: 0,0:19:04.40,0:19:05.68,*Default,NTP,0000,0000,0000,,python interpreter
+Dialogue: 0,0:19:05.68,0:19:07.28,*Default,NTP,0000,0000,0000,,is faster than the c although i imagine
+Dialogue: 0,0:19:07.28,0:19:09.28,*Default,NTP,0000,0000,0000,,with the same clever engineering
+Dialogue: 0,0:19:09.28,0:19:11.20,*Default,NTP,0000,0000,0000,,you can make the c faster because i
+Dialogue: 0,0:19:11.20,0:19:12.80,*Default,NTP,0000,0000,0000,,don't it's hard to somebody's asking the
+Dialogue: 0,0:19:12.80,0:19:13.60,*Default,NTP,0000,0000,0000,,question is
+Dialogue: 0,0:19:13.60,0:19:15.68,*Default,NTP,0000,0000,0000,,is c still faster than python even with
+Dialogue: 0,0:19:15.68,0:19:16.72,*Default,NTP,0000,0000,0000,,pi pi
+Dialogue: 0,0:19:16.72,0:19:18.96,*Default,NTP,0000,0000,0000,,upgrade i can't imagine the python is
+Dialogue: 0,0:19:18.96,0:19:21.84,*Default,NTP,0000,0000,0000,,going to be faster than c
+Dialogue: 0,0:19:21.84,0:19:24.40,*Default,NTP,0000,0000,0000,,um no though there's an interesting
+Dialogue: 0,0:19:24.40,0:19:25.32,*Default,NTP,0000,0000,0000,,project called
+Dialogue: 0,0:19:25.32,0:19:30.88,*Default,NTP,0000,0000,0000,,cython which is a subset of python
+Dialogue: 0,0:19:30.88,0:19:32.40,*Default,NTP,0000,0000,0000,,so you can't do everything you can do in
+Dialogue: 0,0:19:32.40,0:19:34.72,*Default,NTP,0000,0000,0000,,python but you can do most of it
+Dialogue: 0,0:19:34.72,0:19:36.56,*Default,NTP,0000,0000,0000,,so the code more or less looks like
+Dialogue: 0,0:19:36.56,0:19:39.68,*Default,NTP,0000,0000,0000,,python code but it can be compiled
+Dialogue: 0,0:19:39.68,0:19:43.20,*Default,NTP,0000,0000,0000,,um i think the way they compile it is
+Dialogue: 0,0:19:43.20,0:19:43.92,*Default,NTP,0000,0000,0000,,that they
+Dialogue: 0,0:19:43.92,0:19:46.40,*Default,NTP,0000,0000,0000,,uh translate it into c yeah and then
+Dialogue: 0,0:19:46.40,0:19:48.24,*Default,NTP,0000,0000,0000,,they run a c compiler i believe that is
+Dialogue: 0,0:19:48.24,0:19:48.96,*Default,NTP,0000,0000,0000,,why it's called
+Dialogue: 0,0:19:48.96,0:19:51.76,*Default,NTP,0000,0000,0000,,cython yeah but that means that a lot of
+Dialogue: 0,0:19:51.76,0:19:53.12,*Default,NTP,0000,0000,0000,,times when people are trying to write
+Dialogue: 0,0:19:53.12,0:19:54.08,*Default,NTP,0000,0000,0000,,fast code
+Dialogue: 0,0:19:54.08,0:19:56.64,*Default,NTP,0000,0000,0000,,within like a python ecosystem where
+Dialogue: 0,0:19:56.64,0:19:57.84,*Default,NTP,0000,0000,0000,,they've written most of their
+Dialogue: 0,0:19:57.84,0:20:00.08,*Default,NTP,0000,0000,0000,,code in python already they just switch
+Dialogue: 0,0:20:00.08,0:20:02.00,*Default,NTP,0000,0000,0000,,to this language which is not actually c
+Dialogue: 0,0:20:02.00,0:20:03.84,*Default,NTP,0000,0000,0000,,it looks more like python but it can be
+Dialogue: 0,0:20:03.84,0:20:05.20,*Default,NTP,0000,0000,0000,,translated into c
+Dialogue: 0,0:20:05.20,0:20:07.04,*Default,NTP,0000,0000,0000,,and uh that's how they kind of run their
+Dialogue: 0,0:20:07.04,0:20:08.88,*Default,NTP,0000,0000,0000,,part that needs to write their part that
+Dialogue: 0,0:20:08.88,0:20:10.08,*Default,NTP,0000,0000,0000,,needs to run really fast
+Dialogue: 0,0:20:10.08,0:20:14.00,*Default,NTP,0000,0000,0000,,i see i see a follow-up question was
+Dialogue: 0,0:20:14.00,0:20:15.20,*Default,NTP,0000,0000,0000,,if you're going to write a python
+Dialogue: 0,0:20:15.20,0:20:17.20,*Default,NTP,0000,0000,0000,,interpreter in python don't you also
+Dialogue: 0,0:20:17.20,0:20:18.88,*Default,NTP,0000,0000,0000,,need a python interpreter written in
+Dialogue: 0,0:20:18.88,0:20:20.56,*Default,NTP,0000,0000,0000,,something else
+Dialogue: 0,0:20:20.56,0:20:22.56,*Default,NTP,0000,0000,0000,,yeah that's right so in order to get
+Dialogue: 0,0:20:22.56,0:20:25.04,*Default,NTP,0000,0000,0000,,this um
+Dialogue: 0,0:20:25.04,0:20:27.28,*Default,NTP,0000,0000,0000,,this uh python interpreter written in
+Dialogue: 0,0:20:27.28,0:20:28.32,*Default,NTP,0000,0000,0000,,python to work
+Dialogue: 0,0:20:28.32,0:20:30.56,*Default,NTP,0000,0000,0000,,they had to run the interpreter using
+Dialogue: 0,0:20:30.56,0:20:32.32,*Default,NTP,0000,0000,0000,,the c version of the interpreter that
+Dialogue: 0,0:20:32.32,0:20:33.36,*Default,NTP,0000,0000,0000,,already existed
+Dialogue: 0,0:20:33.36,0:20:35.68,*Default,NTP,0000,0000,0000,,and uh once they've done that then they
+Dialogue: 0,0:20:35.68,0:20:37.60,*Default,NTP,0000,0000,0000,,can run their own interpreter so
+Dialogue: 0,0:20:37.60,0:20:40.16,*Default,NTP,0000,0000,0000,,you get these very strange cycles but
+Dialogue: 0,0:20:40.16,0:20:41.92,*Default,NTP,0000,0000,0000,,your your intuition is exactly right
+Dialogue: 0,0:20:41.92,0:20:43.36,*Default,NTP,0000,0000,0000,,that you kind of have to have something
+Dialogue: 0,0:20:43.36,0:20:44.56,*Default,NTP,0000,0000,0000,,that already runs
+Dialogue: 0,0:20:44.56,0:20:46.64,*Default,NTP,0000,0000,0000,,in order to build something new right
+Dialogue: 0,0:20:46.64,0:20:48.40,*Default,NTP,0000,0000,0000,,yeah and john's right the the folks
+Dialogue: 0,0:20:48.40,0:20:49.84,*Default,NTP,0000,0000,0000,,who do programming languages for a
+Dialogue: 0,0:20:49.84,0:20:53.20,*Default,NTP,0000,0000,0000,,living are incredibly clever
+Dialogue: 0,0:20:53.20,0:20:55.68,*Default,NTP,0000,0000,0000,,yeah it sounds like it thank you um by
+Dialogue: 0,0:20:55.68,0:20:56.80,*Default,NTP,0000,0000,0000,,the way if you get a chance
+Dialogue: 0,0:20:56.80,0:20:59.04,*Default,NTP,0000,0000,0000,,take a pl course i i'm sure there's one
+Dialogue: 0,0:20:59.04,0:21:00.40,*Default,NTP,0000,0000,0000,,offered here yeah john
+Dialogue: 0,0:21:00.40,0:21:02.72,*Default,NTP,0000,0000,0000,,yeah it's numbered 164 and it's a good
+Dialogue: 0,0:21:02.72,0:21:04.48,*Default,NTP,0000,0000,0000,,course yeah i mean it's
+Dialogue: 0,0:21:04.48,0:21:05.92,*Default,NTP,0000,0000,0000,,it mean i don't know if it's the most
+Dialogue: 0,0:21:05.92,0:21:07.84,*Default,NTP,0000,0000,0000,,practical course but i i think thinking
+Dialogue: 0,0:21:07.84,0:21:10.00,*Default,NTP,0000,0000,0000,,about the nature of different languages
+Dialogue: 0,0:21:10.00,0:21:10.32,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:21:10.32,0:21:12.08,*Default,NTP,0000,0000,0000,,is really really cool and understanding
+Dialogue: 0,0:21:12.08,0:21:13.52,*Default,NTP,0000,0000,0000,,how these things really work is super
+Dialogue: 0,0:21:13.52,0:21:14.72,*Default,NTP,0000,0000,0000,,interesting just from a
+Dialogue: 0,0:21:14.72,0:21:17.84,*Default,NTP,0000,0000,0000,,sort of purely intellectual perspective
+Dialogue: 0,0:21:17.84,0:21:20.56,*Default,NTP,0000,0000,0000,,yeah okay thanks molokai uh michonne is
+Dialogue: 0,0:21:20.56,0:21:21.44,*Default,NTP,0000,0000,0000,,up next
+Dialogue: 0,0:21:21.44,0:21:25.44,*Default,NTP,0000,0000,0000,,sorry about amazon that's all good
+Dialogue: 0,0:21:25.44,0:21:27.84,*Default,NTP,0000,0000,0000,,um so we talked about like the languages
+Dialogue: 0,0:21:27.84,0:21:30.00,*Default,NTP,0000,0000,0000,,that you could use but is the structure
+Dialogue: 0,0:21:30.00,0:21:32.72,*Default,NTP,0000,0000,0000,,for for writing interpreters like the
+Dialogue: 0,0:21:32.72,0:21:34.24,*Default,NTP,0000,0000,0000,,same like is it still
+Dialogue: 0,0:21:34.24,0:21:35.92,*Default,NTP,0000,0000,0000,,this recursive structure or are there
+Dialogue: 0,0:21:35.92,0:21:39.04,*Default,NTP,0000,0000,0000,,other ways to do it as well
+Dialogue: 0,0:21:39.12,0:21:41.28,*Default,NTP,0000,0000,0000,,yeah good question this recursive
+Dialogue: 0,0:21:41.28,0:21:42.72,*Default,NTP,0000,0000,0000,,structure that i've shown you
+Dialogue: 0,0:21:42.72,0:21:44.96,*Default,NTP,0000,0000,0000,,is the simplest and probably the slowest
+Dialogue: 0,0:21:44.96,0:21:45.92,*Default,NTP,0000,0000,0000,,way to
+Dialogue: 0,0:21:45.92,0:21:48.48,*Default,NTP,0000,0000,0000,,interpret code most of the stuff that
+Dialogue: 0,0:21:48.48,0:21:50.40,*Default,NTP,0000,0000,0000,,actually happens in your computer these
+Dialogue: 0,0:21:50.40,0:21:51.20,*Default,NTP,0000,0000,0000,,days
+Dialogue: 0,0:21:51.20,0:21:54.40,*Default,NTP,0000,0000,0000,,doesn't just do this but instead
+Dialogue: 0,0:21:54.40,0:21:56.72,*Default,NTP,0000,0000,0000,,makes transformations to the original
+Dialogue: 0,0:21:56.72,0:21:57.52,*Default,NTP,0000,0000,0000,,program
+Dialogue: 0,0:21:57.52,0:21:59.28,*Default,NTP,0000,0000,0000,,along the way and this is actually how
+Dialogue: 0,0:21:59.28,0:22:00.64,*Default,NTP,0000,0000,0000,,python's interpreter
+Dialogue: 0,0:22:00.64,0:22:04.24,*Default,NTP,0000,0000,0000,,works is that it
+Dialogue: 0,0:22:04.24,0:22:05.92,*Default,NTP,0000,0000,0000,,takes a piece of code that might run
+Dialogue: 0,0:22:05.92,0:22:07.28,*Default,NTP,0000,0000,0000,,many times
+Dialogue: 0,0:22:07.28,0:22:10.16,*Default,NTP,0000,0000,0000,,and generates some like efficient
+Dialogue: 0,0:22:10.16,0:22:11.92,*Default,NTP,0000,0000,0000,,version of that and then runs that many
+Dialogue: 0,0:22:11.92,0:22:13.52,*Default,NTP,0000,0000,0000,,times which is like a step that we
+Dialogue: 0,0:22:13.52,0:22:14.88,*Default,NTP,0000,0000,0000,,haven't talked about in this course
+Dialogue: 0,0:22:14.88,0:22:16.56,*Default,NTP,0000,0000,0000,,because it doesn't change the answer
+Dialogue: 0,0:22:16.56,0:22:19.68,*Default,NTP,0000,0000,0000,,just makes it run faster
+Dialogue: 0,0:22:20.56,0:22:22.40,*Default,NTP,0000,0000,0000,,if if you want to go really deep into
+Dialogue: 0,0:22:22.40,0:22:24.64,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:22:24.80,0:22:27.12,*Default,NTP,0000,0000,0000,,there's the original textbook for this
+Dialogue: 0,0:22:27.12,0:22:28.32,*Default,NTP,0000,0000,0000,,course called the structure and
+Dialogue: 0,0:22:28.32,0:22:30.56,*Default,NTP,0000,0000,0000,,interpretation for computer programs
+Dialogue: 0,0:22:30.56,0:22:32.80,*Default,NTP,0000,0000,0000,,has a fifth chapter that was never
+Dialogue: 0,0:22:32.80,0:22:34.08,*Default,NTP,0000,0000,0000,,covered in 61a
+Dialogue: 0,0:22:34.08,0:22:37.92,*Default,NTP,0000,0000,0000,,even when uh
+Dialogue: 0,0:22:38.24,0:22:40.56,*Default,NTP,0000,0000,0000,,yeah even when the whole course was
+Dialogue: 0,0:22:40.56,0:22:41.76,*Default,NTP,0000,0000,0000,,scheme
+Dialogue: 0,0:22:41.76,0:22:43.52,*Default,NTP,0000,0000,0000,,um so the fourth chapter is about
+Dialogue: 0,0:22:43.52,0:22:45.36,*Default,NTP,0000,0000,0000,,interpreters and that's basically what
+Dialogue: 0,0:22:45.36,0:22:46.56,*Default,NTP,0000,0000,0000,,we're covering now
+Dialogue: 0,0:22:46.56,0:22:49.44,*Default,NTP,0000,0000,0000,,but the fifth chapter was about how you
+Dialogue: 0,0:22:49.44,0:22:49.92,*Default,NTP,0000,0000,0000,,get
+Dialogue: 0,0:22:49.92,0:22:52.64,*Default,NTP,0000,0000,0000,,a programming language to actually run
+Dialogue: 0,0:22:52.64,0:22:53.36,*Default,NTP,0000,0000,0000,,on a
+Dialogue: 0,0:22:53.36,0:22:56.48,*Default,NTP,0000,0000,0000,,chip using a limited instruction set
+Dialogue: 0,0:22:56.48,0:22:58.00,*Default,NTP,0000,0000,0000,,that doesn't have things like procedure
+Dialogue: 0,0:22:58.00,0:22:59.52,*Default,NTP,0000,0000,0000,,calls and stuff like that
+Dialogue: 0,0:22:59.52,0:23:01.36,*Default,NTP,0000,0000,0000,,and you know they did a very nice job of
+Dialogue: 0,0:23:01.36,0:23:03.28,*Default,NTP,0000,0000,0000,,laying out how you would get from
+Dialogue: 0,0:23:03.28,0:23:05.12,*Default,NTP,0000,0000,0000,,a high-level language to a low-level
+Dialogue: 0,0:23:05.12,0:23:07.12,*Default,NTP,0000,0000,0000,,language
+Dialogue: 0,0:23:07.12,0:23:09.52,*Default,NTP,0000,0000,0000,,and so you know people who are excited
+Dialogue: 0,0:23:09.52,0:23:11.44,*Default,NTP,0000,0000,0000,,about this idea of building programming
+Dialogue: 0,0:23:11.44,0:23:13.12,*Default,NTP,0000,0000,0000,,languages should all go read that
+Dialogue: 0,0:23:13.12,0:23:16.64,*Default,NTP,0000,0000,0000,,that chapter you can read the whole book
+Dialogue: 0,0:23:16.64,0:23:17.76,*Default,NTP,0000,0000,0000,,too you'll find many
+Dialogue: 0,0:23:17.76,0:23:19.52,*Default,NTP,0000,0000,0000,,things familiar from what you've learned
+Dialogue: 0,0:23:19.52,0:23:23.84,*Default,NTP,0000,0000,0000,,in 618
+Dialogue: 0,0:23:24.16,0:23:26.16,*Default,NTP,0000,0000,0000,,when did you switch over or when did we
+Dialogue: 0,0:23:26.16,0:23:28.40,*Default,NTP,0000,0000,0000,,switch over from teaching scheme in 61a
+Dialogue: 0,0:23:28.40,0:23:30.48,*Default,NTP,0000,0000,0000,,to python
+Dialogue: 0,0:23:30.48,0:23:35.20,*Default,NTP,0000,0000,0000,,uh we switched in 2011. wow that's late
+Dialogue: 0,0:23:35.20,0:23:39.12,*Default,NTP,0000,0000,0000,,um and yeah that was the first time i
+Dialogue: 0,0:23:39.12,0:23:40.24,*Default,NTP,0000,0000,0000,,taught the course
+Dialogue: 0,0:23:40.24,0:23:42.32,*Default,NTP,0000,0000,0000,,yeah i didn't just teach it but i kind
+Dialogue: 0,0:23:42.32,0:23:43.44,*Default,NTP,0000,0000,0000,,of redid it
+Dialogue: 0,0:23:43.44,0:23:46.48,*Default,NTP,0000,0000,0000,,and uh that was a lot of work
+Dialogue: 0,0:23:46.48,0:23:48.72,*Default,NTP,0000,0000,0000,,yeah yeah that that came pretty late
+Dialogue: 0,0:23:48.72,0:23:50.64,*Default,NTP,0000,0000,0000,,because most most of us had switched
+Dialogue: 0,0:23:50.64,0:23:51.76,*Default,NTP,0000,0000,0000,,over
+Dialogue: 0,0:23:51.76,0:23:53.20,*Default,NTP,0000,0000,0000,,a lot of people switched over to java
+Dialogue: 0,0:23:53.20,0:23:54.88,*Default,NTP,0000,0000,0000,,for a while before python came on the
+Dialogue: 0,0:23:54.88,0:23:56.40,*Default,NTP,0000,0000,0000,,scene but then once python came on the
+Dialogue: 0,0:23:56.40,0:23:57.92,*Default,NTP,0000,0000,0000,,scene it was clear that was the right
+Dialogue: 0,0:23:57.92,0:23:59.68,*Default,NTP,0000,0000,0000,,place to start
+Dialogue: 0,0:23:59.68,0:24:02.72,*Default,NTP,0000,0000,0000,,yeah berkeley was definitely a holdout
+Dialogue: 0,0:24:02.72,0:24:04.48,*Default,NTP,0000,0000,0000,,you know there are some i think there's
+Dialogue: 0,0:24:04.48,0:24:05.92,*Default,NTP,0000,0000,0000,,still folks who are a big fan
+Dialogue: 0,0:24:05.92,0:24:09.76,*Default,NTP,0000,0000,0000,,of scheme and i know that's reasonable
+Dialogue: 0,0:24:09.76,0:24:12.64,*Default,NTP,0000,0000,0000,,it's something um but i kind of like the
+Dialogue: 0,0:24:12.64,0:24:14.88,*Default,NTP,0000,0000,0000,,idea that the community around python is
+Dialogue: 0,0:24:14.88,0:24:16.56,*Default,NTP,0000,0000,0000,,so big that if you want to build some
+Dialogue: 0,0:24:16.56,0:24:18.00,*Default,NTP,0000,0000,0000,,like random thing in your
+Dialogue: 0,0:24:18.00,0:24:20.00,*Default,NTP,0000,0000,0000,,free time you can kind of google about
+Dialogue: 0,0:24:20.00,0:24:22.08,*Default,NTP,0000,0000,0000,,it and there's always some guide
+Dialogue: 0,0:24:22.08,0:24:25.12,*Default,NTP,0000,0000,0000,,uh that we we did see a big uptick in
+Dialogue: 0,0:24:25.12,0:24:27.20,*Default,NTP,0000,0000,0000,,kind of student independent projects and
+Dialogue: 0,0:24:27.20,0:24:28.88,*Default,NTP,0000,0000,0000,,hackathons and stuff like that right at
+Dialogue: 0,0:24:28.88,0:24:29.76,*Default,NTP,0000,0000,0000,,the same time so
+Dialogue: 0,0:24:29.76,0:24:31.04,*Default,NTP,0000,0000,0000,,you never know about cause and effect
+Dialogue: 0,0:24:31.04,0:24:32.24,*Default,NTP,0000,0000,0000,,but it does seem like they're probably
+Dialogue: 0,0:24:32.24,0:24:33.52,*Default,NTP,0000,0000,0000,,related
+Dialogue: 0,0:24:33.52,0:24:35.20,*Default,NTP,0000,0000,0000,,joey asked a good question which factors
+Dialogue: 0,0:24:35.20,0:24:36.64,*Default,NTP,0000,0000,0000,,do you consider when picking languages
+Dialogue: 0,0:24:36.64,0:24:38.24,*Default,NTP,0000,0000,0000,,for a coding project
+Dialogue: 0,0:24:38.24,0:24:39.92,*Default,NTP,0000,0000,0000,,well i'll tell you what i do i although
+Dialogue: 0,0:24:39.92,0:24:41.20,*Default,NTP,0000,0000,0000,,i work probably at a different scale
+Dialogue: 0,0:24:41.20,0:24:42.32,*Default,NTP,0000,0000,0000,,than john does
+Dialogue: 0,0:24:42.32,0:24:44.64,*Default,NTP,0000,0000,0000,,is so part of it depends you know am i
+Dialogue: 0,0:24:44.64,0:24:46.08,*Default,NTP,0000,0000,0000,,just trying to hack something together
+Dialogue: 0,0:24:46.08,0:24:47.60,*Default,NTP,0000,0000,0000,,to try something out
+Dialogue: 0,0:24:47.60,0:24:49.12,*Default,NTP,0000,0000,0000,,and if i'm doing that it's almost always
+Dialogue: 0,0:24:49.12,0:24:50.96,*Default,NTP,0000,0000,0000,,matlab or python because those are just
+Dialogue: 0,0:24:50.96,0:24:52.48,*Default,NTP,0000,0000,0000,,the ones i'm comfortable with and i can
+Dialogue: 0,0:24:52.48,0:24:54.40,*Default,NTP,0000,0000,0000,,code really really fast in
+Dialogue: 0,0:24:54.40,0:24:55.84,*Default,NTP,0000,0000,0000,,and they've got a lot of built-in
+Dialogue: 0,0:24:55.84,0:24:56.96,*Default,NTP,0000,0000,0000,,libraries so i don't have to
+Dialogue: 0,0:24:56.96,0:24:59.04,*Default,NTP,0000,0000,0000,,re-implement everything from scratch
+Dialogue: 0,0:24:59.04,0:25:00.72,*Default,NTP,0000,0000,0000,,so if i'm just you know passing around
+Dialogue: 0,0:25:00.72,0:25:02.64,*Default,NTP,0000,0000,0000,,on a research project it's always python
+Dialogue: 0,0:25:02.64,0:25:03.92,*Default,NTP,0000,0000,0000,,or matlab
+Dialogue: 0,0:25:03.92,0:25:06.56,*Default,NTP,0000,0000,0000,,and then if i'm if i think i'm probably
+Dialogue: 0,0:25:06.56,0:25:08.16,*Default,NTP,0000,0000,0000,,going to deploy something
+Dialogue: 0,0:25:08.16,0:25:10.96,*Default,NTP,0000,0000,0000,,on server or web-based probably you know
+Dialogue: 0,0:25:10.96,0:25:12.00,*Default,NTP,0000,0000,0000,,you want to stay away from things like
+Dialogue: 0,0:25:12.00,0:25:14.00,*Default,NTP,0000,0000,0000,,matlab because those are proprietary
+Dialogue: 0,0:25:14.00,0:25:15.36,*Default,NTP,0000,0000,0000,,and you can't really run those in the
+Dialogue: 0,0:25:15.36,0:25:17.12,*Default,NTP,0000,0000,0000,,software so then you start thinking
+Dialogue: 0,0:25:17.12,0:25:18.16,*Default,NTP,0000,0000,0000,,javascript
+Dialogue: 0,0:25:18.16,0:25:20.00,*Default,NTP,0000,0000,0000,,maybe python and job some combination of
+Dialogue: 0,0:25:20.00,0:25:21.84,*Default,NTP,0000,0000,0000,,python and javascript
+Dialogue: 0,0:25:21.84,0:25:23.12,*Default,NTP,0000,0000,0000,,then every once in a while we're doing
+Dialogue: 0,0:25:23.12,0:25:25.12,*Default,NTP,0000,0000,0000,,things where we really really need speed
+Dialogue: 0,0:25:25.12,0:25:25.92,*Default,NTP,0000,0000,0000,,we're doing things that are
+Dialogue: 0,0:25:25.92,0:25:28.08,*Default,NTP,0000,0000,0000,,computationally super intensive
+Dialogue: 0,0:25:28.08,0:25:29.52,*Default,NTP,0000,0000,0000,,and then you just bite the bullet and
+Dialogue: 0,0:25:29.52,0:25:31.76,*Default,NTP,0000,0000,0000,,you implement in c um
+Dialogue: 0,0:25:31.76,0:25:33.20,*Default,NTP,0000,0000,0000,,and well usually what i do is i
+Dialogue: 0,0:25:33.20,0:25:34.80,*Default,NTP,0000,0000,0000,,implement in python
+Dialogue: 0,0:25:34.80,0:25:36.80,*Default,NTP,0000,0000,0000,,make sure it's working debug everything
+Dialogue: 0,0:25:36.80,0:25:37.84,*Default,NTP,0000,0000,0000,,get it all working
+Dialogue: 0,0:25:37.84,0:25:39.60,*Default,NTP,0000,0000,0000,,and then translate it into c because
+Dialogue: 0,0:25:39.60,0:25:41.12,*Default,NTP,0000,0000,0000,,writing c code from scratch
+Dialogue: 0,0:25:41.12,0:25:43.20,*Default,NTP,0000,0000,0000,,is a little can be a little excruciating
+Dialogue: 0,0:25:43.20,0:25:44.40,*Default,NTP,0000,0000,0000,,because you have to do all the memory
+Dialogue: 0,0:25:44.40,0:25:45.44,*Default,NTP,0000,0000,0000,,management
+Dialogue: 0,0:25:45.44,0:25:47.04,*Default,NTP,0000,0000,0000,,and i find a little bit harder to debug
+Dialogue: 0,0:25:47.04,0:25:49.44,*Default,NTP,0000,0000,0000,,the code um so i guess it's a
+Dialogue: 0,0:25:49.44,0:25:50.72,*Default,NTP,0000,0000,0000,,combination of and
+Dialogue: 0,0:25:50.72,0:25:52.40,*Default,NTP,0000,0000,0000,,one more thing too is the scale at which
+Dialogue: 0,0:25:52.40,0:25:53.36,*Default,NTP,0000,0000,0000,,you're going to be writing so if you're
+Dialogue: 0,0:25:53.36,0:25:55.68,*Default,NTP,0000,0000,0000,,writing something really really big
+Dialogue: 0,0:25:55.68,0:25:57.60,*Default,NTP,0000,0000,0000,,you stay out of programs like matlabs
+Dialogue: 0,0:25:57.60,0:25:59.36,*Default,NTP,0000,0000,0000,,they weren't built python is
+Dialogue: 0,0:25:59.36,0:26:01.92,*Default,NTP,0000,0000,0000,,reasonably good for large scale uh and
+Dialogue: 0,0:26:01.92,0:26:03.36,*Default,NTP,0000,0000,0000,,then the last part of that
+Dialogue: 0,0:26:03.36,0:26:05.28,*Default,NTP,0000,0000,0000,,is every once in a while we do something
+Dialogue: 0,0:26:05.28,0:26:06.08,*Default,NTP,0000,0000,0000,,where we really have to be
+Dialogue: 0,0:26:06.08,0:26:07.36,*Default,NTP,0000,0000,0000,,cross-platform
+Dialogue: 0,0:26:07.36,0:26:08.88,*Default,NTP,0000,0000,0000,,so i know that this is gonna have to run
+Dialogue: 0,0:26:08.88,0:26:11.12,*Default,NTP,0000,0000,0000,,on linux mac and and um
+Dialogue: 0,0:26:11.12,0:26:13.76,*Default,NTP,0000,0000,0000,,and windows and then you do java i hate
+Dialogue: 0,0:26:13.76,0:26:15.20,*Default,NTP,0000,0000,0000,,it i don't like java
+Dialogue: 0,0:26:15.20,0:26:17.28,*Default,NTP,0000,0000,0000,,it's painful but if you really really
+Dialogue: 0,0:26:17.28,0:26:18.72,*Default,NTP,0000,0000,0000,,want cross-platform
+Dialogue: 0,0:26:18.72,0:26:21.44,*Default,NTP,0000,0000,0000,,i go to java
+Dialogue: 0,0:26:22.08,0:26:23.76,*Default,NTP,0000,0000,0000,,yeah i guess one way to summarize it is
+Dialogue: 0,0:26:23.76,0:26:25.04,*Default,NTP,0000,0000,0000,,you actually want to solve as few
+Dialogue: 0,0:26:25.04,0:26:27.92,*Default,NTP,0000,0000,0000,,problems as possible
+Dialogue: 0,0:26:27.92,0:26:29.76,*Default,NTP,0000,0000,0000,,right so you look for languages that
+Dialogue: 0,0:26:29.76,0:26:31.20,*Default,NTP,0000,0000,0000,,have already solved
+Dialogue: 0,0:26:31.20,0:26:32.80,*Default,NTP,0000,0000,0000,,many of the things that you'll encounter
+Dialogue: 0,0:26:32.80,0:26:34.80,*Default,NTP,0000,0000,0000,,if that's cross-platform or if that's
+Dialogue: 0,0:26:34.80,0:26:35.36,*Default,NTP,0000,0000,0000,,kind of
+Dialogue: 0,0:26:35.36,0:26:39.28,*Default,NTP,0000,0000,0000,,deployment or whatever yeah
+Dialogue: 0,0:26:39.28,0:26:41.44,*Default,NTP,0000,0000,0000,,that was that was a really nice
+Dialogue: 0,0:26:41.44,0:26:42.56,*Default,NTP,0000,0000,0000,,condensed
+Dialogue: 0,0:26:42.56,0:26:45.92,*Default,NTP,0000,0000,0000,,version of my answer
+Dialogue: 0,0:26:46.48,0:26:49.68,*Default,NTP,0000,0000,0000,,what do you mostly code in john
+Dialogue: 0,0:26:49.68,0:26:52.32,*Default,NTP,0000,0000,0000,,um we wrote a lot of python these days
+Dialogue: 0,0:26:52.32,0:26:53.92,*Default,NTP,0000,0000,0000,,yeah because the there's
+Dialogue: 0,0:26:53.92,0:26:56.96,*Default,NTP,0000,0000,0000,,the support for kind of machine learning
+Dialogue: 0,0:26:56.96,0:26:59.52,*Default,NTP,0000,0000,0000,,uh deep neural network stuff is just
+Dialogue: 0,0:26:59.52,0:27:02.00,*Default,NTP,0000,0000,0000,,better there than anywhere else
+Dialogue: 0,0:27:02.00,0:27:04.96,*Default,NTP,0000,0000,0000,,so okay uh delenia asked an interesting
+Dialogue: 0,0:27:04.96,0:27:06.08,*Default,NTP,0000,0000,0000,,question
+Dialogue: 0,0:27:06.08,0:27:08.08,*Default,NTP,0000,0000,0000,,what are your priorities when learning a
+Dialogue: 0,0:27:08.08,0:27:10.64,*Default,NTP,0000,0000,0000,,new language
+Dialogue: 0,0:27:10.64,0:27:11.84,*Default,NTP,0000,0000,0000,,you know here's the thing you're going
+Dialogue: 0,0:27:11.84,0:27:14.16,*Default,NTP,0000,0000,0000,,to discover pretty soon is learning a
+Dialogue: 0,0:27:14.16,0:27:15.28,*Default,NTP,0000,0000,0000,,new language is
+Dialogue: 0,0:27:15.28,0:27:17.84,*Default,NTP,0000,0000,0000,,for the most part pretty easy because
+Dialogue: 0,0:27:17.84,0:27:20.32,*Default,NTP,0000,0000,0000,,once you know the basics you know all
+Dialogue: 0,0:27:20.32,0:27:21.76,*Default,NTP,0000,0000,0000,,the languages i mean there's a few
+Dialogue: 0,0:27:21.76,0:27:23.68,*Default,NTP,0000,0000,0000,,exceptions like ml and prolog
+Dialogue: 0,0:27:23.68,0:27:26.80,*Default,NTP,0000,0000,0000,,and haskell that are a little quirky but
+Dialogue: 0,0:27:26.80,0:27:27.84,*Default,NTP,0000,0000,0000,,once you know
+Dialogue: 0,0:27:27.84,0:27:30.08,*Default,NTP,0000,0000,0000,,a handful of languages it's like a
+Dialogue: 0,0:27:30.08,0:27:31.12,*Default,NTP,0000,0000,0000,,couple of days
+Dialogue: 0,0:27:31.12,0:27:32.72,*Default,NTP,0000,0000,0000,,and then it's really you can write in
+Dialogue: 0,0:27:32.72,0:27:34.16,*Default,NTP,0000,0000,0000,,that language quickly it's a question of
+Dialogue: 0,0:27:34.16,0:27:36.32,*Default,NTP,0000,0000,0000,,how good is the code and how easy it is
+Dialogue: 0,0:27:36.32,0:27:36.80,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:27:36.80,0:27:38.88,*Default,NTP,0000,0000,0000,,a combination of stack overflow and just
+Dialogue: 0,0:27:38.88,0:27:40.64,*Default,NTP,0000,0000,0000,,your base knowledge so i
+Dialogue: 0,0:27:40.64,0:27:42.72,*Default,NTP,0000,0000,0000,,i haven't i think python is probably the
+Dialogue: 0,0:27:42.72,0:27:44.80,*Default,NTP,0000,0000,0000,,last new language i've learned
+Dialogue: 0,0:27:44.80,0:27:46.80,*Default,NTP,0000,0000,0000,,in recent memory i don't know that there
+Dialogue: 0,0:27:46.80,0:27:48.32,*Default,NTP,0000,0000,0000,,i think the combination of
+Dialogue: 0,0:27:48.32,0:27:51.68,*Default,NTP,0000,0000,0000,,javascript matlab python c and java
+Dialogue: 0,0:27:51.68,0:27:53.92,*Default,NTP,0000,0000,0000,,i don't know that i i guess uh r i
+Dialogue: 0,0:27:53.92,0:27:55.12,*Default,NTP,0000,0000,0000,,learned recently are
+Dialogue: 0,0:27:55.12,0:27:57.44,*Default,NTP,0000,0000,0000,,the statistical programming which took
+Dialogue: 0,0:27:57.44,0:27:59.68,*Default,NTP,0000,0000,0000,,like all of an afternoon frankly
+Dialogue: 0,0:27:59.68,0:28:03.84,*Default,NTP,0000,0000,0000,,i mean it gets pretty easy after a while
+Dialogue: 0,0:28:04.72,0:28:07.76,*Default,NTP,0000,0000,0000,,yeah i mean uh reading a book often
+Dialogue: 0,0:28:07.76,0:28:09.92,*Default,NTP,0000,0000,0000,,will leave you with very fleeting
+Dialogue: 0,0:28:09.92,0:28:11.60,*Default,NTP,0000,0000,0000,,knowledge you just gotta go build
+Dialogue: 0,0:28:11.60,0:28:12.96,*Default,NTP,0000,0000,0000,,something yeah you just gotta start
+Dialogue: 0,0:28:12.96,0:28:14.96,*Default,NTP,0000,0000,0000,,coding yeah that's exactly right
+Dialogue: 0,0:28:14.96,0:28:16.72,*Default,NTP,0000,0000,0000,,so uh if i really just want to learn the
+Dialogue: 0,0:28:16.72,0:28:18.32,*Default,NTP,0000,0000,0000,,language for the languages sake then i
+Dialogue: 0,0:28:18.32,0:28:19.84,*Default,NTP,0000,0000,0000,,usually just re-implement the hog
+Dialogue: 0,0:28:19.84,0:28:21.60,*Default,NTP,0000,0000,0000,,project because that's always uh
+Dialogue: 0,0:28:21.60,0:28:24.00,*Default,NTP,0000,0000,0000,,that always makes me happy but usually
+Dialogue: 0,0:28:24.00,0:28:25.36,*Default,NTP,0000,0000,0000,,when i'm trying to learn some language
+Dialogue: 0,0:28:25.36,0:28:26.48,*Default,NTP,0000,0000,0000,,it's because i'm trying to do some
+Dialogue: 0,0:28:26.48,0:28:27.36,*Default,NTP,0000,0000,0000,,particular thing
+Dialogue: 0,0:28:27.36,0:28:29.12,*Default,NTP,0000,0000,0000,,in advance that actually matters and i
+Dialogue: 0,0:28:29.12,0:28:30.48,*Default,NTP,0000,0000,0000,,just like learn what i need to know in
+Dialogue: 0,0:28:30.48,0:28:31.76,*Default,NTP,0000,0000,0000,,order to do that
+Dialogue: 0,0:28:31.76,0:28:37.68,*Default,NTP,0000,0000,0000,,yeah it's source equals buffer input
+Dialogue: 0,0:28:37.92,0:28:40.24,*Default,NTP,0000,0000,0000,,yeah so the question is what is this
+Dialogue: 0,0:28:40.24,0:28:41.68,*Default,NTP,0000,0000,0000,,line um
+Dialogue: 0,0:28:41.68,0:28:44.24,*Default,NTP,0000,0000,0000,,which calls this function which makes a
+Dialogue: 0,0:28:44.24,0:28:46.48,*Default,NTP,0000,0000,0000,,buffer out of the result of tokenizing
+Dialogue: 0,0:28:46.48,0:28:49.44,*Default,NTP,0000,0000,0000,,the lines of an input reader
+Dialogue: 0,0:28:49.44,0:28:53.28,*Default,NTP,0000,0000,0000,,the reason there's three parts to this
+Dialogue: 0,0:28:53.28,0:28:55.04,*Default,NTP,0000,0000,0000,,is that they all do slightly different
+Dialogue: 0,0:28:55.04,0:28:57.84,*Default,NTP,0000,0000,0000,,things that you need to compose together
+Dialogue: 0,0:28:57.84,0:29:01.04,*Default,NTP,0000,0000,0000,,this gets you the text
+Dialogue: 0,0:29:01.04,0:29:03.28,*Default,NTP,0000,0000,0000,,this breaks the text into tokens which
+Dialogue: 0,0:29:03.28,0:29:05.36,*Default,NTP,0000,0000,0000,,we talked about like individual numbers
+Dialogue: 0,0:29:05.36,0:29:07.52,*Default,NTP,0000,0000,0000,,and parentheses and stuff like that
+Dialogue: 0,0:29:07.52,0:29:09.12,*Default,NTP,0000,0000,0000,,and buffer gives you a way to walk
+Dialogue: 0,0:29:09.12,0:29:10.56,*Default,NTP,0000,0000,0000,,through them one by one
+Dialogue: 0,0:29:10.56,0:29:12.00,*Default,NTP,0000,0000,0000,,and remembers where you were just in
+Dialogue: 0,0:29:12.00,0:29:13.28,*Default,NTP,0000,0000,0000,,case you need to print out an error
+Dialogue: 0,0:29:13.28,0:29:13.92,*Default,NTP,0000,0000,0000,,message
+Dialogue: 0,0:29:13.92,0:29:16.00,*Default,NTP,0000,0000,0000,,so those are the three parts and the
+Dialogue: 0,0:29:16.00,0:29:18.32,*Default,NTP,0000,0000,0000,,part about reading
+Dialogue: 0,0:29:18.32,0:29:20.88,*Default,NTP,0000,0000,0000,,is i wish it were simpler but i think
+Dialogue: 0,0:29:20.88,0:29:22.80,*Default,NTP,0000,0000,0000,,it's unfortunately not
+Dialogue: 0,0:29:22.80,0:29:26.80,*Default,NTP,0000,0000,0000,,yeah if you look at the input reader
+Dialogue: 0,0:29:26.80,0:29:29.12,*Default,NTP,0000,0000,0000,,oh
+Dialogue: 0,0:29:30.40,0:29:32.08,*Default,NTP,0000,0000,0000,,it is simple oh yeah just the input
+Dialogue: 0,0:29:32.08,0:29:33.76,*Default,NTP,0000,0000,0000,,command
+Dialogue: 0,0:29:33.76,0:29:35.20,*Default,NTP,0000,0000,0000,,oh good because it's all built into
+Dialogue: 0,0:29:35.20,0:29:36.88,*Default,NTP,0000,0000,0000,,python yeah so python has this
+Dialogue: 0,0:29:36.88,0:29:39.12,*Default,NTP,0000,0000,0000,,this notion of input where if i call
+Dialogue: 0,0:29:39.12,0:29:41.60,*Default,NTP,0000,0000,0000,,input then if i type something

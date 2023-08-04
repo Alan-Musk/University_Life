@@ -1,0 +1,1022 @@
+[Script Info]
+Title: Lecture 17. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=42&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.72,0:00:04.40,*Default,NTP,0000,0000,0000,,61a lecture 17 q a
+Dialogue: 0,0:00:04.40,0:00:07.04,*Default,NTP,0000,0000,0000,,okay so i i think the question is about
+Dialogue: 0,0:00:07.04,0:00:08.48,*Default,NTP,0000,0000,0000,,the
+Dialogue: 0,0:00:08.48,0:00:12.08,*Default,NTP,0000,0000,0000,,the relationship between yield from and
+Dialogue: 0,0:00:12.08,0:00:14.08,*Default,NTP,0000,0000,0000,,how that's essentially unpacking a for
+Dialogue: 0,0:00:14.08,0:00:15.44,*Default,NTP,0000,0000,0000,,loop
+Dialogue: 0,0:00:15.44,0:00:17.60,*Default,NTP,0000,0000,0000,,yeah the yield from is just a
+Dialogue: 0,0:00:17.60,0:00:18.72,*Default,NTP,0000,0000,0000,,convenience
+Dialogue: 0,0:00:18.72,0:00:20.48,*Default,NTP,0000,0000,0000,,there's no real reason why it's in the
+Dialogue: 0,0:00:20.48,0:00:22.16,*Default,NTP,0000,0000,0000,,language but it is
+Dialogue: 0,0:00:22.16,0:00:24.72,*Default,NTP,0000,0000,0000,,um it takes two two lines and turns them
+Dialogue: 0,0:00:24.72,0:00:25.84,*Default,NTP,0000,0000,0000,,into one
+Dialogue: 0,0:00:25.84,0:00:28.56,*Default,NTP,0000,0000,0000,,so uh going back to the example from
+Dialogue: 0,0:00:28.56,0:00:29.52,*Default,NTP,0000,0000,0000,,lecture
+Dialogue: 0,0:00:29.52,0:00:30.96,*Default,NTP,0000,0000,0000,,which was trying to yield all the
+Dialogue: 0,0:00:30.96,0:00:32.64,*Default,NTP,0000,0000,0000,,prefixes of some string
+Dialogue: 0,0:00:32.64,0:00:35.68,*Default,NTP,0000,0000,0000,,s if s meaning
+Dialogue: 0,0:00:35.68,0:00:38.88,*Default,NTP,0000,0000,0000,,f s is not the empty string um
+Dialogue: 0,0:00:38.88,0:00:42.08,*Default,NTP,0000,0000,0000,,it said yield from
+Dialogue: 0,0:00:42.08,0:00:45.44,*Default,NTP,0000,0000,0000,,prefixes of
+Dialogue: 0,0:00:45.44,0:00:49.76,*Default,NTP,0000,0000,0000,,everything in s up to the last letter
+Dialogue: 0,0:00:49.76,0:00:53.28,*Default,NTP,0000,0000,0000,,and then yield s itself because s
+Dialogue: 0,0:00:53.28,0:00:55.44,*Default,NTP,0000,0000,0000,,is a prefix of s depending on how you
+Dialogue: 0,0:00:55.44,0:00:57.36,*Default,NTP,0000,0000,0000,,define prefix but that's a fine way to
+Dialogue: 0,0:00:57.36,0:00:59.04,*Default,NTP,0000,0000,0000,,think about him
+Dialogue: 0,0:00:59.04,0:01:02.72,*Default,NTP,0000,0000,0000,,um and then we need to call this on
+Dialogue: 0,0:01:02.72,0:01:05.12,*Default,NTP,0000,0000,0000,,something
+Dialogue: 0,0:01:05.20,0:01:08.08,*Default,NTP,0000,0000,0000,,like uh i don't know dogs so that should
+Dialogue: 0,0:01:08.08,0:01:09.44,*Default,NTP,0000,0000,0000,,get dog and doo
+Dialogue: 0,0:01:09.44,0:01:13.36,*Default,NTP,0000,0000,0000,,and d notice that this result
+Dialogue: 0,0:01:13.36,0:01:16.32,*Default,NTP,0000,0000,0000,,is not a list if we'd want to do
+Dialogue: 0,0:01:16.32,0:01:17.84,*Default,NTP,0000,0000,0000,,something with it we'd have to
+Dialogue: 0,0:01:17.84,0:01:21.12,*Default,NTP,0000,0000,0000,,pass this in or call next on it or
+Dialogue: 0,0:01:21.12,0:01:22.32,*Default,NTP,0000,0000,0000,,something like that
+Dialogue: 0,0:01:22.32,0:01:24.88,*Default,NTP,0000,0000,0000,,i believe the doc test just called list
+Dialogue: 0,0:01:24.88,0:01:26.48,*Default,NTP,0000,0000,0000,,on it which is basically get all the
+Dialogue: 0,0:01:26.48,0:01:27.84,*Default,NTP,0000,0000,0000,,contents
+Dialogue: 0,0:01:27.84,0:01:31.28,*Default,NTP,0000,0000,0000,,and we got all this stuff yield from can
+Dialogue: 0,0:01:31.28,0:01:34.24,*Default,NTP,0000,0000,0000,,always be replaced with a for statement
+Dialogue: 0,0:01:34.24,0:01:37.36,*Default,NTP,0000,0000,0000,,that says the following
+Dialogue: 0,0:01:37.36,0:01:40.56,*Default,NTP,0000,0000,0000,,for some new variable
+Dialogue: 0,0:01:40.56,0:01:46.56,*Default,NTP,0000,0000,0000,,in the thing that we're yielding from
+Dialogue: 0,0:01:47.76,0:01:51.68,*Default,NTP,0000,0000,0000,,yield x so that's what yield from does
+Dialogue: 0,0:01:51.68,0:01:53.68,*Default,NTP,0000,0000,0000,,is it goes through all the elements
+Dialogue: 0,0:01:53.68,0:01:59.28,*Default,NTP,0000,0000,0000,,of some iterable and yields each of them
+Dialogue: 0,0:01:59.28,0:02:01.60,*Default,NTP,0000,0000,0000,,so it's just a syntactic shortcut that's
+Dialogue: 0,0:02:01.60,0:02:03.20,*Default,NTP,0000,0000,0000,,all it's essentially saying look this is
+Dialogue: 0,0:02:03.20,0:02:03.44,*Default,NTP,0000,0000,0000,,a
+Dialogue: 0,0:02:03.44,0:02:05.20,*Default,NTP,0000,0000,0000,,this is what you will find often not
+Dialogue: 0,0:02:05.20,0:02:06.48,*Default,NTP,0000,0000,0000,,just in python but in a lot of
+Dialogue: 0,0:02:06.48,0:02:08.24,*Default,NTP,0000,0000,0000,,programming languages that
+Dialogue: 0,0:02:08.24,0:02:11.84,*Default,NTP,0000,0000,0000,,things that are routinely coded by hand
+Dialogue: 0,0:02:11.84,0:02:13.44,*Default,NTP,0000,0000,0000,,are eventually incorporated into the
+Dialogue: 0,0:02:13.44,0:02:15.44,*Default,NTP,0000,0000,0000,,language with a little bit of a shortcut
+Dialogue: 0,0:02:15.44,0:02:15.76,*Default,NTP,0000,0000,0000,,it's
+Dialogue: 0,0:02:15.76,0:02:18.24,*Default,NTP,0000,0000,0000,,it's abstracting out some complexity
+Dialogue: 0,0:02:18.24,0:02:19.44,*Default,NTP,0000,0000,0000,,here
+Dialogue: 0,0:02:19.44,0:02:22.48,*Default,NTP,0000,0000,0000,,um yeah exactly once you know what it
+Dialogue: 0,0:02:22.48,0:02:25.04,*Default,NTP,0000,0000,0000,,means it's a little bit easier to read
+Dialogue: 0,0:02:25.04,0:02:26.16,*Default,NTP,0000,0000,0000,,before you know what it means and it's
+Dialogue: 0,0:02:26.16,0:02:28.40,*Default,NTP,0000,0000,0000,,hard to read right and
+Dialogue: 0,0:02:28.40,0:02:30.08,*Default,NTP,0000,0000,0000,,uh there's a question in the chat do we
+Dialogue: 0,0:02:30.08,0:02:31.76,*Default,NTP,0000,0000,0000,,always need a yield statement after a
+Dialogue: 0,0:02:31.76,0:02:32.48,*Default,NTP,0000,0000,0000,,yield from
+Dialogue: 0,0:02:32.48,0:02:34.16,*Default,NTP,0000,0000,0000,,and the answer is no we could have just
+Dialogue: 0,0:02:34.16,0:02:35.92,*Default,NTP,0000,0000,0000,,commented out that yield and it just
+Dialogue: 0,0:02:35.92,0:02:37.76,*Default,NTP,0000,0000,0000,,wouldn't have returned
+Dialogue: 0,0:02:37.76,0:02:39.52,*Default,NTP,0000,0000,0000,,the list as part of the prefix i mean
+Dialogue: 0,0:02:39.52,0:02:40.96,*Default,NTP,0000,0000,0000,,that would have been incorrect
+Dialogue: 0,0:02:40.96,0:02:42.24,*Default,NTP,0000,0000,0000,,in terms of the functionality of
+Dialogue: 0,0:02:42.24,0:02:44.08,*Default,NTP,0000,0000,0000,,prefixes but you can just have
+Dialogue: 0,0:02:44.08,0:02:45.92,*Default,NTP,0000,0000,0000,,i mean essentially a yield from is a
+Dialogue: 0,0:02:45.92,0:02:48.40,*Default,NTP,0000,0000,0000,,whole bunch of yields
+Dialogue: 0,0:02:48.40,0:02:50.48,*Default,NTP,0000,0000,0000,,and so in this example if we had
+Dialogue: 0,0:02:50.48,0:02:52.16,*Default,NTP,0000,0000,0000,,commented out yield s it would have
+Dialogue: 0,0:02:52.16,0:02:53.28,*Default,NTP,0000,0000,0000,,it would have worked fine it was just
+Dialogue: 0,0:02:53.28,0:02:56.00,*Default,NTP,0000,0000,0000,,given the wrong answer
+Dialogue: 0,0:02:56.00,0:02:59.04,*Default,NTP,0000,0000,0000,,yeah good question the question is for
+Dialogue: 0,0:02:59.04,0:03:00.00,*Default,NTP,0000,0000,0000,,the correct
+Dialogue: 0,0:03:00.00,0:03:03.28,*Default,NTP,0000,0000,0000,,implementation here what is prefixes
+Dialogue: 0,0:03:03.28,0:03:07.44,*Default,NTP,0000,0000,0000,,s of all of s without the last letter
+Dialogue: 0,0:03:07.44,0:03:10.40,*Default,NTP,0000,0000,0000,,this is an iterator over all of the
+Dialogue: 0,0:03:10.40,0:03:12.00,*Default,NTP,0000,0000,0000,,prefixes
+Dialogue: 0,0:03:12.00,0:03:15.84,*Default,NTP,0000,0000,0000,,of this so if this were dogs
+Dialogue: 0,0:03:15.84,0:03:19.04,*Default,NTP,0000,0000,0000,,this would be dog and prefixes of dog
+Dialogue: 0,0:03:19.04,0:03:22.96,*Default,NTP,0000,0000,0000,,would be all three d-d-o and d-o-g
+Dialogue: 0,0:03:22.96,0:03:26.00,*Default,NTP,0000,0000,0000,,so um
+Dialogue: 0,0:03:26.08,0:03:28.24,*Default,NTP,0000,0000,0000,,yeah it's not just like the first prefix
+Dialogue: 0,0:03:28.24,0:03:29.92,*Default,NTP,0000,0000,0000,,it's all of them
+Dialogue: 0,0:03:29.92,0:03:32.40,*Default,NTP,0000,0000,0000,,and uh that's why what we're doing is
+Dialogue: 0,0:03:32.40,0:03:33.44,*Default,NTP,0000,0000,0000,,we're yielding the d
+Dialogue: 0,0:03:33.44,0:03:35.92,*Default,NTP,0000,0000,0000,,the d o the dog and finally we're
+Dialogue: 0,0:03:35.92,0:03:39.68,*Default,NTP,0000,0000,0000,,dealing yielding the dogs
+Dialogue: 0,0:03:40.00,0:03:42.24,*Default,NTP,0000,0000,0000,,hey john there's a question in the chat
+Dialogue: 0,0:03:42.24,0:03:43.44,*Default,NTP,0000,0000,0000,,sorry to interrupt and
+Dialogue: 0,0:03:43.44,0:03:45.60,*Default,NTP,0000,0000,0000,,why when you read we get comments dot
+Dialogue: 0,0:03:45.60,0:03:47.68,*Default,NTP,0000,0000,0000,,yield ass and when you ran it it
+Dialogue: 0,0:03:47.68,0:03:50.80,*Default,NTP,0000,0000,0000,,returned an empty list
+Dialogue: 0,0:03:51.76,0:03:54.32,*Default,NTP,0000,0000,0000,,a great question so the question was if
+Dialogue: 0,0:03:54.32,0:03:56.40,*Default,NTP,0000,0000,0000,,we comment this out
+Dialogue: 0,0:03:56.40,0:03:58.56,*Default,NTP,0000,0000,0000,,what's the behavior and we showed you
+Dialogue: 0,0:03:58.56,0:03:59.60,*Default,NTP,0000,0000,0000,,right here
+Dialogue: 0,0:03:59.60,0:04:03.28,*Default,NTP,0000,0000,0000,,it ends up yielding nothing why is that
+Dialogue: 0,0:04:03.28,0:04:06.48,*Default,NTP,0000,0000,0000,,well we've written something that
+Dialogue: 0,0:04:06.48,0:04:09.52,*Default,NTP,0000,0000,0000,,just yields the prefixes
+Dialogue: 0,0:04:09.52,0:04:13.36,*Default,NTP,0000,0000,0000,,for the like smaller version
+Dialogue: 0,0:04:13.36,0:04:15.60,*Default,NTP,0000,0000,0000,,so if this is dogs we're yielding
+Dialogue: 0,0:04:15.60,0:04:17.84,*Default,NTP,0000,0000,0000,,whatever we get by calling prefixes on
+Dialogue: 0,0:04:17.84,0:04:19.52,*Default,NTP,0000,0000,0000,,dog
+Dialogue: 0,0:04:19.52,0:04:21.12,*Default,NTP,0000,0000,0000,,which in turn would yield whatever we
+Dialogue: 0,0:04:21.12,0:04:23.04,*Default,NTP,0000,0000,0000,,get for calling prefixes on do which
+Dialogue: 0,0:04:23.04,0:04:24.32,*Default,NTP,0000,0000,0000,,would return whatever we get for calling
+Dialogue: 0,0:04:24.32,0:04:25.84,*Default,NTP,0000,0000,0000,,prefixes on d
+Dialogue: 0,0:04:25.84,0:04:28.40,*Default,NTP,0000,0000,0000,,which would return nothing we've reached
+Dialogue: 0,0:04:28.40,0:04:28.88,*Default,NTP,0000,0000,0000,,oh
+Dialogue: 0,0:04:28.88,0:04:30.48,*Default,NTP,0000,0000,0000,,sorry which would return the result of
+Dialogue: 0,0:04:30.48,0:04:32.08,*Default,NTP,0000,0000,0000,,calling prefixes on the empty string and
+Dialogue: 0,0:04:32.08,0:04:32.80,*Default,NTP,0000,0000,0000,,that would
+Dialogue: 0,0:04:32.80,0:04:35.84,*Default,NTP,0000,0000,0000,,yield nothing so the base case here is
+Dialogue: 0,0:04:35.84,0:04:39.20,*Default,NTP,0000,0000,0000,,like if there's no letters then
+Dialogue: 0,0:04:39.20,0:04:42.32,*Default,NTP,0000,0000,0000,,there's no yield therefore we're not
+Dialogue: 0,0:04:42.32,0:04:43.76,*Default,NTP,0000,0000,0000,,producing anything
+Dialogue: 0,0:04:43.76,0:04:45.52,*Default,NTP,0000,0000,0000,,and since we don't produce anything in
+Dialogue: 0,0:04:45.52,0:04:48.08,*Default,NTP,0000,0000,0000,,the base case and all this ever says
+Dialogue: 0,0:04:48.08,0:04:50.72,*Default,NTP,0000,0000,0000,,is yield whatever the next recursive
+Dialogue: 0,0:04:50.72,0:04:51.68,*Default,NTP,0000,0000,0000,,call would yield
+Dialogue: 0,0:04:51.68,0:04:54.72,*Default,NTP,0000,0000,0000,,we end up not yielding anything at all
+Dialogue: 0,0:04:54.72,0:04:57.36,*Default,NTP,0000,0000,0000,,so in general if you like ever have a
+Dialogue: 0,0:04:57.36,0:04:58.64,*Default,NTP,0000,0000,0000,,function where your yield
+Dialogue: 0,0:04:58.64,0:05:01.28,*Default,NTP,0000,0000,0000,,from an empty list that's not going to
+Dialogue: 0,0:05:01.28,0:05:04.16,*Default,NTP,0000,0000,0000,,yield anything at all
+Dialogue: 0,0:05:04.16,0:05:06.00,*Default,NTP,0000,0000,0000,,yeah good question so if an iterator is
+Dialogue: 0,0:05:06.00,0:05:07.92,*Default,NTP,0000,0000,0000,,not a list what is it
+Dialogue: 0,0:05:07.92,0:05:11.44,*Default,NTP,0000,0000,0000,,um there are lots of different kinds of
+Dialogue: 0,0:05:11.44,0:05:15.68,*Default,NTP,0000,0000,0000,,uh iterators so
+Dialogue: 0,0:05:15.68,0:05:18.08,*Default,NTP,0000,0000,0000,,you know it more by its behavior than
+Dialogue: 0,0:05:18.08,0:05:18.96,*Default,NTP,0000,0000,0000,,it's
+Dialogue: 0,0:05:18.96,0:05:21.68,*Default,NTP,0000,0000,0000,,like what it's constituted of an
+Dialogue: 0,0:05:21.68,0:05:24.32,*Default,NTP,0000,0000,0000,,iterator is something that you can call
+Dialogue: 0,0:05:24.32,0:05:27.36,*Default,NTP,0000,0000,0000,,next on and get more elements
+Dialogue: 0,0:05:27.36,0:05:29.92,*Default,NTP,0000,0000,0000,,in the case of a list the iterator for a
+Dialogue: 0,0:05:29.92,0:05:31.04,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:05:31.04,0:05:32.80,*Default,NTP,0000,0000,0000,,is more than just a list it's kind of a
+Dialogue: 0,0:05:32.80,0:05:34.88,*Default,NTP,0000,0000,0000,,reference to the list along with
+Dialogue: 0,0:05:34.88,0:05:36.80,*Default,NTP,0000,0000,0000,,a position in that list that tells you
+Dialogue: 0,0:05:36.80,0:05:38.08,*Default,NTP,0000,0000,0000,,where you are
+Dialogue: 0,0:05:38.08,0:05:39.84,*Default,NTP,0000,0000,0000,,so that if you call the next thing the
+Dialogue: 0,0:05:39.84,0:05:41.76,*Default,NTP,0000,0000,0000,,iterator advances
+Dialogue: 0,0:05:41.76,0:05:43.68,*Default,NTP,0000,0000,0000,,meaning that if you called next again
+Dialogue: 0,0:05:43.68,0:05:45.28,*Default,NTP,0000,0000,0000,,you'd get something else than you did
+Dialogue: 0,0:05:45.28,0:05:46.24,*Default,NTP,0000,0000,0000,,the first time
+Dialogue: 0,0:05:46.24,0:05:48.24,*Default,NTP,0000,0000,0000,,so in that sense it's it has different
+Dialogue: 0,0:05:48.24,0:05:49.52,*Default,NTP,0000,0000,0000,,behavior than a list
+Dialogue: 0,0:05:49.52,0:05:51.28,*Default,NTP,0000,0000,0000,,because it's both a list and like a
+Dialogue: 0,0:05:51.28,0:05:53.44,*Default,NTP,0000,0000,0000,,marker for where you are
+Dialogue: 0,0:05:53.44,0:05:55.76,*Default,NTP,0000,0000,0000,,but list iterators are not the only kind
+Dialogue: 0,0:05:55.76,0:05:56.88,*Default,NTP,0000,0000,0000,,of iterators
+Dialogue: 0,0:05:56.88,0:06:00.24,*Default,NTP,0000,0000,0000,,you could have an iterator through the
+Dialogue: 0,0:06:00.24,0:06:02.40,*Default,NTP,0000,0000,0000,,labels in a tree you could have an
+Dialogue: 0,0:06:02.40,0:06:04.08,*Default,NTP,0000,0000,0000,,iterator through the prefixes in a
+Dialogue: 0,0:06:04.08,0:06:05.20,*Default,NTP,0000,0000,0000,,string
+Dialogue: 0,0:06:05.20,0:06:06.56,*Default,NTP,0000,0000,0000,,you could have an iterator kind of
+Dialogue: 0,0:06:06.56,0:06:08.48,*Default,NTP,0000,0000,0000,,through anything and it's just
+Dialogue: 0,0:06:08.48,0:06:10.88,*Default,NTP,0000,0000,0000,,a description of something that lets you
+Dialogue: 0,0:06:10.88,0:06:12.64,*Default,NTP,0000,0000,0000,,go through multiple elements
+Dialogue: 0,0:06:12.64,0:06:15.44,*Default,NTP,0000,0000,0000,,in some order by calling next on the
+Dialogue: 0,0:06:15.44,0:06:17.36,*Default,NTP,0000,0000,0000,,iterator and getting the next value
+Dialogue: 0,0:06:17.36,0:06:19.12,*Default,NTP,0000,0000,0000,,and you can do that over and over again
+Dialogue: 0,0:06:19.12,0:06:20.72,*Default,NTP,0000,0000,0000,,so it's quite an abstract thing as
+Dialogue: 0,0:06:20.72,0:06:22.08,*Default,NTP,0000,0000,0000,,opposed to
+Dialogue: 0,0:06:22.08,0:06:24.32,*Default,NTP,0000,0000,0000,,feeling quite as concrete as for example
+Dialogue: 0,0:06:24.32,0:06:26.08,*Default,NTP,0000,0000,0000,,a list
+Dialogue: 0,0:06:26.08,0:06:28.40,*Default,NTP,0000,0000,0000,,well the question about when should you
+Dialogue: 0,0:06:28.40,0:06:29.84,*Default,NTP,0000,0000,0000,,use the built-in python
+Dialogue: 0,0:06:29.84,0:06:32.64,*Default,NTP,0000,0000,0000,,python functions is an interesting one i
+Dialogue: 0,0:06:32.64,0:06:34.00,*Default,NTP,0000,0000,0000,,imagine if you ask different people
+Dialogue: 0,0:06:34.00,0:06:35.36,*Default,NTP,0000,0000,0000,,you'll get different answers so i'm
+Dialogue: 0,0:06:35.36,0:06:36.32,*Default,NTP,0000,0000,0000,,going to answer and we'll see
+Dialogue: 0,0:06:36.32,0:06:39.52,*Default,NTP,0000,0000,0000,,what uh john has to say so my view is
+Dialogue: 0,0:06:39.52,0:06:41.28,*Default,NTP,0000,0000,0000,,languages are not static
+Dialogue: 0,0:06:41.28,0:06:42.72,*Default,NTP,0000,0000,0000,,and they change and so this
+Dialogue: 0,0:06:42.72,0:06:44.48,*Default,NTP,0000,0000,0000,,functionality comes in and out so for
+Dialogue: 0,0:06:44.48,0:06:46.08,*Default,NTP,0000,0000,0000,,example if i want to write some python
+Dialogue: 0,0:06:46.08,0:06:48.00,*Default,NTP,0000,0000,0000,,code and put it on my website
+Dialogue: 0,0:06:48.00,0:06:49.60,*Default,NTP,0000,0000,0000,,and i happen to be using the latest
+Dialogue: 0,0:06:49.60,0:06:51.20,*Default,NTP,0000,0000,0000,,greatest version of python and i
+Dialogue: 0,0:06:51.20,0:06:52.96,*Default,NTP,0000,0000,0000,,grab some function that just got
+Dialogue: 0,0:06:52.96,0:06:54.88,*Default,NTP,0000,0000,0000,,introduced i don't know if somebody
+Dialogue: 0,0:06:54.88,0:06:56.40,*Default,NTP,0000,0000,0000,,using an earlier version of python will
+Dialogue: 0,0:06:56.40,0:06:57.68,*Default,NTP,0000,0000,0000,,be able to run my code
+Dialogue: 0,0:06:57.68,0:06:59.28,*Default,NTP,0000,0000,0000,,and that's not great i don't i don't
+Dialogue: 0,0:06:59.28,0:07:00.64,*Default,NTP,0000,0000,0000,,like that i like my code to be
+Dialogue: 0,0:07:00.64,0:07:03.04,*Default,NTP,0000,0000,0000,,standalone and not rely on
+Dialogue: 0,0:07:03.04,0:07:05.92,*Default,NTP,0000,0000,0000,,somebody having just upgraded so now you
+Dialogue: 0,0:07:05.92,0:07:07.60,*Default,NTP,0000,0000,0000,,could say look this requires python
+Dialogue: 0,0:07:07.60,0:07:08.96,*Default,NTP,0000,0000,0000,,three point whatever and
+Dialogue: 0,0:07:08.96,0:07:11.04,*Default,NTP,0000,0000,0000,,that's the way it is so i i prefer to
+Dialogue: 0,0:07:11.04,0:07:12.96,*Default,NTP,0000,0000,0000,,write code on my own
+Dialogue: 0,0:07:12.96,0:07:14.72,*Default,NTP,0000,0000,0000,,but there are limits to that i'm not
+Dialogue: 0,0:07:14.72,0:07:16.16,*Default,NTP,0000,0000,0000,,gonna go re-implement some
+Dialogue: 0,0:07:16.16,0:07:18.72,*Default,NTP,0000,0000,0000,,gnarly like if i want to use an iterator
+Dialogue: 0,0:07:18.72,0:07:20.96,*Default,NTP,0000,0000,0000,,i wouldn't implement that myself
+Dialogue: 0,0:07:20.96,0:07:23.60,*Default,NTP,0000,0000,0000,,um but i like to implement my own code
+Dialogue: 0,0:07:23.60,0:07:25.68,*Default,NTP,0000,0000,0000,,in part to make it compatible and also
+Dialogue: 0,0:07:25.68,0:07:26.24,*Default,NTP,0000,0000,0000,,because
+Dialogue: 0,0:07:26.24,0:07:27.52,*Default,NTP,0000,0000,0000,,i just like to know what my code is
+Dialogue: 0,0:07:27.52,0:07:29.92,*Default,NTP,0000,0000,0000,,doing i always get a little worried when
+Dialogue: 0,0:07:29.92,0:07:32.56,*Default,NTP,0000,0000,0000,,we use code that's all canned up and
+Dialogue: 0,0:07:32.56,0:07:34.24,*Default,NTP,0000,0000,0000,,you know we don't really understand it
+Dialogue: 0,0:07:34.24,0:07:36.24,*Default,NTP,0000,0000,0000,,so i i like to do things
+Dialogue: 0,0:07:36.24,0:07:39.44,*Default,NTP,0000,0000,0000,,i i tend to do things more um
+Dialogue: 0,0:07:39.44,0:07:42.40,*Default,NTP,0000,0000,0000,,on my own but if you are doing rapid
+Dialogue: 0,0:07:42.40,0:07:43.84,*Default,NTP,0000,0000,0000,,prototyping and you just want to get
+Dialogue: 0,0:07:43.84,0:07:45.20,*Default,NTP,0000,0000,0000,,something built
+Dialogue: 0,0:07:45.20,0:07:47.12,*Default,NTP,0000,0000,0000,,sure using all the built-in functions is
+Dialogue: 0,0:07:47.12,0:07:48.48,*Default,NTP,0000,0000,0000,,great it saves you from writing a lot of
+Dialogue: 0,0:07:48.48,0:07:51.12,*Default,NTP,0000,0000,0000,,code and doing a lot of debugging
+Dialogue: 0,0:07:51.12,0:07:53.04,*Default,NTP,0000,0000,0000,,yeah i think that's a great answer i
+Dialogue: 0,0:07:53.04,0:07:56.00,*Default,NTP,0000,0000,0000,,think everyone who's building software
+Dialogue: 0,0:07:56.00,0:07:58.08,*Default,NTP,0000,0000,0000,,has come to a point
+Dialogue: 0,0:07:58.08,0:08:00.72,*Default,NTP,0000,0000,0000,,that they've written a ton of code and
+Dialogue: 0,0:08:00.72,0:08:02.80,*Default,NTP,0000,0000,0000,,then realized oh this is just like a
+Dialogue: 0,0:08:02.80,0:08:04.48,*Default,NTP,0000,0000,0000,,special case of some general thing
+Dialogue: 0,0:08:04.48,0:08:06.80,*Default,NTP,0000,0000,0000,,that's built in i've basically just like
+Dialogue: 0,0:08:06.80,0:08:08.72,*Default,NTP,0000,0000,0000,,rewritten all the mechanics of a
+Dialogue: 0,0:08:08.72,0:08:10.64,*Default,NTP,0000,0000,0000,,dictionary or something like that
+Dialogue: 0,0:08:10.64,0:08:12.72,*Default,NTP,0000,0000,0000,,when in fact i could have just like used
+Dialogue: 0,0:08:12.72,0:08:13.84,*Default,NTP,0000,0000,0000,,the one that's built in
+Dialogue: 0,0:08:13.84,0:08:15.76,*Default,NTP,0000,0000,0000,,and it would have been one line and
+Dialogue: 0,0:08:15.76,0:08:17.12,*Default,NTP,0000,0000,0000,,that's okay
+Dialogue: 0,0:08:17.12,0:08:20.56,*Default,NTP,0000,0000,0000,,um happens to all of us and you know is
+Dialogue: 0,0:08:20.56,0:08:22.00,*Default,NTP,0000,0000,0000,,the version that you wrote better or the
+Dialogue: 0,0:08:22.00,0:08:23.44,*Default,NTP,0000,0000,0000,,built-in one better
+Dialogue: 0,0:08:23.44,0:08:26.48,*Default,NTP,0000,0000,0000,,uh it depends it depends on how it's
+Dialogue: 0,0:08:26.48,0:08:27.52,*Default,NTP,0000,0000,0000,,going to be used
+Dialogue: 0,0:08:27.52,0:08:29.84,*Default,NTP,0000,0000,0000,,uh like connie said especially if
+Dialogue: 0,0:08:29.84,0:08:31.04,*Default,NTP,0000,0000,0000,,something's just recently been
+Dialogue: 0,0:08:31.04,0:08:32.48,*Default,NTP,0000,0000,0000,,introduced then it's probably worth
+Dialogue: 0,0:08:32.48,0:08:34.24,*Default,NTP,0000,0000,0000,,avoiding it for a while if you want to
+Dialogue: 0,0:08:34.24,0:08:34.80,*Default,NTP,0000,0000,0000,,be
+Dialogue: 0,0:08:34.80,0:08:38.64,*Default,NTP,0000,0000,0000,,kind of compatible with everybody else
+Dialogue: 0,0:08:38.84,0:08:41.92,*Default,NTP,0000,0000,0000,,but using the built-in
+Dialogue: 0,0:08:41.92,0:08:44.24,*Default,NTP,0000,0000,0000,,functionality means that your program
+Dialogue: 0,0:08:44.24,0:08:45.60,*Default,NTP,0000,0000,0000,,might get better
+Dialogue: 0,0:08:45.60,0:08:48.64,*Default,NTP,0000,0000,0000,,without you having to do anything at all
+Dialogue: 0,0:08:48.64,0:08:51.04,*Default,NTP,0000,0000,0000,,like if you're implementing your own
+Dialogue: 0,0:08:51.04,0:08:53.60,*Default,NTP,0000,0000,0000,,system for time zones
+Dialogue: 0,0:08:53.60,0:08:55.68,*Default,NTP,0000,0000,0000,,this is fine except that like you know
+Dialogue: 0,0:08:55.68,0:08:56.64,*Default,NTP,0000,0000,0000,,what if some
+Dialogue: 0,0:08:56.64,0:08:58.72,*Default,NTP,0000,0000,0000,,island somewhere changes their time zone
+Dialogue: 0,0:08:58.72,0:09:00.32,*Default,NTP,0000,0000,0000,,this happened in the 90s
+Dialogue: 0,0:09:00.32,0:09:02.24,*Default,NTP,0000,0000,0000,,the christmas island decided to change
+Dialogue: 0,0:09:02.24,0:09:04.08,*Default,NTP,0000,0000,0000,,its time zone like you have to go in and
+Dialogue: 0,0:09:04.08,0:09:04.80,*Default,NTP,0000,0000,0000,,update that
+Dialogue: 0,0:09:04.80,0:09:06.64,*Default,NTP,0000,0000,0000,,whereas if you use the like built-in
+Dialogue: 0,0:09:06.64,0:09:08.00,*Default,NTP,0000,0000,0000,,system for handling time
+Dialogue: 0,0:09:08.00,0:09:10.16,*Default,NTP,0000,0000,0000,,zones then it would just get fixed for
+Dialogue: 0,0:09:10.16,0:09:12.16,*Default,NTP,0000,0000,0000,,you in the next version of python so i
+Dialogue: 0,0:09:12.16,0:09:12.96,*Default,NTP,0000,0000,0000,,think there are
+Dialogue: 0,0:09:12.96,0:09:14.88,*Default,NTP,0000,0000,0000,,generally advantages to using the
+Dialogue: 0,0:09:14.88,0:09:16.00,*Default,NTP,0000,0000,0000,,built-in stuff
+Dialogue: 0,0:09:16.00,0:09:18.72,*Default,NTP,0000,0000,0000,,or relying on open source libraries
+Dialogue: 0,0:09:18.72,0:09:20.40,*Default,NTP,0000,0000,0000,,whether it's part of the language or
+Dialogue: 0,0:09:20.40,0:09:21.76,*Default,NTP,0000,0000,0000,,it's like part of some community
+Dialogue: 0,0:09:21.76,0:09:22.80,*Default,NTP,0000,0000,0000,,development
+Dialogue: 0,0:09:22.80,0:09:24.96,*Default,NTP,0000,0000,0000,,rather than just like redoing everything
+Dialogue: 0,0:09:24.96,0:09:26.00,*Default,NTP,0000,0000,0000,,yourself
+Dialogue: 0,0:09:26.00,0:09:27.84,*Default,NTP,0000,0000,0000,,for the long term but like if you're
+Dialogue: 0,0:09:27.84,0:09:29.36,*Default,NTP,0000,0000,0000,,just getting something running like it's
+Dialogue: 0,0:09:29.36,0:09:30.96,*Default,NTP,0000,0000,0000,,totally fine to just rewrite stuff
+Dialogue: 0,0:09:30.96,0:09:31.52,*Default,NTP,0000,0000,0000,,yourself
+Dialogue: 0,0:09:31.52,0:09:33.52,*Default,NTP,0000,0000,0000,,and ignore yield from and nothing bad
+Dialogue: 0,0:09:33.52,0:09:35.68,*Default,NTP,0000,0000,0000,,happens
+Dialogue: 0,0:09:35.68,0:09:37.04,*Default,NTP,0000,0000,0000,,i'm going to go back and quickly answer
+Dialogue: 0,0:09:37.04,0:09:38.96,*Default,NTP,0000,0000,0000,,your other question that i
+Dialogue: 0,0:09:38.96,0:09:41.84,*Default,NTP,0000,0000,0000,,i know you know the answer but just um
+Dialogue: 0,0:09:41.84,0:09:42.32,*Default,NTP,0000,0000,0000,,for
+Dialogue: 0,0:09:42.32,0:09:45.28,*Default,NTP,0000,0000,0000,,posterity's sake the question was what
+Dialogue: 0,0:09:45.28,0:09:47.20,*Default,NTP,0000,0000,0000,,happens if you invert the order of yield
+Dialogue: 0,0:09:47.20,0:09:49.28,*Default,NTP,0000,0000,0000,,s versus yield from s like what's the
+Dialogue: 0,0:09:49.28,0:09:50.96,*Default,NTP,0000,0000,0000,,difference we could just quickly look at
+Dialogue: 0,0:09:50.96,0:09:51.60,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:09:51.60,0:09:53.60,*Default,NTP,0000,0000,0000,,and see that if the yield s comes
+Dialogue: 0,0:09:53.60,0:09:55.12,*Default,NTP,0000,0000,0000,,afterwards that means
+Dialogue: 0,0:09:55.12,0:09:57.76,*Default,NTP,0000,0000,0000,,s which was originally dogs is the last
+Dialogue: 0,0:09:57.76,0:09:58.96,*Default,NTP,0000,0000,0000,,thing in the list
+Dialogue: 0,0:09:58.96,0:10:01.52,*Default,NTP,0000,0000,0000,,if instead we had yielded that first and
+Dialogue: 0,0:10:01.52,0:10:03.36,*Default,NTP,0000,0000,0000,,then yielded all the prefixes
+Dialogue: 0,0:10:03.36,0:10:05.12,*Default,NTP,0000,0000,0000,,then we'd see everything in the opposite
+Dialogue: 0,0:10:05.12,0:10:06.80,*Default,NTP,0000,0000,0000,,order so
+Dialogue: 0,0:10:06.80,0:10:08.32,*Default,NTP,0000,0000,0000,,really you know python is going to go
+Dialogue: 0,0:10:08.32,0:10:09.92,*Default,NTP,0000,0000,0000,,through and do these things in the order
+Dialogue: 0,0:10:09.92,0:10:11.12,*Default,NTP,0000,0000,0000,,that you write them
+Dialogue: 0,0:10:11.12,0:10:14.08,*Default,NTP,0000,0000,0000,,and that will have an impact on exactly
+Dialogue: 0,0:10:14.08,0:10:16.00,*Default,NTP,0000,0000,0000,,what happens
+Dialogue: 0,0:10:16.00,0:10:17.36,*Default,NTP,0000,0000,0000,,one more thing i wanted to say about
+Dialogue: 0,0:10:17.36,0:10:19.20,*Default,NTP,0000,0000,0000,,this example is that what if we didn't
+Dialogue: 0,0:10:19.20,0:10:20.16,*Default,NTP,0000,0000,0000,,know about yield
+Dialogue: 0,0:10:20.16,0:10:21.52,*Default,NTP,0000,0000,0000,,like what if we were just in the
+Dialogue: 0,0:10:21.52,0:10:23.44,*Default,NTP,0000,0000,0000,,business of building lists
+Dialogue: 0,0:10:23.44,0:10:25.76,*Default,NTP,0000,0000,0000,,could we still get this behavior and the
+Dialogue: 0,0:10:25.76,0:10:27.52,*Default,NTP,0000,0000,0000,,answer is yes it would look something
+Dialogue: 0,0:10:27.52,0:10:29.20,*Default,NTP,0000,0000,0000,,like this we start with
+Dialogue: 0,0:10:29.20,0:10:32.08,*Default,NTP,0000,0000,0000,,a list we go through and instead of
+Dialogue: 0,0:10:32.08,0:10:33.04,*Default,NTP,0000,0000,0000,,yielding
+Dialogue: 0,0:10:33.04,0:10:37.12,*Default,NTP,0000,0000,0000,,we would append to that list
+Dialogue: 0,0:10:37.12,0:10:39.84,*Default,NTP,0000,0000,0000,,and then for every x in the list of
+Dialogue: 0,0:10:39.84,0:10:41.04,*Default,NTP,0000,0000,0000,,prefixes
+Dialogue: 0,0:10:41.04,0:10:44.88,*Default,NTP,0000,0000,0000,,i think we would append that x
+Dialogue: 0,0:10:44.88,0:10:47.52,*Default,NTP,0000,0000,0000,,and then when we were all done we would
+Dialogue: 0,0:10:47.52,0:10:49.20,*Default,NTP,0000,0000,0000,,return that result
+Dialogue: 0,0:10:49.20,0:10:51.28,*Default,NTP,0000,0000,0000,,and in fact in the base case we'd want
+Dialogue: 0,0:10:51.28,0:10:52.80,*Default,NTP,0000,0000,0000,,to return an empty list
+Dialogue: 0,0:10:52.80,0:10:54.72,*Default,NTP,0000,0000,0000,,so in either case i think we want to
+Dialogue: 0,0:10:54.72,0:10:56.08,*Default,NTP,0000,0000,0000,,return the result
+Dialogue: 0,0:10:56.08,0:10:58.48,*Default,NTP,0000,0000,0000,,and here we get something that you know
+Dialogue: 0,0:10:58.48,0:11:00.32,*Default,NTP,0000,0000,0000,,kind of does the same thing and if we
+Dialogue: 0,0:11:00.32,0:11:01.68,*Default,NTP,0000,0000,0000,,inverted the order
+Dialogue: 0,0:11:01.68,0:11:03.52,*Default,NTP,0000,0000,0000,,then we'd get it in the other direction
+Dialogue: 0,0:11:03.52,0:11:05.20,*Default,NTP,0000,0000,0000,,going from d to dogs instead of from
+Dialogue: 0,0:11:05.20,0:11:06.56,*Default,NTP,0000,0000,0000,,dogs to d
+Dialogue: 0,0:11:06.56,0:11:09.84,*Default,NTP,0000,0000,0000,,um and uh a lot of code looks like this
+Dialogue: 0,0:11:09.84,0:11:12.64,*Default,NTP,0000,0000,0000,,and kind of avoids this notion of
+Dialogue: 0,0:11:12.64,0:11:14.72,*Default,NTP,0000,0000,0000,,yielding in general
+Dialogue: 0,0:11:14.72,0:11:17.84,*Default,NTP,0000,0000,0000,,and that's fine um there are sometimes
+Dialogue: 0,0:11:17.84,0:11:20.24,*Default,NTP,0000,0000,0000,,efficiency benefits to yielding
+Dialogue: 0,0:11:20.24,0:11:21.76,*Default,NTP,0000,0000,0000,,there are sometimes some like
+Dialogue: 0,0:11:21.76,0:11:23.76,*Default,NTP,0000,0000,0000,,interesting concurrency benefits to
+Dialogue: 0,0:11:23.76,0:11:25.44,*Default,NTP,0000,0000,0000,,yielding
+Dialogue: 0,0:11:25.44,0:11:27.92,*Default,NTP,0000,0000,0000,,so it is something that does get used
+Dialogue: 0,0:11:27.92,0:11:29.20,*Default,NTP,0000,0000,0000,,more and more as people
+Dialogue: 0,0:11:29.20,0:11:32.88,*Default,NTP,0000,0000,0000,,advance in their like sophistication of
+Dialogue: 0,0:11:32.88,0:11:33.76,*Default,NTP,0000,0000,0000,,programming
+Dialogue: 0,0:11:33.76,0:11:35.68,*Default,NTP,0000,0000,0000,,but it's not like you really need it in
+Dialogue: 0,0:11:35.68,0:11:37.28,*Default,NTP,0000,0000,0000,,order to get stuff done in the first
+Dialogue: 0,0:11:37.28,0:11:39.04,*Default,NTP,0000,0000,0000,,place you could just explicitly
+Dialogue: 0,0:11:39.04,0:11:41.92,*Default,NTP,0000,0000,0000,,build the list instead of yielding it
+Dialogue: 0,0:11:41.92,0:11:44.64,*Default,NTP,0000,0000,0000,,piece by piece
+Dialogue: 0,0:11:44.64,0:11:45.92,*Default,NTP,0000,0000,0000,,okay so the question was in the
+Dialogue: 0,0:11:45.92,0:11:48.56,*Default,NTP,0000,0000,0000,,countdown example why is it the case
+Dialogue: 0,0:11:48.56,0:11:51.44,*Default,NTP,0000,0000,0000,,that you have to yield from
+Dialogue: 0,0:11:51.44,0:11:55.12,*Default,NTP,0000,0000,0000,,count down k minus one and this was if k
+Dialogue: 0,0:11:55.12,0:11:57.84,*Default,NTP,0000,0000,0000,,is greater than zero
+Dialogue: 0,0:11:58.40,0:12:00.72,*Default,NTP,0000,0000,0000,,and then we yielded k how come we
+Dialogue: 0,0:12:00.72,0:12:01.76,*Default,NTP,0000,0000,0000,,couldn't just yield
+Dialogue: 0,0:12:01.76,0:12:03.76,*Default,NTP,0000,0000,0000,,countdown k minus one well let's just
+Dialogue: 0,0:12:03.76,0:12:06.56,*Default,NTP,0000,0000,0000,,try both ways to see what we get
+Dialogue: 0,0:12:06.56,0:12:09.60,*Default,NTP,0000,0000,0000,,and then i think we'll understand um if
+Dialogue: 0,0:12:09.60,0:12:10.32,*Default,NTP,0000,0000,0000,,i list
+Dialogue: 0,0:12:10.32,0:12:12.88,*Default,NTP,0000,0000,0000,,out the contents of the iterator that i
+Dialogue: 0,0:12:12.88,0:12:15.12,*Default,NTP,0000,0000,0000,,get from counting down from five
+Dialogue: 0,0:12:15.12,0:12:17.44,*Default,NTP,0000,0000,0000,,i'll get one two three four five oh i
+Dialogue: 0,0:12:17.44,0:12:18.56,*Default,NTP,0000,0000,0000,,think i was supposed to count
+Dialogue: 0,0:12:18.56,0:12:22.64,*Default,NTP,0000,0000,0000,,down okay um
+Dialogue: 0,0:12:22.64,0:12:26.08,*Default,NTP,0000,0000,0000,,if instead i yield this what i'm
+Dialogue: 0,0:12:26.08,0:12:27.04,*Default,NTP,0000,0000,0000,,yielding is an
+Dialogue: 0,0:12:27.04,0:12:29.76,*Default,NTP,0000,0000,0000,,iterator rather than a number so what
+Dialogue: 0,0:12:29.76,0:12:32.64,*Default,NTP,0000,0000,0000,,i'm gonna get in the contents of my list
+Dialogue: 0,0:12:32.64,0:12:35.92,*Default,NTP,0000,0000,0000,,is not a bunch of numbers but instead
+Dialogue: 0,0:12:35.92,0:12:38.48,*Default,NTP,0000,0000,0000,,one number the five that i yielded and
+Dialogue: 0,0:12:38.48,0:12:40.32,*Default,NTP,0000,0000,0000,,this generator object
+Dialogue: 0,0:12:40.32,0:12:42.24,*Default,NTP,0000,0000,0000,,and what's this generator object well
+Dialogue: 0,0:12:42.24,0:12:43.76,*Default,NTP,0000,0000,0000,,you know like if i
+Dialogue: 0,0:12:43.76,0:12:47.44,*Default,NTP,0000,0000,0000,,get this result and i get result one
+Dialogue: 0,0:12:47.44,0:12:49.04,*Default,NTP,0000,0000,0000,,here's this generator object this is
+Dialogue: 0,0:12:49.04,0:12:50.96,*Default,NTP,0000,0000,0000,,something i can get the next thing
+Dialogue: 0,0:12:50.96,0:12:52.96,*Default,NTP,0000,0000,0000,,from and so i can get that four it's
+Dialogue: 0,0:12:52.96,0:12:54.56,*Default,NTP,0000,0000,0000,,like buried in there somewhere
+Dialogue: 0,0:12:54.56,0:12:56.48,*Default,NTP,0000,0000,0000,,it just took an awful lot more work to
+Dialogue: 0,0:12:56.48,0:12:57.60,*Default,NTP,0000,0000,0000,,get it
+Dialogue: 0,0:12:57.60,0:12:59.76,*Default,NTP,0000,0000,0000,,than in the other version where i just
+Dialogue: 0,0:12:59.76,0:13:03.36,*Default,NTP,0000,0000,0000,,ended up with a bunch of numbers
+Dialogue: 0,0:13:03.60,0:13:06.56,*Default,NTP,0000,0000,0000,,so essentially the from is doing the is
+Dialogue: 0,0:13:06.56,0:13:09.04,*Default,NTP,0000,0000,0000,,unpacking that
+Dialogue: 0,0:13:09.04,0:13:10.96,*Default,NTP,0000,0000,0000,,list that is that is now sort of stored
+Dialogue: 0,0:13:10.96,0:13:12.32,*Default,NTP,0000,0000,0000,,up in the generator
+Dialogue: 0,0:13:12.32,0:13:14.48,*Default,NTP,0000,0000,0000,,because what is yield from it's just a
+Dialogue: 0,0:13:14.48,0:13:16.00,*Default,NTP,0000,0000,0000,,for loop that iterates through the
+Dialogue: 0,0:13:16.00,0:13:17.04,*Default,NTP,0000,0000,0000,,result
+Dialogue: 0,0:13:17.04,0:13:18.72,*Default,NTP,0000,0000,0000,,yeah and if you don't iterate through it
+Dialogue: 0,0:13:18.72,0:13:20.40,*Default,NTP,0000,0000,0000,,all you do is you have that sort of core
+Dialogue: 0,0:13:20.40,0:13:22.24,*Default,NTP,0000,0000,0000,,generator but the result as john just
+Dialogue: 0,0:13:22.24,0:13:24.16,*Default,NTP,0000,0000,0000,,said is still there
+Dialogue: 0,0:13:24.16,0:13:27.28,*Default,NTP,0000,0000,0000,,it's just sort of that lazy evaluation
+Dialogue: 0,0:13:27.28,0:13:30.64,*Default,NTP,0000,0000,0000,,that you have to now unpack it
+Dialogue: 0,0:13:30.80,0:13:33.12,*Default,NTP,0000,0000,0000,,yeah good question so the questions
+Dialogue: 0,0:13:33.12,0:13:34.88,*Default,NTP,0000,0000,0000,,about this example and why is it the
+Dialogue: 0,0:13:34.88,0:13:36.64,*Default,NTP,0000,0000,0000,,case that when you get the length of
+Dialogue: 0,0:13:36.64,0:13:39.52,*Default,NTP,0000,0000,0000,,uh the result of listing out the
+Dialogue: 0,0:13:39.52,0:13:41.28,*Default,NTP,0000,0000,0000,,contents of an iterator
+Dialogue: 0,0:13:41.28,0:13:43.52,*Default,NTP,0000,0000,0000,,twice you get a different thing each
+Dialogue: 0,0:13:43.52,0:13:45.44,*Default,NTP,0000,0000,0000,,time first time you got three things
+Dialogue: 0,0:13:45.44,0:13:47.28,*Default,NTP,0000,0000,0000,,next time you got zero things
+Dialogue: 0,0:13:47.28,0:13:48.96,*Default,NTP,0000,0000,0000,,this isn't something having to do with
+Dialogue: 0,0:13:48.96,0:13:51.04,*Default,NTP,0000,0000,0000,,len this is having to do
+Dialogue: 0,0:13:51.04,0:13:54.64,*Default,NTP,0000,0000,0000,,with how list interacts with an iterator
+Dialogue: 0,0:13:54.64,0:13:57.84,*Default,NTP,0000,0000,0000,,when you call list on an iterator you
+Dialogue: 0,0:13:57.84,0:13:58.40,*Default,NTP,0000,0000,0000,,end up
+Dialogue: 0,0:13:58.40,0:14:00.88,*Default,NTP,0000,0000,0000,,building a list of all the contents of
+Dialogue: 0,0:14:00.88,0:14:02.00,*Default,NTP,0000,0000,0000,,that iterator
+Dialogue: 0,0:14:02.00,0:14:04.72,*Default,NTP,0000,0000,0000,,but the iterator is used up as a side
+Dialogue: 0,0:14:04.72,0:14:05.52,*Default,NTP,0000,0000,0000,,effect
+Dialogue: 0,0:14:05.52,0:14:09.60,*Default,NTP,0000,0000,0000,,of calling list on it so
+Dialogue: 0,0:14:12.24,0:14:16.32,*Default,NTP,0000,0000,0000,,if i have
+Dialogue: 0,0:14:16.32,0:14:20.08,*Default,NTP,0000,0000,0000,,an iterator over these values
+Dialogue: 0,0:14:20.08,0:14:23.76,*Default,NTP,0000,0000,0000,,um i can get one thing out of it
+Dialogue: 0,0:14:23.76,0:14:25.52,*Default,NTP,0000,0000,0000,,but then if i get another thing i get a
+Dialogue: 0,0:14:25.52,0:14:26.80,*Default,NTP,0000,0000,0000,,different thing
+Dialogue: 0,0:14:26.80,0:14:28.64,*Default,NTP,0000,0000,0000,,list is kind of like calling next over
+Dialogue: 0,0:14:28.64,0:14:29.92,*Default,NTP,0000,0000,0000,,and over again and putting all the
+Dialogue: 0,0:14:29.92,0:14:31.04,*Default,NTP,0000,0000,0000,,results in a list
+Dialogue: 0,0:14:31.04,0:14:32.88,*Default,NTP,0000,0000,0000,,so as soon as you call list on t you're
+Dialogue: 0,0:14:32.88,0:14:34.40,*Default,NTP,0000,0000,0000,,going to get everything that's left over
+Dialogue: 0,0:14:34.40,0:14:35.36,*Default,NTP,0000,0000,0000,,in the iterator
+Dialogue: 0,0:14:35.36,0:14:38.64,*Default,NTP,0000,0000,0000,,that hasn't been used up or returned
+Dialogue: 0,0:14:38.64,0:14:40.40,*Default,NTP,0000,0000,0000,,already so we've already seen the one
+Dialogue: 0,0:14:40.40,0:14:41.60,*Default,NTP,0000,0000,0000,,we've seen the two
+Dialogue: 0,0:14:41.60,0:14:43.68,*Default,NTP,0000,0000,0000,,therefore calling list on t will just
+Dialogue: 0,0:14:43.68,0:14:46.16,*Default,NTP,0000,0000,0000,,show us the three
+Dialogue: 0,0:14:46.16,0:14:48.40,*Default,NTP,0000,0000,0000,,and now t is used up i can't get the
+Dialogue: 0,0:14:48.40,0:14:50.48,*Default,NTP,0000,0000,0000,,next thing in t because we're already at
+Dialogue: 0,0:14:50.48,0:14:51.28,*Default,NTP,0000,0000,0000,,the end
+Dialogue: 0,0:14:51.28,0:14:52.72,*Default,NTP,0000,0000,0000,,and so if i try to list everything
+Dialogue: 0,0:14:52.72,0:14:56.32,*Default,NTP,0000,0000,0000,,that's left and t i'll get an empty list
+Dialogue: 0,0:14:56.32,0:15:00.40,*Default,NTP,0000,0000,0000,,so your version was start with this
+Dialogue: 0,0:15:00.40,0:15:02.80,*Default,NTP,0000,0000,0000,,get all the contents of that which is a
+Dialogue: 0,0:15:02.80,0:15:06.24,*Default,NTP,0000,0000,0000,,list containing one two and three
+Dialogue: 0,0:15:06.24,0:15:10.00,*Default,NTP,0000,0000,0000,,if i do this i'm changing t
+Dialogue: 0,0:15:10.00,0:15:13.20,*Default,NTP,0000,0000,0000,,this is uh every time you get elements
+Dialogue: 0,0:15:13.20,0:15:14.16,*Default,NTP,0000,0000,0000,,from an iterator
+Dialogue: 0,0:15:14.16,0:15:15.92,*Default,NTP,0000,0000,0000,,you're changing that iterator which
+Dialogue: 0,0:15:15.92,0:15:18.16,*Default,NTP,0000,0000,0000,,means you can't really use it again
+Dialogue: 0,0:15:18.16,0:15:19.44,*Default,NTP,0000,0000,0000,,so if you get the length of this you get
+Dialogue: 0,0:15:19.44,0:15:20.80,*Default,NTP,0000,0000,0000,,three you get the length of this you get
+Dialogue: 0,0:15:20.80,0:15:22.48,*Default,NTP,0000,0000,0000,,zero
+Dialogue: 0,0:15:22.48,0:15:24.96,*Default,NTP,0000,0000,0000,,so think of these iterators as one use
+Dialogue: 0,0:15:24.96,0:15:26.80,*Default,NTP,0000,0000,0000,,disposable operators
+Dialogue: 0,0:15:26.80,0:15:29.68,*Default,NTP,0000,0000,0000,,once you've gone through the list either
+Dialogue: 0,0:15:29.68,0:15:31.52,*Default,NTP,0000,0000,0000,,next next next x next
+Dialogue: 0,0:15:31.52,0:15:33.84,*Default,NTP,0000,0000,0000,,or the list of it is you're essentially
+Dialogue: 0,0:15:33.84,0:15:35.76,*Default,NTP,0000,0000,0000,,enumerating the list
+Dialogue: 0,0:15:35.76,0:15:38.16,*Default,NTP,0000,0000,0000,,it's gone right so by the way you could
+Dialogue: 0,0:15:38.16,0:15:40.00,*Default,NTP,0000,0000,0000,,have implemented this yourself
+Dialogue: 0,0:15:40.00,0:15:41.60,*Default,NTP,0000,0000,0000,,you could have written a function that
+Dialogue: 0,0:15:41.60,0:15:43.60,*Default,NTP,0000,0000,0000,,every time you access an element
+Dialogue: 0,0:15:43.60,0:15:45.20,*Default,NTP,0000,0000,0000,,the next element you delete that element
+Dialogue: 0,0:15:45.20,0:15:47.12,*Default,NTP,0000,0000,0000,,from the list that's essentially what's
+Dialogue: 0,0:15:47.12,0:15:48.24,*Default,NTP,0000,0000,0000,,going on here
+Dialogue: 0,0:15:48.24,0:15:50.96,*Default,NTP,0000,0000,0000,,yeah and so once you it's a funny thing
+Dialogue: 0,0:15:50.96,0:15:52.72,*Default,NTP,0000,0000,0000,,about iterators by the way is that once
+Dialogue: 0,0:15:52.72,0:15:54.24,*Default,NTP,0000,0000,0000,,you look at the list
+Dialogue: 0,0:15:54.24,0:15:55.76,*Default,NTP,0000,0000,0000,,it's it's sort of like uh what is it
+Dialogue: 0,0:15:55.76,0:15:58.00,*Default,NTP,0000,0000,0000,,it's like snapchat right the image comes
+Dialogue: 0,0:15:58.00,0:15:58.56,*Default,NTP,0000,0000,0000,,in
+Dialogue: 0,0:15:58.56,0:16:00.48,*Default,NTP,0000,0000,0000,,you look at it and then it vanishes it's
+Dialogue: 0,0:16:00.48,0:16:02.32,*Default,NTP,0000,0000,0000,,gone that is beautiful
+Dialogue: 0,0:16:02.32,0:16:04.48,*Default,NTP,0000,0000,0000,,yeah god you got to be impressed by
+Dialogue: 0,0:16:04.48,0:16:06.32,*Default,NTP,0000,0000,0000,,somebody my age making a snapchat
+Dialogue: 0,0:16:06.32,0:16:07.76,*Default,NTP,0000,0000,0000,,reference that's that's i think you know
+Dialogue: 0,0:16:07.76,0:16:08.96,*Default,NTP,0000,0000,0000,,you have a little credit for that
+Dialogue: 0,0:16:08.96,0:16:12.32,*Default,NTP,0000,0000,0000,,perfect snapchat analogy
+Dialogue: 0,0:16:13.04,0:16:14.56,*Default,NTP,0000,0000,0000,,great question yes this is a form of
+Dialogue: 0,0:16:14.56,0:16:16.56,*Default,NTP,0000,0000,0000,,mutation so this is why we teach
+Dialogue: 0,0:16:16.56,0:16:18.24,*Default,NTP,0000,0000,0000,,iterators right after we talk about
+Dialogue: 0,0:16:18.24,0:16:19.68,*Default,NTP,0000,0000,0000,,mutable values
+Dialogue: 0,0:16:19.68,0:16:23.04,*Default,NTP,0000,0000,0000,,is that at all iterators are
+Dialogue: 0,0:16:23.04,0:16:25.52,*Default,NTP,0000,0000,0000,,mutable they always change whenever you
+Dialogue: 0,0:16:25.52,0:16:28.08,*Default,NTP,0000,0000,0000,,do anything with them
+Dialogue: 0,0:16:28.08,0:16:31.28,*Default,NTP,0000,0000,0000,,meaning we call next on them so the
+Dialogue: 0,0:16:31.28,0:16:32.56,*Default,NTP,0000,0000,0000,,question is is there like
+Dialogue: 0,0:16:32.56,0:16:35.20,*Default,NTP,0000,0000,0000,,real applications of yield as opposed to
+Dialogue: 0,0:16:35.20,0:16:36.64,*Default,NTP,0000,0000,0000,,just returning
+Dialogue: 0,0:16:36.64,0:16:39.84,*Default,NTP,0000,0000,0000,,uh i see it a lot um
+Dialogue: 0,0:16:39.84,0:16:43.04,*Default,NTP,0000,0000,0000,,it often appears in cases where your
+Dialogue: 0,0:16:43.04,0:16:45.12,*Default,NTP,0000,0000,0000,,program is interacting with something
+Dialogue: 0,0:16:45.12,0:16:46.16,*Default,NTP,0000,0000,0000,,else
+Dialogue: 0,0:16:46.16,0:16:47.52,*Default,NTP,0000,0000,0000,,so there are lots of cases where you
+Dialogue: 0,0:16:47.52,0:16:49.36,*Default,NTP,0000,0000,0000,,want to return a list of things
+Dialogue: 0,0:16:49.36,0:16:51.52,*Default,NTP,0000,0000,0000,,right instead of just returning a single
+Dialogue: 0,0:16:51.52,0:16:52.64,*Default,NTP,0000,0000,0000,,value
+Dialogue: 0,0:16:52.64,0:16:55.60,*Default,NTP,0000,0000,0000,,but sometimes that list of things that
+Dialogue: 0,0:16:55.60,0:16:57.20,*Default,NTP,0000,0000,0000,,you want to do something with
+Dialogue: 0,0:16:57.20,0:17:00.96,*Default,NTP,0000,0000,0000,,isn't all there at the same time
+Dialogue: 0,0:17:00.96,0:17:03.92,*Default,NTP,0000,0000,0000,,so classic examples are you're like
+Dialogue: 0,0:17:03.92,0:17:04.48,*Default,NTP,0000,0000,0000,,reading
+Dialogue: 0,0:17:04.48,0:17:07.92,*Default,NTP,0000,0000,0000,,contents from the web and you want to
+Dialogue: 0,0:17:07.92,0:17:08.72,*Default,NTP,0000,0000,0000,,start
+Dialogue: 0,0:17:08.72,0:17:11.84,*Default,NTP,0000,0000,0000,,doing stuff with each element of
+Dialogue: 0,0:17:11.84,0:17:15.44,*Default,NTP,0000,0000,0000,,the you know like each page in a website
+Dialogue: 0,0:17:15.44,0:17:17.84,*Default,NTP,0000,0000,0000,,you want to be printing out it's like a
+Dialogue: 0,0:17:17.84,0:17:19.84,*Default,NTP,0000,0000,0000,,title or something like that
+Dialogue: 0,0:17:19.84,0:17:22.56,*Default,NTP,0000,0000,0000,,you'd write a function that gets all the
+Dialogue: 0,0:17:22.56,0:17:23.52,*Default,NTP,0000,0000,0000,,pages
+Dialogue: 0,0:17:23.52,0:17:26.96,*Default,NTP,0000,0000,0000,,in a website and uh returns them so that
+Dialogue: 0,0:17:26.96,0:17:28.24,*Default,NTP,0000,0000,0000,,some other function can
+Dialogue: 0,0:17:28.24,0:17:31.92,*Default,NTP,0000,0000,0000,,print out their title well it takes time
+Dialogue: 0,0:17:31.92,0:17:33.52,*Default,NTP,0000,0000,0000,,to get all the elements
+Dialogue: 0,0:17:33.52,0:17:36.16,*Default,NTP,0000,0000,0000,,of all the pages in a website because
+Dialogue: 0,0:17:36.16,0:17:37.92,*Default,NTP,0000,0000,0000,,there's like network traffic and you
+Dialogue: 0,0:17:37.92,0:17:40.24,*Default,NTP,0000,0000,0000,,might have to discover where they are
+Dialogue: 0,0:17:40.24,0:17:42.80,*Default,NTP,0000,0000,0000,,and so that's a classic case where you
+Dialogue: 0,0:17:42.80,0:17:43.44,*Default,NTP,0000,0000,0000,,would be
+Dialogue: 0,0:17:43.44,0:17:46.56,*Default,NTP,0000,0000,0000,,yielding each page as it becomes
+Dialogue: 0,0:17:46.56,0:17:47.84,*Default,NTP,0000,0000,0000,,available
+Dialogue: 0,0:17:47.84,0:17:49.68,*Default,NTP,0000,0000,0000,,and that means that whatever is printing
+Dialogue: 0,0:17:49.68,0:17:51.36,*Default,NTP,0000,0000,0000,,out the title can start printing stuff
+Dialogue: 0,0:17:51.36,0:17:52.72,*Default,NTP,0000,0000,0000,,right away as soon as the page is
+Dialogue: 0,0:17:52.72,0:17:53.52,*Default,NTP,0000,0000,0000,,available
+Dialogue: 0,0:17:53.52,0:17:55.36,*Default,NTP,0000,0000,0000,,instead of having to build a list of all
+Dialogue: 0,0:17:55.36,0:17:57.20,*Default,NTP,0000,0000,0000,,the pages in some website which might be
+Dialogue: 0,0:17:57.20,0:17:59.20,*Default,NTP,0000,0000,0000,,huge before you ever kind of start work
+Dialogue: 0,0:17:59.20,0:18:00.72,*Default,NTP,0000,0000,0000,,on anything else
+Dialogue: 0,0:18:00.72,0:18:03.92,*Default,NTP,0000,0000,0000,,so um yeah there are other cases in
+Dialogue: 0,0:18:03.92,0:18:05.52,*Default,NTP,0000,0000,0000,,which there's this kind of like pipeline
+Dialogue: 0,0:18:05.52,0:18:07.04,*Default,NTP,0000,0000,0000,,of information flow
+Dialogue: 0,0:18:07.04,0:18:08.80,*Default,NTP,0000,0000,0000,,where stuff sort of is becoming
+Dialogue: 0,0:18:08.80,0:18:11.04,*Default,NTP,0000,0000,0000,,available incrementally and you want to
+Dialogue: 0,0:18:11.04,0:18:13.12,*Default,NTP,0000,0000,0000,,yield it as soon as it's available
+Dialogue: 0,0:18:13.12,0:18:15.52,*Default,NTP,0000,0000,0000,,that's where it's used a lot i think
+Dialogue: 0,0:18:15.52,0:18:17.04,*Default,NTP,0000,0000,0000,,that's exactly right i was thinking of
+Dialogue: 0,0:18:17.04,0:18:18.64,*Default,NTP,0000,0000,0000,,the example you can tell the difference
+Dialogue: 0,0:18:18.64,0:18:19.60,*Default,NTP,0000,0000,0000,,in john and my
+Dialogue: 0,0:18:19.60,0:18:21.20,*Default,NTP,0000,0000,0000,,research john does natural language
+Dialogue: 0,0:18:21.20,0:18:23.20,*Default,NTP,0000,0000,0000,,processing so he talks about text
+Dialogue: 0,0:18:23.20,0:18:26.40,*Default,NTP,0000,0000,0000,,i do images in video so my example is
+Dialogue: 0,0:18:26.40,0:18:27.44,*Default,NTP,0000,0000,0000,,we take a video and we have to
+Dialogue: 0,0:18:27.44,0:18:29.52,*Default,NTP,0000,0000,0000,,decompress the video to do an analysis
+Dialogue: 0,0:18:29.52,0:18:30.32,*Default,NTP,0000,0000,0000,,of it
+Dialogue: 0,0:18:30.32,0:18:33.12,*Default,NTP,0000,0000,0000,,decompression of video is very very slow
+Dialogue: 0,0:18:33.12,0:18:34.96,*Default,NTP,0000,0000,0000,,um but i want to start processing as
+Dialogue: 0,0:18:34.96,0:18:36.80,*Default,NTP,0000,0000,0000,,soon as i get the first few frames
+Dialogue: 0,0:18:36.80,0:18:39.44,*Default,NTP,0000,0000,0000,,so as i'm decompressing the video i'm
+Dialogue: 0,0:18:39.44,0:18:41.44,*Default,NTP,0000,0000,0000,,shoving frames out the other end
+Dialogue: 0,0:18:41.44,0:18:42.56,*Default,NTP,0000,0000,0000,,and then i have an algorithm that's
+Dialogue: 0,0:18:42.56,0:18:44.32,*Default,NTP,0000,0000,0000,,doing some analysis and it's shoving it
+Dialogue: 0,0:18:44.32,0:18:45.04,*Default,NTP,0000,0000,0000,,out so when
+Dialogue: 0,0:18:45.04,0:18:46.48,*Default,NTP,0000,0000,0000,,i think it's exactly right is when you
+Dialogue: 0,0:18:46.48,0:18:48.40,*Default,NTP,0000,0000,0000,,have these different pieces
+Dialogue: 0,0:18:48.40,0:18:51.44,*Default,NTP,0000,0000,0000,,in a data flow but the processing is not
+Dialogue: 0,0:18:51.44,0:18:53.20,*Default,NTP,0000,0000,0000,,exactly the same so maybe you have some
+Dialogue: 0,0:18:53.20,0:18:55.20,*Default,NTP,0000,0000,0000,,slow steps some fast apps
+Dialogue: 0,0:18:55.20,0:18:56.72,*Default,NTP,0000,0000,0000,,and i don't want some i don't want to
+Dialogue: 0,0:18:56.72,0:18:58.40,*Default,NTP,0000,0000,0000,,sit here waiting for this really slow
+Dialogue: 0,0:18:58.40,0:18:59.36,*Default,NTP,0000,0000,0000,,process because
+Dialogue: 0,0:18:59.36,0:19:00.96,*Default,NTP,0000,0000,0000,,i can start working as soon as i get the
+Dialogue: 0,0:19:00.96,0:19:03.20,*Default,NTP,0000,0000,0000,,data and so that with return you
+Dialogue: 0,0:19:03.20,0:19:04.32,*Default,NTP,0000,0000,0000,,couldn't do that
+Dialogue: 0,0:19:04.32,0:19:06.08,*Default,NTP,0000,0000,0000,,right return says i'm going to hand you
+Dialogue: 0,0:19:06.08,0:19:07.60,*Default,NTP,0000,0000,0000,,back all this data
+Dialogue: 0,0:19:07.60,0:19:09.44,*Default,NTP,0000,0000,0000,,when i'm done the yield can do it
+Dialogue: 0,0:19:09.44,0:19:11.28,*Default,NTP,0000,0000,0000,,incrementally
+Dialogue: 0,0:19:11.28,0:19:13.84,*Default,NTP,0000,0000,0000,,the next question was is a generator
+Dialogue: 0,0:19:13.84,0:19:15.68,*Default,NTP,0000,0000,0000,,always an iterator but an iterator is
+Dialogue: 0,0:19:15.68,0:19:17.68,*Default,NTP,0000,0000,0000,,not always a generator
+Dialogue: 0,0:19:17.68,0:19:21.20,*Default,NTP,0000,0000,0000,,iterators are not always generators
+Dialogue: 0,0:19:21.20,0:19:22.40,*Default,NTP,0000,0000,0000,,there's lots of different kind of
+Dialogue: 0,0:19:22.40,0:19:23.68,*Default,NTP,0000,0000,0000,,iterators
+Dialogue: 0,0:19:23.68,0:19:25.84,*Default,NTP,0000,0000,0000,,and generator is just a particular type
+Dialogue: 0,0:19:25.84,0:19:27.20,*Default,NTP,0000,0000,0000,,of iterator
+Dialogue: 0,0:19:27.20,0:19:29.36,*Default,NTP,0000,0000,0000,,and what makes it a generator is that it
+Dialogue: 0,0:19:29.36,0:19:31.84,*Default,NTP,0000,0000,0000,,came from a function that yields
+Dialogue: 0,0:19:31.84,0:19:34.08,*Default,NTP,0000,0000,0000,,as opposed to being from a list or
+Dialogue: 0,0:19:34.08,0:19:35.04,*Default,NTP,0000,0000,0000,,something like that
+Dialogue: 0,0:19:35.04,0:19:37.60,*Default,NTP,0000,0000,0000,,so iterators describe anything that you
+Dialogue: 0,0:19:37.60,0:19:38.64,*Default,NTP,0000,0000,0000,,can iterate over
+Dialogue: 0,0:19:38.64,0:19:40.64,*Default,NTP,0000,0000,0000,,whether it's the elements of a list or
+Dialogue: 0,0:19:40.64,0:19:42.72,*Default,NTP,0000,0000,0000,,the yielded values from a
+Dialogue: 0,0:19:42.72,0:19:44.80,*Default,NTP,0000,0000,0000,,generator function or anything else
+Dialogue: 0,0:19:44.80,0:19:46.32,*Default,NTP,0000,0000,0000,,whereas
+Dialogue: 0,0:19:46.32,0:19:48.48,*Default,NTP,0000,0000,0000,,generators are or more specific but the
+Dialogue: 0,0:19:48.48,0:19:50.16,*Default,NTP,0000,0000,0000,,way you use a generator is the same as
+Dialogue: 0,0:19:50.16,0:19:51.36,*Default,NTP,0000,0000,0000,,how you use an iterator
+Dialogue: 0,0:19:51.36,0:19:52.80,*Default,NTP,0000,0000,0000,,it's just talking about where it came
+Dialogue: 0,0:19:52.80,0:19:54.88,*Default,NTP,0000,0000,0000,,from the next question
+Dialogue: 0,0:19:54.88,0:19:58.40,*Default,NTP,0000,0000,0000,,was about the summer 2020 midterm
+Dialogue: 0,0:19:58.40,0:20:01.76,*Default,NTP,0000,0000,0000,,question two uh okay so this says
+Dialogue: 0,0:20:01.76,0:20:04.56,*Default,NTP,0000,0000,0000,,uh schedule takes a galaxy which is a
+Dialogue: 0,0:20:04.56,0:20:05.28,*Default,NTP,0000,0000,0000,,string
+Dialogue: 0,0:20:05.28,0:20:06.72,*Default,NTP,0000,0000,0000,,and then there's some number that you
+Dialogue: 0,0:20:06.72,0:20:09.12,*Default,NTP,0000,0000,0000,,want to sum to and some max digit that
+Dialogue: 0,0:20:09.12,0:20:11.28,*Default,NTP,0000,0000,0000,,you're allowed to use
+Dialogue: 0,0:20:11.28,0:20:13.36,*Default,NTP,0000,0000,0000,,and so a galaxy looks like something
+Dialogue: 0,0:20:13.36,0:20:14.96,*Default,NTP,0000,0000,0000,,that's a bunch of digits maybe with some
+Dialogue: 0,0:20:14.96,0:20:15.92,*Default,NTP,0000,0000,0000,,question marks
+Dialogue: 0,0:20:15.92,0:20:18.00,*Default,NTP,0000,0000,0000,,for example here's some digits and some
+Dialogue: 0,0:20:18.00,0:20:19.12,*Default,NTP,0000,0000,0000,,question marks
+Dialogue: 0,0:20:19.12,0:20:20.80,*Default,NTP,0000,0000,0000,,and then there's a completion of a
+Dialogue: 0,0:20:20.80,0:20:22.64,*Default,NTP,0000,0000,0000,,galaxy which is a string full of just
+Dialogue: 0,0:20:22.64,0:20:24.00,*Default,NTP,0000,0000,0000,,digits
+Dialogue: 0,0:20:24.00,0:20:25.60,*Default,NTP,0000,0000,0000,,where we've replaced each question mark
+Dialogue: 0,0:20:25.60,0:20:27.44,*Default,NTP,0000,0000,0000,,with a digit and
+Dialogue: 0,0:20:27.44,0:20:30.16,*Default,NTP,0000,0000,0000,,uh the total sum of the whole thing is
+Dialogue: 0,0:20:30.16,0:20:30.88,*Default,NTP,0000,0000,0000,,supposed to be
+Dialogue: 0,0:20:30.88,0:20:34.00,*Default,NTP,0000,0000,0000,,this value sum2 so here's a legal way of
+Dialogue: 0,0:20:34.00,0:20:35.60,*Default,NTP,0000,0000,0000,,doing it which is
+Dialogue: 0,0:20:35.60,0:20:37.76,*Default,NTP,0000,0000,0000,,that you could fill in this question
+Dialogue: 0,0:20:37.76,0:20:40.24,*Default,NTP,0000,0000,0000,,mark with 0 well this has to stay at 2.
+Dialogue: 0,0:20:40.24,0:20:41.76,*Default,NTP,0000,0000,0000,,this question mark was 0. this question
+Dialogue: 0,0:20:41.76,0:20:43.60,*Default,NTP,0000,0000,0000,,mark was 0. this has to say 1. this has
+Dialogue: 0,0:20:43.60,0:20:45.04,*Default,NTP,0000,0000,0000,,to stay a 1 and this could be anything
+Dialogue: 0,0:20:45.04,0:20:45.84,*Default,NTP,0000,0000,0000,,we want
+Dialogue: 0,0:20:45.84,0:20:47.60,*Default,NTP,0000,0000,0000,,but all the digits including the ones
+Dialogue: 0,0:20:47.60,0:20:49.12,*Default,NTP,0000,0000,0000,,that are provided and the ones that we
+Dialogue: 0,0:20:49.12,0:20:49.68,*Default,NTP,0000,0000,0000,,added
+Dialogue: 0,0:20:49.68,0:20:52.40,*Default,NTP,0000,0000,0000,,have to sum up to five so here's all the
+Dialogue: 0,0:20:52.40,0:20:55.12,*Default,NTP,0000,0000,0000,,ways of doing it
+Dialogue: 0,0:20:55.12,0:20:58.24,*Default,NTP,0000,0000,0000,,okay um
+Dialogue: 0,0:21:00.48,0:21:02.40,*Default,NTP,0000,0000,0000,,let's take a look it seems like we'll do
+Dialogue: 0,0:21:02.40,0:21:04.08,*Default,NTP,0000,0000,0000,,some recruiting
+Dialogue: 0,0:21:04.08,0:21:07.36,*Default,NTP,0000,0000,0000,,uh we have a helper which has
+Dialogue: 0,0:21:07.36,0:21:10.56,*Default,NTP,0000,0000,0000,,a galaxy
+Dialogue: 0,0:21:10.56,0:21:12.80,*Default,NTP,0000,0000,0000,,um the fact that there's a galaxy here
+Dialogue: 0,0:21:12.80,0:21:14.32,*Default,NTP,0000,0000,0000,,in a galaxy here means that maybe we'll
+Dialogue: 0,0:21:14.32,0:21:15.92,*Default,NTP,0000,0000,0000,,be changing this along the way like
+Dialogue: 0,0:21:15.92,0:21:18.80,*Default,NTP,0000,0000,0000,,filling in digits for example
+Dialogue: 0,0:21:18.80,0:21:21.20,*Default,NTP,0000,0000,0000,,here we have a sum so far which could
+Dialogue: 0,0:21:21.20,0:21:23.60,*Default,NTP,0000,0000,0000,,tell us whether we've
+Dialogue: 0,0:21:23.60,0:21:25.92,*Default,NTP,0000,0000,0000,,reached the sum that we're trying to
+Dialogue: 0,0:21:25.92,0:21:27.52,*Default,NTP,0000,0000,0000,,eventually achieve
+Dialogue: 0,0:21:27.52,0:21:29.36,*Default,NTP,0000,0000,0000,,and the index i guess means that we're
+Dialogue: 0,0:21:29.36,0:21:31.92,*Default,NTP,0000,0000,0000,,going to walk through here
+Dialogue: 0,0:21:31.92,0:21:34.88,*Default,NTP,0000,0000,0000,,element by element
+Dialogue: 0,0:21:36.64,0:21:39.76,*Default,NTP,0000,0000,0000,,okay so we'll call
+Dialogue: 0,0:21:39.76,0:21:42.64,*Default,NTP,0000,0000,0000,,schedule helper
+Dialogue: 0,0:21:42.80,0:21:46.72,*Default,NTP,0000,0000,0000,,on the original galaxy
+Dialogue: 0,0:21:46.72,0:21:48.56,*Default,NTP,0000,0000,0000,,the sum so far i think is zero we
+Dialogue: 0,0:21:48.56,0:21:50.00,*Default,NTP,0000,0000,0000,,haven't done anything yet and we'll
+Dialogue: 0,0:21:50.00,0:21:51.12,*Default,NTP,0000,0000,0000,,start at the beginning
+Dialogue: 0,0:21:51.12,0:21:54.00,*Default,NTP,0000,0000,0000,,and we'll see what we do if it's the
+Dialogue: 0,0:21:54.00,0:21:54.96,*Default,NTP,0000,0000,0000,,case
+Dialogue: 0,0:21:54.96,0:21:57.12,*Default,NTP,0000,0000,0000,,that we're done then we're going to
+Dialogue: 0,0:21:57.12,0:21:59.20,*Default,NTP,0000,0000,0000,,return a list containing galaxy okay
+Dialogue: 0,0:21:59.20,0:22:00.24,*Default,NTP,0000,0000,0000,,that's good
+Dialogue: 0,0:22:00.24,0:22:01.92,*Default,NTP,0000,0000,0000,,but this means that the galaxy that gets
+Dialogue: 0,0:22:01.92,0:22:03.28,*Default,NTP,0000,0000,0000,,passed in here has to have all the
+Dialogue: 0,0:22:03.28,0:22:04.32,*Default,NTP,0000,0000,0000,,question marks filled in
+Dialogue: 0,0:22:04.32,0:22:06.56,*Default,NTP,0000,0000,0000,,if we're going to be returning it so we
+Dialogue: 0,0:22:06.56,0:22:07.76,*Default,NTP,0000,0000,0000,,know we're going to be kind of filling
+Dialogue: 0,0:22:07.76,0:22:09.68,*Default,NTP,0000,0000,0000,,in things as we go
+Dialogue: 0,0:22:09.68,0:22:11.44,*Default,NTP,0000,0000,0000,,if it's the case that maybe we've
+Dialogue: 0,0:22:11.44,0:22:13.12,*Default,NTP,0000,0000,0000,,reached a sum that's too big
+Dialogue: 0,0:22:13.12,0:22:15.60,*Default,NTP,0000,0000,0000,,then then we have a problem so i think
+Dialogue: 0,0:22:15.60,0:22:17.84,*Default,NTP,0000,0000,0000,,there's probably some base case like
+Dialogue: 0,0:22:17.84,0:22:20.96,*Default,NTP,0000,0000,0000,,some so far is greater than sum two then
+Dialogue: 0,0:22:20.96,0:22:21.36,*Default,NTP,0000,0000,0000,,we
+Dialogue: 0,0:22:21.36,0:22:23.04,*Default,NTP,0000,0000,0000,,have a problem there might be some other
+Dialogue: 0,0:22:23.04,0:22:24.56,*Default,NTP,0000,0000,0000,,base cases that we have to think about
+Dialogue: 0,0:22:24.56,0:22:27.84,*Default,NTP,0000,0000,0000,,as well
+Dialogue: 0,0:22:28.00,0:22:30.16,*Default,NTP,0000,0000,0000,,and i'm not sure what's going on here
+Dialogue: 0,0:22:30.16,0:22:31.76,*Default,NTP,0000,0000,0000,,yet we'll think about that later
+Dialogue: 0,0:22:31.76,0:22:33.60,*Default,NTP,0000,0000,0000,,here's the kind of main recursive loop
+Dialogue: 0,0:22:33.60,0:22:35.92,*Default,NTP,0000,0000,0000,,which is that we build a list
+Dialogue: 0,0:22:35.92,0:22:40.56,*Default,NTP,0000,0000,0000,,we go through every x in
+Dialogue: 0,0:22:40.56,0:22:43.68,*Default,NTP,0000,0000,0000,,something probably the digits
+Dialogue: 0,0:22:43.68,0:22:47.52,*Default,NTP,0000,0000,0000,,from zero to nine or something like that
+Dialogue: 0,0:22:47.52,0:22:51.04,*Default,NTP,0000,0000,0000,,uh and we fill in a question mark
+Dialogue: 0,0:22:51.04,0:22:53.12,*Default,NTP,0000,0000,0000,,that seems like what modified galaxy is
+Dialogue: 0,0:22:53.12,0:22:55.44,*Default,NTP,0000,0000,0000,,going to be all about
+Dialogue: 0,0:22:55.44,0:22:58.88,*Default,NTP,0000,0000,0000,,um so
+Dialogue: 0,0:22:58.88,0:23:00.32,*Default,NTP,0000,0000,0000,,i kind of feel like this is going to be
+Dialogue: 0,0:23:00.32,0:23:02.32,*Default,NTP,0000,0000,0000,,the case where there's no question mark
+Dialogue: 0,0:23:02.32,0:23:03.44,*Default,NTP,0000,0000,0000,,and this is going to be the case where
+Dialogue: 0,0:23:03.44,0:23:04.96,*Default,NTP,0000,0000,0000,,there is a question mark and then you
+Dialogue: 0,0:23:04.96,0:23:07.44,*Default,NTP,0000,0000,0000,,have to like try all the possibilities
+Dialogue: 0,0:23:07.44,0:23:11.36,*Default,NTP,0000,0000,0000,,so it might be something like if
+Dialogue: 0,0:23:11.36,0:23:14.72,*Default,NTP,0000,0000,0000,,galaxy at
+Dialogue: 0,0:23:14.72,0:23:18.72,*Default,NTP,0000,0000,0000,,index does not equal
+Dialogue: 0,0:23:18.72,0:23:22.16,*Default,NTP,0000,0000,0000,,a question mark then i think we have to
+Dialogue: 0,0:23:22.16,0:23:23.68,*Default,NTP,0000,0000,0000,,just use that first
+Dialogue: 0,0:23:23.68,0:23:28.48,*Default,NTP,0000,0000,0000,,value so we'll call schedule helper
+Dialogue: 0,0:23:28.48,0:23:32.40,*Default,NTP,0000,0000,0000,,on exactly the same galaxy we had before
+Dialogue: 0,0:23:32.40,0:23:34.48,*Default,NTP,0000,0000,0000,,the sum is going to change we have the
+Dialogue: 0,0:23:34.48,0:23:35.60,*Default,NTP,0000,0000,0000,,old sum
+Dialogue: 0,0:23:35.60,0:23:38.64,*Default,NTP,0000,0000,0000,,plus uh whatever the
+Dialogue: 0,0:23:38.64,0:23:42.40,*Default,NTP,0000,0000,0000,,first element of galaxy is
+Dialogue: 0,0:23:42.64,0:23:45.92,*Default,NTP,0000,0000,0000,,or the current element of galaxy is
+Dialogue: 0,0:23:45.92,0:23:49.68,*Default,NTP,0000,0000,0000,,and uh what else let's advance the index
+Dialogue: 0,0:23:49.68,0:23:52.40,*Default,NTP,0000,0000,0000,,so we keep moving
+Dialogue: 0,0:23:52.80,0:23:55.52,*Default,NTP,0000,0000,0000,,what if there's a question mark so here
+Dialogue: 0,0:23:55.52,0:23:55.92,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:23:55.92,0:24:00.00,*Default,NTP,0000,0000,0000,,is in fact i'm just going to rewrite it
+Dialogue: 0,0:24:00.00,0:24:03.36,*Default,NTP,0000,0000,0000,,lf galaxy index
+Dialogue: 0,0:24:03.36,0:24:05.04,*Default,NTP,0000,0000,0000,,equals question mark and i think this
+Dialogue: 0,0:24:05.04,0:24:07.52,*Default,NTP,0000,0000,0000,,will do the same thing right
+Dialogue: 0,0:24:07.52,0:24:10.48,*Default,NTP,0000,0000,0000,,uh oh wrong way
+Dialogue: 0,0:24:13.68,0:24:16.16,*Default,NTP,0000,0000,0000,,we're gonna find all the different ways
+Dialogue: 0,0:24:16.16,0:24:18.00,*Default,NTP,0000,0000,0000,,of doing this
+Dialogue: 0,0:24:18.00,0:24:22.16,*Default,NTP,0000,0000,0000,,um go through the digits
+Dialogue: 0,0:24:22.88,0:24:24.48,*Default,NTP,0000,0000,0000,,zero one two three four five six seven
+Dialogue: 0,0:24:24.48,0:24:26.40,*Default,NTP,0000,0000,0000,,eight nine
+Dialogue: 0,0:24:26.40,0:24:29.84,*Default,NTP,0000,0000,0000,,we're gonna build a new string
+Dialogue: 0,0:24:29.84,0:24:33.44,*Default,NTP,0000,0000,0000,,which is galaxy up to but not including
+Dialogue: 0,0:24:33.44,0:24:34.72,*Default,NTP,0000,0000,0000,,the index
+Dialogue: 0,0:24:34.72,0:24:38.00,*Default,NTP,0000,0000,0000,,plus a stringed version of x
+Dialogue: 0,0:24:38.00,0:24:43.12,*Default,NTP,0000,0000,0000,,plus the rest of galaxy after the index
+Dialogue: 0,0:24:43.12,0:24:45.44,*Default,NTP,0000,0000,0000,,that might work so let's just like look
+Dialogue: 0,0:24:45.44,0:24:47.04,*Default,NTP,0000,0000,0000,,at what this does
+Dialogue: 0,0:24:47.04,0:24:49.76,*Default,NTP,0000,0000,0000,,for an example before we go on would be
+Dialogue: 0,0:24:49.76,0:24:51.04,*Default,NTP,0000,0000,0000,,nice to know that it works
+Dialogue: 0,0:24:51.04,0:24:53.36,*Default,NTP,0000,0000,0000,,so if i have something like 2 3 question
+Dialogue: 0,0:24:53.36,0:24:54.96,*Default,NTP,0000,0000,0000,,mark
+Dialogue: 0,0:24:54.96,0:24:59.20,*Default,NTP,0000,0000,0000,,5 6 and i have an x which equals 4
+Dialogue: 0,0:24:59.20,0:25:03.44,*Default,NTP,0000,0000,0000,,is it the case that if index equals 2
+Dialogue: 0,0:25:03.44,0:25:08.08,*Default,NTP,0000,0000,0000,,and galaxy equals this thing
+Dialogue: 0,0:25:08.40,0:25:11.76,*Default,NTP,0000,0000,0000,,that i get what i want
+Dialogue: 0,0:25:11.76,0:25:16.24,*Default,NTP,0000,0000,0000,,when i evaluate this expression
+Dialogue: 0,0:25:18.32,0:25:20.40,*Default,NTP,0000,0000,0000,,it does so we basically just replace the
+Dialogue: 0,0:25:20.40,0:25:21.92,*Default,NTP,0000,0000,0000,,question mark with a 4
+Dialogue: 0,0:25:21.92,0:25:24.96,*Default,NTP,0000,0000,0000,,there in this long line
+Dialogue: 0,0:25:24.96,0:25:26.56,*Default,NTP,0000,0000,0000,,so what do we do well we have to get
+Dialogue: 0,0:25:26.56,0:25:28.08,*Default,NTP,0000,0000,0000,,some more answers in there
+Dialogue: 0,0:25:28.08,0:25:31.28,*Default,NTP,0000,0000,0000,,uh i'm gonna recursively call schedule
+Dialogue: 0,0:25:31.28,0:25:33.20,*Default,NTP,0000,0000,0000,,helper
+Dialogue: 0,0:25:33.20,0:25:36.64,*Default,NTP,0000,0000,0000,,on this new modified galaxy
+Dialogue: 0,0:25:36.64,0:25:40.00,*Default,NTP,0000,0000,0000,,and a new sum so far
+Dialogue: 0,0:25:40.00,0:25:42.72,*Default,NTP,0000,0000,0000,,because now we've got an x in there and
+Dialogue: 0,0:25:42.72,0:25:45.68,*Default,NTP,0000,0000,0000,,we're moving forward
+Dialogue: 0,0:25:46.72,0:25:48.64,*Default,NTP,0000,0000,0000,,and we do this for all the index like
+Dialogue: 0,0:25:48.64,0:25:49.84,*Default,NTP,0000,0000,0000,,why is it the case that i called
+Dialogue: 0,0:25:49.84,0:25:51.12,*Default,NTP,0000,0000,0000,,schedule helper here
+Dialogue: 0,0:25:51.12,0:25:52.64,*Default,NTP,0000,0000,0000,,this is where i'm going to fill in all
+Dialogue: 0,0:25:52.64,0:25:54.48,*Default,NTP,0000,0000,0000,,the other question marks that are later
+Dialogue: 0,0:25:54.48,0:25:54.88,*Default,NTP,0000,0000,0000,,on
+Dialogue: 0,0:25:54.88,0:25:58.48,*Default,NTP,0000,0000,0000,,and make sure that i got the sum right
+Dialogue: 0,0:25:58.48,0:25:59.84,*Default,NTP,0000,0000,0000,,all right now i think we need to get
+Dialogue: 0,0:25:59.84,0:26:02.32,*Default,NTP,0000,0000,0000,,this base case of when we have found
+Dialogue: 0,0:26:02.32,0:26:04.48,*Default,NTP,0000,0000,0000,,a fully complete galaxy so this would be
+Dialogue: 0,0:26:04.48,0:26:05.44,*Default,NTP,0000,0000,0000,,like if
+Dialogue: 0,0:26:05.44,0:26:08.24,*Default,NTP,0000,0000,0000,,index equals the len of galaxy then
+Dialogue: 0,0:26:08.24,0:26:10.48,*Default,NTP,0000,0000,0000,,we've gotten to the end and
+Dialogue: 0,0:26:10.48,0:26:13.52,*Default,NTP,0000,0000,0000,,if galaxies
+Dialogue: 0,0:26:13.52,0:26:16.56,*Default,NTP,0000,0000,0000,,well okay how do we do this let's make
+Dialogue: 0,0:26:16.56,0:26:19.36,*Default,NTP,0000,0000,0000,,sure we got the right sum
+Dialogue: 0,0:26:19.36,0:26:22.72,*Default,NTP,0000,0000,0000,,sum so far equals
+Dialogue: 0,0:26:22.72,0:26:25.60,*Default,NTP,0000,0000,0000,,sum two that might do the trick then
+Dialogue: 0,0:26:25.60,0:26:28.24,*Default,NTP,0000,0000,0000,,maybe we're done
+Dialogue: 0,0:26:29.52,0:26:31.84,*Default,NTP,0000,0000,0000,,nope
+Dialogue: 0,0:26:33.68,0:26:37.20,*Default,NTP,0000,0000,0000,,uh index out of or
+Dialogue: 0,0:26:37.20,0:26:41.04,*Default,NTP,0000,0000,0000,,index greater than equal to the length
+Dialogue: 0,0:26:41.04,0:26:42.72,*Default,NTP,0000,0000,0000,,of the galaxy so if you kind of like get
+Dialogue: 0,0:26:42.72,0:26:44.08,*Default,NTP,0000,0000,0000,,to the end and you don't have a sum
+Dialogue: 0,0:26:44.08,0:26:45.44,*Default,NTP,0000,0000,0000,,that's big enough then i guess you need
+Dialogue: 0,0:26:45.44,0:26:47.44,*Default,NTP,0000,0000,0000,,to stop
+Dialogue: 0,0:26:47.44,0:26:50.16,*Default,NTP,0000,0000,0000,,what on earth
+Dialogue: 0,0:26:51.52,0:26:52.96,*Default,NTP,0000,0000,0000,,sorry zoom is in the way i can't even
+Dialogue: 0,0:26:52.96,0:26:55.60,*Default,NTP,0000,0000,0000,,see what broke
+Dialogue: 0,0:26:56.40,0:26:58.80,*Default,NTP,0000,0000,0000,,oh i don't think you're supposed to use
+Dialogue: 0,0:26:58.80,0:27:01.44,*Default,NTP,0000,0000,0000,,oh parts of the size
+Dialogue: 0,0:27:01.44,0:27:04.40,*Default,NTP,0000,0000,0000,,max digit yeah you can't always go to
+Dialogue: 0,0:27:04.40,0:27:06.72,*Default,NTP,0000,0000,0000,,10.
+Dialogue: 0,0:27:09.76,0:27:10.88,*Default,NTP,0000,0000,0000,,you should probably read the question
+Dialogue: 0,0:27:10.88,0:27:15.04,*Default,NTP,0000,0000,0000,,first okay now it works
+Dialogue: 0,0:27:15.04,0:27:17.60,*Default,NTP,0000,0000,0000,,so what got us here well we kind of kept
+Dialogue: 0,0:27:17.60,0:27:19.04,*Default,NTP,0000,0000,0000,,track of what
+Dialogue: 0,0:27:19.04,0:27:21.36,*Default,NTP,0000,0000,0000,,information we needed to maintain along
+Dialogue: 0,0:27:21.36,0:27:22.96,*Default,NTP,0000,0000,0000,,the way and there were like some pretty
+Dialogue: 0,0:27:22.96,0:27:24.88,*Default,NTP,0000,0000,0000,,good clues in the question of what to do
+Dialogue: 0,0:27:24.88,0:27:26.72,*Default,NTP,0000,0000,0000,,based on the name some two and some so
+Dialogue: 0,0:27:26.72,0:27:28.80,*Default,NTP,0000,0000,0000,,far
+Dialogue: 0,0:27:28.80,0:27:30.80,*Default,NTP,0000,0000,0000,,and it took a minute to kind of think
+Dialogue: 0,0:27:30.80,0:27:32.00,*Default,NTP,0000,0000,0000,,through the base cases
+Dialogue: 0,0:27:32.00,0:27:33.12,*Default,NTP,0000,0000,0000,,and i think we could have figured this
+Dialogue: 0,0:27:33.12,0:27:34.64,*Default,NTP,0000,0000,0000,,out without running the code just by
+Dialogue: 0,0:27:34.64,0:27:37.04,*Default,NTP,0000,0000,0000,,kind of like considering different cases
+Dialogue: 0,0:27:37.04,0:27:39.60,*Default,NTP,0000,0000,0000,,uh reading the question carefully but
+Dialogue: 0,0:27:39.60,0:27:41.28,*Default,NTP,0000,0000,0000,,since we had it all set up we just ran
+Dialogue: 0,0:27:41.28,0:27:42.80,*Default,NTP,0000,0000,0000,,the doc test instead to
+Dialogue: 0,0:27:42.80,0:27:44.24,*Default,NTP,0000,0000,0000,,get a clue about whether we had done it
+Dialogue: 0,0:27:44.24,0:27:46.64,*Default,NTP,0000,0000,0000,,right or not
+Dialogue: 0,0:27:46.64,0:27:48.40,*Default,NTP,0000,0000,0000,,during the q a i said we could do this
+Dialogue: 0,0:27:48.40,0:27:49.68,*Default,NTP,0000,0000,0000,,with yield
+Dialogue: 0,0:27:49.68,0:27:52.24,*Default,NTP,0000,0000,0000,,instead of building a list but we never
+Dialogue: 0,0:27:52.24,0:27:53.60,*Default,NTP,0000,0000,0000,,actually did that so
+Dialogue: 0,0:27:53.60,0:27:57.60,*Default,NTP,0000,0000,0000,,um let's do it we're going to return a
+Dialogue: 0,0:27:57.60,0:27:58.24,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:27:58.24,0:28:00.96,*Default,NTP,0000,0000,0000,,of the results of everything that
+Dialogue: 0,0:28:00.96,0:28:02.32,*Default,NTP,0000,0000,0000,,scheduler helper
+Dialogue: 0,0:28:02.32,0:28:04.32,*Default,NTP,0000,0000,0000,,yields and then we can worry about
+Dialogue: 0,0:28:04.32,0:28:05.92,*Default,NTP,0000,0000,0000,,yielding so here
+Dialogue: 0,0:28:05.92,0:28:08.32,*Default,NTP,0000,0000,0000,,we would yield just galaxy that's
+Dialogue: 0,0:28:08.32,0:28:11.52,*Default,NTP,0000,0000,0000,,equivalent to returning a list of galaxy
+Dialogue: 0,0:28:11.52,0:28:15.20,*Default,NTP,0000,0000,0000,,here we just wouldn't do anything
+Dialogue: 0,0:28:15.20,0:28:16.96,*Default,NTP,0000,0000,0000,,one way to stop a function is to write
+Dialogue: 0,0:28:16.96,0:28:19.52,*Default,NTP,0000,0000,0000,,return but it would also be fine just to
+Dialogue: 0,0:28:19.52,0:28:20.00,*Default,NTP,0000,0000,0000,,kind of
+Dialogue: 0,0:28:20.00,0:28:23.28,*Default,NTP,0000,0000,0000,,do nothing here just don't yield
+Dialogue: 0,0:28:23.28,0:28:24.32,*Default,NTP,0000,0000,0000,,anything
+Dialogue: 0,0:28:24.32,0:28:26.96,*Default,NTP,0000,0000,0000,,and what about here well schedule helper
+Dialogue: 0,0:28:26.96,0:28:27.60,*Default,NTP,0000,0000,0000,,is going to
+Dialogue: 0,0:28:27.60,0:28:29.76,*Default,NTP,0000,0000,0000,,yield a whole bunch of different values
+Dialogue: 0,0:28:29.76,0:28:31.20,*Default,NTP,0000,0000,0000,,so this would have to be replaced with
+Dialogue: 0,0:28:31.20,0:28:33.84,*Default,NTP,0000,0000,0000,,the yield from
+Dialogue: 0,0:28:35.76,0:28:38.08,*Default,NTP,0000,0000,0000,,and here we could get around building up
+Dialogue: 0,0:28:38.08,0:28:39.92,*Default,NTP,0000,0000,0000,,a list
+Dialogue: 0,0:28:39.92,0:28:41.76,*Default,NTP,0000,0000,0000,,and just say that every time we call
+Dialogue: 0,0:28:41.76,0:28:42.96,*Default,NTP,0000,0000,0000,,schedule helper
+Dialogue: 0,0:28:42.96,0:28:45.84,*Default,NTP,0000,0000,0000,,will yield from that
+Dialogue: 0,0:28:47.28,0:28:49.04,*Default,NTP,0000,0000,0000,,so what happens when we run this we get
+Dialogue: 0,0:28:49.04,0:28:51.76,*Default,NTP,0000,0000,0000,,the same result
+Dialogue: 0,0:28:51.76,0:28:54.32,*Default,NTP,0000,0000,0000,,great question so if you have a for
+Dialogue: 0,0:28:54.32,0:28:55.44,*Default,NTP,0000,0000,0000,,statement
+Dialogue: 0,0:28:55.44,0:28:59.28,*Default,NTP,0000,0000,0000,,or for loop is that the same as
+Dialogue: 0,0:28:59.28,0:29:01.68,*Default,NTP,0000,0000,0000,,creating an iterator and then calling
+Dialogue: 0,0:29:01.68,0:29:03.52,*Default,NTP,0000,0000,0000,,next on it repeatedly
+Dialogue: 0,0:29:03.52,0:29:07.36,*Default,NTP,0000,0000,0000,,yes the behavior is identical
+Dialogue: 0,0:29:07.36,0:29:09.52,*Default,NTP,0000,0000,0000,,i think there are cases in which python
+Dialogue: 0,0:29:09.52,0:29:10.56,*Default,NTP,0000,0000,0000,,tries to like
+Dialogue: 0,0:29:10.56,0:29:12.40,*Default,NTP,0000,0000,0000,,find a faster way to do it like if you
+Dialogue: 0,0:29:12.40,0:29:14.32,*Default,NTP,0000,0000,0000,,iterate over a range maybe it's doing
+Dialogue: 0,0:29:14.32,0:29:16.56,*Default,NTP,0000,0000,0000,,something fancy underneath i don't know
+Dialogue: 0,0:29:16.56,0:29:19.36,*Default,NTP,0000,0000,0000,,but from your programmer's perspective
+Dialogue: 0,0:29:19.36,0:29:21.20,*Default,NTP,0000,0000,0000,,the behavior is identical to
+Dialogue: 0,0:29:21.20,0:29:22.80,*Default,NTP,0000,0000,0000,,create an iterator out of this thing
+Dialogue: 0,0:29:22.80,0:29:25.12,*Default,NTP,0000,0000,0000,,that you're running the for loop over
+Dialogue: 0,0:29:25.12,0:29:27.60,*Default,NTP,0000,0000,0000,,and then call next repeatedly binding
+Dialogue: 0,0:29:27.60,0:29:29.04,*Default,NTP,0000,0000,0000,,the name
+Dialogue: 0,0:29:29.04,0:29:34.32,*Default,NTP,0000,0000,0000,,x to the next value each time
+Dialogue: 0,0:29:34.32,0:29:35.84,*Default,NTP,0000,0000,0000,,yeah good question is there any way to
+Dialogue: 0,0:29:35.84,0:29:37.36,*Default,NTP,0000,0000,0000,,reset an iterator once you've gone
+Dialogue: 0,0:29:37.36,0:29:38.48,*Default,NTP,0000,0000,0000,,through the elements or do you just have
+Dialogue: 0,0:29:38.48,0:29:40.00,*Default,NTP,0000,0000,0000,,to make a new one and the answer is you
+Dialogue: 0,0:29:40.00,0:29:41.68,*Default,NTP,0000,0000,0000,,just have to make a new one
+Dialogue: 0,0:29:41.68,0:29:44.72,*Default,NTP,0000,0000,0000,,um there are
+Dialogue: 0,0:29:44.72,0:29:48.16,*Default,NTP,0000,0000,0000,,um the reason for this
+Dialogue: 0,0:29:48.16,0:29:49.60,*Default,NTP,0000,0000,0000,,is that it might be that you're trying
+Dialogue: 0,0:29:49.60,0:29:51.12,*Default,NTP,0000,0000,0000,,to write a program where you're kind of
+Dialogue: 0,0:29:51.12,0:29:52.40,*Default,NTP,0000,0000,0000,,forgetting the past
+Dialogue: 0,0:29:52.40,0:29:53.92,*Default,NTP,0000,0000,0000,,because maybe the stuff that you've
+Dialogue: 0,0:29:53.92,0:29:56.16,*Default,NTP,0000,0000,0000,,iterated over is so big it's like whole
+Dialogue: 0,0:29:56.16,0:29:57.28,*Default,NTP,0000,0000,0000,,video files
+Dialogue: 0,0:29:57.28,0:29:58.88,*Default,NTP,0000,0000,0000,,that you can't store them all in memory
+Dialogue: 0,0:29:58.88,0:30:01.44,*Default,NTP,0000,0000,0000,,at once so this idea of like resetting
+Dialogue: 0,0:30:01.44,0:30:03.20,*Default,NTP,0000,0000,0000,,would require you to remember everything
+Dialogue: 0,0:30:03.20,0:30:04.24,*Default,NTP,0000,0000,0000,,you had seen before
+Dialogue: 0,0:30:04.24,0:30:05.60,*Default,NTP,0000,0000,0000,,and that's exactly what you might be
+Dialogue: 0,0:30:05.60,0:30:07.84,*Default,NTP,0000,0000,0000,,trying to avoid an
+Dialogue: 0,0:30:07.84,0:30:10.32,*Default,NTP,0000,0000,0000,,iterator so it's up to you to write your
+Dialogue: 0,0:30:10.32,0:30:11.52,*Default,NTP,0000,0000,0000,,own program
+Dialogue: 0,0:30:11.52,0:30:14.48,*Default,NTP,0000,0000,0000,,about uh remembering where you were i
+Dialogue: 0,0:30:14.48,0:30:16.24,*Default,NTP,0000,0000,0000,,think there might be some like built-in
+Dialogue: 0,0:30:16.24,0:30:16.72,*Default,NTP,0000,0000,0000,,stuff
+Dialogue: 0,0:30:16.72,0:30:19.36,*Default,NTP,0000,0000,0000,,in the python standard library to to
+Dialogue: 0,0:30:19.36,0:30:20.96,*Default,NTP,0000,0000,0000,,remember
+Dialogue: 0,0:30:20.96,0:30:24.24,*Default,NTP,0000,0000,0000,,an iterator and kind of cycle through it
+Dialogue: 0,0:30:24.24,0:30:26.00,*Default,NTP,0000,0000,0000,,but i don't know exactly what it looks
+Dialogue: 0,0:30:26.00,0:30:28.16,*Default,NTP,0000,0000,0000,,like
+Dialogue: 0,0:30:28.72,0:30:30.16,*Default,NTP,0000,0000,0000,,the next question was is there a
+Dialogue: 0,0:30:30.16,0:30:32.32,*Default,NTP,0000,0000,0000,,relationship between yield from
+Dialogue: 0,0:30:32.32,0:30:34.72,*Default,NTP,0000,0000,0000,,and recursive functions like to yield
+Dialogue: 0,0:30:34.72,0:30:37.20,*Default,NTP,0000,0000,0000,,from always have to be recursive
+Dialogue: 0,0:30:37.20,0:30:39.52,*Default,NTP,0000,0000,0000,,i don't i don't think of it as recursive
+Dialogue: 0,0:30:39.52,0:30:40.24,*Default,NTP,0000,0000,0000,,i think it was
+Dialogue: 0,0:30:40.24,0:30:42.00,*Default,NTP,0000,0000,0000,,iterative because you're just unpacking
+Dialogue: 0,0:30:42.00,0:30:43.92,*Default,NTP,0000,0000,0000,,a for loop john
+Dialogue: 0,0:30:43.92,0:30:45.84,*Default,NTP,0000,0000,0000,,yeah that's right so i don't think yield
+Dialogue: 0,0:30:45.84,0:30:48.72,*Default,NTP,0000,0000,0000,,from has to be recursive or anything
+Dialogue: 0,0:30:48.72,0:30:51.04,*Default,NTP,0000,0000,0000,,like that you know the simplest
+Dialogue: 0,0:30:51.04,0:30:55.28,*Default,NTP,0000,0000,0000,,possible yield from would be like yield
+Dialogue: 0,0:30:55.28,0:30:57.28,*Default,NTP,0000,0000,0000,,from all the elements of this list and
+Dialogue: 0,0:30:57.28,0:30:59.20,*Default,NTP,0000,0000,0000,,there's no recursion there
+Dialogue: 0,0:30:59.20,0:31:02.00,*Default,NTP,0000,0000,0000,,and uh it works just fine so you have to
+Dialogue: 0,0:31:02.00,0:31:03.84,*Default,NTP,0000,0000,0000,,start with a list
+Dialogue: 0,0:31:03.84,0:31:06.48,*Default,NTP,0000,0000,0000,,one two three but then if you call f on
+Dialogue: 0,0:31:06.48,0:31:07.04,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:31:07.04,0:31:09.60,*Default,NTP,0000,0000,0000,,and you get that result this is a
+Dialogue: 0,0:31:09.60,0:31:10.72,*Default,NTP,0000,0000,0000,,generator object
+Dialogue: 0,0:31:10.72,0:31:12.96,*Default,NTP,0000,0000,0000,,where you'll get the one the two and
+Dialogue: 0,0:31:12.96,0:31:14.32,*Default,NTP,0000,0000,0000,,then the three
+Dialogue: 0,0:31:14.32,0:31:18.56,*Default,NTP,0000,0000,0000,,it happens to be that you can uh
+Dialogue: 0,0:31:18.56,0:31:22.40,*Default,NTP,0000,0000,0000,,can mix together recursion and yielding
+Dialogue: 0,0:31:22.40,0:31:24.16,*Default,NTP,0000,0000,0000,,if the goal of your recursion is to
+Dialogue: 0,0:31:24.16,0:31:26.00,*Default,NTP,0000,0000,0000,,build up a sequence of things
+Dialogue: 0,0:31:26.00,0:31:29.12,*Default,NTP,0000,0000,0000,,which is not totally unusual you know
+Dialogue: 0,0:31:29.12,0:31:31.76,*Default,NTP,0000,0000,0000,,our first examples of
+Dialogue: 0,0:31:31.76,0:31:35.04,*Default,NTP,0000,0000,0000,,recursion where like count the number of
+Dialogue: 0,0:31:35.04,0:31:35.60,*Default,NTP,0000,0000,0000,,ways
+Dialogue: 0,0:31:35.60,0:31:38.16,*Default,NTP,0000,0000,0000,,that you could partition up a number
+Dialogue: 0,0:31:38.16,0:31:40.56,*Default,NTP,0000,0000,0000,,using parts up to size m
+Dialogue: 0,0:31:40.56,0:31:42.80,*Default,NTP,0000,0000,0000,,and then we just did a homework problem
+Dialogue: 0,0:31:42.80,0:31:43.68,*Default,NTP,0000,0000,0000,,which was
+Dialogue: 0,0:31:43.68,0:31:47.20,*Default,NTP,0000,0000,0000,,actually list out all the ways and so
+Dialogue: 0,0:31:47.20,0:31:49.44,*Default,NTP,0000,0000,0000,,you know it's the same basic recursive
+Dialogue: 0,0:31:49.44,0:31:51.44,*Default,NTP,0000,0000,0000,,structure in both cases
+Dialogue: 0,0:31:51.44,0:31:53.04,*Default,NTP,0000,0000,0000,,except for counting you just return a
+Dialogue: 0,0:31:53.04,0:31:54.72,*Default,NTP,0000,0000,0000,,number whereas
+Dialogue: 0,0:31:54.72,0:31:57.12,*Default,NTP,0000,0000,0000,,if you're listing out all the
+Dialogue: 0,0:31:57.12,0:31:58.56,*Default,NTP,0000,0000,0000,,possibilities then you have to either
+Dialogue: 0,0:31:58.56,0:32:00.00,*Default,NTP,0000,0000,0000,,return a list or you have to
+Dialogue: 0,0:32:00.00,0:32:03.92,*Default,NTP,0000,0000,0000,,yield yeah good question so can yield be
+Dialogue: 0,0:32:03.92,0:32:06.16,*Default,NTP,0000,0000,0000,,used within a list comprehension
+Dialogue: 0,0:32:06.16,0:32:09.76,*Default,NTP,0000,0000,0000,,or inside of another larger expression
+Dialogue: 0,0:32:09.76,0:32:12.80,*Default,NTP,0000,0000,0000,,the answer is no and
+Dialogue: 0,0:32:12.80,0:32:15.92,*Default,NTP,0000,0000,0000,,this is also true of return and
+Dialogue: 0,0:32:15.92,0:32:18.96,*Default,NTP,0000,0000,0000,,assignment statements and def statements
+Dialogue: 0,0:32:18.96,0:32:20.56,*Default,NTP,0000,0000,0000,,there's a lot of things that can't be
+Dialogue: 0,0:32:20.56,0:32:22.96,*Default,NTP,0000,0000,0000,,embedded inside of a larger expression
+Dialogue: 0,0:32:22.96,0:32:24.24,*Default,NTP,0000,0000,0000,,because they're not expressions
+Dialogue: 0,0:32:24.24,0:32:25.84,*Default,NTP,0000,0000,0000,,themselves they're statements and so
+Dialogue: 0,0:32:25.84,0:32:27.44,*Default,NTP,0000,0000,0000,,they have to kind of just like show up
+Dialogue: 0,0:32:27.44,0:32:28.08,*Default,NTP,0000,0000,0000,,on their own
+Dialogue: 0,0:32:28.08,0:32:32.24,*Default,NTP,0000,0000,0000,,line so you never have like
+Dialogue: 0,0:32:32.24,0:32:35.28,*Default,NTP,0000,0000,0000,,return x for x in
+Dialogue: 0,0:32:35.28,0:32:39.28,*Default,NTP,0000,0000,0000,,some list because return x is not the
+Dialogue: 0,0:32:39.28,0:32:41.04,*Default,NTP,0000,0000,0000,,kind of thing that you can embed
+Dialogue: 0,0:32:41.04,0:32:43.28,*Default,NTP,0000,0000,0000,,inside of a larger expression and the
+Dialogue: 0,0:32:43.28,0:32:44.72,*Default,NTP,0000,0000,0000,,same is true with yield you can't have
+Dialogue: 0,0:32:44.72,0:32:46.88,*Default,NTP,0000,0000,0000,,that there either
+Dialogue: 0,0:32:46.88,0:32:48.64,*Default,NTP,0000,0000,0000,,yeah good question so is there is there
+Dialogue: 0,0:32:48.64,0:32:50.72,*Default,NTP,0000,0000,0000,,a way to kind of do two things
+Dialogue: 0,0:32:50.72,0:32:54.56,*Default,NTP,0000,0000,0000,,here right in a list comprehension
+Dialogue: 0,0:32:54.56,0:32:56.96,*Default,NTP,0000,0000,0000,,and the answer is you only get space to
+Dialogue: 0,0:32:56.96,0:32:57.60,*Default,NTP,0000,0000,0000,,put one
+Dialogue: 0,0:32:57.60,0:33:00.72,*Default,NTP,0000,0000,0000,,expression but that expression
+Dialogue: 0,0:33:00.72,0:33:03.76,*Default,NTP,0000,0000,0000,,could be a compound expression so
+Dialogue: 0,0:33:03.76,0:33:06.40,*Default,NTP,0000,0000,0000,,um you know one expression is the number
+Dialogue: 0,0:33:06.40,0:33:06.96,*Default,NTP,0000,0000,0000,,two
+Dialogue: 0,0:33:06.96,0:33:09.52,*Default,NTP,0000,0000,0000,,but another expression is the list one
+Dialogue: 0,0:33:09.52,0:33:11.12,*Default,NTP,0000,0000,0000,,two
+Dialogue: 0,0:33:11.12,0:33:14.24,*Default,NTP,0000,0000,0000,,um because this whole thing
+Dialogue: 0,0:33:14.24,0:33:16.16,*Default,NTP,0000,0000,0000,,the list one two is actually just one
+Dialogue: 0,0:33:16.16,0:33:18.72,*Default,NTP,0000,0000,0000,,expression that's got parts within it
+Dialogue: 0,0:33:18.72,0:33:21.68,*Default,NTP,0000,0000,0000,,you could try to get each part to do
+Dialogue: 0,0:33:21.68,0:33:22.24,*Default,NTP,0000,0000,0000,,something
+Dialogue: 0,0:33:22.24,0:33:25.52,*Default,NTP,0000,0000,0000,,it is legal in python to say first i
+Dialogue: 0,0:33:25.52,0:33:27.52,*Default,NTP,0000,0000,0000,,want to get the result of printing one
+Dialogue: 0,0:33:27.52,0:33:28.80,*Default,NTP,0000,0000,0000,,and then i want to get the result of
+Dialogue: 0,0:33:28.80,0:33:30.00,*Default,NTP,0000,0000,0000,,printing two
+Dialogue: 0,0:33:30.00,0:33:33.04,*Default,NTP,0000,0000,0000,,and use that to fill in this blank and
+Dialogue: 0,0:33:33.04,0:33:33.68,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:33:33.68,0:33:36.00,*Default,NTP,0000,0000,0000,,i've kind of like done two different
+Dialogue: 0,0:33:36.00,0:33:36.72,*Default,NTP,0000,0000,0000,,things
+Dialogue: 0,0:33:36.72,0:33:38.88,*Default,NTP,0000,0000,0000,,but i've done it by calling a function
+Dialogue: 0,0:33:38.88,0:33:40.24,*Default,NTP,0000,0000,0000,,which is something you're allowed to
+Dialogue: 0,0:33:40.24,0:33:40.72,*Default,NTP,0000,0000,0000,,embed
+Dialogue: 0,0:33:40.72,0:33:43.76,*Default,NTP,0000,0000,0000,,inside a larger expression as opposed to
+Dialogue: 0,0:33:43.76,0:33:45.84,*Default,NTP,0000,0000,0000,,writing down a statement like print or
+Dialogue: 0,0:33:45.84,0:33:48.32,*Default,NTP,0000,0000,0000,,yield or sorry like a return or yield or
+Dialogue: 0,0:33:48.32,0:33:48.96,*Default,NTP,0000,0000,0000,,def
+Dialogue: 0,0:33:48.96,0:33:50.80,*Default,NTP,0000,0000,0000,,where you're not allowed to embed that
+Dialogue: 0,0:33:50.80,0:33:53.12,*Default,NTP,0000,0000,0000,,inside something larger
+Dialogue: 0,0:33:53.12,0:33:54.96,*Default,NTP,0000,0000,0000,,yeah okay so the question is how would
+Dialogue: 0,0:33:54.96,0:33:56.72,*Default,NTP,0000,0000,0000,,it be that like new stuff
+Dialogue: 0,0:33:56.72,0:33:59.68,*Default,NTP,0000,0000,0000,,appears in an iterator as you're reading
+Dialogue: 0,0:33:59.68,0:34:00.88,*Default,NTP,0000,0000,0000,,from it
+Dialogue: 0,0:34:00.88,0:34:04.16,*Default,NTP,0000,0000,0000,,um this was an example from earlier in
+Dialogue: 0,0:34:04.16,0:34:05.28,*Default,NTP,0000,0000,0000,,the q a
+Dialogue: 0,0:34:05.28,0:34:07.92,*Default,NTP,0000,0000,0000,,and what might it look like if you have
+Dialogue: 0,0:34:07.92,0:34:09.84,*Default,NTP,0000,0000,0000,,something that's like
+Dialogue: 0,0:34:09.84,0:34:13.28,*Default,NTP,0000,0000,0000,,read pages from a website
+Dialogue: 0,0:34:13.28,0:34:18.40,*Default,NTP,0000,0000,0000,,well every website has like a root page
+Dialogue: 0,0:34:18.96,0:34:21.12,*Default,NTP,0000,0000,0000,,so maybe we should call this root it
+Dialogue: 0,0:34:21.12,0:34:23.60,*Default,NTP,0000,0000,0000,,would be something like i don't know
+Dialogue: 0,0:34:23.60,0:34:26.64,*Default,NTP,0000,0000,0000,,google.com or how about the new york
+Dialogue: 0,0:34:26.64,0:34:28.64,*Default,NTP,0000,0000,0000,,times
+Dialogue: 0,0:34:28.64,0:34:32.40,*Default,NTP,0000,0000,0000,,uh you would have to have some function
+Dialogue: 0,0:34:32.40,0:34:32.88,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:34:32.88,0:34:36.32,*Default,NTP,0000,0000,0000,,reads that right and
+Dialogue: 0,0:34:36.64,0:34:38.80,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:34:40.48,0:34:45.04,*Default,NTP,0000,0000,0000,,you'd like call that on the root
+Dialogue: 0,0:34:45.04,0:34:49.36,*Default,NTP,0000,0000,0000,,and get this page
+Dialogue: 0,0:34:49.36,0:34:53.04,*Default,NTP,0000,0000,0000,,and you'd want to yield this page but
+Dialogue: 0,0:34:53.04,0:34:54.96,*Default,NTP,0000,0000,0000,,and that means that like whoever called
+Dialogue: 0,0:34:54.96,0:34:57.04,*Default,NTP,0000,0000,0000,,read pages can immediately start acting
+Dialogue: 0,0:34:57.04,0:34:57.76,*Default,NTP,0000,0000,0000,,on this
+Dialogue: 0,0:34:57.76,0:34:59.44,*Default,NTP,0000,0000,0000,,right after this is done but then i
+Dialogue: 0,0:34:59.44,0:35:00.96,*Default,NTP,0000,0000,0000,,think you'd want to go through
+Dialogue: 0,0:35:00.96,0:35:04.80,*Default,NTP,0000,0000,0000,,for get all the links
+Dialogue: 0,0:35:04.80,0:35:08.16,*Default,NTP,0000,0000,0000,,in this page
+Dialogue: 0,0:35:08.48,0:35:12.08,*Default,NTP,0000,0000,0000,,and you'd want to yield
+Dialogue: 0,0:35:12.08,0:35:17.60,*Default,NTP,0000,0000,0000,,from the result of reading all the pages
+Dialogue: 0,0:35:17.60,0:35:20.00,*Default,NTP,0000,0000,0000,,from
+Dialogue: 0,0:35:26.48,0:35:31.84,*Default,NTP,0000,0000,0000,,that other page that you got
+Dialogue: 0,0:35:33.28,0:35:36.32,*Default,NTP,0000,0000,0000,,so how is it that we're like
+Dialogue: 0,0:35:36.32,0:35:39.28,*Default,NTP,0000,0000,0000,,getting new stuff along the way well
+Dialogue: 0,0:35:39.28,0:35:40.48,*Default,NTP,0000,0000,0000,,you're kind of not
+Dialogue: 0,0:35:40.48,0:35:43.52,*Default,NTP,0000,0000,0000,,in some sense all of the data that you
+Dialogue: 0,0:35:43.52,0:35:44.08,*Default,NTP,0000,0000,0000,,will ever
+Dialogue: 0,0:35:44.08,0:35:47.60,*Default,NTP,0000,0000,0000,,process is known is defined
+Dialogue: 0,0:35:47.60,0:35:50.32,*Default,NTP,0000,0000,0000,,when you call read pages the first time
+Dialogue: 0,0:35:50.32,0:35:50.96,*Default,NTP,0000,0000,0000,,it's
+Dialogue: 0,0:35:50.96,0:35:53.92,*Default,NTP,0000,0000,0000,,whatever's at www.newyorktimes.com and
+Dialogue: 0,0:35:53.92,0:35:54.72,*Default,NTP,0000,0000,0000,,everything
+Dialogue: 0,0:35:54.72,0:35:57.84,*Default,NTP,0000,0000,0000,,that it links to but
+Dialogue: 0,0:35:57.84,0:35:59.92,*Default,NTP,0000,0000,0000,,actually writing out that list of
+Dialogue: 0,0:35:59.92,0:36:01.52,*Default,NTP,0000,0000,0000,,everything linked to from the new york
+Dialogue: 0,0:36:01.52,0:36:02.24,*Default,NTP,0000,0000,0000,,times
+Dialogue: 0,0:36:02.24,0:36:05.76,*Default,NTP,0000,0000,0000,,will take a really long time and so
+Dialogue: 0,0:36:05.76,0:36:08.72,*Default,NTP,0000,0000,0000,,um there's a lot of this result that we
+Dialogue: 0,0:36:08.72,0:36:10.40,*Default,NTP,0000,0000,0000,,haven't discovered
+Dialogue: 0,0:36:10.40,0:36:12.48,*Default,NTP,0000,0000,0000,,we immediately kind of yield the front
+Dialogue: 0,0:36:12.48,0:36:14.80,*Default,NTP,0000,0000,0000,,page and that means that something could
+Dialogue: 0,0:36:14.80,0:36:16.08,*Default,NTP,0000,0000,0000,,print the title right away
+Dialogue: 0,0:36:16.08,0:36:19.44,*Default,NTP,0000,0000,0000,,as soon as this line is executed but
+Dialogue: 0,0:36:19.44,0:36:22.72,*Default,NTP,0000,0000,0000,,um we haven't really found all the other
+Dialogue: 0,0:36:22.72,0:36:23.60,*Default,NTP,0000,0000,0000,,pages yet
+Dialogue: 0,0:36:23.60,0:36:25.44,*Default,NTP,0000,0000,0000,,so they're there but our program doesn't
+Dialogue: 0,0:36:25.44,0:36:28.00,*Default,NTP,0000,0000,0000,,know about them
+Dialogue: 0,0:36:31.92,0:36:34.72,*Default,NTP,0000,0000,0000,,okay that makes sense cool all right
+Dialogue: 0,0:36:34.72,0:36:35.52,*Default,NTP,0000,0000,0000,,thanks folks
+Dialogue: 0,0:36:35.52,0:36:41.84,*Default,NTP,0000,0000,0000,,it's been a pleasure talk to you soon
