@@ -6,3 +6,5 @@
 11. Lecture 18 QA 后部分
 14. Lab08 Q4,Q5,Q6
 15. Project 3 Optional Question 4,5
+16: Project 4 Optional Question + EC
+17: Lab09
