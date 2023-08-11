@@ -1,0 +1,764 @@
+[Script Info]
+Title: Lecture 30. Interpreters_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=71&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:02.67,*Default,NTP,0000,0000,0000,,61 a lecture No.30
+Dialogue: 0,0:00:02.90,0:00:03.90,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:04.30,0:00:07.60,*Default,NTP,0000,0000,0000,,midterm two regrade requests are du Monday
+Dialogue: 0,0:00:08.17,0:00:10.47,*Default,NTP,0000,0000,0000,,homework seven is due Thursday
+Dialogue: 0,0:00:10.73,0:00:13.53,*Default,NTP,0000,0000,0000,,and we're about to release the scheme project
+Dialogue: 0,0:00:14.00,0:00:16.20,*Default,NTP,0000,0000,0000,,this scheme project is where you write
+Dialogue: 0,0:00:16.20,0:00:18.60,*Default,NTP,0000,0000,0000,,a scheme interpreter in python
+Dialogue: 0,0:00:19.20,0:00:21.57,*Default,NTP,0000,0000,0000,,then you write some scheme code to run
+Dialogue: 0,0:00:21.57,0:00:23.30,*Default,NTP,0000,0000,0000,,on your very own interpreter
+Dialogue: 0,0:00:23.93,0:00:25.57,*Default,NTP,0000,0000,0000,,the goal of this project
+Dialogue: 0,0:00:25.60,0:00:28.33,*Default,NTP,0000,0000,0000,,is for you to learn how interpreters work
+Dialogue: 0,0:00:28.40,0:00:30.10,*Default,NTP,0000,0000,0000,,how is it that
+Dialogue: 0,0:00:30.33,0:00:33.50,*Default,NTP,0000,0000,0000,,programs turn into behavior by the computer
+Dialogue: 0,0:00:33.50,0:00:36.07,*Default,NTP,0000,0000,0000,,well here's the simplest sketch there is
+Dialogue: 0,0:00:36.30,0:00:37.33,*Default,NTP,0000,0000,0000,,of how you could
+Dialogue: 0,0:00:37.37,0:00:40.00,*Default,NTP,0000,0000,0000,,build an interpreter for a programming language
+Dialogue: 0,0:00:40.53,0:00:42.97,*Default,NTP,0000,0000,0000,,and it's the longest project in this course
+Dialogue: 0,0:00:43.10,0:00:45.70,*Default,NTP,0000,0000,0000,,so we'll have not one but two checkpoints
+Dialogue: 0,0:00:45.87,0:00:48.37,*Default,NTP,0000,0000,0000,,you have to finish the first few problems by
+Dialogue: 0,0:00:48.73,0:00:50.07,*Default,NTP,0000,0000,0000,,next Tuesday
+Dialogue: 0,0:00:50.30,0:00:53.73,*Default,NTP,0000,0000,0000,,and then finish the whole interpreter by next Friday
+Dialogue: 0,0:00:53.90,0:00:56.30,*Default,NTP,0000,0000,0000,,the rest of the project is just to write some scheme
+Dialogue: 0,0:00:56.30,0:00:58.87,*Default,NTP,0000,0000,0000,,code to make sure your interpreter really is working
+Dialogue: 0,0:00:59.20,0:01:02.27,*Default,NTP,0000,0000,0000,,and that's due Tuesday the 24th
+Dialogue: 0,0:01:02.27,0:01:02.93,*Default,NTP,0000,0000,0000,,but you'll get an
+Dialogue: 0,0:01:02.93,0:01:04.33,*Default,NTP,0000,0000,0000,,early submission bonus point
+Dialogue: 0,0:01:04.33,0:01:05.73,*Default,NTP,0000,0000,0000,,for completing it by Monday
+Dialogue: 0,0:01:05.73,0:01:06.70,*Default,NTP,0000,0000,0000,,the 23rd
+Dialogue: 0,0:01:07.97,0:01:09.53,*Default,NTP,0000,0000,0000,,unlike previous projects
+Dialogue: 0,0:01:09.53,0:01:12.33,*Default,NTP,0000,0000,0000,,there will be two versions that you can choose from
+Dialogue: 0,0:01:12.37,0:01:15.20,*Default,NTP,0000,0000,0000,,the normal version and the challenge version
+Dialogue: 0,0:01:16.10,0:01:17.37,*Default,NTP,0000,0000,0000,,through the normal version
+Dialogue: 0,0:01:17.60,0:01:19.20,*Default,NTP,0000,0000,0000,,the normal version is structured much
+Dialogue: 0,0:01:19.20,0:01:20.80,*Default,NTP,0000,0000,0000,,like previous projects
+Dialogue: 0,0:01:20.90,0:01:23.40,*Default,NTP,0000,0000,0000,,it's broken up into individual questions
+Dialogue: 0,0:01:23.40,0:01:26.27,*Default,NTP,0000,0000,0000,,and a lot of the framework or structure of the program
+Dialogue: 0,0:01:26.27,0:01:27.33,*Default,NTP,0000,0000,0000,,is given to you
+Dialogue: 0,0:01:28.10,0:01:29.60,*Default,NTP,0000,0000,0000,,in the challenge version
+Dialogue: 0,0:01:29.70,0:01:31.07,*Default,NTP,0000,0000,0000,,it's up to you to figure out
+Dialogue: 0,0:01:31.07,0:01:32.87,*Default,NTP,0000,0000,0000,,how to organize your program
+Dialogue: 0,0:01:33.80,0:01:34.93,*Default,NTP,0000,0000,0000,,the only test will run
+Dialogue: 0,0:01:34.93,0:01:36.57,*Default,NTP,0000,0000,0000,,is to make sure that at the end of the day
+Dialogue: 0,0:01:36.57,0:01:39.37,*Default,NTP,0000,0000,0000,,you've built a functioning scheme interpreter
+Dialogue: 0,0:01:39.53,0:01:41.17,*Default,NTP,0000,0000,0000,,but you don't have to break it down
+Dialogue: 0,0:01:41.20,0:01:43.97,*Default,NTP,0000,0000,0000,,into the various functions that we came up with
+Dialogue: 0,0:01:44.00,0:01:45.67,*Default,NTP,0000,0000,0000,,you can do it any way you want
+Dialogue: 0,0:01:46.70,0:01:47.37,*Default,NTP,0000,0000,0000,,you don't get any
+Dialogue: 0,0:01:47.37,0:01:49.40,*Default,NTP,0000,0000,0000,,extra points for doing the challenge version
+Dialogue: 0,0:01:49.50,0:01:50.57,*Default,NTP,0000,0000,0000,,it's just harder
+Dialogue: 0,0:01:50.67,0:01:52.53,*Default,NTP,0000,0000,0000,,but if that's what you're looking for at
+Dialogue: 0,0:01:52.53,0:01:53.57,*Default,NTP,0000,0000,0000,,this point in the course
+Dialogue: 0,0:01:53.57,0:01:55.87,*Default,NTP,0000,0000,0000,,a chance to organize your own program
+Dialogue: 0,0:01:55.93,0:01:57.93,*Default,NTP,0000,0000,0000,,instead of having us do it for you
+Dialogue: 0,0:01:57.93,0:01:59.20,*Default,NTP,0000,0000,0000,,well then try it out
+Dialogue: 0,0:01:59.30,0:01:59.77,*Default,NTP,0000,0000,0000,,you can always
+Dialogue: 0,0:01:59.77,0:02:01.87,*Default,NTP,0000,0000,0000,,switch back to the normal version if you want
+Dialogue: 0,0:02:01.97,0:02:03.00,*Default,NTP,0000,0000,0000,,so I recommend
+Dialogue: 0,0:02:03.00,0:02:04.57,*Default,NTP,0000,0000,0000,,that if you're going to do the challenge version
+Dialogue: 0,0:02:04.57,0:02:05.87,*Default,NTP,0000,0000,0000,,you do it early enough
+Dialogue: 0,0:02:06.10,0:02:08.33,*Default,NTP,0000,0000,0000,,that you can always switch back to the normal version
+Dialogue: 0,0:02:08.77,0:02:11.77,*Default,NTP,0000,0000,0000,,or you could take inspiration from the normal version
+Dialogue: 0,0:02:11.97,0:02:14.37,*Default,NTP,0000,0000,0000,,and look at how we structure the program there
+Dialogue: 0,0:02:15.13,0:02:17.60,*Default,NTP,0000,0000,0000,,so it's completely up to you which version you do
+Dialogue: 0,0:02:17.60,0:02:19.00,*Default,NTP,0000,0000,0000,,but I would expect almost all
+Dialogue: 0,0:02:19.00,0:02:20.67,*Default,NTP,0000,0000,0000,,students to do the normal version
+Dialogue: 0,0:02:20.73,0:02:25.00,*Default,NTP,0000,0000,0000,,this project is plenty large and challenging
+Dialogue: 0,0:02:25.07,0:02:26.20,*Default,NTP,0000,0000,0000,,even without the
+Dialogue: 0,0:02:26.20,0:02:27.97,*Default,NTP,0000,0000,0000,,extra challenge of having to organize
+Dialogue: 0,0:02:27.97,0:02:29.13,*Default,NTP,0000,0000,0000,,the program yourself
+Dialogue: 0,0:02:29.73,0:02:30.47,*Default,NTP,0000,0000,0000,,and don't worry
+Dialogue: 0,0:02:30.47,0:02:31.60,*Default,NTP,0000,0000,0000,,you'll get plenty of practice
+Dialogue: 0,0:02:31.60,0:02:33.90,*Default,NTP,0000,0000,0000,,organizing large programs in 61 b
+Dialogue: 0,0:02:33.90,0:02:35.13,*Default,NTP,0000,0000,0000,,if you take that course
+Dialogue: 0,0:02:35.30,0:02:35.97,*Default,NTP,0000,0000,0000,,so it's not like
+Dialogue: 0,0:02:35.97,0:02:38.17,*Default,NTP,0000,0000,0000,,you have to do it here to get the experience
+Dialogue: 0,0:02:39.33,0:02:41.13,*Default,NTP,0000,0000,0000,,since this project is so large
+Dialogue: 0,0:02:41.33,0:02:42.13,*Default,NTP,0000,0000,0000,,today's lecture
+Dialogue: 0,0:02:42.13,0:02:44.70,*Default,NTP,0000,0000,0000,,will just describe how to do the project
+Dialogue: 0,0:02:45.00,0:02:47.20,*Default,NTP,0000,0000,0000,,it won't tell you the exact code to type
+Dialogue: 0,0:02:47.27,0:02:49.47,*Default,NTP,0000,0000,0000,,but it will give you a description of
+Dialogue: 0,0:02:49.47,0:02:52.10,*Default,NTP,0000,0000,0000,,what the different parts of the program are
+Dialogue: 0,0:02:52.20,0:02:53.53,*Default,NTP,0000,0000,0000,,how they've fit together
+Dialogue: 0,0:02:54.00,0:02:55.40,*Default,NTP,0000,0000,0000,,so that you can keep oriented
+Dialogue: 0,0:02:55.40,0:02:56.97,*Default,NTP,0000,0000,0000,,when you're working through the project
+Dialogue: 0,0:02:57.50,0:02:59.40,*Default,NTP,0000,0000,0000,,it's not really educational
+Dialogue: 0,0:02:59.40,0:03:00.70,*Default,NTP,0000,0000,0000,,to work through this project
+Dialogue: 0,0:03:00.70,0:03:02.93,*Default,NTP,0000,0000,0000,,just by trying to pass the test cases
+Dialogue: 0,0:03:02.93,0:03:03.87,*Default,NTP,0000,0000,0000,,it's better to
+Dialogue: 0,0:03:03.87,0:03:05.77,*Default,NTP,0000,0000,0000,,understand how each piece that you build
+Dialogue: 0,0:03:05.77,0:03:07.47,*Default,NTP,0000,0000,0000,,fits into the whole interpreter
+Dialogue: 0,0:03:07.73,0:03:09.77,*Default,NTP,0000,0000,0000,,and that's what this lecture is about
+Dialogue: 0,0:03:10.93,0:03:12.80,*Default,NTP,0000,0000,0000,,Wednesday we don't have lecture at all
+Dialogue: 0,0:03:12.80,0:03:14.40,*Default,NTP,0000,0000,0000,,because it's veterans day
+Dialogue: 0,0:03:14.87,0:03:16.33,*Default,NTP,0000,0000,0000,,so we'll have no lecture
+Dialogue: 0,0:03:16.50,0:03:17.77,*Default,NTP,0000,0000,0000,,no lecture q amp a
+Dialogue: 0,0:03:18.27,0:03:20.13,*Default,NTP,0000,0000,0000,,no staff office hours
+Dialogue: 0,0:03:20.27,0:03:24.53,*Default,NTP,0000,0000,0000,,no discussion no tutorials no orientation nothing
+Dialogue: 0,0:03:24.67,0:03:25.80,*Default,NTP,0000,0000,0000,,just take the day off
+Dialogue: 0,0:03:26.70,0:03:29.10,*Default,NTP,0000,0000,0000,,there is a discussion worksheet for this week
+Dialogue: 0,0:03:29.40,0:03:32.13,*Default,NTP,0000,0000,0000,,which will be covered in today's
+Dialogue: 0,0:03:32.33,0:03:34.87,*Default,NTP,0000,0000,0000,,orientations the lab orientations
+Dialogue: 0,0:03:35.20,0:03:37.33,*Default,NTP,0000,0000,0000,,but there won't be any tutorial questions on it
+Dialogue: 0,0:03:37.33,0:03:39.20,*Default,NTP,0000,0000,0000,,it's a little shorter then
+Dialogue: 0,0:03:39.20,0:03:40.50,*Default,NTP,0000,0000,0000,,just give you some guidance
+Dialogue: 0,0:03:40.50,0:03:42.67,*Default,NTP,0000,0000,0000,,about quotation and evaluation
+Dialogue: 0,0:03:42.93,0:03:44.27,*Default,NTP,0000,0000,0000,,that I think will be helpful
+Dialogue: 0,0:03:45.10,0:03:48.07,*Default,NTP,0000,0000,0000,,we've also revised the lecture topic schedule
+Dialogue: 0,0:03:48.70,0:03:50.50,*Default,NTP,0000,0000,0000,,we were going to have some optional lectures
+Dialogue: 0,0:03:50.50,0:03:52.10,*Default,NTP,0000,0000,0000,,this Friday next Monday
+Dialogue: 0,0:03:52.50,0:03:54.27,*Default,NTP,0000,0000,0000,,but we looked at the rest of the semester
+Dialogue: 0,0:03:54.30,0:03:55.53,*Default,NTP,0000,0000,0000,,and realized that
+Dialogue: 0,0:03:55.67,0:03:57.47,*Default,NTP,0000,0000,0000,,we wanted to make sure you had
+Dialogue: 0,0:03:57.70,0:04:00.17,*Default,NTP,0000,0000,0000,,lab and discussion and tutorial time
+Dialogue: 0,0:04:00.20,0:04:02.70,*Default,NTP,0000,0000,0000,,for all of the required topics in the course
+Dialogue: 0,0:04:02.73,0:04:04.50,*Default,NTP,0000,0000,0000,,so we've shuffled things a little bit
+Dialogue: 0,0:04:04.77,0:04:06.57,*Default,NTP,0000,0000,0000,,and on Friday we will have
+Dialogue: 0,0:04:06.70,0:04:09.20,*Default,NTP,0000,0000,0000,,our first lecture in a new unit in the course
+Dialogue: 0,0:04:09.20,0:04:10.70,*Default,NTP,0000,0000,0000,,about declarative programming
+Dialogue: 0,0:04:10.73,0:04:11.47,*Default,NTP,0000,0000,0000,,where you're going to learn
+Dialogue: 0,0:04:11.47,0:04:12.77,*Default,NTP,0000,0000,0000,,yet another programming language
+Dialogue: 0,0:04:12.77,0:04:14.50,*Default,NTP,0000,0000,0000,,called sequel or sql
+Dialogue: 0,0:04:14.70,0:04:16.70,*Default,NTP,0000,0000,0000,,so let's briefly review the schedule
+Dialogue: 0,0:04:17.20,0:04:19.67,*Default,NTP,0000,0000,0000,,here we are today no lecture Wednesday
+Dialogue: 0,0:04:19.77,0:04:22.27,*Default,NTP,0000,0000,0000,,declarative programming will start Friday
+Dialogue: 0,0:04:22.57,0:04:24.90,*Default,NTP,0000,0000,0000,,in a normal semester this would be four lectures
+Dialogue: 0,0:04:24.90,0:04:26.80,*Default,NTP,0000,0000,0000,,but we've made the fourth one optional
+Dialogue: 0,0:04:27.17,0:04:29.17,*Default,NTP,0000,0000,0000,,but lab and discussion next week
+Dialogue: 0,0:04:29.37,0:04:31.13,*Default,NTP,0000,0000,0000,,we'll cover this content
+Dialogue: 0,0:04:31.40,0:04:33.40,*Default,NTP,0000,0000,0000,,and then we'll release a homework on it
+Dialogue: 0,0:04:33.67,0:04:35.17,*Default,NTP,0000,0000,0000,,this homework isn't actually due
+Dialogue: 0,0:04:35.17,0:04:36.70,*Default,NTP,0000,0000,0000,,until after thanksgiving
+Dialogue: 0,0:04:37.40,0:04:39.07,*Default,NTP,0000,0000,0000,,but since there's a lab next week
+Dialogue: 0,0:04:39.07,0:04:42.00,*Default,NTP,0000,0000,0000,,you do need to start getting oriented with this new
+Dialogue: 0,0:04:42.13,0:04:43.20,*Default,NTP,0000,0000,0000,,lecture material
+Dialogue: 0,0:04:43.50,0:04:44.70,*Default,NTP,0000,0000,0000,,at least a little bit
+Dialogue: 0,0:04:45.50,0:04:47.77,*Default,NTP,0000,0000,0000,,and if you master it as it comes out
+Dialogue: 0,0:04:47.93,0:04:50.00,*Default,NTP,0000,0000,0000,,then you could take a break during thanksgiving week
+Dialogue: 0,0:04:50.00,0:04:51.20,*Default,NTP,0000,0000,0000,,which I think would be great
+Dialogue: 0,0:04:52.33,0:04:53.33,*Default,NTP,0000,0000,0000,,this will be the last
+Dialogue: 0,0:04:53.33,0:04:55.07,*Default,NTP,0000,0000,0000,,piece of new content in the course
+Dialogue: 0,0:04:55.07,0:04:56.00,*Default,NTP,0000,0000,0000,,for the semester
+Dialogue: 0,0:04:56.40,0:04:57.73,*Default,NTP,0000,0000,0000,,next Wednesday
+Dialogue: 0,0:04:58.07,0:05:00.67,*Default,NTP,0000,0000,0000,,after that we'll cover some optional topics
+Dialogue: 0,0:05:01.13,0:05:03.40,*Default,NTP,0000,0000,0000,,help make sure you're ready for the final exam
+Dialogue: 0,0:05:03.47,0:05:04.50,*Default,NTP,0000,0000,0000,,and conclude
+Dialogue: 0,0:05:07.57,0:05:10.47,*Default,NTP,0000,0000,0000,,in project four you're going to build an interpreter
+Dialogue: 0,0:05:10.53,0:05:12.10,*Default,NTP,0000,0000,0000,,for the scheme language
+Dialogue: 0,0:05:12.67,0:05:15.00,*Default,NTP,0000,0000,0000,,and this lecture is all about the structure
+Dialogue: 0,0:05:15.00,0:05:16.30,*Default,NTP,0000,0000,0000,,of that interpreter
+Dialogue: 0,0:05:16.80,0:05:19.70,*Default,NTP,0000,0000,0000,,so how all of the important pieces fit together
+Dialogue: 0,0:05:19.90,0:05:22.77,*Default,NTP,0000,0000,0000,,in order to achieve the result that we want
+Dialogue: 0,0:05:22.93,0:05:24.20,*Default,NTP,0000,0000,0000,,which is a program
+Dialogue: 0,0:05:24.40,0:05:27.57,*Default,NTP,0000,0000,0000,,that's able to understand other programs
+Dialogue: 0,0:05:28.80,0:05:31.10,*Default,NTP,0000,0000,0000,,so here's the structure of an interpreter
+Dialogue: 0,0:05:31.37,0:05:33.20,*Default,NTP,0000,0000,0000,,it shares a lot with the calculator
+Dialogue: 0,0:05:33.20,0:05:34.67,*Default,NTP,0000,0000,0000,,example that we look at
+Dialogue: 0,0:05:34.67,0:05:35.67,*Default,NTP,0000,0000,0000,,on Monday
+Dialogue: 0,0:05:36.80,0:05:38.20,*Default,NTP,0000,0000,0000,,there is an eval
+Dialogue: 0,0:05:38.97,0:05:41.07,*Default,NTP,0000,0000,0000,,and an apply function
+Dialogue: 0,0:05:41.90,0:05:42.77,*Default,NTP,0000,0000,0000,,an eval
+Dialogue: 0,0:05:43.57,0:05:46.07,*Default,NTP,0000,0000,0000,,evaluates primitive expressions
+Dialogue: 0,0:05:46.10,0:05:48.93,*Default,NTP,0000,0000,0000,,it also evaluates combined expressions
+Dialogue: 0,0:05:49.00,0:05:50.53,*Default,NTP,0000,0000,0000,,but when it finds one of those
+Dialogue: 0,0:05:50.57,0:05:53.00,*Default,NTP,0000,0000,0000,,then it calls apply to actually apply
+Dialogue: 0,0:05:53.70,0:05:55.93,*Default,NTP,0000,0000,0000,,some procedure to some arguments
+Dialogue: 0,0:05:56.90,0:05:59.47,*Default,NTP,0000,0000,0000,,so these are both recursive
+Dialogue: 0,0:06:00.13,0:06:03.20,*Default,NTP,0000,0000,0000,,here's how the base cases of evil
+Dialogue: 0,0:06:03.20,0:06:05.53,*Default,NTP,0000,0000,0000,,are for primitive values such as numbers
+Dialogue: 0,0:06:05.53,0:06:06.97,*Default,NTP,0000,0000,0000,,it just returns that number
+Dialogue: 0,0:06:08.40,0:06:10.87,*Default,NTP,0000,0000,0000,,and for recursive calls that it makes
+Dialogue: 0,0:06:10.93,0:06:12.90,*Default,NTP,0000,0000,0000,,well when it gets a combination
+Dialogue: 0,0:06:12.90,0:06:14.80,*Default,NTP,0000,0000,0000,,which is an operator in some operands
+Dialogue: 0,0:06:14.80,0:06:16.17,*Default,NTP,0000,0000,0000,,it has to evaluate
+Dialogue: 0,0:06:16.27,0:06:18.70,*Default,NTP,0000,0000,0000,,that operator and evaluate those operands
+Dialogue: 0,0:06:18.97,0:06:21.97,*Default,NTP,0000,0000,0000,,in order to get the pieces that you're going to apply
+Dialogue: 0,0:06:22.97,0:06:25.33,*Default,NTP,0000,0000,0000,,so recall that you apply
+Dialogue: 0,0:06:26.10,0:06:26.97,*Default,NTP,0000,0000,0000,,the procedure
+Dialogue: 0,0:06:26.97,0:06:29.17,*Default,NTP,0000,0000,0000,,that's the value of the operator expression
+Dialogue: 0,0:06:29.67,0:06:30.60,*Default,NTP,0000,0000,0000,,to the arguments
+Dialogue: 0,0:06:30.60,0:06:32.73,*Default,NTP,0000,0000,0000,,that are all the values of the operators
+Dialogue: 0,0:06:32.87,0:06:34.10,*Default,NTP,0000,0000,0000,,so how do you get those values
+Dialogue: 0,0:06:34.10,0:06:35.53,*Default,NTP,0000,0000,0000,,while you just call a eval
+Dialogue: 0,0:06:35.53,0:06:36.47,*Default,NTP,0000,0000,0000,,and you get that
+Dialogue: 0,0:06:37.53,0:06:41.00,*Default,NTP,0000,0000,0000,,and then it makes a call to apply
+Dialogue: 0,0:06:41.60,0:06:44.07,*Default,NTP,0000,0000,0000,,now so far this doesn't look like a recursive call
+Dialogue: 0,0:06:44.07,0:06:45.30,*Default,NTP,0000,0000,0000,,but we'll find that it is
+Dialogue: 0,0:06:45.30,0:06:47.80,*Default,NTP,0000,0000,0000,,so we apply some procedure to its arguments
+Dialogue: 0,0:06:48.57,0:06:51.70,*Default,NTP,0000,0000,0000,,and that's all that we had to write for calculator
+Dialogue: 0,0:06:51.80,0:06:52.97,*Default,NTP,0000,0000,0000,,but I've left some gaps
+Dialogue: 0,0:06:52.97,0:06:55.67,*Default,NTP,0000,0000,0000,,because we're going to add a few more pieces to a valve
+Dialogue: 0,0:06:56.77,0:06:57.80,*Default,NTP,0000,0000,0000,,what about apply
+Dialogue: 0,0:06:58.27,0:07:00.07,*Default,NTP,0000,0000,0000,,well in the calculator example
+Dialogue: 0,0:07:00.13,0:07:01.90,*Default,NTP,0000,0000,0000,,everything was a base case
+Dialogue: 0,0:07:02.27,0:07:05.50,*Default,NTP,0000,0000,0000,,it just applied built in primitive procedures
+Dialogue: 0,0:07:05.70,0:07:08.10,*Default,NTP,0000,0000,0000,,plus minus times and divide
+Dialogue: 0,0:07:08.70,0:07:11.77,*Default,NTP,0000,0000,0000,,but we'd like to extend apply to be able to apply
+Dialogue: 0,0:07:12.53,0:07:14.33,*Default,NTP,0000,0000,0000,,procedures that we define to
+Dialogue: 0,0:07:15.50,0:07:17.97,*Default,NTP,0000,0000,0000,,so here are the extensions that we'll talk about today
+Dialogue: 0,0:07:18.80,0:07:21.57,*Default,NTP,0000,0000,0000,,one is that there's a new base case for evo
+Dialogue: 0,0:07:21.60,0:07:24.97,*Default,NTP,0000,0000,0000,,where it will look up a value bound to a symbol
+Dialogue: 0,0:07:25.07,0:07:27.00,*Default,NTP,0000,0000,0000,,so we can define what symbols mean
+Dialogue: 0,0:07:27.00,0:07:29.60,*Default,NTP,0000,0000,0000,,and look up what those mean in an environment
+Dialogue: 0,0:07:30.67,0:07:33.33,*Default,NTP,0000,0000,0000,,another one is that we're going to evaluate
+Dialogue: 0,0:07:33.33,0:07:35.60,*Default,NTP,0000,0000,0000,,sub expressions of special forms
+Dialogue: 0,0:07:35.70,0:07:38.70,*Default,NTP,0000,0000,0000,,special forms are things like if expressions
+Dialogue: 0,0:07:38.93,0:07:41.60,*Default,NTP,0000,0000,0000,,that aren't the same as call expressions
+Dialogue: 0,0:07:41.60,0:07:43.67,*Default,NTP,0000,0000,0000,,because they have a different semantics
+Dialogue: 0,0:07:43.67,0:07:46.17,*Default,NTP,0000,0000,0000,,a different evaluation procedure
+Dialogue: 0,0:07:47.20,0:07:48.87,*Default,NTP,0000,0000,0000,,but they have sub expressions
+Dialogue: 0,0:07:48.87,0:07:50.27,*Default,NTP,0000,0000,0000,,and those need to be evaluated
+Dialogue: 0,0:07:50.27,0:07:52.17,*Default,NTP,0000,0000,0000,,so you make recursive calls to eval
+Dialogue: 0,0:07:53.13,0:07:55.80,*Default,NTP,0000,0000,0000,,and then finally we'll talk about how
+Dialogue: 0,0:07:56.00,0:07:59.40,*Default,NTP,0000,0000,0000,,in order to apply a user defined procedure
+Dialogue: 0,0:07:59.50,0:08:01.70,*Default,NTP,0000,0000,0000,,we just evaluate its body
+Dialogue: 0,0:08:02.07,0:08:04.27,*Default,NTP,0000,0000,0000,,so that's calling eval on the body
+Dialogue: 0,0:08:04.27,0:08:05.93,*Default,NTP,0000,0000,0000,,where eval is up here
+Dialogue: 0,0:08:06.53,0:08:10.17,*Default,NTP,0000,0000,0000,,so eval calls apply in order to apply procedures
+Dialogue: 0,0:08:10.20,0:08:12.17,*Default,NTP,0000,0000,0000,,apply calls eval
+Dialogue: 0,0:08:12.37,0:08:15.40,*Default,NTP,0000,0000,0000,,in order to evaluate the body of those procedures
+Dialogue: 0,0:08:16.60,0:08:19.93,*Default,NTP,0000,0000,0000,,and thus we have two mutually recursive functions
+Dialogue: 0,0:08:20.53,0:08:22.90,*Default,NTP,0000,0000,0000,,and it's also the case that eval plus eval
+Dialogue: 0,0:08:22.90,0:08:25.60,*Default,NTP,0000,0000,0000,,directly in several different instances
+Dialogue: 0,0:08:25.60,0:08:27.90,*Default,NTP,0000,0000,0000,,and both of these have bass geeses
+Dialogue: 0,0:08:29.37,0:08:31.70,*Default,NTP,0000,0000,0000,,so some new aspects that we'll see today
+Dialogue: 0,0:08:31.93,0:08:35.17,*Default,NTP,0000,0000,0000,,are that eval is going to require an environment
+Dialogue: 0,0:08:35.17,0:08:36.53,*Default,NTP,0000,0000,0000,,in order to handle its
+Dialogue: 0,0:08:36.53,0:08:38.87,*Default,NTP,0000,0000,0000,,new base case of looking up a symbol
+Dialogue: 0,0:08:39.17,0:08:42.33,*Default,NTP,0000,0000,0000,,so the environment remembers what names mean
+Dialogue: 0,0:08:44.33,0:08:47.97,*Default,NTP,0000,0000,0000,,and how does that environment get constructed well
+Dialogue: 0,0:08:48.10,0:08:49.37,*Default,NTP,0000,0000,0000,,part of what apply
+Dialogue: 0,0:08:49.37,0:08:51.53,*Default,NTP,0000,0000,0000,,does is it creates a new environment
+Dialogue: 0,0:08:51.53,0:08:53.77,*Default,NTP,0000,0000,0000,,each time a user defined procedure
+Dialogue: 0,0:08:53.93,0:08:56.87,*Default,NTP,0000,0000,0000,,is a plot this is just the same as python
+Dialogue: 0,0:08:56.87,0:08:58.33,*Default,NTP,0000,0000,0000,,every time we call a function
+Dialogue: 0,0:08:58.50,0:09:00.10,*Default,NTP,0000,0000,0000,,we're creating a new environment
+Dialogue: 0,0:09:00.93,0:09:02.70,*Default,NTP,0000,0000,0000,,here every time we apply a procedure
+Dialogue: 0,0:09:02.80,0:09:04.57,*Default,NTP,0000,0000,0000,,or creating a new environment
+Dialogue: 0,0:09:04.73,0:09:07.37,*Default,NTP,0000,0000,0000,,and that environment will be passed to eval
+Dialogue: 0,0:09:07.57,0:09:09.47,*Default,NTP,0000,0000,0000,,so that when we look up a name
+Dialogue: 0,0:09:09.50,0:09:11.17,*Default,NTP,0000,0000,0000,,we get the right value for it
+Dialogue: 0,0:09:14.37,0:09:16.37,*Default,NTP,0000,0000,0000,,let's talk about special farms
+Dialogue: 0,0:09:17.40,0:09:21.07,*Default,NTP,0000,0000,0000,,so in the evaluation of a scheme expression
+Dialogue: 0,0:09:21.33,0:09:24.33,*Default,NTP,0000,0000,0000,,we need to know what sort of expression it is
+Dialogue: 0,0:09:25.17,0:09:29.47,*Default,NTP,0000,0000,0000,,calculator just divided ski expressions engine numbers
+Dialogue: 0,0:09:29.60,0:09:31.00,*Default,NTP,0000,0000,0000,,and call expressions
+Dialogue: 0,0:09:31.00,0:09:34.17,*Default,NTP,0000,0000,0000,,but in scheme there are some other alternatives as well
+Dialogue: 0,0:09:35.10,0:09:36.67,*Default,NTP,0000,0000,0000,,so the schema vowel function
+Dialogue: 0,0:09:36.67,0:09:39.07,*Default,NTP,0000,0000,0000,,dispatches on the expression for
+Dialogue: 0,0:09:39.37,0:09:39.80,*Default,NTP,0000,0000,0000,,meaning that
+Dialogue: 0,0:09:39.80,0:09:40.20,*Default,NTP,0000,0000,0000,,it has
+Dialogue: 0,0:09:40.20,0:09:42.27,*Default,NTP,0000,0000,0000,,just a bunch of different options of what it does
+Dialogue: 0,0:09:42.27,0:09:43.27,*Default,NTP,0000,0000,0000,,depending on what
+Dialogue: 0,0:09:43.27,0:09:45.07,*Default,NTP,0000,0000,0000,,sort of expression it gets
+Dialogue: 0,0:09:45.80,0:09:49.10,*Default,NTP,0000,0000,0000,,symbols are bound to values in the current environment
+Dialogue: 0,0:09:49.53,0:09:52.13,*Default,NTP,0000,0000,0000,,self evaluating expressions are return
+Dialogue: 0,0:09:52.37,0:09:56.13,*Default,NTP,0000,0000,0000,,those are things like numbers and the empty list
+Dialogue: 0,0:09:57.80,0:10:00.53,*Default,NTP,0000,0000,0000,,everything else is going to be a scheme list
+Dialogue: 0,0:10:00.57,0:10:01.90,*Default,NTP,0000,0000,0000,,called a combination
+Dialogue: 0,0:10:02.30,0:10:03.53,*Default,NTP,0000,0000,0000,,so we call it a combination
+Dialogue: 0,0:10:03.53,0:10:06.10,*Default,NTP,0000,0000,0000,,just to say that it's a well formed scheme list
+Dialogue: 0,0:10:06.30,0:10:09.27,*Default,NTP,0000,0000,0000,,that's part of some scheme source code
+Dialogue: 0,0:10:10.70,0:10:12.30,*Default,NTP,0000,0000,0000,,and some examples are
+Dialogue: 0,0:10:12.57,0:10:15.47,*Default,NTP,0000,0000,0000,,the if expression the lambda expression
+Dialogue: 0,0:10:15.57,0:10:17.13,*Default,NTP,0000,0000,0000,,the define expression
+Dialogue: 0,0:10:17.30,0:10:20.13,*Default,NTP,0000,0000,0000,,and just a regular old call expression
+Dialogue: 0,0:10:22.07,0:10:25.17,*Default,NTP,0000,0000,0000,,so if you see a combination that starts with if
+Dialogue: 0,0:10:25.17,0:10:26.60,*Default,NTP,0000,0000,0000,,then you know it's an if expression
+Dialogue: 0,0:10:26.60,0:10:28.07,*Default,NTP,0000,0000,0000,,so special forms in general
+Dialogue: 0,0:10:28.07,0:10:30.37,*Default,NTP,0000,0000,0000,,are identified by the first list element
+Dialogue: 0,0:10:30.37,0:10:31.97,*Default,NTP,0000,0000,0000,,if flanda and define
+Dialogue: 0,0:10:32.40,0:10:35.10,*Default,NTP,0000,0000,0000,,and if it's not one of these that we know about already
+Dialogue: 0,0:10:36.00,0:10:37.60,*Default,NTP,0000,0000,0000,,that does lamb that undefine
+Dialogue: 0,0:10:37.67,0:10:39.80,*Default,NTP,0000,0000,0000,,then we know it's a call expression
+Dialogue: 0,0:10:39.93,0:10:42.20,*Default,NTP,0000,0000,0000,,and so we just evaluate the operator
+Dialogue: 0,0:10:43.47,0:10:47.40,*Default,NTP,0000,0000,0000,,which might be a built in name or a name we've defined
+Dialogue: 0,0:10:47.67,0:10:50.37,*Default,NTP,0000,0000,0000,,that gives us some procedure to apply to the arguments
+Dialogue: 0,0:10:50.37,0:10:52.73,*Default,NTP,0000,0000,0000,,which are the values of these operand
+Dialogue: 0,0:10:52.93,0:10:54.20,*Default,NTP,0000,0000,0000,,sub expressions
+Dialogue: 0,0:10:56.40,0:10:57.67,*Default,NTP,0000,0000,0000,,okay so
+Dialogue: 0,0:10:57.67,0:10:57.97,*Default,NTP,0000,0000,0000,,now we
+Dialogue: 0,0:10:57.97,0:11:00.33,*Default,NTP,0000,0000,0000,,can do something that we couldn't do in calculator
+Dialogue: 0,0:11:00.73,0:11:02.33,*Default,NTP,0000,0000,0000,,we can define
+Dialogue: 0,0:11:03.07,0:11:05.33,*Default,NTP,0000,0000,0000,,a new procedure and call it
+Dialogue: 0,0:11:05.50,0:11:07.17,*Default,NTP,0000,0000,0000,,so here's one called demo
+Dialogue: 0,0:11:07.17,0:11:09.93,*Default,NTP,0000,0000,0000,,takes an s iff s is null
+Dialogue: 0,0:11:10.37,0:11:12.57,*Default,NTP,0000,0000,0000,,then it returns the list three
+Dialogue: 0,0:11:13.27,0:11:14.07,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:11:14.60,0:11:17.60,*Default,NTP,0000,0000,0000,,it builds a new pair with cons
+Dialogue: 0,0:11:18.00,0:11:21.60,*Default,NTP,0000,0000,0000,,that's first element is the first element of s
+Dialogue: 0,0:11:21.97,0:11:23.07,*Default,NTP,0000,0000,0000,,and the rest
+Dialogue: 0,0:11:24.07,0:11:25.97,*Default,NTP,0000,0000,0000,,is whatever we get back
+Dialogue: 0,0:11:25.97,0:11:29.37,*Default,NTP,0000,0000,0000,,from a recursive call to demo on the rest of the list
+Dialogue: 0,0:11:30.40,0:11:33.73,*Default,NTP,0000,0000,0000,,and we might call that on for instance one two
+Dialogue: 0,0:11:34.60,0:11:35.93,*Default,NTP,0000,0000,0000,,now what does this do
+Dialogue: 0,0:11:36.00,0:11:37.50,*Default,NTP,0000,0000,0000,,think about it for a minute
+Dialogue: 0,0:11:39.60,0:11:40.97,*Default,NTP,0000,0000,0000,,this function demo
+Dialogue: 0,0:11:41.90,0:11:45.37,*Default,NTP,0000,0000,0000,,puts a three at the end of the list that's passed it
+Dialogue: 0,0:11:46.07,0:11:48.87,*Default,NTP,0000,0000,0000,,well actually it constructs an entirely new list
+Dialogue: 0,0:11:49.30,0:11:52.70,*Default,NTP,0000,0000,0000,,with all the elements of the original s one and two
+Dialogue: 0,0:11:53.10,0:11:54.93,*Default,NTP,0000,0000,0000,,as well as the element three
+Dialogue: 0,0:11:55.07,0:11:57.27,*Default,NTP,0000,0000,0000,,because the base case gives us back three
+Dialogue: 0,0:11:57.93,0:12:00.27,*Default,NTP,0000,0000,0000,,and then we just start conzing on
+Dialogue: 0,0:12:00.40,0:12:02.13,*Default,NTP,0000,0000,0000,,each element at a time
+Dialogue: 0,0:12:02.47,0:12:05.53,*Default,NTP,0000,0000,0000,,in order to build up a full list that ends in three
+Dialogue: 0,0:12:05.80,0:12:08.33,*Default,NTP,0000,0000,0000,,and starts with whatever elements were in the list
+Dialogue: 0,0:12:08.33,0:12:09.50,*Default,NTP,0000,0000,0000,,that was passed in
+Dialogue: 0,0:12:09.80,0:12:11.97,*Default,NTP,0000,0000,0000,,and does dissolve recursively
+Dialogue: 0,0:12:13.97,0:12:16.37,*Default,NTP,0000,0000,0000,,so it says we're supposed to do a demo
+Dialogue: 0,0:12:16.37,0:12:17.47,*Default,NTP,0000,0000,0000,,let's do a demo
+Dialogue: 0,0:12:18.50,0:12:20.10,*Default,NTP,0000,0000,0000,,what you see on the right
+Dialogue: 0,0:12:20.30,0:12:24.90,*Default,NTP,0000,0000,0000,,is your project for main file called scheme dot pi
+Dialogue: 0,0:12:26.13,0:12:27.17,*Default,NTP,0000,0000,0000,,and what does it do
+Dialogue: 0,0:12:27.80,0:12:29.53,*Default,NTP,0000,0000,0000,,well it has eval
+Dialogue: 0,0:12:29.93,0:12:31.80,*Default,NTP,0000,0000,0000,,and apply functions
+Dialogue: 0,0:12:31.90,0:12:35.20,*Default,NTP,0000,0000,0000,,and scheme eval evaluates a scheme expression
+Dialogue: 0,0:12:36.07,0:12:38.37,*Default,NTP,0000,0000,0000,,which could be one of a number of types
+Dialogue: 0,0:12:38.53,0:12:40.00,*Default,NTP,0000,0000,0000,,we could have just a number
+Dialogue: 0,0:12:40.50,0:12:42.67,*Default,NTP,0000,0000,0000,,or we could have a combination
+Dialogue: 0,0:12:43.87,0:12:47.27,*Default,NTP,0000,0000,0000,,so let's see what happens when we trace this
+Dialogue: 0,0:12:50.00,0:12:53.20,*Default,NTP,0000,0000,0000,,and then we start up our scheme interpreter
+Dialogue: 0,0:12:56.53,0:12:58.13,*Default,NTP,0000,0000,0000,,out the No.2
+Dialogue: 0,0:12:59.00,0:13:01.97,*Default,NTP,0000,0000,0000,,involves a call to the schema valve function
+Dialogue: 0,0:13:02.47,0:13:04.57,*Default,NTP,0000,0000,0000,,with two is the expression
+Dialogue: 0,0:13:04.93,0:13:07.17,*Default,NTP,0000,0000,0000,,it's evaluated in the global frame
+Dialogue: 0,0:13:07.30,0:13:09.30,*Default,NTP,0000,0000,0000,,and the result is two
+Dialogue: 0,0:13:10.53,0:13:12.57,*Default,NTP,0000,0000,0000,,if instead I negate two
+Dialogue: 0,0:13:13.20,0:13:15.50,*Default,NTP,0000,0000,0000,,then I'm evaluating this whole thing
+Dialogue: 0,0:13:16.37,0:13:19.07,*Default,NTP,0000,0000,0000,,I'm putting this in angled brackets to say that this is
+Dialogue: 0,0:13:19.07,0:13:21.60,*Default,NTP,0000,0000,0000,,not a python expression but a scheme expression
+Dialogue: 0,0:13:21.97,0:13:25.97,*Default,NTP,0000,0000,0000,,so -2 is evaluated by looking up the thing that negates
+Dialogue: 0,0:13:26.70,0:13:28.47,*Default,NTP,0000,0000,0000,,the No.2 is evaluated
+Dialogue: 0,0:13:28.70,0:13:29.97,*Default,NTP,0000,0000,0000,,and then we're
+Dialogue: 0,0:13:30.47,0:13:33.97,*Default,NTP,0000,0000,0000,,applying negative to two in order to get -2
+Dialogue: 0,0:13:35.13,0:13:37.17,*Default,NTP,0000,0000,0000,,and we can do this larger example as well
+Dialogue: 0,0:13:37.17,0:13:38.57,*Default,NTP,0000,0000,0000,,so we'll define
+Dialogue: 0,0:13:39.17,0:13:41.50,*Default,NTP,0000,0000,0000,,demo of s to b
+Dialogue: 0,0:13:42.80,0:13:46.80,*Default,NTP,0000,0000,0000,,a procedure where first your check can see if s is not
+Dialogue: 0,0:13:47.30,0:13:50.93,*Default,NTP,0000,0000,0000,,if it is then just return the list that contains three
+Dialogue: 0,0:13:51.70,0:13:52.50,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:13:54.20,0:13:55.50,*Default,NTP,0000,0000,0000,,let's make this window bear
+Dialogue: 0,0:13:57.10,0:14:00.33,*Default,NTP,0000,0000,0000,,we will return what we get by
+Dialogue: 0,0:14:01.10,0:14:04.07,*Default,NTP,0000,0000,0000,,building a pair out of the first element of s
+Dialogue: 0,0:14:04.53,0:14:08.97,*Default,NTP,0000,0000,0000,,and then calling demo on the rest of s
+Dialogue: 0,0:14:09.57,0:14:11.30,*Default,NTP,0000,0000,0000,,close the cutter close the demo
+Dialogue: 0,0:14:11.30,0:14:13.17,*Default,NTP,0000,0000,0000,,close the cons close the if
+Dialogue: 0,0:14:13.20,0:14:13.90,*Default,NTP,0000,0000,0000,,close the the
+Dialogue: 0,0:14:13.90,0:14:15.53,*Default,NTP,0000,0000,0000,,fine and we're done
+Dialogue: 0,0:14:15.77,0:14:16.77,*Default,NTP,0000,0000,0000,,notice that schema
+Dialogue: 0,0:14:16.77,0:14:17.90,*Default,NTP,0000,0000,0000,,val hasn't actually
+Dialogue: 0,0:14:17.90,0:14:20.27,*Default,NTP,0000,0000,0000,,evaluated the body of this procedure yet
+Dialogue: 0,0:14:20.53,0:14:23.30,*Default,NTP,0000,0000,0000,,all it's done is create the demo procedure
+Dialogue: 0,0:14:24.57,0:14:27.57,*Default,NTP,0000,0000,0000,,so now let's see what happens when I call demo
+Dialogue: 0,0:14:27.57,0:14:29.53,*Default,NTP,0000,0000,0000,,on the list one two
+Dialogue: 0,0:14:30.47,0:14:32.20,*Default,NTP,0000,0000,0000,,a lot of work happens
+Dialogue: 0,0:14:32.37,0:14:34.37,*Default,NTP,0000,0000,0000,,let's try to trace through what it is
+Dialogue: 0,0:14:35.13,0:14:36.67,*Default,NTP,0000,0000,0000,,so at the very beginning
+Dialogue: 0,0:14:37.27,0:14:39.93,*Default,NTP,0000,0000,0000,,I call demo on list one two
+Dialogue: 0,0:14:39.93,0:14:42.87,*Default,NTP,0000,0000,0000,,which means I'm evaluating this expression
+Dialogue: 0,0:14:43.07,0:14:44.33,*Default,NTP,0000,0000,0000,,which is a call expression
+Dialogue: 0,0:14:44.33,0:14:46.07,*Default,NTP,0000,0000,0000,,we figure out what demo means
+Dialogue: 0,0:14:46.10,0:14:48.37,*Default,NTP,0000,0000,0000,,demo's a function that has the body
+Dialogue: 0,0:14:48.37,0:14:49.80,*Default,NTP,0000,0000,0000,,that we wrote down before
+Dialogue: 0,0:14:52.00,0:14:54.40,*Default,NTP,0000,0000,0000,,and we figure out what list one two means
+Dialogue: 0,0:14:54.47,0:14:55.60,*Default,NTP,0000,0000,0000,,after a bit of work
+Dialogue: 0,0:14:55.60,0:14:58.27,*Default,NTP,0000,0000,0000,,we find out that it's the list one two
+Dialogue: 0,0:14:59.17,0:15:01.60,*Default,NTP,0000,0000,0000,,so now we're going to do the work of applying
+Dialogue: 0,0:15:02.57,0:15:03.50,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:15:04.17,0:15:07.20,*Default,NTP,0000,0000,0000,,procedure to this argument
+Dialogue: 0,0:15:08.07,0:15:11.97,*Default,NTP,0000,0000,0000,,so that involves evaluating the body of the procedure
+Dialogue: 0,0:15:12.20,0:15:13.77,*Default,NTP,0000,0000,0000,,in a new environment
+Dialogue: 0,0:15:13.80,0:15:17.07,*Default,NTP,0000,0000,0000,,where s the formal parameter
+Dialogue: 0,0:15:17.70,0:15:19.00,*Default,NTP,0000,0000,0000,,of our procedure
+Dialogue: 0,0:15:19.40,0:15:21.80,*Default,NTP,0000,0000,0000,,is bound to the argument one two
+Dialogue: 0,0:15:22.57,0:15:25.27,*Default,NTP,0000,0000,0000,,and this frame is followed by the global frame
+Dialogue: 0,0:15:25.37,0:15:28.17,*Default,NTP,0000,0000,0000,,in the environment for this call to schema vel
+Dialogue: 0,0:15:29.30,0:15:31.90,*Default,NTP,0000,0000,0000,,okay so some work ensues
+Dialogue: 0,0:15:31.90,0:15:33.77,*Default,NTP,0000,0000,0000,,and we're not gonna trace through every bit
+Dialogue: 0,0:15:33.87,0:15:35.77,*Default,NTP,0000,0000,0000,,but it involves looking up every name
+Dialogue: 0,0:15:35.77,0:15:37.50,*Default,NTP,0000,0000,0000,,null is the null procedure
+Dialogue: 0,0:15:37.57,0:15:41.67,*Default,NTP,0000,0000,0000,,one s is bound to one two so we look that up etc etc
+Dialogue: 0,0:15:42.00,0:15:42.97,*Default,NTP,0000,0000,0000,,work is done
+Dialogue: 0,0:15:44.10,0:15:46.33,*Default,NTP,0000,0000,0000,,each time we make a recursive call
+Dialogue: 0,0:15:46.77,0:15:49.30,*Default,NTP,0000,0000,0000,,were making a recursive call to the same procedure
+Dialogue: 0,0:15:49.30,0:15:50.97,*Default,NTP,0000,0000,0000,,but with a different environment
+Dialogue: 0,0:15:51.30,0:15:54.13,*Default,NTP,0000,0000,0000,,so notice here s was bound to one two
+Dialogue: 0,0:15:54.40,0:15:57.60,*Default,NTP,0000,0000,0000,,but in a later recursive call s was bound to two
+Dialogue: 0,0:15:57.90,0:15:59.97,*Default,NTP,0000,0000,0000,,and in a further later recursive call
+Dialogue: 0,0:16:00.27,0:16:03.50,*Default,NTP,0000,0000,0000,,s is bound to the empty list which is the base case
+Dialogue: 0,0:16:04.30,0:16:07.40,*Default,NTP,0000,0000,0000,,we detect the base case here and we return
+Dialogue: 0,0:16:08.27,0:16:11.20,*Default,NTP,0000,0000,0000,,this base condition of just the list containing three
+Dialogue: 0,0:16:12.57,0:16:14.40,*Default,NTP,0000,0000,0000,,okay so we've returned to that
+Dialogue: 0,0:16:14.50,0:16:16.67,*Default,NTP,0000,0000,0000,,we now build a larger list
+Dialogue: 0,0:16:16.67,0:16:18.67,*Default,NTP,0000,0000,0000,,which puts the No.2 on the front
+Dialogue: 0,0:16:19.57,0:16:22.50,*Default,NTP,0000,0000,0000,,remember this is the case where s is bound to two
+Dialogue: 0,0:16:22.93,0:16:25.10,*Default,NTP,0000,0000,0000,,so the first element of s is two
+Dialogue: 0,0:16:25.10,0:16:27.40,*Default,NTP,0000,0000,0000,,and we put that on three to get two three
+Dialogue: 0,0:16:28.07,0:16:29.57,*Default,NTP,0000,0000,0000,,and then we have a
+Dialogue: 0,0:16:30.27,0:16:31.27,*Default,NTP,0000,0000,0000,,still later case
+Dialogue: 0,0:16:31.27,0:16:34.20,*Default,NTP,0000,0000,0000,,the original recursive call had s bound to one two
+Dialogue: 0,0:16:34.37,0:16:36.33,*Default,NTP,0000,0000,0000,,which constructs the list 1 2 3
+Dialogue: 0,0:16:36.33,0:16:39.17,*Default,NTP,0000,0000,0000,,and eventually we get the result that we want
+Dialogue: 0,0:16:43.80,0:16:45.97,*Default,NTP,0000,0000,0000,,next we'll talk about logical forms
+Dialogue: 0,0:16:46.50,0:16:48.87,*Default,NTP,0000,0000,0000,,so logical special forms are things that
+Dialogue: 0,0:16:48.87,0:16:50.27,*Default,NTP,0000,0000,0000,,involve conditions
+Dialogue: 0,0:16:50.67,0:16:53.17,*Default,NTP,0000,0000,0000,,and they only evaluate some sub expressions
+Dialogue: 0,0:16:53.17,0:16:55.13,*Default,NTP,0000,0000,0000,,so and if expression is one of these
+Dialogue: 0,0:16:56.30,0:16:57.90,*Default,NTP,0000,0000,0000,,insects its evaluation procedure
+Dialogue: 0,0:16:57.90,0:16:59.57,*Default,NTP,0000,0000,0000,,is that you evaluate the predicate
+Dialogue: 0,0:16:59.77,0:17:00.80,*Default,NTP,0000,0000,0000,,and then you choose one
+Dialogue: 0,0:17:00.80,0:17:02.90,*Default,NTP,0000,0000,0000,,either the consequent or the alternative
+Dialogue: 0,0:17:04.30,0:17:05.27,*Default,NTP,0000,0000,0000,,and in or
+Dialogue: 0,0:17:06.33,0:17:08.10,*Default,NTP,0000,0000,0000,,have an evaluation procedure
+Dialogue: 0,0:17:08.17,0:17:10.10,*Default,NTP,0000,0000,0000,,where they evaluate from left to right
+Dialogue: 0,0:17:10.10,0:17:11.73,*Default,NTP,0000,0000,0000,,each of the sub expressions
+Dialogue: 0,0:17:11.93,0:17:13.50,*Default,NTP,0000,0000,0000,,until you know whether the entire
+Dialogue: 0,0:17:13.50,0:17:15.00,*Default,NTP,0000,0000,0000,,expression is true or false
+Dialogue: 0,0:17:16.37,0:17:19.37,*Default,NTP,0000,0000,0000,,and there's also one called the khan expression
+Dialogue: 0,0:17:20.20,0:17:22.53,*Default,NTP,0000,0000,0000,,which you can read about in your project
+Dialogue: 0,0:17:22.80,0:17:25.13,*Default,NTP,0000,0000,0000,,and it involves not only
+Dialogue: 0,0:17:25.53,0:17:29.07,*Default,NTP,0000,0000,0000,,if an else closes but also a bunch of lf closes
+Dialogue: 0,0:17:29.07,0:17:30.13,*Default,NTP,0000,0000,0000,,so it's much more like
+Dialogue: 0,0:17:30.13,0:17:32.50,*Default,NTP,0000,0000,0000,,the conditional statement that's in python
+Dialogue: 0,0:17:34.00,0:17:35.20,*Default,NTP,0000,0000,0000,,and for all of these
+Dialogue: 0,0:17:35.20,0:17:38.77,*Default,NTP,0000,0000,0000,,it may be the case that some sub expressions are never
+Dialogue: 0,0:17:38.77,0:17:39.70,*Default,NTP,0000,0000,0000,,evaluated
+Dialogue: 0,0:17:41.93,0:17:43.20,*Default,NTP,0000,0000,0000,,so here's what you do
+Dialogue: 0,0:17:43.20,0:17:45.70,*Default,NTP,0000,0000,0000,,if you're going to evaluate an if expression
+Dialogue: 0,0:17:45.93,0:17:47.50,*Default,NTP,0000,0000,0000,,you evaluate the predicate
+Dialogue: 0,0:17:47.93,0:17:49.40,*Default,NTP,0000,0000,0000,,and then you decide
+Dialogue: 0,0:17:50.20,0:17:53.10,*Default,NTP,0000,0000,0000,,which of the sub expressions you want to evaluate next
+Dialogue: 0,0:17:53.10,0:17:55.00,*Default,NTP,0000,0000,0000,,the consequent or alternative
+Dialogue: 0,0:17:55.67,0:17:56.73,*Default,NTP,0000,0000,0000,,and then it's
+Dialogue: 0,0:17:57.10,0:17:59.90,*Default,NTP,0000,0000,0000,,as simple as evaluating that sub expression
+Dialogue: 0,0:17:59.90,0:18:01.87,*Default,NTP,0000,0000,0000,,in the place of the whole expression
+Dialogue: 0,0:18:02.00,0:18:04.07,*Default,NTP,0000,0000,0000,,in order to get the result that you want
+Dialogue: 0,0:18:06.87,0:18:09.67,*Default,NTP,0000,0000,0000,,so in your python program
+Dialogue: 0,0:18:09.67,0:18:11.50,*Default,NTP,0000,0000,0000,,that is actually the interpreter
+Dialogue: 0,0:18:11.90,0:18:14.07,*Default,NTP,0000,0000,0000,,there's something called do if form
+Dialogue: 0,0:18:14.30,0:18:15.77,*Default,NTP,0000,0000,0000,,and that's a python function
+Dialogue: 0,0:18:15.77,0:18:17.33,*Default,NTP,0000,0000,0000,,that gets called every time
+Dialogue: 0,0:18:17.87,0:18:21.20,*Default,NTP,0000,0000,0000,,your interpreter encounters an if expression
+Dialogue: 0,0:18:21.90,0:18:24.27,*Default,NTP,0000,0000,0000,,and all it does is it evaluates the predicate
+Dialogue: 0,0:18:24.27,0:18:27.47,*Default,NTP,0000,0000,0000,,and chooses a sub expression to be evaluated next
+Dialogue: 0,0:18:28.47,0:18:29.87,*Default,NTP,0000,0000,0000,,we already have a function
+Dialogue: 0,0:18:29.87,0:18:31.80,*Default,NTP,0000,0000,0000,,that evaluates a sub expression
+Dialogue: 0,0:18:32.27,0:18:34.53,*Default,NTP,0000,0000,0000,,and so we just use that schema val
+Dialogue: 0,0:18:34.53,0:18:36.53,*Default,NTP,0000,0000,0000,,in order to do the rest of the work
+Dialogue: 0,0:18:37.00,0:18:38.87,*Default,NTP,0000,0000,0000,,so the total effort of
+Dialogue: 0,0:18:39.13,0:18:41.60,*Default,NTP,0000,0000,0000,,evaluating and if expression is broken up
+Dialogue: 0,0:18:41.60,0:18:42.77,*Default,NTP,0000,0000,0000,,into two pieces
+Dialogue: 0,0:18:45.07,0:18:47.33,*Default,NTP,0000,0000,0000,,the thing I'd like to show you in a demonstration
+Dialogue: 0,0:18:47.67,0:18:50.47,*Default,NTP,0000,0000,0000,,is that if you evaluate an if expression
+Dialogue: 0,0:18:50.80,0:18:52.37,*Default,NTP,0000,0000,0000,,say if this is true
+Dialogue: 0,0:18:52.87,0:18:55.07,*Default,NTP,0000,0000,0000,,then one otherwise two
+Dialogue: 0,0:18:56.60,0:19:00.40,*Default,NTP,0000,0000,0000,,it evaluates the entire expression
+Dialogue: 0,0:19:01.57,0:19:03.37,*Default,NTP,0000,0000,0000,,by evaluating the predicate
+Dialogue: 0,0:19:04.27,0:19:07.73,*Default,NTP,0000,0000,0000,,and then evaluating the consequence not the alternative
+Dialogue: 0,0:19:07.73,0:19:10.40,*Default,NTP,0000,0000,0000,,so notice that two is never evaluated here
+Dialogue: 0,0:19:10.77,0:19:12.37,*Default,NTP,0000,0000,0000,,so even if it's the case
+Dialogue: 0,0:19:12.37,0:19:14.60,*Default,NTP,0000,0000,0000,,that I put something that errors
+Dialogue: 0,0:19:14.87,0:19:16.20,*Default,NTP,0000,0000,0000,,as the alternative
+Dialogue: 0,0:19:16.40,0:19:18.53,*Default,NTP,0000,0000,0000,,I won't get an error overall
+Dialogue: 0,0:19:18.93,0:19:21.93,*Default,NTP,0000,0000,0000,,because I'll never evaluate one divider by zero
+Dialogue: 0,0:19:22.73,0:19:23.90,*Default,NTP,0000,0000,0000,,and on the other hand
+Dialogue: 0,0:19:24.10,0:19:25.90,*Default,NTP,0000,0000,0000,,if the predicate were false
+Dialogue: 0,0:19:26.13,0:19:28.67,*Default,NTP,0000,0000,0000,,then I get a division by zero error
+Dialogue: 0,0:19:28.77,0:19:30.27,*Default,NTP,0000,0000,0000,,and why did I get that
+Dialogue: 0,0:19:30.33,0:19:33.53,*Default,NTP,0000,0000,0000,,well because I attempted to actually evaluate
+Dialogue: 0,0:19:33.60,0:19:35.07,*Default,NTP,0000,0000,0000,,one divided by zero
+Dialogue: 0,0:19:35.27,0:19:38.07,*Default,NTP,0000,0000,0000,,because that was the alternative of this if expression
+Dialogue: 0,0:19:40.30,0:19:42.30,*Default,NTP,0000,0000,0000,,let's talk about quotation
+Dialogue: 0,0:19:43.27,0:19:44.60,*Default,NTP,0000,0000,0000,,so the quote special form
+Dialogue: 0,0:19:44.60,0:19:46.77,*Default,NTP,0000,0000,0000,,evaluates to the quoted expression
+Dialogue: 0,0:19:47.40,0:19:49.73,*Default,NTP,0000,0000,0000,,that expression is not evaluated
+Dialogue: 0,0:19:50.50,0:19:52.33,*Default,NTP,0000,0000,0000,,so if I quote an expression
+Dialogue: 0,0:19:53.93,0:19:56.17,*Default,NTP,0000,0000,0000,,that is a quote special form
+Dialogue: 0,0:19:56.60,0:20:00.50,*Default,NTP,0000,0000,0000,,and for example quoting plus one two
+Dialogue: 0,0:20:00.80,0:20:02.17,*Default,NTP,0000,0000,0000,,evaluates two
+Dialogue: 0,0:20:02.37,0:20:03.93,*Default,NTP,0000,0000,0000,,the scheme list
+Dialogue: 0,0:20:04.17,0:20:07.53,*Default,NTP,0000,0000,0000,,which contains the symbol plus followed by the No.1
+Dialogue: 0,0:20:07.53,0:20:09.13,*Default,NTP,0000,0000,0000,,followed by the No.2
+Dialogue: 0,0:20:09.60,0:20:11.97,*Default,NTP,0000,0000,0000,,it does not evaluate two three
+Dialogue: 0,0:20:12.80,0:20:14.07,*Default,NTP,0000,0000,0000,,because it's quoted
+Dialogue: 0,0:20:14.10,0:20:15.67,*Default,NTP,0000,0000,0000,,that's the whole point of quote
+Dialogue: 0,0:20:16.00,0:20:18.60,*Default,NTP,0000,0000,0000,,is that we can turn anything we want
+Dialogue: 0,0:20:20.17,0:20:23.70,*Default,NTP,0000,0000,0000,,any expression into data just by quoting it
+Dialogue: 0,0:20:24.60,0:20:26.87,*Default,NTP,0000,0000,0000,,the expression itself is the value of the
+Dialogue: 0,0:20:27.47,0:20:28.80,*Default,NTP,0000,0000,0000,,quote expression
+Dialogue: 0,0:20:30.90,0:20:33.53,*Default,NTP,0000,0000,0000,,and putting a single
+Dialogue: 0,0:20:33.53,0:20:36.60,*Default,NTP,0000,0000,0000,,quote in front of an expression is just a short hand
+Dialogue: 0,0:20:36.80,0:20:38.53,*Default,NTP,0000,0000,0000,,for the quote special form
+Dialogue: 0,0:20:38.57,0:20:40.57,*Default,NTP,0000,0000,0000,,which involves more parentheses
+Dialogue: 0,0:20:40.70,0:20:43.53,*Default,NTP,0000,0000,0000,,so we're actually saving parentheses when we use this
+Dialogue: 0,0:20:44.30,0:20:47.77,*Default,NTP,0000,0000,0000,,that is quote one two is equivalent to quote one two
+Dialogue: 0,0:20:49.40,0:20:51.47,*Default,NTP,0000,0000,0000,,and this equivalency goes both ways
+Dialogue: 0,0:20:52.73,0:20:54.33,*Default,NTP,0000,0000,0000,,so when
+Dialogue: 0,0:20:54.77,0:20:55.67,*Default,NTP,0000,0000,0000,,we see this
+Dialogue: 0,0:20:55.67,0:20:58.30,*Default,NTP,0000,0000,0000,,this is a special piece of syntactic information
+Dialogue: 0,0:20:58.87,0:21:02.17,*Default,NTP,0000,0000,0000,,which we'd like to actually get rid of by the time our
+Dialogue: 0,0:21:02.20,0:21:04.37,*Default,NTP,0000,0000,0000,,scheme evaluator has to deal
+Dialogue: 0,0:21:04.87,0:21:08.33,*Default,NTP,0000,0000,0000,,with the case of evaluating a quote expression
+Dialogue: 0,0:21:08.90,0:21:10.67,*Default,NTP,0000,0000,0000,,so what actually happens in your project
+Dialogue: 0,0:21:10.67,0:21:12.10,*Default,NTP,0000,0000,0000,,is that the scheme read parser
+Dialogue: 0,0:21:12.10,0:21:14.00,*Default,NTP,0000,0000,0000,,converts this short hand
+Dialogue: 0,0:21:14.80,0:21:16.87,*Default,NTP,0000,0000,0000,,into a regular old combination
+Dialogue: 0,0:21:16.97,0:21:19.20,*Default,NTP,0000,0000,0000,,that starts with the word quote
+Dialogue: 0,0:21:21.00,0:21:23.07,*Default,NTP,0000,0000,0000,,so what am I talking about well
+Dialogue: 0,0:21:25.50,0:21:27.53,*Default,NTP,0000,0000,0000,,there's a file called scheme reader
+Dialogue: 0,0:21:28.80,0:21:31.13,*Default,NTP,0000,0000,0000,,and what scheme reader does is it just reads
+Dialogue: 0,0:21:31.13,0:21:34.80,*Default,NTP,0000,0000,0000,,expressions it doesn't actually do any sort of summing
+Dialogue: 0,0:21:35.17,0:21:36.50,*Default,NTP,0000,0000,0000,,and we look at this before
+Dialogue: 0,0:21:36.50,0:21:38.70,*Default,NTP,0000,0000,0000,,this is called the syntactic analyzer
+Dialogue: 0,0:21:38.80,0:21:41.87,*Default,NTP,0000,0000,0000,,and it's also running lexical analyzer as well
+Dialogue: 0,0:21:42.13,0:21:43.67,*Default,NTP,0000,0000,0000,,and it can do fancy things
+Dialogue: 0,0:21:43.77,0:21:44.97,*Default,NTP,0000,0000,0000,,like take something
+Dialogue: 0,0:21:44.97,0:21:47.10,*Default,NTP,0000,0000,0000,,that's broken up on multiple lines and has
+Dialogue: 0,0:21:47.10,0:21:48.37,*Default,NTP,0000,0000,0000,,decimal points in it
+Dialogue: 0,0:21:50.37,0:21:54.50,*Default,NTP,0000,0000,0000,,and turn it into a nested expression
+Dialogue: 0,0:21:55.80,0:21:58.37,*Default,NTP,0000,0000,0000,,understanding that 2.3 is a whole number
+Dialogue: 0,0:21:59.00,0:22:00.77,*Default,NTP,0000,0000,0000,,and that the
+Dialogue: 0,0:22:01.13,0:22:04.73,*Default,NTP,0000,0000,0000,,third element of this list is in fact a list itself
+Dialogue: 0,0:22:05.93,0:22:07.20,*Default,NTP,0000,0000,0000,,now with quotation
+Dialogue: 0,0:22:08.40,0:22:10.60,*Default,NTP,0000,0000,0000,,I can write quote one two
+Dialogue: 0,0:22:11.57,0:22:13.80,*Default,NTP,0000,0000,0000,,or I can write quote one two
+Dialogue: 0,0:22:14.27,0:22:16.17,*Default,NTP,0000,0000,0000,,and it's up to scheme reader
+Dialogue: 0,0:22:16.20,0:22:18.67,*Default,NTP,0000,0000,0000,,to convert them both into an equivalent form
+Dialogue: 0,0:22:18.67,0:22:21.13,*Default,NTP,0000,0000,0000,,since one is just a short hand for the other
+Dialogue: 0,0:22:22.27,0:22:23.10,*Default,NTP,0000,0000,0000,,so when
+Dialogue: 0,0:22:23.10,0:22:25.93,*Default,NTP,0000,0000,0000,,the scheme evaluator actually deals with quotation
+Dialogue: 0,0:22:26.00,0:22:27.53,*Default,NTP,0000,0000,0000,,it never sees this
+Dialogue: 0,0:22:27.60,0:22:28.90,*Default,NTP,0000,0000,0000,,it only sees that
+Dialogue: 0,0:22:30.67,0:22:32.93,*Default,NTP,0000,0000,0000,,the most important special form of all
+Dialogue: 0,0:22:33.20,0:22:35.07,*Default,NTP,0000,0000,0000,,is the lambda expression
+Dialogue: 0,0:22:35.80,0:22:37.80,*Default,NTP,0000,0000,0000,,lambda expressions work like this
+Dialogue: 0,0:22:38.27,0:22:41.30,*Default,NTP,0000,0000,0000,,they evaluate to user defined procedures
+Dialogue: 0,0:22:41.33,0:22:43.97,*Default,NTP,0000,0000,0000,,so you have a whole expression that starts with lambda
+Dialogue: 0,0:22:44.27,0:22:45.40,*Default,NTP,0000,0000,0000,,and when you evaluate it
+Dialogue: 0,0:22:45.40,0:22:48.27,*Default,NTP,0000,0000,0000,,you get a new procedure that you didn't have before
+Dialogue: 0,0:22:49.67,0:22:52.27,*Default,NTP,0000,0000,0000,,it has formal parameters and a body
+Dialogue: 0,0:22:52.87,0:22:54.13,*Default,NTP,0000,0000,0000,,so for instance
+Dialogue: 0,0:22:54.30,0:22:58.80,*Default,NTP,0000,0000,0000,,if I write lambda x is x times it is times xx
+Dialogue: 0,0:22:59.07,0:23:01.80,*Default,NTP,0000,0000,0000,,this defines a procedure that squares things
+Dialogue: 0,0:23:03.27,0:23:04.80,*Default,NTP,0000,0000,0000,,now how do we encode this
+Dialogue: 0,0:23:04.93,0:23:06.17,*Default,NTP,0000,0000,0000,,well in python
+Dialogue: 0,0:23:06.30,0:23:08.77,*Default,NTP,0000,0000,0000,,we're actually going to introduce a class
+Dialogue: 0,0:23:09.07,0:23:11.20,*Default,NTP,0000,0000,0000,,called the lambda procedure class
+Dialogue: 0,0:23:11.37,0:23:14.00,*Default,NTP,0000,0000,0000,,which has a formal parameter list
+Dialogue: 0,0:23:14.73,0:23:17.67,*Default,NTP,0000,0000,0000,,a body and an environment
+Dialogue: 0,0:23:18.87,0:23:21.00,*Default,NTP,0000,0000,0000,,so this is a scheme list of symbols
+Dialogue: 0,0:23:21.20,0:23:22.30,*Default,NTP,0000,0000,0000,,that tells us
+Dialogue: 0,0:23:22.40,0:23:25.07,*Default,NTP,0000,0000,0000,,what are the names of the arguments that we pass in
+Dialogue: 0,0:23:25.67,0:23:27.27,*Default,NTP,0000,0000,0000,,a scheme expression
+Dialogue: 0,0:23:27.67,0:23:30.73,*Default,NTP,0000,0000,0000,,which tells us what to evaluate when we
+Dialogue: 0,0:23:31.00,0:23:34.13,*Default,NTP,0000,0000,0000,,call or apply this lambda procedure
+Dialogue: 0,0:23:35.07,0:23:36.27,*Default,NTP,0000,0000,0000,,and then a frame
+Dialogue: 0,0:23:36.70,0:23:39.57,*Default,NTP,0000,0000,0000,,that tells us what's the first frame in the environment
+Dialogue: 0,0:23:39.70,0:23:43.13,*Default,NTP,0000,0000,0000,,in which this lambda procedure was originally the fight
+Dialogue: 0,0:23:46.37,0:23:49.07,*Default,NTP,0000,0000,0000,,let's talk a little bit about frames and environments
+Dialogue: 0,0:23:49.30,0:23:50.47,*Default,NTP,0000,0000,0000,,a frame represents an
+Dialogue: 0,0:23:50.47,0:23:52.50,*Default,NTP,0000,0000,0000,,environment by having a parent frame
+Dialogue: 0,0:23:52.73,0:23:54.07,*Default,NTP,0000,0000,0000,,so a hole
+Dialogue: 0,0:23:54.07,0:23:57.70,*Default,NTP,0000,0000,0000,,a frame is always the first frame in some environment
+Dialogue: 0,0:23:57.97,0:24:00.27,*Default,NTP,0000,0000,0000,,it has a parent frame and it has a parent frame
+Dialogue: 0,0:24:00.27,0:24:02.07,*Default,NTP,0000,0000,0000,,and eventually you get to the global frame
+Dialogue: 0,0:24:02.07,0:24:03.73,*Default,NTP,0000,0000,0000,,and then you have your whole environment
+Dialogue: 0,0:24:04.40,0:24:08.27,*Default,NTP,0000,0000,0000,,frames are python instances with two important methods
+Dialogue: 0,0:24:08.30,0:24:09.87,*Default,NTP,0000,0000,0000,,lookup and define
+Dialogue: 0,0:24:10.57,0:24:11.67,*Default,NTP,0000,0000,0000,,in project four
+Dialogue: 0,0:24:12.13,0:24:14.50,*Default,NTP,0000,0000,0000,,frames don't actually hold any return values
+Dialogue: 0,0:24:14.50,0:24:17.30,*Default,NTP,0000,0000,0000,,they just hold the name value bindings
+Dialogue: 0,0:24:17.30,0:24:19.00,*Default,NTP,0000,0000,0000,,well that are used for lookup
+Dialogue: 0,0:24:20.00,0:24:22.00,*Default,NTP,0000,0000,0000,,so let's do this example in code
+Dialogue: 0,0:24:22.07,0:24:23.53,*Default,NTP,0000,0000,0000,,we're going to have a global frame
+Dialogue: 0,0:24:23.53,0:24:25.93,*Default,NTP,0000,0000,0000,,with y bound to three and z bound to five
+Dialogue: 0,0:24:26.33,0:24:28.50,*Default,NTP,0000,0000,0000,,and then another frame f one
+Dialogue: 0,0:24:28.80,0:24:31.93,*Default,NTP,0000,0000,0000,,with x bound to two and z bound to four
+Dialogue: 0,0:24:33.97,0:24:36.80,*Default,NTP,0000,0000,0000,,okay so I'm gonna start up scheme
+Dialogue: 0,0:24:37.47,0:24:39.87,*Default,NTP,0000,0000,0000,,and then I'm gonna quit out of it right away
+Dialogue: 0,0:24:40.77,0:24:42.40,*Default,NTP,0000,0000,0000,,now I'm at python
+Dialogue: 0,0:24:42.73,0:24:43.80,*Default,NTP,0000,0000,0000,,remember python
+Dialogue: 0,0:24:44.60,0:24:45.90,*Default,NTP,0000,0000,0000,,and in python
+Dialogue: 0,0:24:46.27,0:24:47.50,*Default,NTP,0000,0000,0000,,we've loaded up
+Dialogue: 0,0:24:47.97,0:24:49.00,*Default,NTP,0000,0000,0000,,all of the different
+Dialogue: 0,0:24:49.00,0:24:51.30,*Default,NTP,0000,0000,0000,,functions and classes that we've defined
+Dialogue: 0,0:24:51.30,0:24:52.80,*Default,NTP,0000,0000,0000,,for our scheme interpreter
+Dialogue: 0,0:24:53.13,0:24:54.50,*Default,NTP,0000,0000,0000,,so we have a frame
+Dialogue: 0,0:24:54.80,0:24:58.07,*Default,NTP,0000,0000,0000,,we have a function called scheme val etc
+Dialogue: 0,0:24:58.97,0:25:03.50,*Default,NTP,0000,0000,0000,,okay so let's make g a frame that has no parent
+Dialogue: 0,0:25:04.40,0:25:06.33,*Default,NTP,0000,0000,0000,,so g is the global frame
+Dialogue: 0,0:25:06.87,0:25:08.67,*Default,NTP,0000,0000,0000,,and then let's make f one
+Dialogue: 0,0:25:08.80,0:25:11.33,*Default,NTP,0000,0000,0000,,a frame that has g is apparent
+Dialogue: 0,0:25:11.87,0:25:13.07,*Default,NTP,0000,0000,0000,,so f one is a frame
+Dialogue: 0,0:25:13.07,0:25:15.17,*Default,NTP,0000,0000,0000,,which currently has no bindings within it
+Dialogue: 0,0:25:15.47,0:25:17.30,*Default,NTP,0000,0000,0000,,and starts an environment
+Dialogue: 0,0:25:17.30,0:25:19.27,*Default,NTP,0000,0000,0000,,that's followed by the global frame
+Dialogue: 0,0:25:21.73,0:25:25.93,*Default,NTP,0000,0000,0000,,now I believe right said I was gonna bind y to three
+Dialogue: 0,0:25:27.17,0:25:28.70,*Default,NTP,0000,0000,0000,,and z
+Dialogue: 0,0:25:29.97,0:25:31.13,*Default,NTP,0000,0000,0000,,to five
+Dialogue: 0,0:25:32.53,0:25:34.93,*Default,NTP,0000,0000,0000,,so now if I look up why
+Dialogue: 0,0:25:37.53,0:25:40.93,*Default,NTP,0000,0000,0000,,if I look up why I'll get three and if I look up z
+Dialogue: 0,0:25:40.97,0:25:41.87,*Default,NTP,0000,0000,0000,,I'll get five
+Dialogue: 0,0:25:43.53,0:25:44.33,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:25:45.20,0:25:47.73,*Default,NTP,0000,0000,0000,,so now we're going to actually define
+Dialogue: 0,0:25:48.20,0:25:52.37,*Default,NTP,0000,0000,0000,,x to be two in the f one frame
+Dialogue: 0,0:25:52.67,0:25:56.93,*Default,NTP,0000,0000,0000,,and define c to be four in the f one frame
+Dialogue: 0,0:25:56.93,0:25:58.40,*Default,NTP,0000,0000,0000,,so what does f one look like now
+Dialogue: 0,0:25:58.40,0:26:00.57,*Default,NTP,0000,0000,0000,,well it has x bun the two z found to four
+Dialogue: 0,0:26:00.57,0:26:02.77,*Default,NTP,0000,0000,0000,,and it's followed by the global frame
+Dialogue: 0,0:26:03.90,0:26:05.10,*Default,NTP,0000,0000,0000,,so if I look up
+Dialogue: 0,0:26:06.70,0:26:08.17,*Default,NTP,0000,0000,0000,,x I'll get two
+Dialogue: 0,0:26:08.53,0:26:10.80,*Default,NTP,0000,0000,0000,,if I look up z I'll get four
+Dialogue: 0,0:26:10.97,0:26:13.80,*Default,NTP,0000,0000,0000,,which is interesting because z is also divided b five
+Dialogue: 0,0:26:13.80,0:26:14.90,*Default,NTP,0000,0000,0000,,and the global frame
+Dialogue: 0,0:26:14.90,0:26:16.53,*Default,NTP,0000,0000,0000,,but remember we look in the local frame
+Dialogue: 0,0:26:16.53,0:26:18.17,*Default,NTP,0000,0000,0000,,before we look in the global frame
+Dialogue: 0,0:26:18.27,0:26:19.47,*Default,NTP,0000,0000,0000,,just like in python
+Dialogue: 0,0:26:19.97,0:26:21.17,*Default,NTP,0000,0000,0000,,and so here we are
+Dialogue: 0,0:26:21.93,0:26:24.53,*Default,NTP,0000,0000,0000,,we can look up z but we can also look up y
+Dialogue: 0,0:26:24.87,0:26:26.77,*Default,NTP,0000,0000,0000,,even though it's not in the local frame
+Dialogue: 0,0:26:27.07,0:26:28.80,*Default,NTP,0000,0000,0000,,we can find it in the global frame
+Dialogue: 0,0:26:28.80,0:26:31.77,*Default,NTP,0000,0000,0000,,so we look here first there's no y so we find it there
+Dialogue: 0,0:26:35.33,0:26:37.57,*Default,NTP,0000,0000,0000,,in order to support abstraction in our
+Dialogue: 0,0:26:37.57,0:26:38.60,*Default,NTP,0000,0000,0000,,programming language
+Dialogue: 0,0:26:38.60,0:26:41.30,*Default,NTP,0000,0000,0000,,we need to be able to find symbols to values
+Dialogue: 0,0:26:41.47,0:26:43.97,*Default,NTP,0000,0000,0000,,and we do that with the defined expression
+Dialogue: 0,0:26:44.70,0:26:46.67,*Default,NTP,0000,0000,0000,,so let's talk a little bit about how
+Dialogue: 0,0:26:46.70,0:26:48.40,*Default,NTP,0000,0000,0000,,the mechanics of that work
+Dialogue: 0,0:26:49.37,0:26:51.53,*Default,NTP,0000,0000,0000,,in the interpreter that you're going to build
+Dialogue: 0,0:26:52.97,0:26:55.17,*Default,NTP,0000,0000,0000,,so define binds a simple to a value
+Dialogue: 0,0:26:55.17,0:26:57.57,*Default,NTP,0000,0000,0000,,in the first frame of the current environment
+Dialogue: 0,0:26:57.73,0:26:59.80,*Default,NTP,0000,0000,0000,,and we just saw that frames are objects
+Dialogue: 0,0:26:59.80,0:27:01.50,*Default,NTP,0000,0000,0000,,that behave like dictionaries
+Dialogue: 0,0:27:01.60,0:27:03.90,*Default,NTP,0000,0000,0000,,but they can chain because they have parents
+Dialogue: 0,0:27:03.90,0:27:05.30,*Default,NTP,0000,0000,0000,,and so when you look something up
+Dialogue: 0,0:27:05.30,0:27:07.27,*Default,NTP,0000,0000,0000,,you might find it in the parent frame
+Dialogue: 0,0:27:08.80,0:27:09.37,*Default,NTP,0000,0000,0000,,the defined
+Dialogue: 0,0:27:09.37,0:27:11.87,*Default,NTP,0000,0000,0000,,expression just gives a name and an expression
+Dialogue: 0,0:27:11.97,0:27:13.40,*Default,NTP,0000,0000,0000,,we evaluate the expression
+Dialogue: 0,0:27:13.40,0:27:16.67,*Default,NTP,0000,0000,0000,,then bind the name to its value in the current frame
+Dialogue: 0,0:27:17.57,0:27:20.07,*Default,NTP,0000,0000,0000,,so if I define x to be plus one two
+Dialogue: 0,0:27:20.67,0:27:24.10,*Default,NTP,0000,0000,0000,,notice that we evaluate plus one two so we get three
+Dialogue: 0,0:27:24.27,0:27:26.30,*Default,NTP,0000,0000,0000,,and x is then bound to the No.3
+Dialogue: 0,0:27:26.30,0:27:29.30,*Default,NTP,0000,0000,0000,,it's forgotten the expression that created three
+Dialogue: 0,0:27:29.50,0:27:32.50,*Default,NTP,0000,0000,0000,,it really just knows that it's the value three
+Dialogue: 0,0:27:35.10,0:27:36.93,*Default,NTP,0000,0000,0000,,procedure definition is shorthand
+Dialogue: 0,0:27:36.93,0:27:39.07,*Default,NTP,0000,0000,0000,,for define with a lambda expression
+Dialogue: 0,0:27:39.07,0:27:39.87,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:27:40.60,0:27:42.97,*Default,NTP,0000,0000,0000,,when I say I'm going to define a new procedure
+Dialogue: 0,0:27:42.97,0:27:46.00,*Default,NTP,0000,0000,0000,,which has a name and some formal parameters and a body
+Dialogue: 0,0:27:46.53,0:27:49.00,*Default,NTP,0000,0000,0000,,all I'm really saying is I'm going to define
+Dialogue: 0,0:27:51.13,0:27:54.13,*Default,NTP,0000,0000,0000,,a new name that evaluates to
+Dialogue: 0,0:27:54.73,0:27:58.87,*Default,NTP,0000,0000,0000,,a procedure with some form of parameters and a body
+Dialogue: 0,0:28:01.17,0:28:02.67,*Default,NTP,0000,0000,0000,,so these two expressions are
+Dialogue: 0,0:28:02.67,0:28:04.27,*Default,NTP,0000,0000,0000,,completely equivalent in ski
+Dialogue: 0,0:28:04.73,0:28:07.40,*Default,NTP,0000,0000,0000,,and that means they should be handled in the same way
+Dialogue: 0,0:28:07.57,0:28:09.30,*Default,NTP,0000,0000,0000,,in the interpreter that we built
+Dialogue: 0,0:28:09.93,0:28:13.27,*Default,NTP,0000,0000,0000,,so when a defined expression like this is encountered
+Dialogue: 0,0:28:13.30,0:28:15.93,*Default,NTP,0000,0000,0000,,it gets converted into something that looks like this
+Dialogue: 0,0:28:16.07,0:28:18.33,*Default,NTP,0000,0000,0000,,and then we apply our regular procedure
+Dialogue: 0,0:28:18.47,0:28:20.53,*Default,NTP,0000,0000,0000,,for evaluating alamda expression
+Dialogue: 0,0:28:20.67,0:28:24.17,*Default,NTP,0000,0000,0000,,and then binding that procedure value to innate
+Dialogue: 0,0:28:26.73,0:28:27.60,*Default,NTP,0000,0000,0000,,okay so
+Dialogue: 0,0:28:27.60,0:28:30.60,*Default,NTP,0000,0000,0000,,applying user to find procedures is something we can do
+Dialogue: 0,0:28:31.10,0:28:33.47,*Default,NTP,0000,0000,0000,,we saw a demo of it in the very first
+Dialogue: 0,0:28:33.50,0:28:34.87,*Default,NTP,0000,0000,0000,,video of this lecture
+Dialogue: 0,0:28:35.97,0:28:38.07,*Default,NTP,0000,0000,0000,,to apply a user to find procedure
+Dialogue: 0,0:28:38.40,0:28:39.93,*Default,NTP,0000,0000,0000,,we create a new frame
+Dialogue: 0,0:28:40.13,0:28:42.40,*Default,NTP,0000,0000,0000,,in which formal parameters are bound
+Dialogue: 0,0:28:42.40,0:28:43.90,*Default,NTP,0000,0000,0000,,to argument values
+Dialogue: 0,0:28:44.20,0:28:48.57,*Default,NTP,0000,0000,0000,,whose parent is the environment of the procedure
+Dialogue: 0,0:28:49.00,0:28:50.37,*Default,NTP,0000,0000,0000,,and end here
+Dialogue: 0,0:28:51.17,0:28:53.90,*Default,NTP,0000,0000,0000,,is an attribute of the procedure object
+Dialogue: 0,0:28:54.13,0:28:55.57,*Default,NTP,0000,0000,0000,,that remembers
+Dialogue: 0,0:28:55.57,0:28:57.67,*Default,NTP,0000,0000,0000,,the environment in which the procedure
+Dialogue: 0,0:28:57.67,0:28:59.33,*Default,NTP,0000,0000,0000,,was originally defined
+Dialogue: 0,0:29:00.73,0:29:02.13,*Default,NTP,0000,0000,0000,,okay then we
+Dialogue: 0,0:29:02.13,0:29:03.90,*Default,NTP,0000,0000,0000,,evaluate the body of the procedure
+Dialogue: 0,0:29:03.90,0:29:05.13,*Default,NTP,0000,0000,0000,,in the environment that
+Dialogue: 0,0:29:05.13,0:29:06.60,*Default,NTP,0000,0000,0000,,starts with this new frame
+Dialogue: 0,0:29:06.87,0:29:08.60,*Default,NTP,0000,0000,0000,,so let's return
+Dialogue: 0,0:29:08.60,0:29:10.77,*Default,NTP,0000,0000,0000,,to the demonstration that we started with
+Dialogue: 0,0:29:10.77,0:29:13.10,*Default,NTP,0000,0000,0000,,at the very beginning of this lecture
+Dialogue: 0,0:29:14.50,0:29:17.80,*Default,NTP,0000,0000,0000,,this demo procedure returns a new list
+Dialogue: 0,0:29:18.33,0:29:20.40,*Default,NTP,0000,0000,0000,,taking in an old list and giving us back
+Dialogue: 0,0:29:20.40,0:29:22.10,*Default,NTP,0000,0000,0000,,something with the same elements
+Dialogue: 0,0:29:22.10,0:29:24.30,*Default,NTP,0000,0000,0000,,but also the No.3 at the end
+Dialogue: 0,0:29:26.10,0:29:28.67,*Default,NTP,0000,0000,0000,,so let's look at the environments that are created
+Dialogue: 0,0:29:28.87,0:29:30.57,*Default,NTP,0000,0000,0000,,when I define this thing
+Dialogue: 0,0:29:30.87,0:29:32.50,*Default,NTP,0000,0000,0000,,and I've bound the name demo
+Dialogue: 0,0:29:32.60,0:29:34.90,*Default,NTP,0000,0000,0000,,to some lamb to procedure instance
+Dialogue: 0,0:29:35.00,0:29:37.67,*Default,NTP,0000,0000,0000,,which has its parent as the global frame
+Dialogue: 0,0:29:38.77,0:29:40.80,*Default,NTP,0000,0000,0000,,then when I call it
+Dialogue: 0,0:29:41.20,0:29:44.53,*Default,NTP,0000,0000,0000,,that involves creating a list one two
+Dialogue: 0,0:29:44.87,0:29:48.17,*Default,NTP,0000,0000,0000,,which we can represent as nested pairs
+Dialogue: 0,0:29:52.93,0:29:54.40,*Default,NTP,0000,0000,0000,,creating a new frame in which
+Dialogue: 0,0:29:54.40,0:29:57.13,*Default,NTP,0000,0000,0000,,formal parameters are bound to the argument value
+Dialogue: 0,0:29:57.50,0:30:00.37,*Default,NTP,0000,0000,0000,,the formal parameter s is bound to the argument value
+Dialogue: 0,0:30:00.37,0:30:01.60,*Default,NTP,0000,0000,0000,,which is this list
+Dialogue: 0,0:30:02.33,0:30:03.57,*Default,NTP,0000,0000,0000,,a news parent
+Dialogue: 0,0:30:04.50,0:30:08.10,*Default,NTP,0000,0000,0000,,is g also the parent of the lambda procedure
+Dialogue: 0,0:30:08.47,0:30:10.97,*Default,NTP,0000,0000,0000,,that was just applied
+Dialogue: 0,0:30:12.73,0:30:15.27,*Default,NTP,0000,0000,0000,,okay now if we look through the body of these things
+Dialogue: 0,0:30:15.27,0:30:18.33,*Default,NTP,0000,0000,0000,,we're evaluating the body and we realize s is not null
+Dialogue: 0,0:30:18.33,0:30:21.20,*Default,NTP,0000,0000,0000,,so we have to call demo on the cutter of s
+Dialogue: 0,0:30:21.53,0:30:23.87,*Default,NTP,0000,0000,0000,,which means we introduce yet another frame
+Dialogue: 0,0:30:23.93,0:30:25.40,*Default,NTP,0000,0000,0000,,where s is now bound
+Dialogue: 0,0:30:25.80,0:30:28.87,*Default,NTP,0000,0000,0000,,to the cutter of s which is the rest of s
+Dialogue: 0,0:30:28.87,0:30:30.93,*Default,NTP,0000,0000,0000,,everything except for the first element
+Dialogue: 0,0:30:32.97,0:30:36.33,*Default,NTP,0000,0000,0000,,making another recursive call we find that
+Dialogue: 0,0:30:37.17,0:30:41.50,*Default,NTP,0000,0000,0000,,we're now binding s to whatever is the cutter of
+Dialogue: 0,0:30:41.73,0:30:46.33,*Default,NTP,0000,0000,0000,,this s which is just the empty list called nip
+Dialogue: 0,0:30:48.07,0:30:52.60,*Default,NTP,0000,0000,0000,,and when we evaluate the body of this procedure
+Dialogue: 0,0:30:53.07,0:30:55.20,*Default,NTP,0000,0000,0000,,with us bount the nill list
+Dialogue: 0,0:30:55.73,0:30:57.13,*Default,NTP,0000,0000,0000,,then we just return three
+Dialogue: 0,0:30:57.30,0:30:58.53,*Default,NTP,0000,0000,0000,,this run returns two three
+Dialogue: 0,0:30:58.53,0:31:00.13,*Default,NTP,0000,0000,0000,,this one returns 1 2 3
+Dialogue: 0,0:31:00.40,0:31:01.80,*Default,NTP,0000,0000,0000,,but in this environment
+Dialogue: 0,0:31:01.90,0:31:04.33,*Default,NTP,0000,0000,0000,,we're not keeping track of return values
+Dialogue: 0,0:31:04.33,0:31:06.53,*Default,NTP,0000,0000,0000,,that happens elsewhere in the program
+Dialogue: 0,0:31:10.20,0:31:13.30,*Default,NTP,0000,0000,0000,,now this idea that you can evaluate and apply
+Dialogue: 0,0:31:13.50,0:31:15.77,*Default,NTP,0000,0000,0000,,recursively is really old
+Dialogue: 0,0:31:16.27,0:31:20.80,*Default,NTP,0000,0000,0000,,so here's the original definitions of apply and eval
+Dialogue: 0,0:31:21.27,0:31:24.93,*Default,NTP,0000,0000,0000,,in the documentation for a lisp 1.5
+Dialogue: 0,0:31:25.73,0:31:27.73,*Default,NTP,0000,0000,0000,,which was the predecessor to ski
+Dialogue: 0,0:31:28.40,0:31:29.93,*Default,NTP,0000,0000,0000,,so this is very old
+Dialogue: 0,0:31:30.33,0:31:33.00,*Default,NTP,0000,0000,0000,,but it has much of the structure that you see today
+Dialogue: 0,0:31:33.07,0:31:34.67,*Default,NTP,0000,0000,0000,,though in a different syntax
+Dialogue: 0,0:31:35.40,0:31:38.53,*Default,NTP,0000,0000,0000,,it kept track of things like car and cutter and cons
+Dialogue: 0,0:31:38.60,0:31:39.90,*Default,NTP,0000,0000,0000,,those were built in
+Dialogue: 0,0:31:40.90,0:31:42.70,*Default,NTP,0000,0000,0000,,there was a check of something was atomic
+Dialogue: 0,0:31:42.70,0:31:43.77,*Default,NTP,0000,0000,0000,,that's just a number
+Dialogue: 0,0:31:43.90,0:31:46.40,*Default,NTP,0000,0000,0000,,there was also a built in notion of equality
+Dialogue: 0,0:31:46.67,0:31:47.67,*Default,NTP,0000,0000,0000,,other than that
+Dialogue: 0,0:31:47.67,0:31:50.07,*Default,NTP,0000,0000,0000,,they were just built in notions of quotation
+Dialogue: 0,0:31:50.27,0:31:51.70,*Default,NTP,0000,0000,0000,,and conditionals
+Dialogue: 0,0:31:51.80,0:31:54.00,*Default,NTP,0000,0000,0000,,and everything else you had to build from there
+Dialogue: 0,0:31:54.37,0:31:56.33,*Default,NTP,0000,0000,0000,,except for our famous lambda
+Dialogue: 0,0:31:57.27,0:31:57.90,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:31:57.90,0:32:01.27,*Default,NTP,0000,0000,0000,,as you can see e val dispatches on the type of thing
+Dialogue: 0,0:32:01.50,0:32:02.70,*Default,NTP,0000,0000,0000,,and calls apply
+Dialogue: 0,0:32:03.20,0:32:05.27,*Default,NTP,0000,0000,0000,,an apply calls a val
+Dialogue: 0,0:32:06.93,0:32:07.73,*Default,NTP,0000,0000,0000,,cool

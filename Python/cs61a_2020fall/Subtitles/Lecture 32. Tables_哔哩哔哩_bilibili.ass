@@ -1,0 +1,636 @@
+[Script Info]
+Title: Lecture 32. Tables_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=77&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.67,0:00:02.77,*Default,NTP,0000,0000,0000,,sixty one eight lecture No.32
+Dialogue: 0,0:00:03.07,0:00:04.00,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:04.40,0:00:06.30,*Default,NTP,0000,0000,0000,,lab 12 is do Tuesday
+Dialogue: 0,0:00:06.30,0:00:08.07,*Default,NTP,0000,0000,0000,,but please do it Monday
+Dialogue: 0,0:00:08.07,0:00:10.67,*Default,NTP,0000,0000,0000,,because you have other things do Tuesday
+Dialogue: 0,0:00:10.73,0:00:13.30,*Default,NTP,0000,0000,0000,,a checkpoint for the scheme project
+Dialogue: 0,0:00:13.97,0:00:14.50,*Default,NTP,0000,0000,0000,,we will have
+Dialogue: 0,0:00:14.50,0:00:16.67,*Default,NTP,0000,0000,0000,,lab parties from three to four and seven to eight
+Dialogue: 0,0:00:16.67,0:00:17.47,*Default,NTP,0000,0000,0000,,on Monday
+Dialogue: 0,0:00:17.53,0:00:20.67,*Default,NTP,0000,0000,0000,,which means Monday is the best day to finish the lab
+Dialogue: 0,0:00:21.20,0:00:22.87,*Default,NTP,0000,0000,0000,,homework eight is do Thursday
+Dialogue: 0,0:00:22.90,0:00:25.33,*Default,NTP,0000,0000,0000,,we've shortened it relative to its normal length
+Dialogue: 0,0:00:25.33,0:00:27.47,*Default,NTP,0000,0000,0000,,because there's a lot going on this week
+Dialogue: 0,0:00:27.80,0:00:30.77,*Default,NTP,0000,0000,0000,,scheme project is do next Tuesday
+Dialogue: 0,0:00:30.90,0:00:32.60,*Default,NTP,0000,0000,0000,,but you could finish it this week
+Dialogue: 0,0:00:32.67,0:00:34.80,*Default,NTP,0000,0000,0000,,and then you'd have all next week off
+Dialogue: 0,0:00:35.67,0:00:37.50,*Default,NTP,0000,0000,0000,,checkpoint one is due Tuesday
+Dialogue: 0,0:00:37.53,0:00:39.47,*Default,NTP,0000,0000,0000,,checkpoint two is due Friday
+Dialogue: 0,0:00:39.57,0:00:41.13,*Default,NTP,0000,0000,0000,,when you've gotten through checkpoint two
+Dialogue: 0,0:00:41.13,0:00:43.10,*Default,NTP,0000,0000,0000,,you've finished most of the project
+Dialogue: 0,0:00:43.17,0:00:45.77,*Default,NTP,0000,0000,0000,,and if you finish the whole thing by Monday
+Dialogue: 0,0:00:45.90,0:00:46.90,*Default,NTP,0000,0000,0000,,of next week
+Dialogue: 0,0:00:47.00,0:00:49.27,*Default,NTP,0000,0000,0000,,you'll get an early submission bonus point
+Dialogue: 0,0:00:50.07,0:00:51.07,*Default,NTP,0000,0000,0000,,we have extra staff
+Dialogue: 0,0:00:51.07,0:00:53.60,*Default,NTP,0000,0000,0000,,in office hours this week and next Monday
+Dialogue: 0,0:00:53.77,0:00:55.53,*Default,NTP,0000,0000,0000,,so hopefully you won't have to wait too long
+Dialogue: 0,0:00:55.53,0:00:56.67,*Default,NTP,0000,0000,0000,,if you get stuck
+Dialogue: 0,0:00:56.97,0:00:58.27,*Default,NTP,0000,0000,0000,,but the best way to make
+Dialogue: 0,0:00:58.27,0:01:00.27,*Default,NTP,0000,0000,0000,,sure that you get helped in a timely manner
+Dialogue: 0,0:01:00.33,0:01:02.27,*Default,NTP,0000,0000,0000,,is to make progress every day
+Dialogue: 0,0:01:02.40,0:01:04.87,*Default,NTP,0000,0000,0000,,instead of leaving everything to the last minute
+Dialogue: 0,0:01:05.50,0:01:08.10,*Default,NTP,0000,0000,0000,,this is one of the busiest weeks in the whole semester
+Dialogue: 0,0:01:08.57,0:01:09.67,*Default,NTP,0000,0000,0000,,but once you get through it
+Dialogue: 0,0:01:09.67,0:01:11.70,*Default,NTP,0000,0000,0000,,you'll have a nice thanksgiving break
+Dialogue: 0,0:01:12.37,0:01:14.50,*Default,NTP,0000,0000,0000,,there's one more thing we're releasing today
+Dialogue: 0,0:01:14.50,0:01:16.13,*Default,NTP,0000,0000,0000,,which is completely optional
+Dialogue: 0,0:01:16.40,0:01:19.00,*Default,NTP,0000,0000,0000,,the scheme recursive art contest
+Dialogue: 0,0:01:19.87,0:01:21.93,*Default,NTP,0000,0000,0000,,the scheme recruits of art contest is one of my
+Dialogue: 0,0:01:21.93,0:01:23.47,*Default,NTP,0000,0000,0000,,favorite parts of the course
+Dialogue: 0,0:01:23.67,0:01:26.90,*Default,NTP,0000,0000,0000,,it's your chance to use your scheme interpreter
+Dialogue: 0,0:01:27.10,0:01:28.93,*Default,NTP,0000,0000,0000,,to draw something cool
+Dialogue: 0,0:01:29.30,0:01:31.80,*Default,NTP,0000,0000,0000,,that can be related to 61 a or not
+Dialogue: 0,0:01:32.00,0:01:34.80,*Default,NTP,0000,0000,0000,,but should involve recursion of some kind
+Dialogue: 0,0:01:35.40,0:01:36.90,*Default,NTP,0000,0000,0000,,you'll use the same drawing
+Dialogue: 0,0:01:36.90,0:01:38.33,*Default,NTP,0000,0000,0000,,primitive procedures that we use
+Dialogue: 0,0:01:38.33,0:01:40.37,*Default,NTP,0000,0000,0000,,to draw sir pinsky's triangle
+Dialogue: 0,0:01:40.87,0:01:42.73,*Default,NTP,0000,0000,0000,,and people have come up with some really wonderful
+Dialogue: 0,0:01:42.73,0:01:44.00,*Default,NTP,0000,0000,0000,,things in the past
+Dialogue: 0,0:01:44.47,0:01:45.47,*Default,NTP,0000,0000,0000,,for example
+Dialogue: 0,0:01:46.07,0:01:48.50,*Default,NTP,0000,0000,0000,,here was a winner in two thousand and twelve
+Dialogue: 0,0:01:49.30,0:01:50.93,*Default,NTP,0000,0000,0000,,in two thousand thirteen
+Dialogue: 0,0:01:50.93,0:01:53.60,*Default,NTP,0000,0000,0000,,someone figured out how to draw in three d
+Dialogue: 0,0:01:54.60,0:01:57.37,*Default,NTP,0000,0000,0000,,and since then sometimes three day drawings have won
+Dialogue: 0,0:01:57.40,0:01:58.87,*Default,NTP,0000,0000,0000,,but sometimes they haven't
+Dialogue: 0,0:01:58.97,0:02:01.17,*Default,NTP,0000,0000,0000,,here was the winner in 2015
+Dialogue: 0,0:02:02.53,0:02:03.67,*Default,NTP,0000,0000,0000,,and in 2018
+Dialogue: 0,0:02:05.53,0:02:07.17,*Default,NTP,0000,0000,0000,,some entries are elaborate
+Dialogue: 0,0:02:07.33,0:02:08.57,*Default,NTP,0000,0000,0000,,some are less so
+Dialogue: 0,0:02:08.97,0:02:10.73,*Default,NTP,0000,0000,0000,,and one of the best outcomes of the contest
+Dialogue: 0,0:02:10.73,0:02:11.87,*Default,NTP,0000,0000,0000,,is not the winner
+Dialogue: 0,0:02:11.93,0:02:14.73,*Default,NTP,0000,0000,0000,,but the gallery of all the entries
+Dialogue: 0,0:02:15.00,0:02:16.53,*Default,NTP,0000,0000,0000,,the way we determine the winner
+Dialogue: 0,0:02:16.70,0:02:19.50,*Default,NTP,0000,0000,0000,,is to take your entry and everybody else's
+Dialogue: 0,0:02:19.50,0:02:22.73,*Default,NTP,0000,0000,0000,,and put them in a web page and let the students vote
+Dialogue: 0,0:02:23.13,0:02:24.57,*Default,NTP,0000,0000,0000,,so if you're in this course
+Dialogue: 0,0:02:24.67,0:02:26.40,*Default,NTP,0000,0000,0000,,and you don't want to create art
+Dialogue: 0,0:02:26.40,0:02:27.97,*Default,NTP,0000,0000,0000,,you can still critique art
+Dialogue: 0,0:02:27.97,0:02:29.90,*Default,NTP,0000,0000,0000,,by voting for your favorite entries
+Dialogue: 0,0:02:29.90,0:02:31.80,*Default,NTP,0000,0000,0000,,to the scheme recursive art contest
+Dialogue: 0,0:02:33.07,0:02:36.40,*Default,NTP,0000,0000,0000,,and no piece of art is complete without a description
+Dialogue: 0,0:02:36.60,0:02:38.30,*Default,NTP,0000,0000,0000,,so when you make your entry
+Dialogue: 0,0:02:38.53,0:02:42.07,*Default,NTP,0000,0000,0000,,you're also allowed to submit a haiku describing it
+Dialogue: 0,0:02:42.20,0:02:43.70,*Default,NTP,0000,0000,0000,,and that will be published
+Dialogue: 0,0:02:43.70,0:02:46.33,*Default,NTP,0000,0000,0000,,along with the entry and its title
+Dialogue: 0,0:02:46.50,0:02:48.73,*Default,NTP,0000,0000,0000,,in the scheme gallery that we create
+Dialogue: 0,0:02:49.37,0:02:51.90,*Default,NTP,0000,0000,0000,,after the entry submission deadline
+Dialogue: 0,0:02:51.90,0:02:53.97,*Default,NTP,0000,0000,0000,,which is the Monday after thanksgiving
+Dialogue: 0,0:02:54.00,0:02:55.30,*Default,NTP,0000,0000,0000,,November 30
+Dialogue: 0,0:02:56.13,0:02:58.10,*Default,NTP,0000,0000,0000,,so if you're looking for something to do
+Dialogue: 0,0:02:58.27,0:03:00.00,*Default,NTP,0000,0000,0000,,feel free to create some art
+Dialogue: 0,0:03:00.17,0:03:01.93,*Default,NTP,0000,0000,0000,,if you don't that's okay too
+Dialogue: 0,0:03:01.97,0:03:03.57,*Default,NTP,0000,0000,0000,,you'll get to look at your peers art
+Dialogue: 0,0:03:03.57,0:03:05.00,*Default,NTP,0000,0000,0000,,which often is quite cool
+Dialogue: 0,0:03:05.90,0:03:07.47,*Default,NTP,0000,0000,0000,,this is completely optional
+Dialogue: 0,0:03:07.77,0:03:10.37,*Default,NTP,0000,0000,0000,,there is a poultry amount of extra credit given
+Dialogue: 0,0:03:10.37,0:03:11.30,*Default,NTP,0000,0000,0000,,to the winners
+Dialogue: 0,0:03:11.50,0:03:13.40,*Default,NTP,0000,0000,0000,,but don't do it for the extra credit
+Dialogue: 0,0:03:13.70,0:03:16.50,*Default,NTP,0000,0000,0000,,do it for the sake of art
+Dialogue: 0,0:03:17.67,0:03:21.17,*Default,NTP,0000,0000,0000,,okay and back to our regularly scheduled programming
+Dialogue: 0,0:03:21.47,0:03:25.40,*Default,NTP,0000,0000,0000,,sequel today we learn about joining tables together
+Dialogue: 0,0:03:25.60,0:03:28.57,*Default,NTP,0000,0000,0000,,which is an important fundamental operation in sequel
+Dialogue: 0,0:03:28.90,0:03:29.93,*Default,NTP,0000,0000,0000,,and it's the reason
+Dialogue: 0,0:03:29.93,0:03:31.37,*Default,NTP,0000,0000,0000,,that you might want to use a database
+Dialogue: 0,0:03:31.37,0:03:32.60,*Default,NTP,0000,0000,0000,,to represent your data
+Dialogue: 0,0:03:32.93,0:03:35.73,*Default,NTP,0000,0000,0000,,instead of just a long list for example
+Dialogue: 0,0:03:37.40,0:03:40.93,*Default,NTP,0000,0000,0000,,so far we've been projecting just one table
+Dialogue: 0,0:03:41.73,0:03:44.93,*Default,NTP,0000,0000,0000,,but we can do much more powerful operations
+Dialogue: 0,0:03:44.93,0:03:46.87,*Default,NTP,0000,0000,0000,,by joining tables together
+Dialogue: 0,0:03:48.47,0:03:52.53,*Default,NTP,0000,0000,0000,,now if you ask someone what a join is among two tables
+Dialogue: 0,0:03:52.90,0:03:55.60,*Default,NTP,0000,0000,0000,,they may tell you which kind of join
+Dialogue: 0,0:03:55.77,0:03:56.87,*Default,NTP,0000,0000,0000,,there are so many
+Dialogue: 0,0:03:57.50,0:03:58.37,*Default,NTP,0000,0000,0000,,and in fact
+Dialogue: 0,0:03:58.60,0:04:00.97,*Default,NTP,0000,0000,0000,,database people have been thinking about this problem
+Dialogue: 0,0:04:00.97,0:04:01.77,*Default,NTP,0000,0000,0000,,so long
+Dialogue: 0,0:04:01.93,0:04:04.87,*Default,NTP,0000,0000,0000,,that they have invented many different kinds of joints
+Dialogue: 0,0:04:04.87,0:04:08.17,*Default,NTP,0000,0000,0000,,and some ways of joining two tables together
+Dialogue: 0,0:04:08.50,0:04:10.07,*Default,NTP,0000,0000,0000,,I have multiple names
+Dialogue: 0,0:04:10.27,0:04:11.60,*Default,NTP,0000,0000,0000,,so it's complicated
+Dialogue: 0,0:04:11.60,0:04:14.60,*Default,NTP,0000,0000,0000,,but we're just going to focus on one fundamental type
+Dialogue: 0,0:04:15.57,0:04:18.57,*Default,NTP,0000,0000,0000,,two tables a and b are joined
+Dialogue: 0,0:04:18.90,0:04:20.27,*Default,NTP,0000,0000,0000,,using a comma
+Dialogue: 0,0:04:20.80,0:04:21.17,*Default,NTP,0000,0000,0000,,two
+Dialogue: 0,0:04:21.17,0:04:25.77,*Default,NTP,0000,0000,0000,,yield all combinations of a ro from a and a ro from b
+Dialogue: 0,0:04:26.50,0:04:28.87,*Default,NTP,0000,0000,0000,,this is the fundamental idea of what it means
+Dialogue: 0,0:04:28.87,0:04:30.80,*Default,NTP,0000,0000,0000,,to join two tables together
+Dialogue: 0,0:04:31.10,0:04:33.97,*Default,NTP,0000,0000,0000,,is to list all the pairs of rose
+Dialogue: 0,0:04:34.27,0:04:35.73,*Default,NTP,0000,0000,0000,,so back to dogs
+Dialogue: 0,0:04:36.27,0:04:37.87,*Default,NTP,0000,0000,0000,,when lead a second table
+Dialogue: 0,0:04:38.00,0:04:39.93,*Default,NTP,0000,0000,0000,,in order to do anything interesting
+Dialogue: 0,0:04:40.67,0:04:42.77,*Default,NTP,0000,0000,0000,,let's create a table called dogs
+Dialogue: 0,0:04:42.93,0:04:45.13,*Default,NTP,0000,0000,0000,,that has a name for each dog
+Dialogue: 0,0:04:45.33,0:04:47.37,*Default,NTP,0000,0000,0000,,and what kind of fur it has
+Dialogue: 0,0:04:47.87,0:04:49.73,*Default,NTP,0000,0000,0000,,abraham has long fur
+Dialogue: 0,0:04:50.17,0:04:51.97,*Default,NTP,0000,0000,0000,,barack has short fur
+Dialogue: 0,0:04:52.50,0:04:55.67,*Default,NTP,0000,0000,0000,,which will indicate using dots instead of dashes
+Dialogue: 0,0:04:56.53,0:04:59.37,*Default,NTP,0000,0000,0000,,clinton has long fur delano has long fur
+Dialogue: 0,0:04:59.37,0:05:01.13,*Default,NTP,0000,0000,0000,,eisenhower has short fur
+Dialogue: 0,0:05:01.57,0:05:03.73,*Default,NTP,0000,0000,0000,,filmore has curly fur
+Dialogue: 0,0:05:04.80,0:05:08.47,*Default,NTP,0000,0000,0000,,grover has short fur and herbert also has curly fur
+Dialogue: 0,0:05:09.40,0:05:11.40,*Default,NTP,0000,0000,0000,,now this table called dogs
+Dialogue: 0,0:05:11.40,0:05:14.00,*Default,NTP,0000,0000,0000,,just declares a relationship between each dog
+Dialogue: 0,0:05:14.10,0:05:15.13,*Default,NTP,0000,0000,0000,,and its fur
+Dialogue: 0,0:05:16.17,0:05:17.47,*Default,NTP,0000,0000,0000,,what about all that information
+Dialogue: 0,0:05:17.47,0:05:19.20,*Default,NTP,0000,0000,0000,,of whose parent was whose
+Dialogue: 0,0:05:19.73,0:05:21.47,*Default,NTP,0000,0000,0000,,well that's in a separate table
+Dialogue: 0,0:05:21.93,0:05:25.37,*Default,NTP,0000,0000,0000,,so the full data set describes this tree structure
+Dialogue: 0,0:05:25.57,0:05:29.30,*Default,NTP,0000,0000,0000,,which gives the parent of each dog and the fur
+Dialogue: 0,0:05:29.90,0:05:31.80,*Default,NTP,0000,0000,0000,,but since they're in two separate tables
+Dialogue: 0,0:05:31.80,0:05:34.20,*Default,NTP,0000,0000,0000,,we need to join that information together
+Dialogue: 0,0:05:35.40,0:05:37.57,*Default,NTP,0000,0000,0000,,let's say I want to select the parents
+Dialogue: 0,0:05:37.57,0:05:39.87,*Default,NTP,0000,0000,0000,,of curly furred dogs
+Dialogue: 0,0:05:40.13,0:05:42.07,*Default,NTP,0000,0000,0000,,f and h are the curly ones
+Dialogue: 0,0:05:42.07,0:05:44.67,*Default,NTP,0000,0000,0000,,their parents are eisenhower and delano
+Dialogue: 0,0:05:45.40,0:05:48.30,*Default,NTP,0000,0000,0000,,the following select statement will pull those two out
+Dialogue: 0,0:05:48.97,0:05:52.53,*Default,NTP,0000,0000,0000,,select the parent from parents joined with dogs
+Dialogue: 0,0:05:52.73,0:05:56.70,*Default,NTP,0000,0000,0000,,where the child equals name and the fur equals curly
+Dialogue: 0,0:05:57.70,0:05:58.77,*Default,NTP,0000,0000,0000,,that's the join
+Dialogue: 0,0:05:59.17,0:06:01.70,*Default,NTP,0000,0000,0000,,what's going on in the wear claws
+Dialogue: 0,0:06:02.07,0:06:04.30,*Default,NTP,0000,0000,0000,,while fur equals curly is straightforward
+Dialogue: 0,0:06:04.30,0:06:05.47,*Default,NTP,0000,0000,0000,,it's matching
+Dialogue: 0,0:06:05.50,0:06:08.53,*Default,NTP,0000,0000,0000,,combinations of a row from a and a row from b
+Dialogue: 0,0:06:08.90,0:06:11.17,*Default,NTP,0000,0000,0000,,that have fur as curly
+Dialogue: 0,0:06:11.53,0:06:12.53,*Default,NTP,0000,0000,0000,,which we'll give them this
+Dialogue: 0,0:06:12.53,0:06:16.00,*Default,NTP,0000,0000,0000,,this film or curly row and this herbert curly row
+Dialogue: 0,0:06:16.97,0:06:18.27,*Default,NTP,0000,0000,0000,,child equals name
+Dialogue: 0,0:06:18.50,0:06:19.77,*Default,NTP,0000,0000,0000,,is a relationship
+Dialogue: 0,0:06:19.87,0:06:21.93,*Default,NTP,0000,0000,0000,,between the row that we've chosen
+Dialogue: 0,0:06:21.93,0:06:24.93,*Default,NTP,0000,0000,0000,,from parents and the row we've chosen from dogs
+Dialogue: 0,0:06:25.20,0:06:27.10,*Default,NTP,0000,0000,0000,,so this says that the name
+Dialogue: 0,0:06:27.13,0:06:29.10,*Default,NTP,0000,0000,0000,,that's given in the dogs table
+Dialogue: 0,0:06:29.20,0:06:33.10,*Default,NTP,0000,0000,0000,,needs to be the same as the child in the parents table
+Dialogue: 0,0:06:33.70,0:06:34.80,*Default,NTP,0000,0000,0000,,now how do we know
+Dialogue: 0,0:06:34.97,0:06:37.47,*Default,NTP,0000,0000,0000,,which of these names came from which table
+Dialogue: 0,0:06:37.70,0:06:40.90,*Default,NTP,0000,0000,0000,,right now will just assume that they're unambiguous
+Dialogue: 0,0:06:40.97,0:06:42.87,*Default,NTP,0000,0000,0000,,that every column name is different
+Dialogue: 0,0:06:42.87,0:06:44.33,*Default,NTP,0000,0000,0000,,across different tables
+Dialogue: 0,0:06:44.57,0:06:47.20,*Default,NTP,0000,0000,0000,,will deal with ambiguity in a minute
+Dialogue: 0,0:06:47.70,0:06:50.40,*Default,NTP,0000,0000,0000,,1st let's just play around with what we have
+Dialogue: 0,0:06:50.90,0:06:52.30,*Default,NTP,0000,0000,0000,,so I've now put
+Dialogue: 0,0:06:52.47,0:06:56.20,*Default,NTP,0000,0000,0000,,the sequel statements for defining dogs and parents
+Dialogue: 0,0:06:56.40,0:06:59.17,*Default,NTP,0000,0000,0000,,into a file called dogs sequel
+Dialogue: 0,0:07:00.77,0:07:02.40,*Default,NTP,0000,0000,0000,,I can start sequel light
+Dialogue: 0,0:07:03.00,0:07:04.90,*Default,NTP,0000,0000,0000,,and using the in it flag
+Dialogue: 0,0:07:05.10,0:07:05.90,*Default,NTP,0000,0000,0000,,tell it
+Dialogue: 0,0:07:05.97,0:07:09.53,*Default,NTP,0000,0000,0000,,to execute all the statements in dogs doubt sequel
+Dialogue: 0,0:07:10.33,0:07:12.20,*Default,NTP,0000,0000,0000,,so it's loaded those resources
+Dialogue: 0,0:07:12.20,0:07:13.90,*Default,NTP,0000,0000,0000,,which means I can select
+Dialogue: 0,0:07:13.93,0:07:17.33,*Default,NTP,0000,0000,0000,,star from dogs and get all the different options
+Dialogue: 0,0:07:17.90,0:07:20.37,*Default,NTP,0000,0000,0000,,now if I select all of the columns
+Dialogue: 0,0:07:20.53,0:07:22.90,*Default,NTP,0000,0000,0000,,from parents comma dogs
+Dialogue: 0,0:07:23.20,0:07:25.53,*Default,NTP,0000,0000,0000,,that's a join over these two tables
+Dialogue: 0,0:07:25.53,0:07:27.20,*Default,NTP,0000,0000,0000,,and we'll see many results
+Dialogue: 0,0:07:28.33,0:07:30.57,*Default,NTP,0000,0000,0000,,these results are all the pairs of rows
+Dialogue: 0,0:07:30.70,0:07:32.53,*Default,NTP,0000,0000,0000,,so there was an abraham barack row
+Dialogue: 0,0:07:32.53,0:07:34.17,*Default,NTP,0000,0000,0000,,and an abraham long row
+Dialogue: 0,0:07:34.50,0:07:35.40,*Default,NTP,0000,0000,0000,,here they are
+Dialogue: 0,0:07:36.33,0:07:38.87,*Default,NTP,0000,0000,0000,,there's also an abraham clinton row
+Dialogue: 0,0:07:39.07,0:07:41.07,*Default,NTP,0000,0000,0000,,paired with a delano long row
+Dialogue: 0,0:07:41.30,0:07:42.27,*Default,NTP,0000,0000,0000,,now you might think
+Dialogue: 0,0:07:42.27,0:07:44.13,*Default,NTP,0000,0000,0000,,these have nothing to do with each other
+Dialogue: 0,0:07:44.90,0:07:48.40,*Default,NTP,0000,0000,0000,,all it is is exhaustively computing all pairs of rows
+Dialogue: 0,0:07:48.57,0:07:50.87,*Default,NTP,0000,0000,0000,,it's up to the wear claws to define
+Dialogue: 0,0:07:50.87,0:07:52.53,*Default,NTP,0000,0000,0000,,some relationship between them
+Dialogue: 0,0:07:53.30,0:07:55.70,*Default,NTP,0000,0000,0000,,so let's start using a wear claws
+Dialogue: 0,0:07:56.50,0:08:01.20,*Default,NTP,0000,0000,0000,,select from parents comma dogs
+Dialogue: 0,0:08:03.80,0:08:04.60,*Default,NTP,0000,0000,0000,,where
+Dialogue: 0,0:08:06.27,0:08:08.53,*Default,NTP,0000,0000,0000,,let's relate the times when
+Dialogue: 0,0:08:08.87,0:08:12.30,*Default,NTP,0000,0000,0000,,the dog's name is the same as the child
+Dialogue: 0,0:08:13.40,0:08:15.53,*Default,NTP,0000,0000,0000,,so we write just child equals name
+Dialogue: 0,0:08:15.60,0:08:17.73,*Default,NTP,0000,0000,0000,,in order to get those cases
+Dialogue: 0,0:08:18.73,0:08:20.93,*Default,NTP,0000,0000,0000,,okay we still have four columns
+Dialogue: 0,0:08:21.17,0:08:25.30,*Default,NTP,0000,0000,0000,,two columns from the parents two columns from the dogs
+Dialogue: 0,0:08:25.90,0:08:28.47,*Default,NTP,0000,0000,0000,,but it's always the case that the child
+Dialogue: 0,0:08:29.00,0:08:30.53,*Default,NTP,0000,0000,0000,,and the name
+Dialogue: 0,0:08:31.27,0:08:33.37,*Default,NTP,0000,0000,0000,,column have the same value
+Dialogue: 0,0:08:33.80,0:08:37.47,*Default,NTP,0000,0000,0000,,so abraham as barack's parent and barack has short fur
+Dialogue: 0,0:08:38.53,0:08:40.73,*Default,NTP,0000,0000,0000,,della know is herbert's parent
+Dialogue: 0,0:08:40.97,0:08:43.00,*Default,NTP,0000,0000,0000,,and herbert has curly fur
+Dialogue: 0,0:08:45.53,0:08:47.33,*Default,NTP,0000,0000,0000,,if we add to our wear
+Dialogue: 0,0:08:47.70,0:08:50.53,*Default,NTP,0000,0000,0000,,by saying and for equals curly
+Dialogue: 0,0:08:51.27,0:08:53.50,*Default,NTP,0000,0000,0000,,we'll restrict ourselves to only
+Dialogue: 0,0:08:53.80,0:08:56.00,*Default,NTP,0000,0000,0000,,the two rows that were interested in
+Dialogue: 0,0:08:56.00,0:08:59.20,*Default,NTP,0000,0000,0000,,among the join of parents and dogs
+Dialogue: 0,0:09:00.07,0:09:03.30,*Default,NTP,0000,0000,0000,,now we have to decide how to project these rows
+Dialogue: 0,0:09:03.30,0:09:05.10,*Default,NTP,0000,0000,0000,,to get only what we want
+Dialogue: 0,0:09:05.50,0:09:08.87,*Default,NTP,0000,0000,0000,,and what we said we wanted was not all of the rows
+Dialogue: 0,0:09:08.87,0:09:12.20,*Default,NTP,0000,0000,0000,,but instead just the parents of the curly dogs
+Dialogue: 0,0:09:13.57,0:09:15.87,*Default,NTP,0000,0000,0000,,which are eisenhower and delano
+Dialogue: 0,0:09:16.10,0:09:16.93,*Default,NTP,0000,0000,0000,,then we're done
+Dialogue: 0,0:09:20.10,0:09:23.60,*Default,NTP,0000,0000,0000,,now we'll have to deal with the interesting case when
+Dialogue: 0,0:09:23.93,0:09:26.73,*Default,NTP,0000,0000,0000,,two different tables have the same column name
+Dialogue: 0,0:09:26.93,0:09:28.67,*Default,NTP,0000,0000,0000,,and we want to be able to pick out
+Dialogue: 0,0:09:28.67,0:09:31.00,*Default,NTP,0000,0000,0000,,one column in one particular table
+Dialogue: 0,0:09:31.37,0:09:34.40,*Default,NTP,0000,0000,0000,,for that we have aliases and dot expressions
+Dialogue: 0,0:09:35.53,0:09:38.17,*Default,NTP,0000,0000,0000,,we can even join a table with itself
+Dialogue: 0,0:09:39.70,0:09:42.17,*Default,NTP,0000,0000,0000,,two tables may share a column name in general
+Dialogue: 0,0:09:42.50,0:09:43.53,*Default,NTP,0000,0000,0000,,and certainly a
+Dialogue: 0,0:09:43.53,0:09:46.10,*Default,NTP,0000,0000,0000,,tables shares the same column names with itself
+Dialogue: 0,0:09:46.67,0:09:49.57,*Default,NTP,0000,0000,0000,,dot expressions and aliases help disambiguate
+Dialogue: 0,0:09:50.80,0:09:53.53,*Default,NTP,0000,0000,0000,,so here's the structure of our select statement
+Dialogue: 0,0:09:53.53,0:09:55.57,*Default,NTP,0000,0000,0000,,select columns from table where condition
+Dialogue: 0,0:09:55.57,0:09:57.10,*Default,NTP,0000,0000,0000,,order by some order
+Dialogue: 0,0:09:58.53,0:10:01.90,*Default,NTP,0000,0000,0000,,table is a comma separated list of table names
+Dialogue: 0,0:10:02.07,0:10:05.90,*Default,NTP,0000,0000,0000,,and also tell you that they have optional aliases
+Dialogue: 0,0:10:06.60,0:10:09.77,*Default,NTP,0000,0000,0000,,so if I want to select all the pairs of siblings
+Dialogue: 0,0:10:10.40,0:10:12.87,*Default,NTP,0000,0000,0000,,like barack and clinton here are siblings
+Dialogue: 0,0:10:12.87,0:10:15.30,*Default,NTP,0000,0000,0000,,because they have the same parent abraham
+Dialogue: 0,0:10:16.70,0:10:19.20,*Default,NTP,0000,0000,0000,,I would write the following select statement
+Dialogue: 0,0:10:20.40,0:10:21.30,*Default,NTP,0000,0000,0000,,select
+Dialogue: 0,0:10:22.00,0:10:25.57,*Default,NTP,0000,0000,0000,,a dot child as first b dot child as 2nd
+Dialogue: 0,0:10:26.37,0:10:28.80,*Default,NTP,0000,0000,0000,,from parents as a parent says b
+Dialogue: 0,0:10:29.67,0:10:32.80,*Default,NTP,0000,0000,0000,,where a dot parent is the same as b dot parent
+Dialogue: 0,0:10:33.27,0:10:36.00,*Default,NTP,0000,0000,0000,,and a dot child is less than b dot child
+Dialogue: 0,0:10:38.30,0:10:42.10,*Default,NTP,0000,0000,0000,,here we're not only joining parents with parents
+Dialogue: 0,0:10:42.47,0:10:47.30,*Default,NTP,0000,0000,0000,,but we're also giving an alias to this parents as a
+Dialogue: 0,0:10:47.57,0:10:49.17,*Default,NTP,0000,0000,0000,,and this parents as b
+Dialogue: 0,0:10:49.73,0:10:50.67,*Default,NTP,0000,0000,0000,,now what does this mean
+Dialogue: 0,0:10:50.67,0:10:53.67,*Default,NTP,0000,0000,0000,,to join a table with itself and give aliases
+Dialogue: 0,0:10:54.33,0:10:55.60,*Default,NTP,0000,0000,0000,,what's going on here
+Dialogue: 0,0:10:55.73,0:10:59.30,*Default,NTP,0000,0000,0000,,is we're looking at all pairs of rows in parents
+Dialogue: 0,0:10:59.67,0:11:00.57,*Default,NTP,0000,0000,0000,,and that's important
+Dialogue: 0,0:11:00.57,0:11:02.00,*Default,NTP,0000,0000,0000,,because if we want to pick out
+Dialogue: 0,0:11:02.00,0:11:03.93,*Default,NTP,0000,0000,0000,,barack and clinton together
+Dialogue: 0,0:11:04.80,0:11:07.53,*Default,NTP,0000,0000,0000,,we're given only a row with abraham barack
+Dialogue: 0,0:11:07.53,0:11:09.93,*Default,NTP,0000,0000,0000,,and another row with abraham clinton
+Dialogue: 0,0:11:10.50,0:11:13.27,*Default,NTP,0000,0000,0000,,so if we want to couple these together somehow
+Dialogue: 0,0:11:13.40,0:11:14.50,*Default,NTP,0000,0000,0000,,we need to consider
+Dialogue: 0,0:11:14.50,0:11:16.97,*Default,NTP,0000,0000,0000,,both of those rows at the same time
+Dialogue: 0,0:11:18.10,0:11:20.90,*Default,NTP,0000,0000,0000,,now the as a and as b
+Dialogue: 0,0:11:20.90,0:11:24.00,*Default,NTP,0000,0000,0000,,are the aliases were giving to these tables
+Dialogue: 0,0:11:24.47,0:11:26.80,*Default,NTP,0000,0000,0000,,in order to refer to them separately
+Dialogue: 0,0:11:27.50,0:11:30.50,*Default,NTP,0000,0000,0000,,the last piece of the puzzle is dot expressions
+Dialogue: 0,0:11:30.93,0:11:32.53,*Default,NTP,0000,0000,0000,,where you say
+Dialogue: 0,0:11:33.17,0:11:35.87,*Default,NTP,0000,0000,0000,,which table you're getting this row from
+Dialogue: 0,0:11:36.10,0:11:39.97,*Default,NTP,0000,0000,0000,,and then dot and then the column name in that table
+Dialogue: 0,0:11:40.73,0:11:42.57,*Default,NTP,0000,0000,0000,,so a is an alias for the
+Dialogue: 0,0:11:42.77,0:11:45.90,*Default,NTP,0000,0000,0000,,first parents table which has a child
+Dialogue: 0,0:11:46.00,0:11:47.57,*Default,NTP,0000,0000,0000,,and what we're doing here
+Dialogue: 0,0:11:47.60,0:11:50.97,*Default,NTP,0000,0000,0000,,is creating a new column in the output called first
+Dialogue: 0,0:11:51.47,0:11:54.67,*Default,NTP,0000,0000,0000,,where its contents is the child from a
+Dialogue: 0,0:11:55.93,0:11:57.30,*Default,NTP,0000,0000,0000,,and the second column
+Dialogue: 0,0:11:57.73,0:12:00.17,*Default,NTP,0000,0000,0000,,its contents is the child from b
+Dialogue: 0,0:12:01.37,0:12:02.93,*Default,NTP,0000,0000,0000,,we join together
+Dialogue: 0,0:12:02.93,0:12:04.77,*Default,NTP,0000,0000,0000,,parents with parents in order to get all
+Dialogue: 0,0:12:04.77,0:12:06.20,*Default,NTP,0000,0000,0000,,pairs of parents
+Dialogue: 0,0:12:06.50,0:12:08.33,*Default,NTP,0000,0000,0000,,and the wareclaws says
+Dialogue: 0,0:12:08.77,0:12:11.17,*Default,NTP,0000,0000,0000,,that in the first parents row
+Dialogue: 0,0:12:11.80,0:12:13.40,*Default,NTP,0000,0000,0000,,I want the parent be equal
+Dialogue: 0,0:12:13.40,0:12:15.50,*Default,NTP,0000,0000,0000,,to the parent in the second parents row
+Dialogue: 0,0:12:16.47,0:12:18.77,*Default,NTP,0000,0000,0000,,and that makes sure that we only get together
+Dialogue: 0,0:12:19.20,0:12:24.77,*Default,NTP,0000,0000,0000,,a joined row that has abraham as the parent both times
+Dialogue: 0,0:12:26.80,0:12:27.73,*Default,NTP,0000,0000,0000,,what about this part
+Dialogue: 0,0:12:27.73,0:12:30.57,*Default,NTP,0000,0000,0000,,a dot child is less than b dot child
+Dialogue: 0,0:12:31.07,0:12:32.97,*Default,NTP,0000,0000,0000,,well if the children were equal
+Dialogue: 0,0:12:33.10,0:12:34.50,*Default,NTP,0000,0000,0000,,then you wouldn't have siblings
+Dialogue: 0,0:12:34.50,0:12:36.60,*Default,NTP,0000,0000,0000,,you just have barack twice
+Dialogue: 0,0:12:36.80,0:12:38.70,*Default,NTP,0000,0000,0000,,so we want them to be unequal
+Dialogue: 0,0:12:39.07,0:12:41.73,*Default,NTP,0000,0000,0000,,if we just said unequal then we'd get repeats
+Dialogue: 0,0:12:41.73,0:12:42.70,*Default,NTP,0000,0000,0000,,I would say well
+Dialogue: 0,0:12:42.73,0:12:45.13,*Default,NTP,0000,0000,0000,,barak is the sibling of clinton
+Dialogue: 0,0:12:45.13,0:12:47.93,*Default,NTP,0000,0000,0000,,and clinton is the sibling of barak
+Dialogue: 0,0:12:48.13,0:12:50.30,*Default,NTP,0000,0000,0000,,but by putting an ordering here
+Dialogue: 0,0:12:50.50,0:12:52.73,*Default,NTP,0000,0000,0000,,we'll only get result rose
+Dialogue: 0,0:12:52.87,0:12:57.70,*Default,NTP,0000,0000,0000,,where the alphabetically earlier sibling comes first
+Dialogue: 0,0:12:58.60,0:13:01.07,*Default,NTP,0000,0000,0000,,and the one later in the alphabet comes 2nd
+Dialogue: 0,0:13:02.00,0:13:03.73,*Default,NTP,0000,0000,0000,,so here's the result table
+Dialogue: 0,0:13:04.47,0:13:07.50,*Default,NTP,0000,0000,0000,,barak and clinton are siblings
+Dialogue: 0,0:13:07.60,0:13:09.73,*Default,NTP,0000,0000,0000,,abraham and delano are siblings
+Dialogue: 0,0:13:09.97,0:13:11.67,*Default,NTP,0000,0000,0000,,abraham and grover are siblings
+Dialogue: 0,0:13:11.67,0:13:14.30,*Default,NTP,0000,0000,0000,,and delano and grover are siblings as well
+Dialogue: 0,0:13:14.77,0:13:17.27,*Default,NTP,0000,0000,0000,,any time you join a table with itself
+Dialogue: 0,0:13:17.40,0:13:19.57,*Default,NTP,0000,0000,0000,,you're going to need to use aliases
+Dialogue: 0,0:13:19.60,0:13:22.77,*Default,NTP,0000,0000,0000,,and dot expressions in order to specify
+Dialogue: 0,0:13:22.87,0:13:24.87,*Default,NTP,0000,0000,0000,,which of the rows you're talking about
+Dialogue: 0,0:13:25.13,0:13:26.30,*Default,NTP,0000,0000,0000,,in the joined row
+Dialogue: 0,0:13:26.40,0:13:27.90,*Default,NTP,0000,0000,0000,,those sub rows within there
+Dialogue: 0,0:13:27.90,0:13:29.77,*Default,NTP,0000,0000,0000,,are either from the parents a
+Dialogue: 0,0:13:29.77,0:13:30.97,*Default,NTP,0000,0000,0000,,or the parents b
+Dialogue: 0,0:13:31.00,0:13:32.10,*Default,NTP,0000,0000,0000,,and you want to know which
+Dialogue: 0,0:13:32.10,0:13:34.17,*Default,NTP,0000,0000,0000,,child column or which parent column
+Dialogue: 0,0:13:34.17,0:13:35.37,*Default,NTP,0000,0000,0000,,you want to compare
+Dialogue: 0,0:13:37.70,0:13:40.13,*Default,NTP,0000,0000,0000,,you can even join multiple tables together
+Dialogue: 0,0:13:40.57,0:13:43.20,*Default,NTP,0000,0000,0000,,and when you join together multiple tables
+Dialogue: 0,0:13:43.20,0:13:44.17,*Default,NTP,0000,0000,0000,,you get all
+Dialogue: 0,0:13:44.17,0:13:45.67,*Default,NTP,0000,0000,0000,,possible combinations
+Dialogue: 0,0:13:45.67,0:13:48.27,*Default,NTP,0000,0000,0000,,of a row from each table that you're joining
+Dialogue: 0,0:13:50.00,0:13:52.20,*Default,NTP,0000,0000,0000,,so let's get another table
+Dialogue: 0,0:13:52.70,0:13:53.77,*Default,NTP,0000,0000,0000,,in the mix
+Dialogue: 0,0:13:54.40,0:13:56.40,*Default,NTP,0000,0000,0000,,a grandparents table
+Dialogue: 0,0:13:57.40,0:13:58.73,*Default,NTP,0000,0000,0000,,here's what it says
+Dialogue: 0,0:13:59.13,0:14:01.87,*Default,NTP,0000,0000,0000,,select a's parent
+Dialogue: 0,0:14:02.27,0:14:03.93,*Default,NTP,0000,0000,0000,,and b's child
+Dialogue: 0,0:14:04.17,0:14:05.30,*Default,NTP,0000,0000,0000,,where a and b
+Dialogue: 0,0:14:05.50,0:14:08.47,*Default,NTP,0000,0000,0000,,are both rows from different parents tables
+Dialogue: 0,0:14:08.47,0:14:09.33,*Default,NTP,0000,0000,0000,,joined together
+Dialogue: 0,0:14:11.10,0:14:14.73,*Default,NTP,0000,0000,0000,,there joined with the restriction that the parent in b
+Dialogue: 0,0:14:14.77,0:14:16.37,*Default,NTP,0000,0000,0000,,is the child in a
+Dialogue: 0,0:14:17.53,0:14:19.73,*Default,NTP,0000,0000,0000,,now that defines a grand parent
+Dialogue: 0,0:14:19.97,0:14:22.50,*Default,NTP,0000,0000,0000,,and we'll call the columns in the resulting table
+Dialogue: 0,0:14:22.53,0:14:24.77,*Default,NTP,0000,0000,0000,,the grand dog and the grand pup
+Dialogue: 0,0:14:26.73,0:14:27.97,*Default,NTP,0000,0000,0000,,how does this work
+Dialogue: 0,0:14:28.27,0:14:31.47,*Default,NTP,0000,0000,0000,,well from parents will get eisenhower fillmore
+Dialogue: 0,0:14:31.77,0:14:35.40,*Default,NTP,0000,0000,0000,,and from the other parents will get filmmore abraham
+Dialogue: 0,0:14:36.40,0:14:39.67,*Default,NTP,0000,0000,0000,,we'll find that filmore equals filmore
+Dialogue: 0,0:14:40.17,0:14:41.57,*Default,NTP,0000,0000,0000,,and therefore
+Dialogue: 0,0:14:41.87,0:14:44.30,*Default,NTP,0000,0000,0000,,that eisenhower is the grand dog
+Dialogue: 0,0:14:44.30,0:14:46.50,*Default,NTP,0000,0000,0000,,and abraham is the grand pup
+Dialogue: 0,0:14:47.97,0:14:50.27,*Default,NTP,0000,0000,0000,,now this is just a join on two tables
+Dialogue: 0,0:14:50.67,0:14:53.67,*Default,NTP,0000,0000,0000,,but let's say we want to select all grandparents
+Dialogue: 0,0:14:53.67,0:14:55.07,*Default,NTP,0000,0000,0000,,that have the same fur
+Dialogue: 0,0:14:55.17,0:14:56.57,*Default,NTP,0000,0000,0000,,as their grandchildren
+Dialogue: 0,0:14:57.80,0:15:00.53,*Default,NTP,0000,0000,0000,,take a minute to think about how you would do that
+Dialogue: 0,0:15:00.93,0:15:02.10,*Default,NTP,0000,0000,0000,,and in particular
+Dialogue: 0,0:15:02.33,0:15:04.70,*Default,NTP,0000,0000,0000,,which tables do you need to join together
+Dialogue: 0,0:15:04.87,0:15:06.53,*Default,NTP,0000,0000,0000,,in order to get that result
+Dialogue: 0,0:15:07.30,0:15:08.97,*Default,NTP,0000,0000,0000,,and the answer should be that filmore
+Dialogue: 0,0:15:08.97,0:15:10.70,*Default,NTP,0000,0000,0000,,is the grandparent of herbert
+Dialogue: 0,0:15:10.93,0:15:13.67,*Default,NTP,0000,0000,0000,,and eisenhower is the grandparent of grover
+Dialogue: 0,0:15:14.77,0:15:17.00,*Default,NTP,0000,0000,0000,,here's a select statement that will do the work
+Dialogue: 0,0:15:17.47,0:15:19.70,*Default,NTP,0000,0000,0000,,select the grand dog the grandparent
+Dialogue: 0,0:15:19.73,0:15:22.47,*Default,NTP,0000,0000,0000,,from three different tables joined together
+Dialogue: 0,0:15:22.50,0:15:24.00,*Default,NTP,0000,0000,0000,,the grand's parents table
+Dialogue: 0,0:15:24.00,0:15:26.77,*Default,NTP,0000,0000,0000,,the dogs table and the dogs table again
+Dialogue: 0,0:15:27.30,0:15:29.33,*Default,NTP,0000,0000,0000,,now why do we need so many tables
+Dialogue: 0,0:15:29.40,0:15:31.20,*Default,NTP,0000,0000,0000,,well we need to talk about the fur
+Dialogue: 0,0:15:31.37,0:15:34.50,*Default,NTP,0000,0000,0000,,of the grand dog and the fur of the grand pup
+Dialogue: 0,0:15:34.50,0:15:35.87,*Default,NTP,0000,0000,0000,,to make sure they're the same
+Dialogue: 0,0:15:37.13,0:15:39.70,*Default,NTP,0000,0000,0000,,since we have dogs twice we need to alias them
+Dialogue: 0,0:15:39.70,0:15:42.17,*Default,NTP,0000,0000,0000,,I have alias to them as c and d
+Dialogue: 0,0:15:43.17,0:15:46.60,*Default,NTP,0000,0000,0000,,the grand dog is c dot name
+Dialogue: 0,0:15:46.70,0:15:49.10,*Default,NTP,0000,0000,0000,,meaning we're pulling out the row from c
+Dialogue: 0,0:15:49.10,0:15:50.67,*Default,NTP,0000,0000,0000,,that matches the grand dog
+Dialogue: 0,0:15:51.10,0:15:53.27,*Default,NTP,0000,0000,0000,,the grand pup is d dot name
+Dialogue: 0,0:15:53.30,0:15:55.50,*Default,NTP,0000,0000,0000,,meaning we're pulling out the row from d
+Dialogue: 0,0:15:55.67,0:15:57.00,*Default,NTP,0000,0000,0000,,a separate table
+Dialogue: 0,0:15:58.13,0:16:00.30,*Default,NTP,0000,0000,0000,,where it matches the grand pup
+Dialogue: 0,0:16:00.93,0:16:03.33,*Default,NTP,0000,0000,0000,,and then we make sure that they have the same fur
+Dialogue: 0,0:16:04.40,0:16:05.77,*Default,NTP,0000,0000,0000,,so let's try it out
+Dialogue: 0,0:16:06.87,0:16:08.70,*Default,NTP,0000,0000,0000,,well you'd said we were going to create a table
+Dialogue: 0,0:16:08.70,0:16:11.73,*Default,NTP,0000,0000,0000,,grandparents as
+Dialogue: 0,0:16:12.33,0:16:14.33,*Default,NTP,0000,0000,0000,,what you get when you select
+Dialogue: 0,0:16:15.33,0:16:19.97,*Default,NTP,0000,0000,0000,,a dot parent and b dot child
+Dialogue: 0,0:16:20.67,0:16:24.37,*Default,NTP,0000,0000,0000,,from the join of parents as a
+Dialogue: 0,0:16:24.73,0:16:27.20,*Default,NTP,0000,0000,0000,,and parents as b
+Dialogue: 0,0:16:28.70,0:16:30.37,*Default,NTP,0000,0000,0000,,where it's the case
+Dialogue: 0,0:16:30.80,0:16:34.30,*Default,NTP,0000,0000,0000,,that the child of the grandfather
+Dialogue: 0,0:16:34.97,0:16:38.27,*Default,NTP,0000,0000,0000,,is the same as the parent of the grandchild
+Dialogue: 0,0:16:41.60,0:16:43.40,*Default,NTP,0000,0000,0000,,let's see how we're doing so far
+Dialogue: 0,0:16:44.30,0:16:45.73,*Default,NTP,0000,0000,0000,,if I want to select
+Dialogue: 0,0:16:46.20,0:16:47.93,*Default,NTP,0000,0000,0000,,the grand pups
+Dialogue: 0,0:16:48.90,0:16:51.40,*Default,NTP,0000,0000,0000,,from the grandparents table
+Dialogue: 0,0:16:52.53,0:16:53.33,*Default,NTP,0000,0000,0000,,where
+Dialogue: 0,0:16:54.20,0:16:58.33,*Default,NTP,0000,0000,0000,,it's the case that the grand dog is eisenhower
+Dialogue: 0,0:17:00.10,0:17:03.57,*Default,NTP,0000,0000,0000,,we should get all of eisenhower's grandchildren
+Dialogue: 0,0:17:03.57,0:17:05.53,*Default,NTP,0000,0000,0000,,which are all of film wars children
+Dialogue: 0,0:17:05.57,0:17:07.67,*Default,NTP,0000,0000,0000,,abraham delano and grover
+Dialogue: 0,0:17:09.10,0:17:10.37,*Default,NTP,0000,0000,0000,,so far so good
+Dialogue: 0,0:17:11.87,0:17:15.17,*Default,NTP,0000,0000,0000,,next we wanted to join three tables together
+Dialogue: 0,0:17:15.80,0:17:19.90,*Default,NTP,0000,0000,0000,,which involves selecting the grand dog from
+Dialogue: 0,0:17:21.67,0:17:24.80,*Default,NTP,0000,0000,0000,,the first table is the grandparents table
+Dialogue: 0,0:17:25.27,0:17:27.27,*Default,NTP,0000,0000,0000,,the second is the dogs
+Dialogue: 0,0:17:27.37,0:17:29.60,*Default,NTP,0000,0000,0000,,and the third is more dogs
+Dialogue: 0,0:17:30.17,0:17:32.67,*Default,NTP,0000,0000,0000,,and the reason why we joined all three together
+Dialogue: 0,0:17:32.93,0:17:35.07,*Default,NTP,0000,0000,0000,,is so that we could express
+Dialogue: 0,0:17:35.40,0:17:38.27,*Default,NTP,0000,0000,0000,,that the fur was the same
+Dialogue: 0,0:17:39.20,0:17:40.00,*Default,NTP,0000,0000,0000,,four
+Dialogue: 0,0:17:43.13,0:17:46.37,*Default,NTP,0000,0000,0000,,a dog named grand dog
+Dialogue: 0,0:17:47.60,0:17:49.77,*Default,NTP,0000,0000,0000,,and another dog
+Dialogue: 0,0:17:50.57,0:17:52.93,*Default,NTP,0000,0000,0000,,named the grand pup
+Dialogue: 0,0:17:55.87,0:17:58.80,*Default,NTP,0000,0000,0000,,loading resources will execute this select statement
+Dialogue: 0,0:17:58.80,0:18:01.37,*Default,NTP,0000,0000,0000,,and tell us that eisenhower and filmore
+Dialogue: 0,0:18:01.53,0:18:02.90,*Default,NTP,0000,0000,0000,,are the only two dogs
+Dialogue: 0,0:18:02.90,0:18:05.37,*Default,NTP,0000,0000,0000,,that are grandparents of a grand pup
+Dialogue: 0,0:18:05.40,0:18:07.00,*Default,NTP,0000,0000,0000,,with the same fur
+Dialogue: 0,0:18:10.30,0:18:13.07,*Default,NTP,0000,0000,0000,,numerical expressions in sequel
+Dialogue: 0,0:18:13.30,0:18:17.13,*Default,NTP,0000,0000,0000,,are very similar to numerical expressions in python
+Dialogue: 0,0:18:18.20,0:18:19.67,*Default,NTP,0000,0000,0000,,expressions can contain
+Dialogue: 0,0:18:19.90,0:18:22.27,*Default,NTP,0000,0000,0000,,function calls to built in functions
+Dialogue: 0,0:18:22.33,0:18:25.10,*Default,NTP,0000,0000,0000,,they can also use arithmetic operators
+Dialogue: 0,0:18:25.17,0:18:27.70,*Default,NTP,0000,0000,0000,,such as plus and minus and times
+Dialogue: 0,0:18:29.33,0:18:32.33,*Default,NTP,0000,0000,0000,,now these can occur in any expression
+Dialogue: 0,0:18:32.33,0:18:33.93,*Default,NTP,0000,0000,0000,,within a select statement
+Dialogue: 0,0:18:34.50,0:18:36.07,*Default,NTP,0000,0000,0000,,there's a wear expression
+Dialogue: 0,0:18:36.07,0:18:37.93,*Default,NTP,0000,0000,0000,,there's an order by expression
+Dialogue: 0,0:18:38.07,0:18:39.90,*Default,NTP,0000,0000,0000,,and within the columns description
+Dialogue: 0,0:18:39.90,0:18:41.93,*Default,NTP,0000,0000,0000,,which is a comma separated list
+Dialogue: 0,0:18:42.07,0:18:44.47,*Default,NTP,0000,0000,0000,,there are expressions there as well
+Dialogue: 0,0:18:46.00,0:18:49.30,*Default,NTP,0000,0000,0000,,and in all of these expressions you can
+Dialogue: 0,0:18:49.73,0:18:52.37,*Default,NTP,0000,0000,0000,,add subtract multiply etc
+Dialogue: 0,0:18:53.13,0:18:56.73,*Default,NTP,0000,0000,0000,,you can take the absolute value or round number
+Dialogue: 0,0:18:56.80,0:19:01.50,*Default,NTP,0000,0000,0000,,or negate it you can compare different values together
+Dialogue: 0,0:19:03.10,0:19:04.17,*Default,NTP,0000,0000,0000,,one thing to note
+Dialogue: 0,0:19:04.30,0:19:05.67,*Default,NTP,0000,0000,0000,,is that there are two different
+Dialogue: 0,0:19:05.67,0:19:08.00,*Default,NTP,0000,0000,0000,,ways of expressing not equals and sequel
+Dialogue: 0,0:19:08.30,0:19:10.33,*Default,NTP,0000,0000,0000,,one looks like that one looks like that
+Dialogue: 0,0:19:11.10,0:19:14.33,*Default,NTP,0000,0000,0000,,equality is expressed with a single equals
+Dialogue: 0,0:19:14.93,0:19:15.97,*Default,NTP,0000,0000,0000,,and why not
+Dialogue: 0,0:19:16.20,0:19:19.40,*Default,NTP,0000,0000,0000,,there's no notion of assignment in what we're doing
+Dialogue: 0,0:19:19.60,0:19:22.93,*Default,NTP,0000,0000,0000,,so the single equals isn't used for anything else
+Dialogue: 0,0:19:24.47,0:19:26.30,*Default,NTP,0000,0000,0000,,just to get warmed up for the day
+Dialogue: 0,0:19:26.30,0:19:27.93,*Default,NTP,0000,0000,0000,,let's do some examples
+Dialogue: 0,0:19:28.97,0:19:31.20,*Default,NTP,0000,0000,0000,,so let's say I have a table of cities
+Dialogue: 0,0:19:31.20,0:19:32.17,*Default,NTP,0000,0000,0000,,with their latitude
+Dialogue: 0,0:19:32.17,0:19:33.50,*Default,NTP,0000,0000,0000,,longitude and name
+Dialogue: 0,0:19:33.60,0:19:36.47,*Default,NTP,0000,0000,0000,,berkeley Cambridge Minneapolis san diego Miami
+Dialogue: 0,0:19:36.57,0:19:39.00,*Default,NTP,0000,0000,0000,,and the north pole isn't really a city
+Dialogue: 0,0:19:39.07,0:19:40.47,*Default,NTP,0000,0000,0000,,but we'll go with it anyway
+Dialogue: 0,0:19:41.77,0:19:44.60,*Default,NTP,0000,0000,0000,,if I want I can say select
+Dialogue: 0,0:19:46.53,0:19:48.80,*Default,NTP,0000,0000,0000,,name from cities
+Dialogue: 0,0:19:50.17,0:19:55.70,*Default,NTP,0000,0000,0000,,where the latitude is greater than or equal to 43
+Dialogue: 0,0:19:56.80,0:19:59.10,*Default,NTP,0000,0000,0000,,now 43 is pretty northern
+Dialogue: 0,0:19:59.40,0:19:59.77,*Default,NTP,0000,0000,0000,,northern
+Dialogue: 0,0:19:59.77,0:20:02.73,*Default,NTP,0000,0000,0000,,than that you start getting to pretty cold places
+Dialogue: 0,0:20:02.93,0:20:04.47,*Default,NTP,0000,0000,0000,,so if we wanted to give a name
+Dialogue: 0,0:20:04.47,0:20:05.77,*Default,NTP,0000,0000,0000,,for this select statement
+Dialogue: 0,0:20:05.77,0:20:08.60,*Default,NTP,0000,0000,0000,,I would probably call it cold
+Dialogue: 0,0:20:09.40,0:20:11.37,*Default,NTP,0000,0000,0000,,so if I start see quill light
+Dialogue: 0,0:20:13.00,0:20:15.10,*Default,NTP,0000,0000,0000,,initializing with this file
+Dialogue: 0,0:20:16.30,0:20:18.50,*Default,NTP,0000,0000,0000,,I have loaded those resources
+Dialogue: 0,0:20:18.53,0:20:22.27,*Default,NTP,0000,0000,0000,,and I can select name from cold
+Dialogue: 0,0:20:23.20,0:20:25.40,*Default,NTP,0000,0000,0000,,and find that Minneapolis and the north
+Dialogue: 0,0:20:25.40,0:20:26.80,*Default,NTP,0000,0000,0000,,pole are both cold
+Dialogue: 0,0:20:27.07,0:20:29.27,*Default,NTP,0000,0000,0000,,but that's not every place does cold
+Dialogue: 0,0:20:31.20,0:20:32.87,*Default,NTP,0000,0000,0000,,Chicago is also cold
+Dialogue: 0,0:20:33.73,0:20:35.33,*Default,NTP,0000,0000,0000,,so I can use a union
+Dialogue: 0,0:20:35.50,0:20:38.50,*Default,NTP,0000,0000,0000,,in order to get Minneapolis north pole and Chicago
+Dialogue: 0,0:20:38.60,0:20:40.53,*Default,NTP,0000,0000,0000,,all in one table
+Dialogue: 0,0:20:41.70,0:20:43.27,*Default,NTP,0000,0000,0000,,now what about arithmetic
+Dialogue: 0,0:20:43.77,0:20:43.93,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:20:43.93,0:20:46.70,*Default,NTP,0000,0000,0000,,let's say I want to compute the north south distance
+Dialogue: 0,0:20:47.07,0:20:48.20,*Default,NTP,0000,0000,0000,,between cities
+Dialogue: 0,0:20:48.77,0:20:50.13,*Default,NTP,0000,0000,0000,,northern south really matters
+Dialogue: 0,0:20:50.13,0:20:51.70,*Default,NTP,0000,0000,0000,,because that affects climate
+Dialogue: 0,0:20:51.80,0:20:53.27,*Default,NTP,0000,0000,0000,,more than eastern west
+Dialogue: 0,0:20:53.97,0:20:56.60,*Default,NTP,0000,0000,0000,,well I'd say something like create
+Dialogue: 0,0:20:57.93,0:21:01.07,*Default,NTP,0000,0000,0000,,cable distances as
+Dialogue: 0,0:21:02.13,0:21:05.37,*Default,NTP,0000,0000,0000,,selecting the names of two cities
+Dialogue: 0,0:21:06.47,0:21:07.80,*Default,NTP,0000,0000,0000,,let's call this first
+Dialogue: 0,0:21:08.10,0:21:11.60,*Default,NTP,0000,0000,0000,,and this 2nd and then what we want to select
+Dialogue: 0,0:21:11.77,0:21:14.30,*Default,NTP,0000,0000,0000,,is some expression that computes
+Dialogue: 0,0:21:14.37,0:21:16.80,*Default,NTP,0000,0000,0000,,the number of nautical miles
+Dialogue: 0,0:21:17.17,0:21:18.77,*Default,NTP,0000,0000,0000,,north that you have to go
+Dialogue: 0,0:21:18.97,0:21:21.57,*Default,NTP,0000,0000,0000,,to get the second city from the first city
+Dialogue: 0,0:21:22.47,0:21:26.53,*Default,NTP,0000,0000,0000,,there are 60 nautical miles in a degree of latitude
+Dialogue: 0,0:21:26.77,0:21:29.37,*Default,NTP,0000,0000,0000,,and we have the latitude degrees right here
+Dialogue: 0,0:21:29.70,0:21:33.53,*Default,NTP,0000,0000,0000,,so I could say 60 times the difference between
+Dialogue: 0,0:21:33.80,0:21:35.40,*Default,NTP,0000,0000,0000,,b dot latitude
+Dialogue: 0,0:21:35.80,0:21:38.17,*Default,NTP,0000,0000,0000,,and a latitude
+Dialogue: 0,0:21:39.57,0:21:41.30,*Default,NTP,0000,0000,0000,,and we'll call that the distance
+Dialogue: 0,0:21:43.30,0:21:46.33,*Default,NTP,0000,0000,0000,,now we have our column descriptions
+Dialogue: 0,0:21:46.33,0:21:47.77,*Default,NTP,0000,0000,0000,,but we still have to say
+Dialogue: 0,0:21:47.87,0:21:49.30,*Default,NTP,0000,0000,0000,,what we're selecting from
+Dialogue: 0,0:21:49.50,0:21:51.97,*Default,NTP,0000,0000,0000,,we referred to a and b so far
+Dialogue: 0,0:21:52.27,0:21:55.40,*Default,NTP,0000,0000,0000,,those are different versions of the city's table
+Dialogue: 0,0:21:55.53,0:21:57.77,*Default,NTP,0000,0000,0000,,will be true you'll have to join with itself
+Dialogue: 0,0:21:57.93,0:22:00.47,*Default,NTP,0000,0000,0000,,in order to compute the latitude difference among
+Dialogue: 0,0:22:00.47,0:22:02.50,*Default,NTP,0000,0000,0000,,two different cities
+Dialogue: 0,0:22:03.30,0:22:07.00,*Default,NTP,0000,0000,0000,,cities as a joined with cities as b
+Dialogue: 0,0:22:08.50,0:22:11.70,*Default,NTP,0000,0000,0000,,so now let's say I'm in Minneapolis
+Dialogue: 0,0:22:11.73,0:22:16.57,*Default,NTP,0000,0000,0000,,and I think I want to get somewhere far away from here
+Dialogue: 0,0:22:16.90,0:22:19.73,*Default,NTP,0000,0000,0000,,I would say select the second
+Dialogue: 0,0:22:20.33,0:22:21.13,*Default,NTP,0000,0000,0000,,from
+Dialogue: 0,0:22:21.80,0:22:22.90,*Default,NTP,0000,0000,0000,,distances
+Dialogue: 0,0:22:23.60,0:22:24.40,*Default,NTP,0000,0000,0000,,where
+Dialogue: 0,0:22:25.93,0:22:28.80,*Default,NTP,0000,0000,0000,,1st is Minneapolis
+Dialogue: 0,0:22:32.53,0:22:37.10,*Default,NTP,0000,0000,0000,,and we want to order the results by the distance
+Dialogue: 0,0:22:37.53,0:22:40.00,*Default,NTP,0000,0000,0000,,so a negative distance will come first
+Dialogue: 0,0:22:40.07,0:22:43.17,*Default,NTP,0000,0000,0000,,and that means going south as far as possible
+Dialogue: 0,0:22:43.33,0:22:46.00,*Default,NTP,0000,0000,0000,,people from Minneapolis really like to go to Miami
+Dialogue: 0,0:22:46.07,0:22:47.33,*Default,NTP,0000,0000,0000,,and san diego
+Dialogue: 0,0:22:47.50,0:22:49.47,*Default,NTP,0000,0000,0000,,not so much the north pole
+Dialogue: 0,0:22:51.10,0:22:53.53,*Default,NTP,0000,0000,0000,,so here is an expression that does some sort of
+Dialogue: 0,0:22:54.33,0:22:56.70,*Default,NTP,0000,0000,0000,,manipulation of numerical values
+Dialogue: 0,0:22:56.70,0:22:59.70,*Default,NTP,0000,0000,0000,,and that's very typical in a sequel expression
+Dialogue: 0,0:23:03.40,0:23:07.00,*Default,NTP,0000,0000,0000,,there are also combinations involving string values
+Dialogue: 0,0:23:07.07,0:23:08.47,*Default,NTP,0000,0000,0000,,string expressions
+Dialogue: 0,0:23:09.10,0:23:12.17,*Default,NTP,0000,0000,0000,,so string values can be combined to form longer strings
+Dialogue: 0,0:23:12.17,0:23:14.20,*Default,NTP,0000,0000,0000,,through the concatenation operator
+Dialogue: 0,0:23:14.33,0:23:16.97,*Default,NTP,0000,0000,0000,,which looks like two vertical bars
+Dialogue: 0,0:23:17.27,0:23:19.37,*Default,NTP,0000,0000,0000,,so if I want to put together hello comma
+Dialogue: 0,0:23:19.40,0:23:20.77,*Default,NTP,0000,0000,0000,,and space world
+Dialogue: 0,0:23:20.80,0:23:22.10,*Default,NTP,0000,0000,0000,,to get hello world
+Dialogue: 0,0:23:22.17,0:23:23.73,*Default,NTP,0000,0000,0000,,I just write it like that
+Dialogue: 0,0:23:24.10,0:23:26.07,*Default,NTP,0000,0000,0000,,and this is a very common thing to do
+Dialogue: 0,0:23:26.20,0:23:28.07,*Default,NTP,0000,0000,0000,,so I've given it the green light
+Dialogue: 0,0:23:29.13,0:23:31.90,*Default,NTP,0000,0000,0000,,there's also ways to do basic string manipulation
+Dialogue: 0,0:23:31.97,0:23:33.67,*Default,NTP,0000,0000,0000,,that are built into sequel
+Dialogue: 0,0:23:33.93,0:23:35.40,*Default,NTP,0000,0000,0000,,they're different from python
+Dialogue: 0,0:23:35.53,0:23:36.70,*Default,NTP,0000,0000,0000,,and honestly
+Dialogue: 0,0:23:36.70,0:23:38.67,*Default,NTP,0000,0000,0000,,the language doesn't have the best support
+Dialogue: 0,0:23:38.67,0:23:39.93,*Default,NTP,0000,0000,0000,,for string manipulation
+Dialogue: 0,0:23:40.73,0:23:44.30,*Default,NTP,0000,0000,0000,,so let's say you have a table already called freeze
+Dialogue: 0,0:23:44.67,0:23:48.73,*Default,NTP,0000,0000,0000,,which has hello world in it as a column s
+Dialogue: 0,0:23:50.00,0:23:52.87,*Default,NTP,0000,0000,0000,,people do write expressions like these
+Dialogue: 0,0:23:53.37,0:23:55.93,*Default,NTP,0000,0000,0000,,the substring of ass that goes
+Dialogue: 0,0:23:56.10,0:23:59.20,*Default,NTP,0000,0000,0000,,from position four and has length two
+Dialogue: 0,0:24:00.53,0:24:03.97,*Default,NTP,0000,0000,0000,,contaminated with the substring of s
+Dialogue: 0,0:24:04.10,0:24:08.30,*Default,NTP,0000,0000,0000,,that starts at the place in s where you find the first
+Dialogue: 0,0:24:08.33,0:24:12.20,*Default,NTP,0000,0000,0000,,space plus one and has a length of one
+Dialogue: 0,0:24:12.90,0:24:15.20,*Default,NTP,0000,0000,0000,,selecting that from the phrase table
+Dialogue: 0,0:24:15.57,0:24:17.10,*Default,NTP,0000,0000,0000,,gives you one row back
+Dialogue: 0,0:24:17.37,0:24:21.77,*Default,NTP,0000,0000,0000,,which gets this lndo for the first half and the w
+Dialogue: 0,0:24:22.20,0:24:23.30,*Default,NTP,0000,0000,0000,,for the second half
+Dialogue: 0,0:24:24.13,0:24:25.33,*Default,NTP,0000,0000,0000,,if you want to learn more
+Dialogue: 0,0:24:25.33,0:24:28.07,*Default,NTP,0000,0000,0000,,about these string manipulation functions
+Dialogue: 0,0:24:28.07,0:24:30.97,*Default,NTP,0000,0000,0000,,of course I recommend that you do so on your own
+Dialogue: 0,0:24:30.97,0:24:33.27,*Default,NTP,0000,0000,0000,,but I won't go to over the details
+Dialogue: 0,0:24:33.37,0:24:35.37,*Default,NTP,0000,0000,0000,,because I don't think they should be used as
+Dialogue: 0,0:24:35.37,0:24:36.50,*Default,NTP,0000,0000,0000,,much as they are
+Dialogue: 0,0:24:37.93,0:24:41.93,*Default,NTP,0000,0000,0000,,strings can even be used to represent structured values
+Dialogue: 0,0:24:42.27,0:24:45.60,*Default,NTP,0000,0000,0000,,but doing so is rarely a good idea
+Dialogue: 0,0:24:46.73,0:24:48.07,*Default,NTP,0000,0000,0000,,so for example
+Dialogue: 0,0:24:48.50,0:24:49.57,*Default,NTP,0000,0000,0000,,you could think
+Dialogue: 0,0:24:49.73,0:24:53.57,*Default,NTP,0000,0000,0000,,each row is actually going to represent a linked list
+Dialogue: 0,0:24:53.60,0:24:55.40,*Default,NTP,0000,0000,0000,,in a table called lists
+Dialogue: 0,0:24:55.60,0:24:57.67,*Default,NTP,0000,0000,0000,,or I'll have one column for the car
+Dialogue: 0,0:24:57.67,0:24:59.67,*Default,NTP,0000,0000,0000,,or the first element in the linked list
+Dialogue: 0,0:25:00.17,0:25:02.47,*Default,NTP,0000,0000,0000,,and in this case is just a string one
+Dialogue: 0,0:25:02.87,0:25:05.10,*Default,NTP,0000,0000,0000,,and then the cooter column
+Dialogue: 0,0:25:05.13,0:25:05.87,*Default,NTP,0000,0000,0000,,will have
+Dialogue: 0,0:25:05.87,0:25:08.90,*Default,NTP,0000,0000,0000,,comma separated elements for the rest of the list
+Dialogue: 0,0:25:09.60,0:25:11.53,*Default,NTP,0000,0000,0000,,so in this way I'm using a string
+Dialogue: 0,0:25:11.60,0:25:14.10,*Default,NTP,0000,0000,0000,,but putting in some delimiting character
+Dialogue: 0,0:25:14.27,0:25:16.37,*Default,NTP,0000,0000,0000,,to try to remind myself
+Dialogue: 0,0:25:16.47,0:25:19.90,*Default,NTP,0000,0000,0000,,where one element ends and the next one begins
+Dialogue: 0,0:25:19.90,0:25:22.40,*Default,NTP,0000,0000,0000,,and that's what I mean by using a string to represent
+Dialogue: 0,0:25:22.40,0:25:23.77,*Default,NTP,0000,0000,0000,,a structured value
+Dialogue: 0,0:25:23.97,0:25:27.37,*Default,NTP,0000,0000,0000,,is supposed to represent a list with three things in it
+Dialogue: 0,0:25:28.20,0:25:29.93,*Default,NTP,0000,0000,0000,,and then people would do things like
+Dialogue: 0,0:25:30.00,0:25:33.07,*Default,NTP,0000,0000,0000,,oh let's get the cotter
+Dialogue: 0,0:25:33.20,0:25:34.00,*Default,NTP,0000,0000,0000,,by
+Dialogue: 0,0:25:34.47,0:25:35.73,*Default,NTP,0000,0000,0000,,looking in the kutter
+Dialogue: 0,0:25:36.00,0:25:37.90,*Default,NTP,0000,0000,0000,,finding the first comma
+Dialogue: 0,0:25:38.07,0:25:40.93,*Default,NTP,0000,0000,0000,,and then getting the first element there
+Dialogue: 0,0:25:41.00,0:25:43.87,*Default,NTP,0000,0000,0000,,and that would return me the two from this 2 3 4
+Dialogue: 0,0:25:44.53,0:25:45.97,*Default,NTP,0000,0000,0000,,so it's certainly possible
+Dialogue: 0,0:25:46.10,0:25:48.53,*Default,NTP,0000,0000,0000,,to do structured manipulation like this
+Dialogue: 0,0:25:48.73,0:25:51.00,*Default,NTP,0000,0000,0000,,but typically it's not a good idea
+Dialogue: 0,0:25:51.30,0:25:53.50,*Default,NTP,0000,0000,0000,,there are certainly better ways
+Dialogue: 0,0:25:53.53,0:25:55.70,*Default,NTP,0000,0000,0000,,to manipulate data structures
+Dialogue: 0,0:25:55.73,0:25:58.80,*Default,NTP,0000,0000,0000,,than by trying to put them all inside of a string
+Dialogue: 0,0:25:59.17,0:26:01.70,*Default,NTP,0000,0000,0000,,in a table in a database
+Dialogue: 0,0:26:03.40,0:26:04.30,*Default,NTP,0000,0000,0000,,but anyway
+Dialogue: 0,0:26:04.50,0:26:07.70,*Default,NTP,0000,0000,0000,,let's take a look at combining strings together
+Dialogue: 0,0:26:12.60,0:26:15.17,*Default,NTP,0000,0000,0000,,I could create a table called nouns
+Dialogue: 0,0:26:16.93,0:26:19.13,*Default,NTP,0000,0000,0000,,which we'll have dog in it
+Dialogue: 0,0:26:19.27,0:26:20.47,*Default,NTP,0000,0000,0000,,dog is a noun
+Dialogue: 0,0:26:21.07,0:26:22.50,*Default,NTP,0000,0000,0000,,how about a cat
+Dialogue: 0,0:26:23.50,0:26:25.07,*Default,NTP,0000,0000,0000,,and why not a bird
+Dialogue: 0,0:26:25.97,0:26:28.17,*Default,NTP,0000,0000,0000,,okay now that we have some nouns
+Dialogue: 0,0:26:28.90,0:26:31.60,*Default,NTP,0000,0000,0000,,we can select a whole sentence
+Dialogue: 0,0:26:32.07,0:26:34.70,*Default,NTP,0000,0000,0000,,by getting the subject
+Dialogue: 0,0:26:35.93,0:26:39.73,*Default,NTP,0000,0000,0000,,phrase concatenated with chaste
+Dialogue: 0,0:26:40.00,0:26:43.60,*Default,NTP,0000,0000,0000,,and concatenated with the object phrase
+Dialogue: 0,0:26:44.87,0:26:47.27,*Default,NTP,0000,0000,0000,,where are we getting these subjects and objects
+Dialogue: 0,0:26:47.30,0:26:49.13,*Default,NTP,0000,0000,0000,,well those are just nouns
+Dialogue: 0,0:26:53.20,0:26:55.40,*Default,NTP,0000,0000,0000,,we'll need to join two nouns together
+Dialogue: 0,0:26:56.27,0:26:58.80,*Default,NTP,0000,0000,0000,,in order to build up different sentences
+Dialogue: 0,0:26:58.80,0:27:00.70,*Default,NTP,0000,0000,0000,,you don't want dogs just chasing dogs
+Dialogue: 0,0:27:00.70,0:27:02.70,*Default,NTP,0000,0000,0000,,we'd like dogs to be chasing cats
+Dialogue: 0,0:27:04.53,0:27:05.37,*Default,NTP,0000,0000,0000,,maybe we'll
+Dialogue: 0,0:27:05.60,0:27:09.37,*Default,NTP,0000,0000,0000,,put in a requirement that the subject phrase
+Dialogue: 0,0:27:10.57,0:27:13.80,*Default,NTP,0000,0000,0000,,is different from the object phrase
+Dialogue: 0,0:27:15.57,0:27:16.73,*Default,NTP,0000,0000,0000,,let's see what we get
+Dialogue: 0,0:27:19.30,0:27:20.40,*Default,NTP,0000,0000,0000,,the bird chase the cat
+Dialogue: 0,0:27:20.40,0:27:21.53,*Default,NTP,0000,0000,0000,,the bird chase the dog
+Dialogue: 0,0:27:21.53,0:27:24.47,*Default,NTP,0000,0000,0000,,the cat chase the bird the cat chase the dog
+Dialogue: 0,0:27:24.47,0:27:27.13,*Default,NTP,0000,0000,0000,,the dog chase the bird and the dog chase the cat
+Dialogue: 0,0:27:28.07,0:27:31.13,*Default,NTP,0000,0000,0000,,but can we build more sentences well sure
+Dialogue: 0,0:27:32.70,0:27:34.80,*Default,NTP,0000,0000,0000,,we can create a table called annes
+Dialogue: 0,0:27:35.47,0:27:36.53,*Default,NTP,0000,0000,0000,,which is just
+Dialogue: 0,0:27:38.97,0:27:42.73,*Default,NTP,0000,0000,0000,,a dog and a cat
+Dialogue: 0,0:27:44.47,0:27:48.60,*Default,NTP,0000,0000,0000,,we'll get this by selecting from the nouns
+Dialogue: 0,0:27:49.33,0:27:52.13,*Default,NTP,0000,0000,0000,,as first and nouns a second
+Dialogue: 0,0:27:54.27,0:27:57.97,*Default,NTP,0000,0000,0000,,and I liked this idea of saying
+Dialogue: 0,0:27:58.10,0:28:00.60,*Default,NTP,0000,0000,0000,,where we don't want the first phrase to be the same
+Dialogue: 0,0:28:00.60,0:28:02.17,*Default,NTP,0000,0000,0000,,as the second phrase
+Dialogue: 0,0:28:04.33,0:28:07.13,*Default,NTP,0000,0000,0000,,now I can make this even more interesting
+Dialogue: 0,0:28:08.13,0:28:11.37,*Default,NTP,0000,0000,0000,,by selecting not from nouns but from the ends
+Dialogue: 0,0:28:12.93,0:28:15.30,*Default,NTP,0000,0000,0000,,we can give a name to this column
+Dialogue: 0,0:28:15.60,0:28:17.87,*Default,NTP,0000,0000,0000,,and then we can run it
+Dialogue: 0,0:28:17.97,0:28:20.27,*Default,NTP,0000,0000,0000,,to see that the dog of the bird chased the cat
+Dialogue: 0,0:28:20.27,0:28:21.13,*Default,NTP,0000,0000,0000,,and the dog
+Dialogue: 0,0:28:21.37,0:28:24.17,*Default,NTP,0000,0000,0000,,the dog and the bird chased the dog and the cat

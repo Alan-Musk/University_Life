@@ -1,0 +1,766 @@
+[Script Info]
+Title: Lecture 34. Database_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=81&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.67,0:00:03.93,*Default,NTP,0000,0000,0000,,61 election No.34 announcements
+Dialogue: 0,0:00:05.00,0:00:06.67,*Default,NTP,0000,0000,0000,,homework gate is due today
+Dialogue: 0,0:00:06.93,0:00:09.27,*Default,NTP,0000,0000,0000,,the scheme project is due next Tuesday
+Dialogue: 0,0:00:09.30,0:00:11.30,*Default,NTP,0000,0000,0000,,but tomorrow there's a checkpoint
+Dialogue: 0,0:00:11.80,0:00:13.07,*Default,NTP,0000,0000,0000,,and you get an early submission
+Dialogue: 0,0:00:13.07,0:00:14.37,*Default,NTP,0000,0000,0000,,bonus point for completing it
+Dialogue: 0,0:00:14.37,0:00:15.47,*Default,NTP,0000,0000,0000,,by Monday
+Dialogue: 0,0:00:16.10,0:00:18.20,*Default,NTP,0000,0000,0000,,keep at it I know it's a long project
+Dialogue: 0,0:00:18.20,0:00:20.50,*Default,NTP,0000,0000,0000,,but you'll get through it if you work on it every day
+Dialogue: 0,0:00:20.97,0:00:23.47,*Default,NTP,0000,0000,0000,,homework nine is not do next week
+Dialogue: 0,0:00:23.50,0:00:25.73,*Default,NTP,0000,0000,0000,,it will be posted to morrow
+Dialogue: 0,0:00:25.73,0:00:28.70,*Default,NTP,0000,0000,0000,,but won't be too until the Thursday after thanksgiving
+Dialogue: 0,0:00:28.97,0:00:30.60,*Default,NTP,0000,0000,0000,,so you could just forget about it
+Dialogue: 0,0:00:30.60,0:00:32.07,*Default,NTP,0000,0000,0000,,until thanksgiving is over
+Dialogue: 0,0:00:32.07,0:00:33.00,*Default,NTP,0000,0000,0000,,and you'll be fine
+Dialogue: 0,0:00:33.53,0:00:36.67,*Default,NTP,0000,0000,0000,,lab 13 which is scheduled for next week is optional
+Dialogue: 0,0:00:36.67,0:00:39.80,*Default,NTP,0000,0000,0000,,everybody will get credit whether you do the lab or not
+Dialogue: 0,0:00:40.20,0:00:41.27,*Default,NTP,0000,0000,0000,,but do the lab
+Dialogue: 0,0:00:41.47,0:00:44.10,*Default,NTP,0000,0000,0000,,because it's a good way to learn and prepare to do
+Dialogue: 0,0:00:44.10,0:00:44.97,*Default,NTP,0000,0000,0000,,homework nine
+Dialogue: 0,0:00:45.67,0:00:47.47,*Default,NTP,0000,0000,0000,,the completely optional scheme recurs of art
+Dialogue: 0,0:00:47.47,0:00:49.33,*Default,NTP,0000,0000,0000,,contest entries are due Monday
+Dialogue: 0,0:00:49.47,0:00:50.90,*Default,NTP,0000,0000,0000,,after thanksgiving
+Dialogue: 0,0:00:51.30,0:00:53.73,*Default,NTP,0000,0000,0000,,we'll have an exam prep section tomorrow
+Dialogue: 0,0:00:54.13,0:00:56.40,*Default,NTP,0000,0000,0000,,and lecture q amp a as usual
+Dialogue: 0,0:00:57.30,0:00:59.60,*Default,NTP,0000,0000,0000,,just glancing at the schedule ahead
+Dialogue: 0,0:00:59.90,0:01:02.60,*Default,NTP,0000,0000,0000,,all of the lectures from here on out are optional
+Dialogue: 0,0:01:03.07,0:01:05.57,*Default,NTP,0000,0000,0000,,until the last two where we do some review
+Dialogue: 0,0:01:06.17,0:01:06.93,*Default,NTP,0000,0000,0000,,there won't be any
+Dialogue: 0,0:01:06.93,0:01:08.87,*Default,NTP,0000,0000,0000,,office hours or discussion or anything
+Dialogue: 0,0:01:08.87,0:01:10.57,*Default,NTP,0000,0000,0000,,like that over thanksgiving
+Dialogue: 0,0:01:11.40,0:01:13.60,*Default,NTP,0000,0000,0000,,we will have a lab orientation
+Dialogue: 0,0:01:13.70,0:01:16.37,*Default,NTP,0000,0000,0000,,for those who want to complete the lab on Monday
+Dialogue: 0,0:01:16.73,0:01:18.00,*Default,NTP,0000,0000,0000,,and we will have
+Dialogue: 0,0:01:18.10,0:01:21.07,*Default,NTP,0000,0000,0000,,lab and discussion the week after thanksgiving
+Dialogue: 0,0:01:21.40,0:01:24.47,*Default,NTP,0000,0000,0000,,as well as homework nine do after thanksgiving
+Dialogue: 0,0:01:25.40,0:01:27.73,*Default,NTP,0000,0000,0000,,so I hope you have a great weekend and a great
+Dialogue: 0,0:01:27.73,0:01:28.87,*Default,NTP,0000,0000,0000,,thanksgiving break
+Dialogue: 0,0:01:29.20,0:01:31.40,*Default,NTP,0000,0000,0000,,should be the case that once you finish up
+Dialogue: 0,0:01:31.50,0:01:33.80,*Default,NTP,0000,0000,0000,,homework gate and the scheme project
+Dialogue: 0,0:01:33.93,0:01:35.57,*Default,NTP,0000,0000,0000,,you're ready to take that break
+Dialogue: 0,0:01:35.77,0:01:37.53,*Default,NTP,0000,0000,0000,,and the stuff that's do
+Dialogue: 0,0:01:37.53,0:01:39.53,*Default,NTP,0000,0000,0000,,on the final week of the semester
+Dialogue: 0,0:01:39.67,0:01:42.20,*Default,NTP,0000,0000,0000,,should just help you get ready for the upcoming final
+Dialogue: 0,0:01:42.20,0:01:43.53,*Default,NTP,0000,0000,0000,,on the 17th
+Dialogue: 0,0:01:44.33,0:01:46.53,*Default,NTP,0000,0000,0000,,today's lecture shows you how you can connect
+Dialogue: 0,0:01:46.87,0:01:50.00,*Default,NTP,0000,0000,0000,,sequel and python together into one program
+Dialogue: 0,0:01:50.17,0:01:52.57,*Default,NTP,0000,0000,0000,,and also talks about how to manipulate
+Dialogue: 0,0:01:52.77,0:01:55.60,*Default,NTP,0000,0000,0000,,a sequel table by changing its contents
+Dialogue: 0,0:01:55.60,0:01:58.33,*Default,NTP,0000,0000,0000,,mutation for sequel here we go
+Dialogue: 0,0:01:59.97,0:02:02.93,*Default,NTP,0000,0000,0000,,a table can be given a name with create table
+Dialogue: 0,0:02:03.17,0:02:06.20,*Default,NTP,0000,0000,0000,,and that name can be forgotten using drop table
+Dialogue: 0,0:02:07.07,0:02:09.60,*Default,NTP,0000,0000,0000,,we've already seen create table statements
+Dialogue: 0,0:02:09.93,0:02:11.20,*Default,NTP,0000,0000,0000,,but there's an alternative
+Dialogue: 0,0:02:11.20,0:02:13.17,*Default,NTP,0000,0000,0000,,version that we haven't looked at yet
+Dialogue: 0,0:02:14.30,0:02:17.50,*Default,NTP,0000,0000,0000,,here from this sequelite documentation
+Dialogue: 0,0:02:17.77,0:02:20.90,*Default,NTP,0000,0000,0000,,is the complete syntax for a create table expression
+Dialogue: 0,0:02:21.90,0:02:24.47,*Default,NTP,0000,0000,0000,,you can write create table or create temp table
+Dialogue: 0,0:02:24.47,0:02:26.17,*Default,NTP,0000,0000,0000,,or create temporary table
+Dialogue: 0,0:02:26.53,0:02:29.53,*Default,NTP,0000,0000,0000,,you can optionally include if not exists
+Dialogue: 0,0:02:29.57,0:02:32.27,*Default,NTP,0000,0000,0000,,after that you can write down schema names
+Dialogue: 0,0:02:32.27,0:02:35.87,*Default,NTP,0000,0000,0000,,table names column definitions table constraints etc
+Dialogue: 0,0:02:37.33,0:02:40.40,*Default,NTP,0000,0000,0000,,some of these are in fact compound expressions
+Dialogue: 0,0:02:40.40,0:02:42.37,*Default,NTP,0000,0000,0000,,for example a column def
+Dialogue: 0,0:02:42.70,0:02:44.67,*Default,NTP,0000,0000,0000,,means writing down a column name
+Dialogue: 0,0:02:44.77,0:02:47.67,*Default,NTP,0000,0000,0000,,a type name and a column constraint
+Dialogue: 0,0:02:47.93,0:02:49.77,*Default,NTP,0000,0000,0000,,you can have multiple column constraints
+Dialogue: 0,0:02:49.77,0:02:51.53,*Default,NTP,0000,0000,0000,,and the type name is optional
+Dialogue: 0,0:02:52.20,0:02:55.53,*Default,NTP,0000,0000,0000,,a column constraint is one of many forms
+Dialogue: 0,0:02:56.40,0:02:58.07,*Default,NTP,0000,0000,0000,,you could give the constraint a name
+Dialogue: 0,0:02:58.07,0:03:00.40,*Default,NTP,0000,0000,0000,,say it's a primary key not null unique
+Dialogue: 0,0:03:00.40,0:03:03.53,*Default,NTP,0000,0000,0000,,check default colate foreign key clauses
+Dialogue: 0,0:03:03.60,0:03:06.33,*Default,NTP,0000,0000,0000,,there's really a lot to a create table expression
+Dialogue: 0,0:03:06.60,0:03:08.53,*Default,NTP,0000,0000,0000,,but we're not going to focus on all of it
+Dialogue: 0,0:03:08.53,0:03:10.20,*Default,NTP,0000,0000,0000,,that's for a database's course
+Dialogue: 0,0:03:10.60,0:03:11.33,*Default,NTP,0000,0000,0000,,instead
+Dialogue: 0,0:03:11.33,0:03:13.90,*Default,NTP,0000,0000,0000,,we'll just focus on the version we've already seen
+Dialogue: 0,0:03:14.20,0:03:16.17,*Default,NTP,0000,0000,0000,,where you say create table
+Dialogue: 0,0:03:16.17,0:03:18.67,*Default,NTP,0000,0000,0000,,give it a name and as select statement
+Dialogue: 0,0:03:18.87,0:03:22.10,*Default,NTP,0000,0000,0000,,or a version where you create an empty table
+Dialogue: 0,0:03:22.87,0:03:24.27,*Default,NTP,0000,0000,0000,,so we're going to ignore all of
+Dialogue: 0,0:03:24.27,0:03:26.57,*Default,NTP,0000,0000,0000,,these parts of the syntax and instead
+Dialogue: 0,0:03:26.57,0:03:28.50,*Default,NTP,0000,0000,0000,,just focus on what's left over
+Dialogue: 0,0:03:28.50,0:03:31.40,*Default,NTP,0000,0000,0000,,in black you can ride create table
+Dialogue: 0,0:03:32.30,0:03:34.20,*Default,NTP,0000,0000,0000,,if you want to make sure you're creating a table
+Dialogue: 0,0:03:34.20,0:03:35.73,*Default,NTP,0000,0000,0000,,that doesn't exist already
+Dialogue: 0,0:03:35.93,0:03:37.97,*Default,NTP,0000,0000,0000,,create table if not exists
+Dialogue: 0,0:03:38.07,0:03:38.90,*Default,NTP,0000,0000,0000,,creates a table
+Dialogue: 0,0:03:38.90,0:03:41.73,*Default,NTP,0000,0000,0000,,only if that name doesn't exist already
+Dialogue: 0,0:03:42.37,0:03:44.33,*Default,NTP,0000,0000,0000,,you give the table a name and then
+Dialogue: 0,0:03:44.50,0:03:47.07,*Default,NTP,0000,0000,0000,,you can either write as followed by a select statement
+Dialogue: 0,0:03:47.07,0:03:48.20,*Default,NTP,0000,0000,0000,,we've seen that before
+Dialogue: 0,0:03:48.57,0:03:52.30,*Default,NTP,0000,0000,0000,,or you can specify the columns directly
+Dialogue: 0,0:03:52.47,0:03:55.00,*Default,NTP,0000,0000,0000,,by enclosing in parentheses
+Dialogue: 0,0:03:55.07,0:03:57.67,*Default,NTP,0000,0000,0000,,a list of column definitions
+Dialogue: 0,0:03:58.00,0:04:01.20,*Default,NTP,0000,0000,0000,,a column definition involves naming the column
+Dialogue: 0,0:04:01.47,0:04:05.33,*Default,NTP,0000,0000,0000,,and applying zero or more column constraints
+Dialogue: 0,0:04:05.40,0:04:07.60,*Default,NTP,0000,0000,0000,,the only column constraints will worry
+Dialogue: 0,0:04:07.60,0:04:08.90,*Default,NTP,0000,0000,0000,,about for this course
+Dialogue: 0,0:04:09.10,0:04:12.27,*Default,NTP,0000,0000,0000,,are that you can say the values are unique
+Dialogue: 0,0:04:12.67,0:04:13.30,*Default,NTP,0000,0000,0000,,and then there an
+Dialogue: 0,0:04:13.30,0:04:16.53,*Default,NTP,0000,0000,0000,,error will be raised if you try to put the same value
+Dialogue: 0,0:04:16.53,0:04:17.87,*Default,NTP,0000,0000,0000,,twice in the column
+Dialogue: 0,0:04:18.27,0:04:21.50,*Default,NTP,0000,0000,0000,,and you can give a default value to a column
+Dialogue: 0,0:04:21.60,0:04:22.10,*Default,NTP,0000,0000,0000,,and this
+Dialogue: 0,0:04:22.10,0:04:25.90,*Default,NTP,0000,0000,0000,,default value is used when we insert new values
+Dialogue: 0,0:04:25.90,0:04:26.77,*Default,NTP,0000,0000,0000,,into a column
+Dialogue: 0,0:04:27.73,0:04:29.60,*Default,NTP,0000,0000,0000,,so here are some examples
+Dialogue: 0,0:04:29.70,0:04:32.73,*Default,NTP,0000,0000,0000,,you could create a table of numbers with a column in
+Dialogue: 0,0:04:32.90,0:04:35.17,*Default,NTP,0000,0000,0000,,and a note about each number in
+Dialogue: 0,0:04:36.00,0:04:38.33,*Default,NTP,0000,0000,0000,,I could alternatively create a table of
+Dialogue: 0,0:04:38.33,0:04:39.80,*Default,NTP,0000,0000,0000,,numbers where I specify
+Dialogue: 0,0:04:39.80,0:04:41.07,*Default,NTP,0000,0000,0000,,that n is unique
+Dialogue: 0,0:04:41.17,0:04:45.07,*Default,NTP,0000,0000,0000,,so I can only have one note per unique number n
+Dialogue: 0,0:04:45.70,0:04:48.00,*Default,NTP,0000,0000,0000,,if I want to make sure there's always a note
+Dialogue: 0,0:04:48.00,0:04:50.27,*Default,NTP,0000,0000,0000,,I might set a default value such as
+Dialogue: 0,0:04:50.37,0:04:51.37,*Default,NTP,0000,0000,0000,,no comment
+Dialogue: 0,0:04:51.90,0:04:54.93,*Default,NTP,0000,0000,0000,,now you might wonder what's the use of an empty table
+Dialogue: 0,0:04:55.00,0:04:58.00,*Default,NTP,0000,0000,0000,,well soon we'll see that you can add new rows
+Dialogue: 0,0:04:58.07,0:04:59.67,*Default,NTP,0000,0000,0000,,to an existing table
+Dialogue: 0,0:04:59.70,0:05:01.80,*Default,NTP,0000,0000,0000,,and so it won't be empty forever
+Dialogue: 0,0:05:02.97,0:05:04.57,*Default,NTP,0000,0000,0000,,drop table is simpler
+Dialogue: 0,0:05:04.70,0:05:07.33,*Default,NTP,0000,0000,0000,,that just removes the name that exists already
+Dialogue: 0,0:05:07.57,0:05:08.57,*Default,NTP,0000,0000,0000,,from a table
+Dialogue: 0,0:05:08.90,0:05:11.80,*Default,NTP,0000,0000,0000,,so you write drop table and then the table name
+Dialogue: 0,0:05:12.07,0:05:14.73,*Default,NTP,0000,0000,0000,,we won't worry about this detail of the syntax
+Dialogue: 0,0:05:15.07,0:05:17.80,*Default,NTP,0000,0000,0000,,and if you want to only run this if the table
+Dialogue: 0,0:05:17.80,0:05:18.97,*Default,NTP,0000,0000,0000,,already exists
+Dialogue: 0,0:05:18.97,0:05:21.33,*Default,NTP,0000,0000,0000,,then you can write drop table if exists
+Dialogue: 0,0:05:21.77,0:05:24.60,*Default,NTP,0000,0000,0000,,now if without this if exists claws
+Dialogue: 0,0:05:24.60,0:05:27.13,*Default,NTP,0000,0000,0000,,if you run drop table on a name that doesn't exist
+Dialogue: 0,0:05:27.13,0:05:28.37,*Default,NTP,0000,0000,0000,,you'll reach an error
+Dialogue: 0,0:05:29.30,0:05:30.53,*Default,NTP,0000,0000,0000,,creating an empty table
+Dialogue: 0,0:05:30.53,0:05:33.13,*Default,NTP,0000,0000,0000,,is only useful if we're able to modify it
+Dialogue: 0,0:05:33.53,0:05:37.17,*Default,NTP,0000,0000,0000,,and in fact any table can be modified by in surging
+Dialogue: 0,0:05:37.17,0:05:40.13,*Default,NTP,0000,0000,0000,,deleting or changing the rows
+Dialogue: 0,0:05:41.13,0:05:43.47,*Default,NTP,0000,0000,0000,,here from the sequel light documentation
+Dialogue: 0,0:05:43.57,0:05:44.57,*Default,NTP,0000,0000,0000,,you see that there are
+Dialogue: 0,0:05:44.57,0:05:46.87,*Default,NTP,0000,0000,0000,,many different variants of how you might
+Dialogue: 0,0:05:46.87,0:05:49.07,*Default,NTP,0000,0000,0000,,insert rose into a table
+Dialogue: 0,0:05:49.17,0:05:51.17,*Default,NTP,0000,0000,0000,,we're only going to focus on
+Dialogue: 0,0:05:51.40,0:05:52.57,*Default,NTP,0000,0000,0000,,certain paths
+Dialogue: 0,0:05:52.57,0:05:55.73,*Default,NTP,0000,0000,0000,,such as writing insert into the table name
+Dialogue: 0,0:05:55.97,0:05:57.73,*Default,NTP,0000,0000,0000,,specifying the column names
+Dialogue: 0,0:05:57.73,0:06:00.60,*Default,NTP,0000,0000,0000,,or you can skip specifying the column names
+Dialogue: 0,0:06:00.87,0:06:01.53,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:06:01.53,0:06:04.17,*Default,NTP,0000,0000,0000,,you either write down a select statement that adds
+Dialogue: 0,0:06:04.17,0:06:07.07,*Default,NTP,0000,0000,0000,,all of the rows in that select statement to the table
+Dialogue: 0,0:06:07.20,0:06:10.07,*Default,NTP,0000,0000,0000,,or you specify values directly
+Dialogue: 0,0:06:10.33,0:06:14.70,*Default,NTP,0000,0000,0000,,by including those values in comma separated lists
+Dialogue: 0,0:06:16.37,0:06:19.70,*Default,NTP,0000,0000,0000,,each set of parentheses will create one new row
+Dialogue: 0,0:06:20.07,0:06:22.60,*Default,NTP,0000,0000,0000,,and what you separate by the commas
+Dialogue: 0,0:06:22.60,0:06:25.73,*Default,NTP,0000,0000,0000,,are the values for the columns in that row
+Dialogue: 0,0:06:26.70,0:06:29.47,*Default,NTP,0000,0000,0000,,for a table that has two columns
+Dialogue: 0,0:06:29.93,0:06:32.97,*Default,NTP,0000,0000,0000,,if you want to insert into just one of the columns
+Dialogue: 0,0:06:32.97,0:06:35.07,*Default,NTP,0000,0000,0000,,then you write insert into t
+Dialogue: 0,0:06:35.17,0:06:37.87,*Default,NTP,0000,0000,0000,,you say which column you want to insert into
+Dialogue: 0,0:06:38.17,0:06:39.93,*Default,NTP,0000,0000,0000,,then the keyword values
+Dialogue: 0,0:06:39.93,0:06:41.10,*Default,NTP,0000,0000,0000,,and then in parentheses
+Dialogue: 0,0:06:41.10,0:06:43.80,*Default,NTP,0000,0000,0000,,you'd put only the one value for that one column
+Dialogue: 0,0:06:44.30,0:06:46.27,*Default,NTP,0000,0000,0000,,a whole row will be inserted
+Dialogue: 0,0:06:46.40,0:06:49.87,*Default,NTP,0000,0000,0000,,and default values will be used for the other column
+Dialogue: 0,0:06:51.07,0:06:53.20,*Default,NTP,0000,0000,0000,,if you want to insert into both columns
+Dialogue: 0,0:06:53.20,0:06:55.27,*Default,NTP,0000,0000,0000,,then you can say insert into t
+Dialogue: 0,0:06:55.57,0:06:57.47,*Default,NTP,0000,0000,0000,,you don't specify which columns
+Dialogue: 0,0:06:57.47,0:06:58.97,*Default,NTP,0000,0000,0000,,so that means all of them
+Dialogue: 0,0:06:59.13,0:07:01.50,*Default,NTP,0000,0000,0000,,and then you give the values that you're inserting
+Dialogue: 0,0:07:01.53,0:07:03.33,*Default,NTP,0000,0000,0000,,into each of the columns
+Dialogue: 0,0:07:04.40,0:07:05.77,*Default,NTP,0000,0000,0000,,both of these insert
+Dialogue: 0,0:07:05.80,0:07:08.30,*Default,NTP,0000,0000,0000,,into statements would insert one row
+Dialogue: 0,0:07:08.47,0:07:10.13,*Default,NTP,0000,0000,0000,,if you want to insert more rows
+Dialogue: 0,0:07:10.13,0:07:12.80,*Default,NTP,0000,0000,0000,,then you just follow these parentheses by comma
+Dialogue: 0,0:07:12.87,0:07:15.77,*Default,NTP,0000,0000,0000,,and more parenthetical row descriptions
+Dialogue: 0,0:07:16.97,0:07:18.97,*Default,NTP,0000,0000,0000,,let's take a look at a demonstration
+Dialogue: 0,0:07:19.73,0:07:21.47,*Default,NTP,0000,0000,0000,,I'll start up sequel light
+Dialogue: 0,0:07:21.93,0:07:23.30,*Default,NTP,0000,0000,0000,,and create a table
+Dialogue: 0,0:07:23.57,0:07:25.47,*Default,NTP,0000,0000,0000,,that keeps track of positive integers
+Dialogue: 0,0:07:25.47,0:07:27.70,*Default,NTP,0000,0000,0000,,and whether or not they are prime
+Dialogue: 0,0:07:28.37,0:07:29.90,*Default,NTP,0000,0000,0000,,let's call it primes
+Dialogue: 0,0:07:30.27,0:07:33.73,*Default,NTP,0000,0000,0000,,and now I'll specify that there are two columns
+Dialogue: 0,0:07:33.80,0:07:36.40,*Default,NTP,0000,0000,0000,,n and whether or not it's prime
+Dialogue: 0,0:07:37.20,0:07:40.07,*Default,NTP,0000,0000,0000,,now I didn't apply any column constraints there
+Dialogue: 0,0:07:40.17,0:07:41.40,*Default,NTP,0000,0000,0000,,but I could have
+Dialogue: 0,0:07:41.57,0:07:43.20,*Default,NTP,0000,0000,0000,,one way to change what I've done
+Dialogue: 0,0:07:43.20,0:07:45.73,*Default,NTP,0000,0000,0000,,is to just drop the table and start over
+Dialogue: 0,0:07:47.40,0:07:49.17,*Default,NTP,0000,0000,0000,,now that table is gone
+Dialogue: 0,0:07:49.17,0:07:52.17,*Default,NTP,0000,0000,0000,,I cannot select star from primes
+Dialogue: 0,0:07:52.20,0:07:54.17,*Default,NTP,0000,0000,0000,,because primes doesn't exist
+Dialogue: 0,0:07:54.50,0:07:57.37,*Default,NTP,0000,0000,0000,,but if I create it again then it will exist
+Dialogue: 0,0:07:57.67,0:08:00.13,*Default,NTP,0000,0000,0000,,so let's make sure that each of these is unique
+Dialogue: 0,0:08:01.17,0:08:04.00,*Default,NTP,0000,0000,0000,,and that prime has a default value
+Dialogue: 0,0:08:04.37,0:08:07.20,*Default,NTP,0000,0000,0000,,now there are no boolean values in sequelite
+Dialogue: 0,0:08:07.40,0:08:09.27,*Default,NTP,0000,0000,0000,,so you can't have true and false
+Dialogue: 0,0:08:09.27,0:08:11.33,*Default,NTP,0000,0000,0000,,but it's conventional to use one for true
+Dialogue: 0,0:08:11.33,0:08:12.73,*Default,NTP,0000,0000,0000,,and zero for false
+Dialogue: 0,0:08:13.33,0:08:14.87,*Default,NTP,0000,0000,0000,,and let's assume things are prime
+Dialogue: 0,0:08:14.87,0:08:16.07,*Default,NTP,0000,0000,0000,,and let's prove it otherwise
+Dialogue: 0,0:08:16.37,0:08:18.90,*Default,NTP,0000,0000,0000,,so by default we'll have prime b one
+Dialogue: 0,0:08:18.90,0:08:21.67,*Default,NTP,0000,0000,0000,,meaning yes I think this number is prime
+Dialogue: 0,0:08:22.70,0:08:24.57,*Default,NTP,0000,0000,0000,,now I can select star from primes
+Dialogue: 0,0:08:24.57,0:08:26.00,*Default,NTP,0000,0000,0000,,I see no contents
+Dialogue: 0,0:08:26.00,0:08:28.90,*Default,NTP,0000,0000,0000,,but I don't see an error because the table does exist
+Dialogue: 0,0:08:29.27,0:08:32.13,*Default,NTP,0000,0000,0000,,now I can insert in two primes
+Dialogue: 0,0:08:32.60,0:08:34.20,*Default,NTP,0000,0000,0000,,the following values
+Dialogue: 0,0:08:34.60,0:08:37.90,*Default,NTP,0000,0000,0000,,two is prime and three is prime
+Dialogue: 0,0:08:39.13,0:08:40.90,*Default,NTP,0000,0000,0000,,and now if I look at what's in primes
+Dialogue: 0,0:08:40.90,0:08:42.33,*Default,NTP,0000,0000,0000,,I see two and three
+Dialogue: 0,0:08:42.73,0:08:44.10,*Default,NTP,0000,0000,0000,,both of them are prime
+Dialogue: 0,0:08:44.10,0:08:46.73,*Default,NTP,0000,0000,0000,,so that's why we have ones in the prime column
+Dialogue: 0,0:08:48.33,0:08:50.33,*Default,NTP,0000,0000,0000,,now prime is default one
+Dialogue: 0,0:08:50.80,0:08:52.77,*Default,NTP,0000,0000,0000,,that means if I insert
+Dialogue: 0,0:08:53.07,0:08:56.37,*Default,NTP,0000,0000,0000,,into just the prime's end column
+Dialogue: 0,0:08:56.37,0:08:59.27,*Default,NTP,0000,0000,0000,,then I'll get the default value for the other column
+Dialogue: 0,0:09:00.97,0:09:03.53,*Default,NTP,0000,0000,0000,,so if I insert the values four
+Dialogue: 0,0:09:03.77,0:09:06.80,*Default,NTP,0000,0000,0000,,five six and seven
+Dialogue: 0,0:09:09.67,0:09:11.00,*Default,NTP,0000,0000,0000,,now I have two three four five
+Dialogue: 0,0:09:11.00,0:09:12.67,*Default,NTP,0000,0000,0000,,six and seven in my table
+Dialogue: 0,0:09:12.90,0:09:14.33,*Default,NTP,0000,0000,0000,,this claims are all prime
+Dialogue: 0,0:09:14.37,0:09:15.60,*Default,NTP,0000,0000,0000,,that's not quite true
+Dialogue: 0,0:09:15.80,0:09:17.70,*Default,NTP,0000,0000,0000,,four and six are not
+Dialogue: 0,0:09:17.70,0:09:19.70,*Default,NTP,0000,0000,0000,,we're gonna clean that up later
+Dialogue: 0,0:09:20.37,0:09:22.50,*Default,NTP,0000,0000,0000,,what's a quick way to get even more integers
+Dialogue: 0,0:09:22.53,0:09:23.50,*Default,NTP,0000,0000,0000,,into my table
+Dialogue: 0,0:09:23.87,0:09:27.67,*Default,NTP,0000,0000,0000,,well I could insert into primes in
+Dialogue: 0,0:09:28.10,0:09:32.57,*Default,NTP,0000,0000,0000,,the result of selecting all the values in primes
+Dialogue: 0,0:09:33.53,0:09:35.30,*Default,NTP,0000,0000,0000,,so let's put m plus six
+Dialogue: 0,0:09:35.80,0:09:37.77,*Default,NTP,0000,0000,0000,,from primes into my table
+Dialogue: 0,0:09:37.93,0:09:40.30,*Default,NTP,0000,0000,0000,,and now I've got two through five six seven eight
+Dialogue: 0,0:09:40.30,0:09:43.20,*Default,NTP,0000,0000,0000,,nine ten eleven twelve and thirteen
+Dialogue: 0,0:09:43.67,0:09:44.93,*Default,NTP,0000,0000,0000,,now that primes is different
+Dialogue: 0,0:09:44.93,0:09:47.57,*Default,NTP,0000,0000,0000,,if I insert again I'll have an even different effect
+Dialogue: 0,0:09:47.97,0:09:49.37,*Default,NTP,0000,0000,0000,,so here's what we get when we
+Dialogue: 0,0:09:49.57,0:09:51.93,*Default,NTP,0000,0000,0000,,add 12 to each result that's in there now
+Dialogue: 0,0:09:51.93,0:09:54.13,*Default,NTP,0000,0000,0000,,and add all those rose as well
+Dialogue: 0,0:09:55.77,0:09:56.70,*Default,NTP,0000,0000,0000,,it's also possible
+Dialogue: 0,0:09:56.70,0:09:59.93,*Default,NTP,0000,0000,0000,,to update the contents of existing rows
+Dialogue: 0,0:10:00.40,0:10:03.07,*Default,NTP,0000,0000,0000,,you write update a table name
+Dialogue: 0,0:10:03.47,0:10:04.27,*Default,NTP,0000,0000,0000,,set
+Dialogue: 0,0:10:04.87,0:10:07.50,*Default,NTP,0000,0000,0000,,which column names are going to change
+Dialogue: 0,0:10:07.73,0:10:09.50,*Default,NTP,0000,0000,0000,,followed by an equal sign
+Dialogue: 0,0:10:09.67,0:10:12.60,*Default,NTP,0000,0000,0000,,and the expression that computes the new value
+Dialogue: 0,0:10:12.97,0:10:15.53,*Default,NTP,0000,0000,0000,,for what you're going to put in that column
+Dialogue: 0,0:10:16.47,0:10:19.47,*Default,NTP,0000,0000,0000,,now you may not want to update all rows in a table
+Dialogue: 0,0:10:19.47,0:10:20.87,*Default,NTP,0000,0000,0000,,but only a subset
+Dialogue: 0,0:10:20.97,0:10:24.13,*Default,NTP,0000,0000,0000,,and so you can include a wear claws in order to say
+Dialogue: 0,0:10:24.33,0:10:26.17,*Default,NTP,0000,0000,0000,,which rows you want to change
+Dialogue: 0,0:10:26.93,0:10:30.53,*Default,NTP,0000,0000,0000,,let's use update to fix the prime column
+Dialogue: 0,0:10:30.53,0:10:32.50,*Default,NTP,0000,0000,0000,,in the table we've already constructed
+Dialogue: 0,0:10:33.37,0:10:34.27,*Default,NTP,0000,0000,0000,,so far
+Dialogue: 0,0:10:34.90,0:10:36.67,*Default,NTP,0000,0000,0000,,we have a prime's table
+Dialogue: 0,0:10:37.00,0:10:39.37,*Default,NTP,0000,0000,0000,,with an end column and a prime column
+Dialogue: 0,0:10:39.80,0:10:41.80,*Default,NTP,0000,0000,0000,,we'd like these to be zero
+Dialogue: 0,0:10:42.10,0:10:44.93,*Default,NTP,0000,0000,0000,,for all composite numbers such as four and six
+Dialogue: 0,0:10:45.70,0:10:47.27,*Default,NTP,0000,0000,0000,,aside from two itself
+Dialogue: 0,0:10:47.27,0:10:49.73,*Default,NTP,0000,0000,0000,,all the multiples of two are not prime
+Dialogue: 0,0:10:50.20,0:10:51.30,*Default,NTP,0000,0000,0000,,so I could update
+Dialogue: 0,0:10:51.40,0:10:53.17,*Default,NTP,0000,0000,0000,,we're updating the prime's table
+Dialogue: 0,0:10:53.37,0:10:58.30,*Default,NTP,0000,0000,0000,,we're setting prime that's a column name 2 0
+Dialogue: 0,0:10:58.40,0:11:01.40,*Default,NTP,0000,0000,0000,,that's a value to place in the prime column
+Dialogue: 0,0:11:01.73,0:11:02.87,*Default,NTP,0000,0000,0000,,now I need to say
+Dialogue: 0,0:11:02.87,0:11:05.13,*Default,NTP,0000,0000,0000,,which rows I want to make this change for
+Dialogue: 0,0:11:05.87,0:11:07.33,*Default,NTP,0000,0000,0000,,I want to make it for
+Dialogue: 0,0:11:07.53,0:11:10.87,*Default,NTP,0000,0000,0000,,all the rows for n greater than two
+Dialogue: 0,0:11:11.10,0:11:13.57,*Default,NTP,0000,0000,0000,,where two evenly divides in
+Dialogue: 0,0:11:14.57,0:11:16.90,*Default,NTP,0000,0000,0000,,now if I run the same select statement
+Dialogue: 0,0:11:16.97,0:11:20.10,*Default,NTP,0000,0000,0000,,I see that the multiples of two aren't prime anymore
+Dialogue: 0,0:11:21.27,0:11:24.57,*Default,NTP,0000,0000,0000,,if I apply the same logic for multiples of three
+Dialogue: 0,0:11:24.87,0:11:26.73,*Default,NTP,0000,0000,0000,,and multiples of five
+Dialogue: 0,0:11:28.57,0:11:31.00,*Default,NTP,0000,0000,0000,,then I have correctly marked four
+Dialogue: 0,0:11:31.40,0:11:34.17,*Default,NTP,0000,0000,0000,,the values between two and twenty five
+Dialogue: 0,0:11:34.27,0:11:36.47,*Default,NTP,0000,0000,0000,,which ones are prime and which ones are not
+Dialogue: 0,0:11:37.67,0:11:40.00,*Default,NTP,0000,0000,0000,,so sometimes it's easier to build a table
+Dialogue: 0,0:11:40.17,0:11:41.77,*Default,NTP,0000,0000,0000,,not just all in one go
+Dialogue: 0,0:11:41.77,0:11:44.00,*Default,NTP,0000,0000,0000,,but by manipulating the values
+Dialogue: 0,0:11:44.00,0:11:45.93,*Default,NTP,0000,0000,0000,,after constructing it initially
+Dialogue: 0,0:11:46.07,0:11:47.50,*Default,NTP,0000,0000,0000,,and that's what we've done here
+Dialogue: 0,0:11:47.50,0:11:48.70,*Default,NTP,0000,0000,0000,,in order to list out
+Dialogue: 0,0:11:48.77,0:11:51.07,*Default,NTP,0000,0000,0000,,some numbers and whether they're not their prime
+Dialogue: 0,0:11:51.77,0:11:54.20,*Default,NTP,0000,0000,0000,,finally it's possible to delete rows
+Dialogue: 0,0:11:54.57,0:11:57.67,*Default,NTP,0000,0000,0000,,you say delete from and then what table to relate from
+Dialogue: 0,0:11:57.90,0:11:59.90,*Default,NTP,0000,0000,0000,,you don't have to delete all rows
+Dialogue: 0,0:11:59.90,0:12:01.70,*Default,NTP,0000,0000,0000,,instead you can provide a wear
+Dialogue: 0,0:12:01.70,0:12:05.13,*Default,NTP,0000,0000,0000,,expression in order to delete just some of the rows
+Dialogue: 0,0:12:05.47,0:12:08.07,*Default,NTP,0000,0000,0000,,but without a wear expression you will delete
+Dialogue: 0,0:12:08.07,0:12:09.90,*Default,NTP,0000,0000,0000,,all of the rows in the table
+Dialogue: 0,0:12:10.00,0:12:11.93,*Default,NTP,0000,0000,0000,,the table will still exist
+Dialogue: 0,0:12:12.30,0:12:14.67,*Default,NTP,0000,0000,0000,,so this is not equivalent to drop table
+Dialogue: 0,0:12:14.97,0:12:17.47,*Default,NTP,0000,0000,0000,,but that table will have no rows
+Dialogue: 0,0:12:17.47,0:12:20.33,*Default,NTP,0000,0000,0000,,only empty columns after you delete from it
+Dialogue: 0,0:12:20.80,0:12:24.10,*Default,NTP,0000,0000,0000,,so for example I could delete from primes
+Dialogue: 0,0:12:24.40,0:12:26.93,*Default,NTP,0000,0000,0000,,where prime equals zero
+Dialogue: 0,0:12:27.60,0:12:29.87,*Default,NTP,0000,0000,0000,,and then if I select star from primes
+Dialogue: 0,0:12:29.87,0:12:32.20,*Default,NTP,0000,0000,0000,,I see only the prime numbers remaining
+Dialogue: 0,0:12:34.00,0:12:36.57,*Default,NTP,0000,0000,0000,,python and sql can be used together
+Dialogue: 0,0:12:36.57,0:12:37.70,*Default,NTP,0000,0000,0000,,in particular
+Dialogue: 0,0:12:37.90,0:12:39.40,*Default,NTP,0000,0000,0000,,a python program
+Dialogue: 0,0:12:39.57,0:12:43.53,*Default,NTP,0000,0000,0000,,can construct and then execute sql statements
+Dialogue: 0,0:12:44.07,0:12:45.17,*Default,NTP,0000,0000,0000,,let's take a look
+Dialogue: 0,0:12:46.30,0:12:47.77,*Default,NTP,0000,0000,0000,,here's a python program
+Dialogue: 0,0:12:48.30,0:12:51.33,*Default,NTP,0000,0000,0000,,there's a built in module called sql light three
+Dialogue: 0,0:12:52.33,0:12:56.00,*Default,NTP,0000,0000,0000,,sql light three has a class called connection
+Dialogue: 0,0:12:56.67,0:12:58.93,*Default,NTP,0000,0000,0000,,to construct a connection
+Dialogue: 0,0:12:59.00,0:13:03.33,*Default,NTP,0000,0000,0000,,I pass in the name of a database file
+Dialogue: 0,0:13:03.73,0:13:04.80,*Default,NTP,0000,0000,0000,,it could be anything
+Dialogue: 0,0:13:05.40,0:13:07.30,*Default,NTP,0000,0000,0000,,how about n.db
+Dialogue: 0,0:13:08.70,0:13:10.47,*Default,NTP,0000,0000,0000,,and this connection object
+Dialogue: 0,0:13:10.47,0:13:13.33,*Default,NTP,0000,0000,0000,,can be used to execute sequel statements
+Dialogue: 0,0:13:14.20,0:13:16.77,*Default,NTP,0000,0000,0000,,so for example I can execute
+Dialogue: 0,0:13:17.13,0:13:20.27,*Default,NTP,0000,0000,0000,,select two union select three
+Dialogue: 0,0:13:20.30,0:13:23.90,*Default,NTP,0000,0000,0000,,which would give me a two row one column table
+Dialogue: 0,0:13:24.33,0:13:25.17,*Default,NTP,0000,0000,0000,,symicalin
+Dialogue: 0,0:13:27.50,0:13:29.37,*Default,NTP,0000,0000,0000,,now just constructing this table
+Dialogue: 0,0:13:29.40,0:13:31.40,*Default,NTP,0000,0000,0000,,won't allow me to do anything with it
+Dialogue: 0,0:13:31.53,0:13:35.07,*Default,NTP,0000,0000,0000,,if I want to give it a name within the database
+Dialogue: 0,0:13:35.10,0:13:36.67,*Default,NTP,0000,0000,0000,,then I write create table
+Dialogue: 0,0:13:36.90,0:13:39.47,*Default,NTP,0000,0000,0000,,these are numbers so I'll call it numbs
+Dialogue: 0,0:13:40.10,0:13:42.90,*Default,NTP,0000,0000,0000,,so here we see how python and sequel work together
+Dialogue: 0,0:13:43.07,0:13:45.77,*Default,NTP,0000,0000,0000,,is that within python I can construct a string
+Dialogue: 0,0:13:45.87,0:13:47.57,*Default,NTP,0000,0000,0000,,that is a sequel statement
+Dialogue: 0,0:13:47.67,0:13:50.37,*Default,NTP,0000,0000,0000,,and execute it on some database
+Dialogue: 0,0:13:50.70,0:13:54.00,*Default,NTP,0000,0000,0000,,now I haven't run the program yet so nothing's happened
+Dialogue: 0,0:13:54.13,0:13:55.77,*Default,NTP,0000,0000,0000,,but let's execute one more
+Dialogue: 0,0:13:56.37,0:14:00.27,*Default,NTP,0000,0000,0000,,let's execute an insert into statement
+Dialogue: 0,0:14:01.73,0:14:06.20,*Default,NTP,0000,0000,0000,,I could explicitly write out the values 4 5 6
+Dialogue: 0,0:14:07.33,0:14:10.57,*Default,NTP,0000,0000,0000,,or I could write a python expression
+Dialogue: 0,0:14:10.67,0:14:13.20,*Default,NTP,0000,0000,0000,,that computes the values 4 5 6
+Dialogue: 0,0:14:13.30,0:14:15.53,*Default,NTP,0000,0000,0000,,for example the range four through seven
+Dialogue: 0,0:14:15.53,0:14:16.90,*Default,NTP,0000,0000,0000,,not including seven
+Dialogue: 0,0:14:17.33,0:14:21.00,*Default,NTP,0000,0000,0000,,and then I can include in my sequel statement
+Dialogue: 0,0:14:21.10,0:14:22.47,*Default,NTP,0000,0000,0000,,some holes
+Dialogue: 0,0:14:23.53,0:14:26.13,*Default,NTP,0000,0000,0000,,that get filled in by the data passed in
+Dialogue: 0,0:14:26.13,0:14:28.27,*Default,NTP,0000,0000,0000,,as the second argument to execute
+Dialogue: 0,0:14:28.70,0:14:32.40,*Default,NTP,0000,0000,0000,,so in this way we can construct any sequence we want
+Dialogue: 0,0:14:32.60,0:14:33.87,*Default,NTP,0000,0000,0000,,using python
+Dialogue: 0,0:14:34.07,0:14:37.67,*Default,NTP,0000,0000,0000,,and then integrate that into a sequel statement
+Dialogue: 0,0:14:38.60,0:14:40.47,*Default,NTP,0000,0000,0000,,so here we've created a table
+Dialogue: 0,0:14:40.67,0:14:41.97,*Default,NTP,0000,0000,0000,,changed that table
+Dialogue: 0,0:14:42.13,0:14:44.37,*Default,NTP,0000,0000,0000,,we can also read from the table
+Dialogue: 0,0:14:44.47,0:14:47.97,*Default,NTP,0000,0000,0000,,by executing select star from gnomes
+Dialogue: 0,0:14:48.40,0:14:50.30,*Default,NTP,0000,0000,0000,,oh and I forgot a semicolon up here
+Dialogue: 0,0:14:50.30,0:14:51.47,*Default,NTP,0000,0000,0000,,I'll need those too
+Dialogue: 0,0:14:52.40,0:14:54.37,*Default,NTP,0000,0000,0000,,when I select star from gnomes
+Dialogue: 0,0:14:54.50,0:14:57.90,*Default,NTP,0000,0000,0000,,execute returns what's called a cursor object
+Dialogue: 0,0:14:58.10,0:15:00.73,*Default,NTP,0000,0000,0000,,and this cursor has a method called fetch all
+Dialogue: 0,0:15:01.13,0:15:04.47,*Default,NTP,0000,0000,0000,,which will fetch the contents of the resultic table
+Dialogue: 0,0:15:04.70,0:15:06.57,*Default,NTP,0000,0000,0000,,as a list of tuples
+Dialogue: 0,0:15:07.30,0:15:09.87,*Default,NTP,0000,0000,0000,,let's print those out so we can see what happened
+Dialogue: 0,0:15:10.50,0:15:13.00,*Default,NTP,0000,0000,0000,,and finally let's clean up the syntax
+Dialogue: 0,0:15:13.20,0:15:15.13,*Default,NTP,0000,0000,0000,,of our sequel statements
+Dialogue: 0,0:15:15.93,0:15:17.57,*Default,NTP,0000,0000,0000,,oh everything else looks okay
+Dialogue: 0,0:15:17.57,0:15:19.27,*Default,NTP,0000,0000,0000,,let's see what happens when we run it
+Dialogue: 0,0:15:19.50,0:15:21.60,*Default,NTP,0000,0000,0000,,all right here's what python print it out
+Dialogue: 0,0:15:21.80,0:15:24.53,*Default,NTP,0000,0000,0000,,five tuples each one has one element
+Dialogue: 0,0:15:24.53,0:15:27.33,*Default,NTP,0000,0000,0000,,and that element is the contents of the row
+Dialogue: 0,0:15:28.33,0:15:31.13,*Default,NTP,0000,0000,0000,,when you modify a table to ensure
+Dialogue: 0,0:15:31.33,0:15:35.40,*Default,NTP,0000,0000,0000,,that the file representing this database
+Dialogue: 0,0:15:35.53,0:15:37.50,*Default,NTP,0000,0000,0000,,stores all of the changes
+Dialogue: 0,0:15:37.50,0:15:40.00,*Default,NTP,0000,0000,0000,,there's one more method you need to use
+Dialogue: 0,0:15:40.00,0:15:42.20,*Default,NTP,0000,0000,0000,,which is call db commit
+Dialogue: 0,0:15:43.10,0:15:44.77,*Default,NTP,0000,0000,0000,,if committing is successful
+Dialogue: 0,0:15:44.90,0:15:46.07,*Default,NTP,0000,0000,0000,,then this file
+Dialogue: 0,0:15:46.17,0:15:48.47,*Default,NTP,0000,0000,0000,,contains all the contents of the database
+Dialogue: 0,0:15:48.53,0:15:50.47,*Default,NTP,0000,0000,0000,,just as you constructed it
+Dialogue: 0,0:15:50.73,0:15:53.87,*Default,NTP,0000,0000,0000,,by executing this series of sequel statements
+Dialogue: 0,0:15:54.17,0:15:55.93,*Default,NTP,0000,0000,0000,,every time I run this program
+Dialogue: 0,0:15:56.10,0:15:59.47,*Default,NTP,0000,0000,0000,,a file called n.db is constructed
+Dialogue: 0,0:15:59.77,0:16:01.33,*Default,NTP,0000,0000,0000,,let's run it again
+Dialogue: 0,0:16:02.07,0:16:03.73,*Default,NTP,0000,0000,0000,,there's n.tb
+Dialogue: 0,0:16:04.73,0:16:06.77,*Default,NTP,0000,0000,0000,,if I start sequel light
+Dialogue: 0,0:16:07.50,0:16:10.53,*Default,NTP,0000,0000,0000,,using n.tb as my database
+Dialogue: 0,0:16:10.80,0:16:15.20,*Default,NTP,0000,0000,0000,,then in fact all of the contents that python put
+Dialogue: 0,0:16:15.37,0:16:17.17,*Default,NTP,0000,0000,0000,,into that database are there
+Dialogue: 0,0:16:17.17,0:16:20.57,*Default,NTP,0000,0000,0000,,there's a table called nums and it has 23456
+Dialogue: 0,0:16:20.77,0:16:22.07,*Default,NTP,0000,0000,0000,,as its contents
+Dialogue: 0,0:16:23.07,0:16:25.13,*Default,NTP,0000,0000,0000,,so that's how you can write a python program
+Dialogue: 0,0:16:25.20,0:16:27.87,*Default,NTP,0000,0000,0000,,that interacts with a sql light database
+Dialogue: 0,0:16:28.30,0:16:29.20,*Default,NTP,0000,0000,0000,,and similarly
+Dialogue: 0,0:16:29.20,0:16:29.70,*Default,NTP,0000,0000,0000,,you can write
+Dialogue: 0,0:16:29.70,0:16:31.37,*Default,NTP,0000,0000,0000,,python programs to interact with
+Dialogue: 0,0:16:31.37,0:16:33.47,*Default,NTP,0000,0000,0000,,lots of different kinds of databases
+Dialogue: 0,0:16:33.50,0:16:35.77,*Default,NTP,0000,0000,0000,,it happens to be that this one is built into the
+Dialogue: 0,0:16:35.77,0:16:36.93,*Default,NTP,0000,0000,0000,,standard library
+Dialogue: 0,0:16:37.07,0:16:40.33,*Default,NTP,0000,0000,0000,,or as other ones you have to install the connections
+Dialogue: 0,0:16:42.13,0:16:43.73,*Default,NTP,0000,0000,0000,,when a python program
+Dialogue: 0,0:16:43.73,0:16:46.57,*Default,NTP,0000,0000,0000,,reads data from an external source
+Dialogue: 0,0:16:46.70,0:16:48.33,*Default,NTP,0000,0000,0000,,and then constructs
+Dialogue: 0,0:16:48.47,0:16:51.00,*Default,NTP,0000,0000,0000,,sql statements to store that data
+Dialogue: 0,0:16:51.00,0:16:52.70,*Default,NTP,0000,0000,0000,,or use it in some other way
+Dialogue: 0,0:16:52.97,0:16:56.70,*Default,NTP,0000,0000,0000,,it may be vulnerable to a sql injection attack
+Dialogue: 0,0:16:57.70,0:17:01.53,*Default,NTP,0000,0000,0000,,this security vulnerability is easy to prevent
+Dialogue: 0,0:17:01.70,0:17:04.93,*Default,NTP,0000,0000,0000,,but everyone who's writing a program that involves
+Dialogue: 0,0:17:05.13,0:17:07.90,*Default,NTP,0000,0000,0000,,python current instructing sequel statements
+Dialogue: 0,0:17:07.90,0:17:10.87,*Default,NTP,0000,0000,0000,,should know this attack exists and how to prevent it
+Dialogue: 0,0:17:11.57,0:17:14.00,*Default,NTP,0000,0000,0000,,this kind of exploit is so popular
+Dialogue: 0,0:17:14.13,0:17:17.00,*Default,NTP,0000,0000,0000,,that there's even an xkcd comic about it
+Dialogue: 0,0:17:17.40,0:17:18.93,*Default,NTP,0000,0000,0000,,hi this is your son school
+Dialogue: 0,0:17:18.93,0:17:20.80,*Default,NTP,0000,0000,0000,,we having some computer troubles
+Dialogue: 0,0:17:20.80,0:17:22.80,*Default,NTP,0000,0000,0000,,oh dear did he break something
+Dialogue: 0,0:17:22.80,0:17:27.93,*Default,NTP,0000,0000,0000,,in a way did you really name your son robert apostrophe
+Dialogue: 0,0:17:28.20,0:17:31.77,*Default,NTP,0000,0000,0000,,close parenthesis semicolent drop table students
+Dialogue: 0,0:17:31.77,0:17:34.07,*Default,NTP,0000,0000,0000,,semicolent dash dash question mark
+Dialogue: 0,0:17:34.17,0:17:36.97,*Default,NTP,0000,0000,0000,,oh yes little bobby tables we call him
+Dialogue: 0,0:17:37.10,0:17:39.97,*Default,NTP,0000,0000,0000,,well we've lost this year's student records
+Dialogue: 0,0:17:39.97,0:17:41.10,*Default,NTP,0000,0000,0000,,I hope you're happy
+Dialogue: 0,0:17:41.20,0:17:43.37,*Default,NTP,0000,0000,0000,,and I hope you've learned to sanitize your
+Dialogue: 0,0:17:43.37,0:17:44.67,*Default,NTP,0000,0000,0000,,database inputs
+Dialogue: 0,0:17:45.07,0:17:47.60,*Default,NTP,0000,0000,0000,,let's try to understand what's going on in this comic
+Dialogue: 0,0:17:48.13,0:17:53.30,*Default,NTP,0000,0000,0000,,if in a python program you have a string with this name
+Dialogue: 0,0:17:53.67,0:17:57.40,*Default,NTP,0000,0000,0000,,and then you attempt to construct a sequel statement
+Dialogue: 0,0:17:57.73,0:17:58.87,*Default,NTP,0000,0000,0000,,that looks like
+Dialogue: 0,0:17:58.87,0:18:02.67,*Default,NTP,0000,0000,0000,,I insert this name into the table of students
+Dialogue: 0,0:18:03.40,0:18:06.00,*Default,NTP,0000,0000,0000,,well this looks inocuous
+Dialogue: 0,0:18:06.00,0:18:07.37,*Default,NTP,0000,0000,0000,,you just take some name
+Dialogue: 0,0:18:07.37,0:18:10.00,*Default,NTP,0000,0000,0000,,and you put it inside of this command
+Dialogue: 0,0:18:10.30,0:18:11.40,*Default,NTP,0000,0000,0000,,but in fact
+Dialogue: 0,0:18:11.60,0:18:16.07,*Default,NTP,0000,0000,0000,,this particular name is going to cause problems
+Dialogue: 0,0:18:16.07,0:18:18.60,*Default,NTP,0000,0000,0000,,because the command you've constructed
+Dialogue: 0,0:18:18.87,0:18:20.87,*Default,NTP,0000,0000,0000,,is insert into students
+Dialogue: 0,0:18:20.87,0:18:23.10,*Default,NTP,0000,0000,0000,,values robert and then drop the table
+Dialogue: 0,0:18:23.10,0:18:24.87,*Default,NTP,0000,0000,0000,,students and then dash
+Dialogue: 0,0:18:24.87,0:18:27.80,*Default,NTP,0000,0000,0000,,dash is a way of starting a comment in sequel
+Dialogue: 0,0:18:27.97,0:18:29.60,*Default,NTP,0000,0000,0000,,so this part won't do anything
+Dialogue: 0,0:18:29.73,0:18:32.20,*Default,NTP,0000,0000,0000,,but it also won't cause a sequel error
+Dialogue: 0,0:18:32.40,0:18:35.50,*Default,NTP,0000,0000,0000,,so this will execute just fine and
+Dialogue: 0,0:18:35.87,0:18:38.30,*Default,NTP,0000,0000,0000,,robert will be inserted into the students table
+Dialogue: 0,0:18:38.30,0:18:40.33,*Default,NTP,0000,0000,0000,,but then all the students will be gone
+Dialogue: 0,0:18:41.40,0:18:45.70,*Default,NTP,0000,0000,0000,,in python execute which we saw before
+Dialogue: 0,0:18:46.10,0:18:48.77,*Default,NTP,0000,0000,0000,,only takes one statement at a time
+Dialogue: 0,0:18:48.77,0:18:51.20,*Default,NTP,0000,0000,0000,,but there is an execute script method
+Dialogue: 0,0:18:51.30,0:18:52.87,*Default,NTP,0000,0000,0000,,that takes a string
+Dialogue: 0,0:18:52.87,0:18:55.30,*Default,NTP,0000,0000,0000,,with as many statements as you like
+Dialogue: 0,0:18:55.30,0:18:56.70,*Default,NTP,0000,0000,0000,,and executes them all
+Dialogue: 0,0:18:57.67,0:18:58.93,*Default,NTP,0000,0000,0000,,so this code would run
+Dialogue: 0,0:18:58.93,0:19:01.70,*Default,NTP,0000,0000,0000,,and it would in fact drop the table of students
+Dialogue: 0,0:19:01.97,0:19:02.97,*Default,NTP,0000,0000,0000,,and that's bad
+Dialogue: 0,0:19:03.90,0:19:08.70,*Default,NTP,0000,0000,0000,,the problem here is that a string concatenation
+Dialogue: 0,0:19:08.90,0:19:12.70,*Default,NTP,0000,0000,0000,,was used in order to construct the sequel statement
+Dialogue: 0,0:19:13.47,0:19:16.13,*Default,NTP,0000,0000,0000,,instead the correct approach
+Dialogue: 0,0:19:16.13,0:19:19.30,*Default,NTP,0000,0000,0000,,that prevents equal injection attacks
+Dialogue: 0,0:19:19.47,0:19:21.07,*Default,NTP,0000,0000,0000,,is to call db
+Dialogue: 0,0:19:21.33,0:19:24.27,*Default,NTP,0000,0000,0000,,execute using a template
+Dialogue: 0,0:19:24.57,0:19:25.93,*Default,NTP,0000,0000,0000,,and then fill in
+Dialogue: 0,0:19:25.93,0:19:28.50,*Default,NTP,0000,0000,0000,,the values that are missing in that template
+Dialogue: 0,0:19:28.50,0:19:32.20,*Default,NTP,0000,0000,0000,,the question marks with python values in this way
+Dialogue: 0,0:19:33.67,0:19:36.07,*Default,NTP,0000,0000,0000,,this will execute a statement
+Dialogue: 0,0:19:36.07,0:19:39.00,*Default,NTP,0000,0000,0000,,that's different from the three statements down here
+Dialogue: 0,0:19:39.27,0:19:41.50,*Default,NTP,0000,0000,0000,,instead it will execute just one statement
+Dialogue: 0,0:19:41.53,0:19:44.50,*Default,NTP,0000,0000,0000,,that in fact inserts the long string
+Dialogue: 0,0:19:44.60,0:19:46.93,*Default,NTP,0000,0000,0000,,robert apostrophe
+Dialogue: 0,0:19:47.10,0:19:50.30,*Default,NTP,0000,0000,0000,,closed peren semicolon drop table students whatever
+Dialogue: 0,0:19:50.90,0:19:53.13,*Default,NTP,0000,0000,0000,,into the students table
+Dialogue: 0,0:19:53.17,0:19:56.50,*Default,NTP,0000,0000,0000,,so little bobby tables will retain his true name
+Dialogue: 0,0:19:56.53,0:19:59.27,*Default,NTP,0000,0000,0000,,and the students table will not be dropped
+Dialogue: 0,0:19:59.77,0:20:00.70,*Default,NTP,0000,0000,0000,,now what's the difference
+Dialogue: 0,0:20:00.70,0:20:01.73,*Default,NTP,0000,0000,0000,,between this statement
+Dialogue: 0,0:20:01.73,0:20:04.07,*Default,NTP,0000,0000,0000,,and this sequence of three statements
+Dialogue: 0,0:20:04.20,0:20:06.93,*Default,NTP,0000,0000,0000,,well the only difference is an extra apostrophe
+Dialogue: 0,0:20:07.20,0:20:10.70,*Default,NTP,0000,0000,0000,,that's how you insert an apostrophe into a string
+Dialogue: 0,0:20:10.70,0:20:13.40,*Default,NTP,0000,0000,0000,,in sequel but you don't need to remember that
+Dialogue: 0,0:20:13.40,0:20:14.67,*Default,NTP,0000,0000,0000,,all you need to remember
+Dialogue: 0,0:20:14.67,0:20:17.37,*Default,NTP,0000,0000,0000,,is that if you're inserting a string into a larger
+Dialogue: 0,0:20:17.40,0:20:18.37,*Default,NTP,0000,0000,0000,,sequel statement
+Dialogue: 0,0:20:18.40,0:20:19.37,*Default,NTP,0000,0000,0000,,you should do it
+Dialogue: 0,0:20:19.37,0:20:22.77,*Default,NTP,0000,0000,0000,,using the execute statements built in option
+Dialogue: 0,0:20:22.77,0:20:24.70,*Default,NTP,0000,0000,0000,,of passing in values
+Dialogue: 0,0:20:25.10,0:20:27.10,*Default,NTP,0000,0000,0000,,then they'll be escaped correctly
+Dialogue: 0,0:20:27.10,0:20:28.40,*Default,NTP,0000,0000,0000,,and you won't have to worry
+Dialogue: 0,0:20:28.40,0:20:30.50,*Default,NTP,0000,0000,0000,,about sql injection attacks
+Dialogue: 0,0:20:32.97,0:20:35.67,*Default,NTP,0000,0000,0000,,multiple programs can be connected to the same
+Dialogue: 0,0:20:35.67,0:20:37.53,*Default,NTP,0000,0000,0000,,database at the same time
+Dialogue: 0,0:20:37.97,0:20:39.57,*Default,NTP,0000,0000,0000,,they can all be inserting
+Dialogue: 0,0:20:39.57,0:20:43.53,*Default,NTP,0000,0000,0000,,values and reading values from the same tables
+Dialogue: 0,0:20:44.40,0:20:46.07,*Default,NTP,0000,0000,0000,,and one of the interesting things
+Dialogue: 0,0:20:46.07,0:20:48.33,*Default,NTP,0000,0000,0000,,about database management systems
+Dialogue: 0,0:20:48.40,0:20:50.53,*Default,NTP,0000,0000,0000,,is that they can handle the fact
+Dialogue: 0,0:20:50.73,0:20:52.90,*Default,NTP,0000,0000,0000,,that multiple different connections
+Dialogue: 0,0:20:52.90,0:20:54.73,*Default,NTP,0000,0000,0000,,are made to the same database
+Dialogue: 0,0:20:54.87,0:20:56.97,*Default,NTP,0000,0000,0000,,and that multiple different clients
+Dialogue: 0,0:20:56.97,0:20:59.13,*Default,NTP,0000,0000,0000,,are trying to change the same table
+Dialogue: 0,0:21:00.37,0:21:02.33,*Default,NTP,0000,0000,0000,,let's look at an example of this
+Dialogue: 0,0:21:02.73,0:21:05.00,*Default,NTP,0000,0000,0000,,by simulating a game of blackjack
+Dialogue: 0,0:21:05.73,0:21:07.33,*Default,NTP,0000,0000,0000,,in casino blackjack
+Dialogue: 0,0:21:07.67,0:21:09.47,*Default,NTP,0000,0000,0000,,the player is dealt two cards
+Dialogue: 0,0:21:09.47,0:21:11.97,*Default,NTP,0000,0000,0000,,and the dealer is dealt one card face up
+Dialogue: 0,0:21:11.97,0:21:13.67,*Default,NTP,0000,0000,0000,,and another card face down
+Dialogue: 0,0:21:14.00,0:21:15.17,*Default,NTP,0000,0000,0000,,so if I'm the player
+Dialogue: 0,0:21:15.17,0:21:16.53,*Default,NTP,0000,0000,0000,,I might get a seven
+Dialogue: 0,0:21:16.53,0:21:19.50,*Default,NTP,0000,0000,0000,,and then the dealer gets a jack and then I get a nine
+Dialogue: 0,0:21:19.60,0:21:21.37,*Default,NTP,0000,0000,0000,,and the dealer gets some face down
+Dialogue: 0,0:21:21.37,0:21:22.97,*Default,NTP,0000,0000,0000,,card that I don't get to see
+Dialogue: 0,0:21:23.77,0:21:25.80,*Default,NTP,0000,0000,0000,,the goal in blackjack is to have
+Dialogue: 0,0:21:25.80,0:21:27.60,*Default,NTP,0000,0000,0000,,more points than the dealer
+Dialogue: 0,0:21:27.90,0:21:32.00,*Default,NTP,0000,0000,0000,,but if you go over 21 points then you lose the game
+Dialogue: 0,0:21:32.37,0:21:34.90,*Default,NTP,0000,0000,0000,,you can request additional cards
+Dialogue: 0,0:21:34.90,0:21:36.80,*Default,NTP,0000,0000,0000,,in order to get more points
+Dialogue: 0,0:21:37.13,0:21:39.10,*Default,NTP,0000,0000,0000,,the suits of the cards don't matter
+Dialogue: 0,0:21:39.13,0:21:41.30,*Default,NTP,0000,0000,0000,,so I've just used spades everywhere
+Dialogue: 0,0:21:41.47,0:21:43.40,*Default,NTP,0000,0000,0000,,all that matters at the numbers
+Dialogue: 0,0:21:43.67,0:21:45.67,*Default,NTP,0000,0000,0000,,and the cards two through 10
+Dialogue: 0,0:21:45.67,0:21:47.30,*Default,NTP,0000,0000,0000,,just count for their point values
+Dialogue: 0,0:21:47.30,0:21:48.67,*Default,NTP,0000,0000,0000,,that are written on the card
+Dialogue: 0,0:21:49.17,0:21:50.33,*Default,NTP,0000,0000,0000,,all of the face cards
+Dialogue: 0,0:21:50.33,0:21:53.77,*Default,NTP,0000,0000,0000,,jack queen king count for tan and aces are special
+Dialogue: 0,0:21:53.97,0:21:56.30,*Default,NTP,0000,0000,0000,,you can choose whether to count them for one point
+Dialogue: 0,0:21:56.30,0:21:57.67,*Default,NTP,0000,0000,0000,,or 11 points
+Dialogue: 0,0:21:58.37,0:22:01.37,*Default,NTP,0000,0000,0000,,so if seven and nine make 16
+Dialogue: 0,0:22:01.37,0:22:02.50,*Default,NTP,0000,0000,0000,,I might worry
+Dialogue: 0,0:22:02.50,0:22:04.67,*Default,NTP,0000,0000,0000,,that the dealers gonna have more points than me
+Dialogue: 0,0:22:04.67,0:22:06.87,*Default,NTP,0000,0000,0000,,so I might request an additional card
+Dialogue: 0,0:22:07.27,0:22:08.40,*Default,NTP,0000,0000,0000,,oh I got a five
+Dialogue: 0,0:22:08.40,0:22:10.30,*Default,NTP,0000,0000,0000,,now my total is 21
+Dialogue: 0,0:22:10.37,0:22:13.73,*Default,NTP,0000,0000,0000,,that's very good because I haven't gone over 21
+Dialogue: 0,0:22:13.80,0:22:16.77,*Default,NTP,0000,0000,0000,,but I'm likely to have more points than the dealer
+Dialogue: 0,0:22:17.53,0:22:20.20,*Default,NTP,0000,0000,0000,,once the players finished requesting cards
+Dialogue: 0,0:22:20.20,0:22:22.07,*Default,NTP,0000,0000,0000,,then it's the dealers turn
+Dialogue: 0,0:22:22.17,0:22:25.60,*Default,NTP,0000,0000,0000,,in casino blackjack the dealer first flips over
+Dialogue: 0,0:22:25.87,0:22:27.80,*Default,NTP,0000,0000,0000,,the card that isn't shown
+Dialogue: 0,0:22:27.93,0:22:31.17,*Default,NTP,0000,0000,0000,,and then must continue to draw cards
+Dialogue: 0,0:22:31.47,0:22:33.07,*Default,NTP,0000,0000,0000,,until reaching a number
+Dialogue: 0,0:22:33.30,0:22:35.57,*Default,NTP,0000,0000,0000,,between seventeen and twenty one
+Dialogue: 0,0:22:35.97,0:22:38.73,*Default,NTP,0000,0000,0000,,so 13 is not between seventeen and twenty one
+Dialogue: 0,0:22:38.73,0:22:40.53,*Default,NTP,0000,0000,0000,,so it draws an additional card
+Dialogue: 0,0:22:40.73,0:22:46.07,*Default,NTP,0000,0000,0000,,this can either be worth one making 14 or 11 making 24
+Dialogue: 0,0:22:46.13,0:22:48.20,*Default,NTP,0000,0000,0000,,but 24 goes over 21
+Dialogue: 0,0:22:48.20,0:22:50.50,*Default,NTP,0000,0000,0000,,and that would cause the dealer to lose
+Dialogue: 0,0:22:50.50,0:22:53.20,*Default,NTP,0000,0000,0000,,so the natural choice is to count it as only one
+Dialogue: 0,0:22:53.47,0:22:56.10,*Default,NTP,0000,0000,0000,,so now the dealer has only 14 points
+Dialogue: 0,0:22:56.20,0:22:58.60,*Default,NTP,0000,0000,0000,,draws another card if it comes out as 10
+Dialogue: 0,0:22:58.90,0:23:02.60,*Default,NTP,0000,0000,0000,,now the dealer has 24 points and is over 21
+Dialogue: 0,0:23:02.77,0:23:04.60,*Default,NTP,0000,0000,0000,,that's called going bust
+Dialogue: 0,0:23:04.70,0:23:06.60,*Default,NTP,0000,0000,0000,,and that means that the dealer loses
+Dialogue: 0,0:23:06.60,0:23:08.07,*Default,NTP,0000,0000,0000,,this hand of blackjack
+Dialogue: 0,0:23:09.07,0:23:11.37,*Default,NTP,0000,0000,0000,,if instead of a 10 head had been a seven
+Dialogue: 0,0:23:11.40,0:23:14.80,*Default,NTP,0000,0000,0000,,the total would have been 21 and they would have tied
+Dialogue: 0,0:23:15.77,0:23:18.67,*Default,NTP,0000,0000,0000,,all right let's use python and sequel together
+Dialogue: 0,0:23:18.67,0:23:19.93,*Default,NTP,0000,0000,0000,,to play some blackject
+Dialogue: 0,0:23:20.13,0:23:23.17,*Default,NTP,0000,0000,0000,,this is a longer program but not too long
+Dialogue: 0,0:23:23.17,0:23:24.87,*Default,NTP,0000,0000,0000,,so I think we can read it together
+Dialogue: 0,0:23:24.90,0:23:28.27,*Default,NTP,0000,0000,0000,,first we store the points for each card in a dictionary
+Dialogue: 0,0:23:28.33,0:23:30.70,*Default,NTP,0000,0000,0000,,where aces are worth one or 11
+Dialogue: 0,0:23:30.70,0:23:32.13,*Default,NTP,0000,0000,0000,,we'll handle that fact later
+Dialogue: 0,0:23:32.60,0:23:34.97,*Default,NTP,0000,0000,0000,,jacks queens and kings are all worth 10
+Dialogue: 0,0:23:35.17,0:23:39.50,*Default,NTP,0000,0000,0000,,and then two through 10 are just worth that many points
+Dialogue: 0,0:23:39.50,0:23:42.47,*Default,NTP,0000,0000,0000,,so it two is worth two or three is worth three etc
+Dialogue: 0,0:23:42.77,0:23:44.10,*Default,NTP,0000,0000,0000,,points to add update
+Dialogue: 0,0:23:44.10,0:23:47.40,*Default,NTP,0000,0000,0000,,just takes a dictionary and adds more elements to it
+Dialogue: 0,0:23:47.57,0:23:49.40,*Default,NTP,0000,0000,0000,,from another dictionary
+Dialogue: 0,0:23:50.67,0:23:52.53,*Default,NTP,0000,0000,0000,,here we have a way of scoring a hand
+Dialogue: 0,0:23:52.53,0:23:55.10,*Default,NTP,0000,0000,0000,,a hand is a sequence of cards
+Dialogue: 0,0:23:55.30,0:23:57.20,*Default,NTP,0000,0000,0000,,we get the points for each card
+Dialogue: 0,0:23:57.20,0:23:59.17,*Default,NTP,0000,0000,0000,,using the points dictionary
+Dialogue: 0,0:23:59.57,0:24:00.97,*Default,NTP,0000,0000,0000,,and we sum them up
+Dialogue: 0,0:24:01.87,0:24:04.57,*Default,NTP,0000,0000,0000,,if it turns out that the total is less than or equal to
+Dialogue: 0,0:24:04.57,0:24:06.93,*Default,NTP,0000,0000,0000,,11 and I have an ace
+Dialogue: 0,0:24:07.00,0:24:08.87,*Default,NTP,0000,0000,0000,,then I should count that ace as
+Dialogue: 0,0:24:08.87,0:24:10.70,*Default,NTP,0000,0000,0000,,11 points instead of one point
+Dialogue: 0,0:24:10.70,0:24:12.87,*Default,NTP,0000,0000,0000,,which gives me an extra 10 points
+Dialogue: 0,0:24:13.53,0:24:16.93,*Default,NTP,0000,0000,0000,,so in this way if I have for example a jack and an ace
+Dialogue: 0,0:24:16.97,0:24:18.67,*Default,NTP,0000,0000,0000,,total will come out to 11
+Dialogue: 0,0:24:18.70,0:24:20.90,*Default,NTP,0000,0000,0000,,but the ace would let me get 21
+Dialogue: 0,0:24:20.97,0:24:22.87,*Default,NTP,0000,0000,0000,,instead which is a better score
+Dialogue: 0,0:24:23.60,0:24:25.70,*Default,NTP,0000,0000,0000,,alright so those are the rules of black jack
+Dialogue: 0,0:24:25.70,0:24:27.67,*Default,NTP,0000,0000,0000,,encoded as a python function
+Dialogue: 0,0:24:28.10,0:24:31.53,*Default,NTP,0000,0000,0000,,now we're gonna create a database cards that db
+Dialogue: 0,0:24:32.30,0:24:34.17,*Default,NTP,0000,0000,0000,,we're going to assign sql
+Dialogue: 0,0:24:34.40,0:24:36.20,*Default,NTP,0000,0000,0000,,to the function db that execute
+Dialogue: 0,0:24:36.20,0:24:36.97,*Default,NTP,0000,0000,0000,,just so I don't have to
+Dialogue: 0,0:24:36.97,0:24:39.30,*Default,NTP,0000,0000,0000,,type db that execute over and over again
+Dialogue: 0,0:24:39.33,0:24:40.57,*Default,NTP,0000,0000,0000,,every time you see this
+Dialogue: 0,0:24:40.67,0:24:43.00,*Default,NTP,0000,0000,0000,,think db that execute because they're the same thing
+Dialogue: 0,0:24:43.57,0:24:46.67,*Default,NTP,0000,0000,0000,,I'll drop table if it exists cards so I can start fresh
+Dialogue: 0,0:24:46.67,0:24:49.33,*Default,NTP,0000,0000,0000,,and then created table cards with two columns
+Dialogue: 0,0:24:49.47,0:24:52.90,*Default,NTP,0000,0000,0000,,the card which would be 2 3 4 5 6 7 8 9 10
+Dialogue: 0,0:24:52.90,0:24:55.33,*Default,NTP,0000,0000,0000,,or jack queen king ace
+Dialogue: 0,0:24:55.47,0:24:57.93,*Default,NTP,0000,0000,0000,,and then who has it the dealer or the player
+Dialogue: 0,0:24:57.93,0:24:59.90,*Default,NTP,0000,0000,0000,,or has it been discarded
+Dialogue: 0,0:25:00.53,0:25:01.80,*Default,NTP,0000,0000,0000,,to deal a card
+Dialogue: 0,0:25:02.67,0:25:06.10,*Default,NTP,0000,0000,0000,,we insert that card into the cards table
+Dialogue: 0,0:25:06.40,0:25:07.77,*Default,NTP,0000,0000,0000,,and then we commit the result
+Dialogue: 0,0:25:07.77,0:25:10.77,*Default,NTP,0000,0000,0000,,to make sure that it's reflected in cardstb
+Dialogue: 0,0:25:11.50,0:25:14.10,*Default,NTP,0000,0000,0000,,to compute the score of any player
+Dialogue: 0,0:25:14.20,0:25:16.13,*Default,NTP,0000,0000,0000,,we get all the cards for that player
+Dialogue: 0,0:25:16.13,0:25:17.70,*Default,NTP,0000,0000,0000,,select star from cards where
+Dialogue: 0,0:25:17.70,0:25:20.20,*Default,NTP,0000,0000,0000,,who equals either the player or the dealer
+Dialogue: 0,0:25:20.27,0:25:22.57,*Default,NTP,0000,0000,0000,,that's a python value that we pass in
+Dialogue: 0,0:25:23.07,0:25:24.73,*Default,NTP,0000,0000,0000,,and then we compute the hand score
+Dialogue: 0,0:25:24.77,0:25:26.70,*Default,NTP,0000,0000,0000,,for every card that we get
+Dialogue: 0,0:25:26.70,0:25:28.40,*Default,NTP,0000,0000,0000,,by fetching all the cards
+Dialogue: 0,0:25:28.73,0:25:31.67,*Default,NTP,0000,0000,0000,,you go bust when you have a score greater than 21
+Dialogue: 0,0:25:31.93,0:25:34.53,*Default,NTP,0000,0000,0000,,the two players are the player and the dealer
+Dialogue: 0,0:25:34.93,0:25:37.77,*Default,NTP,0000,0000,0000,,and here's what it means to play a hand of blackjack
+Dialogue: 0,0:25:38.00,0:25:40.10,*Default,NTP,0000,0000,0000,,you have to have a deck of cards
+Dialogue: 0,0:25:40.40,0:25:44.33,*Default,NTP,0000,0000,0000,,you pop off the first card and deal it to the player
+Dialogue: 0,0:25:44.60,0:25:46.67,*Default,NTP,0000,0000,0000,,the second card goes to the dealer
+Dialogue: 0,0:25:46.97,0:25:48.97,*Default,NTP,0000,0000,0000,,the third guard goes to the player
+Dialogue: 0,0:25:49.40,0:25:50.87,*Default,NTP,0000,0000,0000,,and then there's a hidden card
+Dialogue: 0,0:25:50.87,0:25:52.57,*Default,NTP,0000,0000,0000,,we're going to pop it off right away
+Dialogue: 0,0:25:52.70,0:25:54.13,*Default,NTP,0000,0000,0000,,but we're not going to deal it
+Dialogue: 0,0:25:54.13,0:25:56.30,*Default,NTP,0000,0000,0000,,because we haven't shown what it is yet
+Dialogue: 0,0:25:57.13,0:25:59.87,*Default,NTP,0000,0000,0000,,now we're going to use the built in input
+Dialogue: 0,0:25:59.90,0:26:01.60,*Default,NTP,0000,0000,0000,,function in python
+Dialogue: 0,0:26:01.70,0:26:03.47,*Default,NTP,0000,0000,0000,,to ask the user
+Dialogue: 0,0:26:03.70,0:26:05.07,*Default,NTP,0000,0000,0000,,what they want to do
+Dialogue: 0,0:26:05.13,0:26:07.73,*Default,NTP,0000,0000,0000,,if they say yes I want to hit
+Dialogue: 0,0:26:07.80,0:26:09.90,*Default,NTP,0000,0000,0000,,hit means get another card
+Dialogue: 0,0:26:09.90,0:26:12.17,*Default,NTP,0000,0000,0000,,at which point will deal another card
+Dialogue: 0,0:26:12.40,0:26:14.67,*Default,NTP,0000,0000,0000,,if that makes the player go bust
+Dialogue: 0,0:26:14.67,0:26:17.67,*Default,NTP,0000,0000,0000,,then the player loses and the hand is over
+Dialogue: 0,0:26:18.33,0:26:19.73,*Default,NTP,0000,0000,0000,,if at some point
+Dialogue: 0,0:26:19.90,0:26:22.87,*Default,NTP,0000,0000,0000,,the player decides not to hit but to stay
+Dialogue: 0,0:26:23.07,0:26:27.00,*Default,NTP,0000,0000,0000,,then it's time to flip over the dealer's hidden card
+Dialogue: 0,0:26:27.20,0:26:28.90,*Default,NTP,0000,0000,0000,,so we deal that to the dealer
+Dialogue: 0,0:26:29.07,0:26:29.87,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:26:29.87,0:26:33.13,*Default,NTP,0000,0000,0000,,we keep dealing cards to the dealer until the score
+Dialogue: 0,0:26:33.27,0:26:35.77,*Default,NTP,0000,0000,0000,,is greater than or equal to 17
+Dialogue: 0,0:26:36.33,0:26:37.40,*Default,NTP,0000,0000,0000,,deal deal deal
+Dialogue: 0,0:26:37.40,0:26:41.17,*Default,NTP,0000,0000,0000,,if at any point the dealer goes bust by going over 21
+Dialogue: 0,0:26:41.33,0:26:45.00,*Default,NTP,0000,0000,0000,,then we say so and the hand is over otherwise
+Dialogue: 0,0:26:45.47,0:26:48.00,*Default,NTP,0000,0000,0000,,now there's a player score and a dealer score
+Dialogue: 0,0:26:48.00,0:26:49.13,*Default,NTP,0000,0000,0000,,and we compare them
+Dialogue: 0,0:26:49.13,0:26:50.93,*Default,NTP,0000,0000,0000,,and that's how we know who won the hand
+Dialogue: 0,0:26:51.90,0:26:55.10,*Default,NTP,0000,0000,0000,,a deck of cards has four copies of each card
+Dialogue: 0,0:26:55.10,0:26:56.57,*Default,NTP,0000,0000,0000,,one for each suit
+Dialogue: 0,0:26:56.73,0:26:58.27,*Default,NTP,0000,0000,0000,,we put them in a list
+Dialogue: 0,0:26:58.33,0:27:01.10,*Default,NTP,0000,0000,0000,,they are the keys of the dictionary called points
+Dialogue: 0,0:27:01.10,0:27:02.77,*Default,NTP,0000,0000,0000,,which we constructed earlier
+Dialogue: 0,0:27:03.13,0:27:04.40,*Default,NTP,0000,0000,0000,,while shuffle the deck
+Dialogue: 0,0:27:04.47,0:27:06.53,*Default,NTP,0000,0000,0000,,using the built in shuffle function
+Dialogue: 0,0:27:06.73,0:27:08.60,*Default,NTP,0000,0000,0000,,of the random module
+Dialogue: 0,0:27:09.37,0:27:11.60,*Default,NTP,0000,0000,0000,,and then we'll just start playing hands
+Dialogue: 0,0:27:11.77,0:27:13.57,*Default,NTP,0000,0000,0000,,so we'll deal play a hand
+Dialogue: 0,0:27:13.73,0:27:15.77,*Default,NTP,0000,0000,0000,,and then at the end of the hand
+Dialogue: 0,0:27:15.93,0:27:19.73,*Default,NTP,0000,0000,0000,,we'll move all of the cards that are in players hands
+Dialogue: 0,0:27:20.10,0:27:22.07,*Default,NTP,0000,0000,0000,,into the discard pile
+Dialogue: 0,0:27:22.47,0:27:25.53,*Default,NTP,0000,0000,0000,,and now we have a fully functional game of blackjack
+Dialogue: 0,0:27:26.13,0:27:27.40,*Default,NTP,0000,0000,0000,,we've dealt a hand
+Dialogue: 0,0:27:27.73,0:27:29.20,*Default,NTP,0000,0000,0000,,shall we hit or stay
+Dialogue: 0,0:27:29.73,0:27:32.20,*Default,NTP,0000,0000,0000,,well that really depends on what cards I have
+Dialogue: 0,0:27:32.37,0:27:34.50,*Default,NTP,0000,0000,0000,,how do I know what cards I have
+Dialogue: 0,0:27:35.07,0:27:38.20,*Default,NTP,0000,0000,0000,,I can make a second connection to the database
+Dialogue: 0,0:27:38.30,0:27:39.37,*Default,NTP,0000,0000,0000,,and take a look
+Dialogue: 0,0:27:39.73,0:27:42.90,*Default,NTP,0000,0000,0000,,I just need to know the name of the database file
+Dialogue: 0,0:27:43.17,0:27:44.70,*Default,NTP,0000,0000,0000,,cards db
+Dialogue: 0,0:27:45.33,0:27:47.70,*Default,NTP,0000,0000,0000,,I can connect to it with sql light
+Dialogue: 0,0:27:48.90,0:27:50.20,*Default,NTP,0000,0000,0000,,and then I can take a look
+Dialogue: 0,0:27:50.50,0:27:54.00,*Default,NTP,0000,0000,0000,,select star from the cards table
+Dialogue: 0,0:27:54.27,0:27:57.37,*Default,NTP,0000,0000,0000,,I see the player has a three and a four
+Dialogue: 0,0:27:57.50,0:27:59.60,*Default,NTP,0000,0000,0000,,and the dealer is showing a seven
+Dialogue: 0,0:27:59.77,0:28:02.47,*Default,NTP,0000,0000,0000,,well I only have seven points so I better hit
+Dialogue: 0,0:28:02.77,0:28:03.77,*Default,NTP,0000,0000,0000,,what did I get
+Dialogue: 0,0:28:04.57,0:28:05.80,*Default,NTP,0000,0000,0000,,oh I got a jack
+Dialogue: 0,0:28:05.97,0:28:09.33,*Default,NTP,0000,0000,0000,,now I have 17 points and the dealer has seven
+Dialogue: 0,0:28:09.57,0:28:10.77,*Default,NTP,0000,0000,0000,,I think I'll stay
+Dialogue: 0,0:28:11.73,0:28:14.27,*Default,NTP,0000,0000,0000,,the python simulator played out the hand
+Dialogue: 0,0:28:14.60,0:28:17.37,*Default,NTP,0000,0000,0000,,and the dealer ended up with 17 points
+Dialogue: 0,0:28:17.57,0:28:19.60,*Default,NTP,0000,0000,0000,,if we want to see exactly what happened
+Dialogue: 0,0:28:19.70,0:28:24.00,*Default,NTP,0000,0000,0000,,we can look and see that in the last game
+Dialogue: 0,0:28:24.13,0:28:26.80,*Default,NTP,0000,0000,0000,,the dealer had seven
+Dialogue: 0,0:28:26.93,0:28:30.17,*Default,NTP,0000,0000,0000,,and then the dealer also had a queen that was hidden
+Dialogue: 0,0:28:30.40,0:28:34.50,*Default,NTP,0000,0000,0000,,and when that queen was shown the game ended 17 to 17
+Dialogue: 0,0:28:35.27,0:28:37.13,*Default,NTP,0000,0000,0000,,all right we have dealt a new hand
+Dialogue: 0,0:28:37.37,0:28:39.53,*Default,NTP,0000,0000,0000,,the player has a jack and a six
+Dialogue: 0,0:28:39.53,0:28:41.07,*Default,NTP,0000,0000,0000,,that's 16 points
+Dialogue: 0,0:28:41.10,0:28:42.90,*Default,NTP,0000,0000,0000,,the dealer has a six
+Dialogue: 0,0:28:43.37,0:28:45.17,*Default,NTP,0000,0000,0000,,even though I have a low score
+Dialogue: 0,0:28:45.20,0:28:46.30,*Default,NTP,0000,0000,0000,,I'm nervous
+Dialogue: 0,0:28:46.30,0:28:49.20,*Default,NTP,0000,0000,0000,,about taking another card because I might go bust
+Dialogue: 0,0:28:49.57,0:28:52.07,*Default,NTP,0000,0000,0000,,so let's stay where we are and see what happens
+Dialogue: 0,0:28:52.20,0:28:56.50,*Default,NTP,0000,0000,0000,,oh I had 16 the dealer had 18 and so I lost the hand
+Dialogue: 0,0:28:57.60,0:29:00.40,*Default,NTP,0000,0000,0000,,it's dealt another hand so let's try again
+Dialogue: 0,0:29:00.70,0:29:01.33,*Default,NTP,0000,0000,0000,,at this point
+Dialogue: 0,0:29:01.33,0:29:02.70,*Default,NTP,0000,0000,0000,,it's hard to see what's going on
+Dialogue: 0,0:29:02.70,0:29:04.57,*Default,NTP,0000,0000,0000,,because there's so many discards
+Dialogue: 0,0:29:04.67,0:29:07.90,*Default,NTP,0000,0000,0000,,so let's simplify that by saying where
+Dialogue: 0,0:29:08.07,0:29:11.00,*Default,NTP,0000,0000,0000,,who does not equal discard
+Dialogue: 0,0:29:11.17,0:29:14.87,*Default,NTP,0000,0000,0000,,and now I see that as a player I have a four in an ace
+Dialogue: 0,0:29:15.13,0:29:17.47,*Default,NTP,0000,0000,0000,,that's either five or 15 points
+Dialogue: 0,0:29:17.47,0:29:19.10,*Default,NTP,0000,0000,0000,,either way I need more
+Dialogue: 0,0:29:19.67,0:29:22.37,*Default,NTP,0000,0000,0000,,now I have a nine and ace and a four
+Dialogue: 0,0:29:22.53,0:29:24.53,*Default,NTP,0000,0000,0000,,in total that's 14 points
+Dialogue: 0,0:29:24.53,0:29:26.07,*Default,NTP,0000,0000,0000,,I think I should take another one
+Dialogue: 0,0:29:27.17,0:29:28.80,*Default,NTP,0000,0000,0000,,oh I went bust
+Dialogue: 0,0:29:29.10,0:29:30.77,*Default,NTP,0000,0000,0000,,so I lost that hand too
+Dialogue: 0,0:29:31.10,0:29:32.67,*Default,NTP,0000,0000,0000,,and we've dealt another hand
+Dialogue: 0,0:29:33.07,0:29:34.57,*Default,NTP,0000,0000,0000,,let's see what I've got now
+Dialogue: 0,0:29:34.90,0:29:37.33,*Default,NTP,0000,0000,0000,,I've got a five and an ace
+Dialogue: 0,0:29:37.37,0:29:39.53,*Default,NTP,0000,0000,0000,,that's either six or 16
+Dialogue: 0,0:29:39.53,0:29:41.90,*Default,NTP,0000,0000,0000,,I think I'll take a hit and see where I am
+Dialogue: 0,0:29:42.90,0:29:47.90,*Default,NTP,0000,0000,0000,,now I have five ace and ace that's either seven or 17
+Dialogue: 0,0:29:48.10,0:29:50.37,*Default,NTP,0000,0000,0000,,I'm curious what will happen next
+Dialogue: 0,0:29:50.73,0:29:54.07,*Default,NTP,0000,0000,0000,,but I could actually predict what might happen
+Dialogue: 0,0:29:54.20,0:29:56.57,*Default,NTP,0000,0000,0000,,by looking at all the carts
+Dialogue: 0,0:29:56.93,0:29:58.67,*Default,NTP,0000,0000,0000,,what's gone by already
+Dialogue: 0,0:29:59.53,0:30:03.00,*Default,NTP,0000,0000,0000,,since I have access to all of the discarded cards
+Dialogue: 0,0:30:03.00,0:30:05.90,*Default,NTP,0000,0000,0000,,I can see that very few tens have been plaid
+Dialogue: 0,0:30:06.27,0:30:08.57,*Default,NTP,0000,0000,0000,,in fact if I really want to see what's going on
+Dialogue: 0,0:30:08.67,0:30:12.07,*Default,NTP,0000,0000,0000,,I should look at what card there is and its count
+Dialogue: 0,0:30:12.50,0:30:16.57,*Default,NTP,0000,0000,0000,,from the cards table where I group by the card
+Dialogue: 0,0:30:17.50,0:30:20.47,*Default,NTP,0000,0000,0000,,so I can see that there's been one ten played
+Dialogue: 0,0:30:20.53,0:30:23.07,*Default,NTP,0000,0000,0000,,three jacks one queen
+Dialogue: 0,0:30:23.20,0:30:26.67,*Default,NTP,0000,0000,0000,,but no kings so there's a lot of kings left
+Dialogue: 0,0:30:26.67,0:30:28.20,*Default,NTP,0000,0000,0000,,there's a lot of tens left
+Dialogue: 0,0:30:28.30,0:30:29.60,*Default,NTP,0000,0000,0000,,there's a queen left
+Dialogue: 0,0:30:29.60,0:30:32.17,*Default,NTP,0000,0000,0000,,there's a reasonable chance that I'll draw a 10
+Dialogue: 0,0:30:32.17,0:30:33.53,*Default,NTP,0000,0000,0000,,on the next hit
+Dialogue: 0,0:30:34.13,0:30:36.10,*Default,NTP,0000,0000,0000,,let's take another look at what I have
+Dialogue: 0,0:30:36.17,0:30:38.67,*Default,NTP,0000,0000,0000,,well I have 17 the dealer has six
+Dialogue: 0,0:30:38.73,0:30:40.40,*Default,NTP,0000,0000,0000,,there's a chance the dealer's gonna get
+Dialogue: 0,0:30:40.40,0:30:42.97,*Default,NTP,0000,0000,0000,,a couple of tens in a row and go bust
+Dialogue: 0,0:30:43.07,0:30:46.07,*Default,NTP,0000,0000,0000,,so I think I'm not gonna hit and see what happens
+Dialogue: 0,0:30:46.07,0:30:49.07,*Default,NTP,0000,0000,0000,,ah that dealer went bust just as I predicted
+Dialogue: 0,0:30:49.17,0:30:50.87,*Default,NTP,0000,0000,0000,,by accounting the cards
+Dialogue: 0,0:30:51.17,0:30:52.37,*Default,NTP,0000,0000,0000,,now in a casino
+Dialogue: 0,0:30:52.50,0:30:54.33,*Default,NTP,0000,0000,0000,,counting cards like we did by
+Dialogue: 0,0:30:54.57,0:30:56.70,*Default,NTP,0000,0000,0000,,remembering what was in the discard pile
+Dialogue: 0,0:30:56.77,0:30:58.33,*Default,NTP,0000,0000,0000,,is against the rules
+Dialogue: 0,0:30:58.77,0:31:00.17,*Default,NTP,0000,0000,0000,,but it can help you win
+Dialogue: 0,0:31:00.97,0:31:02.73,*Default,NTP,0000,0000,0000,,all right let's look at one more hand
+Dialogue: 0,0:31:02.97,0:31:05.60,*Default,NTP,0000,0000,0000,,we've got a four and a queen
+Dialogue: 0,0:31:05.60,0:31:08.13,*Default,NTP,0000,0000,0000,,14 is really not a good hand
+Dialogue: 0,0:31:08.30,0:31:10.20,*Default,NTP,0000,0000,0000,,because the dealer has a nine
+Dialogue: 0,0:31:10.20,0:31:10.90,*Default,NTP,0000,0000,0000,,that means
+Dialogue: 0,0:31:10.90,0:31:13.77,*Default,NTP,0000,0000,0000,,they could have 19 points with that hidden card
+Dialogue: 0,0:31:14.40,0:31:18.33,*Default,NTP,0000,0000,0000,,wouldn't it be nice if instead of a queen and a four
+Dialogue: 0,0:31:18.33,0:31:18.97,*Default,NTP,0000,0000,0000,,I had a queen
+Dialogue: 0,0:31:18.97,0:31:21.87,*Default,NTP,0000,0000,0000,,an ace well then I'd have 21 points
+Dialogue: 0,0:31:22.00,0:31:23.07,*Default,NTP,0000,0000,0000,,so something else
+Dialogue: 0,0:31:23.07,0:31:25.97,*Default,NTP,0000,0000,0000,,that's against the rules in casino blackjack
+Dialogue: 0,0:31:26.20,0:31:28.70,*Default,NTP,0000,0000,0000,,is to just change the cards
+Dialogue: 0,0:31:29.13,0:31:31.93,*Default,NTP,0000,0000,0000,,update cards set
+Dialogue: 0,0:31:32.40,0:31:34.60,*Default,NTP,0000,0000,0000,,card equal to ace
+Dialogue: 0,0:31:35.10,0:31:38.57,*Default,NTP,0000,0000,0000,,where who equals player
+Dialogue: 0,0:31:39.00,0:31:42.10,*Default,NTP,0000,0000,0000,,and card equals four
+Dialogue: 0,0:31:43.17,0:31:45.07,*Default,NTP,0000,0000,0000,,let's see what hand I have now
+Dialogue: 0,0:31:45.13,0:31:47.20,*Default,NTP,0000,0000,0000,,ah and ace and a queen
+Dialogue: 0,0:31:47.27,0:31:49.57,*Default,NTP,0000,0000,0000,,I don't think I need to hit after all
+Dialogue: 0,0:31:49.67,0:31:53.20,*Default,NTP,0000,0000,0000,,cause I already have 21 points and I've won the hand
+Dialogue: 0,0:31:54.13,0:31:56.50,*Default,NTP,0000,0000,0000,,so here's an example of
+Dialogue: 0,0:31:57.13,0:31:59.57,*Default,NTP,0000,0000,0000,,two programs connecting to the same database
+Dialogue: 0,0:31:59.57,0:32:01.10,*Default,NTP,0000,0000,0000,,manipulating it together
+Dialogue: 0,0:32:01.53,0:32:03.77,*Default,NTP,0000,0000,0000,,one of those programs is a python simulator
+Dialogue: 0,0:32:03.77,0:32:04.70,*Default,NTP,0000,0000,0000,,for blackjack
+Dialogue: 0,0:32:04.73,0:32:07.47,*Default,NTP,0000,0000,0000,,and one is the interactive sequel light
+Dialogue: 0,0:32:07.60,0:32:09.50,*Default,NTP,0000,0000,0000,,read eval print loop

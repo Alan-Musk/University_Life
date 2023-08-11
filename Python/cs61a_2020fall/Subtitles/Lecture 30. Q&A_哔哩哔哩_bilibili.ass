@@ -1,0 +1,587 @@
+[Script Info]
+Title: Lecture 30. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=72&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.56,0:00:03.60,*Default,NTP,0000,0000,0000,,61a lecture 30 q a
+Dialogue: 0,0:00:03.60,0:00:05.76,*Default,NTP,0000,0000,0000,,just before i started recording we were
+Dialogue: 0,0:00:05.76,0:00:08.16,*Default,NTP,0000,0000,0000,,talking about the first interpreter and
+Dialogue: 0,0:00:08.16,0:00:11.52,*Default,NTP,0000,0000,0000,,compiler uh i just did a quick google
+Dialogue: 0,0:00:11.52,0:00:12.08,*Default,NTP,0000,0000,0000,,search and
+Dialogue: 0,0:00:12.08,0:00:14.32,*Default,NTP,0000,0000,0000,,it the first hit is with from chris
+Dialogue: 0,0:00:14.32,0:00:15.20,*Default,NTP,0000,0000,0000,,hopper
+Dialogue: 0,0:00:15.20,0:00:18.24,*Default,NTP,0000,0000,0000,,talking about the first compiler uh
+Dialogue: 0,0:00:18.24,0:00:20.16,*Default,NTP,0000,0000,0000,,if you don't know who grace hopper is
+Dialogue: 0,0:00:20.16,0:00:22.40,*Default,NTP,0000,0000,0000,,you should search for her name
+Dialogue: 0,0:00:22.40,0:00:24.40,*Default,NTP,0000,0000,0000,,um and read about her she's this really
+Dialogue: 0,0:00:24.40,0:00:26.32,*Default,NTP,0000,0000,0000,,remarkable woman who was in the
+Dialogue: 0,0:00:26.32,0:00:29.04,*Default,NTP,0000,0000,0000,,was it the navy john i believe so yeah
+Dialogue: 0,0:00:29.04,0:00:29.44,*Default,NTP,0000,0000,0000,,yeah
+Dialogue: 0,0:00:29.44,0:00:31.28,*Default,NTP,0000,0000,0000,,in the navy who was one of the most
+Dialogue: 0,0:00:31.28,0:00:33.12,*Default,NTP,0000,0000,0000,,influential computer scientists in the
+Dialogue: 0,0:00:33.12,0:00:34.16,*Default,NTP,0000,0000,0000,,early days
+Dialogue: 0,0:00:34.16,0:00:36.64,*Default,NTP,0000,0000,0000,,there's this great um youtube video of
+Dialogue: 0,0:00:36.64,0:00:38.08,*Default,NTP,0000,0000,0000,,her i think on
+Dialogue: 0,0:00:38.08,0:00:41.84,*Default,NTP,0000,0000,0000,,david letterman show talking about
+Dialogue: 0,0:00:41.84,0:00:44.24,*Default,NTP,0000,0000,0000,,computers and it's wonderful just
+Dialogue: 0,0:00:44.24,0:00:46.80,*Default,NTP,0000,0000,0000,,wonderful she's fantastic
+Dialogue: 0,0:00:46.80,0:00:48.40,*Default,NTP,0000,0000,0000,,i never saw that i should go find it
+Dialogue: 0,0:00:48.40,0:00:50.56,*Default,NTP,0000,0000,0000,,yeah look for letterman and i think it
+Dialogue: 0,0:00:50.56,0:00:52.40,*Default,NTP,0000,0000,0000,,was letterman and grace hopper let me
+Dialogue: 0,0:00:52.40,0:00:54.48,*Default,NTP,0000,0000,0000,,let me verify that
+Dialogue: 0,0:00:54.48,0:00:56.64,*Default,NTP,0000,0000,0000,,yeah it's letterman it's from the
+Dialogue: 0,0:00:56.64,0:00:58.56,*Default,NTP,0000,0000,0000,,obviously like the 80s or something
+Dialogue: 0,0:00:58.56,0:01:02.08,*Default,NTP,0000,0000,0000,,and she she's fantastic and letterman is
+Dialogue: 0,0:01:02.08,0:01:02.72,*Default,NTP,0000,0000,0000,,an idiot
+Dialogue: 0,0:01:02.72,0:01:04.40,*Default,NTP,0000,0000,0000,,um which is you know what makes it so
+Dialogue: 0,0:01:04.40,0:01:04.76,*Default,NTP,0000,0000,0000,,great
+Dialogue: 0,0:01:04.76,0:01:08.40,*Default,NTP,0000,0000,0000,,[Laughter]
+Dialogue: 0,0:01:08.40,0:01:09.84,*Default,NTP,0000,0000,0000,,we can keep talking about grace popper i
+Dialogue: 0,0:01:09.84,0:01:11.04,*Default,NTP,0000,0000,0000,,can talk to her about her for like
+Dialogue: 0,0:01:11.04,0:01:14.24,*Default,NTP,0000,0000,0000,,another hour that's some fun with that
+Dialogue: 0,0:01:14.24,0:01:16.56,*Default,NTP,0000,0000,0000,,by the way for the for the young women
+Dialogue: 0,0:01:16.56,0:01:18.40,*Default,NTP,0000,0000,0000,,on the call there is a yearly grace
+Dialogue: 0,0:01:18.40,0:01:19.04,*Default,NTP,0000,0000,0000,,hopper
+Dialogue: 0,0:01:19.04,0:01:22.64,*Default,NTP,0000,0000,0000,,conference uh for um new computer
+Dialogue: 0,0:01:22.64,0:01:23.76,*Default,NTP,0000,0000,0000,,scientists
+Dialogue: 0,0:01:23.76,0:01:25.76,*Default,NTP,0000,0000,0000,,of all stages and it's a wonderful
+Dialogue: 0,0:01:25.76,0:01:27.28,*Default,NTP,0000,0000,0000,,yearly program
+Dialogue: 0,0:01:27.28,0:01:30.24,*Default,NTP,0000,0000,0000,,to attend and many people from berkeley
+Dialogue: 0,0:01:30.24,0:01:30.80,*Default,NTP,0000,0000,0000,,go
+Dialogue: 0,0:01:30.80,0:01:33.84,*Default,NTP,0000,0000,0000,,so uh yeah and i think there's a lot of
+Dialogue: 0,0:01:33.84,0:01:36.64,*Default,NTP,0000,0000,0000,,resources to help support uh travel and
+Dialogue: 0,0:01:36.64,0:01:38.24,*Default,NTP,0000,0000,0000,,yeah there's support from the department
+Dialogue: 0,0:01:38.24,0:01:39.60,*Default,NTP,0000,0000,0000,,their support from
+Dialogue: 0,0:01:39.60,0:01:42.48,*Default,NTP,0000,0000,0000,,grace hopper conference itself um so
+Dialogue: 0,0:01:42.48,0:01:44.40,*Default,NTP,0000,0000,0000,,people find a mix of ways to go but a
+Dialogue: 0,0:01:44.40,0:01:46.64,*Default,NTP,0000,0000,0000,,lot of folks do end up going
+Dialogue: 0,0:01:46.64,0:01:48.48,*Default,NTP,0000,0000,0000,,yeah before i got here we used to send
+Dialogue: 0,0:01:48.48,0:01:50.16,*Default,NTP,0000,0000,0000,,just dozens and dozens of students and
+Dialogue: 0,0:01:50.16,0:01:51.60,*Default,NTP,0000,0000,0000,,they just they wouldn't stop talking
+Dialogue: 0,0:01:51.60,0:01:53.76,*Default,NTP,0000,0000,0000,,about it when they got back
+Dialogue: 0,0:01:53.76,0:01:56.96,*Default,NTP,0000,0000,0000,,okay so uh this week's lab
+Dialogue: 0,0:01:56.96,0:02:00.32,*Default,NTP,0000,0000,0000,,is about building an interpreter
+Dialogue: 0,0:02:00.32,0:02:03.68,*Default,NTP,0000,0000,0000,,just like a small one so um
+Dialogue: 0,0:02:03.68,0:02:05.60,*Default,NTP,0000,0000,0000,,the one that you'll build is kind of
+Dialogue: 0,0:02:05.60,0:02:07.28,*Default,NTP,0000,0000,0000,,like the calculator that we did on
+Dialogue: 0,0:02:07.28,0:02:08.00,*Default,NTP,0000,0000,0000,,friday
+Dialogue: 0,0:02:08.00,0:02:10.08,*Default,NTP,0000,0000,0000,,except for that it has one extra very
+Dialogue: 0,0:02:10.08,0:02:11.44,*Default,NTP,0000,0000,0000,,important feature
+Dialogue: 0,0:02:11.44,0:02:14.96,*Default,NTP,0000,0000,0000,,which is that you can define procedures
+Dialogue: 0,0:02:14.96,0:02:15.44,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:02:15.44,0:02:19.52,*Default,NTP,0000,0000,0000,,call them so here's an example
+Dialogue: 0,0:02:19.52,0:02:21.68,*Default,NTP,0000,0000,0000,,is defining a procedure that adds x and
+Dialogue: 0,0:02:21.68,0:02:23.76,*Default,NTP,0000,0000,0000,,y and then you add x and y okay not that
+Dialogue: 0,0:02:23.76,0:02:25.04,*Default,NTP,0000,0000,0000,,exciting
+Dialogue: 0,0:02:25.04,0:02:27.12,*Default,NTP,0000,0000,0000,,but you could for example build a
+Dialogue: 0,0:02:27.12,0:02:29.04,*Default,NTP,0000,0000,0000,,curried version of mole and then call it
+Dialogue: 0,0:02:29.04,0:02:30.88,*Default,NTP,0000,0000,0000,,twice and then end up multiplying the
+Dialogue: 0,0:02:30.88,0:02:33.52,*Default,NTP,0000,0000,0000,,values together
+Dialogue: 0,0:02:33.52,0:02:36.64,*Default,NTP,0000,0000,0000,,so there's this diagram which
+Dialogue: 0,0:02:36.64,0:02:40.56,*Default,NTP,0000,0000,0000,,describes how you get from the input
+Dialogue: 0,0:02:40.56,0:02:43.84,*Default,NTP,0000,0000,0000,,that would be this to the output
+Dialogue: 0,0:02:43.84,0:02:46.88,*Default,NTP,0000,0000,0000,,that would be this which involves all
+Dialogue: 0,0:02:46.88,0:02:48.84,*Default,NTP,0000,0000,0000,,these steps
+Dialogue: 0,0:02:48.84,0:02:51.44,*Default,NTP,0000,0000,0000,,so um
+Dialogue: 0,0:02:51.44,0:02:53.60,*Default,NTP,0000,0000,0000,,the lexer is the part that finds the
+Dialogue: 0,0:02:53.60,0:02:55.36,*Default,NTP,0000,0000,0000,,individual pieces those will be
+Dialogue: 0,0:02:55.36,0:02:59.44,*Default,NTP,0000,0000,0000,,the name add the open parenthesis
+Dialogue: 0,0:02:59.44,0:03:02.40,*Default,NTP,0000,0000,0000,,the number three the comma the number
+Dialogue: 0,0:03:02.40,0:03:03.04,*Default,NTP,0000,0000,0000,,four
+Dialogue: 0,0:03:03.04,0:03:05.20,*Default,NTP,0000,0000,0000,,and the closed parenthesis it does a
+Dialogue: 0,0:03:05.20,0:03:06.64,*Default,NTP,0000,0000,0000,,little bit more than just like pick
+Dialogue: 0,0:03:06.64,0:03:07.84,*Default,NTP,0000,0000,0000,,every character
+Dialogue: 0,0:03:07.84,0:03:09.92,*Default,NTP,0000,0000,0000,,because for example it treats add as a
+Dialogue: 0,0:03:09.92,0:03:10.88,*Default,NTP,0000,0000,0000,,whole name
+Dialogue: 0,0:03:10.88,0:03:12.64,*Default,NTP,0000,0000,0000,,and if you have the well we don't have
+Dialogue: 0,0:03:12.64,0:03:14.00,*Default,NTP,0000,0000,0000,,any two-digit numbers but if you have a
+Dialogue: 0,0:03:14.00,0:03:15.60,*Default,NTP,0000,0000,0000,,two-digit number it will treat it as
+Dialogue: 0,0:03:15.60,0:03:17.44,*Default,NTP,0000,0000,0000,,just one thing
+Dialogue: 0,0:03:17.44,0:03:21.04,*Default,NTP,0000,0000,0000,,the parser is the next step that takes
+Dialogue: 0,0:03:21.04,0:03:22.88,*Default,NTP,0000,0000,0000,,as input the output of the lexer which
+Dialogue: 0,0:03:22.88,0:03:25.04,*Default,NTP,0000,0000,0000,,gives you all these different pieces
+Dialogue: 0,0:03:25.04,0:03:27.20,*Default,NTP,0000,0000,0000,,and builds an expression and the
+Dialogue: 0,0:03:27.20,0:03:29.04,*Default,NTP,0000,0000,0000,,expression is represented
+Dialogue: 0,0:03:29.04,0:03:30.72,*Default,NTP,0000,0000,0000,,according to however the interpreter
+Dialogue: 0,0:03:30.72,0:03:32.64,*Default,NTP,0000,0000,0000,,wants to represent an expression but
+Dialogue: 0,0:03:32.64,0:03:34.96,*Default,NTP,0000,0000,0000,,expressions are always tree structured
+Dialogue: 0,0:03:34.96,0:03:36.64,*Default,NTP,0000,0000,0000,,meaning like there's this whole
+Dialogue: 0,0:03:36.64,0:03:39.52,*Default,NTP,0000,0000,0000,,expression and it's made up of
+Dialogue: 0,0:03:39.52,0:03:42.32,*Default,NTP,0000,0000,0000,,this operator and these operand sub
+Dialogue: 0,0:03:42.32,0:03:44.80,*Default,NTP,0000,0000,0000,,expressions
+Dialogue: 0,0:03:44.80,0:03:46.80,*Default,NTP,0000,0000,0000,,and then eval does the work of
+Dialogue: 0,0:03:46.80,0:03:48.88,*Default,NTP,0000,0000,0000,,evaluating the expression so the nice
+Dialogue: 0,0:03:48.88,0:03:50.40,*Default,NTP,0000,0000,0000,,thing about a parser is it gives you a
+Dialogue: 0,0:03:50.40,0:03:51.36,*Default,NTP,0000,0000,0000,,tree structured thing
+Dialogue: 0,0:03:51.36,0:03:52.96,*Default,NTP,0000,0000,0000,,and evaluation is a tree structured
+Dialogue: 0,0:03:52.96,0:03:54.80,*Default,NTP,0000,0000,0000,,process and what do i mean by a tree
+Dialogue: 0,0:03:54.80,0:03:56.00,*Default,NTP,0000,0000,0000,,structured process
+Dialogue: 0,0:03:56.00,0:03:58.24,*Default,NTP,0000,0000,0000,,well in order to evaluate this you have
+Dialogue: 0,0:03:58.24,0:03:59.44,*Default,NTP,0000,0000,0000,,to evaluate
+Dialogue: 0,0:03:59.44,0:04:03.60,*Default,NTP,0000,0000,0000,,this and this and this
+Dialogue: 0,0:04:03.60,0:04:06.80,*Default,NTP,0000,0000,0000,,so um like every expression
+Dialogue: 0,0:04:06.80,0:04:09.20,*Default,NTP,0000,0000,0000,,either is a primitive where you just
+Dialogue: 0,0:04:09.20,0:04:10.72,*Default,NTP,0000,0000,0000,,evaluate it immediately that's kind of a
+Dialogue: 0,0:04:10.72,0:04:11.60,*Default,NTP,0000,0000,0000,,base case
+Dialogue: 0,0:04:11.60,0:04:14.80,*Default,NTP,0000,0000,0000,,or it's a combination like this is
+Dialogue: 0,0:04:14.80,0:04:17.68,*Default,NTP,0000,0000,0000,,or like this is one huge expression and
+Dialogue: 0,0:04:17.68,0:04:19.12,*Default,NTP,0000,0000,0000,,the way you evaluate this is you
+Dialogue: 0,0:04:19.12,0:04:20.72,*Default,NTP,0000,0000,0000,,evaluate its parts
+Dialogue: 0,0:04:20.72,0:04:23.84,*Default,NTP,0000,0000,0000,,so that would be this part and this part
+Dialogue: 0,0:04:23.84,0:04:25.12,*Default,NTP,0000,0000,0000,,and this part
+Dialogue: 0,0:04:25.12,0:04:26.96,*Default,NTP,0000,0000,0000,,and then if it turns out that the
+Dialogue: 0,0:04:26.96,0:04:28.64,*Default,NTP,0000,0000,0000,,expression you've evaluated as a call
+Dialogue: 0,0:04:28.64,0:04:29.36,*Default,NTP,0000,0000,0000,,expression
+Dialogue: 0,0:04:29.36,0:04:31.76,*Default,NTP,0000,0000,0000,,then you have to apply the value of the
+Dialogue: 0,0:04:31.76,0:04:32.56,*Default,NTP,0000,0000,0000,,operator
+Dialogue: 0,0:04:32.56,0:04:35.84,*Default,NTP,0000,0000,0000,,to the values of the operands
+Dialogue: 0,0:04:35.84,0:04:38.64,*Default,NTP,0000,0000,0000,,so the reason that this has arrows going
+Dialogue: 0,0:04:38.64,0:04:40.80,*Default,NTP,0000,0000,0000,,back and forth
+Dialogue: 0,0:04:40.80,0:04:43.12,*Default,NTP,0000,0000,0000,,is that sometimes the process of
+Dialogue: 0,0:04:43.12,0:04:43.84,*Default,NTP,0000,0000,0000,,applying
+Dialogue: 0,0:04:43.84,0:04:46.24,*Default,NTP,0000,0000,0000,,a function means you have to evaluate
+Dialogue: 0,0:04:46.24,0:04:47.76,*Default,NTP,0000,0000,0000,,some stuff
+Dialogue: 0,0:04:47.76,0:04:50.08,*Default,NTP,0000,0000,0000,,and there's really only one case here
+Dialogue: 0,0:04:50.08,0:04:51.60,*Default,NTP,0000,0000,0000,,what you evaluate
+Dialogue: 0,0:04:51.60,0:04:54.84,*Default,NTP,0000,0000,0000,,is the body of the expression you're
+Dialogue: 0,0:04:54.84,0:04:56.40,*Default,NTP,0000,0000,0000,,applying
+Dialogue: 0,0:04:56.40,0:04:59.92,*Default,NTP,0000,0000,0000,,so eval the whole thing means you have
+Dialogue: 0,0:04:59.92,0:05:01.44,*Default,NTP,0000,0000,0000,,to eval that
+Dialogue: 0,0:05:01.44,0:05:04.64,*Default,NTP,0000,0000,0000,,eval that eval that now you know you
+Dialogue: 0,0:05:04.64,0:05:04.96,*Default,NTP,0000,0000,0000,,have
+Dialogue: 0,0:05:04.96,0:05:08.80,*Default,NTP,0000,0000,0000,,a function and two numbers you apply
+Dialogue: 0,0:05:08.80,0:05:10.88,*Default,NTP,0000,0000,0000,,this function to those two numbers what
+Dialogue: 0,0:05:10.88,0:05:12.88,*Default,NTP,0000,0000,0000,,does that mean well that means create a
+Dialogue: 0,0:05:12.88,0:05:13.76,*Default,NTP,0000,0000,0000,,new frame
+Dialogue: 0,0:05:13.76,0:05:16.24,*Default,NTP,0000,0000,0000,,where y is bound to three and a oh sorry
+Dialogue: 0,0:05:16.24,0:05:17.52,*Default,NTP,0000,0000,0000,,where x is bound to three
+Dialogue: 0,0:05:17.52,0:05:21.04,*Default,NTP,0000,0000,0000,,and y is bound to five and then eval
+Dialogue: 0,0:05:21.04,0:05:23.60,*Default,NTP,0000,0000,0000,,the body of the procedure of the
+Dialogue: 0,0:05:23.60,0:05:25.84,*Default,NTP,0000,0000,0000,,function
+Dialogue: 0,0:05:26.88,0:05:28.80,*Default,NTP,0000,0000,0000,,once you hit the base cases and kind of
+Dialogue: 0,0:05:28.80,0:05:30.72,*Default,NTP,0000,0000,0000,,pass the return values up eventually you
+Dialogue: 0,0:05:30.72,0:05:33.12,*Default,NTP,0000,0000,0000,,get the value of the entire expression
+Dialogue: 0,0:05:33.12,0:05:34.88,*Default,NTP,0000,0000,0000,,which is then automatically printed out
+Dialogue: 0,0:05:34.88,0:05:36.24,*Default,NTP,0000,0000,0000,,so that's the print part
+Dialogue: 0,0:05:36.24,0:05:38.80,*Default,NTP,0000,0000,0000,,is really simple just like make sure
+Dialogue: 0,0:05:38.80,0:05:40.40,*Default,NTP,0000,0000,0000,,that whatever the value of this whole
+Dialogue: 0,0:05:40.40,0:05:43.28,*Default,NTP,0000,0000,0000,,thing is is displayed
+Dialogue: 0,0:05:43.28,0:05:44.72,*Default,NTP,0000,0000,0000,,a great question so like when you're
+Dialogue: 0,0:05:44.72,0:05:46.64,*Default,NTP,0000,0000,0000,,writing scheme
+Dialogue: 0,0:05:46.64,0:05:50.32,*Default,NTP,0000,0000,0000,,and you're calling some f you're calling
+Dialogue: 0,0:05:50.32,0:05:52.24,*Default,NTP,0000,0000,0000,,it on
+Dialogue: 0,0:05:52.24,0:05:55.52,*Default,NTP,0000,0000,0000,,uh plus two three
+Dialogue: 0,0:05:55.52,0:05:56.88,*Default,NTP,0000,0000,0000,,are there cases where you need to quote
+Dialogue: 0,0:05:56.88,0:05:59.12,*Default,NTP,0000,0000,0000,,this or don't need to quote it
+Dialogue: 0,0:05:59.12,0:06:02.16,*Default,NTP,0000,0000,0000,,like what's the story there well
+Dialogue: 0,0:06:02.16,0:06:03.76,*Default,NTP,0000,0000,0000,,i'll give some simple cases first and
+Dialogue: 0,0:06:03.76,0:06:04.96,*Default,NTP,0000,0000,0000,,then maybe we can think of some other
+Dialogue: 0,0:06:04.96,0:06:07.52,*Default,NTP,0000,0000,0000,,ones together
+Dialogue: 0,0:06:07.52,0:06:11.68,*Default,NTP,0000,0000,0000,,if you have a sub expression like this
+Dialogue: 0,0:06:11.68,0:06:14.56,*Default,NTP,0000,0000,0000,,this actually says call one as if it
+Dialogue: 0,0:06:14.56,0:06:16.80,*Default,NTP,0000,0000,0000,,were a procedure which is not
+Dialogue: 0,0:06:16.80,0:06:19.20,*Default,NTP,0000,0000,0000,,so the reason you often see a quotation
+Dialogue: 0,0:06:19.20,0:06:21.28,*Default,NTP,0000,0000,0000,,mark before
+Dialogue: 0,0:06:21.28,0:06:24.96,*Default,NTP,0000,0000,0000,,a list of numbers for example is that
+Dialogue: 0,0:06:24.96,0:06:27.04,*Default,NTP,0000,0000,0000,,you'll get an error regardless of what f
+Dialogue: 0,0:06:27.04,0:06:29.68,*Default,NTP,0000,0000,0000,,is even if f isn't defined yet
+Dialogue: 0,0:06:29.68,0:06:31.52,*Default,NTP,0000,0000,0000,,um well i guess then you'll get the
+Dialogue: 0,0:06:31.52,0:06:33.68,*Default,NTP,0000,0000,0000,,error about f not being defined but
+Dialogue: 0,0:06:33.68,0:06:36.32,*Default,NTP,0000,0000,0000,,you know whatever this is absolute value
+Dialogue: 0,0:06:36.32,0:06:37.60,*Default,NTP,0000,0000,0000,,you're going to have this problem that
+Dialogue: 0,0:06:37.60,0:06:39.60,*Default,NTP,0000,0000,0000,,says int is not callable
+Dialogue: 0,0:06:39.60,0:06:42.64,*Default,NTP,0000,0000,0000,,and so you got to quote that now this
+Dialogue: 0,0:06:42.64,0:06:44.24,*Default,NTP,0000,0000,0000,,will still give you an error which says
+Dialogue: 0,0:06:44.24,0:06:46.40,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:06:46.72,0:06:48.80,*Default,NTP,0000,0000,0000,,it doesn't like the way that we called
+Dialogue: 0,0:06:48.80,0:06:50.00,*Default,NTP,0000,0000,0000,,abs but
+Dialogue: 0,0:06:50.00,0:06:52.40,*Default,NTP,0000,0000,0000,,um let's say we were doing something
+Dialogue: 0,0:06:52.40,0:06:54.96,*Default,NTP,0000,0000,0000,,more useful like the cutter of this list
+Dialogue: 0,0:06:54.96,0:06:58.48,*Default,NTP,0000,0000,0000,,now we finally have something that works
+Dialogue: 0,0:06:58.48,0:07:00.80,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:07:01.60,0:07:04.88,*Default,NTP,0000,0000,0000,,the simplest rule is if you're trying to
+Dialogue: 0,0:07:04.88,0:07:06.48,*Default,NTP,0000,0000,0000,,do work in order to figure out what to
+Dialogue: 0,0:07:06.48,0:07:07.60,*Default,NTP,0000,0000,0000,,pass in
+Dialogue: 0,0:07:07.60,0:07:09.84,*Default,NTP,0000,0000,0000,,then you shouldn't quote it so if we're
+Dialogue: 0,0:07:09.84,0:07:12.56,*Default,NTP,0000,0000,0000,,like building something up
+Dialogue: 0,0:07:12.56,0:07:14.40,*Default,NTP,0000,0000,0000,,then we don't need to quote that because
+Dialogue: 0,0:07:14.40,0:07:16.08,*Default,NTP,0000,0000,0000,,we need to evaluate this whole
+Dialogue: 0,0:07:16.08,0:07:17.68,*Default,NTP,0000,0000,0000,,expression in order to get the data
+Dialogue: 0,0:07:17.68,0:07:19.60,*Default,NTP,0000,0000,0000,,the list one two three before we pass it
+Dialogue: 0,0:07:19.60,0:07:21.68,*Default,NTP,0000,0000,0000,,in and if instead
+Dialogue: 0,0:07:21.68,0:07:22.88,*Default,NTP,0000,0000,0000,,we're just trying to pass data
+Dialogue: 0,0:07:22.88,0:07:25.12,*Default,NTP,0000,0000,0000,,indirectly then we should quote it
+Dialogue: 0,0:07:25.12,0:07:28.64,*Default,NTP,0000,0000,0000,,so that's like covers most cases
+Dialogue: 0,0:07:28.64,0:07:30.16,*Default,NTP,0000,0000,0000,,and the only case that really doesn't
+Dialogue: 0,0:07:30.16,0:07:31.76,*Default,NTP,0000,0000,0000,,cover is when you're trying to treat
+Dialogue: 0,0:07:31.76,0:07:33.92,*Default,NTP,0000,0000,0000,,code as data which occasionally people
+Dialogue: 0,0:07:33.92,0:07:35.04,*Default,NTP,0000,0000,0000,,do in scheme
+Dialogue: 0,0:07:35.04,0:07:36.48,*Default,NTP,0000,0000,0000,,and that's one of the interesting things
+Dialogue: 0,0:07:36.48,0:07:38.48,*Default,NTP,0000,0000,0000,,about the language it's also one of the
+Dialogue: 0,0:07:38.48,0:07:39.76,*Default,NTP,0000,0000,0000,,things that's very new
+Dialogue: 0,0:07:39.76,0:07:42.00,*Default,NTP,0000,0000,0000,,so uh don't worry if it's a little
+Dialogue: 0,0:07:42.00,0:07:43.20,*Default,NTP,0000,0000,0000,,disconcerting now
+Dialogue: 0,0:07:43.20,0:07:47.52,*Default,NTP,0000,0000,0000,,but like um you can't get the cutter
+Dialogue: 0,0:07:47.52,0:07:51.52,*Default,NTP,0000,0000,0000,,of a number
+Dialogue: 0,0:07:52.32,0:07:56.24,*Default,NTP,0000,0000,0000,,but you could get a cutter of a list
+Dialogue: 0,0:07:56.24,0:07:57.76,*Default,NTP,0000,0000,0000,,and why might you want to do this well
+Dialogue: 0,0:07:57.76,0:08:00.08,*Default,NTP,0000,0000,0000,,maybe what you really want to do is like
+Dialogue: 0,0:08:00.08,0:08:03.12,*Default,NTP,0000,0000,0000,,take this expression but change the plus
+Dialogue: 0,0:08:03.12,0:08:04.00,*Default,NTP,0000,0000,0000,,to a times
+Dialogue: 0,0:08:04.00,0:08:07.28,*Default,NTP,0000,0000,0000,,well you could do that by putting
+Dialogue: 0,0:08:07.28,0:08:11.28,*Default,NTP,0000,0000,0000,,the time symbol on the front of the rest
+Dialogue: 0,0:08:11.28,0:08:12.00,*Default,NTP,0000,0000,0000,,of two
+Dialogue: 0,0:08:12.00,0:08:15.28,*Default,NTP,0000,0000,0000,,three so like this thing
+Dialogue: 0,0:08:15.28,0:08:17.04,*Default,NTP,0000,0000,0000,,kind of thing is possible you can build
+Dialogue: 0,0:08:17.04,0:08:18.32,*Default,NTP,0000,0000,0000,,up expressions
+Dialogue: 0,0:08:18.32,0:08:20.64,*Default,NTP,0000,0000,0000,,by treating them as lists at which point
+Dialogue: 0,0:08:20.64,0:08:22.32,*Default,NTP,0000,0000,0000,,you need to quote it
+Dialogue: 0,0:08:22.32,0:08:24.24,*Default,NTP,0000,0000,0000,,and here's probably the most tricky part
+Dialogue: 0,0:08:24.24,0:08:25.60,*Default,NTP,0000,0000,0000,,about this whole quotation is when do
+Dialogue: 0,0:08:25.60,0:08:26.00,*Default,NTP,0000,0000,0000,,you quote
+Dialogue: 0,0:08:26.00,0:08:28.24,*Default,NTP,0000,0000,0000,,symbols and when don't you quote symbols
+Dialogue: 0,0:08:28.24,0:08:29.20,*Default,NTP,0000,0000,0000,,and the answer is
+Dialogue: 0,0:08:29.20,0:08:31.20,*Default,NTP,0000,0000,0000,,do you want to pass in what this is
+Dialogue: 0,0:08:31.20,0:08:33.44,*Default,NTP,0000,0000,0000,,bound to or do you want to pass in the
+Dialogue: 0,0:08:33.44,0:08:35.04,*Default,NTP,0000,0000,0000,,symbol itself
+Dialogue: 0,0:08:35.04,0:08:37.20,*Default,NTP,0000,0000,0000,,so if i didn't quote it what i would be
+Dialogue: 0,0:08:37.20,0:08:38.64,*Default,NTP,0000,0000,0000,,putting in this list
+Dialogue: 0,0:08:38.64,0:08:41.04,*Default,NTP,0000,0000,0000,,is a procedure that multiplies which
+Dialogue: 0,0:08:41.04,0:08:42.24,*Default,NTP,0000,0000,0000,,isn't
+Dialogue: 0,0:08:42.24,0:08:44.88,*Default,NTP,0000,0000,0000,,like something that would ever show up
+Dialogue: 0,0:08:44.88,0:08:45.28,*Default,NTP,0000,0000,0000,,in
+Dialogue: 0,0:08:45.28,0:08:47.36,*Default,NTP,0000,0000,0000,,the source code of a program this is no
+Dialogue: 0,0:08:47.36,0:08:48.88,*Default,NTP,0000,0000,0000,,longer an expression
+Dialogue: 0,0:08:48.88,0:08:51.28,*Default,NTP,0000,0000,0000,,this is some mixture of numbers and
+Dialogue: 0,0:08:51.28,0:08:53.04,*Default,NTP,0000,0000,0000,,procedures
+Dialogue: 0,0:08:53.04,0:08:54.96,*Default,NTP,0000,0000,0000,,and if what i really wanted was an
+Dialogue: 0,0:08:54.96,0:08:57.04,*Default,NTP,0000,0000,0000,,expression then i would have needed to
+Dialogue: 0,0:08:57.04,0:09:00.00,*Default,NTP,0000,0000,0000,,quote it so basically the story is with
+Dialogue: 0,0:09:00.00,0:09:01.04,*Default,NTP,0000,0000,0000,,symbols
+Dialogue: 0,0:09:01.04,0:09:03.04,*Default,NTP,0000,0000,0000,,do you want to pass in the symbol itself
+Dialogue: 0,0:09:03.04,0:09:04.48,*Default,NTP,0000,0000,0000,,or do you want to pass in what it's
+Dialogue: 0,0:09:04.48,0:09:06.16,*Default,NTP,0000,0000,0000,,bound to
+Dialogue: 0,0:09:06.16,0:09:07.92,*Default,NTP,0000,0000,0000,,um if you want to pass in what it's
+Dialogue: 0,0:09:07.92,0:09:10.00,*Default,NTP,0000,0000,0000,,bound to then just write the symbol and
+Dialogue: 0,0:09:10.00,0:09:11.84,*Default,NTP,0000,0000,0000,,it will be evaluated for you meaning get
+Dialogue: 0,0:09:11.84,0:09:12.56,*Default,NTP,0000,0000,0000,,the value
+Dialogue: 0,0:09:12.56,0:09:14.40,*Default,NTP,0000,0000,0000,,of whatever it's bound to and if you
+Dialogue: 0,0:09:14.40,0:09:15.84,*Default,NTP,0000,0000,0000,,just want the symbol itself then you
+Dialogue: 0,0:09:15.84,0:09:17.76,*Default,NTP,0000,0000,0000,,have to quote it
+Dialogue: 0,0:09:17.76,0:09:20.00,*Default,NTP,0000,0000,0000,,and in python it's not exactly the same
+Dialogue: 0,0:09:20.00,0:09:21.92,*Default,NTP,0000,0000,0000,,but we have a similar type of contract
+Dialogue: 0,0:09:21.92,0:09:23.28,*Default,NTP,0000,0000,0000,,which is strings
+Dialogue: 0,0:09:23.28,0:09:25.04,*Default,NTP,0000,0000,0000,,right when you put things in quotes
+Dialogue: 0,0:09:25.04,0:09:26.56,*Default,NTP,0000,0000,0000,,those are not interpreted those are
+Dialogue: 0,0:09:26.56,0:09:28.00,*Default,NTP,0000,0000,0000,,literally passed around
+Dialogue: 0,0:09:28.00,0:09:29.68,*Default,NTP,0000,0000,0000,,it's not exactly the same thing as the
+Dialogue: 0,0:09:29.68,0:09:31.84,*Default,NTP,0000,0000,0000,,quote but that's same concept is that
+Dialogue: 0,0:09:31.84,0:09:33.52,*Default,NTP,0000,0000,0000,,you're not interpreting what it is
+Dialogue: 0,0:09:33.52,0:09:34.40,*Default,NTP,0000,0000,0000,,you're just you're
+Dialogue: 0,0:09:34.40,0:09:39.04,*Default,NTP,0000,0000,0000,,encoding it directly yeah exactly
+Dialogue: 0,0:09:39.04,0:09:41.20,*Default,NTP,0000,0000,0000,,um in the lecture videos you introduce a
+Dialogue: 0,0:09:41.20,0:09:42.08,*Default,NTP,0000,0000,0000,,new frame
+Dialogue: 0,0:09:42.08,0:09:44.88,*Default,NTP,0000,0000,0000,,class to handle the scheme environment
+Dialogue: 0,0:09:44.88,0:09:46.24,*Default,NTP,0000,0000,0000,,would it be possible to
+Dialogue: 0,0:09:46.24,0:09:48.64,*Default,NTP,0000,0000,0000,,populate python's environment directly
+Dialogue: 0,0:09:48.64,0:09:50.48,*Default,NTP,0000,0000,0000,,or is that not possibly
+Dialogue: 0,0:09:50.48,0:09:52.32,*Default,NTP,0000,0000,0000,,or a bad idea is that not possible or a
+Dialogue: 0,0:09:52.32,0:09:53.84,*Default,NTP,0000,0000,0000,,bad idea
+Dialogue: 0,0:09:53.84,0:09:55.68,*Default,NTP,0000,0000,0000,,would be possible to populate python's
+Dialogue: 0,0:09:55.68,0:09:58.56,*Default,NTP,0000,0000,0000,,environment directly oh i see
+Dialogue: 0,0:09:58.56,0:10:01.52,*Default,NTP,0000,0000,0000,,yeah it's a good question so like how
+Dialogue: 0,0:10:01.52,0:10:02.64,*Default,NTP,0000,0000,0000,,would you create
+Dialogue: 0,0:10:02.64,0:10:05.52,*Default,NTP,0000,0000,0000,,a python frame to represent the scheme
+Dialogue: 0,0:10:05.52,0:10:06.16,*Default,NTP,0000,0000,0000,,frame
+Dialogue: 0,0:10:06.16,0:10:09.84,*Default,NTP,0000,0000,0000,,well you'd make a python function call
+Dialogue: 0,0:10:09.84,0:10:11.84,*Default,NTP,0000,0000,0000,,and so you'd make this python function
+Dialogue: 0,0:10:11.84,0:10:12.96,*Default,NTP,0000,0000,0000,,call
+Dialogue: 0,0:10:12.96,0:10:16.40,*Default,NTP,0000,0000,0000,,with the right formal parameters
+Dialogue: 0,0:10:16.40,0:10:19.28,*Default,NTP,0000,0000,0000,,and the right arguments and then you
+Dialogue: 0,0:10:19.28,0:10:19.84,*Default,NTP,0000,0000,0000,,would
+Dialogue: 0,0:10:19.84,0:10:22.96,*Default,NTP,0000,0000,0000,,get a python frame somewhere in the
+Dialogue: 0,0:10:22.96,0:10:24.80,*Default,NTP,0000,0000,0000,,python interpreter
+Dialogue: 0,0:10:24.80,0:10:26.96,*Default,NTP,0000,0000,0000,,but you can't really refer to that
+Dialogue: 0,0:10:26.96,0:10:28.72,*Default,NTP,0000,0000,0000,,python frame all you can really do
+Dialogue: 0,0:10:28.72,0:10:32.40,*Default,NTP,0000,0000,0000,,is use it to look up python
+Dialogue: 0,0:10:32.40,0:10:35.92,*Default,NTP,0000,0000,0000,,names so the reason why
+Dialogue: 0,0:10:35.92,0:10:38.08,*Default,NTP,0000,0000,0000,,in the scheme interpreter that we use
+Dialogue: 0,0:10:38.08,0:10:39.60,*Default,NTP,0000,0000,0000,,here we're going to
+Dialogue: 0,0:10:39.60,0:10:42.00,*Default,NTP,0000,0000,0000,,explicitly represent frames using
+Dialogue: 0,0:10:42.00,0:10:43.20,*Default,NTP,0000,0000,0000,,dictionaries
+Dialogue: 0,0:10:43.20,0:10:45.12,*Default,NTP,0000,0000,0000,,is that you can give a dictionary a name
+Dialogue: 0,0:10:45.12,0:10:46.72,*Default,NTP,0000,0000,0000,,you can write code in python that says
+Dialogue: 0,0:10:46.72,0:10:48.16,*Default,NTP,0000,0000,0000,,here's exactly what i want to do with
+Dialogue: 0,0:10:48.16,0:10:49.36,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:10:49.36,0:10:52.88,*Default,NTP,0000,0000,0000,,uh frame i want to use it next i want to
+Dialogue: 0,0:10:52.88,0:10:54.64,*Default,NTP,0000,0000,0000,,pass it in to apply
+Dialogue: 0,0:10:54.64,0:10:56.88,*Default,NTP,0000,0000,0000,,i want to look up a name within it i
+Dialogue: 0,0:10:56.88,0:10:58.88,*Default,NTP,0000,0000,0000,,want to bind a new name within it
+Dialogue: 0,0:10:58.88,0:11:01.04,*Default,NTP,0000,0000,0000,,like you have full control whereas if
+Dialogue: 0,0:11:01.04,0:11:02.32,*Default,NTP,0000,0000,0000,,instead you were trying to use the
+Dialogue: 0,0:11:02.32,0:11:04.64,*Default,NTP,0000,0000,0000,,python interpreter's notion of frames
+Dialogue: 0,0:11:04.64,0:11:06.80,*Default,NTP,0000,0000,0000,,the only way to create one would be to
+Dialogue: 0,0:11:06.80,0:11:08.80,*Default,NTP,0000,0000,0000,,call a python function with the right
+Dialogue: 0,0:11:08.80,0:11:10.88,*Default,NTP,0000,0000,0000,,arguments and you'd have to like create
+Dialogue: 0,0:11:10.88,0:11:12.48,*Default,NTP,0000,0000,0000,,a function that has the right
+Dialogue: 0,0:11:12.48,0:11:15.20,*Default,NTP,0000,0000,0000,,formal parameters but then even then you
+Dialogue: 0,0:11:15.20,0:11:15.92,*Default,NTP,0000,0000,0000,,couldn't really
+Dialogue: 0,0:11:15.92,0:11:18.16,*Default,NTP,0000,0000,0000,,do anything with that frame you couldn't
+Dialogue: 0,0:11:18.16,0:11:19.04,*Default,NTP,0000,0000,0000,,give it a name
+Dialogue: 0,0:11:19.04,0:11:22.08,*Default,NTP,0000,0000,0000,,and pass it around and say oh i want to
+Dialogue: 0,0:11:22.08,0:11:23.36,*Default,NTP,0000,0000,0000,,add one more
+Dialogue: 0,0:11:23.36,0:11:26.00,*Default,NTP,0000,0000,0000,,symbol to it or something like that
+Dialogue: 0,0:11:26.00,0:11:27.76,*Default,NTP,0000,0000,0000,,that's a cool idea though john that you
+Dialogue: 0,0:11:27.76,0:11:28.72,*Default,NTP,0000,0000,0000,,could
+Dialogue: 0,0:11:28.72,0:11:30.64,*Default,NTP,0000,0000,0000,,use frames as objects that you could
+Dialogue: 0,0:11:30.64,0:11:31.84,*Default,NTP,0000,0000,0000,,sort of move around
+Dialogue: 0,0:11:31.84,0:11:34.96,*Default,NTP,0000,0000,0000,,and say evaluate in this frame
+Dialogue: 0,0:11:34.96,0:11:37.60,*Default,NTP,0000,0000,0000,,right and uh scheme has a feature that
+Dialogue: 0,0:11:37.60,0:11:39.92,*Default,NTP,0000,0000,0000,,does exactly this
+Dialogue: 0,0:11:39.92,0:11:42.08,*Default,NTP,0000,0000,0000,,that we don't talk about it wasn't even
+Dialogue: 0,0:11:42.08,0:11:43.04,*Default,NTP,0000,0000,0000,,covered in the
+Dialogue: 0,0:11:43.04,0:11:45.28,*Default,NTP,0000,0000,0000,,version of 61a back when everything was
+Dialogue: 0,0:11:45.28,0:11:46.48,*Default,NTP,0000,0000,0000,,in scheme this is kind of
+Dialogue: 0,0:11:46.48,0:11:49.68,*Default,NTP,0000,0000,0000,,very i remember that yeah um but uh
+Dialogue: 0,0:11:49.68,0:11:52.32,*Default,NTP,0000,0000,0000,,yeah there's this there's this notion of
+Dialogue: 0,0:11:52.32,0:11:53.36,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:11:53.36,0:11:57.12,*Default,NTP,0000,0000,0000,,yeah calling you can call
+Dialogue: 0,0:11:57.12,0:12:00.08,*Default,NTP,0000,0000,0000,,something in a particular environment
+Dialogue: 0,0:12:00.08,0:12:01.04,*Default,NTP,0000,0000,0000,,and have a
+Dialogue: 0,0:12:01.04,0:12:02.72,*Default,NTP,0000,0000,0000,,symbol bound to that environment and you
+Dialogue: 0,0:12:02.72,0:12:04.56,*Default,NTP,0000,0000,0000,,can pass environments around so
+Dialogue: 0,0:12:04.56,0:12:07.12,*Default,NTP,0000,0000,0000,,like in python we say functions are
+Dialogue: 0,0:12:07.12,0:12:08.48,*Default,NTP,0000,0000,0000,,first class meaning we can give them
+Dialogue: 0,0:12:08.48,0:12:10.00,*Default,NTP,0000,0000,0000,,names they can be arguments you can do
+Dialogue: 0,0:12:10.00,0:12:11.60,*Default,NTP,0000,0000,0000,,anything that you want well in scheme
+Dialogue: 0,0:12:11.60,0:12:12.48,*Default,NTP,0000,0000,0000,,environments are
+Dialogue: 0,0:12:12.48,0:12:14.00,*Default,NTP,0000,0000,0000,,first class too if you really set it up
+Dialogue: 0,0:12:14.00,0:12:16.96,*Default,NTP,0000,0000,0000,,that way and
+Dialogue: 0,0:12:16.96,0:12:18.40,*Default,NTP,0000,0000,0000,,why would you ever want this well it
+Dialogue: 0,0:12:18.40,0:12:20.24,*Default,NTP,0000,0000,0000,,turns out might be useful for building
+Dialogue: 0,0:12:20.24,0:12:21.04,*Default,NTP,0000,0000,0000,,an interpreter
+Dialogue: 0,0:12:21.04,0:12:22.88,*Default,NTP,0000,0000,0000,,the most common way that is used is
+Dialogue: 0,0:12:22.88,0:12:24.40,*Default,NTP,0000,0000,0000,,actually to implement something like an
+Dialogue: 0,0:12:24.40,0:12:25.92,*Default,NTP,0000,0000,0000,,exception mechanism because
+Dialogue: 0,0:12:25.92,0:12:28.08,*Default,NTP,0000,0000,0000,,like then you know exceptions are all
+Dialogue: 0,0:12:28.08,0:12:29.60,*Default,NTP,0000,0000,0000,,about deciding kind of what
+Dialogue: 0,0:12:29.60,0:12:31.28,*Default,NTP,0000,0000,0000,,environment to go to next when something
+Dialogue: 0,0:12:31.28,0:12:33.04,*Default,NTP,0000,0000,0000,,goes wrong and you can try to do that in
+Dialogue: 0,0:12:33.04,0:12:33.84,*Default,NTP,0000,0000,0000,,scheme
+Dialogue: 0,0:12:33.84,0:12:36.24,*Default,NTP,0000,0000,0000,,just just by like writing the rules of
+Dialogue: 0,0:12:36.24,0:12:37.60,*Default,NTP,0000,0000,0000,,how exceptions work
+Dialogue: 0,0:12:37.60,0:12:38.80,*Default,NTP,0000,0000,0000,,as long as you're allowed to give a
+Dialogue: 0,0:12:38.80,0:12:40.80,*Default,NTP,0000,0000,0000,,symbol to a particular environment
+Dialogue: 0,0:12:40.80,0:12:44.00,*Default,NTP,0000,0000,0000,,yeah great question so the question is
+Dialogue: 0,0:12:44.00,0:12:45.84,*Default,NTP,0000,0000,0000,,every time you apply a user-defined
+Dialogue: 0,0:12:45.84,0:12:47.52,*Default,NTP,0000,0000,0000,,procedure in scheme
+Dialogue: 0,0:12:47.52,0:12:49.84,*Default,NTP,0000,0000,0000,,you're creating a new frame but how do
+Dialogue: 0,0:12:49.84,0:12:52.64,*Default,NTP,0000,0000,0000,,you keep track of all the non-local
+Dialogue: 0,0:12:52.64,0:12:53.52,*Default,NTP,0000,0000,0000,,symbols
+Dialogue: 0,0:12:53.52,0:12:56.88,*Default,NTP,0000,0000,0000,,like the rest of the environment
+Dialogue: 0,0:12:56.88,0:12:59.52,*Default,NTP,0000,0000,0000,,and uh it's a great question you can do
+Dialogue: 0,0:12:59.52,0:12:59.92,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:12:59.92,0:13:03.20,*Default,NTP,0000,0000,0000,,in scheme and the answer is that this
+Dialogue: 0,0:13:03.20,0:13:05.28,*Default,NTP,0000,0000,0000,,new frame that you create
+Dialogue: 0,0:13:05.28,0:13:08.32,*Default,NTP,0000,0000,0000,,knows about the frame
+Dialogue: 0,0:13:08.32,0:13:10.48,*Default,NTP,0000,0000,0000,,that was the current frame when that
+Dialogue: 0,0:13:10.48,0:13:11.60,*Default,NTP,0000,0000,0000,,procedure was
+Dialogue: 0,0:13:11.60,0:13:15.12,*Default,NTP,0000,0000,0000,,defined in the first place and therefore
+Dialogue: 0,0:13:15.12,0:13:17.28,*Default,NTP,0000,0000,0000,,the frame that you create gives you
+Dialogue: 0,0:13:17.28,0:13:18.48,*Default,NTP,0000,0000,0000,,access not only
+Dialogue: 0,0:13:18.48,0:13:21.28,*Default,NTP,0000,0000,0000,,to the local symbols but also the
+Dialogue: 0,0:13:21.28,0:13:23.52,*Default,NTP,0000,0000,0000,,non-local symbols
+Dialogue: 0,0:13:23.52,0:13:26.96,*Default,NTP,0000,0000,0000,,and um yeah i guess we told this story
+Dialogue: 0,0:13:26.96,0:13:29.04,*Default,NTP,0000,0000,0000,,early on of what an environment is it's
+Dialogue: 0,0:13:29.04,0:13:30.16,*Default,NTP,0000,0000,0000,,a sequence of frames
+Dialogue: 0,0:13:30.16,0:13:32.24,*Default,NTP,0000,0000,0000,,it's got some first frame and then it
+Dialogue: 0,0:13:32.24,0:13:34.16,*Default,NTP,0000,0000,0000,,has a parent and then it has a parent
+Dialogue: 0,0:13:34.16,0:13:35.68,*Default,NTP,0000,0000,0000,,and then it has a parent eventually get
+Dialogue: 0,0:13:35.68,0:13:37.12,*Default,NTP,0000,0000,0000,,to global
+Dialogue: 0,0:13:37.12,0:13:39.36,*Default,NTP,0000,0000,0000,,and that is exactly the same story that
+Dialogue: 0,0:13:39.36,0:13:40.88,*Default,NTP,0000,0000,0000,,applies to scheme and that is the
+Dialogue: 0,0:13:40.88,0:13:41.92,*Default,NTP,0000,0000,0000,,structure that you built
+Dialogue: 0,0:13:41.92,0:13:43.84,*Default,NTP,0000,0000,0000,,is that when you build a new frame it
+Dialogue: 0,0:13:43.84,0:13:45.60,*Default,NTP,0000,0000,0000,,has a parent which is some existing
+Dialogue: 0,0:13:45.60,0:13:46.08,*Default,NTP,0000,0000,0000,,frame
+Dialogue: 0,0:13:46.08,0:13:47.28,*Default,NTP,0000,0000,0000,,and it has a parent which is some
+Dialogue: 0,0:13:47.28,0:13:49.20,*Default,NTP,0000,0000,0000,,existing frame or eventually you get to
+Dialogue: 0,0:13:49.20,0:13:50.96,*Default,NTP,0000,0000,0000,,the global frame which has no parent at
+Dialogue: 0,0:13:50.96,0:13:53.28,*Default,NTP,0000,0000,0000,,all and when you look up a symbol
+Dialogue: 0,0:13:53.28,0:13:54.88,*Default,NTP,0000,0000,0000,,well you look in the first frame and if
+Dialogue: 0,0:13:54.88,0:13:56.56,*Default,NTP,0000,0000,0000,,it's not there then you check the parent
+Dialogue: 0,0:13:56.56,0:14:00.16,*Default,NTP,0000,0000,0000,,so basically you're just writing code to
+Dialogue: 0,0:14:00.16,0:14:03.04,*Default,NTP,0000,0000,0000,,um simulate that whole story about
+Dialogue: 0,0:14:03.04,0:14:04.64,*Default,NTP,0000,0000,0000,,environment diagrams that we've been
+Dialogue: 0,0:14:04.64,0:14:05.92,*Default,NTP,0000,0000,0000,,telling since the beginning of the
+Dialogue: 0,0:14:05.92,0:14:06.56,*Default,NTP,0000,0000,0000,,course
+Dialogue: 0,0:14:06.56,0:14:08.16,*Default,NTP,0000,0000,0000,,and to do that you have to create a
+Dialogue: 0,0:14:08.16,0:14:10.64,*Default,NTP,0000,0000,0000,,frame object which doesn't just have the
+Dialogue: 0,0:14:10.64,0:14:13.92,*Default,NTP,0000,0000,0000,,local names it also has a parent
+Dialogue: 0,0:14:13.92,0:14:16.32,*Default,NTP,0000,0000,0000,,and there's a follow-up uh here does
+Dialogue: 0,0:14:16.32,0:14:18.24,*Default,NTP,0000,0000,0000,,non-local even exist i don't remember
+Dialogue: 0,0:14:18.24,0:14:19.20,*Default,NTP,0000,0000,0000,,covering it in schemes
+Dialogue: 0,0:14:19.20,0:14:21.76,*Default,NTP,0000,0000,0000,,so so there's no non-local assignment
+Dialogue: 0,0:14:21.76,0:14:23.60,*Default,NTP,0000,0000,0000,,that we'll talk about it does exist but
+Dialogue: 0,0:14:23.60,0:14:25.04,*Default,NTP,0000,0000,0000,,we just left it out because we've got to
+Dialogue: 0,0:14:25.04,0:14:26.16,*Default,NTP,0000,0000,0000,,leave out some things
+Dialogue: 0,0:14:26.16,0:14:28.08,*Default,NTP,0000,0000,0000,,if you really care it's called the set
+Dialogue: 0,0:14:28.08,0:14:29.28,*Default,NTP,0000,0000,0000,,exclamation point
+Dialogue: 0,0:14:29.28,0:14:31.84,*Default,NTP,0000,0000,0000,,but there is non-local lookup in the
+Dialogue: 0,0:14:31.84,0:14:32.64,*Default,NTP,0000,0000,0000,,sense that
+Dialogue: 0,0:14:32.64,0:14:37.04,*Default,NTP,0000,0000,0000,,if i define
+Dialogue: 0,0:14:37.60,0:14:41.76,*Default,NTP,0000,0000,0000,,f of x which returns a procedure that
+Dialogue: 0,0:14:41.76,0:14:43.68,*Default,NTP,0000,0000,0000,,takes y
+Dialogue: 0,0:14:43.68,0:14:47.12,*Default,NTP,0000,0000,0000,,and adds x and y together
+Dialogue: 0,0:14:47.12,0:14:49.76,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:14:51.04,0:14:55.44,*Default,NTP,0000,0000,0000,,i call f on 2 and i call add 2
+Dialogue: 0,0:14:55.44,0:14:58.56,*Default,NTP,0000,0000,0000,,on 5 i should get seven what
+Dialogue: 0,0:14:58.56,0:15:02.32,*Default,NTP,0000,0000,0000,,add two has done is
+Dialogue: 0,0:15:02.32,0:15:05.60,*Default,NTP,0000,0000,0000,,been bound to some procedure
+Dialogue: 0,0:15:05.60,0:15:07.28,*Default,NTP,0000,0000,0000,,that really has two parts you can only
+Dialogue: 0,0:15:07.28,0:15:08.72,*Default,NTP,0000,0000,0000,,see one you can see the code
+Dialogue: 0,0:15:08.72,0:15:10.72,*Default,NTP,0000,0000,0000,,but there's another part to it which is
+Dialogue: 0,0:15:10.72,0:15:12.32,*Default,NTP,0000,0000,0000,,what is the frame
+Dialogue: 0,0:15:12.32,0:15:15.12,*Default,NTP,0000,0000,0000,,that was the current frame when this was
+Dialogue: 0,0:15:15.12,0:15:15.84,*Default,NTP,0000,0000,0000,,created
+Dialogue: 0,0:15:15.84,0:15:18.08,*Default,NTP,0000,0000,0000,,it was a frame in which x was bound to
+Dialogue: 0,0:15:18.08,0:15:19.76,*Default,NTP,0000,0000,0000,,two so that's why this
+Dialogue: 0,0:15:19.76,0:15:21.52,*Default,NTP,0000,0000,0000,,adds two it doesn't just add anything
+Dialogue: 0,0:15:21.52,0:15:23.12,*Default,NTP,0000,0000,0000,,together um
+Dialogue: 0,0:15:23.12,0:15:26.24,*Default,NTP,0000,0000,0000,,x is kind of like filled in already and
+Dialogue: 0,0:15:26.24,0:15:27.68,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:15:27.68,0:15:31.52,*Default,NTP,0000,0000,0000,,um the name x here is non-local you
+Dialogue: 0,0:15:31.52,0:15:33.12,*Default,NTP,0000,0000,0000,,obviously don't see it there
+Dialogue: 0,0:15:33.12,0:15:36.00,*Default,NTP,0000,0000,0000,,where is it well it's in the enclosing
+Dialogue: 0,0:15:36.00,0:15:37.68,*Default,NTP,0000,0000,0000,,scope
+Dialogue: 0,0:15:37.68,0:15:39.44,*Default,NTP,0000,0000,0000,,john when you print out add two why
+Dialogue: 0,0:15:39.44,0:15:41.20,*Default,NTP,0000,0000,0000,,wouldn't it show me the binding of x to
+Dialogue: 0,0:15:41.20,0:15:42.24,*Default,NTP,0000,0000,0000,,two would isn't that what would have
+Dialogue: 0,0:15:42.24,0:15:43.20,*Default,NTP,0000,0000,0000,,happened in python
+Dialogue: 0,0:15:43.20,0:15:44.40,*Default,NTP,0000,0000,0000,,it would it would have been but it would
+Dialogue: 0,0:15:44.40,0:15:46.40,*Default,NTP,0000,0000,0000,,have shown that as is plus
+Dialogue: 0,0:15:46.40,0:15:50.64,*Default,NTP,0000,0000,0000,,2y uh good question i think
+Dialogue: 0,0:15:50.64,0:15:53.12,*Default,NTP,0000,0000,0000,,you you in python you don't get these
+Dialogue: 0,0:15:53.12,0:15:54.72,*Default,NTP,0000,0000,0000,,substitution effects because
+Dialogue: 0,0:15:54.72,0:15:56.32,*Default,NTP,0000,0000,0000,,there's mutation everywhere and stuff
+Dialogue: 0,0:15:56.32,0:15:57.68,*Default,NTP,0000,0000,0000,,could change so really it is just
+Dialogue: 0,0:15:57.68,0:15:58.64,*Default,NTP,0000,0000,0000,,storing the code
+Dialogue: 0,0:15:58.64,0:16:00.24,*Default,NTP,0000,0000,0000,,and the environment in the environment
+Dialogue: 0,0:16:00.24,0:16:02.16,*Default,NTP,0000,0000,0000,,yeah in this subset of scheme that we're
+Dialogue: 0,0:16:02.16,0:16:03.36,*Default,NTP,0000,0000,0000,,working in
+Dialogue: 0,0:16:03.36,0:16:05.44,*Default,NTP,0000,0000,0000,,it would actually be legal just to kind
+Dialogue: 0,0:16:05.44,0:16:07.68,*Default,NTP,0000,0000,0000,,of replace this x with a two
+Dialogue: 0,0:16:07.68,0:16:09.76,*Default,NTP,0000,0000,0000,,and and like nothing would break as long
+Dialogue: 0,0:16:09.76,0:16:11.12,*Default,NTP,0000,0000,0000,,as there's no mutation
+Dialogue: 0,0:16:11.12,0:16:13.60,*Default,NTP,0000,0000,0000,,because that's that whole story of uh
+Dialogue: 0,0:16:13.60,0:16:14.48,*Default,NTP,0000,0000,0000,,you could replace
+Dialogue: 0,0:16:14.48,0:16:16.08,*Default,NTP,0000,0000,0000,,an expression by its value without
+Dialogue: 0,0:16:16.08,0:16:18.40,*Default,NTP,0000,0000,0000,,changing the answer um so that would be
+Dialogue: 0,0:16:18.40,0:16:20.00,*Default,NTP,0000,0000,0000,,like a nice feature is how do you
+Dialogue: 0,0:16:20.00,0:16:21.04,*Default,NTP,0000,0000,0000,,display this
+Dialogue: 0,0:16:21.04,0:16:23.52,*Default,NTP,0000,0000,0000,,such that the x is filled in but we
+Dialogue: 0,0:16:23.52,0:16:25.20,*Default,NTP,0000,0000,0000,,didn't try to implement this
+Dialogue: 0,0:16:25.20,0:16:26.80,*Default,NTP,0000,0000,0000,,okay but the way this game interpreter
+Dialogue: 0,0:16:26.80,0:16:28.24,*Default,NTP,0000,0000,0000,,actually works is it really just
+Dialogue: 0,0:16:28.24,0:16:29.60,*Default,NTP,0000,0000,0000,,remembers the code
+Dialogue: 0,0:16:29.60,0:16:31.92,*Default,NTP,0000,0000,0000,,and the procedure and so when it
+Dialogue: 0,0:16:31.92,0:16:32.88,*Default,NTP,0000,0000,0000,,evaluates this
+Dialogue: 0,0:16:32.88,0:16:34.96,*Default,NTP,0000,0000,0000,,it evaluates the plus and the x and the
+Dialogue: 0,0:16:34.96,0:16:36.64,*Default,NTP,0000,0000,0000,,y and it finds the plus in the global
+Dialogue: 0,0:16:36.64,0:16:38.56,*Default,NTP,0000,0000,0000,,frame it finds the x and the f frame and
+Dialogue: 0,0:16:38.56,0:16:40.32,*Default,NTP,0000,0000,0000,,it finds the y in the lambda frame and
+Dialogue: 0,0:16:40.32,0:16:42.56,*Default,NTP,0000,0000,0000,,puts them all together
+Dialogue: 0,0:16:42.56,0:16:44.24,*Default,NTP,0000,0000,0000,,and remind me john is am i
+Dialogue: 0,0:16:44.24,0:16:45.84,*Default,NTP,0000,0000,0000,,misremembering that lisp
+Dialogue: 0,0:16:45.84,0:16:50.56,*Default,NTP,0000,0000,0000,,doesn't have the set exclamation mark
+Dialogue: 0,0:16:53.84,0:16:56.56,*Default,NTP,0000,0000,0000,,some kind of there's some version of
+Dialogue: 0,0:16:56.56,0:16:57.68,*Default,NTP,0000,0000,0000,,whisper scheme that
+Dialogue: 0,0:16:57.68,0:16:59.52,*Default,NTP,0000,0000,0000,,has said we're not allowing this is that
+Dialogue: 0,0:16:59.52,0:17:01.44,*Default,NTP,0000,0000,0000,,yeah maybe in the early days there was
+Dialogue: 0,0:17:01.44,0:17:02.00,*Default,NTP,0000,0000,0000,,only set
+Dialogue: 0,0:17:02.00,0:17:04.40,*Default,NTP,0000,0000,0000,,car and set coulder that's what yeah
+Dialogue: 0,0:17:04.40,0:17:06.08,*Default,NTP,0000,0000,0000,,there used to be only that's what i yeah
+Dialogue: 0,0:17:06.08,0:17:07.28,*Default,NTP,0000,0000,0000,,and not set bang
+Dialogue: 0,0:17:07.28,0:17:09.44,*Default,NTP,0000,0000,0000,,and so if you wanted to mutate something
+Dialogue: 0,0:17:09.44,0:17:11.12,*Default,NTP,0000,0000,0000,,then you had to build a cons
+Dialogue: 0,0:17:11.12,0:17:15.28,*Default,NTP,0000,0000,0000,,this might be the case and um
+Dialogue: 0,0:17:15.28,0:17:17.04,*Default,NTP,0000,0000,0000,,yeah and then what about disallowing
+Dialogue: 0,0:17:17.04,0:17:19.28,*Default,NTP,0000,0000,0000,,mutation entirely i think that was never
+Dialogue: 0,0:17:19.28,0:17:21.04,*Default,NTP,0000,0000,0000,,really a lisp thing that's more of like
+Dialogue: 0,0:17:21.04,0:17:21.60,*Default,NTP,0000,0000,0000,,a
+Dialogue: 0,0:17:21.60,0:17:23.68,*Default,NTP,0000,0000,0000,,haskell thing oh maybe that's what i'm
+Dialogue: 0,0:17:23.68,0:17:26.64,*Default,NTP,0000,0000,0000,,confusing it with haskell
+Dialogue: 0,0:17:26.64,0:17:29.92,*Default,NTP,0000,0000,0000,,yeah okay
+Dialogue: 0,0:17:29.92,0:17:31.36,*Default,NTP,0000,0000,0000,,all right well i suspect you'll have
+Dialogue: 0,0:17:31.36,0:17:32.88,*Default,NTP,0000,0000,0000,,more questions when you actually do the
+Dialogue: 0,0:17:32.88,0:17:34.48,*Default,NTP,0000,0000,0000,,scheme project
+Dialogue: 0,0:17:34.48,0:17:35.84,*Default,NTP,0000,0000,0000,,you know this lecture is really just
+Dialogue: 0,0:17:35.84,0:17:37.44,*Default,NTP,0000,0000,0000,,kind of giving you an overview of what's
+Dialogue: 0,0:17:37.44,0:17:38.88,*Default,NTP,0000,0000,0000,,going on in the project
+Dialogue: 0,0:17:38.88,0:17:40.64,*Default,NTP,0000,0000,0000,,if you ever get to the point in the
+Dialogue: 0,0:17:40.64,0:17:42.08,*Default,NTP,0000,0000,0000,,project where you're wondering like what
+Dialogue: 0,0:17:42.08,0:17:44.24,*Default,NTP,0000,0000,0000,,am i doing right now like it tells me
+Dialogue: 0,0:17:44.24,0:17:45.60,*Default,NTP,0000,0000,0000,,you know i'm on question 8 and it's
+Dialogue: 0,0:17:45.60,0:17:46.80,*Default,NTP,0000,0000,0000,,telling me i'm supposed to implement
+Dialogue: 0,0:17:46.80,0:17:47.92,*Default,NTP,0000,0000,0000,,this function but why
+Dialogue: 0,0:17:47.92,0:17:50.48,*Default,NTP,0000,0000,0000,,i don't understand it at all that's a
+Dialogue: 0,0:17:50.48,0:17:52.32,*Default,NTP,0000,0000,0000,,good time to refer back to this lecture
+Dialogue: 0,0:17:52.32,0:17:53.92,*Default,NTP,0000,0000,0000,,and try to orient yourself
+Dialogue: 0,0:17:53.92,0:17:55.68,*Default,NTP,0000,0000,0000,,or to just try to read the code for the
+Dialogue: 0,0:17:55.68,0:17:58.24,*Default,NTP,0000,0000,0000,,whole project because
+Dialogue: 0,0:17:58.24,0:18:00.00,*Default,NTP,0000,0000,0000,,you know this is where a lot of stuff in
+Dialogue: 0,0:18:00.00,0:18:01.92,*Default,NTP,0000,0000,0000,,the course comes together like
+Dialogue: 0,0:18:01.92,0:18:03.68,*Default,NTP,0000,0000,0000,,we learned about trees because
+Dialogue: 0,0:18:03.68,0:18:05.60,*Default,NTP,0000,0000,0000,,expressions are tree structured
+Dialogue: 0,0:18:05.60,0:18:07.76,*Default,NTP,0000,0000,0000,,we learned about linked list because you
+Dialogue: 0,0:18:07.76,0:18:09.52,*Default,NTP,0000,0000,0000,,know this sequence of frames in an
+Dialogue: 0,0:18:09.52,0:18:10.16,*Default,NTP,0000,0000,0000,,environment
+Dialogue: 0,0:18:10.16,0:18:12.72,*Default,NTP,0000,0000,0000,,is like a linked list and we learned
+Dialogue: 0,0:18:12.72,0:18:13.28,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:18:13.28,0:18:16.00,*Default,NTP,0000,0000,0000,,how execution works in python is pretty
+Dialogue: 0,0:18:16.00,0:18:17.52,*Default,NTP,0000,0000,0000,,much the same in scheme
+Dialogue: 0,0:18:17.52,0:18:19.44,*Default,NTP,0000,0000,0000,,and now you really get to just write all
+Dialogue: 0,0:18:19.44,0:18:21.52,*Default,NTP,0000,0000,0000,,those rules in code so it turns out that
+Dialogue: 0,0:18:21.52,0:18:22.24,*Default,NTP,0000,0000,0000,,everything that you
+Dialogue: 0,0:18:22.24,0:18:24.72,*Default,NTP,0000,0000,0000,,like crammed into your mind in the first
+Dialogue: 0,0:18:24.72,0:18:26.00,*Default,NTP,0000,0000,0000,,few weeks of the course
+Dialogue: 0,0:18:26.00,0:18:27.60,*Default,NTP,0000,0000,0000,,now you just write a program that does
+Dialogue: 0,0:18:27.60,0:18:29.12,*Default,NTP,0000,0000,0000,,it for you you still have to think about
+Dialogue: 0,0:18:29.12,0:18:30.56,*Default,NTP,0000,0000,0000,,it in order to write code
+Dialogue: 0,0:18:30.56,0:18:32.56,*Default,NTP,0000,0000,0000,,but what's cool is that it really is
+Dialogue: 0,0:18:32.56,0:18:34.56,*Default,NTP,0000,0000,0000,,just a sequence of deterministic tips
+Dialogue: 0,0:18:34.56,0:18:36.64,*Default,NTP,0000,0000,0000,,and you can prove that to yourself by
+Dialogue: 0,0:18:36.64,0:18:38.08,*Default,NTP,0000,0000,0000,,by writing an interpreter that does
+Dialogue: 0,0:18:38.08,0:18:40.16,*Default,NTP,0000,0000,0000,,those steps and it and it makes the
+Dialogue: 0,0:18:40.16,0:18:41.76,*Default,NTP,0000,0000,0000,,programs behave like they're supposed to
+Dialogue: 0,0:18:41.76,0:18:44.08,*Default,NTP,0000,0000,0000,,behave so yeah don't don't miss that
+Dialogue: 0,0:18:44.08,0:18:44.48,*Default,NTP,0000,0000,0000,,part
+Dialogue: 0,0:18:44.48,0:18:46.16,*Default,NTP,0000,0000,0000,,don't miss that forest through the trees
+Dialogue: 0,0:18:46.16,0:18:47.68,*Default,NTP,0000,0000,0000,,as you work through the project but
+Dialogue: 0,0:18:47.68,0:18:49.12,*Default,NTP,0000,0000,0000,,instead you know try to figure out
+Dialogue: 0,0:18:49.12,0:18:50.80,*Default,NTP,0000,0000,0000,,what's going on and ask questions if you
+Dialogue: 0,0:18:50.80,0:18:57.04,*Default,NTP,0000,0000,0000,,don't get it
+Dialogue: 0,0:18:57.04,0:18:58.40,*Default,NTP,0000,0000,0000,,all right thanks everybody have a great
+Dialogue: 0,0:18:58.40,0:19:00.00,*Default,NTP,0000,0000,0000,,start to the week i think wednesday is a
+Dialogue: 0,0:19:00.00,0:19:00.64,*Default,NTP,0000,0000,0000,,holiday
+Dialogue: 0,0:19:00.64,0:19:04.40,*Default,NTP,0000,0000,0000,,right john and wednesday's a holiday
+Dialogue: 0,0:19:04.40,0:19:05.52,*Default,NTP,0000,0000,0000,,that is true
+Dialogue: 0,0:19:05.52,0:19:07.76,*Default,NTP,0000,0000,0000,,good happy veterans day and we'll see
+Dialogue: 0,0:19:07.76,0:19:09.20,*Default,NTP,0000,0000,0000,,everybody on friday

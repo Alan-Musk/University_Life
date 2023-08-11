@@ -1,0 +1,76 @@
+A try statement will handle exceptions that occur within the body of a function that is applied (either directly or indirectly) within the <try suite>
+ When an exception is raised
+ control jumps directly to the body of the <except suite> of the most recent try statement that handles that type of exception
+
+
+<code here>
+<code here>
+
+This example illustrates that the print expression in invert is never evaluated
+ and instead control is transferred to the suite of the except clause in invert_safe
+ Coercing the ZeroDivisionError e to a string gives the human-interpretable string returned by invert_safe: 'division by zero'
+
+
+Exception Objects
+
+Exception objects themselves can have attributes
+ such as the error message stated in an assert statement and information about where in the course of execution the exception was raised
+ User-defined exception classes can have additional attributes
+
+
+In Chapter 1
+ we implemented Newton's method to find the zeros of arbitrary functions
+ The following example defines an exception class that returns the best guess discovered in the course of iterative improvement whenever a ValueError occurs
+ A math domain error (a type of ValueError) is raised when sqrt is applied to a negative number
+ This exception is handled by raising an IterImproveError that stores the most recent guess from Newton's method as an attribute
+
+
+First
+ we define a new class that inherits from Exception
+
+
+<code here>
+
+Next
+ we define a version of improve
+ our generic iterative improvement algorithm
+ This version handles any ValueError by raising an IterImproveError that stores the most recent guess
+ As before
+ improve takes as arguments two functions
+ each of which takes a single numerical argument
+ The update function returns new guesses
+ while the done function returns a boolean indicating that improvement has converged to a correct value
+
+
+<code here>
+
+Finally
+ we define find_zero
+ which returns the result of improve applied to a Newton update function returned by newton_update
+ which is defined in Chapter 1 and requires no changes for this example
+ This version of find_zero handles an IterImproveError by returning its last guess
+
+
+<code here>
+
+
+Consider applying find_zero to find the zero of the function 2* x^2+ square x
+ This function has a zero at 0
+ but evaluating it on any negative number will raise a ValueError
+ Our Chapter 1 implementation of Newton's Method would raise that error and fail to return any guess of the zero
+ Our revised implementation returns the last guess found before the error
+
+
+<code here>
+
+Although this approximation is still far from the correct answer of 0
+ some applications would prefer this coarse approximation to a ValueError
+
+
+Exceptions are another technique that help us as programs to separate the concerns of our program into modular parts
+ In this example
+ Python's exception mechanism allowed us to separate the logic for iterative improvement
+ which appears unchanged in the suite of the try clause
+ from the logic for handling errors
+ which appears in except clauses
+ We will also find that exceptions are a useful feature when implementing interpreters in Python

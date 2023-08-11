@@ -1,0 +1,964 @@
+[Script Info]
+Title: Lecture 31. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=75&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:03.60,*Default,NTP,0000,0000,0000,,61a lecture 31 q a
+Dialogue: 0,0:00:03.60,0:00:07.12,*Default,NTP,0000,0000,0000,,so uh the question is if you already
+Dialogue: 0,0:00:07.12,0:00:08.08,*Default,NTP,0000,0000,0000,,have
+Dialogue: 0,0:00:08.08,0:00:11.68,*Default,NTP,0000,0000,0000,,some procedure that takes x and y
+Dialogue: 0,0:00:11.68,0:00:15.20,*Default,NTP,0000,0000,0000,,like adds them together and you
+Dialogue: 0,0:00:15.20,0:00:17.60,*Default,NTP,0000,0000,0000,,then want to convert this into a
+Dialogue: 0,0:00:17.60,0:00:18.32,*Default,NTP,0000,0000,0000,,procedure
+Dialogue: 0,0:00:18.32,0:00:20.64,*Default,NTP,0000,0000,0000,,that takes only one argument and holds
+Dialogue: 0,0:00:20.64,0:00:21.36,*Default,NTP,0000,0000,0000,,the other one
+Dialogue: 0,0:00:21.36,0:00:24.88,*Default,NTP,0000,0000,0000,,constant could you do that by saying
+Dialogue: 0,0:00:24.88,0:00:28.64,*Default,NTP,0000,0000,0000,,lambda x is a procedure which
+Dialogue: 0,0:00:28.64,0:00:32.00,*Default,NTP,0000,0000,0000,,takes x and calls g on whatever that
+Dialogue: 0,0:00:32.00,0:00:35.28,*Default,NTP,0000,0000,0000,,x is and three
+Dialogue: 0,0:00:35.28,0:00:37.52,*Default,NTP,0000,0000,0000,,and here we have indeed created a
+Dialogue: 0,0:00:37.52,0:00:38.80,*Default,NTP,0000,0000,0000,,procedure now
+Dialogue: 0,0:00:38.80,0:00:40.64,*Default,NTP,0000,0000,0000,,we either need to call it or give it a
+Dialogue: 0,0:00:40.64,0:00:42.48,*Default,NTP,0000,0000,0000,,name i think we should just give it a
+Dialogue: 0,0:00:42.48,0:00:43.12,*Default,NTP,0000,0000,0000,,name
+Dialogue: 0,0:00:43.12,0:00:46.24,*Default,NTP,0000,0000,0000,,that seems easier so now we have a one
+Dialogue: 0,0:00:46.24,0:00:48.24,*Default,NTP,0000,0000,0000,,argument procedure that adds three to
+Dialogue: 0,0:00:48.24,0:00:48.80,*Default,NTP,0000,0000,0000,,things
+Dialogue: 0,0:00:48.80,0:00:51.76,*Default,NTP,0000,0000,0000,,so if i call f on seven then i get ten
+Dialogue: 0,0:00:51.76,0:00:53.76,*Default,NTP,0000,0000,0000,,so like the longer version of this would
+Dialogue: 0,0:00:53.76,0:00:54.40,*Default,NTP,0000,0000,0000,,be
+Dialogue: 0,0:00:54.40,0:00:56.48,*Default,NTP,0000,0000,0000,,if instead of setting this equal to
+Dialogue: 0,0:00:56.48,0:00:58.00,*Default,NTP,0000,0000,0000,,three we set it equal to
+Dialogue: 0,0:00:58.00,0:01:00.16,*Default,NTP,0000,0000,0000,,some y and where is that y well it's
+Dialogue: 0,0:01:00.16,0:01:02.88,*Default,NTP,0000,0000,0000,,coming in here
+Dialogue: 0,0:01:02.88,0:01:05.44,*Default,NTP,0000,0000,0000,,now we have kind of a curried version of
+Dialogue: 0,0:01:05.44,0:01:05.92,*Default,NTP,0000,0000,0000,,g
+Dialogue: 0,0:01:05.92,0:01:09.12,*Default,NTP,0000,0000,0000,,so if we call this h h is the kind of
+Dialogue: 0,0:01:09.12,0:01:09.68,*Default,NTP,0000,0000,0000,,thing
+Dialogue: 0,0:01:09.68,0:01:12.48,*Default,NTP,0000,0000,0000,,that you have to call in order to get a
+Dialogue: 0,0:01:12.48,0:01:14.08,*Default,NTP,0000,0000,0000,,procedure and then when you
+Dialogue: 0,0:01:14.08,0:01:16.24,*Default,NTP,0000,0000,0000,,call that procedure then you're finally
+Dialogue: 0,0:01:16.24,0:01:17.68,*Default,NTP,0000,0000,0000,,adding three and seven
+Dialogue: 0,0:01:17.68,0:01:20.88,*Default,NTP,0000,0000,0000,,together i think they're equivalent yeah
+Dialogue: 0,0:01:20.88,0:01:22.08,*Default,NTP,0000,0000,0000,,those are the same things
+Dialogue: 0,0:01:22.08,0:01:23.84,*Default,NTP,0000,0000,0000,,one more level of indirection for you
+Dialogue: 0,0:01:23.84,0:01:26.32,*Default,NTP,0000,0000,0000,,yeah the next question was what
+Dialogue: 0,0:01:26.32,0:01:28.48,*Default,NTP,0000,0000,0000,,validate procedure does in the scheme
+Dialogue: 0,0:01:28.48,0:01:29.36,*Default,NTP,0000,0000,0000,,project
+Dialogue: 0,0:01:29.36,0:01:32.16,*Default,NTP,0000,0000,0000,,it's a python function so here's what it
+Dialogue: 0,0:01:32.16,0:01:32.56,*Default,NTP,0000,0000,0000,,does
+Dialogue: 0,0:01:32.56,0:01:35.68,*Default,NTP,0000,0000,0000,,is it um you call it and
+Dialogue: 0,0:01:35.68,0:01:38.80,*Default,NTP,0000,0000,0000,,it raises an error or it returns none
+Dialogue: 0,0:01:38.80,0:01:40.96,*Default,NTP,0000,0000,0000,,so you can never really do anything with
+Dialogue: 0,0:01:40.96,0:01:42.80,*Default,NTP,0000,0000,0000,,the result of validate procedures so you
+Dialogue: 0,0:01:42.80,0:01:44.56,*Default,NTP,0000,0000,0000,,wouldn't use it inside and if
+Dialogue: 0,0:01:44.56,0:01:46.96,*Default,NTP,0000,0000,0000,,you just call it to make sure that the
+Dialogue: 0,0:01:46.96,0:01:48.16,*Default,NTP,0000,0000,0000,,argument that you have
+Dialogue: 0,0:01:48.16,0:01:50.24,*Default,NTP,0000,0000,0000,,is really a procedure as opposed to some
+Dialogue: 0,0:01:50.24,0:01:52.48,*Default,NTP,0000,0000,0000,,other weird list
+Dialogue: 0,0:01:52.48,0:01:54.56,*Default,NTP,0000,0000,0000,,yeah good question so the question's
+Dialogue: 0,0:01:54.56,0:01:55.84,*Default,NTP,0000,0000,0000,,about this uh
+Dialogue: 0,0:01:55.84,0:01:58.56,*Default,NTP,0000,0000,0000,,data eight module called data science
+Dialogue: 0,0:01:58.56,0:01:59.44,*Default,NTP,0000,0000,0000,,which
+Dialogue: 0,0:01:59.44,0:02:03.68,*Default,NTP,0000,0000,0000,,we built for the course here
+Dialogue: 0,0:02:03.68,0:02:06.40,*Default,NTP,0000,0000,0000,,and whether it's really just running sql
+Dialogue: 0,0:02:06.40,0:02:07.84,*Default,NTP,0000,0000,0000,,under the hood
+Dialogue: 0,0:02:07.84,0:02:10.64,*Default,NTP,0000,0000,0000,,it's not but we borrow the names for a
+Dialogue: 0,0:02:10.64,0:02:11.12,*Default,NTP,0000,0000,0000,,reason
+Dialogue: 0,0:02:11.12,0:02:13.68,*Default,NTP,0000,0000,0000,,i think that these standard operations
+Dialogue: 0,0:02:13.68,0:02:15.36,*Default,NTP,0000,0000,0000,,that you perform on a table
+Dialogue: 0,0:02:15.36,0:02:17.68,*Default,NTP,0000,0000,0000,,like joining or wait i guess we'll do
+Dialogue: 0,0:02:17.68,0:02:18.96,*Default,NTP,0000,0000,0000,,joins on
+Dialogue: 0,0:02:18.96,0:02:21.60,*Default,NTP,0000,0000,0000,,monday but like uh the where to filter
+Dialogue: 0,0:02:21.60,0:02:22.40,*Default,NTP,0000,0000,0000,,it
+Dialogue: 0,0:02:22.40,0:02:24.96,*Default,NTP,0000,0000,0000,,and select in order to get particular
+Dialogue: 0,0:02:24.96,0:02:26.32,*Default,NTP,0000,0000,0000,,columns
+Dialogue: 0,0:02:26.32,0:02:29.76,*Default,NTP,0000,0000,0000,,um there are standard operations
+Dialogue: 0,0:02:29.76,0:02:31.92,*Default,NTP,0000,0000,0000,,and because sql is the most popular
+Dialogue: 0,0:02:31.92,0:02:33.68,*Default,NTP,0000,0000,0000,,programming language in the world
+Dialogue: 0,0:02:33.68,0:02:35.28,*Default,NTP,0000,0000,0000,,those are the conventional names for
+Dialogue: 0,0:02:35.28,0:02:37.20,*Default,NTP,0000,0000,0000,,them at this point i mean
+Dialogue: 0,0:02:37.20,0:02:38.80,*Default,NTP,0000,0000,0000,,sometimes maybe instead of calling it
+Dialogue: 0,0:02:38.80,0:02:40.64,*Default,NTP,0000,0000,0000,,where you might call it filter
+Dialogue: 0,0:02:40.64,0:02:42.72,*Default,NTP,0000,0000,0000,,but i think the sql names are kind of
+Dialogue: 0,0:02:42.72,0:02:44.88,*Default,NTP,0000,0000,0000,,the most common names that people have
+Dialogue: 0,0:02:44.88,0:02:47.76,*Default,NTP,0000,0000,0000,,for these different table operations so
+Dialogue: 0,0:02:47.76,0:02:48.96,*Default,NTP,0000,0000,0000,,you see them showing up
+Dialogue: 0,0:02:48.96,0:02:51.12,*Default,NTP,0000,0000,0000,,in lots of different modules not just
+Dialogue: 0,0:02:51.12,0:02:52.56,*Default,NTP,0000,0000,0000,,the data eight one
+Dialogue: 0,0:02:52.56,0:02:55.28,*Default,NTP,0000,0000,0000,,as the description of how you manipulate
+Dialogue: 0,0:02:55.28,0:02:56.80,*Default,NTP,0000,0000,0000,,tables using another programming
+Dialogue: 0,0:02:56.80,0:02:57.52,*Default,NTP,0000,0000,0000,,language
+Dialogue: 0,0:02:57.52,0:02:59.04,*Default,NTP,0000,0000,0000,,and this notion of declarative
+Dialogue: 0,0:02:59.04,0:03:01.20,*Default,NTP,0000,0000,0000,,programming and manipulating tables
+Dialogue: 0,0:03:01.20,0:03:04.16,*Default,NTP,0000,0000,0000,,is not specific to sql like it it shows
+Dialogue: 0,0:03:04.16,0:03:05.44,*Default,NTP,0000,0000,0000,,up in lots of different programming
+Dialogue: 0,0:03:05.44,0:03:06.40,*Default,NTP,0000,0000,0000,,languages
+Dialogue: 0,0:03:06.40,0:03:09.76,*Default,NTP,0000,0000,0000,,um oftentimes what is happening is that
+Dialogue: 0,0:03:09.76,0:03:11.92,*Default,NTP,0000,0000,0000,,you're just running you're like
+Dialogue: 0,0:03:11.92,0:03:14.16,*Default,NTP,0000,0000,0000,,converting python into sql
+Dialogue: 0,0:03:14.16,0:03:15.84,*Default,NTP,0000,0000,0000,,and then running that sql that's
+Dialogue: 0,0:03:15.84,0:03:17.12,*Default,NTP,0000,0000,0000,,actually not what's happening in data
+Dialogue: 0,0:03:17.12,0:03:18.64,*Default,NTP,0000,0000,0000,,eight you're just kind of running python
+Dialogue: 0,0:03:18.64,0:03:19.68,*Default,NTP,0000,0000,0000,,code
+Dialogue: 0,0:03:19.68,0:03:21.20,*Default,NTP,0000,0000,0000,,but we set it up this way so that you
+Dialogue: 0,0:03:21.20,0:03:23.12,*Default,NTP,0000,0000,0000,,could convert it to instead run sql if
+Dialogue: 0,0:03:23.12,0:03:23.92,*Default,NTP,0000,0000,0000,,you wanted to
+Dialogue: 0,0:03:23.92,0:03:25.36,*Default,NTP,0000,0000,0000,,in fact we had plans to do that for a
+Dialogue: 0,0:03:25.36,0:03:27.20,*Default,NTP,0000,0000,0000,,while but we never really got around to
+Dialogue: 0,0:03:27.20,0:03:29.28,*Default,NTP,0000,0000,0000,,it
+Dialogue: 0,0:03:29.28,0:03:31.28,*Default,NTP,0000,0000,0000,,uh yeah a good question so the question
+Dialogue: 0,0:03:31.28,0:03:34.80,*Default,NTP,0000,0000,0000,,is if you have a list of values
+Dialogue: 0,0:03:34.80,0:03:38.16,*Default,NTP,0000,0000,0000,,like you have uh
+Dialogue: 0,0:03:39.12,0:03:44.32,*Default,NTP,0000,0000,0000,,my values are one and two
+Dialogue: 0,0:03:44.32,0:03:46.08,*Default,NTP,0000,0000,0000,,and what you'd really like to do is add
+Dialogue: 0,0:03:46.08,0:03:48.56,*Default,NTP,0000,0000,0000,,one too but instead of
+Dialogue: 0,0:03:48.56,0:03:50.80,*Default,NTP,0000,0000,0000,,passing in each of these we want to say
+Dialogue: 0,0:03:50.80,0:03:52.56,*Default,NTP,0000,0000,0000,,i want to add
+Dialogue: 0,0:03:52.56,0:03:54.40,*Default,NTP,0000,0000,0000,,all the stuff that's in the list of
+Dialogue: 0,0:03:54.40,0:03:56.48,*Default,NTP,0000,0000,0000,,values well this won't work
+Dialogue: 0,0:03:56.48,0:04:00.24,*Default,NTP,0000,0000,0000,,because plus expects two arguments
+Dialogue: 0,0:04:00.24,0:04:03.04,*Default,NTP,0000,0000,0000,,and uh here we're passing only one it
+Dialogue: 0,0:04:03.04,0:04:04.72,*Default,NTP,0000,0000,0000,,expects numbers here we're passing in a
+Dialogue: 0,0:04:04.72,0:04:05.44,*Default,NTP,0000,0000,0000,,list
+Dialogue: 0,0:04:05.44,0:04:07.76,*Default,NTP,0000,0000,0000,,so what do you do and the answer is that
+Dialogue: 0,0:04:07.76,0:04:09.20,*Default,NTP,0000,0000,0000,,there's a built-in procedure called
+Dialogue: 0,0:04:09.20,0:04:12.56,*Default,NTP,0000,0000,0000,,apply which says uh apply plus to these
+Dialogue: 0,0:04:12.56,0:04:14.56,*Default,NTP,0000,0000,0000,,values and then it basically
+Dialogue: 0,0:04:14.56,0:04:19.36,*Default,NTP,0000,0000,0000,,constructs that and evaluates it
+Dialogue: 0,0:04:19.36,0:04:24.16,*Default,NTP,0000,0000,0000,,yeah so just a like follow up on this
+Dialogue: 0,0:04:24.16,0:04:26.72,*Default,NTP,0000,0000,0000,,example that we had before with apply
+Dialogue: 0,0:04:26.72,0:04:29.12,*Default,NTP,0000,0000,0000,,let's say we wanted to define
+Dialogue: 0,0:04:29.12,0:04:32.88,*Default,NTP,0000,0000,0000,,uh sum which takes a list of
+Dialogue: 0,0:04:32.88,0:04:35.60,*Default,NTP,0000,0000,0000,,let's call them params and what does it
+Dialogue: 0,0:04:35.60,0:04:36.48,*Default,NTP,0000,0000,0000,,do
+Dialogue: 0,0:04:36.48,0:04:39.52,*Default,NTP,0000,0000,0000,,well we want to like add
+Dialogue: 0,0:04:39.52,0:04:41.44,*Default,NTP,0000,0000,0000,,and then have like all the params in
+Dialogue: 0,0:04:41.44,0:04:42.64,*Default,NTP,0000,0000,0000,,here well
+Dialogue: 0,0:04:42.64,0:04:45.68,*Default,NTP,0000,0000,0000,,we would just write apply plus to the
+Dialogue: 0,0:04:45.68,0:04:48.24,*Default,NTP,0000,0000,0000,,params
+Dialogue: 0,0:04:48.56,0:04:50.40,*Default,NTP,0000,0000,0000,,and the next question i have appreciated
+Dialogue: 0,0:04:50.40,0:04:52.48,*Default,NTP,0000,0000,0000,,the terms linear
+Dialogue: 0,0:04:52.48,0:04:54.24,*Default,NTP,0000,0000,0000,,a list of values are used in the letters
+Dialogue: 0,0:04:54.24,0:04:57.84,*Default,NTP,0000,0000,0000,,added together
+Dialogue: 0,0:05:03.36,0:05:06.00,*Default,NTP,0000,0000,0000,,so i don't think we're doing a lot of
+Dialogue: 0,0:05:06.00,0:05:08.00,*Default,NTP,0000,0000,0000,,runtime complexity
+Dialogue: 0,0:05:08.00,0:05:09.36,*Default,NTP,0000,0000,0000,,so we're not going to go into too much
+Dialogue: 0,0:05:09.36,0:05:11.84,*Default,NTP,0000,0000,0000,,detail here but here's the basic idea
+Dialogue: 0,0:05:11.84,0:05:14.00,*Default,NTP,0000,0000,0000,,when you measure runtime complexity you
+Dialogue: 0,0:05:14.00,0:05:15.60,*Default,NTP,0000,0000,0000,,measure it as a function of the size of
+Dialogue: 0,0:05:15.60,0:05:16.80,*Default,NTP,0000,0000,0000,,the input
+Dialogue: 0,0:05:16.80,0:05:19.36,*Default,NTP,0000,0000,0000,,yeah so how many numbers do i want to
+Dialogue: 0,0:05:19.36,0:05:20.08,*Default,NTP,0000,0000,0000,,add
+Dialogue: 0,0:05:20.08,0:05:22.48,*Default,NTP,0000,0000,0000,,okay that's the size of the input um i
+Dialogue: 0,0:05:22.48,0:05:23.44,*Default,NTP,0000,0000,0000,,want to sort of list
+Dialogue: 0,0:05:23.44,0:05:25.60,*Default,NTP,0000,0000,0000,,how many elements are in the list i want
+Dialogue: 0,0:05:25.60,0:05:26.96,*Default,NTP,0000,0000,0000,,to select something from a table
+Dialogue: 0,0:05:26.96,0:05:28.88,*Default,NTP,0000,0000,0000,,how many rows are in the table right so
+Dialogue: 0,0:05:28.88,0:05:30.72,*Default,NTP,0000,0000,0000,,the size of the data
+Dialogue: 0,0:05:30.72,0:05:33.76,*Default,NTP,0000,0000,0000,,is how we specify the complexity
+Dialogue: 0,0:05:33.76,0:05:36.00,*Default,NTP,0000,0000,0000,,if something is linear in the size of
+Dialogue: 0,0:05:36.00,0:05:37.04,*Default,NTP,0000,0000,0000,,the input
+Dialogue: 0,0:05:37.04,0:05:40.16,*Default,NTP,0000,0000,0000,,it means that every time you add an
+Dialogue: 0,0:05:40.16,0:05:43.76,*Default,NTP,0000,0000,0000,,element to the size of your data your
+Dialogue: 0,0:05:43.76,0:05:47.20,*Default,NTP,0000,0000,0000,,uh complexity increases linearly
+Dialogue: 0,0:05:47.20,0:05:49.04,*Default,NTP,0000,0000,0000,,proportional to that so if i double the
+Dialogue: 0,0:05:49.04,0:05:49.92,*Default,NTP,0000,0000,0000,,size of the input
+Dialogue: 0,0:05:49.92,0:05:52.48,*Default,NTP,0000,0000,0000,,my runtime is double if i quadruple the
+Dialogue: 0,0:05:52.48,0:05:53.36,*Default,NTP,0000,0000,0000,,side of the input
+Dialogue: 0,0:05:53.36,0:05:55.60,*Default,NTP,0000,0000,0000,,my runtime is 100 volts right so if you
+Dialogue: 0,0:05:55.60,0:05:56.64,*Default,NTP,0000,0000,0000,,think about
+Dialogue: 0,0:05:56.64,0:05:58.80,*Default,NTP,0000,0000,0000,,measuring a slot that has the size of
+Dialogue: 0,0:05:58.80,0:06:01.28,*Default,NTP,0000,0000,0000,,your data on the horizontal axis
+Dialogue: 0,0:06:01.28,0:06:03.28,*Default,NTP,0000,0000,0000,,and the run and how long it takes to run
+Dialogue: 0,0:06:03.28,0:06:04.64,*Default,NTP,0000,0000,0000,,on the vertical axis
+Dialogue: 0,0:06:04.64,0:06:07.12,*Default,NTP,0000,0000,0000,,linear literally means it's linear right
+Dialogue: 0,0:06:07.12,0:06:09.04,*Default,NTP,0000,0000,0000,,it grows linearly with that that's good
+Dialogue: 0,0:06:09.04,0:06:10.48,*Default,NTP,0000,0000,0000,,that's really nice it means things don't
+Dialogue: 0,0:06:10.48,0:06:11.60,*Default,NTP,0000,0000,0000,,get out of control
+Dialogue: 0,0:06:11.60,0:06:14.08,*Default,NTP,0000,0000,0000,,it's not great but it's good uh
+Dialogue: 0,0:06:14.08,0:06:15.20,*Default,NTP,0000,0000,0000,,logarithmic
+Dialogue: 0,0:06:15.20,0:06:18.84,*Default,NTP,0000,0000,0000,,means that it does this it slows down
+Dialogue: 0,0:06:18.84,0:06:22.32,*Default,NTP,0000,0000,0000,,um as as the data gets larger that's
+Dialogue: 0,0:06:22.32,0:06:26.16,*Default,NTP,0000,0000,0000,,really really nice quadratic is the
+Dialogue: 0,0:06:26.16,0:06:26.88,*Default,NTP,0000,0000,0000,,opposite
+Dialogue: 0,0:06:26.88,0:06:28.88,*Default,NTP,0000,0000,0000,,it means that if i double the size of
+Dialogue: 0,0:06:28.88,0:06:31.60,*Default,NTP,0000,0000,0000,,the data my complexity increases by a
+Dialogue: 0,0:06:31.60,0:06:32.96,*Default,NTP,0000,0000,0000,,factor of four
+Dialogue: 0,0:06:32.96,0:06:35.76,*Default,NTP,0000,0000,0000,,because it's two squared um so the so
+Dialogue: 0,0:06:35.76,0:06:37.44,*Default,NTP,0000,0000,0000,,the quadratics think about sort of a
+Dialogue: 0,0:06:37.44,0:06:38.48,*Default,NTP,0000,0000,0000,,point like a
+Dialogue: 0,0:06:38.48,0:06:42.00,*Default,NTP,0000,0000,0000,,a parabola as you increase n
+Dialogue: 0,0:06:42.00,0:06:44.40,*Default,NTP,0000,0000,0000,,your complexity starts going faster and
+Dialogue: 0,0:06:44.40,0:06:45.36,*Default,NTP,0000,0000,0000,,faster and faster
+Dialogue: 0,0:06:45.36,0:06:48.64,*Default,NTP,0000,0000,0000,,really that is exponential it goes with
+Dialogue: 0,0:06:48.64,0:06:50.56,*Default,NTP,0000,0000,0000,,2 to the power as opposed to n to the
+Dialogue: 0,0:06:50.56,0:06:51.44,*Default,NTP,0000,0000,0000,,power
+Dialogue: 0,0:06:51.44,0:06:52.72,*Default,NTP,0000,0000,0000,,so there's sort of a couple of
+Dialogue: 0,0:06:52.72,0:06:54.64,*Default,NTP,0000,0000,0000,,categories of runtime complexity there's
+Dialogue: 0,0:06:54.64,0:06:56.00,*Default,NTP,0000,0000,0000,,constant time
+Dialogue: 0,0:06:56.00,0:06:57.44,*Default,NTP,0000,0000,0000,,that's amazing no matter how big the
+Dialogue: 0,0:06:57.44,0:06:59.68,*Default,NTP,0000,0000,0000,,database is it takes constant time
+Dialogue: 0,0:06:59.68,0:07:01.44,*Default,NTP,0000,0000,0000,,there's a logarithmic time very very
+Dialogue: 0,0:07:01.44,0:07:03.60,*Default,NTP,0000,0000,0000,,slow growth very good
+Dialogue: 0,0:07:03.60,0:07:07.28,*Default,NTP,0000,0000,0000,,linear good polynomial which means n
+Dialogue: 0,0:07:07.28,0:07:09.28,*Default,NTP,0000,0000,0000,,squared n cubed n to the fourth n to the
+Dialogue: 0,0:07:09.28,0:07:10.24,*Default,NTP,0000,0000,0000,,fifth
+Dialogue: 0,0:07:10.24,0:07:11.76,*Default,NTP,0000,0000,0000,,okay but it's going to be problem for
+Dialogue: 0,0:07:11.76,0:07:13.28,*Default,NTP,0000,0000,0000,,large databases
+Dialogue: 0,0:07:13.28,0:07:15.92,*Default,NTP,0000,0000,0000,,and then exponential which is a disaster
+Dialogue: 0,0:07:15.92,0:07:16.40,*Default,NTP,0000,0000,0000,,because
+Dialogue: 0,0:07:16.40,0:07:19.04,*Default,NTP,0000,0000,0000,,or or um factorial which is a disaster
+Dialogue: 0,0:07:19.04,0:07:20.48,*Default,NTP,0000,0000,0000,,because as soon as n gets to even a
+Dialogue: 0,0:07:20.48,0:07:21.92,*Default,NTP,0000,0000,0000,,relatively small number
+Dialogue: 0,0:07:21.92,0:07:23.36,*Default,NTP,0000,0000,0000,,the whole thing breaks down so those are
+Dialogue: 0,0:07:23.36,0:07:25.04,*Default,NTP,0000,0000,0000,,sort of the rough categories
+Dialogue: 0,0:07:25.04,0:07:26.48,*Default,NTP,0000,0000,0000,,and that's what what john meant when he
+Dialogue: 0,0:07:26.48,0:07:30.08,*Default,NTP,0000,0000,0000,,was referring to quadratic versus linear
+Dialogue: 0,0:07:30.08,0:07:31.92,*Default,NTP,0000,0000,0000,,and i think maybe the reason that
+Dialogue: 0,0:07:31.92,0:07:33.52,*Default,NTP,0000,0000,0000,,surprised you is that we
+Dialogue: 0,0:07:33.52,0:07:36.64,*Default,NTP,0000,0000,0000,,made the um
+Dialogue: 0,0:07:36.64,0:07:39.20,*Default,NTP,0000,0000,0000,,the lecture on efficiency optional so if
+Dialogue: 0,0:07:39.20,0:07:40.40,*Default,NTP,0000,0000,0000,,you missed that along the way that's
+Dialogue: 0,0:07:40.40,0:07:42.08,*Default,NTP,0000,0000,0000,,fine this semester you'll do lots of it
+Dialogue: 0,0:07:42.08,0:07:42.88,*Default,NTP,0000,0000,0000,,in 61b
+Dialogue: 0,0:07:42.88,0:07:44.64,*Default,NTP,0000,0000,0000,,if you take that class but if you want
+Dialogue: 0,0:07:44.64,0:07:46.40,*Default,NTP,0000,0000,0000,,like a 45 minute
+Dialogue: 0,0:07:46.40,0:07:49.04,*Default,NTP,0000,0000,0000,,version of what honey just said which
+Dialogue: 0,0:07:49.04,0:07:50.48,*Default,NTP,0000,0000,0000,,you don't need but if you really want it
+Dialogue: 0,0:07:50.48,0:07:52.00,*Default,NTP,0000,0000,0000,,then there's that efficiency lecture
+Dialogue: 0,0:07:52.00,0:07:53.60,*Default,NTP,0000,0000,0000,,sitting there in the schedule from like
+Dialogue: 0,0:07:53.60,0:07:56.88,*Default,NTP,0000,0000,0000,,some time before midterm too
+Dialogue: 0,0:07:56.88,0:07:58.80,*Default,NTP,0000,0000,0000,,the next question is what is this thing
+Dialogue: 0,0:07:58.80,0:08:00.32,*Default,NTP,0000,0000,0000,,called nosql
+Dialogue: 0,0:08:00.32,0:08:03.52,*Default,NTP,0000,0000,0000,,and how does it relate to sql i'll give
+Dialogue: 0,0:08:03.52,0:08:05.12,*Default,NTP,0000,0000,0000,,you my spiel on this and i'm curious
+Dialogue: 0,0:08:05.12,0:08:06.80,*Default,NTP,0000,0000,0000,,what john thinks so
+Dialogue: 0,0:08:06.80,0:08:10.48,*Default,NTP,0000,0000,0000,,sql is an actual database
+Dialogue: 0,0:08:10.48,0:08:13.92,*Default,NTP,0000,0000,0000,,program but it's also been used to refer
+Dialogue: 0,0:08:13.92,0:08:14.88,*Default,NTP,0000,0000,0000,,to a class
+Dialogue: 0,0:08:14.88,0:08:16.96,*Default,NTP,0000,0000,0000,,of types of databases so there are
+Dialogue: 0,0:08:16.96,0:08:18.88,*Default,NTP,0000,0000,0000,,databases are called nosql
+Dialogue: 0,0:08:18.88,0:08:21.60,*Default,NTP,0000,0000,0000,,which just means they're not using sql
+Dialogue: 0,0:08:21.60,0:08:22.40,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:08:22.40,0:08:24.72,*Default,NTP,0000,0000,0000,,and then within sql there's mysql their
+Dialogue: 0,0:08:24.72,0:08:26.80,*Default,NTP,0000,0000,0000,,sql their sql lite those are all
+Dialogue: 0,0:08:26.80,0:08:29.12,*Default,NTP,0000,0000,0000,,essentially variants on the same basic
+Dialogue: 0,0:08:29.12,0:08:30.24,*Default,NTP,0000,0000,0000,,underlying
+Dialogue: 0,0:08:30.24,0:08:32.32,*Default,NTP,0000,0000,0000,,uh database management system with some
+Dialogue: 0,0:08:32.32,0:08:34.00,*Default,NTP,0000,0000,0000,,bells and whistles either included
+Dialogue: 0,0:08:34.00,0:08:36.56,*Default,NTP,0000,0000,0000,,or excluded i think we're you can we're
+Dialogue: 0,0:08:36.56,0:08:37.84,*Default,NTP,0000,0000,0000,,just learning sql it's
+Dialogue: 0,0:08:37.84,0:08:38.96,*Default,NTP,0000,0000,0000,,you don't have to worry about which
+Dialogue: 0,0:08:38.96,0:08:41.36,*Default,NTP,0000,0000,0000,,specific version of it is
+Dialogue: 0,0:08:41.36,0:08:44.56,*Default,NTP,0000,0000,0000,,yeah and the funny thing about nosql
+Dialogue: 0,0:08:44.56,0:08:48.40,*Default,NTP,0000,0000,0000,,databases is that oftentimes they still
+Dialogue: 0,0:08:48.40,0:08:51.04,*Default,NTP,0000,0000,0000,,use something that looks almost exactly
+Dialogue: 0,0:08:51.04,0:08:51.92,*Default,NTP,0000,0000,0000,,like sql
+Dialogue: 0,0:08:51.92,0:08:55.36,*Default,NTP,0000,0000,0000,,in order to access them yeah but they
+Dialogue: 0,0:08:55.36,0:08:56.96,*Default,NTP,0000,0000,0000,,don't come with the same
+Dialogue: 0,0:08:56.96,0:08:59.76,*Default,NTP,0000,0000,0000,,guarantees about what happens when
+Dialogue: 0,0:08:59.76,0:09:01.52,*Default,NTP,0000,0000,0000,,multiple different programs
+Dialogue: 0,0:09:01.52,0:09:03.76,*Default,NTP,0000,0000,0000,,access the database at the same time
+Dialogue: 0,0:09:03.76,0:09:05.76,*Default,NTP,0000,0000,0000,,that's basically the main story about
+Dialogue: 0,0:09:05.76,0:09:09.12,*Default,NTP,0000,0000,0000,,nosql is that in order to make sure that
+Dialogue: 0,0:09:09.12,0:09:10.88,*Default,NTP,0000,0000,0000,,nothing breaks when multiple different
+Dialogue: 0,0:09:10.88,0:09:12.80,*Default,NTP,0000,0000,0000,,computers are all accessing the database
+Dialogue: 0,0:09:12.80,0:09:14.00,*Default,NTP,0000,0000,0000,,at the same time
+Dialogue: 0,0:09:14.00,0:09:17.04,*Default,NTP,0000,0000,0000,,you have to slow some of those processes
+Dialogue: 0,0:09:17.04,0:09:17.52,*Default,NTP,0000,0000,0000,,down
+Dialogue: 0,0:09:17.52,0:09:19.28,*Default,NTP,0000,0000,0000,,like some stuff has to wait for other
+Dialogue: 0,0:09:19.28,0:09:21.20,*Default,NTP,0000,0000,0000,,stuff in order to
+Dialogue: 0,0:09:21.20,0:09:22.80,*Default,NTP,0000,0000,0000,,make sure that like nothing gets
+Dialogue: 0,0:09:22.80,0:09:24.64,*Default,NTP,0000,0000,0000,,confused along the way
+Dialogue: 0,0:09:24.64,0:09:27.76,*Default,NTP,0000,0000,0000,,um and nosql tends to relax that
+Dialogue: 0,0:09:27.76,0:09:31.76,*Default,NTP,0000,0000,0000,,um in in various ways and so
+Dialogue: 0,0:09:31.76,0:09:34.88,*Default,NTP,0000,0000,0000,,uh the nice thing is that if you relax
+Dialogue: 0,0:09:34.88,0:09:36.08,*Default,NTP,0000,0000,0000,,these kinds of constraints
+Dialogue: 0,0:09:36.08,0:09:38.80,*Default,NTP,0000,0000,0000,,then you could have applications grow up
+Dialogue: 0,0:09:38.80,0:09:41.12,*Default,NTP,0000,0000,0000,,to a much larger scale and still be fast
+Dialogue: 0,0:09:41.12,0:09:44.48,*Default,NTP,0000,0000,0000,,you know but the downside is it might be
+Dialogue: 0,0:09:44.48,0:09:47.52,*Default,NTP,0000,0000,0000,,the case that if you check your email
+Dialogue: 0,0:09:47.52,0:09:49.20,*Default,NTP,0000,0000,0000,,it doesn't show you all the emails that
+Dialogue: 0,0:09:49.20,0:09:50.96,*Default,NTP,0000,0000,0000,,have been delivered yet
+Dialogue: 0,0:09:50.96,0:09:54.00,*Default,NTP,0000,0000,0000,,because um you know of some like weird
+Dialogue: 0,0:09:54.00,0:09:55.44,*Default,NTP,0000,0000,0000,,synchronization issue
+Dialogue: 0,0:09:55.44,0:09:56.88,*Default,NTP,0000,0000,0000,,and you know you'll see it eventually
+Dialogue: 0,0:09:56.88,0:09:58.64,*Default,NTP,0000,0000,0000,,but you might not see it right away so
+Dialogue: 0,0:09:58.64,0:10:01.76,*Default,NTP,0000,0000,0000,,um it's it's a great topic
+Dialogue: 0,0:10:01.76,0:10:04.80,*Default,NTP,0000,0000,0000,,for taking a database course or a data
+Dialogue: 0,0:10:04.80,0:10:05.84,*Default,NTP,0000,0000,0000,,management course
+Dialogue: 0,0:10:05.84,0:10:08.16,*Default,NTP,0000,0000,0000,,there's a new one being developed here
+Dialogue: 0,0:10:08.16,0:10:09.84,*Default,NTP,0000,0000,0000,,that's just being piloted
+Dialogue: 0,0:10:09.84,0:10:12.72,*Default,NTP,0000,0000,0000,,this next semester we also have a
+Dialogue: 0,0:10:12.72,0:10:14.32,*Default,NTP,0000,0000,0000,,standard database course that focuses
+Dialogue: 0,0:10:14.32,0:10:16.24,*Default,NTP,0000,0000,0000,,more on sql but doesn't talk too much i
+Dialogue: 0,0:10:16.24,0:10:17.04,*Default,NTP,0000,0000,0000,,think about
+Dialogue: 0,0:10:17.04,0:10:19.84,*Default,NTP,0000,0000,0000,,the nosql variants but you know it's
+Dialogue: 0,0:10:19.84,0:10:21.44,*Default,NTP,0000,0000,0000,,more branding than anything else they
+Dialogue: 0,0:10:21.44,0:10:23.60,*Default,NTP,0000,0000,0000,,called it nosql to try to make sure that
+Dialogue: 0,0:10:23.60,0:10:24.24,*Default,NTP,0000,0000,0000,,it was
+Dialogue: 0,0:10:24.24,0:10:26.56,*Default,NTP,0000,0000,0000,,distinct in people's minds but it's not
+Dialogue: 0,0:10:26.56,0:10:28.24,*Default,NTP,0000,0000,0000,,like what you learn about sql doesn't
+Dialogue: 0,0:10:28.24,0:10:28.96,*Default,NTP,0000,0000,0000,,apply
+Dialogue: 0,0:10:28.96,0:10:30.56,*Default,NTP,0000,0000,0000,,in fact all the operations that you
+Dialogue: 0,0:10:30.56,0:10:32.08,*Default,NTP,0000,0000,0000,,learn in sql are basically the same
+Dialogue: 0,0:10:32.08,0:10:34.96,*Default,NTP,0000,0000,0000,,there as well and i'm not a database
+Dialogue: 0,0:10:34.96,0:10:36.56,*Default,NTP,0000,0000,0000,,actor my understanding
+Dialogue: 0,0:10:36.56,0:10:40.48,*Default,NTP,0000,0000,0000,,is that sql does start to break down for
+Dialogue: 0,0:10:40.48,0:10:43.44,*Default,NTP,0000,0000,0000,,very very large databases um because of
+Dialogue: 0,0:10:43.44,0:10:45.52,*Default,NTP,0000,0000,0000,,the guarantees and you do need to move
+Dialogue: 0,0:10:45.52,0:10:46.32,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:10:46.32,0:10:47.84,*Default,NTP,0000,0000,0000,,something that is not as strict if
+Dialogue: 0,0:10:47.84,0:10:49.44,*Default,NTP,0000,0000,0000,,you're going to have these
+Dialogue: 0,0:10:49.44,0:10:51.76,*Default,NTP,0000,0000,0000,,google size facebook size massive
+Dialogue: 0,0:10:51.76,0:10:53.04,*Default,NTP,0000,0000,0000,,database with
+Dialogue: 0,0:10:53.04,0:10:54.96,*Default,NTP,0000,0000,0000,,databases with terabytes and petabytes
+Dialogue: 0,0:10:54.96,0:10:56.48,*Default,NTP,0000,0000,0000,,it's just you have to do something a
+Dialogue: 0,0:10:56.48,0:10:57.20,*Default,NTP,0000,0000,0000,,little bit
+Dialogue: 0,0:10:57.20,0:10:59.04,*Default,NTP,0000,0000,0000,,uh different to really get them together
+Dialogue: 0,0:10:59.04,0:11:00.40,*Default,NTP,0000,0000,0000,,i don't know where things start breaking
+Dialogue: 0,0:11:00.40,0:11:02.24,*Default,NTP,0000,0000,0000,,down specifically but
+Dialogue: 0,0:11:02.24,0:11:03.92,*Default,NTP,0000,0000,0000,,really really large databases tend not
+Dialogue: 0,0:11:03.92,0:11:06.48,*Default,NTP,0000,0000,0000,,to be sql isn't that right john
+Dialogue: 0,0:11:06.48,0:11:08.72,*Default,NTP,0000,0000,0000,,yeah but people have also figured out
+Dialogue: 0,0:11:08.72,0:11:10.00,*Default,NTP,0000,0000,0000,,how to get very
+Dialogue: 0,0:11:10.00,0:11:13.12,*Default,NTP,0000,0000,0000,,quite large databases to to run in like
+Dialogue: 0,0:11:13.12,0:11:14.96,*Default,NTP,0000,0000,0000,,a standard sql-based
+Dialogue: 0,0:11:14.96,0:11:17.60,*Default,NTP,0000,0000,0000,,uh database like you know last time i
+Dialogue: 0,0:11:17.60,0:11:19.28,*Default,NTP,0000,0000,0000,,checked uber's data was still running
+Dialogue: 0,0:11:19.28,0:11:20.80,*Default,NTP,0000,0000,0000,,through sql and like they had a whole
+Dialogue: 0,0:11:20.80,0:11:22.72,*Default,NTP,0000,0000,0000,,lot of cars driving around and so you'd
+Dialogue: 0,0:11:22.72,0:11:24.96,*Default,NTP,0000,0000,0000,,think that was maybe too big but in fact
+Dialogue: 0,0:11:24.96,0:11:26.88,*Default,NTP,0000,0000,0000,,it's not because it's nicely partitioned
+Dialogue: 0,0:11:26.88,0:11:28.64,*Default,NTP,0000,0000,0000,,in into different cities
+Dialogue: 0,0:11:28.64,0:11:31.84,*Default,NTP,0000,0000,0000,,and so um so it turns out that like they
+Dialogue: 0,0:11:31.84,0:11:33.04,*Default,NTP,0000,0000,0000,,can manage their
+Dialogue: 0,0:11:33.04,0:11:36.16,*Default,NTP,0000,0000,0000,,their data using sort of a more standard
+Dialogue: 0,0:11:36.16,0:11:39.28,*Default,NTP,0000,0000,0000,,classical method anyway um
+Dialogue: 0,0:11:39.28,0:11:41.60,*Default,NTP,0000,0000,0000,,it's uh the right thing to do is learn
+Dialogue: 0,0:11:41.60,0:11:42.64,*Default,NTP,0000,0000,0000,,sql well
+Dialogue: 0,0:11:42.64,0:11:45.04,*Default,NTP,0000,0000,0000,,and then learn these variants once you
+Dialogue: 0,0:11:45.04,0:11:46.24,*Default,NTP,0000,0000,0000,,kind of know the
+Dialogue: 0,0:11:46.24,0:11:48.40,*Default,NTP,0000,0000,0000,,the core that everybody else knows yeah
+Dialogue: 0,0:11:48.40,0:11:50.56,*Default,NTP,0000,0000,0000,,i think that's exactly right
+Dialogue: 0,0:11:50.56,0:11:52.88,*Default,NTP,0000,0000,0000,,the next question was is sql a fast
+Dialogue: 0,0:11:52.88,0:11:56.56,*Default,NTP,0000,0000,0000,,language or is it slow
+Dialogue: 0,0:11:56.56,0:11:59.84,*Default,NTP,0000,0000,0000,,sql is a fast language in the following
+Dialogue: 0,0:11:59.84,0:12:01.04,*Default,NTP,0000,0000,0000,,sense
+Dialogue: 0,0:12:01.04,0:12:04.56,*Default,NTP,0000,0000,0000,,you you can write a query
+Dialogue: 0,0:12:04.56,0:12:07.44,*Default,NTP,0000,0000,0000,,that in principle appears to have to do
+Dialogue: 0,0:12:07.44,0:12:09.04,*Default,NTP,0000,0000,0000,,a lot of work
+Dialogue: 0,0:12:09.04,0:12:11.84,*Default,NTP,0000,0000,0000,,and the database engine will figure out
+Dialogue: 0,0:12:11.84,0:12:14.32,*Default,NTP,0000,0000,0000,,the fastest way to execute that
+Dialogue: 0,0:12:14.32,0:12:17.12,*Default,NTP,0000,0000,0000,,and it will execute it quickly in the
+Dialogue: 0,0:12:17.12,0:12:18.16,*Default,NTP,0000,0000,0000,,sense that
+Dialogue: 0,0:12:18.16,0:12:20.24,*Default,NTP,0000,0000,0000,,um you know most database engines are
+Dialogue: 0,0:12:20.24,0:12:21.92,*Default,NTP,0000,0000,0000,,written in some programming language
+Dialogue: 0,0:12:21.92,0:12:23.76,*Default,NTP,0000,0000,0000,,that's supposed to run very fast like c
+Dialogue: 0,0:12:23.76,0:12:26.80,*Default,NTP,0000,0000,0000,,or something like that and so
+Dialogue: 0,0:12:26.80,0:12:30.24,*Default,NTP,0000,0000,0000,,uh you usually don't pay any kind of
+Dialogue: 0,0:12:30.24,0:12:34.00,*Default,NTP,0000,0000,0000,,time cost for using sql
+Dialogue: 0,0:12:34.00,0:12:35.84,*Default,NTP,0000,0000,0000,,in a big application because that's like
+Dialogue: 0,0:12:35.84,0:12:37.44,*Default,NTP,0000,0000,0000,,a fast way to do it
+Dialogue: 0,0:12:37.44,0:12:40.24,*Default,NTP,0000,0000,0000,,it's not fast in the following two ways
+Dialogue: 0,0:12:40.24,0:12:41.20,*Default,NTP,0000,0000,0000,,one
+Dialogue: 0,0:12:41.20,0:12:44.24,*Default,NTP,0000,0000,0000,,if you're actually like computing
+Dialogue: 0,0:12:44.24,0:12:46.88,*Default,NTP,0000,0000,0000,,something inside your sql query like
+Dialogue: 0,0:12:46.88,0:12:47.60,*Default,NTP,0000,0000,0000,,you're doing
+Dialogue: 0,0:12:47.60,0:12:50.32,*Default,NTP,0000,0000,0000,,tons of arithmetic well that's usually a
+Dialogue: 0,0:12:50.32,0:12:51.44,*Default,NTP,0000,0000,0000,,bad idea
+Dialogue: 0,0:12:51.44,0:12:53.68,*Default,NTP,0000,0000,0000,,um you know it's it's a language that's
+Dialogue: 0,0:12:53.68,0:12:55.28,*Default,NTP,0000,0000,0000,,meant to express
+Dialogue: 0,0:12:55.28,0:12:57.76,*Default,NTP,0000,0000,0000,,operations over whole tables that
+Dialogue: 0,0:12:57.76,0:12:59.04,*Default,NTP,0000,0000,0000,,doesn't involve
+Dialogue: 0,0:12:59.04,0:13:02.00,*Default,NTP,0000,0000,0000,,like going through each line and keeping
+Dialogue: 0,0:13:02.00,0:13:03.52,*Default,NTP,0000,0000,0000,,a running total
+Dialogue: 0,0:13:03.52,0:13:06.40,*Default,NTP,0000,0000,0000,,but like you know if you're ever like
+Dialogue: 0,0:13:06.40,0:13:08.08,*Default,NTP,0000,0000,0000,,trying to write something procedurally
+Dialogue: 0,0:13:08.08,0:13:08.72,*Default,NTP,0000,0000,0000,,in sql
+Dialogue: 0,0:13:08.72,0:13:10.24,*Default,NTP,0000,0000,0000,,sometimes you can't even do it and if
+Dialogue: 0,0:13:10.24,0:13:11.92,*Default,NTP,0000,0000,0000,,you did do it it'd probably be slow
+Dialogue: 0,0:13:11.92,0:13:13.12,*Default,NTP,0000,0000,0000,,so you know you have to kind of stick
+Dialogue: 0,0:13:13.12,0:13:14.96,*Default,NTP,0000,0000,0000,,with the right model which is
+Dialogue: 0,0:13:14.96,0:13:17.04,*Default,NTP,0000,0000,0000,,you know take the table process all the
+Dialogue: 0,0:13:17.04,0:13:18.88,*Default,NTP,0000,0000,0000,,rows aggregate them
+Dialogue: 0,0:13:18.88,0:13:21.44,*Default,NTP,0000,0000,0000,,we'll do that next wednesday and then
+Dialogue: 0,0:13:21.44,0:13:22.72,*Default,NTP,0000,0000,0000,,now you've built your new table
+Dialogue: 0,0:13:22.72,0:13:25.76,*Default,NTP,0000,0000,0000,,so um the other way it's slow
+Dialogue: 0,0:13:25.76,0:13:28.80,*Default,NTP,0000,0000,0000,,is that if it's the case that many
+Dialogue: 0,0:13:28.80,0:13:30.16,*Default,NTP,0000,0000,0000,,different computers are all trying to
+Dialogue: 0,0:13:30.16,0:13:32.56,*Default,NTP,0000,0000,0000,,access the same database at once
+Dialogue: 0,0:13:32.56,0:13:36.08,*Default,NTP,0000,0000,0000,,it tries to ensure
+Dialogue: 0,0:13:36.08,0:13:38.64,*Default,NTP,0000,0000,0000,,these various consistency properties
+Dialogue: 0,0:13:38.64,0:13:39.20,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:13:39.20,0:13:41.04,*Default,NTP,0000,0000,0000,,um mean that some of them have to wait
+Dialogue: 0,0:13:41.04,0:13:42.64,*Default,NTP,0000,0000,0000,,for other ones to finish
+Dialogue: 0,0:13:42.64,0:13:44.16,*Default,NTP,0000,0000,0000,,so basically like you can't have two
+Dialogue: 0,0:13:44.16,0:13:46.24,*Default,NTP,0000,0000,0000,,programs writing to the same row at the
+Dialogue: 0,0:13:46.24,0:13:47.60,*Default,NTP,0000,0000,0000,,same time you can't even have one
+Dialogue: 0,0:13:47.60,0:13:49.20,*Default,NTP,0000,0000,0000,,writing to the row and another one
+Dialogue: 0,0:13:49.20,0:13:50.32,*Default,NTP,0000,0000,0000,,reading to the row
+Dialogue: 0,0:13:50.32,0:13:52.96,*Default,NTP,0000,0000,0000,,and um so in that sense it can be slower
+Dialogue: 0,0:13:52.96,0:13:53.68,*Default,NTP,0000,0000,0000,,than
+Dialogue: 0,0:13:53.68,0:13:56.80,*Default,NTP,0000,0000,0000,,some nosql variant but that you know
+Dialogue: 0,0:13:56.80,0:13:58.64,*Default,NTP,0000,0000,0000,,that usually doesn't apply because
+Dialogue: 0,0:13:58.64,0:14:00.08,*Default,NTP,0000,0000,0000,,usually you don't have a program where
+Dialogue: 0,0:14:00.08,0:14:00.48,*Default,NTP,0000,0000,0000,,like
+Dialogue: 0,0:14:00.48,0:14:01.84,*Default,NTP,0000,0000,0000,,thousands of different computers are all
+Dialogue: 0,0:14:01.84,0:14:03.20,*Default,NTP,0000,0000,0000,,accessing the database at the same time
+Dialogue: 0,0:14:03.20,0:14:04.96,*Default,NTP,0000,0000,0000,,but sometimes you do
+Dialogue: 0,0:14:04.96,0:14:07.36,*Default,NTP,0000,0000,0000,,um and there's a third way it's slow
+Dialogue: 0,0:14:07.36,0:14:08.56,*Default,NTP,0000,0000,0000,,which is that if you don't set up your
+Dialogue: 0,0:14:08.56,0:14:09.36,*Default,NTP,0000,0000,0000,,database right
+Dialogue: 0,0:14:09.36,0:14:10.96,*Default,NTP,0000,0000,0000,,then it can be much slower than it needs
+Dialogue: 0,0:14:10.96,0:14:12.88,*Default,NTP,0000,0000,0000,,to be so there's a whole topic we won't
+Dialogue: 0,0:14:12.88,0:14:14.08,*Default,NTP,0000,0000,0000,,get to in this course
+Dialogue: 0,0:14:14.08,0:14:16.00,*Default,NTP,0000,0000,0000,,about indexing the data in order to make
+Dialogue: 0,0:14:16.00,0:14:18.08,*Default,NTP,0000,0000,0000,,sure that common queries are fast
+Dialogue: 0,0:14:18.08,0:14:19.44,*Default,NTP,0000,0000,0000,,a lot of this actually just happens
+Dialogue: 0,0:14:19.44,0:14:21.36,*Default,NTP,0000,0000,0000,,automatically in a modern
+Dialogue: 0,0:14:21.36,0:14:23.12,*Default,NTP,0000,0000,0000,,database management system so you don't
+Dialogue: 0,0:14:23.12,0:14:24.40,*Default,NTP,0000,0000,0000,,always have to think about it much but
+Dialogue: 0,0:14:24.40,0:14:25.60,*Default,NTP,0000,0000,0000,,sometimes you do
+Dialogue: 0,0:14:25.60,0:14:27.68,*Default,NTP,0000,0000,0000,,and in that case like there is
+Dialogue: 0,0:14:27.68,0:14:29.60,*Default,NTP,0000,0000,0000,,performance optimization that happens in
+Dialogue: 0,0:14:29.60,0:14:30.48,*Default,NTP,0000,0000,0000,,databases
+Dialogue: 0,0:14:30.48,0:14:32.24,*Default,NTP,0000,0000,0000,,where you have to kind of look and see
+Dialogue: 0,0:14:32.24,0:14:34.16,*Default,NTP,0000,0000,0000,,oh why is it slow but then usually you
+Dialogue: 0,0:14:34.16,0:14:35.76,*Default,NTP,0000,0000,0000,,can make it faster as opposed to being
+Dialogue: 0,0:14:35.76,0:14:38.72,*Default,NTP,0000,0000,0000,,stuck with it being slow
+Dialogue: 0,0:14:39.04,0:14:41.20,*Default,NTP,0000,0000,0000,,and no sql databases have the same thing
+Dialogue: 0,0:14:41.20,0:14:42.64,*Default,NTP,0000,0000,0000,,you have to think carefully when you're
+Dialogue: 0,0:14:42.64,0:14:44.00,*Default,NTP,0000,0000,0000,,building the database and how to make
+Dialogue: 0,0:14:44.00,0:14:45.04,*Default,NTP,0000,0000,0000,,them efficient
+Dialogue: 0,0:14:45.04,0:14:46.32,*Default,NTP,0000,0000,0000,,um so they have the same indexing
+Dialogue: 0,0:14:46.32,0:14:48.40,*Default,NTP,0000,0000,0000,,limitations as well
+Dialogue: 0,0:14:48.40,0:14:49.76,*Default,NTP,0000,0000,0000,,but there's nothing about sql that's
+Dialogue: 0,0:14:49.76,0:14:51.84,*Default,NTP,0000,0000,0000,,kind of inherently slow in the way that
+Dialogue: 0,0:14:51.84,0:14:52.88,*Default,NTP,0000,0000,0000,,python might be
+Dialogue: 0,0:14:52.88,0:14:54.80,*Default,NTP,0000,0000,0000,,where like the basic operation could be
+Dialogue: 0,0:14:54.80,0:14:56.84,*Default,NTP,0000,0000,0000,,done faster by some other programming
+Dialogue: 0,0:14:56.84,0:14:58.80,*Default,NTP,0000,0000,0000,,language
+Dialogue: 0,0:14:58.80,0:15:01.12,*Default,NTP,0000,0000,0000,,the next question is why does sql
+Dialogue: 0,0:15:01.12,0:15:03.52,*Default,NTP,0000,0000,0000,,conventionally capitalize
+Dialogue: 0,0:15:03.52,0:15:07.12,*Default,NTP,0000,0000,0000,,its keywords like select and where
+Dialogue: 0,0:15:07.12,0:15:10.40,*Default,NTP,0000,0000,0000,,and how come we don't do that in 61a
+Dialogue: 0,0:15:10.40,0:15:12.08,*Default,NTP,0000,0000,0000,,i'll let you listen to the whole answer
+Dialogue: 0,0:15:12.08,0:15:14.24,*Default,NTP,0000,0000,0000,,but we don't do it in 61a basically
+Dialogue: 0,0:15:14.24,0:15:16.00,*Default,NTP,0000,0000,0000,,because i forgot
+Dialogue: 0,0:15:16.00,0:15:18.40,*Default,NTP,0000,0000,0000,,but you know the more recently created
+Dialogue: 0,0:15:18.40,0:15:19.68,*Default,NTP,0000,0000,0000,,examples do use
+Dialogue: 0,0:15:19.68,0:15:21.84,*Default,NTP,0000,0000,0000,,all caps for select and where and it is
+Dialogue: 0,0:15:21.84,0:15:23.36,*Default,NTP,0000,0000,0000,,a common convention so you might as well
+Dialogue: 0,0:15:23.36,0:15:26.40,*Default,NTP,0000,0000,0000,,pick it up
+Dialogue: 0,0:15:26.40,0:15:28.16,*Default,NTP,0000,0000,0000,,i don't know that john do you know the
+Dialogue: 0,0:15:28.16,0:15:29.68,*Default,NTP,0000,0000,0000,,history of it's true that all simple
+Dialogue: 0,0:15:29.68,0:15:30.56,*Default,NTP,0000,0000,0000,,commands are all
+Dialogue: 0,0:15:30.56,0:15:32.32,*Default,NTP,0000,0000,0000,,always caps i don't know the history of
+Dialogue: 0,0:15:32.32,0:15:34.08,*Default,NTP,0000,0000,0000,,that it just makes me a convention but
+Dialogue: 0,0:15:34.08,0:15:36.96,*Default,NTP,0000,0000,0000,,maybe there's another story behind it
+Dialogue: 0,0:15:36.96,0:15:39.20,*Default,NTP,0000,0000,0000,,yeah i don't know either i mean people
+Dialogue: 0,0:15:39.20,0:15:41.52,*Default,NTP,0000,0000,0000,,were writing sql queries
+Dialogue: 0,0:15:41.52,0:15:44.16,*Default,NTP,0000,0000,0000,,long before there were text editors that
+Dialogue: 0,0:15:44.16,0:15:46.16,*Default,NTP,0000,0000,0000,,automatically highlighted the syntax for
+Dialogue: 0,0:15:46.16,0:15:46.48,*Default,NTP,0000,0000,0000,,you
+Dialogue: 0,0:15:46.48,0:15:47.92,*Default,NTP,0000,0000,0000,,and stuff like that so the
+Dialogue: 0,0:15:47.92,0:15:50.16,*Default,NTP,0000,0000,0000,,capitalization scheme is a nice way to
+Dialogue: 0,0:15:50.16,0:15:51.60,*Default,NTP,0000,0000,0000,,distinguish between
+Dialogue: 0,0:15:51.60,0:15:53.52,*Default,NTP,0000,0000,0000,,you know what's part of the language and
+Dialogue: 0,0:15:53.52,0:15:55.52,*Default,NTP,0000,0000,0000,,what's specific to
+Dialogue: 0,0:15:55.52,0:15:57.60,*Default,NTP,0000,0000,0000,,your database you know like because
+Dialogue: 0,0:15:57.60,0:15:58.96,*Default,NTP,0000,0000,0000,,you're just interleaving names like
+Dialogue: 0,0:15:58.96,0:16:00.24,*Default,NTP,0000,0000,0000,,select with names like
+Dialogue: 0,0:16:00.24,0:16:02.32,*Default,NTP,0000,0000,0000,,person where person describes some
+Dialogue: 0,0:16:02.32,0:16:03.52,*Default,NTP,0000,0000,0000,,column in the table
+Dialogue: 0,0:16:03.52,0:16:05.68,*Default,NTP,0000,0000,0000,,and so this capitalization scheme kind
+Dialogue: 0,0:16:05.68,0:16:07.44,*Default,NTP,0000,0000,0000,,of keeps those distinct which i think is
+Dialogue: 0,0:16:07.44,0:16:08.64,*Default,NTP,0000,0000,0000,,good
+Dialogue: 0,0:16:08.64,0:16:10.72,*Default,NTP,0000,0000,0000,,sql was designed to be a programming
+Dialogue: 0,0:16:10.72,0:16:12.64,*Default,NTP,0000,0000,0000,,language that not just programmers would
+Dialogue: 0,0:16:12.64,0:16:13.68,*Default,NTP,0000,0000,0000,,write
+Dialogue: 0,0:16:13.68,0:16:16.32,*Default,NTP,0000,0000,0000,,but like it was meant to be accessible
+Dialogue: 0,0:16:16.32,0:16:17.20,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:16:17.20,0:16:19.44,*Default,NTP,0000,0000,0000,,you know analysts who maybe didn't know
+Dialogue: 0,0:16:19.44,0:16:20.88,*Default,NTP,0000,0000,0000,,that much about programming
+Dialogue: 0,0:16:20.88,0:16:23.28,*Default,NTP,0000,0000,0000,,but needed to access the database so i
+Dialogue: 0,0:16:23.28,0:16:24.80,*Default,NTP,0000,0000,0000,,think the history of some of these
+Dialogue: 0,0:16:24.80,0:16:26.96,*Default,NTP,0000,0000,0000,,design choices was motivated by making
+Dialogue: 0,0:16:26.96,0:16:27.92,*Default,NTP,0000,0000,0000,,it like
+Dialogue: 0,0:16:27.92,0:16:30.72,*Default,NTP,0000,0000,0000,,appealing to a general audience i guess
+Dialogue: 0,0:16:30.72,0:16:32.32,*Default,NTP,0000,0000,0000,,they succeeded in the sense that a lot
+Dialogue: 0,0:16:32.32,0:16:34.00,*Default,NTP,0000,0000,0000,,of people use this programming language
+Dialogue: 0,0:16:34.00,0:16:35.04,*Default,NTP,0000,0000,0000,,but it's um
+Dialogue: 0,0:16:35.04,0:16:36.96,*Default,NTP,0000,0000,0000,,it's a little funny and it's it's all
+Dialogue: 0,0:16:36.96,0:16:38.56,*Default,NTP,0000,0000,0000,,caps character
+Dialogue: 0,0:16:38.56,0:16:41.04,*Default,NTP,0000,0000,0000,,and in this class like we don't always
+Dialogue: 0,0:16:41.04,0:16:42.72,*Default,NTP,0000,0000,0000,,capitalize everything
+Dialogue: 0,0:16:42.72,0:16:45.84,*Default,NTP,0000,0000,0000,,in my demos because uh
+Dialogue: 0,0:16:45.84,0:16:48.00,*Default,NTP,0000,0000,0000,,yeah i don't know i just didn't think
+Dialogue: 0,0:16:48.00,0:16:49.68,*Default,NTP,0000,0000,0000,,about this convention very much when i
+Dialogue: 0,0:16:49.68,0:16:50.00,*Default,NTP,0000,0000,0000,,started
+Dialogue: 0,0:16:50.00,0:16:52.40,*Default,NTP,0000,0000,0000,,building these demos uh but i think you
+Dialogue: 0,0:16:52.40,0:16:54.56,*Default,NTP,0000,0000,0000,,know capitalizing the keywords like
+Dialogue: 0,0:16:54.56,0:16:55.28,*Default,NTP,0000,0000,0000,,select
+Dialogue: 0,0:16:55.28,0:16:57.20,*Default,NTP,0000,0000,0000,,and uh where is usually a good
+Dialogue: 0,0:16:57.20,0:16:58.88,*Default,NTP,0000,0000,0000,,convention you might as well do that
+Dialogue: 0,0:16:58.88,0:17:01.36,*Default,NTP,0000,0000,0000,,yeah my recollection john is back in the
+Dialogue: 0,0:17:01.36,0:17:02.88,*Default,NTP,0000,0000,0000,,days when we wrote fortran
+Dialogue: 0,0:17:02.88,0:17:04.64,*Default,NTP,0000,0000,0000,,code there was also a convention of
+Dialogue: 0,0:17:04.64,0:17:06.48,*Default,NTP,0000,0000,0000,,capitalizing i wonder if it came from
+Dialogue: 0,0:17:06.48,0:17:07.52,*Default,NTP,0000,0000,0000,,there
+Dialogue: 0,0:17:07.52,0:17:08.96,*Default,NTP,0000,0000,0000,,yeah they're kind of from the same
+Dialogue: 0,0:17:08.96,0:17:10.40,*Default,NTP,0000,0000,0000,,vintage i guess yeah they're about the
+Dialogue: 0,0:17:10.40,0:17:11.28,*Default,NTP,0000,0000,0000,,same ventures too
+Dialogue: 0,0:17:11.28,0:17:13.76,*Default,NTP,0000,0000,0000,,by the way i i use all caps whenever i
+Dialogue: 0,0:17:13.76,0:17:15.12,*Default,NTP,0000,0000,0000,,have constants
+Dialogue: 0,0:17:15.12,0:17:17.76,*Default,NTP,0000,0000,0000,,in my code python code matlab code c
+Dialogue: 0,0:17:17.76,0:17:18.16,*Default,NTP,0000,0000,0000,,code
+Dialogue: 0,0:17:18.16,0:17:20.80,*Default,NTP,0000,0000,0000,,and like so you will see that kind of
+Dialogue: 0,0:17:20.80,0:17:21.76,*Default,NTP,0000,0000,0000,,capitalization
+Dialogue: 0,0:17:21.76,0:17:24.48,*Default,NTP,0000,0000,0000,,used in classic comparative programming
+Dialogue: 0,0:17:24.48,0:17:24.80,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:17:24.80,0:17:27.52,*Default,NTP,0000,0000,0000,,to sort of have things stand out it's
+Dialogue: 0,0:17:27.52,0:17:29.04,*Default,NTP,0000,0000,0000,,not functions but it's things like
+Dialogue: 0,0:17:29.04,0:17:30.72,*Default,NTP,0000,0000,0000,,constants for example are often done
+Dialogue: 0,0:17:30.72,0:17:33.36,*Default,NTP,0000,0000,0000,,with all caps
+Dialogue: 0,0:17:33.36,0:17:35.04,*Default,NTP,0000,0000,0000,,yeah so the question is how could you
+Dialogue: 0,0:17:35.04,0:17:37.12,*Default,NTP,0000,0000,0000,,have a row but not fill in all the
+Dialogue: 0,0:17:37.12,0:17:38.64,*Default,NTP,0000,0000,0000,,values
+Dialogue: 0,0:17:38.64,0:17:41.68,*Default,NTP,0000,0000,0000,,there is a way to have missing values
+Dialogue: 0,0:17:41.68,0:17:45.20,*Default,NTP,0000,0000,0000,,um in a sql table but it makes your life
+Dialogue: 0,0:17:45.20,0:17:46.96,*Default,NTP,0000,0000,0000,,a lot more complicated
+Dialogue: 0,0:17:46.96,0:17:50.24,*Default,NTP,0000,0000,0000,,if you're ever missing values so i mean
+Dialogue: 0,0:17:50.24,0:17:52.08,*Default,NTP,0000,0000,0000,,effectively you can put like a none
+Dialogue: 0,0:17:52.08,0:17:55.60,*Default,NTP,0000,0000,0000,,value in there and how do you do it i
+Dialogue: 0,0:17:55.60,0:17:57.28,*Default,NTP,0000,0000,0000,,don't actually remember at the moment
+Dialogue: 0,0:17:57.28,0:17:59.04,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:17:59.04,0:18:02.40,*Default,NTP,0000,0000,0000,,certainly it's possible to like build an
+Dialogue: 0,0:18:02.40,0:18:03.20,*Default,NTP,0000,0000,0000,,empty row
+Dialogue: 0,0:18:03.20,0:18:05.44,*Default,NTP,0000,0000,0000,,and then fill it in later we'll talk
+Dialogue: 0,0:18:05.44,0:18:06.64,*Default,NTP,0000,0000,0000,,about the commands for
+Dialogue: 0,0:18:06.64,0:18:09.44,*Default,NTP,0000,0000,0000,,changing a row next friday in the
+Dialogue: 0,0:18:09.44,0:18:10.08,*Default,NTP,0000,0000,0000,,optional
+Dialogue: 0,0:18:10.08,0:18:12.72,*Default,NTP,0000,0000,0000,,lecture where we talk like so far we
+Dialogue: 0,0:18:12.72,0:18:14.80,*Default,NTP,0000,0000,0000,,never changed any rows right we just
+Dialogue: 0,0:18:14.80,0:18:16.24,*Default,NTP,0000,0000,0000,,had a table and then we built a new
+Dialogue: 0,0:18:16.24,0:18:18.00,*Default,NTP,0000,0000,0000,,table and we built a new table but once
+Dialogue: 0,0:18:18.00,0:18:19.60,*Default,NTP,0000,0000,0000,,you built a table
+Dialogue: 0,0:18:19.60,0:18:21.12,*Default,NTP,0000,0000,0000,,you know all the values were there and
+Dialogue: 0,0:18:21.12,0:18:22.88,*Default,NTP,0000,0000,0000,,they never changed
+Dialogue: 0,0:18:22.88,0:18:25.12,*Default,NTP,0000,0000,0000,,but it is possible to perform mutation
+Dialogue: 0,0:18:25.12,0:18:27.04,*Default,NTP,0000,0000,0000,,operations on a database table where you
+Dialogue: 0,0:18:27.04,0:18:28.00,*Default,NTP,0000,0000,0000,,basically say like oh
+Dialogue: 0,0:18:28.00,0:18:30.48,*Default,NTP,0000,0000,0000,,this person's name changed from steven
+Dialogue: 0,0:18:30.48,0:18:31.20,*Default,NTP,0000,0000,0000,,to steve
+Dialogue: 0,0:18:31.20,0:18:33.76,*Default,NTP,0000,0000,0000,,and you can make that edit and there's a
+Dialogue: 0,0:18:33.76,0:18:34.32,*Default,NTP,0000,0000,0000,,command
+Dialogue: 0,0:18:34.32,0:18:36.08,*Default,NTP,0000,0000,0000,,called update which does that so it's
+Dialogue: 0,0:18:36.08,0:18:37.60,*Default,NTP,0000,0000,0000,,certainly possible to fill in stuff
+Dialogue: 0,0:18:37.60,0:18:39.44,*Default,NTP,0000,0000,0000,,after you create it and it's also
+Dialogue: 0,0:18:39.44,0:18:40.96,*Default,NTP,0000,0000,0000,,possible to have empty
+Dialogue: 0,0:18:40.96,0:18:44.72,*Default,NTP,0000,0000,0000,,cells like basically non-values um
+Dialogue: 0,0:18:44.72,0:18:47.84,*Default,NTP,0000,0000,0000,,but but john's like a good idea to avoid
+Dialogue: 0,0:18:47.84,0:18:48.40,*Default,NTP,0000,0000,0000,,it
+Dialogue: 0,0:18:48.40,0:18:50.72,*Default,NTP,0000,0000,0000,,it's a yeah this is one thing with sql
+Dialogue: 0,0:18:50.72,0:18:51.44,*Default,NTP,0000,0000,0000,,tables
+Dialogue: 0,0:18:51.44,0:18:54.88,*Default,NTP,0000,0000,0000,,generally is they have uniform
+Dialogue: 0,0:18:54.88,0:18:57.04,*Default,NTP,0000,0000,0000,,columns you can't just sort of pick and
+Dialogue: 0,0:18:57.04,0:18:58.40,*Default,NTP,0000,0000,0000,,choose now there's other databases where
+Dialogue: 0,0:18:58.40,0:18:59.12,*Default,NTP,0000,0000,0000,,you can have
+Dialogue: 0,0:18:59.12,0:19:02.40,*Default,NTP,0000,0000,0000,,variable number of columns per row
+Dialogue: 0,0:19:02.40,0:19:04.56,*Default,NTP,0000,0000,0000,,and varied data types and sql is a very
+Dialogue: 0,0:19:04.56,0:19:05.84,*Default,NTP,0000,0000,0000,,disciplined language which
+Dialogue: 0,0:19:05.84,0:19:08.00,*Default,NTP,0000,0000,0000,,allows it to sort of be efficient so i
+Dialogue: 0,0:19:08.00,0:19:10.64,*Default,NTP,0000,0000,0000,,think it's at its best when there is
+Dialogue: 0,0:19:10.64,0:19:11.20,*Default,NTP,0000,0000,0000,,data
+Dialogue: 0,0:19:11.20,0:19:13.84,*Default,NTP,0000,0000,0000,,and it's the same format and and and so
+Dialogue: 0,0:19:13.84,0:19:14.40,*Default,NTP,0000,0000,0000,,i
+Dialogue: 0,0:19:14.40,0:19:16.88,*Default,NTP,0000,0000,0000,,i tend to think of that as i didn't i
+Dialogue: 0,0:19:16.88,0:19:18.48,*Default,NTP,0000,0000,0000,,knew that there was a none option but i
+Dialogue: 0,0:19:18.48,0:19:19.92,*Default,NTP,0000,0000,0000,,don't i don't know how to do it either
+Dialogue: 0,0:19:19.92,0:19:20.32,*Default,NTP,0000,0000,0000,,but i
+Dialogue: 0,0:19:20.32,0:19:21.76,*Default,NTP,0000,0000,0000,,i don't think i've ever done that when
+Dialogue: 0,0:19:21.76,0:19:24.08,*Default,NTP,0000,0000,0000,,i've done cpr always it's always when
+Dialogue: 0,0:19:24.08,0:19:25.76,*Default,NTP,0000,0000,0000,,i'm using a database like that it is
+Dialogue: 0,0:19:25.76,0:19:28.72,*Default,NTP,0000,0000,0000,,fully populated
+Dialogue: 0,0:19:28.96,0:19:30.48,*Default,NTP,0000,0000,0000,,yeah but sometimes you just you know you
+Dialogue: 0,0:19:30.48,0:19:32.00,*Default,NTP,0000,0000,0000,,don't know someone's address so you need
+Dialogue: 0,0:19:32.00,0:19:35.04,*Default,NTP,0000,0000,0000,,like a blank in there and that
+Dialogue: 0,0:19:35.04,0:19:37.68,*Default,NTP,0000,0000,0000,,that does exist but we won't talk about
+Dialogue: 0,0:19:37.68,0:19:40.24,*Default,NTP,0000,0000,0000,,it in this course
+Dialogue: 0,0:19:40.32,0:19:42.40,*Default,NTP,0000,0000,0000,,the next question was about courses does
+Dialogue: 0,0:19:42.40,0:19:44.40,*Default,NTP,0000,0000,0000,,it make sense to take
+Dialogue: 0,0:19:44.40,0:19:47.44,*Default,NTP,0000,0000,0000,,61b and 16a
+Dialogue: 0,0:19:47.44,0:19:50.56,*Default,NTP,0000,0000,0000,,in the same semester john has more
+Dialogue: 0,0:19:50.56,0:19:52.00,*Default,NTP,0000,0000,0000,,experiences than i do but
+Dialogue: 0,0:19:52.00,0:19:53.92,*Default,NTP,0000,0000,0000,,let me let me just share a few thoughts
+Dialogue: 0,0:19:53.92,0:19:55.76,*Default,NTP,0000,0000,0000,,one is i think part of this depends on
+Dialogue: 0,0:19:55.76,0:19:57.68,*Default,NTP,0000,0000,0000,,your comfort with math
+Dialogue: 0,0:19:57.68,0:19:59.76,*Default,NTP,0000,0000,0000,,so if you feel really comfortable with
+Dialogue: 0,0:19:59.76,0:20:01.92,*Default,NTP,0000,0000,0000,,discrete math and linear algebra
+Dialogue: 0,0:20:01.92,0:20:04.24,*Default,NTP,0000,0000,0000,,and things like that maybe it's okay i
+Dialogue: 0,0:20:04.24,0:20:05.36,*Default,NTP,0000,0000,0000,,think it's a lot
+Dialogue: 0,0:20:05.36,0:20:07.28,*Default,NTP,0000,0000,0000,,i'm told john will know more about this
+Dialogue: 0,0:20:07.28,0:20:09.76,*Default,NTP,0000,0000,0000,,that 61b is is a lot of class
+Dialogue: 0,0:20:09.76,0:20:11.84,*Default,NTP,0000,0000,0000,,and i think 16a is also a fair amount of
+Dialogue: 0,0:20:11.84,0:20:12.88,*Default,NTP,0000,0000,0000,,class
+Dialogue: 0,0:20:12.88,0:20:15.28,*Default,NTP,0000,0000,0000,,um so i think part of it sort of depends
+Dialogue: 0,0:20:15.28,0:20:16.72,*Default,NTP,0000,0000,0000,,on your comfort level with the
+Dialogue: 0,0:20:16.72,0:20:17.84,*Default,NTP,0000,0000,0000,,underlying material you can go look at
+Dialogue: 0,0:20:17.84,0:20:20.64,*Default,NTP,0000,0000,0000,,the syllabus now and see you know how
+Dialogue: 0,0:20:20.64,0:20:22.32,*Default,NTP,0000,0000,0000,,foreign it all seems but i don't i'm
+Dialogue: 0,0:20:22.32,0:20:25.20,*Default,NTP,0000,0000,0000,,curious what john recommends
+Dialogue: 0,0:20:25.20,0:20:28.80,*Default,NTP,0000,0000,0000,,yeah so the combination of 16a
+Dialogue: 0,0:20:28.80,0:20:32.96,*Default,NTP,0000,0000,0000,,and 61b is reasonable in the sense that
+Dialogue: 0,0:20:32.96,0:20:34.72,*Default,NTP,0000,0000,0000,,i wouldn't say no student should ever do
+Dialogue: 0,0:20:34.72,0:20:36.64,*Default,NTP,0000,0000,0000,,this like it's a reasonable combination
+Dialogue: 0,0:20:36.64,0:20:37.44,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:20:37.44,0:20:40.88,*Default,NTP,0000,0000,0000,,61b tends to be quite time intensive
+Dialogue: 0,0:20:40.88,0:20:44.88,*Default,NTP,0000,0000,0000,,um 16a is always
+Dialogue: 0,0:20:44.88,0:20:46.48,*Default,NTP,0000,0000,0000,,at least somewhat time intensive you
+Dialogue: 0,0:20:46.48,0:20:47.84,*Default,NTP,0000,0000,0000,,know there's a lot to learn in that
+Dialogue: 0,0:20:47.84,0:20:48.56,*Default,NTP,0000,0000,0000,,course
+Dialogue: 0,0:20:48.56,0:20:51.36,*Default,NTP,0000,0000,0000,,but also depending on students math
+Dialogue: 0,0:20:51.36,0:20:53.44,*Default,NTP,0000,0000,0000,,background it can be quite intense just
+Dialogue: 0,0:20:53.44,0:20:54.00,*Default,NTP,0000,0000,0000,,because
+Dialogue: 0,0:20:54.00,0:20:56.56,*Default,NTP,0000,0000,0000,,it's often their kind of first college
+Dialogue: 0,0:20:56.56,0:20:58.64,*Default,NTP,0000,0000,0000,,math class
+Dialogue: 0,0:20:58.64,0:21:02.40,*Default,NTP,0000,0000,0000,,and then again for other students
+Dialogue: 0,0:21:02.40,0:21:04.16,*Default,NTP,0000,0000,0000,,they've already taken a college math
+Dialogue: 0,0:21:04.16,0:21:05.76,*Default,NTP,0000,0000,0000,,class they kind of know the rhythm
+Dialogue: 0,0:21:05.76,0:21:09.28,*Default,NTP,0000,0000,0000,,or um yeah or if
+Dialogue: 0,0:21:09.28,0:21:10.72,*Default,NTP,0000,0000,0000,,you had kind of strong preparation in
+Dialogue: 0,0:21:10.72,0:21:13.04,*Default,NTP,0000,0000,0000,,high school then it could be smoother
+Dialogue: 0,0:21:13.04,0:21:17.44,*Default,NTP,0000,0000,0000,,so one thing i would say is that
+Dialogue: 0,0:21:17.44,0:21:19.36,*Default,NTP,0000,0000,0000,,finding the pace that's right for you is
+Dialogue: 0,0:21:19.36,0:21:21.12,*Default,NTP,0000,0000,0000,,much more important than doing what's
+Dialogue: 0,0:21:21.12,0:21:21.92,*Default,NTP,0000,0000,0000,,good for like
+Dialogue: 0,0:21:21.92,0:21:24.88,*Default,NTP,0000,0000,0000,,the average student so if it turns out
+Dialogue: 0,0:21:24.88,0:21:25.92,*Default,NTP,0000,0000,0000,,and this isn't really
+Dialogue: 0,0:21:25.92,0:21:27.36,*Default,NTP,0000,0000,0000,,particularly advice for you this is just
+Dialogue: 0,0:21:27.36,0:21:30.24,*Default,NTP,0000,0000,0000,,kind of general advice it for any
+Dialogue: 0,0:21:30.24,0:21:31.76,*Default,NTP,0000,0000,0000,,student that discovers like oh it's
+Dialogue: 0,0:21:31.76,0:21:33.52,*Default,NTP,0000,0000,0000,,better to kind of take one technical
+Dialogue: 0,0:21:33.52,0:21:35.84,*Default,NTP,0000,0000,0000,,course a term instead of two
+Dialogue: 0,0:21:35.84,0:21:40.00,*Default,NTP,0000,0000,0000,,um or uh you know only one programming
+Dialogue: 0,0:21:40.00,0:21:41.92,*Default,NTP,0000,0000,0000,,course and a math course
+Dialogue: 0,0:21:41.92,0:21:43.60,*Default,NTP,0000,0000,0000,,but you kind of don't want the math
+Dialogue: 0,0:21:43.60,0:21:45.60,*Default,NTP,0000,0000,0000,,course to be too intense if the
+Dialogue: 0,0:21:45.60,0:21:46.96,*Default,NTP,0000,0000,0000,,programming course is intense or
+Dialogue: 0,0:21:46.96,0:21:48.08,*Default,NTP,0000,0000,0000,,whatever it is
+Dialogue: 0,0:21:48.08,0:21:51.04,*Default,NTP,0000,0000,0000,,that gives you kind of a comfortable way
+Dialogue: 0,0:21:51.04,0:21:53.20,*Default,NTP,0000,0000,0000,,to understand all the material
+Dialogue: 0,0:21:53.20,0:21:55.84,*Default,NTP,0000,0000,0000,,not fall behind kind of master things as
+Dialogue: 0,0:21:55.84,0:21:56.32,*Default,NTP,0000,0000,0000,,you go
+Dialogue: 0,0:21:56.32,0:21:58.72,*Default,NTP,0000,0000,0000,,even if they're brand new that's the way
+Dialogue: 0,0:21:58.72,0:21:59.60,*Default,NTP,0000,0000,0000,,to do college
+Dialogue: 0,0:21:59.60,0:22:01.44,*Default,NTP,0000,0000,0000,,i think cramming in a bunch of stuff in
+Dialogue: 0,0:22:01.44,0:22:03.92,*Default,NTP,0000,0000,0000,,a semester is almost never a good idea
+Dialogue: 0,0:22:03.92,0:22:06.16,*Default,NTP,0000,0000,0000,,um unless you know if you're familiar
+Dialogue: 0,0:22:06.16,0:22:07.52,*Default,NTP,0000,0000,0000,,with all of it a little bit
+Dialogue: 0,0:22:07.52,0:22:10.64,*Default,NTP,0000,0000,0000,,um and so you can handle you know a lot
+Dialogue: 0,0:22:10.64,0:22:12.40,*Default,NTP,0000,0000,0000,,and actually like learn the material
+Dialogue: 0,0:22:12.40,0:22:14.32,*Default,NTP,0000,0000,0000,,then it's fine to take more courses
+Dialogue: 0,0:22:14.32,0:22:16.64,*Default,NTP,0000,0000,0000,,but um taking so many courses that you
+Dialogue: 0,0:22:16.64,0:22:17.60,*Default,NTP,0000,0000,0000,,can't keep up
+Dialogue: 0,0:22:17.60,0:22:20.48,*Default,NTP,0000,0000,0000,,is just not a good idea ever yeah but i
+Dialogue: 0,0:22:20.48,0:22:21.68,*Default,NTP,0000,0000,0000,,want to emphasize something here and
+Dialogue: 0,0:22:21.68,0:22:22.88,*Default,NTP,0000,0000,0000,,then there's a question in the chat
+Dialogue: 0,0:22:22.88,0:22:24.00,*Default,NTP,0000,0000,0000,,which we'll respond to
+Dialogue: 0,0:22:24.00,0:22:26.88,*Default,NTP,0000,0000,0000,,is there's there's depths and breadth in
+Dialogue: 0,0:22:26.88,0:22:28.24,*Default,NTP,0000,0000,0000,,your education
+Dialogue: 0,0:22:28.24,0:22:30.32,*Default,NTP,0000,0000,0000,,and it's easy to get breadth just you
+Dialogue: 0,0:22:30.32,0:22:31.28,*Default,NTP,0000,0000,0000,,know take a
+Dialogue: 0,0:22:31.28,0:22:34.08,*Default,NTP,0000,0000,0000,,bunch of courses you know but you really
+Dialogue: 0,0:22:34.08,0:22:34.72,*Default,NTP,0000,0000,0000,,also
+Dialogue: 0,0:22:34.72,0:22:36.16,*Default,NTP,0000,0000,0000,,you want to think a little bit about the
+Dialogue: 0,0:22:36.16,0:22:37.84,*Default,NTP,0000,0000,0000,,quality of this course it's not about
+Dialogue: 0,0:22:37.84,0:22:39.20,*Default,NTP,0000,0000,0000,,just getting through it's not about just
+Dialogue: 0,0:22:39.20,0:22:40.64,*Default,NTP,0000,0000,0000,,getting the grade it really is about
+Dialogue: 0,0:22:40.64,0:22:42.08,*Default,NTP,0000,0000,0000,,understanding the stuff
+Dialogue: 0,0:22:42.08,0:22:43.44,*Default,NTP,0000,0000,0000,,and particularly early on in your
+Dialogue: 0,0:22:43.44,0:22:45.44,*Default,NTP,0000,0000,0000,,academic career everything builds
+Dialogue: 0,0:22:45.44,0:22:48.08,*Default,NTP,0000,0000,0000,,on previous courses these these courses
+Dialogue: 0,0:22:48.08,0:22:49.52,*Default,NTP,0000,0000,0000,,don't stand alone
+Dialogue: 0,0:22:49.52,0:22:51.20,*Default,NTP,0000,0000,0000,,you're building a scaffolding that you
+Dialogue: 0,0:22:51.20,0:22:53.44,*Default,NTP,0000,0000,0000,,eventually have to climb up against
+Dialogue: 0,0:22:53.44,0:22:55.28,*Default,NTP,0000,0000,0000,,um and so it's really really important
+Dialogue: 0,0:22:55.28,0:22:56.56,*Default,NTP,0000,0000,0000,,to make sure that
+Dialogue: 0,0:22:56.56,0:22:59.12,*Default,NTP,0000,0000,0000,,it's high quality um light touch at the
+Dialogue: 0,0:22:59.12,0:22:59.68,*Default,NTP,0000,0000,0000,,beginning
+Dialogue: 0,0:22:59.68,0:23:02.40,*Default,NTP,0000,0000,0000,,in my opinion is sql databases used
+Dialogue: 0,0:23:02.40,0:23:04.32,*Default,NTP,0000,0000,0000,,internally in programs
+Dialogue: 0,0:23:04.32,0:23:06.16,*Default,NTP,0000,0000,0000,,what comes to mind is lightroom kettle
+Dialogue: 0,0:23:06.16,0:23:07.68,*Default,NTP,0000,0000,0000,,photo catalog that keeps track of
+Dialogue: 0,0:23:07.68,0:23:09.36,*Default,NTP,0000,0000,0000,,thousands of images and several gigabyte
+Dialogue: 0,0:23:09.36,0:23:10.00,*Default,NTP,0000,0000,0000,,data
+Dialogue: 0,0:23:10.00,0:23:11.04,*Default,NTP,0000,0000,0000,,uh i don't know about lightning in
+Dialogue: 0,0:23:11.04,0:23:12.88,*Default,NTP,0000,0000,0000,,particular but i imagine the answer is
+Dialogue: 0,0:23:12.88,0:23:13.92,*Default,NTP,0000,0000,0000,,yes
+Dialogue: 0,0:23:13.92,0:23:16.48,*Default,NTP,0000,0000,0000,,um the sql is used internally to keep
+Dialogue: 0,0:23:16.48,0:23:18.08,*Default,NTP,0000,0000,0000,,track of these types of databases john
+Dialogue: 0,0:23:18.08,0:23:20.48,*Default,NTP,0000,0000,0000,,probably knows more about this
+Dialogue: 0,0:23:20.48,0:23:22.56,*Default,NTP,0000,0000,0000,,yeah the particular database management
+Dialogue: 0,0:23:22.56,0:23:24.80,*Default,NTP,0000,0000,0000,,system we're using in this course sqlite
+Dialogue: 0,0:23:24.80,0:23:27.12,*Default,NTP,0000,0000,0000,,was designed to be embedded in the sense
+Dialogue: 0,0:23:27.12,0:23:29.28,*Default,NTP,0000,0000,0000,,that it's part of a larger application
+Dialogue: 0,0:23:29.28,0:23:31.04,*Default,NTP,0000,0000,0000,,that's not necessarily written in all
+Dialogue: 0,0:23:31.04,0:23:33.04,*Default,NTP,0000,0000,0000,,sql
+Dialogue: 0,0:23:33.04,0:23:36.64,*Default,NTP,0000,0000,0000,,but does do data storage using
+Dialogue: 0,0:23:36.64,0:23:39.68,*Default,NTP,0000,0000,0000,,the sql approach and
+Dialogue: 0,0:23:39.68,0:23:43.28,*Default,NTP,0000,0000,0000,,it all gets stored in a file so
+Dialogue: 0,0:23:43.28,0:23:45.76,*Default,NTP,0000,0000,0000,,you know instead of a programmer having
+Dialogue: 0,0:23:45.76,0:23:47.84,*Default,NTP,0000,0000,0000,,to invent their own file format for
+Dialogue: 0,0:23:47.84,0:23:50.08,*Default,NTP,0000,0000,0000,,storing all these records about you know
+Dialogue: 0,0:23:50.08,0:23:50.72,*Default,NTP,0000,0000,0000,,photos
+Dialogue: 0,0:23:50.72,0:23:53.12,*Default,NTP,0000,0000,0000,,and when they were taken and whatever
+Dialogue: 0,0:23:53.12,0:23:54.00,*Default,NTP,0000,0000,0000,,you just
+Dialogue: 0,0:23:54.00,0:23:57.68,*Default,NTP,0000,0000,0000,,use sqlite and python we'll see next
+Dialogue: 0,0:23:57.68,0:23:58.56,*Default,NTP,0000,0000,0000,,friday
+Dialogue: 0,0:23:58.56,0:24:01.60,*Default,NTP,0000,0000,0000,,has a built-in sqlite interface which
+Dialogue: 0,0:24:01.60,0:24:03.04,*Default,NTP,0000,0000,0000,,means that you can
+Dialogue: 0,0:24:03.04,0:24:05.20,*Default,NTP,0000,0000,0000,,within a python program send data to
+Dialogue: 0,0:24:05.20,0:24:07.04,*Default,NTP,0000,0000,0000,,your sqlite database
+Dialogue: 0,0:24:07.04,0:24:09.20,*Default,NTP,0000,0000,0000,,and make queries and get the data back
+Dialogue: 0,0:24:09.20,0:24:10.80,*Default,NTP,0000,0000,0000,,out so
+Dialogue: 0,0:24:10.80,0:24:12.80,*Default,NTP,0000,0000,0000,,and this is very common it's not the
+Dialogue: 0,0:24:12.80,0:24:14.80,*Default,NTP,0000,0000,0000,,only way sometimes there's a good reason
+Dialogue: 0,0:24:14.80,0:24:15.12,*Default,NTP,0000,0000,0000,,to
+Dialogue: 0,0:24:15.12,0:24:18.72,*Default,NTP,0000,0000,0000,,invent your own kind of data management
+Dialogue: 0,0:24:18.72,0:24:21.20,*Default,NTP,0000,0000,0000,,approach usually if what you're doing
+Dialogue: 0,0:24:21.20,0:24:23.12,*Default,NTP,0000,0000,0000,,with the data is so simple that all you
+Dialogue: 0,0:24:23.12,0:24:24.16,*Default,NTP,0000,0000,0000,,have to do is just like
+Dialogue: 0,0:24:24.16,0:24:26.56,*Default,NTP,0000,0000,0000,,write down a big column and then like
+Dialogue: 0,0:24:26.56,0:24:27.52,*Default,NTP,0000,0000,0000,,read that column
+Dialogue: 0,0:24:27.52,0:24:29.76,*Default,NTP,0000,0000,0000,,then you're not going to use sql but as
+Dialogue: 0,0:24:29.76,0:24:31.12,*Default,NTP,0000,0000,0000,,soon as you have
+Dialogue: 0,0:24:31.12,0:24:33.36,*Default,NTP,0000,0000,0000,,multiple tables that might reference
+Dialogue: 0,0:24:33.36,0:24:34.40,*Default,NTP,0000,0000,0000,,each other
+Dialogue: 0,0:24:34.40,0:24:36.56,*Default,NTP,0000,0000,0000,,then there's kind of no reason to invent
+Dialogue: 0,0:24:36.56,0:24:37.68,*Default,NTP,0000,0000,0000,,your own way
+Dialogue: 0,0:24:37.68,0:24:40.00,*Default,NTP,0000,0000,0000,,of doing this you just embed some
+Dialogue: 0,0:24:40.00,0:24:42.96,*Default,NTP,0000,0000,0000,,existing sql based system like sqlite or
+Dialogue: 0,0:24:42.96,0:24:44.84,*Default,NTP,0000,0000,0000,,you know there's there's other options
+Dialogue: 0,0:24:44.84,0:24:46.40,*Default,NTP,0000,0000,0000,,too
+Dialogue: 0,0:24:46.40,0:24:48.00,*Default,NTP,0000,0000,0000,,great question so like what are the
+Dialogue: 0,0:24:48.00,0:24:50.88,*Default,NTP,0000,0000,0000,,constraints on what values you can put
+Dialogue: 0,0:24:50.88,0:24:54.24,*Default,NTP,0000,0000,0000,,within a column in
+Dialogue: 0,0:24:54.24,0:24:56.88,*Default,NTP,0000,0000,0000,,in sql here there is actually quite a
+Dialogue: 0,0:24:56.88,0:24:58.16,*Default,NTP,0000,0000,0000,,bit of variety
+Dialogue: 0,0:24:58.16,0:24:59.84,*Default,NTP,0000,0000,0000,,when you look at different database
+Dialogue: 0,0:24:59.84,0:25:01.44,*Default,NTP,0000,0000,0000,,management systems and
+Dialogue: 0,0:25:01.44,0:25:03.52,*Default,NTP,0000,0000,0000,,sqlite's kind of an outlier and that
+Dialogue: 0,0:25:03.52,0:25:05.28,*Default,NTP,0000,0000,0000,,lets you sort of
+Dialogue: 0,0:25:05.28,0:25:08.24,*Default,NTP,0000,0000,0000,,not specify too much about what the data
+Dialogue: 0,0:25:08.24,0:25:11.20,*Default,NTP,0000,0000,0000,,format is in advance
+Dialogue: 0,0:25:11.20,0:25:14.64,*Default,NTP,0000,0000,0000,,whereas a lot of popular database
+Dialogue: 0,0:25:14.64,0:25:18.08,*Default,NTP,0000,0000,0000,,management systems require you to not
+Dialogue: 0,0:25:18.08,0:25:19.52,*Default,NTP,0000,0000,0000,,only say like
+Dialogue: 0,0:25:19.52,0:25:22.08,*Default,NTP,0000,0000,0000,,this is going to be a string but to
+Dialogue: 0,0:25:22.08,0:25:24.00,*Default,NTP,0000,0000,0000,,decide on the maximum length of the
+Dialogue: 0,0:25:24.00,0:25:26.32,*Default,NTP,0000,0000,0000,,string that you'll ever put in there
+Dialogue: 0,0:25:26.32,0:25:29.68,*Default,NTP,0000,0000,0000,,um and uh if you can do this in advance
+Dialogue: 0,0:25:29.68,0:25:31.20,*Default,NTP,0000,0000,0000,,if you know like oh this is going to be
+Dialogue: 0,0:25:31.20,0:25:31.92,*Default,NTP,0000,0000,0000,,a
+Dialogue: 0,0:25:31.92,0:25:35.28,*Default,NTP,0000,0000,0000,,you know 14 character string because you
+Dialogue: 0,0:25:35.28,0:25:36.88,*Default,NTP,0000,0000,0000,,know it's someone's driver's license
+Dialogue: 0,0:25:36.88,0:25:38.16,*Default,NTP,0000,0000,0000,,number and they're never longer than
+Dialogue: 0,0:25:38.16,0:25:39.04,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:25:39.04,0:25:41.28,*Default,NTP,0000,0000,0000,,then that can add to the efficiency of
+Dialogue: 0,0:25:41.28,0:25:42.32,*Default,NTP,0000,0000,0000,,the system but
+Dialogue: 0,0:25:42.32,0:25:44.40,*Default,NTP,0000,0000,0000,,it leads to problems if all of a sudden
+Dialogue: 0,0:25:44.40,0:25:46.48,*Default,NTP,0000,0000,0000,,like you know some uh
+Dialogue: 0,0:25:46.48,0:25:48.00,*Default,NTP,0000,0000,0000,,some state decides they're going to use
+Dialogue: 0,0:25:48.00,0:25:50.56,*Default,NTP,0000,0000,0000,,even longer license
+Dialogue: 0,0:25:50.56,0:25:52.08,*Default,NTP,0000,0000,0000,,driver's license codes and they don't
+Dialogue: 0,0:25:52.08,0:25:55.36,*Default,NTP,0000,0000,0000,,fit in your slot anymore so
+Dialogue: 0,0:25:55.36,0:25:57.12,*Default,NTP,0000,0000,0000,,there's no one answer to this question
+Dialogue: 0,0:25:57.12,0:25:58.64,*Default,NTP,0000,0000,0000,,of like what are the constraints
+Dialogue: 0,0:25:58.64,0:25:59.76,*Default,NTP,0000,0000,0000,,it will depend on the database
+Dialogue: 0,0:25:59.76,0:26:02.08,*Default,NTP,0000,0000,0000,,management system sqlite you can learn
+Dialogue: 0,0:26:02.08,0:26:03.44,*Default,NTP,0000,0000,0000,,about the constraints there
+Dialogue: 0,0:26:03.44,0:26:06.00,*Default,NTP,0000,0000,0000,,um i think strings can have arbitrary
+Dialogue: 0,0:26:06.00,0:26:06.56,*Default,NTP,0000,0000,0000,,length
+Dialogue: 0,0:26:06.56,0:26:09.20,*Default,NTP,0000,0000,0000,,and uh so there's nothing kind of really
+Dialogue: 0,0:26:09.20,0:26:10.32,*Default,NTP,0000,0000,0000,,special about them
+Dialogue: 0,0:26:10.32,0:26:12.32,*Default,NTP,0000,0000,0000,,but you have to kind of relearn this for
+Dialogue: 0,0:26:12.32,0:26:14.24,*Default,NTP,0000,0000,0000,,whatever other database management
+Dialogue: 0,0:26:14.24,0:26:16.24,*Default,NTP,0000,0000,0000,,system you're using whether it's mysql
+Dialogue: 0,0:26:16.24,0:26:17.92,*Default,NTP,0000,0000,0000,,or postgres or something like that that
+Dialogue: 0,0:26:17.92,0:26:20.00,*Default,NTP,0000,0000,0000,,you run into in the future
+Dialogue: 0,0:26:20.00,0:26:21.84,*Default,NTP,0000,0000,0000,,yeah i think if i recall john sequel has
+Dialogue: 0,0:26:21.84,0:26:23.28,*Default,NTP,0000,0000,0000,,a very strict you have to define
+Dialogue: 0,0:26:23.28,0:26:24.16,*Default,NTP,0000,0000,0000,,everything like
+Dialogue: 0,0:26:24.16,0:26:25.68,*Default,NTP,0000,0000,0000,,how big the integers are going to be how
+Dialogue: 0,0:26:25.68,0:26:26.72,*Default,NTP,0000,0000,0000,,big the strings are going to be
+Dialogue: 0,0:26:26.72,0:26:29.36,*Default,NTP,0000,0000,0000,,everything has to be defined up front
+Dialogue: 0,0:26:29.36,0:26:32.56,*Default,NTP,0000,0000,0000,,yeah i think both both mysql and
+Dialogue: 0,0:26:32.56,0:26:33.36,*Default,NTP,0000,0000,0000,,postgres
+Dialogue: 0,0:26:33.36,0:26:36.88,*Default,NTP,0000,0000,0000,,do this and yeah anything that's really
+Dialogue: 0,0:26:36.88,0:26:38.08,*Default,NTP,0000,0000,0000,,designed for very
+Dialogue: 0,0:26:38.08,0:26:41.28,*Default,NTP,0000,0000,0000,,large database data sets that are going
+Dialogue: 0,0:26:41.28,0:26:42.48,*Default,NTP,0000,0000,0000,,to be accessed
+Dialogue: 0,0:26:42.48,0:26:44.80,*Default,NTP,0000,0000,0000,,by multiple programs and this is kind of
+Dialogue: 0,0:26:44.80,0:26:47.12,*Default,NTP,0000,0000,0000,,the central hub for a whole service
+Dialogue: 0,0:26:47.12,0:26:50.16,*Default,NTP,0000,0000,0000,,tends to make you decide
+Dialogue: 0,0:26:50.16,0:26:53.12,*Default,NTP,0000,0000,0000,,a lot about your data in advance yeah
+Dialogue: 0,0:26:53.12,0:26:54.80,*Default,NTP,0000,0000,0000,,where sql light is sort of design
+Dialogue: 0,0:26:54.80,0:26:57.12,*Default,NTP,0000,0000,0000,,designed for moderate size stuff you
+Dialogue: 0,0:26:57.12,0:26:58.96,*Default,NTP,0000,0000,0000,,know it can fit on one computer pretty
+Dialogue: 0,0:26:58.96,0:26:59.92,*Default,NTP,0000,0000,0000,,easily
+Dialogue: 0,0:26:59.92,0:27:01.52,*Default,NTP,0000,0000,0000,,um and there they give you some more
+Dialogue: 0,0:27:01.52,0:27:05.20,*Default,NTP,0000,0000,0000,,flexibility yeah yeah that's right
+Dialogue: 0,0:27:05.20,0:27:08.16,*Default,NTP,0000,0000,0000,,hmm a good question so is the standard
+Dialogue: 0,0:27:08.16,0:27:09.60,*Default,NTP,0000,0000,0000,,to like
+Dialogue: 0,0:27:09.60,0:27:12.16,*Default,NTP,0000,0000,0000,,create an empty grid and then fill in
+Dialogue: 0,0:27:12.16,0:27:13.12,*Default,NTP,0000,0000,0000,,the values
+Dialogue: 0,0:27:13.12,0:27:16.08,*Default,NTP,0000,0000,0000,,or do you always sort of build it um at
+Dialogue: 0,0:27:16.08,0:27:17.04,*Default,NTP,0000,0000,0000,,once
+Dialogue: 0,0:27:17.04,0:27:20.72,*Default,NTP,0000,0000,0000,,i i'd say what's common is that you
+Dialogue: 0,0:27:20.72,0:27:24.80,*Default,NTP,0000,0000,0000,,often create a table with no rows
+Dialogue: 0,0:27:24.80,0:27:27.04,*Default,NTP,0000,0000,0000,,but a particular set of columns like
+Dialogue: 0,0:27:27.04,0:27:28.72,*Default,NTP,0000,0000,0000,,you've come up with their names
+Dialogue: 0,0:27:28.72,0:27:31.04,*Default,NTP,0000,0000,0000,,and you know how many columns there are
+Dialogue: 0,0:27:31.04,0:27:33.20,*Default,NTP,0000,0000,0000,,and then you add the rows one by one
+Dialogue: 0,0:27:33.20,0:27:34.80,*Default,NTP,0000,0000,0000,,but when you add a row you add it with
+Dialogue: 0,0:27:34.80,0:27:36.48,*Default,NTP,0000,0000,0000,,the data in it i think that's the most
+Dialogue: 0,0:27:36.48,0:27:37.12,*Default,NTP,0000,0000,0000,,common way
+Dialogue: 0,0:27:37.12,0:27:38.96,*Default,NTP,0000,0000,0000,,that tables are built that's not what we
+Dialogue: 0,0:27:38.96,0:27:41.12,*Default,NTP,0000,0000,0000,,did today in lecture instead we kind of
+Dialogue: 0,0:27:41.12,0:27:43.28,*Default,NTP,0000,0000,0000,,built the columns and the rows all at
+Dialogue: 0,0:27:43.28,0:27:45.12,*Default,NTP,0000,0000,0000,,once but we will do this
+Dialogue: 0,0:27:45.12,0:27:46.88,*Default,NTP,0000,0000,0000,,on friday i'll show you how to kind of
+Dialogue: 0,0:27:46.88,0:27:49.12,*Default,NTP,0000,0000,0000,,build a table more incrementally
+Dialogue: 0,0:27:49.12,0:27:51.44,*Default,NTP,0000,0000,0000,,and as far as like building a grid and
+Dialogue: 0,0:27:51.44,0:27:52.96,*Default,NTP,0000,0000,0000,,then adding stuff later
+Dialogue: 0,0:27:52.96,0:27:54.88,*Default,NTP,0000,0000,0000,,i think that's relatively unusual
+Dialogue: 0,0:27:54.88,0:27:56.80,*Default,NTP,0000,0000,0000,,typically you don't know how many rows
+Dialogue: 0,0:27:56.80,0:27:58.32,*Default,NTP,0000,0000,0000,,there will be in advance
+Dialogue: 0,0:27:58.32,0:28:00.08,*Default,NTP,0000,0000,0000,,because you know it depends what happens
+Dialogue: 0,0:28:00.08,0:28:01.84,*Default,NTP,0000,0000,0000,,in the course of the program and so
+Dialogue: 0,0:28:01.84,0:28:03.92,*Default,NTP,0000,0000,0000,,tables grow over time you add more rows
+Dialogue: 0,0:28:03.92,0:28:04.72,*Default,NTP,0000,0000,0000,,because you know
+Dialogue: 0,0:28:04.72,0:28:06.48,*Default,NTP,0000,0000,0000,,you add a row every time some new user
+Dialogue: 0,0:28:06.48,0:28:07.84,*Default,NTP,0000,0000,0000,,shows up or something like that
+Dialogue: 0,0:28:07.84,0:28:09.60,*Default,NTP,0000,0000,0000,,and so you know the columns in advance
+Dialogue: 0,0:28:09.60,0:28:12.96,*Default,NTP,0000,0000,0000,,but the rows get added incrementally
+Dialogue: 0,0:28:12.96,0:28:15.28,*Default,NTP,0000,0000,0000,,the next two questions were logistical
+Dialogue: 0,0:28:15.28,0:28:17.12,*Default,NTP,0000,0000,0000,,so i'll just answer them here
+Dialogue: 0,0:28:17.12,0:28:18.72,*Default,NTP,0000,0000,0000,,one was can you work alone or do you
+Dialogue: 0,0:28:18.72,0:28:20.16,*Default,NTP,0000,0000,0000,,have to work with a partner no you can
+Dialogue: 0,0:28:20.16,0:28:21.04,*Default,NTP,0000,0000,0000,,work alone
+Dialogue: 0,0:28:21.04,0:28:22.96,*Default,NTP,0000,0000,0000,,and if you're working alone and then you
+Dialogue: 0,0:28:22.96,0:28:24.40,*Default,NTP,0000,0000,0000,,find a partner you could merge your work
+Dialogue: 0,0:28:24.40,0:28:26.16,*Default,NTP,0000,0000,0000,,with them that's okay
+Dialogue: 0,0:28:26.16,0:28:28.16,*Default,NTP,0000,0000,0000,,the second was are there checkpoints for
+Dialogue: 0,0:28:28.16,0:28:29.60,*Default,NTP,0000,0000,0000,,the challenge version and the answer is
+Dialogue: 0,0:28:29.60,0:28:30.80,*Default,NTP,0000,0000,0000,,no there are no checkpoints for the
+Dialogue: 0,0:28:30.80,0:28:31.76,*Default,NTP,0000,0000,0000,,challenge version
+Dialogue: 0,0:28:31.76,0:28:33.04,*Default,NTP,0000,0000,0000,,you just have to complete the whole
+Dialogue: 0,0:28:33.04,0:28:34.96,*Default,NTP,0000,0000,0000,,thing by the deadline or get an early
+Dialogue: 0,0:28:34.96,0:28:37.52,*Default,NTP,0000,0000,0000,,submission bonus point
+Dialogue: 0,0:28:37.52,0:28:39.84,*Default,NTP,0000,0000,0000,,and then i'm gave some opinions about
+Dialogue: 0,0:28:39.84,0:28:41.44,*Default,NTP,0000,0000,0000,,the challenge version in general here we
+Dialogue: 0,0:28:41.44,0:28:42.64,*Default,NTP,0000,0000,0000,,go
+Dialogue: 0,0:28:42.64,0:28:44.32,*Default,NTP,0000,0000,0000,,just for everybody out there thinking
+Dialogue: 0,0:28:44.32,0:28:46.08,*Default,NTP,0000,0000,0000,,about doing the challenge version
+Dialogue: 0,0:28:46.08,0:28:47.60,*Default,NTP,0000,0000,0000,,you know the regular version is plenty
+Dialogue: 0,0:28:47.60,0:28:48.80,*Default,NTP,0000,0000,0000,,of work you don't need to do the
+Dialogue: 0,0:28:48.80,0:28:49.68,*Default,NTP,0000,0000,0000,,challenge version
+Dialogue: 0,0:28:49.68,0:28:51.20,*Default,NTP,0000,0000,0000,,in fact maybe you do the regular version
+Dialogue: 0,0:28:51.20,0:28:52.56,*Default,NTP,0000,0000,0000,,and then do the challenge version in
+Dialogue: 0,0:28:52.56,0:28:53.60,*Default,NTP,0000,0000,0000,,your own time
+Dialogue: 0,0:28:53.60,0:28:55.68,*Default,NTP,0000,0000,0000,,uh over winter break would be a more
+Dialogue: 0,0:28:55.68,0:28:57.36,*Default,NTP,0000,0000,0000,,reasonable thing so only if you're
+Dialogue: 0,0:28:57.36,0:28:59.04,*Default,NTP,0000,0000,0000,,finding that the projects are just kind
+Dialogue: 0,0:28:59.04,0:29:01.28,*Default,NTP,0000,0000,0000,,of too simple and too structured for you
+Dialogue: 0,0:29:01.28,0:29:03.84,*Default,NTP,0000,0000,0000,,and um and you're tired of doing it that
+Dialogue: 0,0:29:03.84,0:29:05.60,*Default,NTP,0000,0000,0000,,way then yeah maybe do the challenge
+Dialogue: 0,0:29:05.60,0:29:06.48,*Default,NTP,0000,0000,0000,,version but
+Dialogue: 0,0:29:06.48,0:29:09.20,*Default,NTP,0000,0000,0000,,don't do it just because uh just because
+Dialogue: 0,0:29:09.20,0:29:10.96,*Default,NTP,0000,0000,0000,,it's there
+Dialogue: 0,0:29:10.96,0:29:12.96,*Default,NTP,0000,0000,0000,,yeah good question so it's like is there
+Dialogue: 0,0:29:12.96,0:29:15.92,*Default,NTP,0000,0000,0000,,any way to have a value in sql
+Dialogue: 0,0:29:15.92,0:29:18.08,*Default,NTP,0000,0000,0000,,be something that's kind of changing all
+Dialogue: 0,0:29:18.08,0:29:19.84,*Default,NTP,0000,0000,0000,,the time or could be
+Dialogue: 0,0:29:19.84,0:29:21.92,*Default,NTP,0000,0000,0000,,mutated by another program i think the
+Dialogue: 0,0:29:21.92,0:29:23.60,*Default,NTP,0000,0000,0000,,answer is no i think the way these are
+Dialogue: 0,0:29:23.60,0:29:24.48,*Default,NTP,0000,0000,0000,,set up
+Dialogue: 0,0:29:24.48,0:29:26.48,*Default,NTP,0000,0000,0000,,is that they're just kind of static
+Dialogue: 0,0:29:26.48,0:29:28.24,*Default,NTP,0000,0000,0000,,values in the table
+Dialogue: 0,0:29:28.24,0:29:30.24,*Default,NTP,0000,0000,0000,,another program can go change those
+Dialogue: 0,0:29:30.24,0:29:32.16,*Default,NTP,0000,0000,0000,,values so it can like change
+Dialogue: 0,0:29:32.16,0:29:34.72,*Default,NTP,0000,0000,0000,,you know someone's name from you know
+Dialogue: 0,0:29:34.72,0:29:36.64,*Default,NTP,0000,0000,0000,,henry to hank or something like that
+Dialogue: 0,0:29:36.64,0:29:40.24,*Default,NTP,0000,0000,0000,,but um but i don't think there's a way
+Dialogue: 0,0:29:40.24,0:29:40.88,*Default,NTP,0000,0000,0000,,to have
+Dialogue: 0,0:29:40.88,0:29:43.92,*Default,NTP,0000,0000,0000,,the values themselves be kind of mutable
+Dialogue: 0,0:29:43.92,0:29:45.76,*Default,NTP,0000,0000,0000,,things that change over yeah like on the
+Dialogue: 0,0:29:45.76,0:29:47.76,*Default,NTP,0000,0000,0000,,fly like every time you query a cell it
+Dialogue: 0,0:29:47.76,0:29:49.76,*Default,NTP,0000,0000,0000,,generates a random number i don't
+Dialogue: 0,0:29:49.76,0:29:52.64,*Default,NTP,0000,0000,0000,,i don't think you can do that or salts a
+Dialogue: 0,0:29:52.64,0:29:54.16,*Default,NTP,0000,0000,0000,,data by adding something
+Dialogue: 0,0:29:54.16,0:29:55.84,*Default,NTP,0000,0000,0000,,i don't i don't think you can do that in
+Dialogue: 0,0:29:55.84,0:29:58.88,*Default,NTP,0000,0000,0000,,sql but what does often happen is you'll
+Dialogue: 0,0:29:58.88,0:30:00.00,*Default,NTP,0000,0000,0000,,have a table
+Dialogue: 0,0:30:00.00,0:30:01.84,*Default,NTP,0000,0000,0000,,where each row is like a different
+Dialogue: 0,0:30:01.84,0:30:04.08,*Default,NTP,0000,0000,0000,,version of the same thing
+Dialogue: 0,0:30:04.08,0:30:06.48,*Default,NTP,0000,0000,0000,,and you have a column for what version
+Dialogue: 0,0:30:06.48,0:30:08.32,*Default,NTP,0000,0000,0000,,it is and then you have a column for
+Dialogue: 0,0:30:08.32,0:30:10.40,*Default,NTP,0000,0000,0000,,what the value is now
+Dialogue: 0,0:30:10.40,0:30:12.56,*Default,NTP,0000,0000,0000,,and uh every time you kind of make an
+Dialogue: 0,0:30:12.56,0:30:13.76,*Default,NTP,0000,0000,0000,,update you know your
+Dialogue: 0,0:30:13.76,0:30:15.84,*Default,NTP,0000,0000,0000,,encryption key changes daily or
+Dialogue: 0,0:30:15.84,0:30:16.80,*Default,NTP,0000,0000,0000,,something like that
+Dialogue: 0,0:30:16.80,0:30:18.40,*Default,NTP,0000,0000,0000,,then you'd add another row to this thing
+Dialogue: 0,0:30:18.40,0:30:20.64,*Default,NTP,0000,0000,0000,,which says oh now the current value is
+Dialogue: 0,0:30:20.64,0:30:23.36,*Default,NTP,0000,0000,0000,,whatever for this particular day and so
+Dialogue: 0,0:30:23.36,0:30:24.24,*Default,NTP,0000,0000,0000,,even without
+Dialogue: 0,0:30:24.24,0:30:26.88,*Default,NTP,0000,0000,0000,,dynamic changes you can get that kind of
+Dialogue: 0,0:30:26.88,0:30:28.80,*Default,NTP,0000,0000,0000,,dynamic flavor just by kind of storing
+Dialogue: 0,0:30:28.80,0:30:30.32,*Default,NTP,0000,0000,0000,,more data
+Dialogue: 0,0:30:30.32,0:30:33.04,*Default,NTP,0000,0000,0000,,you can change you can change a cell you
+Dialogue: 0,0:30:33.04,0:30:34.72,*Default,NTP,0000,0000,0000,,can change data in a table
+Dialogue: 0,0:30:34.72,0:30:36.48,*Default,NTP,0000,0000,0000,,it's that's fine i mean it's not it's
+Dialogue: 0,0:30:36.48,0:30:38.16,*Default,NTP,0000,0000,0000,,not like once you add a row
+Dialogue: 0,0:30:38.16,0:30:40.32,*Default,NTP,0000,0000,0000,,no the data can't change you can update
+Dialogue: 0,0:30:40.32,0:30:41.60,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:30:41.60,0:30:43.44,*Default,NTP,0000,0000,0000,,um the other thing you can do is instead
+Dialogue: 0,0:30:43.44,0:30:45.20,*Default,NTP,0000,0000,0000,,of having age of a person
+Dialogue: 0,0:30:45.20,0:30:48.40,*Default,NTP,0000,0000,0000,,be the row you could have
+Dialogue: 0,0:30:48.40,0:30:50.56,*Default,NTP,0000,0000,0000,,a row represent a person at a particular
+Dialogue: 0,0:30:50.56,0:30:52.16,*Default,NTP,0000,0000,0000,,time yeah
+Dialogue: 0,0:30:52.16,0:30:54.08,*Default,NTP,0000,0000,0000,,and that means they have an age at that
+Dialogue: 0,0:30:54.08,0:30:56.00,*Default,NTP,0000,0000,0000,,particular time where one column stores
+Dialogue: 0,0:30:56.00,0:30:56.88,*Default,NTP,0000,0000,0000,,the time
+Dialogue: 0,0:30:56.88,0:31:00.56,*Default,NTP,0000,0000,0000,,you know in 2006 i was 26
+Dialogue: 0,0:31:00.56,0:31:02.00,*Default,NTP,0000,0000,0000,,and then there's another row that says
+Dialogue: 0,0:31:02.00,0:31:03.68,*Default,NTP,0000,0000,0000,,in 2007 i was
+Dialogue: 0,0:31:03.68,0:31:07.20,*Default,NTP,0000,0000,0000,,27 and um so in that sense
+Dialogue: 0,0:31:07.20,0:31:09.84,*Default,NTP,0000,0000,0000,,you can you can keep track of changes
+Dialogue: 0,0:31:09.84,0:31:11.68,*Default,NTP,0000,0000,0000,,over time just by more rows
+Dialogue: 0,0:31:11.68,0:31:13.44,*Default,NTP,0000,0000,0000,,by having your row not represent the
+Dialogue: 0,0:31:13.44,0:31:15.04,*Default,NTP,0000,0000,0000,,thing that's changing but instead what
+Dialogue: 0,0:31:15.04,0:31:16.48,*Default,NTP,0000,0000,0000,,the thing was like at a particular
+Dialogue: 0,0:31:16.48,0:31:17.68,*Default,NTP,0000,0000,0000,,snapshot in time
+Dialogue: 0,0:31:17.68,0:31:20.00,*Default,NTP,0000,0000,0000,,and have the time be one of the values
