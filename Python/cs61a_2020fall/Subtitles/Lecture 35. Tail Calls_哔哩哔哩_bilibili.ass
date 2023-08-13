@@ -1,0 +1,870 @@
+[Script Info]
+Title: Lecture 35. Tail Calls_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=84&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.87,0:00:03.20,*Default,NTP,0000,0000,0000,,61 a lecture No.35
+Dialogue: 0,0:00:03.53,0:00:04.53,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:05.67,0:00:08.40,*Default,NTP,0000,0000,0000,,the scheme project is due on Tuesday
+Dialogue: 0,0:00:08.80,0:00:10.13,*Default,NTP,0000,0000,0000,,you can get an early submission
+Dialogue: 0,0:00:10.13,0:00:11.57,*Default,NTP,0000,0000,0000,,bonus point for completing it
+Dialogue: 0,0:00:11.57,0:00:12.93,*Default,NTP,0000,0000,0000,,by Monday
+Dialogue: 0,0:00:13.57,0:00:15.37,*Default,NTP,0000,0000,0000,,if you want the early submission bonus point
+Dialogue: 0,0:00:15.67,0:00:17.27,*Default,NTP,0000,0000,0000,,and the extra credit for
+Dialogue: 0,0:00:17.27,0:00:19.07,*Default,NTP,0000,0000,0000,,solving the letter lambda problem
+Dialogue: 0,0:00:19.17,0:00:20.67,*Default,NTP,0000,0000,0000,,do it all by Monday
+Dialogue: 0,0:00:21.87,0:00:25.27,*Default,NTP,0000,0000,0000,,homework nine is do the Thursday after thanksgiving
+Dialogue: 0,0:00:25.27,0:00:26.57,*Default,NTP,0000,0000,0000,,it's posted already
+Dialogue: 0,0:00:26.67,0:00:28.37,*Default,NTP,0000,0000,0000,,but you could ignore it until next week
+Dialogue: 0,0:00:28.37,0:00:29.47,*Default,NTP,0000,0000,0000,,that would be fine
+Dialogue: 0,0:00:30.10,0:00:30.90,*Default,NTP,0000,0000,0000,,lab 13
+Dialogue: 0,0:00:31.47,0:00:33.17,*Default,NTP,0000,0000,0000,,which would normally be do
+Dialogue: 0,0:00:34.00,0:00:36.73,*Default,NTP,0000,0000,0000,,this Tuesday is optional
+Dialogue: 0,0:00:36.73,0:00:38.93,*Default,NTP,0000,0000,0000,,everybody will get credit for that lab
+Dialogue: 0,0:00:39.07,0:00:41.00,*Default,NTP,0000,0000,0000,,whether you touch it or you don't
+Dialogue: 0,0:00:41.20,0:00:43.33,*Default,NTP,0000,0000,0000,,but I recommend that you do the lab
+Dialogue: 0,0:00:43.33,0:00:44.73,*Default,NTP,0000,0000,0000,,because it's good preparation
+Dialogue: 0,0:00:44.73,0:00:45.97,*Default,NTP,0000,0000,0000,,for the final exam
+Dialogue: 0,0:00:46.90,0:00:49.50,*Default,NTP,0000,0000,0000,,we normally have five lab orientations
+Dialogue: 0,0:00:49.50,0:00:51.40,*Default,NTP,0000,0000,0000,,but we've reduced that down to two
+Dialogue: 0,0:00:51.60,0:00:53.07,*Default,NTP,0000,0000,0000,,since this is optional
+Dialogue: 0,0:00:53.10,0:00:55.87,*Default,NTP,0000,0000,0000,,I suspect that attendance will be a little bit lower
+Dialogue: 0,0:00:56.27,0:00:57.20,*Default,NTP,0000,0000,0000,,we will of course
+Dialogue: 0,0:00:57.20,0:01:00.20,*Default,NTP,0000,0000,0000,,post the lab orientation recordings if
+Dialogue: 0,0:01:00.20,0:01:01.73,*Default,NTP,0000,0000,0000,,that time is inconvenient
+Dialogue: 0,0:01:01.93,0:01:03.50,*Default,NTP,0000,0000,0000,,so that you can take a look at those
+Dialogue: 0,0:01:05.33,0:01:06.67,*Default,NTP,0000,0000,0000,,this Wednesday through Friday
+Dialogue: 0,0:01:06.67,0:01:08.60,*Default,NTP,0000,0000,0000,,there will be nothing associated with the class
+Dialogue: 0,0:01:08.60,0:01:11.73,*Default,NTP,0000,0000,0000,,no lecture no discussion no tutorials no office hours
+Dialogue: 0,0:01:11.97,0:01:13.53,*Default,NTP,0000,0000,0000,,and the only other thing going on
+Dialogue: 0,0:01:13.53,0:01:15.07,*Default,NTP,0000,0000,0000,,is the completely optional
+Dialogue: 0,0:01:15.13,0:01:17.30,*Default,NTP,0000,0000,0000,,scheme recursive art contest
+Dialogue: 0,0:01:17.47,0:01:18.73,*Default,NTP,0000,0000,0000,,which has entries
+Dialogue: 0,0:01:18.73,0:01:20.73,*Default,NTP,0000,0000,0000,,do the Monday after thanksgiving
+Dialogue: 0,0:01:21.10,0:01:23.87,*Default,NTP,0000,0000,0000,,you will find an assignment for the scheme contest
+Dialogue: 0,0:01:24.07,0:01:25.60,*Default,NTP,0000,0000,0000,,that describes the rules
+Dialogue: 0,0:01:25.90,0:01:27.13,*Default,NTP,0000,0000,0000,,and how to submit
+Dialogue: 0,0:01:28.70,0:01:30.67,*Default,NTP,0000,0000,0000,,one more thing to look out for
+Dialogue: 0,0:01:30.80,0:01:32.60,*Default,NTP,0000,0000,0000,,the week after thanksgiving
+Dialogue: 0,0:01:32.70,0:01:33.97,*Default,NTP,0000,0000,0000,,is that we've added some
+Dialogue: 0,0:01:34.07,0:01:37.50,*Default,NTP,0000,0000,0000,,longer 45min tutorials for that week
+Dialogue: 0,0:01:38.00,0:01:40.00,*Default,NTP,0000,0000,0000,,where they will focus on review
+Dialogue: 0,0:01:40.40,0:01:41.57,*Default,NTP,0000,0000,0000,,discussion and lab
+Dialogue: 0,0:01:41.57,0:01:43.57,*Default,NTP,0000,0000,0000,,that week are focused on review anyway
+Dialogue: 0,0:01:44.07,0:01:46.30,*Default,NTP,0000,0000,0000,,but we're going to try out some longer tutorials
+Dialogue: 0,0:01:46.33,0:01:48.17,*Default,NTP,0000,0000,0000,,if you think that format would fit better
+Dialogue: 0,0:01:49.37,0:01:51.10,*Default,NTP,0000,0000,0000,,so if you scroll around on tutorials
+Dialogue: 0,0:01:51.10,0:01:52.00,*Default,NTP,0000,0000,0000,,that'll see a sixty one eight
+Dialogue: 0,0:01:52.00,0:01:53.47,*Default,NTP,0000,0000,0000,,at oreg which is linked here
+Dialogue: 0,0:01:53.57,0:01:54.87,*Default,NTP,0000,0000,0000,,you'll find some of those
+Dialogue: 0,0:01:55.33,0:01:57.73,*Default,NTP,0000,0000,0000,,so I hope you have a great thanksgiving
+Dialogue: 0,0:01:57.87,0:01:59.60,*Default,NTP,0000,0000,0000,,today's lecture is optional
+Dialogue: 0,0:01:59.87,0:02:00.93,*Default,NTP,0000,0000,0000,,you should really watch it
+Dialogue: 0,0:02:00.93,0:02:03.17,*Default,NTP,0000,0000,0000,,that's one of my favorite topics in the course
+Dialogue: 0,0:02:03.50,0:02:05.60,*Default,NTP,0000,0000,0000,,called tail calls
+Dialogue: 0,0:02:05.80,0:02:08.87,*Default,NTP,0000,0000,0000,,which is scheme's answer to the wild loop
+Dialogue: 0,0:02:09.77,0:02:12.80,*Default,NTP,0000,0000,0000,,how come there's no wild statement in scheme
+Dialogue: 0,0:02:12.80,0:02:14.40,*Default,NTP,0000,0000,0000,,well you could use recursion
+Dialogue: 0,0:02:14.47,0:02:17.70,*Default,NTP,0000,0000,0000,,but isn't recursion slow and take up a lot of memory
+Dialogue: 0,0:02:17.73,0:02:19.60,*Default,NTP,0000,0000,0000,,well not necessarily
+Dialogue: 0,0:02:19.80,0:02:20.90,*Default,NTP,0000,0000,0000,,here's a topic
+Dialogue: 0,0:02:20.90,0:02:21.33,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:02:21.33,0:02:24.00,*Default,NTP,0000,0000,0000,,programming languages and how they're interpreted
+Dialogue: 0,0:02:24.13,0:02:26.33,*Default,NTP,0000,0000,0000,,that deals with exactly that problem
+Dialogue: 0,0:02:27.47,0:02:28.30,*Default,NTP,0000,0000,0000,,throughout the lecture
+Dialogue: 0,0:02:28.30,0:02:30.73,*Default,NTP,0000,0000,0000,,you might hear reference to extra credit
+Dialogue: 0,0:02:31.13,0:02:33.53,*Default,NTP,0000,0000,0000,,because in a typical semester
+Dialogue: 0,0:02:33.80,0:02:36.10,*Default,NTP,0000,0000,0000,,re engineering your interpreter
+Dialogue: 0,0:02:36.10,0:02:38.70,*Default,NTP,0000,0000,0000,,so that it performs tale call optimization
+Dialogue: 0,0:02:38.80,0:02:40.60,*Default,NTP,0000,0000,0000,,is an extra credit problem
+Dialogue: 0,0:02:41.17,0:02:41.97,*Default,NTP,0000,0000,0000,,and the
+Dialogue: 0,0:02:41.97,0:02:44.87,*Default,NTP,0000,0000,0000,,let talamda problem is typically a required problem
+Dialogue: 0,0:02:44.87,0:02:46.90,*Default,NTP,0000,0000,0000,,but now we've made it extra credit
+Dialogue: 0,0:02:47.13,0:02:49.20,*Default,NTP,0000,0000,0000,,and remove the tail call problem
+Dialogue: 0,0:02:49.40,0:02:50.33,*Default,NTP,0000,0000,0000,,it's still there
+Dialogue: 0,0:02:50.33,0:02:52.37,*Default,NTP,0000,0000,0000,,optionally you can work on it if you want
+Dialogue: 0,0:02:52.37,0:02:53.87,*Default,NTP,0000,0000,0000,,in fact it's kind of fun to
+Dialogue: 0,0:02:53.87,0:02:55.00,*Default,NTP,0000,0000,0000,,work out how you would add
+Dialogue: 0,0:02:55.00,0:02:56.67,*Default,NTP,0000,0000,0000,,that to the interpreter that you have
+Dialogue: 0,0:02:56.90,0:02:57.93,*Default,NTP,0000,0000,0000,,it requires you to
+Dialogue: 0,0:02:57.93,0:02:59.50,*Default,NTP,0000,0000,0000,,understand the whole structure of the program
+Dialogue: 0,0:02:59.50,0:03:00.20,*Default,NTP,0000,0000,0000,,you've written in
+Dialogue: 0,0:03:00.20,0:03:01.07,*Default,NTP,0000,0000,0000,,project four
+Dialogue: 0,0:03:02.20,0:03:03.70,*Default,NTP,0000,0000,0000,,or if you don't want to do that
+Dialogue: 0,0:03:03.70,0:03:05.37,*Default,NTP,0000,0000,0000,,you could just listen to this lecture
+Dialogue: 0,0:03:05.37,0:03:06.80,*Default,NTP,0000,0000,0000,,and then you'll know all about
+Dialogue: 0,0:03:06.80,0:03:08.40,*Default,NTP,0000,0000,0000,,what people mean when they say
+Dialogue: 0,0:03:08.40,0:03:10.87,*Default,NTP,0000,0000,0000,,tale recursion or tale calls
+Dialogue: 0,0:03:11.73,0:03:14.13,*Default,NTP,0000,0000,0000,,and if one of the lecture videos says something
+Dialogue: 0,0:03:14.13,0:03:14.93,*Default,NTP,0000,0000,0000,,about extra credit
+Dialogue: 0,0:03:14.93,0:03:16.27,*Default,NTP,0000,0000,0000,,and you're wondering whether you could get
+Dialogue: 0,0:03:16.27,0:03:18.17,*Default,NTP,0000,0000,0000,,extra credit for doing that this semester
+Dialogue: 0,0:03:18.30,0:03:19.67,*Default,NTP,0000,0000,0000,,the answer is no
+Dialogue: 0,0:03:19.70,0:03:22.00,*Default,NTP,0000,0000,0000,,but I did not re record all the videos
+Dialogue: 0,0:03:22.00,0:03:23.77,*Default,NTP,0000,0000,0000,,because the content is the same
+Dialogue: 0,0:03:24.17,0:03:25.47,*Default,NTP,0000,0000,0000,,alright let's dive in
+Dialogue: 0,0:03:28.17,0:03:30.17,*Default,NTP,0000,0000,0000,,the entire lecture today
+Dialogue: 0,0:03:30.57,0:03:33.50,*Default,NTP,0000,0000,0000,,is about how to solve the extra credit problem
+Dialogue: 0,0:03:33.70,0:03:35.10,*Default,NTP,0000,0000,0000,,on project four
+Dialogue: 0,0:03:35.80,0:03:38.90,*Default,NTP,0000,0000,0000,,but it also brings up a very important concept
+Dialogue: 0,0:03:39.13,0:03:42.70,*Default,NTP,0000,0000,0000,,in programming languages called tail recursion
+Dialogue: 0,0:03:44.50,0:03:47.67,*Default,NTP,0000,0000,0000,,so functional programming is this idea
+Dialogue: 0,0:03:47.97,0:03:51.13,*Default,NTP,0000,0000,0000,,that you can organize entire programs
+Dialogue: 0,0:03:51.13,0:03:53.33,*Default,NTP,0000,0000,0000,,according to pure functions
+Dialogue: 0,0:03:53.50,0:03:57.00,*Default,NTP,0000,0000,0000,,which our modular can be combined interesting ways
+Dialogue: 0,0:03:57.20,0:03:59.10,*Default,NTP,0000,0000,0000,,and also have other advantages
+Dialogue: 0,0:03:59.80,0:04:01.30,*Default,NTP,0000,0000,0000,,so functional programming
+Dialogue: 0,0:04:01.80,0:04:03.13,*Default,NTP,0000,0000,0000,,is a very broad term
+Dialogue: 0,0:04:03.13,0:04:05.80,*Default,NTP,0000,0000,0000,,but often refers to the following properties
+Dialogue: 0,0:04:06.30,0:04:08.20,*Default,NTP,0000,0000,0000,,that all functions are pure functions
+Dialogue: 0,0:04:08.20,0:04:09.90,*Default,NTP,0000,0000,0000,,they don't have side effects
+Dialogue: 0,0:04:10.40,0:04:12.10,*Default,NTP,0000,0000,0000,,there's no reassignment
+Dialogue: 0,0:04:12.27,0:04:14.20,*Default,NTP,0000,0000,0000,,no mutable data types
+Dialogue: 0,0:04:14.60,0:04:17.10,*Default,NTP,0000,0000,0000,,when you create something it's there to stick
+Dialogue: 0,0:04:18.00,0:04:18.57,*Default,NTP,0000,0000,0000,,and the name
+Dialogue: 0,0:04:18.57,0:04:21.53,*Default,NTP,0000,0000,0000,,value bindings that you create are permanent as well
+Dialogue: 0,0:04:22.97,0:04:24.47,*Default,NTP,0000,0000,0000,,when you have these things
+Dialogue: 0,0:04:24.80,0:04:27.30,*Default,NTP,0000,0000,0000,,then you gain certain advantages
+Dialogue: 0,0:04:28.07,0:04:28.80,*Default,NTP,0000,0000,0000,,1st
+Dialogue: 0,0:04:28.80,0:04:32.13,*Default,NTP,0000,0000,0000,,the value of an expression is independent of the order
+Dialogue: 0,0:04:32.13,0:04:35.27,*Default,NTP,0000,0000,0000,,in which sub expressions are evaluated
+Dialogue: 0,0:04:36.30,0:04:37.10,*Default,NTP,0000,0000,0000,,now
+Dialogue: 0,0:04:37.67,0:04:39.50,*Default,NTP,0000,0000,0000,,we could just pick a particular order
+Dialogue: 0,0:04:39.50,0:04:41.57,*Default,NTP,0000,0000,0000,,and that's what we do in python
+Dialogue: 0,0:04:41.87,0:04:43.27,*Default,NTP,0000,0000,0000,,but would it be nice
+Dialogue: 0,0:04:43.47,0:04:45.90,*Default,NTP,0000,0000,0000,,if we could choose any order we want
+Dialogue: 0,0:04:45.90,0:04:47.70,*Default,NTP,0000,0000,0000,,depending on the circumstances
+Dialogue: 0,0:04:48.17,0:04:49.20,*Default,NTP,0000,0000,0000,,in particular
+Dialogue: 0,0:04:49.57,0:04:53.10,*Default,NTP,0000,0000,0000,,we could evaluate sub expressions in parallel
+Dialogue: 0,0:04:53.10,0:04:56.20,*Default,NTP,0000,0000,0000,,if we had multiple different processing units
+Dialogue: 0,0:04:56.40,0:04:57.73,*Default,NTP,0000,0000,0000,,or we could even wait
+Dialogue: 0,0:04:57.73,0:04:58.73,*Default,NTP,0000,0000,0000,,and see if we really
+Dialogue: 0,0:04:58.73,0:05:00.77,*Default,NTP,0000,0000,0000,,need the value of an sub expression
+Dialogue: 0,0:05:00.87,0:05:03.27,*Default,NTP,0000,0000,0000,,before getting around to evaluating it
+Dialogue: 0,0:05:06.20,0:05:09.60,*Default,NTP,0000,0000,0000,,these things are productive referential transparency
+Dialogue: 0,0:05:09.90,0:05:12.40,*Default,NTP,0000,0000,0000,,this idea that the value of an expression
+Dialogue: 0,0:05:12.70,0:05:13.80,*Default,NTP,0000,0000,0000,,doesn't change
+Dialogue: 0,0:05:14.10,0:05:16.70,*Default,NTP,0000,0000,0000,,when you substitute one of its sub expressions
+Dialogue: 0,0:05:16.73,0:05:18.90,*Default,NTP,0000,0000,0000,,with the value of that sub expression
+Dialogue: 0,0:05:19.20,0:05:21.70,*Default,NTP,0000,0000,0000,,which allows you to do things like memorization
+Dialogue: 0,0:05:21.80,0:05:23.20,*Default,NTP,0000,0000,0000,,without ever worrying
+Dialogue: 0,0:05:23.20,0:05:25.77,*Default,NTP,0000,0000,0000,,that you're changing the behavior of your program
+Dialogue: 0,0:05:26.70,0:05:28.10,*Default,NTP,0000,0000,0000,,so these are all good things
+Dialogue: 0,0:05:28.10,0:05:31.10,*Default,NTP,0000,0000,0000,,and so functional programming has a lot of excitement
+Dialogue: 0,0:05:31.53,0:05:34.57,*Default,NTP,0000,0000,0000,,around it especially in this era when
+Dialogue: 0,0:05:34.60,0:05:37.07,*Default,NTP,0000,0000,0000,,computers are having more and more processing units
+Dialogue: 0,0:05:37.10,0:05:40.97,*Default,NTP,0000,0000,0000,,wouldn't it be nice to just paralyze work automatically
+Dialogue: 0,0:05:42.00,0:05:43.93,*Default,NTP,0000,0000,0000,,but one might wonder
+Dialogue: 0,0:05:44.17,0:05:46.73,*Default,NTP,0000,0000,0000,,if there are no four and wild statements
+Dialogue: 0,0:05:46.73,0:05:48.77,*Default,NTP,0000,0000,0000,,because we're not allowed to rebind a name
+Dialogue: 0,0:05:48.77,0:05:49.93,*Default,NTP,0000,0000,0000,,to a new value
+Dialogue: 0,0:05:50.07,0:05:55.53,*Default,NTP,0000,0000,0000,,can we really make basic iterated procedures efficient
+Dialogue: 0,0:05:55.87,0:05:59.47,*Default,NTP,0000,0000,0000,,or we just stuck using recursion and recursion is slow
+Dialogue: 0,0:05:59.70,0:06:00.50,*Default,NTP,0000,0000,0000,,and so
+Dialogue: 0,0:06:00.53,0:06:03.50,*Default,NTP,0000,0000,0000,,there's no way these languages could ever be fast
+Dialogue: 0,0:06:04.20,0:06:07.13,*Default,NTP,0000,0000,0000,,well it turns out there's an answer to this question
+Dialogue: 0,0:06:07.57,0:06:10.17,*Default,NTP,0000,0000,0000,,you can make a functional programming language
+Dialogue: 0,0:06:10.27,0:06:11.67,*Default,NTP,0000,0000,0000,,just as efficient
+Dialogue: 0,0:06:11.93,0:06:13.30,*Default,NTP,0000,0000,0000,,as one that's not
+Dialogue: 0,0:06:13.80,0:06:15.37,*Default,NTP,0000,0000,0000,,by using this idea
+Dialogue: 0,0:06:15.37,0:06:18.73,*Default,NTP,0000,0000,0000,,of tail recursion that we're gonna talk about today
+Dialogue: 0,0:06:20.67,0:06:22.57,*Default,NTP,0000,0000,0000,,so let's look at an example
+Dialogue: 0,0:06:23.20,0:06:24.80,*Default,NTP,0000,0000,0000,,recursion versus iteration
+Dialogue: 0,0:06:24.80,0:06:28.50,*Default,NTP,0000,0000,0000,,in python and python recursive calls always create new
+Dialogue: 0,0:06:28.73,0:06:29.90,*Default,NTP,0000,0000,0000,,active frames
+Dialogue: 0,0:06:30.10,0:06:31.10,*Default,NTP,0000,0000,0000,,let's see what that means
+Dialogue: 0,0:06:31.10,0:06:35.10,*Default,NTP,0000,0000,0000,,well let's ever riding a function factorial nk
+Dialogue: 0,0:06:35.37,0:06:38.53,*Default,NTP,0000,0000,0000,,that computes k times n factoria
+Dialogue: 0,0:06:39.93,0:06:41.67,*Default,NTP,0000,0000,0000,,here's a recursive definition
+Dialogue: 0,0:06:42.00,0:06:43.13,*Default,NTP,0000,0000,0000,,if n is zero
+Dialogue: 0,0:06:43.13,0:06:46.10,*Default,NTP,0000,0000,0000,,we just return k because zero factorial is one
+Dialogue: 0,0:06:46.73,0:06:50.73,*Default,NTP,0000,0000,0000,,otherwise we return a recursive call
+Dialogue: 0,0:06:51.60,0:06:54.97,*Default,NTP,0000,0000,0000,,where end is decremented and also multiplied in
+Dialogue: 0,0:06:55.07,0:06:56.17,*Default,NTP,0000,0000,0000,,to the constant
+Dialogue: 0,0:06:56.50,0:06:57.87,*Default,NTP,0000,0000,0000,,so then we've accumulated
+Dialogue: 0,0:06:57.87,0:06:59.57,*Default,NTP,0000,0000,0000,,all of the different terms of the factorial
+Dialogue: 0,0:06:59.57,0:07:01.50,*Default,NTP,0000,0000,0000,,by the time we reach and is zero
+Dialogue: 0,0:07:03.17,0:07:04.97,*Default,NTP,0000,0000,0000,,and here's an integrity of definition
+Dialogue: 0,0:07:05.37,0:07:10.50,*Default,NTP,0000,0000,0000,,factorial nk while n is greater than zero rebind and nk
+Dialogue: 0,0:07:10.93,0:07:14.30,*Default,NTP,0000,0000,0000,,to end minus one and k times in and then return k
+Dialogue: 0,0:07:14.57,0:07:15.20,*Default,NTP,0000,0000,0000,,so the same
+Dialogue: 0,0:07:15.20,0:07:17.40,*Default,NTP,0000,0000,0000,,logic is being applied in both of these cases
+Dialogue: 0,0:07:17.40,0:07:18.70,*Default,NTP,0000,0000,0000,,but there is a difference
+Dialogue: 0,0:07:19.00,0:07:23.10,*Default,NTP,0000,0000,0000,,the difference in time is only up to a constant factor
+Dialogue: 0,0:07:23.10,0:07:25.17,*Default,NTP,0000,0000,0000,,this is a linear time recursion
+Dialogue: 0,0:07:25.73,0:07:29.30,*Default,NTP,0000,0000,0000,,but linear time recursions take linear amounts of space
+Dialogue: 0,0:07:30.53,0:07:33.10,*Default,NTP,0000,0000,0000,,the iterative version also takes linear time
+Dialogue: 0,0:07:33.10,0:07:34.37,*Default,NTP,0000,0000,0000,,you have to go through the
+Dialogue: 0,0:07:34.47,0:07:36.67,*Default,NTP,0000,0000,0000,,body of this wild statement many times
+Dialogue: 0,0:07:37.27,0:07:38.00,*Default,NTP,0000,0000,0000,,ones for each end
+Dialogue: 0,0:07:38.00,0:07:39.93,*Default,NTP,0000,0000,0000,,and then it gets deck permitted each time
+Dialogue: 0,0:07:40.27,0:07:43.13,*Default,NTP,0000,0000,0000,,but we only have a constant amount of space
+Dialogue: 0,0:07:43.13,0:07:44.47,*Default,NTP,0000,0000,0000,,because we have a constant number
+Dialogue: 0,0:07:44.47,0:07:46.00,*Default,NTP,0000,0000,0000,,of names that we have to remember
+Dialogue: 0,0:07:46.20,0:07:51.17,*Default,NTP,0000,0000,0000,,and nk and factorial regardless of how big and is
+Dialogue: 0,0:07:54.37,0:07:56.10,*Default,NTP,0000,0000,0000,,so how do we bridge this gap
+Dialogue: 0,0:07:56.53,0:07:58.73,*Default,NTP,0000,0000,0000,,between the space that's required
+Dialogue: 0,0:07:58.73,0:08:01.13,*Default,NTP,0000,0000,0000,,for a factorial in the recursive sense
+Dialogue: 0,0:08:01.17,0:08:02.60,*Default,NTP,0000,0000,0000,,versus the intrigible one
+Dialogue: 0,0:08:02.80,0:08:05.57,*Default,NTP,0000,0000,0000,,that's the whole idea of what we're talking about today
+Dialogue: 0,0:08:09.50,0:08:14.30,*Default,NTP,0000,0000,0000,,if you read the specification of the language ski
+Dialogue: 0,0:08:16.40,0:08:16.90,*Default,NTP,0000,0000,0000,,it says
+Dialogue: 0,0:08:16.90,0:08:20.30,*Default,NTP,0000,0000,0000,,implementations of schema required to be properly tale
+Dialogue: 0,0:08:20.30,0:08:21.17,*Default,NTP,0000,0000,0000,,recursive
+Dialogue: 0,0:08:21.60,0:08:25.40,*Default,NTP,0000,0000,0000,,this allows the execution of an iterative computation
+Dialogue: 0,0:08:25.53,0:08:27.00,*Default,NTP,0000,0000,0000,,in constant space
+Dialogue: 0,0:08:27.37,0:08:30.33,*Default,NTP,0000,0000,0000,,even if the iterative computation is described
+Dialogue: 0,0:08:30.37,0:08:33.53,*Default,NTP,0000,0000,0000,,by a syntactically recursive procedure
+Dialogue: 0,0:08:34.70,0:08:37.73,*Default,NTP,0000,0000,0000,,so remember we have our iterative version in python
+Dialogue: 0,0:08:37.77,0:08:40.73,*Default,NTP,0000,0000,0000,,which takes linear time but constant space
+Dialogue: 0,0:08:41.27,0:08:44.77,*Default,NTP,0000,0000,0000,,the idea is that if you write the same logic
+Dialogue: 0,0:08:45.17,0:08:46.97,*Default,NTP,0000,0000,0000,,as the scheme procedure
+Dialogue: 0,0:08:47.77,0:08:50.90,*Default,NTP,0000,0000,0000,,so this says the way you compute and time
+Dialogue: 0,0:08:51.10,0:08:52.20,*Default,NTP,0000,0000,0000,,k times on factorial
+Dialogue: 0,0:08:52.20,0:08:54.27,*Default,NTP,0000,0000,0000,,is you check and see if an is zero
+Dialogue: 0,0:08:54.40,0:08:57.07,*Default,NTP,0000,0000,0000,,then you return k otherwise you make a recursive call
+Dialogue: 0,0:08:58.73,0:09:01.10,*Default,NTP,0000,0000,0000,,and that should use resources like this
+Dialogue: 0,0:09:01.67,0:09:02.77,*Default,NTP,0000,0000,0000,,but how do we do that
+Dialogue: 0,0:09:02.90,0:09:05.37,*Default,NTP,0000,0000,0000,,well the answer is that we eliminate the middleman
+Dialogue: 0,0:09:05.40,0:09:09.13,*Default,NTP,0000,0000,0000,,we eliminate frames that we don't need anymore
+Dialogue: 0,0:09:10.00,0:09:11.90,*Default,NTP,0000,0000,0000,,when we make recursive calls
+Dialogue: 0,0:09:13.00,0:09:14.97,*Default,NTP,0000,0000,0000,,let me show you which frames those are
+Dialogue: 0,0:09:18.00,0:09:19.50,*Default,NTP,0000,0000,0000,,so we're back in python
+Dialogue: 0,0:09:19.73,0:09:22.97,*Default,NTP,0000,0000,0000,,we're looking at the recursive definition of factorial
+Dialogue: 0,0:09:23.73,0:09:25.17,*Default,NTP,0000,0000,0000,,and as we step through it
+Dialogue: 0,0:09:25.40,0:09:28.33,*Default,NTP,0000,0000,0000,,we see that each call to factorial creates a new frame
+Dialogue: 0,0:09:30.57,0:09:32.73,*Default,NTP,0000,0000,0000,,and here we have end bound to four
+Dialogue: 0,0:09:32.73,0:09:35.20,*Default,NTP,0000,0000,0000,,here end bound to three end bound to two
+Dialogue: 0,0:09:35.93,0:09:39.47,*Default,NTP,0000,0000,0000,,soon we'll have end bound to one and end bound to zero
+Dialogue: 0,0:09:39.80,0:09:41.33,*Default,NTP,0000,0000,0000,,which is the final state
+Dialogue: 0,0:09:42.17,0:09:43.90,*Default,NTP,0000,0000,0000,,now what's going to be returned
+Dialogue: 0,0:09:43.90,0:09:45.87,*Default,NTP,0000,0000,0000,,well this one's going to return to 40
+Dialogue: 0,0:09:45.87,0:09:48.57,*Default,NTP,0000,0000,0000,,we see that but notice that each one of these other
+Dialogue: 0,0:09:48.57,0:09:49.37,*Default,NTP,0000,0000,0000,,calls is also
+Dialogue: 0,0:09:49.37,0:09:51.77,*Default,NTP,0000,0000,0000,,just going to return the result of the last one
+Dialogue: 0,0:09:53.57,0:09:54.07,*Default,NTP,0000,0000,0000,,forty
+Dialogue: 0,0:09:54.07,0:09:57.40,*Default,NTP,0000,0000,0000,,forty two forty two forty two forty and we're done
+Dialogue: 0,0:09:58.07,0:10:02.17,*Default,NTP,0000,0000,0000,,now there was no need to keep around this end in this k
+Dialogue: 0,0:10:02.60,0:10:04.27,*Default,NTP,0000,0000,0000,,in order to figure out that we were just
+Dialogue: 0,0:10:04.27,0:10:06.17,*Default,NTP,0000,0000,0000,,kind of returned whatever we got back
+Dialogue: 0,0:10:06.30,0:10:07.67,*Default,NTP,0000,0000,0000,,from the next call
+Dialogue: 0,0:10:07.93,0:10:09.93,*Default,NTP,0000,0000,0000,,so all these extra frames in the middle
+Dialogue: 0,0:10:10.13,0:10:12.20,*Default,NTP,0000,0000,0000,,they were needed briefly in order to figure out
+Dialogue: 0,0:10:12.20,0:10:13.80,*Default,NTP,0000,0000,0000,,how to make the recursive call
+Dialogue: 0,0:10:13.90,0:10:15.47,*Default,NTP,0000,0000,0000,,but they weren't needed any more
+Dialogue: 0,0:10:15.47,0:10:17.17,*Default,NTP,0000,0000,0000,,after the recursive call was made
+Dialogue: 0,0:10:17.30,0:10:18.60,*Default,NTP,0000,0000,0000,,we kept them around anyway
+Dialogue: 0,0:10:18.60,0:10:20.27,*Default,NTP,0000,0000,0000,,because that's how python works
+Dialogue: 0,0:10:20.47,0:10:24.07,*Default,NTP,0000,0000,0000,,but a properly tale recursive language will not do that
+Dialogue: 0,0:10:29.07,0:10:31.33,*Default,NTP,0000,0000,0000,,the fundamental idea here to make
+Dialogue: 0,0:10:32.07,0:10:34.20,*Default,NTP,0000,0000,0000,,these recursive procedures efficient
+Dialogue: 0,0:10:34.60,0:10:37.17,*Default,NTP,0000,0000,0000,,is that some calls
+Dialogue: 0,0:10:37.57,0:10:40.33,*Default,NTP,0000,0000,0000,,are tail calls and some aren't
+Dialogue: 0,0:10:41.13,0:10:43.40,*Default,NTP,0000,0000,0000,,it's a distinction that figures out whether
+Dialogue: 0,0:10:43.67,0:10:46.17,*Default,NTP,0000,0000,0000,,when one procedure is calling another procedure
+Dialogue: 0,0:10:46.57,0:10:48.53,*Default,NTP,0000,0000,0000,,is there more work to do
+Dialogue: 0,0:10:49.53,0:10:53.00,*Default,NTP,0000,0000,0000,,when that called procedure is finished or not
+Dialogue: 0,0:10:53.73,0:10:56.10,*Default,NTP,0000,0000,0000,,if there isn't anything else to do
+Dialogue: 0,0:10:56.10,0:10:56.67,*Default,NTP,0000,0000,0000,,besides
+Dialogue: 0,0:10:56.67,0:10:59.60,*Default,NTP,0000,0000,0000,,just return the value of the expression you call
+Dialogue: 0,0:10:59.90,0:11:01.53,*Default,NTP,0000,0000,0000,,well then that's a tale call
+Dialogue: 0,0:11:02.53,0:11:05.40,*Default,NTP,0000,0000,0000,,so tail calls have kind of a long definition
+Dialogue: 0,0:11:05.40,0:11:06.70,*Default,NTP,0000,0000,0000,,so let's go through it
+Dialogue: 0,0:11:07.40,0:11:10.93,*Default,NTP,0000,0000,0000,,a procedure call that has not yet returned as active
+Dialogue: 0,0:11:11.10,0:11:11.90,*Default,NTP,0000,0000,0000,,meaning
+Dialogue: 0,0:11:12.40,0:11:14.60,*Default,NTP,0000,0000,0000,,we're still going to return something from it someday
+Dialogue: 0,0:11:15.20,0:11:17.17,*Default,NTP,0000,0000,0000,,some procedure calls are tail calls
+Dialogue: 0,0:11:17.17,0:11:18.53,*Default,NTP,0000,0000,0000,,a scheme interpreter
+Dialogue: 0,0:11:18.90,0:11:21.10,*Default,NTP,0000,0000,0000,,should support an unbounded number
+Dialogue: 0,0:11:21.10,0:11:22.50,*Default,NTP,0000,0000,0000,,that means as many as we want
+Dialogue: 0,0:11:22.60,0:11:25.00,*Default,NTP,0000,0000,0000,,an unbounded number of tail calls
+Dialogue: 0,0:11:25.07,0:11:27.60,*Default,NTP,0000,0000,0000,,using only a constant amount of space
+Dialogue: 0,0:11:28.07,0:11:29.17,*Default,NTP,0000,0000,0000,,and it's going to do that
+Dialogue: 0,0:11:29.30,0:11:32.33,*Default,NTP,0000,0000,0000,,by skipping over all those extra frames that you saw
+Dialogue: 0,0:11:32.33,0:11:33.80,*Default,NTP,0000,0000,0000,,in the environment diagram
+Dialogue: 0,0:11:33.80,0:11:35.10,*Default,NTP,0000,0000,0000,,this shows up in python
+Dialogue: 0,0:11:35.93,0:11:37.50,*Default,NTP,0000,0000,0000,,okay so what's a tail call
+Dialogue: 0,0:11:37.67,0:11:39.87,*Default,NTP,0000,0000,0000,,a tail call is a call expression
+Dialogue: 0,0:11:40.20,0:11:42.30,*Default,NTP,0000,0000,0000,,in a tail context
+Dialogue: 0,0:11:42.87,0:11:44.80,*Default,NTP,0000,0000,0000,,what's a tail context
+Dialogue: 0,0:11:45.37,0:11:46.80,*Default,NTP,0000,0000,0000,,well there's several
+Dialogue: 0,0:11:46.90,0:11:48.17,*Default,NTP,0000,0000,0000,,one is the last
+Dialogue: 0,0:11:48.17,0:11:51.00,*Default,NTP,0000,0000,0000,,body sub expression in a lambda expression
+Dialogue: 0,0:11:51.80,0:11:54.07,*Default,NTP,0000,0000,0000,,so it turns out that the lambda expression
+Dialogue: 0,0:11:54.07,0:11:55.20,*Default,NTP,0000,0000,0000,,can have multiple different
+Dialogue: 0,0:11:55.20,0:11:56.73,*Default,NTP,0000,0000,0000,,body expressions
+Dialogue: 0,0:11:56.73,0:11:59.93,*Default,NTP,0000,0000,0000,,the last one is the one that determines the return
+Dialogue: 0,0:11:59.97,0:12:00.77,*Default,NTP,0000,0000,0000,,value
+Dialogue: 0,0:12:01.27,0:12:04.80,*Default,NTP,0000,0000,0000,,and so that expression is in a tail context
+Dialogue: 0,0:12:05.00,0:12:08.27,*Default,NTP,0000,0000,0000,,meaning it's a description of the last thing
+Dialogue: 0,0:12:08.27,0:12:10.30,*Default,NTP,0000,0000,0000,,that this procedure is going to do
+Dialogue: 0,0:12:10.77,0:12:12.17,*Default,NTP,0000,0000,0000,,before it returns
+Dialogue: 0,0:12:15.37,0:12:16.93,*Default,NTP,0000,0000,0000,,now in addition
+Dialogue: 0,0:12:17.37,0:12:20.70,*Default,NTP,0000,0000,0000,,you can also have a tail call as sub expression
+Dialogue: 0,0:12:20.70,0:12:25.60,*Default,NTP,0000,0000,0000,,two or three in a tail context if expression
+Dialogue: 0,0:12:27.50,0:12:28.07,*Default,NTP,0000,0000,0000,,so remember
+Dialogue: 0,0:12:28.07,0:12:31.13,*Default,NTP,0000,0000,0000,,if expression has three sub expressions that predicate
+Dialogue: 0,0:12:31.13,0:12:32.20,*Default,NTP,0000,0000,0000,,the consequent
+Dialogue: 0,0:12:32.33,0:12:33.53,*Default,NTP,0000,0000,0000,,and the alternative
+Dialogue: 0,0:12:33.90,0:12:37.53,*Default,NTP,0000,0000,0000,,those consequent and alternatives are tail contexts
+Dialogue: 0,0:12:37.87,0:12:39.57,*Default,NTP,0000,0000,0000,,if it's the case that the whole if
+Dialogue: 0,0:12:39.57,0:12:41.50,*Default,NTP,0000,0000,0000,,expression is in a tail context
+Dialogue: 0,0:12:43.50,0:12:45.93,*Default,NTP,0000,0000,0000,,so let's look at this factorial definition
+Dialogue: 0,0:12:47.13,0:12:50.07,*Default,NTP,0000,0000,0000,,the last body sub expression
+Dialogue: 0,0:12:50.13,0:12:52.20,*Default,NTP,0000,0000,0000,,in the definition of factorial
+Dialogue: 0,0:12:52.57,0:12:53.80,*Default,NTP,0000,0000,0000,,is this whole thing
+Dialogue: 0,0:12:54.47,0:12:55.97,*Default,NTP,0000,0000,0000,,which is an if expression
+Dialogue: 0,0:12:56.27,0:12:59.00,*Default,NTP,0000,0000,0000,,so this if expression is in a tail context
+Dialogue: 0,0:12:59.60,0:13:02.97,*Default,NTP,0000,0000,0000,,which means that its sub expressions two and three
+Dialogue: 0,0:13:03.20,0:13:05.47,*Default,NTP,0000,0000,0000,,are also in a tail context
+Dialogue: 0,0:13:05.67,0:13:07.27,*Default,NTP,0000,0000,0000,,that's this k here
+Dialogue: 0,0:13:07.53,0:13:10.73,*Default,NTP,0000,0000,0000,,and then this call to factorial here
+Dialogue: 0,0:13:11.73,0:13:14.17,*Default,NTP,0000,0000,0000,,so that's a tail context as well
+Dialogue: 0,0:13:14.47,0:13:17.53,*Default,NTP,0000,0000,0000,,and this is a call expression in a tail context
+Dialogue: 0,0:13:17.57,0:13:19.13,*Default,NTP,0000,0000,0000,,and so it's a tail call
+Dialogue: 0,0:13:19.37,0:13:20.80,*Default,NTP,0000,0000,0000,,so that's the kind of thing
+Dialogue: 0,0:13:20.90,0:13:23.40,*Default,NTP,0000,0000,0000,,that should only require a constant amount of space
+Dialogue: 0,0:13:23.40,0:13:23.90,*Default,NTP,0000,0000,0000,,no matter
+Dialogue: 0,0:13:23.90,0:13:26.50,*Default,NTP,0000,0000,0000,,how many times we call it over and over again
+Dialogue: 0,0:13:28.90,0:13:32.07,*Default,NTP,0000,0000,0000,,the idea is once you compute factorial
+Dialogue: 0,0:13:32.17,0:13:34.27,*Default,NTP,0000,0000,0000,,of n minus one and k times in
+Dialogue: 0,0:13:34.50,0:13:35.30,*Default,NTP,0000,0000,0000,,you've
+Dialogue: 0,0:13:35.87,0:13:38.40,*Default,NTP,0000,0000,0000,,already done all the work you need to do for factorial
+Dialogue: 0,0:13:38.40,0:13:40.80,*Default,NTP,0000,0000,0000,,mk all you have to do is return it
+Dialogue: 0,0:13:40.80,0:13:43.33,*Default,NTP,0000,0000,0000,,so it doesn't really matter what n and kr anymore
+Dialogue: 0,0:13:43.57,0:13:45.07,*Default,NTP,0000,0000,0000,,once you've done all this work
+Dialogue: 0,0:13:47.33,0:13:49.40,*Default,NTP,0000,0000,0000,,now there are other tail contexts
+Dialogue: 0,0:13:49.67,0:13:53.20,*Default,NTP,0000,0000,0000,,so all non predicate sub expressions in a tail context
+Dialogue: 0,0:13:53.30,0:13:55.90,*Default,NTP,0000,0000,0000,,con which you'll read about in your project
+Dialogue: 0,0:13:56.27,0:13:59.80,*Default,NTP,0000,0000,0000,,the last sub expression in a tail context and or or
+Dialogue: 0,0:14:00.17,0:14:02.97,*Default,NTP,0000,0000,0000,,and the last sub expression in a tail context begin
+Dialogue: 0,0:14:04.17,0:14:06.93,*Default,NTP,0000,0000,0000,,these aren't terribly important except that
+Dialogue: 0,0:14:07.00,0:14:09.30,*Default,NTP,0000,0000,0000,,if you're actually sitting down and writing
+Dialogue: 0,0:14:09.47,0:14:10.57,*Default,NTP,0000,0000,0000,,a scheme program
+Dialogue: 0,0:14:10.57,0:14:12.77,*Default,NTP,0000,0000,0000,,you need to know what the tale context are
+Dialogue: 0,0:14:12.77,0:14:13.67,*Default,NTP,0000,0000,0000,,so you know
+Dialogue: 0,0:14:13.70,0:14:16.87,*Default,NTP,0000,0000,0000,,what's going to be the space efficiency or space usage
+Dialogue: 0,0:14:16.90,0:14:17.90,*Default,NTP,0000,0000,0000,,of your program
+Dialogue: 0,0:14:18.27,0:14:20.67,*Default,NTP,0000,0000,0000,,so people spend a lot of time making
+Dialogue: 0,0:14:20.67,0:14:22.07,*Default,NTP,0000,0000,0000,,sure that they put all of their
+Dialogue: 0,0:14:22.27,0:14:25.20,*Default,NTP,0000,0000,0000,,recursive talls and tail contexts when possible
+Dialogue: 0,0:14:25.40,0:14:27.80,*Default,NTP,0000,0000,0000,,so that their whole program doesn't use too much space
+Dialogue: 0,0:14:28.60,0:14:30.90,*Default,NTP,0000,0000,0000,,but for today we're just gonna focus on these first two
+Dialogue: 0,0:14:30.90,0:14:35.20,*Default,NTP,0000,0000,0000,,cases last body sub expression in alamda expression or
+Dialogue: 0,0:14:35.67,0:14:38.20,*Default,NTP,0000,0000,0000,,sub expressions two and three in a tail context
+Dialogue: 0,0:14:38.20,0:14:39.30,*Default,NTP,0000,0000,0000,,if expression
+Dialogue: 0,0:14:39.77,0:14:42.47,*Default,NTP,0000,0000,0000,,so we've seen both of these examples right here
+Dialogue: 0,0:14:45.37,0:14:46.73,*Default,NTP,0000,0000,0000,,let's do another example
+Dialogue: 0,0:14:46.90,0:14:48.60,*Default,NTP,0000,0000,0000,,computing the length of a list
+Dialogue: 0,0:14:49.60,0:14:52.27,*Default,NTP,0000,0000,0000,,a call expression is not a tail call
+Dialogue: 0,0:14:52.60,0:14:54.73,*Default,NTP,0000,0000,0000,,if more computation is required
+Dialogue: 0,0:14:54.73,0:14:56.27,*Default,NTP,0000,0000,0000,,in the calling procedure
+Dialogue: 0,0:14:56.70,0:14:58.30,*Default,NTP,0000,0000,0000,,so if after I finish
+Dialogue: 0,0:14:58.30,0:14:59.17,*Default,NTP,0000,0000,0000,,my recursive call
+Dialogue: 0,0:14:59.17,0:15:01.77,*Default,NTP,0000,0000,0000,,I still need to combine that value with something else
+Dialogue: 0,0:15:01.93,0:15:03.57,*Default,NTP,0000,0000,0000,,then I don't have a tail call
+Dialogue: 0,0:15:04.57,0:15:07.37,*Default,NTP,0000,0000,0000,,but it's the case that linear recursive procedures can
+Dialogue: 0,0:15:07.37,0:15:08.57,*Default,NTP,0000,0000,0000,,often be rewritten
+Dialogue: 0,0:15:08.57,0:15:09.80,*Default,NTP,0000,0000,0000,,to use tail calls
+Dialogue: 0,0:15:12.00,0:15:13.07,*Default,NTP,0000,0000,0000,,so here is a
+Dialogue: 0,0:15:13.07,0:15:15.77,*Default,NTP,0000,0000,0000,,linear recursive procedure for computing the length
+Dialogue: 0,0:15:15.77,0:15:17.13,*Default,NTP,0000,0000,0000,,of a list s
+Dialogue: 0,0:15:17.70,0:15:18.73,*Default,NTP,0000,0000,0000,,and it says
+Dialogue: 0,0:15:19.70,0:15:21.10,*Default,NTP,0000,0000,0000,,it fesses nullet zero
+Dialogue: 0,0:15:21.10,0:15:21.57,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:15:21.57,0:15:24.10,*Default,NTP,0000,0000,0000,,it's one more than the length of the rest of s
+Dialogue: 0,0:15:24.93,0:15:28.17,*Default,NTP,0000,0000,0000,,now this is a tale context
+Dialogue: 0,0:15:28.47,0:15:31.60,*Default,NTP,0000,0000,0000,,because it's the last expression in length
+Dialogue: 0,0:15:33.47,0:15:36.70,*Default,NTP,0000,0000,0000,,since it's a tale context and it's an if expression
+Dialogue: 0,0:15:36.77,0:15:38.77,*Default,NTP,0000,0000,0000,,both zero and
+Dialogue: 0,0:15:39.20,0:15:43.30,*Default,NTP,0000,0000,0000,,the alternative here are both in tale context
+Dialogue: 0,0:15:44.57,0:15:45.30,*Default,NTP,0000,0000,0000,,so this is good
+Dialogue: 0,0:15:45.30,0:15:47.77,*Default,NTP,0000,0000,0000,,this is a call expression in a tail context
+Dialogue: 0,0:15:47.90,0:15:49.77,*Default,NTP,0000,0000,0000,,so this addition is a tail call
+Dialogue: 0,0:15:50.00,0:15:52.53,*Default,NTP,0000,0000,0000,,however this is not
+Dialogue: 0,0:15:52.70,0:15:55.73,*Default,NTP,0000,0000,0000,,so this is a call expression within a call expression
+Dialogue: 0,0:15:56.07,0:15:58.00,*Default,NTP,0000,0000,0000,,and that's exactly when you know you're not
+Dialogue: 0,0:15:58.00,0:15:59.37,*Default,NTP,0000,0000,0000,,in a tail context
+Dialogue: 0,0:16:00.20,0:16:03.47,*Default,NTP,0000,0000,0000,,after we've compute the length of the rest of s
+Dialogue: 0,0:16:03.47,0:16:06.37,*Default,NTP,0000,0000,0000,,we still have more work to do to add one to it
+Dialogue: 0,0:16:06.93,0:16:10.27,*Default,NTP,0000,0000,0000,,now we don't know what work there might be to do left
+Dialogue: 0,0:16:10.67,0:16:11.53,*Default,NTP,0000,0000,0000,,and so
+Dialogue: 0,0:16:11.73,0:16:14.57,*Default,NTP,0000,0000,0000,,for instance maybe there would be a reference to s
+Dialogue: 0,0:16:14.57,0:16:16.27,*Default,NTP,0000,0000,0000,,and so we might need the environment
+Dialogue: 0,0:16:16.53,0:16:18.53,*Default,NTP,0000,0000,0000,,for this function call
+Dialogue: 0,0:16:18.53,0:16:20.50,*Default,NTP,0000,0000,0000,,around because there's more work to do
+Dialogue: 0,0:16:21.13,0:16:22.20,*Default,NTP,0000,0000,0000,,so in this case
+Dialogue: 0,0:16:22.37,0:16:25.17,*Default,NTP,0000,0000,0000,,an implementation of length here would require
+Dialogue: 0,0:16:25.47,0:16:28.93,*Default,NTP,0000,0000,0000,,linear space to keep around all the frames for length
+Dialogue: 0,0:16:29.00,0:16:30.37,*Default,NTP,0000,0000,0000,,in each recursive call
+Dialogue: 0,0:16:31.17,0:16:33.70,*Default,NTP,0000,0000,0000,,but let's see if we can rewrite length so that it is
+Dialogue: 0,0:16:33.70,0:16:34.67,*Default,NTP,0000,0000,0000,,tail recursive
+Dialogue: 0,0:16:35.70,0:16:38.00,*Default,NTP,0000,0000,0000,,here's a common way to do so
+Dialogue: 0,0:16:38.70,0:16:40.70,*Default,NTP,0000,0000,0000,,we define another procedure
+Dialogue: 0,0:16:41.00,0:16:43.87,*Default,NTP,0000,0000,0000,,length itter which takes in
+Dialogue: 0,0:16:44.20,0:16:47.20,*Default,NTP,0000,0000,0000,,the same list that we're computing the length of
+Dialogue: 0,0:16:47.30,0:16:50.60,*Default,NTP,0000,0000,0000,,and also the length that we've computed so far and
+Dialogue: 0,0:16:52.87,0:16:54.00,*Default,NTP,0000,0000,0000,,if s is null
+Dialogue: 0,0:16:54.07,0:16:57.10,*Default,NTP,0000,0000,0000,,then we've computed the entire length and we return in
+Dialogue: 0,0:16:57.67,0:16:58.47,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:16:59.47,0:17:04.73,*Default,NTP,0000,0000,0000,,we return the value of recursive call on the rest of s
+Dialogue: 0,0:17:05.07,0:17:08.00,*Default,NTP,0000,0000,0000,,with one more than the length of what we've seen so far
+Dialogue: 0,0:17:09.07,0:17:11.80,*Default,NTP,0000,0000,0000,,so in the beginning we haven't seen any length
+Dialogue: 0,0:17:11.80,0:17:13.07,*Default,NTP,0000,0000,0000,,so we start with zero
+Dialogue: 0,0:17:13.47,0:17:16.07,*Default,NTP,0000,0000,0000,,each time we make a recursive call we add one
+Dialogue: 0,0:17:16.37,0:17:17.50,*Default,NTP,0000,0000,0000,,until we get to the end
+Dialogue: 0,0:17:17.57,0:17:19.30,*Default,NTP,0000,0000,0000,,and then we've computed the length
+Dialogue: 0,0:17:20.00,0:17:22.13,*Default,NTP,0000,0000,0000,,now this is a very different program
+Dialogue: 0,0:17:22.13,0:17:23.80,*Default,NTP,0000,0000,0000,,in terms of its behavior
+Dialogue: 0,0:17:24.93,0:17:26.90,*Default,NTP,0000,0000,0000,,this is in a tail context
+Dialogue: 0,0:17:27.17,0:17:29.90,*Default,NTP,0000,0000,0000,,because it's the last expression
+Dialogue: 0,0:17:30.27,0:17:33.00,*Default,NTP,0000,0000,0000,,in a lambda expression or define
+Dialogue: 0,0:17:34.47,0:17:36.07,*Default,NTP,0000,0000,0000,,why do I keep calling it a lambda expression
+Dialogue: 0,0:17:36.07,0:17:37.37,*Default,NTP,0000,0000,0000,,well a define
+Dialogue: 0,0:17:37.53,0:17:40.93,*Default,NTP,0000,0000,0000,,of a procedure is implicitly a lambda expression
+Dialogue: 0,0:17:40.93,0:17:42.50,*Default,NTP,0000,0000,0000,,remember this is the same as saying
+Dialogue: 0,0:17:42.60,0:17:45.33,*Default,NTP,0000,0000,0000,,define length tail lambda s
+Dialogue: 0,0:17:45.33,0:17:46.20,*Default,NTP,0000,0000,0000,,blah blah blah
+Dialogue: 0,0:17:46.60,0:17:47.40,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:17:48.40,0:17:50.73,*Default,NTP,0000,0000,0000,,so that's in a tail context
+Dialogue: 0,0:17:51.70,0:17:54.93,*Default,NTP,0000,0000,0000,,this is in a tail context because this is a separate
+Dialogue: 0,0:17:54.97,0:17:56.00,*Default,NTP,0000,0000,0000,,procedure definition
+Dialogue: 0,0:17:56.00,0:17:58.30,*Default,NTP,0000,0000,0000,,and this is the last thing in the procedure definition
+Dialogue: 0,0:17:59.47,0:18:01.73,*Default,NTP,0000,0000,0000,,which means this is an a tale context
+Dialogue: 0,0:18:01.73,0:18:03.20,*Default,NTP,0000,0000,0000,,because when you have an if
+Dialogue: 0,0:18:03.20,0:18:05.07,*Default,NTP,0000,0000,0000,,expression in a tale context
+Dialogue: 0,0:18:05.17,0:18:07.90,*Default,NTP,0000,0000,0000,,then its alternative is also a tale context
+Dialogue: 0,0:18:08.27,0:18:10.77,*Default,NTP,0000,0000,0000,,and that's a call expression in a tail context
+Dialogue: 0,0:18:10.77,0:18:12.17,*Default,NTP,0000,0000,0000,,meaning it's a tail call
+Dialogue: 0,0:18:12.60,0:18:14.53,*Default,NTP,0000,0000,0000,,meaning this whole thing is only going to run
+Dialogue: 0,0:18:14.53,0:18:15.70,*Default,NTP,0000,0000,0000,,in constant space
+Dialogue: 0,0:18:16.13,0:18:18.57,*Default,NTP,0000,0000,0000,,now the actual list itself takes a blender space
+Dialogue: 0,0:18:18.57,0:18:20.07,*Default,NTP,0000,0000,0000,,but the additional
+Dialogue: 0,0:18:20.10,0:18:22.13,*Default,NTP,0000,0000,0000,,space that's used in order to compute the length
+Dialogue: 0,0:18:22.30,0:18:23.93,*Default,NTP,0000,0000,0000,,doesn't have a whole bunch of frames in it
+Dialogue: 0,0:18:23.93,0:18:25.20,*Default,NTP,0000,0000,0000,,and only has one
+Dialogue: 0,0:18:27.37,0:18:29.53,*Default,NTP,0000,0000,0000,,so I hear this recursive call as a tale call
+Dialogue: 0,0:18:29.60,0:18:31.73,*Default,NTP,0000,0000,0000,,or as this recursive call was not
+Dialogue: 0,0:18:33.10,0:18:35.90,*Default,NTP,0000,0000,0000,,so how do I convince you that this really matters
+Dialogue: 0,0:18:35.90,0:18:38.27,*Default,NTP,0000,0000,0000,,well we're going to have to run a demonstration
+Dialogue: 0,0:18:38.60,0:18:41.47,*Default,NTP,0000,0000,0000,,so it should be that the return value of the tale call
+Dialogue: 0,0:18:41.87,0:18:44.53,*Default,NTP,0000,0000,0000,,is the return value of the current procedure call
+Dialogue: 0,0:18:44.97,0:18:46.67,*Default,NTP,0000,0000,0000,,meaning we can skip
+Dialogue: 0,0:18:46.67,0:18:49.00,*Default,NTP,0000,0000,0000,,keeping around all the frames that we don't need
+Dialogue: 0,0:18:49.17,0:18:51.60,*Default,NTP,0000,0000,0000,,because the return values for the last frame
+Dialogue: 0,0:18:51.80,0:18:54.30,*Default,NTP,0000,0000,0000,,can return straight up to the original call
+Dialogue: 0,0:18:55.13,0:18:57.80,*Default,NTP,0000,0000,0000,,pale calls shouldn't increase the environment size
+Dialogue: 0,0:18:58.07,0:18:59.27,*Default,NTP,0000,0000,0000,,and we can see that
+Dialogue: 0,0:18:59.37,0:19:02.40,*Default,NTP,0000,0000,0000,,by calling this factorial function on a big input
+Dialogue: 0,0:19:05.10,0:19:06.30,*Default,NTP,0000,0000,0000,,okay so
+Dialogue: 0,0:19:07.27,0:19:08.87,*Default,NTP,0000,0000,0000,,here's scheme that pie
+Dialogue: 0,0:19:09.50,0:19:11.30,*Default,NTP,0000,0000,0000,,which is part of your project
+Dialogue: 0,0:19:12.30,0:19:14.87,*Default,NTP,0000,0000,0000,,and way down below where you implement the extra credit
+Dialogue: 0,0:19:14.87,0:19:15.80,*Default,NTP,0000,0000,0000,,it says uncommon
+Dialogue: 0,0:19:15.80,0:19:16.77,*Default,NTP,0000,0000,0000,,the following line
+Dialogue: 0,0:19:16.87,0:19:18.87,*Default,NTP,0000,0000,0000,,to apply a tail call optimization
+Dialogue: 0,0:19:19.40,0:19:22.07,*Default,NTP,0000,0000,0000,,so right now it's commented out as you can see
+Dialogue: 0,0:19:22.80,0:19:25.30,*Default,NTP,0000,0000,0000,,which means we're using just a regular schema val
+Dialogue: 0,0:19:25.73,0:19:28.67,*Default,NTP,0000,0000,0000,,which is not optimized for tail calls
+Dialogue: 0,0:19:28.73,0:19:30.77,*Default,NTP,0000,0000,0000,,because we haven't implemented that part yet
+Dialogue: 0,0:19:30.77,0:19:31.97,*Default,NTP,0000,0000,0000,,that's the extra credit
+Dialogue: 0,0:19:32.60,0:19:33.80,*Default,NTP,0000,0000,0000,,okay so let's
+Dialogue: 0,0:19:34.57,0:19:37.37,*Default,NTP,0000,0000,0000,,define a function that returns
+Dialogue: 0,0:19:38.80,0:19:40.47,*Default,NTP,0000,0000,0000,,factorial times k
+Dialogue: 0,0:19:41.73,0:19:46.07,*Default,NTP,0000,0000,0000,,define factorial of n and k
+Dialogue: 0,0:19:47.10,0:19:47.90,*Default,NTP,0000,0000,0000,,if
+Dialogue: 0,0:19:50.67,0:19:53.37,*Default,NTP,0000,0000,0000,,n is zero we just return k
+Dialogue: 0,0:19:54.57,0:19:57.87,*Default,NTP,0000,0000,0000,,otherwise we'll return factorial
+Dialogue: 0,0:19:58.77,0:20:00.47,*Default,NTP,0000,0000,0000,,of n minus one
+Dialogue: 0,0:20:01.53,0:20:02.53,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:20:03.37,0:20:04.57,*Default,NTP,0000,0000,0000,,k times it
+Dialogue: 0,0:20:06.70,0:20:08.30,*Default,NTP,0000,0000,0000,,okay so what sort of state are we in
+Dialogue: 0,0:20:08.30,0:20:10.53,*Default,NTP,0000,0000,0000,,we have a tail recursive function
+Dialogue: 0,0:20:10.53,0:20:11.87,*Default,NTP,0000,0000,0000,,we analyze that already
+Dialogue: 0,0:20:11.87,0:20:14.70,*Default,NTP,0000,0000,0000,,this is a tail context so this is a tail context
+Dialogue: 0,0:20:15.30,0:20:16.67,*Default,NTP,0000,0000,0000,,we have an interpreter
+Dialogue: 0,0:20:17.17,0:20:20.47,*Default,NTP,0000,0000,0000,,that is not optimized for tail calls
+Dialogue: 0,0:20:21.53,0:20:23.50,*Default,NTP,0000,0000,0000,,so it's just going to create a frame
+Dialogue: 0,0:20:23.67,0:20:25.60,*Default,NTP,0000,0000,0000,,every time we make a recursive call
+Dialogue: 0,0:20:25.70,0:20:28.37,*Default,NTP,0000,0000,0000,,and that frame will stick around until
+Dialogue: 0,0:20:29.53,0:20:31.37,*Default,NTP,0000,0000,0000,,we return from the call
+Dialogue: 0,0:20:31.57,0:20:34.13,*Default,NTP,0000,0000,0000,,and that will use a linear amount of space
+Dialogue: 0,0:20:34.87,0:20:36.97,*Default,NTP,0000,0000,0000,,which means that if we run scheme dot pi
+Dialogue: 0,0:20:37.33,0:20:39.30,*Default,NTP,0000,0000,0000,,and load in this factorial
+Dialogue: 0,0:20:39.70,0:20:42.30,*Default,NTP,0000,0000,0000,,we can compute the factorial of 10
+Dialogue: 0,0:20:44.67,0:20:47.47,*Default,NTP,0000,0000,0000,,we can compute the factorial of 100
+Dialogue: 0,0:20:48.07,0:20:50.97,*Default,NTP,0000,0000,0000,,what if we compute the factorial of 1000
+Dialogue: 0,0:20:51.10,0:20:52.87,*Default,NTP,0000,0000,0000,,we reach an error
+Dialogue: 0,0:20:53.07,0:20:55.57,*Default,NTP,0000,0000,0000,,it says maximum recurs and depth exceeded
+Dialogue: 0,0:20:55.57,0:20:57.07,*Default,NTP,0000,0000,0000,,while calling our python object
+Dialogue: 0,0:20:57.60,0:21:00.07,*Default,NTP,0000,0000,0000,,so what happened it got all the way up it seems
+Dialogue: 0,0:21:00.07,0:21:03.67,*Default,NTP,0000,0000,0000,,to computing the factorial of 673
+Dialogue: 0,0:21:04.10,0:21:05.47,*Default,NTP,0000,0000,0000,,and then it just gave up
+Dialogue: 0,0:21:05.47,0:21:08.20,*Default,NTP,0000,0000,0000,,because it had made too many recursive calls
+Dialogue: 0,0:21:08.47,0:21:10.50,*Default,NTP,0000,0000,0000,,and so was using up too much memory
+Dialogue: 0,0:21:10.50,0:21:13.47,*Default,NTP,0000,0000,0000,,so python said sorry you've reached your limit
+Dialogue: 0,0:21:13.50,0:21:14.30,*Default,NTP,0000,0000,0000,,we're done
+Dialogue: 0,0:21:15.73,0:21:16.93,*Default,NTP,0000,0000,0000,,which is unfortunate
+Dialogue: 0,0:21:16.97,0:21:18.87,*Default,NTP,0000,0000,0000,,because we should be able to compute
+Dialogue: 0,0:21:18.90,0:21:20.53,*Default,NTP,0000,0000,0000,,as much of this as we want
+Dialogue: 0,0:21:20.53,0:21:22.37,*Default,NTP,0000,0000,0000,,using our constant amount of space
+Dialogue: 0,0:21:23.20,0:21:25.70,*Default,NTP,0000,0000,0000,,so I have an implementation of the extra credit
+Dialogue: 0,0:21:25.90,0:21:29.00,*Default,NTP,0000,0000,0000,,which just says use a different eval function
+Dialogue: 0,0:21:29.30,0:21:30.33,*Default,NTP,0000,0000,0000,,one that
+Dialogue: 0,0:21:30.33,0:21:33.30,*Default,NTP,0000,0000,0000,,doesn't create an extra frame when it doesn't need to
+Dialogue: 0,0:21:34.93,0:21:36.80,*Default,NTP,0000,0000,0000,,so let's run this again
+Dialogue: 0,0:21:37.67,0:21:40.53,*Default,NTP,0000,0000,0000,,let's load our factorial function
+Dialogue: 0,0:21:41.33,0:21:44.33,*Default,NTP,0000,0000,0000,,if I compute the factorial of 10 it works fine
+Dialogue: 0,0:21:44.40,0:21:46.13,*Default,NTP,0000,0000,0000,,100 works fine
+Dialogue: 0,0:21:46.33,0:21:48.70,*Default,NTP,0000,0000,0000,,1000 works fine as well
+Dialogue: 0,0:21:49.37,0:21:51.93,*Default,NTP,0000,0000,0000,,and if I compute the factorial of 10,000
+Dialogue: 0,0:21:51.97,0:21:53.40,*Default,NTP,0000,0000,0000,,well sure it takes a while
+Dialogue: 0,0:21:53.40,0:21:55.40,*Default,NTP,0000,0000,0000,,I'm not making anything really faster
+Dialogue: 0,0:21:55.57,0:21:58.40,*Default,NTP,0000,0000,0000,,but I am saving the extra space
+Dialogue: 0,0:21:59.00,0:22:03.77,*Default,NTP,0000,0000,0000,,so we computed this huge No.10,000 factorial
+Dialogue: 0,0:22:04.73,0:22:08.07,*Default,NTP,0000,0000,0000,,now eventually this program will run out of space
+Dialogue: 0,0:22:08.07,0:22:10.73,*Default,NTP,0000,0000,0000,,not because we create extra frames but because
+Dialogue: 0,0:22:11.00,0:22:12.17,*Default,NTP,0000,0000,0000,,representing this
+Dialogue: 0,0:22:12.17,0:22:13.67,*Default,NTP,0000,0000,0000,,number will just become too big
+Dialogue: 0,0:22:13.67,0:22:15.20,*Default,NTP,0000,0000,0000,,because it has so many digits
+Dialogue: 0,0:22:15.20,0:22:17.00,*Default,NTP,0000,0000,0000,,but that's gonna take a long while
+Dialogue: 0,0:22:17.40,0:22:21.40,*Default,NTP,0000,0000,0000,,so very efficiently we've computed factorial of 10,000
+Dialogue: 0,0:22:21.87,0:22:24.13,*Default,NTP,0000,0000,0000,,using tail over cursion
+Dialogue: 0,0:22:24.13,0:22:25.07,*Default,NTP,0000,0000,0000,,to make sure
+Dialogue: 0,0:22:25.10,0:22:27.70,*Default,NTP,0000,0000,0000,,that we don't use any space that we don't need to use
+Dialogue: 0,0:22:31.07,0:22:32.80,*Default,NTP,0000,0000,0000,,let's look at some examples
+Dialogue: 0,0:22:33.40,0:22:34.90,*Default,NTP,0000,0000,0000,,of tail recursion
+Dialogue: 0,0:22:35.77,0:22:37.33,*Default,NTP,0000,0000,0000,,so here's your task
+Dialogue: 0,0:22:37.47,0:22:40.87,*Default,NTP,0000,0000,0000,,figure out which of the four procedures defined below
+Dialogue: 0,0:22:41.37,0:22:43.37,*Default,NTP,0000,0000,0000,,are tail recursive
+Dialogue: 0,0:22:43.80,0:22:46.67,*Default,NTP,0000,0000,0000,,for a recursive function to be tail recursive
+Dialogue: 0,0:22:46.67,0:22:48.20,*Default,NTP,0000,0000,0000,,what I mean is that
+Dialogue: 0,0:22:48.93,0:22:51.97,*Default,NTP,0000,0000,0000,,all of the recursive calls are tail calls
+Dialogue: 0,0:22:52.33,0:22:53.50,*Default,NTP,0000,0000,0000,,and therefore
+Dialogue: 0,0:22:53.80,0:22:57.73,*Default,NTP,0000,0000,0000,,the procedure will be executed in constant space
+Dialogue: 0,0:22:57.73,0:22:59.90,*Default,NTP,0000,0000,0000,,so which of the following procedures run
+Dialogue: 0,0:22:59.90,0:23:01.30,*Default,NTP,0000,0000,0000,,in constant space
+Dialogue: 0,0:23:02.20,0:23:03.50,*Default,NTP,0000,0000,0000,,take a look yourself
+Dialogue: 0,0:23:03.73,0:23:05.47,*Default,NTP,0000,0000,0000,,and then I'll go through the answers
+Dialogue: 0,0:23:07.53,0:23:09.37,*Default,NTP,0000,0000,0000,,let's first look at length
+Dialogue: 0,0:23:10.10,0:23:11.67,*Default,NTP,0000,0000,0000,,length defined here
+Dialogue: 0,0:23:12.10,0:23:15.10,*Default,NTP,0000,0000,0000,,is not tail recursive
+Dialogue: 0,0:23:15.30,0:23:16.87,*Default,NTP,0000,0000,0000,,the final expression
+Dialogue: 0,0:23:17.30,0:23:19.10,*Default,NTP,0000,0000,0000,,in the procedure definition
+Dialogue: 0,0:23:19.73,0:23:21.53,*Default,NTP,0000,0000,0000,,is a tail context
+Dialogue: 0,0:23:21.90,0:23:24.30,*Default,NTP,0000,0000,0000,,but the sub expressions of it aren't
+Dialogue: 0,0:23:24.57,0:23:25.70,*Default,NTP,0000,0000,0000,,so in particular
+Dialogue: 0,0:23:26.13,0:23:28.87,*Default,NTP,0000,0000,0000,,this if expression is not in a tail context
+Dialogue: 0,0:23:29.77,0:23:31.80,*Default,NTP,0000,0000,0000,,and that idea that the
+Dialogue: 0,0:23:32.17,0:23:35.07,*Default,NTP,0000,0000,0000,,consequent and alternative sub expressions of an if
+Dialogue: 0,0:23:35.53,0:23:36.93,*Default,NTP,0000,0000,0000,,are in tail context
+Dialogue: 0,0:23:36.93,0:23:39.87,*Default,NTP,0000,0000,0000,,only works if the whole if is in a tail context
+Dialogue: 0,0:23:39.87,0:23:41.60,*Default,NTP,0000,0000,0000,,so this is not either
+Dialogue: 0,0:23:42.17,0:23:43.90,*Default,NTP,0000,0000,0000,,which means that
+Dialogue: 0,0:23:44.33,0:23:47.33,*Default,NTP,0000,0000,0000,,evaluating length here is going to require linear
+Dialogue: 0,0:23:47.33,0:23:48.93,*Default,NTP,0000,0000,0000,,space in the length of s
+Dialogue: 0,0:23:50.13,0:23:52.10,*Default,NTP,0000,0000,0000,,let's look at contains next
+Dialogue: 0,0:23:53.37,0:23:55.40,*Default,NTP,0000,0000,0000,,contains is
+Dialogue: 0,0:23:55.47,0:23:58.47,*Default,NTP,0000,0000,0000,,tail recursive because the recursive call
+Dialogue: 0,0:23:58.50,0:24:00.90,*Default,NTP,0000,0000,0000,,to contains is in a tail context
+Dialogue: 0,0:24:01.37,0:24:04.97,*Default,NTP,0000,0000,0000,,this is a tail context because it's the last expression
+Dialogue: 0,0:24:05.17,0:24:06.77,*Default,NTP,0000,0000,0000,,in a procedure definition
+Dialogue: 0,0:24:07.57,0:24:09.47,*Default,NTP,0000,0000,0000,,and this is a tale context because
+Dialogue: 0,0:24:09.60,0:24:11.70,*Default,NTP,0000,0000,0000,,it's one of the second or 3rd
+Dialogue: 0,0:24:12.07,0:24:14.47,*Default,NTP,0000,0000,0000,,sub expressions in an if expression
+Dialogue: 0,0:24:14.47,0:24:15.90,*Default,NTP,0000,0000,0000,,that's in a tale context
+Dialogue: 0,0:24:16.13,0:24:18.77,*Default,NTP,0000,0000,0000,,and therefore this is in a tale context too
+Dialogue: 0,0:24:18.77,0:24:20.40,*Default,NTP,0000,0000,0000,,and that's the recursive call
+Dialogue: 0,0:24:21.07,0:24:24.10,*Default,NTP,0000,0000,0000,,so contains will take in something that's linear size
+Dialogue: 0,0:24:24.10,0:24:25.73,*Default,NTP,0000,0000,0000,,because s is a list
+Dialogue: 0,0:24:25.97,0:24:26.77,*Default,NTP,0000,0000,0000,,but
+Dialogue: 0,0:24:27.27,0:24:30.17,*Default,NTP,0000,0000,0000,,the amount of additional space required
+Dialogue: 0,0:24:30.20,0:24:34.00,*Default,NTP,0000,0000,0000,,for contains to be called is constant
+Dialogue: 0,0:24:35.73,0:24:37.27,*Default,NTP,0000,0000,0000,,how about has repeat
+Dialogue: 0,0:24:38.10,0:24:38.57,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:24:38.57,0:24:42.50,*Default,NTP,0000,0000,0000,,has repeat as exactly the same structure as contains
+Dialogue: 0,0:24:43.37,0:24:44.97,*Default,NTP,0000,0000,0000,,so has repeated as a function
+Dialogue: 0,0:24:45.13,0:24:48.20,*Default,NTP,0000,0000,0000,,that figures out whether s has any repeated elements
+Dialogue: 0,0:24:48.33,0:24:51.47,*Default,NTP,0000,0000,0000,,and it does so by calling contains
+Dialogue: 0,0:24:51.90,0:24:53.13,*Default,NTP,0000,0000,0000,,so the entire
+Dialogue: 0,0:24:53.37,0:24:56.87,*Default,NTP,0000,0000,0000,,if expression which is the body of this procedure
+Dialogue: 0,0:24:57.37,0:24:58.93,*Default,NTP,0000,0000,0000,,is in a tail context
+Dialogue: 0,0:25:00.67,0:25:02.77,*Default,NTP,0000,0000,0000,,which means this is in a tail context
+Dialogue: 0,0:25:03.27,0:25:04.77,*Default,NTP,0000,0000,0000,,which means this is two
+Dialogue: 0,0:25:05.40,0:25:07.77,*Default,NTP,0000,0000,0000,,so the whole thing runs in constant space
+Dialogue: 0,0:25:08.53,0:25:09.60,*Default,NTP,0000,0000,0000,,and by the way
+Dialogue: 0,0:25:09.77,0:25:13.73,*Default,NTP,0000,0000,0000,,when it calls contains that's not a tail context
+Dialogue: 0,0:25:13.90,0:25:18.47,*Default,NTP,0000,0000,0000,,but since contains already just runs in constant space
+Dialogue: 0,0:25:18.80,0:25:21.60,*Default,NTP,0000,0000,0000,,because it itself is tail recursive
+Dialogue: 0,0:25:21.97,0:25:23.17,*Default,NTP,0000,0000,0000,,we don't have to worry about
+Dialogue: 0,0:25:23.17,0:25:25.10,*Default,NTP,0000,0000,0000,,that taking up a bunch of route
+Dialogue: 0,0:25:27.33,0:25:29.33,*Default,NTP,0000,0000,0000,,finally we have a procedure
+Dialogue: 0,0:25:29.33,0:25:31.30,*Default,NTP,0000,0000,0000,,to compute the end fibonacci number
+Dialogue: 0,0:25:31.90,0:25:33.90,*Default,NTP,0000,0000,0000,,so let's see how this actually works
+Dialogue: 0,0:25:34.30,0:25:37.77,*Default,NTP,0000,0000,0000,,fit bitter takes the current fibonacci number
+Dialogue: 0,0:25:37.77,0:25:39.50,*Default,NTP,0000,0000,0000,,which is fibonacci number k
+Dialogue: 0,0:25:40.17,0:25:41.80,*Default,NTP,0000,0000,0000,,and if we're all the way up to the nth one
+Dialogue: 0,0:25:41.80,0:25:43.27,*Default,NTP,0000,0000,0000,,which is the one we're looking for
+Dialogue: 0,0:25:43.40,0:25:44.70,*Default,NTP,0000,0000,0000,,then we return current
+Dialogue: 0,0:25:44.70,0:25:47.07,*Default,NTP,0000,0000,0000,,otherwise we call phil bitter
+Dialogue: 0,0:25:48.17,0:25:52.50,*Default,NTP,0000,0000,0000,,on the current plus the k minus one phibonoggy number
+Dialogue: 0,0:25:53.60,0:25:55.87,*Default,NTP,0000,0000,0000,,and we increment k when we do that
+Dialogue: 0,0:25:56.27,0:25:57.70,*Default,NTP,0000,0000,0000,,so starting out
+Dialogue: 0,0:25:58.67,0:25:59.73,*Default,NTP,0000,0000,0000,,we check and see
+Dialogue: 0,0:26:00.00,0:26:01.87,*Default,NTP,0000,0000,0000,,if we're just looking for the first one
+Dialogue: 0,0:26:01.87,0:26:04.97,*Default,NTP,0000,0000,0000,,well then we return zero otherwives we call fib ditter
+Dialogue: 0,0:26:05.93,0:26:08.90,*Default,NTP,0000,0000,0000,,starting with the second fibonacci number which is one
+Dialogue: 0,0:26:10.33,0:26:12.07,*Default,NTP,0000,0000,0000,,so this is a tail context
+Dialogue: 0,0:26:12.10,0:26:13.77,*Default,NTP,0000,0000,0000,,so this is a tail context
+Dialogue: 0,0:26:13.77,0:26:14.90,*Default,NTP,0000,0000,0000,,so far so good
+Dialogue: 0,0:26:15.17,0:26:17.07,*Default,NTP,0000,0000,0000,,this whole thing is a tail context
+Dialogue: 0,0:26:17.10,0:26:18.27,*Default,NTP,0000,0000,0000,,and so that is
+Dialogue: 0,0:26:18.37,0:26:20.27,*Default,NTP,0000,0000,0000,,so this recursive call is fine
+Dialogue: 0,0:26:20.53,0:26:23.70,*Default,NTP,0000,0000,0000,,but the problem is that this sub expression of a call
+Dialogue: 0,0:26:23.70,0:26:26.50,*Default,NTP,0000,0000,0000,,expression is not a tail context
+Dialogue: 0,0:26:27.00,0:26:28.93,*Default,NTP,0000,0000,0000,,so this is not a tail call
+Dialogue: 0,0:26:29.00,0:26:31.73,*Default,NTP,0000,0000,0000,,and it is a recursive function call to fip
+Dialogue: 0,0:26:32.37,0:26:33.70,*Default,NTP,0000,0000,0000,,so this whole thing
+Dialogue: 0,0:26:33.97,0:26:36.50,*Default,NTP,0000,0000,0000,,is not going to run in constant space
+Dialogue: 0,0:26:36.57,0:26:38.40,*Default,NTP,0000,0000,0000,,because it makes a recursive call
+Dialogue: 0,0:26:38.60,0:26:41.47,*Default,NTP,0000,0000,0000,,even though we have two mutually recursive functions
+Dialogue: 0,0:26:41.77,0:26:44.73,*Default,NTP,0000,0000,0000,,and fib iter for them to run in constant space
+Dialogue: 0,0:26:44.73,0:26:46.07,*Default,NTP,0000,0000,0000,,both would have to make
+Dialogue: 0,0:26:46.17,0:26:47.97,*Default,NTP,0000,0000,0000,,tail calls to each other
+Dialogue: 0,0:26:48.40,0:26:49.13,*Default,NTP,0000,0000,0000,,and in this case
+Dialogue: 0,0:26:49.13,0:26:50.70,*Default,NTP,0000,0000,0000,,we have something that's not a tail call
+Dialogue: 0,0:26:50.70,0:26:52.10,*Default,NTP,0000,0000,0000,,there's more work to be done
+Dialogue: 0,0:26:52.27,0:26:53.57,*Default,NTP,0000,0000,0000,,as soon as we figure out
+Dialogue: 0,0:26:53.57,0:26:55.30,*Default,NTP,0000,0000,0000,,the k minus one fibonacci number
+Dialogue: 0,0:26:55.30,0:26:57.20,*Default,NTP,0000,0000,0000,,we still have to combine it with current
+Dialogue: 0,0:26:57.30,0:26:58.33,*Default,NTP,0000,0000,0000,,in order to finish
+Dialogue: 0,0:26:58.53,0:27:00.77,*Default,NTP,0000,0000,0000,,and then we have to call fi bitter on that
+Dialogue: 0,0:27:03.73,0:27:06.77,*Default,NTP,0000,0000,0000,,next we'll look at two higher order functions
+Dialogue: 0,0:27:07.07,0:27:08.50,*Default,NTP,0000,0000,0000,,map and reduce
+Dialogue: 0,0:27:09.40,0:27:11.10,*Default,NTP,0000,0000,0000,,so let's look at reduced first
+Dialogue: 0,0:27:11.90,0:27:12.87,*Default,NTP,0000,0000,0000,,reduces a
+Dialogue: 0,0:27:13.57,0:27:15.57,*Default,NTP,0000,0000,0000,,procedure that takes another procedure
+Dialogue: 0,0:27:16.27,0:27:20.10,*Default,NTP,0000,0000,0000,,some list s which we're going to add right over
+Dialogue: 0,0:27:20.57,0:27:22.17,*Default,NTP,0000,0000,0000,,and then a starting value
+Dialogue: 0,0:27:22.53,0:27:23.33,*Default,NTP,0000,0000,0000,,and what it does is
+Dialogue: 0,0:27:23.33,0:27:25.90,*Default,NTP,0000,0000,0000,,it combines a starting value with the first element of
+Dialogue: 0,0:27:25.90,0:27:29.80,*Default,NTP,0000,0000,0000,,s combines that result with the second element etc
+Dialogue: 0,0:27:29.80,0:27:31.70,*Default,NTP,0000,0000,0000,,using the procedure to combine them
+Dialogue: 0,0:27:32.47,0:27:33.67,*Default,NTP,0000,0000,0000,,so if we reduce
+Dialogue: 0,0:27:33.90,0:27:36.67,*Default,NTP,0000,0000,0000,,what is the multiplication up procedure
+Dialogue: 0,0:27:36.90,0:27:38.33,*Default,NTP,0000,0000,0000,,the list 3 4 5
+Dialogue: 0,0:27:38.33,0:27:39.17,*Default,NTP,0000,0000,0000,,starting with two
+Dialogue: 0,0:27:39.17,0:27:40.40,*Default,NTP,0000,0000,0000,,then we'll get two times three times four
+Dialogue: 0,0:27:40.40,0:27:41.97,*Default,NTP,0000,0000,0000,,times five is 120
+Dialogue: 0,0:27:42.30,0:27:43.67,*Default,NTP,0000,0000,0000,,and if we reduce
+Dialogue: 0,0:27:44.37,0:27:45.70,*Default,NTP,0000,0000,0000,,using a procedure
+Dialogue: 0,0:27:45.90,0:27:49.30,*Default,NTP,0000,0000,0000,,that takes two things and khansas them together
+Dialogue: 0,0:27:49.50,0:27:50.93,*Default,NTP,0000,0000,0000,,why first the next
+Dialogue: 0,0:27:51.53,0:27:54.70,*Default,NTP,0000,0000,0000,,with a starting value of the list containing two
+Dialogue: 0,0:27:54.70,0:27:56.37,*Default,NTP,0000,0000,0000,,will then cons on three
+Dialogue: 0,0:27:56.53,0:27:58.30,*Default,NTP,0000,0000,0000,,then we'll cons on four to that
+Dialogue: 0,0:27:58.30,0:28:00.07,*Default,NTP,0000,0000,0000,,then we'll cons on five to that
+Dialogue: 0,0:28:00.37,0:28:02.40,*Default,NTP,0000,0000,0000,,consing a number where the list
+Dialogue: 0,0:28:02.40,0:28:04.70,*Default,NTP,0000,0000,0000,,gives you a longer list with the number in front
+Dialogue: 0,0:28:04.87,0:28:08.13,*Default,NTP,0000,0000,0000,,so the entire result will be 5 4 3 2
+Dialogue: 0,0:28:11.27,0:28:13.33,*Default,NTP,0000,0000,0000,,okay let's look at the definition
+Dialogue: 0,0:28:13.67,0:28:16.97,*Default,NTP,0000,0000,0000,,if s is null then we just use this starting value
+Dialogue: 0,0:28:17.67,0:28:20.93,*Default,NTP,0000,0000,0000,,otherwise we reduce with the procedure
+Dialogue: 0,0:28:21.67,0:28:23.00,*Default,NTP,0000,0000,0000,,the rest of s
+Dialogue: 0,0:28:24.80,0:28:28.33,*Default,NTP,0000,0000,0000,,though we need to create a new starting value
+Dialogue: 0,0:28:28.77,0:28:29.70,*Default,NTP,0000,0000,0000,,which is
+Dialogue: 0,0:28:30.47,0:28:32.30,*Default,NTP,0000,0000,0000,,the procedure that was passed in
+Dialogue: 0,0:28:32.47,0:28:34.80,*Default,NTP,0000,0000,0000,,called on the starting value we had before
+Dialogue: 0,0:28:35.53,0:28:38.00,*Default,NTP,0000,0000,0000,,and the first element of s
+Dialogue: 0,0:28:39.00,0:28:42.20,*Default,NTP,0000,0000,0000,,so in this way we create a new starting value
+Dialogue: 0,0:28:42.20,0:28:43.97,*Default,NTP,0000,0000,0000,,which already includes
+Dialogue: 0,0:28:44.07,0:28:46.07,*Default,NTP,0000,0000,0000,,not only what we started with before
+Dialogue: 0,0:28:46.30,0:28:48.33,*Default,NTP,0000,0000,0000,,but also the first element of s
+Dialogue: 0,0:28:49.20,0:28:51.97,*Default,NTP,0000,0000,0000,,so in this case we'll start with two
+Dialogue: 0,0:28:52.37,0:28:54.60,*Default,NTP,0000,0000,0000,,but in the next recursive call to reduce
+Dialogue: 0,0:28:54.60,0:28:56.33,*Default,NTP,0000,0000,0000,,we'll have two times three to six
+Dialogue: 0,0:28:56.73,0:28:58.07,*Default,NTP,0000,0000,0000,,and in the next one after that
+Dialogue: 0,0:28:58.07,0:29:00.20,*Default,NTP,0000,0000,0000,,we'll have multiplied in four to get 24
+Dialogue: 0,0:29:00.20,0:29:02.00,*Default,NTP,0000,0000,0000,,and eventually 120
+Dialogue: 0,0:29:03.27,0:29:04.47,*Default,NTP,0000,0000,0000,,so let's take a look
+Dialogue: 0,0:29:04.80,0:29:07.07,*Default,NTP,0000,0000,0000,,this whole thing is a tail context
+Dialogue: 0,0:29:07.20,0:29:09.37,*Default,NTP,0000,0000,0000,,which means this is a tail context
+Dialogue: 0,0:29:10.53,0:29:11.77,*Default,NTP,0000,0000,0000,,but this is not
+Dialogue: 0,0:29:12.27,0:29:14.53,*Default,NTP,0000,0000,0000,,so does the whole thing run in constant time
+Dialogue: 0,0:29:14.90,0:29:17.90,*Default,NTP,0000,0000,0000,,well it really just depends on what the procedure does
+Dialogue: 0,0:29:20.00,0:29:23.17,*Default,NTP,0000,0000,0000,,so the recursive call to reduce is a tail call
+Dialogue: 0,0:29:23.97,0:29:25.27,*Default,NTP,0000,0000,0000,,but the other call
+Dialogue: 0,0:29:25.53,0:29:27.90,*Default,NTP,0000,0000,0000,,in particular the procedure call is not
+Dialogue: 0,0:29:28.37,0:29:29.97,*Default,NTP,0000,0000,0000,,and this is a higher order function
+Dialogue: 0,0:29:29.97,0:29:32.13,*Default,NTP,0000,0000,0000,,so we don't know what procedure will be passed in
+Dialogue: 0,0:29:32.47,0:29:35.73,*Default,NTP,0000,0000,0000,,so the total space of reduce will depend on
+Dialogue: 0,0:29:35.93,0:29:39.13,*Default,NTP,0000,0000,0000,,whether the procedure requires constant space or not
+Dialogue: 0,0:29:39.77,0:29:41.70,*Default,NTP,0000,0000,0000,,hopefully it just requires constant space
+Dialogue: 0,0:29:41.70,0:29:44.17,*Default,NTP,0000,0000,0000,,in which case the entire reduce will require only
+Dialogue: 0,0:29:44.17,0:29:45.10,*Default,NTP,0000,0000,0000,,constant space
+Dialogue: 0,0:29:47.27,0:29:48.67,*Default,NTP,0000,0000,0000,,okay now let's talk about
+Dialogue: 0,0:29:48.67,0:29:51.37,*Default,NTP,0000,0000,0000,,how to map with only a constant number of frame
+Dialogue: 0,0:29:53.13,0:29:55.57,*Default,NTP,0000,0000,0000,,map is a function that applies a procedure
+Dialogue: 0,0:29:56.00,0:29:59.10,*Default,NTP,0000,0000,0000,,to every element in a list and constructs a list
+Dialogue: 0,0:29:59.17,0:30:01.10,*Default,NTP,0000,0000,0000,,containing all of the results
+Dialogue: 0,0:30:02.40,0:30:02.93,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:30:02.93,0:30:06.07,*Default,NTP,0000,0000,0000,,let's come up with the most natural version to define
+Dialogue: 0,0:30:06.07,0:30:06.60,*Default,NTP,0000,0000,0000,,map
+Dialogue: 0,0:30:06.60,0:30:09.53,*Default,NTP,0000,0000,0000,,and then we'll come up with a tail recursive version
+Dialogue: 0,0:30:09.70,0:30:12.13,*Default,NTP,0000,0000,0000,,so a natural way to define
+Dialogue: 0,0:30:12.13,0:30:13.80,*Default,NTP,0000,0000,0000,,map is to say we take in a procedure
+Dialogue: 0,0:30:13.80,0:30:14.87,*Default,NTP,0000,0000,0000,,in a list test
+Dialogue: 0,0:30:15.53,0:30:18.00,*Default,NTP,0000,0000,0000,,if s is now we return the empty list
+Dialogue: 0,0:30:18.30,0:30:19.10,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:30:19.37,0:30:22.60,*Default,NTP,0000,0000,0000,,we're going to create a new list with a first element
+Dialogue: 0,0:30:23.60,0:30:26.50,*Default,NTP,0000,0000,0000,,is whatever we get by applying the procedure
+Dialogue: 0,0:30:26.77,0:30:29.73,*Default,NTP,0000,0000,0000,,to the car of s to the first element of s
+Dialogue: 0,0:30:30.33,0:30:33.50,*Default,NTP,0000,0000,0000,,and then the rest of this result
+Dialogue: 0,0:30:33.73,0:30:34.70,*Default,NTP,0000,0000,0000,,will be what you get
+Dialogue: 0,0:30:34.70,0:30:37.60,*Default,NTP,0000,0000,0000,,when you map the procedure over the rest of the list
+Dialogue: 0,0:30:40.33,0:30:43.53,*Default,NTP,0000,0000,0000,,so for example if I map a function
+Dialogue: 0,0:30:44.17,0:30:47.77,*Default,NTP,0000,0000,0000,,that takes each element and subtracts it from five
+Dialogue: 0,0:30:47.87,0:30:49.30,*Default,NTP,0000,0000,0000,,to the list one two
+Dialogue: 0,0:30:50.07,0:30:52.77,*Default,NTP,0000,0000,0000,,under this definition which is not tail recursive
+Dialogue: 0,0:30:53.47,0:30:55.10,*Default,NTP,0000,0000,0000,,we start out with the list one two
+Dialogue: 0,0:30:55.10,0:30:57.93,*Default,NTP,0000,0000,0000,,we bind it to s in the first call to map
+Dialogue: 0,0:30:58.50,0:31:01.37,*Default,NTP,0000,0000,0000,,the second call to map takes the rest of s
+Dialogue: 0,0:31:01.73,0:31:04.33,*Default,NTP,0000,0000,0000,,and the third call takes the rest of that
+Dialogue: 0,0:31:06.07,0:31:07.50,*Default,NTP,0000,0000,0000,,now the final result
+Dialogue: 0,0:31:07.93,0:31:11.33,*Default,NTP,0000,0000,0000,,of returning from the third call is just nill
+Dialogue: 0,0:31:11.57,0:31:12.73,*Default,NTP,0000,0000,0000,,but the second call
+Dialogue: 0,0:31:12.77,0:31:14.97,*Default,NTP,0000,0000,0000,,returns a list that starts with three
+Dialogue: 0,0:31:15.33,0:31:18.07,*Default,NTP,0000,0000,0000,,and the third call starts a list that starts with four
+Dialogue: 0,0:31:18.07,0:31:21.50,*Default,NTP,0000,0000,0000,,so four is five minus one and three is 2-1
+Dialogue: 0,0:31:21.50,0:31:22.97,*Default,NTP,0000,0000,0000,,and that's what we're computing here
+Dialogue: 0,0:31:24.40,0:31:26.97,*Default,NTP,0000,0000,0000,,so this is not tail recursive because
+Dialogue: 0,0:31:27.40,0:31:29.70,*Default,NTP,0000,0000,0000,,we have a tail context for all of if
+Dialogue: 0,0:31:30.53,0:31:32.17,*Default,NTP,0000,0000,0000,,but within cons
+Dialogue: 0,0:31:32.37,0:31:34.37,*Default,NTP,0000,0000,0000,,which isn't a tail context
+Dialogue: 0,0:31:34.40,0:31:36.10,*Default,NTP,0000,0000,0000,,we have a sub expression
+Dialogue: 0,0:31:36.13,0:31:38.57,*Default,NTP,0000,0000,0000,,that's not in a tail context that calls map
+Dialogue: 0,0:31:40.30,0:31:43.60,*Default,NTP,0000,0000,0000,,so here is a tale recursive definition of map
+Dialogue: 0,0:31:44.17,0:31:45.60,*Default,NTP,0000,0000,0000,,not what you would expect
+Dialogue: 0,0:31:46.33,0:31:50.27,*Default,NTP,0000,0000,0000,,define map by computing the reverse of the map
+Dialogue: 0,0:31:50.40,0:31:53.87,*Default,NTP,0000,0000,0000,,meaning exactly what we want but in the reverse order
+Dialogue: 0,0:31:54.40,0:31:56.67,*Default,NTP,0000,0000,0000,,this first checks if s is null
+Dialogue: 0,0:31:56.73,0:32:00.47,*Default,NTP,0000,0000,0000,,if so we return the result which is the
+Dialogue: 0,0:32:00.87,0:32:04.90,*Default,NTP,0000,0000,0000,,map list in reverse that we've already constructed m
+Dialogue: 0,0:32:05.77,0:32:07.87,*Default,NTP,0000,0000,0000,,if it's not null that we have more work to do
+Dialogue: 0,0:32:07.87,0:32:10.90,*Default,NTP,0000,0000,0000,,so we call map reverse on the rest of s
+Dialogue: 0,0:32:11.13,0:32:13.10,*Default,NTP,0000,0000,0000,,so that's everything else we're going to work on
+Dialogue: 0,0:32:14.10,0:32:15.70,*Default,NTP,0000,0000,0000,,and what we're going to do is we're going to
+Dialogue: 0,0:32:15.70,0:32:19.10,*Default,NTP,0000,0000,0000,,cons on the next element of the resulting
+Dialogue: 0,0:32:19.73,0:32:22.10,*Default,NTP,0000,0000,0000,,mapped list so we cons
+Dialogue: 0,0:32:22.10,0:32:25.27,*Default,NTP,0000,0000,0000,,on the result of calling the procedure on the car of s
+Dialogue: 0,0:32:26.07,0:32:26.87,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:32:27.87,0:32:29.20,*Default,NTP,0000,0000,0000,,what's the rest of that
+Dialogue: 0,0:32:29.20,0:32:31.60,*Default,NTP,0000,0000,0000,,well that's the m we've constructed so far
+Dialogue: 0,0:32:32.53,0:32:34.17,*Default,NTP,0000,0000,0000,,so we're gonna start out with a nill
+Dialogue: 0,0:32:34.20,0:32:36.07,*Default,NTP,0000,0000,0000,,we're gonna add the four on first
+Dialogue: 0,0:32:36.07,0:32:37.80,*Default,NTP,0000,0000,0000,,and then we're gonna add the three on
+Dialogue: 0,0:32:38.17,0:32:40.67,*Default,NTP,0000,0000,0000,,thus giving us our list in reverse order
+Dialogue: 0,0:32:41.40,0:32:46.57,*Default,NTP,0000,0000,0000,,so finally we need to call reverse on map reverse s no
+Dialogue: 0,0:32:47.30,0:32:49.40,*Default,NTP,0000,0000,0000,,now as this a tale context well
+Dialogue: 0,0:32:49.60,0:32:51.87,*Default,NTP,0000,0000,0000,,this whole thing is in a tale context
+Dialogue: 0,0:32:51.87,0:32:53.47,*Default,NTP,0000,0000,0000,,so the call to reverse is
+Dialogue: 0,0:32:53.90,0:32:55.50,*Default,NTP,0000,0000,0000,,this call is not
+Dialogue: 0,0:32:55.70,0:32:58.10,*Default,NTP,0000,0000,0000,,but notice it's not a recursive call to map
+Dialogue: 0,0:32:58.17,0:33:00.67,*Default,NTP,0000,0000,0000,,it's a call to map reverse which is
+Dialogue: 0,0:33:01.60,0:33:05.40,*Default,NTP,0000,0000,0000,,a tail recursive procedure that runs in constant space
+Dialogue: 0,0:33:06.60,0:33:07.77,*Default,NTP,0000,0000,0000,,now what about reverse
+Dialogue: 0,0:33:07.77,0:33:08.00,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:33:08.00,0:33:10.30,*Default,NTP,0000,0000,0000,,we need to make sure that that's tail recursive too
+Dialogue: 0,0:33:10.37,0:33:13.13,*Default,NTP,0000,0000,0000,,so here's a definition of reversing a list
+Dialogue: 0,0:33:13.93,0:33:15.40,*Default,NTP,0000,0000,0000,,we define
+Dialogue: 0,0:33:15.53,0:33:19.90,*Default,NTP,0000,0000,0000,,reverse iter which takes s and the reverse list so far
+Dialogue: 0,0:33:20.20,0:33:21.87,*Default,NTP,0000,0000,0000,,and what we're going to do is cons
+Dialogue: 0,0:33:21.87,0:33:25.00,*Default,NTP,0000,0000,0000,,on a reversed version of s to r
+Dialogue: 0,0:33:26.33,0:33:29.50,*Default,NTP,0000,0000,0000,,so if s is null then we just have r otherwise
+Dialogue: 0,0:33:30.07,0:33:32.73,*Default,NTP,0000,0000,0000,,we call reverse hitter on the rest of s
+Dialogue: 0,0:33:32.73,0:33:35.37,*Default,NTP,0000,0000,0000,,conzagon the first element of s onto r
+Dialogue: 0,0:33:35.77,0:33:37.07,*Default,NTP,0000,0000,0000,,so think about it for a minute
+Dialogue: 0,0:33:37.07,0:33:38.97,*Default,NTP,0000,0000,0000,,you'll see that this will reverse the list
+Dialogue: 0,0:33:39.17,0:33:42.47,*Default,NTP,0000,0000,0000,,if I just start out with nil as my reverse list
+Dialogue: 0,0:33:42.47,0:33:44.57,*Default,NTP,0000,0000,0000,,and s as the thing I'm reversing
+Dialogue: 0,0:33:47.67,0:33:50.27,*Default,NTP,0000,0000,0000,,so this is one of the more complex examples
+Dialogue: 0,0:33:50.53,0:33:53.97,*Default,NTP,0000,0000,0000,,of making a procedure tail recursive
+Dialogue: 0,0:33:54.73,0:33:56.00,*Default,NTP,0000,0000,0000,,there were two steps
+Dialogue: 0,0:33:56.00,0:33:57.33,*Default,NTP,0000,0000,0000,,we had to figure out
+Dialogue: 0,0:33:57.53,0:33:58.57,*Default,NTP,0000,0000,0000,,how to make sure
+Dialogue: 0,0:33:58.57,0:33:59.97,*Default,NTP,0000,0000,0000,,that we could build up something
+Dialogue: 0,0:33:59.97,0:34:02.27,*Default,NTP,0000,0000,0000,,that maps over the elements of s
+Dialogue: 0,0:34:04.13,0:34:06.57,*Default,NTP,0000,0000,0000,,such that we collect all the results
+Dialogue: 0,0:34:07.80,0:34:08.47,*Default,NTP,0000,0000,0000,,and then
+Dialogue: 0,0:34:08.47,0:34:11.10,*Default,NTP,0000,0000,0000,,we realized that I would build it in the reverse order
+Dialogue: 0,0:34:11.10,0:34:14.60,*Default,NTP,0000,0000,0000,,because as you are building up the recursive list
+Dialogue: 0,0:34:14.60,0:34:15.90,*Default,NTP,0000,0000,0000,,from the back to the front
+Dialogue: 0,0:34:15.97,0:34:18.87,*Default,NTP,0000,0000,0000,,you're processing the input from the front to the bet
+Dialogue: 0,0:34:19.37,0:34:20.97,*Default,NTP,0000,0000,0000,,and so then we have the defined refers
+Dialogue: 0,0:34:21.27,0:34:23.87,*Default,NTP,0000,0000,0000,,in order to give us exactly the result that we want
+Dialogue: 0,0:34:27.30,0:34:29.00,*Default,NTP,0000,0000,0000,,our final thought today is
+Dialogue: 0,0:34:29.00,0:34:30.53,*Default,NTP,0000,0000,0000,,what is it that we're creating
+Dialogue: 0,0:34:30.53,0:34:32.20,*Default,NTP,0000,0000,0000,,when we create an interpreter
+Dialogue: 0,0:34:32.60,0:34:35.10,*Default,NTP,0000,0000,0000,,well we're creating a general computing machine
+Dialogue: 0,0:34:36.00,0:34:37.37,*Default,NTP,0000,0000,0000,,so here's an analogy
+Dialogue: 0,0:34:37.50,0:34:40.30,*Default,NTP,0000,0000,0000,,think of programs as defining little machines
+Dialogue: 0,0:34:40.50,0:34:42.40,*Default,NTP,0000,0000,0000,,by laying out the procedure
+Dialogue: 0,0:34:42.87,0:34:46.77,*Default,NTP,0000,0000,0000,,by which we evaluate some input to give some output
+Dialogue: 0,0:34:47.47,0:34:48.80,*Default,NTP,0000,0000,0000,,so the program specifies
+Dialogue: 0,0:34:48.80,0:34:51.33,*Default,NTP,0000,0000,0000,,the logic of some computational device
+Dialogue: 0,0:34:51.70,0:34:55.37,*Default,NTP,0000,0000,0000,,so if we create a device that computes factorials
+Dialogue: 0,0:34:55.47,0:34:56.97,*Default,NTP,0000,0000,0000,,well that might look like this
+Dialogue: 0,0:34:57.60,0:34:58.70,*Default,NTP,0000,0000,0000,,or it says
+Dialogue: 0,0:34:59.53,0:35:01.87,*Default,NTP,0000,0000,0000,,if the input is one
+Dialogue: 0,0:35:02.20,0:35:03.70,*Default,NTP,0000,0000,0000,,then we just have one
+Dialogue: 0,0:35:04.40,0:35:08.13,*Default,NTP,0000,0000,0000,,otherwise we have to multiply the input
+Dialogue: 0,0:35:08.53,0:35:12.13,*Default,NTP,0000,0000,0000,,by 1 the factorial of the input
+Dialogue: 0,0:35:13.70,0:35:15.20,*Default,NTP,0000,0000,0000,,and factorial here
+Dialogue: 0,0:35:15.30,0:35:17.33,*Default,NTP,0000,0000,0000,,of course is just another copy
+Dialogue: 0,0:35:17.37,0:35:19.67,*Default,NTP,0000,0000,0000,,of this computational device
+Dialogue: 0,0:35:20.93,0:35:24.90,*Default,NTP,0000,0000,0000,,so five comes in 1120 comes out five factorial
+Dialogue: 0,0:35:26.13,0:35:29.30,*Default,NTP,0000,0000,0000,,well interpreters are like general computing machines
+Dialogue: 0,0:35:29.53,0:35:31.90,*Default,NTP,0000,0000,0000,,so the interpreter takes in his input
+Dialogue: 0,0:35:33.00,0:35:35.67,*Default,NTP,0000,0000,0000,,any piece of code that tells it to simulate
+Dialogue: 0,0:35:35.67,0:35:37.67,*Default,NTP,0000,0000,0000,,any particular machine that we want
+Dialogue: 0,0:35:38.47,0:35:39.90,*Default,NTP,0000,0000,0000,,so the scheme interpreter
+Dialogue: 0,0:35:39.90,0:35:41.77,*Default,NTP,0000,0000,0000,,might take in five as the input
+Dialogue: 0,0:35:41.77,0:35:43.17,*Default,NTP,0000,0000,0000,,but also the source
+Dialogue: 0,0:35:43.17,0:35:45.60,*Default,NTP,0000,0000,0000,,code that tells us how to compute the factorial
+Dialogue: 0,0:35:46.07,0:35:48.97,*Default,NTP,0000,0000,0000,,and it uses both of these things together
+Dialogue: 0,0:35:48.97,0:35:51.20,*Default,NTP,0000,0000,0000,,in order to create any sort of computation
+Dialogue: 0,0:35:51.20,0:35:52.00,*Default,NTP,0000,0000,0000,,that we wish
+Dialogue: 0,0:35:52.60,0:35:54.97,*Default,NTP,0000,0000,0000,,for instance computing 120
+Dialogue: 0,0:35:55.67,0:35:57.77,*Default,NTP,0000,0000,0000,,so our scheme interpreter that we've built
+Dialogue: 0,0:35:57.77,0:35:59.93,*Default,NTP,0000,0000,0000,,or we are in the process of building
+Dialogue: 0,0:35:59.97,0:36:01.13,*Default,NTP,0000,0000,0000,,as your project
+Dialogue: 0,0:36:01.27,0:36:02.67,*Default,NTP,0000,0000,0000,,is a universal machine
+Dialogue: 0,0:36:02.67,0:36:05.10,*Default,NTP,0000,0000,0000,,it can perform any computation we wish
+Dialogue: 0,0:36:05.20,0:36:07.20,*Default,NTP,0000,0000,0000,,depending on how it's parameterized
+Dialogue: 0,0:36:07.20,0:36:09.60,*Default,NTP,0000,0000,0000,,by the input source code that's given to it
+Dialogue: 0,0:36:10.97,0:36:12.17,*Default,NTP,0000,0000,0000,,so think of it as a bridge
+Dialogue: 0,0:36:12.17,0:36:12.93,*Default,NTP,0000,0000,0000,,between the data
+Dialogue: 0,0:36:12.93,0:36:14.33,*Default,NTP,0000,0000,0000,,objects that are manipulated
+Dialogue: 0,0:36:14.33,0:36:15.70,*Default,NTP,0000,0000,0000,,by our programming language
+Dialogue: 0,0:36:15.97,0:36:18.27,*Default,NTP,0000,0000,0000,,and the programming language itself
+Dialogue: 0,0:36:18.70,0:36:21.27,*Default,NTP,0000,0000,0000,,it's the thing that puts them together
+Dialogue: 0,0:36:22.40,0:36:23.47,*Default,NTP,0000,0000,0000,,internally though
+Dialogue: 0,0:36:23.47,0:36:26.17,*Default,NTP,0000,0000,0000,,remember that it's just a set of evaluation rules
+Dialogue: 0,0:36:26.50,0:36:29.33,*Default,NTP,0000,0000,0000,,an interpreter is nothing more than a program

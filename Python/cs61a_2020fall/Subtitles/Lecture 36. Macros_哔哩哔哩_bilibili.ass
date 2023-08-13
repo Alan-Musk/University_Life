@@ -1,0 +1,470 @@
+[Script Info]
+Title: Lecture 36. Macros_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=86&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.47,0:00:02.50,*Default,NTP,0000,0000,0000,,61 election No.36
+Dialogue: 0,0:00:02.87,0:00:03.77,*Default,NTP,0000,0000,0000,,announcements
+Dialogue: 0,0:00:04.13,0:00:06.13,*Default,NTP,0000,0000,0000,,entries into the optional scheme
+Dialogue: 0,0:00:06.13,0:00:09.10,*Default,NTP,0000,0000,0000,,workers of art contest are due Monday
+Dialogue: 0,0:00:09.10,0:00:10.27,*Default,NTP,0000,0000,0000,,which is tomorrow
+Dialogue: 0,0:00:10.87,0:00:14.00,*Default,NTP,0000,0000,0000,,we will have a lab this week can do Tuesday as usual
+Dialogue: 0,0:00:14.30,0:00:15.97,*Default,NTP,0000,0000,0000,,this lab is just focused on
+Dialogue: 0,0:00:16.07,0:00:17.80,*Default,NTP,0000,0000,0000,,preparing for the final exam
+Dialogue: 0,0:00:17.80,0:00:19.70,*Default,NTP,0000,0000,0000,,so it's a great way to start preparing
+Dialogue: 0,0:00:19.90,0:00:21.00,*Default,NTP,0000,0000,0000,,by starting to review
+Dialogue: 0,0:00:21.00,0:00:22.73,*Default,NTP,0000,0000,0000,,some of the material from this course
+Dialogue: 0,0:00:23.00,0:00:25.67,*Default,NTP,0000,0000,0000,,we do have lab parties on Monday at three pm
+Dialogue: 0,0:00:25.67,0:00:26.80,*Default,NTP,0000,0000,0000,,and seven pm
+Dialogue: 0,0:00:27.33,0:00:30.73,*Default,NTP,0000,0000,0000,,homework nine about sequel was posted long ago
+Dialogue: 0,0:00:31.10,0:00:32.57,*Default,NTP,0000,0000,0000,,before thanksgiving
+Dialogue: 0,0:00:33.20,0:00:34.60,*Default,NTP,0000,0000,0000,,let's do this Thursday
+Dialogue: 0,0:00:34.70,0:00:36.77,*Default,NTP,0000,0000,0000,,and we'll have a homework party on Tuesday
+Dialogue: 0,0:00:37.37,0:00:40.60,*Default,NTP,0000,0000,0000,,if you lost any composition points on the ants project
+Dialogue: 0,0:00:40.60,0:00:41.97,*Default,NTP,0000,0000,0000,,and you want to get back
+Dialogue: 0,0:00:41.97,0:00:44.17,*Default,NTP,0000,0000,0000,,whatever points you lost by revising
+Dialogue: 0,0:00:44.17,0:00:47.13,*Default,NTP,0000,0000,0000,,your work you need to do that by Sunday
+Dialogue: 0,0:00:48.73,0:00:50.40,*Default,NTP,0000,0000,0000,,well this week we're trying something new
+Dialogue: 0,0:00:50.70,0:00:53.97,*Default,NTP,0000,0000,0000,,the discussion handout will be about review
+Dialogue: 0,0:00:54.33,0:00:56.20,*Default,NTP,0000,0000,0000,,and we'll have tutorials as usual
+Dialogue: 0,0:00:56.30,0:00:58.90,*Default,NTP,0000,0000,0000,,but we also are opening up some longer tutorials
+Dialogue: 0,0:00:58.90,0:01:00.53,*Default,NTP,0000,0000,0000,,normally they're 25min
+Dialogue: 0,0:01:00.53,0:01:02.60,*Default,NTP,0000,0000,0000,,we're gonna try some 45min ones
+Dialogue: 0,0:01:02.60,0:01:04.07,*Default,NTP,0000,0000,0000,,if that sounds interesting to you
+Dialogue: 0,0:01:04.07,0:01:05.97,*Default,NTP,0000,0000,0000,,then go to the sign up and switch
+Dialogue: 0,0:01:06.30,0:01:06.87,*Default,NTP,0000,0000,0000,,or you know
+Dialogue: 0,0:01:06.87,0:01:08.67,*Default,NTP,0000,0000,0000,,if you just want to attend your regular tutorial
+Dialogue: 0,0:01:08.67,0:01:09.50,*Default,NTP,0000,0000,0000,,that's great
+Dialogue: 0,0:01:10.13,0:01:11.10,*Default,NTP,0000,0000,0000,,even if you want to
+Dialogue: 0,0:01:11.10,0:01:12.53,*Default,NTP,0000,0000,0000,,attend your regular tutorial
+Dialogue: 0,0:01:12.53,0:01:14.90,*Default,NTP,0000,0000,0000,,and join one of these 45min ones
+Dialogue: 0,0:01:14.90,0:01:15.93,*Default,NTP,0000,0000,0000,,you could do both
+Dialogue: 0,0:01:16.27,0:01:18.77,*Default,NTP,0000,0000,0000,,the system will only let you sign up for one at a time
+Dialogue: 0,0:01:18.77,0:01:21.77,*Default,NTP,0000,0000,0000,,but I'll bet if you get in contact with your tutor
+Dialogue: 0,0:01:21.87,0:01:23.97,*Default,NTP,0000,0000,0000,,you can figure out how to attend both of them
+Dialogue: 0,0:01:24.50,0:01:25.10,*Default,NTP,0000,0000,0000,,and right now
+Dialogue: 0,0:01:25.10,0:01:27.90,*Default,NTP,0000,0000,0000,,there are several slots available for these 45min
+Dialogue: 0,0:01:27.93,0:01:28.90,*Default,NTP,0000,0000,0000,,review tutorials
+Dialogue: 0,0:01:28.90,0:01:30.67,*Default,NTP,0000,0000,0000,,so if you want a little bit longer review
+Dialogue: 0,0:01:30.73,0:01:31.90,*Default,NTP,0000,0000,0000,,this Wednesday
+Dialogue: 0,0:01:31.97,0:01:33.57,*Default,NTP,0000,0000,0000,,then maybe sign up for one of those
+Dialogue: 0,0:01:34.73,0:01:37.00,*Default,NTP,0000,0000,0000,,and the final lecture on Friday
+Dialogue: 0,0:01:37.17,0:01:38.80,*Default,NTP,0000,0000,0000,,will not be lecture videos
+Dialogue: 0,0:01:38.80,0:01:42.90,*Default,NTP,0000,0000,0000,,instead we'll run a synchronous zoom webinar at 2pm
+Dialogue: 0,0:01:43.07,0:01:45.60,*Default,NTP,0000,0000,0000,,it will be recorded and the recording will be posted
+Dialogue: 0,0:01:45.60,0:01:46.60,*Default,NTP,0000,0000,0000,,if you don't want to come
+Dialogue: 0,0:01:46.87,0:01:49.60,*Default,NTP,0000,0000,0000,,but it should be a nice way to conclude the course
+Dialogue: 0,0:01:49.80,0:01:50.40,*Default,NTP,0000,0000,0000,,to actually
+Dialogue: 0,0:01:50.40,0:01:52.90,*Default,NTP,0000,0000,0000,,have some live questions and have us answered it
+Dialogue: 0,0:01:53.70,0:01:56.47,*Default,NTP,0000,0000,0000,,here are the important links lab orientation on Monday
+Dialogue: 0,0:01:56.47,0:01:58.53,*Default,NTP,0000,0000,0000,,discussion orientation on Wednesday
+Dialogue: 0,0:01:58.67,0:02:01.60,*Default,NTP,0000,0000,0000,,the usual extra q amp a Wednesday and Friday
+Dialogue: 0,0:02:02.27,0:02:03.37,*Default,NTP,0000,0000,0000,,we won't actually have lexure
+Dialogue: 0,0:02:03.37,0:02:05.17,*Default,NTP,0000,0000,0000,,videos posted for this Friday
+Dialogue: 0,0:02:05.27,0:02:07.13,*Default,NTP,0000,0000,0000,,but I think we'll hold the q amp a anyway
+Dialogue: 0,0:02:07.17,0:02:09.67,*Default,NTP,0000,0000,0000,,for anyone who wants to go over past problems
+Dialogue: 0,0:02:10.30,0:02:12.37,*Default,NTP,0000,0000,0000,,and we have conceptual office hours this week
+Dialogue: 0,0:02:12.50,0:02:14.20,*Default,NTP,0000,0000,0000,,Thursday at one pin
+Dialogue: 0,0:02:15.73,0:02:17.60,*Default,NTP,0000,0000,0000,,today's lecture is nice and short
+Dialogue: 0,0:02:17.93,0:02:19.33,*Default,NTP,0000,0000,0000,,it's about scheme
+Dialogue: 0,0:02:19.73,0:02:20.93,*Default,NTP,0000,0000,0000,,it answers the question
+Dialogue: 0,0:02:20.93,0:02:23.47,*Default,NTP,0000,0000,0000,,why would anyone use scheme instead of python
+Dialogue: 0,0:02:23.73,0:02:26.47,*Default,NTP,0000,0000,0000,,by introducing you to a feature called macros
+Dialogue: 0,0:02:26.53,0:02:29.20,*Default,NTP,0000,0000,0000,,which allows you to actually extend the language
+Dialogue: 0,0:02:29.27,0:02:31.40,*Default,NTP,0000,0000,0000,,by adding new special forms
+Dialogue: 0,0:02:31.77,0:02:33.70,*Default,NTP,0000,0000,0000,,so that you can customize scheme to work
+Dialogue: 0,0:02:33.70,0:02:34.87,*Default,NTP,0000,0000,0000,,how you want it to work
+Dialogue: 0,0:02:35.53,0:02:38.10,*Default,NTP,0000,0000,0000,,it's an optional topic but it's really good practice
+Dialogue: 0,0:02:38.10,0:02:40.13,*Default,NTP,0000,0000,0000,,because a lot of scheme problems do involve
+Dialogue: 0,0:02:40.13,0:02:42.93,*Default,NTP,0000,0000,0000,,manipulating scheme expressions as if they were lists
+Dialogue: 0,0:02:42.93,0:02:45.37,*Default,NTP,0000,0000,0000,,and that's the key to writing a macro as well
+Dialogue: 0,0:02:45.77,0:02:48.37,*Default,NTP,0000,0000,0000,,so even though it's optional material
+Dialogue: 0,0:02:48.37,0:02:50.40,*Default,NTP,0000,0000,0000,,I recommend watching the videos
+Dialogue: 0,0:02:50.53,0:02:52.57,*Default,NTP,0000,0000,0000,,there's only three of them they're pretty short
+Dialogue: 0,0:02:52.90,0:02:54.33,*Default,NTP,0000,0000,0000,,and you'll learn something cool
+Dialogue: 0,0:02:54.60,0:02:55.70,*Default,NTP,0000,0000,0000,,okay here we go
+Dialogue: 0,0:02:57.10,0:02:59.87,*Default,NTP,0000,0000,0000,,macros are a feature of scheme
+Dialogue: 0,0:03:00.13,0:03:01.77,*Default,NTP,0000,0000,0000,,that allow you to define
+Dialogue: 0,0:03:01.80,0:03:04.30,*Default,NTP,0000,0000,0000,,new special forms in the language
+Dialogue: 0,0:03:05.57,0:03:09.77,*Default,NTP,0000,0000,0000,,in python we have a certain inventory of expression
+Dialogue: 0,0:03:09.93,0:03:11.90,*Default,NTP,0000,0000,0000,,and statement types
+Dialogue: 0,0:03:12.00,0:03:14.00,*Default,NTP,0000,0000,0000,,and the same was true in scheme
+Dialogue: 0,0:03:14.07,0:03:15.27,*Default,NTP,0000,0000,0000,,we had defined
+Dialogue: 0,0:03:15.60,0:03:20.37,*Default,NTP,0000,0000,0000,,lambda if cond and or etc
+Dialogue: 0,0:03:21.00,0:03:23.00,*Default,NTP,0000,0000,0000,,everything else was a procedure
+Dialogue: 0,0:03:24.00,0:03:27.67,*Default,NTP,0000,0000,0000,,now macros allow you to extend that inventory
+Dialogue: 0,0:03:27.77,0:03:30.97,*Default,NTP,0000,0000,0000,,by inventing new kinds of special forms
+Dialogue: 0,0:03:31.67,0:03:32.87,*Default,NTP,0000,0000,0000,,that means that we can
+Dialogue: 0,0:03:32.87,0:03:34.97,*Default,NTP,0000,0000,0000,,change the way the language works
+Dialogue: 0,0:03:35.10,0:03:39.70,*Default,NTP,0000,0000,0000,,inventing new ways in which the flow of evaluation
+Dialogue: 0,0:03:39.70,0:03:41.67,*Default,NTP,0000,0000,0000,,proceeds through a program
+Dialogue: 0,0:03:42.10,0:03:44.30,*Default,NTP,0000,0000,0000,,sounds fancy and it is
+Dialogue: 0,0:03:44.67,0:03:45.80,*Default,NTP,0000,0000,0000,,it's the kind of feature
+Dialogue: 0,0:03:45.80,0:03:48.80,*Default,NTP,0000,0000,0000,,that makes people fall in love with lisp programming
+Dialogue: 0,0:03:49.87,0:03:52.13,*Default,NTP,0000,0000,0000,,and the reason it works well in lisp
+Dialogue: 0,0:03:52.13,0:03:53.87,*Default,NTP,0000,0000,0000,,languages like scheme
+Dialogue: 0,0:03:54.27,0:03:58.20,*Default,NTP,0000,0000,0000,,is that it's easy to view code as data
+Dialogue: 0,0:03:58.57,0:04:00.70,*Default,NTP,0000,0000,0000,,programs are just lists
+Dialogue: 0,0:04:02.17,0:04:05.40,*Default,NTP,0000,0000,0000,,macros perform code transformations
+Dialogue: 0,0:04:05.53,0:04:08.37,*Default,NTP,0000,0000,0000,,so the way that will invent new special forms
+Dialogue: 0,0:04:08.60,0:04:12.77,*Default,NTP,0000,0000,0000,,is to describe how to take the parts of a special form
+Dialogue: 0,0:04:13.00,0:04:14.10,*Default,NTP,0000,0000,0000,,and construct
+Dialogue: 0,0:04:14.10,0:04:16.47,*Default,NTP,0000,0000,0000,,a regular piece of scheme code out of them
+Dialogue: 0,0:04:16.60,0:04:18.77,*Default,NTP,0000,0000,0000,,and then evaluate that scheme code
+Dialogue: 0,0:04:20.13,0:04:21.97,*Default,NTP,0000,0000,0000,,so a macro is an operation
+Dialogue: 0,0:04:21.97,0:04:24.20,*Default,NTP,0000,0000,0000,,performed on the source code of a program
+Dialogue: 0,0:04:24.40,0:04:27.07,*Default,NTP,0000,0000,0000,,before that source code is evaluated
+Dialogue: 0,0:04:28.57,0:04:32.20,*Default,NTP,0000,0000,0000,,macros do exist in many different programming languages
+Dialogue: 0,0:04:32.27,0:04:35.17,*Default,NTP,0000,0000,0000,,but they're by far the easiest to define correctly
+Dialogue: 0,0:04:35.20,0:04:37.00,*Default,NTP,0000,0000,0000,,in a language like lisp
+Dialogue: 0,0:04:37.10,0:04:39.10,*Default,NTP,0000,0000,0000,,where the code is just data
+Dialogue: 0,0:04:39.67,0:04:42.87,*Default,NTP,0000,0000,0000,,in scheme there's a special form called define macro
+Dialogue: 0,0:04:43.17,0:04:46.13,*Default,NTP,0000,0000,0000,,that allows you to define a transformation
+Dialogue: 0,0:04:46.13,0:04:47.47,*Default,NTP,0000,0000,0000,,over the source code
+Dialogue: 0,0:04:47.70,0:04:50.50,*Default,NTP,0000,0000,0000,,for the special form that you're trying to invent
+Dialogue: 0,0:04:51.33,0:04:54.77,*Default,NTP,0000,0000,0000,,so here's an example of a macro called twice
+Dialogue: 0,0:04:55.13,0:04:58.00,*Default,NTP,0000,0000,0000,,you can see it looks a lot like a procedure definition
+Dialogue: 0,0:04:58.27,0:04:59.77,*Default,NTP,0000,0000,0000,,but the way in which
+Dialogue: 0,0:04:59.87,0:05:03.13,*Default,NTP,0000,0000,0000,,a twice expression gets evaluated is quite different
+Dialogue: 0,0:05:03.77,0:05:06.40,*Default,NTP,0000,0000,0000,,the content says that when you're twice an expression
+Dialogue: 0,0:05:06.47,0:05:08.73,*Default,NTP,0000,0000,0000,,you build a list that starts with begin
+Dialogue: 0,0:05:08.90,0:05:11.30,*Default,NTP,0000,0000,0000,,and then has that expression twice
+Dialogue: 0,0:05:11.77,0:05:15.53,*Default,NTP,0000,0000,0000,,once you've defined this macro you can twice anything
+Dialogue: 0,0:05:15.73,0:05:19.60,*Default,NTP,0000,0000,0000,,and here we're twicing the expression print two
+Dialogue: 0,0:05:20.67,0:05:24.20,*Default,NTP,0000,0000,0000,,what happens behind the scenes because twice is a macro
+Dialogue: 0,0:05:24.60,0:05:28.37,*Default,NTP,0000,0000,0000,,is that it evaluates the body of the macro
+Dialogue: 0,0:05:28.67,0:05:31.20,*Default,NTP,0000,0000,0000,,on the expression you've typed here
+Dialogue: 0,0:05:31.37,0:05:34.30,*Default,NTP,0000,0000,0000,,before that expression ever gets evaluated
+Dialogue: 0,0:05:34.93,0:05:38.57,*Default,NTP,0000,0000,0000,,so we construct a new expression began print two
+Dialogue: 0,0:05:38.57,0:05:42.37,*Default,NTP,0000,0000,0000,,print two and then this expression gets evaluated
+Dialogue: 0,0:05:42.47,0:05:45.27,*Default,NTP,0000,0000,0000,,which means that it will print two choice
+Dialogue: 0,0:05:46.90,0:05:49.27,*Default,NTP,0000,0000,0000,,now there's something interesting going on here
+Dialogue: 0,0:05:49.67,0:05:53.07,*Default,NTP,0000,0000,0000,,if twice were just a procedure however it were defined
+Dialogue: 0,0:05:53.20,0:05:55.33,*Default,NTP,0000,0000,0000,,print ii would have gotten evaluated
+Dialogue: 0,0:05:55.37,0:05:57.40,*Default,NTP,0000,0000,0000,,before twice were ever called
+Dialogue: 0,0:05:57.67,0:06:00.27,*Default,NTP,0000,0000,0000,,and that means two would have been displayed once
+Dialogue: 0,0:06:00.30,0:06:02.13,*Default,NTP,0000,0000,0000,,and that value ii would be gone
+Dialogue: 0,0:06:02.13,0:06:04.67,*Default,NTP,0000,0000,0000,,because once you print you can't get back the value
+Dialogue: 0,0:06:05.50,0:06:07.60,*Default,NTP,0000,0000,0000,,so there is something that twice can do
+Dialogue: 0,0:06:08.07,0:06:10.93,*Default,NTP,0000,0000,0000,,that on regular procedure can't do
+Dialogue: 0,0:06:11.00,0:06:13.53,*Default,NTP,0000,0000,0000,,which is to take this expression
+Dialogue: 0,0:06:13.53,0:06:16.30,*Default,NTP,0000,0000,0000,,and duplicate it before it gets evaluated
+Dialogue: 0,0:06:16.33,0:06:18.47,*Default,NTP,0000,0000,0000,,and then evaluated twice
+Dialogue: 0,0:06:19.70,0:06:21.17,*Default,NTP,0000,0000,0000,,so the evaluation procedure
+Dialogue: 0,0:06:21.17,0:06:23.57,*Default,NTP,0000,0000,0000,,of a macro call expression in general
+Dialogue: 0,0:06:23.57,0:06:24.50,*Default,NTP,0000,0000,0000,,like this one
+Dialogue: 0,0:06:25.53,0:06:28.37,*Default,NTP,0000,0000,0000,,is that we evaluate the operator sub expression
+Dialogue: 0,0:06:28.70,0:06:30.20,*Default,NTP,0000,0000,0000,,if that evaluates two
+Dialogue: 0,0:06:30.20,0:06:33.93,*Default,NTP,0000,0000,0000,,a macro defined by the defined macro special form
+Dialogue: 0,0:06:34.33,0:06:36.87,*Default,NTP,0000,0000,0000,,then we proceed a little bit differently than regular
+Dialogue: 0,0:06:36.87,0:06:37.80,*Default,NTP,0000,0000,0000,,procedures
+Dialogue: 0,0:06:38.57,0:06:41.77,*Default,NTP,0000,0000,0000,,we call the macro procedure on the operand expressions
+Dialogue: 0,0:06:41.77,0:06:43.67,*Default,NTP,0000,0000,0000,,without evaluating them first
+Dialogue: 0,0:06:44.73,0:06:47.93,*Default,NTP,0000,0000,0000,,then we evaluate the expression returned from the macro
+Dialogue: 0,0:06:47.93,0:06:48.73,*Default,NTP,0000,0000,0000,,procedure
+Dialogue: 0,0:06:49.33,0:06:52.50,*Default,NTP,0000,0000,0000,,so macros take in expressions and return expressions
+Dialogue: 0,0:06:52.50,0:06:55.67,*Default,NTP,0000,0000,0000,,instead of taking in values in returning values
+Dialogue: 0,0:06:56.73,0:06:58.57,*Default,NTP,0000,0000,0000,,so let's talk a little bit about print
+Dialogue: 0,0:06:59.10,0:07:01.77,*Default,NTP,0000,0000,0000,,when I print two I see two on the screen
+Dialogue: 0,0:07:01.77,0:07:04.17,*Default,NTP,0000,0000,0000,,but if I define x as print two
+Dialogue: 0,0:07:04.17,0:07:06.87,*Default,NTP,0000,0000,0000,,and then I look at x I see that x is nothing
+Dialogue: 0,0:07:07.40,0:07:09.70,*Default,NTP,0000,0000,0000,,once you've printed the two is gone
+Dialogue: 0,0:07:10.73,0:07:12.60,*Default,NTP,0000,0000,0000,,if I wanted to print two twice
+Dialogue: 0,0:07:12.60,0:07:14.50,*Default,NTP,0000,0000,0000,,then I could ride print two
+Dialogue: 0,0:07:14.60,0:07:15.93,*Default,NTP,0000,0000,0000,,and print two
+Dialogue: 0,0:07:16.20,0:07:18.73,*Default,NTP,0000,0000,0000,,but in order to put that into one expression
+Dialogue: 0,0:07:18.73,0:07:21.07,*Default,NTP,0000,0000,0000,,I need to use the begin special form
+Dialogue: 0,0:07:21.30,0:07:24.27,*Default,NTP,0000,0000,0000,,the begin special form just says do all of these things
+Dialogue: 0,0:07:25.47,0:07:28.00,*Default,NTP,0000,0000,0000,,let's say that I was stuck with only procedures
+Dialogue: 0,0:07:28.50,0:07:30.53,*Default,NTP,0000,0000,0000,,and I wanted to define twice
+Dialogue: 0,0:07:31.10,0:07:33.40,*Default,NTP,0000,0000,0000,,I'm going to write the same body that I had
+Dialogue: 0,0:07:33.53,0:07:34.57,*Default,NTP,0000,0000,0000,,on the slide
+Dialogue: 0,0:07:34.87,0:07:38.40,*Default,NTP,0000,0000,0000,,begin the expression and then the expression again
+Dialogue: 0,0:07:43.77,0:07:46.00,*Default,NTP,0000,0000,0000,,now twice print ii doesn't work
+Dialogue: 0,0:07:46.93,0:07:49.27,*Default,NTP,0000,0000,0000,,I get two displayed
+Dialogue: 0,0:07:49.30,0:07:51.77,*Default,NTP,0000,0000,0000,,and then I construct an expression that says begin none
+Dialogue: 0,0:07:51.77,0:07:54.27,*Default,NTP,0000,0000,0000,,none the value of print ii
+Dialogue: 0,0:07:55.10,0:07:56.70,*Default,NTP,0000,0000,0000,,if I wanted to construct
+Dialogue: 0,0:07:57.13,0:08:00.40,*Default,NTP,0000,0000,0000,,began print ii print ii I would have to quote this
+Dialogue: 0,0:08:01.40,0:08:03.33,*Default,NTP,0000,0000,0000,,so it's not like it's impossible to do this
+Dialogue: 0,0:08:03.33,0:08:04.30,*Default,NTP,0000,0000,0000,,with the procedure
+Dialogue: 0,0:08:04.33,0:08:06.60,*Default,NTP,0000,0000,0000,,I just have to think about quotation
+Dialogue: 0,0:08:06.77,0:08:08.67,*Default,NTP,0000,0000,0000,,in order to make sure that this doesn't get
+Dialogue: 0,0:08:08.67,0:08:10.30,*Default,NTP,0000,0000,0000,,evaluated in advance
+Dialogue: 0,0:08:11.07,0:08:14.07,*Default,NTP,0000,0000,0000,,but even this version hasn't printed anything yet
+Dialogue: 0,0:08:14.40,0:08:15.10,*Default,NTP,0000,0000,0000,,the only way to
+Dialogue: 0,0:08:15.10,0:08:18.67,*Default,NTP,0000,0000,0000,,print would be if I evaluate the results of calling
+Dialogue: 0,0:08:18.67,0:08:20.90,*Default,NTP,0000,0000,0000,,twice on the quoted print ii
+Dialogue: 0,0:08:23.57,0:08:24.60,*Default,NTP,0000,0000,0000,,the idea behind
+Dialogue: 0,0:08:24.60,0:08:28.33,*Default,NTP,0000,0000,0000,,macros is that this quotation and evaluation procedure
+Dialogue: 0,0:08:28.50,0:08:30.17,*Default,NTP,0000,0000,0000,,is taken care of for you
+Dialogue: 0,0:08:30.97,0:08:33.87,*Default,NTP,0000,0000,0000,,so if instead of defining this as a procedure
+Dialogue: 0,0:08:33.90,0:08:35.90,*Default,NTP,0000,0000,0000,,I define it as a macro
+Dialogue: 0,0:08:36.73,0:08:40.00,*Default,NTP,0000,0000,0000,,then instead of typing twice quote print 2
+Dialogue: 0,0:08:40.13,0:08:41.80,*Default,NTP,0000,0000,0000,,and evaluating the result
+Dialogue: 0,0:08:41.93,0:08:43.67,*Default,NTP,0000,0000,0000,,I can just twice print 2
+Dialogue: 0,0:08:44.00,0:08:46.13,*Default,NTP,0000,0000,0000,,and I see two display twice
+Dialogue: 0,0:08:47.50,0:08:49.00,*Default,NTP,0000,0000,0000,,so something simple and something
+Dialogue: 0,0:08:49.00,0:08:51.27,*Default,NTP,0000,0000,0000,,profound has happened at the same time
+Dialogue: 0,0:08:51.53,0:08:53.80,*Default,NTP,0000,0000,0000,,the simple part is that all it does is make sure
+Dialogue: 0,0:08:53.80,0:08:55.73,*Default,NTP,0000,0000,0000,,that twin two doesn't get evaluated
+Dialogue: 0,0:08:55.73,0:08:57.27,*Default,NTP,0000,0000,0000,,for example by quoting it
+Dialogue: 0,0:08:57.40,0:08:59.37,*Default,NTP,0000,0000,0000,,passing in the expression to twice
+Dialogue: 0,0:08:59.37,0:09:01.20,*Default,NTP,0000,0000,0000,,and then evaluating the result
+Dialogue: 0,0:09:01.90,0:09:03.87,*Default,NTP,0000,0000,0000,,the profound thing is that we've
+Dialogue: 0,0:09:03.90,0:09:06.27,*Default,NTP,0000,0000,0000,,changed the way the language works
+Dialogue: 0,0:09:06.50,0:09:09.50,*Default,NTP,0000,0000,0000,,twice is now the kind of special form
+Dialogue: 0,0:09:09.60,0:09:13.17,*Default,NTP,0000,0000,0000,,that doesn't involve evaluating the arguments first
+Dialogue: 0,0:09:13.40,0:09:15.60,*Default,NTP,0000,0000,0000,,and that means we have complete control
+Dialogue: 0,0:09:15.70,0:09:17.13,*Default,NTP,0000,0000,0000,,over when and how
+Dialogue: 0,0:09:17.13,0:09:19.73,*Default,NTP,0000,0000,0000,,things are evaluated inside of a macro
+Dialogue: 0,0:09:21.13,0:09:23.07,*Default,NTP,0000,0000,0000,,let's look at how this can be useful
+Dialogue: 0,0:09:24.00,0:09:25.40,*Default,NTP,0000,0000,0000,,let's say I want to define
+Dialogue: 0,0:09:25.40,0:09:28.17,*Default,NTP,0000,0000,0000,,a procedure that checks whether something is true or
+Dialogue: 0,0:09:28.17,0:09:28.97,*Default,NTP,0000,0000,0000,,false
+Dialogue: 0,0:09:29.93,0:09:34.37,*Default,NTP,0000,0000,0000,,if I pass in a value I can write if the value is true
+Dialogue: 0,0:09:34.57,0:09:36.67,*Default,NTP,0000,0000,0000,,then I passed the check
+Dialogue: 0,0:09:36.77,0:09:38.67,*Default,NTP,0000,0000,0000,,otherwise I failed the check
+Dialogue: 0,0:09:39.60,0:09:40.97,*Default,NTP,0000,0000,0000,,and if for instance
+Dialogue: 0,0:09:41.47,0:09:44.50,*Default,NTP,0000,0000,0000,,I had a x -2 and I wanted a check
+Dialogue: 0,0:09:44.87,0:09:46.77,*Default,NTP,0000,0000,0000,,that x is greater than zero
+Dialogue: 0,0:09:47.40,0:09:49.07,*Default,NTP,0000,0000,0000,,I would have failed that check
+Dialogue: 0,0:09:50.30,0:09:51.97,*Default,NTP,0000,0000,0000,,so this is a reasonable way
+Dialogue: 0,0:09:51.97,0:09:55.27,*Default,NTP,0000,0000,0000,,to add little tests inside of your scheme program
+Dialogue: 0,0:09:55.57,0:09:59.87,*Default,NTP,0000,0000,0000,,but unfortunately it doesn't tell you what failed
+Dialogue: 0,0:09:59.87,0:10:02.77,*Default,NTP,0000,0000,0000,,when something failed it would be nice of its head
+Dialogue: 0,0:10:02.77,0:10:04.30,*Default,NTP,0000,0000,0000,,here's what failed
+Dialogue: 0,0:10:05.13,0:10:06.60,*Default,NTP,0000,0000,0000,,but in order to do that
+Dialogue: 0,0:10:06.60,0:10:10.17,*Default,NTP,0000,0000,0000,,we need access to the expression that was evaluated
+Dialogue: 0,0:10:10.30,0:10:12.80,*Default,NTP,0000,0000,0000,,instead of just the value itself
+Dialogue: 0,0:10:14.20,0:10:15.87,*Default,NTP,0000,0000,0000,,so let's define a macro
+Dialogue: 0,0:10:17.77,0:10:18.57,*Default,NTP,0000,0000,0000,,first
+Dialogue: 0,0:10:18.80,0:10:21.30,*Default,NTP,0000,0000,0000,,we'll just name it check in order to be consistent
+Dialogue: 0,0:10:21.30,0:10:23.07,*Default,NTP,0000,0000,0000,,but this doesn't take in a value
+Dialogue: 0,0:10:23.07,0:10:25.00,*Default,NTP,0000,0000,0000,,it takes in an expression
+Dialogue: 0,0:10:25.80,0:10:29.70,*Default,NTP,0000,0000,0000,,instead of just writing down what gets evaluated
+Dialogue: 0,0:10:29.70,0:10:33.53,*Default,NTP,0000,0000,0000,,I have to construct this expression piece by piece
+Dialogue: 0,0:10:34.53,0:10:37.53,*Default,NTP,0000,0000,0000,,you check expressions by building a list
+Dialogue: 0,0:10:37.60,0:10:39.27,*Default,NTP,0000,0000,0000,,which contains if
+Dialogue: 0,0:10:39.53,0:10:42.70,*Default,NTP,0000,0000,0000,,and then it has the expression that we want to evaluate
+Dialogue: 0,0:10:43.73,0:10:46.60,*Default,NTP,0000,0000,0000,,and then it says either past or failed
+Dialogue: 0,0:10:48.10,0:10:49.37,*Default,NTP,0000,0000,0000,,here I have double quoted
+Dialogue: 0,0:10:49.37,0:10:52.17,*Default,NTP,0000,0000,0000,,to say that I want the result of evaluating this
+Dialogue: 0,0:10:52.20,0:10:54.60,*Default,NTP,0000,0000,0000,,to be this quote past
+Dialogue: 0,0:10:55.07,0:10:56.70,*Default,NTP,0000,0000,0000,,and now I've built a macro
+Dialogue: 0,0:10:56.80,0:10:59.70,*Default,NTP,0000,0000,0000,,that behaves just like the procedure that I had before
+Dialogue: 0,0:11:01.27,0:11:05.47,*Default,NTP,0000,0000,0000,,so if I start scheme and I load this file and I define
+Dialogue: 0,0:11:05.90,0:11:08.97,*Default,NTP,0000,0000,0000,,x to be -2 and then I check to c
+Dialogue: 0,0:11:09.07,0:11:11.70,*Default,NTP,0000,0000,0000,,is it the case that x is greater than zero
+Dialogue: 0,0:11:11.87,0:11:13.13,*Default,NTP,0000,0000,0000,,it will say failed
+Dialogue: 0,0:11:14.57,0:11:17.00,*Default,NTP,0000,0000,0000,,so I've done all this work to define a macro
+Dialogue: 0,0:11:17.00,0:11:19.80,*Default,NTP,0000,0000,0000,,it was slightly more complicated than their procedure
+Dialogue: 0,0:11:20.27,0:11:22.57,*Default,NTP,0000,0000,0000,,and it doesn't do anything new yet
+Dialogue: 0,0:11:23.27,0:11:25.17,*Default,NTP,0000,0000,0000,,but we could get it to do something new
+Dialogue: 0,0:11:25.40,0:11:26.20,*Default,NTP,0000,0000,0000,,by
+Dialogue: 0,0:11:26.93,0:11:29.13,*Default,NTP,0000,0000,0000,,not only saying failed
+Dialogue: 0,0:11:29.17,0:11:31.70,*Default,NTP,0000,0000,0000,,but also saying what expression failed
+Dialogue: 0,0:11:32.47,0:11:34.70,*Default,NTP,0000,0000,0000,,so in the case that this fails
+Dialogue: 0,0:11:34.80,0:11:36.53,*Default,NTP,0000,0000,0000,,I'm gonna build a new list
+Dialogue: 0,0:11:36.87,0:11:39.50,*Default,NTP,0000,0000,0000,,and it's still gonna say failed in it
+Dialogue: 0,0:11:39.77,0:11:42.27,*Default,NTP,0000,0000,0000,,but then it's also gonna show you the expression
+Dialogue: 0,0:11:51.90,0:11:53.33,*Default,NTP,0000,0000,0000,,now we run the whole thing
+Dialogue: 0,0:11:53.73,0:11:55.00,*Default,NTP,0000,0000,0000,,exactly as before
+Dialogue: 0,0:11:55.33,0:11:57.37,*Default,NTP,0000,0000,0000,,divine x to be negative to
+Dialogue: 0,0:11:57.57,0:12:00.00,*Default,NTP,0000,0000,0000,,write down what looks like a procedure call
+Dialogue: 0,0:12:00.00,0:12:02.33,*Default,NTP,0000,0000,0000,,but in fact it's not a procedure call
+Dialogue: 0,0:12:02.53,0:12:06.73,*Default,NTP,0000,0000,0000,,because when it fails it tells you that it failed
+Dialogue: 0,0:12:07.07,0:12:08.67,*Default,NTP,0000,0000,0000,,this is a false value
+Dialogue: 0,0:12:09.10,0:12:12.53,*Default,NTP,0000,0000,0000,,but also the expression that caused it to fail
+Dialogue: 0,0:12:12.93,0:12:14.00,*Default,NTP,0000,0000,0000,,and that's something that would
+Dialogue: 0,0:12:14.00,0:12:16.27,*Default,NTP,0000,0000,0000,,not be available to a regular procedure
+Dialogue: 0,0:12:17.40,0:12:18.37,*Default,NTP,0000,0000,0000,,before we conclude
+Dialogue: 0,0:12:18.37,0:12:19.40,*Default,NTP,0000,0000,0000,,let's quickly look
+Dialogue: 0,0:12:19.40,0:12:22.50,*Default,NTP,0000,0000,0000,,at the expression that was constructed by this macro
+Dialogue: 0,0:12:23.50,0:12:26.93,*Default,NTP,0000,0000,0000,,you can do that by removing the dash macro
+Dialogue: 0,0:12:27.40,0:12:29.47,*Default,NTP,0000,0000,0000,,and now we just have a regular procedure
+Dialogue: 0,0:12:30.70,0:12:32.10,*Default,NTP,0000,0000,0000,,this regular procedure
+Dialogue: 0,0:12:32.97,0:12:36.37,*Default,NTP,0000,0000,0000,,can take x as -2 but when it's called
+Dialogue: 0,0:12:36.53,0:12:40.40,*Default,NTP,0000,0000,0000,,we have to explicitly quote the expression
+Dialogue: 0,0:12:40.67,0:12:43.00,*Default,NTP,0000,0000,0000,,as if we were calling a macro
+Dialogue: 0,0:12:43.90,0:12:45.67,*Default,NTP,0000,0000,0000,,is x greater than zero
+Dialogue: 0,0:12:45.90,0:12:48.47,*Default,NTP,0000,0000,0000,,constructs the following expression
+Dialogue: 0,0:12:49.07,0:12:52.37,*Default,NTP,0000,0000,0000,,if x is greater than zero than it just says past
+Dialogue: 0,0:12:52.50,0:12:53.40,*Default,NTP,0000,0000,0000,,otherwise
+Dialogue: 0,0:12:53.67,0:12:57.60,*Default,NTP,0000,0000,0000,,it builds this list failed and then the expression
+Dialogue: 0,0:12:58.77,0:13:00.57,*Default,NTP,0000,0000,0000,,if I were to evaluate that
+Dialogue: 0,0:13:00.57,0:13:02.67,*Default,NTP,0000,0000,0000,,then I would get the fact that it failed
+Dialogue: 0,0:13:03.40,0:13:04.30,*Default,NTP,0000,0000,0000,,but of course
+Dialogue: 0,0:13:04.33,0:13:08.10,*Default,NTP,0000,0000,0000,,if instead expert two and I evaluated the same thing
+Dialogue: 0,0:13:08.37,0:13:10.50,*Default,NTP,0000,0000,0000,,then I would see that it passed
+Dialogue: 0,0:13:11.13,0:13:12.93,*Default,NTP,0000,0000,0000,,so we've built from scratch
+Dialogue: 0,0:13:12.97,0:13:15.87,*Default,NTP,0000,0000,0000,,a macro a new special form called check
+Dialogue: 0,0:13:16.20,0:13:17.93,*Default,NTP,0000,0000,0000,,that checks whether
+Dialogue: 0,0:13:17.93,0:13:20.20,*Default,NTP,0000,0000,0000,,an expression evaluates to something that's true or
+Dialogue: 0,0:13:20.20,0:13:23.13,*Default,NTP,0000,0000,0000,,false and when it evaluates to false it shows you
+Dialogue: 0,0:13:23.13,0:13:24.00,*Default,NTP,0000,0000,0000,,the expression
+Dialogue: 0,0:13:26.50,0:13:29.17,*Default,NTP,0000,0000,0000,,scheme doesn't have a four statement
+Dialogue: 0,0:13:29.87,0:13:33.97,*Default,NTP,0000,0000,0000,,now it will we're going to create a four micro
+Dialogue: 0,0:13:35.53,0:13:36.40,*Default,NTP,0000,0000,0000,,we'd like to define
+Dialogue: 0,0:13:36.40,0:13:38.80,*Default,NTP,0000,0000,0000,,a macro that evaluates an expression
+Dialogue: 0,0:13:38.90,0:13:40.87,*Default,NTP,0000,0000,0000,,for each value in a sequence
+Dialogue: 0,0:13:42.13,0:13:47.47,*Default,NTP,0000,0000,0000,,for example if I say four x in 2345 square x
+Dialogue: 0,0:13:47.53,0:13:50.70,*Default,NTP,0000,0000,0000,,I should get the squares of two three four and five
+Dialogue: 0,0:13:51.10,0:13:52.10,*Default,NTP,0000,0000,0000,,how convenient
+Dialogue: 0,0:13:53.73,0:13:55.93,*Default,NTP,0000,0000,0000,,we'll build this mac growing two steps
+Dialogue: 0,0:13:56.33,0:13:57.50,*Default,NTP,0000,0000,0000,,first we define
+Dialogue: 0,0:13:57.50,0:14:00.47,*Default,NTP,0000,0000,0000,,what it means to map a function over values
+Dialogue: 0,0:14:01.13,0:14:04.67,*Default,NTP,0000,0000,0000,,if values is null there's nothing in the mapped list
+Dialogue: 0,0:14:04.87,0:14:07.67,*Default,NTP,0000,0000,0000,,otherwise we cons applying fun
+Dialogue: 0,0:14:07.80,0:14:09.33,*Default,NTP,0000,0000,0000,,to the car of valves
+Dialogue: 0,0:14:09.37,0:14:11.40,*Default,NTP,0000,0000,0000,,to whatever we get when we map that function
+Dialogue: 0,0:14:11.40,0:14:13.07,*Default,NTP,0000,0000,0000,,over the kutter of valves
+Dialogue: 0,0:14:13.87,0:14:14.93,*Default,NTP,0000,0000,0000,,and in this case
+Dialogue: 0,0:14:15.00,0:14:18.30,*Default,NTP,0000,0000,0000,,we would be able to produce something like the four
+Dialogue: 0,0:14:18.30,0:14:20.67,*Default,NTP,0000,0000,0000,,statement just using map
+Dialogue: 0,0:14:20.80,0:14:22.97,*Default,NTP,0000,0000,0000,,but it requires a little bit more work
+Dialogue: 0,0:14:23.00,0:14:24.30,*Default,NTP,0000,0000,0000,,I have to say map
+Dialogue: 0,0:14:24.33,0:14:27.17,*Default,NTP,0000,0000,0000,,and then I have to give a lambda expression
+Dialogue: 0,0:14:27.57,0:14:30.90,*Default,NTP,0000,0000,0000,,in order to capture this body
+Dialogue: 0,0:14:31.37,0:14:33.67,*Default,NTP,0000,0000,0000,,and then I have to say what I want to apply it to
+Dialogue: 0,0:14:35.97,0:14:38.73,*Default,NTP,0000,0000,0000,,so having a four expression in the language
+Dialogue: 0,0:14:38.77,0:14:40.60,*Default,NTP,0000,0000,0000,,doesn't mean I can do new things
+Dialogue: 0,0:14:40.60,0:14:41.87,*Default,NTP,0000,0000,0000,,it just means it's much
+Dialogue: 0,0:14:42.07,0:14:44.50,*Default,NTP,0000,0000,0000,,more straightforward to state what I want
+Dialogue: 0,0:14:44.50,0:14:46.87,*Default,NTP,0000,0000,0000,,because I don't have to explicitly write out
+Dialogue: 0,0:14:46.87,0:14:48.27,*Default,NTP,0000,0000,0000,,the word at lambda
+Dialogue: 0,0:14:50.30,0:14:52.30,*Default,NTP,0000,0000,0000,,so defining the macro
+Dialogue: 0,0:14:52.50,0:14:56.20,*Default,NTP,0000,0000,0000,,means saying what happens when you have four
+Dialogue: 0,0:14:56.20,0:14:58.27,*Default,NTP,0000,0000,0000,,and then a symbol and then some values
+Dialogue: 0,0:14:58.27,0:15:00.27,*Default,NTP,0000,0000,0000,,and then an expression to evaluate
+Dialogue: 0,0:15:00.30,0:15:02.07,*Default,NTP,0000,0000,0000,,for each of those values
+Dialogue: 0,0:15:02.50,0:15:05.57,*Default,NTP,0000,0000,0000,,what we do is build this expression
+Dialogue: 0,0:15:06.13,0:15:08.13,*Default,NTP,0000,0000,0000,,it's a list containing map
+Dialogue: 0,0:15:08.50,0:15:11.97,*Default,NTP,0000,0000,0000,,it then contains lambda x and then that expression
+Dialogue: 0,0:15:12.37,0:15:15.27,*Default,NTP,0000,0000,0000,,and finally it contains the values
+Dialogue: 0,0:15:16.00,0:15:18.37,*Default,NTP,0000,0000,0000,,spend a moment and see if you can write out
+Dialogue: 0,0:15:18.67,0:15:21.70,*Default,NTP,0000,0000,0000,,the general macro definition of four
+Dialogue: 0,0:15:21.87,0:15:25.57,*Default,NTP,0000,0000,0000,,that allows us to transform these three expressions
+Dialogue: 0,0:15:25.70,0:15:27.90,*Default,NTP,0000,0000,0000,,into this one long map expression
+Dialogue: 0,0:15:28.27,0:15:31.70,*Default,NTP,0000,0000,0000,,I'll show you the answer in 321
+Dialogue: 0,0:15:33.60,0:15:38.30,*Default,NTP,0000,0000,0000,,there it is we build a list that starts with lambda
+Dialogue: 0,0:15:38.70,0:15:42.33,*Default,NTP,0000,0000,0000,,and then has the symbol that I'm using as a placeholder
+Dialogue: 0,0:15:42.33,0:15:43.50,*Default,NTP,0000,0000,0000,,for every value
+Dialogue: 0,0:15:44.60,0:15:46.07,*Default,NTP,0000,0000,0000,,that has to go inside a list
+Dialogue: 0,0:15:46.07,0:15:48.33,*Default,NTP,0000,0000,0000,,because that's how lambda expressions work
+Dialogue: 0,0:15:49.13,0:15:52.73,*Default,NTP,0000,0000,0000,,now experor will be bound to this whole thing times xx
+Dialogue: 0,0:15:52.87,0:15:54.30,*Default,NTP,0000,0000,0000,,and so I just place that
+Dialogue: 0,0:15:54.30,0:15:56.70,*Default,NTP,0000,0000,0000,,into the lamda expression that I'm constructing
+Dialogue: 0,0:15:56.70,0:15:57.73,*Default,NTP,0000,0000,0000,,as a list
+Dialogue: 0,0:15:58.40,0:16:00.73,*Default,NTP,0000,0000,0000,,and finally I write down the values
+Dialogue: 0,0:16:00.87,0:16:03.10,*Default,NTP,0000,0000,0000,,and then when I run this here
+Dialogue: 0,0:16:03.20,0:16:04.93,*Default,NTP,0000,0000,0000,,for these three expressions
+Dialogue: 0,0:16:04.93,0:16:08.27,*Default,NTP,0000,0000,0000,,I will build this map expression and then evaluate it
+Dialogue: 0,0:16:08.30,0:16:11.20,*Default,NTP,0000,0000,0000,,and I'll get the result for nine sixteen twenty five
+Dialogue: 0,0:16:12.17,0:16:13.77,*Default,NTP,0000,0000,0000,,so there's another way in which you can
+Dialogue: 0,0:16:13.77,0:16:15.10,*Default,NTP,0000,0000,0000,,extend the syntax
+Dialogue: 0,0:16:15.10,0:16:16.10,*Default,NTP,0000,0000,0000,,of the language
+Dialogue: 0,0:16:16.27,0:16:19.07,*Default,NTP,0000,0000,0000,,mixing together something that gets evaluated
+Dialogue: 0,0:16:19.30,0:16:21.10,*Default,NTP,0000,0000,0000,,something that never gets evaluated
+Dialogue: 0,0:16:21.10,0:16:23.90,*Default,NTP,0000,0000,0000,,is just the symbol to use as a placeholder
+Dialogue: 0,0:16:24.27,0:16:27.10,*Default,NTP,0000,0000,0000,,and then an expression here that gets evaluated
+Dialogue: 0,0:16:27.10,0:16:29.50,*Default,NTP,0000,0000,0000,,for every element of this list
+Dialogue: 0,0:16:31.20,0:16:33.30,*Default,NTP,0000,0000,0000,,and now we've discovered that scheme
+Dialogue: 0,0:16:33.30,0:16:35.27,*Default,NTP,0000,0000,0000,,has four statements after all
+Dialogue: 0,0:16:37.93,0:16:39.50,*Default,NTP,0000,0000,0000,,now that we've talked about
+Dialogue: 0,0:16:39.70,0:16:43.20,*Default,NTP,0000,0000,0000,,what macros are and how to define them how to use them
+Dialogue: 0,0:16:43.33,0:16:45.20,*Default,NTP,0000,0000,0000,,let's talk about how your
+Dialogue: 0,0:16:45.20,0:16:47.20,*Default,NTP,0000,0000,0000,,scheme interpreter would need to change
+Dialogue: 0,0:16:47.20,0:16:49.10,*Default,NTP,0000,0000,0000,,in order to support macros
+Dialogue: 0,0:16:49.70,0:16:52.73,*Default,NTP,0000,0000,0000,,in fact there's an optional question on project four
+Dialogue: 0,0:16:53.30,0:16:56.40,*Default,NTP,0000,0000,0000,,about macros so if you've finished project four
+Dialogue: 0,0:16:56.40,0:16:58.10,*Default,NTP,0000,0000,0000,,and you're looking for something else to do
+Dialogue: 0,0:16:58.13,0:16:59.70,*Default,NTP,0000,0000,0000,,to extend your interpreter
+Dialogue: 0,0:16:59.93,0:17:01.17,*Default,NTP,0000,0000,0000,,here's a good thing to add
+Dialogue: 0,0:17:01.20,0:17:02.97,*Default,NTP,0000,0000,0000,,because it doesn't take a lot of code
+Dialogue: 0,0:17:03.07,0:17:05.97,*Default,NTP,0000,0000,0000,,but teaches you exactly how macros work
+Dialogue: 0,0:17:06.70,0:17:08.60,*Default,NTP,0000,0000,0000,,and there's really two parts to solving this
+Dialogue: 0,0:17:08.73,0:17:09.97,*Default,NTP,0000,0000,0000,,one is to
+Dialogue: 0,0:17:10.00,0:17:13.07,*Default,NTP,0000,0000,0000,,implement how the defined macro special form works
+Dialogue: 0,0:17:13.17,0:17:14.70,*Default,NTP,0000,0000,0000,,that's actually the easy part
+Dialogue: 0,0:17:14.70,0:17:16.97,*Default,NTP,0000,0000,0000,,it's almost like defining a procedure
+Dialogue: 0,0:17:17.70,0:17:19.33,*Default,NTP,0000,0000,0000,,the slightly more involved park
+Dialogue: 0,0:17:19.33,0:17:21.70,*Default,NTP,0000,0000,0000,,happens when you have a call expression
+Dialogue: 0,0:17:21.97,0:17:24.53,*Default,NTP,0000,0000,0000,,where the operator the first expression
+Dialogue: 0,0:17:24.80,0:17:26.67,*Default,NTP,0000,0000,0000,,evaluates to a macro
+Dialogue: 0,0:17:27.60,0:17:31.37,*Default,NTP,0000,0000,0000,,a call to a macro has a different evaluation procedure
+Dialogue: 0,0:17:31.57,0:17:33.67,*Default,NTP,0000,0000,0000,,that a call to a regular procedure
+Dialogue: 0,0:17:34.37,0:17:37.87,*Default,NTP,0000,0000,0000,,so if you look here it says implement defined macro
+Dialogue: 0,0:17:37.97,0:17:40.10,*Default,NTP,0000,0000,0000,,by implementing due defined macro
+Dialogue: 0,0:17:40.10,0:17:41.47,*Default,NTP,0000,0000,0000,,well what is that about
+Dialogue: 0,0:17:41.50,0:17:43.67,*Default,NTP,0000,0000,0000,,well remember schema val
+Dialogue: 0,0:17:43.80,0:17:44.70,*Default,NTP,0000,0000,0000,,checks to see
+Dialogue: 0,0:17:44.70,0:17:47.20,*Default,NTP,0000,0000,0000,,if the first symbol is in the special forms
+Dialogue: 0,0:17:47.37,0:17:49.53,*Default,NTP,0000,0000,0000,,define macro is one of the special forms
+Dialogue: 0,0:17:49.60,0:17:52.50,*Default,NTP,0000,0000,0000,,and so it's going to call that do define macro function
+Dialogue: 0,0:17:52.50,0:17:53.93,*Default,NTP,0000,0000,0000,,in your scheme interpreter
+Dialogue: 0,0:17:54.07,0:17:56.90,*Default,NTP,0000,0000,0000,,and what that's going to do is create a new macro
+Dialogue: 0,0:17:57.17,0:17:59.70,*Default,NTP,0000,0000,0000,,just like you would create a new lambda procedure
+Dialogue: 0,0:17:59.90,0:18:02.30,*Default,NTP,0000,0000,0000,,and it will bind it to the name that's given
+Dialogue: 0,0:18:02.50,0:18:04.57,*Default,NTP,0000,0000,0000,,in the definition expression
+Dialogue: 0,0:18:05.60,0:18:06.47,*Default,NTP,0000,0000,0000,,the interesting part
+Dialogue: 0,0:18:06.47,0:18:09.33,*Default,NTP,0000,0000,0000,,about macros is really what happens when you call them
+Dialogue: 0,0:18:09.37,0:18:11.20,*Default,NTP,0000,0000,0000,,what happens when you use a macro
+Dialogue: 0,0:18:11.20,0:18:12.87,*Default,NTP,0000,0000,0000,,is you write a call expression
+Dialogue: 0,0:18:13.13,0:18:16.33,*Default,NTP,0000,0000,0000,,where the operator evaluates to some macro
+Dialogue: 0,0:18:16.47,0:18:19.73,*Default,NTP,0000,0000,0000,,so for example the symbol far for
+Dialogue: 0,0:18:20.40,0:18:22.20,*Default,NTP,0000,0000,0000,,is bound to a macro procedure
+Dialogue: 0,0:18:22.20,0:18:23.90,*Default,NTP,0000,0000,0000,,in the example that we just did
+Dialogue: 0,0:18:24.27,0:18:26.17,*Default,NTP,0000,0000,0000,,so here we get to the else case
+Dialogue: 0,0:18:26.17,0:18:28.70,*Default,NTP,0000,0000,0000,,where we tried to evaluate a call expression
+Dialogue: 0,0:18:29.40,0:18:32.37,*Default,NTP,0000,0000,0000,,we evaluate the first expression in the
+Dialogue: 0,0:18:32.60,0:18:35.20,*Default,NTP,0000,0000,0000,,list of expressions that forms the call expression
+Dialogue: 0,0:18:35.27,0:18:36.93,*Default,NTP,0000,0000,0000,,maybe it's the symbol flr
+Dialogue: 0,0:18:37.00,0:18:39.80,*Default,NTP,0000,0000,0000,,when that gets evaluated you get a macro
+Dialogue: 0,0:18:39.80,0:18:41.70,*Default,NTP,0000,0000,0000,,well that's a special case
+Dialogue: 0,0:18:41.97,0:18:44.07,*Default,NTP,0000,0000,0000,,normally what you do in a call expression is you'd
+Dialogue: 0,0:18:44.07,0:18:45.87,*Default,NTP,0000,0000,0000,,evaluate all the operands next
+Dialogue: 0,0:18:45.87,0:18:48.10,*Default,NTP,0000,0000,0000,,and then call the procedure on the arguments
+Dialogue: 0,0:18:48.10,0:18:50.10,*Default,NTP,0000,0000,0000,,that are the values of the operands
+Dialogue: 0,0:18:50.13,0:18:51.70,*Default,NTP,0000,0000,0000,,but macras are different
+Dialogue: 0,0:18:52.40,0:18:55.13,*Default,NTP,0000,0000,0000,,instead you apply the macro
+Dialogue: 0,0:18:55.13,0:18:58.73,*Default,NTP,0000,0000,0000,,to the expressions that are in the call expression
+Dialogue: 0,0:18:58.87,0:19:00.67,*Default,NTP,0000,0000,0000,,before you evaluate the
+Dialogue: 0,0:19:00.90,0:19:04.00,*Default,NTP,0000,0000,0000,,those expressions might be symbols they might be lists
+Dialogue: 0,0:19:04.07,0:19:05.27,*Default,NTP,0000,0000,0000,,anything is fine
+Dialogue: 0,0:19:05.27,0:19:07.60,*Default,NTP,0000,0000,0000,,but they are pieces of scheme code
+Dialogue: 0,0:19:07.67,0:19:10.07,*Default,NTP,0000,0000,0000,,which serve as the arguments to the macro
+Dialogue: 0,0:19:10.53,0:19:12.17,*Default,NTP,0000,0000,0000,,the macro then returns something
+Dialogue: 0,0:19:12.17,0:19:13.90,*Default,NTP,0000,0000,0000,,which is a scheme expression
+Dialogue: 0,0:19:13.90,0:19:16.20,*Default,NTP,0000,0000,0000,,and that has to get evaluated too
+Dialogue: 0,0:19:16.80,0:19:18.80,*Default,NTP,0000,0000,0000,,so instead of the usual pattern of
+Dialogue: 0,0:19:18.80,0:19:20.10,*Default,NTP,0000,0000,0000,,evaluate the operator
+Dialogue: 0,0:19:20.10,0:19:21.37,*Default,NTP,0000,0000,0000,,evaluate the operands
+Dialogue: 0,0:19:21.37,0:19:23.33,*Default,NTP,0000,0000,0000,,call the procedure on the arguments
+Dialogue: 0,0:19:23.37,0:19:26.07,*Default,NTP,0000,0000,0000,,instead you get evaluate the operator
+Dialogue: 0,0:19:26.50,0:19:28.87,*Default,NTP,0000,0000,0000,,apply it to the operands
+Dialogue: 0,0:19:28.87,0:19:31.67,*Default,NTP,0000,0000,0000,,to get back an expression that you evaluate
+Dialogue: 0,0:19:32.47,0:19:35.13,*Default,NTP,0000,0000,0000,,and you can write all of that in terms of scheme apply
+Dialogue: 0,0:19:35.13,0:19:36.17,*Default,NTP,0000,0000,0000,,and schema val
+Dialogue: 0,0:19:36.53,0:19:38.90,*Default,NTP,0000,0000,0000,,just like you would with regular procedures
+Dialogue: 0,0:19:38.90,0:19:40.97,*Default,NTP,0000,0000,0000,,but the particular order that things happen in
+Dialogue: 0,0:19:40.97,0:19:42.17,*Default,NTP,0000,0000,0000,,is a little bit different
+Dialogue: 0,0:19:42.40,0:19:44.70,*Default,NTP,0000,0000,0000,,and that's what it would take to complement macros
+Dialogue: 0,0:19:44.70,0:19:46.07,*Default,NTP,0000,0000,0000,,in your scheme interpreter

@@ -1,0 +1,832 @@
+[Script Info]
+Title: Lecture 36. Q&A_哔哩哔哩_bilibili
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 3
+ScaledBorderAndShadow: yes
+; ----------------------
+; 本字幕由CC字幕助手自动转换
+; 字幕来源https://www.bilibili.com/video/BV1s3411G7yM?p=87&vd_source=6ffca0aa1006734a4fba52f389036611
+; 脚本地址https://greasyfork.org/scripts/378513
+; 设置了字幕过长自动换行，但若字幕中没有空格换行将无效
+; 字体大小依据720p 48号字体等比缩放
+; 如显示不正常请尝试使用SRT格式
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Segoe UI,48,&H00FFFFFF,&HF0000000,&H00000000,&HF0000000,1,0,0,0,100,100,0,0.00,1,1,3,2,30,30,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:03.84,*Default,NTP,0000,0000,0000,,61a lecture number 36 q a
+Dialogue: 0,0:00:03.84,0:00:05.36,*Default,NTP,0000,0000,0000,,none of the questions were about the
+Dialogue: 0,0:00:05.36,0:00:08.80,*Default,NTP,0000,0000,0000,,lecture but we had some good questions
+Dialogue: 0,0:00:08.80,0:00:12.08,*Default,NTP,0000,0000,0000,,yeah good question so um questions about
+Dialogue: 0,0:00:12.08,0:00:14.56,*Default,NTP,0000,0000,0000,,how having is used having is really
+Dialogue: 0,0:00:14.56,0:00:16.56,*Default,NTP,0000,0000,0000,,designed to
+Dialogue: 0,0:00:16.56,0:00:20.40,*Default,NTP,0000,0000,0000,,filter out whole groups so
+Dialogue: 0,0:00:20.40,0:00:23.52,*Default,NTP,0000,0000,0000,,for example you know the
+Dialogue: 0,0:00:23.52,0:00:26.64,*Default,NTP,0000,0000,0000,,the second option here
+Dialogue: 0,0:00:26.64,0:00:28.24,*Default,NTP,0000,0000,0000,,select star from records group by
+Dialogue: 0,0:00:28.24,0:00:30.32,*Default,NTP,0000,0000,0000,,division having count star greater than
+Dialogue: 0,0:00:30.32,0:00:31.76,*Default,NTP,0000,0000,0000,,three
+Dialogue: 0,0:00:31.76,0:00:35.12,*Default,NTP,0000,0000,0000,,is going to uh give you all the rows
+Dialogue: 0,0:00:35.12,0:00:36.56,*Default,NTP,0000,0000,0000,,from records
+Dialogue: 0,0:00:36.56,0:00:40.00,*Default,NTP,0000,0000,0000,,where um there are at least
+Dialogue: 0,0:00:40.00,0:00:41.52,*Default,NTP,0000,0000,0000,,like you're gonna get one row per
+Dialogue: 0,0:00:41.52,0:00:43.84,*Default,NTP,0000,0000,0000,,division but only for the divisions
+Dialogue: 0,0:00:43.84,0:00:45.52,*Default,NTP,0000,0000,0000,,where there are at least records
+Dialogue: 0,0:00:45.52,0:00:48.24,*Default,NTP,0000,0000,0000,,three records or more than three records
+Dialogue: 0,0:00:48.24,0:00:49.36,*Default,NTP,0000,0000,0000,,that have that division
+Dialogue: 0,0:00:49.36,0:00:52.16,*Default,NTP,0000,0000,0000,,so that is like a well-formed thing
+Dialogue: 0,0:00:52.16,0:00:53.68,*Default,NTP,0000,0000,0000,,let's look at this other example you
+Dialogue: 0,0:00:53.68,0:00:54.48,*Default,NTP,0000,0000,0000,,suggested
+Dialogue: 0,0:00:54.48,0:00:56.48,*Default,NTP,0000,0000,0000,,which tries to filter within a group i
+Dialogue: 0,0:00:56.48,0:00:57.60,*Default,NTP,0000,0000,0000,,don't think this is going to do the
+Dialogue: 0,0:00:57.60,0:00:58.16,*Default,NTP,0000,0000,0000,,right thing
+Dialogue: 0,0:00:58.16,0:01:01.36,*Default,NTP,0000,0000,0000,,so still you'll get one row per division
+Dialogue: 0,0:01:01.36,0:01:02.96,*Default,NTP,0000,0000,0000,,it's going to evaluate this thing that
+Dialogue: 0,0:01:02.96,0:01:05.36,*Default,NTP,0000,0000,0000,,says salary equals max salary
+Dialogue: 0,0:01:05.36,0:01:06.72,*Default,NTP,0000,0000,0000,,what that's going to do is it's going to
+Dialogue: 0,0:01:06.72,0:01:09.04,*Default,NTP,0000,0000,0000,,compute the max salary for the group
+Dialogue: 0,0:01:09.04,0:01:12.16,*Default,NTP,0000,0000,0000,,it's going to find the salary
+Dialogue: 0,0:01:12.16,0:01:14.88,*Default,NTP,0000,0000,0000,,for a particular element within that
+Dialogue: 0,0:01:14.88,0:01:16.56,*Default,NTP,0000,0000,0000,,group
+Dialogue: 0,0:01:16.56,0:01:20.80,*Default,NTP,0000,0000,0000,,because when you perform a max
+Dialogue: 0,0:01:20.80,0:01:24.00,*Default,NTP,0000,0000,0000,,it tends to select the record
+Dialogue: 0,0:01:24.00,0:01:26.24,*Default,NTP,0000,0000,0000,,that has the max i'm guessing this will
+Dialogue: 0,0:01:26.24,0:01:27.20,*Default,NTP,0000,0000,0000,,always be true
+Dialogue: 0,0:01:27.20,0:01:29.76,*Default,NTP,0000,0000,0000,,and what you'll end up with is one row
+Dialogue: 0,0:01:29.76,0:01:30.32,*Default,NTP,0000,0000,0000,,per
+Dialogue: 0,0:01:30.32,0:01:33.12,*Default,NTP,0000,0000,0000,,division and this having clause won't
+Dialogue: 0,0:01:33.12,0:01:33.68,*Default,NTP,0000,0000,0000,,really do
+Dialogue: 0,0:01:33.68,0:01:36.40,*Default,NTP,0000,0000,0000,,anything at all so if what you want to
+Dialogue: 0,0:01:36.40,0:01:37.68,*Default,NTP,0000,0000,0000,,do is filter out
+Dialogue: 0,0:01:37.68,0:01:39.76,*Default,NTP,0000,0000,0000,,individual rows from records before you
+Dialogue: 0,0:01:39.76,0:01:41.68,*Default,NTP,0000,0000,0000,,perform a group you need to use aware
+Dialogue: 0,0:01:41.68,0:01:43.44,*Default,NTP,0000,0000,0000,,for that
+Dialogue: 0,0:01:43.44,0:01:46.40,*Default,NTP,0000,0000,0000,,yeah i mean anytime you're mixing an
+Dialogue: 0,0:01:46.40,0:01:47.44,*Default,NTP,0000,0000,0000,,aggregation
+Dialogue: 0,0:01:47.44,0:01:50.96,*Default,NTP,0000,0000,0000,,with a selection of a single record
+Dialogue: 0,0:01:50.96,0:01:53.68,*Default,NTP,0000,0000,0000,,it's really not something you can trust
+Dialogue: 0,0:01:53.68,0:01:54.40,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:01:54.40,0:01:56.72,*Default,NTP,0000,0000,0000,,and uh yeah i guess i'd have to look at
+Dialogue: 0,0:01:56.72,0:01:58.40,*Default,NTP,0000,0000,0000,,the example to tell you what's going on
+Dialogue: 0,0:01:58.40,0:02:00.24,*Default,NTP,0000,0000,0000,,in a particular implementation
+Dialogue: 0,0:02:00.24,0:02:03.68,*Default,NTP,0000,0000,0000,,but probably what it didn't do is just
+Dialogue: 0,0:02:03.68,0:02:05.60,*Default,NTP,0000,0000,0000,,filter out rows before doing the
+Dialogue: 0,0:02:05.60,0:02:08.24,*Default,NTP,0000,0000,0000,,grouping instead
+Dialogue: 0,0:02:08.24,0:02:10.16,*Default,NTP,0000,0000,0000,,what it did is it grouped and then it
+Dialogue: 0,0:02:10.16,0:02:11.60,*Default,NTP,0000,0000,0000,,kept some of the groups but i think in
+Dialogue: 0,0:02:11.60,0:02:12.96,*Default,NTP,0000,0000,0000,,this case it would probably keep all the
+Dialogue: 0,0:02:12.96,0:02:14.80,*Default,NTP,0000,0000,0000,,groups
+Dialogue: 0,0:02:14.80,0:02:17.20,*Default,NTP,0000,0000,0000,,okay yeah so the question is how do you
+Dialogue: 0,0:02:17.20,0:02:18.80,*Default,NTP,0000,0000,0000,,find the rows that
+Dialogue: 0,0:02:18.80,0:02:22.24,*Default,NTP,0000,0000,0000,,have the maximum value
+Dialogue: 0,0:02:22.24,0:02:26.16,*Default,NTP,0000,0000,0000,,in them actually this will in sqlite do
+Dialogue: 0,0:02:26.16,0:02:26.48,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:02:26.48,0:02:28.88,*Default,NTP,0000,0000,0000,,for kind of a quirky reason um it's not
+Dialogue: 0,0:02:28.88,0:02:30.88,*Default,NTP,0000,0000,0000,,that the salary equals max salary will
+Dialogue: 0,0:02:30.88,0:02:31.92,*Default,NTP,0000,0000,0000,,do the trick
+Dialogue: 0,0:02:31.92,0:02:34.40,*Default,NTP,0000,0000,0000,,it's that just computing max salary will
+Dialogue: 0,0:02:34.40,0:02:35.68,*Default,NTP,0000,0000,0000,,order the rows
+Dialogue: 0,0:02:35.68,0:02:38.96,*Default,NTP,0000,0000,0000,,within a group and then when you select
+Dialogue: 0,0:02:38.96,0:02:40.08,*Default,NTP,0000,0000,0000,,star
+Dialogue: 0,0:02:40.08,0:02:42.32,*Default,NTP,0000,0000,0000,,uh where you're really selecting a
+Dialogue: 0,0:02:42.32,0:02:43.92,*Default,NTP,0000,0000,0000,,particular row from a group it's going
+Dialogue: 0,0:02:43.92,0:02:45.36,*Default,NTP,0000,0000,0000,,to select the first one
+Dialogue: 0,0:02:45.36,0:02:46.72,*Default,NTP,0000,0000,0000,,and because you ever took a mac
+Dialogue: 0,0:02:46.72,0:02:48.32,*Default,NTP,0000,0000,0000,,somewhere it happens to be that that
+Dialogue: 0,0:02:48.32,0:02:49.84,*Default,NTP,0000,0000,0000,,first one will be the one with the max
+Dialogue: 0,0:02:49.84,0:02:51.44,*Default,NTP,0000,0000,0000,,salary so
+Dialogue: 0,0:02:51.44,0:02:54.08,*Default,NTP,0000,0000,0000,,um it's true that this will work not a
+Dialogue: 0,0:02:54.08,0:02:55.76,*Default,NTP,0000,0000,0000,,behavior we want to rely on
+Dialogue: 0,0:02:55.76,0:02:58.16,*Default,NTP,0000,0000,0000,,instead if what you want to do is figure
+Dialogue: 0,0:02:58.16,0:02:59.92,*Default,NTP,0000,0000,0000,,out what the max is for each group
+Dialogue: 0,0:02:59.92,0:03:02.00,*Default,NTP,0000,0000,0000,,and then select a corresponding row with
+Dialogue: 0,0:03:02.00,0:03:03.04,*Default,NTP,0000,0000,0000,,that max
+Dialogue: 0,0:03:03.04,0:03:05.52,*Default,NTP,0000,0000,0000,,i think that's a two-step operation you
+Dialogue: 0,0:03:05.52,0:03:07.04,*Default,NTP,0000,0000,0000,,want to create a table
+Dialogue: 0,0:03:07.04,0:03:10.00,*Default,NTP,0000,0000,0000,,with the max's so something like select
+Dialogue: 0,0:03:10.00,0:03:12.48,*Default,NTP,0000,0000,0000,,max salary
+Dialogue: 0,0:03:12.48,0:03:15.92,*Default,NTP,0000,0000,0000,,comma division from records group by
+Dialogue: 0,0:03:15.92,0:03:17.60,*Default,NTP,0000,0000,0000,,division
+Dialogue: 0,0:03:17.60,0:03:21.12,*Default,NTP,0000,0000,0000,,now you know um what these things are
+Dialogue: 0,0:03:21.12,0:03:22.64,*Default,NTP,0000,0000,0000,,called but you should
+Dialogue: 0,0:03:22.64,0:03:26.32,*Default,NTP,0000,0000,0000,,give that a name max's
+Dialogue: 0,0:03:26.64,0:03:29.92,*Default,NTP,0000,0000,0000,,and now you have a table that's one row
+Dialogue: 0,0:03:29.92,0:03:31.04,*Default,NTP,0000,0000,0000,,per division
+Dialogue: 0,0:03:31.04,0:03:34.64,*Default,NTP,0000,0000,0000,,and tells you what the max salary is in
+Dialogue: 0,0:03:34.64,0:03:35.36,*Default,NTP,0000,0000,0000,,that division
+Dialogue: 0,0:03:35.36,0:03:37.12,*Default,NTP,0000,0000,0000,,obviously this won't run because i don't
+Dialogue: 0,0:03:37.12,0:03:38.72,*Default,NTP,0000,0000,0000,,have a records table
+Dialogue: 0,0:03:38.72,0:03:41.92,*Default,NTP,0000,0000,0000,,loaded but then you do a second step
+Dialogue: 0,0:03:41.92,0:03:44.96,*Default,NTP,0000,0000,0000,,where you would select star
+Dialogue: 0,0:03:44.96,0:03:48.08,*Default,NTP,0000,0000,0000,,from the result of joining together
+Dialogue: 0,0:03:48.08,0:03:51.76,*Default,NTP,0000,0000,0000,,the records and the maxes
+Dialogue: 0,0:03:51.76,0:03:53.60,*Default,NTP,0000,0000,0000,,and here's the case where you'd make
+Dialogue: 0,0:03:53.60,0:03:56.72,*Default,NTP,0000,0000,0000,,sure that
+Dialogue: 0,0:03:56.72,0:03:58.72,*Default,NTP,0000,0000,0000,,you only want the records that have the
+Dialogue: 0,0:03:58.72,0:04:00.24,*Default,NTP,0000,0000,0000,,right division
+Dialogue: 0,0:04:00.24,0:04:03.28,*Default,NTP,0000,0000,0000,,so you uh
+Dialogue: 0,0:04:03.28,0:04:06.56,*Default,NTP,0000,0000,0000,,let's say we call this a and this
+Dialogue: 0,0:04:06.56,0:04:09.60,*Default,NTP,0000,0000,0000,,call this b now you're going to have one
+Dialogue: 0,0:04:09.60,0:04:10.88,*Default,NTP,0000,0000,0000,,row from the max table
+Dialogue: 0,0:04:10.88,0:04:12.72,*Default,NTP,0000,0000,0000,,one row from the records table you want
+Dialogue: 0,0:04:12.72,0:04:14.08,*Default,NTP,0000,0000,0000,,them to match
+Dialogue: 0,0:04:14.08,0:04:18.16,*Default,NTP,0000,0000,0000,,a dot division equals b dot division
+Dialogue: 0,0:04:18.16,0:04:21.04,*Default,NTP,0000,0000,0000,,and you're only interested in the rows
+Dialogue: 0,0:04:21.04,0:04:23.76,*Default,NTP,0000,0000,0000,,that have a maximum salary for that
+Dialogue: 0,0:04:23.76,0:04:24.72,*Default,NTP,0000,0000,0000,,division
+Dialogue: 0,0:04:24.72,0:04:27.68,*Default,NTP,0000,0000,0000,,so that would be the a dot salary equals
+Dialogue: 0,0:04:27.68,0:04:29.20,*Default,NTP,0000,0000,0000,,b dot salary
+Dialogue: 0,0:04:29.20,0:04:31.12,*Default,NTP,0000,0000,0000,,b salary here is representing the
+Dialogue: 0,0:04:31.12,0:04:32.88,*Default,NTP,0000,0000,0000,,maximum salary for the division
+Dialogue: 0,0:04:32.88,0:04:35.04,*Default,NTP,0000,0000,0000,,adot salary is the salary for that
+Dialogue: 0,0:04:35.04,0:04:36.96,*Default,NTP,0000,0000,0000,,record this would filter out all the
+Dialogue: 0,0:04:36.96,0:04:37.44,*Default,NTP,0000,0000,0000,,rows
+Dialogue: 0,0:04:37.44,0:04:39.12,*Default,NTP,0000,0000,0000,,where somebody is in the division but
+Dialogue: 0,0:04:39.12,0:04:40.64,*Default,NTP,0000,0000,0000,,doesn't have the highest salary within
+Dialogue: 0,0:04:40.64,0:04:42.16,*Default,NTP,0000,0000,0000,,that division
+Dialogue: 0,0:04:42.16,0:04:44.56,*Default,NTP,0000,0000,0000,,okay so now we've filtered out the rows
+Dialogue: 0,0:04:44.56,0:04:45.20,*Default,NTP,0000,0000,0000,,that we want
+Dialogue: 0,0:04:45.20,0:04:48.32,*Default,NTP,0000,0000,0000,,and we can perform a group
+Dialogue: 0,0:04:50.32,0:04:51.84,*Default,NTP,0000,0000,0000,,so doing it in two steps like this
+Dialogue: 0,0:04:51.84,0:04:53.84,*Default,NTP,0000,0000,0000,,obviously is longer than relying on this
+Dialogue: 0,0:04:53.84,0:04:55.12,*Default,NTP,0000,0000,0000,,ordering behavior
+Dialogue: 0,0:04:55.12,0:04:56.72,*Default,NTP,0000,0000,0000,,but i think it's more explicit about
+Dialogue: 0,0:04:56.72,0:04:59.04,*Default,NTP,0000,0000,0000,,what's going on the next question was
+Dialogue: 0,0:04:59.04,0:04:59.60,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:04:59.60,0:05:02.80,*Default,NTP,0000,0000,0000,,the fall 2019 final exam
+Dialogue: 0,0:05:02.80,0:05:05.84,*Default,NTP,0000,0000,0000,,question 6 c
+Dialogue: 0,0:05:05.84,0:05:07.76,*Default,NTP,0000,0000,0000,,all right let's get a sense of where we
+Dialogue: 0,0:05:07.76,0:05:09.68,*Default,NTP,0000,0000,0000,,are really quick just by reading through
+Dialogue: 0,0:05:09.68,0:05:11.60,*Default,NTP,0000,0000,0000,,a palindrome is a sequence that has the
+Dialogue: 0,0:05:11.60,0:05:13.36,*Default,NTP,0000,0000,0000,,same elements in normal and reverse
+Dialogue: 0,0:05:13.36,0:05:14.08,*Default,NTP,0000,0000,0000,,order
+Dialogue: 0,0:05:14.08,0:05:15.84,*Default,NTP,0000,0000,0000,,we've already implemented pow which
+Dialogue: 0,0:05:15.84,0:05:17.68,*Default,NTP,0000,0000,0000,,takes a positive integer n and returns a
+Dialogue: 0,0:05:17.68,0:05:19.28,*Default,NTP,0000,0000,0000,,positive integer with the digits of n
+Dialogue: 0,0:05:19.28,0:05:20.72,*Default,NTP,0000,0000,0000,,followed by the digits of n in reverse
+Dialogue: 0,0:05:20.72,0:05:21.84,*Default,NTP,0000,0000,0000,,order so we could like build a
+Dialogue: 0,0:05:21.84,0:05:24.16,*Default,NTP,0000,0000,0000,,palindrome out of some prefix
+Dialogue: 0,0:05:24.16,0:05:27.60,*Default,NTP,0000,0000,0000,,um we did contains which contains
+Dialogue: 0,0:05:27.60,0:05:30.64,*Default,NTP,0000,0000,0000,,non-negative integers a and b
+Dialogue: 0,0:05:30.64,0:05:33.20,*Default,NTP,0000,0000,0000,,um it returns whether all of the digits
+Dialogue: 0,0:05:33.20,0:05:34.48,*Default,NTP,0000,0000,0000,,of a also appear
+Dialogue: 0,0:05:34.48,0:05:36.72,*Default,NTP,0000,0000,0000,,in order among the digits of b okay that
+Dialogue: 0,0:05:36.72,0:05:37.60,*Default,NTP,0000,0000,0000,,might be useful
+Dialogue: 0,0:05:37.60,0:05:41.04,*Default,NTP,0000,0000,0000,,so uh 3 5 7
+Dialogue: 0,0:05:41.04,0:05:43.36,*Default,NTP,0000,0000,0000,,is in here somewhere because there's a 3
+Dialogue: 0,0:05:43.36,0:05:44.48,*Default,NTP,0000,0000,0000,,and there's the 5
+Dialogue: 0,0:05:44.48,0:05:47.20,*Default,NTP,0000,0000,0000,,and there's the 7 but 7 5 3 is not in
+Dialogue: 0,0:05:47.20,0:05:49.04,*Default,NTP,0000,0000,0000,,there because they're in the wrong order
+Dialogue: 0,0:05:49.04,0:05:50.96,*Default,NTP,0000,0000,0000,,all right and now we're going to
+Dialogue: 0,0:05:50.96,0:05:52.64,*Default,NTP,0000,0000,0000,,implement big
+Dialogue: 0,0:05:52.64,0:05:55.92,*Default,NTP,0000,0000,0000,,helper function for biggest palindrome
+Dialogue: 0,0:05:55.92,0:05:57.60,*Default,NTP,0000,0000,0000,,the biggest palindrome function takes a
+Dialogue: 0,0:05:57.60,0:05:58.80,*Default,NTP,0000,0000,0000,,non-negative integer n
+Dialogue: 0,0:05:58.80,0:06:00.64,*Default,NTP,0000,0000,0000,,and returns the largest pounder integer
+Dialogue: 0,0:06:00.64,0:06:01.84,*Default,NTP,0000,0000,0000,,within
+Dialogue: 0,0:06:01.84,0:06:03.84,*Default,NTP,0000,0000,0000,,with an even number of digits okay that
+Dialogue: 0,0:06:03.84,0:06:05.12,*Default,NTP,0000,0000,0000,,sounds important
+Dialogue: 0,0:06:05.12,0:06:07.20,*Default,NTP,0000,0000,0000,,that appears among the digits of n in
+Dialogue: 0,0:06:07.20,0:06:08.56,*Default,NTP,0000,0000,0000,,order
+Dialogue: 0,0:06:08.56,0:06:12.72,*Default,NTP,0000,0000,0000,,okay so largest palindrome integer means
+Dialogue: 0,0:06:12.72,0:06:13.36,*Default,NTP,0000,0000,0000,,uh
+Dialogue: 0,0:06:13.36,0:06:16.56,*Default,NTP,0000,0000,0000,,longer is larger but also like to break
+Dialogue: 0,0:06:16.56,0:06:17.52,*Default,NTP,0000,0000,0000,,ties we're gonna
+Dialogue: 0,0:06:17.52,0:06:20.64,*Default,NTP,0000,0000,0000,,have a kind of large first digit
+Dialogue: 0,0:06:20.64,0:06:23.84,*Default,NTP,0000,0000,0000,,um if there's no even length calendar
+Dialogue: 0,0:06:23.84,0:06:26.96,*Default,NTP,0000,0000,0000,,then we should return zero okay
+Dialogue: 0,0:06:26.96,0:06:30.24,*Default,NTP,0000,0000,0000,,you may call pal and contains
+Dialogue: 0,0:06:30.24,0:06:31.60,*Default,NTP,0000,0000,0000,,but we're not allowed to turn things
+Dialogue: 0,0:06:31.60,0:06:33.52,*Default,NTP,0000,0000,0000,,into strings or
+Dialogue: 0,0:06:33.52,0:06:36.24,*Default,NTP,0000,0000,0000,,lists or tuples or use square brackets
+Dialogue: 0,0:06:36.24,0:06:37.60,*Default,NTP,0000,0000,0000,,or anything like that so it sounds like
+Dialogue: 0,0:06:37.60,0:06:39.28,*Default,NTP,0000,0000,0000,,we got to just use
+Dialogue: 0,0:06:39.28,0:06:41.60,*Default,NTP,0000,0000,0000,,integer manipulation like dividing by 10
+Dialogue: 0,0:06:41.60,0:06:42.40,*Default,NTP,0000,0000,0000,,and stuff like that
+Dialogue: 0,0:06:42.40,0:06:45.76,*Default,NTP,0000,0000,0000,,biggest palindrome calls big on n
+Dialogue: 0,0:06:45.76,0:06:49.68,*Default,NTP,0000,0000,0000,,with zero as some starting value for k
+Dialogue: 0,0:06:49.68,0:06:51.76,*Default,NTP,0000,0000,0000,,and this is the helper function that is
+Dialogue: 0,0:06:51.76,0:06:53.44,*Default,NTP,0000,0000,0000,,going to track
+Dialogue: 0,0:06:53.44,0:06:55.44,*Default,NTP,0000,0000,0000,,something about what we've seen so far
+Dialogue: 0,0:06:55.44,0:06:56.56,*Default,NTP,0000,0000,0000,,and is also
+Dialogue: 0,0:06:56.56,0:06:59.76,*Default,NTP,0000,0000,0000,,taking digits from it if n
+Dialogue: 0,0:06:59.76,0:07:03.12,*Default,NTP,0000,0000,0000,,is 0 then the biggest palindrome within
+Dialogue: 0,0:07:03.12,0:07:03.36,*Default,NTP,0000,0000,0000,,it
+Dialogue: 0,0:07:03.36,0:07:08.32,*Default,NTP,0000,0000,0000,,is 0. here we have
+Dialogue: 0,0:07:08.48,0:07:12.72,*Default,NTP,0000,0000,0000,,choices there are two of them
+Dialogue: 0,0:07:12.72,0:07:14.40,*Default,NTP,0000,0000,0000,,so you can kind of look at the structure
+Dialogue: 0,0:07:14.40,0:07:16.00,*Default,NTP,0000,0000,0000,,of this expression and see
+Dialogue: 0,0:07:16.00,0:07:17.28,*Default,NTP,0000,0000,0000,,there's two options we're going to
+Dialogue: 0,0:07:17.28,0:07:20.24,*Default,NTP,0000,0000,0000,,recursively call big keeping k the same
+Dialogue: 0,0:07:20.24,0:07:22.72,*Default,NTP,0000,0000,0000,,or we're going to recursively call big
+Dialogue: 0,0:07:22.72,0:07:23.76,*Default,NTP,0000,0000,0000,,making k
+Dialogue: 0,0:07:23.76,0:07:28.40,*Default,NTP,0000,0000,0000,,bigger somehow um
+Dialogue: 0,0:07:28.88,0:07:31.92,*Default,NTP,0000,0000,0000,,all right if contains k
+Dialogue: 0,0:07:31.92,0:07:34.00,*Default,NTP,0000,0000,0000,,k remember contains the way it works is
+Dialogue: 0,0:07:34.00,0:07:35.28,*Default,NTP,0000,0000,0000,,that the numbers
+Dialogue: 0,0:07:35.28,0:07:38.40,*Default,NTP,0000,0000,0000,,that you're looking for come first
+Dialogue: 0,0:07:38.40,0:07:41.44,*Default,NTP,0000,0000,0000,,and then the numbers that
+Dialogue: 0,0:07:41.44,0:07:44.88,*Default,NTP,0000,0000,0000,,may contain k come next
+Dialogue: 0,0:07:44.88,0:07:48.16,*Default,NTP,0000,0000,0000,,um if contains k something
+Dialogue: 0,0:07:48.16,0:07:51.60,*Default,NTP,0000,0000,0000,,then we will uh
+Dialogue: 0,0:07:51.60,0:07:54.32,*Default,NTP,0000,0000,0000,,return something otherwise well it's not
+Dialogue: 0,0:07:54.32,0:07:55.52,*Default,NTP,0000,0000,0000,,clear what we'll do here but we'll have
+Dialogue: 0,0:07:55.52,0:07:58.32,*Default,NTP,0000,0000,0000,,to try to figure that out
+Dialogue: 0,0:07:58.40,0:08:01.20,*Default,NTP,0000,0000,0000,,and otherwise we return the max of
+Dialogue: 0,0:08:01.20,0:08:03.36,*Default,NTP,0000,0000,0000,,choices
+Dialogue: 0,0:08:03.36,0:08:05.60,*Default,NTP,0000,0000,0000,,here's what i think i know so far at
+Dialogue: 0,0:08:05.60,0:08:08.08,*Default,NTP,0000,0000,0000,,some point you're going to ask whether k
+Dialogue: 0,0:08:08.08,0:08:11.60,*Default,NTP,0000,0000,0000,,is contained in uh
+Dialogue: 0,0:08:11.60,0:08:14.80,*Default,NTP,0000,0000,0000,,n in order to
+Dialogue: 0,0:08:14.80,0:08:18.24,*Default,NTP,0000,0000,0000,,decide if it's the case that we've found
+Dialogue: 0,0:08:18.24,0:08:18.64,*Default,NTP,0000,0000,0000,,a
+Dialogue: 0,0:08:18.64,0:08:21.28,*Default,NTP,0000,0000,0000,,palindrome
+Dialogue: 0,0:08:22.96,0:08:26.00,*Default,NTP,0000,0000,0000,,so and and here it's kind of like do we
+Dialogue: 0,0:08:26.00,0:08:27.68,*Default,NTP,0000,0000,0000,,use the last digit or we don't is the
+Dialogue: 0,0:08:27.68,0:08:29.36,*Default,NTP,0000,0000,0000,,typical pattern that you see
+Dialogue: 0,0:08:29.36,0:08:32.16,*Default,NTP,0000,0000,0000,,when you're recursively searching for
+Dialogue: 0,0:08:32.16,0:08:34.08,*Default,NTP,0000,0000,0000,,digits that are inside one number and
+Dialogue: 0,0:08:34.08,0:08:35.92,*Default,NTP,0000,0000,0000,,not inside the other so i'm not totally
+Dialogue: 0,0:08:35.92,0:08:37.36,*Default,NTP,0000,0000,0000,,clear how to solve this but i think we
+Dialogue: 0,0:08:37.36,0:08:37.92,*Default,NTP,0000,0000,0000,,can start
+Dialogue: 0,0:08:37.92,0:08:41.36,*Default,NTP,0000,0000,0000,,making some progress um since
+Dialogue: 0,0:08:41.36,0:08:43.04,*Default,NTP,0000,0000,0000,,we're dealing with numbers and we can't
+Dialogue: 0,0:08:43.04,0:08:45.12,*Default,NTP,0000,0000,0000,,use strings or wrappers it's more common
+Dialogue: 0,0:08:45.12,0:08:46.56,*Default,NTP,0000,0000,0000,,that we'll peel off
+Dialogue: 0,0:08:46.56,0:08:48.48,*Default,NTP,0000,0000,0000,,elements from the end so i think the way
+Dialogue: 0,0:08:48.48,0:08:50.24,*Default,NTP,0000,0000,0000,,this would go
+Dialogue: 0,0:08:50.24,0:08:53.36,*Default,NTP,0000,0000,0000,,is we would say okay i'm gonna include
+Dialogue: 0,0:08:53.36,0:08:54.88,*Default,NTP,0000,0000,0000,,the four
+Dialogue: 0,0:08:54.88,0:08:57.04,*Default,NTP,0000,0000,0000,,i'm gonna skip the three i'm gonna
+Dialogue: 0,0:08:57.04,0:08:58.96,*Default,NTP,0000,0000,0000,,include the five
+Dialogue: 0,0:08:58.96,0:09:01.92,*Default,NTP,0000,0000,0000,,now i've kind of built this thing up
+Dialogue: 0,0:09:01.92,0:09:03.76,*Default,NTP,0000,0000,0000,,which has a five and a four
+Dialogue: 0,0:09:03.76,0:09:07.44,*Default,NTP,0000,0000,0000,,at the end and what's left over in n
+Dialogue: 0,0:09:07.44,0:09:11.04,*Default,NTP,0000,0000,0000,,is three four two five let's say
+Dialogue: 0,0:09:11.04,0:09:13.04,*Default,NTP,0000,0000,0000,,that as i've gone through and decided to
+Dialogue: 0,0:09:13.04,0:09:14.56,*Default,NTP,0000,0000,0000,,keep the four and the five
+Dialogue: 0,0:09:14.56,0:09:16.80,*Default,NTP,0000,0000,0000,,i now know that i need to build a
+Dialogue: 0,0:09:16.80,0:09:17.68,*Default,NTP,0000,0000,0000,,palindrome
+Dialogue: 0,0:09:17.68,0:09:20.72,*Default,NTP,0000,0000,0000,,that has a four and a five in it so when
+Dialogue: 0,0:09:20.72,0:09:22.00,*Default,NTP,0000,0000,0000,,i get to this point
+Dialogue: 0,0:09:22.00,0:09:24.24,*Default,NTP,0000,0000,0000,,i realize oh there's an option which is
+Dialogue: 0,0:09:24.24,0:09:26.00,*Default,NTP,0000,0000,0000,,that i could
+Dialogue: 0,0:09:26.00,0:09:28.24,*Default,NTP,0000,0000,0000,,uh
+Dialogue: 0,0:09:29.04,0:09:31.92,*Default,NTP,0000,0000,0000,,have the palindrome 4554 as one of the
+Dialogue: 0,0:09:31.92,0:09:33.84,*Default,NTP,0000,0000,0000,,palindromes in here
+Dialogue: 0,0:09:33.84,0:09:37.92,*Default,NTP,0000,0000,0000,,but only if after i've removed that and
+Dialogue: 0,0:09:37.92,0:09:40.48,*Default,NTP,0000,0000,0000,,n is just three four two five if it's
+Dialogue: 0,0:09:40.48,0:09:41.20,*Default,NTP,0000,0000,0000,,the case that
+Dialogue: 0,0:09:41.20,0:09:44.24,*Default,NTP,0000,0000,0000,,k is contained within these digits where
+Dialogue: 0,0:09:44.24,0:09:44.56,*Default,NTP,0000,0000,0000,,k
+Dialogue: 0,0:09:44.56,0:09:46.72,*Default,NTP,0000,0000,0000,,has to be the numbers that i've seen so
+Dialogue: 0,0:09:46.72,0:09:49.36,*Default,NTP,0000,0000,0000,,far backwards
+Dialogue: 0,0:09:49.36,0:09:52.40,*Default,NTP,0000,0000,0000,,okay so if it's the case that k is
+Dialogue: 0,0:09:52.40,0:09:56.00,*Default,NTP,0000,0000,0000,,in n where k is the digits that i've
+Dialogue: 0,0:09:56.00,0:09:58.16,*Default,NTP,0000,0000,0000,,decided to keep so far
+Dialogue: 0,0:09:58.16,0:10:01.04,*Default,NTP,0000,0000,0000,,in reverse order then i think we have a
+Dialogue: 0,0:10:01.04,0:10:05.44,*Default,NTP,0000,0000,0000,,new choice
+Dialogue: 0,0:10:05.44,0:10:08.96,*Default,NTP,0000,0000,0000,,which is that um
+Dialogue: 0,0:10:08.96,0:10:11.68,*Default,NTP,0000,0000,0000,,we could
+Dialogue: 0,0:10:12.00,0:10:14.80,*Default,NTP,0000,0000,0000,,have the palindrome i think it's called
+Dialogue: 0,0:10:14.80,0:10:16.32,*Default,NTP,0000,0000,0000,,pal
+Dialogue: 0,0:10:16.32,0:10:20.64,*Default,NTP,0000,0000,0000,,made up of k
+Dialogue: 0,0:10:21.44,0:10:26.08,*Default,NTP,0000,0000,0000,,so if k was 45 then we'd build 4554
+Dialogue: 0,0:10:26.08,0:10:28.56,*Default,NTP,0000,0000,0000,,and that would be something that is
+Dialogue: 0,0:10:28.56,0:10:29.60,*Default,NTP,0000,0000,0000,,contained within
+Dialogue: 0,0:10:29.60,0:10:32.56,*Default,NTP,0000,0000,0000,,n and how do i know that well i've found
+Dialogue: 0,0:10:32.56,0:10:34.40,*Default,NTP,0000,0000,0000,,the four and the five and the suffix
+Dialogue: 0,0:10:34.40,0:10:35.12,*Default,NTP,0000,0000,0000,,already
+Dialogue: 0,0:10:35.12,0:10:36.56,*Default,NTP,0000,0000,0000,,and i've checked to see that the four
+Dialogue: 0,0:10:36.56,0:10:38.80,*Default,NTP,0000,0000,0000,,and five appear in the prefix
+Dialogue: 0,0:10:38.80,0:10:42.56,*Default,NTP,0000,0000,0000,,and so i know the whole thing is there
+Dialogue: 0,0:10:44.88,0:10:47.52,*Default,NTP,0000,0000,0000,,now how do we write down the logic of
+Dialogue: 0,0:10:47.52,0:10:50.08,*Default,NTP,0000,0000,0000,,discard the number that's at the end of
+Dialogue: 0,0:10:50.08,0:10:50.48,*Default,NTP,0000,0000,0000,,n
+Dialogue: 0,0:10:50.48,0:10:53.04,*Default,NTP,0000,0000,0000,,or keep it i think it would look
+Dialogue: 0,0:10:53.04,0:10:55.92,*Default,NTP,0000,0000,0000,,something like
+Dialogue: 0,0:10:57.84,0:10:59.92,*Default,NTP,0000,0000,0000,,if i just want to keep k the same that
+Dialogue: 0,0:10:59.92,0:11:02.08,*Default,NTP,0000,0000,0000,,means i'm not really including any more
+Dialogue: 0,0:11:02.08,0:11:02.88,*Default,NTP,0000,0000,0000,,digits
+Dialogue: 0,0:11:02.88,0:11:04.40,*Default,NTP,0000,0000,0000,,that means that i'm going to make a
+Dialogue: 0,0:11:04.40,0:11:06.32,*Default,NTP,0000,0000,0000,,recursive call ignoring
+Dialogue: 0,0:11:06.32,0:11:09.36,*Default,NTP,0000,0000,0000,,the last digit of it
+Dialogue: 0,0:11:09.36,0:11:13.20,*Default,NTP,0000,0000,0000,,otherwise i will make a recursive call
+Dialogue: 0,0:11:13.20,0:11:15.44,*Default,NTP,0000,0000,0000,,with the last digit of n being peeled
+Dialogue: 0,0:11:15.44,0:11:17.92,*Default,NTP,0000,0000,0000,,off but in this case it will be captured
+Dialogue: 0,0:11:17.92,0:11:20.32,*Default,NTP,0000,0000,0000,,as part of k and what would that look
+Dialogue: 0,0:11:20.32,0:11:22.40,*Default,NTP,0000,0000,0000,,like that would look like keeping k
+Dialogue: 0,0:11:22.40,0:11:25.68,*Default,NTP,0000,0000,0000,,as it is and then adding in the last
+Dialogue: 0,0:11:25.68,0:11:28.96,*Default,NTP,0000,0000,0000,,digit of it so if we look at how this
+Dialogue: 0,0:11:28.96,0:11:30.00,*Default,NTP,0000,0000,0000,,might go
+Dialogue: 0,0:11:30.00,0:11:32.88,*Default,NTP,0000,0000,0000,,originally n would be this whole thing k
+Dialogue: 0,0:11:32.88,0:11:34.32,*Default,NTP,0000,0000,0000,,would be zero
+Dialogue: 0,0:11:34.32,0:11:36.64,*Default,NTP,0000,0000,0000,,one of the recursive calls we would make
+Dialogue: 0,0:11:36.64,0:11:37.60,*Default,NTP,0000,0000,0000,,would have n
+Dialogue: 0,0:11:37.60,0:11:41.12,*Default,NTP,0000,0000,0000,,be everything except for the four
+Dialogue: 0,0:11:41.12,0:11:43.52,*Default,NTP,0000,0000,0000,,and k would be four that sounds pretty
+Dialogue: 0,0:11:43.52,0:11:44.32,*Default,NTP,0000,0000,0000,,good
+Dialogue: 0,0:11:44.32,0:11:47.52,*Default,NTP,0000,0000,0000,,and the recursive call from there using
+Dialogue: 0,0:11:47.52,0:11:49.76,*Default,NTP,0000,0000,0000,,this case would be that we ignore the
+Dialogue: 0,0:11:49.76,0:11:50.88,*Default,NTP,0000,0000,0000,,three so now
+Dialogue: 0,0:11:50.88,0:11:53.76,*Default,NTP,0000,0000,0000,,k is four but n is three four two five
+Dialogue: 0,0:11:53.76,0:11:54.48,*Default,NTP,0000,0000,0000,,five
+Dialogue: 0,0:11:54.48,0:11:56.32,*Default,NTP,0000,0000,0000,,a recursive call from there using the
+Dialogue: 0,0:11:56.32,0:11:58.88,*Default,NTP,0000,0000,0000,,second case would set
+Dialogue: 0,0:11:58.88,0:12:02.16,*Default,NTP,0000,0000,0000,,uh k well n would
+Dialogue: 0,0:12:02.16,0:12:04.80,*Default,NTP,0000,0000,0000,,obviously go down to three four two five
+Dialogue: 0,0:12:04.80,0:12:05.44,*Default,NTP,0000,0000,0000,,but k
+Dialogue: 0,0:12:05.44,0:12:07.20,*Default,NTP,0000,0000,0000,,would be set to whatever it was before
+Dialogue: 0,0:12:07.20,0:12:09.12,*Default,NTP,0000,0000,0000,,four times ten is forty
+Dialogue: 0,0:12:09.12,0:12:12.56,*Default,NTP,0000,0000,0000,,plus 5 is 45
+Dialogue: 0,0:12:12.56,0:12:14.88,*Default,NTP,0000,0000,0000,,then we could hit this case which says
+Dialogue: 0,0:12:14.88,0:12:16.00,*Default,NTP,0000,0000,0000,,if 45
+Dialogue: 0,0:12:16.00,0:12:18.88,*Default,NTP,0000,0000,0000,,is in here which it is then we have an
+Dialogue: 0,0:12:18.88,0:12:19.44,*Default,NTP,0000,0000,0000,,option
+Dialogue: 0,0:12:19.44,0:12:24.48,*Default,NTP,0000,0000,0000,,of 4554 as one of the palindromes within
+Dialogue: 0,0:12:24.48,0:12:25.92,*Default,NTP,0000,0000,0000,,yeah great question so how do you
+Dialogue: 0,0:12:25.92,0:12:28.56,*Default,NTP,0000,0000,0000,,approach this problem what are the steps
+Dialogue: 0,0:12:28.56,0:12:30.72,*Default,NTP,0000,0000,0000,,um one is to recognize that there's a
+Dialogue: 0,0:12:30.72,0:12:31.92,*Default,NTP,0000,0000,0000,,tree recursion problem
+Dialogue: 0,0:12:31.92,0:12:33.36,*Default,NTP,0000,0000,0000,,you could do that from the syntax
+Dialogue: 0,0:12:33.36,0:12:35.12,*Default,NTP,0000,0000,0000,,because there's two calls to big
+Dialogue: 0,0:12:35.12,0:12:36.96,*Default,NTP,0000,0000,0000,,or you could do that from the kind of
+Dialogue: 0,0:12:36.96,0:12:38.48,*Default,NTP,0000,0000,0000,,nature of the problem which is they were
+Dialogue: 0,0:12:38.48,0:12:39.84,*Default,NTP,0000,0000,0000,,doing some search
+Dialogue: 0,0:12:39.84,0:12:42.64,*Default,NTP,0000,0000,0000,,among all the possible like subsets of
+Dialogue: 0,0:12:42.64,0:12:44.96,*Default,NTP,0000,0000,0000,,digits in here which one's the biggest
+Dialogue: 0,0:12:44.96,0:12:47.60,*Default,NTP,0000,0000,0000,,looks like a tree recursion problem and
+Dialogue: 0,0:12:47.60,0:12:48.00,*Default,NTP,0000,0000,0000,,um
+Dialogue: 0,0:12:48.00,0:12:51.04,*Default,NTP,0000,0000,0000,,so you have to look for a way to distill
+Dialogue: 0,0:12:51.04,0:12:53.36,*Default,NTP,0000,0000,0000,,that into a sequence of choices
+Dialogue: 0,0:12:53.36,0:12:56.00,*Default,NTP,0000,0000,0000,,and uh a common sequence of choices that
+Dialogue: 0,0:12:56.00,0:12:57.60,*Default,NTP,0000,0000,0000,,you have is keep the last digit or you
+Dialogue: 0,0:12:57.60,0:12:58.96,*Default,NTP,0000,0000,0000,,don't i mean we've seen that
+Dialogue: 0,0:12:58.96,0:13:02.32,*Default,NTP,0000,0000,0000,,in a few different examples um
+Dialogue: 0,0:13:02.32,0:13:05.60,*Default,NTP,0000,0000,0000,,but uh and so it happens to apply here
+Dialogue: 0,0:13:05.60,0:13:08.00,*Default,NTP,0000,0000,0000,,sometimes it's not not clear what kind
+Dialogue: 0,0:13:08.00,0:13:09.68,*Default,NTP,0000,0000,0000,,of sequence of choices you need to make
+Dialogue: 0,0:13:09.68,0:13:11.68,*Default,NTP,0000,0000,0000,,but that is a big part of solving a tree
+Dialogue: 0,0:13:11.68,0:13:13.12,*Default,NTP,0000,0000,0000,,recursion problem
+Dialogue: 0,0:13:13.12,0:13:16.48,*Default,NTP,0000,0000,0000,,so um yeah how you
+Dialogue: 0,0:13:16.48,0:13:18.48,*Default,NTP,0000,0000,0000,,figure out what that choice is is think
+Dialogue: 0,0:13:18.48,0:13:20.00,*Default,NTP,0000,0000,0000,,about all the different possibilities
+Dialogue: 0,0:13:20.00,0:13:22.24,*Default,NTP,0000,0000,0000,,that you need to consider so all the
+Dialogue: 0,0:13:22.24,0:13:24.08,*Default,NTP,0000,0000,0000,,different palindromes within here
+Dialogue: 0,0:13:24.08,0:13:27.04,*Default,NTP,0000,0000,0000,,and how would i enumerate that set well
+Dialogue: 0,0:13:27.04,0:13:29.04,*Default,NTP,0000,0000,0000,,all the ones that have a four
+Dialogue: 0,0:13:29.04,0:13:30.96,*Default,NTP,0000,0000,0000,,at the end and all the ones that don't
+Dialogue: 0,0:13:30.96,0:13:32.32,*Default,NTP,0000,0000,0000,,is a way of
+Dialogue: 0,0:13:32.32,0:13:34.88,*Default,NTP,0000,0000,0000,,partitioning that set using an operation
+Dialogue: 0,0:13:34.88,0:13:36.56,*Default,NTP,0000,0000,0000,,that i could repeat over and over again
+Dialogue: 0,0:13:36.56,0:13:37.92,*Default,NTP,0000,0000,0000,,so that's how you kind of figure out
+Dialogue: 0,0:13:37.92,0:13:39.44,*Default,NTP,0000,0000,0000,,what choice you're going to be made
+Dialogue: 0,0:13:39.44,0:13:43.28,*Default,NTP,0000,0000,0000,,making and
+Dialogue: 0,0:13:43.28,0:13:45.12,*Default,NTP,0000,0000,0000,,i guess that got us as far as thinking
+Dialogue: 0,0:13:45.12,0:13:46.56,*Default,NTP,0000,0000,0000,,probably what we're going to do
+Dialogue: 0,0:13:46.56,0:13:48.96,*Default,NTP,0000,0000,0000,,is call big where we keep the last digit
+Dialogue: 0,0:13:48.96,0:13:49.92,*Default,NTP,0000,0000,0000,,and big
+Dialogue: 0,0:13:49.92,0:13:52.40,*Default,NTP,0000,0000,0000,,where we don't now is the hard part
+Dialogue: 0,0:13:52.40,0:13:53.28,*Default,NTP,0000,0000,0000,,which is
+Dialogue: 0,0:13:53.28,0:13:54.56,*Default,NTP,0000,0000,0000,,how are we going to represent this
+Dialogue: 0,0:13:54.56,0:13:56.56,*Default,NTP,0000,0000,0000,,notion of keeping the last digit
+Dialogue: 0,0:13:56.56,0:13:59.28,*Default,NTP,0000,0000,0000,,it's not like we have a list called
+Dialogue: 0,0:13:59.28,0:14:01.44,*Default,NTP,0000,0000,0000,,digits where we're appending the last
+Dialogue: 0,0:14:01.44,0:14:02.00,*Default,NTP,0000,0000,0000,,digit to
+Dialogue: 0,0:14:02.00,0:14:04.48,*Default,NTP,0000,0000,0000,,it instead what we're doing is we're
+Dialogue: 0,0:14:04.48,0:14:06.40,*Default,NTP,0000,0000,0000,,effectively reassigning k
+Dialogue: 0,0:14:06.40,0:14:09.92,*Default,NTP,0000,0000,0000,,here k either stays the same or
+Dialogue: 0,0:14:09.92,0:14:12.64,*Default,NTP,0000,0000,0000,,k includes one more digit than it was
+Dialogue: 0,0:14:12.64,0:14:13.20,*Default,NTP,0000,0000,0000,,before
+Dialogue: 0,0:14:13.20,0:14:15.44,*Default,NTP,0000,0000,0000,,so whenever you make a recursive call a
+Dialogue: 0,0:14:15.44,0:14:16.72,*Default,NTP,0000,0000,0000,,good way to think about what you're
+Dialogue: 0,0:14:16.72,0:14:17.36,*Default,NTP,0000,0000,0000,,doing
+Dialogue: 0,0:14:17.36,0:14:19.92,*Default,NTP,0000,0000,0000,,is that you're assigning these formal
+Dialogue: 0,0:14:19.92,0:14:23.52,*Default,NTP,0000,0000,0000,,parameters to new values
+Dialogue: 0,0:14:24.40,0:14:27.20,*Default,NTP,0000,0000,0000,,so i guess that starts to explain what's
+Dialogue: 0,0:14:27.20,0:14:29.20,*Default,NTP,0000,0000,0000,,going on here
+Dialogue: 0,0:14:29.20,0:14:32.56,*Default,NTP,0000,0000,0000,,the last piece is very problem specific
+Dialogue: 0,0:14:32.56,0:14:35.04,*Default,NTP,0000,0000,0000,,how would you know that you've found a
+Dialogue: 0,0:14:35.04,0:14:36.24,*Default,NTP,0000,0000,0000,,palindrome
+Dialogue: 0,0:14:36.24,0:14:38.56,*Default,NTP,0000,0000,0000,,and therefore you want to consider that
+Dialogue: 0,0:14:38.56,0:14:40.24,*Default,NTP,0000,0000,0000,,as one of the choices
+Dialogue: 0,0:14:40.24,0:14:42.72,*Default,NTP,0000,0000,0000,,you know this two these two lines
+Dialogue: 0,0:14:42.72,0:14:44.00,*Default,NTP,0000,0000,0000,,wouldn't show up in any other tree
+Dialogue: 0,0:14:44.00,0:14:45.52,*Default,NTP,0000,0000,0000,,recursion problems they're really just
+Dialogue: 0,0:14:45.52,0:14:46.00,*Default,NTP,0000,0000,0000,,about
+Dialogue: 0,0:14:46.00,0:14:49.28,*Default,NTP,0000,0000,0000,,palindromes because it happens to be
+Dialogue: 0,0:14:49.28,0:14:51.52,*Default,NTP,0000,0000,0000,,that one way of describing a palindrome
+Dialogue: 0,0:14:51.52,0:14:56.16,*Default,NTP,0000,0000,0000,,is that you find some digits within
+Dialogue: 0,0:14:56.16,0:14:58.88,*Default,NTP,0000,0000,0000,,half the number and then you make sure
+Dialogue: 0,0:14:58.88,0:15:00.24,*Default,NTP,0000,0000,0000,,those digits also appear
+Dialogue: 0,0:15:00.24,0:15:01.52,*Default,NTP,0000,0000,0000,,in the other half of the number in
+Dialogue: 0,0:15:01.52,0:15:04.00,*Default,NTP,0000,0000,0000,,reverse order how would you discover
+Dialogue: 0,0:15:04.00,0:15:04.40,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:15:04.40,0:15:07.28,*Default,NTP,0000,0000,0000,,i guess um hopefully the definition of
+Dialogue: 0,0:15:07.28,0:15:09.04,*Default,NTP,0000,0000,0000,,the palindrome would get you there like
+Dialogue: 0,0:15:09.04,0:15:10.96,*Default,NTP,0000,0000,0000,,how do you describe a palindrome is it's
+Dialogue: 0,0:15:10.96,0:15:12.32,*Default,NTP,0000,0000,0000,,like it's some digits
+Dialogue: 0,0:15:12.32,0:15:14.88,*Default,NTP,0000,0000,0000,,and then those digits also have to be
+Dialogue: 0,0:15:14.88,0:15:16.40,*Default,NTP,0000,0000,0000,,contained in the other half of the
+Dialogue: 0,0:15:16.40,0:15:16.80,*Default,NTP,0000,0000,0000,,number
+Dialogue: 0,0:15:16.80,0:15:19.68,*Default,NTP,0000,0000,0000,,in reverse order
+Dialogue: 0,0:15:20.40,0:15:23.12,*Default,NTP,0000,0000,0000,,and by the way this question down here
+Dialogue: 0,0:15:23.12,0:15:25.36,*Default,NTP,0000,0000,0000,,would be out of scope for this semester
+Dialogue: 0,0:15:25.36,0:15:29.28,*Default,NTP,0000,0000,0000,,which is um is palindrome
+Dialogue: 0,0:15:29.28,0:15:30.96,*Default,NTP,0000,0000,0000,,constant or logarithmic or linear
+Dialogue: 0,0:15:30.96,0:15:32.48,*Default,NTP,0000,0000,0000,,quadratic that was the
+Dialogue: 0,0:15:32.48,0:15:34.24,*Default,NTP,0000,0000,0000,,lecture on efficiency that we made
+Dialogue: 0,0:15:34.24,0:15:36.48,*Default,NTP,0000,0000,0000,,optional you'll do a lot of that in 61b
+Dialogue: 0,0:15:36.48,0:15:39.60,*Default,NTP,0000,0000,0000,,so don't worry about that kind of thing
+Dialogue: 0,0:15:39.60,0:15:41.20,*Default,NTP,0000,0000,0000,,yeah so the question is how do you
+Dialogue: 0,0:15:41.20,0:15:43.28,*Default,NTP,0000,0000,0000,,control the order of the columns in the
+Dialogue: 0,0:15:43.28,0:15:43.84,*Default,NTP,0000,0000,0000,,result
+Dialogue: 0,0:15:43.84,0:15:46.80,*Default,NTP,0000,0000,0000,,in the sql statement and the answer is
+Dialogue: 0,0:15:46.80,0:15:47.28,*Default,NTP,0000,0000,0000,,well
+Dialogue: 0,0:15:47.28,0:15:48.96,*Default,NTP,0000,0000,0000,,however you list things out in the
+Dialogue: 0,0:15:48.96,0:15:50.48,*Default,NTP,0000,0000,0000,,select
+Dialogue: 0,0:15:50.48,0:15:52.96,*Default,NTP,0000,0000,0000,,uh clause at the very beginning is going
+Dialogue: 0,0:15:52.96,0:15:55.36,*Default,NTP,0000,0000,0000,,to determine the column order
+Dialogue: 0,0:15:55.36,0:15:57.92,*Default,NTP,0000,0000,0000,,so if you write something like this
+Dialogue: 0,0:15:57.92,0:15:58.56,*Default,NTP,0000,0000,0000,,sorry
+Dialogue: 0,0:15:58.56,0:16:00.16,*Default,NTP,0000,0000,0000,,we're not even in sql i guess it doesn't
+Dialogue: 0,0:16:00.16,0:16:01.68,*Default,NTP,0000,0000,0000,,matter because we'll just talk about it
+Dialogue: 0,0:16:01.68,0:16:04.72,*Default,NTP,0000,0000,0000,,if you write something like this uh
+Dialogue: 0,0:16:04.72,0:16:06.88,*Default,NTP,0000,0000,0000,,then you're aggregating so you're going
+Dialogue: 0,0:16:06.88,0:16:08.08,*Default,NTP,0000,0000,0000,,gonna get one row
+Dialogue: 0,0:16:08.08,0:16:10.80,*Default,NTP,0000,0000,0000,,because we're not grouping and that rule
+Dialogue: 0,0:16:10.80,0:16:12.24,*Default,NTP,0000,0000,0000,,will contain
+Dialogue: 0,0:16:12.24,0:16:16.16,*Default,NTP,0000,0000,0000,,some name and then
+Dialogue: 0,0:16:16.16,0:16:18.16,*Default,NTP,0000,0000,0000,,uh the minimum salary and then the
+Dialogue: 0,0:16:18.16,0:16:19.52,*Default,NTP,0000,0000,0000,,maximum salary
+Dialogue: 0,0:16:19.52,0:16:21.36,*Default,NTP,0000,0000,0000,,and the order will be the name and then
+Dialogue: 0,0:16:21.36,0:16:22.64,*Default,NTP,0000,0000,0000,,the smallest salary
+Dialogue: 0,0:16:22.64,0:16:24.08,*Default,NTP,0000,0000,0000,,anywhere in the records and then the
+Dialogue: 0,0:16:24.08,0:16:25.76,*Default,NTP,0000,0000,0000,,largest salary all anywhere in the
+Dialogue: 0,0:16:25.76,0:16:26.64,*Default,NTP,0000,0000,0000,,records
+Dialogue: 0,0:16:26.64,0:16:28.24,*Default,NTP,0000,0000,0000,,and you might wonder like what is the
+Dialogue: 0,0:16:28.24,0:16:30.56,*Default,NTP,0000,0000,0000,,name well um
+Dialogue: 0,0:16:30.56,0:16:32.16,*Default,NTP,0000,0000,0000,,this is the thing that's not terribly
+Dialogue: 0,0:16:32.16,0:16:34.16,*Default,NTP,0000,0000,0000,,reliable i think if you're aggregating
+Dialogue: 0,0:16:34.16,0:16:35.36,*Default,NTP,0000,0000,0000,,in two different ways
+Dialogue: 0,0:16:35.36,0:16:36.64,*Default,NTP,0000,0000,0000,,then you can get them in or you can get
+Dialogue: 0,0:16:36.64,0:16:38.64,*Default,NTP,0000,0000,0000,,the max depending on the implementation
+Dialogue: 0,0:16:38.64,0:16:42.56,*Default,NTP,0000,0000,0000,,so um you know really it's not clear
+Dialogue: 0,0:16:42.56,0:16:44.80,*Default,NTP,0000,0000,0000,,what name you would want this to provide
+Dialogue: 0,0:16:44.80,0:16:46.32,*Default,NTP,0000,0000,0000,,but i don't know exactly what it would
+Dialogue: 0,0:16:46.32,0:16:48.16,*Default,NTP,0000,0000,0000,,do um
+Dialogue: 0,0:16:48.16,0:16:49.68,*Default,NTP,0000,0000,0000,,i'm not even sure that the order of the
+Dialogue: 0,0:16:49.68,0:16:51.44,*Default,NTP,0000,0000,0000,,columns will be what determines that it
+Dialogue: 0,0:16:51.44,0:16:52.88,*Default,NTP,0000,0000,0000,,could be something completely different
+Dialogue: 0,0:16:52.88,0:16:54.48,*Default,NTP,0000,0000,0000,,too
+Dialogue: 0,0:16:54.48,0:16:56.96,*Default,NTP,0000,0000,0000,,right yeah so if if you just like edited
+Dialogue: 0,0:16:56.96,0:16:57.76,*Default,NTP,0000,0000,0000,,this a little bit
+Dialogue: 0,0:16:57.76,0:16:59.44,*Default,NTP,0000,0000,0000,,and you put the max first and then the
+Dialogue: 0,0:16:59.44,0:17:01.20,*Default,NTP,0000,0000,0000,,min would this affect the name like
+Dialogue: 0,0:17:01.20,0:17:03.12,*Default,NTP,0000,0000,0000,,could but not in any kind of reliable
+Dialogue: 0,0:17:03.12,0:17:05.12,*Default,NTP,0000,0000,0000,,way so uh
+Dialogue: 0,0:17:05.12,0:17:06.72,*Default,NTP,0000,0000,0000,,yeah i mean anywhere you're in the
+Dialogue: 0,0:17:06.72,0:17:08.80,*Default,NTP,0000,0000,0000,,territory of mixing together
+Dialogue: 0,0:17:08.80,0:17:13.76,*Default,NTP,0000,0000,0000,,aggregation and not aggregation um
+Dialogue: 0,0:17:13.76,0:17:17.92,*Default,NTP,0000,0000,0000,,i guess like the the really simple case
+Dialogue: 0,0:17:17.92,0:17:19.36,*Default,NTP,0000,0000,0000,,is actually reliable where you just
+Dialogue: 0,0:17:19.36,0:17:21.36,*Default,NTP,0000,0000,0000,,aggregate in one way and that one way is
+Dialogue: 0,0:17:21.36,0:17:22.64,*Default,NTP,0000,0000,0000,,a max
+Dialogue: 0,0:17:22.64,0:17:24.56,*Default,NTP,0000,0000,0000,,then you're all right except if there
+Dialogue: 0,0:17:24.56,0:17:25.68,*Default,NTP,0000,0000,0000,,are ties you don't really have any
+Dialogue: 0,0:17:25.68,0:17:27.20,*Default,NTP,0000,0000,0000,,control over which record you get so
+Dialogue: 0,0:17:27.20,0:17:28.24,*Default,NTP,0000,0000,0000,,even you're not even
+Dialogue: 0,0:17:28.24,0:17:30.84,*Default,NTP,0000,0000,0000,,you're not really all right there um and
+Dialogue: 0,0:17:30.84,0:17:32.16,*Default,NTP,0000,0000,0000,,uh
+Dialogue: 0,0:17:32.16,0:17:35.12,*Default,NTP,0000,0000,0000,,then um yeah if you have two different
+Dialogue: 0,0:17:35.12,0:17:36.40,*Default,NTP,0000,0000,0000,,aggregations then who knows what will
+Dialogue: 0,0:17:36.40,0:17:38.24,*Default,NTP,0000,0000,0000,,happen but this will give you some name
+Dialogue: 0,0:17:38.24,0:17:40.08,*Default,NTP,0000,0000,0000,,i don't know which one and then the max
+Dialogue: 0,0:17:40.08,0:17:41.92,*Default,NTP,0000,0000,0000,,salary and then the min salary as the
+Dialogue: 0,0:17:41.92,0:17:45.12,*Default,NTP,0000,0000,0000,,three different columns um
+Dialogue: 0,0:17:45.12,0:17:48.72,*Default,NTP,0000,0000,0000,,if like you ever wanted to
+Dialogue: 0,0:17:48.72,0:17:51.52,*Default,NTP,0000,0000,0000,,build a table and it had one column
+Dialogue: 0,0:17:51.52,0:17:52.56,*Default,NTP,0000,0000,0000,,order
+Dialogue: 0,0:17:52.56,0:17:54.64,*Default,NTP,0000,0000,0000,,and then you wanted to build that same
+Dialogue: 0,0:17:54.64,0:17:56.88,*Default,NTP,0000,0000,0000,,table with a different column order
+Dialogue: 0,0:17:56.88,0:17:59.36,*Default,NTP,0000,0000,0000,,well i think the answer would be create
+Dialogue: 0,0:17:59.36,0:18:01.36,*Default,NTP,0000,0000,0000,,table to give a name to the first table
+Dialogue: 0,0:18:01.36,0:18:02.96,*Default,NTP,0000,0000,0000,,and then select the columns from that
+Dialogue: 0,0:18:02.96,0:18:06.88,*Default,NTP,0000,0000,0000,,table again just in a different order
+Dialogue: 0,0:18:06.88,0:18:08.32,*Default,NTP,0000,0000,0000,,yeah i think that's probably going to be
+Dialogue: 0,0:18:08.32,0:18:10.24,*Default,NTP,0000,0000,0000,,uh implementation dependent
+Dialogue: 0,0:18:10.24,0:18:11.84,*Default,NTP,0000,0000,0000,,it's also sort of a weird thing to do
+Dialogue: 0,0:18:11.84,0:18:13.92,*Default,NTP,0000,0000,0000,,like what is i mean
+Dialogue: 0,0:18:13.92,0:18:15.12,*Default,NTP,0000,0000,0000,,if you can't think of what the right
+Dialogue: 0,0:18:15.12,0:18:16.80,*Default,NTP,0000,0000,0000,,answer is you probably shouldn't be
+Dialogue: 0,0:18:16.80,0:18:19.44,*Default,NTP,0000,0000,0000,,asking the question in the first place
+Dialogue: 0,0:18:19.44,0:18:22.16,*Default,NTP,0000,0000,0000,,all right great question so i think just
+Dialogue: 0,0:18:22.16,0:18:23.68,*Default,NTP,0000,0000,0000,,for the sake of the recording maybe
+Dialogue: 0,0:18:23.68,0:18:24.88,*Default,NTP,0000,0000,0000,,we'll zip through the whole thing and
+Dialogue: 0,0:18:24.88,0:18:26.32,*Default,NTP,0000,0000,0000,,then we'll address your question at the
+Dialogue: 0,0:18:26.32,0:18:27.84,*Default,NTP,0000,0000,0000,,end i know it takes a little bit longer
+Dialogue: 0,0:18:27.84,0:18:29.44,*Default,NTP,0000,0000,0000,,but it might be helpful for some folks
+Dialogue: 0,0:18:29.44,0:18:33.12,*Default,NTP,0000,0000,0000,,so here's um summer 2019
+Dialogue: 0,0:18:33.12,0:18:34.96,*Default,NTP,0000,0000,0000,,question number eight the ingredients
+Dialogue: 0,0:18:34.96,0:18:36.96,*Default,NTP,0000,0000,0000,,table describes the dish and part
+Dialogue: 0,0:18:36.96,0:18:38.96,*Default,NTP,0000,0000,0000,,for each part of each dish at a
+Dialogue: 0,0:18:38.96,0:18:40.00,*Default,NTP,0000,0000,0000,,restaurant
+Dialogue: 0,0:18:40.00,0:18:42.16,*Default,NTP,0000,0000,0000,,so chile has beans and onions in it and
+Dialogue: 0,0:18:42.16,0:18:44.16,*Default,NTP,0000,0000,0000,,soup has broth and onions in it
+Dialogue: 0,0:18:44.16,0:18:46.56,*Default,NTP,0000,0000,0000,,the shop table describes the food shop
+Dialogue: 0,0:18:46.56,0:18:47.92,*Default,NTP,0000,0000,0000,,and price
+Dialogue: 0,0:18:47.92,0:18:50.40,*Default,NTP,0000,0000,0000,,uh for each part of the dish sold at
+Dialogue: 0,0:18:50.40,0:18:51.84,*Default,NTP,0000,0000,0000,,each of the two shops okay so you have
+Dialogue: 0,0:18:51.84,0:18:53.52,*Default,NTP,0000,0000,0000,,to buy the ingredients
+Dialogue: 0,0:18:53.52,0:18:55.68,*Default,NTP,0000,0000,0000,,you can buy them from different shops
+Dialogue: 0,0:18:55.68,0:18:57.36,*Default,NTP,0000,0000,0000,,and then you have to put the ingredients
+Dialogue: 0,0:18:57.36,0:18:57.92,*Default,NTP,0000,0000,0000,,together
+Dialogue: 0,0:18:57.92,0:19:01.60,*Default,NTP,0000,0000,0000,,in order to make the chili cool
+Dialogue: 0,0:19:02.56,0:19:04.56,*Default,NTP,0000,0000,0000,,you can assume the shops table will only
+Dialogue: 0,0:19:04.56,0:19:07.84,*Default,NTP,0000,0000,0000,,ever contain two shops a and b
+Dialogue: 0,0:19:07.84,0:19:11.20,*Default,NTP,0000,0000,0000,,but otherwise um it should be the case
+Dialogue: 0,0:19:11.20,0:19:11.76,*Default,NTP,0000,0000,0000,,that
+Dialogue: 0,0:19:11.76,0:19:13.68,*Default,NTP,0000,0000,0000,,like we don't hard code chili in here
+Dialogue: 0,0:19:13.68,0:19:15.52,*Default,NTP,0000,0000,0000,,there could be any ingredients for any
+Dialogue: 0,0:19:15.52,0:19:17.60,*Default,NTP,0000,0000,0000,,dishes
+Dialogue: 0,0:19:17.60,0:19:19.68,*Default,NTP,0000,0000,0000,,select a two column table with one row
+Dialogue: 0,0:19:19.68,0:19:21.44,*Default,NTP,0000,0000,0000,,per food
+Dialogue: 0,0:19:21.44,0:19:24.56,*Default,NTP,0000,0000,0000,,that describes the lowest price for each
+Dialogue: 0,0:19:24.56,0:19:25.12,*Default,NTP,0000,0000,0000,,food
+Dialogue: 0,0:19:25.12,0:19:28.96,*Default,NTP,0000,0000,0000,,okay so that's really just in here
+Dialogue: 0,0:19:31.61,0:19:34.69,*Default,NTP,0000,0000,0000,,[Music]
+Dialogue: 0,0:19:36.84,0:19:39.44,*Default,NTP,0000,0000,0000,,and
+Dialogue: 0,0:19:39.44,0:19:41.60,*Default,NTP,0000,0000,0000,,if you want to get down to one row for
+Dialogue: 0,0:19:41.60,0:19:42.96,*Default,NTP,0000,0000,0000,,each food
+Dialogue: 0,0:19:42.96,0:19:46.16,*Default,NTP,0000,0000,0000,,then you have to group by food
+Dialogue: 0,0:19:47.68,0:19:49.44,*Default,NTP,0000,0000,0000,,and in general it's fine to select the
+Dialogue: 0,0:19:49.44,0:19:50.72,*Default,NTP,0000,0000,0000,,thing that you group by
+Dialogue: 0,0:19:50.72,0:19:52.00,*Default,NTP,0000,0000,0000,,because you know that they'll be the
+Dialogue: 0,0:19:52.00,0:19:54.00,*Default,NTP,0000,0000,0000,,same for every row in the group and so
+Dialogue: 0,0:19:54.00,0:19:56.32,*Default,NTP,0000,0000,0000,,there's no like ambiguity there
+Dialogue: 0,0:19:56.32,0:19:57.60,*Default,NTP,0000,0000,0000,,and then you need an aggregation
+Dialogue: 0,0:19:57.60,0:19:59.44,*Default,NTP,0000,0000,0000,,expression in order to get the
+Dialogue: 0,0:19:59.44,0:20:02.16,*Default,NTP,0000,0000,0000,,lowest price
+Dialogue: 0,0:20:03.28,0:20:04.80,*Default,NTP,0000,0000,0000,,it doesn't matter whether you capitalize
+Dialogue: 0,0:20:04.80,0:20:06.56,*Default,NTP,0000,0000,0000,,this or not but it is conventional to do
+Dialogue: 0,0:20:06.56,0:20:08.72,*Default,NTP,0000,0000,0000,,so
+Dialogue: 0,0:20:10.16,0:20:13.44,*Default,NTP,0000,0000,0000,,okay select a two column table with
+Dialogue: 0,0:20:13.44,0:20:16.80,*Default,NTP,0000,0000,0000,,one row per dish that describes the
+Dialogue: 0,0:20:16.80,0:20:18.96,*Default,NTP,0000,0000,0000,,total cost of each dish if all the parts
+Dialogue: 0,0:20:18.96,0:20:19.28,*Default,NTP,0000,0000,0000,,are
+Dialogue: 0,0:20:19.28,0:20:23.04,*Default,NTP,0000,0000,0000,,purchased from shop a okay so
+Dialogue: 0,0:20:23.04,0:20:26.08,*Default,NTP,0000,0000,0000,,in order to describe um dishes
+Dialogue: 0,0:20:26.08,0:20:28.24,*Default,NTP,0000,0000,0000,,and prices we're definitely going to
+Dialogue: 0,0:20:28.24,0:20:30.24,*Default,NTP,0000,0000,0000,,need to join the ingredients table
+Dialogue: 0,0:20:30.24,0:20:34.24,*Default,NTP,0000,0000,0000,,and the shops table
+Dialogue: 0,0:20:34.24,0:20:36.48,*Default,NTP,0000,0000,0000,,do we need the alias well it turns out
+Dialogue: 0,0:20:36.48,0:20:38.08,*Default,NTP,0000,0000,0000,,that all the names are different
+Dialogue: 0,0:20:38.08,0:20:40.72,*Default,NTP,0000,0000,0000,,for all the columns dish part food shop
+Dialogue: 0,0:20:40.72,0:20:41.60,*Default,NTP,0000,0000,0000,,and price
+Dialogue: 0,0:20:41.60,0:20:43.84,*Default,NTP,0000,0000,0000,,so it doesn't hurt to alias but you
+Dialogue: 0,0:20:43.84,0:20:44.88,*Default,NTP,0000,0000,0000,,don't actually need to
+Dialogue: 0,0:20:44.88,0:20:47.68,*Default,NTP,0000,0000,0000,,you can refer to the different columns
+Dialogue: 0,0:20:47.68,0:20:48.00,*Default,NTP,0000,0000,0000,,in the
+Dialogue: 0,0:20:48.00,0:20:52.32,*Default,NTP,0000,0000,0000,,join table just by their original names
+Dialogue: 0,0:20:53.28,0:20:56.64,*Default,NTP,0000,0000,0000,,how would we do this well first we want
+Dialogue: 0,0:20:56.64,0:20:57.36,*Default,NTP,0000,0000,0000,,to get down
+Dialogue: 0,0:20:57.36,0:21:00.56,*Default,NTP,0000,0000,0000,,to rows where
+Dialogue: 0,0:21:00.56,0:21:04.88,*Default,NTP,0000,0000,0000,,we're describing uh
+Dialogue: 0,0:21:04.88,0:21:08.16,*Default,NTP,0000,0000,0000,,to make this dish i need beans and those
+Dialogue: 0,0:21:08.16,0:21:08.80,*Default,NTP,0000,0000,0000,,beans
+Dialogue: 0,0:21:08.80,0:21:11.12,*Default,NTP,0000,0000,0000,,are bought from shop a and have price
+Dialogue: 0,0:21:11.12,0:21:13.44,*Default,NTP,0000,0000,0000,,two
+Dialogue: 0,0:21:13.68,0:21:15.20,*Default,NTP,0000,0000,0000,,so let's write some conditions to get
+Dialogue: 0,0:21:15.20,0:21:17.84,*Default,NTP,0000,0000,0000,,that it has to be that part equals
+Dialogue: 0,0:21:17.84,0:21:20.72,*Default,NTP,0000,0000,0000,,food meaning we're not talking about
+Dialogue: 0,0:21:20.72,0:21:23.20,*Default,NTP,0000,0000,0000,,chili has beans in it and by the way
+Dialogue: 0,0:21:23.20,0:21:26.00,*Default,NTP,0000,0000,0000,,broth has a price of 5 3 that wouldn't
+Dialogue: 0,0:21:26.00,0:21:27.44,*Default,NTP,0000,0000,0000,,be useful information
+Dialogue: 0,0:21:27.44,0:21:28.96,*Default,NTP,0000,0000,0000,,we really need to know that we're
+Dialogue: 0,0:21:28.96,0:21:30.40,*Default,NTP,0000,0000,0000,,talking about beans here and we're
+Dialogue: 0,0:21:30.40,0:21:32.32,*Default,NTP,0000,0000,0000,,talking about beans there
+Dialogue: 0,0:21:32.32,0:21:33.44,*Default,NTP,0000,0000,0000,,and we want to make sure that we're
+Dialogue: 0,0:21:33.44,0:21:36.56,*Default,NTP,0000,0000,0000,,talking about the right shot
+Dialogue: 0,0:21:37.12,0:21:38.88,*Default,NTP,0000,0000,0000,,a goes in quotes because it's not the
+Dialogue: 0,0:21:38.88,0:21:40.80,*Default,NTP,0000,0000,0000,,name of a column it's the name
+Dialogue: 0,0:21:40.80,0:21:44.80,*Default,NTP,0000,0000,0000,,it's the value in a column and um
+Dialogue: 0,0:21:44.80,0:21:47.92,*Default,NTP,0000,0000,0000,,so this refers to a whole column or the
+Dialogue: 0,0:21:47.92,0:21:49.44,*Default,NTP,0000,0000,0000,,value within that column
+Dialogue: 0,0:21:49.44,0:21:51.92,*Default,NTP,0000,0000,0000,,this refers to an explicit value if i
+Dialogue: 0,0:21:51.92,0:21:52.88,*Default,NTP,0000,0000,0000,,wrote a here
+Dialogue: 0,0:21:52.88,0:21:54.32,*Default,NTP,0000,0000,0000,,it would break because there's no column
+Dialogue: 0,0:21:54.32,0:21:56.72,*Default,NTP,0000,0000,0000,,called a
+Dialogue: 0,0:21:56.84,0:21:59.84,*Default,NTP,0000,0000,0000,,okay so now we have the right rows
+Dialogue: 0,0:21:59.84,0:22:03.28,*Default,NTP,0000,0000,0000,,the joined rows are chili beans beans
+Dialogue: 0,0:22:03.28,0:22:06.56,*Default,NTP,0000,0000,0000,,shop prices okay
+Dialogue: 0,0:22:06.56,0:22:09.12,*Default,NTP,0000,0000,0000,,not two
+Dialogue: 0,0:22:11.36,0:22:14.48,*Default,NTP,0000,0000,0000,,so now we need to group by dish
+Dialogue: 0,0:22:14.48,0:22:17.20,*Default,NTP,0000,0000,0000,,why buy dish well we want run row per
+Dialogue: 0,0:22:17.20,0:22:18.32,*Default,NTP,0000,0000,0000,,dish
+Dialogue: 0,0:22:18.32,0:22:23.12,*Default,NTP,0000,0000,0000,,right yeah chili soup and beets
+Dialogue: 0,0:22:24.48,0:22:25.92,*Default,NTP,0000,0000,0000,,now we want to know which dish we're
+Dialogue: 0,0:22:25.92,0:22:27.60,*Default,NTP,0000,0000,0000,,talking about and we want to know the
+Dialogue: 0,0:22:27.60,0:22:29.12,*Default,NTP,0000,0000,0000,,sum of the prices
+Dialogue: 0,0:22:29.12,0:22:31.28,*Default,NTP,0000,0000,0000,,you can write just some price and what
+Dialogue: 0,0:22:31.28,0:22:33.12,*Default,NTP,0000,0000,0000,,it will do is find the two different
+Dialogue: 0,0:22:33.12,0:22:34.56,*Default,NTP,0000,0000,0000,,rows the chili beans
+Dialogue: 0,0:22:34.56,0:22:37.92,*Default,NTP,0000,0000,0000,,beans a tube row and the chili
+Dialogue: 0,0:22:37.92,0:22:41.28,*Default,NTP,0000,0000,0000,,onions onions a three row and sum the
+Dialogue: 0,0:22:41.28,0:22:42.72,*Default,NTP,0000,0000,0000,,two and the three together to get the
+Dialogue: 0,0:22:42.72,0:22:43.52,*Default,NTP,0000,0000,0000,,five
+Dialogue: 0,0:22:43.52,0:22:45.20,*Default,NTP,0000,0000,0000,,but the dish is still chilly in both
+Dialogue: 0,0:22:45.20,0:22:47.20,*Default,NTP,0000,0000,0000,,cases okay so
+Dialogue: 0,0:22:47.20,0:22:48.88,*Default,NTP,0000,0000,0000,,not what you asked about but now we've
+Dialogue: 0,0:22:48.88,0:22:50.64,*Default,NTP,0000,0000,0000,,talked about it
+Dialogue: 0,0:22:50.64,0:22:53.04,*Default,NTP,0000,0000,0000,,in two different ways select one column
+Dialogue: 0,0:22:53.04,0:22:55.44,*Default,NTP,0000,0000,0000,,table of all foods that have
+Dialogue: 0,0:22:55.44,0:22:59.44,*Default,NTP,0000,0000,0000,,a different price at each store
+Dialogue: 0,0:23:00.00,0:23:02.64,*Default,NTP,0000,0000,0000,,oh okay so we have two options here
+Dialogue: 0,0:23:02.64,0:23:03.92,*Default,NTP,0000,0000,0000,,there's one with a where
+Dialogue: 0,0:23:03.92,0:23:07.04,*Default,NTP,0000,0000,0000,,and there's one with a group bar
+Dialogue: 0,0:23:07.04,0:23:10.56,*Default,NTP,0000,0000,0000,,um group by might work if we
+Dialogue: 0,0:23:10.56,0:23:14.08,*Default,NTP,0000,0000,0000,,group a buy the food
+Dialogue: 0,0:23:14.08,0:23:15.44,*Default,NTP,0000,0000,0000,,and then make sure that the min and the
+Dialogue: 0,0:23:15.44,0:23:17.44,*Default,NTP,0000,0000,0000,,max are the same then i think they would
+Dialogue: 0,0:23:17.44,0:23:19.84,*Default,NTP,0000,0000,0000,,have the same price
+Dialogue: 0,0:23:19.84,0:23:23.60,*Default,NTP,0000,0000,0000,,so uh i think this is also not the one
+Dialogue: 0,0:23:23.60,0:23:24.64,*Default,NTP,0000,0000,0000,,you asked about but
+Dialogue: 0,0:23:24.64,0:23:28.00,*Default,NTP,0000,0000,0000,,the one that occurred to me first
+Dialogue: 0,0:23:28.16,0:23:33.12,*Default,NTP,0000,0000,0000,,select food from shops grouped by food
+Dialogue: 0,0:23:33.44,0:23:36.32,*Default,NTP,0000,0000,0000,,having okay so now we have one row per
+Dialogue: 0,0:23:36.32,0:23:37.36,*Default,NTP,0000,0000,0000,,each food
+Dialogue: 0,0:23:37.36,0:23:40.40,*Default,NTP,0000,0000,0000,,but we only want rows for the foods
+Dialogue: 0,0:23:40.40,0:23:44.96,*Default,NTP,0000,0000,0000,,where the min price is equal to the max
+Dialogue: 0,0:23:45.04,0:23:47.52,*Default,NTP,0000,0000,0000,,i think that works it's kind of a hack
+Dialogue: 0,0:23:47.52,0:23:48.08,*Default,NTP,0000,0000,0000,,okay
+Dialogue: 0,0:23:48.08,0:23:50.56,*Default,NTP,0000,0000,0000,,what's the most more explicit version
+Dialogue: 0,0:23:50.56,0:23:51.44,*Default,NTP,0000,0000,0000,,it's when we
+Dialogue: 0,0:23:51.44,0:23:54.80,*Default,NTP,0000,0000,0000,,join the shops table with the shops
+Dialogue: 0,0:23:54.80,0:23:55.28,*Default,NTP,0000,0000,0000,,table
+Dialogue: 0,0:23:55.28,0:23:59.44,*Default,NTP,0000,0000,0000,,in order to have a row that describes
+Dialogue: 0,0:23:59.44,0:24:02.48,*Default,NTP,0000,0000,0000,,uh the price at one shop and a price at
+Dialogue: 0,0:24:02.48,0:24:04.08,*Default,NTP,0000,0000,0000,,another shop
+Dialogue: 0,0:24:04.08,0:24:08.00,*Default,NTP,0000,0000,0000,,here we go um
+Dialogue: 0,0:24:08.00,0:24:10.48,*Default,NTP,0000,0000,0000,,yeah uh john i think you're doing uh the
+Dialogue: 0,0:24:10.48,0:24:11.92,*Default,NTP,0000,0000,0000,,opposite they should they should have a
+Dialogue: 0,0:24:11.92,0:24:13.28,*Default,NTP,0000,0000,0000,,different price
+Dialogue: 0,0:24:13.28,0:24:17.36,*Default,NTP,0000,0000,0000,,well thank you price not equal
+Dialogue: 0,0:24:17.36,0:24:21.44,*Default,NTP,0000,0000,0000,,different price thanks
+Dialogue: 0,0:24:22.08,0:24:24.40,*Default,NTP,0000,0000,0000,,okay so these shops and say your shops
+Dialogue: 0,0:24:24.40,0:24:26.64,*Default,NTP,0000,0000,0000,,is b
+Dialogue: 0,0:24:28.48,0:24:31.60,*Default,NTP,0000,0000,0000,,um here we can no longer write just food
+Dialogue: 0,0:24:31.60,0:24:32.96,*Default,NTP,0000,0000,0000,,because there's two different food
+Dialogue: 0,0:24:32.96,0:24:34.56,*Default,NTP,0000,0000,0000,,columns so we'd have to
+Dialogue: 0,0:24:34.56,0:24:37.20,*Default,NTP,0000,0000,0000,,pick a particular food it doesn't really
+Dialogue: 0,0:24:37.20,0:24:38.80,*Default,NTP,0000,0000,0000,,matter which one we do
+Dialogue: 0,0:24:38.80,0:24:40.24,*Default,NTP,0000,0000,0000,,because we're only interested in
+Dialogue: 0,0:24:40.24,0:24:42.08,*Default,NTP,0000,0000,0000,,combined or joined rows
+Dialogue: 0,0:24:42.08,0:24:46.64,*Default,NTP,0000,0000,0000,,where ada food equals beta
+Dialogue: 0,0:24:46.64,0:24:48.56,*Default,NTP,0000,0000,0000,,it's the case that they're from
+Dialogue: 0,0:24:48.56,0:24:50.64,*Default,NTP,0000,0000,0000,,different shops there's really two ways
+Dialogue: 0,0:24:50.64,0:24:51.76,*Default,NTP,0000,0000,0000,,to write this
+Dialogue: 0,0:24:51.76,0:24:54.32,*Default,NTP,0000,0000,0000,,you could write it kind of a long way
+Dialogue: 0,0:24:54.32,0:24:55.28,*Default,NTP,0000,0000,0000,,which would be
+Dialogue: 0,0:24:55.28,0:24:59.68,*Default,NTP,0000,0000,0000,,a dot shop
+Dialogue: 0,0:24:59.68,0:25:03.84,*Default,NTP,0000,0000,0000,,equals a
+Dialogue: 0,0:25:03.84,0:25:07.36,*Default,NTP,0000,0000,0000,,and a dot shop equals b
+Dialogue: 0,0:25:07.36,0:25:10.64,*Default,NTP,0000,0000,0000,,oh sorry and b dot shop equals b
+Dialogue: 0,0:25:10.64,0:25:12.72,*Default,NTP,0000,0000,0000,,that's one way to do it and then we'll
+Dialogue: 0,0:25:12.72,0:25:14.80,*Default,NTP,0000,0000,0000,,have to check this uh price thing so a
+Dialogue: 0,0:25:14.80,0:25:17.92,*Default,NTP,0000,0000,0000,,dot price does not equal
+Dialogue: 0,0:25:18.08,0:25:19.84,*Default,NTP,0000,0000,0000,,now there are actually different ways of
+Dialogue: 0,0:25:19.84,0:25:21.36,*Default,NTP,0000,0000,0000,,expressing
+Dialogue: 0,0:25:21.36,0:25:24.32,*Default,NTP,0000,0000,0000,,this thing it said that we could assume
+Dialogue: 0,0:25:24.32,0:25:25.44,*Default,NTP,0000,0000,0000,,there's only two shops
+Dialogue: 0,0:25:25.44,0:25:28.64,*Default,NTP,0000,0000,0000,,so um we could write it this way
+Dialogue: 0,0:25:28.64,0:25:31.36,*Default,NTP,0000,0000,0000,,but if we wanted to instead just say
+Dialogue: 0,0:25:31.36,0:25:33.76,*Default,NTP,0000,0000,0000,,they're different
+Dialogue: 0,0:25:33.76,0:25:36.16,*Default,NTP,0000,0000,0000,,you might be tempted to write a chop
+Dialogue: 0,0:25:36.16,0:25:36.88,*Default,NTP,0000,0000,0000,,does not
+Dialogue: 0,0:25:36.88,0:25:40.00,*Default,NTP,0000,0000,0000,,equal b dot sharp
+Dialogue: 0,0:25:40.00,0:25:42.00,*Default,NTP,0000,0000,0000,,which would give you the right rows but
+Dialogue: 0,0:25:42.00,0:25:44.08,*Default,NTP,0000,0000,0000,,i think it would give you a duplicate of
+Dialogue: 0,0:25:44.08,0:25:45.52,*Default,NTP,0000,0000,0000,,each one
+Dialogue: 0,0:25:45.52,0:25:49.12,*Default,NTP,0000,0000,0000,,and the reason is you'd get a joined row
+Dialogue: 0,0:25:49.12,0:25:52.88,*Default,NTP,0000,0000,0000,,that was like uh you'd get an onions a3
+Dialogue: 0,0:25:52.88,0:25:56.00,*Default,NTP,0000,0000,0000,,onions b2 and you'd also get a row
+Dialogue: 0,0:25:56.00,0:25:59.60,*Default,NTP,0000,0000,0000,,that said onions b2 onions a3
+Dialogue: 0,0:25:59.60,0:26:01.36,*Default,NTP,0000,0000,0000,,they would both have the property that
+Dialogue: 0,0:26:01.36,0:26:02.88,*Default,NTP,0000,0000,0000,,they're different shops with different
+Dialogue: 0,0:26:02.88,0:26:03.84,*Default,NTP,0000,0000,0000,,prices
+Dialogue: 0,0:26:03.84,0:26:06.72,*Default,NTP,0000,0000,0000,,and so you get two different onions
+Dialogue: 0,0:26:06.72,0:26:08.72,*Default,NTP,0000,0000,0000,,ropes which you don't really want
+Dialogue: 0,0:26:08.72,0:26:10.72,*Default,NTP,0000,0000,0000,,so one trick to deal with this is to
+Dialogue: 0,0:26:10.72,0:26:11.92,*Default,NTP,0000,0000,0000,,assume that
+Dialogue: 0,0:26:11.92,0:26:14.24,*Default,NTP,0000,0000,0000,,since these have different names one of
+Dialogue: 0,0:26:14.24,0:26:15.12,*Default,NTP,0000,0000,0000,,them will come
+Dialogue: 0,0:26:15.12,0:26:18.00,*Default,NTP,0000,0000,0000,,before the other alphabetically at which
+Dialogue: 0,0:26:18.00,0:26:18.48,*Default,NTP,0000,0000,0000,,point
+Dialogue: 0,0:26:18.48,0:26:21.60,*Default,NTP,0000,0000,0000,,you'd only end up with the onions a3
+Dialogue: 0,0:26:21.60,0:26:24.32,*Default,NTP,0000,0000,0000,,onions b2 row but not the onions b2
+Dialogue: 0,0:26:24.32,0:26:27.12,*Default,NTP,0000,0000,0000,,onions a3 rho because a comes before b
+Dialogue: 0,0:26:27.12,0:26:28.64,*Default,NTP,0000,0000,0000,,so if you saw in the solution that this
+Dialogue: 0,0:26:28.64,0:26:30.96,*Default,NTP,0000,0000,0000,,was a less than rather than
+Dialogue: 0,0:26:30.96,0:26:32.88,*Default,NTP,0000,0000,0000,,not equal to that was there so that you
+Dialogue: 0,0:26:32.88,0:26:34.56,*Default,NTP,0000,0000,0000,,wouldn't get onions onions broth broth
+Dialogue: 0,0:26:34.56,0:26:36.96,*Default,NTP,0000,0000,0000,,but instead just one onion so one
+Dialogue: 0,0:26:36.96,0:26:38.64,*Default,NTP,0000,0000,0000,,yeah that's a little bit of a clue just
+Dialogue: 0,0:26:38.64,0:26:40.24,*Default,NTP,0000,0000,0000,,john
+Dialogue: 0,0:26:40.24,0:26:42.32,*Default,NTP,0000,0000,0000,,yeah but it kind of does show up a fair
+Dialogue: 0,0:26:42.32,0:26:44.32,*Default,NTP,0000,0000,0000,,amount that uh when you're
+Dialogue: 0,0:26:44.32,0:26:47.68,*Default,NTP,0000,0000,0000,,trying to find within one table
+Dialogue: 0,0:26:47.68,0:26:49.60,*Default,NTP,0000,0000,0000,,matching rows that you have to worry
+Dialogue: 0,0:26:49.60,0:26:51.20,*Default,NTP,0000,0000,0000,,about duplication so that is something
+Dialogue: 0,0:26:51.20,0:26:53.44,*Default,NTP,0000,0000,0000,,that's like worth learning about sql
+Dialogue: 0,0:26:53.44,0:26:54.80,*Default,NTP,0000,0000,0000,,yeah i thought your previous solution
+Dialogue: 0,0:26:54.80,0:26:56.32,*Default,NTP,0000,0000,0000,,was a little bit longer but more
+Dialogue: 0,0:26:56.32,0:26:57.84,*Default,NTP,0000,0000,0000,,explicit which i think i like
+Dialogue: 0,0:26:57.84,0:27:01.36,*Default,NTP,0000,0000,0000,,better oh great question
+Dialogue: 0,0:27:01.36,0:27:04.40,*Default,NTP,0000,0000,0000,,so if you didn't even say anything about
+Dialogue: 0,0:27:04.40,0:27:05.68,*Default,NTP,0000,0000,0000,,the shops
+Dialogue: 0,0:27:05.68,0:27:07.92,*Default,NTP,0000,0000,0000,,and you just found rows with different
+Dialogue: 0,0:27:07.92,0:27:09.44,*Default,NTP,0000,0000,0000,,prices
+Dialogue: 0,0:27:09.44,0:27:12.24,*Default,NTP,0000,0000,0000,,would this be enough this assumes that
+Dialogue: 0,0:27:12.24,0:27:12.96,*Default,NTP,0000,0000,0000,,each
+Dialogue: 0,0:27:12.96,0:27:16.56,*Default,NTP,0000,0000,0000,,shop only sells beans at a particular
+Dialogue: 0,0:27:16.56,0:27:18.24,*Default,NTP,0000,0000,0000,,price which i think is a reasonable
+Dialogue: 0,0:27:18.24,0:27:18.80,*Default,NTP,0000,0000,0000,,assumption
+Dialogue: 0,0:27:18.80,0:27:21.84,*Default,NTP,0000,0000,0000,,even if it's not stated here
+Dialogue: 0,0:27:21.84,0:27:26.24,*Default,NTP,0000,0000,0000,,uh probably should be stated here
+Dialogue: 0,0:27:26.24,0:27:29.60,*Default,NTP,0000,0000,0000,,um then do you need to make sure that
+Dialogue: 0,0:27:29.60,0:27:30.56,*Default,NTP,0000,0000,0000,,they're from different
+Dialogue: 0,0:27:30.56,0:27:32.16,*Default,NTP,0000,0000,0000,,shops well you kind of know they're from
+Dialogue: 0,0:27:32.16,0:27:33.28,*Default,NTP,0000,0000,0000,,different shops because they have
+Dialogue: 0,0:27:33.28,0:27:34.56,*Default,NTP,0000,0000,0000,,different prices so you don't really
+Dialogue: 0,0:27:34.56,0:27:35.76,*Default,NTP,0000,0000,0000,,need to say that they're from different
+Dialogue: 0,0:27:35.76,0:27:38.32,*Default,NTP,0000,0000,0000,,shops i agree that that would be fine
+Dialogue: 0,0:27:38.32,0:27:41.36,*Default,NTP,0000,0000,0000,,the next question was about fall 2019
+Dialogue: 0,0:27:41.36,0:27:44.16,*Default,NTP,0000,0000,0000,,question 7c we went over this question
+Dialogue: 0,0:27:44.16,0:27:45.68,*Default,NTP,0000,0000,0000,,back in the lecture 28
+Dialogue: 0,0:27:45.68,0:27:48.64,*Default,NTP,0000,0000,0000,,q a but here we revisit it just to talk
+Dialogue: 0,0:27:48.64,0:27:51.28,*Default,NTP,0000,0000,0000,,about the one trickiest part
+Dialogue: 0,0:27:51.28,0:27:54.48,*Default,NTP,0000,0000,0000,,you have this expression that looks like
+Dialogue: 0,0:27:54.48,0:27:56.08,*Default,NTP,0000,0000,0000,,this
+Dialogue: 0,0:27:56.08,0:27:58.72,*Default,NTP,0000,0000,0000,,and you're not allowed to times anymore
+Dialogue: 0,0:27:58.72,0:28:00.32,*Default,NTP,0000,0000,0000,,right
+Dialogue: 0,0:28:00.32,0:28:03.04,*Default,NTP,0000,0000,0000,,and so you have to turn this into a mall
+Dialogue: 0,0:28:03.04,0:28:04.16,*Default,NTP,0000,0000,0000,,instead
+Dialogue: 0,0:28:04.16,0:28:07.68,*Default,NTP,0000,0000,0000,,but mall takes a
+Dialogue: 0,0:28:07.68,0:28:10.96,*Default,NTP,0000,0000,0000,,list of values a single argument whereas
+Dialogue: 0,0:28:10.96,0:28:14.40,*Default,NTP,0000,0000,0000,,times takes multiple arguments so that's
+Dialogue: 0,0:28:14.40,0:28:15.92,*Default,NTP,0000,0000,0000,,like the thing you're trying to deal
+Dialogue: 0,0:28:15.92,0:28:16.56,*Default,NTP,0000,0000,0000,,with here
+Dialogue: 0,0:28:16.56,0:28:20.08,*Default,NTP,0000,0000,0000,,is converting from a procedure call
+Dialogue: 0,0:28:20.08,0:28:22.96,*Default,NTP,0000,0000,0000,,that let's say has three arguments into
+Dialogue: 0,0:28:22.96,0:28:24.00,*Default,NTP,0000,0000,0000,,a procedure call
+Dialogue: 0,0:28:24.00,0:28:25.60,*Default,NTP,0000,0000,0000,,where you're only calling it on one
+Dialogue: 0,0:28:25.60,0:28:27.52,*Default,NTP,0000,0000,0000,,thing well
+Dialogue: 0,0:28:27.52,0:28:30.80,*Default,NTP,0000,0000,0000,,uh let's review that really quick
+Dialogue: 0,0:28:30.80,0:28:34.40,*Default,NTP,0000,0000,0000,,let's say we have uh
+Dialogue: 0,0:28:34.40,0:28:38.56,*Default,NTP,0000,0000,0000,,times already and we know how that works
+Dialogue: 0,0:28:38.80,0:28:41.84,*Default,NTP,0000,0000,0000,,and let's say we have mole
+Dialogue: 0,0:28:41.84,0:28:46.72,*Default,NTP,0000,0000,0000,,which takes a list of numbers and
+Dialogue: 0,0:28:48.24,0:28:53.84,*Default,NTP,0000,0000,0000,,it multiplies them all together
+Dialogue: 0,0:28:55.36,0:28:57.92,*Default,NTP,0000,0000,0000,,so if i want to call mole i can't call
+Dialogue: 0,0:28:57.92,0:28:59.28,*Default,NTP,0000,0000,0000,,it on one two three
+Dialogue: 0,0:28:59.28,0:29:03.76,*Default,NTP,0000,0000,0000,,i have to call it on a list
+Dialogue: 0,0:29:03.76,0:29:07.12,*Default,NTP,0000,0000,0000,,containing one two three
+Dialogue: 0,0:29:07.36,0:29:09.36,*Default,NTP,0000,0000,0000,,the key part of this is that it doesn't
+Dialogue: 0,0:29:09.36,0:29:10.64,*Default,NTP,0000,0000,0000,,work to say i call
+Dialogue: 0,0:29:10.64,0:29:13.68,*Default,NTP,0000,0000,0000,,mole on one two three
+Dialogue: 0,0:29:13.68,0:29:17.12,*Default,NTP,0000,0000,0000,,why because this is a call expression
+Dialogue: 0,0:29:17.12,0:29:19.20,*Default,NTP,0000,0000,0000,,and a call expression says call one on
+Dialogue: 0,0:29:19.20,0:29:20.80,*Default,NTP,0000,0000,0000,,the arguments two and three but one
+Dialogue: 0,0:29:20.80,0:29:23.60,*Default,NTP,0000,0000,0000,,isn't a procedure until you get an error
+Dialogue: 0,0:29:23.60,0:29:28.08,*Default,NTP,0000,0000,0000,,so um converting this
+Dialogue: 0,0:29:28.96,0:29:32.24,*Default,NTP,0000,0000,0000,,here's your expression
+Dialogue: 0,0:29:32.32,0:29:35.84,*Default,NTP,0000,0000,0000,,into this expression
+Dialogue: 0,0:29:35.84,0:29:37.36,*Default,NTP,0000,0000,0000,,is a little bit more involved you have
+Dialogue: 0,0:29:37.36,0:29:39.60,*Default,NTP,0000,0000,0000,,to con the mole
+Dialogue: 0,0:29:39.60,0:29:43.44,*Default,NTP,0000,0000,0000,,onto uh another list
+Dialogue: 0,0:29:43.44,0:29:46.72,*Default,NTP,0000,0000,0000,,where uh i guess
+Dialogue: 0,0:29:46.72,0:29:48.96,*Default,NTP,0000,0000,0000,,the easiest way is to build a list where
+Dialogue: 0,0:29:48.96,0:29:50.40,*Default,NTP,0000,0000,0000,,i have the word list
+Dialogue: 0,0:29:50.40,0:29:51.60,*Default,NTP,0000,0000,0000,,and then i have the one two and the
+Dialogue: 0,0:29:51.60,0:29:54.00,*Default,NTP,0000,0000,0000,,three and let's see what i got
+Dialogue: 0,0:29:54.00,0:29:58.64,*Default,NTP,0000,0000,0000,,oh i got the wrong thing cons mole onto
+Dialogue: 0,0:29:58.64,0:30:00.16,*Default,NTP,0000,0000,0000,,well actually i don't want to cons i
+Dialogue: 0,0:30:00.16,0:30:01.76,*Default,NTP,0000,0000,0000,,want to have two elements
+Dialogue: 0,0:30:01.76,0:30:04.24,*Default,NTP,0000,0000,0000,,i want mole and i want the list one two
+Dialogue: 0,0:30:04.24,0:30:04.88,*Default,NTP,0000,0000,0000,,three
+Dialogue: 0,0:30:04.88,0:30:07.60,*Default,NTP,0000,0000,0000,,okay so that's how you build it but what
+Dialogue: 0,0:30:07.60,0:30:08.88,*Default,NTP,0000,0000,0000,,if we wanted to build it out of the
+Dialogue: 0,0:30:08.88,0:30:09.36,*Default,NTP,0000,0000,0000,,parts
+Dialogue: 0,0:30:09.36,0:30:12.72,*Default,NTP,0000,0000,0000,,of this expression well um
+Dialogue: 0,0:30:12.72,0:30:14.56,*Default,NTP,0000,0000,0000,,that's like a little bit more involved
+Dialogue: 0,0:30:14.56,0:30:16.40,*Default,NTP,0000,0000,0000,,we still want a two element list with
+Dialogue: 0,0:30:16.40,0:30:19.52,*Default,NTP,0000,0000,0000,,mole and in this case we want the second
+Dialogue: 0,0:30:19.52,0:30:20.72,*Default,NTP,0000,0000,0000,,list to start
+Dialogue: 0,0:30:20.72,0:30:23.20,*Default,NTP,0000,0000,0000,,with the word list but then the rest of
+Dialogue: 0,0:30:23.20,0:30:24.48,*Default,NTP,0000,0000,0000,,it should be
