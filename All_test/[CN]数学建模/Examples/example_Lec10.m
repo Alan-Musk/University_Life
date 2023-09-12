@@ -1,0 +1,34 @@
+a=[9,-5,3,7]; x=-2:0.01:5;
+f=polyval(a,x);
+plot(x,f,'LineWidth',2);
+xlabel('x'); ylabel('f(x)');
+set(gca,'FontSize',14);
+
+%%
+hold on
+a=[20,-7,5,10];b=[4,12,-3];
+c=conv(a,b);x=-2:0.01:1;
+f=polyval(c,x);
+plot(x,f,':','LineWidth',2);
+f=polyval(polyder(c),x);
+plot(x,f,'LineWidth',2);
+legend('f(x)','f''(x)');
+
+%%
+x0=pi/2; h=0.000001;
+x=[x0 x0+h];
+y=[sin(x0) sin(x0+h)];
+m=diff(y)./diff(x)
+
+%%
+g=colormap("lines"); hold on;
+for i=1:3
+    x=0:power(10,-i):2*pi;
+    y=exp(-x).*sin((x.^2)./2); m=diff(y)./diff(x);
+    plot(x(1:end-1),m,'Color',g(i,:));
+end
+hold off;
+set(gca,'XLim',[0,2*pi]);
+set(gca,'YLim',[-0.5,0.5]);
+legend('h=0.1','h=0.01','0.001');
+box on;
